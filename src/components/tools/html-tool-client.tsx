@@ -1,7 +1,6 @@
 "use client";
 
 import type { ReactNode } from "react";
-import DOMPurify from "dompurify";
 import { useEffect, useMemo, useState, useTransition } from "react";
 import { useLocale } from "next-intl";
 import {
@@ -150,7 +149,7 @@ export function HtmlToolClient({ toolId }: { toolId: HtmlToolId }) {
       return "";
     }
 
-    return DOMPurify.sanitize(syncState.data.sanitizedHtml);
+    return syncState.data.sanitizedHtml;
   }, [syncState]);
 
   const copyValue = useMemo(() => {
