@@ -22,7 +22,7 @@ export function getContentById(
   locale: Locale,
   toolId: string
 ): ToolLocaleContent | undefined {
-  const localizedContent = toolContent[locale] as Record<
+  const localizedContent = (toolContent[locale] ?? {}) as Record<
     string,
     ToolLocaleContent | undefined
   >;
@@ -34,7 +34,7 @@ export function getToolPageModel(
   category: ToolCategory,
   slug: string
 ): ToolPageModel | undefined {
-  const localizedContent = toolContent[locale] as Record<
+  const localizedContent = (toolContent[locale] ?? {}) as Record<
     string,
     ToolLocaleContent | undefined
   >;
@@ -54,7 +54,7 @@ export function getToolPageModel(
 }
 
 export function getToolsForLocale(locale: Locale): ToolPageModel[] {
-  const localizedContent = toolContent[locale] as Record<
+  const localizedContent = (toolContent[locale] ?? {}) as Record<
     string,
     ToolLocaleContent | undefined
   >;
@@ -85,7 +85,7 @@ export function getToolsByCategory(
 export function getAllToolPaths() {
   return toolDefinitions.flatMap((definition) =>
     definition.supportedLocales.flatMap((locale) => {
-      const localizedContent = toolContent[locale] as Record<
+      const localizedContent = (toolContent[locale] ?? {}) as Record<
         string,
         ToolLocaleContent | undefined
       >;
