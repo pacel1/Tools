@@ -1,0 +1,23 @@
+{
+  "id": "html-image-extractor",
+  "type": "developer-tool",
+  "category": "html-tools",
+  "componentName": "HtmlImageExtractorTool",
+  "logicModule": "html-image-extractor",
+  "inputSchema": "htmlImageExtractorInputSchema",
+  "outputSchema": "htmlImageExtractorOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "html-formatter",
+    "html-minifier",
+    "html-viewer",
+    "html-to-text"
+  ],
+  "seoPriority": 0.86
+}

@@ -1,0 +1,47 @@
+{
+  "toolId": "keyword-density-checker",
+  "locale": "es",
+  "slug": "comprobador-de-densidad-de-palabras-clave",
+  "h1": "Comprobador de densidad de palabras clave",
+  "title": "Comprobador de densidad de palabras clave",
+  "shortDescription": "Comprueba la densidad de palabras clave en un texto con resultados rápidos, entradas sencillas y ejemplos prácticos.",
+  "overview": "Comprueba la densidad de palabras clave en un bloque de texto. Esta página ofrece una respuesta rápida con una herramienta útil y un flujo de resultados sencillo. Está pensada para quienes buscan una respuesta gratuita en línea, resultados instantáneos en el navegador y contenido práctico para búsquedas de cola larga.",
+  "howItWorks": [
+    "Introduce la palabra, frase o texto requerido en el formulario.",
+    "El cálculo o análisis se ejecuta al instante en el navegador.",
+    "Revisa el resultado y continúa con herramientas relacionadas si necesitas otro paso."
+  ],
+  "examples": [
+    {
+      "title": "Ejemplo 1",
+      "input": "Artículo SEO + palabra clave objetivo",
+      "output": "Porcentaje de densidad de palabra clave",
+      "description": "Un ejemplo realista de comprobación de densidad de palabras clave para una consulta habitual."
+    },
+    {
+      "title": "Ejemplo 2",
+      "input": "Artículo SEO + palabra clave objetivo",
+      "output": "Porcentaje de densidad de palabra clave",
+      "description": "Otro caso de uso práctico para tráfico orgánico de cola larga."
+    }
+  ],
+  "faq": [
+    {
+      "question": "¿Qué precisión tiene esta herramienta?",
+      "answer": "El resultado se calcula directamente a partir de la fórmula o de la lógica del navegador utilizada por esta herramienta."
+    },
+    {
+      "question": "¿Puedo usar esta herramienta en el móvil?",
+      "answer": "Sí. La página funciona en ordenador y móvil con un diseño sencillo de entrada y resultado."
+    }
+  ],
+  "seo": {
+    "title": "Comprobador de densidad de palabras clave",
+    "description": "Comprueba la densidad de palabras clave en un texto. Comprobador de densidad de palabras clave gratis en línea con resultados instantáneos.",
+    "keywords": [
+      "comprobador de densidad de palabras clave",
+      "densidad de palabras clave",
+      "herramienta de texto"
+    ]
+  }
+}

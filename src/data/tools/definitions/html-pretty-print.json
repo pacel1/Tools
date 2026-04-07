@@ -1,0 +1,23 @@
+{
+  "id": "html-pretty-print",
+  "type": "developer-tool",
+  "category": "html-tools",
+  "componentName": "HtmlPrettyPrintTool",
+  "logicModule": "html-pretty-print",
+  "inputSchema": "htmlPrettyPrintInputSchema",
+  "outputSchema": "htmlPrettyPrintOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "html-formatter",
+    "html-minifier",
+    "html-viewer",
+    "html-to-text"
+  ],
+  "seoPriority": 0.86
+}

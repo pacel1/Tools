@@ -1,0 +1,47 @@
+{
+  "toolId": "url-decoder",
+  "locale": "es",
+  "slug": "decodificador-url",
+  "h1": "Decodificador de URL",
+  "title": "Decodificador de URL",
+  "shortDescription": "Decodifica texto codificado en URL al instante, con resultados rápidos, uso sencillo y ejemplos prácticos.",
+  "overview": "Decodifica texto codificado en URL al instante. Esta página ofrece una respuesta rápida con una herramienta práctica y un flujo de resultados sencillo. Está pensada para usuarios que buscan una respuesta gratuita en línea, resultados rápidos en el navegador y contenido útil de cola larga.",
+  "howItWorks": [
+    "Introduce el valor o el texto necesario en el formulario.",
+    "La conversión, el cálculo o la transformación se ejecuta al instante en el navegador.",
+    "Revisa el resultado y continúa con herramientas relacionadas si necesitas otro paso."
+  ],
+  "examples": [
+    {
+      "title": "Ejemplo 1",
+      "input": "hello%20world%3Fx%3D1%26y%3D2",
+      "output": "hello world?x=1&y=2",
+      "description": "Un ejemplo realista de decodificador de URL para una búsqueda cotidiana."
+    },
+    {
+      "title": "Ejemplo 2",
+      "input": "hello%20world%3Fx%3D1%26y%3D2",
+      "output": "hello world?x=1&y=2",
+      "description": "Otro caso práctico pensado para tráfico orgánico de cola larga."
+    }
+  ],
+  "faq": [
+    {
+      "question": "¿Qué precisión tiene esta herramienta?",
+      "answer": "El resultado se calcula directamente a partir de la fórmula o la lógica en el navegador utilizada por esta herramienta."
+    },
+    {
+      "question": "¿Puedo usar esta herramienta en el móvil?",
+      "answer": "Sí. La página funciona en pantallas de escritorio y móviles con un diseño simple de entrada y resultado."
+    }
+  ],
+  "seo": {
+    "title": "Decodificador de URL",
+    "description": "Decodifica texto codificado en URL al instante. Decodificador de URL online gratis con resultados inmediatos.",
+    "keywords": [
+      "decodificador de url",
+      "decodificador url",
+      "herramienta developer-tools"
+    ]
+  }
+}

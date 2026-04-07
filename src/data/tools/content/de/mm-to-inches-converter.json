@@ -1,0 +1,47 @@
+{
+  "toolId": "mm-to-inches-converter",
+  "locale": "de",
+  "slug": "mm-in-zoll-umrechner",
+  "h1": "MM in Zoll Umrechner",
+  "title": "MM in Zoll Umrechner",
+  "shortDescription": "Wandle Millimeter sofort in Zoll um – mit schnellen Ergebnissen, einfacher Eingabe und praktischen Beispielen.",
+  "overview": "Wandle Millimeter sofort in Zoll um. Diese Seite liefert eine schnelle Antwort mit einem praktischen Tool und einem einfachen Ergebnisablauf. Die Seite richtet sich an Nutzer, die eine kostenlose Online-Antwort, schnelle browserbasierte Ergebnisse und praxisnahe Long-Tail-Tool-Inhalte suchen.",
+  "howItWorks": [
+    "Gib den gewünschten Wert oder Text in das Formular ein.",
+    "Die Umrechnung, Berechnung oder Umwandlung läuft sofort im Browser.",
+    "Prüfe das Ergebnis und nutze bei Bedarf verwandte Tools für den nächsten Schritt."
+  ],
+  "examples": [
+    {
+      "title": "Beispiel 1",
+      "input": "25 Millimeter",
+      "output": "0,9843 Zoll",
+      "description": "Ein realistisches Beispiel für die Umrechnung von mm in Zoll für eine alltägliche Suchanfrage."
+    },
+    {
+      "title": "Beispiel 2",
+      "input": "25 Millimeter",
+      "output": "0,9843 Zoll",
+      "description": "Ein weiterer praktischer Anwendungsfall für organischen Long-Tail-Traffic."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Wie genau ist dieses Tool?",
+      "answer": "Das Ergebnis wird direkt aus der Formel oder der browserseitigen Logik dieses Tools berechnet."
+    },
+    {
+      "question": "Kann ich dieses Tool auf dem Handy nutzen?",
+      "answer": "Ja. Die Seite funktioniert auf Desktop- und Mobilgeräten mit einem einfachen Eingabe- und Ergebnislayout."
+    }
+  ],
+  "seo": {
+    "title": "MM in Zoll Umrechner",
+    "description": "Wandle Millimeter sofort in Zoll um. Kostenloser Online-MM-in-Zoll-Umrechner mit sofortigen Ergebnissen.",
+    "keywords": [
+      "mm in zoll umrechner",
+      "mm zu zoll",
+      "umrechner tool"
+    ]
+  }
+}

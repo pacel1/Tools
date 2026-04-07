@@ -1,0 +1,29 @@
+{
+  "page": "contact",
+  "locale": "en",
+  "title": "Contact",
+  "metaTitle": "Contact ConvertBase.app",
+  "metaDescription": "Contact ConvertBase.app for policy questions, feedback, advertising concerns or general support.",
+  "heading": "Contact ConvertBase.app",
+  "content": [
+    "If you need help with a page, want to report an issue, or have questions about privacy, cookies, Google Analytics or Google AdSense, contact us by email.",
+    "We review messages related to legal pages, content quality, advertising concerns and general platform feedback."
+  ],
+  "sections": [
+    {
+      "title": "Email",
+      "paragraphs": [
+        "The main contact address for ConvertBase.app is contact@convertbase.app.",
+        "Please include the page URL, your browser or device, and a short description of the issue when relevant."
+      ]
+    },
+    {
+      "title": "Topics we can help with",
+      "paragraphs": [
+        "You can contact us about privacy questions, cookie settings, analytics disclosures, Google AdSense concerns, broken pages or incorrect tool outputs.",
+        "We may not reply to promotional or unrelated requests."
+      ]
+    }
+  ],
+  "keywords": ["contact convertbase", "contact convertbase.app", "privacy contact", "adsense contact", "analytics contact", "support email"]
+}

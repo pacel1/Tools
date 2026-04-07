@@ -1,0 +1,47 @@
+{
+  "toolId": "tip-calculator",
+  "locale": "de",
+  "slug": "trinkgeldrechner",
+  "h1": "Trinkgeldrechner",
+  "title": "Trinkgeldrechner",
+  "shortDescription": "Berechnen Sie Trinkgeld und Gesamtrechnung sofort mit schnellen Ergebnissen, einfachen Eingaben und praktischen Beispielen.",
+  "overview": "Berechnen Sie Trinkgeld und Gesamtrechnung sofort. Diese Seite liefert eine schnelle Antwort mit einem praktischen Tool und einem einfachen Ergebnisablauf. Sie richtet sich an Nutzer, die eine kostenlose Online-Antwort, schnelle Browser-Ergebnisse und praktische Long-Tail-Inhalte suchen.",
+  "howItWorks": [
+    "Geben Sie den erforderlichen Wert oder Text in das Formular ein.",
+    "Die Umrechnung, Berechnung oder Transformation läuft sofort im Browser.",
+    "Prüfen Sie das Ergebnis und nutzen Sie bei Bedarf verwandte Tools für den nächsten Schritt."
+  ],
+  "examples": [
+    {
+      "title": "Beispiel 1",
+      "input": "86 mit 15 % Trinkgeld",
+      "output": "98.90",
+      "description": "Ein realistisches Beispiel für einen Trinkgeldrechner bei einer alltäglichen Suchanfrage."
+    },
+    {
+      "title": "Beispiel 2",
+      "input": "86 mit 15 % Trinkgeld",
+      "output": "98.90",
+      "description": "Ein weiterer praktischer Anwendungsfall für organischen Long-Tail-Traffic."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Wie genau ist dieses Tool?",
+      "answer": "Das Ergebnis wird direkt aus der Formel oder der browserseitigen Logik dieses Tools berechnet."
+    },
+    {
+      "question": "Kann ich dieses Tool auf dem Smartphone nutzen?",
+      "answer": "Ja. Die Seite funktioniert auf Desktop- und Mobilgeräten mit einem einfachen Eingabe- und Ergebnislayout."
+    }
+  ],
+  "seo": {
+    "title": "Trinkgeldrechner",
+    "description": "Berechnen Sie Trinkgeld und Gesamtrechnung sofort. Kostenloser Trinkgeldrechner online mit sofortigen Ergebnissen.",
+    "keywords": [
+      "trinkgeldrechner",
+      "trinkgeld rechner",
+      "rechner tools"
+    ]
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "toolId": "html-to-text",
+  "locale": "fr",
+  "slug": "html-en-texte",
+  "h1": "HTML en texte",
+  "title": "HTML en texte",
+  "shortDescription": "Extrait du texte lisible depuis des extraits HTML et des documents complets.",
+  "metaTitle": "Convertisseur HTML en texte | Extraire du texte brut depuis le HTML",
+  "metaDescription": "Convertissez du HTML en texte brut instantanément dans votre navigateur. Extrayez du texte lisible à partir d’extraits ou de pages complètes, sans API externe.",
+  "intro": "Convertissez le HTML en texte brut clair et lisible directement dans votre navigateur. Collez un extrait ou un document complet, et l’outil supprime les balises pour ne garder que le contenu utile.",
+  "overview": "Cet outil HTML en texte est un convertisseur rapide côté client pour les développeurs, rédacteurs et équipes contenu. Il supprime le balisage de manière sûre, réduit le bruit et renvoie un texte brut plus simple à rechercher, indexer, citer ou réutiliser. Comme tout s’exécute en local, aucune API externe n’est nécessaire et le traitement HTML reste privé et conscient des risques XSS.",
+  "howItWorks": [
+    "Collez le HTML dans le champ de saisie.",
+    "L’outil analyse le balisage dans le navigateur.",
+    "Il supprime les balises HTML et renvoie un texte lisible.",
+    "Copiez le texte nettoyé ou utilisez-le dans votre flux de travail."
+  ],
+  "useCases": [
+    "Extraire du texte depuis le HTML d’un site pour des notes ou de la documentation.",
+    "Convertir des extraits en texte brut pour des e-mails, tickets ou chats.",
+    "Préparer du contenu pour l’indexation, la recherche ou l’analyse.",
+    "Retirer la mise en forme d’un HTML avant de le coller dans une autre application.",
+    "Prévisualiser la version texte lisible d’une page ou d’un composant."
+  ],
+  "examples": [
+    {
+      "title": "Paragraphe simple",
+      "input": "<p>Bonjour <strong>le monde</strong> !</p>",
+      "output": "Bonjour le monde !",
+      "description": "Les balises sont supprimées et le texte reste lisible."
+    },
+    {
+      "title": "Liens et listes",
+      "input": "<div><a href=\"/docs\">Documentation</a><ul><li>Un</li><li>Deux</li></ul></div>",
+      "output": "Documentation\nUn\nDeux",
+      "description": "Le contenu textuel est conservé dans une sortie propre."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Cet outil conserve-t-il les balises HTML ?",
+      "answer": "Non. Il supprime les balises et renvoie uniquement du texte brut."
+    },
+    {
+      "question": "La conversion se fait-elle dans le navigateur ?",
+      "answer": "Oui. L’outil utilise une logique côté client et n’appelle aucune API externe."
+    },
+    {
+      "question": "Puis-je convertir des documents HTML complets ?",
+      "answer": "Oui. Il fonctionne aussi bien avec de courts extraits qu’avec des documents complets."
+    },
+    {
+      "question": "Mon HTML est-il envoyé à un serveur ?",
+      "answer": "Non. Le contenu est traité localement dans votre navigateur."
+    }
+  ],
+  "uiLabels": {
+    "copy": "Copier",
+    "copied": "Copié",
+    "input": "HTML input",
+    "output": "Texte brut",
+    "placeholder": "Collez le HTML ici...",
+    "indent": "Retrait",
+    "removeComments": "Supprimer les commentaires",
+    "preview": "Aperçu",
+    "source": "Source",
+    "sanitizedHtml": "HTML nettoyé",
+    "plainText": "Texte brut",
+    "summary": "Résumé",
+    "total": "Total",
+    "links": "Liens",
+    "images": "Images",
+    "errors": "Erreurs",
+    "warnings": "Avertissements",
+    "valid": "Valide",
+    "invalid": "Invalide",
+    "href": "Href",
+    "text": "Texte",
+    "rel": "Rel",
+    "target": "Target",
+    "alt": "Alt",
+    "width": "Largeur",
+    "height": "Hauteur",
+    "empty": "Vide",
+    "outputReady": "Résultat prêt",
+    "cleanedHtml": "HTML nettoyé",
+    "formattedHtml": "HTML formaté",
+    "minifiedHtml": "HTML minifié",
+    "markdown": "Markdown",
+    "extractedImages": "Images extraites",
+    "extractedLinks": "Liens extraits",
+    "validationSummary": "Résumé de validation",
+    "prettyHtml": "HTML lisible",
+    "encodedText": "Texte encodé"
+  },
+  "seo": {
+    "title": "Convertisseur HTML en texte",
+    "description": "Extrayez instantanément du texte brut depuis des extraits HTML et des documents complets dans votre navigateur.",
+    "keywords": [
+      "html en texte",
+      "html vers texte",
+      "convertisseur html en texte",
+      "supprimer les balises html",
+      "texte brut"
+    ]
+  }
+}

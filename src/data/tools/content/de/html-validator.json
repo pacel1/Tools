@@ -1,0 +1,109 @@
+{
+  "toolId": "html-validator",
+  "locale": "de",
+  "slug": "html-validator",
+  "h1": "HTML-Validator",
+  "title": "HTML-Validator",
+  "shortDescription": "Prüfe HTML auf unsichere Markups, doppelte IDs und typische Qualitätsprobleme.",
+  "metaTitle": "HTML-Validator | Unsicheres HTML, doppelte IDs und Fehler prüfen",
+  "metaDescription": "HTML online prüfen auf unsichere Tags, doppelte IDs, fehlerhafte Struktur und praktische Qualitätsprobleme mit einem schnellen Browser-Validator.",
+  "intro": "Prüfe HTML vor der Veröffentlichung auf unsichere Markups, doppelte IDs, fehlerhafte Struktur und weitere praktische Probleme.",
+  "overview": "Dieser HTML-Validator hilft dir, typische Markup-Probleme schnell zu erkennen. Er ist nützlich, um unsichere Elemente, doppelte IDs, falsche Verschachtelungen, fehlende Attribute und Qualitätsprobleme zu finden, die Barrierefreiheit, SEO und Rendering beeinträchtigen können. Das Tool läuft clientseitig, sodass dein HTML im Browser bleibt.",
+  "howItWorks": [
+    "HTML in das Eingabefeld einfügen.",
+    "Die Prüfung starten, um Tags, Attribute, Struktur und IDs zu analysieren.",
+    "Fehler, Warnungen und Details zum sicheren Ergebnis ansehen.",
+    "Probleme beheben und erneut prüfen, bis das HTML sauber ist."
+  ],
+  "useCases": [
+    "Seitenvorlagen vor dem Livegang validieren.",
+    "CMS-Inhalte auf unsichere oder fehlerhafte Markups prüfen.",
+    "Doppelte IDs finden, die Skripte und Barrierefreiheit stören können.",
+    "HTML aus Editoren, E-Mails oder Page-Buildern überprüfen.",
+    "Fehlendes alt, leere Links und andere Qualitätsprobleme erkennen."
+  ],
+  "examples": [
+    {
+      "title": "Einfache Prüfung",
+      "input": "<div id=\"hero\"><a href=\"#\">Mehr lesen</a></div>",
+      "output": "Zeigt Struktur- und Qualitätsprüfungen für das angegebene HTML an.",
+      "description": "Geeignet für einen schnellen Check von einfachem Markup."
+    },
+    {
+      "title": "Prüfung auf unsichere Markups",
+      "input": "<script>alert('x')</script><p>Text</p>",
+      "output": "Markiert unsichere Elemente und mögliche Sicherheitsrisiken.",
+      "description": "Hilft, Code zu erkennen, der nicht veröffentlicht werden sollte."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Ändert dieses Tool mein HTML?",
+      "answer": "Nein. Es analysiert nur das HTML und zeigt Fehler, Warnungen sowie Validierungsdetails an."
+    },
+    {
+      "question": "Erkennt es unsichere Markups?",
+      "answer": "Ja. Es prüft auf riskante Tags und Muster, die in veröffentlichten Inhalten unsicher sein können."
+    },
+    {
+      "question": "Findet es doppelte IDs?",
+      "answer": "Ja. Doppelte IDs werden gemeldet, weil sie Anker, Skripte und Barrierefreiheit beeinträchtigen können."
+    },
+    {
+      "question": "Läuft die Validierung im Browser?",
+      "answer": "Ja. Das Tool ist für die Nutzung im Client ausgelegt und benötigt keine externe API."
+    }
+  ],
+  "uiLabels": {
+    "copy": "Kopieren",
+    "copied": "Kopiert",
+    "input": "HTML input",
+    "output": "Validation summary",
+    "placeholder": "HTML hier einfügen",
+    "indent": "Einzug",
+    "removeComments": "Kommentare entfernen",
+    "preview": "Vorschau",
+    "source": "Quelle",
+    "sanitizedHtml": "Bereinigtes HTML",
+    "plainText": "Nur-Text",
+    "summary": "Zusammenfassung",
+    "total": "Gesamt",
+    "links": "Links",
+    "images": "Bilder",
+    "errors": "Fehler",
+    "warnings": "Warnungen",
+    "valid": "Gültig",
+    "invalid": "Ungültig",
+    "href": "Href",
+    "text": "Text",
+    "rel": "Rel",
+    "target": "Target",
+    "alt": "Alt",
+    "width": "Breite",
+    "height": "Höhe",
+    "empty": "Leer",
+    "outputReady": "Ausgabe bereit",
+    "cleanedHtml": "Bereinigtes HTML",
+    "formattedHtml": "Formatiertes HTML",
+    "minifiedHtml": "Minimiertes HTML",
+    "markdown": "Markdown",
+    "extractedImages": "Extrahierte Bilder",
+    "extractedLinks": "Extrahierte Links",
+    "validationSummary": "Validierungszusammenfassung",
+    "prettyHtml": "Lesbares HTML",
+    "encodedText": "Codierter Text"
+  },
+  "seo": {
+    "title": "HTML-Validator | Unsicheres HTML, doppelte IDs und Fehler prüfen",
+    "description": "HTML online prüfen auf unsichere Tags, doppelte IDs, fehlerhafte Struktur und praktische Qualitätsprobleme mit einem schnellen Browser-Validator.",
+    "keywords": [
+      "html validator",
+      "html prüfen",
+      "html überprüfen",
+      "html checker",
+      "doppelte ids",
+      "unsicheres html",
+      "html qualität prüfen"
+    ]
+  }
+}

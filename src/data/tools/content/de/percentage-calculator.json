@@ -1,0 +1,47 @@
+{
+  "toolId": "percentage-calculator",
+  "locale": "de",
+  "slug": "prozentsatz-rechner",
+  "h1": "Prozentsatz-Rechner",
+  "title": "Prozentsatz-Rechner",
+  "shortDescription": "Berechnen Sie, wie viel Prozent eine Zahl von einer anderen ist – mit schnellen Ergebnissen, einfachen Eingaben und praktischen Beispielen.",
+  "overview": "Berechnen Sie, wie viel Prozent eine Zahl von einer anderen ist. Diese Seite liefert mit einem praktischen Online-Tool und einem einfachen Ergebnisablauf eine schnelle Antwort. Sie richtet sich an Nutzer, die eine kostenlose Online-Antwort, sofortige Ergebnisse im Browser und praxisnahe Long-Tail-Inhalte suchen.",
+  "howItWorks": [
+    "Geben Sie den erforderlichen Wert oder Text in das Formular ein.",
+    "Die Umrechnung, Berechnung oder Transformation erfolgt sofort im Browser.",
+    "Prüfen Sie das Ergebnis und nutzen Sie bei Bedarf passende Folge-Tools."
+  ],
+  "examples": [
+    {
+      "title": "Beispiel 1",
+      "input": "25 von 200",
+      "output": "12,5 %",
+      "description": "Ein realistisches Beispiel für den Prozentsatz-Rechner bei einer alltäglichen Suchanfrage."
+    },
+    {
+      "title": "Beispiel 2",
+      "input": "25 von 200",
+      "output": "12,5 %",
+      "description": "Ein weiterer praktischer Anwendungsfall für organischen Long-Tail-Traffic."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Wie genau ist dieses Tool?",
+      "answer": "Das Ergebnis wird direkt aus der Formel oder der browserseitigen Logik dieses Tools berechnet."
+    },
+    {
+      "question": "Kann ich dieses Tool auf dem Handy verwenden?",
+      "answer": "Ja. Die Seite funktioniert auf Desktop- und Mobilgeräten mit einem einfachen Eingabe- und Ergebnislayout."
+    }
+  ],
+  "seo": {
+    "title": "Prozentsatz-Rechner",
+    "description": "Berechnen Sie, wie viel Prozent eine Zahl von einer anderen ist. Kostenloser Online-Prozentsatz-Rechner mit sofortigen Ergebnissen.",
+    "keywords": [
+      "prozentsatz rechner",
+      "prozentrechner",
+      "rechner tool"
+    ]
+  }
+}

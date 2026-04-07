@@ -1,0 +1,23 @@
+{
+  "id": "url-encoder",
+  "type": "developer-tool",
+  "category": "developer-tools",
+  "componentName": "UrlEncoderTool",
+  "logicModule": "url-encoder",
+  "inputSchema": "urlEncoderInputSchema",
+  "outputSchema": "urlEncoderOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "json-validator",
+    "json-formatter",
+    "json-minifier",
+    "base64-decoder"
+  ],
+  "seoPriority": 0.86
+}

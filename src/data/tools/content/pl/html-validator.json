@@ -1,0 +1,109 @@
+{
+  "toolId": "html-validator",
+  "locale": "pl",
+  "slug": "walidator-html",
+  "h1": "Walidator HTML",
+  "title": "Walidator HTML",
+  "shortDescription": "Sprawdzaj HTML pod kątem niebezpiecznego kodu, duplikatów identyfikatorów i typowych problemów jakości.",
+  "metaTitle": "Walidator HTML | Sprawdź niebezpieczny HTML, duplikaty ID i błędy",
+  "metaDescription": "Sprawdź HTML online pod kątem niebezpiecznych tagów, duplikatów ID, błędnej struktury i problemów jakościowych w szybkim walidatorze działającym w przeglądarce.",
+  "intro": "Sprawdź HTML pod kątem niebezpiecznego kodu, duplikatów ID, błędnej struktury i innych praktycznych problemów przed publikacją.",
+  "overview": "Ten walidator HTML pomaga szybko wykrywać typowe problemy w kodzie. Przydaje się do sprawdzania niebezpiecznych elementów, duplikatów ID, nieprawidłowego zagnieżdżenia, brakujących atrybutów i błędów jakości, które mogą wpływać na dostępność, SEO i renderowanie. Narzędzie działa po stronie przeglądarki, więc Twój HTML nie opuszcza urządzenia.",
+  "howItWorks": [
+    "Wklej HTML do pola wejściowego.",
+    "Uruchom walidację, aby przeskanować tagi, atrybuty, strukturę i identyfikatory.",
+    "Przejrzyj błędy, ostrzeżenia i szczegóły bezpiecznego wyniku.",
+    "Popraw wykryte problemy i sprawdź HTML ponownie."
+  ],
+  "useCases": [
+    "Sprawdzanie szablonów stron przed wdrożeniem.",
+    "Kontrola treści z CMS pod kątem niebezpiecznego lub niechlujnego kodu.",
+    "Wykrywanie duplikatów ID, które mogą psuć skrypty i dostępność.",
+    "Przegląd HTML wklejonego z edytorów, maili lub kreatorów stron.",
+    "Wyszukiwanie brakującego alt, pustych linków i innych problemów jakości."
+  ],
+  "examples": [
+    {
+      "title": "Podstawowa walidacja",
+      "input": "<div id=\"hero\"><a href=\"#\">Czytaj więcej</a></div>",
+      "output": "Zgłasza kontrolę struktury i jakości dla podanego HTML.",
+      "description": "Użyj do szybkiego sprawdzenia prostego kodu."
+    },
+    {
+      "title": "Skan niebezpiecznego kodu",
+      "input": "<script>alert('x')</script><p ტექst</p>",
+      "output": "Wykrywa niebezpieczne elementy i możliwe ryzyka bezpieczeństwa.",
+      "description": "Pomaga znaleźć kod, którego nie należy publikować."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Czy to narzędzie zmienia mój HTML?",
+      "answer": "Nie. Narzędzie tylko analizuje HTML i pokazuje błędy, ostrzeżenia oraz szczegóły walidacji."
+    },
+    {
+      "question": "Czy wykrywa niebezpieczny kod?",
+      "answer": "Tak. Sprawdza ryzykowne tagi i wzorce, które mogą być niebezpieczne w publikowanej treści."
+    },
+    {
+      "question": "Czy znajduje duplikaty ID?",
+      "answer": "Tak. Duplikaty ID są zgłaszane, ponieważ mogą psuć kotwice, skrypty i dostępność."
+    },
+    {
+      "question": "Czy walidacja działa w przeglądarce?",
+      "answer": "Tak. Narzędzie jest przeznaczone do działania po stronie klienta i nie wymaga zewnętrznego API."
+    }
+  ],
+  "uiLabels": {
+    "copy": "Kopiuj",
+    "copied": "Skopiowano",
+    "input": "HTML input",
+    "output": "Validation summary",
+    "placeholder": "Wklej HTML tutaj",
+    "indent": "Wcięcie",
+    "removeComments": "Usuń komentarze",
+    "preview": "Podgląd",
+    "source": "Źródło",
+    "sanitizedHtml": "Oczyszczony HTML",
+    "plainText": "Czysty tekst",
+    "summary": "Podsumowanie",
+    "total": "Razem",
+    "links": "Linki",
+    "images": "Obrazy",
+    "errors": "Błędy",
+    "warnings": "Ostrzeżenia",
+    "valid": "Poprawny",
+    "invalid": "Niepoprawny",
+    "href": "Href",
+    "text": "Tekst",
+    "rel": "Rel",
+    "target": "Target",
+    "alt": "Alt",
+    "width": "Szerokość",
+    "height": "Wysokość",
+    "empty": "Puste",
+    "outputReady": "Wynik gotowy",
+    "cleanedHtml": "Oczyszczony HTML",
+    "formattedHtml": "Sformatowany HTML",
+    "minifiedHtml": "Zminimalizowany HTML",
+    "markdown": "Markdown",
+    "extractedImages": "Wyodrębnione obrazy",
+    "extractedLinks": "Wyodrębnione linki",
+    "validationSummary": "Podsumowanie walidacji",
+    "prettyHtml": "Czytelny HTML",
+    "encodedText": "Zakodowany tekst"
+  },
+  "seo": {
+    "title": "Walidator HTML | Sprawdź niebezpieczny HTML, duplikaty ID i błędy",
+    "description": "Sprawdź HTML online pod kątem niebezpiecznych tagów, duplikatów ID, błędnej struktury i problemów jakościowych w szybkim walidatorze działającym w przeglądarce.",
+    "keywords": [
+      "walidator html",
+      "sprawdź html",
+      "kontrola html",
+      "sprawdzanie html",
+      "walidator kodu html",
+      "duplikaty id",
+      "niebezpieczny html"
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "toolId": "discount-calculator",
+  "locale": "de",
+  "slug": "rabatt-rechner",
+  "h1": "Rabatt-Rechner",
+  "title": "Rabatt-Rechner",
+  "shortDescription": "Berechne den Endpreis nach einem Rabatt in Prozent – schnell, einfach und mit praxisnahen Beispielen.",
+  "overview": "Berechne den Verkaufspreis nach einem prozentualen Rabatt. Diese Seite liefert mit einem praktischen Online-Tool und einem einfachen Ergebnisablauf eine schnelle Antwort. Sie richtet sich an Nutzer, die eine kostenlose Online-Antwort, sofortige Ergebnisse im Browser und praxisnahe Inhalte für Long-Tail-Suchanfragen suchen.",
+  "howItWorks": [
+    "Gib den erforderlichen Wert in das Formular ein.",
+    "Die Berechnung erfolgt sofort im Browser.",
+    "Prüfe das Ergebnis und nutze bei Bedarf weitere passende Tools."
+  ],
+  "examples": [
+    {
+      "title": "Beispiel 1",
+      "input": "100 mit 20 % Rabatt",
+      "output": "80",
+      "description": "Ein realistisches Beispiel für einen Rabatt-Rechner bei einer typischen Suchanfrage."
+    },
+    {
+      "title": "Beispiel 2",
+      "input": "100 mit 20 % Rabatt",
+      "output": "80",
+      "description": "Ein weiteres praktisches Beispiel für organischen Long-Tail-Traffic."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Wie genau ist dieses Tool?",
+      "answer": "Das Ergebnis wird direkt anhand der Formel oder der browserseitigen Logik dieses Tools berechnet."
+    },
+    {
+      "question": "Kann ich das Tool auf dem Smartphone nutzen?",
+      "answer": "Ja. Die Seite funktioniert auf Desktop- und Mobilgeräten mit einem einfachen Eingabe- und Ergebnislayout."
+    }
+  ],
+  "seo": {
+    "title": "Rabatt-Rechner",
+    "description": "Berechne den Endpreis nach einem prozentualen Rabatt. Kostenloser Rabatt-Rechner online mit sofortigem Ergebnis.",
+    "keywords": [
+      "rabatt rechner",
+      "rabatt rechner",
+      "rechner tools"
+    ]
+  }
+}

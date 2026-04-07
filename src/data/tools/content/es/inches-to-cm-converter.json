@@ -1,0 +1,47 @@
+{
+  "toolId": "inches-to-cm-converter",
+  "locale": "es",
+  "slug": "convertidor-de-pulgadas-a-centimetros",
+  "h1": "Convertidor de pulgadas a centímetros",
+  "title": "Convertidor de pulgadas a centímetros",
+  "shortDescription": "Convierte pulgadas a centímetros al instante con resultados rápidos, entradas sencillas y ejemplos prácticos.",
+  "overview": "Convierte pulgadas a centímetros al instante. Esta página ofrece una respuesta rápida con una herramienta útil en línea y un flujo de resultados sencillo. Está pensada para quienes buscan una respuesta gratuita en línea, resultados rápidos desde el navegador y contenido práctico para búsquedas de cola larga.",
+  "howItWorks": [
+    "Introduce el valor o texto requerido en el formulario.",
+    "La conversión, el cálculo o la transformación se realiza al instante en el navegador.",
+    "Revisa el resultado y continúa con herramientas relacionadas si necesitas otro paso."
+  ],
+  "examples": [
+    {
+      "title": "Ejemplo 1",
+      "input": "10 pulgadas",
+      "output": "25,4 centímetros",
+      "description": "Un ejemplo realista de conversión de pulgadas a cm para una búsqueda cotidiana."
+    },
+    {
+      "title": "Ejemplo 2",
+      "input": "10 pulgadas",
+      "output": "25,4 centímetros",
+      "description": "Otro caso de uso práctico para tráfico orgánico de cola larga."
+    }
+  ],
+  "faq": [
+    {
+      "question": "¿Qué precisión tiene esta herramienta?",
+      "answer": "El resultado se calcula directamente a partir de la fórmula o de la lógica en el navegador utilizada por esta herramienta."
+    },
+    {
+      "question": "¿Puedo usar esta herramienta en el móvil?",
+      "answer": "Sí. La página funciona en escritorio y en pantallas móviles con un diseño sencillo de entrada y resultado."
+    }
+  ],
+  "seo": {
+    "title": "Convertidor de pulgadas a centímetros",
+    "description": "Convierte pulgadas a centímetros al instante. Convertidor gratis online de pulgadas a cm con resultados inmediatos.",
+    "keywords": [
+      "convertidor de pulgadas a cm",
+      "convertidor de pulgadas a centímetros",
+      "herramienta de conversion"
+    ]
+  }
+}

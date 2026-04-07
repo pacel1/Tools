@@ -1,0 +1,47 @@
+{
+  "toolId": "json-validator",
+  "locale": "de",
+  "slug": "json-validator",
+  "h1": "JSON-Validator",
+  "title": "JSON-Validator",
+  "shortDescription": "JSON validieren und Fehler sofort erkennen – mit schnellen Ergebnissen, einfacher Eingabe und praktischen Beispielen.",
+  "overview": "JSON validieren und Fehler sofort erkennen. Diese Seite liefert eine schnelle Antwort mit einem praktischen Tool und einem einfachen Ergebnisablauf. Sie richtet sich an Nutzer, die eine kostenlose Online-Antwort, schnelle browserbasierte Ergebnisse und praktische Long-Tail-Tool-Inhalte suchen.",
+  "howItWorks": [
+    "Geben Sie den benötigten Wert oder Text in das Formular ein.",
+    "Die Konvertierung, Berechnung oder Umwandlung läuft sofort im Browser.",
+    "Prüfen Sie das Ergebnis und nutzen Sie bei Bedarf weitere verwandte Tools."
+  ],
+  "examples": [
+    {
+      "title": "Beispiel 1",
+      "input": "{\"items\":[1,2,3]}",
+      "output": "Gültiges JSON",
+      "description": "Ein realistisches JSON-Validator-Beispiel für eine alltägliche Suchanfrage."
+    },
+    {
+      "title": "Beispiel 2",
+      "input": "{\"items\":[1,2,3]}",
+      "output": "Gültiges JSON",
+      "description": "Ein weiteres praktisches Anwendungsbeispiel für organischen Long-Tail-Traffic."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Wie genau ist dieses Tool?",
+      "answer": "Das Ergebnis wird direkt aus der Formel oder der browserseitigen Logik dieses Tools berechnet."
+    },
+    {
+      "question": "Kann ich dieses Tool auf dem Handy nutzen?",
+      "answer": "Ja. Die Seite funktioniert auf Desktop- und Mobilgeräten mit einem einfachen Eingabe- und Ergebnislayout."
+    }
+  ],
+  "seo": {
+    "title": "JSON-Validator",
+    "description": "JSON validieren und Fehler sofort erkennen. Kostenloser Online-JSON-Validator mit sofortigen Ergebnissen.",
+    "keywords": [
+      "json-validator",
+      "json-validator",
+      "developer-tools tool"
+    ]
+  }
+}

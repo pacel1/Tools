@@ -1,0 +1,47 @@
+{
+  "toolId": "meters-to-feet-converter",
+  "locale": "es",
+  "slug": "conversor-de-metros-a-pies",
+  "h1": "Conversor de metros a pies",
+  "title": "Conversor de metros a pies",
+  "shortDescription": "Convierte metros a pies al instante con resultados rápidos, entradas sencillas y ejemplos prácticos.",
+  "overview": "Convierte metros a pies al instante. Esta página ofrece una respuesta rápida con una herramienta útil y un flujo de resultados sencillo. Está pensada para usuarios que buscan una respuesta gratis en línea, resultados rápidos en el navegador y contenido práctico de cola larga.",
+  "howItWorks": [
+    "Introduce el valor o texto requerido en el formulario.",
+    "La conversión, el cálculo o la transformación se ejecuta al instante en el navegador.",
+    "Revisa el resultado y continúa con herramientas relacionadas si necesitas otro paso."
+  ],
+  "examples": [
+    {
+      "title": "Ejemplo 1",
+      "input": "2 metros",
+      "output": "6,5617 pies",
+      "description": "Un ejemplo realista de conversión de metros a pies para una búsqueda habitual."
+    },
+    {
+      "title": "Ejemplo 2",
+      "input": "2 metros",
+      "output": "6,5617 pies",
+      "description": "Otro caso práctico para captar tráfico orgánico de cola larga."
+    }
+  ],
+  "faq": [
+    {
+      "question": "¿Qué precisión tiene esta herramienta?",
+      "answer": "El resultado se calcula directamente a partir de la fórmula o la lógica que utiliza esta herramienta en el navegador."
+    },
+    {
+      "question": "¿Puedo usar esta herramienta en el móvil?",
+      "answer": "Sí. La página funciona en escritorio y en móvil con un diseño simple de entrada y resultado."
+    }
+  ],
+  "seo": {
+    "title": "Conversor de metros a pies",
+    "description": "Convierte metros a pies al instante. Conversor online gratis de metros a pies con resultados inmediatos.",
+    "keywords": [
+      "conversor de metros a pies",
+      "convertir metros a pies",
+      "herramienta de conversión"
+    ]
+  }
+}

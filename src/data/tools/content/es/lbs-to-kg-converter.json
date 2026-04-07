@@ -1,0 +1,47 @@
+{
+  "toolId": "lbs-to-kg-converter",
+  "locale": "es",
+  "slug": "conversor-de-libras-a-kilogramos",
+  "h1": "Conversor de libras a kilogramos",
+  "title": "Conversor de libras a kilogramos",
+  "shortDescription": "Convierte libras a kilogramos al instante con resultados rápidos, entradas sencillas y ejemplos prácticos.",
+  "overview": "Convierte libras a kilogramos al instante. Esta página ofrece una respuesta rápida con una herramienta práctica y un flujo de resultados sencillo. Está pensada para quienes buscan una respuesta gratuita en línea, resultados rápidos en el navegador y contenido útil de cola larga sobre conversión de libras a kilogramos.",
+  "howItWorks": [
+    "Introduce el valor requerido en el formulario.",
+    "La conversión, el cálculo o la transformación se ejecuta al instante en el navegador.",
+    "Revisa el resultado y sigue con herramientas relacionadas si necesitas otro paso."
+  ],
+  "examples": [
+    {
+      "title": "Ejemplo 1",
+      "input": "10 libras",
+      "output": "4,5359 kilogramos",
+      "description": "Un ejemplo realista de conversión de libras a kilogramos para una búsqueda cotidiana."
+    },
+    {
+      "title": "Ejemplo 2",
+      "input": "10 libras",
+      "output": "4,5359 kilogramos",
+      "description": "Otro caso práctico para captar tráfico orgánico de cola larga."
+    }
+  ],
+  "faq": [
+    {
+      "question": "¿Qué precisión tiene esta herramienta?",
+      "answer": "El resultado se calcula directamente a partir de la fórmula o de la lógica en el navegador utilizada por esta herramienta."
+    },
+    {
+      "question": "¿Puedo usar esta herramienta en el móvil?",
+      "answer": "Sí. La página funciona en ordenadores y móviles con un diseño sencillo de entrada y resultado."
+    }
+  ],
+  "seo": {
+    "title": "Conversor de libras a kilogramos",
+    "description": "Convierte libras a kilogramos al instante. Conversor online gratuito de libras a kilogramos con resultados inmediatos.",
+    "keywords": [
+      "conversor de libras a kilogramos",
+      "libras a kilogramos",
+      "herramienta de conversión"
+    ]
+  }
+}

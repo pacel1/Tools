@@ -1,0 +1,47 @@
+{
+  "toolId": "reading-time-calculator",
+  "locale": "pl",
+  "slug": "kalkulator-czasu-czytania",
+  "h1": "Kalkulator czasu czytania",
+  "title": "Kalkulator czasu czytania",
+  "shortDescription": "Osządź czas potrzebny na przeczytanie tekstu na podstawie liczby słów — natychmiast, z szybkim wynikiem, prostym interfejsem i praktycznymi przykładami.",
+  "overview": "Osządź czas czytania na podstawie liczby słów od razu. Ta strona daje szybką odpowiedź dzięki praktycznemu narzędziu i prostemu procesowi wyświetlania wyniku. To rozwiązanie dla osób szukających darmowej odpowiedzi online, błyskawicznych wyników w przeglądarce i praktycznych treści long-tail związanych z narzędziami tekstowymi.",
+  "howItWorks": [
+    "Wpisz wymagane dane lub tekst w formularzu.",
+    "Obliczenie, konwersja lub przekształcenie odbywa się natychmiast w przeglądarce.",
+    "Sprawdź wynik i skorzystaj z powiązanych narzędzi, jeśli potrzebujesz kolejnego kroku."
+  ],
+  "examples": [
+    {
+      "title": "Przykład 1",
+      "input": "Szkic wpisu na bloga",
+      "output": "Szacowany czas czytania",
+      "description": "Realistyczny przykład kalkulatora czasu czytania dla codziennego zapytania."
+    },
+    {
+      "title": "Przykład 2",
+      "input": "Szkic wpisu na bloga",
+      "output": "Szacowany czas czytania",
+      "description": "Kolejny praktyczny przypadek użycia dla organicznego ruchu z długiego ogona."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Jak dokładne jest to narzędzie?",
+      "answer": "Wynik jest obliczany bezpośrednio na podstawie wzoru lub logiki po stronie przeglądarki używanej przez to narzędzie."
+    },
+    {
+      "question": "Czy mogę używać tego narzędzia na telefonie?",
+      "answer": "Tak. Strona działa na komputerach i urządzeniach mobilnych, oferując prosty układ pola wejściowego i wyniku."
+    }
+  ],
+  "seo": {
+    "title": "Kalkulator czasu czytania",
+    "description": "Osządź czas czytania na podstawie liczby słów od razu. Darmowy kalkulator czasu czytania online z natychmiastowym wynikiem.",
+    "keywords": [
+      "kalkulator czasu czytania",
+      "kalkulator czasu czytania",
+      "narzedzie text-tools"
+    ]
+  }
+}

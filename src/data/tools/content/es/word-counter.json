@@ -1,0 +1,47 @@
+{
+  "toolId": "word-counter",
+  "locale": "es",
+  "slug": "contador-de-palabras",
+  "h1": "Contador de palabras",
+  "title": "Contador de palabras",
+  "shortDescription": "Cuenta palabras, caracteres, párrafos y tiempo de lectura en una sola herramienta ligera de análisis de texto.",
+  "overview": "El contador de palabras analiza el texto localmente en el navegador y devuelve estadísticas rápidas para escritores, editores, profesionales del marketing y estudiantes. Está diseñado para ser económico a gran escala porque no necesita base de datos ni API externa para el cálculo en tiempo real.",
+  "howItWorks": [
+    "Pega o escribe tu texto en el área de texto.",
+    "La herramienta limpia los espacios en blanco y cuenta palabras, caracteres y bloques de párrafo.",
+    "El tiempo de lectura se calcula con una referencia de 200 palabras por minuto."
+  ],
+  "examples": [
+    {
+      "title": "Borrador de meta descripción",
+      "input": "Un breve resumen SEO para una landing page.",
+      "output": "8 palabras",
+      "description": "Comprueba rápidamente que el texto sea conciso antes de publicar."
+    },
+    {
+      "title": "Párrafo de blog",
+      "input": "Un fragmento de artículo de dos párrafos con saltos de línea.",
+      "output": "Palabras, caracteres y tiempo de lectura",
+      "description": "Muy útil para briefings de contenido y control editorial de calidad."
+    }
+  ],
+  "faq": [
+    {
+      "question": "¿El conteo se realiza en el lado del cliente?",
+      "answer": "Sí. El ejemplo inicial calcula todo directamente en el navegador para ofrecer velocidad y evitar costes de infraestructura."
+    },
+    {
+      "question": "¿Cómo se estima el tiempo de lectura?",
+      "answer": "La métrica de tiempo de lectura divide el número de palabras entre 200 y redondea el resultado a dos decimales."
+    }
+  ],
+  "seo": {
+    "title": "Contador de palabras online",
+    "description": "Contador de palabras online gratuito para palabras, caracteres, párrafos y tiempo de lectura.",
+    "keywords": [
+      "contador de palabras",
+      "contador de caracteres",
+      "calculadora de tiempo de lectura"
+    ]
+  }
+}

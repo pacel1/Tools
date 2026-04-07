@@ -1,0 +1,108 @@
+{
+  "toolId": "html-pretty-print",
+  "locale": "fr",
+  "slug": "html-pretty-print",
+  "h1": "HTML Pretty Print",
+  "title": "HTML Pretty Print",
+  "shortDescription": "Formatez le HTML avec un espacement stable pour les revues, audits et débogages.",
+  "metaTitle": "HTML Pretty Print | Formater du HTML lisible",
+  "metaDescription": "Formatez le HTML avec un espacement stable pour les revues, audits et débogages. Nettoyez le balisage dans votre navigateur avec un formateur HTML rapide côté client.",
+  "intro": "Transformez un balisage désordonné en HTML lisible avec une indentation et un espacement cohérents. Ce formateur HTML fonctionne dans le navigateur et aide à relire le code, comparer les changements et déboguer sans envoi vers un serveur.",
+  "overview": "Le formatage HTML convertit un balisage compact ou illisible en HTML propre et indenté, plus facile à examiner. C’est utile pour vérifier des éléments imbriqués, contrôler les attributs et préparer du code pour des audits ou des transmissions. Le traitement s’effectue dans le navigateur pour un flux rapide et privé.",
+  "howItWorks": [
+    "Collez votre HTML dans le champ de saisie.",
+    "Choisissez des options de mise en forme comme l’indentation ou la gestion des commentaires, si elles sont disponibles.",
+    "Générez instantanément le HTML formaté dans votre navigateur.",
+    "Copiez le résultat pour les revues, le débogage ou la documentation."
+  ],
+  "useCases": [
+    "Relire la structure HTML avant mise en production.",
+    "Déboguer un balisage imbriqué ou minifié.",
+    "Préparer des extraits de code pour les revues de code et les audits.",
+    "Rendre le HTML copié plus lisible dans la documentation ou les tickets."
+  ],
+  "examples": [
+    {
+      "title": "Balisage compact",
+      "input": "<div><span>Hi</span><a href='/docs'>Docs</a></div>",
+      "output": "<div>\n  <span>Hi</span>\n  <a href=\"/docs\">Docs</a>\n</div>",
+      "description": "Transforme un HTML compact en bloc lisible."
+    },
+    {
+      "title": "Contenu imbriqué",
+      "input": "<ul><li>One</li><li><strong>Two</strong></li></ul>",
+      "output": "<ul>\n  <li>One</li>\n  <li><strong>Two</strong></li>\n</ul>",
+      "description": "Simplifie l’inspection des listes imbriquées."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Ce formateur HTML est-il sûr à utiliser ?",
+      "answer": "Oui. Il est conçu pour un usage côté client et doit traiter le HTML de manière sûre, avec une prise en compte des risques XSS."
+    },
+    {
+      "question": "Le formatage modifie-t-il le contenu ?",
+      "answer": "L’outil se concentre sur les espaces et l’indentation. Il doit préserver le sens de votre HTML tout en améliorant sa lisibilité."
+    },
+    {
+      "question": "Puis-je l’utiliser sur du HTML minifié ?",
+      "answer": "Oui. Il est idéal pour développer un balisage compact ou minifié avant une revue ou un débogage."
+    },
+    {
+      "question": "Fonctionne-t-il uniquement dans le navigateur ?",
+      "answer": "Oui. Le flux est entièrement côté client et ne nécessite aucune API externe."
+    }
+  ],
+  "uiLabels": {
+    "copy": "Copier",
+    "copied": "Copié",
+    "input": "Entrée",
+    "output": "Sortie",
+    "placeholder": "Collez le HTML ici",
+    "indent": "Retrait",
+    "removeComments": "Supprimer les commentaires",
+    "preview": "Aperçu",
+    "source": "Source",
+    "sanitizedHtml": "HTML assaini",
+    "plainText": "Texte brut",
+    "summary": "Résumé",
+    "total": "Total",
+    "links": "Liens",
+    "images": "Images",
+    "errors": "Erreurs",
+    "warnings": "Avertissements",
+    "valid": "Valide",
+    "invalid": "Invalide",
+    "href": "Href",
+    "text": "Texte",
+    "rel": "Rel",
+    "target": "Cible",
+    "alt": "Alt",
+    "width": "Largeur",
+    "height": "Hauteur",
+    "empty": "Vide",
+    "outputReady": "Sortie prête",
+    "cleanedHtml": "HTML nettoyé",
+    "formattedHtml": "HTML formaté",
+    "minifiedHtml": "HTML minifié",
+    "markdown": "Markdown",
+    "extractedImages": "Images extraites",
+    "extractedLinks": "Liens extraits",
+    "validationSummary": "Résumé de validation",
+    "prettyHtml": "HTML lisible",
+    "encodedText": "Texte encodé"
+  },
+  "seo": {
+    "title": "HTML Pretty Print | Formater du HTML lisible",
+    "description": "Formatez le HTML avec un espacement stable pour les revues, audits et débogages. Nettoyez le balisage dans votre navigateur avec un formateur HTML rapide côté client.",
+    "keywords": [
+      "formatage html",
+      "formater html",
+      "html formatter",
+      "pretty print html",
+      "indentation html",
+      "outil html en ligne",
+      "html lisible"
+    ]
+  }
+}

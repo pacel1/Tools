@@ -1,0 +1,47 @@
+{
+  "toolId": "inches-to-mm-converter",
+  "locale": "de",
+  "slug": "zoll-in-millimeter-umrechner",
+  "h1": "Zoll-in-Millimeter-Umrechner",
+  "title": "Zoll-in-Millimeter-Umrechner",
+  "shortDescription": "Wandle Zoll sofort in Millimeter um – mit schnellen Ergebnissen, einfacher Eingabe und praktischen Beispielen.",
+  "overview": "Wandle Zoll sofort in Millimeter um. Diese Seite liefert eine schnelle Antwort mit einem praktischen Online-Tool und einem einfachen Ergebnisablauf. Sie richtet sich an Nutzer, die eine kostenlose Online-Antwort, schnelle Ergebnisse im Browser und praxisnahe Inhalte für Long-Tail-Suchen suchen.",
+  "howItWorks": [
+    "Gib den benötigten Wert oder Text in das Formular ein.",
+    "Die Umrechnung, Berechnung oder Transformation läuft sofort im Browser.",
+    "Prüfe das Ergebnis und nutze bei Bedarf weitere verwandte Tools für den nächsten Schritt."
+  ],
+  "examples": [
+    {
+      "title": "Beispiel 1",
+      "input": "4 Zoll",
+      "output": "101,6 Millimeter",
+      "description": "Ein realistisches Beispiel für die Zoll-zu-mm-Umrechnung bei einer typischen Suche."
+    },
+    {
+      "title": "Beispiel 2",
+      "input": "4 Zoll",
+      "output": "101,6 Millimeter",
+      "description": "Ein weiterer praktischer Anwendungsfall für organischen Long-Tail-Traffic."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Wie genau ist dieses Tool?",
+      "answer": "Das Ergebnis wird direkt aus der Formel oder der browserseitigen Logik dieses Tools berechnet."
+    },
+    {
+      "question": "Kann ich dieses Tool auf dem Smartphone nutzen?",
+      "answer": "Ja. Die Seite funktioniert auf Desktop- und Mobilgeräten mit einem einfachen Eingabe- und Ergebnislayout."
+    }
+  ],
+  "seo": {
+    "title": "Zoll-in-Millimeter-Umrechner",
+    "description": "Wandle Zoll sofort in Millimeter um. Kostenloser Online-Umrechner für Zoll in mm mit sofortigen Ergebnissen.",
+    "keywords": [
+      "zoll in millimeter umrechner",
+      "zoll in mm umrechner",
+      "umrechnungs tool"
+    ]
+  }
+}

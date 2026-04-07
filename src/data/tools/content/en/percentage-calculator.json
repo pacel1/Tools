@@ -1,0 +1,47 @@
+{
+  "toolId": "percentage-calculator",
+  "locale": "en",
+  "slug": "percentage-calculator",
+  "h1": "Percentage Calculator",
+  "title": "Percentage Calculator",
+  "shortDescription": "Calculate what percentage one number is of another with fast results, simple inputs and practical examples.",
+  "overview": "Calculate what percentage one number is of another. This page gives a fast answer with a practical utility tool and a simple result flow. This page targets users who want a free online answer, fast browser-based results and practical long-tail utility content.",
+  "howItWorks": [
+    "Enter the required value or text into the form.",
+    "The conversion, calculation or transformation runs instantly in the browser.",
+    "Review the result and continue with related tools if you need another step."
+  ],
+  "examples": [
+    {
+      "title": "Example 1",
+      "input": "25 of 200",
+      "output": "12.5%",
+      "description": "A realistic percentage calculator example for an everyday search query."
+    },
+    {
+      "title": "Example 2",
+      "input": "25 of 200",
+      "output": "12.5%",
+      "description": "Another practical use case for organic long-tail traffic."
+    }
+  ],
+  "faq": [
+    {
+      "question": "How accurate is this tool?",
+      "answer": "The result is calculated directly from the formula or browser-side logic used by this tool."
+    },
+    {
+      "question": "Can I use this tool on mobile?",
+      "answer": "Yes. The page works on desktop and mobile screens with a simple input and result layout."
+    }
+  ],
+  "seo": {
+    "title": "Percentage Calculator",
+    "description": "Calculate what percentage one number is of another. Free online percentage calculator with instant results.",
+    "keywords": [
+      "percentage calculator",
+      "percentage calculator",
+      "calculators tool"
+    ]
+  }
+}

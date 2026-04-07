@@ -1,0 +1,36 @@
+{
+  "page": "privacy",
+  "locale": "fr",
+  "title": "Politique de confidentialité",
+  "metaTitle": "Politique de confidentialité | ConvertBase.app",
+  "metaDescription": "Consultez la politique de confidentialité de ConvertBase.app avec des informations sur les cookies, Google Analytics, Google AdSense et le contact.",
+  "heading": "Politique de confidentialité",
+  "content": [
+    "Cette Politique de confidentialité explique comment ConvertBase.app traite les informations lorsque vous consultez nos pages et utilisez nos outils en ligne.",
+    "Nous cherchons à limiter la collecte de données et à faire fonctionner le plus grand nombre possible d'outils directement dans votre navigateur, sans compte utilisateur."
+  ],
+  "sections": [
+    {
+      "title": "Informations que nous pouvons collecter",
+      "paragraphs": [
+        "Nous pouvons collecter des informations techniques limitées comme le type de navigateur, les données de l'appareil, une localisation approximative, les pages référentes et des événements d'interaction nécessaires pour comprendre les performances du site.",
+        "Lorsque l'analytics est activé, Google Analytics peut traiter ces informations pour notre compte. Aucun compte n'est requis pour utiliser les outils publics principaux."
+      ]
+    },
+    {
+      "title": "Cookies et publicité",
+      "paragraphs": [
+        "ConvertBase.app peut utiliser des cookies et des technologies similaires pour mémoriser des préférences de base, mesurer le trafic et soutenir la sécurité du site.",
+        "Des services publicitaires comme Google AdSense peuvent utiliser des cookies pour afficher et mesurer des annonces. Davantage d'informations sont disponibles dans notre Politique de cookies."
+      ]
+    },
+    {
+      "title": "Vos choix et contact",
+      "paragraphs": [
+        "Vous pouvez gérer les cookies dans les paramètres de votre navigateur. La désactivation de certains cookies peut modifier le fonctionnement de certaines fonctionnalités.",
+        "Si vous avez des questions sur cette politique ou sur votre confidentialité sur ConvertBase.app, écrivez à contact@convertbase.app."
+      ]
+    }
+  ],
+  "keywords": ["politique de confidentialité", "confidentialité convertbase", "google analytics", "google adsense", "cookies", "protection des données"]
+}

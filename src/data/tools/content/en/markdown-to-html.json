@@ -1,0 +1,108 @@
+{
+  "toolId": "markdown-to-html",
+  "locale": "en",
+  "slug": "markdown-to-html",
+  "h1": "Markdown to HTML",
+  "title": "Markdown to HTML Converter",
+  "shortDescription": "Convert Markdown into sanitized HTML instantly in your browser.",
+  "metaTitle": "Markdown to HTML Converter | Sanitize Markdown Online",
+  "metaDescription": "Convert Markdown to sanitized HTML in your browser with instant output, safe HTML handling, and no server upload.",
+  "intro": "Turn Markdown into clean, sanitized HTML directly in the browser. Paste your Markdown, preview the result instantly, and copy safe HTML for publishing or development work.",
+  "overview": "This Markdown to HTML tool helps you convert common Markdown syntax into browser-safe HTML without sending content to a server. It is useful for writers, developers, and content editors who need quick HTML output with basic sanitization to reduce XSS risks and keep formatting predictable.",
+  "howItWorks": [
+    "Paste or type Markdown into the input field.",
+    "The tool parses headings, lists, links, emphasis, code, and other common Markdown elements.",
+    "Unsafe or unsupported HTML is sanitized for safer output.",
+    "Review the generated HTML in the preview or output panel.",
+    "Copy the sanitized HTML and use it in your website, CMS, or app."
+  ],
+  "useCases": [
+    "Convert README content into HTML for a documentation site.",
+    "Prepare blog or knowledge-base content for a CMS that accepts HTML.",
+    "Quickly preview how Markdown will render before publishing.",
+    "Sanitize user-submitted Markdown in a client-side workflow.",
+    "Transform notes, drafts, or snippets into reusable HTML."
+  ],
+  "examples": [
+    {
+      "title": "Basic Markdown",
+      "input": "# Hello\\n\\nThis is **bold** and this is a [link](https://example.com).",
+      "output": "<h1>Hello</h1><p>This is <strong>bold</strong> and this is a <a href=\"https://example.com\">link</a>.</p>",
+      "description": "A simple heading, paragraph, emphasis, and link example."
+    },
+    {
+      "title": "List and code",
+      "input": "- Item one\\n- Item two\\n\\n`npm install`",
+      "output": "<ul><li>Item one</li><li>Item two</li></ul><p><code>npm install</code></p>",
+      "description": "Common list and inline code conversion."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Is the conversion done in the browser?",
+      "answer": "Yes. The tool is designed for client-side use, so Markdown is converted locally in your browser."
+    },
+    {
+      "question": "Is the output sanitized?",
+      "answer": "Yes. The generated HTML is sanitized to help reduce unsafe markup and XSS risks."
+    },
+    {
+      "question": "Does it support all Markdown features?",
+      "answer": "It supports common Markdown syntax. Exact support depends on the renderer used in the browser."
+    },
+    {
+      "question": "Can I copy the HTML result?",
+      "answer": "Yes. You can copy the sanitized HTML output and paste it into your project or CMS."
+    }
+  ],
+  "uiLabels": {
+    "copy": "Copy",
+    "copied": "Copied",
+    "input": "Input",
+    "output": "Output",
+    "placeholder": "Paste Markdown here...",
+    "indent": "Indent",
+    "removeComments": "Remove comments",
+    "preview": "Preview",
+    "source": "Source",
+    "sanitizedHtml": "Sanitized HTML",
+    "plainText": "Plain text",
+    "summary": "Summary",
+    "total": "Total",
+    "links": "Links",
+    "images": "Images",
+    "errors": "Errors",
+    "warnings": "Warnings",
+    "valid": "Valid",
+    "invalid": "Invalid",
+    "href": "Href",
+    "text": "Text",
+    "rel": "Rel",
+    "target": "Target",
+    "alt": "Alt",
+    "width": "Width",
+    "height": "Height",
+    "empty": "Empty",
+    "outputReady": "Output ready",
+    "cleanedHtml": "Cleaned HTML",
+    "formattedHtml": "Formatted HTML",
+    "minifiedHtml": "Minified HTML",
+    "markdown": "Markdown",
+    "extractedImages": "Extracted images",
+    "extractedLinks": "Extracted links",
+    "validationSummary": "Validation summary",
+    "prettyHtml": "Pretty HTML",
+    "encodedText": "Encoded text"
+  },
+  "seo": {
+    "title": "Markdown to HTML Converter",
+    "description": "Convert Markdown to sanitized HTML in your browser with instant output and safe client-side processing.",
+    "keywords": [
+      "markdown to html",
+      "markdown converter",
+      "sanitize html",
+      "markdown to html online",
+      "browser markdown to html"
+    ]
+  }
+}

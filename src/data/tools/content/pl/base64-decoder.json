@@ -1,0 +1,47 @@
+{
+  "toolId": "base64-decoder",
+  "locale": "pl",
+  "slug": "dekoder-base64",
+  "h1": "Dekoder Base64",
+  "title": "Dekoder Base64",
+  "shortDescription": "Dekoduj tekst Base64 natychmiast dzięki szybkim wynikom, prostemu wprowadzaniu i praktycznym przykładom.",
+  "overview": "Dekoduj tekst Base64 natychmiast. Ta strona zapewnia szybka odpowiedz dzieki praktycznemu narzedziu i prostemu przeplywowi wyniku. Strona jest skierowana do uzytkownikow, ktorzy szukaja darmowej odpowiedzi online, szybkich wynikow w przegladarce i praktycznej tresci narzedziowej dlugiego ogona.",
+  "howItWorks": [
+    "Wpisz wymagane wartosc lub tekst do formularza.",
+    "Konwersja, obliczenie lub transformacja uruchamia sie natychmiast w przegladarce.",
+    "Sprawdz wynik i przejdz do powiazanych narzedzi, jesli potrzebujesz kolejnego kroku."
+  ],
+  "examples": [
+    {
+      "title": "Przyklad 1",
+      "input": "aGVsbG8gd29ybGQ=",
+      "output": "hello world",
+      "description": "Realistyczny przyklad dekodera Base64 dla codziennego zapytania w wyszukiwarce."
+    },
+    {
+      "title": "Przyklad 2",
+      "input": "aGVsbG8gd29ybGQ=",
+      "output": "hello world",
+      "description": "Kolejny praktyczny scenariusz dla organicznego ruchu z dlugiego ogona."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Jak dokladne jest to narzedzie?",
+      "answer": "Wynik jest obliczany bezposrednio na podstawie wzoru lub logiki po stronie przegladarki uzywanej przez to narzedzie."
+    },
+    {
+      "question": "Czy moge uzywac tego narzedzia na telefonie?",
+      "answer": "Tak. Strona dziala na ekranach desktopowych i mobilnych, oferujac prosty uklad pola wprowadzania i wyniku."
+    }
+  ],
+  "seo": {
+    "title": "Dekoder Base64",
+    "description": "Dekoduj tekst Base64 natychmiast. Darmowy internetowy dekoder Base64 z natychmiastowymi wynikami.",
+    "keywords": [
+      "dekoder base64",
+      "base64 decoder",
+      "developer-tools tool"
+    ]
+  }
+}

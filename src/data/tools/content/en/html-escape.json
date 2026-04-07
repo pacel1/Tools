@@ -1,0 +1,103 @@
+{
+  "toolId": "html-escape",
+  "locale": "en",
+  "slug": "html-escape",
+  "h1": "HTML Escape",
+  "title": "HTML Escape",
+  "shortDescription": "Escape reserved HTML characters for safe embedding in code and content.",
+  "metaTitle": "HTML Escape Tool | Convert Special Characters to HTML Entities",
+  "metaDescription": "Escape HTML characters like <, >, &, quotes, and apostrophes for safe use in code snippets, templates, and content.",
+  "intro": "Use this HTML escape tool to convert reserved characters into HTML entities for safe display in code, examples, templates, and content.",
+  "overview": "HTML escaping replaces characters that have special meaning in HTML with their entity equivalents. This helps prevent broken markup and makes text safe to embed in HTML pages, snippets, and documentation. It is especially useful when you need to show code or user-generated text as plain content.",
+  "howItWorks": [
+    "Paste or type the text you want to escape.",
+    "The tool converts reserved HTML characters such as <, >, &, \", and ' into entities.",
+    "Copy the escaped output and use it in HTML, templates, or documentation."
+  ],
+  "useCases": [
+    "Display code examples without rendering HTML tags.",
+    "Safely embed user text inside HTML content.",
+    "Prepare templates, docs, or snippets for publishing.",
+    "Avoid accidental markup when showing special characters."
+  ],
+  "examples": [
+    {
+      "title": "Basic escaping",
+      "input": "<p>Tom & Jerry</p>",
+      "output": "&lt;p&gt;Tom &amp; Jerry&lt;/p&gt;",
+      "description": "Reserved characters are converted to HTML entities."
+    },
+    {
+      "title": "Quotes and apostrophes",
+      "input": "He said: \"It's fine\"",
+      "output": "He said: &quot;It&#39;s fine&quot;",
+      "description": "Quotes are escaped for safer embedding in attributes or content."
+    }
+  ],
+  "faq": [
+    {
+      "question": "What does HTML escaping do?",
+      "answer": "It converts reserved characters into HTML entities so text can be safely displayed in HTML without being interpreted as markup."
+    },
+    {
+      "question": "Is HTML escaping the same as sanitizing?",
+      "answer": "No. Escaping makes text safe to display, while sanitizing removes or filters unsafe HTML. They solve different problems."
+    },
+    {
+      "question": "When should I use HTML escape?",
+      "answer": "Use it when you want to show text or code literally in HTML, especially for user content, snippets, or documentation."
+    }
+  ],
+  "uiLabels": {
+    "copy": "Copy",
+    "copied": "Copied",
+    "input": "Text input",
+    "output": "Escaped HTML",
+    "placeholder": "Paste text to escape",
+    "indent": "Indent",
+    "removeComments": "Remove comments",
+    "preview": "Preview",
+    "source": "Source",
+    "sanitizedHtml": "Sanitized HTML",
+    "plainText": "Plain text",
+    "summary": "Summary",
+    "total": "Total",
+    "links": "Links",
+    "images": "Images",
+    "errors": "Errors",
+    "warnings": "Warnings",
+    "valid": "Valid",
+    "invalid": "Invalid",
+    "href": "Href",
+    "text": "Text",
+    "rel": "Rel",
+    "target": "Target",
+    "alt": "Alt",
+    "width": "Width",
+    "height": "Height",
+    "empty": "Empty",
+    "outputReady": "Output ready",
+    "cleanedHtml": "Cleaned HTML",
+    "formattedHtml": "Formatted HTML",
+    "minifiedHtml": "Minified HTML",
+    "markdown": "Markdown",
+    "extractedImages": "Extracted images",
+    "extractedLinks": "Extracted links",
+    "validationSummary": "Validation summary",
+    "prettyHtml": "Pretty HTML",
+    "encodedText": "Encoded text"
+  },
+  "seo": {
+    "title": "HTML Escape Tool | Convert Special Characters to HTML Entities",
+    "description": "Escape HTML characters like <, >, &, quotes, and apostrophes for safe use in code snippets, templates, and content.",
+    "keywords": [
+      "html escape",
+      "escape html",
+      "html entities",
+      "html encoder",
+      "special characters",
+      "html tool",
+      "encode html text"
+    ]
+  }
+}

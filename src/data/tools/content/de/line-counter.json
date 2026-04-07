@@ -1,0 +1,47 @@
+{
+  "toolId": "line-counter",
+  "locale": "de",
+  "slug": "zeilenzaehler",
+  "h1": "Zeilenzähler",
+  "title": "Zeilenzähler",
+  "shortDescription": "Zeilen in Text sofort zählen – schnell, einfach und mit praktischen Beispielen.",
+  "overview": "Zeilen in Text sofort zählen. Diese Seite liefert eine schnelle Antwort mit einem praktischen Online-Tool und einem einfachen Ergebnisablauf. Sie richtet sich an Nutzer, die eine kostenlose Online-Antwort, schnelle Ergebnisse im Browser und praxisnahe Long-Tail-Inhalte suchen.",
+  "howItWorks": [
+    "Gib den benötigten Wert oder Text in das Formular ein.",
+    "Die Umrechnung, Berechnung oder Transformation läuft sofort im Browser ab.",
+    "Prüfe das Ergebnis und nutze bei Bedarf passende Folge-Tools."
+  ],
+  "examples": [
+    {
+      "title": "Beispiel 1",
+      "input": "Drei Textzeilen",
+      "output": "Gesamtzahl der Zeilen",
+      "description": "Ein realistisches Beispiel für eine alltägliche Suche nach einem Zeilenzähler."
+    },
+    {
+      "title": "Beispiel 2",
+      "input": "Drei Textzeilen",
+      "output": "Gesamtzahl der Zeilen",
+      "description": "Ein weiteres praktisches Anwendungsbeispiel für organischen Long-Tail-Traffic."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Wie genau ist dieses Tool?",
+      "answer": "Das Ergebnis wird direkt aus der Formel oder der browserseitigen Logik dieses Tools berechnet."
+    },
+    {
+      "question": "Kann ich das Tool auf dem Handy nutzen?",
+      "answer": "Ja. Die Seite funktioniert auf Desktop- und Mobilgeräten mit einem einfachen Eingabe- und Ergebnislayout."
+    }
+  ],
+  "seo": {
+    "title": "Zeilenzähler",
+    "description": "Zeilen in Text sofort zählen. Kostenloser Online-Zeilenzähler mit sofortigen Ergebnissen.",
+    "keywords": [
+      "Zeilenzähler",
+      "Zeilenzähler",
+      "Text-Tool"
+    ]
+  }
+}

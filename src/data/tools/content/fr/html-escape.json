@@ -1,0 +1,103 @@
+{
+  "toolId": "html-escape",
+  "locale": "fr",
+  "slug": "echapper-html",
+  "h1": "Échapper le HTML",
+  "title": "Échapper le HTML",
+  "shortDescription": "Convertissez les caractères HTML réservés en entités pour les intégrer en toute sécurité dans le code et le contenu.",
+  "metaTitle": "Échapper le HTML | Convertir les caractères spéciaux en entités HTML",
+  "metaDescription": "Échappez les caractères HTML comme <, >, &, les guillemets et les apostrophes pour les utiliser en toute sécurité dans du code, des modèles et du contenu.",
+  "intro": "Utilisez cet outil d’échappement HTML pour convertir les caractères réservés en entités HTML et afficher du texte, du code ou des exemples en toute sécurité.",
+  "overview": "L’échappement HTML remplace les caractères ayant une signification particulière en HTML par leurs entités équivalentes. Le texte n’est alors plus interprété comme balisage et peut être intégré sans risque dans des pages, extraits ou documentations. C’est particulièrement utile pour afficher du code ou du texte utilisateur comme du contenu brut.",
+  "howItWorks": [
+    "Collez ou saisissez le texte à échapper.",
+    "L’outil convertit les caractères HTML réservés comme <, >, &, \", et ' en entités.",
+    "Copiez le résultat et utilisez-le dans du HTML, des modèles ou de la documentation."
+  ],
+  "useCases": [
+    "Afficher des exemples de code sans rendre les balises HTML.",
+    "Intégrer du texte utilisateur en toute sécurité dans du contenu HTML.",
+    "Préparer des extraits, de la documentation ou des modèles à publier.",
+    "Éviter le balisage accidentel lors de l’affichage de caractères spéciaux."
+  ],
+  "examples": [
+    {
+      "title": "Échappement simple",
+      "input": "<p>Tom & Jerry</p>",
+      "output": "&lt;p&gt;Tom &amp; Jerry&lt;/p&gt;",
+      "description": "Les caractères réservés sont convertis en entités HTML."
+    },
+    {
+      "title": "Guillemets et apostrophes",
+      "input": "He said: \"It's fine\"",
+      "output": "He said: &quot;It&#39;s fine&quot;",
+      "description": "Les guillemets sont échappés pour une intégration plus sûre dans les attributs ou le contenu."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Que fait l’échappement HTML ?",
+      "answer": "Il convertit les caractères réservés en entités HTML afin que le texte soit affiché en toute sécurité dans le HTML sans être interprété comme balisage."
+    },
+    {
+      "question": "L’échappement HTML est-il la même chose que la sanitisation ?",
+      "answer": "Non. L’échappement rend le texte sûr à afficher, tandis que la sanitisation supprime ou filtre le HTML dangereux. Ce sont deux fonctions différentes."
+    },
+    {
+      "question": "Quand utiliser l’échappement HTML ?",
+      "answer": "Quand vous voulez afficher du texte ou du code littéralement en HTML, notamment pour du contenu utilisateur, des extraits ou de la documentation."
+    }
+  ],
+  "uiLabels": {
+    "copy": "Copier",
+    "copied": "Copié",
+    "input": "Texte d’entrée",
+    "output": "HTML échappé",
+    "placeholder": "Collez le texte à échapper",
+    "indent": "Retrait",
+    "removeComments": "Supprimer les commentaires",
+    "preview": "Aperçu",
+    "source": "Source",
+    "sanitizedHtml": "HTML sanitizé",
+    "plainText": "Texte brut",
+    "summary": "Résumé",
+    "total": "Total",
+    "links": "Liens",
+    "images": "Images",
+    "errors": "Erreurs",
+    "warnings": "Avertissements",
+    "valid": "Valide",
+    "invalid": "Invalide",
+    "href": "Href",
+    "text": "Texte",
+    "rel": "Rel",
+    "target": "Cible",
+    "alt": "Alt",
+    "width": "Largeur",
+    "height": "Hauteur",
+    "empty": "Vide",
+    "outputReady": "Résultat prêt",
+    "cleanedHtml": "HTML nettoyé",
+    "formattedHtml": "HTML formaté",
+    "minifiedHtml": "HTML minifié",
+    "markdown": "Markdown",
+    "extractedImages": "Images extraites",
+    "extractedLinks": "Liens extraits",
+    "validationSummary": "Résumé de validation",
+    "prettyHtml": "HTML lisible",
+    "encodedText": "Texte encodé"
+  },
+  "seo": {
+    "title": "Échapper le HTML | Convertir les caractères spéciaux en entités HTML",
+    "description": "Échappez les caractères HTML comme <, >, &, les guillemets et les apostrophes pour les utiliser en toute sécurité dans du code, des modèles et du contenu.",
+    "keywords": [
+      "échapper html",
+      "escape html",
+      "entités html",
+      "encodeur html",
+      "caractères spéciaux",
+      "outil html",
+      "encoder du texte html"
+    ]
+  }
+}

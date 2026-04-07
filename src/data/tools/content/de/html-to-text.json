@@ -1,0 +1,107 @@
+{
+  "toolId": "html-to-text",
+  "locale": "de",
+  "slug": "html-zu-text",
+  "h1": "HTML zu Text",
+  "title": "HTML zu Text",
+  "shortDescription": "Extrahiert lesbaren Fließtext aus HTML-Snippets und vollständigen Dokumenten.",
+  "metaTitle": "HTML-zu-Text-Konverter | Klartext aus HTML extrahieren",
+  "metaDescription": "Konvertiere HTML direkt im Browser in Klartext. Extrahiere lesbaren Text aus Snippets oder ganzen Seiten sicher und ohne externe API.",
+  "intro": "Wandle HTML direkt im Browser in sauberen, lesbaren Klartext um. Füge ein Snippet oder ein komplettes Dokument ein, und das Tool entfernt die Tags und lässt nur den gut nutzbaren Inhalt übrig.",
+  "overview": "Dieses HTML-zu-Text-Tool ist ein schneller Client-seitiger Konverter für Entwickler, Redakteure und Content-Teams. Es entfernt Markup sicher, reduziert unnötige Zeichen und gibt Klartext aus, der sich leichter durchsuchen, indexieren, zitieren oder weiterverarbeiten lässt. Da alles lokal läuft, werden keine externen APIs benötigt und die HTML-Verarbeitung bleibt privat und XSS-bewusst.",
+  "howItWorks": [
+    "HTML in das Eingabefeld einfügen.",
+    "Das Tool analysiert das Markup im Browser.",
+    "Es entfernt HTML-Tags und gibt lesbaren Text zurück.",
+    "Den bereinigten Text kopieren oder weiterverwenden."
+  ],
+  "useCases": [
+    "Text aus Website-HTML für Notizen oder Dokumentation extrahieren.",
+    "Snippets in Klartext für E-Mails, Tickets oder Chats umwandeln.",
+    "Inhalte für Indexierung, Suche oder Analyse vorbereiten.",
+    "Formatierung aus HTML vor dem Einfügen in andere Apps entfernen.",
+    "Die lesbare Textversion einer Seite oder eines Elements anzeigen."
+  ],
+  "examples": [
+    {
+      "title": "Einfacher Absatz",
+      "input": "<p>Hallo <strong>Welt</strong>!</p>",
+      "output": "Hallo Welt!",
+      "description": "Tags werden entfernt, der Text bleibt lesbar."
+    },
+    {
+      "title": "Links und Listen",
+      "input": "<div><a href=\"/docs\">Dokumentation</a><ul><li>Eins</li><li>Zwei</li></ul></div>",
+      "output": "Dokumentation\nEins\nZwei",
+      "description": "Textinhalte bleiben in einer sauberen Ausgabe erhalten."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Behält dieses Tool HTML-Tags bei?",
+      "answer": "Nein. Es entfernt Tags und gibt nur Klartext aus."
+    },
+    {
+      "question": "Läuft die Konvertierung im Browser?",
+      "answer": "Ja. Das Tool verwendet Client-seitige Logik und ruft keine externen APIs auf."
+    },
+    {
+      "question": "Kann ich komplette HTML-Dokumente umwandeln?",
+      "answer": "Ja. Es funktioniert mit kurzen Snippets und vollständigen Dokumenten."
+    },
+    {
+      "question": "Wird mein HTML an einen Server gesendet?",
+      "answer": "Nein. Die Verarbeitung erfolgt lokal in deinem Browser."
+    }
+  ],
+  "uiLabels": {
+    "copy": "Kopieren",
+    "copied": "Kopiert",
+    "input": "HTML input",
+    "output": "Klartext",
+    "placeholder": "HTML hier einfügen...",
+    "indent": "Einzug",
+    "removeComments": "Kommentare entfernen",
+    "preview": "Vorschau",
+    "source": "Quelle",
+    "sanitizedHtml": "Bereinigtes HTML",
+    "plainText": "Klartext",
+    "summary": "Zusammenfassung",
+    "total": "Gesamt",
+    "links": "Links",
+    "images": "Bilder",
+    "errors": "Fehler",
+    "warnings": "Warnungen",
+    "valid": "Gültig",
+    "invalid": "Ungültig",
+    "href": "Href",
+    "text": "Text",
+    "rel": "Rel",
+    "target": "Target",
+    "alt": "Alt",
+    "width": "Breite",
+    "height": "Höhe",
+    "empty": "Leer",
+    "outputReady": "Ausgabe bereit",
+    "cleanedHtml": "Bereinigtes HTML",
+    "formattedHtml": "Formatiertes HTML",
+    "minifiedHtml": "Minifiziertes HTML",
+    "markdown": "Markdown",
+    "extractedImages": "Extrahierte Bilder",
+    "extractedLinks": "Extrahierte Links",
+    "validationSummary": "Validierungszusammenfassung",
+    "prettyHtml": "Lesbares HTML",
+    "encodedText": "Codierter Text"
+  },
+  "seo": {
+    "title": "HTML-zu-Text-Konverter",
+    "description": "Extrahiere sofort Klartext aus HTML-Snippets und vollständigen Dokumenten direkt im Browser.",
+    "keywords": [
+      "html zu text",
+      "html in klartext",
+      "html zu text konverter",
+      "html tags entfernen",
+      "klartext konverter"
+    ]
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "toolId": "markdown-to-html",
+  "locale": "de",
+  "slug": "markdown-zu-html",
+  "h1": "Markdown zu HTML",
+  "title": "Markdown-zu-HTML-Konverter",
+  "shortDescription": "Wandle Markdown sofort im Browser in sauberes, sicheres HTML um.",
+  "metaTitle": "Markdown-zu-HTML-Konverter | Markdown online umwandeln",
+  "metaDescription": "Wandle Markdown im Browser in sauberes HTML um – mit sofortiger Ausgabe, ohne Server-Upload und mit sicherer Verarbeitung.",
+  "intro": "Wandle Markdown direkt im Browser in sauberes, geprüftes HTML um. Einfach einfügen, das Ergebnis sofort ansehen und sicheres HTML für Webprojekte kopieren.",
+  "overview": "Dieses Tool konvertiert gängige Markdown-Syntax direkt im Browser in HTML, ohne Inhalte an einen Server zu senden. Es eignet sich für Autoren, Entwickler und Redakteure, die schnelle Ergebnisse mit grundlegender Bereinigung benötigen, um XSS-Risiken zu reduzieren und ein zuverlässiges Format zu erhalten.",
+  "howItWorks": [
+    "Markdown in das Eingabefeld einfügen oder eintippen.",
+    "Das Tool erkennt Überschriften, Listen, Links, Hervorhebungen, Code und andere typische Markdown-Elemente.",
+    "Unsichere oder nicht unterstützte HTML-Inhalte werden für mehr Sicherheit bereinigt.",
+    "Das erzeugte HTML in der Vorschau oder im Ausgabebereich prüfen.",
+    "Das bereinigte HTML kopieren und in Website, CMS oder App verwenden."
+  ],
+  "useCases": [
+    "README-Inhalte in HTML für Dokumentationen umwandeln.",
+    "Blog- oder Wissensdatenbank-Inhalte für ein HTML-fähiges CMS vorbereiten.",
+    "Schnell prüfen, wie Markdown nach dem Veröffentlichen aussieht.",
+    "Von Nutzern eingereichtes Markdown in einem Client-side-Workflow bereinigen.",
+    "Notizen, Entwürfe oder Snippets in wiederverwendbares HTML umwandeln."
+  ],
+  "examples": [
+    {
+      "title": "Einfaches Markdown",
+      "input": "# Hallo\\n\\nDas ist **fett** und das ist ein [Link](https://example.com).",
+      "output": "<h1>Hallo</h1><p>Das ist <strong>fett</strong> und das ist ein <a href=\"https://example.com\">Link</a>.</p>",
+      "description": "Ein einfaches Beispiel mit Überschrift, Absatz, Hervorhebung und Link."
+    },
+    {
+      "title": "Liste und Code",
+      "input": "- Eintrag eins\\n- Eintrag zwei\\n\\n`npm install`",
+      "output": "<ul><li>Eintrag eins</li><li>Eintrag zwei</li></ul><p><code>npm install</code></p>",
+      "description": "Typische Umwandlung von Liste und Inline-Code."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Findet die Konvertierung im Browser statt?",
+      "answer": "Ja. Das Tool arbeitet clientseitig, daher wird Markdown lokal im Browser umgewandelt."
+    },
+    {
+      "question": "Ist die Ausgabe bereinigt?",
+      "answer": "Ja. Das erzeugte HTML wird bereinigt, um unsichere Markups und XSS-Risiken zu reduzieren."
+    },
+    {
+      "question": "Unterstützt es alle Markdown-Funktionen?",
+      "answer": "Es unterstützt die gängige Markdown-Syntax. Der genaue Umfang hängt vom verwendeten Renderer im Browser ab."
+    },
+    {
+      "question": "Kann ich das HTML-Ergebnis kopieren?",
+      "answer": "Ja. Du kannst das bereinigte HTML kopieren und in dein Projekt oder CMS einfügen."
+    }
+  ],
+  "uiLabels": {
+    "copy": "Kopieren",
+    "copied": "Kopiert",
+    "input": "Eingabe",
+    "output": "Ausgabe",
+    "placeholder": "Markdown hier einfügen...",
+    "indent": "Einrücken",
+    "removeComments": "Kommentare entfernen",
+    "preview": "Vorschau",
+    "source": "Quelle",
+    "sanitizedHtml": "Bereinigtes HTML",
+    "plainText": "Klartext",
+    "summary": "Zusammenfassung",
+    "total": "Gesamt",
+    "links": "Links",
+    "images": "Bilder",
+    "errors": "Fehler",
+    "warnings": "Warnungen",
+    "valid": "Gültig",
+    "invalid": "Ungültig",
+    "href": "Href",
+    "text": "Text",
+    "rel": "Rel",
+    "target": "Ziel",
+    "alt": "Alt",
+    "width": "Breite",
+    "height": "Höhe",
+    "empty": "Leer",
+    "outputReady": "Ausgabe bereit",
+    "cleanedHtml": "Bereinigtes HTML",
+    "formattedHtml": "Formatiertes HTML",
+    "minifiedHtml": "Minifiziertes HTML",
+    "markdown": "Markdown",
+    "extractedImages": "Extrahierte Bilder",
+    "extractedLinks": "Extrahierte Links",
+    "validationSummary": "Validierungsübersicht",
+    "prettyHtml": "Gut lesbares HTML",
+    "encodedText": "Kodierter Text"
+  },
+  "seo": {
+    "title": "Markdown-zu-HTML-Konverter",
+    "description": "Wandle Markdown im Browser in bereinigtes HTML um – mit sofortigem Ergebnis und sicherer clientseitiger Verarbeitung.",
+    "keywords": [
+      "markdown zu html",
+      "markdown konverter",
+      "html bereinigen",
+      "markdown zu html online",
+      "markdown html browser"
+    ]
+  }
+}

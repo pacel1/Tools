@@ -1,0 +1,109 @@
+{
+  "toolId": "html-minifier",
+  "locale": "fr",
+  "slug": "miniificateur-html",
+  "h1": "Minificateur HTML",
+  "title": "Minificateur HTML",
+  "shortDescription": "Minifiez le HTML en ligne pour réduire la taille du fichier sans appeler d’API externes.",
+  "metaTitle": "Minificateur HTML en ligne | Compressez le HTML rapidement",
+  "metaDescription": "Minifiez le HTML dans votre navigateur pour réduire la taille du fichier, supprimer les espaces inutiles et optimiser le balisage sans API externes.",
+  "intro": "Minifiez le HTML dans votre navigateur pour réduire la taille du code, supprimer les espaces inutiles et préparer votre balisage pour la production. Cet outil fonctionne côté client et n’envoie pas votre code vers des services externes.",
+  "overview": "Utilisez ce minificateur HTML pour compresser rapidement et proprement votre balisage. Il supprime les espaces superflus, les sauts de ligne et les commentaires lorsque c’est pertinent, tout en conservant la structure du document. Comme il s’exécute côté client, c’est un choix pratique pour les développeurs qui veulent des pages plus rapides, un code source plus propre et aucune dépendance à une API.",
+  "howItWorks": [
+    "Collez votre HTML dans le champ de saisie.",
+    "Choisissez les options de nettoyage disponibles, par exemple la suppression des commentaires.",
+    "Lancez la minification pour compresser le balisage.",
+    "Copiez le HTML minifié et utilisez-le dans votre projet."
+  ],
+  "useCases": [
+    "Préparer du HTML pour une mise en production.",
+    "Réduire la taille d’un modèle avant la publication d’un site.",
+    "Nettoyer du HTML exporté depuis un éditeur ou un générateur.",
+    "Optimiser des extraits pour des modèles d’e-mail ou des pages statiques.",
+    "Mesurer le gain obtenu en supprimant les espaces et les commentaires."
+  ],
+  "examples": [
+    {
+      "title": "Minification de base",
+      "input": "<div>\n  <h1>Title</h1>\n  <p> Hello world </p>\n</div>",
+      "output": "<div><h1>Title</h1><p>Hello world</p></div>",
+      "description": "Supprime les sauts de ligne et les espaces en trop sans casser le balisage valide."
+    },
+    {
+      "title": "Suppression des commentaires",
+      "input": "<section>\n  <!-- note -->\n  <span>Text</span>\n</section>",
+      "output": "<section><span>Text</span></section>",
+      "description": "Retire les commentaires HTML lorsque l’option est activée."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Ce minificateur HTML envoie-t-il mon code vers un serveur ?",
+      "answer": "Non. Il fonctionne dans votre navigateur avec une logique côté client uniquement."
+    },
+    {
+      "question": "Peut-il casser mon HTML ?",
+      "answer": "Il est conçu pour conserver une structure valide tout en supprimant les espaces et commentaires inutiles. Vérifiez le résultat si votre balisage dépend d’espaces précis."
+    },
+    {
+      "question": "Puis-je l’utiliser pour du code de production ?",
+      "answer": "Oui. Il convient pour préparer le HTML avant le déploiement, mais il est conseillé de tester le résultat dans votre environnement."
+    },
+    {
+      "question": "Supprime-t-il les commentaires ?",
+      "answer": "Oui, si l’option est activée. Vous pouvez aussi les conserver si nécessaire."
+    }
+  ],
+  "uiLabels": {
+    "copy": "Copier",
+    "copied": "Copié",
+    "input": "Entrée",
+    "output": "Sortie",
+    "placeholder": "Collez le HTML ici",
+    "indent": "Retrait",
+    "removeComments": "Supprimer les commentaires",
+    "preview": "Aperçu",
+    "source": "Source",
+    "sanitizedHtml": "HTML nettoyé",
+    "plainText": "Texte brut",
+    "summary": "Résumé",
+    "total": "Total",
+    "links": "Liens",
+    "images": "Images",
+    "errors": "Erreurs",
+    "warnings": "Avertissements",
+    "valid": "Valide",
+    "invalid": "Invalide",
+    "href": "Href",
+    "text": "Texte",
+    "rel": "Rel",
+    "target": "Cible",
+    "alt": "Alt",
+    "width": "Largeur",
+    "height": "Hauteur",
+    "empty": "Vide",
+    "outputReady": "Résultat prêt",
+    "cleanedHtml": "HTML nettoyé",
+    "formattedHtml": "HTML formaté",
+    "minifiedHtml": "HTML minifié",
+    "markdown": "Markdown",
+    "extractedImages": "Images extraites",
+    "extractedLinks": "Liens extraits",
+    "validationSummary": "Résumé de validation",
+    "prettyHtml": "HTML lisible",
+    "encodedText": "Texte encodé"
+  },
+  "seo": {
+    "title": "Minificateur HTML en ligne | Compressez le HTML rapidement",
+    "description": "Minifiez le HTML dans votre navigateur pour réduire la taille du fichier, supprimer les espaces inutiles et optimiser le balisage sans API externes.",
+    "keywords": [
+      "minificateur html",
+      "minifier html",
+      "compresser html",
+      "compresser html en ligne",
+      "supprimer espaces html",
+      "nettoyer html",
+      "minificateur html client"
+    ]
+  }
+}

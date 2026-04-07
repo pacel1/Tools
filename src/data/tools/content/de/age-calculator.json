@@ -1,0 +1,47 @@
+{
+  "toolId": "age-calculator",
+  "locale": "de",
+  "slug": "altersrechner",
+  "h1": "Altersrechner",
+  "title": "Altersrechner",
+  "shortDescription": "Berechnen Sie das genaue Alter anhand des Geburtsdatums – mit schnellen Ergebnissen, einfacher Eingabe und praktischen Beispielen.",
+  "overview": "Berechnen Sie das genaue Alter anhand des Geburtsdatums. Diese Seite liefert mit einem praktischen Online-Tool und einem einfachen Ergebnisablauf schnell die passende Antwort. Die Seite richtet sich an Nutzer, die eine kostenlose Online-Antwort, schnelle browserbasierte Ergebnisse und praxisnahe Long-Tail-Inhalte für Hilfsrechnungen suchen.",
+  "howItWorks": [
+    "Geben Sie den benötigten Wert oder Text in das Formular ein.",
+    "Die Umrechnung, Berechnung oder Umwandlung läuft sofort im Browser.",
+    "Prüfen Sie das Ergebnis und nutzen Sie bei Bedarf weitere passende Tools."
+  ],
+  "examples": [
+    {
+      "title": "Beispiel 1",
+      "input": "1990-05-15",
+      "output": "Alter in Jahren",
+      "description": "Ein realistisches Beispiel für einen Altersrechner bei einer alltäglichen Suchanfrage."
+    },
+    {
+      "title": "Beispiel 2",
+      "input": "1990-05-15",
+      "output": "Alter in Jahren",
+      "description": "Ein weiteres praktisches Einsatzszenario für organischen Long-Tail-Traffic."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Wie genau ist dieses Tool?",
+      "answer": "Das Ergebnis wird direkt aus der Formel oder der Browser-Logik berechnet, die dieses Tool verwendet."
+    },
+    {
+      "question": "Kann ich dieses Tool auf dem Smartphone verwenden?",
+      "answer": "Ja. Die Seite funktioniert auf Desktop- und Mobilgeräten mit einer einfachen Eingabe- und Ergebnisansicht."
+    }
+  ],
+  "seo": {
+    "title": "Altersrechner online",
+    "description": "Berechnen Sie das genaue Alter anhand des Geburtsdatums. Kostenloser Online-Altersrechner mit sofortigem Ergebnis.",
+    "keywords": [
+      "altersrechner",
+      "alter berechnen",
+      "rechner tool"
+    ]
+  }
+}

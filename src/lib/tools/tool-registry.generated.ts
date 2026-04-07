@@ -1,0 +1,160 @@
+import bmiCalculator from "@/data/tools/definitions/bmi-calculator.json";
+import imageCompressor from "@/data/tools/definitions/image-compressor.json";
+import ageCalculator from "@/data/tools/definitions/age-calculator.json";
+import imageResizer from "@/data/tools/definitions/image-resizer.json";
+import percentageCalculator from "@/data/tools/definitions/percentage-calculator.json";
+import loanPaymentCalculator from "@/data/tools/definitions/loan-payment-calculator.json";
+import passwordGenerator from "@/data/tools/definitions/password-generator.json";
+import qrCodeGenerator from "@/data/tools/definitions/qr-code-generator.json";
+import celsiusToFahrenheitConverter from "@/data/tools/definitions/celsius-to-fahrenheit-converter.json";
+import daysBetweenDatesCalculator from "@/data/tools/definitions/days-between-dates-calculator.json";
+import fahrenheitToCelsiusConverter from "@/data/tools/definitions/fahrenheit-to-celsius-converter.json";
+import imageCropper from "@/data/tools/definitions/image-cropper.json";
+import compoundInterestCalculator from "@/data/tools/definitions/compound-interest-calculator.json";
+import discountCalculator from "@/data/tools/definitions/discount-calculator.json";
+import gradientGenerator from "@/data/tools/definitions/gradient-generator.json";
+import imageFormatConverter from "@/data/tools/definitions/image-format-converter.json";
+import kmToMilesConverter from "@/data/tools/definitions/km-to-miles-converter.json";
+import milesToKmConverter from "@/data/tools/definitions/miles-to-km-converter.json";
+import wordCounter from "@/data/tools/definitions/word-counter.json";
+import boxShadowGenerator from "@/data/tools/definitions/box-shadow-generator.json";
+import caseConverter from "@/data/tools/definitions/case-converter.json";
+import cmToInchesConverter from "@/data/tools/definitions/cm-to-inches-converter.json";
+import lbsToKgConverter from "@/data/tools/definitions/lbs-to-kg-converter.json";
+import percentageDecreaseCalculator from "@/data/tools/definitions/percentage-decrease-calculator.json";
+import percentageIncreaseCalculator from "@/data/tools/definitions/percentage-increase-calculator.json";
+import tipCalculator from "@/data/tools/definitions/tip-calculator.json";
+import characterCounter from "@/data/tools/definitions/character-counter.json";
+import htmlFormatter from "@/data/tools/definitions/html-formatter.json";
+import inchesToCmConverter from "@/data/tools/definitions/inches-to-cm-converter.json";
+import metaTagGenerator from "@/data/tools/definitions/meta-tag-generator.json";
+import slugGenerator from "@/data/tools/definitions/slug-generator.json";
+import faviconGenerator from "@/data/tools/definitions/favicon-generator.json";
+import htmlMinifier from "@/data/tools/definitions/html-minifier.json";
+import htmlValidator from "@/data/tools/definitions/html-validator.json";
+import jsonValidator from "@/data/tools/definitions/json-validator.json";
+import keywordDensityChecker from "@/data/tools/definitions/keyword-density-checker.json";
+import salesTaxCalculator from "@/data/tools/definitions/sales-tax-calculator.json";
+import feetToMetersConverter from "@/data/tools/definitions/feet-to-meters-converter.json";
+import htmlToText from "@/data/tools/definitions/html-to-text.json";
+import imageMetadataReader from "@/data/tools/definitions/image-metadata-reader.json";
+import kgToLbsConverter from "@/data/tools/definitions/kg-to-lbs-converter.json";
+import metersToFeetConverter from "@/data/tools/definitions/meters-to-feet-converter.json";
+import gallonsToLitersConverter from "@/data/tools/definitions/gallons-to-liters-converter.json";
+import htmlToMarkdown from "@/data/tools/definitions/html-to-markdown.json";
+import htmlViewer from "@/data/tools/definitions/html-viewer.json";
+import inchesToMmConverter from "@/data/tools/definitions/inches-to-mm-converter.json";
+import jsonFormatter from "@/data/tools/definitions/json-formatter.json";
+import jsonMinifier from "@/data/tools/definitions/json-minifier.json";
+import litersToGallonsConverter from "@/data/tools/definitions/liters-to-gallons-converter.json";
+import markdownToHtml from "@/data/tools/definitions/markdown-to-html.json";
+import markupCalculator from "@/data/tools/definitions/markup-calculator.json";
+import mmToInchesConverter from "@/data/tools/definitions/mm-to-inches-converter.json";
+import placeholderImageGenerator from "@/data/tools/definitions/placeholder-image-generator.json";
+import simpleInterestCalculator from "@/data/tools/definitions/simple-interest-calculator.json";
+import htmlCleaner from "@/data/tools/definitions/html-cleaner.json";
+import readingTimeCalculator from "@/data/tools/definitions/reading-time-calculator.json";
+import sha256Generator from "@/data/tools/definitions/sha256-generator.json";
+import unitPriceCalculator from "@/data/tools/definitions/unit-price-calculator.json";
+import base64Decoder from "@/data/tools/definitions/base64-decoder.json";
+import base64Encoder from "@/data/tools/definitions/base64-encoder.json";
+import htmlLinkExtractor from "@/data/tools/definitions/html-link-extractor.json";
+import htmlTagRemover from "@/data/tools/definitions/html-tag-remover.json";
+import imageToBase64 from "@/data/tools/definitions/image-to-base64.json";
+import sentenceCounter from "@/data/tools/definitions/sentence-counter.json";
+import base64ToImage from "@/data/tools/definitions/base64-to-image.json";
+import htmlEscape from "@/data/tools/definitions/html-escape.json";
+import htmlUnescape from "@/data/tools/definitions/html-unescape.json";
+import removeExtraSpaces from "@/data/tools/definitions/remove-extra-spaces.json";
+import uuidGenerator from "@/data/tools/definitions/uuid-generator.json";
+import gbToMbConverter from "@/data/tools/definitions/gb-to-mb-converter.json";
+import htmlImageExtractor from "@/data/tools/definitions/html-image-extractor.json";
+import htmlPrettyPrint from "@/data/tools/definitions/html-pretty-print.json";
+import mbToGbConverter from "@/data/tools/definitions/mb-to-gb-converter.json";
+import urlDecoder from "@/data/tools/definitions/url-decoder.json";
+import urlEncoder from "@/data/tools/definitions/url-encoder.json";
+import htmlEntityEncoder from "@/data/tools/definitions/html-entity-encoder.json";
+import lineCounter from "@/data/tools/definitions/line-counter.json";
+import textReverser from "@/data/tools/definitions/text-reverser.json";
+import type { ToolDefinition } from "@/lib/tools/types";
+
+export const toolDefinitions = [
+  bmiCalculator,
+  imageCompressor,
+  ageCalculator,
+  imageResizer,
+  percentageCalculator,
+  loanPaymentCalculator,
+  passwordGenerator,
+  qrCodeGenerator,
+  celsiusToFahrenheitConverter,
+  daysBetweenDatesCalculator,
+  fahrenheitToCelsiusConverter,
+  imageCropper,
+  compoundInterestCalculator,
+  discountCalculator,
+  gradientGenerator,
+  imageFormatConverter,
+  kmToMilesConverter,
+  milesToKmConverter,
+  wordCounter,
+  boxShadowGenerator,
+  caseConverter,
+  cmToInchesConverter,
+  lbsToKgConverter,
+  percentageDecreaseCalculator,
+  percentageIncreaseCalculator,
+  tipCalculator,
+  characterCounter,
+  htmlFormatter,
+  inchesToCmConverter,
+  metaTagGenerator,
+  slugGenerator,
+  faviconGenerator,
+  htmlMinifier,
+  htmlValidator,
+  jsonValidator,
+  keywordDensityChecker,
+  salesTaxCalculator,
+  feetToMetersConverter,
+  htmlToText,
+  imageMetadataReader,
+  kgToLbsConverter,
+  metersToFeetConverter,
+  gallonsToLitersConverter,
+  htmlToMarkdown,
+  htmlViewer,
+  inchesToMmConverter,
+  jsonFormatter,
+  jsonMinifier,
+  litersToGallonsConverter,
+  markdownToHtml,
+  markupCalculator,
+  mmToInchesConverter,
+  placeholderImageGenerator,
+  simpleInterestCalculator,
+  htmlCleaner,
+  readingTimeCalculator,
+  sha256Generator,
+  unitPriceCalculator,
+  base64Decoder,
+  base64Encoder,
+  htmlLinkExtractor,
+  htmlTagRemover,
+  imageToBase64,
+  sentenceCounter,
+  base64ToImage,
+  htmlEscape,
+  htmlUnescape,
+  removeExtraSpaces,
+  uuidGenerator,
+  gbToMbConverter,
+  htmlImageExtractor,
+  htmlPrettyPrint,
+  mbToGbConverter,
+  urlDecoder,
+  urlEncoder,
+  htmlEntityEncoder,
+  lineCounter,
+  textReverser
+] as ToolDefinition[];

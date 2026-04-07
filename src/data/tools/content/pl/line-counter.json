@@ -1,0 +1,47 @@
+{
+  "toolId": "line-counter",
+  "locale": "pl",
+  "slug": "licznik-linii",
+  "h1": "Licznik linii",
+  "title": "Licznik linii",
+  "shortDescription": "Zliczaj linie w tekście natychmiast — szybko, prosto i z praktycznymi przykładami.",
+  "overview": "Zliczaj linie w tekście natychmiast. Ta strona zapewnia szybki wynik dzięki prostemu narzędziu online i przejrzystemu sposobowi prezentacji rezultatu. Skierowana jest do osób, które szukają darmowej odpowiedzi w internecie, szybkich wyników w przeglądarce oraz praktycznych treści narzędziowych z długiego ogona.",
+  "howItWorks": [
+    "Wpisz wymagane dane lub tekst w formularzu.",
+    "Konwersja, obliczenie lub przekształcenie odbywa się natychmiast w przeglądarce.",
+    "Sprawdź wynik i skorzystaj z powiązanych narzędzi, jeśli potrzebujesz kolejnego kroku."
+  ],
+  "examples": [
+    {
+      "title": "Przykład 1",
+      "input": "Trzy linie tekstu",
+      "output": "Łączna liczba linii",
+      "description": "Realistyczny przykład licznika linii do codziennego wyszukiwania."
+    },
+    {
+      "title": "Przykład 2",
+      "input": "Trzy linie tekstu",
+      "output": "Łączna liczba linii",
+      "description": "Kolejny praktyczny przypadek użycia pod ruch z długiego ogona."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Jak dokładne jest to narzędzie?",
+      "answer": "Wynik jest obliczany bezpośrednio na podstawie formuły lub logiki działającej po stronie przeglądarki, używanej przez to narzędzie."
+    },
+    {
+      "question": "Czy mogę używać tego narzędzia na telefonie?",
+      "answer": "Tak. Strona działa na komputerach i urządzeniach mobilnych, oferując prosty układ pola 입력 i wyniku."
+    }
+  ],
+  "seo": {
+    "title": "Licznik linii",
+    "description": "Zliczaj linie w tekście natychmiast. Darmowy licznik linii online z natychmiastowymi wynikami.",
+    "keywords": [
+      "licznik linii",
+      "licznik linii",
+      "narzędzie do tekstu"
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "toolId": "case-converter",
+  "locale": "pl",
+  "slug": "konwerter-wielkosci-liter",
+  "h1": "Konwerter wielkości liter",
+  "title": "Konwerter wielkości liter",
+  "shortDescription": "Zamień tekst na wielkie litery, małe litery, tytułowy zapis i zapis zdaniowy — szybko, prosto i z praktycznymi przykładami.",
+  "overview": "Zamieniaj tekst na wielkie litery, małe litery, zapis tytułowy i zapis zdaniowy. Ta strona daje szybkie rozwiązanie dzięki prostemu narzędziu online i przejrzystemu wynikowi. To miejsce dla użytkowników szukających darmowego narzędzia w przeglądarce, natychmiastowych rezultatów i praktycznych treści pod długie zapytania.",
+  "howItWorks": [
+    "Wpisz wymagany tekst do formularza.",
+    "Konwersja, obliczenie lub przekształcenie odbywa się natychmiast w przeglądarce.",
+    "Sprawdź wynik i przejdź do powiązanych narzędzi, jeśli potrzebujesz kolejnego kroku."
+  ],
+  "examples": [
+    {
+      "title": "Przykład 1",
+      "input": "sample headline text",
+      "output": "WIELKIE / małe / Tytułowy / Zdaniowy",
+      "description": "Realistyczny przykład konwertera wielkości liter dla codziennego zapytania."
+    },
+    {
+      "title": "Przykład 2",
+      "input": "sample headline text",
+      "output": "WIELKIE / małe / Tytułowy / Zdaniowy",
+      "description": "Kolejne praktyczne zastosowanie pod ruch organiczny z długiego ogona."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Jak dokładne jest to narzędzie?",
+      "answer": "Wynik jest obliczany bezpośrednio na podstawie formuły lub logiki po stronie przeglądarki używanej przez to narzędzie."
+    },
+    {
+      "question": "Czy mogę używać tego narzędzia na telefonie?",
+      "answer": "Tak. Strona działa na komputerach i urządzeniach mobilnych, oferując prosty układ pola wejściowego i wyniku."
+    }
+  ],
+  "seo": {
+    "title": "Konwerter wielkości liter",
+    "description": "Zamień tekst na wielkie litery, małe litery, zapis tytułowy i zapis zdaniowy. Darmowy konwerter wielkości liter online z natychmiastowym wynikiem.",
+    "keywords": [
+      "konwerter wielkości liter",
+      "case converter",
+      "text-tools tool"
+    ]
+  }
+}

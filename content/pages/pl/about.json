@@ -1,0 +1,36 @@
+{
+  "page": "about",
+  "locale": "pl",
+  "title": "O ConvertBase.app",
+  "metaTitle": "O ConvertBase.app | Darmowe narzędzia online",
+  "metaDescription": "Dowiedz się, czym jest ConvertBase.app, jak działa platforma oraz jak wykorzystujemy cookies, Google Analytics i Google AdSense.",
+  "heading": "O ConvertBase.app",
+  "content": [
+    "ConvertBase.app to wielojęzyczny portal z praktycznymi narzędziami online, takimi jak konwertery, kalkulatory, generatory, narzędzia obrazów i narzędzia tekstowe.",
+    "Naszym celem jest publikowanie szybkich, konkretnych stron rozwiązujących jeden jasno określony problem, z lekkim interfejsem i wygodą użycia na każdym urządzeniu."
+  ],
+  "sections": [
+    {
+      "title": "Co znajdziesz na platformie",
+      "paragraphs": [
+        "Każde narzędzie zostało zaprojektowane tak, aby dawać czytelne wejście, bezpośredni wynik i krótkie wyjaśnienie pomagające zrozumieć rezultat.",
+        "Chcemy, aby portal był użyteczny dla codziennych użytkowników, uczniów, twórców, marketerów i developerów bez logowania i bez zbędnych kroków."
+      ]
+    },
+    {
+      "title": "Jak utrzymujemy ConvertBase.app",
+      "paragraphs": [
+        "Możemy korzystać z Google Analytics, aby analizować ruch i poprawiać wygodę korzystania z serwisu w różnych językach oraz na różnych urządzeniach.",
+        "Możemy również wyświetlać reklamy Google AdSense, aby wspierać dalsze utrzymanie platformy. Pliki cookie mogą być używane do działania strony, analityki i reklam."
+      ]
+    },
+    {
+      "title": "Prywatność i zaufanie",
+      "paragraphs": [
+        "Staramy się ograniczać zbieranie danych i projektować narzędzia tak, aby możliwie najczęściej działały bezpośrednio w przeglądarce.",
+        "W sprawach dotyczących prywatności, cookies, reklam lub zasad działania platformy napisz na contact@convertbase.app."
+      ]
+    }
+  ],
+  "keywords": ["o convertbase.app", "darmowe narzędzia online", "portal narzędzi", "google analytics", "google adsense", "cookies"]
+}

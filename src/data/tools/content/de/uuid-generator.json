@@ -1,0 +1,47 @@
+{
+  "toolId": "uuid-generator",
+  "locale": "de",
+  "slug": "uuid-generator",
+  "h1": "UUID-Generator",
+  "title": "UUID-Generator",
+  "shortDescription": "Erstelle zufällige UUIDs sofort mit schnellen Ergebnissen, einfacher Eingabe und praktischen Beispielen.",
+  "overview": "Erstelle zufällige UUIDs sofort. Diese Seite liefert eine schnelle Antwort mit einem praktischen Tool und einem einfachen Ergebnisablauf. Sie richtet sich an Nutzer, die eine kostenlose Online-Lösung, schnelle browserbasierte Ergebnisse und praxisnahen Long-Tail-Content suchen.",
+  "howItWorks": [
+    "Gib den erforderlichen Wert oder Text in das Formular ein.",
+    "Die Umwandlung, Berechnung oder Transformation läuft sofort im Browser.",
+    "Prüfe das Ergebnis und nutze bei Bedarf passende Folge-Tools."
+  ],
+  "examples": [
+    {
+      "title": "Beispiel 1",
+      "input": "Eine UUID erzeugen",
+      "output": "UUID v4",
+      "description": "Ein realistisches UUID-Generator-Beispiel für eine alltägliche Suchanfrage."
+    },
+    {
+      "title": "Beispiel 2",
+      "input": "Eine UUID erzeugen",
+      "output": "UUID v4",
+      "description": "Ein weiterer praktischer Anwendungsfall für organischen Long-Tail-Traffic."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Wie genau ist dieses Tool?",
+      "answer": "Das Ergebnis wird direkt aus der Formel oder der browserseitigen Logik dieses Tools berechnet."
+    },
+    {
+      "question": "Kann ich dieses Tool auf dem Smartphone nutzen?",
+      "answer": "Ja. Die Seite funktioniert auf Desktop- und Mobilgeräten mit einem einfachen Eingabe- und Ergebnislayout."
+    }
+  ],
+  "seo": {
+    "title": "UUID-Generator",
+    "description": "Erstelle zufällige UUIDs sofort. Kostenloser UUID-Generator online mit sofortigen Ergebnissen.",
+    "keywords": [
+      "uuid generator",
+      "uuid generator",
+      "developer-tools tool"
+    ]
+  }
+}

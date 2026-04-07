@@ -1,0 +1,47 @@
+{
+  "toolId": "json-minifier",
+  "locale": "fr",
+  "slug": "minificateur-json",
+  "h1": "Minificateur JSON",
+  "title": "Minificateur JSON",
+  "shortDescription": "Minifiez le JSON en ligne instantanément avec des résultats rapides, une saisie simple et des exemples pratiques.",
+  "overview": "Minifiez le JSON en ligne instantanément. Cette page fournit une réponse rapide avec un outil pratique et un parcours de résultat simple. Elle s’adresse aux utilisateurs qui recherchent une solution gratuite en ligne, des résultats rapides dans le navigateur et un contenu utilitaire pratique à longue traîne.",
+  "howItWorks": [
+    "Saisissez la valeur ou le texte requis dans le formulaire.",
+    "La conversion, le calcul ou la transformation s’exécute instantanément dans le navigateur.",
+    "Consultez le résultat et poursuivez avec des outils associés si vous avez besoin d’une autre étape."
+  ],
+  "examples": [
+    {
+      "title": "Exemple 1",
+      "input": "{\"name\":\"tool\",\"value\":1}",
+      "output": "{\"name\":\"tool\",\"value\":1}",
+      "description": "Un exemple réaliste de minificateur JSON pour une recherche courante."
+    },
+    {
+      "title": "Exemple 2",
+      "input": "{\"name\":\"tool\",\"value\":1}",
+      "output": "{\"name\":\"tool\",\"value\":1}",
+      "description": "Un autre cas d’usage pratique pour le trafic organique de longue traîne."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Quelle est la précision de cet outil ?",
+      "answer": "Le résultat est calculé directement à partir de la formule ou de la logique côté navigateur utilisée par cet outil."
+    },
+    {
+      "question": "Puis-je utiliser cet outil sur mobile ?",
+      "answer": "Oui. La page fonctionne sur ordinateur et sur mobile avec une interface simple de saisie et de résultat."
+    }
+  ],
+  "seo": {
+    "title": "Minificateur JSON",
+    "description": "Minifiez le JSON en ligne instantanément. Minificateur JSON gratuit avec résultats immédiats.",
+    "keywords": [
+      "minificateur json",
+      "minificateur json",
+      "outils developpeur"
+    ]
+  }
+}

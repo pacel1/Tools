@@ -1,0 +1,47 @@
+{
+  "toolId": "sentence-counter",
+  "locale": "pl",
+  "slug": "licznik-zdan",
+  "h1": "Licznik zdań",
+  "title": "Licznik zdań",
+  "shortDescription": "Policz zdania w tekście natychmiast — szybko, prosto i z praktycznymi przykładami.",
+  "overview": "Policz zdania w tekście natychmiast. Ta strona daje szybki wynik dzięki praktycznemu narzędziu i prostemu przebiegowi działania. Jest skierowana do osób, które szukają darmowej odpowiedzi online, błyskawicznych wyników w przeglądarce oraz praktycznej treści narzędziowej pod dłuższe zapytania.",
+  "howItWorks": [
+    "Wpisz wymagany tekst do formularza.",
+    "Zliczanie działa natychmiast w przeglądarce.",
+    "Sprawdź wynik i przejdź do powiązanych narzędzi, jeśli potrzebujesz kolejnego kroku."
+  ],
+  "examples": [
+    {
+      "title": "Przykład 1",
+      "input": "Akapit z kilkoma zdaniami.",
+      "output": "Łączna liczba zdań",
+      "description": "Przykład licznika zdań dla codziennego zapytania w wyszukiwarce."
+    },
+    {
+      "title": "Przykład 2",
+      "input": "Akapit z kilkoma zdaniami.",
+      "output": "Łączna liczba zdań",
+      "description": "Kolejny praktyczny przypadek użycia pod ruch organiczny z długiego ogona."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Jak dokładne jest to narzędzie?",
+      "answer": "Wynik jest obliczany bezpośrednio na podstawie logiki działającej w tym narzędziu lub w przeglądarce."
+    },
+    {
+      "question": "Czy mogę używać tego narzędzia na telefonie?",
+      "answer": "Tak. Strona działa na komputerach i urządzeniach mobilnych, oferując prosty układ pola tekstowego i wyniku."
+    }
+  ],
+  "seo": {
+    "title": "Licznik zdań",
+    "description": "Policz zdania w tekście natychmiast. Darmowy licznik zdań online z wynikiem od razu.",
+    "keywords": [
+      "licznik zdań",
+      "licznik zdań",
+      "narzędzie do tekstu"
+    ]
+  }
+}

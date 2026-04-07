@@ -1,0 +1,23 @@
+{
+  "id": "image-cropper",
+  "type": "image-tool",
+  "category": "image-tools",
+  "componentName": "ImageCropperTool",
+  "logicModule": "image-cropper",
+  "inputSchema": "imageCropperInputSchema",
+  "outputSchema": "imageCropperOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "image-resizer",
+    "image-compressor",
+    "image-format-converter",
+    "image-to-base64"
+  ],
+  "seoPriority": 0.96
+}

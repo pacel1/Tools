@@ -1,0 +1,23 @@
+{
+  "id": "word-counter",
+  "type": "text-tool",
+  "category": "text-tools",
+  "componentName": "WordCounterTool",
+  "logicModule": "word-counter",
+  "inputSchema": "wordCounterInputSchema",
+  "outputSchema": "wordCounterOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "json-formatter",
+    "kg-to-lbs-converter",
+    "case-converter",
+    "character-counter"
+  ],
+  "seoPriority": 0.95
+}

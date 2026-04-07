@@ -1,0 +1,47 @@
+{
+  "toolId": "word-counter",
+  "locale": "de",
+  "slug": "wortzaehler",
+  "h1": "Wortzähler",
+  "title": "Wortzähler",
+  "shortDescription": "Zähle Wörter, Zeichen, Absätze und die Lesezeit in einem leichten Textanalyse-Tool.",
+  "overview": "Der Wortzähler analysiert Text lokal im Browser und liefert schnelle Statistiken für Autoren, Redakteure, Marketer und Studierende. Er ist für den kostengünstigen Betrieb in großem Maßstab ausgelegt, da für die Live-Berechnung weder Datenbank noch externe API erforderlich sind.",
+  "howItWorks": [
+    "Füge deinen Text in das Textfeld ein oder tippe ihn direkt ein.",
+    "Das Tool entfernt überflüssige Leerzeichen und zählt Wörter, Zeichen und Absatzblöcke.",
+    "Die Lesezeit wird auf Basis von 200 Wörtern pro Minute geschätzt."
+  ],
+  "examples": [
+    {
+      "title": "Entwurf einer Meta-Beschreibung",
+      "input": "Eine kurze SEO-Zusammenfassung für eine Landingpage.",
+      "output": "8 Wörter",
+      "description": "Prüfe prägnante Texte schnell vor der Veröffentlichung."
+    },
+    {
+      "title": "Blog-Absatz",
+      "input": "Ein zweigeteilter Artikelabschnitt mit Zeilenumbrüchen.",
+      "output": "Wörter, Zeichen und Lesezeit",
+      "description": "Hilfreich für Content-Briefs und redaktionelle Qualitätskontrolle."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Erfolgt die Zählung clientseitig?",
+      "answer": "Ja. Das Starter-Beispiel führt die Berechnung direkt im Browser aus, um schnell zu sein und Infrastrukturkosten zu vermeiden."
+    },
+    {
+      "question": "Wie wird die Lesezeit geschätzt?",
+      "answer": "Die Lesezeit wird berechnet, indem die Wortanzahl durch 200 geteilt und das Ergebnis auf zwei Dezimalstellen gerundet wird."
+    }
+  ],
+  "seo": {
+    "title": "Wortzähler online",
+    "description": "Kostenloser Online-Wortzähler für Wörter, Zeichen, Absätze und Lesezeit.",
+    "keywords": [
+      "Wortzähler",
+      "Zeichenzähler",
+      "Lesezeit-Rechner"
+    ]
+  }
+}

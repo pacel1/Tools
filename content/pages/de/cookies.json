@@ -1,0 +1,36 @@
+{
+  "page": "cookies",
+  "locale": "de",
+  "title": "Cookie-Richtlinie",
+  "metaTitle": "Cookie-Richtlinie | ConvertBase.app",
+  "metaDescription": "Erfahre, wie ConvertBase.app Cookies für Website-Funktionen, Google Analytics, Google AdSense und Grundeinstellungen nutzt.",
+  "heading": "Cookie-Richtlinie",
+  "content": [
+    "Diese Cookie-Richtlinie erklärt, wie ConvertBase.app Cookies und ähnliche Technologien verwendet, wenn du die Website besuchst.",
+    "Cookies helfen uns, die Plattform stabil zu halten, die Nutzung der Seiten zu verstehen und Werbung zu unterstützen, wenn diese aktiviert ist."
+  ],
+  "sections": [
+    {
+      "title": "Wofür Cookies auf dieser Website verwendet werden",
+      "paragraphs": [
+        "Cookies können begrenzte Informationen im Browser speichern, damit Seiten korrekt geladen werden, Einstellungen gemerkt werden und Einwilligungen berücksichtigt werden.",
+        "Wir können Cookies außerdem einsetzen, um allgemeine Zugriffsmuster zu verstehen und das Erlebnis auf verschiedenen Geräten und in verschiedenen Sprachen zu verbessern."
+      ]
+    },
+    {
+      "title": "Analyse- und Werbe-Cookies",
+      "paragraphs": [
+        "Google Analytics kann Cookies verwenden, um Berichte über Besuche, Verkehrsquellen und Nutzerverhalten auf ConvertBase.app bereitzustellen.",
+        "Google AdSense kann Cookies zur Auslieferung und Messung von Werbung nutzen. Solche Einstellungen lassen sich in der Regel über den Browser oder den Werbeanbieter steuern."
+      ]
+    },
+    {
+      "title": "Cookies verwalten",
+      "paragraphs": [
+        "Du kannst Cookies über deine Browsereinstellungen kontrollieren oder löschen. Das Blockieren bestimmter Cookies kann Funktionen der Website oder die Wirkung von Werbung und Analysen einschränken.",
+        "Wenn du mehr über unseren Einsatz von Cookies erfahren möchtest, schreibe an contact@convertbase.app."
+      ]
+    }
+  ],
+  "keywords": ["cookie-richtlinie", "convertbase cookies", "google analytics cookies", "google adsense cookies", "cookie consent", "browser cookies"]
+}

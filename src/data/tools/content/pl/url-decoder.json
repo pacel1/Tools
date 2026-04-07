@@ -1,0 +1,47 @@
+{
+  "toolId": "url-decoder",
+  "locale": "pl",
+  "slug": "dekoder-url",
+  "h1": "Dekoder URL",
+  "title": "Dekoder URL",
+  "shortDescription": "Dekoduj tekst zakodowany w URL natychmiast — szybko, prosto i z praktycznymi przykładami.",
+  "overview": "Dekoduj tekst zakodowany w URL natychmiast. Ta strona daje szybką odpowiedź dzięki praktycznemu narzędziu i prostemu przepływowi wyniku. Strona jest przeznaczona dla osób, które szukają darmowej odpowiedzi online, szybkich wyników w przeglądarce i praktycznych treści narzędziowych long-tail.",
+  "howItWorks": [
+    "Wpisz wymagane dane lub tekst w formularzu.",
+    "Konwersja, obliczenie lub transformacja uruchamia się natychmiast w przeglądarce.",
+    "Sprawdź wynik i przejdź do powiązanych narzędzi, jeśli potrzebujesz kolejnego kroku."
+  ],
+  "examples": [
+    {
+      "title": "Przykład 1",
+      "input": "hello%20world%3Fx%3D1%26y%3D2",
+      "output": "hello world?x=1&y=2",
+      "description": "Realistyczny przykład dekodera URL dla codziennego zapytania."
+    },
+    {
+      "title": "Przykład 2",
+      "input": "hello%20world%3Fx%3D1%26y%3D2",
+      "output": "hello world?x=1&y=2",
+      "description": "Kolejny praktyczny przypadek użycia pod ruch organiczny long-tail."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Jak dokładne jest to narzędzie?",
+      "answer": "Wynik jest obliczany bezpośrednio na podstawie formuły lub logiki po stronie przeglądarki używanej przez to narzędzie."
+    },
+    {
+      "question": "Czy mogę używać tego narzędzia na telefonie?",
+      "answer": "Tak. Strona działa na komputerach i urządzeniach mobilnych, oferując prosty układ pola wejściowego i wyniku."
+    }
+  ],
+  "seo": {
+    "title": "Dekoder URL",
+    "description": "Dekoduj tekst zakodowany w URL natychmiast. Darmowy online dekoder URL z natychmiastowymi wynikami.",
+    "keywords": [
+      "dekoder url",
+      "dekoder url",
+      "narzędzie developer-tools"
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "toolId": "remove-extra-spaces",
+  "locale": "pl",
+  "slug": "narzedzie-usuwania-nadmiarowych-spacji",
+  "h1": "Narzędzie do usuwania nadmiarowych spacji",
+  "title": "Narzędzie do usuwania nadmiarowych spacji",
+  "shortDescription": "Usuń nadmiarowe spacje i uporządkuj wklejony tekst dzięki szybkim wynikom, prostemu formularzowi i praktycznym przykładom.",
+  "overview": "Usuń nadmiarowe spacje i uporządkuj wklejony tekst. Ta strona daje szybką odpowiedź w formie praktycznego narzędzia oraz prosty przebieg uzyskania wyniku. Treść jest skierowana do osób szukających darmowego narzędzia online, szybkich wyników w przeglądarce i praktycznych treści do dłuższych zapytań.",
+  "howItWorks": [
+    "Wpisz wymagane dane lub tekst w formularzu.",
+    "Konwersja, obliczenie lub przekształcenie odbywa się natychmiast w przeglądarce.",
+    "Sprawdź wynik i przejdź do powiązanych narzędzi, jeśli potrzebujesz kolejnego kroku."
+  ],
+  "examples": [
+    {
+      "title": "Przykład 1",
+      "input": "tekst   z   nadmiarowymi   spacjami",
+      "output": "tekst z nadmiarowymi spacjami",
+      "description": "Realistyczny przykład użycia narzędzia do usuwania nadmiarowych spacji w codziennym zapytaniu."
+    },
+    {
+      "title": "Przykład 2",
+      "input": "tekst   z   nadmiarowymi   spacjami",
+      "output": "tekst z nadmiarowymi spacjami",
+      "description": "Kolejny praktyczny przypadek użycia pod kątem ruchu z długiego ogona."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Jak dokładne jest to narzędzie?",
+      "answer": "Wynik jest obliczany bezpośrednio na podstawie formuły lub logiki po stronie przeglądarki używanej przez to narzędzie."
+    },
+    {
+      "question": "Czy mogę korzystać z tego narzędzia na telefonie?",
+      "answer": "Tak. Strona działa zarówno na komputerze, jak i na urządzeniach mobilnych, oferując prosty układ pola wprowadzania i wyniku."
+    }
+  ],
+  "seo": {
+    "title": "Narzędzie do usuwania nadmiarowych spacji",
+    "description": "Usuń nadmiarowe spacje i uporządkuj wklejony tekst. Darmowe narzędzie online do usuwania nadmiarowych spacji z natychmiastowymi wynikami.",
+    "keywords": [
+      "narzędzie do usuwania nadmiarowych spacji",
+      "usuwanie nadmiarowych spacji",
+      "narzędzie text-tools"
+    ]
+  }
+}

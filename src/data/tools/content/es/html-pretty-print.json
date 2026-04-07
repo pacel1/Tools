@@ -1,0 +1,108 @@
+{
+  "toolId": "html-pretty-print",
+  "locale": "es",
+  "slug": "html-pretty-print",
+  "h1": "HTML Pretty Print",
+  "title": "HTML Pretty Print",
+  "shortDescription": "Formatea HTML con espaciado estable para revisiones, auditorías y depuración.",
+  "metaTitle": "HTML Pretty Print | Formatear HTML legible online",
+  "metaDescription": "Formatea HTML con espaciado estable para revisiones, auditorías y depuración. Limpia el marcado en tu navegador con un formateador rápido y del lado del cliente.",
+  "intro": "Convierte HTML desordenado en código legible con sangría y espaciado consistentes. Este formateador de HTML funciona en el navegador y ayuda a revisar estructura, comparar cambios y depurar sin enviar datos a un servidor.",
+  "overview": "El formateador de HTML transforma marcado compacto o desordenado en HTML limpio y con sangría, mucho más fácil de leer. Es útil para revisar elementos anidados, comprobar atributos y preparar código para auditorías o entregas. Todo se procesa en el navegador para ofrecer un flujo rápido y privado.",
+  "howItWorks": [
+    "Pega tu HTML en el campo de entrada.",
+    "Elige opciones de formato como la sangría o el manejo de comentarios, si están disponibles.",
+    "Genera el HTML formateado al instante en tu navegador.",
+    "Copia el resultado y úsalo en revisiones, depuración o documentación."
+  ],
+  "useCases": [
+    "Revisar la estructura HTML antes de publicar.",
+    "Depurar marcado anidado o minificado.",
+    "Preparar fragmentos de código para code review y auditorías.",
+    "Hacer más legible el HTML copiado en documentación o incidencias."
+  ],
+  "examples": [
+    {
+      "title": "Marcado compacto",
+      "input": "<div><span>Hi</span><a href='/docs'>Docs</a></div>",
+      "output": "<div>\n  <span>Hi</span>\n  <a href=\"/docs\">Docs</a>\n</div>",
+      "description": "Convierte HTML compacto en un bloque fácil de leer."
+    },
+    {
+      "title": "Contenido anidado",
+      "input": "<ul><li>One</li><li><strong>Two</strong></li></ul>",
+      "output": "<ul>\n  <li>One</li>\n  <li><strong>Two</strong></li>\n</ul>",
+      "description": "Facilita la inspección de listas anidadas."
+    }
+  ],
+  "faq": [
+    {
+      "question": "¿Es seguro usar este formateador de HTML?",
+      "answer": "Sí. Está pensado para uso en el cliente y debe procesar HTML de forma segura con criterios compatibles con XSS."
+    },
+    {
+      "question": "¿El formato cambia el contenido?",
+      "answer": "La herramienta se centra en espacios en blanco y sangría. Debe conservar el significado del HTML y mejorar su lectura."
+    },
+    {
+      "question": "¿Sirve para HTML minificado?",
+      "answer": "Sí. Es ideal para expandir marcado compacto o minificado antes de revisarlo o depurarlo."
+    },
+    {
+      "question": "¿Funciona solo en el navegador?",
+      "answer": "Sí. El flujo es solo del lado del cliente y no requiere APIs externas."
+    }
+  ],
+  "uiLabels": {
+    "copy": "Copiar",
+    "copied": "Copiado",
+    "input": "Entrada",
+    "output": "Salida",
+    "placeholder": "Pega HTML aquí",
+    "indent": "Sangría",
+    "removeComments": "Eliminar comentarios",
+    "preview": "Vista previa",
+    "source": "Fuente",
+    "sanitizedHtml": "HTML saneado",
+    "plainText": "Texto plano",
+    "summary": "Resumen",
+    "total": "Total",
+    "links": "Enlaces",
+    "images": "Imágenes",
+    "errors": "Errores",
+    "warnings": "Advertencias",
+    "valid": "Válido",
+    "invalid": "Inválido",
+    "href": "Href",
+    "text": "Texto",
+    "rel": "Rel",
+    "target": "Destino",
+    "alt": "Alt",
+    "width": "Ancho",
+    "height": "Alto",
+    "empty": "Vacío",
+    "outputReady": "Resultado listo",
+    "cleanedHtml": "HTML limpio",
+    "formattedHtml": "HTML formateado",
+    "minifiedHtml": "HTML minificado",
+    "markdown": "Markdown",
+    "extractedImages": "Imágenes extraídas",
+    "extractedLinks": "Enlaces extraídos",
+    "validationSummary": "Resumen de validación",
+    "prettyHtml": "HTML legible",
+    "encodedText": "Texto codificado"
+  },
+  "seo": {
+    "title": "HTML Pretty Print | Formatear HTML legible online",
+    "description": "Formatea HTML con espaciado estable para revisiones, auditorías y depuración. Limpia el marcado en tu navegador con un formateador rápido y del lado del cliente.",
+    "keywords": [
+      "formateador html",
+      "dar formato a html",
+      "html formatter",
+      "pretty print html",
+      "sangria html",
+      "herramienta html online",
+      "html legible"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "text-reverser",
+  "type": "text-tool",
+  "category": "text-tools",
+  "componentName": "TextReverserTool",
+  "logicModule": "text-reverser",
+  "inputSchema": "textReverserInputSchema",
+  "outputSchema": "textReverserOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "word-counter",
+    "case-converter",
+    "character-counter",
+    "slug-generator"
+  ],
+  "seoPriority": 0.82
+}

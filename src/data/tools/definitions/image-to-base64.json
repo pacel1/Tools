@@ -1,0 +1,23 @@
+{
+  "id": "image-to-base64",
+  "type": "image-tool",
+  "category": "image-tools",
+  "componentName": "ImageToBase64Tool",
+  "logicModule": "image-to-base64",
+  "inputSchema": "imageToBase64InputSchema",
+  "outputSchema": "imageToBase64OutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "base64-to-image",
+    "image-format-converter",
+    "image-resizer",
+    "image-compressor"
+  ],
+  "seoPriority": 0.88
+}

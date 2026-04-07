@@ -1,0 +1,47 @@
+{
+  "toolId": "character-counter",
+  "locale": "fr",
+  "slug": "compteur-de-caracteres",
+  "h1": "Compteur de caractères",
+  "title": "Compteur de caractères",
+  "shortDescription": "Comptez les caractères d’un texte instantanément avec des résultats rapides, une saisie simple et des exemples pratiques.",
+  "overview": "Comptez les caractères d’un texte instantanément. Cette page fournit une réponse rapide grâce à un outil pratique et à un parcours de résultat simple. Elle vise les utilisateurs qui recherchent une réponse gratuite en ligne, des résultats rapides dans le navigateur et un contenu pratique de longue traîne.",
+  "howItWorks": [
+    "Saisissez le texte requis dans le formulaire.",
+    "La conversion, le calcul ou la transformation s’exécute instantanément dans le navigateur.",
+    "Consultez le résultat et poursuivez avec des outils associés si vous avez besoin d’une autre étape."
+  ],
+  "examples": [
+    {
+      "title": "Exemple 1",
+      "input": "Texte de description produit",
+      "output": "Nombre de caractères",
+      "description": "Un exemple réaliste de compteur de caractères pour une recherche du quotidien."
+    },
+    {
+      "title": "Exemple 2",
+      "input": "Texte de description produit",
+      "output": "Nombre de caractères",
+      "description": "Un autre cas d’usage pratique pour le trafic organique de longue traîne."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Quelle est la précision de cet outil ?",
+      "answer": "Le résultat est calculé directement à partir de la formule ou de la logique côté navigateur utilisée par cet outil."
+    },
+    {
+      "question": "Puis-je utiliser cet outil sur mobile ?",
+      "answer": "Oui. La page fonctionne sur ordinateur et sur mobile avec une mise en page simple de saisie et de résultat."
+    }
+  ],
+  "seo": {
+    "title": "Compteur de caractères",
+    "description": "Comptez les caractères d’un texte instantanément. Compteur de caractères en ligne gratuit avec résultats immédiats.",
+    "keywords": [
+      "compteur de caractères",
+      "compteur de caractères",
+      "outil de texte"
+    ]
+  }
+}

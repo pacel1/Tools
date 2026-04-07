@@ -1,0 +1,109 @@
+{
+  "toolId": "html-validator",
+  "locale": "en",
+  "slug": "html-validator",
+  "h1": "HTML Validator",
+  "title": "HTML Validator",
+  "shortDescription": "Validate HTML for unsafe markup, duplicate IDs, and common quality issues.",
+  "metaTitle": "HTML Validator | Check Unsafe HTML, Duplicate IDs, and Errors",
+  "metaDescription": "Validate HTML online for unsafe tags, duplicate IDs, broken structure, and practical quality issues with a fast client-side HTML checker.",
+  "intro": "Check HTML for unsafe markup, duplicate IDs, broken structure, and other practical issues before you publish.",
+  "overview": "This HTML validator helps you catch common markup problems fast. It is useful for checking unsafe elements, duplicate IDs, invalid nesting, missing attributes, and quality issues that can affect accessibility, SEO, and rendering. The tool runs client-side, so your HTML stays in your browser.",
+  "howItWorks": [
+    "Paste your HTML into the input box.",
+    "Run validation to scan tags, attributes, structure, and IDs.",
+    "Review errors, warnings, and safe output details.",
+    "Fix the issues and validate again until the HTML is clean."
+  ],
+  "useCases": [
+    "Validate page templates before deployment.",
+    "Check CMS content for unsafe or messy markup.",
+    "Find duplicate IDs that can break scripts and accessibility.",
+    "Review HTML copied from editors, emails, or page builders.",
+    "Spot missing alt text, empty links, and other quality issues."
+  ],
+  "examples": [
+    {
+      "title": "Basic validation",
+      "input": "<div id=\"hero\"><a href=\"#\">Read more</a></div>",
+      "output": "Reports structure and quality checks for the supplied HTML.",
+      "description": "Use this for a quick check of simple markup."
+    },
+    {
+      "title": "Unsafe markup scan",
+      "input": "<script>alert('x')</script><p>Text</p>",
+      "output": "Flags unsafe elements and potential security risks.",
+      "description": "Helps you catch code that should not be published."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Does this tool change my HTML?",
+      "answer": "No. It only analyzes the HTML and reports issues, warnings, and validation details."
+    },
+    {
+      "question": "Can it detect unsafe markup?",
+      "answer": "Yes. It checks for risky tags and patterns that may be unsafe in published content."
+    },
+    {
+      "question": "Does it find duplicate IDs?",
+      "answer": "Yes. Duplicate IDs are reported because they can break anchors, scripts, and accessibility."
+    },
+    {
+      "question": "Is the validation done in the browser?",
+      "answer": "Yes. The tool is designed for client-side use and does not need an external API."
+    }
+  ],
+  "uiLabels": {
+    "copy": "Copy",
+    "copied": "Copied",
+    "input": "HTML input",
+    "output": "Validation summary",
+    "placeholder": "Paste HTML here",
+    "indent": "Indent",
+    "removeComments": "Remove comments",
+    "preview": "Preview",
+    "source": "Source",
+    "sanitizedHtml": "Sanitized HTML",
+    "plainText": "Plain text",
+    "summary": "Summary",
+    "total": "Total",
+    "links": "Links",
+    "images": "Images",
+    "errors": "Errors",
+    "warnings": "Warnings",
+    "valid": "Valid",
+    "invalid": "Invalid",
+    "href": "Href",
+    "text": "Text",
+    "rel": "Rel",
+    "target": "Target",
+    "alt": "Alt",
+    "width": "Width",
+    "height": "Height",
+    "empty": "Empty",
+    "outputReady": "Output ready",
+    "cleanedHtml": "Cleaned HTML",
+    "formattedHtml": "Formatted HTML",
+    "minifiedHtml": "Minified HTML",
+    "markdown": "Markdown",
+    "extractedImages": "Extracted images",
+    "extractedLinks": "Extracted links",
+    "validationSummary": "Validation summary",
+    "prettyHtml": "Pretty HTML",
+    "encodedText": "Encoded text"
+  },
+  "seo": {
+    "title": "HTML Validator | Check Unsafe HTML, Duplicate IDs, and Errors",
+    "description": "Validate HTML online for unsafe tags, duplicate IDs, broken structure, and practical quality issues with a fast client-side HTML checker.",
+    "keywords": [
+      "html validator",
+      "validate html",
+      "check html",
+      "html checker",
+      "duplicate id checker",
+      "unsafe html checker",
+      "html quality checker"
+    ]
+  }
+}

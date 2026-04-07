@@ -1,0 +1,47 @@
+{
+  "toolId": "keyword-density-checker",
+  "locale": "fr",
+  "slug": "verificateur-de-densite-de-mots-cles",
+  "h1": "Vérificateur de densité de mots-clés",
+  "title": "Vérificateur de densité de mots-clés",
+  "shortDescription": "Vérifiez la densité de mots-clés dans un texte avec des résultats rapides, une saisie simple et des exemples pratiques.",
+  "overview": "Vérifiez la densité de mots-clés dans un bloc de texte. Cette page fournit une réponse rapide avec un outil pratique et un parcours de résultat simple. Elle s’adresse aux utilisateurs qui recherchent une réponse gratuite en ligne, des résultats instantanés dans le navigateur et un contenu utile optimisé pour les requêtes longue traîne.",
+  "howItWorks": [
+    "Saisissez le mot, l’expression ou le texte requis dans le formulaire.",
+    "Le calcul ou l’analyse s’exécute instantanément dans le navigateur.",
+    "Consultez le résultat et poursuivez avec des outils connexes si vous avez besoin d’une autre étape."
+  ],
+  "examples": [
+    {
+      "title": "Exemple 1",
+      "input": "Article SEO + mot-clé cible",
+      "output": "Pourcentage de densité du mot-clé",
+      "description": "Un exemple réaliste de vérification de densité de mots-clés pour une requête courante."
+    },
+    {
+      "title": "Exemple 2",
+      "input": "Article SEO + mot-clé cible",
+      "output": "Pourcentage de densité du mot-clé",
+      "description": "Un autre cas d’usage pratique pour le trafic organique longue traîne."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Quelle est la précision de cet outil ?",
+      "answer": "Le résultat est calculé directement à partir de la formule ou de la logique côté navigateur utilisée par cet outil."
+    },
+    {
+      "question": "Puis-je utiliser cet outil sur mobile ?",
+      "answer": "Oui. La page fonctionne sur ordinateur et sur mobile avec une interface simple de saisie et de résultat."
+    }
+  ],
+  "seo": {
+    "title": "Vérificateur de densité de mots-clés",
+    "description": "Vérifiez la densité de mots-clés dans un texte. Vérificateur de densité de mots-clés en ligne gratuit avec résultats instantanés.",
+    "keywords": [
+      "vérificateur de densité de mots-clés",
+      "densité de mots-clés",
+      "outil de texte"
+    ]
+  }
+}

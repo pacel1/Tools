@@ -1,0 +1,47 @@
+{
+  "toolId": "word-counter",
+  "locale": "pl",
+  "slug": "licznik-slow",
+  "h1": "Licznik słów",
+  "title": "Licznik słów",
+  "shortDescription": "Zliczaj słowa, znaki, akapity i czas czytania w jednym lekkim narzędziu do analizy tekstu.",
+  "overview": "Licznik słów analizuje tekst lokalnie w przeglądarce i zwraca szybkie statystyki dla autorów, redaktorów, marketerów i studentów. Został zaprojektowany tak, aby działał tanio na dużą skalę, ponieważ do obliczeń na żywo nie wymaga bazy danych ani zewnętrznego API.",
+  "howItWorks": [
+    "Wklej lub wpisz tekst w polu tekstowym.",
+    "Narzędzie usuwa nadmiarowe białe znaki i zlicza słowa, znaki oraz bloki akapitów.",
+    "Szacowany czas czytania jest obliczany na podstawie tempa 200 słów na minutę."
+  ],
+  "examples": [
+    {
+      "title": "Szkic meta opisu",
+      "input": "Krótki opis SEO dla strony docelowej.",
+      "output": "8 słów",
+      "description": "Szybko sprawdź zwięzłość tekstu przed publikacją."
+    },
+    {
+      "title": "Akapit blogowy",
+      "input": "Fragment artykułu podzielony na dwa akapity z podziałami wierszy.",
+      "output": "Słowa, znaki i czas czytania",
+      "description": "Przydatne przy briefach contentowych i kontroli jakości treści."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Czy zliczanie odbywa się po stronie klienta?",
+      "answer": "Tak. Przykładowa wersja wykonuje obliczenia bezpośrednio w przeglądarce, aby działać szybko i ograniczać koszty infrastruktury."
+    },
+    {
+      "question": "Jak jest szacowany czas czytania?",
+      "answer": "Wskaźnik czasu czytania dzieli liczbę słów przez 200 i zaokrągla wynik do dwóch miejsc po przecinku."
+    }
+  ],
+  "seo": {
+    "title": "Licznik słów online",
+    "description": "Darmowy licznik słów online do zliczania słów, znaków, akapitów i czasu czytania.",
+    "keywords": [
+      "licznik słów",
+      "licznik znaków",
+      "kalkulator czasu czytania"
+    ]
+  }
+}

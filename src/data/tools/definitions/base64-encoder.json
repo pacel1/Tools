@@ -1,0 +1,23 @@
+{
+  "id": "base64-encoder",
+  "type": "developer-tool",
+  "category": "developer-tools",
+  "componentName": "Base64EncoderTool",
+  "logicModule": "base64-encoder",
+  "inputSchema": "base64EncoderInputSchema",
+  "outputSchema": "base64EncoderOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "json-validator",
+    "json-formatter",
+    "json-minifier",
+    "base64-decoder"
+  ],
+  "seoPriority": 0.88
+}

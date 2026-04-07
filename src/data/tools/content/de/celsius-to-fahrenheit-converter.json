@@ -1,0 +1,47 @@
+{
+  "toolId": "celsius-to-fahrenheit-converter",
+  "locale": "de",
+  "slug": "celsius-zu-fahrenheit-umrechner",
+  "h1": "Celsius-zu-Fahrenheit-Umrechner",
+  "title": "Celsius-zu-Fahrenheit-Umrechner",
+  "shortDescription": "Celsius sofort in Fahrenheit umrechnen – mit schnellen Ergebnissen, einfacher Eingabe und praktischen Beispielen.",
+  "overview": "Celsius sofort in Fahrenheit umrechnen. Diese Seite liefert eine schnelle Antwort mit einem praktischen Tool und einem einfachen Ergebnisablauf. Sie richtet sich an Nutzer, die eine kostenlose Online-Antwort, schnelle Ergebnisse im Browser und praktische Long-Tail-Inhalte suchen.",
+  "howItWorks": [
+    "Geben Sie den gewünschten Wert oder Text in das Formular ein.",
+    "Die Umrechnung, Berechnung oder Transformation läuft sofort im Browser ab.",
+    "Prüfen Sie das Ergebnis und nutzen Sie bei Bedarf verwandte Tools für den nächsten Schritt."
+  ],
+  "examples": [
+    {
+      "title": "Beispiel 1",
+      "input": "20 Grad Celsius",
+      "output": "68 Grad Fahrenheit",
+      "description": "Ein realistisches Beispiel für einen Celsius-zu-Fahrenheit-Umrechner bei einer alltäglichen Suchanfrage."
+    },
+    {
+      "title": "Beispiel 2",
+      "input": "20 Grad Celsius",
+      "output": "68 Grad Fahrenheit",
+      "description": "Ein weiterer praktischer Anwendungsfall für organischen Long-Tail-Traffic."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Wie genau ist dieses Tool?",
+      "answer": "Das Ergebnis wird direkt aus der Formel oder der browserseitigen Logik dieses Tools berechnet."
+    },
+    {
+      "question": "Kann ich das Tool auf dem Handy nutzen?",
+      "answer": "Ja. Die Seite funktioniert auf Desktop und Mobilgeräten mit einer einfachen Eingabe- und Ergebnisansicht."
+    }
+  ],
+  "seo": {
+    "title": "Celsius-zu-Fahrenheit-Umrechner",
+    "description": "Celsius sofort in Fahrenheit umrechnen. Kostenloser Online-Umrechner mit sofortigen Ergebnissen.",
+    "keywords": [
+      "celsius zu fahrenheit umrechner",
+      "celsius fahrenheit umrechner",
+      "umrechner tool"
+    ]
+  }
+}

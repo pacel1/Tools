@@ -1,0 +1,47 @@
+{
+  "toolId": "days-between-dates-calculator",
+  "locale": "es",
+  "slug": "calculadora-dias-entre-fechas",
+  "h1": "Calculadora de días entre fechas",
+  "title": "Calculadora de días entre fechas",
+  "shortDescription": "Calcula el número de días entre dos fechas con resultados rápidos, entradas sencillas y ejemplos prácticos.",
+  "overview": "Calcula el número de días entre dos fechas. Esta página ofrece una respuesta rápida con una herramienta práctica y un flujo de resultados sencillo. Está pensada para usuarios que buscan una respuesta gratuita en línea, resultados rápidos en el navegador y contenido útil de cola larga.",
+  "howItWorks": [
+    "Introduce el valor o texto requerido en el formulario.",
+    "La conversión, el cálculo o la transformación se ejecuta al instante en el navegador.",
+    "Revisa el resultado y continúa con herramientas relacionadas si necesitas otro paso."
+  ],
+  "examples": [
+    {
+      "title": "Ejemplo 1",
+      "input": "2025-01-01 a 2025-01-31",
+      "output": "30 días",
+      "description": "Un ejemplo real de calculadora de días entre fechas para una búsqueda cotidiana."
+    },
+    {
+      "title": "Ejemplo 2",
+      "input": "2025-01-01 a 2025-01-31",
+      "output": "30 días",
+      "description": "Otro caso práctico para tráfico orgánico de cola larga."
+    }
+  ],
+  "faq": [
+    {
+      "question": "¿Qué precisión tiene esta herramienta?",
+      "answer": "El resultado se calcula directamente a partir de la fórmula o de la lógica en el navegador que utiliza esta herramienta."
+    },
+    {
+      "question": "¿Puedo usar esta herramienta en el móvil?",
+      "answer": "Sí. La página funciona en ordenador y móvil con un diseño sencillo de entrada y resultado."
+    }
+  ],
+  "seo": {
+    "title": "Calculadora de días entre fechas",
+    "description": "Calcula el número de días entre dos fechas. Calculadora gratuita de días entre fechas online con resultados instantáneos.",
+    "keywords": [
+      "calculadora de días entre fechas",
+      "días entre fechas calculadora",
+      "herramienta calculadoras"
+    ]
+  }
+}

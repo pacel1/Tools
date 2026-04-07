@@ -1,0 +1,47 @@
+{
+  "toolId": "bmi-calculator",
+  "locale": "pl",
+  "slug": "kalkulator-bmi",
+  "h1": "Kalkulator BMI",
+  "title": "Kalkulator BMI",
+  "shortDescription": "Oblicz wskaźnik masy ciała na podstawie wzrostu i wagi. Szybkie wyniki, proste dane wejściowe i praktyczne przykłady.",
+  "overview": "Oblicz wskaźnik masy ciała na podstawie wzrostu i wagi. Ta strona zapewnia szybki wynik dzięki prostemu narzędziu online i wygodnemu przebiegowi obliczeń. Treść jest skierowana do osób, które szukają darmowej odpowiedzi w internecie, natychmiastowych wyników w przeglądarce oraz praktycznych materiałów long-tail.",
+  "howItWorks": [
+    "Wpisz wymagane dane do formularza.",
+    "Obliczenie lub przeliczenie wykonuje się natychmiast w przeglądarce.",
+    "Sprawdź wynik i przejdź do powiązanych narzędzi, jeśli potrzebujesz kolejnego kroku."
+  ],
+  "examples": [
+    {
+      "title": "Przykład 1",
+      "input": "70 kg i 175 cm",
+      "output": "22,86",
+      "description": "Przykład kalkulatora BMI odpowiadający codziennemu zapytaniu w wyszukiwarce."
+    },
+    {
+      "title": "Przykład 2",
+      "input": "70 kg i 175 cm",
+      "output": "22,86",
+      "description": "Kolejny praktyczny scenariusz dla ruchu organicznego z długiego ogona."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Jak dokładne jest to narzędzie?",
+      "answer": "Wynik jest obliczany bezpośrednio na podstawie wzoru lub logiki po stronie przeglądarki użytej w tym narzędziu."
+    },
+    {
+      "question": "Czy mogę korzystać z tego narzędzia na telefonie?",
+      "answer": "Tak. Strona działa zarówno na komputerach, jak i na urządzeniach mobilnych, oferując prosty układ pola i wyniku."
+    }
+  ],
+  "seo": {
+    "title": "Kalkulator BMI",
+    "description": "Oblicz wskaźnik masy ciała na podstawie wzrostu i wagi. Darmowy kalkulator BMI online z natychmiastowym wynikiem.",
+    "keywords": [
+      "kalkulator bmi",
+      "bmi calculator",
+      "narzedzia kalkulatory"
+    ]
+  }
+}

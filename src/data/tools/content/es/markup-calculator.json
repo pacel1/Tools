@@ -1,0 +1,47 @@
+{
+  "toolId": "markup-calculator",
+  "locale": "es",
+  "slug": "calculadora-de-markup",
+  "h1": "Calculadora de markup",
+  "title": "Calculadora de markup",
+  "shortDescription": "Calcula el porcentaje de markup y el precio final de venta con resultados rápidos, entradas sencillas y ejemplos prácticos.",
+  "overview": "Calcula el porcentaje de markup y el precio final de venta. Esta página ofrece una respuesta rápida con una herramienta práctica y un flujo de resultado sencillo. Está pensada para usuarios que buscan una respuesta gratis en línea, resultados rápidos en el navegador y contenido útil de cola larga.",
+  "howItWorks": [
+    "Introduce el valor requerido en el formulario.",
+    "El cálculo o la transformación se ejecuta al instante en el navegador.",
+    "Revisa el resultado y continúa con herramientas relacionadas si necesitas otro paso."
+  ],
+  "examples": [
+    {
+      "title": "Ejemplo 1",
+      "input": "Costo 50, markup 30%",
+      "output": "65",
+      "description": "Un ejemplo realista de calculadora de markup para una búsqueda habitual."
+    },
+    {
+      "title": "Ejemplo 2",
+      "input": "Costo 50, markup 30%",
+      "output": "65",
+      "description": "Otro caso práctico para atraer tráfico orgánico de cola larga."
+    }
+  ],
+  "faq": [
+    {
+      "question": "¿Qué precisión tiene esta herramienta?",
+      "answer": "El resultado se calcula directamente a partir de la fórmula o de la lógica en el navegador que usa esta herramienta."
+    },
+    {
+      "question": "¿Puedo usar esta herramienta en el móvil?",
+      "answer": "Sí. La página funciona en pantallas de escritorio y móviles con un diseño simple de entrada y resultado."
+    }
+  ],
+  "seo": {
+    "title": "Calculadora de markup",
+    "description": "Calcula el porcentaje de markup y el precio final de venta. Calculadora de markup gratuita en línea con resultados instantáneos.",
+    "keywords": [
+      "calculadora de markup",
+      "markup calculator",
+      "herramienta calculadora"
+    ]
+  }
+}

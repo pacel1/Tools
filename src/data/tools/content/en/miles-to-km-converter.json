@@ -1,0 +1,47 @@
+{
+  "toolId": "miles-to-km-converter",
+  "locale": "en",
+  "slug": "miles-to-km-converter",
+  "h1": "Miles to KM Converter",
+  "title": "Miles to KM Converter",
+  "shortDescription": "Convert miles to kilometers instantly with fast results, simple inputs and practical examples.",
+  "overview": "Convert miles to kilometers instantly. This page gives a fast answer with a practical utility tool and a simple result flow. This page targets users who want a free online answer, fast browser-based results and practical long-tail utility content.",
+  "howItWorks": [
+    "Enter the required value or text into the form.",
+    "The conversion, calculation or transformation runs instantly in the browser.",
+    "Review the result and continue with related tools if you need another step."
+  ],
+  "examples": [
+    {
+      "title": "Example 1",
+      "input": "10 miles",
+      "output": "16.0934 kilometers",
+      "description": "A realistic miles to km converter example for an everyday search query."
+    },
+    {
+      "title": "Example 2",
+      "input": "10 miles",
+      "output": "16.0934 kilometers",
+      "description": "Another practical use case for organic long-tail traffic."
+    }
+  ],
+  "faq": [
+    {
+      "question": "How accurate is this tool?",
+      "answer": "The result is calculated directly from the formula or browser-side logic used by this tool."
+    },
+    {
+      "question": "Can I use this tool on mobile?",
+      "answer": "Yes. The page works on desktop and mobile screens with a simple input and result layout."
+    }
+  ],
+  "seo": {
+    "title": "Miles to KM Converter",
+    "description": "Convert miles to kilometers instantly. Free online miles to km converter with instant results.",
+    "keywords": [
+      "miles to km converter",
+      "miles to km converter",
+      "converters tool"
+    ]
+  }
+}

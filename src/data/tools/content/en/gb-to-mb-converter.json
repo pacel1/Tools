@@ -1,0 +1,47 @@
+{
+  "toolId": "gb-to-mb-converter",
+  "locale": "en",
+  "slug": "gb-to-mb-converter",
+  "h1": "GB to MB Converter",
+  "title": "GB to MB Converter",
+  "shortDescription": "Convert gigabytes to megabytes instantly with the binary 1024-based storage ratio.",
+  "overview": "Convert gigabytes to megabytes instantly. This converter uses the binary storage ratio of 1 GB = 1024 MB, which is common in file size calculations and operating system storage views.",
+  "howItWorks": [
+    "Enter the number of gigabytes into the form.",
+    "The conversion runs instantly in the browser using the 1024-based storage ratio.",
+    "Review the result and continue with related tools if you need another step."
+  ],
+  "examples": [
+    {
+      "title": "Example 1",
+      "input": "2 gigabytes",
+      "output": "2048 megabytes",
+      "description": "A practical example for binary storage conversions."
+    },
+    {
+      "title": "Example 2",
+      "input": "1 gigabyte",
+      "output": "1024 megabytes",
+      "description": "Useful for storage planning, backups and file size checks."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Which ratio does this converter use?",
+      "answer": "This tool uses the binary storage ratio, so 1 GB equals 1024 MB."
+    },
+    {
+      "question": "Can I use this tool on mobile?",
+      "answer": "Yes. The page works on desktop and mobile screens with a simple input and result layout."
+    }
+  ],
+  "seo": {
+    "title": "GB to MB Converter",
+    "description": "Free online GB to MB converter using the 1024-based binary storage ratio with instant results.",
+    "keywords": [
+      "gb to mb converter",
+      "1 gb to mb 1024",
+      "binary storage converter"
+    ]
+  }
+}

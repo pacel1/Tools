@@ -1,0 +1,47 @@
+{
+  "toolId": "age-calculator",
+  "locale": "pl",
+  "slug": "kalkulator-wieku",
+  "h1": "Kalkulator wieku",
+  "title": "Kalkulator wieku",
+  "shortDescription": "Oblicz dokładny wiek na podstawie daty urodzenia — szybko, prosto i z praktycznymi przykładami.",
+  "overview": "Oblicz dokładny wiek na podstawie daty urodzenia. Ta strona zapewnia szybką odpowiedź dzięki praktycznemu narzędziu online i prostemu przebiegowi wyniku. Strona jest skierowana do użytkowników, którzy szukają darmowej odpowiedzi w internecie, szybkich wyników w przeglądarce oraz praktycznych treści narzędziowych z długiego ogona.",
+  "howItWorks": [
+    "Wprowadź wymagane dane lub tekst do formularza.",
+    "Konwersja, obliczenie lub przekształcenie odbywa się natychmiast w przeglądarce.",
+    "Sprawdź wynik i przejdź do powiązanych narzędzi, jeśli potrzebujesz kolejnego kroku."
+  ],
+  "examples": [
+    {
+      "title": "Przykład 1",
+      "input": "1990-05-15",
+      "output": "Wiek w latach",
+      "description": "Realistyczny przykład kalkulatora wieku dla codziennego wyszukiwania."
+    },
+    {
+      "title": "Przykład 2",
+      "input": "1990-05-15",
+      "output": "Wiek w latach",
+      "description": "Kolejny praktyczny przypadek użycia dla organicznego ruchu z długiego ogona."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Jak dokładne jest to narzędzie?",
+      "answer": "Wynik jest obliczany bezpośrednio na podstawie wzoru lub logiki po stronie przeglądarki używanej przez to narzędzie."
+    },
+    {
+      "question": "Czy mogę używać tego narzędzia na telefonie?",
+      "answer": "Tak. Strona działa na komputerach i urządzeniach mobilnych, oferując prosty układ pola wejściowego i wyniku."
+    }
+  ],
+  "seo": {
+    "title": "Kalkulator wieku online",
+    "description": "Oblicz dokładny wiek na podstawie daty urodzenia. Darmowy kalkulator wieku online z natychmiastowym wynikiem.",
+    "keywords": [
+      "kalkulator wieku",
+      "obliczanie wieku",
+      "narzędzia kalkulator"
+    ]
+  }
+}

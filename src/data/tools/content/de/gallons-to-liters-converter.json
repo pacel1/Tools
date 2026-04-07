@@ -1,0 +1,47 @@
+{
+  "toolId": "gallons-to-liters-converter",
+  "locale": "de",
+  "slug": "umrechner-von-gallonen-in-liter",
+  "h1": "Umrechner von Gallonen in Liter",
+  "title": "Umrechner von Gallonen in Liter",
+  "shortDescription": "Gallonen sofort in Liter umrechnen – mit schnellen Ergebnissen, einfachen Eingaben und praktischen Beispielen.",
+  "overview": "Gallonen sofort in Liter umrechnen. Diese Seite liefert eine schnelle Antwort mit einem praktischen Tool und einem einfachen Ablauf zur Ergebnisanzeige. Die Seite richtet sich an Nutzer, die eine kostenlose Online-Antwort, schnelle browserbasierte Ergebnisse und praktische Long-Tail-Inhalte für ein Hilfswerkzeug suchen.",
+  "howItWorks": [
+    "Gib den erforderlichen Wert oder Text in das Formular ein.",
+    "Die Umrechnung, Berechnung oder Transformation läuft sofort im Browser.",
+    "Prüfe das Ergebnis und nutze bei Bedarf verwandte Tools für den nächsten Schritt."
+  ],
+  "examples": [
+    {
+      "title": "Beispiel 1",
+      "input": "3 Gallonen",
+      "output": "11,3562 Liter",
+      "description": "Ein realistisches Beispiel für die Umrechnung von Gallonen in Liter für eine alltägliche Suchanfrage."
+    },
+    {
+      "title": "Beispiel 2",
+      "input": "3 Gallonen",
+      "output": "11,3562 Liter",
+      "description": "Ein weiteres praktisches Anwendungsbeispiel für organischen Long-Tail-Traffic."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Wie genau ist dieses Tool?",
+      "answer": "Das Ergebnis wird direkt anhand der Formel oder der Browser-Logik dieses Tools berechnet."
+    },
+    {
+      "question": "Kann ich dieses Tool auf dem Handy nutzen?",
+      "answer": "Ja. Die Seite funktioniert auf Desktop- und Mobilgeräten mit einem einfachen Eingabe- und Ergebnislayout."
+    }
+  ],
+  "seo": {
+    "title": "Umrechner von Gallonen in Liter",
+    "description": "Gallonen sofort in Liter umrechnen. Kostenloser Online-Umrechner von Gallonen in Liter mit sofortigen Ergebnissen.",
+    "keywords": [
+      "umrechner von gallonen in liter",
+      "gallonen in liter umrechner",
+      "umrechnungstool"
+    ]
+  }
+}

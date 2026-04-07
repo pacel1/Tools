@@ -1,0 +1,47 @@
+{
+  "toolId": "json-validator",
+  "locale": "pl",
+  "slug": "walidator-json",
+  "h1": "Walidator JSON",
+  "title": "Walidator JSON",
+  "shortDescription": "Sprawdź poprawność JSON i wykryj błędy natychmiast dzięki szybkim wynikom, prostemu formularzowi i praktycznym przykładom.",
+  "overview": "Sprawdź poprawność JSON i wykryj błędy natychmiast. Ta strona zapewnia szybką odpowiedź dzięki praktycznemu narzędziu i prostemu procesowi prezentacji wyniku. Strona jest skierowana do użytkowników szukających darmowej odpowiedzi online, szybkich wyników w przeglądarce oraz praktycznych treści narzędziowych long-tail.",
+  "howItWorks": [
+    "Wpisz wymagane dane lub tekst w formularzu.",
+    "Konwersja, obliczenie lub przekształcenie odbywa się natychmiast w przeglądarce.",
+    "Sprawdź wynik i przejdź do powiązanych narzędzi, jeśli potrzebujesz kolejnego kroku."
+  ],
+  "examples": [
+    {
+      "title": "Przykład 1",
+      "input": "{\"items\":[1,2,3]}",
+      "output": "Poprawny JSON",
+      "description": "Realistyczny przykład walidatora JSON dla codziennego zapytania wyszukiwania."
+    },
+    {
+      "title": "Przykład 2",
+      "input": "{\"items\":[1,2,3]}",
+      "output": "Poprawny JSON",
+      "description": "Kolejny praktyczny przypadek użycia pod kątem organicznego ruchu long-tail."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Jak dokładne jest to narzędzie?",
+      "answer": "Wynik jest obliczany bezpośrednio na podstawie formuły lub logiki po stronie przeglądarki używanej przez to narzędzie."
+    },
+    {
+      "question": "Czy mogę używać tego narzędzia na telefonie?",
+      "answer": "Tak. Strona działa na ekranach desktopowych i mobilnych, oferując prosty układ wprowadzania danych i prezentacji wyniku."
+    }
+  ],
+  "seo": {
+    "title": "Walidator JSON",
+    "description": "Sprawdź poprawność JSON i wykryj błędy natychmiast. Darmowy online walidator JSON z natychmiastowymi wynikami.",
+    "keywords": [
+      "walidator json",
+      "walidator json",
+      "developer-tools tool"
+    ]
+  }
+}

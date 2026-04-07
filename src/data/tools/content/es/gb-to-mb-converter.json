@@ -1,0 +1,47 @@
+{
+  "toolId": "gb-to-mb-converter",
+  "locale": "es",
+  "slug": "convertidor-gb-a-mb",
+  "h1": "Convertidor de GB a MB",
+  "title": "Convertidor de GB a MB",
+  "shortDescription": "Convierte gigabytes a megabytes al instante usando la relacion binaria de 1024.",
+  "overview": "Convierte gigabytes a megabytes al instante. Este convertidor usa la relacion binaria de 1 GB = 1024 MB, habitual en calculos de tamano de archivos y almacenamiento.",
+  "howItWorks": [
+    "Introduce la cantidad de gigabytes en el formulario.",
+    "La conversion se ejecuta al instante en el navegador con la relacion de 1024.",
+    "Revisa el resultado y usa herramientas relacionadas si necesitas otro paso."
+  ],
+  "examples": [
+    {
+      "title": "Ejemplo 1",
+      "input": "2 gigabytes",
+      "output": "2048 megabytes",
+      "description": "Ejemplo practico para conversiones binarias de almacenamiento."
+    },
+    {
+      "title": "Ejemplo 2",
+      "input": "1 gigabyte",
+      "output": "1024 megabytes",
+      "description": "Util para espacio en disco, copias de seguridad y tamano de archivos."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Que relacion usa esta herramienta?",
+      "answer": "Esta herramienta usa la relacion binaria, por lo que 1 GB equivale a 1024 MB."
+    },
+    {
+      "question": "Puedo usar esta herramienta en movil?",
+      "answer": "Si. La pagina funciona en escritorio y movil con una interfaz simple de entrada y resultado."
+    }
+  ],
+  "seo": {
+    "title": "Convertidor de GB a MB",
+    "description": "Convertidor GB a MB gratis online con la relacion binaria 1024 y resultados inmediatos.",
+    "keywords": [
+      "convertidor gb a mb",
+      "1 gb a mb 1024",
+      "convertidor de almacenamiento"
+    ]
+  }
+}

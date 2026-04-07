@@ -1,0 +1,23 @@
+{
+  "id": "qr-code-generator",
+  "type": "generator",
+  "category": "generators",
+  "componentName": "QrCodeGeneratorTool",
+  "logicModule": "qr-code-generator",
+  "inputSchema": "qrCodeGeneratorInputSchema",
+  "outputSchema": "qrCodeGeneratorOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "meta-tag-generator",
+    "gradient-generator",
+    "box-shadow-generator",
+    "favicon-generator"
+  ],
+  "seoPriority": 0.97
+}

@@ -1,0 +1,23 @@
+{
+  "id": "discount-calculator",
+  "type": "calculator",
+  "category": "calculators",
+  "componentName": "DiscountCalculatorTool",
+  "logicModule": "discount-calculator",
+  "inputSchema": "discountCalculatorInputSchema",
+  "outputSchema": "discountCalculatorOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "bmi-calculator",
+    "age-calculator",
+    "percentage-calculator",
+    "loan-payment-calculator"
+  ],
+  "seoPriority": 0.95
+}

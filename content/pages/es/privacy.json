@@ -1,0 +1,36 @@
+{
+  "page": "privacy",
+  "locale": "es",
+  "title": "Política de privacidad",
+  "metaTitle": "Política de privacidad | ConvertBase.app",
+  "metaDescription": "Lee la política de privacidad de ConvertBase.app, incluida la información sobre cookies, Google Analytics, Google AdSense y contacto.",
+  "heading": "Política de privacidad",
+  "content": [
+    "Esta Política de privacidad explica cómo ConvertBase.app trata la información cuando navegas por nuestras páginas y utilizas nuestras herramientas online.",
+    "Intentamos limitar la recopilación de datos y ejecutar tantas herramientas como sea posible directamente en tu navegador, sin necesidad de crear una cuenta."
+  ],
+  "sections": [
+    {
+      "title": "Información que podemos recopilar",
+      "paragraphs": [
+        "Podemos recopilar información técnica limitada como tipo de navegador, datos del dispositivo, ubicación aproximada, páginas de referencia y eventos de interacción necesarios para entender el rendimiento del sitio.",
+        "Cuando la analítica está activada, Google Analytics puede procesar esa información en nuestro nombre. No pedimos cuentas para usar las herramientas públicas principales."
+      ]
+    },
+    {
+      "title": "Cookies y publicidad",
+      "paragraphs": [
+        "ConvertBase.app puede usar cookies y tecnologías similares para recordar preferencias básicas, medir tráfico y apoyar la seguridad del sitio.",
+        "Servicios publicitarios como Google AdSense pueden usar cookies para mostrar y medir anuncios. Encontrarás más detalles en nuestra Política de cookies."
+      ]
+    },
+    {
+      "title": "Tus opciones y contacto",
+      "paragraphs": [
+        "Puedes controlar las cookies desde la configuración de tu navegador. Desactivar ciertas cookies puede afectar al funcionamiento de algunas funciones.",
+        "Si tienes preguntas sobre esta política o tu privacidad en ConvertBase.app, escribe a contact@convertbase.app."
+      ]
+    }
+  ],
+  "keywords": ["política de privacidad", "privacidad convertbase", "google analytics", "google adsense", "cookies", "protección de datos"]
+}

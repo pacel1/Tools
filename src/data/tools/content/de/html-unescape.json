@@ -1,0 +1,109 @@
+{
+  "toolId": "html-unescape",
+  "locale": "de",
+  "slug": "html-entschluesseln",
+  "h1": "HTML entschlüsseln",
+  "title": "HTML entschlüsseln",
+  "shortDescription": "Entschlüssle maskierte HTML-Entitäten zu lesbarem Markup oder Text.",
+  "metaTitle": "HTML entschlüsseln | HTML-Entitäten dekodieren",
+  "metaDescription": "Entschlüssle HTML-Entitäten schnell zu lesbarem Text oder Markup mit einem lokalen Browser-Tool.",
+  "intro": "Entschlüssle HTML-Entitäten wie &amp;, &lt;, &gt; und &quot;, um lesbares HTML oder Klartext sofort im Browser anzuzeigen.",
+  "overview": "HTML entschlüsseln wandelt maskierte Entitäten in ihre ursprünglichen Zeichen um, damit du Inhalte lesen, prüfen oder weiterverwenden kannst. Das ist praktisch für eingefügte Snippets, codierte Inhalte und Debugging von Vorlagen- oder API-Ausgaben. Das Tool arbeitet clientseitig und liefert schnelle Ergebnisse ohne Serverübertragung.",
+  "howItWorks": [
+    "Füge maskiertes HTML oder Text in das Eingabefeld ein.",
+    "Das Tool dekodiert gängige HTML-Entitäten wie &amp;, &lt;, &gt;, &quot; sowie numerische Entitäten.",
+    "Kopiere das entschlüsselte Ergebnis zum Bearbeiten, Prüfen oder Wiederverwenden."
+  ],
+  "useCases": [
+    "Kodiertes HTML aus E-Mails, CMS oder Quellcode lesen.",
+    "Vorlagen, API-Antworten oder maskierte Textfragmente debuggen.",
+    "Entitäten-Text vor dem Bearbeiten in lesbare Form umwandeln.",
+    "Markups prüfen, die maskiert gespeichert oder übertragen wurden."
+  ],
+  "examples": [
+    {
+      "title": "Einfache Entitäten dekodieren",
+      "input": "&lt;strong&gt;Hello &amp; welcome&lt;/strong&gt;",
+      "output": "<strong>Hello & welcome</strong>",
+      "description": "Stellt maskierte Tags und Symbole wieder lesbar her."
+    },
+    {
+      "title": "Anführungszeichen und Apostrophe",
+      "input": "&quot;Smart&quot; &amp; &#39;simple&#39;",
+      "output": "\"Smart\" & 'simple'",
+      "description": "Dekodiert gängige Satzzeichen-Entitäten in HTML."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Was macht HTML entschlüsseln?",
+      "answer": "Es wandelt maskierte HTML-Entitäten in normale Zeichen um, damit Text oder Markup wieder lesbar werden."
+    },
+    {
+      "question": "Ist das dasselbe wie HTML kodieren?",
+      "answer": "Nein. HTML kodieren wandelt Sonderzeichen in Entitäten um, HTML entschlüsseln macht den umgekehrten Schritt."
+    },
+    {
+      "question": "Läuft das Tool lokal im Browser?",
+      "answer": "Ja. Das Tool ist für die clientseitige Nutzung konzipiert und benötigt keine externe API."
+    },
+    {
+      "question": "Kann es numerische Entitäten dekodieren?",
+      "answer": "Ja. Es kann gängige numerische HTML-Entitäten sowie benannte Entitäten dekodieren."
+    },
+    {
+      "question": "Kann man das Ergebnis direkt rendern?",
+      "answer": "Prüfe entschlüsselten Inhalt immer vor dem Rendern, besonders wenn er aus einer unsicheren Quelle stammt."
+    }
+  ],
+  "uiLabels": {
+    "copy": "Kopieren",
+    "copied": "Kopiert",
+    "input": "Eingabe",
+    "output": "Ausgabe",
+    "placeholder": "Maskiertes HTML oder Text hier einfügen",
+    "indent": "Einzug",
+    "removeComments": "Kommentare entfernen",
+    "preview": "Vorschau",
+    "source": "Quelle",
+    "sanitizedHtml": "Bereinigtes HTML",
+    "plainText": "Klartext",
+    "summary": "Zusammenfassung",
+    "total": "Gesamt",
+    "links": "Links",
+    "images": "Bilder",
+    "errors": "Fehler",
+    "warnings": "Warnungen",
+    "valid": "Gültig",
+    "invalid": "Ungültig",
+    "href": "Href",
+    "text": "Text",
+    "rel": "Rel",
+    "target": "Ziel",
+    "alt": "Alt",
+    "width": "Breite",
+    "height": "Höhe",
+    "empty": "Leer",
+    "outputReady": "Ausgabe bereit",
+    "cleanedHtml": "Bereinigtes HTML",
+    "formattedHtml": "Formatiertes HTML",
+    "minifiedHtml": "Minifiziertes HTML",
+    "markdown": "Markdown",
+    "extractedImages": "Extrahierte Bilder",
+    "extractedLinks": "Extrahierte Links",
+    "validationSummary": "Validierungsübersicht",
+    "prettyHtml": "Lesbares HTML",
+    "encodedText": "Kodierter Text"
+  },
+  "seo": {
+    "title": "HTML entschlüsseln",
+    "description": "Entschlüssle HTML-Entitäten zu lesbarem Text oder Markup mit einem schnellen Browser-Tool, das lokal läuft.",
+    "keywords": [
+      "html entschlüsseln",
+      "html entitäten dekodieren",
+      "html decoder",
+      "html unescape",
+      "html tools"
+    ]
+  }
+}

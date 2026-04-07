@@ -1,0 +1,47 @@
+{
+  "toolId": "compound-interest-calculator",
+  "locale": "pl",
+  "slug": "kalkulator-odsetek-skladanych",
+  "h1": "Kalkulator odsetek składanych",
+  "title": "Kalkulator odsetek składanych",
+  "shortDescription": "Oblicz wzrost odsetek składanych w czasie dzięki szybkim wynikom, prostym danym wejściowym i praktycznym przykładom.",
+  "overview": "Oblicz wzrost odsetek składanych w czasie. Ta strona zapewnia szybą odpowiedź dzięki praktycznemu narzędziu i prostemu przebiegowi wyniku. Strona jest skierowana do użytkowników szukających darmowej odpowiedzi online, szybkich wyników w przeglądarce i praktycznych treści long-tail związanych z narzędziami.",
+  "howItWorks": [
+    "Wprowadź wymagane dane do formularza.",
+    "Obliczenie lub przekształcenie uruchamia się natychmiast w przeglądarce.",
+    "Sprawdź wynik i skorzystaj z powiązanych narzędzi, jeśli potrzebujesz kolejnego kroku."
+  ],
+  "examples": [
+    {
+      "title": "Przykład 1",
+      "input": "5000, 5%, 10 lat",
+      "output": "Wzrost w czasie",
+      "description": "Realistyczny przykład kalkulatora odsetek składanych dla codziennego zapytania."
+    },
+    {
+      "title": "Przykład 2",
+      "input": "5000, 5%, 10 lat",
+      "output": "Wzrost w czasie",
+      "description": "Kolejny praktyczny przypadek użycia wspierający organiczny ruch long-tail."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Jak dokładne jest to narzędzie?",
+      "answer": "Wynik jest obliczany bezpośrednio na podstawie wzoru lub logiki po stronie przeglądarki używanej przez to narzędzie."
+    },
+    {
+      "question": "Czy mogę korzystać z tego narzędzia na telefonie?",
+      "answer": "Tak. Strona działa na komputerach i urządzeniach mobilnych dzięki prostemu układowi pól wejściowych i wyniku."
+    }
+  ],
+  "seo": {
+    "title": "Kalkulator odsetek składanych",
+    "description": "Oblicz wzrost odsetek składanych w czasie. Darmowy kalkulator odsetek składanych online z natychmiastowymi wynikami.",
+    "keywords": [
+      "kalkulator odsetek składanych",
+      "kalkulator odsetek składanych",
+      "narzędzie kalkulatory"
+    ]
+  }
+}

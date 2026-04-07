@@ -1,0 +1,23 @@
+{
+  "id": "html-validator",
+  "type": "developer-tool",
+  "category": "html-tools",
+  "componentName": "HtmlValidatorTool",
+  "logicModule": "html-validator",
+  "inputSchema": "htmlValidatorInputSchema",
+  "outputSchema": "htmlValidatorOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "html-formatter",
+    "html-minifier",
+    "html-viewer",
+    "html-to-text"
+  ],
+  "seoPriority": 0.92
+}

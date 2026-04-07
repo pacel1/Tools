@@ -1,0 +1,47 @@
+{
+  "toolId": "url-encoder",
+  "locale": "de",
+  "slug": "url-encoder",
+  "h1": "URL-Kodierer",
+  "title": "URL-Kodierer",
+  "shortDescription": "Text sicher für URLs kodieren – mit schnellen Ergebnissen, einfacher Eingabe und praktischen Beispielen.",
+  "overview": "Text sicher für die Verwendung in URLs kodieren. Diese Seite liefert eine schnelle Antwort mit einem praktischen Tool und einem einfachen Ergebnisablauf. Die Seite richtet sich an Nutzer, die eine kostenlose Online-Antwort, schnelle browserbasierte Ergebnisse und praktische Long-Tail-Tool-Inhalte suchen.",
+  "howItWorks": [
+    "Geben Sie den benötigten Wert oder Text in das Formular ein.",
+    "Die Umwandlung, Berechnung oder Transformation läuft sofort im Browser.",
+    "Prüfen Sie das Ergebnis und nutzen Sie bei Bedarf verwandte Tools für den nächsten Schritt."
+  ],
+  "examples": [
+    {
+      "title": "Beispiel 1",
+      "input": "hello world?x=1&y=2",
+      "output": "hello%20world%3Fx%3D1%26y%3D2",
+      "description": "Ein realistisches URL-Kodierbeispiel für eine alltägliche Suchanfrage."
+    },
+    {
+      "title": "Beispiel 2",
+      "input": "hello world?x=1&y=2",
+      "output": "hello%20world%3Fx%3D1%26y%3D2",
+      "description": "Ein weiterer praktischer Anwendungsfall für organischen Long-Tail-Traffic."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Wie genau ist dieses Tool?",
+      "answer": "Das Ergebnis wird direkt aus der Formel oder der browserseitigen Logik berechnet, die dieses Tool verwendet."
+    },
+    {
+      "question": "Kann ich dieses Tool auf dem Handy nutzen?",
+      "answer": "Ja. Die Seite funktioniert auf Desktop- und Mobilgeräten mit einem einfachen Eingabe- und Ergebnislayout."
+    }
+  ],
+  "seo": {
+    "title": "URL-Kodierer",
+    "description": "Text sicher für URLs kodieren. Kostenloser URL-Kodierer online mit sofortigen Ergebnissen.",
+    "keywords": [
+      "url-kodierer",
+      "url kodierer",
+      "entwickler-tools"
+    ]
+  }
+}

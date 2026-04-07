@@ -1,0 +1,47 @@
+{
+  "toolId": "percentage-decrease-calculator",
+  "locale": "pl",
+  "slug": "kalkulator-procentowego-spadku",
+  "h1": "Kalkulator procentowego spadku",
+  "title": "Kalkulator procentowego spadku",
+  "shortDescription": "Oblicz wartość po spadku o procent — szybko, prosto i z praktycznymi przykładami.",
+  "overview": "Oblicz wartość po spadku o określony procent. Ta strona zapewnia szybki wynik dzięki prostemu narzędziu online i przejrzystemu przebiegowi obliczeń. To rozwiązanie dla osób szukających darmowej odpowiedzi w przeglądarce, natychmiastowych wyników oraz praktycznych treści z długiego ogona wyszukiwań.",
+  "howItWorks": [
+    "Wpisz wymaganą wartość lub tekst w formularzu.",
+    "Konwersja, obliczenie lub transformacja uruchamia się natychmiast w przeglądarce.",
+    "Sprawdź wynik i przejdź do powiązanych narzędzi, jeśli potrzebujesz kolejnego kroku."
+  ],
+  "examples": [
+    {
+      "title": "Przykład 1",
+      "input": "120 pomniejszone o 15%",
+      "output": "102",
+      "description": "Realistyczny przykład użycia kalkulatora procentowego spadku dla codziennego zapytania."
+    },
+    {
+      "title": "Przykład 2",
+      "input": "120 pomniejszone o 15%",
+      "output": "102",
+      "description": "Kolejny praktyczny przypadek użycia dla ruchu organicznego z długiego ogona."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Jak dokładne jest to narzędzie?",
+      "answer": "Wynik jest obliczany bezpośrednio na podstawie wzoru lub logiki po stronie przeglądarki używanej przez to narzędzie."
+    },
+    {
+      "question": "Czy mogę korzystać z tego narzędzia na telefonie?",
+      "answer": "Tak. Strona działa zarówno na komputerze, jak i na urządzeniach mobilnych, a układ formularza i wyniku jest prosty."
+    }
+  ],
+  "seo": {
+    "title": "Kalkulator procentowego spadku",
+    "description": "Oblicz wartość po spadku o procent. Darmowy kalkulator procentowego spadku online z natychmiastowym wynikiem.",
+    "keywords": [
+      "kalkulator procentowego spadku",
+      "kalkulator spadku procentowego",
+      "narzedzia kalkulator"
+    ]
+  }
+}

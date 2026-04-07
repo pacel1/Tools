@@ -1,0 +1,47 @@
+{
+  "toolId": "simple-interest-calculator",
+  "locale": "de",
+  "slug": "einfache-zinsrechner",
+  "h1": "Einfacher Zinsrechner",
+  "title": "Einfacher Zinsrechner",
+  "shortDescription": "Berechnen Sie den einfachen Zins aus Kapital, Zinssatz und Laufzeit mit schnellen Ergebnissen, einfachen Eingaben und praktischen Beispielen.",
+  "overview": "Berechnen Sie den einfachen Zins aus Kapital, Zinssatz und Laufzeit. Diese Seite liefert eine schnelle Antwort mit einem praktischen Online-Tool und einem einfachen Ergebnisablauf. Sie richtet sich an Nutzer, die eine kostenlose Online-Antwort, schnelle Ergebnisse im Browser und praktische Long-Tail-Inhalte suchen.",
+  "howItWorks": [
+    "Geben Sie den benötigten Wert oder Text in das Formular ein.",
+    "Die Umrechnung, Berechnung oder Umwandlung läuft sofort im Browser.",
+    "Prüfen Sie das Ergebnis und nutzen Sie bei Bedarf verwandte Tools für den nächsten Schritt."
+  ],
+  "examples": [
+    {
+      "title": "Beispiel 1",
+      "input": "5000, 4 %, 3 Jahre",
+      "output": "600",
+      "description": "Ein realistisches Beispiel für den einfachen Zinsrechner bei einer typischen Suchanfrage."
+    },
+    {
+      "title": "Beispiel 2",
+      "input": "5000, 4 %, 3 Jahre",
+      "output": "600",
+      "description": "Ein weiteres praktisches Anwendungsbeispiel für organischen Long-Tail-Traffic."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Wie genau ist dieses Tool?",
+      "answer": "Das Ergebnis wird direkt mit der Formel oder der browserseitigen Logik dieses Tools berechnet."
+    },
+    {
+      "question": "Kann ich dieses Tool auf dem Smartphone nutzen?",
+      "answer": "Ja. Die Seite funktioniert auf Desktop- und Mobilgeräten mit einem einfachen Eingabe- und Ergebnislayout."
+    }
+  ],
+  "seo": {
+    "title": "Einfacher Zinsrechner",
+    "description": "Berechnen Sie den einfachen Zins aus Kapital, Zinssatz und Laufzeit. Kostenloser Online-Zinsrechner mit sofortigen Ergebnissen.",
+    "keywords": [
+      "einfacher zinsrechner",
+      "einfacher zinsrechner",
+      "rechner tool"
+    ]
+  }
+}

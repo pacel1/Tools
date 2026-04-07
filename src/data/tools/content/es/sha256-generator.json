@@ -1,0 +1,47 @@
+{
+  "toolId": "sha256-generator",
+  "locale": "es",
+  "slug": "generador-sha256",
+  "h1": "Generador SHA-256",
+  "title": "Generador SHA-256",
+  "shortDescription": "Genera un hash SHA-256 a partir de texto al instante, con resultados rápidos, entradas sencillas y ejemplos prácticos.",
+  "overview": "Genera un hash SHA-256 a partir de texto al instante. Esta página ofrece una respuesta rápida con una herramienta práctica y un flujo de resultados sencillo. Está pensada para usuarios que buscan una respuesta gratuita en línea, resultados rápidos en el navegador y contenido útil de cola larga.",
+  "howItWorks": [
+    "Introduce el valor o texto requerido en el formulario.",
+    "La conversión, el cálculo o la transformación se ejecuta al instante en el navegador.",
+    "Revisa el resultado y continúa con herramientas relacionadas si necesitas otro paso."
+  ],
+  "examples": [
+    {
+      "title": "Ejemplo 1",
+      "input": "hashea este texto",
+      "output": "hash SHA-256",
+      "description": "Un ejemplo realista de generador SHA-256 para una búsqueda cotidiana."
+    },
+    {
+      "title": "Ejemplo 2",
+      "input": "hashea este texto",
+      "output": "hash SHA-256",
+      "description": "Otro caso práctico para tráfico orgánico de cola larga."
+    }
+  ],
+  "faq": [
+    {
+      "question": "¿Qué precisión tiene esta herramienta?",
+      "answer": "El resultado se calcula directamente a partir de la fórmula o de la lógica en el navegador que usa esta herramienta."
+    },
+    {
+      "question": "¿Puedo usar esta herramienta en el móvil?",
+      "answer": "Sí. La página funciona en pantallas de escritorio y móviles con un diseño simple de entrada y resultado."
+    }
+  ],
+  "seo": {
+    "title": "Generador SHA-256",
+    "description": "Genera un hash SHA-256 a partir de texto al instante. Generador SHA-256 gratis en línea con resultados inmediatos.",
+    "keywords": [
+      "generador sha256",
+      "generador sha256",
+      "herramienta security-tools"
+    ]
+  }
+}

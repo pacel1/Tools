@@ -1,0 +1,109 @@
+{
+  "toolId": "html-minifier",
+  "locale": "en",
+  "slug": "html-minifier",
+  "h1": "HTML Minifier",
+  "title": "HTML Minifier",
+  "shortDescription": "Minify HTML online to reduce file size without calling external APIs.",
+  "metaTitle": "HTML Minifier Online | Compress HTML Fast",
+  "metaDescription": "Minify HTML online in your browser to reduce file size, remove unnecessary whitespace, and optimize markup without external APIs.",
+  "intro": "Minify HTML in your browser to shrink code size, remove unnecessary whitespace, and keep markup ready for production. This client-side HTML minifier works locally and does not send your code to external services.",
+  "overview": "Use this HTML minifier to compress markup quickly and safely. It removes extra spaces, line breaks, and comments where appropriate while preserving the structure of your HTML. Because it runs client-side, it is a practical choice for developers who want faster page delivery, cleaner source output, and no API dependency.",
+  "howItWorks": [
+    "Paste your HTML into the input field.",
+    "Choose any available cleanup options, such as removing comments.",
+    "Run minification to compress the markup.",
+    "Copy the minified HTML and use it in your project."
+  ],
+  "useCases": [
+    "Preparing HTML for production deployments.",
+    "Reducing template size before publishing a website.",
+    "Cleaning up exported HTML from editors or generators.",
+    "Optimizing snippets for email templates or static pages.",
+    "Checking how much whitespace and comment removal can reduce output size."
+  ],
+  "examples": [
+    {
+      "title": "Basic minification",
+      "input": "<div>\n  <h1>Title</h1>\n  <p> Hello world </p>\n</div>",
+      "output": "<div><h1>Title</h1><p>Hello world</p></div>",
+      "description": "Removes line breaks and extra spaces while keeping valid markup."
+    },
+    {
+      "title": "Comment removal",
+      "input": "<section>\n  <!-- note -->\n  <span>Text</span>\n</section>",
+      "output": "<section><span>Text</span></section>",
+      "description": "Strips HTML comments when enabled."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Does this HTML minifier send my code to a server?",
+      "answer": "No. It runs in your browser and uses client-side logic only."
+    },
+    {
+      "question": "Will it break my HTML?",
+      "answer": "It is designed to preserve valid structure while removing unnecessary whitespace and comments. Always review the output if your markup depends on exact spacing."
+    },
+    {
+      "question": "Can I use it for production code?",
+      "answer": "Yes. It is suitable for preparing HTML for deployment, but you should test the output in your environment first."
+    },
+    {
+      "question": "Does it remove comments?",
+      "answer": "Yes, if the option is enabled. You can keep comments when needed."
+    }
+  ],
+  "uiLabels": {
+    "copy": "Copy",
+    "copied": "Copied",
+    "input": "Input",
+    "output": "Output",
+    "placeholder": "Paste HTML here",
+    "indent": "Indent",
+    "removeComments": "Remove comments",
+    "preview": "Preview",
+    "source": "Source",
+    "sanitizedHtml": "Sanitized HTML",
+    "plainText": "Plain text",
+    "summary": "Summary",
+    "total": "Total",
+    "links": "Links",
+    "images": "Images",
+    "errors": "Errors",
+    "warnings": "Warnings",
+    "valid": "Valid",
+    "invalid": "Invalid",
+    "href": "Href",
+    "text": "Text",
+    "rel": "Rel",
+    "target": "Target",
+    "alt": "Alt",
+    "width": "Width",
+    "height": "Height",
+    "empty": "Empty",
+    "outputReady": "Output ready",
+    "cleanedHtml": "Cleaned HTML",
+    "formattedHtml": "Formatted HTML",
+    "minifiedHtml": "Minified HTML",
+    "markdown": "Markdown",
+    "extractedImages": "Extracted images",
+    "extractedLinks": "Extracted links",
+    "validationSummary": "Validation summary",
+    "prettyHtml": "Pretty HTML",
+    "encodedText": "Encoded text"
+  },
+  "seo": {
+    "title": "HTML Minifier Online | Compress HTML Fast",
+    "description": "Minify HTML online in your browser to reduce file size, remove unnecessary whitespace, and optimize markup without external APIs.",
+    "keywords": [
+      "html minifier",
+      "minify html",
+      "html compressor",
+      "compress html online",
+      "remove whitespace html",
+      "html cleanup",
+      "client side html minifier"
+    ]
+  }
+}

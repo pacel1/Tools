@@ -1,0 +1,47 @@
+{
+  "toolId": "discount-calculator",
+  "locale": "pl",
+  "slug": "kalkulator-rabatu",
+  "h1": "Kalkulator rabatu",
+  "title": "Kalkulator rabatu",
+  "shortDescription": "Oblicz cenę po rabacie na podstawie procentu zniżki — szybko, prosto i z praktycznymi przykładami.",
+  "overview": "Oblicz cenę sprzedaży po odjęciu rabatu procentowego. Ta strona daje szybką odpowiedź dzięki prostemu narzędziu online i przejrzystemu wynikowi. Jest skierowana do osób, które szukają darmowego kalkulatora online, natychmiastowych wyników w przeglądarce oraz praktycznych treści odpowiadających na dłuższe zapytania wyszukiwania.",
+  "howItWorks": [
+    "Wpisz wymaganą wartość do formularza.",
+    "Obliczenie wykonuje się natychmiast w przeglądarce.",
+    "Sprawdź wynik i skorzystaj z powiązanych narzędzi, jeśli potrzebujesz kolejnego kroku."
+  ],
+  "examples": [
+    {
+      "title": "Przykład 1",
+      "input": "100 z rabatem 20%",
+      "output": "80",
+      "description": "Realistyczny przykład kalkulatora rabatu dla codziennego zapytania w wyszukiwarce."
+    },
+    {
+      "title": "Przykład 2",
+      "input": "100 z rabatem 20%",
+      "output": "80",
+      "description": "Kolejny praktyczny przykład dla ruchu organicznego z długich fraz."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Jak dokładne jest to narzędzie?",
+      "answer": "Wynik jest obliczany bezpośrednio na podstawie wzoru lub logiki działającej po stronie przeglądarki."
+    },
+    {
+      "question": "Czy mogę używać tego narzędzia na telefonie?",
+      "answer": "Tak. Strona działa na komputerach i urządzeniach mobilnych, oferując prosty układ wejścia i wyniku."
+    }
+  ],
+  "seo": {
+    "title": "Kalkulator rabatu",
+    "description": "Oblicz cenę po rabacie procentowym. Darmowy kalkulator rabatu online z natychmiastowym wynikiem.",
+    "keywords": [
+      "kalkulator rabatu",
+      "kalkulator rabatu",
+      "narzedzia kalkulatory"
+    ]
+  }
+}

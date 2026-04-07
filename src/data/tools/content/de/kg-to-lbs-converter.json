@@ -1,0 +1,47 @@
+{
+  "toolId": "kg-to-lbs-converter",
+  "locale": "de",
+  "slug": "kg-in-lbs-umrechner",
+  "h1": "Kg-in-lbs-Umrechner",
+  "title": "Kg-in-lbs-Umrechner",
+  "shortDescription": "Kilogramm sofort in Pfund umrechnen mit klarer, gut lesbarer Ausgabe für Fitness, Versand und den Alltag.",
+  "overview": "Dieser Umrechner wandelt Kilogrammwerte mit dem Standardfaktor 2,2046226218 in Pfund um. Die Oberfläche hält den Rechner oberhalb der Falz, damit Nutzer sofort umrechnen können, und bietet gleichzeitig indexierbaren Begleittext für Suchmaschinen darunter.",
+  "howItWorks": [
+    "Geben Sie einen Kilogrammwert mit optionalen Dezimalstellen ein.",
+    "Das Tool prüft die Zahl und multipliziert sie mit dem Umrechnungsfaktor.",
+    "Das Ergebnis wird als präziser Zahlenwert sowie als gerundete Anzeige dargestellt."
+  ],
+  "examples": [
+    {
+      "title": "Trainingsplanung",
+      "input": "5 kg",
+      "output": "11.02 lb",
+      "description": "Hilfreich beim Lesen von Trainingsplänen, die metrische und imperiale Gewichte kombinieren."
+    },
+    {
+      "title": "Paketabschätzung",
+      "input": "18.5 kg",
+      "output": "40.79 lb",
+      "description": "Praktisch für Versandformulare und Gewichtsgrenzen von Dienstleistern in Pfund."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Welche Formel wird verwendet?",
+      "answer": "Der Umrechner multipliziert Kilogramm mit 2,2046226218, dem Standard-Umrechnungsfaktor von Kilogramm in Pfund."
+    },
+    {
+      "question": "Kann ich Dezimalwerte umrechnen?",
+      "answer": "Ja. Das Eingabefeld akzeptiert Dezimalzahlen und ist daher praktisch für Körpergewicht, Paketgewicht und Zutatenmengen."
+    }
+  ],
+  "seo": {
+    "title": "Kg-in-lbs-Umrechner",
+    "description": "Kostenloser Online-Kg-in-lbs-Umrechner mit sofortigen Ergebnissen und klaren Beispielen.",
+    "keywords": [
+      "kg in lbs",
+      "kilogramm in pfund",
+      "gewichtsrechner"
+    ]
+  }
+}

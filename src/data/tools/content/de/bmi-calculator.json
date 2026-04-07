@@ -1,0 +1,47 @@
+{
+  "toolId": "bmi-calculator",
+  "locale": "de",
+  "slug": "bmi-rechner",
+  "h1": "BMI-Rechner",
+  "title": "BMI-Rechner",
+  "shortDescription": "Berechne den Body-Mass-Index aus Körpergröße und Gewicht mit schnellen Ergebnissen, einfachen Eingaben und praktischen Beispielen.",
+  "overview": "Berechne den Body-Mass-Index aus Körpergröße und Gewicht. Diese Seite liefert mit einem praktischen Online-Tool und einem einfachen Ergebnisablauf schnell eine Antwort. Sie richtet sich an Nutzer, die eine kostenlose Online-Antwort, sofortige Ergebnisse im Browser und praxisnahe Long-Tail-Inhalte suchen.",
+  "howItWorks": [
+    "Gib den erforderlichen Wert oder Text in das Formular ein.",
+    "Die Umrechnung, Berechnung oder Transformation läuft sofort im Browser.",
+    "Prüfe das Ergebnis und nutze bei Bedarf verwandte Tools für den nächsten Schritt."
+  ],
+  "examples": [
+    {
+      "title": "Beispiel 1",
+      "input": "70 kg und 175 cm",
+      "output": "22,86",
+      "description": "Ein realistisches BMI-Rechner-Beispiel für eine alltägliche Suchanfrage."
+    },
+    {
+      "title": "Beispiel 2",
+      "input": "70 kg und 175 cm",
+      "output": "22,86",
+      "description": "Ein weiteres praktisches Anwendungsbeispiel für organischen Long-Tail-Traffic."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Wie genau ist dieses Tool?",
+      "answer": "Das Ergebnis wird direkt anhand der Formel oder der browserseitigen Logik dieses Tools berechnet."
+    },
+    {
+      "question": "Kann ich dieses Tool auf dem Smartphone verwenden?",
+      "answer": "Ja. Die Seite funktioniert auf Desktop- und Mobilgeräten mit einem einfachen Eingabe- und Ergebnislayout."
+    }
+  ],
+  "seo": {
+    "title": "BMI-Rechner",
+    "description": "Berechne den Body-Mass-Index aus Körpergröße und Gewicht. Kostenloser BMI-Rechner online mit sofortigem Ergebnis.",
+    "keywords": [
+      "bmi rechner",
+      "bmi calculator",
+      "rechner tools"
+    ]
+  }
+}

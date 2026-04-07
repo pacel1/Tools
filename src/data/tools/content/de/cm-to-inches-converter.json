@@ -1,0 +1,47 @@
+{
+  "toolId": "cm-to-inches-converter",
+  "locale": "de",
+  "slug": "cm-zu-zoll-umrechner",
+  "h1": "CM-zu-Zoll-Umrechner",
+  "title": "CM-zu-Zoll-Umrechner",
+  "shortDescription": "Zentimeter sofort in Zoll umrechnen – schnell, einfach und mit praktischen Beispielen.",
+  "overview": "Wandle Zentimeter sofort in Zoll um. Diese Seite liefert eine schnelle Antwort mit einem praktischen Tool und einem einfachen Ergebnisablauf. Sie richtet sich an Nutzer, die eine kostenlose Online-Lösung, schnelle Ergebnisse im Browser und praxisnahe Long-Tail-Inhalte suchen.",
+  "howItWorks": [
+    "Gib den benötigten Wert oder Text in das Formular ein.",
+    "Die Umrechnung, Berechnung oder Umwandlung läuft sofort im Browser.",
+    "Prüfe das Ergebnis und nutze bei Bedarf passende weitere Tools für den nächsten Schritt."
+  ],
+  "examples": [
+    {
+      "title": "Beispiel 1",
+      "input": "10 Zentimeter",
+      "output": "3,937 Zoll",
+      "description": "Ein realistisches Beispiel für die Umrechnung von cm in Zoll im Alltag."
+    },
+    {
+      "title": "Beispiel 2",
+      "input": "10 Zentimeter",
+      "output": "3,937 Zoll",
+      "description": "Ein weiteres praktisches Beispiel für organischen Long-Tail-Traffic."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Wie genau ist dieses Tool?",
+      "answer": "Das Ergebnis wird direkt mit der Formel oder der browserseitigen Logik dieses Tools berechnet."
+    },
+    {
+      "question": "Kann ich das Tool auf dem Handy nutzen?",
+      "answer": "Ja. Die Seite funktioniert auf Desktop- und Mobilgeräten mit einem einfachen Eingabe- und Ergebnislayout."
+    }
+  ],
+  "seo": {
+    "title": "CM-zu-Zoll-Umrechner",
+    "description": "Zentimeter sofort in Zoll umrechnen. Kostenloser Online-CM-zu-Zoll-Umrechner mit sofortigen Ergebnissen.",
+    "keywords": [
+      "cm zu zoll umrechner",
+      "zentimeter in zoll umrechnen",
+      "umrechnungs tool"
+    ]
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "toolId": "html-viewer",
+  "locale": "de",
+  "slug": "html-vorschau",
+  "h1": "HTML-Vorschau",
+  "title": "HTML-Vorschau",
+  "shortDescription": "Zeige bereinigtes HTML sicher an und prüfe den bereinigten Quellcode.",
+  "metaTitle": "HTML-Vorschau | Bereinigtes HTML sicher anzeigen",
+  "metaDescription": "Zeige HTML in einer sicheren, bereinigten Vorschau an und prüfe Quellcode, Links, Bilder und Validierungsdetails.",
+  "intro": "Zeige HTML sicher im Browser an, prüfe die bereinigte Ausgabe und analysiere Links, Bilder und Struktur ohne Risiko aktiver Skriptausführung.",
+  "overview": "Die HTML-Vorschau hilft dir, HTML-Inhalte nach der Bereinigung zu prüfen. Sie ist für die schnelle Anzeige von vertrauenswürdigem oder untrusted Markup in einem sicheren, clientseitigen Ablauf gedacht. Nutze sie, um den bereinigten Quellcode zu prüfen, entfernte Elemente zu erkennen und Links sowie Medien vor dem Veröffentlichen oder Teilen zu kontrollieren.",
+  "howItWorks": [
+    "Füge dein HTML in das Eingabefeld ein.",
+    "Das Tool bereinigt das Markup clientseitig.",
+    "Prüfe die Vorschau und den bereinigten HTML-Quellcode.",
+    "Kontrolliere Links, Bilder, Attribute und Validierungsmeldungen.",
+    "Kopiere das bereinigte Ergebnis, wenn alles passt."
+  ],
+  "useCases": [
+    "HTML-Snippets vor dem Veröffentlichen prüfen.",
+    "Bereinigte Inhalte aus Nutzerbeiträgen kontrollieren.",
+    "Links, Bilder und Attribute in generiertem Markup inspizieren.",
+    "Bereinigtes HTML nach Export oder Konvertierung verifizieren.",
+    "Unsicheres oder fehlerhaftes HTML sicher ansehen."
+  ],
+  "examples": [
+    {
+      "title": "Vor dem Veröffentlichen eines Blog-Snippets",
+      "input": "<p>Hallo <script>alert(1)</script><a href='https://example.com'>Link</a></p>",
+      "output": "<p>Hallo <a href=\"https://example.com\">Link</a></p>",
+      "description": "Skripte werden entfernt, sichere Inhalte bleiben erhalten."
+    },
+    {
+      "title": "Prüfung von Nutzerinhalten",
+      "input": "<img src='photo.jpg' onerror='alert(1)'><strong>Guter Beitrag</strong>",
+      "output": "<img src=\"photo.jpg\"><strong>Guter Beitrag</strong>",
+      "description": "Gefährliche Event-Handler werden aus Elementen entfernt."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Ist diese HTML-Vorschau sicher?",
+      "answer": "Ja. Sie ist für die clientseitige Anzeige bereinigten HTMLs gedacht und sollte im Ausgabebereich keine aktiven Skripte ausführen."
+    },
+    {
+      "question": "Entfernt sie Skripte und unsichere Attribute?",
+      "answer": "Ja. Der Sanitizer soll gängige XSS-Vektoren wie script-Tags und Event-Handler entfernen."
+    },
+    {
+      "question": "Kann ich Links und Bilder separat prüfen?",
+      "answer": "Ja. Die Vorschau hilft dir, extrahierte Links, Bilder und wichtige Attribute zur Validierung zu prüfen."
+    },
+    {
+      "question": "Wird mein HTML an einen Server gesendet?",
+      "answer": "Nein. Das Tool ist ausschließlich für clientseitige Logik ausgelegt und nutzt keine externen APIs."
+    }
+  ],
+  "uiLabels": {
+    "copy": "Kopieren",
+    "copied": "Kopiert",
+    "input": "HTML-Eingabe",
+    "output": "Bereinigtes HTML",
+    "placeholder": "HTML hier einfügen",
+    "indent": "Einrücken",
+    "removeComments": "Kommentare entfernen",
+    "preview": "Vorschau",
+    "source": "Quelle",
+    "sanitizedHtml": "Bereinigtes HTML",
+    "plainText": "Klartext",
+    "summary": "Zusammenfassung",
+    "total": "Gesamt",
+    "links": "Links",
+    "images": "Bilder",
+    "errors": "Fehler",
+    "warnings": "Warnungen",
+    "valid": "Gültig",
+    "invalid": "Ungültig",
+    "href": "Href",
+    "text": "Text",
+    "rel": "Rel",
+    "target": "Target",
+    "alt": "Alt",
+    "width": "Breite",
+    "height": "Höhe",
+    "empty": "Leer",
+    "outputReady": "Ausgabe bereit",
+    "cleanedHtml": "Bereinigtes HTML",
+    "formattedHtml": "Formatiertes HTML",
+    "minifiedHtml": "Minifiziertes HTML",
+    "markdown": "Markdown",
+    "extractedImages": "Extrahierte Bilder",
+    "extractedLinks": "Extrahierte Links",
+    "validationSummary": "Validierungsübersicht",
+    "prettyHtml": "Gut lesbares HTML",
+    "encodedText": "Kodierter Text"
+  },
+  "seo": {
+    "title": "HTML-Vorschau | Bereinigtes HTML sicher anzeigen",
+    "description": "Zeige HTML in einer sicheren, bereinigten Vorschau an und prüfe Quellcode, Links, Bilder und Validierungsdetails.",
+    "keywords": [
+      "HTML-Vorschau",
+      "bereinigtes HTML",
+      "HTML anzeigen",
+      "sichere HTML-Vorschau",
+      "HTML-Sanitizer",
+      "HTML prüfen",
+      "bereinigter Quellcode",
+      "XSS-sichere Vorschau"
+    ]
+  }
+}

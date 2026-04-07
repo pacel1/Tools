@@ -1,0 +1,111 @@
+{
+  "toolId": "html-viewer",
+  "locale": "en",
+  "slug": "html-viewer",
+  "h1": "HTML Viewer",
+  "title": "HTML Viewer",
+  "shortDescription": "Preview sanitized HTML safely and inspect the cleaned source.",
+  "metaTitle": "HTML Viewer | Preview Sanitized HTML Safely",
+  "metaDescription": "Preview HTML in a safe sanitized view and inspect cleaned source, links, images, and validation details.",
+  "intro": "Preview HTML safely in the browser, inspect the sanitized output, and review links, images, and structure without risking active script execution.",
+  "overview": "The HTML Viewer helps you inspect HTML content after sanitization. It is designed for quick previewing of trusted or untrusted markup in a safe, client-side workflow. Use it to check cleaned source, spot removed elements, and verify links and media before publishing or sharing.",
+  "howItWorks": [
+    "Paste your HTML into the input field.",
+    "The tool sanitizes the markup on the client side.",
+    "Review the preview and the cleaned HTML source.",
+    "Inspect links, images, attributes, and validation messages.",
+    "Copy the sanitized result if everything looks correct."
+  ],
+  "useCases": [
+    "Previewing HTML snippets before publishing.",
+    "Checking sanitized content from user submissions.",
+    "Inspecting links, images, and attributes in generated markup.",
+    "Verifying cleaned HTML after export or conversion.",
+    "Reviewing unsafe or malformed HTML in a safe way."
+  ],
+  "examples": [
+    {
+      "title": "Before publishing a blog snippet",
+      "input": "<p>Hello <script>alert(1)</script><a href='https://example.com'>link</a></p>",
+      "output": "<p>Hello <a href=\"https://example.com\">link</a></p>",
+      "description": "Scripts are removed while safe content remains."
+    },
+    {
+      "title": "Reviewing user-generated content",
+      "input": "<img src='photo.jpg' onerror='alert(1)'><strong>Nice post</strong>",
+      "output": "<img src=\"photo.jpg\"><strong>Nice post</strong>",
+      "description": "Dangerous event handlers are stripped from elements."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Is this HTML Viewer safe to use?",
+      "answer": "Yes. It is intended for client-side previewing of sanitized HTML and should not execute active scripts in the output area."
+    },
+    {
+      "question": "Does it remove scripts and unsafe attributes?",
+      "answer": "Yes. The sanitizer is meant to remove common XSS vectors such as script tags and event handlers."
+    },
+    {
+      "question": "Can I inspect links and images separately?",
+      "answer": "Yes. The viewer can help you review extracted links, images, and key attributes for validation."
+    },
+    {
+      "question": "Is my HTML sent to a server?",
+      "answer": "No. The tool is designed for client-side only logic with no external APIs."
+    }
+  ],
+  "uiLabels": {
+    "copy": "Copy",
+    "copied": "Copied",
+    "input": "HTML input",
+    "output": "Sanitized HTML",
+    "placeholder": "Paste HTML here",
+    "indent": "Indent",
+    "removeComments": "Remove comments",
+    "preview": "Preview",
+    "source": "Source",
+    "sanitizedHtml": "Sanitized HTML",
+    "plainText": "Plain text",
+    "summary": "Summary",
+    "total": "Total",
+    "links": "Links",
+    "images": "Images",
+    "errors": "Errors",
+    "warnings": "Warnings",
+    "valid": "Valid",
+    "invalid": "Invalid",
+    "href": "Href",
+    "text": "Text",
+    "rel": "Rel",
+    "target": "Target",
+    "alt": "Alt",
+    "width": "Width",
+    "height": "Height",
+    "empty": "Empty",
+    "outputReady": "Output ready",
+    "cleanedHtml": "Cleaned HTML",
+    "formattedHtml": "Formatted HTML",
+    "minifiedHtml": "Minified HTML",
+    "markdown": "Markdown",
+    "extractedImages": "Extracted images",
+    "extractedLinks": "Extracted links",
+    "validationSummary": "Validation summary",
+    "prettyHtml": "Pretty HTML",
+    "encodedText": "Encoded text"
+  },
+  "seo": {
+    "title": "HTML Viewer | Preview Sanitized HTML Safely",
+    "description": "Preview HTML in a safe sanitized view and inspect cleaned source, links, images, and validation details.",
+    "keywords": [
+      "HTML viewer",
+      "sanitized HTML",
+      "HTML preview",
+      "safe HTML preview",
+      "HTML sanitizer",
+      "inspect HTML",
+      "cleaned source",
+      "XSS safe preview"
+    ]
+  }
+}

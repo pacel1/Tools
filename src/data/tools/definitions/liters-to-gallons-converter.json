@@ -1,0 +1,23 @@
+{
+  "id": "liters-to-gallons-converter",
+  "type": "converter",
+  "category": "converters",
+  "componentName": "LitersToGallonsConverterTool",
+  "logicModule": "liters-to-gallons-converter",
+  "inputSchema": "litersToGallonsConverterInputSchema",
+  "outputSchema": "litersToGallonsConverterOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "celsius-to-fahrenheit-converter",
+    "fahrenheit-to-celsius-converter",
+    "km-to-miles-converter",
+    "miles-to-km-converter"
+  ],
+  "seoPriority": 0.9
+}

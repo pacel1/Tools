@@ -1,0 +1,36 @@
+{
+  "page": "privacy",
+  "locale": "pl",
+  "title": "Polityka prywatności",
+  "metaTitle": "Polityka prywatności | ConvertBase.app",
+  "metaDescription": "Przeczytaj politykę prywatności ConvertBase.app, w tym informacje o cookies, Google Analytics, Google AdSense i danych kontaktowych.",
+  "heading": "Polityka prywatności",
+  "content": [
+    "Ta Polityka prywatności wyjaśnia, w jaki sposób ConvertBase.app przetwarza informacje podczas przeglądania stron i korzystania z narzędzi online.",
+    "Staramy się ograniczać zbieranie danych i uruchamiać możliwie wiele narzędzi bezpośrednio w Twojej przeglądarce, bez potrzeby zakładania konta."
+  ],
+  "sections": [
+    {
+      "title": "Jakie informacje możemy zbierać",
+      "paragraphs": [
+        "Możemy zbierać ograniczone informacje techniczne, takie jak typ przeglądarki, dane urządzenia, przybliżona lokalizacja, strony odsyłające i podstawowe zdarzenia potrzebne do oceny działania serwisu.",
+        "Jeżeli analityka jest włączona, Google Analytics może przetwarzać te dane w naszym imieniu. Nie wymagamy tworzenia konta do korzystania z publicznych narzędzi."
+      ]
+    },
+    {
+      "title": "Cookies i reklamy",
+      "paragraphs": [
+        "ConvertBase.app może używać plików cookie i podobnych technologii do zapamiętywania podstawowych ustawień, mierzenia ruchu i wspierania bezpieczeństwa strony.",
+        "Usługi reklamowe, takie jak Google AdSense, mogą używać cookies do wyświetlania i mierzenia reklam. Więcej informacji znajdziesz w Polityce cookies."
+      ]
+    },
+    {
+      "title": "Twoje wybory i kontakt",
+      "paragraphs": [
+        "Możesz zarządzać plikami cookie w ustawieniach swojej przeglądarki. Wyłączenie części cookies może wpłynąć na działanie niektórych funkcji.",
+        "Jeśli masz pytania dotyczące tej polityki lub prywatności w ConvertBase.app, napisz na contact@convertbase.app."
+      ]
+    }
+  ],
+  "keywords": ["polityka prywatności", "convertbase prywatność", "google analytics", "google adsense", "polityka cookies", "ochrona danych"]
+}

@@ -1,0 +1,47 @@
+{
+  "toolId": "slug-generator",
+  "locale": "pl",
+  "slug": "generator-slug",
+  "h1": "Generator slugów",
+  "title": "Generator slugów",
+  "shortDescription": "Zamień tekst na przyjazny SEO slug do URL, korzystając z szybkich wyników, prostego formularza i praktycznych przykładów.",
+  "overview": "Zamień tekst na przyjazny SEO slug do URL. Ta strona daje szybkie rozwiązanie dzięki prostemu narzędziu i czytelnemu wynikowi. Kierujemy ją do osób szukających darmowej odpowiedzi online, natychmiastowych rezultatów w przeglądarce oraz praktycznych treści narzędziowych o długim ogonie.",
+  "howItWorks": [
+    "Wpisz wymagane dane lub tekst w formularzu.",
+    "Konwersja, obliczenie lub przekształcenie uruchamia się natychmiast w przeglądarce.",
+    "Sprawdź wynik i skorzystaj z powiązanych narzędzi, jeśli potrzebujesz kolejnego kroku."
+  ],
+  "examples": [
+    {
+      "title": "Przykład 1",
+      "input": "Najlepszy tytuł strony narzędzia SEO",
+      "output": "najlepszy-tytul-strony-narzedzia-seo",
+      "description": "Realistyczny przykład generatora slugów dla codziennego zapytania."
+    },
+    {
+      "title": "Przykład 2",
+      "input": "Najlepszy tytuł strony narzędzia SEO",
+      "output": "najlepszy-tytul-strony-narzedzia-seo",
+      "description": "Kolejny praktyczny przypadek użycia dla organicznego ruchu z długiego ogona."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Jak dokładne jest to narzędzie?",
+      "answer": "Wynik jest obliczany bezpośrednio na podstawie formuły lub logiki po stronie przeglądarki użytej w tym narzędziu."
+    },
+    {
+      "question": "Czy mogę używać tego narzędzia na telefonie?",
+      "answer": "Tak. Strona działa na komputerach i urządzeniach mobilnych, oferując prosty układ pola wejściowego i wyniku."
+    }
+  ],
+  "seo": {
+    "title": "Generator slugów",
+    "description": "Zamień tekst na przyjazny SEO slug do URL. Darmowy generator slugów online z natychmiastowymi wynikami.",
+    "keywords": [
+      "generator slugów",
+      "generator slugów",
+      "narzędzie text-tools"
+    ]
+  }
+}

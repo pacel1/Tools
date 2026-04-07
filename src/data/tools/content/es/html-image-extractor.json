@@ -1,0 +1,108 @@
+{
+  "toolId": "html-image-extractor",
+  "locale": "es",
+  "slug": "extractor-de-imagenes-html",
+  "h1": "Extractor de imágenes HTML",
+  "title": "Extractor de imágenes HTML",
+  "shortDescription": "Extrae fuentes de imágenes, texto alt y dimensiones desde HTML.",
+  "metaTitle": "Extractor de imágenes HTML | Extrae URLs, texto alt y dimensiones",
+  "metaDescription": "Extrae fuentes de imágenes, texto alt, ancho y alto desde HTML al instante en tu navegador. Seguro, local y fácil de usar.",
+  "intro": "Usa este extractor de imágenes HTML para obtener rápidamente las URLs de las imágenes, el texto alternativo y las dimensiones desde cualquier código HTML. Funciona solo en el navegador, sin APIs externas, y te ayuda a revisar etiquetas de imagen con rapidez.",
+  "overview": "Pega tu HTML y extrae todas las etiquetas img en una lista clara y ordenada. La herramienta muestra src, alt, width y height para que puedas auditar accesibilidad, revisar contenido y reutilizar datos de imágenes más rápido. Como el proceso se realiza localmente, es una opción segura para trabajar con marcado sensible.",
+  "howItWorks": [
+    "Pega tu HTML en el campo de entrada.",
+    "La herramienta analiza el marcado en busca de elementos img.",
+    "Extrae la URL de la imagen y atributos comunes como alt, width y height.",
+    "Revisa el resultado estructurado y cópialo si lo necesitas."
+  ],
+  "useCases": [
+    "Auditar la accesibilidad de imágenes revisando textos alt.",
+    "Recopilar URLs de imágenes desde HTML exportado.",
+    "Comprobar valores de width y height antes de publicar.",
+    "Extraer referencias de imágenes desde CMS o plantillas de correo.",
+    "Acelerar el control de calidad en páginas con muchas imágenes."
+  ],
+  "examples": [
+    {
+      "title": "Etiqueta de imagen básica",
+      "input": "<img src=\"/images/banner.jpg\" alt=\"Banner de inicio\" width=\"1200\" height=\"400\">",
+      "output": "src: /images/banner.jpg | alt: Banner de inicio | width: 1200 | height: 400",
+      "description": "Una etiqueta img se convierte en campos estructurados."
+    },
+    {
+      "title": "Imagen con carga diferida",
+      "input": "<img data-src=\"photo.jpg\" alt=\"Foto de producto\">",
+      "output": "src: photo.jpg | alt: Foto de producto",
+      "description": "Útil para revisar atributos alternativos de origen en plantillas."
+    }
+  ],
+  "faq": [
+    {
+      "question": "¿Esta herramienta sube mi HTML?",
+      "answer": "No. Funciona completamente en tu navegador, así que tu HTML no se envía a ningún servidor."
+    },
+    {
+      "question": "¿Qué atributos de imagen extrae?",
+      "answer": "La herramienta se centra en src, alt, width y height, y también puede mostrar otros atributos útiles de la imagen cuando estén disponibles."
+    },
+    {
+      "question": "¿Puede analizar HTML no seguro?",
+      "answer": "Sí, analiza HTML de forma local y segura en el cliente, pero siempre conviene revisar el marcado no confiable con cuidado."
+    },
+    {
+      "question": "¿Detecta imágenes de CSS?",
+      "answer": "No. Extrae etiquetas de imagen del HTML, no imágenes de fondo definidas en CSS."
+    }
+  ],
+  "uiLabels": {
+    "copy": "Copiar",
+    "copied": "Copiado",
+    "input": "Entrada HTML",
+    "output": "Imágenes extraídas",
+    "placeholder": "Pega aquí tu HTML",
+    "indent": "Sangría",
+    "removeComments": "Eliminar comentarios",
+    "preview": "Vista previa",
+    "source": "Fuente",
+    "sanitizedHtml": "HTML sanitizado",
+    "plainText": "Texto plano",
+    "summary": "Resumen",
+    "total": "Total",
+    "links": "Enlaces",
+    "images": "Imágenes",
+    "errors": "Errores",
+    "warnings": "Avisos",
+    "valid": "Válido",
+    "invalid": "No válido",
+    "href": "Href",
+    "text": "Texto",
+    "rel": "Rel",
+    "target": "Target",
+    "alt": "Alt",
+    "width": "Ancho",
+    "height": "Alto",
+    "empty": "No se encontraron imágenes",
+    "outputReady": "Salida lista",
+    "cleanedHtml": "HTML limpio",
+    "formattedHtml": "HTML formateado",
+    "minifiedHtml": "HTML minificado",
+    "markdown": "Markdown",
+    "extractedImages": "Imágenes extraídas",
+    "extractedLinks": "Enlaces extraídos",
+    "validationSummary": "Resumen de validación",
+    "prettyHtml": "HTML legible",
+    "encodedText": "Texto codificado"
+  },
+  "seo": {
+    "title": "Extractor de imágenes HTML",
+    "description": "Extrae fuentes de imágenes, texto alt, ancho y alto desde HTML con una herramienta segura que funciona en el navegador.",
+    "keywords": [
+      "extractor de imágenes HTML",
+      "extraer src de HTML",
+      "texto alt",
+      "dimensiones de imagen",
+      "analizar etiquetas img",
+      "herramientas HTML"
+    ]
+  }
+}

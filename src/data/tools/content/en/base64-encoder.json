@@ -1,0 +1,47 @@
+{
+  "toolId": "base64-encoder",
+  "locale": "en",
+  "slug": "base64-encoder",
+  "h1": "Base64 Encoder",
+  "title": "Base64 Encoder",
+  "shortDescription": "Encode text to Base64 instantly with fast results, simple inputs and practical examples.",
+  "overview": "Encode text to Base64 instantly. This page gives a fast answer with a practical utility tool and a simple result flow. This page targets users who want a free online answer, fast browser-based results and practical long-tail utility content.",
+  "howItWorks": [
+    "Enter the required value or text into the form.",
+    "The conversion, calculation or transformation runs instantly in the browser.",
+    "Review the result and continue with related tools if you need another step."
+  ],
+  "examples": [
+    {
+      "title": "Example 1",
+      "input": "hello world",
+      "output": "aGVsbG8gd29ybGQ=",
+      "description": "A realistic base64 encoder example for an everyday search query."
+    },
+    {
+      "title": "Example 2",
+      "input": "hello world",
+      "output": "aGVsbG8gd29ybGQ=",
+      "description": "Another practical use case for organic long-tail traffic."
+    }
+  ],
+  "faq": [
+    {
+      "question": "How accurate is this tool?",
+      "answer": "The result is calculated directly from the formula or browser-side logic used by this tool."
+    },
+    {
+      "question": "Can I use this tool on mobile?",
+      "answer": "Yes. The page works on desktop and mobile screens with a simple input and result layout."
+    }
+  ],
+  "seo": {
+    "title": "Base64 Encoder",
+    "description": "Encode text to Base64 instantly. Free online base64 encoder with instant results.",
+    "keywords": [
+      "base64 encoder",
+      "base64 encoder",
+      "developer-tools tool"
+    ]
+  }
+}

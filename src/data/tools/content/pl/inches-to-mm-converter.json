@@ -1,0 +1,47 @@
+{
+  "toolId": "inches-to-mm-converter",
+  "locale": "pl",
+  "slug": "przelicznik-cali-na-milimetry",
+  "h1": "Przelicznik cali na milimetry",
+  "title": "Przelicznik cali na milimetry",
+  "shortDescription": "Przeliczaj cale na milimetry natychmiast, z szybkim wynikiem, prostym wprowadzaniem danych i praktycznymi przykładami.",
+  "overview": "Przeliczaj cale na milimetry natychmiast. Ta strona zapewnia szybki wynik dzięki praktycznemu narzędziu online i prostemu procesowi wyświetlania rezultatu. Treść jest skierowana do użytkowników szukających darmowej odpowiedzi online, szybkich wyników w przeglądarce oraz praktycznych informacji dopasowanych do zapytań long-tail.",
+  "howItWorks": [
+    "Wpisz wymaganą wartość lub tekst w formularzu.",
+    "Przeliczenie, obliczenie lub transformacja uruchamia się natychmiast w przeglądarce.",
+    "Sprawdź wynik i przejdź do powiązanych narzędzi, jeśli potrzebujesz kolejnego kroku."
+  ],
+  "examples": [
+    {
+      "title": "Przykład 1",
+      "input": "4 cale",
+      "output": "101,6 milimetra",
+      "description": "Realistyczny przykład przelicznika cali na mm dla codziennego zapytania."
+    },
+    {
+      "title": "Przykład 2",
+      "input": "4 cale",
+      "output": "101,6 milimetra",
+      "description": "Kolejny praktyczny przypadek użycia dla ruchu organicznego z długiego ogona."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Jak dokładne jest to narzędzie?",
+      "answer": "Wynik jest obliczany bezpośrednio na podstawie wzoru lub logiki działającej po stronie przeglądarki."
+    },
+    {
+      "question": "Czy mogę używać tego narzędzia na telefonie?",
+      "answer": "Tak. Strona działa zarówno na komputerach, jak i na ekranach mobilnych dzięki prostemu układowi pola i wyniku."
+    }
+  ],
+  "seo": {
+    "title": "Przelicznik cali na milimetry",
+    "description": "Przeliczaj cale na milimetry natychmiast. Darmowy internetowy przelicznik cali na mm z wynikiem od razu.",
+    "keywords": [
+      "przelicznik cali na milimetry",
+      "przelicznik cali na mm",
+      "narzędzie do przeliczania"
+    ]
+  }
+}

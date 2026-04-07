@@ -1,0 +1,108 @@
+{
+  "toolId": "html-link-extractor",
+  "locale": "fr",
+  "slug": "extracteur-de-liens-html",
+  "h1": "Extracteur de liens HTML",
+  "title": "Extracteur de liens HTML",
+  "shortDescription": "Extrayez les liens, le texte d’ancrage et les métadonnées rel du balisage HTML.",
+  "metaTitle": "Extracteur de liens HTML | Extraire les liens du HTML",
+  "metaDescription": "Extrayez rapidement et en toute sécurité les valeurs href, le texte d’ancrage, les attributs rel et target depuis du HTML dans votre navigateur.",
+  "intro": "Utilisez cet extracteur de liens HTML pour récupérer les liens, le texte d’ancrage et les métadonnées rel à partir de n’importe quel extrait HTML. Tout s’exécute localement dans votre navigateur pour une extraction rapide et sûre.",
+  "overview": "Collez votre HTML et obtenez une liste structurée des liens avec leur href, le texte visible, les valeurs rel, les attributs target et d’autres données utiles. Idéal pour contrôler le contenu, auditer les liens sortants ou transformer le balisage en inventaire de liens propre.",
+  "howItWorks": [
+    "Collez votre HTML dans le champ de saisie.",
+    "L’outil analyse les balises anchor et les autres éléments de lien du balisage.",
+    "Il extrait href, le texte, rel, target et les métadonnées associées.",
+    "Consultez le résultat et copiez-le si besoin."
+  ],
+  "useCases": [
+    "Auditer les liens internes et externes d’une page.",
+    "Extraire le texte d’ancrage pour des contrôles SEO et éditoriaux.",
+    "Vérifier les attributs rel comme nofollow, sponsored et ugc.",
+    "Transformer du HTML brut en inventaire de liens pour la documentation.",
+    "Repérer les liens vides, les motifs cassés ou un balisage suspect."
+  ],
+  "examples": [
+    {
+      "title": "Extraction simple d’un lien",
+      "input": "<a href=\"https://example.com\" rel=\"nofollow\">Visiter le site</a>",
+      "output": "href: https://example.com | text: Visiter le site | rel: nofollow",
+      "description": "Extrait l’URL, le texte d’ancrage et la valeur rel d’un seul lien."
+    },
+    {
+      "title": "Plusieurs liens",
+      "input": "<p><a href=\"/a-propos\">À propos</a> et <a href=\"/contact\" target=\"_blank\">Contact</a></p>",
+      "output": "2 liens trouvés",
+      "description": "Retourne toutes les balises anchor avec leurs attributs clés."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Que fait l’Extracteur de liens HTML ?",
+      "answer": "Il analyse le HTML et extrait les données de liens comme href, le texte d’ancrage, les attributs rel et les valeurs target."
+    },
+    {
+      "question": "Fonctionne-t-il dans le navigateur ?",
+      "answer": "Oui. L’outil est conçu pour un usage côté client et ne nécessite aucune API externe."
+    },
+    {
+      "question": "Peut-il extraire les attributs rel ?",
+      "answer": "Oui. Il récupère les métadonnées rel, y compris des valeurs courantes comme nofollow, sponsored et ugc."
+    },
+    {
+      "question": "Le HTML est-il traité en toute sécurité ?",
+      "answer": "L’outil est conscient des risques XSS et pensé pour traiter localement le HTML collé."
+    }
+  ],
+  "uiLabels": {
+    "copy": "Copier",
+    "copied": "Copié",
+    "input": "HTML input",
+    "output": "Extracted links",
+    "placeholder": "Collez le HTML ici pour extraire les liens",
+    "indent": "Retrait",
+    "removeComments": "Supprimer les commentaires",
+    "preview": "Aperçu",
+    "source": "Source",
+    "sanitizedHtml": "HTML nettoyé",
+    "plainText": "Texte brut",
+    "summary": "Résumé",
+    "total": "Total",
+    "links": "Liens",
+    "images": "Images",
+    "errors": "Erreurs",
+    "warnings": "Avertissements",
+    "valid": "Valide",
+    "invalid": "Invalide",
+    "href": "href",
+    "text": "Texte",
+    "rel": "rel",
+    "target": "Cible",
+    "alt": "Alt",
+    "width": "Largeur",
+    "height": "Hauteur",
+    "empty": "Vide",
+    "outputReady": "Résultat prêt",
+    "cleanedHtml": "HTML nettoyé",
+    "formattedHtml": "HTML formaté",
+    "minifiedHtml": "HTML minifié",
+    "markdown": "Markdown",
+    "extractedImages": "Images extraites",
+    "extractedLinks": "Liens extraits",
+    "validationSummary": "Résumé de validation",
+    "prettyHtml": "HTML lisible",
+    "encodedText": "Texte encodé"
+  },
+  "seo": {
+    "title": "Extracteur de liens HTML",
+    "description": "Extrayez rapidement href, texte d’ancrage, rel et target depuis du HTML dans votre navigateur.",
+    "keywords": [
+      "extracteur de liens HTML",
+      "extraire les liens du HTML",
+      "extracteur de texte d’ancrage",
+      "extracteur rel",
+      "outils HTML",
+      "parseur HTML navigateur"
+    ]
+  }
+}

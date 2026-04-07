@@ -1,0 +1,23 @@
+{
+  "id": "keyword-density-checker",
+  "type": "text-tool",
+  "category": "text-tools",
+  "componentName": "KeywordDensityCheckerTool",
+  "logicModule": "keyword-density-checker",
+  "inputSchema": "keywordDensityCheckerInputSchema",
+  "outputSchema": "keywordDensityCheckerOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "word-counter",
+    "case-converter",
+    "character-counter",
+    "slug-generator"
+  ],
+  "seoPriority": 0.92
+}

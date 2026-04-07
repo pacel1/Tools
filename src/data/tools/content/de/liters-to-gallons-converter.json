@@ -1,0 +1,47 @@
+{
+  "toolId": "liters-to-gallons-converter",
+  "locale": "de",
+  "slug": "liter-zu-gallonen-umrechner",
+  "h1": "Liter-zu-Gallonen-Umrechner",
+  "title": "Liter-zu-Gallonen-Umrechner",
+  "shortDescription": "Wandle Liter sofort in Gallonen um – mit schnellen Ergebnissen, einfachen Eingaben und praktischen Beispielen.",
+  "overview": "Wandle Liter sofort in Gallonen um. Diese Seite liefert eine schnelle Antwort mit einem praktischen Tool und einem einfachen Ergebnisablauf. Sie richtet sich an Nutzer, die eine kostenlose Online-Antwort, schnelle browserbasierte Ergebnisse und praktische Long-Tail-Tool-Inhalte suchen.",
+  "howItWorks": [
+    "Gib den benötigten Wert oder Text in das Formular ein.",
+    "Die Umrechnung, Berechnung oder Transformation läuft sofort im Browser.",
+    "Prüfe das Ergebnis und nutze bei Bedarf verwandte Tools für den nächsten Schritt."
+  ],
+  "examples": [
+    {
+      "title": "Beispiel 1",
+      "input": "10 Liter",
+      "output": "2,6417 Gallonen",
+      "description": "Ein realistisches Beispiel für die Umrechnung von Litern in Gallonen bei einer alltäglichen Suche."
+    },
+    {
+      "title": "Beispiel 2",
+      "input": "10 Liter",
+      "output": "2,6417 Gallonen",
+      "description": "Ein weiteres praktisches Einsatzbeispiel für organischen Long-Tail-Traffic."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Wie genau ist dieses Tool?",
+      "answer": "Das Ergebnis wird direkt aus der Formel oder der browserseitigen Logik dieses Tools berechnet."
+    },
+    {
+      "question": "Kann ich das Tool auf dem Handy verwenden?",
+      "answer": "Ja. Die Seite funktioniert auf Desktop- und Mobilgeräten mit einer einfachen Eingabe- und Ergebnisdarstellung."
+    }
+  ],
+  "seo": {
+    "title": "Liter-zu-Gallonen-Umrechner",
+    "description": "Wandle Liter sofort in Gallonen um. Kostenloser Online-Liter-zu-Gallonen-Umrechner mit sofortigen Ergebnissen.",
+    "keywords": [
+      "liter-zu-gallonen-umrechner",
+      "liter-zu-gallonen-umrechner",
+      "umrechnungstool"
+    ]
+  }
+}

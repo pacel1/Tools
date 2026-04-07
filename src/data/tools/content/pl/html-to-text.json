@@ -1,0 +1,107 @@
+{
+  "toolId": "html-to-text",
+  "locale": "pl",
+  "slug": "html-na-tekst",
+  "h1": "HTML na tekst",
+  "title": "HTML na tekst",
+  "shortDescription": "Wyodrębnia czytelny tekst z fragmentów HTML i całych dokumentów.",
+  "metaTitle": "Konwerter HTML na tekst | Wyodrębnij zwykły tekst z HTML",
+  "metaDescription": "Konwertuj HTML na zwykły tekst bezpośrednio w przeglądarce. Bezpiecznie wyodrębniaj czytelny tekst z fragmentów i pełnych stron, bez zewnętrznego API.",
+  "intro": "Konwertuj HTML na czysty, czytelny tekst bezpośrednio w przeglądarce. Wklej fragment lub cały dokument, a narzędzie usunie znaczniki i pozostawi treść gotową do kopiowania, czytania i ponownego użycia.",
+  "overview": "To narzędzie HTML na tekst to szybki konwerter po stronie klienta dla programistów, redaktorów i twórców treści. Usuwa znaczniki w bezpieczny sposób, ogranicza szum i zwraca zwykły tekst łatwiejszy do wyszukania, indeksowania, cytowania lub dalszego przetwarzania. Ponieważ wszystko działa lokalnie, nie wymaga zewnętrznych API i pomaga zachować prywatność oraz odporność na XSS.",
+  "howItWorks": [
+    "Wklej HTML do pola wejściowego.",
+    "Narzędzie analizuje znacznik w przeglądarce.",
+    "Usuwa tagi HTML i zwraca czytelny tekst.",
+    "Skopiuj oczyszczony tekst lub użyj go dalej."
+  ],
+  "useCases": [
+    "Wyodrębnianie tekstu z HTML strony do notatek lub dokumentacji.",
+    "Konwersja fragmentów na zwykły tekst do e-maili, zgłoszeń lub czatu.",
+    "Przygotowanie treści do indeksowania, wyszukiwania lub analizy.",
+    "Usuwanie formatowania z HTML przed wklejeniem do innej aplikacji.",
+    "Podgląd czytelnej wersji tekstowej strony lub komponentu."
+  ],
+  "examples": [
+    {
+      "title": "Prosty akapit",
+      "input": "<p>Witaj <strong>świecie</strong>!</p>",
+      "output": "Witaj świecie!",
+      "description": "Tagi są usuwane, a tekst pozostaje czytelny."
+    },
+    {
+      "title": "Linki i listy",
+      "input": "<div><a href=\"/docs\">Dokumentacja</a><ul><li>Jeden</li><li>Dwa</li></ul></div>",
+      "output": "Dokumentacja\nJeden\nDwa",
+      "description": "Treść tekstowa jest zachowana w czystym układzie."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Czy to narzędzie zachowuje tagi HTML?",
+      "answer": "Nie. Usuwa znaczniki i zwraca wyłącznie zwykły tekst."
+    },
+    {
+      "question": "Czy konwersja odbywa się w przeglądarce?",
+      "answer": "Tak. Narzędzie działa po stronie klienta i nie korzysta z zewnętrznych API."
+    },
+    {
+      "question": "Czy mogę konwertować całe dokumenty HTML?",
+      "answer": "Tak. Działa zarówno dla krótkich fragmentów, jak i pełnych dokumentów."
+    },
+    {
+      "question": "Czy mój HTML jest wysyłany na serwer?",
+      "answer": "Nie. Treść jest przetwarzana lokalnie w przeglądarce."
+    }
+  ],
+  "uiLabels": {
+    "copy": "Kopiuj",
+    "copied": "Skopiowano",
+    "input": "HTML input",
+    "output": "Zwykły tekst",
+    "placeholder": "Wklej HTML tutaj...",
+    "indent": "Wcięcie",
+    "removeComments": "Usuń komentarze",
+    "preview": "Podgląd",
+    "source": "Źródło",
+    "sanitizedHtml": "Oczyszczony HTML",
+    "plainText": "Zwykły tekst",
+    "summary": "Podsumowanie",
+    "total": "Razem",
+    "links": "Linki",
+    "images": "Obrazy",
+    "errors": "Błędy",
+    "warnings": "Ostrzeżenia",
+    "valid": "Poprawny",
+    "invalid": "Niepoprawny",
+    "href": "Href",
+    "text": "Tekst",
+    "rel": "Rel",
+    "target": "Target",
+    "alt": "Alt",
+    "width": "Szerokość",
+    "height": "Wysokość",
+    "empty": "Puste",
+    "outputReady": "Wynik gotowy",
+    "cleanedHtml": "Oczyszczony HTML",
+    "formattedHtml": "Sformatowany HTML",
+    "minifiedHtml": "Zminimalizowany HTML",
+    "markdown": "Markdown",
+    "extractedImages": "Wyodrębnione obrazy",
+    "extractedLinks": "Wyodrębnione linki",
+    "validationSummary": "Podsumowanie walidacji",
+    "prettyHtml": "Czytelny HTML",
+    "encodedText": "Zakodowany tekst"
+  },
+  "seo": {
+    "title": "Konwerter HTML na tekst",
+    "description": "Błyskawicznie wyodrębniaj zwykły tekst z fragmentów HTML i całych dokumentów w przeglądarce.",
+    "keywords": [
+      "html na tekst",
+      "html do tekstu",
+      "konwerter html na tekst",
+      "usun znaczniki html",
+      "zwykly tekst"
+    ]
+  }
+}

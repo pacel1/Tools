@@ -1,0 +1,20 @@
+{
+  "id": "sha256-generator",
+  "type": "security-tool",
+  "category": "security-tools",
+  "componentName": "Sha256GeneratorTool",
+  "logicModule": "sha256-generator",
+  "inputSchema": "sha256GeneratorInputSchema",
+  "outputSchema": "sha256GeneratorOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "password-generator"
+  ],
+  "seoPriority": 0.89
+}

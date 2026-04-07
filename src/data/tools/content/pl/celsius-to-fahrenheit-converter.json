@@ -1,0 +1,47 @@
+{
+  "toolId": "celsius-to-fahrenheit-converter",
+  "locale": "pl",
+  "slug": "kalkulator-celsjusza-na-fahrenheita",
+  "h1": "Kalkulator Celsjusza na Fahrenheita",
+  "title": "Kalkulator Celsjusza na Fahrenheita",
+  "shortDescription": "Szybko przelicz Celsjusza na Fahrenheita dzięki błyskawicznym wynikom, prostym danym wejściowym i praktycznym przykładom.",
+  "overview": "Przelicz Celsjusza na Fahrenheita natychmiast. Ta strona zapewnia szybkie odpowiedzi dzięki prostemu narzędziu i przejrzystemu procesowi prezentacji wyniku. To rozwiązanie dla osób szukających darmowego kalkulatora online, szybkich wyników w przeglądarce i praktycznych treści pod długie zapytania.",
+  "howItWorks": [
+    "Wpisz wymaganą wartość lub tekst do formularza.",
+    "Przeliczenie, obliczenie lub transformacja wykonuje się natychmiast w przeglądarce.",
+    "Sprawdź wynik i skorzystaj z powiązanych narzędzi, jeśli potrzebujesz kolejnego kroku."
+  ],
+  "examples": [
+    {
+      "title": "Przykład 1",
+      "input": "20 stopni Celsjusza",
+      "output": "68 stopni Fahrenheita",
+      "description": "Realistyczny przykład użycia kalkulatora Celsjusza na Fahrenheita dla codziennego zapytania."
+    },
+    {
+      "title": "Przykład 2",
+      "input": "20 stopni Celsjusza",
+      "output": "68 stopni Fahrenheita",
+      "description": "Kolejny praktyczny przypadek użycia pod organiczny ruch z długiego ogona."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Jak dokładne jest to narzędzie?",
+      "answer": "Wynik jest obliczany bezpośrednio na podstawie wzoru lub logiki po stronie przeglądarki używanej przez to narzędzie."
+    },
+    {
+      "question": "Czy mogę korzystać z tego narzędzia na telefonie?",
+      "answer": "Tak. Strona działa na komputerach i urządzeniach mobilnych, oferując prosty układ pola wejściowego i wyniku."
+    }
+  ],
+  "seo": {
+    "title": "Kalkulator Celsjusza na Fahrenheita",
+    "description": "Przelicz Celsjusza na Fahrenheita natychmiast. Darmowy kalkulator online z błyskawicznym wynikiem.",
+    "keywords": [
+      "kalkulator celsjusza na fahrenheita",
+      "przelicznik celsjusza na fahrenheita",
+      "narzedzie konwertery"
+    ]
+  }
+}

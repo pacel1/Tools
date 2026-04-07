@@ -1,0 +1,108 @@
+{
+  "toolId": "html-tag-remover",
+  "locale": "pl",
+  "slug": "usuwacz-znacznikow-html",
+  "h1": "Usuwacz znaczników HTML",
+  "title": "Usuwacz znaczników HTML",
+  "shortDescription": "Usuń znaczniki HTML i zachowaj czytelny tekst z oryginalnej treści.",
+  "metaTitle": "Usuwacz znaczników HTML | HTML do tekstu",
+  "metaDescription": "Usuń znaczniki HTML online i zachowaj czytelny tekst. Szybkie, bezpieczne czyszczenie HTML w przeglądarce, bez zewnętrznych API.",
+  "intro": "Wklej kod HTML i od razu otrzymaj czysty, czytelny tekst. To narzędzie działa w przeglądarce, usuwa znaczniki i zachowuje treść widoczną dla użytkownika, bez korzystania z zewnętrznych API.",
+  "overview": "Usuwacz znaczników HTML to proste narzędzie client-side do zamiany HTML na zwykły tekst. Wklej fragment, pełną stronę albo skopiowaną treść sformatowaną, a narzędzie usunie znaczniki i zachowa czytelne słowa oraz podziały linii tam, gdzie to możliwe. Sprawdza się przy czyszczeniu treści, wyciąganiu tekstu do notatek, przygotowaniu fragmentów do wyszukiwania i porównywaniu zawartości bez znaczników. Całość działa lokalnie w przeglądarce, więc jest szybka i wygodna.",
+  "howItWorks": [
+    "Wklej HTML do pola wejściowego.",
+    "Narzędzie analizuje kod lokalnie w przeglądarce.",
+    "Znaczniki HTML są usuwane, a tekst zostaje wyodrębniony.",
+    "Skopiuj wynik jako zwykły tekst do dalszego użycia."
+  ],
+  "useCases": [
+    "Konwersja fragmentów HTML do zwykłego tekstu.",
+    "Czyszczenie treści skopiowanej ze stron przed wklejeniem do maila lub czatu.",
+    "Wyciąganie czytelnego tekstu z kodu szablonów.",
+    "Usuwanie znaczników do analizy tekstu lub przygotowania pod indeksowanie.",
+    "Szybki podgląd treści ukrytej za kodem HTML."
+  ],
+  "examples": [
+    {
+      "title": "Prosty akapit",
+      "input": "<p>Witaj <strong>świecie</strong>!</p>",
+      "output": "Witaj świecie!",
+      "description": "Podstawowy tekst z usuniętym formatowaniem inline."
+    },
+    {
+      "title": "Linki i listy",
+      "input": "<div><a href=\"/docs\">Dokumentacja</a><ul><li>Jeden</li><li>Dwa</li></ul></div>",
+      "output": "Dokumentacja\nJeden\nDwa",
+      "description": "Czytelny tekst zostaje zachowany, a znaczniki są usuwane."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Czy narzędzie zachowuje tekst znajdujący się w znacznikach?",
+      "answer": "Tak. Usuwa znaczniki HTML, ale pozostawia czytelną treść z elementów."
+    },
+    {
+      "question": "Czy przetwarzanie odbywa się w przeglądarce?",
+      "answer": "Tak. Narzędzie działa wyłącznie po stronie klienta, więc HTML jest przetwarzany lokalnie bez zewnętrznych API."
+    },
+    {
+      "question": "Czy usuwa też zawartość script i style?",
+      "answer": "Narzędzie skupia się na bezpiecznym wyodrębnianiu czytelnego tekstu, więc niewidoczne treści mogą być pomijane lub usuwane zależnie od działania parsera."
+    },
+    {
+      "question": "Czy zachowane będą podziały linii i odstępy?",
+      "answer": "Narzędzie stara się utrzymać czytelność tekstu, ale dokładne formatowanie może zależeć od struktury HTML."
+    }
+  ],
+  "uiLabels": {
+    "copy": "Kopiuj",
+    "copied": "Skopiowano",
+    "input": "HTML input",
+    "output": "Text without tags",
+    "placeholder": "Wklej tutaj HTML...",
+    "indent": "Wcięcie",
+    "removeComments": "Usuń komentarze",
+    "preview": "Podgląd",
+    "source": "Źródło",
+    "sanitizedHtml": "Oczyszczony HTML",
+    "plainText": "Zwykły tekst",
+    "summary": "Podsumowanie",
+    "total": "Razem",
+    "links": "Linki",
+    "images": "Obrazy",
+    "errors": "Błędy",
+    "warnings": "Ostrzeżenia",
+    "valid": "Poprawny",
+    "invalid": "Niepoprawny",
+    "href": "Adres URL",
+    "text": "Tekst",
+    "rel": "Rel",
+    "target": "Cel",
+    "alt": "Alt",
+    "width": "Szerokość",
+    "height": "Wysokość",
+    "empty": "Puste",
+    "outputReady": "Wynik gotowy",
+    "cleanedHtml": "Oczyszczony HTML",
+    "formattedHtml": "Sformatowany HTML",
+    "minifiedHtml": "Zminifikowany HTML",
+    "markdown": "Markdown",
+    "extractedImages": "Wyodrębnione obrazy",
+    "extractedLinks": "Wyodrębnione linki",
+    "validationSummary": "Podsumowanie walidacji",
+    "prettyHtml": "Czytelny HTML",
+    "encodedText": "Tekst zakodowany"
+  },
+  "seo": {
+    "title": "Usuwacz znaczników HTML | HTML do tekstu",
+    "description": "Usuń znaczniki HTML online i zachowaj czytelny tekst. Szybkie, bezpieczne czyszczenie HTML w przeglądarce, bez zewnętrznych API.",
+    "keywords": [
+      "usuwacz znaczników html",
+      "html do tekstu",
+      "usun znaczniki html",
+      "html do zwyklego tekstu",
+      "czyszczenie html",
+      "konwerter html na tekst"
+    ]
+  }
+}

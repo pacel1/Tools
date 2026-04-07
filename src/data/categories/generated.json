@@ -1,0 +1,97 @@
+{
+  "converters": [
+    "celsius-to-fahrenheit-converter",
+    "fahrenheit-to-celsius-converter",
+    "km-to-miles-converter",
+    "miles-to-km-converter",
+    "cm-to-inches-converter",
+    "lbs-to-kg-converter",
+    "inches-to-cm-converter",
+    "feet-to-meters-converter",
+    "kg-to-lbs-converter",
+    "meters-to-feet-converter",
+    "gallons-to-liters-converter",
+    "inches-to-mm-converter",
+    "liters-to-gallons-converter",
+    "mm-to-inches-converter",
+    "gb-to-mb-converter",
+    "mb-to-gb-converter"
+  ],
+  "calculators": [
+    "bmi-calculator",
+    "age-calculator",
+    "percentage-calculator",
+    "loan-payment-calculator",
+    "days-between-dates-calculator",
+    "compound-interest-calculator",
+    "discount-calculator",
+    "percentage-decrease-calculator",
+    "percentage-increase-calculator",
+    "tip-calculator",
+    "sales-tax-calculator",
+    "markup-calculator",
+    "simple-interest-calculator",
+    "unit-price-calculator"
+  ],
+  "generators": [
+    "qr-code-generator",
+    "gradient-generator",
+    "box-shadow-generator",
+    "meta-tag-generator",
+    "favicon-generator",
+    "placeholder-image-generator"
+  ],
+  "text-tools": [
+    "word-counter",
+    "case-converter",
+    "character-counter",
+    "slug-generator",
+    "keyword-density-checker",
+    "reading-time-calculator",
+    "sentence-counter",
+    "remove-extra-spaces",
+    "line-counter",
+    "text-reverser"
+  ],
+  "developer-tools": [
+    "json-validator",
+    "json-formatter",
+    "json-minifier",
+    "base64-decoder",
+    "base64-encoder",
+    "uuid-generator",
+    "url-decoder",
+    "url-encoder"
+  ],
+  "html-tools": [
+    "html-formatter",
+    "html-minifier",
+    "html-validator",
+    "html-to-text",
+    "html-to-markdown",
+    "html-viewer",
+    "markdown-to-html",
+    "html-cleaner",
+    "html-link-extractor",
+    "html-tag-remover",
+    "html-escape",
+    "html-unescape",
+    "html-image-extractor",
+    "html-pretty-print",
+    "html-entity-encoder"
+  ],
+  "date-time": [],
+  "image-tools": [
+    "image-compressor",
+    "image-resizer",
+    "image-cropper",
+    "image-format-converter",
+    "image-metadata-reader",
+    "image-to-base64",
+    "base64-to-image"
+  ],
+  "security-tools": [
+    "password-generator",
+    "sha256-generator"
+  ]
+}

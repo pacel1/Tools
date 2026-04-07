@@ -1,0 +1,23 @@
+{
+  "id": "html-to-text",
+  "type": "developer-tool",
+  "category": "html-tools",
+  "componentName": "HtmlToTextTool",
+  "logicModule": "html-to-text",
+  "inputSchema": "htmlToTextInputSchema",
+  "outputSchema": "htmlToTextOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "html-formatter",
+    "html-minifier",
+    "html-viewer",
+    "html-escape"
+  ],
+  "seoPriority": 0.91
+}

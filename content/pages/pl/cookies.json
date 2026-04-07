@@ -1,0 +1,36 @@
+{
+  "page": "cookies",
+  "locale": "pl",
+  "title": "Polityka cookies",
+  "metaTitle": "Polityka cookies | ConvertBase.app",
+  "metaDescription": "Sprawdź, jak ConvertBase.app używa cookies do działania strony, Google Analytics, Google AdSense i podstawowych ustawień.",
+  "heading": "Polityka cookies",
+  "content": [
+    "Ta Polityka cookies wyjaśnia, jak ConvertBase.app wykorzystuje pliki cookie i podobne technologie podczas przeglądania serwisu.",
+    "Pliki cookie pomagają utrzymać stabilne działanie platformy, zrozumieć sposób korzystania ze stron i wspierać reklamy, jeśli są aktywne."
+  ],
+  "sections": [
+    {
+      "title": "Do czego używamy cookies",
+      "paragraphs": [
+        "Cookies mogą zapisywać ograniczone informacje w przeglądarce, aby strony poprawnie się ładowały, ustawienia były zapamiętywane, a wybory zgody były respektowane.",
+        "Możemy także używać cookies do analizy ogólnych wzorców ruchu i poprawy doświadczenia na różnych urządzeniach oraz w różnych językach."
+      ]
+    },
+    {
+      "title": "Cookies analityczne i reklamowe",
+      "paragraphs": [
+        "Google Analytics może wykorzystywać cookies do tworzenia raportów o wizytach, źródłach ruchu i zachowaniu użytkowników w ConvertBase.app.",
+        "Google AdSense może używać cookies do wyświetlania i mierzenia reklam. Ustawienia reklam można zwykle kontrolować w przeglądarce lub u dostawcy reklam."
+      ]
+    },
+    {
+      "title": "Zarządzanie cookies",
+      "paragraphs": [
+        "Możesz kontrolować lub usuwać pliki cookie w ustawieniach przeglądarki. Zablokowanie części cookies może ograniczyć funkcjonalność strony lub wpłynąć na reklamy i analitykę.",
+        "Jeśli potrzebujesz więcej informacji o sposobie używania cookies, napisz na contact@convertbase.app."
+      ]
+    }
+  ],
+  "keywords": ["polityka cookies", "convertbase cookies", "google analytics cookies", "google adsense cookies", "zgoda na cookies", "plik cookie"]
+}

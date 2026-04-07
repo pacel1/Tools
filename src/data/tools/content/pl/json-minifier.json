@@ -1,0 +1,47 @@
+{
+  "toolId": "json-minifier",
+  "locale": "pl",
+  "slug": "minifikator-json",
+  "h1": "Minifikator JSON",
+  "title": "Minifikator JSON",
+  "shortDescription": "Minifikuj JSON online od razu — szybko, wygodnie i z praktycznymi przykładami.",
+  "overview": "Minifikuj JSON online natychmiast. Ta strona daje szybkie rozwiązanie z praktycznym narzędziem i prostym przebiegiem wyniku. Kierujemy ją do osób szukających darmowej odpowiedzi online, szybkich rezultatów w przeglądarce oraz praktycznych treści typu long tail dotyczących narzędzi.",
+  "howItWorks": [
+    "Wpisz wymagane dane lub tekst do formularza.",
+    "Konwersja, obliczenie lub przekształcenie wykonuje się natychmiast w przeglądarce.",
+    "Sprawdź wynik i przejdź do powiązanych narzędzi, jeśli potrzebujesz kolejnego kroku."
+  ],
+  "examples": [
+    {
+      "title": "Przykład 1",
+      "input": "{\"name\":\"tool\",\"value\":1}",
+      "output": "{\"name\":\"tool\",\"value\":1}",
+      "description": "Realistyczny przykład minifikatora JSON dla codziennego zapytania w wyszukiwarce."
+    },
+    {
+      "title": "Przykład 2",
+      "input": "{\"name\":\"tool\",\"value\":1}",
+      "output": "{\"name\":\"tool\",\"value\":1}",
+      "description": "Kolejny praktyczny przypadek użycia pod ruch organiczny z długiego ogona."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Jak dokładne jest to narzędzie?",
+      "answer": "Wynik jest obliczany bezpośrednio na podstawie formuły lub logiki po stronie przeglądarki używanej przez to narzędzie."
+    },
+    {
+      "question": "Czy mogę używać tego narzędzia na telefonie?",
+      "answer": "Tak. Strona działa na komputerach i urządzeniach mobilnych, oferując prosty układ pola wejściowego i wyniku."
+    }
+  ],
+  "seo": {
+    "title": "Minifikator JSON",
+    "description": "Minifikuj JSON online natychmiast. Darmowy minifikator JSON online z wynikami od razu.",
+    "keywords": [
+      "minifikator json",
+      "minifikator json",
+      "narzedzia programistyczne"
+    ]
+  }
+}

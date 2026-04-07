@@ -1,0 +1,109 @@
+{
+  "toolId": "html-minifier",
+  "locale": "de",
+  "slug": "html-minimierer",
+  "h1": "HTML-Minimierer",
+  "title": "HTML-Minimierer",
+  "shortDescription": "HTML online minimieren, um die Dateigröße ohne externe APIs zu reduzieren.",
+  "metaTitle": "HTML-Minimierer online | HTML schnell komprimieren",
+  "metaDescription": "HTML direkt im Browser minimieren, um die Dateigröße zu reduzieren, unnötige Leerzeichen zu entfernen und Markup ohne externe APIs zu optimieren.",
+  "intro": "Minimiere HTML direkt im Browser, um den Code kleiner zu machen, unnötige Leerzeichen zu entfernen und Markup für den Produktiveinsatz vorzubereiten. Dieses Tool arbeitet lokal im Client und sendet deinen Code nicht an externe Dienste.",
+  "overview": "Nutze diesen HTML-Minimierer, um Markup schnell und sicher zu komprimieren. Er entfernt überflüssige Leerzeichen, Zeilenumbrüche und Kommentare, soweit es sinnvoll ist, und behält dabei die Struktur deines HTML bei. Da er clientseitig läuft, ist er eine praktische Wahl für Entwickler, die schnellere Ladezeiten, saubereren Quellcode und keine API-Abhängigkeit wollen.",
+  "howItWorks": [
+    "HTML in das Eingabefeld einfügen.",
+    "Verfügbare Bereinigungsoptionen wählen, zum Beispiel Kommentare entfernen.",
+    "Die Minimierung starten, um das Markup zu komprimieren.",
+    "Das minimierte HTML kopieren und im Projekt verwenden."
+  ],
+  "useCases": [
+    "HTML für den Produktiv-Release vorbereiten.",
+    "Die Größe von Vorlagen vor dem Veröffentlichen einer Website reduzieren.",
+    "Exportiertes HTML aus Editoren oder Generatoren bereinigen.",
+    "Snippets für E-Mail-Vorlagen oder statische Seiten optimieren.",
+    "Prüfen, wie stark Leerzeichen und Kommentare die Ausgabe verkleinern."
+  ],
+  "examples": [
+    {
+      "title": "Einfache Minimierung",
+      "input": "<div>\n  <h1>Title</h1>\n  <p> Hello world </p>\n</div>",
+      "output": "<div><h1>Title</h1><p>Hello world</p></div>",
+      "description": "Entfernt Zeilenumbrüche und unnötige Leerzeichen, ohne gültiges Markup zu verändern."
+    },
+    {
+      "title": "Kommentare entfernen",
+      "input": "<section>\n  <!-- note -->\n  <span>Text</span>\n</section>",
+      "output": "<section><span>Text</span></section>",
+      "description": "Entfernt HTML-Kommentare, wenn die Option aktiviert ist."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Sendet dieser HTML-Minimierer meinen Code an einen Server?",
+      "answer": "Nein. Er läuft direkt im Browser und nutzt nur clientseitige Logik."
+    },
+    {
+      "question": "Kann er mein HTML beschädigen?",
+      "answer": "Das Tool ist darauf ausgelegt, gültige Struktur zu erhalten und nur unnötige Leerzeichen sowie Kommentare zu entfernen. Wenn dein Markup von exakten Abständen abhängt, prüfe das Ergebnis."
+    },
+    {
+      "question": "Kann ich ihn für Produktivcode nutzen?",
+      "answer": "Ja. Er eignet sich zur Vorbereitung von HTML vor dem Deployment, trotzdem solltest du das Ergebnis in deiner Umgebung testen."
+    },
+    {
+      "question": "Entfernt er Kommentare?",
+      "answer": "Ja, wenn die Option aktiviert ist. Bei Bedarf kannst du Kommentare auch behalten."
+    }
+  ],
+  "uiLabels": {
+    "copy": "Kopieren",
+    "copied": "Kopiert",
+    "input": "Eingabe",
+    "output": "Ausgabe",
+    "placeholder": "HTML hier einfügen",
+    "indent": "Einzug",
+    "removeComments": "Kommentare entfernen",
+    "preview": "Vorschau",
+    "source": "Quelle",
+    "sanitizedHtml": "Bereinigtes HTML",
+    "plainText": "Klartext",
+    "summary": "Zusammenfassung",
+    "total": "Gesamt",
+    "links": "Links",
+    "images": "Bilder",
+    "errors": "Fehler",
+    "warnings": "Warnungen",
+    "valid": "Gültig",
+    "invalid": "Ungültig",
+    "href": "Href",
+    "text": "Text",
+    "rel": "Rel",
+    "target": "Ziel",
+    "alt": "Alt",
+    "width": "Breite",
+    "height": "Höhe",
+    "empty": "Leer",
+    "outputReady": "Ausgabe bereit",
+    "cleanedHtml": "Bereinigtes HTML",
+    "formattedHtml": "Formatiertes HTML",
+    "minifiedHtml": "Minimiertes HTML",
+    "markdown": "Markdown",
+    "extractedImages": "Extrahierte Bilder",
+    "extractedLinks": "Extrahierte Links",
+    "validationSummary": "Validierungszusammenfassung",
+    "prettyHtml": "Lesbares HTML",
+    "encodedText": "Kodierter Text"
+  },
+  "seo": {
+    "title": "HTML-Minimierer online | HTML schnell komprimieren",
+    "description": "HTML direkt im Browser minimieren, um die Dateigröße zu reduzieren, unnötige Leerzeichen zu entfernen und Markup ohne externe APIs zu optimieren.",
+    "keywords": [
+      "html minimierer",
+      "html minimieren",
+      "html komprimieren",
+      "html online komprimieren",
+      "html leerzeichen entfernen",
+      "html bereinigen",
+      "clientseitiger html minimierer"
+    ]
+  }
+}

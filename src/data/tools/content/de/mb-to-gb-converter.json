@@ -1,0 +1,47 @@
+{
+  "toolId": "mb-to-gb-converter",
+  "locale": "de",
+  "slug": "mb-zu-gb-umrechner",
+  "h1": "MB-zu-GB-Umrechner",
+  "title": "MB-zu-GB-Umrechner",
+  "shortDescription": "Wandle Megabyte sofort in Gigabyte um mit dem binaeren 1024-Verhaeltnis.",
+  "overview": "Wandle Megabyte sofort in Gigabyte um. Dieser Rechner nutzt das binaere Verhaeltnis 1 GB = 1024 MB, wie es oft bei Dateigroessen und Speicherangaben verwendet wird.",
+  "howItWorks": [
+    "Gib die Anzahl der Megabyte in das Formular ein.",
+    "Die Umrechnung laeuft sofort im Browser mit dem 1024-Verhaeltnis.",
+    "Pruefe das Ergebnis und nutze bei Bedarf verwandte Tools."
+  ],
+  "examples": [
+    {
+      "title": "Beispiel 1",
+      "input": "512 Megabyte",
+      "output": "0,5 Gigabyte",
+      "description": "Praktisches Beispiel fuer binaere Speicherumrechnungen."
+    },
+    {
+      "title": "Beispiel 2",
+      "input": "1024 Megabyte",
+      "output": "1 Gigabyte",
+      "description": "Nuetzlich fuer Dateigroessen, Backups und Speicherplanung."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Welches Verhaeltnis nutzt dieses Tool?",
+      "answer": "Dieses Tool nutzt das binaere Verhaeltnis, also 1024 MB = 1 GB."
+    },
+    {
+      "question": "Kann ich das Tool auf dem Handy nutzen?",
+      "answer": "Ja. Die Seite funktioniert auf Desktop und Mobilgeraeten mit einer einfachen Eingabe- und Ergebnisansicht."
+    }
+  ],
+  "seo": {
+    "title": "MB-zu-GB-Umrechner",
+    "description": "Kostenloser MB-zu-GB-Umrechner online mit binaerem 1024-Verhaeltnis und sofortigem Ergebnis.",
+    "keywords": [
+      "mb zu gb umrechner",
+      "1024 mb in gb",
+      "speicher umrechner"
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "toolId": "percentage-decrease-calculator",
+  "locale": "en",
+  "slug": "percentage-decrease-calculator",
+  "h1": "Percentage Decrease Calculator",
+  "title": "Percentage Decrease Calculator",
+  "shortDescription": "Calculate a value after a percentage decrease with fast results, simple inputs and practical examples.",
+  "overview": "Calculate a value after a percentage decrease. This page gives a fast answer with a practical utility tool and a simple result flow. This page targets users who want a free online answer, fast browser-based results and practical long-tail utility content.",
+  "howItWorks": [
+    "Enter the required value or text into the form.",
+    "The conversion, calculation or transformation runs instantly in the browser.",
+    "Review the result and continue with related tools if you need another step."
+  ],
+  "examples": [
+    {
+      "title": "Example 1",
+      "input": "120 decreased by 15%",
+      "output": "102",
+      "description": "A realistic percentage decrease calculator example for an everyday search query."
+    },
+    {
+      "title": "Example 2",
+      "input": "120 decreased by 15%",
+      "output": "102",
+      "description": "Another practical use case for organic long-tail traffic."
+    }
+  ],
+  "faq": [
+    {
+      "question": "How accurate is this tool?",
+      "answer": "The result is calculated directly from the formula or browser-side logic used by this tool."
+    },
+    {
+      "question": "Can I use this tool on mobile?",
+      "answer": "Yes. The page works on desktop and mobile screens with a simple input and result layout."
+    }
+  ],
+  "seo": {
+    "title": "Percentage Decrease Calculator",
+    "description": "Calculate a value after a percentage decrease. Free online percentage decrease calculator with instant results.",
+    "keywords": [
+      "percentage decrease calculator",
+      "percentage decrease calculator",
+      "calculators tool"
+    ]
+  }
+}

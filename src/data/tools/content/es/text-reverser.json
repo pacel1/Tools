@@ -1,0 +1,47 @@
+{
+  "toolId": "text-reverser",
+  "locale": "es",
+  "slug": "inversor-de-texto",
+  "h1": "Inversor de texto",
+  "title": "Inversor de texto",
+  "shortDescription": "Invierte texto al instante online con resultados rápidos, uso sencillo y ejemplos prácticos.",
+  "overview": "Invierte texto al instante online. Esta página ofrece una respuesta rápida con una herramienta útil y un flujo de resultado simple. Está pensada para usuarios que buscan una solución gratuita en línea, resultados rápidos en el navegador y contenido útil de tipo long-tail.",
+  "howItWorks": [
+    "Escribe el texto requerido en el formulario.",
+    "La conversión, el cálculo o la transformación se ejecuta al instante en el navegador.",
+    "Revisa el resultado y continúa con herramientas relacionadas si necesitas otro paso."
+  ],
+  "examples": [
+    {
+      "title": "Ejemplo 1",
+      "input": "utility tools",
+      "output": "sloot ytilitu",
+      "description": "Un ejemplo realista de inversión de texto para una búsqueda cotidiana."
+    },
+    {
+      "title": "Ejemplo 2",
+      "input": "utility tools",
+      "output": "sloot ytilitu",
+      "description": "Otro caso práctico pensado para tráfico orgánico de cola larga."
+    }
+  ],
+  "faq": [
+    {
+      "question": "¿Qué tan precisa es esta herramienta?",
+      "answer": "El resultado se calcula directamente a partir de la fórmula o la lógica en el navegador que usa esta herramienta."
+    },
+    {
+      "question": "¿Puedo usar esta herramienta en móvil?",
+      "answer": "Sí. La página funciona en escritorio y en pantallas móviles con un diseño simple de entrada y resultado."
+    }
+  ],
+  "seo": {
+    "title": "Inversor de texto",
+    "description": "Invierte texto al instante online. Inversor de texto gratis con resultados inmediatos.",
+    "keywords": [
+      "inversor de texto",
+      "inversor de texto",
+      "herramienta text-tools"
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "page": "cookies",
+  "locale": "en",
+  "title": "Cookie Policy",
+  "metaTitle": "Cookie Policy | ConvertBase.app",
+  "metaDescription": "See how ConvertBase.app uses cookies for site functionality, Google Analytics, Google AdSense and basic preferences.",
+  "heading": "Cookie Policy",
+  "content": [
+    "This Cookie Policy explains how ConvertBase.app uses cookies and similar technologies when you browse the site.",
+    "Cookies help us keep the platform stable, understand how pages are used and support advertising where enabled."
+  ],
+  "sections": [
+    {
+      "title": "What cookies do on this site",
+      "paragraphs": [
+        "Cookies can store limited information in your browser so pages load correctly, preferences are remembered and consent choices can be respected.",
+        "We may also use cookies to understand general traffic patterns and improve the experience across devices and languages."
+      ]
+    },
+    {
+      "title": "Analytics and advertising cookies",
+      "paragraphs": [
+        "Google Analytics may use cookies to provide reports about visits, traffic sources and user behavior on ConvertBase.app.",
+        "Google AdSense may use cookies to deliver and measure advertising. Third-party advertising settings can usually be managed through your browser or advertising provider controls."
+      ]
+    },
+    {
+      "title": "Managing cookies",
+      "paragraphs": [
+        "You can control or delete cookies through your browser settings. Blocking some cookies may reduce site functionality or affect how ads and analytics work.",
+        "If you need more information about our use of cookies, contact contact@convertbase.app."
+      ]
+    }
+  ],
+  "keywords": ["cookie policy", "convertbase cookies", "google analytics cookies", "google adsense cookies", "browser cookies", "cookie consent"]
+}

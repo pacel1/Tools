@@ -1,0 +1,43 @@
+{
+  "toolId": "json-formatter",
+  "locale": "en",
+  "slug": "json-formatter",
+  "h1": "JSON formatter",
+  "title": "JSON formatter",
+  "shortDescription": "Format and validate JSON with readable indentation and immediate error feedback.",
+  "overview": "The JSON formatter parses pasted JSON, prints a prettified version and also returns a minified output. It is a strong fit for developer-tool pages because the entire experience can run without a backend while still offering deep SEO content around examples and troubleshooting.",
+  "howItWorks": [
+    "Paste JSON and choose an indentation size.",
+    "The parser validates the input and throws an error if the JSON is invalid.",
+    "When valid, the tool returns prettified output, minified output and line count."
+  ],
+  "examples": [
+    {
+      "title": "API payload cleanup",
+      "input": "{\"status\":\"ok\",\"items\":[1,2]}",
+      "output": "Pretty-printed JSON",
+      "description": "Makes logs and payloads easier to inspect during debugging."
+    },
+    {
+      "title": "Share compact output",
+      "input": "Formatted JSON",
+      "output": "Minified JSON",
+      "description": "Useful when you need the smallest payload representation."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Does it change key order?",
+      "answer": "No. The formatter preserves the parsed object's key order as returned by JavaScript."
+    },
+    {
+      "question": "Can it fix broken JSON automatically?",
+      "answer": "This sample formatter validates and formats valid JSON. Broken input returns an error so the user can correct the source safely."
+    }
+  ],
+  "seo": {
+    "title": "JSON Formatter",
+    "description": "Online JSON formatter and validator with pretty print and minify output.",
+    "keywords": ["json formatter", "json validator", "pretty print json"]
+  }
+}

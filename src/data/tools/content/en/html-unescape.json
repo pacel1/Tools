@@ -1,0 +1,110 @@
+{
+  "toolId": "html-unescape",
+  "locale": "en",
+  "slug": "html-unescape",
+  "h1": "HTML Unescape",
+  "title": "HTML Unescape",
+  "shortDescription": "Decode escaped HTML entities back into readable markup or text.",
+  "metaTitle": "HTML Unescape Tool | Decode HTML Entities",
+  "metaDescription": "Decode escaped HTML entities into readable HTML or text with a fast, client-side HTML unescape tool.",
+  "intro": "Decode escaped HTML entities like &amp;, &lt;, &gt; and &quot; back into readable HTML or plain text instantly in your browser.",
+  "overview": "HTML Unescape converts escaped entities into their original characters so you can read, inspect, or reuse text safely. It is useful for pasted snippets, encoded content, and debugging output from templates or APIs. The tool runs client-side for quick results without sending data to a server.",
+  "howItWorks": [
+    "Paste escaped HTML or text into the input field.",
+    "The tool decodes common HTML entities such as &amp;, &lt;, &gt;, &quot; and numeric entities.",
+    "Copy the unescaped result for editing, previewing, or reuse."
+  ],
+  "useCases": [
+    "Read encoded HTML copied from emails, CMS content, or source code.",
+    "Debug template output, API responses, or escaped text fragments.",
+    "Convert entity-encoded text into plain readable content before editing.",
+    "Inspect markup that was stored or transmitted in escaped form."
+  ],
+  "examples": [
+    {
+      "title": "Basic entity decoding",
+      "input": "&lt;strong&gt;Hello &amp; welcome&lt;/strong&gt;",
+      "output": "<strong>Hello & welcome</strong>",
+      "description": "Turns escaped tags and symbols back into readable markup."
+    },
+    {
+      "title": "Quotes and apostrophes",
+      "input": "&quot;Smart&quot; &amp; &#39;simple&#39;",
+      "output": "\"Smart\" & 'simple'",
+      "description": "Decodes common punctuation entities used in HTML."
+    }
+  ],
+  "faq": [
+    {
+      "question": "What does HTML Unescape do?",
+      "answer": "It converts escaped HTML entities into their normal characters so the text or markup is readable again."
+    },
+    {
+      "question": "Is this the same as an HTML encoder?",
+      "answer": "No. HTML encode turns special characters into entities, while HTML unescape decodes them back."
+    },
+    {
+      "question": "Does it work locally in the browser?",
+      "answer": "Yes. The tool is designed for client-side use and does not require an external API."
+    },
+    {
+      "question": "Can it decode numeric entities?",
+      "answer": "Yes. It can decode common numeric HTML entities as well as named entities."
+    },
+    {
+      "question": "Is the output safe to render directly?",
+      "answer": "Always review unescaped content before rendering it in a page, especially if it comes from an untrusted source."
+    }
+  ],
+  "uiLabels": {
+    "copy": "Copy",
+    "copied": "Copied",
+    "input": "Input",
+    "output": "Output",
+    "placeholder": "Paste escaped HTML or text here",
+    "indent": "Indent",
+    "removeComments": "Remove comments",
+    "preview": "Preview",
+    "source": "Source",
+    "sanitizedHtml": "Sanitized HTML",
+    "plainText": "Plain text",
+    "summary": "Summary",
+    "total": "Total",
+    "links": "Links",
+    "images": "Images",
+    "errors": "Errors",
+    "warnings": "Warnings",
+    "valid": "Valid",
+    "invalid": "Invalid",
+    "href": "Href",
+    "text": "Text",
+    "rel": "Rel",
+    "target": "Target",
+    "alt": "Alt",
+    "width": "Width",
+    "height": "Height",
+    "empty": "Empty",
+    "outputReady": "Output ready",
+    "cleanedHtml": "Cleaned HTML",
+    "formattedHtml": "Formatted HTML",
+    "minifiedHtml": "Minified HTML",
+    "markdown": "Markdown",
+    "extractedImages": "Extracted images",
+    "extractedLinks": "Extracted links",
+    "validationSummary": "Validation summary",
+    "prettyHtml": "Pretty HTML",
+    "encodedText": "Encoded text"
+  },
+  "seo": {
+    "title": "HTML Unescape Tool",
+    "description": "Decode HTML entities back into readable text or markup with a fast, client-side HTML unescape utility.",
+    "keywords": [
+      "html unescape",
+      "decode html entities",
+      "html entity decoder",
+      "unescape html",
+      "html decoder",
+      "html tools"
+    ]
+  }
+}

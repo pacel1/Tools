@@ -1,0 +1,47 @@
+{
+  "toolId": "base64-decoder",
+  "locale": "de",
+  "slug": "base64-dekodierer",
+  "h1": "Base64-Dekodierer",
+  "title": "Base64-Dekodierer",
+  "shortDescription": "Dekodiere Base64-Text sofort mit schnellen Ergebnissen, einfacher Eingabe und praktischen Beispielen.",
+  "overview": "Dekodiere Base64-Text sofort. Diese Seite liefert eine schnelle Antwort mit einem praktischen Hilfswerkzeug und einem einfachen Ergebnisablauf. Die Seite richtet sich an Nutzer, die eine kostenlose Online-Antwort, schnelle Ergebnisse im Browser und praktische Long-Tail-Tool-Inhalte suchen.",
+  "howItWorks": [
+    "Gib den erforderlichen Wert oder Text in das Formular ein.",
+    "Die Konvertierung, Berechnung oder Umwandlung laeuft sofort im Browser.",
+    "Pruefe das Ergebnis und nutze bei Bedarf verwandte Tools fuer den naechsten Schritt."
+  ],
+  "examples": [
+    {
+      "title": "Beispiel 1",
+      "input": "aGVsbG8gd29ybGQ=",
+      "output": "hello world",
+      "description": "Ein realistisches Base64-Dekodierer-Beispiel fuer eine alltägliche Suchanfrage."
+    },
+    {
+      "title": "Beispiel 2",
+      "input": "aGVsbG8gd29ybGQ=",
+      "output": "hello world",
+      "description": "Ein weiteres praktisches Einsatzszenario fuer organischen Long-Tail-Traffic."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Wie genau ist dieses Tool?",
+      "answer": "Das Ergebnis wird direkt aus der Formel oder der browserseitigen Logik dieses Tools berechnet."
+    },
+    {
+      "question": "Kann ich dieses Tool auf dem Smartphone nutzen?",
+      "answer": "Ja. Die Seite funktioniert auf Desktop- und Mobilgeraeten mit einem einfachen Eingabe- und Ergebnislayout."
+    }
+  ],
+  "seo": {
+    "title": "Base64-Dekodierer",
+    "description": "Dekodiere Base64-Text sofort. Kostenloser Base64-Dekodierer online mit sofortigen Ergebnissen.",
+    "keywords": [
+      "base64 dekodierer",
+      "base64 decoder",
+      "developer-tools tool"
+    ]
+  }
+}

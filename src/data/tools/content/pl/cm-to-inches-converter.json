@@ -1,0 +1,47 @@
+{
+  "toolId": "cm-to-inches-converter",
+  "locale": "pl",
+  "slug": "konwerter-cm-na-cale",
+  "h1": "Konwerter cm na cale",
+  "title": "Konwerter cm na cale",
+  "shortDescription": "Przeliczaj centymetry na cale natychmiast — szybko, prosto i z praktycznymi przykładami.",
+  "overview": "Przeliczaj centymetry na cale od razu. Ta strona zapewnia szybą odpowiedź dzięki prostemu narzędziu i przejrzystemu wynikowi. Jest skierowana do osób szukających darmowego kalkulatora online, szybkich wyników w przeglądarce oraz praktycznych treści long-tail.",
+  "howItWorks": [
+    "Wpisz wymaganą wartość lub tekst do formularza.",
+    "Konwersja, obliczenie lub przekształcenie odbywa się natychmiast w przeglądarce.",
+    "Sprawdź wynik i przejdź do powiązanych narzędzi, jeśli potrzebujesz kolejnego kroku."
+  ],
+  "examples": [
+    {
+      "title": "Przykład 1",
+      "input": "10 centymetrów",
+      "output": "3,937 cala",
+      "description": "Realistyczny przykład konwertera cm na cale do codziennego wyszukiwania."
+    },
+    {
+      "title": "Przykład 2",
+      "input": "10 centymetrów",
+      "output": "3,937 cala",
+      "description": "Kolejny praktyczny przypadek użycia pod kątem ruchu long-tail."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Jak dokładne jest to narzędzie?",
+      "answer": "Wynik jest obliczany bezpośrednio na podstawie wzoru lub logiki po stronie przeglądarki użytej w tym narzędziu."
+    },
+    {
+      "question": "Czy mogę używać tego narzędzia na telefonie?",
+      "answer": "Tak. Strona działa na komputerach i urządzeniach mobilnych, oferując prosty układ pola wejściowego i wyniku."
+    }
+  ],
+  "seo": {
+    "title": "Konwerter cm na cale",
+    "description": "Przeliczaj centymetry na cale natychmiast. Darmowy konwerter cm na cale online z błyskawicznym wynikiem.",
+    "keywords": [
+      "konwerter cm na cale",
+      "cm na cale",
+      "narzędzie do konwersji"
+    ]
+  }
+}

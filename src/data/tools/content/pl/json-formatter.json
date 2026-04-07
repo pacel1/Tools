@@ -1,0 +1,47 @@
+{
+  "toolId": "json-formatter",
+  "locale": "pl",
+  "slug": "formatter-json",
+  "h1": "Formatowanie JSON",
+  "title": "Formatowanie JSON",
+  "shortDescription": "Formatuj i waliduj JSON z czytelnym wcięciem oraz natychmiastowym komunikatem o błędach.",
+  "overview": "Formatowanie JSON analizuje wklejony kod JSON, wyświetla wersję uporządkowaną i zwraca także wynik zminimalizowany. To praktyczne narzędzie dla stron z narzędziami deweloperskimi, ponieważ może działać bez backendu, a jednocześnie wspiera SEO dzięki przykładom i wskazówkom dotyczącym rozwiązywania problemów.",
+  "howItWorks": [
+    "Wklej JSON i wybierz rozmiar wcięcia.",
+    "Parser sprawdza poprawność danych i zwraca błąd, jeśli JSON jest nieprawidłowy.",
+    "Gdy dane są poprawne, narzędzie zwraca sformatowany wynik, wersję zminimalizowaną oraz liczbę linii."
+  ],
+  "examples": [
+    {
+      "title": "Porządkowanie payloadu API",
+      "input": "{\"status\":\"ok\",\"items\":[1,2]}",
+      "output": "Sformatowany JSON",
+      "description": "Ułatwia analizę logów i payloadów podczas debugowania."
+    },
+    {
+      "title": "Udostępnianie zwięzłego wyniku",
+      "input": "Sformatowany JSON",
+      "output": "Zminimalizowany JSON",
+      "description": "Przydatne, gdy potrzebujesz najmniejszej możliwej postaci danych."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Czy narzędzie zmienia kolejność kluczy?",
+      "answer": "Nie. Formatowanie zachowuje kolejność kluczy obiektu taką, jaką zwraca JavaScript po parsowaniu."
+    },
+    {
+      "question": "Czy może automatycznie naprawić uszkodzony JSON?",
+      "answer": "To narzędzie sprawdza i formatuje tylko poprawny JSON. Błędne dane zwracają komunikat o błędzie, aby użytkownik mógł bezpiecznie poprawić źródło."
+    }
+  ],
+  "seo": {
+    "title": "Formatowanie JSON",
+    "description": "Online formatter i validator JSON z widokiem pretty print oraz minifikacją.",
+    "keywords": [
+      "json formatter",
+      "json validator",
+      "pretty print json"
+    ]
+  }
+}

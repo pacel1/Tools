@@ -1,0 +1,47 @@
+{
+  "toolId": "uuid-generator",
+  "locale": "fr",
+  "slug": "generateur-uuid",
+  "h1": "Générateur d'UUID",
+  "title": "Générateur d'UUID",
+  "shortDescription": "Générez des UUID aléatoires instantanément avec des résultats rapides, une saisie simple et des exemples pratiques.",
+  "overview": "Générez des UUID aléatoires instantanément. Cette page offre une réponse rapide avec un outil pratique et un parcours de résultat simple. Elle s’adresse aux utilisateurs qui recherchent une solution gratuite en ligne, des résultats rapides dans le navigateur et un contenu utilitaire pratique pour le référencement longue traîne.",
+  "howItWorks": [
+    "Saisissez la valeur ou le texte requis dans le formulaire.",
+    "La conversion, le calcul ou la transformation s’exécute instantanément dans le navigateur.",
+    "Consultez le résultat et poursuivez avec des outils associés si vous avez besoin d’une étape supplémentaire."
+  ],
+  "examples": [
+    {
+      "title": "Exemple 1",
+      "input": "Générer un UUID",
+      "output": "UUID v4",
+      "description": "Un exemple réaliste de générateur d’UUID pour une recherche du quotidien."
+    },
+    {
+      "title": "Exemple 2",
+      "input": "Générer un UUID",
+      "output": "UUID v4",
+      "description": "Un autre cas d’usage pratique pour attirer du trafic organique longue traîne."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Quelle est la précision de cet outil ?",
+      "answer": "Le résultat est calculé directement à partir de la formule ou de la logique côté navigateur utilisée par cet outil."
+    },
+    {
+      "question": "Puis-je utiliser cet outil sur mobile ?",
+      "answer": "Oui. La page fonctionne sur ordinateur et sur mobile avec une interface simple de saisie et de résultat."
+    }
+  ],
+  "seo": {
+    "title": "Générateur d'UUID",
+    "description": "Générez des UUID aléatoires instantanément. Générateur d'UUID en ligne gratuit avec des résultats immédiats.",
+    "keywords": [
+      "uuid generator",
+      "uuid generator",
+      "developer-tools tool"
+    ]
+  }
+}

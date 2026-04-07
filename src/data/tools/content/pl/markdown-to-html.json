@@ -1,0 +1,108 @@
+{
+  "toolId": "markdown-to-html",
+  "locale": "pl",
+  "slug": "markdown-do-html",
+  "h1": "Markdown do HTML",
+  "title": "Konwerter Markdown do HTML",
+  "shortDescription": "Szybko zamień Markdown na bezpieczny, oczyszczony HTML w przeglądarce.",
+  "metaTitle": "Konwerter Markdown do HTML | Bezpieczna konwersja online",
+  "metaDescription": "Konwertuj Markdown do oczyszczonego HTML w przeglądarce. Natychmiastowy podgląd, bez wysyłania danych na serwer.",
+  "intro": "Wklej Markdown i od razu otrzymaj czysty, oczyszczony HTML bezpośrednio w przeglądarce. To wygodne rozwiązanie do szybkiego podglądu i kopiowania bezpiecznego kodu HTML.",
+  "overview": "To narzędzie pomaga zamieniać popularną składnię Markdown na HTML po stronie przeglądarki, bez przesyłania treści na zewnętrzny serwer. Sprawdza się u twórców treści, programistów i redaktorów, którzy potrzebują szybkiego wyniku z podstawowym oczyszczaniem HTML i przewidywalnym formatowaniem.",
+  "howItWorks": [
+    "Wklej lub wpisz Markdown w polu wejściowym.",
+    "Narzędzie analizuje nagłówki, listy, linki, pogrubienia, kod i inne popularne elementy Markdown.",
+    "Niebezpieczny lub nieobsługiwany HTML jest oczyszczany dla większego bezpieczeństwa.",
+    "Sprawdź wygenerowany HTML w podglądzie lub panelu wynikowym.",
+    "Skopiuj oczyszczony HTML i użyj go w witrynie, CMS lub aplikacji."
+  ],
+  "useCases": [
+    "Konwersja treści README do HTML dla dokumentacji.",
+    "Przygotowanie wpisów blogowych lub bazy wiedzy do CMS-a obsługującego HTML.",
+    "Szybki podgląd, jak Markdown będzie wyglądać po publikacji.",
+    "Oczyszczanie Markdown przesyłanego przez użytkowników w przepływie client-side.",
+    "Zamiana notatek, szkiców i fragmentów na gotowy HTML."
+  ],
+  "examples": [
+    {
+      "title": "Podstawowy Markdown",
+      "input": "# Witaj\\n\\nTo jest **pogrubienie**, a to jest [link](https://example.com).",
+      "output": "<h1>Witaj</h1><p>To jest <strong>pogrubienie</strong>, a to jest <a href=\"https://example.com\">link</a>.</p>",
+      "description": "Przykład nagłówka, akapitu, wyróżnienia i linku."
+    },
+    {
+      "title": "Lista i kod",
+      "input": "- Element jeden\\n- Element dwa\\n\\n`npm install`",
+      "output": "<ul><li>Element jeden</li><li>Element dwa</li></ul><p><code>npm install</code></p>",
+      "description": "Typowa konwersja listy i kodu inline."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Czy konwersja odbywa się w przeglądarce?",
+      "answer": "Tak. To narzędzie działa po stronie klienta, więc Markdown jest konwertowany lokalnie w przeglądarce."
+    },
+    {
+      "question": "Czy wynik jest oczyszczany?",
+      "answer": "Tak. Wygenerowany HTML jest oczyszczany, aby ograniczyć ryzyko niebezpiecznego kodu i XSS."
+    },
+    {
+      "question": "Czy obsługuje wszystkie funkcje Markdown?",
+      "answer": "Obsługuje najpopularniejszą składnię Markdown. Dokładny zakres zależy od użytego rendereru w przeglądarce."
+    },
+    {
+      "question": "Czy mogę skopiować wynik HTML?",
+      "answer": "Tak. Możesz skopiować oczyszczony HTML i wkleić go do projektu lub CMS-a."
+    }
+  ],
+  "uiLabels": {
+    "copy": "Kopiuj",
+    "copied": "Skopiowano",
+    "input": "Wejście",
+    "output": "Wyjście",
+    "placeholder": "Wklej tutaj Markdown...",
+    "indent": "Wcięcie",
+    "removeComments": "Usuń komentarze",
+    "preview": "Podgląd",
+    "source": "Źródło",
+    "sanitizedHtml": "Oczyszczony HTML",
+    "plainText": "Tekst zwykły",
+    "summary": "Podsumowanie",
+    "total": "Razem",
+    "links": "Linki",
+    "images": "Obrazy",
+    "errors": "Błędy",
+    "warnings": "Ostrzeżenia",
+    "valid": "Poprawne",
+    "invalid": "Niepoprawne",
+    "href": "Href",
+    "text": "Tekst",
+    "rel": "Rel",
+    "target": "Target",
+    "alt": "Alt",
+    "width": "Szerokość",
+    "height": "Wysokość",
+    "empty": "Puste",
+    "outputReady": "Wynik gotowy",
+    "cleanedHtml": "Oczyszczony HTML",
+    "formattedHtml": "Sformatowany HTML",
+    "minifiedHtml": "Zminifikowany HTML",
+    "markdown": "Markdown",
+    "extractedImages": "Wyodrębnione obrazy",
+    "extractedLinks": "Wyodrębnione linki",
+    "validationSummary": "Podsumowanie walidacji",
+    "prettyHtml": "Czytelny HTML",
+    "encodedText": "Tekst zakodowany"
+  },
+  "seo": {
+    "title": "Konwerter Markdown do HTML",
+    "description": "Konwertuj Markdown do oczyszczonego HTML w przeglądarce z natychmiastowym wynikiem i bezpiecznym przetwarzaniem po stronie klienta.",
+    "keywords": [
+      "markdown do html",
+      "konwerter markdown",
+      "oczyszczanie html",
+      "markdown do html online",
+      "markdown html przeglądarka"
+    ]
+  }
+}

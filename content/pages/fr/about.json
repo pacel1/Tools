@@ -1,0 +1,36 @@
+{
+  "page": "about",
+  "locale": "fr",
+  "title": "À propos de ConvertBase.app",
+  "metaTitle": "À propos de ConvertBase.app | Outils en ligne gratuits",
+  "metaDescription": "Découvrez ce que propose ConvertBase.app, le fonctionnement de la plateforme et l'usage des cookies, Google Analytics et Google AdSense.",
+  "heading": "À propos de ConvertBase.app",
+  "content": [
+    "ConvertBase.app est une plateforme multilingue d'outils en ligne pratiques, comme des convertisseurs, calculateurs, générateurs, outils d'image et utilitaires de texte.",
+    "Notre objectif est de publier des pages rapides et ciblées qui résolvent une tâche précise avec une expérience légère, accessible et simple sur tous les appareils."
+  ],
+  "sections": [
+    {
+      "title": "Ce que propose la plateforme",
+      "paragraphs": [
+        "Chaque outil est conçu pour répondre à un besoin précis avec une saisie claire, un résultat direct et quelques explications utiles.",
+        "Nous voulons rendre le site utile aux utilisateurs du quotidien, aux étudiants, créateurs, marketeurs et développeurs, sans inscription ni étapes inutiles."
+      ]
+    },
+    {
+      "title": "Comment ConvertBase.app est financé",
+      "paragraphs": [
+        "Nous pouvons utiliser Google Analytics pour comprendre le trafic et améliorer l'expérience selon les langues et les appareils.",
+        "Nous pouvons également afficher des annonces via Google AdSense afin de soutenir le fonctionnement continu de la plateforme. Des cookies peuvent être utilisés pour le fonctionnement du site, l'analyse et la publicité."
+      ]
+    },
+    {
+      "title": "Confidentialité et confiance",
+      "paragraphs": [
+        "Nous cherchons à limiter la collecte de données et à faire fonctionner les outils directement dans le navigateur lorsque cela est possible.",
+        "Pour toute question sur la confidentialité, les cookies, la publicité ou les règles de la plateforme, écrivez à contact@convertbase.app."
+      ]
+    }
+  ],
+  "keywords": ["à propos convertbase", "outils en ligne gratuits", "portail outils", "google analytics", "google adsense", "cookies"]
+}

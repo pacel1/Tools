@@ -1,0 +1,109 @@
+{
+  "toolId": "html-minifier",
+  "locale": "pl",
+  "slug": "minifikator-html",
+  "h1": "Minifikator HTML",
+  "title": "Minifikator HTML",
+  "shortDescription": "Minifikuj HTML online, aby zmniejszyć rozmiar pliku bez korzystania z zewnętrznych API.",
+  "metaTitle": "Minifikator HTML online | Szybka kompresja HTML",
+  "metaDescription": "Minifikuj HTML w przeglądarce, aby zmniejszyć rozmiar pliku, usunąć zbędne białe znaki i zoptymalizować znacznik bez zewnętrznych API.",
+  "intro": "Minifikuj HTML w przeglądarce, aby zmniejszyć rozmiar kodu, usunąć zbędne białe znaki i przygotować znacznik do produkcji. To narzędzie działa lokalnie po stronie klienta i nie wysyła kodu do zewnętrznych usług.",
+  "overview": "Użyj tego minifikatora HTML, aby szybko i bezpiecznie skompresować znacznik. Usuwa nadmiarowe spacje, podziały linii i komentarze tam, gdzie to możliwe, zachowując strukturę dokumentu. Ponieważ działa po stronie klienta, jest wygodnym wyborem dla programistów, którzy chcą szybszego ładowania stron, czystszego kodu źródłowego i braku zależności od API.",
+  "howItWorks": [
+    "Wklej HTML do pola wejściowego.",
+    "Wybierz dostępne opcje czyszczenia, na przykład usuwanie komentarzy.",
+    "Uruchom minifikację, aby skompresować znacznik.",
+    "Skopiuj wynikowy HTML i użyj go w projekcie."
+  ],
+  "useCases": [
+    "Przygotowanie HTML do wdrożenia produkcyjnego.",
+    "Zmniejszanie rozmiaru szablonu przed publikacją strony.",
+    "Czyszczenie eksportowanego HTML z edytorów lub generatorów.",
+    "Optymalizacja fragmentów dla szablonów e-mail lub stron statycznych.",
+    "Sprawdzanie, ile można zyskać na usunięciu białych znaków i komentarzy."
+  ],
+  "examples": [
+    {
+      "title": "Podstawowa minifikacja",
+      "input": "<div>\n  <h1>Title</h1>\n  <p> Hello world </p>\n</div>",
+      "output": "<div><h1>Title</h1><p>Hello world</p></div>",
+      "description": "Usuwa podziały linii i nadmiarowe spacje, zachowując poprawny znacznik."
+    },
+    {
+      "title": "Usuwanie komentarzy",
+      "input": "<section>\n  <!-- note -->\n  <span>Text</span>\n</section>",
+      "output": "<section><span>Text</span></section>",
+      "description": "Usuwa komentarze HTML, jeśli opcja jest włączona."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Czy ten minifikator HTML wysyła mój kod na serwer?",
+      "answer": "Nie. Działa w przeglądarce i korzysta wyłącznie z logiki po stronie klienta."
+    },
+    {
+      "question": "Czy może zepsuć mój HTML?",
+      "answer": "Narzędzie usuwa zbędne białe znaki i komentarze, starając się zachować poprawną strukturę. Jeśli Twój kod zależy od dokładnych odstępów, sprawdź wynik."
+    },
+    {
+      "question": "Czy mogę używać go do kodu produkcyjnego?",
+      "answer": "Tak. Nadaje się do przygotowania HTML przed wdrożeniem, ale zawsze warto przetestować wynik w swoim środowisku."
+    },
+    {
+      "question": "Czy usuwa komentarze?",
+      "answer": "Tak, jeśli opcja jest włączona. W razie potrzeby możesz je zachować."
+    }
+  ],
+  "uiLabels": {
+    "copy": "Kopiuj",
+    "copied": "Skopiowano",
+    "input": "Wejście",
+    "output": "Wyjście",
+    "placeholder": "Wklej HTML tutaj",
+    "indent": "Wcięcie",
+    "removeComments": "Usuń komentarze",
+    "preview": "Podgląd",
+    "source": "Źródło",
+    "sanitizedHtml": "Oczyszczony HTML",
+    "plainText": "Zwykły tekst",
+    "summary": "Podsumowanie",
+    "total": "Razem",
+    "links": "Linki",
+    "images": "Obrazy",
+    "errors": "Błędy",
+    "warnings": "Ostrzeżenia",
+    "valid": "Poprawny",
+    "invalid": "Niepoprawny",
+    "href": "Href",
+    "text": "Tekst",
+    "rel": "Rel",
+    "target": "Cel",
+    "alt": "Alt",
+    "width": "Szerokość",
+    "height": "Wysokość",
+    "empty": "Pusto",
+    "outputReady": "Wynik gotowy",
+    "cleanedHtml": "Oczyszczony HTML",
+    "formattedHtml": "Sformatowany HTML",
+    "minifiedHtml": "Zminifikowany HTML",
+    "markdown": "Markdown",
+    "extractedImages": "Wyodrębnione obrazy",
+    "extractedLinks": "Wyodrębnione linki",
+    "validationSummary": "Podsumowanie walidacji",
+    "prettyHtml": "Czytelny HTML",
+    "encodedText": "Zakodowany tekst"
+  },
+  "seo": {
+    "title": "Minifikator HTML online | Szybka kompresja HTML",
+    "description": "Minifikuj HTML w przeglądarce, aby zmniejszyć rozmiar pliku, usunąć zbędne białe znaki i zoptymalizować znacznik bez zewnętrznych API.",
+    "keywords": [
+      "minifikator html",
+      "minifikacja html",
+      "kompresja html",
+      "kompresuj html online",
+      "usun biale znaki html",
+      "czyszczenie html",
+      "minifikator html po stronie klienta"
+    ]
+  }
+}

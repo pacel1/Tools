@@ -1,0 +1,47 @@
+{
+  "toolId": "json-formatter",
+  "locale": "de",
+  "slug": "json-formatierer",
+  "h1": "JSON-Formatierer",
+  "title": "JSON-Formatierer",
+  "shortDescription": "JSON mit lesbarer Einrückung formatieren und validieren – mit sofortiger Fehleranzeige.",
+  "overview": "Der JSON-Formatierer analysiert eingefügtes JSON, gibt eine übersichtlich formatierte Version aus und liefert zusätzlich eine minifizierte Ausgabe. Er eignet sich besonders gut für Entwickler-Tool-Seiten, da er komplett ohne Backend funktionieren kann und dennoch starke SEO-Inhalte mit Beispielen und Fehlerbehebung bietet.",
+  "howItWorks": [
+    "JSON einfügen und die Einrückungstiefe wählen.",
+    "Der Parser prüft die Eingabe und meldet einen Fehler, wenn das JSON ungültig ist.",
+    "Bei gültigen Daten liefert das Tool formatierte Ausgabe, minifizierte Ausgabe und die Zeilenanzahl."
+  ],
+  "examples": [
+    {
+      "title": "API-Payload bereinigen",
+      "input": "{\"status\":\"ok\",\"items\":[1,2]}",
+      "output": "Lesbar formatiertes JSON",
+      "description": "Erleichtert das Prüfen von Logs und Payloads beim Debugging."
+    },
+    {
+      "title": "Kompakte Ausgabe teilen",
+      "input": "Formatiertes JSON",
+      "output": "Minifiziertes JSON",
+      "description": "Hilfreich, wenn die kleinste mögliche Darstellung benötigt wird."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Ändert das Tool die Reihenfolge der Schlüssel?",
+      "answer": "Nein. Der Formatierer behält die Schlüsselreihenfolge des geparsten Objekts so bei, wie JavaScript sie zurückgibt."
+    },
+    {
+      "question": "Kann es fehlerhaftes JSON automatisch reparieren?",
+      "answer": "Dieser Beispiel-Formatierer validiert und formatiert gültiges JSON. Ungültige Eingaben liefern einen Fehler, damit der Nutzer die Quelle sicher korrigieren kann."
+    }
+  ],
+  "seo": {
+    "title": "JSON-Formatierer",
+    "description": "Online JSON-Formatierer und Validator mit Pretty-Print- und Minify-Ausgabe.",
+    "keywords": [
+      "json formatter",
+      "json validator",
+      "pretty print json"
+    ]
+  }
+}

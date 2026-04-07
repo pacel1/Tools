@@ -1,0 +1,47 @@
+{
+  "toolId": "compound-interest-calculator",
+  "locale": "es",
+  "slug": "calculadora-interes-compuesto",
+  "h1": "Calculadora de interés compuesto",
+  "title": "Calculadora de interés compuesto",
+  "shortDescription": "Calcula el crecimiento del interés compuesto a lo largo del tiempo con resultados rápidos, entradas simples y ejemplos prácticos.",
+  "overview": "Calcula el crecimiento del interés compuesto a lo largo del tiempo. Esta página ofrece una respuesta rápida con una herramienta práctica y un flujo de resultados sencillo. Está pensada para usuarios que buscan una respuesta online gratuita, resultados rápidos en el navegador y contenido útil de cola larga.",
+  "howItWorks": [
+    "Introduce el valor o texto necesario en el formulario.",
+    "La conversión, el cálculo o la transformación se ejecuta al instante en el navegador.",
+    "Revisa el resultado y continúa con herramientas relacionadas si necesitas otro paso."
+  ],
+  "examples": [
+    {
+      "title": "Ejemplo 1",
+      "input": "5000, 5%, 10 años",
+      "output": "Crecimiento a lo largo del tiempo",
+      "description": "Un ejemplo realista de calculadora de interés compuesto para una búsqueda cotidiana."
+    },
+    {
+      "title": "Ejemplo 2",
+      "input": "5000, 5%, 10 años",
+      "output": "Crecimiento a lo largo del tiempo",
+      "description": "Otro caso práctico para atraer tráfico orgánico de cola larga."
+    }
+  ],
+  "faq": [
+    {
+      "question": "¿Qué precisión tiene esta herramienta?",
+      "answer": "El resultado se calcula directamente a partir de la fórmula o de la lógica del navegador que utiliza esta herramienta."
+    },
+    {
+      "question": "¿Puedo usar esta herramienta en el móvil?",
+      "answer": "Sí. La página funciona en escritorio y en móviles con una interfaz simple de entrada y resultado."
+    }
+  ],
+  "seo": {
+    "title": "Calculadora de interés compuesto",
+    "description": "Calcula el crecimiento del interés compuesto a lo largo del tiempo. Calculadora de interés compuesto gratuita en línea con resultados instantáneos.",
+    "keywords": [
+      "calculadora de interés compuesto",
+      "calculadora de interés compuesto",
+      "herramienta calculadoras"
+    ]
+  }
+}

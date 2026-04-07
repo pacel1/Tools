@@ -1,0 +1,23 @@
+{
+  "id": "gradient-generator",
+  "type": "generator",
+  "category": "generators",
+  "componentName": "GradientGeneratorTool",
+  "logicModule": "gradient-generator",
+  "inputSchema": "gradientGeneratorInputSchema",
+  "outputSchema": "gradientGeneratorOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "box-shadow-generator",
+    "meta-tag-generator",
+    "placeholder-image-generator",
+    "qr-code-generator"
+  ],
+  "seoPriority": 0.95
+}

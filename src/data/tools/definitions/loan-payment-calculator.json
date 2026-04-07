@@ -1,0 +1,23 @@
+{
+  "id": "loan-payment-calculator",
+  "type": "calculator",
+  "category": "calculators",
+  "componentName": "LoanPaymentCalculatorTool",
+  "logicModule": "loan-payment-calculator",
+  "inputSchema": "loanPaymentCalculatorInputSchema",
+  "outputSchema": "loanPaymentCalculatorOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "bmi-calculator",
+    "age-calculator",
+    "percentage-calculator",
+    "days-between-dates-calculator"
+  ],
+  "seoPriority": 0.97
+}

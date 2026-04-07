@@ -1,0 +1,108 @@
+{
+  "toolId": "html-pretty-print",
+  "locale": "pl",
+  "slug": "pretty-print-html",
+  "h1": "Formatowanie HTML",
+  "title": "Formatowanie HTML",
+  "shortDescription": "Uporządkuj HTML z równym wcięciem do przeglądu, audytu i debugowania.",
+  "metaTitle": "Formatowanie HTML | Sformatuj HTML online",
+  "metaDescription": "Uporządkuj HTML z równym wcięciem do przeglądu, audytu i debugowania. Sformatuj kod w przeglądarce szybko i bez wysyłania danych na serwer.",
+  "intro": "Sformatuj chaotyczny kod HTML do czytelnej postaci z jednolitym wcięciem i odstępami. To narzędzie działa w przeglądarce i ułatwia analizę struktury, porównywanie zmian oraz debugowanie.",
+  "overview": "Formatowanie HTML zamienia skompresowany lub nieczytelny markup w przejrzysty kod HTML z wcięciami. Sprawdza się przy analizie zagnieżdżonych elementów, kontroli atrybutów i przygotowaniu kodu do przeglądu. Przetwarzanie odbywa się lokalnie w przeglądarce, więc praca jest szybka i wygodna.",
+  "howItWorks": [
+    "Wklej kod HTML do pola wejściowego.",
+    "Wybierz opcje formatowania, takie jak wcięcie lub obsługa komentarzy, jeśli są dostępne.",
+    "Wygeneruj sformatowany wynik od razu w przeglądarce.",
+    "Skopiuj wynik i użyj go do przeglądu, debugowania lub dokumentacji."
+  ],
+  "useCases": [
+    "Przegląd struktury HTML przed wdrożeniem.",
+    "Debugowanie zagnieżdżonego lub minifikowanego kodu.",
+    "Przygotowanie fragmentów kodu do code review i audytów.",
+    "Ułatwienie odczytu HTML w dokumentacji i zgłoszeniach."
+  ],
+  "examples": [
+    {
+      "title": "Zwięzły markup",
+      "input": "<div><span>Hi</span><a href='/docs'>Docs</a></div>",
+      "output": "<div>\n  <span>Hi</span>\n  <a href=\"/docs\">Docs</a>\n</div>",
+      "description": "Zamienia krótki HTML w czytelny układ blokowy."
+    },
+    {
+      "title": "Zagnieżdżona treść",
+      "input": "<ul><li>One</li><li><strong>Two</strong></li></ul>",
+      "output": "<ul>\n  <li>One</li>\n  <li><strong>Two</strong></li>\n</ul>",
+      "description": "Ułatwia analizę zagnieżdżonych list."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Czy to narzędzie do formatowania HTML jest bezpieczne?",
+      "answer": "Tak. Zostało zaprojektowane do pracy po stronie klienta i powinno bezpiecznie przetwarzać HTML z uwzględnieniem XSS."
+    },
+    {
+      "question": "Czy formatowanie zmienia treść?",
+      "answer": "Narzędzie skupia się na białych znakach i wcięciach. Powinno zachować znaczenie HTML, jednocześnie poprawiając czytelność."
+    },
+    {
+      "question": "Czy można użyć go do HTML po minifikacji?",
+      "answer": "Tak. To idealne narzędzie do rozwijania skompresowanego markup przed przeglądem lub debugowaniem."
+    },
+    {
+      "question": "Czy działa tylko w przeglądarce?",
+      "answer": "Tak. Działa wyłącznie po stronie klienta i nie wymaga zewnętrznych API."
+    }
+  ],
+  "uiLabels": {
+    "copy": "Kopiuj",
+    "copied": "Skopiowano",
+    "input": "Wejście",
+    "output": "Wyjście",
+    "placeholder": "Wklej tutaj HTML",
+    "indent": "Wcięcie",
+    "removeComments": "Usuń komentarze",
+    "preview": "Podgląd",
+    "source": "Zrodlo",
+    "sanitizedHtml": "Zsanityzowany HTML",
+    "plainText": "Tekst plaski",
+    "summary": "Podsumowanie",
+    "total": "Razem",
+    "links": "Linki",
+    "images": "Obrazy",
+    "errors": "Bledy",
+    "warnings": "Ostrzezenia",
+    "valid": "Poprawny",
+    "invalid": "Niepoprawny",
+    "href": "Href",
+    "text": "Tekst",
+    "rel": "Rel",
+    "target": "Target",
+    "alt": "Alt",
+    "width": "Szerokosc",
+    "height": "Wysokosc",
+    "empty": "Puste",
+    "outputReady": "Wynik gotowy",
+    "cleanedHtml": "Oczyszczony HTML",
+    "formattedHtml": "Sformatowany HTML",
+    "minifiedHtml": "Zminifikowany HTML",
+    "markdown": "Markdown",
+    "extractedImages": "Wyodrebnione obrazy",
+    "extractedLinks": "Wyodrebnione linki",
+    "validationSummary": "Podsumowanie walidacji",
+    "prettyHtml": "Czytelny HTML",
+    "encodedText": "Zakodowany tekst"
+  },
+  "seo": {
+    "title": "Formatowanie HTML | Sformatuj HTML online",
+    "description": "Uporządkuj HTML z równym wcięciem do przeglądu, audytu i debugowania. Sformatuj kod w przeglądarce szybko i bez wysyłania danych na serwer.",
+    "keywords": [
+      "formatowanie html",
+      "sformatuj html",
+      "formatter html",
+      "pretty print html",
+      "wciecie html",
+      "narzedzie html online",
+      "czytelny html"
+    ]
+  }
+}

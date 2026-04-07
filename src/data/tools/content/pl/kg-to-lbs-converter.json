@@ -1,0 +1,47 @@
+{
+  "toolId": "kg-to-lbs-converter",
+  "locale": "pl",
+  "slug": "przelicznik-kg-na-lbs",
+  "h1": "Przelicznik kg na lbs",
+  "title": "Przelicznik kg na lbs",
+  "shortDescription": "Błyskawicznie przelicz kilogramy na funty dzięki przejrzystemu wynikowi do zastosowań fitness, wysyłki i codziennego użytku.",
+  "overview": "Ten przelicznik zamienia wartości kilogramów na funty, korzystając ze standardowego współczynnika 2,2046226218. Interfejs utrzymuje kalkulator nad zasięgiem przewijania, aby użytkownicy mogli od razu wykonać obliczenie, a jednocześnie zapewnia treść wspierającą, którą wyszukiwarki mogą zaindeksować poniżej.",
+  "howItWorks": [
+    "Wpisz wartość w kilogramach, opcjonalnie z miejscami po przecinku.",
+    "Narzędzie sprawdza poprawność liczby i mnoży ją przez współczynnik przeliczeniowy.",
+    "Wynik pojawia się jako precyzyjna wartość liczbowa oraz zaokrąglony zapis do odczytu."
+  ],
+  "examples": [
+    {
+      "title": "Planowanie treningu",
+      "input": "5 kg",
+      "output": "11.02 lb",
+      "description": "Przydatne przy czytaniu planów treningowych łączących jednostki metryczne i imperialne."
+    },
+    {
+      "title": "Szacowanie paczki",
+      "input": "18.5 kg",
+      "output": "40.79 lb",
+      "description": "Pomocne w formularzach wysyłkowych i przy limitach przewoźników podawanych w funtach."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Jakiego wzoru używa to narzędzie?",
+      "answer": "Przelicznik mnoży kilogramy przez 2,2046226218, czyli standardowy współczynnik zamiany kilogramów na funty."
+    },
+    {
+      "question": "Czy mogę przeliczać wartości dziesiętne?",
+      "answer": "Tak. Pole przyjmuje liczby dziesiętne, co sprawdza się przy masie ciała, wadze przesyłek i ilościach składników."
+    }
+  ],
+  "seo": {
+    "title": "Przelicznik kg na lbs",
+    "description": "Darmowy przelicznik kg na lbs online z natychmiastowym wynikiem i czytelnymi przykładami.",
+    "keywords": [
+      "kg na lbs",
+      "kilogramy na funty",
+      "przelicznik wagi"
+    ]
+  }
+}

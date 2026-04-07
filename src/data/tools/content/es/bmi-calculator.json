@@ -1,0 +1,47 @@
+{
+  "toolId": "bmi-calculator",
+  "locale": "es",
+  "slug": "calculadora-imc",
+  "h1": "Calculadora de IMC",
+  "title": "Calculadora de IMC",
+  "shortDescription": "Calcula el índice de masa corporal a partir de la altura y el peso con resultados rápidos, entradas simples y ejemplos prácticos.",
+  "overview": "Calcula el índice de masa corporal a partir de la altura y el peso. Esta página ofrece una respuesta rápida con una herramienta útil y un flujo de resultados sencillo. Está pensada para quienes buscan una respuesta gratis en línea, resultados instantáneos en el navegador y contenido práctico de cola larga.",
+  "howItWorks": [
+    "Introduce el valor o el texto requerido en el formulario.",
+    "La conversión, el cálculo o la transformación se ejecuta al instante en el navegador.",
+    "Revisa el resultado y sigue con herramientas relacionadas si necesitas otro paso."
+  ],
+  "examples": [
+    {
+      "title": "Ejemplo 1",
+      "input": "70 kg y 175 cm",
+      "output": "22,86",
+      "description": "Un ejemplo realista de calculadora de IMC para una consulta habitual."
+    },
+    {
+      "title": "Ejemplo 2",
+      "input": "70 kg y 175 cm",
+      "output": "22,86",
+      "description": "Otro caso práctico para atraer tráfico orgánico de cola larga."
+    }
+  ],
+  "faq": [
+    {
+      "question": "¿Qué precisión tiene esta herramienta?",
+      "answer": "El resultado se calcula directamente a partir de la fórmula o de la lógica en el navegador utilizada por esta herramienta."
+    },
+    {
+      "question": "¿Puedo usar esta herramienta en el móvil?",
+      "answer": "Sí. La página funciona en escritorio y en dispositivos móviles con una interfaz sencilla de entrada y resultado."
+    }
+  ],
+  "seo": {
+    "title": "Calculadora de IMC",
+    "description": "Calcula el índice de masa corporal a partir de la altura y el peso. Calculadora de IMC gratis en línea con resultados instantáneos.",
+    "keywords": [
+      "calculadora imc",
+      "bmi calculator",
+      "herramienta calculadoras"
+    ]
+  }
+}

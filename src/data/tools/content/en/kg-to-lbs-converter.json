@@ -1,0 +1,43 @@
+{
+  "toolId": "kg-to-lbs-converter",
+  "locale": "en",
+  "slug": "kg-to-lbs-converter",
+  "h1": "Kg to lbs converter",
+  "title": "Kg to lbs converter",
+  "shortDescription": "Convert kilograms to pounds instantly with clean, readable output for fitness, shipping and daily use.",
+  "overview": "This converter turns kilogram values into pounds using the standard factor of 2.2046226218. The interface keeps the calculator above the fold so users can convert immediately while still giving search engines indexable supporting content below.",
+  "howItWorks": [
+    "Enter a kilogram value with optional decimals.",
+    "The tool validates the number and multiplies it by the conversion factor.",
+    "The result is shown as a precise numeric value plus a rounded display string."
+  ],
+  "examples": [
+    {
+      "title": "Gym planning",
+      "input": "5 kg",
+      "output": "11.02 lb",
+      "description": "Useful when reading training plans that mix metric and imperial weights."
+    },
+    {
+      "title": "Parcel estimate",
+      "input": "18.5 kg",
+      "output": "40.79 lb",
+      "description": "Handy for shipping forms and carrier limits in pounds."
+    }
+  ],
+  "faq": [
+    {
+      "question": "What formula is used?",
+      "answer": "The converter multiplies kilograms by 2.2046226218, which is the standard kilogram-to-pound conversion factor."
+    },
+    {
+      "question": "Can I convert decimal values?",
+      "answer": "Yes. The input accepts decimal numbers, making it practical for body weight, package weight and ingredient quantities."
+    }
+  ],
+  "seo": {
+    "title": "Kg to lbs Converter",
+    "description": "Free online kg to lbs converter with instant results and clear examples.",
+    "keywords": ["kg to lbs", "kilograms to pounds", "weight converter"]
+  }
+}

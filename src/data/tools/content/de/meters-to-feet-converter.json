@@ -1,0 +1,47 @@
+{
+  "toolId": "meters-to-feet-converter",
+  "locale": "de",
+  "slug": "meter-zu-fuss-umrechner",
+  "h1": "Meter-zu-Fuß-Umrechner",
+  "title": "Meter-zu-Fuß-Umrechner",
+  "shortDescription": "Meter sofort in Fuß umrechnen – schnell, einfach und mit praktischen Beispielen.",
+  "overview": "Rechnen Sie Meter sofort in Fuß um. Diese Seite liefert eine schnelle Antwort mit einem praktischen Online-Tool und einem einfachen Ergebnisablauf. Sie richtet sich an Nutzer, die eine kostenlose Antwort im Browser, schnelle Ergebnisse und praktische Long-Tail-Inhalte suchen.",
+  "howItWorks": [
+    "Geben Sie den benötigten Wert oder Text in das Formular ein.",
+    "Die Umrechnung, Berechnung oder Transformation läuft sofort im Browser.",
+    "Prüfen Sie das Ergebnis und nutzen Sie bei Bedarf weitere passende Tools."
+  ],
+  "examples": [
+    {
+      "title": "Beispiel 1",
+      "input": "2 Meter",
+      "output": "6,5617 Fuß",
+      "description": "Ein realistisches Beispiel für die Umrechnung von Metern in Fuß für eine alltägliche Suche."
+    },
+    {
+      "title": "Beispiel 2",
+      "input": "2 Meter",
+      "output": "6,5617 Fuß",
+      "description": "Ein weiteres praktisches Beispiel für organischen Long-Tail-Traffic."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Wie genau ist dieses Tool?",
+      "answer": "Das Ergebnis wird direkt aus der Formel oder der browserseitigen Logik dieses Tools berechnet."
+    },
+    {
+      "question": "Kann ich dieses Tool auf dem Smartphone nutzen?",
+      "answer": "Ja. Die Seite funktioniert auf Desktop- und Mobilgeräten mit einer einfachen Eingabe- und Ergebnisansicht."
+    }
+  ],
+  "seo": {
+    "title": "Meter-zu-Fuß-Umrechner",
+    "description": "Rechnen Sie Meter sofort in Fuß um. Kostenloser Online-Meter-zu-Fuß-Umrechner mit sofortigen Ergebnissen.",
+    "keywords": [
+      "meter zu fuß umrechner",
+      "meter in fuß umrechnen",
+      "umrechnungstool"
+    ]
+  }
+}

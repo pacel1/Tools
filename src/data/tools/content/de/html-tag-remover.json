@@ -1,0 +1,108 @@
+{
+  "toolId": "html-tag-remover",
+  "locale": "de",
+  "slug": "html-tags-entferner",
+  "h1": "HTML-Tag-Entferner",
+  "title": "HTML-Tag-Entferner",
+  "shortDescription": "Entferne HTML-Tags und behalte den lesbaren Text aus dem Originalinhalt.",
+  "metaTitle": "HTML-Tag-Entferner | HTML in Klartext umwandeln",
+  "metaDescription": "HTML-Tags online entfernen und lesbaren Text behalten. HTML-Snippets sicher im Browser mit einem schnellen Client-Side-Tool bereinigen.",
+  "intro": "Füge HTML ein und erhalte sofort sauberen, lesbaren Klartext. Dieses browserbasierte Tool entfernt Tags und behält den sichtbaren Inhalt, ohne externe APIs zu verwenden.",
+  "overview": "Der HTML-Tag-Entferner ist ein einfaches Client-side-Tool zum Umwandeln von HTML in Klartext. Füge einen Ausschnitt, eine ganze Seite oder kopierten Rich-Text ein, und das Tool entfernt die Markups, während lesbare Wörter und möglichst auch Zeilenumbrüche erhalten bleiben. Das ist praktisch zum Bereinigen von Inhalten, Extrahieren von Text für Notizen, Vorbereiten von Snippets für die Suche oder Vergleichen von Text ohne Markup. Die Verarbeitung läuft lokal im Browser und ist dadurch schnell und sicher.",
+  "howItWorks": [
+    "HTML in das Eingabefeld einfügen.",
+    "Das Tool analysiert das Markup lokal im Browser.",
+    "HTML-Tags werden entfernt und lesbarer Text extrahiert.",
+    "Den Klartext für Dokumente, Notizen oder Apps kopieren."
+  ],
+  "useCases": [
+    "HTML-Snippets in Klartext umwandeln.",
+    "Aus dem Web kopierte Inhalte vor dem Einfügen in Mail oder Chat bereinigen.",
+    "Lesbaren Text aus Vorlagen-Code extrahieren.",
+    "Markup für Textanalyse oder Suchindex-Vorbereitung entfernen.",
+    "Den Text hinter HTML-Blöcken schnell anzeigen."
+  ],
+  "examples": [
+    {
+      "title": "Einfacher Absatz",
+      "input": "<p>Hallo <strong>Welt</strong>!</p>",
+      "output": "Hallo Welt!",
+      "description": "Grundtext ohne Inline-Formatierung."
+    },
+    {
+      "title": "Links und Listen",
+      "input": "<div><a href=\"/docs\">Dokumentation</a><ul><li>Eins</li><li>Zwei</li></ul></div>",
+      "output": "Dokumentation\nEins\nZwei",
+      "description": "Lesbarer Text bleibt erhalten, Tags werden entfernt."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Bleibt der Text innerhalb der Tags erhalten?",
+      "answer": "Ja. Das Tool entfernt HTML-Markup und behält den lesbaren Text in den Elementen."
+    },
+    {
+      "question": "Wird die Verarbeitung im Browser ausgeführt?",
+      "answer": "Ja. Es verwendet nur Client-side-Logik, sodass dein HTML lokal und ohne externe APIs verarbeitet wird."
+    },
+    {
+      "question": "Werden auch script- und style-Inhalte entfernt?",
+      "answer": "Das Tool konzentriert sich auf die sichere Extraktion lesbaren Textes, daher können nicht sichtbare Inhalte je nach Parser-Verhalten ignoriert oder entfernt werden."
+    },
+    {
+      "question": "Bleiben Zeilenumbrüche und Leerzeichen erhalten?",
+      "answer": "Das Tool versucht, die Lesbarkeit zu bewahren, aber die genaue Formatierung kann von der HTML-Struktur abhängen."
+    }
+  ],
+  "uiLabels": {
+    "copy": "Kopieren",
+    "copied": "Kopiert",
+    "input": "HTML input",
+    "output": "Text without tags",
+    "placeholder": "HTML hier einfügen...",
+    "indent": "Einzug",
+    "removeComments": "Kommentare entfernen",
+    "preview": "Vorschau",
+    "source": "Quelle",
+    "sanitizedHtml": "Bereinigtes HTML",
+    "plainText": "Klartext",
+    "summary": "Zusammenfassung",
+    "total": "Gesamt",
+    "links": "Links",
+    "images": "Bilder",
+    "errors": "Fehler",
+    "warnings": "Warnungen",
+    "valid": "Gültig",
+    "invalid": "Ungültig",
+    "href": "Href",
+    "text": "Text",
+    "rel": "Rel",
+    "target": "Ziel",
+    "alt": "Alt",
+    "width": "Breite",
+    "height": "Höhe",
+    "empty": "Leer",
+    "outputReady": "Ausgabe bereit",
+    "cleanedHtml": "Bereinigtes HTML",
+    "formattedHtml": "Formatiertes HTML",
+    "minifiedHtml": "Minifiziertes HTML",
+    "markdown": "Markdown",
+    "extractedImages": "Extrahierte Bilder",
+    "extractedLinks": "Extrahierte Links",
+    "validationSummary": "Validierungsübersicht",
+    "prettyHtml": "Lesbares HTML",
+    "encodedText": "Kodierter Text"
+  },
+  "seo": {
+    "title": "HTML-Tag-Entferner | HTML in Klartext umwandeln",
+    "description": "HTML-Tags online entfernen und lesbaren Text behalten. HTML-Snippets sicher im Browser mit einem schnellen Client-Side-Tool bereinigen.",
+    "keywords": [
+      "html tag entferner",
+      "html in klartext",
+      "html tags entfernen",
+      "html zu text",
+      "html bereinigen",
+      "html zu klartext"
+    ]
+  }
+}

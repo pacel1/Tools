@@ -1,0 +1,109 @@
+{
+  "toolId": "html-formatter",
+  "locale": "pl",
+  "slug": "formatowanie-html",
+  "h1": "Formatowanie HTML",
+  "title": "Formatowanie HTML",
+  "shortDescription": "Formatuj chaotyczny HTML, aby był czytelny, z dobrym wcięciem i uporządkowaną strukturą.",
+  "metaTitle": "Formatowanie HTML online | Uporządkuj kod HTML",
+  "metaDescription": "Formatuj chaotyczny HTML online. Czytelne wcięcia, lepsze zagnieżdżenie i przejrzysty wynik HTML w przeglądarce.",
+  "intro": "To narzędzie do formatowania HTML zamienia nieczytelny kod w przejrzysty, dobrze wcięty markup. Ułatwia analizę, poprawianie i utrzymanie struktury HTML.",
+  "overview": "Ten formatter HTML porządkuje tagi, poprawia wcięcia i czytelnie układa zagnieżdżone elementy bez zmiany znaczenia kodu. Działa w przeglądarce, więc Twoje dane pozostają po stronie klienta. Przydaje się do porządkowania wklejonego kodu, szablonów i fragmentów HTML przed dalszą edycją.",
+  "howItWorks": [
+    "Wklej HTML do pola wejściowego.",
+    "Wybierz opcje formatowania, takie jak wcięcia lub obsługa komentarzy, jeśli są dostępne.",
+    "Kliknij, aby sformatować kod i wygenerować czysty HTML.",
+    "Skopiuj wynik i użyj go w swoim projekcie."
+  ],
+  "useCases": [
+    "Porządkowanie zminifikowanego lub chaotycznego HTML.",
+    "Sprawdzanie szablonów przed wdrożeniem.",
+    "Ułatwienie odczytu i edycji wklejonego kodu.",
+    "Przygotowanie fragmentów HTML do dokumentacji lub współpracy.",
+    "Kontrola struktury stron, e-maili i komponentów."
+  ],
+  "examples": [
+    {
+      "title": "Chaotyczny HTML",
+      "input": "<div><p>Hello</p><ul><li>One</li><li>Two</li></ul></div>",
+      "output": "<div>\n  <p>Hello</p>\n  <ul>\n    <li>One</li>\n    <li>Two</li>\n  </ul>\n</div>",
+      "description": "Zamienia zwarty markup w czytelny, zagnieżdżony HTML."
+    },
+    {
+      "title": "Nieuporządkowany szablon",
+      "input": "<section><h2>Title</h2><div><img src=\"a.jpg\" alt=\"A\"></div></section>",
+      "output": "<section>\n  <h2>Title</h2>\n  <div>\n    <img src=\"a.jpg\" alt=\"A\">\n  </div>\n</section>",
+      "description": "Poprawia wcięcia, zachowując oryginalną strukturę."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Czy formatowanie zmienia treść HTML?",
+      "answer": "Nie. Formatowanie poprawia tylko odstępy, wcięcia i układ struktury. Nie zmienia znaczenia kodu."
+    },
+    {
+      "question": "Czy to narzędzie jest bezpieczne?",
+      "answer": "Tak. Działa po stronie przeglądarki i nie wymaga wysyłania kodu do zewnętrznego API."
+    },
+    {
+      "question": "Czy mogę sformatować zminifikowany HTML?",
+      "answer": "Tak. Narzędzie dobrze radzi sobie ze zminifikowanym, chaotycznym lub wklejonym HTML i zamienia go w czytelny kod."
+    },
+    {
+      "question": "Czy komentarze zostaną usunięte?",
+      "answer": "To zależy od dostępnych opcji. Jeśli włączysz usuwanie komentarzy, mogą zostać usunięte podczas formatowania."
+    }
+  ],
+  "uiLabels": {
+    "copy": "Kopiuj",
+    "copied": "Skopiowano",
+    "input": "HTML input",
+    "output": "Sformatowany HTML",
+    "placeholder": "Wklej HTML tutaj...",
+    "indent": "Wcięcie",
+    "removeComments": "Usuń komentarze",
+    "preview": "Podgląd",
+    "source": "Źródło",
+    "sanitizedHtml": "Oczyszczony HTML",
+    "plainText": "Zwykły tekst",
+    "summary": "Podsumowanie",
+    "total": "Łącznie",
+    "links": "Linki",
+    "images": "Obrazy",
+    "errors": "Błędy",
+    "warnings": "Ostrzeżenia",
+    "valid": "Poprawny",
+    "invalid": "Niepoprawny",
+    "href": "Href",
+    "text": "Tekst",
+    "rel": "Rel",
+    "target": "Target",
+    "alt": "Alt",
+    "width": "Szerokość",
+    "height": "Wysokość",
+    "empty": "Puste",
+    "outputReady": "Sformatowany HTML gotowy",
+    "cleanedHtml": "Oczyszczony HTML",
+    "formattedHtml": "Sformatowany HTML",
+    "minifiedHtml": "HTML zminifikowany",
+    "markdown": "Markdown",
+    "extractedImages": "Wyodrębnione obrazy",
+    "extractedLinks": "Wyodrębnione linki",
+    "validationSummary": "Podsumowanie walidacji",
+    "prettyHtml": "Czytelny HTML",
+    "encodedText": "Tekst zakodowany"
+  },
+  "seo": {
+    "title": "Formatowanie HTML online | Uporządkuj kod HTML",
+    "description": "Formatuj chaotyczny HTML online. Czytelne wcięcia, lepsze zagnieżdżenie i przejrzysty wynik HTML w przeglądarce.",
+    "keywords": [
+      "formatowanie html",
+      "formatter html",
+      "sformatuj html",
+      "czytelny html",
+      "wciecia html",
+      "uporzadkuj html",
+      "narzedzie html online"
+    ]
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "toolId": "html-link-extractor",
+  "locale": "en",
+  "slug": "html-link-extractor",
+  "h1": "HTML Link Extractor",
+  "title": "HTML Link Extractor",
+  "shortDescription": "Extract links, anchor text, and rel metadata from HTML markup.",
+  "metaTitle": "HTML Link Extractor | Extract Links from HTML",
+  "metaDescription": "Extract href values, anchor text, rel attributes, and target data from HTML markup quickly and safely in your browser.",
+  "intro": "Use this HTML link extractor to pull links, anchor text, and rel metadata from any HTML snippet. It runs locally in your browser for fast, safe, client-side extraction.",
+  "overview": "Paste HTML and get a structured list of links with their href, visible text, rel values, target attributes, and other useful link data. It is ideal for checking page content, auditing outbound links, or converting markup into a clean link inventory.",
+  "howItWorks": [
+    "Paste your HTML into the input field.",
+    "The tool scans anchor tags and other link elements in the markup.",
+    "It extracts href, text, rel, target, and related metadata.",
+    "Review the output and copy the extracted results as needed."
+  ],
+  "useCases": [
+    "Audit internal and external links on a page.",
+    "Extract anchor text for SEO and content reviews.",
+    "Review rel attributes such as nofollow, sponsored, and ugc.",
+    "Turn raw HTML into a link inventory for documentation.",
+    "Check for empty links, broken patterns, or suspicious markup."
+  ],
+  "examples": [
+    {
+      "title": "Basic link extraction",
+      "input": "<a href=\"https://example.com\" rel=\"nofollow\">Visit site</a>",
+      "output": "href: https://example.com | text: Visit site | rel: nofollow",
+      "description": "Extracts the URL, anchor text, and rel value from a single link."
+    },
+    {
+      "title": "Multiple links",
+      "input": "<p><a href=\"/about\">About us</a> and <a href=\"/contact\" target=\"_blank\">Contact</a></p>",
+      "output": "2 links found",
+      "description": "Returns all anchor tags with their key attributes."
+    }
+  ],
+  "faq": [
+    {
+      "question": "What does the HTML Link Extractor do?",
+      "answer": "It scans HTML and extracts link data such as href, anchor text, rel attributes, and target values."
+    },
+    {
+      "question": "Does it work in the browser?",
+      "answer": "Yes. The tool is designed for client-side use and does not need external APIs."
+    },
+    {
+      "question": "Can it extract rel attributes?",
+      "answer": "Yes. It captures rel metadata, including common values like nofollow, sponsored, and ugc."
+    },
+    {
+      "question": "Is the HTML handled safely?",
+      "answer": "The tool is XSS-aware and intended for safe local processing of pasted HTML."
+    }
+  ],
+  "uiLabels": {
+    "copy": "Copy",
+    "copied": "Copied",
+    "input": "HTML input",
+    "output": "Extracted links",
+    "placeholder": "Paste HTML here to extract links",
+    "indent": "Indent",
+    "removeComments": "Remove comments",
+    "preview": "Preview",
+    "source": "Source",
+    "sanitizedHtml": "Sanitized HTML",
+    "plainText": "Plain text",
+    "summary": "Summary",
+    "total": "Total",
+    "links": "Links",
+    "images": "Images",
+    "errors": "Errors",
+    "warnings": "Warnings",
+    "valid": "Valid",
+    "invalid": "Invalid",
+    "href": "href",
+    "text": "Text",
+    "rel": "rel",
+    "target": "Target",
+    "alt": "Alt",
+    "width": "Width",
+    "height": "Height",
+    "empty": "Empty",
+    "outputReady": "Output ready",
+    "cleanedHtml": "Cleaned HTML",
+    "formattedHtml": "Formatted HTML",
+    "minifiedHtml": "Minified HTML",
+    "markdown": "Markdown",
+    "extractedImages": "Extracted images",
+    "extractedLinks": "Extracted links",
+    "validationSummary": "Validation summary",
+    "prettyHtml": "Pretty HTML",
+    "encodedText": "Encoded text"
+  },
+  "seo": {
+    "title": "HTML Link Extractor",
+    "description": "Extract href, anchor text, rel metadata, and target values from HTML quickly in your browser.",
+    "keywords": [
+      "HTML link extractor",
+      "extract links from HTML",
+      "anchor text extractor",
+      "rel metadata extractor",
+      "HTML tools",
+      "client-side HTML parser"
+    ]
+  }
+}

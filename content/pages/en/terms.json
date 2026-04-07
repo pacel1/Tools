@@ -1,0 +1,36 @@
+{
+  "page": "terms",
+  "locale": "en",
+  "title": "Terms of Service",
+  "metaTitle": "Terms of Service | ConvertBase.app",
+  "metaDescription": "Review the Terms of Service for ConvertBase.app, including acceptable use, cookies, analytics and advertising.",
+  "heading": "Terms of Service",
+  "content": [
+    "These Terms of Service govern your access to and use of ConvertBase.app and its public online tools.",
+    "By using the platform, you agree to use the site lawfully, responsibly and only for personal, educational or business purposes that comply with applicable law."
+  ],
+  "sections": [
+    {
+      "title": "Use of the platform",
+      "paragraphs": [
+        "You may use ConvertBase.app to access public tools and informational pages. You must not use the site to break the law, interfere with service availability or abuse automated systems.",
+        "We may update, replace or remove tools and content at any time when needed for quality, security or maintenance."
+      ]
+    },
+    {
+      "title": "Content, analytics and ads",
+      "paragraphs": [
+        "The platform may include information pages, generated outputs, internal links, cookies, analytics and advertising. Google Analytics may help us measure traffic, and Google AdSense may help fund the service.",
+        "Your use of the site also means that cookies and similar technologies may operate as described in our Privacy Policy and Cookie Policy."
+      ]
+    },
+    {
+      "title": "No warranty and contact",
+      "paragraphs": [
+        "ConvertBase.app is provided on an as-is basis. We work to keep the information useful and the tools available, but we cannot guarantee uninterrupted access or perfect accuracy for every use case.",
+        "For questions about these terms, contact the operator of ConvertBase.app at contact@convertbase.app."
+      ]
+    }
+  ],
+  "keywords": ["terms of service", "convertbase terms", "acceptable use", "google analytics", "google adsense", "cookies"]
+}
