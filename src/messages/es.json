@@ -1,0 +1,32 @@
+{
+  "common": {
+    "siteName": "ConvertBase.app",
+    "siteTagline": "Herramientas online, convertidores y generadores gratis",
+    "footerTagline": "Explora convertidores, calculadoras, generadores, herramientas de imagen y utilidades para desarrollo en un solo lugar.",
+    "heroEyebrow": "Herramientas Online Gratis",
+    "heroTitle": "Cientos de herramientas online útiles en un solo lugar",
+    "heroDescription": "Explora conversores, calculadoras, generadores y herramientas de texto con resultados rápidos y flujos simples. Pensado para responder búsquedas útiles del día a día y consultas long tail con intención clara.",
+    "heroPanelLabel": "Herramientas más buscadas",
+    "heroPanelItem1": "Conversores de unidades, peso, longitud y formatos",
+    "heroPanelItem2": "Calculadoras para cuentas rápidas y comparaciones útiles",
+    "heroPanelItem3": "Generadores y herramientas de texto para trabajo con contenidos",
+    "heroPanelItem4": "Páginas útiles centradas en resolver un problema concreto",
+    "categoriesEyebrow": "Categorías",
+    "categoriesTitle": "Elige una categoría y encuentra exactamente la herramienta que necesitas",
+    "featuredEyebrow": "Herramientas destacadas",
+    "featuredTitle": "Herramientas populares disponibles ahora",
+    "footerLinks": {
+      "about": "Acerca de",
+      "privacy": "Privacidad",
+      "terms": "Términos",
+      "cookies": "Cookies",
+      "disclaimer": "Aviso legal",
+      "contact": "Contacto"
+    },
+    "cookieBanner": {
+      "title": "Cookies, analítica y anuncios",
+      "description": "ConvertBase.app usa cookies para que el sitio funcione, medir el tráfico con Google Analytics y mostrar anuncios mediante Google AdSense. Si continúas, aceptas este uso.",
+      "accept": "Aceptar"
+    }
+  }
+}

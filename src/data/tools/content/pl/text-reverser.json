@@ -1,0 +1,47 @@
+{
+  "toolId": "text-reverser",
+  "locale": "pl",
+  "slug": "odwracanie-tekstu",
+  "h1": "Odwracanie tekstu",
+  "title": "Odwracanie tekstu",
+  "shortDescription": "Odwróć tekst online natychmiast — szybko, prosto i z praktycznymi przykładami.",
+  "overview": "Odwróć tekst online natychmiast. Ta strona zapewnia szybki wynik dzięki prostemu narzędziu i przejrzystemu procesowi. Jest skierowana do osób szukających darmowej odpowiedzi online, szybkich rezultatów w przeglądarce oraz praktycznych treści long-tail związanych z narzędziami tekstowymi.",
+  "howItWorks": [
+    "Wpisz wymagany tekst do formularza.",
+    "Konwersja, obliczenie lub transformacja odbywa się natychmiast w przeglądarce.",
+    "Sprawdź wynik i skorzystaj z powiązanych narzędzi, jeśli potrzebujesz kolejnego kroku."
+  ],
+  "examples": [
+    {
+      "title": "Przykład 1",
+      "input": "utility tools",
+      "output": "sloot ytilitu",
+      "description": "Realistyczny przykład odwracania tekstu dla codziennego zapytania."
+    },
+    {
+      "title": "Przykład 2",
+      "input": "utility tools",
+      "output": "sloot ytilitu",
+      "description": "Kolejny praktyczny przypadek użycia pod kątem ruchu organicznego long-tail."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Jak dokładne jest to narzędzie?",
+      "answer": "Wynik jest obliczany bezpośrednio na podstawie formuły lub logiki po stronie przeglądarki używanej przez to narzędzie."
+    },
+    {
+      "question": "Czy mogę używać tego narzędzia na telefonie?",
+      "answer": "Tak. Strona działa na komputerach i urządzeniach mobilnych, oferując prosty układ pola tekstowego i wyniku."
+    }
+  ],
+  "seo": {
+    "title": "Odwracanie tekstu",
+    "description": "Odwróć tekst online natychmiast. Darmowe narzędzie do odwracania tekstu z natychmiastowym wynikiem.",
+    "keywords": [
+      "odwracanie tekstu",
+      "odwracanie tekstu",
+      "narzędzie text-tools"
+    ]
+  }
+}

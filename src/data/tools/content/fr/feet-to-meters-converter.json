@@ -1,0 +1,47 @@
+{
+  "toolId": "feet-to-meters-converter",
+  "locale": "fr",
+  "slug": "convertisseur-de-pieds-en-metres",
+  "h1": "Convertisseur de pieds en mètres",
+  "title": "Convertisseur de pieds en mètres",
+  "shortDescription": "Convertissez les pieds en mètres instantanément avec des résultats rapides, des saisies simples et des exemples pratiques.",
+  "overview": "Convertissez les pieds en mètres instantanément. Cette page fournit une réponse rapide grâce à un outil pratique et à un flux de résultat simple. Elle s’adresse aux utilisateurs qui recherchent une réponse gratuite en ligne, des résultats rapides dans le navigateur et un contenu utile de longue traîne autour de la conversion.",
+  "howItWorks": [
+    "Saisissez la valeur ou le texte requis dans le formulaire.",
+    "La conversion, le calcul ou la transformation s’effectue instantanément dans le navigateur.",
+    "Consultez le résultat et poursuivez avec des outils associés si vous avez besoin d’une autre étape."
+  ],
+  "examples": [
+    {
+      "title": "Exemple 1",
+      "input": "6 pieds",
+      "output": "1,8288 mètres",
+      "description": "Un exemple réaliste de convertisseur de pieds en mètres pour une recherche courante."
+    },
+    {
+      "title": "Exemple 2",
+      "input": "6 pieds",
+      "output": "1,8288 mètres",
+      "description": "Un autre cas pratique pour attirer un trafic organique de longue traîne."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Quelle est la précision de cet outil ?",
+      "answer": "Le résultat est calculé directement à partir de la formule ou de la logique côté navigateur utilisée par cet outil."
+    },
+    {
+      "question": "Puis-je utiliser cet outil sur mobile ?",
+      "answer": "Oui. La page fonctionne sur ordinateur et sur mobile avec une mise en page simple pour la saisie et le résultat."
+    }
+  ],
+  "seo": {
+    "title": "Convertisseur de pieds en mètres",
+    "description": "Convertissez les pieds en mètres instantanément. Convertisseur en ligne gratuit de pieds en mètres avec résultats immédiats.",
+    "keywords": [
+      "convertisseur de pieds en mètres",
+      "pieds en mètres",
+      "outil de conversion"
+    ]
+  }
+}

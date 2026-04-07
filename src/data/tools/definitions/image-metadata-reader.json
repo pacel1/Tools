@@ -1,0 +1,23 @@
+{
+  "id": "image-metadata-reader",
+  "type": "image-tool",
+  "category": "image-tools",
+  "componentName": "ImageMetadataReaderTool",
+  "logicModule": "image-metadata-reader",
+  "inputSchema": "imageMetadataReaderInputSchema",
+  "outputSchema": "imageMetadataReaderOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "image-resizer",
+    "image-compressor",
+    "image-format-converter",
+    "image-cropper"
+  ],
+  "seoPriority": 0.91
+}

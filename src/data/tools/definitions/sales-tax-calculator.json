@@ -1,0 +1,23 @@
+{
+  "id": "sales-tax-calculator",
+  "type": "calculator",
+  "category": "calculators",
+  "componentName": "SalesTaxCalculatorTool",
+  "logicModule": "sales-tax-calculator",
+  "inputSchema": "salesTaxCalculatorInputSchema",
+  "outputSchema": "salesTaxCalculatorOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "bmi-calculator",
+    "age-calculator",
+    "percentage-calculator",
+    "loan-payment-calculator"
+  ],
+  "seoPriority": 0.92
+}

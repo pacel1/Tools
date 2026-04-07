@@ -1,0 +1,47 @@
+{
+  "toolId": "discount-calculator",
+  "locale": "es",
+  "slug": "calculadora-de-descuentos",
+  "h1": "Calculadora de descuentos",
+  "title": "Calculadora de descuentos",
+  "shortDescription": "Calcula el precio final tras un porcentaje de descuento con resultados rápidos, entradas sencillas y ejemplos prácticos.",
+  "overview": "Calcula el precio de venta después de aplicar un descuento porcentual. Esta página ofrece una respuesta rápida con una herramienta útil y un flujo de resultados sencillo. Está pensada para quienes buscan una respuesta gratis en línea, resultados instantáneos en el navegador y contenido práctico para búsquedas de cola larga.",
+  "howItWorks": [
+    "Introduce el valor requerido en el formulario.",
+    "El cálculo se realiza al instante en el navegador.",
+    "Revisa el resultado y sigue con herramientas relacionadas si necesitas otro paso."
+  ],
+  "examples": [
+    {
+      "title": "Ejemplo 1",
+      "input": "100 con 20% de descuento",
+      "output": "80",
+      "description": "Un ejemplo realista de calculadora de descuentos para una búsqueda habitual."
+    },
+    {
+      "title": "Ejemplo 2",
+      "input": "100 con 20% de descuento",
+      "output": "80",
+      "description": "Otro caso práctico para atraer tráfico orgánico de cola larga."
+    }
+  ],
+  "faq": [
+    {
+      "question": "¿Qué precisión tiene esta herramienta?",
+      "answer": "El resultado se calcula directamente a partir de la fórmula o de la lógica que usa esta herramienta en el navegador."
+    },
+    {
+      "question": "¿Puedo usar esta herramienta en el móvil?",
+      "answer": "Sí. La página funciona en escritorio y en móviles con un diseño simple de entrada y resultado."
+    }
+  ],
+  "seo": {
+    "title": "Calculadora de descuentos",
+    "description": "Calcula el precio final tras un porcentaje de descuento. Calculadora de descuentos online gratis con resultados instantáneos.",
+    "keywords": [
+      "calculadora de descuentos",
+      "calculadora de descuentos",
+      "herramientas de calculo"
+    ]
+  }
+}

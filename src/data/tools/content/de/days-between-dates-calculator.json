@@ -1,0 +1,47 @@
+{
+  "toolId": "days-between-dates-calculator",
+  "locale": "de",
+  "slug": "tage-zwischen-daten-rechner",
+  "h1": "Tage-zwischen-Daten-Rechner",
+  "title": "Tage-zwischen-Daten-Rechner",
+  "shortDescription": "Berechnen Sie die Anzahl der Tage zwischen zwei Daten schnell, einfach und mit praktischen Beispielen.",
+  "overview": "Berechnen Sie die Anzahl der Tage zwischen zwei Daten. Diese Seite liefert eine schnelle Antwort mit einem praktischen Tool und einem einfachen Ergebnisablauf. Sie richtet sich an Nutzer, die eine kostenlose Online-Antwort, schnelle Browser-Ergebnisse und hilfreiche Long-Tail-Inhalte suchen.",
+  "howItWorks": [
+    "Geben Sie den erforderlichen Wert oder Text in das Formular ein.",
+    "Die Umrechnung, Berechnung oder Transformation läuft sofort im Browser.",
+    "Prüfen Sie das Ergebnis und nutzen Sie bei Bedarf weitere passende Tools."
+  ],
+  "examples": [
+    {
+      "title": "Beispiel 1",
+      "input": "2025-01-01 bis 2025-01-31",
+      "output": "30 Tage",
+      "description": "Ein realistisches Beispiel für den Tage-zwischen-Daten-Rechner bei einer typischen Suchanfrage."
+    },
+    {
+      "title": "Beispiel 2",
+      "input": "2025-01-01 bis 2025-01-31",
+      "output": "30 Tage",
+      "description": "Ein weiteres praktisches Anwendungsbeispiel für organischen Long-Tail-Traffic."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Wie genau ist dieses Tool?",
+      "answer": "Das Ergebnis wird direkt aus der Formel oder der browserseitigen Logik dieses Tools berechnet."
+    },
+    {
+      "question": "Kann ich das Tool auf dem Smartphone nutzen?",
+      "answer": "Ja. Die Seite funktioniert auf Desktop- und Mobilgeräten mit einem einfachen Eingabe- und Ergebnislayout."
+    }
+  ],
+  "seo": {
+    "title": "Tage-zwischen-Daten-Rechner",
+    "description": "Berechnen Sie die Anzahl der Tage zwischen zwei Daten. Kostenloser Online-Rechner für Tage zwischen Daten mit sofortigem Ergebnis.",
+    "keywords": [
+      "tage zwischen daten rechner",
+      "rechner tage zwischen daten",
+      "rechner tool"
+    ]
+  }
+}

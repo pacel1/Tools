@@ -1,0 +1,36 @@
+{
+  "page": "about",
+  "locale": "en",
+  "title": "About ConvertBase.app",
+  "metaTitle": "About ConvertBase.app | Free Online Tools",
+  "metaDescription": "Learn what ConvertBase.app offers, how the platform works, and how we use cookies, Google Analytics and Google AdSense.",
+  "heading": "About ConvertBase.app",
+  "content": [
+    "ConvertBase.app is a multilingual platform for practical online tools such as converters, calculators, generators, image tools and text utilities.",
+    "Our goal is simple: publish fast, focused pages that solve one clear task at a time while keeping the experience lightweight, accessible and easy to use on any device."
+  ],
+  "sections": [
+    {
+      "title": "What the platform offers",
+      "paragraphs": [
+        "Each tool is designed to answer a specific need with a clear input, a direct result and supporting explanations that help users understand the output.",
+        "We aim to keep our pages useful for everyday visitors, students, creators, marketers and developers without requiring sign-up or unnecessary steps."
+      ]
+    },
+    {
+      "title": "How ConvertBase.app is supported",
+      "paragraphs": [
+        "We may use Google Analytics to understand traffic patterns and improve usability across languages and device types.",
+        "We may also display ads through Google AdSense to support the ongoing operation of the platform. Cookies can be used for essential site behavior, analytics and advertising."
+      ]
+    },
+    {
+      "title": "Privacy and trust",
+      "paragraphs": [
+        "We try to minimize data collection and build tools that work directly in the browser whenever possible.",
+        "For questions about privacy, cookies, advertising or platform policies, contact the operator of ConvertBase.app at contact@convertbase.app."
+      ]
+    }
+  ],
+  "keywords": ["about convertbase.app", "free online tools", "tool portal", "google analytics", "google adsense", "cookies"]
+}

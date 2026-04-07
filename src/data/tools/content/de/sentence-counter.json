@@ -1,0 +1,47 @@
+{
+  "toolId": "sentence-counter",
+  "locale": "de",
+  "slug": "satzzaehler",
+  "h1": "Satzzähler",
+  "title": "Satzzähler",
+  "shortDescription": "Sätze in Texten sofort zählen – mit schnellen Ergebnissen, einfacher Eingabe und praktischen Beispielen.",
+  "overview": "Sätze in Texten sofort zählen. Diese Seite liefert eine schnelle Antwort mit einem praktischen Tool und einem einfachen Ergebnisablauf. Sie richtet sich an Nutzer, die eine kostenlose Online-Antwort, sofortige Ergebnisse im Browser und praxisnahe Inhalte für Long-Tail-Suchen suchen.",
+  "howItWorks": [
+    "Geben Sie den benötigten Text in das Formular ein.",
+    "Die Zählung erfolgt sofort im Browser.",
+    "Prüfen Sie das Ergebnis und nutzen Sie bei Bedarf verwandte Tools für den nächsten Schritt."
+  ],
+  "examples": [
+    {
+      "title": "Beispiel 1",
+      "input": "Ein Absatz mit mehreren Sätzen.",
+      "output": "Gesamtzahl der Sätze",
+      "description": "Ein realistisches Beispiel für die Satzzählung bei einer alltäglichen Suchanfrage."
+    },
+    {
+      "title": "Beispiel 2",
+      "input": "Ein Absatz mit mehreren Sätzen.",
+      "output": "Gesamtzahl der Sätze",
+      "description": "Ein weiterer praktischer Anwendungsfall für organischen Long-Tail-Traffic."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Wie genau ist dieses Tool?",
+      "answer": "Das Ergebnis wird direkt anhand der in diesem Tool oder im Browser verwendeten Logik berechnet."
+    },
+    {
+      "question": "Kann ich dieses Tool auf dem Handy nutzen?",
+      "answer": "Ja. Die Seite funktioniert auf Desktop- und Mobilgeräten mit einem einfachen Eingabe- und Ergebnislayout."
+    }
+  ],
+  "seo": {
+    "title": "Satzzähler",
+    "description": "Sätze in Texten sofort zählen. Kostenloser Online-Satzzähler mit sofortigem Ergebnis.",
+    "keywords": [
+      "Satzzähler",
+      "Satzzähler",
+      "Text-Tool"
+    ]
+  }
+}

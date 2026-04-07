@@ -1,0 +1,47 @@
+{
+  "toolId": "sales-tax-calculator",
+  "locale": "es",
+  "slug": "calculadora-de-impuesto-de-ventas",
+  "h1": "Calculadora de impuesto sobre ventas",
+  "title": "Calculadora de impuesto sobre ventas",
+  "shortDescription": "Calcula el precio total tras añadir el impuesto sobre ventas con resultados rápidos, entradas sencillas y ejemplos prácticos.",
+  "overview": "Calcula el precio total tras añadir el impuesto sobre ventas. Esta página ofrece una respuesta rápida con una herramienta práctica y un flujo de resultados sencillo. Está pensada para usuarios que buscan una respuesta gratuita en línea, resultados rápidos desde el navegador y contenido práctico de cola larga.",
+  "howItWorks": [
+    "Introduce el valor o texto requerido en el formulario.",
+    "La conversión, el cálculo o la transformación se realiza al instante en el navegador.",
+    "Revisa el resultado y continúa con herramientas relacionadas si necesitas otro paso."
+  ],
+  "examples": [
+    {
+      "title": "Ejemplo 1",
+      "input": "100 con 8% de impuesto",
+      "output": "108",
+      "description": "Un ejemplo realista de calculadora de impuesto sobre ventas para una búsqueda cotidiana."
+    },
+    {
+      "title": "Ejemplo 2",
+      "input": "100 con 8% de impuesto",
+      "output": "108",
+      "description": "Otro caso práctico pensado para tráfico orgánico de cola larga."
+    }
+  ],
+  "faq": [
+    {
+      "question": "¿Qué precisión tiene esta herramienta?",
+      "answer": "El resultado se calcula directamente a partir de la fórmula o de la lógica en el navegador que utiliza esta herramienta."
+    },
+    {
+      "question": "¿Puedo usar esta herramienta en el móvil?",
+      "answer": "Sí. La página funciona tanto en ordenador como en móviles con un diseño sencillo de entrada y resultado."
+    }
+  ],
+  "seo": {
+    "title": "Calculadora de impuesto sobre ventas",
+    "description": "Calcula el precio total tras añadir el impuesto sobre ventas. Calculadora gratuita en línea con resultados instantáneos.",
+    "keywords": [
+      "calculadora de impuesto sobre ventas",
+      "calculadora de impuesto sobre ventas",
+      "herramienta de calculadoras"
+    ]
+  }
+}

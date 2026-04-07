@@ -1,0 +1,47 @@
+{
+  "toolId": "reading-time-calculator",
+  "locale": "es",
+  "slug": "calculadora-de-tiempo-de-lectura",
+  "h1": "Calculadora de tiempo de lectura",
+  "title": "Calculadora de tiempo de lectura",
+  "shortDescription": "Calcula al instante el tiempo de lectura según el número de palabras, con resultados rápidos, una interfaz sencilla y ejemplos prácticos.",
+  "overview": "Calcula el tiempo de lectura según el número de palabras al instante. Esta página ofrece una respuesta rápida con una herramienta útil y un flujo de resultados sencillo. Está pensada para usuarios que buscan una respuesta gratuita en línea, resultados inmediatos en el navegador y contenido práctico de utilidad para búsquedas de cola larga.",
+  "howItWorks": [
+    "Introduce el valor o el texto requerido en el formulario.",
+    "La conversión, el cálculo o la transformación se ejecuta al instante en el navegador.",
+    "Revisa el resultado y sigue con herramientas relacionadas si necesitas otro paso."
+  ],
+  "examples": [
+    {
+      "title": "Ejemplo 1",
+      "input": "Un borrador de blog",
+      "output": "Tiempo de lectura estimado",
+      "description": "Un ejemplo realista de calculadora de tiempo de lectura para una consulta habitual."
+    },
+    {
+      "title": "Ejemplo 2",
+      "input": "Un borrador de blog",
+      "output": "Tiempo de lectura estimado",
+      "description": "Otro caso práctico pensado para tráfico orgánico de cola larga."
+    }
+  ],
+  "faq": [
+    {
+      "question": "¿Qué precisión tiene esta herramienta?",
+      "answer": "El resultado se calcula directamente a partir de la fórmula o de la lógica en el navegador utilizada por esta herramienta."
+    },
+    {
+      "question": "¿Puedo usar esta herramienta en móvil?",
+      "answer": "Sí. La página funciona en pantallas de escritorio y móviles con un diseño sencillo de entrada y resultado."
+    }
+  ],
+  "seo": {
+    "title": "Calculadora de tiempo de lectura",
+    "description": "Calcula al instante el tiempo de lectura según el número de palabras. Calculadora gratuita de tiempo de lectura en línea con resultados inmediatos.",
+    "keywords": [
+      "calculadora de tiempo de lectura",
+      "calculadora de tiempo de lectura",
+      "herramienta text-tools"
+    ]
+  }
+}

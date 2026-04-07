@@ -1,0 +1,36 @@
+{
+  "page": "terms",
+  "locale": "es",
+  "title": "Términos del servicio",
+  "metaTitle": "Términos del servicio | ConvertBase.app",
+  "metaDescription": "Consulta los términos del servicio de ConvertBase.app, incluido el uso aceptable, las cookies, Google Analytics y Google AdSense.",
+  "heading": "Términos del servicio",
+  "content": [
+    "Estos Términos del servicio regulan tu acceso y uso de ConvertBase.app y sus herramientas online públicas.",
+    "Al utilizar la plataforma, aceptas usar el sitio de forma legal, responsable y solo para fines personales, educativos o comerciales compatibles con la ley aplicable."
+  ],
+  "sections": [
+    {
+      "title": "Uso de la plataforma",
+      "paragraphs": [
+        "Puedes usar ConvertBase.app para acceder a herramientas públicas y páginas informativas. No debes usar el sitio para infringir la ley, afectar la disponibilidad del servicio o abusar de sistemas automatizados.",
+        "Podemos actualizar, sustituir o eliminar herramientas y contenidos en cualquier momento cuando sea necesario por motivos de calidad, seguridad o mantenimiento."
+      ]
+    },
+    {
+      "title": "Contenido, analítica y anuncios",
+      "paragraphs": [
+        "La plataforma puede incluir páginas informativas, resultados generados, enlaces internos, cookies, analítica y publicidad. Google Analytics puede ayudarnos a medir el tráfico y Google AdSense puede ayudar a financiar el servicio.",
+        "Tu uso del sitio también implica que las cookies y tecnologías similares pueden operar como se describe en nuestra Política de privacidad y Política de cookies."
+      ]
+    },
+    {
+      "title": "Sin garantía y contacto",
+      "paragraphs": [
+        "ConvertBase.app se ofrece tal cual. Trabajamos para mantener la información útil y las herramientas disponibles, pero no garantizamos acceso ininterrumpido ni precisión perfecta en todos los casos.",
+        "Si tienes preguntas sobre estos términos, escribe al operador de ConvertBase.app en contact@convertbase.app."
+      ]
+    }
+  ],
+  "keywords": ["términos del servicio", "términos convertbase", "uso aceptable", "google analytics", "google adsense", "cookies"]
+}

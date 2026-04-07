@@ -1,0 +1,47 @@
+{
+  "toolId": "slug-generator",
+  "locale": "de",
+  "slug": "slug-generator",
+  "h1": "Slug-Generator",
+  "title": "Slug-Generator",
+  "shortDescription": "Wandle Text in einen SEO-freundlichen URL-Slug um – mit schnellen Ergebnissen, einfacher Eingabe und praxisnahen Beispielen.",
+  "overview": "Wandle Text in einen SEO-freundlichen URL-Slug um. Diese Seite liefert eine schnelle Antwort mit einem praktischen Tool und einem einfachen Ergebnisablauf. Sie richtet sich an Nutzer, die eine kostenlose Online-Lösung, sofortige Ergebnisse im Browser und praxisnahe Long-Tail-Inhalte suchen.",
+  "howItWorks": [
+    "Gib den erforderlichen Wert oder Text in das Formular ein.",
+    "Die Umwandlung, Berechnung oder Transformation läuft sofort im Browser ab.",
+    "Prüfe das Ergebnis und nutze bei Bedarf passende weitere Tools für den nächsten Schritt."
+  ],
+  "examples": [
+    {
+      "title": "Beispiel 1",
+      "input": "Bester SEO-Tool-Seitentitel",
+      "output": "bester-seo-tool-seitentitel",
+      "description": "Ein realistisches Beispiel für einen Slug-Generator bei einer alltäglichen Suche."
+    },
+    {
+      "title": "Beispiel 2",
+      "input": "Bester SEO-Tool-Seitentitel",
+      "output": "bester-seo-tool-seitentitel",
+      "description": "Ein weiterer praktischer Anwendungsfall für organischen Long-Tail-Traffic."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Wie genau ist dieses Tool?",
+      "answer": "Das Ergebnis wird direkt aus der Formel oder der browserseitigen Logik dieses Tools berechnet."
+    },
+    {
+      "question": "Kann ich das Tool auf dem Smartphone nutzen?",
+      "answer": "Ja. Die Seite funktioniert auf Desktop- und Mobilgeräten mit einem einfachen Eingabe- und Ergebnislayout."
+    }
+  ],
+  "seo": {
+    "title": "Slug-Generator",
+    "description": "Wandle Text in einen SEO-freundlichen URL-Slug um. Kostenloser Online-Slug-Generator mit sofortigen Ergebnissen.",
+    "keywords": [
+      "slug-generator",
+      "slug-generator",
+      "text-tools tool"
+    ]
+  }
+}

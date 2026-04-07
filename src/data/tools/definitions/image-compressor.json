@@ -1,0 +1,23 @@
+{
+  "id": "image-compressor",
+  "type": "image-tool",
+  "category": "image-tools",
+  "componentName": "ImageCompressorTool",
+  "logicModule": "image-compressor",
+  "inputSchema": "imageCompressorInputSchema",
+  "outputSchema": "imageCompressorOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "image-resizer",
+    "image-format-converter",
+    "image-cropper",
+    "image-to-base64"
+  ],
+  "seoPriority": 0.99
+}

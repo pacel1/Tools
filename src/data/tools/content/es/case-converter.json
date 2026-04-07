@@ -1,0 +1,47 @@
+{
+  "toolId": "case-converter",
+  "locale": "es",
+  "slug": "conversor-de-mayusculas-y-minusculas",
+  "h1": "Conversor de mayúsculas y minúsculas",
+  "title": "Conversor de mayúsculas y minúsculas",
+  "shortDescription": "Convierte texto a mayúsculas, minúsculas, formato título y formato oración con resultados rápidos, entrada sencilla y ejemplos prácticos.",
+  "overview": "Convierte texto a mayúsculas, minúsculas, formato título y formato oración. Esta página ofrece una respuesta rápida con una herramienta útil y un flujo de resultados sencillo. Está pensada para usuarios que buscan una solución gratuita online, resultados instantáneos en el navegador y contenido práctico para búsquedas de cola larga.",
+  "howItWorks": [
+    "Introduce el texto requerido en el formulario.",
+    "La conversión, cálculo o transformación se ejecuta al instante en el navegador.",
+    "Revisa el resultado y continúa con herramientas relacionadas si necesitas otro paso."
+  ],
+  "examples": [
+    {
+      "title": "Ejemplo 1",
+      "input": "sample headline text",
+      "output": "MAYÚSCULAS / minúsculas / Título / Oración",
+      "description": "Un ejemplo realista de conversor de mayúsculas y minúsculas para una búsqueda cotidiana."
+    },
+    {
+      "title": "Ejemplo 2",
+      "input": "sample headline text",
+      "output": "MAYÚSCULAS / minúsculas / Título / Oración",
+      "description": "Otro caso práctico pensado para tráfico orgánico de cola larga."
+    }
+  ],
+  "faq": [
+    {
+      "question": "¿Qué precisión tiene esta herramienta?",
+      "answer": "El resultado se calcula directamente a partir de la fórmula o la lógica en el navegador utilizada por esta herramienta."
+    },
+    {
+      "question": "¿Puedo usar esta herramienta en móvil?",
+      "answer": "Sí. La página funciona en pantallas de escritorio y móviles con un diseño sencillo de entrada y resultado."
+    }
+  ],
+  "seo": {
+    "title": "Conversor de mayúsculas y minúsculas",
+    "description": "Convierte texto a mayúsculas, minúsculas, formato título y formato oración. Conversor online gratuito con resultados instantáneos.",
+    "keywords": [
+      "conversor de mayúsculas y minúsculas",
+      "case converter",
+      "text-tools tool"
+    ]
+  }
+}

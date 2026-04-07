@@ -1,0 +1,23 @@
+{
+  "id": "reading-time-calculator",
+  "type": "text-tool",
+  "category": "text-tools",
+  "componentName": "ReadingTimeCalculatorTool",
+  "logicModule": "reading-time-calculator",
+  "inputSchema": "readingTimeCalculatorInputSchema",
+  "outputSchema": "readingTimeCalculatorOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "word-counter",
+    "case-converter",
+    "character-counter",
+    "slug-generator"
+  ],
+  "seoPriority": 0.89
+}

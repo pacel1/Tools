@@ -1,0 +1,108 @@
+{
+  "toolId": "html-formatter",
+  "locale": "de",
+  "slug": "html-formatierer",
+  "h1": "HTML-Formatierer",
+  "title": "HTML-Formatierer",
+  "shortDescription": "Formatiere unübersichtliches HTML mit lesbaren Einzügen und sauberer Struktur.",
+  "metaTitle": "HTML-Formatierer online | HTML-Code sauber formatieren",
+  "metaDescription": "Formatiere unübersichtliches HTML online mit klaren Einzügen, besserer Verschachtelung und sauber strukturiertem HTML.",
+  "intro": "Mit diesem HTML-Formatierer machst du aus unübersichtlichem Code sauber lesbares HTML. Er verbessert Einzüge, Verschachtelung und Struktur und erleichtert so Prüfung, Fehleranalyse und Pflege.",
+  "overview": "Dieser HTML-Formatierer ordnet Tags, verbessert Einrückungen und macht verschachtelte Elemente übersichtlich, ohne die Bedeutung deines Markups zu verändern. Er läuft direkt im Browser, sodass dein HTML clientseitig bleibt. Ideal zum Aufräumen von Code, zum Prüfen von Vorlagen oder zum Vorbereiten von Snippets.",
+  "howItWorks": [
+    "HTML in das Eingabefeld einfügen.",
+    "Falls verfügbar, Formatoptionen wie Einzug oder Kommentarentfernung auswählen.",
+    "Zum Formatieren klicken und sauberes HTML erzeugen.",
+    "Das Ergebnis kopieren und im Projekt verwenden."
+  ],
+  "useCases": [
+    "Minifiziertes oder chaotisches HTML bereinigen.",
+    "Vorlagen vor dem Deployment prüfen.",
+    "Eingefügten Code leichter lesbar und bearbeitbar machen.",
+    "HTML-Snippets für Dokumentation oder Zusammenarbeit vorbereiten.",
+    "Strukturen in Seiten, E-Mails oder Komponenten kontrollieren."
+  ],
+  "examples": [
+    {
+      "title": "Unübersichtliches HTML",
+      "input": "<div><p>Hello</p><ul><li>One</li><li>Two</li></ul></div>",
+      "output": "<div>\n  <p>Hello</p>\n  <ul>\n    <li>One</li>\n    <li>Two</li>\n  </ul>\n</div>",
+      "description": "Macht kompaktes Markup als verschachteltes HTML lesbar."
+    },
+    {
+      "title": "Unformatiertes Template",
+      "input": "<section><h2>Title</h2><div><img src=\"a.jpg\" alt=\"A\"></div></section>",
+      "output": "<section>\n  <h2>Title</h2>\n  <div>\n    <img src=\"a.jpg\" alt=\"A\">\n  </div>\n</section>",
+      "description": "Verbessert die Einrückung, ohne die Struktur zu verändern."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Ändert die Formatierung mein HTML?",
+      "answer": "Nein. Es werden nur Abstände, Einzüge und die Strukturansicht verbessert. Die Bedeutung des Codes bleibt gleich."
+    },
+    {
+      "question": "Ist dieses Tool sicher?",
+      "answer": "Ja. Es ist für die Nutzung im Browser ausgelegt und sendet deinen Code nicht an eine externe API."
+    },
+    {
+      "question": "Kann ich minifiziertes HTML formatieren?",
+      "answer": "Ja. Das Tool eignet sich sehr gut für minifiziertes, chaotisches oder eingefügtes HTML und macht es lesbar."
+    },
+    {
+      "question": "Werden Kommentare entfernt?",
+      "answer": "Das hängt von den verfügbaren Optionen ab. Wenn das Entfernen von Kommentaren aktiviert ist, können sie beim Formatieren entfernt werden."
+    }
+  ],
+  "uiLabels": {
+    "copy": "Kopieren",
+    "copied": "Kopiert",
+    "input": "HTML input",
+    "output": "Formatiertes HTML",
+    "placeholder": "HTML hier einfügen...",
+    "indent": "Einzug",
+    "removeComments": "Kommentare entfernen",
+    "preview": "Vorschau",
+    "source": "Quelle",
+    "sanitizedHtml": "Bereinigtes HTML",
+    "plainText": "Klartext",
+    "summary": "Zusammenfassung",
+    "total": "Gesamt",
+    "links": "Links",
+    "images": "Bilder",
+    "errors": "Fehler",
+    "warnings": "Warnungen",
+    "valid": "Gültig",
+    "invalid": "Ungültig",
+    "href": "Href",
+    "text": "Text",
+    "rel": "Rel",
+    "target": "Target",
+    "alt": "Alt",
+    "width": "Breite",
+    "height": "Höhe",
+    "empty": "Leer",
+    "outputReady": "Formatiertes HTML bereit",
+    "cleanedHtml": "Bereinigtes HTML",
+    "formattedHtml": "Formatiertes HTML",
+    "minifiedHtml": "Minifiziertes HTML",
+    "markdown": "Markdown",
+    "extractedImages": "Extrahierte Bilder",
+    "extractedLinks": "Extrahierte Links",
+    "validationSummary": "Validierungszusammenfassung",
+    "prettyHtml": "Schön formatiertes HTML",
+    "encodedText": "Kodierter Text"
+  },
+  "seo": {
+    "title": "HTML-Formatierer online | HTML-Code sauber formatieren",
+    "description": "Formatiere unübersichtliches HTML online mit klaren Einzügen, besserer Verschachtelung und sauber strukturiertem HTML.",
+    "keywords": [
+      "html formatierer",
+      "html formatieren",
+      "html einruecken",
+      "html sauber machen",
+      "html beautifier",
+      "html online tool"
+    ]
+  }
+}

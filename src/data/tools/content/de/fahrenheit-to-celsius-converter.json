@@ -1,0 +1,47 @@
+{
+  "toolId": "fahrenheit-to-celsius-converter",
+  "locale": "de",
+  "slug": "fahrenheit-zu-celsius-umrechner",
+  "h1": "Fahrenheit-zu-Celsius-Umrechner",
+  "title": "Fahrenheit-zu-Celsius-Umrechner",
+  "shortDescription": "Wandle Fahrenheit sofort in Celsius um – mit schnellen Ergebnissen, einfacher Eingabe und praktischen Beispielen.",
+  "overview": "Wandle Fahrenheit sofort in Celsius um. Diese Seite liefert eine schnelle Antwort mit einem praktischen Online-Tool und einem einfachen Ergebnisablauf. Sie richtet sich an Nutzer, die eine kostenlose Online-Antwort, schnelle browserbasierte Ergebnisse und praxisnahe Inhalte für gezielte Suchanfragen suchen.",
+  "howItWorks": [
+    "Gib den erforderlichen Wert oder Text in das Formular ein.",
+    "Die Umrechnung, Berechnung oder Transformation läuft sofort im Browser.",
+    "Prüfe das Ergebnis und nutze bei Bedarf verwandte Tools für den nächsten Schritt."
+  ],
+  "examples": [
+    {
+      "title": "Beispiel 1",
+      "input": "68 fahrenheit",
+      "output": "20 celsius",
+      "description": "Ein realistisches Beispiel für die Umrechnung von Fahrenheit in Celsius bei einer alltäglichen Suchanfrage."
+    },
+    {
+      "title": "Beispiel 2",
+      "input": "68 fahrenheit",
+      "output": "20 celsius",
+      "description": "Ein weiteres praktisches Anwendungsbeispiel für organischen Long-Tail-Traffic."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Wie genau ist dieses Tool?",
+      "answer": "Das Ergebnis wird direkt anhand der Formel oder der browserseitigen Logik dieses Tools berechnet."
+    },
+    {
+      "question": "Kann ich dieses Tool auf dem Handy verwenden?",
+      "answer": "Ja. Die Seite funktioniert auf Desktop- und Mobilgeräten mit einer einfachen Eingabe- und Ergebnisansicht."
+    }
+  ],
+  "seo": {
+    "title": "Fahrenheit-zu-Celsius-Umrechner",
+    "description": "Wandle Fahrenheit sofort in Celsius um. Kostenloser Online-Fahrenheit-zu-Celsius-Umrechner mit sofortigen Ergebnissen.",
+    "keywords": [
+      "fahrenheit zu celsius umrechner",
+      "fahrenheit in celsius",
+      "umrechnungstool"
+    ]
+  }
+}

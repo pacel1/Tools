@@ -1,0 +1,43 @@
+{
+  "toolId": "word-counter",
+  "locale": "en",
+  "slug": "word-counter",
+  "h1": "Word counter",
+  "title": "Word counter",
+  "shortDescription": "Count words, characters, paragraphs and reading time in one lightweight text analysis tool.",
+  "overview": "The word counter analyzes text locally in the browser and returns fast statistics for writers, editors, marketers and students. It is designed to be cheap to run at scale because no database or external API is needed for the live calculation experience.",
+  "howItWorks": [
+    "Paste or type your text into the textarea.",
+    "The tool trims whitespace and counts words, characters and paragraph blocks.",
+    "A reading-time estimate is calculated from a 200 words per minute baseline."
+  ],
+  "examples": [
+    {
+      "title": "Meta description draft",
+      "input": "A short SEO summary for a landing page.",
+      "output": "8 words",
+      "description": "Quickly confirm concise copy before publishing."
+    },
+    {
+      "title": "Blog paragraph",
+      "input": "A two paragraph article section with line breaks.",
+      "output": "Words, characters and reading time",
+      "description": "Useful for content briefs and editorial QA."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Is the counting done on the client side?",
+      "answer": "Yes. The starter sample runs the calculation directly in the browser for speed and to avoid infrastructure cost."
+    },
+    {
+      "question": "How is reading time estimated?",
+      "answer": "The reading-time metric divides the word count by 200 and rounds the result to two decimals."
+    }
+  ],
+  "seo": {
+    "title": "Word Counter",
+    "description": "Free online word counter for words, characters, paragraphs and reading time.",
+    "keywords": ["word counter", "character counter", "reading time calculator"]
+  }
+}

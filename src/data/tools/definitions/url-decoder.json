@@ -1,0 +1,23 @@
+{
+  "id": "url-decoder",
+  "type": "developer-tool",
+  "category": "developer-tools",
+  "componentName": "UrlDecoderTool",
+  "logicModule": "url-decoder",
+  "inputSchema": "urlDecoderInputSchema",
+  "outputSchema": "urlDecoderOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "json-validator",
+    "json-formatter",
+    "json-minifier",
+    "base64-decoder"
+  ],
+  "seoPriority": 0.86
+}

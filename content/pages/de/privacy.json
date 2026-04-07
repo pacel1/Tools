@@ -1,0 +1,36 @@
+{
+  "page": "privacy",
+  "locale": "de",
+  "title": "Datenschutzerklärung",
+  "metaTitle": "Datenschutzerklärung | ConvertBase.app",
+  "metaDescription": "Lies die Datenschutzerklärung von ConvertBase.app mit Informationen zu Cookies, Google Analytics, Google AdSense und Kontakt.",
+  "heading": "Datenschutzerklärung",
+  "content": [
+    "Diese Datenschutzerklärung erläutert, wie ConvertBase.app Informationen verarbeitet, wenn du unsere Seiten besuchst und unsere Online-Tools nutzt.",
+    "Wir versuchen, die Datenerhebung zu begrenzen und möglichst viele Tools direkt im Browser auszuführen, ohne ein Konto zu verlangen."
+  ],
+  "sections": [
+    {
+      "title": "Welche Informationen wir erfassen können",
+      "paragraphs": [
+        "Wir können begrenzte technische Informationen erfassen, etwa Browsertyp, Gerätedaten, ungefähren Standort, verweisende Seiten und Interaktionsereignisse, die für das Verständnis der Seitenleistung nötig sind.",
+        "Wenn Analysen aktiviert sind, kann Google Analytics diese Informationen in unserem Auftrag verarbeiten. Für die Nutzung der öffentlichen Kern-Tools ist kein Konto erforderlich."
+      ]
+    },
+    {
+      "title": "Cookies und Werbung",
+      "paragraphs": [
+        "ConvertBase.app kann Cookies und ähnliche Technologien verwenden, um grundlegende Einstellungen zu speichern, Zugriffe zu messen und die Sicherheit der Website zu unterstützen.",
+        "Werbedienste wie Google AdSense können Cookies verwenden, um Anzeigen einzublenden und zu messen. Weitere Informationen findest du in unserer Cookie-Richtlinie."
+      ]
+    },
+    {
+      "title": "Deine Wahlmöglichkeiten und Kontakt",
+      "paragraphs": [
+        "Du kannst Cookies über deine Browsereinstellungen steuern. Das Deaktivieren bestimmter Cookies kann die Funktion einzelner Teile der Website beeinflussen.",
+        "Wenn du Fragen zu dieser Erklärung oder zum Datenschutz bei ConvertBase.app hast, schreibe an contact@convertbase.app."
+      ]
+    }
+  ],
+  "keywords": ["datenschutzerklärung", "convertbase datenschutz", "google analytics", "google adsense", "cookies", "datenschutz"]
+}

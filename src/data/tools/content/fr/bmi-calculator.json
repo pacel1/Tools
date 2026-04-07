@@ -1,0 +1,47 @@
+{
+  "toolId": "bmi-calculator",
+  "locale": "fr",
+  "slug": "calculateur-bmi",
+  "h1": "Calculateur d’IMC",
+  "title": "Calculateur d’IMC",
+  "shortDescription": "Calculez l’indice de masse corporelle à partir de la taille et du poids avec des résultats rapides, des saisies simples et des exemples pratiques.",
+  "overview": "Calculez l’indice de masse corporelle à partir de la taille et du poids. Cette page fournit une réponse rapide grâce à un outil pratique et à un parcours de résultat simple. Elle s’adresse aux utilisateurs qui recherchent une réponse gratuite en ligne, des résultats instantanés dans le navigateur et un contenu pratique de longue traîne.",
+  "howItWorks": [
+    "Saisissez la valeur ou le texte requis dans le formulaire.",
+    "La conversion, le calcul ou la transformation s’exécute instantanément dans le navigateur.",
+    "Consultez le résultat puis poursuivez avec des outils associés si vous avez besoin d’une autre étape."
+  ],
+  "examples": [
+    {
+      "title": "Exemple 1",
+      "input": "70 kg et 175 cm",
+      "output": "22,86",
+      "description": "Un exemple réaliste de calculateur d’IMC pour une recherche courante."
+    },
+    {
+      "title": "Exemple 2",
+      "input": "70 kg et 175 cm",
+      "output": "22,86",
+      "description": "Un autre cas pratique pour capter du trafic organique de longue traîne."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Quelle est la précision de cet outil ?",
+      "answer": "Le résultat est calculé directement à partir de la formule ou de la logique côté navigateur utilisée par cet outil."
+    },
+    {
+      "question": "Puis-je utiliser cet outil sur mobile ?",
+      "answer": "Oui. La page fonctionne sur ordinateur et sur mobile avec une interface simple de saisie et de résultat."
+    }
+  ],
+  "seo": {
+    "title": "Calculateur d’IMC",
+    "description": "Calculez l’indice de masse corporelle à partir de la taille et du poids. Calculateur d’IMC gratuit en ligne avec résultats instantanés.",
+    "keywords": [
+      "calculateur imc",
+      "bmi calculator",
+      "outil calculatrices"
+    ]
+  }
+}

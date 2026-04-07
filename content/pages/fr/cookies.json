@@ -1,0 +1,36 @@
+{
+  "page": "cookies",
+  "locale": "fr",
+  "title": "Politique de cookies",
+  "metaTitle": "Politique de cookies | ConvertBase.app",
+  "metaDescription": "Découvrez comment ConvertBase.app utilise les cookies pour le fonctionnement du site, Google Analytics, Google AdSense et les préférences de base.",
+  "heading": "Politique de cookies",
+  "content": [
+    "Cette Politique de cookies explique comment ConvertBase.app utilise les cookies et technologies similaires lorsque vous naviguez sur le site.",
+    "Les cookies nous aident à garder la plateforme stable, à comprendre l'usage des pages et à soutenir la publicité lorsqu'elle est activée."
+  ],
+  "sections": [
+    {
+      "title": "Rôle des cookies sur ce site",
+      "paragraphs": [
+        "Les cookies peuvent enregistrer des informations limitées dans votre navigateur afin que les pages se chargent correctement, que les préférences soient mémorisées et que vos choix de consentement soient respectés.",
+        "Nous pouvons aussi utiliser des cookies pour comprendre les tendances générales de trafic et améliorer l'expérience sur différents appareils et dans différentes langues."
+      ]
+    },
+    {
+      "title": "Cookies d'analyse et de publicité",
+      "paragraphs": [
+        "Google Analytics peut utiliser des cookies pour fournir des rapports sur les visites, les sources de trafic et le comportement des utilisateurs sur ConvertBase.app.",
+        "Google AdSense peut utiliser des cookies pour diffuser et mesurer la publicité. Ces réglages peuvent généralement être gérés via le navigateur ou les outils du fournisseur publicitaire."
+      ]
+    },
+    {
+      "title": "Gérer les cookies",
+      "paragraphs": [
+        "Vous pouvez contrôler ou supprimer les cookies dans les paramètres de votre navigateur. Le blocage de certains cookies peut réduire certaines fonctionnalités du site ou affecter l'analytics et la publicité.",
+        "Si vous souhaitez obtenir plus d'informations sur notre utilisation des cookies, écrivez à contact@convertbase.app."
+      ]
+    }
+  ],
+  "keywords": ["politique de cookies", "cookies convertbase", "google analytics cookies", "google adsense cookies", "consentement cookies", "navigateur"]
+}

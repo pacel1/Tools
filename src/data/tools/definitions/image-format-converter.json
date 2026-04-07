@@ -1,0 +1,23 @@
+{
+  "id": "image-format-converter",
+  "type": "image-tool",
+  "category": "image-tools",
+  "componentName": "ImageFormatConverterTool",
+  "logicModule": "image-format-converter",
+  "inputSchema": "imageFormatConverterInputSchema",
+  "outputSchema": "imageFormatConverterOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "image-resizer",
+    "image-compressor",
+    "image-cropper",
+    "image-to-base64"
+  ],
+  "seoPriority": 0.95
+}

@@ -1,0 +1,23 @@
+{
+  "id": "json-formatter",
+  "type": "developer-tool",
+  "category": "developer-tools",
+  "componentName": "JsonFormatterTool",
+  "logicModule": "json-formatter",
+  "inputSchema": "jsonFormatterInputSchema",
+  "outputSchema": "jsonFormatterOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "word-counter",
+    "kg-to-lbs-converter",
+    "json-validator",
+    "json-minifier"
+  ],
+  "seoPriority": 0.9
+}

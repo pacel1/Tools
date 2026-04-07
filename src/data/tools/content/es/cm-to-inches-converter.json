@@ -1,0 +1,47 @@
+{
+  "toolId": "cm-to-inches-converter",
+  "locale": "es",
+  "slug": "convertidor-de-cm-a-pulgadas",
+  "h1": "Convertidor de cm a pulgadas",
+  "title": "Convertidor de cm a pulgadas",
+  "shortDescription": "Convierte centímetros a pulgadas al instante con resultados rápidos, entradas simples y ejemplos prácticos.",
+  "overview": "Convierte centímetros a pulgadas al instante. Esta página ofrece una respuesta rápida con una herramienta útil y un flujo de resultados sencillo. Está pensada para usuarios que buscan una solución gratis en línea, resultados inmediatos en el navegador y contenido práctico de cola larga.",
+  "howItWorks": [
+    "Introduce el valor o texto requerido en el formulario.",
+    "La conversión, el cálculo o la transformación se ejecuta al instante en el navegador.",
+    "Revisa el resultado y continúa con herramientas relacionadas si necesitas otro paso."
+  ],
+  "examples": [
+    {
+      "title": "Ejemplo 1",
+      "input": "10 centímetros",
+      "output": "3,937 pulgadas",
+      "description": "Un ejemplo realista del convertidor de cm a pulgadas para una búsqueda cotidiana."
+    },
+    {
+      "title": "Ejemplo 2",
+      "input": "10 centímetros",
+      "output": "3,937 pulgadas",
+      "description": "Otro caso práctico pensado para tráfico orgánico de cola larga."
+    }
+  ],
+  "faq": [
+    {
+      "question": "¿Qué precisión tiene esta herramienta?",
+      "answer": "El resultado se calcula directamente a partir de la fórmula o de la lógica en el navegador que usa esta herramienta."
+    },
+    {
+      "question": "¿Puedo usar esta herramienta en el móvil?",
+      "answer": "Sí. La página funciona en escritorio y en móviles con un diseño simple de entrada y resultado."
+    }
+  ],
+  "seo": {
+    "title": "Convertidor de cm a pulgadas",
+    "description": "Convierte centímetros a pulgadas al instante. Convertidor gratis de cm a pulgadas online con resultados inmediatos.",
+    "keywords": [
+      "convertidor de cm a pulgadas",
+      "cm a pulgadas",
+      "herramienta de conversión"
+    ]
+  }
+}

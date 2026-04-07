@@ -1,0 +1,23 @@
+{
+  "id": "line-counter",
+  "type": "text-tool",
+  "category": "text-tools",
+  "componentName": "LineCounterTool",
+  "logicModule": "line-counter",
+  "inputSchema": "lineCounterInputSchema",
+  "outputSchema": "lineCounterOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "word-counter",
+    "case-converter",
+    "character-counter",
+    "slug-generator"
+  ],
+  "seoPriority": 0.84
+}

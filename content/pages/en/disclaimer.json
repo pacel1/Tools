@@ -1,0 +1,36 @@
+{
+  "page": "disclaimer",
+  "locale": "en",
+  "title": "Disclaimer",
+  "metaTitle": "Disclaimer | ConvertBase.app",
+  "metaDescription": "Read the ConvertBase.app disclaimer about tool outputs, informational content, cookies, analytics and advertising.",
+  "heading": "Disclaimer",
+  "content": [
+    "ConvertBase.app provides general informational content and practical online tools for convenience.",
+    "Tool results and explanations are provided in good faith, but they should not be treated as legal, financial, medical or other regulated professional advice."
+  ],
+  "sections": [
+    {
+      "title": "Tool outputs and accuracy",
+      "paragraphs": [
+        "We aim to make outputs useful and consistent, but results can vary depending on inputs, edge cases, browser behavior or changes in standards.",
+        "Users should independently verify any result before relying on it for important personal, technical or business decisions."
+      ]
+    },
+    {
+      "title": "Third-party services",
+      "paragraphs": [
+        "ConvertBase.app may use third-party services such as Google Analytics and Google AdSense. Those services may use cookies or related technologies as described in our Privacy Policy and Cookie Policy.",
+        "We are not responsible for the content, privacy practices or policies of third-party websites or services linked from this platform."
+      ]
+    },
+    {
+      "title": "Use at your own discretion",
+      "paragraphs": [
+        "By using this platform, you accept that the service is provided as-is and at your own discretion.",
+        "For policy or compliance questions, contact contact@convertbase.app."
+      ]
+    }
+  ],
+  "keywords": ["disclaimer", "convertbase disclaimer", "tool accuracy", "google analytics", "google adsense", "cookies"]
+}

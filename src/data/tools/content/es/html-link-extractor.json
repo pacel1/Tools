@@ -1,0 +1,108 @@
+{
+  "toolId": "html-link-extractor",
+  "locale": "es",
+  "slug": "extractor-de-enlaces-html",
+  "h1": "Extractor de enlaces HTML",
+  "title": "Extractor de enlaces HTML",
+  "shortDescription": "Extrae enlaces, texto ancla y metadatos rel del marcado HTML.",
+  "metaTitle": "Extractor de enlaces HTML | Extrae enlaces de HTML",
+  "metaDescription": "Extrae valores href, texto ancla, atributos rel y target del HTML de forma rápida y segura en tu navegador.",
+  "intro": "Usa este extractor de enlaces HTML para obtener enlaces, texto ancla y metadatos rel de cualquier fragmento HTML. Funciona localmente en tu navegador para una extracción rápida y segura.",
+  "overview": "Pega tu HTML y obtén una lista estructurada de enlaces con su href, texto visible, valores rel, atributos target y otros datos útiles. Es ideal para revisar contenido, auditar enlaces salientes o convertir el marcado en un inventario de enlaces limpio.",
+  "howItWorks": [
+    "Pega tu HTML en el campo de entrada.",
+    "La herramienta analiza las etiquetas anchor y otros elementos de enlace del marcado.",
+    "Extrae href, texto, rel, target y metadatos relacionados.",
+    "Revisa el resultado y cópialo cuando lo necesites."
+  ],
+  "useCases": [
+    "Auditar enlaces internos y externos de una página.",
+    "Extraer texto ancla para revisiones SEO y de contenido.",
+    "Revisar atributos rel como nofollow, sponsored y ugc.",
+    "Convertir HTML en bruto en un inventario de enlaces para documentación.",
+    "Comprobar enlaces vacíos, patrones rotos o marcado sospechoso."
+  ],
+  "examples": [
+    {
+      "title": "Extracción básica de un enlace",
+      "input": "<a href=\"https://example.com\" rel=\"nofollow\">Visitar sitio</a>",
+      "output": "href: https://example.com | text: Visitar sitio | rel: nofollow",
+      "description": "Extrae la URL, el texto ancla y el valor rel de un solo enlace."
+    },
+    {
+      "title": "Varios enlaces",
+      "input": "<p><a href=\"/sobre-nosotros\">Sobre nosotros</a> y <a href=\"/contacto\" target=\"_blank\">Contacto</a></p>",
+      "output": "2 enlaces encontrados",
+      "description": "Devuelve todas las etiquetas anchor con sus atributos clave."
+    }
+  ],
+  "faq": [
+    {
+      "question": "¿Qué hace el Extractor de enlaces HTML?",
+      "answer": "Analiza HTML y extrae datos de enlaces como href, texto ancla, atributos rel y valores target."
+    },
+    {
+      "question": "¿Funciona en el navegador?",
+      "answer": "Sí. La herramienta está pensada para uso en el cliente y no requiere APIs externas."
+    },
+    {
+      "question": "¿Puede extraer atributos rel?",
+      "answer": "Sí. Captura metadatos rel, incluidos valores comunes como nofollow, sponsored y ugc."
+    },
+    {
+      "question": "¿El HTML se trata de forma segura?",
+      "answer": "La herramienta es consciente de XSS y está pensada para procesar localmente el HTML pegado."
+    }
+  ],
+  "uiLabels": {
+    "copy": "Copiar",
+    "copied": "Copiado",
+    "input": "HTML input",
+    "output": "Extracted links",
+    "placeholder": "Pega HTML aquí para extraer enlaces",
+    "indent": "Sangría",
+    "removeComments": "Eliminar comentarios",
+    "preview": "Vista previa",
+    "source": "Fuente",
+    "sanitizedHtml": "HTML sanitizado",
+    "plainText": "Texto plano",
+    "summary": "Resumen",
+    "total": "Total",
+    "links": "Enlaces",
+    "images": "Imágenes",
+    "errors": "Errores",
+    "warnings": "Advertencias",
+    "valid": "Válido",
+    "invalid": "Inválido",
+    "href": "href",
+    "text": "Texto",
+    "rel": "rel",
+    "target": "Destino",
+    "alt": "Alt",
+    "width": "Ancho",
+    "height": "Alto",
+    "empty": "Vacío",
+    "outputReady": "Resultado listo",
+    "cleanedHtml": "HTML limpio",
+    "formattedHtml": "HTML formateado",
+    "minifiedHtml": "HTML minificado",
+    "markdown": "Markdown",
+    "extractedImages": "Imágenes extraídas",
+    "extractedLinks": "Enlaces extraídos",
+    "validationSummary": "Resumen de validación",
+    "prettyHtml": "HTML legible",
+    "encodedText": "Texto codificado"
+  },
+  "seo": {
+    "title": "Extractor de enlaces HTML",
+    "description": "Extrae rápidamente href, texto ancla, rel y target del HTML en tu navegador.",
+    "keywords": [
+      "extractor de enlaces HTML",
+      "extraer enlaces de HTML",
+      "extractor de texto ancla",
+      "extractor rel",
+      "herramientas HTML",
+      "analizador HTML en el navegador"
+    ]
+  }
+}

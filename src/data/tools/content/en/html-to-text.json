@@ -1,0 +1,107 @@
+{
+  "toolId": "html-to-text",
+  "locale": "en",
+  "slug": "html-to-text",
+  "h1": "HTML to Text",
+  "title": "HTML to Text",
+  "shortDescription": "Extract readable plain text from HTML snippets and full documents.",
+  "metaTitle": "HTML to Text Converter | Extract Plain Text from HTML",
+  "metaDescription": "Convert HTML to plain text instantly in your browser. Extract readable text from snippets or full pages safely, with no external API.",
+  "intro": "Convert HTML into clean, readable plain text directly in your browser. Paste a snippet or a full document, and this tool removes tags while keeping the content easy to copy, read, and reuse.",
+  "overview": "This HTML to Text tool is a fast client-side converter for developers, writers, and content editors. It strips markup safely, reduces noise, and outputs plain text that is easier to search, index, quote, or repurpose. Because everything runs locally, it avoids external APIs and keeps your HTML handling private and XSS-aware.",
+  "howItWorks": [
+    "Paste HTML into the input field.",
+    "The tool parses the markup in the browser.",
+    "It removes HTML tags and returns readable plain text.",
+    "Copy the cleaned text or use it in your workflow."
+  ],
+  "useCases": [
+    "Extract text from website HTML for notes or documentation.",
+    "Convert snippets to plain text for emails, tickets, or chat.",
+    "Prepare content for indexing, search, or analysis.",
+    "Strip formatting from copied HTML before pasting into another app.",
+    "Preview the readable text version of a page or component."
+  ],
+  "examples": [
+    {
+      "title": "Simple paragraph",
+      "input": "<p>Hello <strong>world</strong>!</p>",
+      "output": "Hello world!",
+      "description": "Tags are removed and the text remains readable."
+    },
+    {
+      "title": "Links and lists",
+      "input": "<div><a href=\"/docs\">Docs</a><ul><li>One</li><li>Two</li></ul></div>",
+      "output": "Docs\nOne\nTwo",
+      "description": "Text content is preserved in a clean plain-text layout."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Does this tool keep HTML tags?",
+      "answer": "No. It removes tags and outputs plain text only."
+    },
+    {
+      "question": "Is the conversion done in the browser?",
+      "answer": "Yes. The tool uses client-side logic and does not call external APIs."
+    },
+    {
+      "question": "Can I convert full HTML documents?",
+      "answer": "Yes. It works with short snippets and complete documents alike."
+    },
+    {
+      "question": "Is my HTML sent to a server?",
+      "answer": "No. The content is processed locally in your browser."
+    }
+  ],
+  "uiLabels": {
+    "copy": "Copy",
+    "copied": "Copied",
+    "input": "HTML input",
+    "output": "Plain text",
+    "placeholder": "Paste HTML here...",
+    "indent": "Indent",
+    "removeComments": "Remove comments",
+    "preview": "Preview",
+    "source": "Source",
+    "sanitizedHtml": "Sanitized HTML",
+    "plainText": "Plain text",
+    "summary": "Summary",
+    "total": "Total",
+    "links": "Links",
+    "images": "Images",
+    "errors": "Errors",
+    "warnings": "Warnings",
+    "valid": "Valid",
+    "invalid": "Invalid",
+    "href": "Href",
+    "text": "Text",
+    "rel": "Rel",
+    "target": "Target",
+    "alt": "Alt",
+    "width": "Width",
+    "height": "Height",
+    "empty": "Empty",
+    "outputReady": "Output ready",
+    "cleanedHtml": "Cleaned HTML",
+    "formattedHtml": "Formatted HTML",
+    "minifiedHtml": "Minified HTML",
+    "markdown": "Markdown",
+    "extractedImages": "Extracted images",
+    "extractedLinks": "Extracted links",
+    "validationSummary": "Validation summary",
+    "prettyHtml": "Pretty HTML",
+    "encodedText": "Encoded text"
+  },
+  "seo": {
+    "title": "HTML to Text Converter",
+    "description": "Extract plain text from HTML snippets and full documents instantly in your browser.",
+    "keywords": [
+      "html to text",
+      "html to plain text",
+      "convert html to text",
+      "strip html tags",
+      "plain text converter"
+    ]
+  }
+}

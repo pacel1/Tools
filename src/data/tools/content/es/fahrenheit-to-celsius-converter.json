@@ -1,0 +1,47 @@
+{
+  "toolId": "fahrenheit-to-celsius-converter",
+  "locale": "es",
+  "slug": "convertidor-de-fahrenheit-a-celsius",
+  "h1": "Convertidor de Fahrenheit a Celsius",
+  "title": "Convertidor de Fahrenheit a Celsius",
+  "shortDescription": "Convierte Fahrenheit a Celsius al instante con resultados rápidos, entradas sencillas y ejemplos prácticos.",
+  "overview": "Convierte Fahrenheit a Celsius al instante. Esta página ofrece una respuesta rápida con una herramienta útil y un flujo de resultados sencillo. Está pensada para quienes buscan una respuesta gratis en línea, resultados rápidos en el navegador y contenido práctico para búsquedas específicas.",
+  "howItWorks": [
+    "Introduce el valor o texto requerido en el formulario.",
+    "La conversión, el cálculo o la transformación se ejecuta al instante en el navegador.",
+    "Revisa el resultado y continúa con herramientas relacionadas si necesitas otro paso."
+  ],
+  "examples": [
+    {
+      "title": "Ejemplo 1",
+      "input": "68 fahrenheit",
+      "output": "20 celsius",
+      "description": "Un ejemplo realista de conversión de Fahrenheit a Celsius para una consulta cotidiana."
+    },
+    {
+      "title": "Ejemplo 2",
+      "input": "68 fahrenheit",
+      "output": "20 celsius",
+      "description": "Otro caso práctico para atraer tráfico orgánico de cola larga."
+    }
+  ],
+  "faq": [
+    {
+      "question": "¿Qué precisión tiene esta herramienta?",
+      "answer": "El resultado se calcula directamente a partir de la fórmula o la lógica en el navegador que usa esta herramienta."
+    },
+    {
+      "question": "¿Puedo usar esta herramienta en el móvil?",
+      "answer": "Sí. La página funciona en escritorio y móvil con un diseño sencillo de entrada y resultado."
+    }
+  ],
+  "seo": {
+    "title": "Convertidor de Fahrenheit a Celsius",
+    "description": "Convierte Fahrenheit a Celsius al instante. Convertidor gratis online de Fahrenheit a Celsius con resultados inmediatos.",
+    "keywords": [
+      "convertidor de fahrenheit a celsius",
+      "fahrenheit a celsius",
+      "herramienta de conversion"
+    ]
+  }
+}

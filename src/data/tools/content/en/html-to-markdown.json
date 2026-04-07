@@ -1,0 +1,108 @@
+{
+  "toolId": "html-to-markdown",
+  "locale": "en",
+  "slug": "html-to-markdown",
+  "h1": "HTML to Markdown",
+  "title": "HTML to Markdown",
+  "shortDescription": "Convert HTML into Markdown for docs, CMS workflows and content cleanup.",
+  "metaTitle": "HTML to Markdown Converter",
+  "metaDescription": "Convert HTML to Markdown quickly for documentation, CMS edits, and content cleanup. Client-side, safe, and easy to use.",
+  "intro": "Convert HTML into clean Markdown for documentation, CMS publishing, migrations, and content cleanup. This client-side tool helps you turn HTML into readable Markdown without sending data to external APIs.",
+  "overview": "HTML to Markdown is a practical converter for developers, writers, and content teams. Paste HTML, review the sanitized preview, and get Markdown output that is easier to store, edit, and reuse in docs or CMS workflows. It is designed for safe, client-side processing with XSS-aware handling.",
+  "howItWorks": [
+    "Paste your HTML into the input field.",
+    "The tool sanitizes and analyzes the markup client-side.",
+    "Review the cleaned HTML and extracted elements if needed.",
+    "Copy the generated Markdown output for your docs or CMS."
+  ],
+  "useCases": [
+    "Convert blog or help-center HTML into Markdown.",
+    "Clean up pasted CMS content for easier editing.",
+    "Migrate pages from HTML-based systems to Markdown.",
+    "Extract readable content from rich text exports.",
+    "Prepare documentation content for static site generators."
+  ],
+  "examples": [
+    {
+      "title": "Basic article conversion",
+      "input": "<h1>Title</h1><p>This is <strong>important</strong>.</p>",
+      "output": "# Title\n\nThis is **important**.",
+      "description": "Turns headings and emphasis into standard Markdown."
+    },
+    {
+      "title": "Links and lists",
+      "input": "<p>See <a href=\"/docs\">the docs</a>:</p><ul><li>Fast</li><li>Safe</li></ul>",
+      "output": "See [the docs](/docs):\n\n- Fast\n- Safe",
+      "description": "Preserves links and list structure."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Does this tool run in the browser only?",
+      "answer": "Yes. It uses client-side logic and does not require external APIs."
+    },
+    {
+      "question": "Will it remove unsafe HTML?",
+      "answer": "It is designed to be XSS-aware and sanitize content before conversion."
+    },
+    {
+      "question": "Can I use it for CMS migrations?",
+      "answer": "Yes. It is useful for moving content from HTML-heavy systems into Markdown-based workflows."
+    },
+    {
+      "question": "Does it keep links and images?",
+      "answer": "It extracts links and images where possible and converts them into Markdown-friendly syntax."
+    }
+  ],
+  "uiLabels": {
+    "copy": "Copy",
+    "copied": "Copied",
+    "input": "HTML input",
+    "output": "Markdown output",
+    "placeholder": "Paste HTML here...",
+    "indent": "Indent",
+    "removeComments": "Remove comments",
+    "preview": "Preview",
+    "source": "Source",
+    "sanitizedHtml": "Sanitized HTML",
+    "plainText": "Plain text",
+    "summary": "Summary",
+    "total": "Total",
+    "links": "Links",
+    "images": "Images",
+    "errors": "Errors",
+    "warnings": "Warnings",
+    "valid": "Valid",
+    "invalid": "Invalid",
+    "href": "Href",
+    "text": "Text",
+    "rel": "Rel",
+    "target": "Target",
+    "alt": "Alt",
+    "width": "Width",
+    "height": "Height",
+    "empty": "Empty",
+    "outputReady": "Markdown output ready",
+    "cleanedHtml": "Cleaned HTML",
+    "formattedHtml": "Formatted HTML",
+    "minifiedHtml": "Minified HTML",
+    "markdown": "Markdown",
+    "extractedImages": "Extracted images",
+    "extractedLinks": "Extracted links",
+    "validationSummary": "Validation summary",
+    "prettyHtml": "Pretty HTML",
+    "encodedText": "Encoded text"
+  },
+  "seo": {
+    "title": "HTML to Markdown Converter",
+    "description": "Convert HTML to Markdown quickly for documentation, CMS edits, and content cleanup. Client-side, safe, and easy to use.",
+    "keywords": [
+      "HTML to Markdown",
+      "convert HTML to Markdown",
+      "Markdown converter",
+      "HTML cleanup",
+      "CMS workflow",
+      "documentation tool"
+    ]
+  }
+}

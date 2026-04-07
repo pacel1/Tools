@@ -1,0 +1,47 @@
+{
+  "toolId": "text-reverser",
+  "locale": "fr",
+  "slug": "inverseur-de-texte",
+  "h1": "Inverseur de texte",
+  "title": "Inverseur de texte",
+  "shortDescription": "Inversez du texte en ligne instantanément avec des résultats rapides, une saisie simple et des exemples pratiques.",
+  "overview": "Inversez du texte en ligne instantanément. Cette page fournit une réponse rapide avec un outil pratique et un parcours de résultat simple. Elle s’adresse aux utilisateurs qui recherchent une solution gratuite en ligne, des résultats rapides dans le navigateur et un contenu pratique de type longue traîne.",
+  "howItWorks": [
+    "Saisissez le texte requis dans le formulaire.",
+    "La conversion, le calcul ou la transformation s’exécute instantanément dans le navigateur.",
+    "Consultez le résultat et poursuivez avec des outils associés si vous avez besoin d’une autre étape."
+  ],
+  "examples": [
+    {
+      "title": "Exemple 1",
+      "input": "utility tools",
+      "output": "sloot ytilitu",
+      "description": "Un exemple réaliste d’inversion de texte pour une recherche courante."
+    },
+    {
+      "title": "Exemple 2",
+      "input": "utility tools",
+      "output": "sloot ytilitu",
+      "description": "Un autre cas d’usage pratique pour le trafic organique longue traîne."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Quelle est la précision de cet outil ?",
+      "answer": "Le résultat est calculé directement à partir de la formule ou de la logique côté navigateur utilisée par cet outil."
+    },
+    {
+      "question": "Puis-je utiliser cet outil sur mobile ?",
+      "answer": "Oui. La page fonctionne sur ordinateur et sur mobile avec une interface simple de saisie et de résultat."
+    }
+  ],
+  "seo": {
+    "title": "Inverseur de texte",
+    "description": "Inversez du texte en ligne instantanément. Inverseur de texte gratuit avec résultats immédiats.",
+    "keywords": [
+      "inverseur de texte",
+      "inverseur de texte",
+      "outil text-tools"
+    ]
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "toolId": "html-to-markdown",
+  "locale": "de",
+  "slug": "html-zu-markdown",
+  "h1": "HTML zu Markdown",
+  "title": "HTML zu Markdown",
+  "shortDescription": "HTML in Markdown umwandeln für Dokumentation, CMS-Workflows und Content-Bereinigung.",
+  "metaTitle": "HTML-zu-Markdown-Konverter",
+  "metaDescription": "HTML schnell in Markdown umwandeln für Dokumentation, CMS-Bearbeitung und Content-Bereinigung. Im Browser, sicher und einfach zu nutzen.",
+  "intro": "Wandle HTML in sauberes Markdown für Dokumentation, CMS-Veröffentlichungen, Migrationen und Content-Bereinigung um. Dieses Client-side-Tool hilft dir, HTML ohne externe APIs in gut lesbares Markdown zu verwandeln.",
+  "overview": "HTML zu Markdown ist ein praktischer Konverter für Entwickler, Redakteure und Content-Teams. HTML einfügen, die bereinigte Vorschau prüfen und Markdown erhalten, das sich leichter speichern, bearbeiten und in Doku- oder CMS-Workflows wiederverwenden lässt. Das Tool ist für sichere Verarbeitung im Browser und XSS-bewusste Handhabung ausgelegt.",
+  "howItWorks": [
+    "HTML in das Eingabefeld einfügen.",
+    "Das Tool analysiert und bereinigt das Markup im Browser.",
+    "Bei Bedarf bereinigtes HTML und extrahierte Elemente prüfen.",
+    "Das erzeugte Markdown für Doku oder CMS kopieren."
+  ],
+  "useCases": [
+    "Blog- oder Hilfeinhalte von HTML nach Markdown konvertieren.",
+    "Aus CMS-Inhalten saubere, besser bearbeitbare Texte machen.",
+    "Seiten von HTML-basierten Systemen nach Markdown migrieren.",
+    "Lesbaren Inhalt aus Rich-Text-Exporten extrahieren.",
+    "Dokumentation für statische Site Generatoren vorbereiten."
+  ],
+  "examples": [
+    {
+      "title": "Einfache Artikelkonvertierung",
+      "input": "<h1>Titel</h1><p>Das ist <strong>wichtig</strong>.</p>",
+      "output": "# Titel\n\nDas ist **wichtig**.",
+      "description": "Wandelt Überschriften und Hervorhebungen in Standard-Markdown um."
+    },
+    {
+      "title": "Links und Listen",
+      "input": "<p>Siehe <a href=\"/docs\">die Doku</a>:</p><ul><li>Schnell</li><li>Sicher</li></ul>",
+      "output": "Siehe [die Doku](/docs):\n\n- Schnell\n- Sicher",
+      "description": "Erhält Links und Listenstruktur."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Läuft das Tool nur im Browser?",
+      "answer": "Ja. Es nutzt Client-seitige Logik und benötigt keine externen APIs."
+    },
+    {
+      "question": "Wird unsicheres HTML entfernt?",
+      "answer": "Ja. Das Tool ist XSS-bewusst konzipiert und bereinigt Inhalte vor der Konvertierung."
+    },
+    {
+      "question": "Eignet es sich für CMS-Migrationen?",
+      "answer": "Ja. Es ist hilfreich beim Umzug von HTML-lastigen Systemen in Markdown-basierte Workflows."
+    },
+    {
+      "question": "Bleiben Links und Bilder erhalten?",
+      "answer": "Wenn möglich, werden Links und Bilder extrahiert und in Markdown-freundliche Syntax umgewandelt."
+    }
+  ],
+  "uiLabels": {
+    "copy": "Kopieren",
+    "copied": "Kopiert",
+    "input": "HTML input",
+    "output": "Markdown output",
+    "placeholder": "HTML hier einfügen...",
+    "indent": "Einzug",
+    "removeComments": "Kommentare entfernen",
+    "preview": "Vorschau",
+    "source": "Quelle",
+    "sanitizedHtml": "Bereinigtes HTML",
+    "plainText": "Klartext",
+    "summary": "Zusammenfassung",
+    "total": "Gesamt",
+    "links": "Links",
+    "images": "Bilder",
+    "errors": "Fehler",
+    "warnings": "Warnungen",
+    "valid": "Gültig",
+    "invalid": "Ungültig",
+    "href": "Href",
+    "text": "Text",
+    "rel": "Rel",
+    "target": "Target",
+    "alt": "Alt",
+    "width": "Breite",
+    "height": "Höhe",
+    "empty": "Leer",
+    "outputReady": "Markdown bereit",
+    "cleanedHtml": "Bereinigtes HTML",
+    "formattedHtml": "Formatiertes HTML",
+    "minifiedHtml": "Minifiziertes HTML",
+    "markdown": "Markdown",
+    "extractedImages": "Extrahierte Bilder",
+    "extractedLinks": "Extrahierte Links",
+    "validationSummary": "Validierungsübersicht",
+    "prettyHtml": "Gut lesbares HTML",
+    "encodedText": "Kodierter Text"
+  },
+  "seo": {
+    "title": "HTML-zu-Markdown-Konverter",
+    "description": "HTML schnell in Markdown umwandeln für Dokumentation, CMS-Bearbeitung und Content-Bereinigung. Im Browser, sicher und einfach zu nutzen.",
+    "keywords": [
+      "HTML zu Markdown",
+      "HTML-zu-Markdown-Konverter",
+      "Markdown Konverter",
+      "HTML bereinigen",
+      "CMS Workflow",
+      "Dokumentation"
+    ]
+  }
+}

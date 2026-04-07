@@ -1,0 +1,47 @@
+{
+  "toolId": "percentage-calculator",
+  "locale": "es",
+  "slug": "calculadora-de-porcentajes",
+  "h1": "Calculadora de Porcentajes",
+  "title": "Calculadora de Porcentajes",
+  "shortDescription": "Calcula qué porcentaje representa un número respecto a otro con resultados rápidos, entradas sencillas y ejemplos prácticos.",
+  "overview": "Calcula qué porcentaje representa un número respecto a otro. Esta página ofrece una respuesta rápida con una herramienta útil y un flujo de resultados sencillo. Está pensada para usuarios que buscan una respuesta gratis en línea, resultados instantáneos en el navegador y contenido práctico de cola larga.",
+  "howItWorks": [
+    "Introduce el valor o texto requerido en el formulario.",
+    "La conversión, el cálculo o la transformación se ejecuta al instante en el navegador.",
+    "Revisa el resultado y continúa con herramientas relacionadas si necesitas otro paso."
+  ],
+  "examples": [
+    {
+      "title": "Ejemplo 1",
+      "input": "25 de 200",
+      "output": "12,5%",
+      "description": "Un ejemplo realista de calculadora de porcentajes para una búsqueda cotidiana."
+    },
+    {
+      "title": "Ejemplo 2",
+      "input": "25 de 200",
+      "output": "12,5%",
+      "description": "Otro caso práctico para tráfico orgánico de cola larga."
+    }
+  ],
+  "faq": [
+    {
+      "question": "¿Qué precisión tiene esta herramienta?",
+      "answer": "El resultado se calcula directamente a partir de la fórmula o de la lógica del navegador utilizada por esta herramienta."
+    },
+    {
+      "question": "¿Puedo usar esta herramienta en el móvil?",
+      "answer": "Sí. La página funciona en ordenador y móvil con un diseño sencillo de entrada y resultado."
+    }
+  ],
+  "seo": {
+    "title": "Calculadora de Porcentajes",
+    "description": "Calcula qué porcentaje representa un número respecto a otro. Calculadora de porcentajes gratis en línea con resultados instantáneos.",
+    "keywords": [
+      "calculadora de porcentajes",
+      "porcentajes calculadora",
+      "herramienta calculadoras"
+    ]
+  }
+}

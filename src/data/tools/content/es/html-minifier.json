@@ -1,0 +1,109 @@
+{
+  "toolId": "html-minifier",
+  "locale": "es",
+  "slug": "minificador-html",
+  "h1": "Minificador de HTML",
+  "title": "Minificador de HTML",
+  "shortDescription": "Minifica HTML en línea para reducir el tamaño del archivo sin usar APIs externas.",
+  "metaTitle": "Minificador de HTML en línea | Comprime HTML rápido",
+  "metaDescription": "Minifica HTML en tu navegador para reducir el tamaño del archivo, eliminar espacios innecesarios y optimizar el marcado sin APIs externas.",
+  "intro": "Minifica HTML en tu navegador para reducir el tamaño del código, eliminar espacios en blanco innecesarios y dejar el marcado listo para producción. Esta herramienta funciona del lado del cliente y no envía tu código a servicios externos.",
+  "overview": "Usa este minificador de HTML para comprimir marcado de forma rápida y segura. Elimina espacios extra, saltos de línea y comentarios cuando corresponde, manteniendo la estructura del documento. Al ejecutarse en el cliente, es una opción práctica para desarrolladores que buscan cargas más rápidas, un código fuente más limpio y sin dependencia de APIs.",
+  "howItWorks": [
+    "Pega tu HTML en el campo de entrada.",
+    "Elige las opciones de limpieza disponibles, como eliminar comentarios.",
+    "Ejecuta la minificación para comprimir el marcado.",
+    "Copia el HTML minificado y úsalo en tu proyecto."
+  ],
+  "useCases": [
+    "Preparar HTML para despliegues de producción.",
+    "Reducir el tamaño de plantillas antes de publicar un sitio web.",
+    "Limpiar HTML exportado desde editores o generadores.",
+    "Optimizar fragmentos para plantillas de correo o páginas estáticas.",
+    "Comprobar cuánto se reduce el tamaño al eliminar espacios y comentarios."
+  ],
+  "examples": [
+    {
+      "title": "Minificación básica",
+      "input": "<div>\n  <h1>Title</h1>\n  <p> Hello world </p>\n</div>",
+      "output": "<div><h1>Title</h1><p>Hello world</p></div>",
+      "description": "Elimina saltos de línea y espacios extra sin romper el marcado válido."
+    },
+    {
+      "title": "Eliminación de comentarios",
+      "input": "<section>\n  <!-- note -->\n  <span>Text</span>\n</section>",
+      "output": "<section><span>Text</span></section>",
+      "description": "Quita los comentarios HTML cuando la opción está activada."
+    }
+  ],
+  "faq": [
+    {
+      "question": "¿Este minificador de HTML envía mi código a un servidor?",
+      "answer": "No. Funciona en tu navegador con lógica del lado del cliente."
+    },
+    {
+      "question": "¿Puede romper mi HTML?",
+      "answer": "Está diseñado para conservar la estructura válida mientras elimina espacios y comentarios innecesarios. Revisa el resultado si tu marcado depende de espacios exactos."
+    },
+    {
+      "question": "¿Puedo usarlo para código de producción?",
+      "answer": "Sí. Sirve para preparar HTML antes del despliegue, aunque conviene probar el resultado en tu entorno."
+    },
+    {
+      "question": "¿Elimina comentarios?",
+      "answer": "Sí, si activas la opción. También puedes mantenerlos cuando lo necesites."
+    }
+  ],
+  "uiLabels": {
+    "copy": "Copiar",
+    "copied": "Copiado",
+    "input": "Entrada",
+    "output": "Salida",
+    "placeholder": "Pega HTML aquí",
+    "indent": "Sangría",
+    "removeComments": "Eliminar comentarios",
+    "preview": "Vista previa",
+    "source": "Fuente",
+    "sanitizedHtml": "HTML saneado",
+    "plainText": "Texto plano",
+    "summary": "Resumen",
+    "total": "Total",
+    "links": "Enlaces",
+    "images": "Imágenes",
+    "errors": "Errores",
+    "warnings": "Advertencias",
+    "valid": "Válido",
+    "invalid": "No válido",
+    "href": "Href",
+    "text": "Texto",
+    "rel": "Rel",
+    "target": "Destino",
+    "alt": "Alt",
+    "width": "Ancho",
+    "height": "Alto",
+    "empty": "Vacío",
+    "outputReady": "Resultado listo",
+    "cleanedHtml": "HTML limpiado",
+    "formattedHtml": "HTML formateado",
+    "minifiedHtml": "HTML minificado",
+    "markdown": "Markdown",
+    "extractedImages": "Imágenes extraídas",
+    "extractedLinks": "Enlaces extraídos",
+    "validationSummary": "Resumen de validación",
+    "prettyHtml": "HTML legible",
+    "encodedText": "Texto codificado"
+  },
+  "seo": {
+    "title": "Minificador de HTML en línea | Comprime HTML rápido",
+    "description": "Minifica HTML en tu navegador para reducir el tamaño del archivo, eliminar espacios innecesarios y optimizar el marcado sin APIs externas.",
+    "keywords": [
+      "minificador html",
+      "minificar html",
+      "comprimir html",
+      "comprimir html online",
+      "eliminar espacios html",
+      "limpieza html",
+      "minificador html cliente"
+    ]
+  }
+}

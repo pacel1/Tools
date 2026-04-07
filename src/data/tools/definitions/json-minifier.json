@@ -1,0 +1,23 @@
+{
+  "id": "json-minifier",
+  "type": "developer-tool",
+  "category": "developer-tools",
+  "componentName": "JsonMinifierTool",
+  "logicModule": "json-minifier",
+  "inputSchema": "jsonMinifierInputSchema",
+  "outputSchema": "jsonMinifierOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "json-validator",
+    "json-formatter",
+    "base64-decoder",
+    "base64-encoder"
+  ],
+  "seoPriority": 0.9
+}

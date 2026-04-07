@@ -1,0 +1,36 @@
+{
+  "page": "disclaimer",
+  "locale": "fr",
+  "title": "Avertissement",
+  "metaTitle": "Avertissement | ConvertBase.app",
+  "metaDescription": "Lisez l'avertissement de ConvertBase.app concernant les résultats des outils, les contenus informatifs, les cookies, l'analytics et la publicité.",
+  "heading": "Avertissement",
+  "content": [
+    "ConvertBase.app fournit des contenus informatifs généraux et des outils en ligne pratiques à titre de commodité.",
+    "Les résultats des outils et les explications sont fournis de bonne foi, mais ne constituent pas un conseil juridique, financier, médical ou un autre avis professionnel réglementé."
+  ],
+  "sections": [
+    {
+      "title": "Résultats des outils et exactitude",
+      "paragraphs": [
+        "Nous cherchons à produire des résultats utiles et cohérents, mais ils peuvent varier selon les données saisies, les cas limites, le comportement du navigateur ou l'évolution des standards.",
+        "Les utilisateurs doivent vérifier eux-mêmes tout résultat avant de s'y fier pour une décision personnelle, technique ou commerciale importante."
+      ]
+    },
+    {
+      "title": "Services tiers",
+      "paragraphs": [
+        "ConvertBase.app peut utiliser des services tiers tels que Google Analytics et Google AdSense. Ces services peuvent utiliser des cookies ou technologies similaires comme indiqué dans notre Politique de confidentialité et notre Politique de cookies.",
+        "Nous ne sommes pas responsables du contenu, des pratiques de confidentialité ou des politiques des sites ou services tiers liés depuis cette plateforme."
+      ]
+    },
+    {
+      "title": "Utilisation à votre appréciation",
+      "paragraphs": [
+        "En utilisant cette plateforme, vous acceptez que le service soit fourni en l'état et utilisé à votre propre appréciation.",
+        "Pour toute question liée aux politiques ou à la conformité, écrivez à contact@convertbase.app."
+      ]
+    }
+  ],
+  "keywords": ["avertissement", "disclaimer", "convertbase", "exactitude des outils", "google analytics", "google adsense"]
+}

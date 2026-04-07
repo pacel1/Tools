@@ -1,0 +1,23 @@
+{
+  "id": "placeholder-image-generator",
+  "type": "generator",
+  "category": "generators",
+  "componentName": "PlaceholderImageGeneratorTool",
+  "logicModule": "placeholder-image-generator",
+  "inputSchema": "placeholderImageGeneratorInputSchema",
+  "outputSchema": "placeholderImageGeneratorOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "gradient-generator",
+    "favicon-generator",
+    "box-shadow-generator",
+    "qr-code-generator"
+  ],
+  "seoPriority": 0.9
+}

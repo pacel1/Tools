@@ -1,0 +1,47 @@
+{
+  "toolId": "json-minifier",
+  "locale": "es",
+  "slug": "minificador-de-json",
+  "h1": "Minificador de JSON",
+  "title": "Minificador de JSON",
+  "shortDescription": "Minifica JSON al instante en línea con resultados rápidos, entradas simples y ejemplos prácticos.",
+  "overview": "Minifica JSON al instante en línea. Esta página ofrece una respuesta rápida con una herramienta práctica y un flujo de resultados sencillo. Está pensada para usuarios que buscan una solución gratuita en línea, resultados rápidos en el navegador y contenido útil de cola larga.",
+  "howItWorks": [
+    "Introduce el valor o texto requerido en el formulario.",
+    "La conversión, el cálculo o la transformación se ejecuta al instante en el navegador.",
+    "Revisa el resultado y continúa con herramientas relacionadas si necesitas otro paso."
+  ],
+  "examples": [
+    {
+      "title": "Ejemplo 1",
+      "input": "{\"name\":\"tool\",\"value\":1}",
+      "output": "{\"name\":\"tool\",\"value\":1}",
+      "description": "Un ejemplo realista de minificador de JSON para una búsqueda cotidiana."
+    },
+    {
+      "title": "Ejemplo 2",
+      "input": "{\"name\":\"tool\",\"value\":1}",
+      "output": "{\"name\":\"tool\",\"value\":1}",
+      "description": "Otro caso práctico para tráfico orgánico de cola larga."
+    }
+  ],
+  "faq": [
+    {
+      "question": "¿Qué tan precisa es esta herramienta?",
+      "answer": "El resultado se calcula directamente a partir de la fórmula o la lógica en el navegador que usa esta herramienta."
+    },
+    {
+      "question": "¿Puedo usar esta herramienta en el móvil?",
+      "answer": "Sí. La página funciona en pantallas de escritorio y móviles con un diseño sencillo de entrada y resultado."
+    }
+  ],
+  "seo": {
+    "title": "Minificador de JSON",
+    "description": "Minifica JSON al instante en línea. Minificador de JSON gratuito con resultados inmediatos.",
+    "keywords": [
+      "minificador de json",
+      "minificador de json",
+      "herramientas para desarrolladores"
+    ]
+  }
+}

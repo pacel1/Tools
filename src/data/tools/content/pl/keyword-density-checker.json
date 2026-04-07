@@ -1,0 +1,47 @@
+{
+  "toolId": "keyword-density-checker",
+  "locale": "pl",
+  "slug": "sprawdzanie-gestosci-fraz-kluczowych",
+  "h1": "Sprawdzanie gęstości fraz kluczowych",
+  "title": "Sprawdzanie gęstości fraz kluczowych",
+  "shortDescription": "Sprawdź gęstość słów kluczowych w tekście — szybko, prosto i z praktycznymi przykładami.",
+  "overview": "Sprawdź gęstość słów kluczowych w dowolnym fragmencie tekstu. Ta strona daje szybki wynik dzięki prostemu narzędziu online i przejrzystemu przebiegowi działania. To rozwiązanie dla osób, które szukają darmowej odpowiedzi w przeglądarce, natychmiastowych wyników i praktycznej treści pod długie frazy.",
+  "howItWorks": [
+    "Wpisz wymagane słowo, frazę lub tekst w formularzu.",
+    "Obliczenie lub analiza uruchamia się od razu w przeglądarce.",
+    "Sprawdź wynik i skorzystaj z powiązanych narzędzi, jeśli potrzebujesz kolejnego kroku."
+  ],
+  "examples": [
+    {
+      "title": "Przykład 1",
+      "input": "Artykuł SEO + fraza docelowa",
+      "output": "Procent gęstości słowa kluczowego",
+      "description": "Realistyczny przykład sprawdzania gęstości fraz kluczowych dla codziennego zapytania."
+    },
+    {
+      "title": "Przykład 2",
+      "input": "Artykuł SEO + fraza docelowa",
+      "output": "Procent gęstości słowa kluczowego",
+      "description": "Kolejny praktyczny przypadek użycia pod ruch organiczny z długiego ogona."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Jak dokładne jest to narzędzie?",
+      "answer": "Wynik jest obliczany bezpośrednio na podstawie wzoru lub logiki po stronie przeglądarki użytej w tym narzędziu."
+    },
+    {
+      "question": "Czy mogę używać tego narzędzia na telefonie?",
+      "answer": "Tak. Strona działa na komputerach i urządzeniach mobilnych, oferując prosty układ pola wejściowego i wyniku."
+    }
+  ],
+  "seo": {
+    "title": "Sprawdzanie gęstości fraz kluczowych",
+    "description": "Sprawdź gęstość słów kluczowych w tekście. Darmowe narzędzie online do analizy gęstości fraz z natychmiastowym wynikiem.",
+    "keywords": [
+      "sprawdzanie gęstości fraz kluczowych",
+      "sprawdzanie gęstości słów kluczowych",
+      "narzędzie tekstowe"
+    ]
+  }
+}

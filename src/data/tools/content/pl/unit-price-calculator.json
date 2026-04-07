@@ -1,0 +1,47 @@
+{
+  "toolId": "unit-price-calculator",
+  "locale": "pl",
+  "slug": "kalkulator-ceny-za-jednostke",
+  "h1": "Kalkulator ceny za jednostkę",
+  "title": "Kalkulator ceny za jednostkę",
+  "shortDescription": "Porównaj cenę za jednostkę na podstawie ceny całkowitej i ilości — szybkie wyniki, proste pola i praktyczne przykłady.",
+  "overview": "Porównuj cenę za jednostkę na podstawie ceny całkowitej i ilości. Ta strona zapewnia szybki wynik dzięki praktycznemu narzędziu i prostemu przebiegowi obliczeń. Treść jest stworzona dla osób szukających darmowej odpowiedzi online, szybkich wyników w przeglądarce i użytecznego, długiego opisu pod SEO.",
+  "howItWorks": [
+    "Wpisz wymagane dane do formularza.",
+    "Obliczenie, przeliczenie lub transformacja uruchamia się natychmiast w przeglądarce.",
+    "Sprawdź wynik i skorzystaj z powiązanych narzędzi, jeśli potrzebujesz kolejnego kroku."
+  ],
+  "examples": [
+    {
+      "title": "Przykład 1",
+      "input": "12 za 3 jednostki",
+      "output": "4 za jednostkę",
+      "description": "Realistyczny przykład kalkulatora ceny jednostkowej dla codziennego zapytania."
+    },
+    {
+      "title": "Przykład 2",
+      "input": "12 za 3 jednostki",
+      "output": "4 za jednostkę",
+      "description": "Kolejny praktyczny przypadek użycia dla organicznego ruchu z długiego ogona."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Jak dokładne jest to narzędzie?",
+      "answer": "Wynik jest liczony bezpośrednio na podstawie wzoru lub logiki po stronie przeglądarki używanej przez to narzędzie."
+    },
+    {
+      "question": "Czy mogę używać tego narzędzia na telefonie?",
+      "answer": "Tak. Strona działa na komputerach i urządzeniach mobilnych dzięki prostemu układowi pól i wyniku."
+    }
+  ],
+  "seo": {
+    "title": "Kalkulator ceny za jednostkę",
+    "description": "Porównaj cenę za jednostkę na podstawie ceny całkowitej i ilości. Darmowy kalkulator ceny jednostkowej online z natychmiastowymi wynikami.",
+    "keywords": [
+      "kalkulator ceny za jednostkę",
+      "kalkulator ceny jednostkowej",
+      "narzędzie kalkulatory"
+    ]
+  }
+}

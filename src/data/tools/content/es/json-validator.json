@@ -1,0 +1,47 @@
+{
+  "toolId": "json-validator",
+  "locale": "es",
+  "slug": "validador-json",
+  "h1": "Validador JSON",
+  "title": "Validador JSON",
+  "shortDescription": "Valida JSON y detecta errores al instante con resultados rápidos, entradas simples y ejemplos prácticos.",
+  "overview": "Valida JSON y detecta errores al instante. Esta página ofrece una respuesta rápida con una herramienta útil y un flujo de resultados sencillo. Está pensada para usuarios que buscan una respuesta gratis en línea, resultados rápidos en el navegador y contenido práctico de herramientas para búsquedas long-tail.",
+  "howItWorks": [
+    "Introduce el valor o texto requerido en el formulario.",
+    "La conversión, cálculo o transformación se ejecuta al instante en el navegador.",
+    "Revisa el resultado y continúa con herramientas relacionadas si necesitas otro paso."
+  ],
+  "examples": [
+    {
+      "title": "Ejemplo 1",
+      "input": "{\"items\":[1,2,3]}",
+      "output": "JSON válido",
+      "description": "Un ejemplo realista de validador JSON para una consulta de búsqueda habitual."
+    },
+    {
+      "title": "Ejemplo 2",
+      "input": "{\"items\":[1,2,3]}",
+      "output": "JSON válido",
+      "description": "Otro caso práctico de uso para atraer tráfico orgánico long-tail."
+    }
+  ],
+  "faq": [
+    {
+      "question": "¿Qué precisión tiene esta herramienta?",
+      "answer": "El resultado se calcula directamente a partir de la fórmula o de la lógica en el navegador que utiliza esta herramienta."
+    },
+    {
+      "question": "¿Puedo usar esta herramienta en el móvil?",
+      "answer": "Sí. La página funciona en pantallas de escritorio y móviles con un diseño sencillo de entrada y resultados."
+    }
+  ],
+  "seo": {
+    "title": "Validador JSON",
+    "description": "Valida JSON y detecta errores al instante. Validador JSON online gratis con resultados inmediatos.",
+    "keywords": [
+      "validador json",
+      "validador json",
+      "developer-tools tool"
+    ]
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "toolId": "html-link-extractor",
+  "locale": "pl",
+  "slug": "ekstraktor-linkow-html",
+  "h1": "Ekstraktor linków HTML",
+  "title": "Ekstraktor linków HTML",
+  "shortDescription": "Wyodrębnij linki, tekst kotwicy i metadane rel z kodu HTML.",
+  "metaTitle": "Ekstraktor linków HTML | Wyodrębnianie linków z HTML",
+  "metaDescription": "Wyodrębnij z HTML wartości href, tekst kotwicy, atrybuty rel i target szybko oraz bezpiecznie w przeglądarce.",
+  "intro": "Użyj tego narzędzia, aby wyciągnąć linki, tekst kotwicy i metadane rel z dowolnego fragmentu HTML. Działa lokalnie w przeglądarce, więc jest szybkie i bezpieczne.",
+  "overview": "Wklej HTML i otrzymaj uporządkowaną listę linków z adresami href, widocznym tekstem, wartościami rel, atrybutami target oraz innymi przydatnymi danymi. To praktyczne narzędzie do audytu odnośników, przeglądu treści i tworzenia spisu linków.",
+  "howItWorks": [
+    "Wklej HTML do pola wejściowego.",
+    "Narzędzie skanuje znaczniki anchor i inne elementy linków w kodzie.",
+    "Wyodrębnia href, tekst, rel, target i powiązane metadane.",
+    "Sprawdź wynik i skopiuj go, gdy potrzebujesz."
+  ],
+  "useCases": [
+    "Audyt linków wewnętrznych i zewnętrznych na stronie.",
+    "Wyodrębnianie tekstu kotwicy do analiz SEO i treści.",
+    "Sprawdzanie atrybutów rel, takich jak nofollow, sponsored i ugc.",
+    "Zamiana surowego HTML w spis linków do dokumentacji.",
+    "Wykrywanie pustych linków, błędnych wzorców i podejrzanego kodu."
+  ],
+  "examples": [
+    {
+      "title": "Podstawowe wyodrębnianie linku",
+      "input": "<a href=\"https://example.com\" rel=\"nofollow\">Odwiedź stronę</a>",
+      "output": "href: https://example.com | text: Odwiedź stronę | rel: nofollow",
+      "description": "Wyodrębnia adres URL, tekst kotwicy i wartość rel z jednego linku."
+    },
+    {
+      "title": "Wiele linków",
+      "input": "<p><a href=\"/o-nas\">O nas</a> i <a href=\"/kontakt\" target=\"_blank\">Kontakt</a></p>",
+      "output": "znaleziono 2 linki",
+      "description": "Zwraca wszystkie znaczniki anchor wraz z ich kluczowymi atrybutami."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Co robi Ekstraktor linków HTML?",
+      "answer": "Przeszukuje HTML i wyodrębnia dane linków, takie jak href, tekst kotwicy, atrybuty rel oraz target."
+    },
+    {
+      "question": "Czy działa w przeglądarce?",
+      "answer": "Tak. Narzędzie jest przeznaczone do działania po stronie klienta i nie wymaga zewnętrznych API."
+    },
+    {
+      "question": "Czy potrafi odczytać atrybuty rel?",
+      "answer": "Tak. Odczytuje metadane rel, w tym popularne wartości nofollow, sponsored i ugc."
+    },
+    {
+      "question": "Czy HTML jest obsługiwany bezpiecznie?",
+      "answer": "Narzędzie uwzględnia bezpieczeństwo XSS i służy do lokalnego przetwarzania wklejonego HTML."
+    }
+  ],
+  "uiLabels": {
+    "copy": "Kopiuj",
+    "copied": "Skopiowano",
+    "input": "HTML input",
+    "output": "Extracted links",
+    "placeholder": "Wklej tutaj HTML, aby wyodrębnić linki",
+    "indent": "Wcięcie",
+    "removeComments": "Usuń komentarze",
+    "preview": "Podgląd",
+    "source": "Źródło",
+    "sanitizedHtml": "Oczyszczony HTML",
+    "plainText": "Zwykły tekst",
+    "summary": "Podsumowanie",
+    "total": "Razem",
+    "links": "Linki",
+    "images": "Obrazy",
+    "errors": "Błędy",
+    "warnings": "Ostrzeżenia",
+    "valid": "Poprawny",
+    "invalid": "Niepoprawny",
+    "href": "href",
+    "text": "Tekst",
+    "rel": "rel",
+    "target": "Target",
+    "alt": "Alt",
+    "width": "Szerokość",
+    "height": "Wysokość",
+    "empty": "Pusto",
+    "outputReady": "Wynik gotowy",
+    "cleanedHtml": "Oczyszczony HTML",
+    "formattedHtml": "Sformatowany HTML",
+    "minifiedHtml": "Zminifikowany HTML",
+    "markdown": "Markdown",
+    "extractedImages": "Wyodrębnione obrazy",
+    "extractedLinks": "Wyodrębnione linki",
+    "validationSummary": "Podsumowanie walidacji",
+    "prettyHtml": "Czytelny HTML",
+    "encodedText": "Tekst zakodowany"
+  },
+  "seo": {
+    "title": "Ekstraktor linków HTML",
+    "description": "Szybko wyodrębniaj z HTML wartości href, tekst kotwicy, rel i target w przeglądarce.",
+    "keywords": [
+      "ekstraktor linków HTML",
+      "wyodrębnianie linków z HTML",
+      "ekstraktor tekstu kotwicy",
+      "ekstraktor rel",
+      "narzędzia HTML",
+      "parser HTML w przeglądarce"
+    ]
+  }
+}

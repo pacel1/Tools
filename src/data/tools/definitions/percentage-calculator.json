@@ -1,0 +1,23 @@
+{
+  "id": "percentage-calculator",
+  "type": "calculator",
+  "category": "calculators",
+  "componentName": "PercentageCalculatorTool",
+  "logicModule": "percentage-calculator",
+  "inputSchema": "percentageCalculatorInputSchema",
+  "outputSchema": "percentageCalculatorOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "bmi-calculator",
+    "age-calculator",
+    "loan-payment-calculator",
+    "days-between-dates-calculator"
+  ],
+  "seoPriority": 0.98
+}

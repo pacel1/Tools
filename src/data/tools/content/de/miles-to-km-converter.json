@@ -1,0 +1,47 @@
+{
+  "toolId": "miles-to-km-converter",
+  "locale": "de",
+  "slug": "meilen-in-kilometer-umrechner",
+  "h1": "Meilen-in-Kilometer-Umrechner",
+  "title": "Meilen-in-Kilometer-Umrechner",
+  "shortDescription": "Wandle Meilen sofort in Kilometer um – mit schnellen Ergebnissen, einfacher Eingabe und praktischen Beispielen.",
+  "overview": "Wandle Meilen sofort in Kilometer um. Diese Seite liefert eine schnelle Antwort mit einem praktischen Hilfswerkzeug und einem einfachen Ablauf bis zum Ergebnis. Sie richtet sich an Nutzer, die eine kostenlose Online-Antwort, schnelle Ergebnisse im Browser und praxisnahe Long-Tail-Inhalte zu einem nützlichen Umrechner suchen.",
+  "howItWorks": [
+    "Gib den gewünschten Wert oder Text in das Formular ein.",
+    "Die Umrechnung, Berechnung oder Transformation läuft sofort im Browser.",
+    "Prüfe das Ergebnis und nutze bei Bedarf passende verwandte Tools für den nächsten Schritt."
+  ],
+  "examples": [
+    {
+      "title": "Beispiel 1",
+      "input": "10 Meilen",
+      "output": "16,0934 Kilometer",
+      "description": "Ein realistisches Beispiel für die Umrechnung von Meilen in Kilometer für eine alltägliche Suche."
+    },
+    {
+      "title": "Beispiel 2",
+      "input": "10 Meilen",
+      "output": "16,0934 Kilometer",
+      "description": "Ein weiteres praktisches Anwendungsbeispiel für organischen Long-Tail-Traffic."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Wie genau ist dieses Tool?",
+      "answer": "Das Ergebnis wird direkt aus der Formel oder der im Browser ausgeführten Logik dieses Tools berechnet."
+    },
+    {
+      "question": "Kann ich dieses Tool auf dem Smartphone nutzen?",
+      "answer": "Ja. Die Seite funktioniert auf Desktop- und Mobilgeräten mit einem einfachen Eingabe- und Ergebnislayout."
+    }
+  ],
+  "seo": {
+    "title": "Meilen-in-Kilometer-Umrechner",
+    "description": "Wandle Meilen sofort in Kilometer um. Kostenloser Online-Meilen-zu-Kilometer-Umrechner mit sofortigen Ergebnissen.",
+    "keywords": [
+      "meilen in kilometer umrechner",
+      "meilen zu kilometer",
+      "umrechner tool"
+    ]
+  }
+}

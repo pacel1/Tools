@@ -1,0 +1,47 @@
+{
+  "toolId": "character-counter",
+  "locale": "de",
+  "slug": "zeichenzaehler",
+  "h1": "Zeichenzähler",
+  "title": "Zeichenzähler",
+  "shortDescription": "Zeichen in Texten sofort zählen – schnell, einfach und mit praktischen Beispielen.",
+  "overview": "Zeichen in Texten sofort zählen. Diese Seite liefert eine schnelle Antwort mit einem praktischen Tool und einem einfachen Ergebnisablauf. Der Inhalt richtet sich an Nutzer, die eine kostenlose Online-Antwort, schnelle browserbasierte Ergebnisse und praktische Long-Tail-Inhalte suchen.",
+  "howItWorks": [
+    "Gib den benötigten Text in das Formular ein.",
+    "Die Umrechnung, Berechnung oder Verarbeitung läuft sofort im Browser.",
+    "Prüfe das Ergebnis und nutze bei Bedarf weitere passende Tools."
+  ],
+  "examples": [
+    {
+      "title": "Beispiel 1",
+      "input": "Produktbeschreibungstext",
+      "output": "Zeichenanzahl",
+      "description": "Ein realistisches Beispiel für den Zeichenzähler bei einer alltäglichen Suchanfrage."
+    },
+    {
+      "title": "Beispiel 2",
+      "input": "Produktbeschreibungstext",
+      "output": "Zeichenanzahl",
+      "description": "Ein weiterer praktischer Anwendungsfall für organischen Long-Tail-Traffic."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Wie genau ist dieses Tool?",
+      "answer": "Das Ergebnis wird direkt auf Grundlage der Formel oder der browserseitigen Logik dieses Tools berechnet."
+    },
+    {
+      "question": "Kann ich dieses Tool auf dem Handy verwenden?",
+      "answer": "Ja. Die Seite funktioniert auf Desktop- und Mobilgeräten mit einem einfachen Eingabe- und Ergebnislayout."
+    }
+  ],
+  "seo": {
+    "title": "Zeichenzähler",
+    "description": "Zeichen in Texten sofort zählen. Kostenloser Online-Zeichenzähler mit sofortigen Ergebnissen.",
+    "keywords": [
+      "zeichenzähler",
+      "zeichenzähler",
+      "textwerkzeug"
+    ]
+  }
+}

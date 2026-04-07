@@ -1,0 +1,47 @@
+{
+  "toolId": "base64-encoder",
+  "locale": "de",
+  "slug": "base64-kodierer",
+  "h1": "Base64-Kodierer",
+  "title": "Base64-Kodierer",
+  "shortDescription": "Text sofort in Base64 kodieren – mit schnellen Ergebnissen, einfacher Eingabe und praktischen Beispielen.",
+  "overview": "Kodieren Sie Text sofort in Base64. Diese Seite liefert eine schnelle Antwort mit einem praktischen Online-Tool und einem einfachen Ergebnisablauf. Die Inhalte richten sich an Nutzer, die eine kostenlose Online-Lösung, schnelle Browser-Ergebnisse und praxisnahe Long-Tail-Inhalte suchen.",
+  "howItWorks": [
+    "Geben Sie den erforderlichen Text oder Wert in das Formular ein.",
+    "Die Umwandlung, Berechnung oder Transformation läuft sofort im Browser.",
+    "Prüfen Sie das Ergebnis und nutzen Sie bei Bedarf passende Folge-Tools."
+  ],
+  "examples": [
+    {
+      "title": "Beispiel 1",
+      "input": "hello world",
+      "output": "aGVsbG8gd29ybGQ=",
+      "description": "Ein realistisches Base64-Kodierer-Beispiel für eine alltägliche Suchanfrage."
+    },
+    {
+      "title": "Beispiel 2",
+      "input": "hello world",
+      "output": "aGVsbG8gd29ybGQ=",
+      "description": "Ein weiteres praktisches Anwendungsbeispiel für organischen Long-Tail-Traffic."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Wie genau ist dieses Tool?",
+      "answer": "Das Ergebnis wird direkt aus der Formel oder der browserseitigen Logik dieses Tools berechnet."
+    },
+    {
+      "question": "Kann ich dieses Tool auf dem Smartphone nutzen?",
+      "answer": "Ja. Die Seite funktioniert auf Desktop- und Mobilgeräten mit einem einfachen Eingabe- und Ergebnislayout."
+    }
+  ],
+  "seo": {
+    "title": "Base64-Kodierer",
+    "description": "Text sofort in Base64 kodieren. Kostenloser Base64-Kodierer online mit sofortigen Ergebnissen.",
+    "keywords": [
+      "base64-kodierer",
+      "base64-kodierung",
+      "entwickler-tool"
+    ]
+  }
+}

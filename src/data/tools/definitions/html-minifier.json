@@ -1,0 +1,23 @@
+{
+  "id": "html-minifier",
+  "type": "developer-tool",
+  "category": "html-tools",
+  "componentName": "HtmlMinifierTool",
+  "logicModule": "html-minifier",
+  "inputSchema": "htmlMinifierInputSchema",
+  "outputSchema": "htmlMinifierOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "html-formatter",
+    "html-viewer",
+    "html-to-text",
+    "html-escape"
+  ],
+  "seoPriority": 0.92
+}

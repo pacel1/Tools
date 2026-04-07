@@ -1,0 +1,47 @@
+{
+  "toolId": "percentage-decrease-calculator",
+  "locale": "de",
+  "slug": "prozentsatz-senkungsrechner",
+  "h1": "Prozentsatz-Senkungsrechner",
+  "title": "Prozentsatz-Senkungsrechner",
+  "shortDescription": "Berechne einen Wert nach einer prozentualen Senkung mit schnellen Ergebnissen, einfachen Eingaben und praktischen Beispielen.",
+  "overview": "Berechne einen Wert nach einer prozentualen Senkung. Diese Seite liefert eine schnelle Antwort mit einem praktischen Online-Tool und einem einfachen Ergebnisablauf. Sie richtet sich an Nutzer, die eine kostenlose Antwort im Browser, sofortige Ergebnisse und praktische Long-Tail-Inhalte suchen.",
+  "howItWorks": [
+    "Gib den benötigten Wert oder Text in das Formular ein.",
+    "Die Umrechnung, Berechnung oder Transformation läuft sofort im Browser.",
+    "Prüfe das Ergebnis und nutze bei Bedarf verwandte Tools für den nächsten Schritt."
+  ],
+  "examples": [
+    {
+      "title": "Beispiel 1",
+      "input": "120 reduziert um 15 %",
+      "output": "102",
+      "description": "Ein realistisches Beispiel für den prozentualen Senkungsrechner bei einer alltäglichen Suchanfrage."
+    },
+    {
+      "title": "Beispiel 2",
+      "input": "120 reduziert um 15 %",
+      "output": "102",
+      "description": "Ein weiterer praktischer Anwendungsfall für organischen Long-Tail-Traffic."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Wie genau ist dieses Tool?",
+      "answer": "Das Ergebnis wird direkt aus der Formel oder der browserseitigen Logik dieses Tools berechnet."
+    },
+    {
+      "question": "Kann ich das Tool auf dem Smartphone nutzen?",
+      "answer": "Ja. Die Seite funktioniert auf Desktop- und Mobilgeräten mit einem einfachen Eingabe- und Ergebnislayout."
+    }
+  ],
+  "seo": {
+    "title": "Prozentsatz-Senkungsrechner",
+    "description": "Berechne einen Wert nach einer prozentualen Senkung. Kostenloser Online-Rechner mit sofortigen Ergebnissen.",
+    "keywords": [
+      "prozentsatz-senkungsrechner",
+      "prozent senkung rechner",
+      "rechner tool"
+    ]
+  }
+}

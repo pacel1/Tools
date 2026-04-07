@@ -1,0 +1,24 @@
+{
+  "id": "base64-encoder",
+  "title": "Base64 encoder",
+  "shortDescription": "Encode plain text into Base64 for quick developer workflows.",
+  "type": "developer-tool",
+  "category": "developer-tools",
+  "seoPriority": 0.82,
+  "promptContext": "Build a simple text-to-Base64 encoder with a textarea input, instant output and copy-friendly result panel.",
+  "inputFields": [
+    {
+      "name": "text",
+      "label": "Text to encode",
+      "type": "textarea",
+      "required": true
+    }
+  ],
+  "outputFields": [
+    {
+      "name": "summary",
+      "label": "Base64 output",
+      "type": "text"
+    }
+  ]
+}

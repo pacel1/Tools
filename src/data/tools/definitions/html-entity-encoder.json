@@ -1,0 +1,23 @@
+{
+  "id": "html-entity-encoder",
+  "type": "developer-tool",
+  "category": "html-tools",
+  "componentName": "HtmlEntityEncoderTool",
+  "logicModule": "html-entity-encoder",
+  "inputSchema": "htmlEntityEncoderInputSchema",
+  "outputSchema": "htmlEntityEncoderOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "html-formatter",
+    "html-minifier",
+    "html-viewer",
+    "html-to-text"
+  ],
+  "seoPriority": 0.85
+}

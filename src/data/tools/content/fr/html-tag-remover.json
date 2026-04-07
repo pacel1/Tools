@@ -1,0 +1,108 @@
+{
+  "toolId": "html-tag-remover",
+  "locale": "fr",
+  "slug": "suppresseur-balises-html",
+  "h1": "Suppresseur de balises HTML",
+  "title": "Suppresseur de balises HTML",
+  "shortDescription": "Supprimez les balises HTML tout en conservant un texte lisible à partir du contenu d’origine.",
+  "metaTitle": "Suppresseur de balises HTML | HTML en texte brut",
+  "metaDescription": "Supprimez les balises HTML en ligne et conservez un texte lisible. Nettoyez vos extraits HTML en toute sécurité dans le navigateur, sans API externe.",
+  "intro": "Collez du code HTML et obtenez immédiatement un texte clair et lisible. Cet outil fonctionne dans le navigateur, supprime les balises et conserve le contenu visible, sans appel à une API externe.",
+  "overview": "Le Suppresseur de balises HTML est un utilitaire côté client simple pour transformer du HTML en texte brut. Collez un extrait, une page complète ou du contenu enrichi copié, et l’outil supprime les balises tout en conservant les mots lisibles et, autant que possible, les retours à la ligne. Il est utile pour nettoyer du contenu, extraire du texte pour des notes, préparer des extraits pour la recherche ou comparer du texte sans balisage. Le traitement s’effectue localement dans votre navigateur pour plus de rapidité et de sécurité.",
+  "howItWorks": [
+    "Collez le HTML dans le champ de saisie.",
+    "L’outil analyse le balisage localement dans le navigateur.",
+    "Les balises HTML sont supprimées et le texte lisible est extrait.",
+    "Copiez le résultat en texte brut pour le réutiliser ailleurs."
+  ],
+  "useCases": [
+    "Convertir des extraits HTML en texte brut.",
+    "Nettoyer du contenu copié avant de le coller dans un e-mail ou un chat.",
+    "Extraire le texte lisible de modèles ou de code.",
+    "Supprimer le balisage pour l’analyse de texte ou la préparation à l’indexation.",
+    "Prévisualiser rapidement le texte derrière un bloc HTML."
+  ],
+  "examples": [
+    {
+      "title": "Paragraphe simple",
+      "input": "<p>Bonjour <strong>monde</strong> !</p>",
+      "output": "Bonjour monde !",
+      "description": "Texte de base avec mise en forme en ligne supprimée."
+    },
+    {
+      "title": "Liens et listes",
+      "input": "<div><a href=\"/docs\">Documentation</a><ul><li>Un</li><li>Deux</li></ul></div>",
+      "output": "Documentation\nUn\nDeux",
+      "description": "Le texte lisible est conservé tandis que les balises sont supprimées."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Le texte contenu dans les balises est-il conservé ?",
+      "answer": "Oui. L’outil supprime le balisage HTML tout en conservant le texte lisible à l’intérieur des éléments."
+    },
+    {
+      "question": "Le traitement se fait-il dans le navigateur ?",
+      "answer": "Oui. Il utilise uniquement une logique côté client, donc votre HTML est traité localement, sans API externe."
+    },
+    {
+      "question": "Le contenu script et style est-il aussi supprimé ?",
+      "answer": "L’outil se concentre sur l’extraction sécurisée du texte lisible, donc les contenus non visibles peuvent être ignorés ou supprimés selon le comportement du parser."
+    },
+    {
+      "question": "Les retours à la ligne et les espaces sont-ils conservés ?",
+      "answer": "L’outil essaie de préserver la lisibilité, mais le format exact peut varier selon la structure du HTML."
+    }
+  ],
+  "uiLabels": {
+    "copy": "Copier",
+    "copied": "Copié",
+    "input": "HTML input",
+    "output": "Text without tags",
+    "placeholder": "Collez le HTML ici...",
+    "indent": "Retrait",
+    "removeComments": "Supprimer les commentaires",
+    "preview": "Aperçu",
+    "source": "Source",
+    "sanitizedHtml": "HTML nettoyé",
+    "plainText": "Texte brut",
+    "summary": "Résumé",
+    "total": "Total",
+    "links": "Liens",
+    "images": "Images",
+    "errors": "Erreurs",
+    "warnings": "Avertissements",
+    "valid": "Valide",
+    "invalid": "Non valide",
+    "href": "Href",
+    "text": "Texte",
+    "rel": "Rel",
+    "target": "Cible",
+    "alt": "Alt",
+    "width": "Largeur",
+    "height": "Hauteur",
+    "empty": "Vide",
+    "outputReady": "Résultat prêt",
+    "cleanedHtml": "HTML nettoyé",
+    "formattedHtml": "HTML formaté",
+    "minifiedHtml": "HTML minifié",
+    "markdown": "Markdown",
+    "extractedImages": "Images extraites",
+    "extractedLinks": "Liens extraits",
+    "validationSummary": "Résumé de validation",
+    "prettyHtml": "HTML lisible",
+    "encodedText": "Texte encodé"
+  },
+  "seo": {
+    "title": "Suppresseur de balises HTML | HTML en texte brut",
+    "description": "Supprimez les balises HTML en ligne et conservez un texte lisible. Nettoyez vos extraits HTML en toute sécurité dans le navigateur, sans API externe.",
+    "keywords": [
+      "suppresseur de balises html",
+      "html en texte brut",
+      "supprimer balises html",
+      "html vers texte",
+      "nettoyer html",
+      "convertir html en texte"
+    ]
+  }
+}

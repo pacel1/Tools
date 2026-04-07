@@ -1,0 +1,108 @@
+{
+  "toolId": "html-image-extractor",
+  "locale": "de",
+  "slug": "html-bild-extraktor",
+  "h1": "HTML-Bildextraktor",
+  "title": "HTML-Bildextraktor",
+  "shortDescription": "Extrahiere Bildquellen, Alt-Text und Maße aus HTML.",
+  "metaTitle": "HTML-Bildextraktor | Bild-URLs, Alt-Text und Maße extrahieren",
+  "metaDescription": "Extrahiere Bildquellen, Alt-Text, Breite und Höhe direkt im Browser aus HTML. Sicher, lokal und einfach zu bedienen.",
+  "intro": "Mit diesem HTML-Bildextraktor kannst du schnell Bild-URLs, Alternativtext und Maße aus beliebigem HTML-Code ziehen. Er läuft direkt im Browser, ohne externe APIs, und hilft dir beim Prüfen von Bild-Tags.",
+  "overview": "Füge HTML ein und extrahiere alle img-Tags in eine klare, lesbare Liste. Das Tool zeigt src, alt, width und height an, damit du Barrierefreiheit prüfen, Inhalte kontrollieren und Bilddaten schneller weiterverwenden kannst. Da alles lokal verarbeitet wird, ist es auch für sensibles Markup eine sichere Lösung.",
+  "howItWorks": [
+    "Füge dein HTML in das Eingabefeld ein.",
+    "Das Tool durchsucht das Markup nach img-Elementen.",
+    "Es extrahiert Bild-URLs und gängige Attribute wie alt, width und height.",
+    "Prüfe die strukturierte Ausgabe und kopiere die Ergebnisse bei Bedarf."
+  ],
+  "useCases": [
+    "Barrierefreiheit von Bildern durch Prüfung der Alt-Texte auditieren.",
+    "Bild-URLs aus exportiertem HTML sammeln.",
+    "Breite und Höhe vor der Veröffentlichung kontrollieren.",
+    "Bildverweise aus CMS- oder E-Mail-Vorlagen extrahieren.",
+    "QA bei Seiten mit vielen Bildern beschleunigen."
+  ],
+  "examples": [
+    {
+      "title": "Einfaches Bild-Tag",
+      "input": "<img src=\"/images/banner.jpg\" alt=\"Startseiten-Banner\" width=\"1200\" height=\"400\">",
+      "output": "src: /images/banner.jpg | alt: Startseiten-Banner | width: 1200 | height: 400",
+      "description": "Ein einzelnes img-Tag wird in strukturierte Felder aufgeteilt."
+    },
+    {
+      "title": "Lazy-loaded Bild",
+      "input": "<img data-src=\"photo.jpg\" alt=\"Produktfoto\">",
+      "output": "src: photo.jpg | alt: Produktfoto",
+      "description": "Hilfreich, um alternative Bildquellen in Vorlagen zu prüfen."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Lädt dieses Tool mein HTML hoch?",
+      "answer": "Nein. Es arbeitet vollständig im Browser, daher wird dein HTML nicht an einen Server gesendet."
+    },
+    {
+      "question": "Welche Bildattribute werden extrahiert?",
+      "answer": "Das Tool konzentriert sich auf src, alt, width und height und kann bei Bedarf auch weitere nützliche Bildattribute anzeigen."
+    },
+    {
+      "question": "Kann unsicheres HTML analysiert werden?",
+      "answer": "Ja, das Parsen erfolgt lokal und clientseitig, dennoch solltest du nicht vertrauenswürdiges Markup immer sorgfältig prüfen."
+    },
+    {
+      "question": "Werden CSS-Hintergrundbilder erkannt?",
+      "answer": "Nein. Es extrahiert Bild-Tags aus HTML, keine Hintergrundbilder aus CSS."
+    }
+  ],
+  "uiLabels": {
+    "copy": "Kopieren",
+    "copied": "Kopiert",
+    "input": "HTML-Eingabe",
+    "output": "Extrahierte Bilder",
+    "placeholder": "HTML hier einfügen",
+    "indent": "Einrückung",
+    "removeComments": "Kommentare entfernen",
+    "preview": "Vorschau",
+    "source": "Quelle",
+    "sanitizedHtml": "Bereinigtes HTML",
+    "plainText": "Klartext",
+    "summary": "Zusammenfassung",
+    "total": "Gesamt",
+    "links": "Links",
+    "images": "Bilder",
+    "errors": "Fehler",
+    "warnings": "Warnungen",
+    "valid": "Gültig",
+    "invalid": "Ungültig",
+    "href": "Href",
+    "text": "Text",
+    "rel": "Rel",
+    "target": "Target",
+    "alt": "Alt",
+    "width": "Breite",
+    "height": "Höhe",
+    "empty": "Keine Bilder gefunden",
+    "outputReady": "Ausgabe bereit",
+    "cleanedHtml": "Bereinigtes HTML",
+    "formattedHtml": "Formatiertes HTML",
+    "minifiedHtml": "Minifiziertes HTML",
+    "markdown": "Markdown",
+    "extractedImages": "Extrahierte Bilder",
+    "extractedLinks": "Extrahierte Links",
+    "validationSummary": "Validierungsübersicht",
+    "prettyHtml": "Lesbares HTML",
+    "encodedText": "Kodierter Text"
+  },
+  "seo": {
+    "title": "HTML-Bildextraktor",
+    "description": "Extrahiere Bildquellen, Alt-Text, Breite und Höhe aus HTML mit einem sicheren Browser-Tool.",
+    "keywords": [
+      "HTML-Bildextraktor",
+      "src aus HTML extrahieren",
+      "Alt-Text",
+      "Bildmaße",
+      "img-Tags analysieren",
+      "HTML-Tools"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "favicon-generator",
+  "type": "generator",
+  "category": "generators",
+  "componentName": "FaviconGeneratorTool",
+  "logicModule": "favicon-generator",
+  "inputSchema": "faviconGeneratorInputSchema",
+  "outputSchema": "faviconGeneratorOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "meta-tag-generator",
+    "qr-code-generator",
+    "placeholder-image-generator",
+    "gradient-generator"
+  ],
+  "seoPriority": 0.92
+}

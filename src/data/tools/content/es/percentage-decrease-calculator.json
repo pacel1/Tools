@@ -1,0 +1,47 @@
+{
+  "toolId": "percentage-decrease-calculator",
+  "locale": "es",
+  "slug": "calculadora-de-disminucion-porcentual",
+  "h1": "Calculadora de disminución porcentual",
+  "title": "Calculadora de disminución porcentual",
+  "shortDescription": "Calcula un valor después de una disminución porcentual con resultados rápidos, entradas sencillas y ejemplos prácticos.",
+  "overview": "Calcula un valor después de una disminución porcentual. Esta página ofrece una respuesta rápida con una herramienta útil en línea y un flujo de resultados sencillo. Está pensada para personas que buscan una solución gratuita en el navegador, resultados instantáneos y contenido práctico de cola larga.",
+  "howItWorks": [
+    "Introduce el valor o texto necesario en el formulario.",
+    "La conversión, el cálculo o la transformación se ejecuta al instante en el navegador.",
+    "Revisa el resultado y continúa con herramientas relacionadas si necesitas otro paso."
+  ],
+  "examples": [
+    {
+      "title": "Ejemplo 1",
+      "input": "120 reducido en 15%",
+      "output": "102",
+      "description": "Un ejemplo realista de calculadora de disminución porcentual para una búsqueda cotidiana."
+    },
+    {
+      "title": "Ejemplo 2",
+      "input": "120 reducido en 15%",
+      "output": "102",
+      "description": "Otro caso práctico para tráfico orgánico de cola larga."
+    }
+  ],
+  "faq": [
+    {
+      "question": "¿Qué precisión tiene esta herramienta?",
+      "answer": "El resultado se calcula directamente a partir de la fórmula o de la lógica ejecutada en el navegador por esta herramienta."
+    },
+    {
+      "question": "¿Puedo usar esta herramienta en el móvil?",
+      "answer": "Sí. La página funciona tanto en escritorio como en móviles con un diseño sencillo de entrada y resultado."
+    }
+  ],
+  "seo": {
+    "title": "Calculadora de disminución porcentual",
+    "description": "Calcula un valor después de una disminución porcentual. Calculadora gratuita en línea con resultados instantáneos.",
+    "keywords": [
+      "calculadora de disminucion porcentual",
+      "calculadora de reduccion porcentual",
+      "herramienta calculadoras"
+    ]
+  }
+}

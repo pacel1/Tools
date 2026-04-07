@@ -1,0 +1,32 @@
+{
+  "common": {
+    "siteName": "ConvertBase.app",
+    "siteTagline": "Outils en ligne, convertisseurs et générateurs gratuits",
+    "footerTagline": "Retrouvez convertisseurs, calculateurs, générateurs, outils d'image et outils pour développeurs au même endroit.",
+    "heroEyebrow": "Outils en ligne gratuits",
+    "heroTitle": "Des centaines d'outils en ligne utiles au même endroit",
+    "heroDescription": "Parcourez des convertisseurs, calculateurs, générateurs et outils de texte avec des résultats rapides et des interfaces simples. Conçu pour répondre aux recherches utiles du quotidien et aux requêtes longue traîne à forte intention.",
+    "heroPanelLabel": "Outils les plus recherchés",
+    "heroPanelItem1": "Convertisseurs d'unités, de poids, de longueur et de formats",
+    "heroPanelItem2": "Calculateurs pour des calculs rapides et des comparaisons utiles",
+    "heroPanelItem3": "Générateurs et outils de texte pour le travail de contenu",
+    "heroPanelItem4": "Pages utiles centrées sur un problème précis",
+    "categoriesEyebrow": "Catégories",
+    "categoriesTitle": "Choisissez une catégorie et trouvez plus vite l'outil exact dont vous avez besoin",
+    "featuredEyebrow": "Outils mis en avant",
+    "featuredTitle": "Outils populaires disponibles maintenant",
+    "footerLinks": {
+      "about": "À propos",
+      "privacy": "Confidentialité",
+      "terms": "Conditions",
+      "cookies": "Cookies",
+      "disclaimer": "Avertissement",
+      "contact": "Contact"
+    },
+    "cookieBanner": {
+      "title": "Cookies, analytics et publicités",
+      "description": "ConvertBase.app utilise des cookies pour faire fonctionner le site, mesurer le trafic avec Google Analytics et afficher des annonces via Google AdSense. En continuant, vous acceptez cette utilisation.",
+      "accept": "Accepter"
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "toolId": "lbs-to-kg-converter",
+  "locale": "de",
+  "slug": "pfund-in-kilogramm-umrechner",
+  "h1": "Pfund-in-Kilogramm-Umrechner",
+  "title": "Pfund-in-Kilogramm-Umrechner",
+  "shortDescription": "Wandle Pfund sofort in Kilogramm um – schnell, einfach und mit praktischen Beispielen.",
+  "overview": "Wandle Pfund sofort in Kilogramm um. Diese Seite liefert eine schnelle Antwort mit einem praktischen Online-Tool und einem einfachen Ergebnisablauf. Sie richtet sich an Nutzer, die eine kostenlose Online-Antwort, schnelle Ergebnisse im Browser und hilfreiche Long-Tail-Inhalte zur Umrechnung von Pfund in Kilogramm suchen.",
+  "howItWorks": [
+    "Gib den gewünschten Wert in das Formular ein.",
+    "Die Umrechnung, Berechnung oder Transformation läuft sofort im Browser.",
+    "Prüfe das Ergebnis und nutze bei Bedarf passende Folgetools."
+  ],
+  "examples": [
+    {
+      "title": "Beispiel 1",
+      "input": "10 Pfund",
+      "output": "4,5359 Kilogramm",
+      "description": "Ein realistisches Beispiel für eine alltägliche Suche nach der Umrechnung von Pfund in Kilogramm."
+    },
+    {
+      "title": "Beispiel 2",
+      "input": "10 Pfund",
+      "output": "4,5359 Kilogramm",
+      "description": "Ein weiterer praktischer Anwendungsfall für organischen Long-Tail-Traffic."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Wie genau ist dieses Tool?",
+      "answer": "Das Ergebnis wird direkt aus der Formel oder der browserseitigen Logik dieses Tools berechnet."
+    },
+    {
+      "question": "Kann ich dieses Tool auf dem Handy verwenden?",
+      "answer": "Ja. Die Seite funktioniert auf Desktop- und Mobilgeräten mit einem einfachen Eingabe- und Ergebnislayout."
+    }
+  ],
+  "seo": {
+    "title": "Pfund-in-Kilogramm-Umrechner",
+    "description": "Wandle Pfund sofort in Kilogramm um. Kostenloser Online-Pfund-in-Kilogramm-Umrechner mit sofortigen Ergebnissen.",
+    "keywords": [
+      "Pfund in Kilogramm umrechner",
+      "Pfund zu Kilogramm",
+      "Umrechnungstool"
+    ]
+  }
+}

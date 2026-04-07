@@ -1,0 +1,23 @@
+{
+  "id": "html-link-extractor",
+  "type": "developer-tool",
+  "category": "html-tools",
+  "componentName": "HtmlLinkExtractorTool",
+  "logicModule": "html-link-extractor",
+  "inputSchema": "htmlLinkExtractorInputSchema",
+  "outputSchema": "htmlLinkExtractorOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "html-formatter",
+    "html-minifier",
+    "html-viewer",
+    "html-to-text"
+  ],
+  "seoPriority": 0.88
+}

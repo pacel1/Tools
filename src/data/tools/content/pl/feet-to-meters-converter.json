@@ -1,0 +1,47 @@
+{
+  "toolId": "feet-to-meters-converter",
+  "locale": "pl",
+  "slug": "konwerter-stop-na-metry",
+  "h1": "Konwerter stóp na metry",
+  "title": "Konwerter stóp na metry",
+  "shortDescription": "Błyskawicznie przelicz stopy na metry dzięki szybkim wynikom, prostym danym wejściowym i praktycznym przykładom.",
+  "overview": "Przeliczaj stopy na metry natychmiast. Ta strona zapewnia szybki wynik dzięki prostemu narzędziu użytkowemu i przejrzystemu przepływowi wyników. Strona jest skierowana do osób szukających darmowej odpowiedzi online, szybkich wyników w przeglądarce oraz praktycznych treści narzędziowych z długim ogonem wyszukiwania.",
+  "howItWorks": [
+    "Wpisz wymaganą wartość lub tekst w formularzu.",
+    "Przeliczenie, obliczenie lub transformacja odbywa się natychmiast w przeglądarce.",
+    "Sprawdź wynik i skorzystaj z powiązanych narzędzi, jeśli potrzebujesz kolejnego kroku."
+  ],
+  "examples": [
+    {
+      "title": "Przykład 1",
+      "input": "6 stóp",
+      "output": "1,8288 metra",
+      "description": "Realistyczny przykład konwertera stóp na metry dla codziennego zapytania."
+    },
+    {
+      "title": "Przykład 2",
+      "input": "6 stóp",
+      "output": "1,8288 metra",
+      "description": "Kolejne praktyczne zastosowanie dla organicznego ruchu z długich zapytań."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Jak dokładne jest to narzędzie?",
+      "answer": "Wynik jest obliczany bezpośrednio na podstawie wzoru lub logiki działającej po stronie przeglądarki w tym narzędziu."
+    },
+    {
+      "question": "Czy mogę używać tego narzędzia na telefonie?",
+      "answer": "Tak. Strona działa zarówno na komputerach, jak i na ekranach mobilnych, oferując prosty układ pola wejściowego i wyniku."
+    }
+  ],
+  "seo": {
+    "title": "Konwerter stóp na metry",
+    "description": "Przeliczaj stopy na metry natychmiast. Darmowy internetowy konwerter stóp na metry z natychmiastowymi wynikami.",
+    "keywords": [
+      "konwerter stóp na metry",
+      "konwerter stóp na metry",
+      "narzędzie do konwersji"
+    ]
+  }
+}

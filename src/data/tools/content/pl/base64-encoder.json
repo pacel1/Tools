@@ -1,0 +1,47 @@
+{
+  "toolId": "base64-encoder",
+  "locale": "pl",
+  "slug": "enkoder-base64",
+  "h1": "Enkoder Base64",
+  "title": "Enkoder Base64",
+  "shortDescription": "Zakoduj tekst do Base64 natychmiast — szybko, wygodnie i z praktycznymi przykładami.",
+  "overview": "Zakoduj tekst do Base64 natychmiast. Ta strona zapewnia szybki wynik dzięki prostemu narzędziu online i przejrzystemu przepływowi działania. Treść jest przygotowana dla osób szukających darmowego rozwiązania online, szybkich rezultatów w przeglądarce oraz praktycznych informacji dopasowanych do dłuższych zapytań.",
+  "howItWorks": [
+    "Wpisz wymagany tekst lub wartość do formularza.",
+    "Konwersja, obliczenie lub transformacja odbywa się natychmiast w przeglądarce.",
+    "Sprawdź wynik i przejdź do powiązanych narzędzi, jeśli potrzebujesz kolejnego kroku."
+  ],
+  "examples": [
+    {
+      "title": "Przykład 1",
+      "input": "hello world",
+      "output": "aGVsbG8gd29ybGQ=",
+      "description": "Realistyczny przykład enkodera Base64 dla codziennego zapytania."
+    },
+    {
+      "title": "Przykład 2",
+      "input": "hello world",
+      "output": "aGVsbG8gd29ybGQ=",
+      "description": "Kolejny praktyczny przypadek użycia pod ruch organiczny z długiego ogona."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Jak dokładne jest to narzędzie?",
+      "answer": "Wynik jest obliczany bezpośrednio na podstawie wzoru lub logiki po stronie przeglądarki używanej przez to narzędzie."
+    },
+    {
+      "question": "Czy mogę używać tego narzędzia na telefonie?",
+      "answer": "Tak. Strona działa na ekranach komputerów i urządzeń mobilnych, oferując prosty układ wejścia i wyniku."
+    }
+  ],
+  "seo": {
+    "title": "Enkoder Base64",
+    "description": "Koduj tekst do Base64 natychmiast. Darmowy enkoder Base64 online z natychmiastowym wynikiem.",
+    "keywords": [
+      "enkoder base64",
+      "kodowanie base64",
+      "narzędzie dla deweloperów"
+    ]
+  }
+}

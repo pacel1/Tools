@@ -1,0 +1,47 @@
+{
+  "toolId": "gb-to-mb-converter",
+  "locale": "fr",
+  "slug": "convertisseur-gb-en-mb",
+  "h1": "Convertisseur GB en MB",
+  "title": "Convertisseur GB en MB",
+  "shortDescription": "Convertissez les gigaoctets en megaoctets instantanement avec le ratio binaire 1024.",
+  "overview": "Convertissez les gigaoctets en megaoctets instantanement. Cet outil utilise le ratio binaire 1 GB = 1024 MB, souvent employe pour les tailles de fichiers et le stockage.",
+  "howItWorks": [
+    "Saisissez le nombre de gigaoctets dans le formulaire.",
+    "La conversion s execute instantanement dans le navigateur avec le ratio 1024.",
+    "Consultez le resultat puis utilisez des outils associes si besoin."
+  ],
+  "examples": [
+    {
+      "title": "Exemple 1",
+      "input": "2 gigaoctets",
+      "output": "2048 megaoctets",
+      "description": "Exemple pratique pour les conversions binaires de stockage."
+    },
+    {
+      "title": "Exemple 2",
+      "input": "1 gigaoctet",
+      "output": "1024 megaoctets",
+      "description": "Utile pour les fichiers, les sauvegardes et la capacite disque."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Quel ratio utilise cet outil ?",
+      "answer": "Cet outil utilise le ratio binaire, donc 1 GB = 1024 MB."
+    },
+    {
+      "question": "Puis-je utiliser cet outil sur mobile ?",
+      "answer": "Oui. La page fonctionne sur ordinateur et sur mobile avec une interface simple."
+    }
+  ],
+  "seo": {
+    "title": "Convertisseur GB en MB",
+    "description": "Convertisseur GB en MB gratuit en ligne avec ratio binaire 1024 et resultat instantane.",
+    "keywords": [
+      "convertisseur gb en mb",
+      "1 gb en mb 1024",
+      "convertisseur stockage"
+    ]
+  }
+}

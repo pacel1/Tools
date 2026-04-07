@@ -1,0 +1,47 @@
+{
+  "toolId": "url-encoder",
+  "locale": "es",
+  "slug": "codificador-url",
+  "h1": "Codificador de URL",
+  "title": "Codificador de URL",
+  "shortDescription": "Codifica texto para usarlo de forma segura en URLs con resultados rápidos, entradas simples y ejemplos prácticos.",
+  "overview": "Codifica texto para usarlo de forma segura en URLs. Esta página ofrece una respuesta rápida con una utilidad práctica y un flujo de resultado sencillo. Está pensada para usuarios que buscan una respuesta gratuita en línea, resultados rápidos en el navegador y contenido útil de larga cola.",
+  "howItWorks": [
+    "Introduce el valor o texto requerido en el formulario.",
+    "La conversión, el cálculo o la transformación se ejecuta al instante en el navegador.",
+    "Revisa el resultado y sigue con herramientas relacionadas si necesitas otro paso."
+  ],
+  "examples": [
+    {
+      "title": "Ejemplo 1",
+      "input": "hello world?x=1&y=2",
+      "output": "hello%20world%3Fx%3D1%26y%3D2",
+      "description": "Un ejemplo realista de codificador de URL para una consulta cotidiana."
+    },
+    {
+      "title": "Ejemplo 2",
+      "input": "hello world?x=1&y=2",
+      "output": "hello%20world%3Fx%3D1%26y%3D2",
+      "description": "Otro caso de uso práctico para tráfico orgánico de cola larga."
+    }
+  ],
+  "faq": [
+    {
+      "question": "¿Qué precisión tiene esta herramienta?",
+      "answer": "El resultado se calcula directamente a partir de la fórmula o la lógica del navegador que utiliza esta herramienta."
+    },
+    {
+      "question": "¿Puedo usar esta herramienta en el móvil?",
+      "answer": "Sí. La página funciona en pantallas de escritorio y móviles con un diseño simple de entrada y resultado."
+    }
+  ],
+  "seo": {
+    "title": "Codificador de URL",
+    "description": "Codifica texto para usarlo de forma segura en URLs. Codificador de URL online gratuito con resultados instantáneos.",
+    "keywords": [
+      "codificador url",
+      "codificador de url",
+      "herramientas para desarrolladores"
+    ]
+  }
+}

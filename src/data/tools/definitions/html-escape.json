@@ -1,0 +1,23 @@
+{
+  "id": "html-escape",
+  "type": "developer-tool",
+  "category": "html-tools",
+  "componentName": "HtmlEscapeTool",
+  "logicModule": "html-escape",
+  "inputSchema": "htmlEscapeInputSchema",
+  "outputSchema": "htmlEscapeOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "html-formatter",
+    "html-minifier",
+    "html-viewer",
+    "html-to-text"
+  ],
+  "seoPriority": 0.87
+}

@@ -1,0 +1,47 @@
+{
+  "toolId": "compound-interest-calculator",
+  "locale": "de",
+  "slug": "zinseszinsrechner",
+  "h1": "Zinseszinsrechner",
+  "title": "Zinseszinsrechner",
+  "shortDescription": "Berechnen Sie das Wachstum von Zinseszinsen über die Zeit mit schnellen Ergebnissen, einfachen Eingaben und praktischen Beispielen.",
+  "overview": "Berechnen Sie das Wachstum von Zinseszinsen über die Zeit. Diese Seite liefert mit einem praktischen Tool und einem einfachen Ergebnisablauf schnell eine Antwort. Sie richtet sich an Nutzer, die eine kostenlose Online-Antwort, schnelle browserbasierte Ergebnisse und hilfreiche Long-Tail-Inhalte suchen.",
+  "howItWorks": [
+    "Geben Sie den erforderlichen Wert oder Text in das Formular ein.",
+    "Die Umrechnung, Berechnung oder Umwandlung läuft sofort im Browser.",
+    "Prüfen Sie das Ergebnis und nutzen Sie bei Bedarf verwandte Tools für den nächsten Schritt."
+  ],
+  "examples": [
+    {
+      "title": "Beispiel 1",
+      "input": "5000, 5 %, 10 Jahre",
+      "output": "Wachstum über die Zeit",
+      "description": "Ein realistisches Beispiel für den Zinseszinsrechner bei einer alltäglichen Suchanfrage."
+    },
+    {
+      "title": "Beispiel 2",
+      "input": "5000, 5 %, 10 Jahre",
+      "output": "Wachstum über die Zeit",
+      "description": "Ein weiterer praktischer Anwendungsfall für organischen Long-Tail-Traffic."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Wie genau ist dieses Tool?",
+      "answer": "Das Ergebnis wird direkt aus der Formel oder der browserseitigen Logik dieses Tools berechnet."
+    },
+    {
+      "question": "Kann ich dieses Tool auf dem Smartphone verwenden?",
+      "answer": "Ja. Die Seite funktioniert auf Desktop- und Mobilgeräten mit einem einfachen Eingabe- und Ergebnislayout."
+    }
+  ],
+  "seo": {
+    "title": "Zinseszinsrechner",
+    "description": "Berechnen Sie das Wachstum von Zinseszinsen über die Zeit. Kostenloser Online-Zinseszinsrechner mit sofortigen Ergebnissen.",
+    "keywords": [
+      "Zinseszinsrechner",
+      "Zinseszinsrechner",
+      "Rechner-Tool"
+    ]
+  }
+}

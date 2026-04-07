@@ -1,0 +1,47 @@
+{
+  "toolId": "url-decoder",
+  "locale": "de",
+  "slug": "url-dekoder",
+  "h1": "URL-Dekodierer",
+  "title": "URL-Dekodierer",
+  "shortDescription": "Dekodiere URL-codierten Text sofort – mit schnellen Ergebnissen, einfacher Bedienung und praktischen Beispielen.",
+  "overview": "Dekodiere URL-codierten Text sofort. Diese Seite liefert eine schnelle Antwort mit einem praktischen Tool und einem einfachen Ergebnisablauf. Sie richtet sich an Nutzer, die eine kostenlose Online-Antwort, schnelle browserbasierte Ergebnisse und praxisnahe Long-Tail-Inhalte suchen.",
+  "howItWorks": [
+    "Gib den benötigten Wert oder Text in das Formular ein.",
+    "Die Umwandlung, Berechnung oder Transformation läuft sofort im Browser.",
+    "Prüfe das Ergebnis und nutze bei Bedarf anschließend verwandte Tools für den nächsten Schritt."
+  ],
+  "examples": [
+    {
+      "title": "Beispiel 1",
+      "input": "hello%20world%3Fx%3D1%26y%3D2",
+      "output": "hello world?x=1&y=2",
+      "description": "Ein realistisches URL-Dekoder-Beispiel für eine alltägliche Suchanfrage."
+    },
+    {
+      "title": "Beispiel 2",
+      "input": "hello%20world%3Fx%3D1%26y%3D2",
+      "output": "hello world?x=1&y=2",
+      "description": "Ein weiteres praktisches Anwendungsbeispiel für organischen Long-Tail-Traffic."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Wie genau ist dieses Tool?",
+      "answer": "Das Ergebnis wird direkt aus der Formel oder der browserseitigen Logik dieses Tools berechnet."
+    },
+    {
+      "question": "Kann ich dieses Tool auf dem Handy verwenden?",
+      "answer": "Ja. Die Seite funktioniert auf Desktop- und Mobilgeräten mit einem einfachen Eingabe- und Ergebnislayout."
+    }
+  ],
+  "seo": {
+    "title": "URL-Dekodierer",
+    "description": "Dekodiere URL-codierten Text sofort. Kostenloser Online-URL-Dekodierer mit sofortigen Ergebnissen.",
+    "keywords": [
+      "url dekodierer",
+      "url decoder",
+      "developer-tools tool"
+    ]
+  }
+}

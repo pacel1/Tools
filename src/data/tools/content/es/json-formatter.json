@@ -1,0 +1,47 @@
+{
+  "toolId": "json-formatter",
+  "locale": "es",
+  "slug": "formateador-json",
+  "h1": "Formateador JSON",
+  "title": "Formateador JSON",
+  "shortDescription": "Formatea y valida JSON con sangría legible y errores inmediatos.",
+  "overview": "El formateador JSON analiza el JSON pegado, muestra una versión legible y también devuelve una salida minificada. Es ideal para páginas de herramientas para desarrolladores porque puede funcionar sin backend y, al mismo tiempo, ofrecer contenido SEO sólido con ejemplos y solución de problemas.",
+  "howItWorks": [
+    "Pega el JSON y elige el tamaño de sangría.",
+    "El analizador valida la entrada y muestra un error si el JSON no es válido.",
+    "Cuando es correcto, la herramienta devuelve el JSON formateado, la versión minificada y el número de líneas."
+  ],
+  "examples": [
+    {
+      "title": "Limpieza de un payload de API",
+      "input": "{\"status\":\"ok\",\"items\":[1,2]}",
+      "output": "JSON con formato legible",
+      "description": "Facilita revisar logs y payloads durante la depuración."
+    },
+    {
+      "title": "Compartir salida compacta",
+      "input": "JSON formateado",
+      "output": "JSON minificado",
+      "description": "Útil cuando necesitas la representación más pequeña posible."
+    }
+  ],
+  "faq": [
+    {
+      "question": "¿Cambia el orden de las claves?",
+      "answer": "No. El formateador conserva el orden de las claves del objeto tal como lo devuelve JavaScript tras el análisis."
+    },
+    {
+      "question": "¿Puede reparar JSON roto automáticamente?",
+      "answer": "Este formateador de ejemplo valida y da formato al JSON válido. Si la entrada está rota, devuelve un error para que el usuario pueda corregir el origen con seguridad."
+    }
+  ],
+  "seo": {
+    "title": "Formateador JSON",
+    "description": "Formateador y validador JSON online con salida pretty print y minificación.",
+    "keywords": [
+      "formateador json",
+      "validador json",
+      "pretty print json"
+    ]
+  }
+}

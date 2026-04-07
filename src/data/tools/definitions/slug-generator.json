@@ -1,0 +1,23 @@
+{
+  "id": "slug-generator",
+  "type": "text-tool",
+  "category": "text-tools",
+  "componentName": "SlugGeneratorTool",
+  "logicModule": "slug-generator",
+  "inputSchema": "slugGeneratorInputSchema",
+  "outputSchema": "slugGeneratorOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "word-counter",
+    "case-converter",
+    "character-counter",
+    "keyword-density-checker"
+  ],
+  "seoPriority": 0.93
+}

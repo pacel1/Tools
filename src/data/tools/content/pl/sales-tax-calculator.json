@@ -1,0 +1,47 @@
+{
+  "toolId": "sales-tax-calculator",
+  "locale": "pl",
+  "slug": "kalkulator-podatku-sprzedazowego",
+  "h1": "Kalkulator podatku od sprzedaży",
+  "title": "Kalkulator podatku od sprzedaży",
+  "shortDescription": "Oblicz cenę końcową po doliczeniu podatku od sprzedaży dzięki szybkim wynikom, prostym danym wejściowym i praktycznym przykładom.",
+  "overview": "Oblicz cenę końcową po doliczeniu podatku od sprzedaży. Ta strona zapewnia szybą odpowiedź dzięki praktycznemu narzędziu i prostemu procesowi wyświetlania wyniku. Strona jest przeznaczona dla osób szukających darmowej odpowiedzi online, szybkich wyników w przeglądarce i praktycznych treści narzędziowych z długiego ogona wyszukiwań.",
+  "howItWorks": [
+    "Wpisz wymagane dane lub tekst do formularza.",
+    "Konwersja, obliczenie lub przekształcenie odbywa się natychmiast w przeglądarce.",
+    "Sprawdź wynik i przejdź do podobnych narzędzi, jeśli potrzebujesz kolejnego kroku."
+  ],
+  "examples": [
+    {
+      "title": "Przykład 1",
+      "input": "100 z podatkiem 8%",
+      "output": "108",
+      "description": "Realistyczny przykład użycia kalkulatora podatku od sprzedaży dla codziennego zapytania."
+    },
+    {
+      "title": "Przykład 2",
+      "input": "100 z podatkiem 8%",
+      "output": "108",
+      "description": "Kolejny praktyczny przypadek użycia pod kątem ruchu organicznego z długich fraz."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Jak dokładne jest to narzędzie?",
+      "answer": "Wynik jest obliczany bezpośrednio na podstawie wzoru lub logiki po stronie przeglądarki używanej przez to narzędzie."
+    },
+    {
+      "question": "Czy mogę używać tego narzędzia na telefonie?",
+      "answer": "Tak. Strona działa zarówno na komputerach, jak i na ekranach mobilnych, oferując prosty układ danych wejściowych i wyniku."
+    }
+  ],
+  "seo": {
+    "title": "Kalkulator podatku od sprzedaży",
+    "description": "Oblicz cenę końcową po doliczeniu podatku od sprzedaży. Darmowy kalkulator podatku od sprzedaży online z natychmiastowymi wynikami.",
+    "keywords": [
+      "kalkulator podatku od sprzedaży",
+      "kalkulator podatku od sprzedaży",
+      "narzędzie kalkulatory"
+    ]
+  }
+}

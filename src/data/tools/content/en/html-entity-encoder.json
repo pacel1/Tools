@@ -1,0 +1,107 @@
+{
+  "toolId": "html-entity-encoder",
+  "locale": "en",
+  "slug": "html-entity-encoder",
+  "h1": "HTML Entity Encoder",
+  "title": "HTML Entity Encoder",
+  "shortDescription": "Encode special characters and symbols as HTML entities.",
+  "metaTitle": "HTML Entity Encoder | Encode Text as HTML Entities",
+  "metaDescription": "Convert special characters, symbols, and unsafe characters into HTML entities instantly in your browser.",
+  "intro": "Use this HTML entity encoder to turn special characters into safe HTML entities for web pages, templates, and snippets. It runs entirely in your browser and helps prevent HTML interpretation when you need to display raw text.",
+  "overview": "The HTML Entity Encoder converts characters such as <, >, &, quotes, and other symbols into their corresponding HTML entities. This is useful when you want to show text literally inside HTML without it being parsed as markup. The tool is client-side only, fast, and designed for safe text handling in developer workflows.",
+  "howItWorks": [
+    "Paste or type the text you want to encode.",
+    "The tool converts reserved characters and symbols into HTML entities.",
+    "Copy the encoded output and use it in HTML, templates, docs, or code examples."
+  ],
+  "useCases": [
+    "Escaping text before inserting it into HTML content.",
+    "Preparing code samples or snippets for documentation.",
+    "Displaying user input safely in previews or templates.",
+    "Encoding special symbols for CMS content or email HTML.",
+    "Preventing markup from being interpreted as tags."
+  ],
+  "examples": [
+    {
+      "title": "Basic encoding",
+      "input": "5 < 10 & 7 > 3",
+      "output": "5 &lt; 10 &amp; 7 &gt; 3",
+      "description": "Reserved HTML characters are converted to entities."
+    },
+    {
+      "title": "Quotes and symbols",
+      "input": "\"Hello\" & 'World'",
+      "output": "&quot;Hello&quot; &amp; &#39;World&#39;",
+      "description": "Quotes and ampersands are safely encoded."
+    }
+  ],
+  "faq": [
+    {
+      "question": "What does HTML entity encoding do?",
+      "answer": "It replaces special characters with HTML entities so browsers display them as text instead of interpreting them as HTML."
+    },
+    {
+      "question": "Is this tool safe to use in the browser?",
+      "answer": "Yes. It uses client-side logic only and does not send your text to any server or external API."
+    },
+    {
+      "question": "Does it encode all characters?",
+      "answer": "It always encodes reserved HTML characters and may encode additional symbols depending on the selected implementation."
+    },
+    {
+      "question": "When should I use HTML entity encoding?",
+      "answer": "Use it when you need to show raw text, user input, or code safely inside an HTML document."
+    }
+  ],
+  "uiLabels": {
+    "copy": "Copy",
+    "copied": "Copied",
+    "input": "Text input",
+    "output": "Encoded output",
+    "placeholder": "Paste text to encode",
+    "indent": "Indent",
+    "removeComments": "Remove comments",
+    "preview": "Preview",
+    "source": "Source",
+    "sanitizedHtml": "Sanitized HTML",
+    "plainText": "Plain text",
+    "summary": "Summary",
+    "total": "Total",
+    "links": "Links",
+    "images": "Images",
+    "errors": "Errors",
+    "warnings": "Warnings",
+    "valid": "Valid",
+    "invalid": "Invalid",
+    "href": "href",
+    "text": "Text",
+    "rel": "rel",
+    "target": "target",
+    "alt": "alt",
+    "width": "width",
+    "height": "height",
+    "empty": "Empty",
+    "outputReady": "Output ready",
+    "cleanedHtml": "Cleaned HTML",
+    "formattedHtml": "Formatted HTML",
+    "minifiedHtml": "Minified HTML",
+    "markdown": "Markdown",
+    "extractedImages": "Extracted images",
+    "extractedLinks": "Extracted links",
+    "validationSummary": "Validation summary",
+    "prettyHtml": "Pretty HTML",
+    "encodedText": "Encoded text"
+  },
+  "seo": {
+    "title": "HTML Entity Encoder",
+    "description": "Encode special characters and symbols as HTML entities instantly in your browser.",
+    "keywords": [
+      "html entity encoder",
+      "encode html entities",
+      "escape html characters",
+      "html escape tool",
+      "text to html entities",
+      "html encoder"
+    ]
+  }
+}

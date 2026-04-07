@@ -1,0 +1,47 @@
+{
+  "toolId": "base64-decoder",
+  "locale": "es",
+  "slug": "decodificador-base64",
+  "h1": "Decodificador Base64",
+  "title": "Decodificador Base64",
+  "shortDescription": "Decodifica texto Base64 al instante con resultados rapidos, entradas sencillas y ejemplos practicos.",
+  "overview": "Decodifica texto Base64 al instante. Esta pagina ofrece una respuesta rapida con una herramienta util practica y un flujo de resultados sencillo. Esta pagina esta orientada a usuarios que quieren una respuesta gratis en linea, resultados rapidos en el navegador y contenido practico de utilidad para busquedas de cola larga.",
+  "howItWorks": [
+    "Introduce el valor o texto necesario en el formulario.",
+    "La conversion, calculo o transformacion se ejecuta al instante en el navegador.",
+    "Revisa el resultado y sigue con herramientas relacionadas si necesitas otro paso."
+  ],
+  "examples": [
+    {
+      "title": "Ejemplo 1",
+      "input": "aGVsbG8gd29ybGQ=",
+      "output": "hello world",
+      "description": "Un ejemplo realista de decodificador Base64 para una busqueda cotidiana."
+    },
+    {
+      "title": "Ejemplo 2",
+      "input": "aGVsbG8gd29ybGQ=",
+      "output": "hello world",
+      "description": "Otro caso de uso practico para trafico organico de cola larga."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Que precision tiene esta herramienta?",
+      "answer": "El resultado se calcula directamente a partir de la formula o de la logica en el navegador que usa esta herramienta."
+    },
+    {
+      "question": "Puedo usar esta herramienta en movil?",
+      "answer": "Si. La pagina funciona en pantallas de escritorio y moviles con un diseño sencillo de entrada y resultado."
+    }
+  ],
+  "seo": {
+    "title": "Decodificador Base64",
+    "description": "Decodifica texto Base64 al instante. Decodificador Base64 gratis en linea con resultados instantaneos.",
+    "keywords": [
+      "decodificador base64",
+      "base64 decoder",
+      "developer-tools tool"
+    ]
+  }
+}

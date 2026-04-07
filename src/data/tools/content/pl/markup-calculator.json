@@ -1,0 +1,47 @@
+{
+  "toolId": "markup-calculator",
+  "locale": "pl",
+  "slug": "kalkulator-marzy",
+  "h1": "Kalkulator marży",
+  "title": "Kalkulator marży",
+  "shortDescription": "Oblicz marżę procentową i cenę sprzedaży końcowej dzięki szybkim wynikom, prostym danym wejściowym i praktycznym przykładom.",
+  "overview": "Oblicz marżę procentową i cenę sprzedaży końcowej. Ta strona daje szybką odpowiedź dzięki praktycznemu narzędziu i prostemu przebiegowi wyniku. Strona jest skierowana do użytkowników, którzy szukają bezpłatnej odpowiedzi online, szybkich wyników w przeglądarce i praktycznych treści narzędziowych o długim ogonie.",
+  "howItWorks": [
+    "Wprowadź wymagane wartości do formularza.",
+    "Obliczenie lub przekształcenie uruchamia się natychmiast w przeglądarce.",
+    "Sprawdź wynik i przejdź do powiązanych narzędzi, jeśli potrzebujesz kolejnego kroku."
+  ],
+  "examples": [
+    {
+      "title": "Przykład 1",
+      "input": "Koszt 50, marża 30%",
+      "output": "65",
+      "description": "Realistyczny przykład kalkulatora marży do codziennego wyszukiwania."
+    },
+    {
+      "title": "Przykład 2",
+      "input": "Koszt 50, marża 30%",
+      "output": "65",
+      "description": "Kolejny praktyczny przypadek użycia dla ruchu organicznego z długiego ogona."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Jak dokładne jest to narzędzie?",
+      "answer": "Wynik jest obliczany bezpośrednio na podstawie wzoru lub logiki po stronie przeglądarki używanej przez to narzędzie."
+    },
+    {
+      "question": "Czy mogę używać tego narzędzia na telefonie?",
+      "answer": "Tak. Strona działa na ekranach komputerów i urządzeń mobilnych, ma prosty układ z polem wejściowym i wynikiem."
+    }
+  ],
+  "seo": {
+    "title": "Kalkulator marży",
+    "description": "Oblicz marżę procentową i cenę sprzedaży końcowej. Darmowy kalkulator marży online z natychmiastowymi wynikami.",
+    "keywords": [
+      "kalkulator marży",
+      "kalkulator marzy",
+      "narzędzia kalkulatorowe"
+    ]
+  }
+}

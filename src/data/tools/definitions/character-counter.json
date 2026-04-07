@@ -1,0 +1,23 @@
+{
+  "id": "character-counter",
+  "type": "text-tool",
+  "category": "text-tools",
+  "componentName": "CharacterCounterTool",
+  "logicModule": "character-counter",
+  "inputSchema": "characterCounterInputSchema",
+  "outputSchema": "characterCounterOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "word-counter",
+    "case-converter",
+    "slug-generator",
+    "keyword-density-checker"
+  ],
+  "seoPriority": 0.93
+}

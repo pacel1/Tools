@@ -1,0 +1,23 @@
+{
+  "id": "miles-to-km-converter",
+  "type": "converter",
+  "category": "converters",
+  "componentName": "MilesToKmConverterTool",
+  "logicModule": "miles-to-km-converter",
+  "inputSchema": "milesToKmConverterInputSchema",
+  "outputSchema": "milesToKmConverterOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "celsius-to-fahrenheit-converter",
+    "fahrenheit-to-celsius-converter",
+    "km-to-miles-converter",
+    "cm-to-inches-converter"
+  ],
+  "seoPriority": 0.95
+}

@@ -1,0 +1,47 @@
+{
+  "toolId": "age-calculator",
+  "locale": "es",
+  "slug": "calculadora-de-edad",
+  "h1": "Calculadora de edad",
+  "title": "Calculadora de edad",
+  "shortDescription": "Calcula la edad exacta a partir de la fecha de nacimiento con resultados rápidos, entradas sencillas y ejemplos prácticos.",
+  "overview": "Calcula la edad exacta a partir de la fecha de nacimiento. Esta página ofrece una respuesta rápida con una herramienta útil y un flujo de resultados sencillo. Está pensada para usuarios que buscan una respuesta gratuita en línea, resultados rápidos en el navegador y contenido práctico de utilidad para búsquedas de cola larga.",
+  "howItWorks": [
+    "Introduce el valor o texto requerido en el formulario.",
+    "La conversión, el cálculo o la transformación se ejecuta al instante en el navegador.",
+    "Revisa el resultado y continúa con herramientas relacionadas si necesitas otro paso."
+  ],
+  "examples": [
+    {
+      "title": "Ejemplo 1",
+      "input": "1990-05-15",
+      "output": "Edad en años",
+      "description": "Un ejemplo realista de calculadora de edad para una búsqueda cotidiana."
+    },
+    {
+      "title": "Ejemplo 2",
+      "input": "1990-05-15",
+      "output": "Edad en años",
+      "description": "Otro caso práctico de uso para atraer tráfico orgánico de cola larga."
+    }
+  ],
+  "faq": [
+    {
+      "question": "¿Qué precisión tiene esta herramienta?",
+      "answer": "El resultado se calcula directamente a partir de la fórmula o la lógica en el navegador que utiliza esta herramienta."
+    },
+    {
+      "question": "¿Puedo usar esta herramienta en el móvil?",
+      "answer": "Sí. La página funciona en escritorio y en móviles con una interfaz simple de entrada y resultado."
+    }
+  ],
+  "seo": {
+    "title": "Calculadora de edad",
+    "description": "Calcula la edad exacta a partir de la fecha de nacimiento. Calculadora de edad online gratis con resultados instantáneos.",
+    "keywords": [
+      "calculadora de edad",
+      "calcular edad",
+      "herramienta calculadoras"
+    ]
+  }
+}

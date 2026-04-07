@@ -1,0 +1,23 @@
+{
+  "id": "html-formatter",
+  "type": "developer-tool",
+  "category": "html-tools",
+  "componentName": "HtmlFormatterTool",
+  "logicModule": "html-formatter",
+  "inputSchema": "htmlFormatterInputSchema",
+  "outputSchema": "htmlFormatterOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "html-minifier",
+    "html-viewer",
+    "html-to-text",
+    "html-escape"
+  ],
+  "seoPriority": 0.93
+}

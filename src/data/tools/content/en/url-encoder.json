@@ -1,0 +1,47 @@
+{
+  "toolId": "url-encoder",
+  "locale": "en",
+  "slug": "url-encoder",
+  "h1": "URL Encoder",
+  "title": "URL Encoder",
+  "shortDescription": "Encode text for safe use in URLs with fast results, simple inputs and practical examples.",
+  "overview": "Encode text for safe use in URLs. This page gives a fast answer with a practical utility tool and a simple result flow. This page targets users who want a free online answer, fast browser-based results and practical long-tail utility content.",
+  "howItWorks": [
+    "Enter the required value or text into the form.",
+    "The conversion, calculation or transformation runs instantly in the browser.",
+    "Review the result and continue with related tools if you need another step."
+  ],
+  "examples": [
+    {
+      "title": "Example 1",
+      "input": "hello world?x=1&y=2",
+      "output": "hello%20world%3Fx%3D1%26y%3D2",
+      "description": "A realistic url encoder example for an everyday search query."
+    },
+    {
+      "title": "Example 2",
+      "input": "hello world?x=1&y=2",
+      "output": "hello%20world%3Fx%3D1%26y%3D2",
+      "description": "Another practical use case for organic long-tail traffic."
+    }
+  ],
+  "faq": [
+    {
+      "question": "How accurate is this tool?",
+      "answer": "The result is calculated directly from the formula or browser-side logic used by this tool."
+    },
+    {
+      "question": "Can I use this tool on mobile?",
+      "answer": "Yes. The page works on desktop and mobile screens with a simple input and result layout."
+    }
+  ],
+  "seo": {
+    "title": "URL Encoder",
+    "description": "Encode text for safe use in URLs. Free online url encoder with instant results.",
+    "keywords": [
+      "url encoder",
+      "url encoder",
+      "developer-tools tool"
+    ]
+  }
+}

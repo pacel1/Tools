@@ -1,0 +1,47 @@
+{
+  "toolId": "lbs-to-kg-converter",
+  "locale": "fr",
+  "slug": "convertisseur-livres-en-kilogrammes",
+  "h1": "Convertisseur de livres en kilogrammes",
+  "title": "Convertisseur de livres en kilogrammes",
+  "shortDescription": "Convertissez des livres en kilogrammes instantanément avec des résultats rapides, une saisie simple et des exemples pratiques.",
+  "overview": "Convertissez des livres en kilogrammes instantanément. Cette page fournit une réponse rapide grâce à un outil pratique et un flux de résultat simple. Elle s’adresse aux utilisateurs qui recherchent une réponse gratuite en ligne, des résultats rapides dans le navigateur et un contenu utile de longue traîne sur la conversion livres vers kilogrammes.",
+  "howItWorks": [
+    "Saisissez la valeur المطلوبة dans le formulaire.",
+    "La conversion, le calcul ou la transformation s’exécute instantanément dans le navigateur.",
+    "Consultez le résultat et poursuivez avec des outils associés si vous avez besoin d’une autre étape."
+  ],
+  "examples": [
+    {
+      "title": "Exemple 1",
+      "input": "10 livres",
+      "output": "4,5359 kilogrammes",
+      "description": "Un exemple réaliste de convertisseur livres en kilogrammes pour une requête courante."
+    },
+    {
+      "title": "Exemple 2",
+      "input": "10 livres",
+      "output": "4,5359 kilogrammes",
+      "description": "Un autre cas pratique pour capter du trafic organique de longue traîne."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Quelle est la précision de cet outil ?",
+      "answer": "Le résultat est calculé directement à partir de la formule ou de la logique côté navigateur utilisée par cet outil."
+    },
+    {
+      "question": "Puis-je utiliser cet outil sur mobile ?",
+      "answer": "Oui. La page fonctionne sur ordinateur et sur mobile avec une interface simple de saisie et de résultat."
+    }
+  ],
+  "seo": {
+    "title": "Convertisseur de livres en kilogrammes",
+    "description": "Convertissez des livres en kilogrammes instantanément. Convertisseur en ligne gratuit de livres en kilogrammes avec résultats immédiats.",
+    "keywords": [
+      "convertisseur de livres en kilogrammes",
+      "livres en kilogrammes",
+      "outil de conversion"
+    ]
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "toolId": "html-cleaner",
+  "locale": "es",
+  "slug": "limpiador-html",
+  "h1": "Limpiador de HTML",
+  "title": "Limpiador de HTML",
+  "shortDescription": "Limpia marcado inseguro o ruidoso eliminando scripts, comentarios y atributos de riesgo.",
+  "metaTitle": "Limpiador de HTML | Elimina scripts, comentarios y HTML inseguro",
+  "metaDescription": "Limpia HTML online eliminando scripts, comentarios, manejadores de eventos y atributos de riesgo. Sanitizador de HTML rápido y del lado del cliente.",
+  "intro": "Usa este limpiador de HTML para sanear marcado desordenado desde el navegador. Elimina scripts, comentarios y atributos de riesgo para convertir HTML inseguro o ruidoso en una salida más limpia sin enviar datos a un servidor.",
+  "overview": "Limpiador de HTML es una utilidad del lado del cliente para sanear HTML antes de publicarlo, previsualizarlo o reutilizarlo. Ayuda a eliminar vectores XSS comunes, comentarios innecesarios y atributos no deseados sin perder la estructura que necesitas. Es ideal para desarrolladores, editores y cualquier persona que trabaje con marcado pegado o generado.",
+  "howItWorks": [
+    "Pega o carga tu HTML en el campo de entrada.",
+    "La herramienta analiza el marcado en busca de etiquetas inseguras, comentarios y atributos de riesgo.",
+    "Elimina scripts, manejadores de eventos y otros elementos no deseados.",
+    "Revisa el HTML limpio en el panel de salida y cópialo cuando esté listo."
+  ],
+  "useCases": [
+    "Eliminar scripts y manejadores de eventos inline de HTML generado por usuarios.",
+    "Limpiar HTML copiado desde CMS, clientes de correo o procesadores de texto.",
+    "Preparar fragmentos seguros para vistas previas, documentación o demos.",
+    "Quitar comentarios y atributos ruidosos antes de formatear o minificar.",
+    "Inspeccionar y sanear marcado pegado antes de reutilizarlo en un proyecto."
+  ],
+  "examples": [
+    {
+      "title": "Quitar scripts del HTML pegado",
+      "input": "<div onclick=\"alert(1)\"><script>alert('x')</script>Hola<!-- nota --></div>",
+      "output": "<div>Hola</div>",
+      "description": "Conserva el contenido del elemento mientras elimina scripts, comentarios y controladores inseguros."
+    },
+    {
+      "title": "Limpiar atributos ruidosos",
+      "input": "<p style=\"color:red\" data-id=\"1\" onmouseover=\"doBad()\">Texto</p>",
+      "output": "<p style=\"color:red\" data-id=\"1\">Texto</p>",
+      "description": "Elimina manejadores de eventos y deja los atributos no peligrosos cuando están permitidos."
+    }
+  ],
+  "faq": [
+    {
+      "question": "¿Qué elimina el limpiador de HTML?",
+      "answer": "Elimina scripts, comentarios y atributos de riesgo, como los manejadores de eventos inline. El resultado exacto depende de las reglas de saneamiento de la herramienta."
+    },
+    {
+      "question": "¿El HTML se procesa en el servidor?",
+      "answer": "No. Esta herramienta está pensada para funcionar solo en el cliente, así que el HTML puede limpiarse localmente en el navegador."
+    },
+    {
+      "question": "¿Puede corregir HTML inválido?",
+      "answer": "Puede limpiar y normalizar el marcado, pero no es una herramienta completa de reparación. Para arreglos estructurales, combínala con un formateador o validador HTML."
+    },
+    {
+      "question": "¿Elimina todos los atributos?",
+      "answer": "No. Se centra en los atributos inseguros o innecesarios y conserva el marcado útil siempre que sea posible."
+    }
+  ],
+  "uiLabels": {
+    "copy": "Copiar",
+    "copied": "Copiado",
+    "input": "Entrada",
+    "output": "Salida",
+    "placeholder": "Pega HTML aquí...",
+    "indent": "Sangría",
+    "removeComments": "Eliminar comentarios",
+    "preview": "Vista previa",
+    "source": "Fuente",
+    "sanitizedHtml": "HTML saneado",
+    "plainText": "Texto plano",
+    "summary": "Resumen",
+    "total": "Total",
+    "links": "Enlaces",
+    "images": "Imágenes",
+    "errors": "Errores",
+    "warnings": "Advertencias",
+    "valid": "Válido",
+    "invalid": "No válido",
+    "href": "Href",
+    "text": "Texto",
+    "rel": "Rel",
+    "target": "Target",
+    "alt": "Alt",
+    "width": "Ancho",
+    "height": "Alto",
+    "empty": "Vacío",
+    "outputReady": "Salida lista",
+    "cleanedHtml": "HTML limpio",
+    "formattedHtml": "HTML formateado",
+    "minifiedHtml": "HTML minificado",
+    "markdown": "Markdown",
+    "extractedImages": "Imágenes extraídas",
+    "extractedLinks": "Enlaces extraídos",
+    "validationSummary": "Resumen de validación",
+    "prettyHtml": "HTML legible",
+    "encodedText": "Texto codificado"
+  },
+  "seo": {
+    "title": "Limpiador de HTML online | Elimina etiquetas y atributos inseguros",
+    "description": "Limpia HTML online eliminando scripts, comentarios y atributos de riesgo. Limpiador de HTML rápido del lado del cliente para un marcado más seguro.",
+    "keywords": [
+      "limpiador html",
+      "sanear html",
+      "eliminar scripts html",
+      "quitar comentarios html",
+      "limpiar html online",
+      "sanitizador html",
+      "html seguro"
+    ]
+  }
+}

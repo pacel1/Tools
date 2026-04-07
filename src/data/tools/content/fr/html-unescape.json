@@ -1,0 +1,109 @@
+{
+  "toolId": "html-unescape",
+  "locale": "fr",
+  "slug": "dechiffrer-html",
+  "h1": "Déchiffrer le HTML",
+  "title": "Déchiffrer le HTML",
+  "shortDescription": "Décode les entités HTML échappées en balisage ou en texte lisible.",
+  "metaTitle": "Déchiffrer le HTML | Décodeur d’entités HTML",
+  "metaDescription": "Déchiffrez rapidement les entités HTML en texte ou balisage lisible avec un outil local dans le navigateur.",
+  "intro": "Déchiffrez des entités HTML comme &amp;, &lt;, &gt; et &quot; pour afficher immédiatement un HTML lisible ou du texte brut dans votre navigateur.",
+  "overview": "Déchiffrer le HTML transforme les entités échappées en leurs caractères d’origine pour lire, vérifier ou réutiliser facilement le contenu. C’est utile pour les extraits collés, le contenu encodé et le débogage de sorties de modèles ou d’API. L’outil fonctionne côté client pour un résultat rapide, sans envoi de données à un serveur.",
+  "howItWorks": [
+    "Collez du HTML ou du texte échappé dans le champ de saisie.",
+    "L’outil décode les entités HTML courantes comme &amp;, &lt;, &gt;, &quot; et les entités numériques.",
+    "Copiez le résultat déchiffré pour le modifier, le prévisualiser ou le réutiliser."
+  ],
+  "useCases": [
+    "Lire du HTML encodé copié depuis des e-mails, un CMS ou du code source.",
+    "Déboguer des modèles, des réponses d’API ou des fragments de texte échappé.",
+    "Convertir du texte avec entités en contenu lisible avant modification.",
+    "Inspecter du balisage stocké ou transmis sous forme échappée."
+  ],
+  "examples": [
+    {
+      "title": "Décodage d’entités de base",
+      "input": "&lt;strong&gt;Hello &amp; welcome&lt;/strong&gt;",
+      "output": "<strong>Hello & welcome</strong>",
+      "description": "Restaure les balises et symboles échappés en balisage lisible."
+    },
+    {
+      "title": "Guillemets et apostrophes",
+      "input": "&quot;Smart&quot; &amp; &#39;simple&#39;",
+      "output": "\"Smart\" & 'simple'",
+      "description": "Décode les entités de ponctuation courantes utilisées en HTML."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Que fait Déchiffrer le HTML ?",
+      "answer": "Il convertit les entités HTML échappées en caractères normaux pour rendre le texte ou le balisage lisible à nouveau."
+    },
+    {
+      "question": "Est-ce la même chose qu’encoder du HTML ?",
+      "answer": "Non. L’encodage HTML transforme les caractères spéciaux en entités, tandis que le déchiffrement effectue l’opération inverse."
+    },
+    {
+      "question": "L’outil fonctionne-t-il localement dans le navigateur ?",
+      "answer": "Oui. Il est conçu pour une utilisation côté client et ne nécessite aucune API externe."
+    },
+    {
+      "question": "Peut-il décoder les entités numériques ?",
+      "answer": "Oui. Il peut décoder les entités HTML numériques courantes ainsi que les entités nommées."
+    },
+    {
+      "question": "Le résultat peut-il être rendu directement ?",
+      "answer": "Vérifiez toujours le contenu déchiffré avant de l’afficher, surtout s’il provient d’une source non fiable."
+    }
+  ],
+  "uiLabels": {
+    "copy": "Copier",
+    "copied": "Copié",
+    "input": "Entrée",
+    "output": "Sortie",
+    "placeholder": "Collez ici du HTML ou du texte échappé",
+    "indent": "Retrait",
+    "removeComments": "Supprimer les commentaires",
+    "preview": "Aperçu",
+    "source": "Source",
+    "sanitizedHtml": "HTML nettoyé",
+    "plainText": "Texte brut",
+    "summary": "Résumé",
+    "total": "Total",
+    "links": "Liens",
+    "images": "Images",
+    "errors": "Erreurs",
+    "warnings": "Avertissements",
+    "valid": "Valide",
+    "invalid": "Invalide",
+    "href": "Href",
+    "text": "Texte",
+    "rel": "Rel",
+    "target": "Cible",
+    "alt": "Alt",
+    "width": "Largeur",
+    "height": "Hauteur",
+    "empty": "Vide",
+    "outputReady": "Résultat prêt",
+    "cleanedHtml": "HTML nettoyé",
+    "formattedHtml": "HTML formaté",
+    "minifiedHtml": "HTML minifié",
+    "markdown": "Markdown",
+    "extractedImages": "Images extraites",
+    "extractedLinks": "Liens extraits",
+    "validationSummary": "Résumé de validation",
+    "prettyHtml": "HTML lisible",
+    "encodedText": "Texte encodé"
+  },
+  "seo": {
+    "title": "Déchiffrer le HTML",
+    "description": "Déchiffrez les entités HTML en texte ou balisage lisible avec un outil rapide et local dans le navigateur.",
+    "keywords": [
+      "déchiffrer html",
+      "décoder entités html",
+      "décodeur html",
+      "html unescape",
+      "outils html"
+    ]
+  }
+}

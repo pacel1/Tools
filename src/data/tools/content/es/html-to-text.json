@@ -1,0 +1,107 @@
+{
+  "toolId": "html-to-text",
+  "locale": "es",
+  "slug": "html-a-texto",
+  "h1": "HTML a texto",
+  "title": "HTML a texto",
+  "shortDescription": "Extrae texto legible de fragmentos HTML y documentos completos.",
+  "metaTitle": "Convertidor de HTML a texto | Extrae texto plano de HTML",
+  "metaDescription": "Convierte HTML a texto plano al instante en tu navegador. Extrae texto legible de fragmentos o páginas completas de forma segura, sin API externa.",
+  "intro": "Convierte HTML en texto plano limpio y legible directamente en tu navegador. Pega un fragmento o un documento completo, y esta herramienta elimina las etiquetas sin perder el contenido útil.",
+  "overview": "Esta herramienta de HTML a texto es un convertidor rápido del lado del cliente para desarrolladores, redactores y editores de contenido. Elimina el marcado de forma segura, reduce el ruido y devuelve texto plano más fácil de buscar, indexar, citar o reutilizar. Como todo se procesa de forma local, no usa API externas y mantiene el manejo de HTML privado y consciente de XSS.",
+  "howItWorks": [
+    "Pega el HTML en el campo de entrada.",
+    "La herramienta analiza el marcado en el navegador.",
+    "Elimina las etiquetas HTML y devuelve texto legible.",
+    "Copia el texto limpio o úsalo en tu flujo de trabajo."
+  ],
+  "useCases": [
+    "Extraer texto de HTML web para notas o documentación.",
+    "Convertir fragmentos a texto plano para correos, tickets o chats.",
+    "Preparar contenido para indexación, búsqueda o análisis.",
+    "Quitar formato de HTML antes de pegarlo en otra app.",
+    "Previsualizar la versión en texto de una página o componente."
+  ],
+  "examples": [
+    {
+      "title": "Párrafo simple",
+      "input": "<p>Hola <strong>mundo</strong>!</p>",
+      "output": "Hola mundo!",
+      "description": "Las etiquetas se eliminan y el texto sigue siendo legible."
+    },
+    {
+      "title": "Enlaces y listas",
+      "input": "<div><a href=\"/docs\">Documentación</a><ul><li>Uno</li><li>Dos</li></ul></div>",
+      "output": "Documentación\nUno\nDos",
+      "description": "El contenido de texto se conserva en una salida limpia."
+    }
+  ],
+  "faq": [
+    {
+      "question": "¿Esta herramienta conserva las etiquetas HTML?",
+      "answer": "No. Elimina las etiquetas y devuelve solo texto plano."
+    },
+    {
+      "question": "¿La conversión se realiza en el navegador?",
+      "answer": "Sí. La herramienta usa lógica del lado del cliente y no llama a API externas."
+    },
+    {
+      "question": "¿Puedo convertir documentos HTML completos?",
+      "answer": "Sí. Funciona con fragmentos cortos y documentos completos."
+    },
+    {
+      "question": "¿Mi HTML se envía a un servidor?",
+      "answer": "No. El contenido se procesa localmente en tu navegador."
+    }
+  ],
+  "uiLabels": {
+    "copy": "Copiar",
+    "copied": "Copiado",
+    "input": "HTML input",
+    "output": "Texto plano",
+    "placeholder": "Pega HTML aquí...",
+    "indent": "Sangría",
+    "removeComments": "Eliminar comentarios",
+    "preview": "Vista previa",
+    "source": "Fuente",
+    "sanitizedHtml": "HTML saneado",
+    "plainText": "Texto plano",
+    "summary": "Resumen",
+    "total": "Total",
+    "links": "Enlaces",
+    "images": "Imágenes",
+    "errors": "Errores",
+    "warnings": "Avisos",
+    "valid": "Válido",
+    "invalid": "No válido",
+    "href": "Href",
+    "text": "Texto",
+    "rel": "Rel",
+    "target": "Target",
+    "alt": "Alt",
+    "width": "Ancho",
+    "height": "Alto",
+    "empty": "Vacío",
+    "outputReady": "Salida lista",
+    "cleanedHtml": "HTML limpio",
+    "formattedHtml": "HTML formateado",
+    "minifiedHtml": "HTML minimizado",
+    "markdown": "Markdown",
+    "extractedImages": "Imágenes extraídas",
+    "extractedLinks": "Enlaces extraídos",
+    "validationSummary": "Resumen de validación",
+    "prettyHtml": "HTML legible",
+    "encodedText": "Texto codificado"
+  },
+  "seo": {
+    "title": "Convertidor de HTML a texto",
+    "description": "Extrae texto plano de fragmentos HTML y documentos completos al instante en tu navegador.",
+    "keywords": [
+      "html a texto",
+      "html a texto plano",
+      "convertir html a texto",
+      "quitar etiquetas html",
+      "convertidor de texto plano"
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "toolId": "json-minifier",
+  "locale": "de",
+  "slug": "json-minimierer",
+  "h1": "JSON-Minimierer",
+  "title": "JSON-Minimierer",
+  "shortDescription": "JSON online sofort minimieren – mit schnellen Ergebnissen, einfacher Eingabe und praktischen Beispielen.",
+  "overview": "JSON online sofort minimieren. Diese Seite liefert eine schnelle Antwort mit einem praktischen Werkzeug und einem einfachen Ergebnisfluss. Sie richtet sich an Nutzer, die eine kostenlose Online-Lösung, schnelle browserbasierte Ergebnisse und praktische Long-Tail-Inhalte suchen.",
+  "howItWorks": [
+    "Geben Sie den benötigten Wert oder Text in das Formular ein.",
+    "Die Konvertierung, Berechnung oder Umwandlung erfolgt sofort im Browser.",
+    "Prüfen Sie das Ergebnis und nutzen Sie bei Bedarf weitere passende Tools."
+  ],
+  "examples": [
+    {
+      "title": "Beispiel 1",
+      "input": "{\"name\":\"tool\",\"value\":1}",
+      "output": "{\"name\":\"tool\",\"value\":1}",
+      "description": "Ein realistisches Beispiel für einen JSON-Minimierer bei einer alltäglichen Suchanfrage."
+    },
+    {
+      "title": "Beispiel 2",
+      "input": "{\"name\":\"tool\",\"value\":1}",
+      "output": "{\"name\":\"tool\",\"value\":1}",
+      "description": "Ein weiterer praktischer Anwendungsfall für organischen Long-Tail-Traffic."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Wie genau ist dieses Tool?",
+      "answer": "Das Ergebnis wird direkt aus der Formel oder der browserseitigen Logik dieses Tools berechnet."
+    },
+    {
+      "question": "Kann ich dieses Tool auf dem Handy nutzen?",
+      "answer": "Ja. Die Seite funktioniert auf Desktop- und Mobilgeräten mit einem einfachen Eingabe- und Ergebnislayout."
+    }
+  ],
+  "seo": {
+    "title": "JSON-Minimierer",
+    "description": "JSON online sofort minimieren. Kostenloser JSON-Minimierer mit sofortigen Ergebnissen.",
+    "keywords": [
+      "json minimierer",
+      "json minimierer",
+      "entwickler-tools"
+    ]
+  }
+}

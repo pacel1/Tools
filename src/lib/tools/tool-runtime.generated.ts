@@ -1,0 +1,558 @@
+import BmiCalculatorTool from "@/components/tools/bmi-calculator-tool";
+import ImageCompressorTool from "@/components/tools/image-compressor-tool";
+import AgeCalculatorTool from "@/components/tools/age-calculator-tool";
+import ImageResizerTool from "@/components/tools/image-resizer-tool";
+import PercentageCalculatorTool from "@/components/tools/percentage-calculator-tool";
+import LoanPaymentCalculatorTool from "@/components/tools/loan-payment-calculator-tool";
+import PasswordGeneratorTool from "@/components/tools/password-generator-tool";
+import QrCodeGeneratorTool from "@/components/tools/qr-code-generator-tool";
+import CelsiusToFahrenheitConverterTool from "@/components/tools/celsius-to-fahrenheit-converter-tool";
+import DaysBetweenDatesCalculatorTool from "@/components/tools/days-between-dates-calculator-tool";
+import FahrenheitToCelsiusConverterTool from "@/components/tools/fahrenheit-to-celsius-converter-tool";
+import ImageCropperTool from "@/components/tools/image-cropper-tool";
+import CompoundInterestCalculatorTool from "@/components/tools/compound-interest-calculator-tool";
+import DiscountCalculatorTool from "@/components/tools/discount-calculator-tool";
+import GradientGeneratorTool from "@/components/tools/gradient-generator-tool";
+import ImageFormatConverterTool from "@/components/tools/image-format-converter-tool";
+import KmToMilesConverterTool from "@/components/tools/km-to-miles-converter-tool";
+import MilesToKmConverterTool from "@/components/tools/miles-to-km-converter-tool";
+import WordCounterTool from "@/components/tools/word-counter-tool";
+import BoxShadowGeneratorTool from "@/components/tools/box-shadow-generator-tool";
+import CaseConverterTool from "@/components/tools/case-converter-tool";
+import CmToInchesConverterTool from "@/components/tools/cm-to-inches-converter-tool";
+import LbsToKgConverterTool from "@/components/tools/lbs-to-kg-converter-tool";
+import PercentageDecreaseCalculatorTool from "@/components/tools/percentage-decrease-calculator-tool";
+import PercentageIncreaseCalculatorTool from "@/components/tools/percentage-increase-calculator-tool";
+import TipCalculatorTool from "@/components/tools/tip-calculator-tool";
+import CharacterCounterTool from "@/components/tools/character-counter-tool";
+import HtmlFormatterTool from "@/components/tools/html-formatter-tool";
+import InchesToCmConverterTool from "@/components/tools/inches-to-cm-converter-tool";
+import MetaTagGeneratorTool from "@/components/tools/meta-tag-generator-tool";
+import SlugGeneratorTool from "@/components/tools/slug-generator-tool";
+import FaviconGeneratorTool from "@/components/tools/favicon-generator-tool";
+import HtmlMinifierTool from "@/components/tools/html-minifier-tool";
+import HtmlValidatorTool from "@/components/tools/html-validator-tool";
+import JsonValidatorTool from "@/components/tools/json-validator-tool";
+import KeywordDensityCheckerTool from "@/components/tools/keyword-density-checker-tool";
+import SalesTaxCalculatorTool from "@/components/tools/sales-tax-calculator-tool";
+import FeetToMetersConverterTool from "@/components/tools/feet-to-meters-converter-tool";
+import HtmlToTextTool from "@/components/tools/html-to-text-tool";
+import ImageMetadataReaderTool from "@/components/tools/image-metadata-reader-tool";
+import KgToLbsTool from "@/components/tools/kg-to-lbs-converter-tool";
+import MetersToFeetConverterTool from "@/components/tools/meters-to-feet-converter-tool";
+import GallonsToLitersConverterTool from "@/components/tools/gallons-to-liters-converter-tool";
+import HtmlToMarkdownTool from "@/components/tools/html-to-markdown-tool";
+import HtmlViewerTool from "@/components/tools/html-viewer-tool";
+import InchesToMmConverterTool from "@/components/tools/inches-to-mm-converter-tool";
+import JsonFormatterTool from "@/components/tools/json-formatter-tool";
+import JsonMinifierTool from "@/components/tools/json-minifier-tool";
+import LitersToGallonsConverterTool from "@/components/tools/liters-to-gallons-converter-tool";
+import MarkdownToHtmlTool from "@/components/tools/markdown-to-html-tool";
+import MarkupCalculatorTool from "@/components/tools/markup-calculator-tool";
+import MmToInchesConverterTool from "@/components/tools/mm-to-inches-converter-tool";
+import PlaceholderImageGeneratorTool from "@/components/tools/placeholder-image-generator-tool";
+import SimpleInterestCalculatorTool from "@/components/tools/simple-interest-calculator-tool";
+import HtmlCleanerTool from "@/components/tools/html-cleaner-tool";
+import ReadingTimeCalculatorTool from "@/components/tools/reading-time-calculator-tool";
+import Sha256GeneratorTool from "@/components/tools/sha256-generator-tool";
+import UnitPriceCalculatorTool from "@/components/tools/unit-price-calculator-tool";
+import Base64DecoderTool from "@/components/tools/base64-decoder-tool";
+import Base64EncoderTool from "@/components/tools/base64-encoder-tool";
+import HtmlLinkExtractorTool from "@/components/tools/html-link-extractor-tool";
+import HtmlTagRemoverTool from "@/components/tools/html-tag-remover-tool";
+import ImageToBase64Tool from "@/components/tools/image-to-base64-tool";
+import SentenceCounterTool from "@/components/tools/sentence-counter-tool";
+import Base64ToImageTool from "@/components/tools/base64-to-image-tool";
+import HtmlEscapeTool from "@/components/tools/html-escape-tool";
+import HtmlUnescapeTool from "@/components/tools/html-unescape-tool";
+import RemoveExtraSpacesTool from "@/components/tools/remove-extra-spaces-tool";
+import UuidGeneratorTool from "@/components/tools/uuid-generator-tool";
+import GbToMbConverterTool from "@/components/tools/gb-to-mb-converter-tool";
+import HtmlImageExtractorTool from "@/components/tools/html-image-extractor-tool";
+import HtmlPrettyPrintTool from "@/components/tools/html-pretty-print-tool";
+import MbToGbConverterTool from "@/components/tools/mb-to-gb-converter-tool";
+import UrlDecoderTool from "@/components/tools/url-decoder-tool";
+import UrlEncoderTool from "@/components/tools/url-encoder-tool";
+import HtmlEntityEncoderTool from "@/components/tools/html-entity-encoder-tool";
+import LineCounterTool from "@/components/tools/line-counter-tool";
+import TextReverserTool from "@/components/tools/text-reverser-tool";
+import { toolLogic as bmiCalculatorLogic } from "@/tools/logic/bmi-calculator";
+import { toolLogic as imageCompressorLogic } from "@/tools/logic/image-compressor";
+import { toolLogic as ageCalculatorLogic } from "@/tools/logic/age-calculator";
+import { toolLogic as imageResizerLogic } from "@/tools/logic/image-resizer";
+import { toolLogic as percentageCalculatorLogic } from "@/tools/logic/percentage-calculator";
+import { toolLogic as loanPaymentCalculatorLogic } from "@/tools/logic/loan-payment-calculator";
+import { toolLogic as passwordGeneratorLogic } from "@/tools/logic/password-generator";
+import { toolLogic as qrCodeGeneratorLogic } from "@/tools/logic/qr-code-generator";
+import { toolLogic as celsiusToFahrenheitConverterLogic } from "@/tools/logic/celsius-to-fahrenheit-converter";
+import { toolLogic as daysBetweenDatesCalculatorLogic } from "@/tools/logic/days-between-dates-calculator";
+import { toolLogic as fahrenheitToCelsiusConverterLogic } from "@/tools/logic/fahrenheit-to-celsius-converter";
+import { toolLogic as imageCropperLogic } from "@/tools/logic/image-cropper";
+import { toolLogic as compoundInterestCalculatorLogic } from "@/tools/logic/compound-interest-calculator";
+import { toolLogic as discountCalculatorLogic } from "@/tools/logic/discount-calculator";
+import { toolLogic as gradientGeneratorLogic } from "@/tools/logic/gradient-generator";
+import { toolLogic as imageFormatConverterLogic } from "@/tools/logic/image-format-converter";
+import { toolLogic as kmToMilesConverterLogic } from "@/tools/logic/km-to-miles-converter";
+import { toolLogic as milesToKmConverterLogic } from "@/tools/logic/miles-to-km-converter";
+import { toolLogic as wordCounterLogic } from "@/tools/logic/word-counter";
+import { toolLogic as boxShadowGeneratorLogic } from "@/tools/logic/box-shadow-generator";
+import { toolLogic as caseConverterLogic } from "@/tools/logic/case-converter";
+import { toolLogic as cmToInchesConverterLogic } from "@/tools/logic/cm-to-inches-converter";
+import { toolLogic as lbsToKgConverterLogic } from "@/tools/logic/lbs-to-kg-converter";
+import { toolLogic as percentageDecreaseCalculatorLogic } from "@/tools/logic/percentage-decrease-calculator";
+import { toolLogic as percentageIncreaseCalculatorLogic } from "@/tools/logic/percentage-increase-calculator";
+import { toolLogic as tipCalculatorLogic } from "@/tools/logic/tip-calculator";
+import { toolLogic as characterCounterLogic } from "@/tools/logic/character-counter";
+import { toolLogic as htmlFormatterLogic } from "@/tools/logic/html-formatter";
+import { toolLogic as inchesToCmConverterLogic } from "@/tools/logic/inches-to-cm-converter";
+import { toolLogic as metaTagGeneratorLogic } from "@/tools/logic/meta-tag-generator";
+import { toolLogic as slugGeneratorLogic } from "@/tools/logic/slug-generator";
+import { toolLogic as faviconGeneratorLogic } from "@/tools/logic/favicon-generator";
+import { toolLogic as htmlMinifierLogic } from "@/tools/logic/html-minifier";
+import { toolLogic as htmlValidatorLogic } from "@/tools/logic/html-validator";
+import { toolLogic as jsonValidatorLogic } from "@/tools/logic/json-validator";
+import { toolLogic as keywordDensityCheckerLogic } from "@/tools/logic/keyword-density-checker";
+import { toolLogic as salesTaxCalculatorLogic } from "@/tools/logic/sales-tax-calculator";
+import { toolLogic as feetToMetersConverterLogic } from "@/tools/logic/feet-to-meters-converter";
+import { toolLogic as htmlToTextLogic } from "@/tools/logic/html-to-text";
+import { toolLogic as imageMetadataReaderLogic } from "@/tools/logic/image-metadata-reader";
+import { toolLogic as kgToLbsConverterLogic } from "@/tools/logic/kg-to-lbs-converter";
+import { toolLogic as metersToFeetConverterLogic } from "@/tools/logic/meters-to-feet-converter";
+import { toolLogic as gallonsToLitersConverterLogic } from "@/tools/logic/gallons-to-liters-converter";
+import { toolLogic as htmlToMarkdownLogic } from "@/tools/logic/html-to-markdown";
+import { toolLogic as htmlViewerLogic } from "@/tools/logic/html-viewer";
+import { toolLogic as inchesToMmConverterLogic } from "@/tools/logic/inches-to-mm-converter";
+import { toolLogic as jsonFormatterLogic } from "@/tools/logic/json-formatter";
+import { toolLogic as jsonMinifierLogic } from "@/tools/logic/json-minifier";
+import { toolLogic as litersToGallonsConverterLogic } from "@/tools/logic/liters-to-gallons-converter";
+import { toolLogic as markdownToHtmlLogic } from "@/tools/logic/markdown-to-html";
+import { toolLogic as markupCalculatorLogic } from "@/tools/logic/markup-calculator";
+import { toolLogic as mmToInchesConverterLogic } from "@/tools/logic/mm-to-inches-converter";
+import { toolLogic as placeholderImageGeneratorLogic } from "@/tools/logic/placeholder-image-generator";
+import { toolLogic as simpleInterestCalculatorLogic } from "@/tools/logic/simple-interest-calculator";
+import { toolLogic as htmlCleanerLogic } from "@/tools/logic/html-cleaner";
+import { toolLogic as readingTimeCalculatorLogic } from "@/tools/logic/reading-time-calculator";
+import { toolLogic as sha256GeneratorLogic } from "@/tools/logic/sha256-generator";
+import { toolLogic as unitPriceCalculatorLogic } from "@/tools/logic/unit-price-calculator";
+import { toolLogic as base64DecoderLogic } from "@/tools/logic/base64-decoder";
+import { toolLogic as base64EncoderLogic } from "@/tools/logic/base64-encoder";
+import { toolLogic as htmlLinkExtractorLogic } from "@/tools/logic/html-link-extractor";
+import { toolLogic as htmlTagRemoverLogic } from "@/tools/logic/html-tag-remover";
+import { toolLogic as imageToBase64Logic } from "@/tools/logic/image-to-base64";
+import { toolLogic as sentenceCounterLogic } from "@/tools/logic/sentence-counter";
+import { toolLogic as base64ToImageLogic } from "@/tools/logic/base64-to-image";
+import { toolLogic as htmlEscapeLogic } from "@/tools/logic/html-escape";
+import { toolLogic as htmlUnescapeLogic } from "@/tools/logic/html-unescape";
+import { toolLogic as removeExtraSpacesLogic } from "@/tools/logic/remove-extra-spaces";
+import { toolLogic as uuidGeneratorLogic } from "@/tools/logic/uuid-generator";
+import { toolLogic as gbToMbConverterLogic } from "@/tools/logic/gb-to-mb-converter";
+import { toolLogic as htmlImageExtractorLogic } from "@/tools/logic/html-image-extractor";
+import { toolLogic as htmlPrettyPrintLogic } from "@/tools/logic/html-pretty-print";
+import { toolLogic as mbToGbConverterLogic } from "@/tools/logic/mb-to-gb-converter";
+import { toolLogic as urlDecoderLogic } from "@/tools/logic/url-decoder";
+import { toolLogic as urlEncoderLogic } from "@/tools/logic/url-encoder";
+import { toolLogic as htmlEntityEncoderLogic } from "@/tools/logic/html-entity-encoder";
+import { toolLogic as lineCounterLogic } from "@/tools/logic/line-counter";
+import { toolLogic as textReverserLogic } from "@/tools/logic/text-reverser";
+import { toolInputSchema as bmiCalculatorInputSchema, toolOutputSchema as bmiCalculatorOutputSchema } from "@/tools/schema/bmi-calculator";
+import { toolInputSchema as imageCompressorInputSchema, toolOutputSchema as imageCompressorOutputSchema } from "@/tools/schema/image-compressor";
+import { toolInputSchema as ageCalculatorInputSchema, toolOutputSchema as ageCalculatorOutputSchema } from "@/tools/schema/age-calculator";
+import { toolInputSchema as imageResizerInputSchema, toolOutputSchema as imageResizerOutputSchema } from "@/tools/schema/image-resizer";
+import { toolInputSchema as percentageCalculatorInputSchema, toolOutputSchema as percentageCalculatorOutputSchema } from "@/tools/schema/percentage-calculator";
+import { toolInputSchema as loanPaymentCalculatorInputSchema, toolOutputSchema as loanPaymentCalculatorOutputSchema } from "@/tools/schema/loan-payment-calculator";
+import { toolInputSchema as passwordGeneratorInputSchema, toolOutputSchema as passwordGeneratorOutputSchema } from "@/tools/schema/password-generator";
+import { toolInputSchema as qrCodeGeneratorInputSchema, toolOutputSchema as qrCodeGeneratorOutputSchema } from "@/tools/schema/qr-code-generator";
+import { toolInputSchema as celsiusToFahrenheitConverterInputSchema, toolOutputSchema as celsiusToFahrenheitConverterOutputSchema } from "@/tools/schema/celsius-to-fahrenheit-converter";
+import { toolInputSchema as daysBetweenDatesCalculatorInputSchema, toolOutputSchema as daysBetweenDatesCalculatorOutputSchema } from "@/tools/schema/days-between-dates-calculator";
+import { toolInputSchema as fahrenheitToCelsiusConverterInputSchema, toolOutputSchema as fahrenheitToCelsiusConverterOutputSchema } from "@/tools/schema/fahrenheit-to-celsius-converter";
+import { toolInputSchema as imageCropperInputSchema, toolOutputSchema as imageCropperOutputSchema } from "@/tools/schema/image-cropper";
+import { toolInputSchema as compoundInterestCalculatorInputSchema, toolOutputSchema as compoundInterestCalculatorOutputSchema } from "@/tools/schema/compound-interest-calculator";
+import { toolInputSchema as discountCalculatorInputSchema, toolOutputSchema as discountCalculatorOutputSchema } from "@/tools/schema/discount-calculator";
+import { toolInputSchema as gradientGeneratorInputSchema, toolOutputSchema as gradientGeneratorOutputSchema } from "@/tools/schema/gradient-generator";
+import { toolInputSchema as imageFormatConverterInputSchema, toolOutputSchema as imageFormatConverterOutputSchema } from "@/tools/schema/image-format-converter";
+import { toolInputSchema as kmToMilesConverterInputSchema, toolOutputSchema as kmToMilesConverterOutputSchema } from "@/tools/schema/km-to-miles-converter";
+import { toolInputSchema as milesToKmConverterInputSchema, toolOutputSchema as milesToKmConverterOutputSchema } from "@/tools/schema/miles-to-km-converter";
+import { toolInputSchema as wordCounterInputSchema, toolOutputSchema as wordCounterOutputSchema } from "@/tools/schema/word-counter";
+import { toolInputSchema as boxShadowGeneratorInputSchema, toolOutputSchema as boxShadowGeneratorOutputSchema } from "@/tools/schema/box-shadow-generator";
+import { toolInputSchema as caseConverterInputSchema, toolOutputSchema as caseConverterOutputSchema } from "@/tools/schema/case-converter";
+import { toolInputSchema as cmToInchesConverterInputSchema, toolOutputSchema as cmToInchesConverterOutputSchema } from "@/tools/schema/cm-to-inches-converter";
+import { toolInputSchema as lbsToKgConverterInputSchema, toolOutputSchema as lbsToKgConverterOutputSchema } from "@/tools/schema/lbs-to-kg-converter";
+import { toolInputSchema as percentageDecreaseCalculatorInputSchema, toolOutputSchema as percentageDecreaseCalculatorOutputSchema } from "@/tools/schema/percentage-decrease-calculator";
+import { toolInputSchema as percentageIncreaseCalculatorInputSchema, toolOutputSchema as percentageIncreaseCalculatorOutputSchema } from "@/tools/schema/percentage-increase-calculator";
+import { toolInputSchema as tipCalculatorInputSchema, toolOutputSchema as tipCalculatorOutputSchema } from "@/tools/schema/tip-calculator";
+import { toolInputSchema as characterCounterInputSchema, toolOutputSchema as characterCounterOutputSchema } from "@/tools/schema/character-counter";
+import { toolInputSchema as htmlFormatterInputSchema, toolOutputSchema as htmlFormatterOutputSchema } from "@/tools/schema/html-formatter";
+import { toolInputSchema as inchesToCmConverterInputSchema, toolOutputSchema as inchesToCmConverterOutputSchema } from "@/tools/schema/inches-to-cm-converter";
+import { toolInputSchema as metaTagGeneratorInputSchema, toolOutputSchema as metaTagGeneratorOutputSchema } from "@/tools/schema/meta-tag-generator";
+import { toolInputSchema as slugGeneratorInputSchema, toolOutputSchema as slugGeneratorOutputSchema } from "@/tools/schema/slug-generator";
+import { toolInputSchema as faviconGeneratorInputSchema, toolOutputSchema as faviconGeneratorOutputSchema } from "@/tools/schema/favicon-generator";
+import { toolInputSchema as htmlMinifierInputSchema, toolOutputSchema as htmlMinifierOutputSchema } from "@/tools/schema/html-minifier";
+import { toolInputSchema as htmlValidatorInputSchema, toolOutputSchema as htmlValidatorOutputSchema } from "@/tools/schema/html-validator";
+import { toolInputSchema as jsonValidatorInputSchema, toolOutputSchema as jsonValidatorOutputSchema } from "@/tools/schema/json-validator";
+import { toolInputSchema as keywordDensityCheckerInputSchema, toolOutputSchema as keywordDensityCheckerOutputSchema } from "@/tools/schema/keyword-density-checker";
+import { toolInputSchema as salesTaxCalculatorInputSchema, toolOutputSchema as salesTaxCalculatorOutputSchema } from "@/tools/schema/sales-tax-calculator";
+import { toolInputSchema as feetToMetersConverterInputSchema, toolOutputSchema as feetToMetersConverterOutputSchema } from "@/tools/schema/feet-to-meters-converter";
+import { toolInputSchema as htmlToTextInputSchema, toolOutputSchema as htmlToTextOutputSchema } from "@/tools/schema/html-to-text";
+import { toolInputSchema as imageMetadataReaderInputSchema, toolOutputSchema as imageMetadataReaderOutputSchema } from "@/tools/schema/image-metadata-reader";
+import { toolInputSchema as kgToLbsConverterInputSchema, toolOutputSchema as kgToLbsConverterOutputSchema } from "@/tools/schema/kg-to-lbs-converter";
+import { toolInputSchema as metersToFeetConverterInputSchema, toolOutputSchema as metersToFeetConverterOutputSchema } from "@/tools/schema/meters-to-feet-converter";
+import { toolInputSchema as gallonsToLitersConverterInputSchema, toolOutputSchema as gallonsToLitersConverterOutputSchema } from "@/tools/schema/gallons-to-liters-converter";
+import { toolInputSchema as htmlToMarkdownInputSchema, toolOutputSchema as htmlToMarkdownOutputSchema } from "@/tools/schema/html-to-markdown";
+import { toolInputSchema as htmlViewerInputSchema, toolOutputSchema as htmlViewerOutputSchema } from "@/tools/schema/html-viewer";
+import { toolInputSchema as inchesToMmConverterInputSchema, toolOutputSchema as inchesToMmConverterOutputSchema } from "@/tools/schema/inches-to-mm-converter";
+import { toolInputSchema as jsonFormatterInputSchema, toolOutputSchema as jsonFormatterOutputSchema } from "@/tools/schema/json-formatter";
+import { toolInputSchema as jsonMinifierInputSchema, toolOutputSchema as jsonMinifierOutputSchema } from "@/tools/schema/json-minifier";
+import { toolInputSchema as litersToGallonsConverterInputSchema, toolOutputSchema as litersToGallonsConverterOutputSchema } from "@/tools/schema/liters-to-gallons-converter";
+import { toolInputSchema as markdownToHtmlInputSchema, toolOutputSchema as markdownToHtmlOutputSchema } from "@/tools/schema/markdown-to-html";
+import { toolInputSchema as markupCalculatorInputSchema, toolOutputSchema as markupCalculatorOutputSchema } from "@/tools/schema/markup-calculator";
+import { toolInputSchema as mmToInchesConverterInputSchema, toolOutputSchema as mmToInchesConverterOutputSchema } from "@/tools/schema/mm-to-inches-converter";
+import { toolInputSchema as placeholderImageGeneratorInputSchema, toolOutputSchema as placeholderImageGeneratorOutputSchema } from "@/tools/schema/placeholder-image-generator";
+import { toolInputSchema as simpleInterestCalculatorInputSchema, toolOutputSchema as simpleInterestCalculatorOutputSchema } from "@/tools/schema/simple-interest-calculator";
+import { toolInputSchema as htmlCleanerInputSchema, toolOutputSchema as htmlCleanerOutputSchema } from "@/tools/schema/html-cleaner";
+import { toolInputSchema as readingTimeCalculatorInputSchema, toolOutputSchema as readingTimeCalculatorOutputSchema } from "@/tools/schema/reading-time-calculator";
+import { toolInputSchema as sha256GeneratorInputSchema, toolOutputSchema as sha256GeneratorOutputSchema } from "@/tools/schema/sha256-generator";
+import { toolInputSchema as unitPriceCalculatorInputSchema, toolOutputSchema as unitPriceCalculatorOutputSchema } from "@/tools/schema/unit-price-calculator";
+import { toolInputSchema as base64DecoderInputSchema, toolOutputSchema as base64DecoderOutputSchema } from "@/tools/schema/base64-decoder";
+import { toolInputSchema as base64EncoderInputSchema, toolOutputSchema as base64EncoderOutputSchema } from "@/tools/schema/base64-encoder";
+import { toolInputSchema as htmlLinkExtractorInputSchema, toolOutputSchema as htmlLinkExtractorOutputSchema } from "@/tools/schema/html-link-extractor";
+import { toolInputSchema as htmlTagRemoverInputSchema, toolOutputSchema as htmlTagRemoverOutputSchema } from "@/tools/schema/html-tag-remover";
+import { toolInputSchema as imageToBase64InputSchema, toolOutputSchema as imageToBase64OutputSchema } from "@/tools/schema/image-to-base64";
+import { toolInputSchema as sentenceCounterInputSchema, toolOutputSchema as sentenceCounterOutputSchema } from "@/tools/schema/sentence-counter";
+import { toolInputSchema as base64ToImageInputSchema, toolOutputSchema as base64ToImageOutputSchema } from "@/tools/schema/base64-to-image";
+import { toolInputSchema as htmlEscapeInputSchema, toolOutputSchema as htmlEscapeOutputSchema } from "@/tools/schema/html-escape";
+import { toolInputSchema as htmlUnescapeInputSchema, toolOutputSchema as htmlUnescapeOutputSchema } from "@/tools/schema/html-unescape";
+import { toolInputSchema as removeExtraSpacesInputSchema, toolOutputSchema as removeExtraSpacesOutputSchema } from "@/tools/schema/remove-extra-spaces";
+import { toolInputSchema as uuidGeneratorInputSchema, toolOutputSchema as uuidGeneratorOutputSchema } from "@/tools/schema/uuid-generator";
+import { toolInputSchema as gbToMbConverterInputSchema, toolOutputSchema as gbToMbConverterOutputSchema } from "@/tools/schema/gb-to-mb-converter";
+import { toolInputSchema as htmlImageExtractorInputSchema, toolOutputSchema as htmlImageExtractorOutputSchema } from "@/tools/schema/html-image-extractor";
+import { toolInputSchema as htmlPrettyPrintInputSchema, toolOutputSchema as htmlPrettyPrintOutputSchema } from "@/tools/schema/html-pretty-print";
+import { toolInputSchema as mbToGbConverterInputSchema, toolOutputSchema as mbToGbConverterOutputSchema } from "@/tools/schema/mb-to-gb-converter";
+import { toolInputSchema as urlDecoderInputSchema, toolOutputSchema as urlDecoderOutputSchema } from "@/tools/schema/url-decoder";
+import { toolInputSchema as urlEncoderInputSchema, toolOutputSchema as urlEncoderOutputSchema } from "@/tools/schema/url-encoder";
+import { toolInputSchema as htmlEntityEncoderInputSchema, toolOutputSchema as htmlEntityEncoderOutputSchema } from "@/tools/schema/html-entity-encoder";
+import { toolInputSchema as lineCounterInputSchema, toolOutputSchema as lineCounterOutputSchema } from "@/tools/schema/line-counter";
+import { toolInputSchema as textReverserInputSchema, toolOutputSchema as textReverserOutputSchema } from "@/tools/schema/text-reverser";
+
+export const toolComponents = {
+  BmiCalculatorTool,
+  ImageCompressorTool,
+  AgeCalculatorTool,
+  ImageResizerTool,
+  PercentageCalculatorTool,
+  LoanPaymentCalculatorTool,
+  PasswordGeneratorTool,
+  QrCodeGeneratorTool,
+  CelsiusToFahrenheitConverterTool,
+  DaysBetweenDatesCalculatorTool,
+  FahrenheitToCelsiusConverterTool,
+  ImageCropperTool,
+  CompoundInterestCalculatorTool,
+  DiscountCalculatorTool,
+  GradientGeneratorTool,
+  ImageFormatConverterTool,
+  KmToMilesConverterTool,
+  MilesToKmConverterTool,
+  WordCounterTool,
+  BoxShadowGeneratorTool,
+  CaseConverterTool,
+  CmToInchesConverterTool,
+  LbsToKgConverterTool,
+  PercentageDecreaseCalculatorTool,
+  PercentageIncreaseCalculatorTool,
+  TipCalculatorTool,
+  CharacterCounterTool,
+  HtmlFormatterTool,
+  InchesToCmConverterTool,
+  MetaTagGeneratorTool,
+  SlugGeneratorTool,
+  FaviconGeneratorTool,
+  HtmlMinifierTool,
+  HtmlValidatorTool,
+  JsonValidatorTool,
+  KeywordDensityCheckerTool,
+  SalesTaxCalculatorTool,
+  FeetToMetersConverterTool,
+  HtmlToTextTool,
+  ImageMetadataReaderTool,
+  KgToLbsTool,
+  MetersToFeetConverterTool,
+  GallonsToLitersConverterTool,
+  HtmlToMarkdownTool,
+  HtmlViewerTool,
+  InchesToMmConverterTool,
+  JsonFormatterTool,
+  JsonMinifierTool,
+  LitersToGallonsConverterTool,
+  MarkdownToHtmlTool,
+  MarkupCalculatorTool,
+  MmToInchesConverterTool,
+  PlaceholderImageGeneratorTool,
+  SimpleInterestCalculatorTool,
+  HtmlCleanerTool,
+  ReadingTimeCalculatorTool,
+  Sha256GeneratorTool,
+  UnitPriceCalculatorTool,
+  Base64DecoderTool,
+  Base64EncoderTool,
+  HtmlLinkExtractorTool,
+  HtmlTagRemoverTool,
+  ImageToBase64Tool,
+  SentenceCounterTool,
+  Base64ToImageTool,
+  HtmlEscapeTool,
+  HtmlUnescapeTool,
+  RemoveExtraSpacesTool,
+  UuidGeneratorTool,
+  GbToMbConverterTool,
+  HtmlImageExtractorTool,
+  HtmlPrettyPrintTool,
+  MbToGbConverterTool,
+  UrlDecoderTool,
+  UrlEncoderTool,
+  HtmlEntityEncoderTool,
+  LineCounterTool,
+  TextReverserTool
+} as const;
+
+export const toolLogicModules = {
+  "bmi-calculator": bmiCalculatorLogic,
+  "image-compressor": imageCompressorLogic,
+  "age-calculator": ageCalculatorLogic,
+  "image-resizer": imageResizerLogic,
+  "percentage-calculator": percentageCalculatorLogic,
+  "loan-payment-calculator": loanPaymentCalculatorLogic,
+  "password-generator": passwordGeneratorLogic,
+  "qr-code-generator": qrCodeGeneratorLogic,
+  "celsius-to-fahrenheit-converter": celsiusToFahrenheitConverterLogic,
+  "days-between-dates-calculator": daysBetweenDatesCalculatorLogic,
+  "fahrenheit-to-celsius-converter": fahrenheitToCelsiusConverterLogic,
+  "image-cropper": imageCropperLogic,
+  "compound-interest-calculator": compoundInterestCalculatorLogic,
+  "discount-calculator": discountCalculatorLogic,
+  "gradient-generator": gradientGeneratorLogic,
+  "image-format-converter": imageFormatConverterLogic,
+  "km-to-miles-converter": kmToMilesConverterLogic,
+  "miles-to-km-converter": milesToKmConverterLogic,
+  "word-counter": wordCounterLogic,
+  "box-shadow-generator": boxShadowGeneratorLogic,
+  "case-converter": caseConverterLogic,
+  "cm-to-inches-converter": cmToInchesConverterLogic,
+  "lbs-to-kg-converter": lbsToKgConverterLogic,
+  "percentage-decrease-calculator": percentageDecreaseCalculatorLogic,
+  "percentage-increase-calculator": percentageIncreaseCalculatorLogic,
+  "tip-calculator": tipCalculatorLogic,
+  "character-counter": characterCounterLogic,
+  "html-formatter": htmlFormatterLogic,
+  "inches-to-cm-converter": inchesToCmConverterLogic,
+  "meta-tag-generator": metaTagGeneratorLogic,
+  "slug-generator": slugGeneratorLogic,
+  "favicon-generator": faviconGeneratorLogic,
+  "html-minifier": htmlMinifierLogic,
+  "html-validator": htmlValidatorLogic,
+  "json-validator": jsonValidatorLogic,
+  "keyword-density-checker": keywordDensityCheckerLogic,
+  "sales-tax-calculator": salesTaxCalculatorLogic,
+  "feet-to-meters-converter": feetToMetersConverterLogic,
+  "html-to-text": htmlToTextLogic,
+  "image-metadata-reader": imageMetadataReaderLogic,
+  "kg-to-lbs-converter": kgToLbsConverterLogic,
+  "meters-to-feet-converter": metersToFeetConverterLogic,
+  "gallons-to-liters-converter": gallonsToLitersConverterLogic,
+  "html-to-markdown": htmlToMarkdownLogic,
+  "html-viewer": htmlViewerLogic,
+  "inches-to-mm-converter": inchesToMmConverterLogic,
+  "json-formatter": jsonFormatterLogic,
+  "json-minifier": jsonMinifierLogic,
+  "liters-to-gallons-converter": litersToGallonsConverterLogic,
+  "markdown-to-html": markdownToHtmlLogic,
+  "markup-calculator": markupCalculatorLogic,
+  "mm-to-inches-converter": mmToInchesConverterLogic,
+  "placeholder-image-generator": placeholderImageGeneratorLogic,
+  "simple-interest-calculator": simpleInterestCalculatorLogic,
+  "html-cleaner": htmlCleanerLogic,
+  "reading-time-calculator": readingTimeCalculatorLogic,
+  "sha256-generator": sha256GeneratorLogic,
+  "unit-price-calculator": unitPriceCalculatorLogic,
+  "base64-decoder": base64DecoderLogic,
+  "base64-encoder": base64EncoderLogic,
+  "html-link-extractor": htmlLinkExtractorLogic,
+  "html-tag-remover": htmlTagRemoverLogic,
+  "image-to-base64": imageToBase64Logic,
+  "sentence-counter": sentenceCounterLogic,
+  "base64-to-image": base64ToImageLogic,
+  "html-escape": htmlEscapeLogic,
+  "html-unescape": htmlUnescapeLogic,
+  "remove-extra-spaces": removeExtraSpacesLogic,
+  "uuid-generator": uuidGeneratorLogic,
+  "gb-to-mb-converter": gbToMbConverterLogic,
+  "html-image-extractor": htmlImageExtractorLogic,
+  "html-pretty-print": htmlPrettyPrintLogic,
+  "mb-to-gb-converter": mbToGbConverterLogic,
+  "url-decoder": urlDecoderLogic,
+  "url-encoder": urlEncoderLogic,
+  "html-entity-encoder": htmlEntityEncoderLogic,
+  "line-counter": lineCounterLogic,
+  "text-reverser": textReverserLogic
+} as const;
+
+export const inputSchemas = {
+  "bmiCalculatorInputSchema": bmiCalculatorInputSchema,
+  "imageCompressorInputSchema": imageCompressorInputSchema,
+  "ageCalculatorInputSchema": ageCalculatorInputSchema,
+  "imageResizerInputSchema": imageResizerInputSchema,
+  "percentageCalculatorInputSchema": percentageCalculatorInputSchema,
+  "loanPaymentCalculatorInputSchema": loanPaymentCalculatorInputSchema,
+  "passwordGeneratorInputSchema": passwordGeneratorInputSchema,
+  "qrCodeGeneratorInputSchema": qrCodeGeneratorInputSchema,
+  "celsiusToFahrenheitConverterInputSchema": celsiusToFahrenheitConverterInputSchema,
+  "daysBetweenDatesCalculatorInputSchema": daysBetweenDatesCalculatorInputSchema,
+  "fahrenheitToCelsiusConverterInputSchema": fahrenheitToCelsiusConverterInputSchema,
+  "imageCropperInputSchema": imageCropperInputSchema,
+  "compoundInterestCalculatorInputSchema": compoundInterestCalculatorInputSchema,
+  "discountCalculatorInputSchema": discountCalculatorInputSchema,
+  "gradientGeneratorInputSchema": gradientGeneratorInputSchema,
+  "imageFormatConverterInputSchema": imageFormatConverterInputSchema,
+  "kmToMilesConverterInputSchema": kmToMilesConverterInputSchema,
+  "milesToKmConverterInputSchema": milesToKmConverterInputSchema,
+  "wordCounterInputSchema": wordCounterInputSchema,
+  "boxShadowGeneratorInputSchema": boxShadowGeneratorInputSchema,
+  "caseConverterInputSchema": caseConverterInputSchema,
+  "cmToInchesConverterInputSchema": cmToInchesConverterInputSchema,
+  "lbsToKgConverterInputSchema": lbsToKgConverterInputSchema,
+  "percentageDecreaseCalculatorInputSchema": percentageDecreaseCalculatorInputSchema,
+  "percentageIncreaseCalculatorInputSchema": percentageIncreaseCalculatorInputSchema,
+  "tipCalculatorInputSchema": tipCalculatorInputSchema,
+  "characterCounterInputSchema": characterCounterInputSchema,
+  "htmlFormatterInputSchema": htmlFormatterInputSchema,
+  "inchesToCmConverterInputSchema": inchesToCmConverterInputSchema,
+  "metaTagGeneratorInputSchema": metaTagGeneratorInputSchema,
+  "slugGeneratorInputSchema": slugGeneratorInputSchema,
+  "faviconGeneratorInputSchema": faviconGeneratorInputSchema,
+  "htmlMinifierInputSchema": htmlMinifierInputSchema,
+  "htmlValidatorInputSchema": htmlValidatorInputSchema,
+  "jsonValidatorInputSchema": jsonValidatorInputSchema,
+  "keywordDensityCheckerInputSchema": keywordDensityCheckerInputSchema,
+  "salesTaxCalculatorInputSchema": salesTaxCalculatorInputSchema,
+  "feetToMetersConverterInputSchema": feetToMetersConverterInputSchema,
+  "htmlToTextInputSchema": htmlToTextInputSchema,
+  "imageMetadataReaderInputSchema": imageMetadataReaderInputSchema,
+  "kgToLbsInputSchema": kgToLbsConverterInputSchema,
+  "metersToFeetConverterInputSchema": metersToFeetConverterInputSchema,
+  "gallonsToLitersConverterInputSchema": gallonsToLitersConverterInputSchema,
+  "htmlToMarkdownInputSchema": htmlToMarkdownInputSchema,
+  "htmlViewerInputSchema": htmlViewerInputSchema,
+  "inchesToMmConverterInputSchema": inchesToMmConverterInputSchema,
+  "jsonFormatterInputSchema": jsonFormatterInputSchema,
+  "jsonMinifierInputSchema": jsonMinifierInputSchema,
+  "litersToGallonsConverterInputSchema": litersToGallonsConverterInputSchema,
+  "markdownToHtmlInputSchema": markdownToHtmlInputSchema,
+  "markupCalculatorInputSchema": markupCalculatorInputSchema,
+  "mmToInchesConverterInputSchema": mmToInchesConverterInputSchema,
+  "placeholderImageGeneratorInputSchema": placeholderImageGeneratorInputSchema,
+  "simpleInterestCalculatorInputSchema": simpleInterestCalculatorInputSchema,
+  "htmlCleanerInputSchema": htmlCleanerInputSchema,
+  "readingTimeCalculatorInputSchema": readingTimeCalculatorInputSchema,
+  "sha256GeneratorInputSchema": sha256GeneratorInputSchema,
+  "unitPriceCalculatorInputSchema": unitPriceCalculatorInputSchema,
+  "base64DecoderInputSchema": base64DecoderInputSchema,
+  "base64EncoderInputSchema": base64EncoderInputSchema,
+  "htmlLinkExtractorInputSchema": htmlLinkExtractorInputSchema,
+  "htmlTagRemoverInputSchema": htmlTagRemoverInputSchema,
+  "imageToBase64InputSchema": imageToBase64InputSchema,
+  "sentenceCounterInputSchema": sentenceCounterInputSchema,
+  "base64ToImageInputSchema": base64ToImageInputSchema,
+  "htmlEscapeInputSchema": htmlEscapeInputSchema,
+  "htmlUnescapeInputSchema": htmlUnescapeInputSchema,
+  "removeExtraSpacesInputSchema": removeExtraSpacesInputSchema,
+  "uuidGeneratorInputSchema": uuidGeneratorInputSchema,
+  "gbToMbConverterInputSchema": gbToMbConverterInputSchema,
+  "htmlImageExtractorInputSchema": htmlImageExtractorInputSchema,
+  "htmlPrettyPrintInputSchema": htmlPrettyPrintInputSchema,
+  "mbToGbConverterInputSchema": mbToGbConverterInputSchema,
+  "urlDecoderInputSchema": urlDecoderInputSchema,
+  "urlEncoderInputSchema": urlEncoderInputSchema,
+  "htmlEntityEncoderInputSchema": htmlEntityEncoderInputSchema,
+  "lineCounterInputSchema": lineCounterInputSchema,
+  "textReverserInputSchema": textReverserInputSchema
+} as const;
+
+export const outputSchemas = {
+  "bmiCalculatorOutputSchema": bmiCalculatorOutputSchema,
+  "imageCompressorOutputSchema": imageCompressorOutputSchema,
+  "ageCalculatorOutputSchema": ageCalculatorOutputSchema,
+  "imageResizerOutputSchema": imageResizerOutputSchema,
+  "percentageCalculatorOutputSchema": percentageCalculatorOutputSchema,
+  "loanPaymentCalculatorOutputSchema": loanPaymentCalculatorOutputSchema,
+  "passwordGeneratorOutputSchema": passwordGeneratorOutputSchema,
+  "qrCodeGeneratorOutputSchema": qrCodeGeneratorOutputSchema,
+  "celsiusToFahrenheitConverterOutputSchema": celsiusToFahrenheitConverterOutputSchema,
+  "daysBetweenDatesCalculatorOutputSchema": daysBetweenDatesCalculatorOutputSchema,
+  "fahrenheitToCelsiusConverterOutputSchema": fahrenheitToCelsiusConverterOutputSchema,
+  "imageCropperOutputSchema": imageCropperOutputSchema,
+  "compoundInterestCalculatorOutputSchema": compoundInterestCalculatorOutputSchema,
+  "discountCalculatorOutputSchema": discountCalculatorOutputSchema,
+  "gradientGeneratorOutputSchema": gradientGeneratorOutputSchema,
+  "imageFormatConverterOutputSchema": imageFormatConverterOutputSchema,
+  "kmToMilesConverterOutputSchema": kmToMilesConverterOutputSchema,
+  "milesToKmConverterOutputSchema": milesToKmConverterOutputSchema,
+  "wordCounterOutputSchema": wordCounterOutputSchema,
+  "boxShadowGeneratorOutputSchema": boxShadowGeneratorOutputSchema,
+  "caseConverterOutputSchema": caseConverterOutputSchema,
+  "cmToInchesConverterOutputSchema": cmToInchesConverterOutputSchema,
+  "lbsToKgConverterOutputSchema": lbsToKgConverterOutputSchema,
+  "percentageDecreaseCalculatorOutputSchema": percentageDecreaseCalculatorOutputSchema,
+  "percentageIncreaseCalculatorOutputSchema": percentageIncreaseCalculatorOutputSchema,
+  "tipCalculatorOutputSchema": tipCalculatorOutputSchema,
+  "characterCounterOutputSchema": characterCounterOutputSchema,
+  "htmlFormatterOutputSchema": htmlFormatterOutputSchema,
+  "inchesToCmConverterOutputSchema": inchesToCmConverterOutputSchema,
+  "metaTagGeneratorOutputSchema": metaTagGeneratorOutputSchema,
+  "slugGeneratorOutputSchema": slugGeneratorOutputSchema,
+  "faviconGeneratorOutputSchema": faviconGeneratorOutputSchema,
+  "htmlMinifierOutputSchema": htmlMinifierOutputSchema,
+  "htmlValidatorOutputSchema": htmlValidatorOutputSchema,
+  "jsonValidatorOutputSchema": jsonValidatorOutputSchema,
+  "keywordDensityCheckerOutputSchema": keywordDensityCheckerOutputSchema,
+  "salesTaxCalculatorOutputSchema": salesTaxCalculatorOutputSchema,
+  "feetToMetersConverterOutputSchema": feetToMetersConverterOutputSchema,
+  "htmlToTextOutputSchema": htmlToTextOutputSchema,
+  "imageMetadataReaderOutputSchema": imageMetadataReaderOutputSchema,
+  "kgToLbsOutputSchema": kgToLbsConverterOutputSchema,
+  "metersToFeetConverterOutputSchema": metersToFeetConverterOutputSchema,
+  "gallonsToLitersConverterOutputSchema": gallonsToLitersConverterOutputSchema,
+  "htmlToMarkdownOutputSchema": htmlToMarkdownOutputSchema,
+  "htmlViewerOutputSchema": htmlViewerOutputSchema,
+  "inchesToMmConverterOutputSchema": inchesToMmConverterOutputSchema,
+  "jsonFormatterOutputSchema": jsonFormatterOutputSchema,
+  "jsonMinifierOutputSchema": jsonMinifierOutputSchema,
+  "litersToGallonsConverterOutputSchema": litersToGallonsConverterOutputSchema,
+  "markdownToHtmlOutputSchema": markdownToHtmlOutputSchema,
+  "markupCalculatorOutputSchema": markupCalculatorOutputSchema,
+  "mmToInchesConverterOutputSchema": mmToInchesConverterOutputSchema,
+  "placeholderImageGeneratorOutputSchema": placeholderImageGeneratorOutputSchema,
+  "simpleInterestCalculatorOutputSchema": simpleInterestCalculatorOutputSchema,
+  "htmlCleanerOutputSchema": htmlCleanerOutputSchema,
+  "readingTimeCalculatorOutputSchema": readingTimeCalculatorOutputSchema,
+  "sha256GeneratorOutputSchema": sha256GeneratorOutputSchema,
+  "unitPriceCalculatorOutputSchema": unitPriceCalculatorOutputSchema,
+  "base64DecoderOutputSchema": base64DecoderOutputSchema,
+  "base64EncoderOutputSchema": base64EncoderOutputSchema,
+  "htmlLinkExtractorOutputSchema": htmlLinkExtractorOutputSchema,
+  "htmlTagRemoverOutputSchema": htmlTagRemoverOutputSchema,
+  "imageToBase64OutputSchema": imageToBase64OutputSchema,
+  "sentenceCounterOutputSchema": sentenceCounterOutputSchema,
+  "base64ToImageOutputSchema": base64ToImageOutputSchema,
+  "htmlEscapeOutputSchema": htmlEscapeOutputSchema,
+  "htmlUnescapeOutputSchema": htmlUnescapeOutputSchema,
+  "removeExtraSpacesOutputSchema": removeExtraSpacesOutputSchema,
+  "uuidGeneratorOutputSchema": uuidGeneratorOutputSchema,
+  "gbToMbConverterOutputSchema": gbToMbConverterOutputSchema,
+  "htmlImageExtractorOutputSchema": htmlImageExtractorOutputSchema,
+  "htmlPrettyPrintOutputSchema": htmlPrettyPrintOutputSchema,
+  "mbToGbConverterOutputSchema": mbToGbConverterOutputSchema,
+  "urlDecoderOutputSchema": urlDecoderOutputSchema,
+  "urlEncoderOutputSchema": urlEncoderOutputSchema,
+  "htmlEntityEncoderOutputSchema": htmlEntityEncoderOutputSchema,
+  "lineCounterOutputSchema": lineCounterOutputSchema,
+  "textReverserOutputSchema": textReverserOutputSchema
+} as const;

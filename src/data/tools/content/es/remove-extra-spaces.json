@@ -1,0 +1,47 @@
+{
+  "toolId": "remove-extra-spaces",
+  "locale": "es",
+  "slug": "herramienta-para-eliminar-espacios-extras",
+  "h1": "Herramienta para eliminar espacios extra",
+  "title": "Herramienta para eliminar espacios extra",
+  "shortDescription": "Elimina los espacios extra y limpia texto pegado con resultados rápidos, entradas simples y ejemplos prácticos.",
+  "overview": "Elimina los espacios extra y limpia texto pegado. Esta página ofrece una respuesta rápida con una herramienta práctica y un flujo de resultado sencillo. Está pensada para usuarios que buscan una solución gratuita en línea, resultados rápidos en el navegador y contenido útil de cola larga.",
+  "howItWorks": [
+    "Introduce el valor o texto requerido en el formulario.",
+    "La conversión, el cálculo o la transformación se ejecuta al instante en el navegador.",
+    "Revisa el resultado y continúa con herramientas relacionadas si necesitas otro paso."
+  ],
+  "examples": [
+    {
+      "title": "Ejemplo 1",
+      "input": "texto   con   espacios   extra",
+      "output": "texto con espacios extra",
+      "description": "Un ejemplo realista de la herramienta para eliminar espacios extra para una búsqueda cotidiana."
+    },
+    {
+      "title": "Ejemplo 2",
+      "input": "texto   con   espacios   extra",
+      "output": "texto con espacios extra",
+      "description": "Otro caso práctico de uso para atraer tráfico orgánico de cola larga."
+    }
+  ],
+  "faq": [
+    {
+      "question": "¿Qué precisión tiene esta herramienta?",
+      "answer": "El resultado se calcula directamente a partir de la fórmula o la lógica del navegador que usa esta herramienta."
+    },
+    {
+      "question": "¿Puedo usar esta herramienta en el móvil?",
+      "answer": "Sí. La página funciona en pantallas de escritorio y móviles con un diseño sencillo de entrada y resultado."
+    }
+  ],
+  "seo": {
+    "title": "Herramienta para eliminar espacios extra",
+    "description": "Elimina los espacios extra y limpia texto pegado. Herramienta gratuita en línea para eliminar espacios extra con resultados al instante.",
+    "keywords": [
+      "herramienta para eliminar espacios extra",
+      "eliminar espacios extra",
+      "herramienta de text-tools"
+    ]
+  }
+}

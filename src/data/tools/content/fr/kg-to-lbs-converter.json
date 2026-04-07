@@ -1,0 +1,47 @@
+{
+  "toolId": "kg-to-lbs-converter",
+  "locale": "fr",
+  "slug": "convertisseur-kg-en-livres",
+  "h1": "Convertisseur kg en livres",
+  "title": "Convertisseur kg en livres",
+  "shortDescription": "Convertissez instantanément les kilogrammes en livres avec un résultat clair et lisible pour le sport, l’expédition et l’usage quotidien.",
+  "overview": "Ce convertisseur transforme des valeurs en kilogrammes en livres à l’aide du facteur standard de 2,2046226218. L’interface garde le calculateur visible sans défilement pour permettre une conversion immédiate, tout en fournissant en dessous un contenu d’appui indexable pour les moteurs de recherche.",
+  "howItWorks": [
+    "Saisissez une valeur en kilogrammes avec des décimales facultatives.",
+    "L’outil valide le nombre et le multiplie par le facteur de conversion.",
+    "Le résultat s’affiche sous forme de valeur numérique précise et d’une version arrondie facile à lire."
+  ],
+  "examples": [
+    {
+      "title": "Préparation sportive",
+      "input": "5 kg",
+      "output": "11.02 lb",
+      "description": "Utile pour lire des programmes d’entraînement qui mélangent des poids métriques et impériaux."
+    },
+    {
+      "title": "Estimation de colis",
+      "input": "18.5 kg",
+      "output": "40.79 lb",
+      "description": "Pratique pour les formulaires d’expédition et les limites des transporteurs en livres."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Quelle formule est utilisée ?",
+      "answer": "Le convertisseur multiplie les kilogrammes par 2,2046226218, le facteur standard de conversion des kilogrammes en livres."
+    },
+    {
+      "question": "Puis-je convertir des valeurs décimales ?",
+      "answer": "Oui. Le champ accepte les nombres décimaux, ce qui le rend pratique pour le poids du corps, des colis ou des ingrédients."
+    }
+  ],
+  "seo": {
+    "title": "Convertisseur kg en livres",
+    "description": "Convertisseur kg en livres gratuit en ligne avec résultats instantanés et exemples clairs.",
+    "keywords": [
+      "kg en livres",
+      "kilogrammes en livres",
+      "convertisseur de poids"
+    ]
+  }
+}

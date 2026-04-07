@@ -1,0 +1,109 @@
+{
+  "toolId": "html-validator",
+  "locale": "fr",
+  "slug": "validateur-html",
+  "h1": "Validateur HTML",
+  "title": "Validateur HTML",
+  "shortDescription": "Validez le HTML pour détecter le balisage dangereux, les identifiants dupliqués et les problèmes de qualité courants.",
+  "metaTitle": "Validateur HTML | Vérifiez le HTML dangereux, les identifiants dupliqués et les erreurs",
+  "metaDescription": "Validez le HTML en ligne pour détecter les balises dangereuses, les identifiants dupliqués, la structure incorrecte et les problèmes de qualité avec un validateur rapide côté navigateur.",
+  "intro": "Vérifiez le HTML pour détecter le balisage dangereux, les identifiants dupliqués, la structure incorrecte et d’autres problèmes pratiques avant publication.",
+  "overview": "Ce validateur HTML vous aide à repérer rapidement les problèmes de balisage les plus courants. Il est utile pour vérifier les éléments dangereux, les identifiants dupliqués, l’imbrication incorrecte, les attributs manquants et les défauts de qualité qui peuvent nuire à l’accessibilité, au SEO et au rendu. L’outil fonctionne côté navigateur, donc votre HTML reste sur votre appareil.",
+  "howItWorks": [
+    "Collez votre HTML dans le champ de saisie.",
+    "Lancez la validation pour analyser les balises, attributs, structure et identifiants.",
+    "Consultez les erreurs, avertissements et détails du résultat sécurisé.",
+    "Corrigez les problèmes puis relancez la validation jusqu’à obtenir un HTML propre."
+  ],
+  "useCases": [
+    "Valider des modèles de pages avant mise en production.",
+    "Contrôler le contenu CMS pour repérer un balisage dangereux ou désordonné.",
+    "Trouver des identifiants dupliqués pouvant casser scripts et accessibilité.",
+    "Inspecter du HTML copié depuis des éditeurs, e-mails ou constructeurs de pages.",
+    "Détecter les alt manquants, liens vides et autres problèmes de qualité."
+  ],
+  "examples": [
+    {
+      "title": "Validation simple",
+      "input": "<div id=\"hero\"><a href=\"#\">En savoir plus</a></div>",
+      "output": "Affiche les contrôles de structure et de qualité pour le HTML fourni.",
+      "description": "À utiliser pour un contrôle rapide d’un balisage simple."
+    },
+    {
+      "title": "Analyse du balisage dangereux",
+      "input": "<script>alert('x')</script><p>Texte</p>",
+      "output": "Signale les éléments dangereux et les risques potentiels de sécurité.",
+      "description": "Aide à repérer le code qui ne doit pas être publié."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Cet outil modifie-t-il mon HTML ?",
+      "answer": "Non. Il analyse seulement le HTML et affiche les erreurs, avertissements et détails de validation."
+    },
+    {
+      "question": "Détecte-t-il le balisage dangereux ?",
+      "answer": "Oui. Il vérifie les balises et motifs à risque pouvant être dangereux dans du contenu publié."
+    },
+    {
+      "question": "Trouve-t-il les identifiants dupliqués ?",
+      "answer": "Oui. Les identifiants dupliqués sont signalés car ils peuvent perturber les ancres, scripts et l’accessibilité."
+    },
+    {
+      "question": "La validation se fait-elle dans le navigateur ?",
+      "answer": "Oui. L’outil est conçu pour fonctionner côté client et ne nécessite pas d’API externe."
+    }
+  ],
+  "uiLabels": {
+    "copy": "Copier",
+    "copied": "Copié",
+    "input": "HTML input",
+    "output": "Validation summary",
+    "placeholder": "Collez le HTML ici",
+    "indent": "Retrait",
+    "removeComments": "Supprimer les commentaires",
+    "preview": "Aperçu",
+    "source": "Source",
+    "sanitizedHtml": "HTML nettoyé",
+    "plainText": "Texte brut",
+    "summary": "Résumé",
+    "total": "Total",
+    "links": "Liens",
+    "images": "Images",
+    "errors": "Erreurs",
+    "warnings": "Avertissements",
+    "valid": "Valide",
+    "invalid": "Invalide",
+    "href": "Href",
+    "text": "Texte",
+    "rel": "Rel",
+    "target": "Target",
+    "alt": "Alt",
+    "width": "Largeur",
+    "height": "Hauteur",
+    "empty": "Vide",
+    "outputReady": "Résultat prêt",
+    "cleanedHtml": "HTML nettoyé",
+    "formattedHtml": "HTML formaté",
+    "minifiedHtml": "HTML minifié",
+    "markdown": "Markdown",
+    "extractedImages": "Images extraites",
+    "extractedLinks": "Liens extraits",
+    "validationSummary": "Résumé de validation",
+    "prettyHtml": "HTML lisible",
+    "encodedText": "Texte encodé"
+  },
+  "seo": {
+    "title": "Validateur HTML | Vérifiez le HTML dangereux, les identifiants dupliqués et les erreurs",
+    "description": "Validez le HTML en ligne pour détecter les balises dangereuses, les identifiants dupliqués, la structure incorrecte et les problèmes de qualité avec un validateur rapide côté navigateur.",
+    "keywords": [
+      "validateur html",
+      "vérifier html",
+      "contrôler html",
+      "html checker",
+      "identifiants dupliqués",
+      "html dangereux",
+      "qualité html"
+    ]
+  }
+}

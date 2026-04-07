@@ -1,0 +1,47 @@
+{
+  "toolId": "slug-generator",
+  "locale": "es",
+  "slug": "generador-de-slugs",
+  "h1": "Generador de slugs",
+  "title": "Generador de slugs",
+  "shortDescription": "Convierte texto en un slug de URL optimizado para SEO con resultados rápidos, una entrada sencilla y ejemplos prácticos.",
+  "overview": "Convierte texto en un slug de URL optimizado para SEO. Esta página ofrece una respuesta rápida con una herramienta práctica y un flujo de resultados sencillo. Está pensada para usuarios que buscan una solución online gratuita, resultados inmediatos en el navegador y contenido útil de cola larga.",
+  "howItWorks": [
+    "Introduce el valor o texto requerido en el formulario.",
+    "La conversión, cálculo o transformación se ejecuta al instante en el navegador.",
+    "Revisa el resultado y sigue con herramientas relacionadas si necesitas un paso más."
+  ],
+  "examples": [
+    {
+      "title": "Ejemplo 1",
+      "input": "Mejor título de página para SEO",
+      "output": "mejor-titulo-de-pagina-para-seo",
+      "description": "Un ejemplo realista de generador de slugs para una búsqueda cotidiana."
+    },
+    {
+      "title": "Ejemplo 2",
+      "input": "Mejor título de página para SEO",
+      "output": "mejor-titulo-de-pagina-para-seo",
+      "description": "Otro caso práctico para captar tráfico orgánico de cola larga."
+    }
+  ],
+  "faq": [
+    {
+      "question": "¿Qué precisión tiene esta herramienta?",
+      "answer": "El resultado se calcula directamente a partir de la fórmula o de la lógica del navegador usada por esta herramienta."
+    },
+    {
+      "question": "¿Puedo usar esta herramienta en el móvil?",
+      "answer": "Sí. La página funciona en escritorio y en móviles con un diseño sencillo de entrada y resultado."
+    }
+  ],
+  "seo": {
+    "title": "Generador de slugs",
+    "description": "Convierte texto en un slug de URL optimizado para SEO. Generador de slugs gratis online con resultados instantáneos.",
+    "keywords": [
+      "generador de slugs",
+      "generador de slugs",
+      "herramienta text-tools"
+    ]
+  }
+}

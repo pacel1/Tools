@@ -1,0 +1,23 @@
+{
+  "id": "days-between-dates-calculator",
+  "type": "calculator",
+  "category": "calculators",
+  "componentName": "DaysBetweenDatesCalculatorTool",
+  "logicModule": "days-between-dates-calculator",
+  "inputSchema": "daysBetweenDatesCalculatorInputSchema",
+  "outputSchema": "daysBetweenDatesCalculatorOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "bmi-calculator",
+    "age-calculator",
+    "percentage-calculator",
+    "loan-payment-calculator"
+  ],
+  "seoPriority": 0.96
+}

@@ -1,0 +1,47 @@
+{
+  "toolId": "simple-interest-calculator",
+  "locale": "pl",
+  "slug": "kalkulator-odsetek-prostych",
+  "h1": "Kalkulator odsetek prostych",
+  "title": "Kalkulator odsetek prostych",
+  "shortDescription": "Oblicz odsetki proste na podstawie kapitału, stopy procentowej i czasu — szybko, wygodnie i z praktycznymi przykładami.",
+  "overview": "Oblicz odsetki proste na podstawie kapitału, stopy procentowej i czasu. Ta strona zapewnia szybki wynik dzięki praktycznemu narzędziu online i prostemu procesowi obliczeń. Jest przeznaczona dla użytkowników szukających darmowej odpowiedzi w internecie, szybkich wyników w przeglądarce oraz przydatnych treści długoogonowych.",
+  "howItWorks": [
+    "Wpisz wymagane wartości do formularza.",
+    "Obliczenie uruchamia się natychmiast w przeglądarce.",
+    "Sprawdź wynik i skorzystaj z powiązanych narzędzi, jeśli potrzebujesz kolejnego kroku."
+  ],
+  "examples": [
+    {
+      "title": "Przykład 1",
+      "input": "5000, 4%, 3 lata",
+      "output": "600",
+      "description": "Realistyczny przykład kalkulatora odsetek prostych dla typowego wyszukiwania."
+    },
+    {
+      "title": "Przykład 2",
+      "input": "5000, 4%, 3 lata",
+      "output": "600",
+      "description": "Kolejny praktyczny przypadek użycia dla ruchu organicznego z długiego ogona."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Jak dokładne jest to narzędzie?",
+      "answer": "Wynik jest obliczany bezpośrednio na podstawie wzoru lub logiki po stronie przeglądarki użytej przez to narzędzie."
+    },
+    {
+      "question": "Czy mogę używać tego narzędzia na telefonie?",
+      "answer": "Tak. Strona działa na komputerach i urządzeniach mobilnych, oferując prosty układ pól i wyniku."
+    }
+  ],
+  "seo": {
+    "title": "Kalkulator odsetek prostych",
+    "description": "Oblicz odsetki proste na podstawie kapitału, stopy procentowej i czasu. Darmowy kalkulator odsetek prostych online z natychmiastowym wynikiem.",
+    "keywords": [
+      "kalkulator odsetek prostych",
+      "kalkulator odsetek prostych",
+      "narzedzie kalkulatory"
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "toolId": "mm-to-inches-converter",
+  "locale": "pl",
+  "slug": "konwerter-mm-na-cale",
+  "h1": "Konwerter mm na cale",
+  "title": "Konwerter mm na cale",
+  "shortDescription": "Szybko przelicz milimetry na cale dzięki natychmiastowym wynikom, prostym danym wejściowym i praktycznym przykładom.",
+  "overview": "Przeliczaj milimetry na cale natychmiast. Ta strona zapewnia szybkie rozwiązanie dzięki praktycznemu narzędziu i prostemu procesowi prezentacji wyniku. Treść jest skierowana do osób szukających darmowej odpowiedzi online, szybkich wyników w przeglądarce oraz użytecznych, długiego ogona treści narzędziowych.",
+  "howItWorks": [
+    "Wpisz wymagającą wartość lub tekst w formularzu.",
+    "Przeliczanie, obliczenie lub transformacja odbywa się natychmiast w przeglądarce.",
+    "Sprawdź wynik i przejdź do powiązanych narzędzi, jeśli potrzebujesz kolejnego kroku."
+  ],
+  "examples": [
+    {
+      "title": "Przykład 1",
+      "input": "25 milimetrów",
+      "output": "0,9843 cala",
+      "description": "Realistyczny przykład konwertera mm na cale dla codziennego zapytania."
+    },
+    {
+      "title": "Przykład 2",
+      "input": "25 milimetrów",
+      "output": "0,9843 cala",
+      "description": "Kolejny praktyczny przypadek użycia dla organicznego ruchu z długiego ogona."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Jak dokładne jest to narzędzie?",
+      "answer": "Wynik jest obliczany bezpośrednio na podstawie wzoru lub logiki działającej po stronie przeglądarki."
+    },
+    {
+      "question": "Czy mogę używać tego narzędzia na telefonie?",
+      "answer": "Tak. Strona działa na komputerach i urządzeniach mobilnych, oferując prosty układ pola wejściowego i wyniku."
+    }
+  ],
+  "seo": {
+    "title": "Konwerter mm na cale",
+    "description": "Przelicz milimetry na cale natychmiast. Darmowy internetowy konwerter mm na cale z błyskawicznymi wynikami.",
+    "keywords": [
+      "konwerter mm na cale",
+      "mm na cale",
+      "narzędzie do konwersji"
+    ]
+  }
+}

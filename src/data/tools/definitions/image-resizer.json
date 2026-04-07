@@ -1,0 +1,23 @@
+{
+  "id": "image-resizer",
+  "type": "image-tool",
+  "category": "image-tools",
+  "componentName": "ImageResizerTool",
+  "logicModule": "image-resizer",
+  "inputSchema": "imageResizerInputSchema",
+  "outputSchema": "imageResizerOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "image-compressor",
+    "image-cropper",
+    "image-format-converter",
+    "image-to-base64"
+  ],
+  "seoPriority": 0.98
+}

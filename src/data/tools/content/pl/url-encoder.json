@@ -1,0 +1,47 @@
+{
+  "toolId": "url-encoder",
+  "locale": "pl",
+  "slug": "enkoder-url",
+  "h1": "Enkoder URL",
+  "title": "Enkoder URL",
+  "shortDescription": "Koduj tekst do bezpiecznego użycia w adresach URL — szybkie wyniki, proste dane wejściowe i praktyczne przykłady.",
+  "overview": "Koduj tekst do bezpiecznego użycia w adresach URL. Ta strona daje szybą odpowiedź dzięki praktycznemu narzędziu i prostemu przepływowi wyników. Strona jest skierowana do użytkowników, którzy szukają darmowej odpowiedzi online, szybkich wyników w przeglądarce i praktycznych treści narzędziowych o długim ogonie wyszukiwania.",
+  "howItWorks": [
+    "Wpisz wymagane wartości lub tekst do formularza.",
+    "Konwersja, obliczenie lub transformacja uruchamia się natychmiast w przeglądarce.",
+    "Sprawdź wynik i przejdź do powiązanych narzędzi, jeśli potrzebujesz kolejnego kroku."
+  ],
+  "examples": [
+    {
+      "title": "Przykład 1",
+      "input": "hello world?x=1&y=2",
+      "output": "hello%20world%3Fx%3D1%26y%3D2",
+      "description": "Realistyczny przykład enkodera URL dla codziennego zapytania wyszukiwania."
+    },
+    {
+      "title": "Przykład 2",
+      "input": "hello world?x=1&y=2",
+      "output": "hello%20world%3Fx%3D1%26y%3D2",
+      "description": "Kolejny praktyczny przypadek użycia dla organicznego ruchu long-tail."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Jak dokładne jest to narzędzie?",
+      "answer": "Wynik jest obliczany bezpośrednio na podstawie formuły lub logiki po stronie przeglądarki używanej przez to narzędzie."
+    },
+    {
+      "question": "Czy mogę używać tego narzędzia na telefonie?",
+      "answer": "Tak. Strona działa na ekranach desktopowych i mobilnych, z prostym układem pola wejściowego i wyniku."
+    }
+  ],
+  "seo": {
+    "title": "Enkoder URL",
+    "description": "Koduj tekst do bezpiecznego użycia w adresach URL. Darmowy online enkoder URL z natychmiastowymi wynikami.",
+    "keywords": [
+      "enkoder url",
+      "enkoder url",
+      "narzędzia deweloperskie"
+    ]
+  }
+}

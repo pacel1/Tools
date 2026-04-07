@@ -1,0 +1,23 @@
+{
+  "id": "json-validator",
+  "type": "developer-tool",
+  "category": "developer-tools",
+  "componentName": "JsonValidatorTool",
+  "logicModule": "json-validator",
+  "inputSchema": "jsonValidatorInputSchema",
+  "outputSchema": "jsonValidatorOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "json-formatter",
+    "json-minifier",
+    "base64-decoder",
+    "base64-encoder"
+  ],
+  "seoPriority": 0.92
+}

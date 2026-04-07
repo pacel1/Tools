@@ -1,0 +1,47 @@
+{
+  "toolId": "character-counter",
+  "locale": "pl",
+  "slug": "licznik-znakow",
+  "h1": "Licznik znaków",
+  "title": "Licznik znaków",
+  "shortDescription": "Policz znaki w tekście natychmiast — szybko, prosto i z praktycznymi przykładami.",
+  "overview": "Policz znaki w tekście natychmiast. Ta strona zapewnia szybki wynik dzięki prostemu narzędziu i wygodnemu procesowi prezentacji rezultatu. Zawartość jest przygotowana dla osób szukających darmowej odpowiedzi online, szybkich wyników w przeglądarce oraz praktycznych treści long-tail związanych z narzędziami tekstowymi.",
+  "howItWorks": [
+    "Wpisz wymagany tekst do formularza.",
+    "Konwersja, obliczenie lub przekształcenie wykonuje się natychmiast w przeglądarce.",
+    "Sprawdź wynik i przejdź do powiązanych narzędzi, jeśli potrzebujesz kolejnego kroku."
+  ],
+  "examples": [
+    {
+      "title": "Przykład 1",
+      "input": "Tekst opisu produktu",
+      "output": "Liczba znaków",
+      "description": "Realistyczny przykład licznika znaków dla codziennego wyszukiwania."
+    },
+    {
+      "title": "Przykład 2",
+      "input": "Tekst opisu produktu",
+      "output": "Liczba znaków",
+      "description": "Kolejny praktyczny przypadek użycia dla ruchu organicznego long-tail."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Jak dokładne jest to narzędzie?",
+      "answer": "Wynik jest obliczany bezpośrednio na podstawie formuły lub logiki po stronie przeglądarki używanej przez to narzędzie."
+    },
+    {
+      "question": "Czy mogę używać tego narzędzia na telefonie?",
+      "answer": "Tak. Strona działa na komputerach i urządzeniach mobilnych, oferując prosty układ pola wejściowego i wyniku."
+    }
+  ],
+  "seo": {
+    "title": "Licznik znaków",
+    "description": "Policz znaki w tekście natychmiast. Darmowy licznik znaków online z natychmiastowymi wynikami.",
+    "keywords": [
+      "licznik znaków",
+      "licznik znaków",
+      "narzędzie do tekstu"
+    ]
+  }
+}

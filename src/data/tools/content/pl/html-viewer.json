@@ -1,0 +1,111 @@
+{
+  "toolId": "html-viewer",
+  "locale": "pl",
+  "slug": "podgladacz-html",
+  "h1": "Podglądacz HTML",
+  "title": "Podglądacz HTML",
+  "shortDescription": "Bezpiecznie wyświetlaj oczyszczony HTML i sprawdzaj jego źródło.",
+  "metaTitle": "Podglądacz HTML | Bezpieczny podgląd oczyszczonego HTML",
+  "metaDescription": "Wyświetlaj HTML w bezpiecznym, oczyszczonym podglądzie i sprawdzaj źródło, linki, obrazy oraz informacje walidacyjne.",
+  "intro": "Bezpiecznie podglądaj HTML w przeglądarce, sprawdzaj oczyszczony wynik i analizuj linki, obrazy oraz strukturę bez ryzyka uruchomienia skryptów.",
+  "overview": "Podglądacz HTML pomaga analizować treść HTML po sanitizacji. To szybkie narzędzie do bezpiecznego podglądu zaufanego lub niepewnego kodu po stronie klienta. Użyj go do sprawdzenia oczyszczonego źródła, wykrycia usuniętych elementów i weryfikacji linków oraz multimediów przed publikacją lub udostępnieniem.",
+  "howItWorks": [
+    "Wklej HTML do pola wejściowego.",
+    "Narzędzie sanitizuje kod po stronie klienta.",
+    "Sprawdź podgląd oraz oczyszczone źródło HTML.",
+    "Przeanalizuj linki, obrazy, atrybuty i komunikaty walidacji.",
+    "Skopiuj oczyszczony wynik, jeśli wszystko wygląda poprawnie."
+  ],
+  "useCases": [
+    "Podgląd fragmentów HTML przed publikacją.",
+    "Sprawdzanie oczyszczonej treści z formularzy użytkowników.",
+    "Analiza linków, obrazów i atrybutów w wygenerowanym kodzie.",
+    "Weryfikacja oczyszczonego HTML po eksporcie lub konwersji.",
+    "Bezpieczne przeglądanie niepoprawnego lub podejrzanego HTML."
+  ],
+  "examples": [
+    {
+      "title": "Przed publikacją fragmentu bloga",
+      "input": "<p>Cześć <script>alert(1)</script><a href='https://example.com'>link</a></p>",
+      "output": "<p>Cześć <a href=\"https://example.com\">link</a></p>",
+      "description": "Skrypty są usuwane, a bezpieczna treść pozostaje."
+    },
+    {
+      "title": "Kontrola treści od użytkowników",
+      "input": "<img src='photo.jpg' onerror='alert(1)'><strong>Świetny wpis</strong>",
+      "output": "<img src=\"photo.jpg\"><strong>Świetny wpis</strong>",
+      "description": "Niebezpieczne obsługi zdarzeń są usuwane z elementów."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Czy ten Podglądacz HTML jest bezpieczny?",
+      "answer": "Tak. Służy do podglądu oczyszczonego HTML po stronie klienta i nie powinien uruchamiać aktywnych skryptów w obszarze wynikowym."
+    },
+    {
+      "question": "Czy usuwa skrypty i niebezpieczne atrybuty?",
+      "answer": "Tak. Sanitizer ma usuwać typowe wektory XSS, takie jak znaczniki script i obsługę zdarzeń."
+    },
+    {
+      "question": "Czy mogę osobno sprawdzić linki i obrazy?",
+      "answer": "Tak. Narzędzie pomaga analizować wyodrębnione linki, obrazy i kluczowe atrybuty w celu walidacji."
+    },
+    {
+      "question": "Czy mój HTML jest wysyłany na serwer?",
+      "answer": "Nie. Narzędzie działa wyłącznie po stronie klienta i nie korzysta z zewnętrznych API."
+    }
+  ],
+  "uiLabels": {
+    "copy": "Kopiuj",
+    "copied": "Skopiowano",
+    "input": "Wejście HTML",
+    "output": "Oczyszczony HTML",
+    "placeholder": "Wklej tutaj HTML",
+    "indent": "Wcięcia",
+    "removeComments": "Usuń komentarze",
+    "preview": "Podgląd",
+    "source": "Źródło",
+    "sanitizedHtml": "Oczyszczony HTML",
+    "plainText": "Zwykły tekst",
+    "summary": "Podsumowanie",
+    "total": "Łącznie",
+    "links": "Linki",
+    "images": "Obrazy",
+    "errors": "Błędy",
+    "warnings": "Ostrzeżenia",
+    "valid": "Prawidłowy",
+    "invalid": "Nieprawidłowy",
+    "href": "Adres URL",
+    "text": "Tekst",
+    "rel": "Rel",
+    "target": "Target",
+    "alt": "Alt",
+    "width": "Szerokość",
+    "height": "Wysokość",
+    "empty": "Puste",
+    "outputReady": "Wynik gotowy",
+    "cleanedHtml": "Oczyszczony HTML",
+    "formattedHtml": "Sformatowany HTML",
+    "minifiedHtml": "Zminifikowany HTML",
+    "markdown": "Markdown",
+    "extractedImages": "Wyodrębnione obrazy",
+    "extractedLinks": "Wyodrębnione linki",
+    "validationSummary": "Podsumowanie walidacji",
+    "prettyHtml": "Czytelny HTML",
+    "encodedText": "Zakodowany tekst"
+  },
+  "seo": {
+    "title": "Podglądacz HTML | Bezpieczny podgląd oczyszczonego HTML",
+    "description": "Wyświetlaj HTML w bezpiecznym, oczyszczonym podglądzie i sprawdzaj źródło, linki, obrazy oraz informacje walidacyjne.",
+    "keywords": [
+      "podglądacz HTML",
+      "oczyszczony HTML",
+      "podgląd HTML",
+      "bezpieczny podgląd HTML",
+      "sanityzacja HTML",
+      "analiza HTML",
+      "oczyszczone źródło",
+      "bezpieczny podgląd XSS"
+    ]
+  }
+}

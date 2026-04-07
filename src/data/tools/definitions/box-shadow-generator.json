@@ -1,0 +1,23 @@
+{
+  "id": "box-shadow-generator",
+  "type": "generator",
+  "category": "generators",
+  "componentName": "BoxShadowGeneratorTool",
+  "logicModule": "box-shadow-generator",
+  "inputSchema": "boxShadowGeneratorInputSchema",
+  "outputSchema": "boxShadowGeneratorOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "gradient-generator",
+    "meta-tag-generator",
+    "placeholder-image-generator",
+    "qr-code-generator"
+  ],
+  "seoPriority": 0.94
+}

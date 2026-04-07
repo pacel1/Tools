@@ -1,0 +1,32 @@
+{
+  "common": {
+    "siteName": "ConvertBase.app",
+    "siteTagline": "Kostenlose Online-Tools, Konverter und Generatoren",
+    "footerTagline": "Nutze Konverter, Rechner, Generatoren, Bild-Tools und Entwicklerwerkzeuge an einem Ort.",
+    "heroEyebrow": "Kostenlose Online-Tools",
+    "heroTitle": "Hunderte nützliche Online-Tools an einem Ort",
+    "heroDescription": "Entdecke kostenlose Konverter, Rechner, Generatoren und Text-Tools mit schnellen Ergebnissen und klaren Oberflächen. Entwickelt für alltägliche Suchen und hilfreiche Long-Tail-Anfragen mit klarer Absicht.",
+    "heroPanelLabel": "Am häufigsten gesucht",
+    "heroPanelItem1": "Einheiten-, Gewichts-, Längen- und Format-Konverter",
+    "heroPanelItem2": "Rechner für schnelle Alltagsrechnungen und Vergleiche",
+    "heroPanelItem3": "Generatoren und Text-Tools für Content-Arbeit",
+    "heroPanelItem4": "Einfache Utility-Seiten für ein klar definiertes Problem",
+    "categoriesEyebrow": "Kategorien",
+    "categoriesTitle": "Wähle eine Kategorie und finde schneller genau das richtige Tool",
+    "featuredEyebrow": "Empfohlene Tools",
+    "featuredTitle": "Beliebte Tools, die jetzt verfügbar sind",
+    "footerLinks": {
+      "about": "Über uns",
+      "privacy": "Datenschutz",
+      "terms": "Nutzungsbedingungen",
+      "cookies": "Cookies",
+      "disclaimer": "Haftungsausschluss",
+      "contact": "Kontakt"
+    },
+    "cookieBanner": {
+      "title": "Cookies, Analysen und Werbung",
+      "description": "ConvertBase.app verwendet Cookies, um die Website funktionsfähig zu halten, Zugriffe mit Google Analytics zu messen und Werbung über Google AdSense anzuzeigen. Wenn du fortfährst, akzeptierst du diese Nutzung.",
+      "accept": "Akzeptieren"
+    }
+  }
+}

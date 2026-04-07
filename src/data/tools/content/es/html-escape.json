@@ -1,0 +1,103 @@
+{
+  "toolId": "html-escape",
+  "locale": "es",
+  "slug": "escapado-html",
+  "h1": "Escapado de HTML",
+  "title": "Escapado de HTML",
+  "shortDescription": "Convierte los caracteres reservados de HTML en entidades para incrustarlos de forma segura en código y contenido.",
+  "metaTitle": "Escapado de HTML | Convierte caracteres especiales en entidades HTML",
+  "metaDescription": "Escapa caracteres HTML como <, >, &, comillas y apóstrofos para usarlos de forma segura en código, plantillas y contenido.",
+  "intro": "Usa esta herramienta de escapado de HTML para convertir caracteres reservados en entidades HTML y mostrar texto, código y ejemplos de forma segura.",
+  "overview": "El escapado de HTML reemplaza los caracteres con significado especial en HTML por sus entidades equivalentes. Así el texto no se interpreta como etiquetas y se puede incrustar con seguridad en páginas, fragmentos y documentación. Es especialmente útil para mostrar código o texto de usuarios como contenido literal.",
+  "howItWorks": [
+    "Pega o escribe el texto que quieres escapar.",
+    "La herramienta convierte caracteres HTML reservados como <, >, &, \", y ' en entidades.",
+    "Copia el resultado y úsalo en HTML, plantillas o documentación."
+  ],
+  "useCases": [
+    "Mostrar ejemplos de código sin renderizar etiquetas HTML.",
+    "Incrustar texto de usuarios de forma segura en contenido HTML.",
+    "Preparar fragmentos, documentación o plantillas para publicar.",
+    "Evitar etiquetas accidentales al mostrar caracteres especiales."
+  ],
+  "examples": [
+    {
+      "title": "Escapado básico",
+      "input": "<p>Tom & Jerry</p>",
+      "output": "&lt;p&gt;Tom &amp; Jerry&lt;/p&gt;",
+      "description": "Los caracteres reservados se convierten en entidades HTML."
+    },
+    {
+      "title": "Comillas y apóstrofos",
+      "input": "He said: \"It's fine\"",
+      "output": "He said: &quot;It&#39;s fine&quot;",
+      "description": "Las comillas se escapan para incrustarlas mejor en atributos o contenido."
+    }
+  ],
+  "faq": [
+    {
+      "question": "¿Qué hace el escapado de HTML?",
+      "answer": "Convierte caracteres reservados en entidades HTML para que el texto se muestre de forma segura en HTML sin interpretarse como marcado."
+    },
+    {
+      "question": "¿El escapado de HTML es lo mismo que la sanitización?",
+      "answer": "No. Escapar hace que el texto sea seguro para mostrarlo, mientras que sanitizar elimina o filtra HTML inseguro. Resuelven problemas distintos."
+    },
+    {
+      "question": "¿Cuándo debo usar escapado de HTML?",
+      "answer": "Cuando quieras mostrar texto o código literalmente en HTML, especialmente contenido de usuarios, fragmentos de código o documentación."
+    }
+  ],
+  "uiLabels": {
+    "copy": "Copiar",
+    "copied": "Copiado",
+    "input": "Texto de entrada",
+    "output": "HTML escapado",
+    "placeholder": "Pega el texto para escaparlo",
+    "indent": "Sangría",
+    "removeComments": "Eliminar comentarios",
+    "preview": "Vista previa",
+    "source": "Fuente",
+    "sanitizedHtml": "HTML sanitizado",
+    "plainText": "Texto plano",
+    "summary": "Resumen",
+    "total": "Total",
+    "links": "Enlaces",
+    "images": "Imágenes",
+    "errors": "Errores",
+    "warnings": "Advertencias",
+    "valid": "Válido",
+    "invalid": "No válido",
+    "href": "Href",
+    "text": "Texto",
+    "rel": "Rel",
+    "target": "Destino",
+    "alt": "Alt",
+    "width": "Ancho",
+    "height": "Alto",
+    "empty": "Vacío",
+    "outputReady": "Salida lista",
+    "cleanedHtml": "HTML limpio",
+    "formattedHtml": "HTML formateado",
+    "minifiedHtml": "HTML minificado",
+    "markdown": "Markdown",
+    "extractedImages": "Imágenes extraídas",
+    "extractedLinks": "Enlaces extraídos",
+    "validationSummary": "Resumen de validación",
+    "prettyHtml": "HTML legible",
+    "encodedText": "Texto codificado"
+  },
+  "seo": {
+    "title": "Escapado de HTML | Convierte caracteres especiales en entidades HTML",
+    "description": "Escapa caracteres HTML como <, >, &, comillas y apóstrofos para usarlos de forma segura en código, plantillas y contenido.",
+    "keywords": [
+      "escapado html",
+      "escapar html",
+      "entidades html",
+      "codificador html",
+      "caracteres especiales",
+      "herramienta html",
+      "codificar texto html"
+    ]
+  }
+}

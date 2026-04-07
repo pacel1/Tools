@@ -1,0 +1,109 @@
+{
+  "toolId": "html-cleaner",
+  "locale": "pl",
+  "slug": "czysciciel-html",
+  "h1": "Czyszczenie HTML",
+  "title": "Czyszczenie HTML",
+  "shortDescription": "Oczyść niebezpieczny lub zbędny kod HTML, usuwając skrypty, komentarze i ryzykowne atrybuty.",
+  "metaTitle": "Czyszczenie HTML | Usuń skrypty, komentarze i niebezpieczne atrybuty",
+  "metaDescription": "Oczyść HTML online, usuwając skrypty, komentarze, handlery zdarzeń i ryzykowne atrybuty. Szybkie, bezpieczne czyszczenie HTML po stronie przeglądarki.",
+  "intro": "Użyj tego narzędzia do czyszczenia HTML, aby uporządkować wklejony kod bez wysyłania go na serwer. Usuwa skrypty, komentarze i ryzykowne atrybuty, dzięki czemu otrzymasz bezpieczniejszy i czytelniejszy wynik.",
+  "overview": "Czyszczenie HTML to narzędzie działające po stronie przeglądarki, które pomaga przygotować markup do publikacji, podglądu lub ponownego użycia. Usuwa typowe wektory XSS, zbędne komentarze i niechciane atrybuty, zachowując potrzebną strukturę dokumentu. Sprawdza się u developerów, redaktorów i wszystkich, którzy pracują z wklejonym lub generowanym HTML-em.",
+  "howItWorks": [
+    "Wklej lub załaduj HTML do pola wejściowego.",
+    "Narzędzie skanuje kod pod kątem niebezpiecznych tagów, komentarzy i ryzykownych atrybutów.",
+    "Usuwa skrypty, handlery zdarzeń i inne niechciane elementy.",
+    "Sprawdź oczyszczony HTML w panelu wynikowym i skopiuj go, gdy będzie gotowy."
+  ],
+  "useCases": [
+    "Usuwanie skryptów i inline handlerów zdarzeń z HTML generowanego przez użytkowników.",
+    "Czyszczenie HTML skopiowanego z CMS-ów, klientów poczty lub edytorów tekstu.",
+    "Przygotowanie bezpiecznych fragmentów do podglądu, dokumentacji lub demo.",
+    "Usuwanie komentarzy i zbędnych atrybutów przed formatowaniem lub minifikacją.",
+    "Kontrola i sanitizacja wklejonego markup przed ponownym użyciem w projekcie."
+  ],
+  "examples": [
+    {
+      "title": "Usuń skrypty z wklejonego HTML",
+      "input": "<div onclick=\"alert(1)\"><script>alert('x')</script>Witaj<!-- notatka --></div>",
+      "output": "<div>Witaj</div>",
+      "description": "Zachowuje treść elementu, usuwając skrypty, komentarze i niebezpieczne handlery."
+    },
+    {
+      "title": "Oczyść zbędne atrybuty",
+      "input": "<p style=\"color:red\" data-id=\"1\" onmouseover=\"doBad()\">Tekst</p>",
+      "output": "<p style=\"color:red\" data-id=\"1\">Tekst</p>",
+      "description": "Usuwa handlery zdarzeń i pozostawia dozwolone atrybuty, jeśli nie są ryzykowne."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Co usuwa czyszczenie HTML?",
+      "answer": "Usuwa skrypty, komentarze i ryzykowne atrybuty, takie jak inline handlery zdarzeń. Dokładny wynik zależy od reguł sanitizacji zastosowanych w narzędziu."
+    },
+    {
+      "question": "Czy HTML jest przetwarzany na serwerze?",
+      "answer": "Nie. To narzędzie działa wyłącznie po stronie przeglądarki, więc kod może zostać oczyszczony lokalnie."
+    },
+    {
+      "question": "Czy naprawia niepoprawny HTML?",
+      "answer": "Może oczyścić i częściowo uporządkować markup, ale nie jest pełnym narzędziem do naprawy struktury HTML. Do poprawek użyj też formatowania lub walidacji."
+    },
+    {
+      "question": "Czy usuwa wszystkie atrybuty?",
+      "answer": "Nie. Usuwa tylko atrybuty niebezpieczne lub zbędne, pozostawiając użyteczny markup tam, gdzie to możliwe."
+    }
+  ],
+  "uiLabels": {
+    "copy": "Kopiuj",
+    "copied": "Skopiowano",
+    "input": "Wejście",
+    "output": "Wyjście",
+    "placeholder": "Wklej tutaj HTML...",
+    "indent": "Wcięcie",
+    "removeComments": "Usuń komentarze",
+    "preview": "Podgląd",
+    "source": "Źródło",
+    "sanitizedHtml": "Oczyszczony HTML",
+    "plainText": "Zwykły tekst",
+    "summary": "Podsumowanie",
+    "total": "Razem",
+    "links": "Linki",
+    "images": "Obrazy",
+    "errors": "Błędy",
+    "warnings": "Ostrzeżenia",
+    "valid": "Poprawny",
+    "invalid": "Niepoprawny",
+    "href": "Href",
+    "text": "Tekst",
+    "rel": "Rel",
+    "target": "Target",
+    "alt": "Alt",
+    "width": "Szerokość",
+    "height": "Wysokość",
+    "empty": "Puste",
+    "outputReady": "Wynik gotowy",
+    "cleanedHtml": "Oczyszczony HTML",
+    "formattedHtml": "Sformatowany HTML",
+    "minifiedHtml": "Zminimalizowany HTML",
+    "markdown": "Markdown",
+    "extractedImages": "Wyodrębnione obrazy",
+    "extractedLinks": "Wyodrębnione linki",
+    "validationSummary": "Podsumowanie walidacji",
+    "prettyHtml": "Czytelny HTML",
+    "encodedText": "Tekst zakodowany"
+  },
+  "seo": {
+    "title": "Czyszczenie HTML online | Usuń niebezpieczne tagi i atrybuty",
+    "description": "Oczyść HTML online, usuwając skrypty, komentarze i ryzykowne atrybuty. Szybkie czyszczenie HTML po stronie przeglądarki dla bezpieczniejszego markup.",
+    "keywords": [
+      "czyszczenie html",
+      "sanityzacja html",
+      "usuń skrypty z html",
+      "usuń komentarze html",
+      "oczyszczanie html online",
+      "sanitizer html",
+      "bezpieczny html"
+    ]
+  }
+}

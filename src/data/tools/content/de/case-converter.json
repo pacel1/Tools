@@ -1,0 +1,47 @@
+{
+  "toolId": "case-converter",
+  "locale": "de",
+  "slug": "umwandlung-gross-und-kleinschreibung",
+  "h1": "Groß- und Kleinschreibung umwandeln",
+  "title": "Groß- und Kleinschreibung umwandeln",
+  "shortDescription": "Wandle Text in Großschreibung, Kleinschreibung, Titel-Schreibweise und Satzschreibung um – schnell, einfach und mit praktischen Beispielen.",
+  "overview": "Wandle Text in Großschreibung, Kleinschreibung, Titel-Schreibweise und Satzschreibung um. Diese Seite liefert eine schnelle Antwort mit einem praktischen Online-Tool und einem einfachen Ergebnisablauf. Sie richtet sich an Nutzer, die eine kostenlose Lösung im Browser, sofortige Ergebnisse und praxisnahe Inhalte für Long-Tail-Suchen suchen.",
+  "howItWorks": [
+    "Gib den benötigten Text in das Formular ein.",
+    "Die Umwandlung, Berechnung oder Transformation erfolgt sofort im Browser.",
+    "Prüfe das Ergebnis und nutze bei Bedarf verwandte Tools für den nächsten Schritt."
+  ],
+  "examples": [
+    {
+      "title": "Beispiel 1",
+      "input": "sample headline text",
+      "output": "GROSS / klein / Titel / Satz",
+      "description": "Ein realistisches Beispiel für die Umwandlung von Groß- und Kleinschreibung bei einer alltäglichen Suchanfrage."
+    },
+    {
+      "title": "Beispiel 2",
+      "input": "sample headline text",
+      "output": "GROSS / klein / Titel / Satz",
+      "description": "Ein weiterer praktischer Anwendungsfall für organischen Long-Tail-Traffic."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Wie genau ist dieses Tool?",
+      "answer": "Das Ergebnis wird direkt auf Grundlage der Formel oder der browserseitigen Logik dieses Tools berechnet."
+    },
+    {
+      "question": "Kann ich dieses Tool auf dem Smartphone nutzen?",
+      "answer": "Ja. Die Seite funktioniert auf Desktop- und Mobilgeräten mit einem einfachen Eingabe- und Ergebnislayout."
+    }
+  ],
+  "seo": {
+    "title": "Groß- und Kleinschreibung umwandeln",
+    "description": "Wandle Text in Großschreibung, Kleinschreibung, Titel-Schreibweise und Satzschreibung um. Kostenloser Online-Case-Konverter mit sofortigen Ergebnissen.",
+    "keywords": [
+      "Groß- und Kleinschreibung umwandeln",
+      "case converter",
+      "text-tools tool"
+    ]
+  }
+}

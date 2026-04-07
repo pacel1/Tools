@@ -1,0 +1,47 @@
+{
+  "toolId": "line-counter",
+  "locale": "es",
+  "slug": "contador-de-lineas",
+  "h1": "Contador de líneas",
+  "title": "Contador de líneas",
+  "shortDescription": "Cuenta líneas en texto al instante con resultados rápidos, entrada simple y ejemplos prácticos.",
+  "overview": "Cuenta líneas en texto al instante. Esta página ofrece una respuesta rápida con una herramienta práctica y un flujo de resultados sencillo. Está pensada para usuarios que buscan una respuesta gratis en línea, resultados rápidos en el navegador y contenido útil de cola larga.",
+  "howItWorks": [
+    "Introduce el valor o el texto requerido en el formulario.",
+    "La conversión, cálculo o transformación se ejecuta al instante en el navegador.",
+    "Revisa el resultado y continúa con herramientas relacionadas si necesitas un paso más."
+  ],
+  "examples": [
+    {
+      "title": "Ejemplo 1",
+      "input": "Tres líneas de texto",
+      "output": "Total de líneas",
+      "description": "Un ejemplo realista de contador de líneas para una búsqueda cotidiana."
+    },
+    {
+      "title": "Ejemplo 2",
+      "input": "Tres líneas de texto",
+      "output": "Total de líneas",
+      "description": "Otro caso práctico para tráfico orgánico de cola larga."
+    }
+  ],
+  "faq": [
+    {
+      "question": "¿Qué tan precisa es esta herramienta?",
+      "answer": "El resultado se calcula directamente a partir de la fórmula o la lógica en el navegador que utiliza esta herramienta."
+    },
+    {
+      "question": "¿Puedo usar esta herramienta en el móvil?",
+      "answer": "Sí. La página funciona en escritorio y en móvil con una interfaz simple de entrada y resultado."
+    }
+  ],
+  "seo": {
+    "title": "Contador de líneas",
+    "description": "Cuenta líneas en texto al instante. Contador de líneas online gratis con resultados inmediatos.",
+    "keywords": [
+      "contador de líneas",
+      "contador de líneas",
+      "herramienta de texto"
+    ]
+  }
+}

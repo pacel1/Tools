@@ -1,0 +1,36 @@
+{
+  "page": "terms",
+  "locale": "pl",
+  "title": "Regulamin",
+  "metaTitle": "Regulamin | ConvertBase.app",
+  "metaDescription": "Zapoznaj się z regulaminem ConvertBase.app, zasadami korzystania, cookies, Google Analytics i Google AdSense.",
+  "heading": "Regulamin",
+  "content": [
+    "Niniejszy Regulamin określa zasady korzystania z ConvertBase.app i publicznie dostępnych narzędzi online.",
+    "Korzystając z platformy, zgadzasz się używać serwisu zgodnie z prawem, w sposób odpowiedzialny i wyłącznie do celów zgodnych z obowiązującymi przepisami."
+  ],
+  "sections": [
+    {
+      "title": "Korzystanie z platformy",
+      "paragraphs": [
+        "Możesz używać ConvertBase.app do korzystania z publicznych narzędzi i stron informacyjnych. Nie wolno wykorzystywać serwisu do działań niezgodnych z prawem, zakłócania dostępności usług ani nadużywania automatyzacji.",
+        "Możemy aktualizować, zastępować lub usuwać narzędzia i treści w dowolnym momencie, jeśli jest to potrzebne dla jakości, bezpieczeństwa lub utrzymania."
+      ]
+    },
+    {
+      "title": "Treści, analityka i reklamy",
+      "paragraphs": [
+        "Platforma może zawierać strony informacyjne, wygenerowane wyniki, linkowanie wewnętrzne, pliki cookie, analitykę i reklamy. Google Analytics może pomagać nam mierzyć ruch, a Google AdSense może wspierać finansowanie serwisu.",
+        "Korzystanie z serwisu oznacza również, że pliki cookie i podobne technologie mogą działać zgodnie z Polityką prywatności i Polityką cookies."
+      ]
+    },
+    {
+      "title": "Brak gwarancji i kontakt",
+      "paragraphs": [
+        "ConvertBase.app jest udostępniany w formule as is. Dokładamy starań, aby treści były użyteczne, a narzędzia dostępne, ale nie gwarantujemy nieprzerwanego działania ani pełnej poprawności w każdym scenariuszu.",
+        "W sprawach dotyczących regulaminu skontaktuj się z operatorem ConvertBase.app pod adresem contact@convertbase.app."
+      ]
+    }
+  ],
+  "keywords": ["regulamin", "warunki korzystania", "convertbase regulamin", "google analytics", "google adsense", "cookies"]
+}

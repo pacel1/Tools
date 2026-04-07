@@ -1,0 +1,36 @@
+{
+  "page": "cookies",
+  "locale": "es",
+  "title": "Política de cookies",
+  "metaTitle": "Política de cookies | ConvertBase.app",
+  "metaDescription": "Descubre cómo ConvertBase.app usa cookies para el funcionamiento del sitio, Google Analytics, Google AdSense y preferencias básicas.",
+  "heading": "Política de cookies",
+  "content": [
+    "Esta Política de cookies explica cómo ConvertBase.app utiliza cookies y tecnologías similares cuando navegas por el sitio.",
+    "Las cookies ayudan a mantener la plataforma estable, entender cómo se usan las páginas y apoyar la publicidad cuando está activada."
+  ],
+  "sections": [
+    {
+      "title": "Qué hacen las cookies en este sitio",
+      "paragraphs": [
+        "Las cookies pueden almacenar información limitada en tu navegador para que las páginas carguen correctamente, se recuerden preferencias y se respete tu elección de consentimiento.",
+        "También podemos usar cookies para entender patrones generales de tráfico y mejorar la experiencia en distintos dispositivos e idiomas."
+      ]
+    },
+    {
+      "title": "Cookies de analítica y publicidad",
+      "paragraphs": [
+        "Google Analytics puede utilizar cookies para ofrecer informes sobre visitas, fuentes de tráfico y comportamiento de los usuarios en ConvertBase.app.",
+        "Google AdSense puede usar cookies para mostrar y medir publicidad. Normalmente puedes gestionar estas preferencias desde tu navegador o los controles del proveedor publicitario."
+      ]
+    },
+    {
+      "title": "Gestionar cookies",
+      "paragraphs": [
+        "Puedes controlar o eliminar cookies desde la configuración de tu navegador. Bloquear ciertas cookies puede reducir la funcionalidad del sitio o afectar a la publicidad y la analítica.",
+        "Si necesitas más información sobre nuestro uso de cookies, escribe a contact@convertbase.app."
+      ]
+    }
+  ],
+  "keywords": ["política de cookies", "cookies convertbase", "google analytics cookies", "google adsense cookies", "consentimiento cookies", "navegador"]
+}

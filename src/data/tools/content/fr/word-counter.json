@@ -1,0 +1,47 @@
+{
+  "toolId": "word-counter",
+  "locale": "fr",
+  "slug": "compteur-de-mots",
+  "h1": "Compteur de mots",
+  "title": "Compteur de mots",
+  "shortDescription": "Comptez les mots, les caractères, les paragraphes et le temps de lecture dans un seul outil léger d’analyse de texte.",
+  "overview": "Le compteur de mots analyse le texte localement dans le navigateur et fournit des statistiques rapides pour les rédacteurs, éditeurs, marketeurs et étudiants. Il est conçu pour être peu coûteux à grande échelle, car aucune base de données ni API externe n’est nécessaire pour le calcul en direct.",
+  "howItWorks": [
+    "Collez ou saisissez votre texte dans la zone de texte.",
+    "L’outil nettoie les espaces et compte les mots, les caractères et les blocs de paragraphes.",
+    "Le temps de lecture est estimé sur une base de 200 mots par minute."
+  ],
+  "examples": [
+    {
+      "title": "Brouillon de méta-description",
+      "input": "Un court résumé SEO pour une page d’accueil.",
+      "output": "8 mots",
+      "description": "Vérifiez rapidement la concision du texte avant publication."
+    },
+    {
+      "title": "Paragraphe de blog",
+      "input": "Un extrait d’article en deux paragraphes avec des retours à la ligne.",
+      "output": "Mots, caractères et temps de lecture",
+      "description": "Utile pour les briefs de contenu et le contrôle qualité éditorial."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Le comptage est-il effectué côté client ?",
+      "answer": "Oui. L’exemple de démarrage exécute le calcul directement dans le navigateur pour plus de rapidité et pour éviter les coûts d’infrastructure."
+    },
+    {
+      "question": "Comment le temps de lecture est-il estimé ?",
+      "answer": "L’indicateur de temps de lecture divise le nombre de mots par 200 et arrondit le résultat à deux décimales."
+    }
+  ],
+  "seo": {
+    "title": "Compteur de mots en ligne",
+    "description": "Compteur de mots en ligne gratuit pour les mots, caractères, paragraphes et le temps de lecture.",
+    "keywords": [
+      "compteur de mots",
+      "compteur de caractères",
+      "calculateur de temps de lecture"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "meta-tag-generator",
+  "type": "generator",
+  "category": "generators",
+  "componentName": "MetaTagGeneratorTool",
+  "logicModule": "meta-tag-generator",
+  "inputSchema": "metaTagGeneratorInputSchema",
+  "outputSchema": "metaTagGeneratorOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "qr-code-generator",
+    "favicon-generator",
+    "gradient-generator",
+    "box-shadow-generator"
+  ],
+  "seoPriority": 0.93
+}

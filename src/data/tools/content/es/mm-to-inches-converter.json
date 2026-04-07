@@ -1,0 +1,47 @@
+{
+  "toolId": "mm-to-inches-converter",
+  "locale": "es",
+  "slug": "convertidor-de-mm-a-pulgadas",
+  "h1": "Convertidor de mm a pulgadas",
+  "title": "Convertidor de mm a pulgadas",
+  "shortDescription": "Convierte milímetros a pulgadas al instante con resultados rápidos, entradas sencillas y ejemplos prácticos.",
+  "overview": "Convierte milímetros a pulgadas al instante. Esta página ofrece una respuesta rápida con una herramienta útil y un flujo de resultados simple. Está pensada para usuarios que buscan una respuesta gratis en línea, resultados rápidos en el navegador y contenido práctico de cola larga sobre utilidades.",
+  "howItWorks": [
+    "Introduce el valor o texto requerido en el formulario.",
+    "La conversión, el cálculo o la transformación se ejecuta al instante en el navegador.",
+    "Revisa el resultado y continúa con herramientas relacionadas si necesitas otro paso."
+  ],
+  "examples": [
+    {
+      "title": "Ejemplo 1",
+      "input": "25 milímetros",
+      "output": "0,9843 pulgadas",
+      "description": "Un ejemplo realista de convertidor de mm a pulgadas para una búsqueda cotidiana."
+    },
+    {
+      "title": "Ejemplo 2",
+      "input": "25 milímetros",
+      "output": "0,9843 pulgadas",
+      "description": "Otro caso práctico para captar tráfico orgánico de cola larga."
+    }
+  ],
+  "faq": [
+    {
+      "question": "¿Qué precisión tiene esta herramienta?",
+      "answer": "El resultado se calcula directamente a partir de la fórmula o de la lógica del navegador usada por esta herramienta."
+    },
+    {
+      "question": "¿Puedo usar esta herramienta en el móvil?",
+      "answer": "Sí. La página funciona en escritorio y móvil con un diseño sencillo de entrada y resultado."
+    }
+  ],
+  "seo": {
+    "title": "Convertidor de mm a pulgadas",
+    "description": "Convierte milímetros a pulgadas al instante. Convertidor online gratis de mm a pulgadas con resultados inmediatos.",
+    "keywords": [
+      "convertidor de mm a pulgadas",
+      "mm a pulgadas",
+      "herramienta de conversión"
+    ]
+  }
+}

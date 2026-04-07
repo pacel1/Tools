@@ -1,0 +1,23 @@
+{
+  "id": "tip-calculator",
+  "type": "calculator",
+  "category": "calculators",
+  "componentName": "TipCalculatorTool",
+  "logicModule": "tip-calculator",
+  "inputSchema": "tipCalculatorInputSchema",
+  "outputSchema": "tipCalculatorOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "bmi-calculator",
+    "age-calculator",
+    "percentage-calculator",
+    "loan-payment-calculator"
+  ],
+  "seoPriority": 0.94
+}

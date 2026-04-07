@@ -1,0 +1,47 @@
+{
+  "toolId": "inches-to-cm-converter",
+  "locale": "de",
+  "slug": "zoll-in-zentimeter-umrechner",
+  "h1": "Zoll-in-Zentimeter-Umrechner",
+  "title": "Zoll-in-Zentimeter-Umrechner",
+  "shortDescription": "Wandle Zoll sofort in Zentimeter um – mit schnellen Ergebnissen, einfacher Eingabe und praktischen Beispielen.",
+  "overview": "Wandle Zoll sofort in Zentimeter um. Diese Seite liefert eine schnelle Antwort mit einem praktischen Online-Tool und einem einfachen Ergebnisfluss. Sie richtet sich an Nutzer, die eine kostenlose Online-Antwort, schnelle browserbasierte Ergebnisse und praktische Long-Tail-Inhalte suchen.",
+  "howItWorks": [
+    "Gib den benötigten Wert oder Text in das Formular ein.",
+    "Die Umrechnung, Berechnung oder Transformation erfolgt sofort im Browser.",
+    "Prüfe das Ergebnis und nutze bei Bedarf verwandte Tools für den nächsten Schritt."
+  ],
+  "examples": [
+    {
+      "title": "Beispiel 1",
+      "input": "10 Zoll",
+      "output": "25,4 Zentimeter",
+      "description": "Ein realistisches Beispiel für die Umrechnung von Zoll in cm bei einer alltäglichen Suchanfrage."
+    },
+    {
+      "title": "Beispiel 2",
+      "input": "10 Zoll",
+      "output": "25,4 Zentimeter",
+      "description": "Ein weiteres praktisches Anwendungsbeispiel für organischen Long-Tail-Traffic."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Wie genau ist dieses Tool?",
+      "answer": "Das Ergebnis wird direkt aus der Formel oder der browserseitigen Logik dieses Tools berechnet."
+    },
+    {
+      "question": "Kann ich dieses Tool auf dem Handy nutzen?",
+      "answer": "Ja. Die Seite funktioniert auf Desktop- und Mobilgeräten mit einem einfachen Eingabe- und Ergebnislayout."
+    }
+  ],
+  "seo": {
+    "title": "Zoll-in-Zentimeter-Umrechner",
+    "description": "Wandle Zoll sofort in Zentimeter um. Kostenloser Online-Zoll-zu-cm-Umrechner mit sofortigen Ergebnissen.",
+    "keywords": [
+      "zoll zu cm umrechner",
+      "zoll in zentimeter umrechner",
+      "umrechnungstool"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "remove-extra-spaces",
+  "type": "text-tool",
+  "category": "text-tools",
+  "componentName": "RemoveExtraSpacesTool",
+  "logicModule": "remove-extra-spaces",
+  "inputSchema": "removeExtraSpacesInputSchema",
+  "outputSchema": "removeExtraSpacesOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "word-counter",
+    "case-converter",
+    "character-counter",
+    "slug-generator"
+  ],
+  "seoPriority": 0.87
+}

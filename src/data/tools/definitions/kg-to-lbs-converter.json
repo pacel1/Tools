@@ -1,0 +1,23 @@
+{
+  "id": "kg-to-lbs-converter",
+  "type": "converter",
+  "category": "converters",
+  "componentName": "KgToLbsTool",
+  "logicModule": "kg-to-lbs-converter",
+  "inputSchema": "kgToLbsInputSchema",
+  "outputSchema": "kgToLbsOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "word-counter",
+    "json-formatter",
+    "celsius-to-fahrenheit-converter",
+    "fahrenheit-to-celsius-converter"
+  ],
+  "seoPriority": 0.91
+}

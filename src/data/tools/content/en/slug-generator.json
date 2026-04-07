@@ -1,0 +1,47 @@
+{
+  "toolId": "slug-generator",
+  "locale": "en",
+  "slug": "slug-generator",
+  "h1": "Slug Generator",
+  "title": "Slug Generator",
+  "shortDescription": "Convert text into an SEO friendly URL slug with fast results, simple inputs and practical examples.",
+  "overview": "Convert text into an SEO friendly URL slug. This page gives a fast answer with a practical utility tool and a simple result flow. This page targets users who want a free online answer, fast browser-based results and practical long-tail utility content.",
+  "howItWorks": [
+    "Enter the required value or text into the form.",
+    "The conversion, calculation or transformation runs instantly in the browser.",
+    "Review the result and continue with related tools if you need another step."
+  ],
+  "examples": [
+    {
+      "title": "Example 1",
+      "input": "Best SEO Tool Page Title",
+      "output": "best-seo-tool-page-title",
+      "description": "A realistic slug generator example for an everyday search query."
+    },
+    {
+      "title": "Example 2",
+      "input": "Best SEO Tool Page Title",
+      "output": "best-seo-tool-page-title",
+      "description": "Another practical use case for organic long-tail traffic."
+    }
+  ],
+  "faq": [
+    {
+      "question": "How accurate is this tool?",
+      "answer": "The result is calculated directly from the formula or browser-side logic used by this tool."
+    },
+    {
+      "question": "Can I use this tool on mobile?",
+      "answer": "Yes. The page works on desktop and mobile screens with a simple input and result layout."
+    }
+  ],
+  "seo": {
+    "title": "Slug Generator",
+    "description": "Convert text into an SEO friendly URL slug. Free online slug generator with instant results.",
+    "keywords": [
+      "slug generator",
+      "slug generator",
+      "text-tools tool"
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "page": "privacy",
+  "locale": "en",
+  "title": "Privacy Policy",
+  "metaTitle": "Privacy Policy | ConvertBase.app",
+  "metaDescription": "Read the ConvertBase.app privacy policy, including information about cookies, Google Analytics, Google AdSense and contact details.",
+  "heading": "Privacy Policy",
+  "content": [
+    "This Privacy Policy explains how ConvertBase.app handles information when you browse our pages and use our online tools.",
+    "We aim to keep data collection limited and to run as many tools as possible directly in your browser without requiring an account."
+  ],
+  "sections": [
+    {
+      "title": "Information we may collect",
+      "paragraphs": [
+        "We may collect limited technical information such as browser type, device data, approximate location, referring pages and interaction events needed to understand site performance.",
+        "When analytics is enabled, Google Analytics may process this information on our behalf. We do not ask users to create an account to use the core public tools."
+      ]
+    },
+    {
+      "title": "Cookies and advertising",
+      "paragraphs": [
+        "ConvertBase.app may use cookies and similar technologies to remember basic preferences, measure traffic and support site security.",
+        "Advertising services such as Google AdSense may use cookies to show and measure ads. You can learn more on our Cookie Policy page."
+      ]
+    },
+    {
+      "title": "Your choices and contact",
+      "paragraphs": [
+        "You can control cookies through your browser settings. Some features may work differently if certain cookies are disabled.",
+        "If you have questions about this policy or your privacy on ConvertBase.app, contact contact@convertbase.app."
+      ]
+    }
+  ],
+  "keywords": ["privacy policy", "convertbase privacy", "google analytics", "google adsense", "cookies policy", "data protection"]
+}

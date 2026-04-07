@@ -1,0 +1,47 @@
+{
+  "toolId": "inches-to-cm-converter",
+  "locale": "pl",
+  "slug": "przelicznik-cali-na-centymetry",
+  "h1": "Przelicznik cali na centymetry",
+  "title": "Przelicznik cali na centymetry",
+  "shortDescription": "Przeliczaj cale na centymetry natychmiast, korzystając z szybkich wyników, prostego formularza i praktycznych przykładów.",
+  "overview": "Przeliczaj cale na centymetry natychmiast. Ta strona zapewnia szybki wynik dzięki prostemu narzędziu online i przejrzystemu procesowi wyświetlania rezultatu. Jest skierowana do osób szukających darmowej odpowiedzi w przeglądarce, szybkich obliczeń online oraz praktycznej treści dla zapytań z długiego ogona.",
+  "howItWorks": [
+    "Wpisz wymaganą wartość lub tekst w formularzu.",
+    "Przeliczenie, obliczenie lub transformacja odbywa się natychmiast w przeglądarce.",
+    "Sprawdź wynik i przejdź do powiązanych narzędzi, jeśli potrzebujesz kolejnego kroku."
+  ],
+  "examples": [
+    {
+      "title": "Przykład 1",
+      "input": "10 cali",
+      "output": "25,4 centymetra",
+      "description": "Realistyczny przykład przeliczenia cali na cm dla codziennego zapytania."
+    },
+    {
+      "title": "Przykład 2",
+      "input": "10 cali",
+      "output": "25,4 centymetra",
+      "description": "Kolejny praktyczny przypadek użycia dla ruchu organicznego z długiego ogona."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Jak dokładne jest to narzędzie?",
+      "answer": "Wynik jest liczony bezpośrednio na podstawie wzoru lub logiki przeglądarkowej używanej przez to narzędzie."
+    },
+    {
+      "question": "Czy mogę korzystać z tego narzędzia na telefonie?",
+      "answer": "Tak. Strona działa na komputerach i urządzeniach mobilnych, oferując prosty układ pola wejściowego i wyniku."
+    }
+  ],
+  "seo": {
+    "title": "Przelicznik cali na centymetry",
+    "description": "Przeliczaj cale na centymetry natychmiast. Darmowy online przelicznik cali na cm z natychmiastowymi wynikami.",
+    "keywords": [
+      "przelicznik cali na cm",
+      "przelicznik cali na centymetry",
+      "narzedzie do przeliczania"
+    ]
+  }
+}

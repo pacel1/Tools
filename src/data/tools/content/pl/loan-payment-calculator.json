@@ -1,0 +1,47 @@
+{
+  "toolId": "loan-payment-calculator",
+  "locale": "pl",
+  "slug": "kalkulator-raty-kredytu",
+  "h1": "Kalkulator raty kredytu",
+  "title": "Kalkulator raty kredytu",
+  "shortDescription": "Oszacuj miesięczną ratę kredytu na podstawie kwoty, oprocentowania i okresu spłaty — szybko, prosto i z praktycznymi przykładami.",
+  "overview": "Oszacuj miesięczną ratę kredytu na podstawie kwoty, oprocentowania i okresu spłaty. Ta strona daje szybką odpowiedź dzięki prostemu narzędziu online i przejrzystemu wynikowi. Treść jest skierowana do osób szukających darmowego kalkulatora online, błyskawicznych wyników w przeglądarce i praktycznych informacji dopasowanych do popularnych zapytań.",
+  "howItWorks": [
+    "Wpisz wymagane dane w formularzu.",
+    "Obliczenie uruchamia się natychmiast w przeglądarce.",
+    "Sprawdź wynik i skorzystaj z powiązanych narzędzi, jeśli potrzebujesz kolejnego kroku."
+  ],
+  "examples": [
+    {
+      "title": "Przykład 1",
+      "input": "25000, 6%, 60 miesięcy",
+      "output": "Miesięczna rata",
+      "description": "Realistyczny przykład kalkulatora raty kredytu dla codziennego zapytania."
+    },
+    {
+      "title": "Przykład 2",
+      "input": "25000, 6%, 60 miesięcy",
+      "output": "Miesięczna rata",
+      "description": "Kolejny praktyczny przypadek użycia dla ruchu organicznego z długiego ogona."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Jak dokładny jest ten kalkulator?",
+      "answer": "Wynik jest obliczany bezpośrednio na podstawie wzoru lub logiki przeglądarkowej używanej przez to narzędzie."
+    },
+    {
+      "question": "Czy mogę używać tego narzędzia na telefonie?",
+      "answer": "Tak. Strona działa na komputerach i urządzeniach mobilnych, z prostym układem pola i wyniku."
+    }
+  ],
+  "seo": {
+    "title": "Kalkulator raty kredytu",
+    "description": "Oszacuj miesięczną ratę kredytu na podstawie kwoty, oprocentowania i okresu spłaty. Darmowy kalkulator raty kredytu online z natychmiastowym wynikiem.",
+    "keywords": [
+      "kalkulator raty kredytu",
+      "kalkulator raty kredytu",
+      "narzedzie kalkulatory"
+    ]
+  }
+}

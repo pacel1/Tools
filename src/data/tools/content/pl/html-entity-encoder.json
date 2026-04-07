@@ -1,0 +1,107 @@
+{
+  "toolId": "html-entity-encoder",
+  "locale": "pl",
+  "slug": "enkoder-encji-html",
+  "h1": "Enkoder encji HTML",
+  "title": "Enkoder encji HTML",
+  "shortDescription": "Koduj znaki specjalne i symbole jako encje HTML.",
+  "metaTitle": "Enkoder encji HTML | Kodowanie tekstu do encji HTML",
+  "metaDescription": "Szybko zamieniaj znaki specjalne, symbole i niebezpieczne znaki na encje HTML w przeglądarce.",
+  "intro": "Użyj tego narzędzia do kodowania encji HTML, aby zamienić znaki specjalne na bezpieczne encje HTML dla stron, szablonów i fragmentów kodu. Działa całkowicie w przeglądarce i pomaga uniknąć interpretacji HTML, gdy chcesz wyświetlić surowy tekst.",
+  "overview": "Enkoder encji HTML zamienia znaki takie jak <, >, &, cudzysłowy i inne symbole na odpowiadające im encje HTML. Jest to przydatne, gdy chcesz pokazać tekst dosłownie w HTML-u bez interpretacji znaczników. Narzędzie działa po stronie klienta, jest szybkie i stworzone do bezpiecznej pracy z tekstem.",
+  "howItWorks": [
+    "Wklej lub wpisz tekst, który chcesz zakodować.",
+    "Narzędzie zamieni znaki zastrzeżone i symbole na encje HTML.",
+    "Skopiuj wynik i użyj go w HTML-u, szablonach, dokumentacji lub przykładach kodu."
+  ],
+  "useCases": [
+    "Zabezpieczanie tekstu przed wstawieniem do treści HTML.",
+    "Przygotowanie przykładów kodu do dokumentacji.",
+    "Bezpieczne wyświetlanie danych użytkownika w podglądach i szablonach.",
+    "Kodowanie symboli specjalnych do treści CMS lub HTML e-maili.",
+    "Zapobieganie interpretacji znaczników jako tagów."
+  ],
+  "examples": [
+    {
+      "title": "Podstawowe kodowanie",
+      "input": "5 < 10 & 7 > 3",
+      "output": "5 &lt; 10 &amp; 7 &gt; 3",
+      "description": "Zastrzeżone znaki HTML są zamieniane na encje."
+    },
+    {
+      "title": "Cudzysłowy i symbole",
+      "input": "\"Hello\" & 'World'",
+      "output": "&quot;Hello&quot; &amp; &#39;World&#39;",
+      "description": "Cudzysłowy i ampersand są bezpiecznie kodowane."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Co robi kodowanie encji HTML?",
+      "answer": "Zamienia znaki specjalne na encje HTML, dzięki czemu przeglądarka wyświetla je jako tekst zamiast interpretować jako HTML."
+    },
+    {
+      "question": "Czy to narzędzie jest bezpieczne w przeglądarce?",
+      "answer": "Tak. Działa wyłącznie po stronie klienta i nie wysyła tekstu na żaden serwer ani do zewnętrznego API."
+    },
+    {
+      "question": "Czy koduje wszystkie znaki?",
+      "answer": "Zawsze koduje zastrzeżone znaki HTML, a w zależności od implementacji może kodować także dodatkowe symbole."
+    },
+    {
+      "question": "Kiedy warto używać kodowania encji HTML?",
+      "answer": "Gdy chcesz bezpiecznie wyświetlić surowy tekst, dane użytkownika lub kod wewnątrz dokumentu HTML."
+    }
+  ],
+  "uiLabels": {
+    "copy": "Kopiuj",
+    "copied": "Skopiowano",
+    "input": "Tekst wejściowy",
+    "output": "Zakodowany wynik",
+    "placeholder": "Wklej tekst do zakodowania",
+    "indent": "Wcięcie",
+    "removeComments": "Usuń komentarze",
+    "preview": "Podgląd",
+    "source": "Źródło",
+    "sanitizedHtml": "Oczyszczony HTML",
+    "plainText": "Zwykły tekst",
+    "summary": "Podsumowanie",
+    "total": "Razem",
+    "links": "Linki",
+    "images": "Obrazy",
+    "errors": "Błędy",
+    "warnings": "Ostrzeżenia",
+    "valid": "Poprawny",
+    "invalid": "Niepoprawny",
+    "href": "href",
+    "text": "Tekst",
+    "rel": "rel",
+    "target": "target",
+    "alt": "alt",
+    "width": "szerokość",
+    "height": "wysokość",
+    "empty": "Puste",
+    "outputReady": "Wynik gotowy",
+    "cleanedHtml": "Oczyszczony HTML",
+    "formattedHtml": "Sformatowany HTML",
+    "minifiedHtml": "Zminifikowany HTML",
+    "markdown": "Markdown",
+    "extractedImages": "Wyodrębnione obrazy",
+    "extractedLinks": "Wyodrębnione linki",
+    "validationSummary": "Podsumowanie walidacji",
+    "prettyHtml": "Czytelny HTML",
+    "encodedText": "Zakodowany tekst"
+  },
+  "seo": {
+    "title": "Enkoder encji HTML",
+    "description": "Szybko koduj znaki specjalne i symbole jako encje HTML w przeglądarce.",
+    "keywords": [
+      "enkoder encji html",
+      "kodowanie encji html",
+      "kodowanie znaków html",
+      "escape html",
+      "tekst do encji html",
+      "narzędzie html"
+    ]
+  }
+}

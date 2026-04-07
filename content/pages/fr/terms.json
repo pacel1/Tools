@@ -1,0 +1,36 @@
+{
+  "page": "terms",
+  "locale": "fr",
+  "title": "Conditions d'utilisation",
+  "metaTitle": "Conditions d'utilisation | ConvertBase.app",
+  "metaDescription": "Consultez les conditions d'utilisation de ConvertBase.app, y compris l'usage acceptable, les cookies, Google Analytics et Google AdSense.",
+  "heading": "Conditions d'utilisation",
+  "content": [
+    "Ces Conditions d'utilisation régissent l'accès à ConvertBase.app et l'utilisation de ses outils en ligne publics.",
+    "En utilisant la plateforme, vous acceptez d'utiliser le site de manière légale, responsable et uniquement pour des usages personnels, éducatifs ou professionnels conformes au droit applicable."
+  ],
+  "sections": [
+    {
+      "title": "Utilisation de la plateforme",
+      "paragraphs": [
+        "Vous pouvez utiliser ConvertBase.app pour accéder aux outils publics et aux pages d'information. Vous ne devez pas utiliser le site pour enfreindre la loi, nuire à la disponibilité du service ou abuser de systèmes automatisés.",
+        "Nous pouvons mettre à jour, remplacer ou supprimer des outils et des contenus à tout moment pour des raisons de qualité, de sécurité ou de maintenance."
+      ]
+    },
+    {
+      "title": "Contenus, analytics et publicités",
+      "paragraphs": [
+        "La plateforme peut inclure des pages d'information, des résultats générés, des liens internes, des cookies, de l'analytics et de la publicité. Google Analytics peut nous aider à mesurer le trafic et Google AdSense peut contribuer au financement du service.",
+        "Votre utilisation du site implique également que les cookies et technologies similaires peuvent fonctionner comme décrit dans notre Politique de confidentialité et notre Politique de cookies."
+      ]
+    },
+    {
+      "title": "Absence de garantie et contact",
+      "paragraphs": [
+        "ConvertBase.app est fourni en l'état. Nous faisons de notre mieux pour maintenir des informations utiles et des outils disponibles, mais nous ne pouvons pas garantir un accès ininterrompu ni une exactitude parfaite dans tous les cas.",
+        "Pour toute question sur ces conditions, contactez l'opérateur de ConvertBase.app à contact@convertbase.app."
+      ]
+    }
+  ],
+  "keywords": ["conditions d'utilisation", "conditions convertbase", "usage acceptable", "google analytics", "google adsense", "cookies"]
+}

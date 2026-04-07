@@ -1,0 +1,47 @@
+{
+  "toolId": "sentence-counter",
+  "locale": "es",
+  "slug": "contador-de-oraciones",
+  "h1": "Contador de oraciones",
+  "title": "Contador de oraciones",
+  "shortDescription": "Cuenta oraciones en un texto al instante con resultados rápidos, entradas sencillas y ejemplos prácticos.",
+  "overview": "Cuenta oraciones en un texto al instante. Esta página ofrece una respuesta rápida con una herramienta útil y un flujo de resultados sencillo. Está pensada para usuarios que buscan una respuesta gratis en línea, resultados inmediatos desde el navegador y contenido práctico de utilidad para búsquedas de cola larga.",
+  "howItWorks": [
+    "Introduce el texto requerido en el formulario.",
+    "El conteo se realiza al instante en el navegador.",
+    "Revisa el resultado y continúa con herramientas relacionadas si necesitas otro paso."
+  ],
+  "examples": [
+    {
+      "title": "Ejemplo 1",
+      "input": "Un párrafo con varias oraciones.",
+      "output": "Total de oraciones",
+      "description": "Un ejemplo realista de contador de oraciones para una búsqueda habitual."
+    },
+    {
+      "title": "Ejemplo 2",
+      "input": "Un párrafo con varias oraciones.",
+      "output": "Total de oraciones",
+      "description": "Otro caso práctico para tráfico orgánico de cola larga."
+    }
+  ],
+  "faq": [
+    {
+      "question": "¿Qué tan precisa es esta herramienta?",
+      "answer": "El resultado se calcula directamente a partir de la lógica usada por esta herramienta en el navegador."
+    },
+    {
+      "question": "¿Puedo usar esta herramienta en el móvil?",
+      "answer": "Sí. La página funciona en pantallas de escritorio y móviles con una interfaz simple de entrada y resultado."
+    }
+  ],
+  "seo": {
+    "title": "Contador de oraciones",
+    "description": "Cuenta oraciones en un texto al instante. Contador de oraciones gratis en línea con resultados inmediatos.",
+    "keywords": [
+      "contador de oraciones",
+      "contador de oraciones",
+      "herramienta de texto"
+    ]
+  }
+}

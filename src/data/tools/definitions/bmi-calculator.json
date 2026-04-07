@@ -1,0 +1,23 @@
+{
+  "id": "bmi-calculator",
+  "type": "calculator",
+  "category": "calculators",
+  "componentName": "BmiCalculatorTool",
+  "logicModule": "bmi-calculator",
+  "inputSchema": "bmiCalculatorInputSchema",
+  "outputSchema": "bmiCalculatorOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "age-calculator",
+    "percentage-calculator",
+    "loan-payment-calculator",
+    "days-between-dates-calculator"
+  ],
+  "seoPriority": 0.99
+}

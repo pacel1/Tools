@@ -1,0 +1,47 @@
+{
+  "toolId": "unit-price-calculator",
+  "locale": "de",
+  "slug": "einheitspreis-rechner",
+  "h1": "Einheitspreis-Rechner",
+  "title": "Einheitspreis-Rechner",
+  "shortDescription": "Vergleiche den Preis pro Einheit anhand von Gesamtpreis und Menge mit schnellen Ergebnissen, einfachen Eingaben und praktischen Beispielen.",
+  "overview": "Vergleiche den Preis pro Einheit anhand von Gesamtpreis und Menge. Diese Seite liefert eine schnelle Antwort mit einem praktischen Tool und einem einfachen Ergebnisablauf. Der Inhalt richtet sich an Nutzer, die eine kostenlose Online-Antwort, schnelle Ergebnisse im Browser und hilfreiche Long-Tail-SEO-Inhalte suchen.",
+  "howItWorks": [
+    "Gib den benötigten Wert oder Text in das Formular ein.",
+    "Die Umrechnung, Berechnung oder Transformation läuft sofort im Browser.",
+    "Prüfe das Ergebnis und nutze bei Bedarf verwandte Tools für den nächsten Schritt."
+  ],
+  "examples": [
+    {
+      "title": "Beispiel 1",
+      "input": "12 für 3 Einheiten",
+      "output": "4 pro Einheit",
+      "description": "Ein realistisches Beispiel für den Einheitspreis-Rechner bei einer alltäglichen Suche."
+    },
+    {
+      "title": "Beispiel 2",
+      "input": "12 für 3 Einheiten",
+      "output": "4 pro Einheit",
+      "description": "Ein weiterer praktischer Anwendungsfall für organischen Long-Tail-Traffic."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Wie genau ist dieses Tool?",
+      "answer": "Das Ergebnis wird direkt aus der Formel oder der browserseitigen Logik dieses Tools berechnet."
+    },
+    {
+      "question": "Kann ich dieses Tool auf dem Handy verwenden?",
+      "answer": "Ja. Die Seite funktioniert auf Desktop- und Mobilgeräten mit einem einfachen Eingabe- und Ergebnislayout."
+    }
+  ],
+  "seo": {
+    "title": "Einheitspreis-Rechner",
+    "description": "Vergleiche den Preis pro Einheit anhand von Gesamtpreis und Menge. Kostenloser Online-Einheitspreis-Rechner mit sofortigen Ergebnissen.",
+    "keywords": [
+      "einheitspreis-rechner",
+      "preis-pro-einheit-rechner",
+      "rechner-tool"
+    ]
+  }
+}

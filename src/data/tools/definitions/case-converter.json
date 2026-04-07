@@ -1,0 +1,23 @@
+{
+  "id": "case-converter",
+  "type": "text-tool",
+  "category": "text-tools",
+  "componentName": "CaseConverterTool",
+  "logicModule": "case-converter",
+  "inputSchema": "caseConverterInputSchema",
+  "outputSchema": "caseConverterOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "word-counter",
+    "character-counter",
+    "slug-generator",
+    "keyword-density-checker"
+  ],
+  "seoPriority": 0.94
+}

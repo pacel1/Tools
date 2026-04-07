@@ -1,0 +1,47 @@
+{
+  "toolId": "base64-decoder",
+  "locale": "fr",
+  "slug": "decodeur-base64",
+  "h1": "Decodeur Base64",
+  "title": "Decodeur Base64",
+  "shortDescription": "Decodez du texte Base64 instantanement avec des resultats rapides, une saisie simple et des exemples pratiques.",
+  "overview": "Decodez du texte Base64 instantanement. Cette page fournit une reponse rapide avec un outil utile pratique et un flux de resultat simple. Cette page cible les utilisateurs qui veulent une reponse gratuite en ligne, des resultats rapides dans le navigateur et un contenu utilitaire pratique de longue traine.",
+  "howItWorks": [
+    "Saisissez la valeur ou le texte requis dans le formulaire.",
+    "La conversion, le calcul ou la transformation s execute instantanement dans le navigateur.",
+    "Consultez le resultat et poursuivez avec des outils associes si vous avez besoin d une autre etape."
+  ],
+  "examples": [
+    {
+      "title": "Exemple 1",
+      "input": "aGVsbG8gd29ybGQ=",
+      "output": "hello world",
+      "description": "Un exemple realiste de decodeur Base64 pour une requete quotidienne."
+    },
+    {
+      "title": "Exemple 2",
+      "input": "aGVsbG8gd29ybGQ=",
+      "output": "hello world",
+      "description": "Un autre cas d usage pratique pour le trafic organique de longue traine."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Quelle est la precision de cet outil ?",
+      "answer": "Le resultat est calcule directement a partir de la formule ou de la logique cote navigateur utilisee par cet outil."
+    },
+    {
+      "question": "Puis-je utiliser cet outil sur mobile ?",
+      "answer": "Oui. La page fonctionne sur les ecrans desktop et mobiles avec une mise en page simple de saisie et de resultat."
+    }
+  ],
+  "seo": {
+    "title": "Decodeur Base64",
+    "description": "Decodez du texte Base64 instantanement. Decodeur Base64 gratuit en ligne avec resultats instantanes.",
+    "keywords": [
+      "decodeur base64",
+      "base64 decoder",
+      "developer-tools tool"
+    ]
+  }
+}

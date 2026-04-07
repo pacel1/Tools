@@ -1,0 +1,47 @@
+{
+  "toolId": "remove-extra-spaces",
+  "locale": "de",
+  "slug": "tool-zum-entfernen-von-doppelten-leerzeichen",
+  "h1": "Tool zum Entfernen doppelter Leerzeichen",
+  "title": "Tool zum Entfernen doppelter Leerzeichen",
+  "shortDescription": "Entferne doppelte Leerzeichen und bereinige eingefügten Text mit schnellen Ergebnissen, einfacher Eingabe und praktischen Beispielen.",
+  "overview": "Entferne doppelte Leerzeichen und bereinige eingefügten Text. Diese Seite liefert eine schnelle Antwort mit einem praktischen Tool und einem einfachen Ergebnisablauf. Die Inhalte richten sich an Nutzer, die eine kostenlose Online-Lösung, schnelle browserbasierte Ergebnisse und praktische Long-Tail-Inhalte suchen.",
+  "howItWorks": [
+    "Gib den erforderlichen Wert oder Text in das Formular ein.",
+    "Die Umwandlung, Berechnung oder Transformation läuft sofort im Browser.",
+    "Prüfe das Ergebnis und nutze bei Bedarf passende weitere Tools für den nächsten Schritt."
+  ],
+  "examples": [
+    {
+      "title": "Beispiel 1",
+      "input": "text   mit   doppelten   leerzeichen",
+      "output": "text mit doppelten leerzeichen",
+      "description": "Ein realistisches Beispiel für das Tool zum Entfernen doppelter Leerzeichen für eine alltägliche Suche."
+    },
+    {
+      "title": "Beispiel 2",
+      "input": "text   mit   doppelten   leerzeichen",
+      "output": "text mit doppelten leerzeichen",
+      "description": "Ein weiterer praktischer Anwendungsfall für organischen Long-Tail-Traffic."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Wie genau ist dieses Tool?",
+      "answer": "Das Ergebnis wird direkt aus der Formel oder der browserseitigen Logik dieses Tools berechnet."
+    },
+    {
+      "question": "Kann ich dieses Tool auf dem Handy verwenden?",
+      "answer": "Ja. Die Seite funktioniert auf Desktop- und Mobilgeräten mit einem einfachen Eingabe- und Ergebnislayout."
+    }
+  ],
+  "seo": {
+    "title": "Tool zum Entfernen doppelter Leerzeichen",
+    "description": "Entferne doppelte Leerzeichen und bereinige eingefügten Text. Kostenloses Online-Tool zum Entfernen doppelter Leerzeichen mit sofortigen Ergebnissen.",
+    "keywords": [
+      "tool zum entfernen doppelter leerzeichen",
+      "doppelte leerzeichen entfernen",
+      "text-tools tool"
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "toolId": "age-calculator",
+  "locale": "en",
+  "slug": "age-calculator",
+  "h1": "Age Calculator",
+  "title": "Age Calculator",
+  "shortDescription": "Calculate exact age from date of birth with fast results, simple inputs and practical examples.",
+  "overview": "Calculate exact age from date of birth. This page gives a fast answer with a practical utility tool and a simple result flow. This page targets users who want a free online answer, fast browser-based results and practical long-tail utility content.",
+  "howItWorks": [
+    "Enter the required value or text into the form.",
+    "The conversion, calculation or transformation runs instantly in the browser.",
+    "Review the result and continue with related tools if you need another step."
+  ],
+  "examples": [
+    {
+      "title": "Example 1",
+      "input": "1990-05-15",
+      "output": "Age in years",
+      "description": "A realistic age calculator example for an everyday search query."
+    },
+    {
+      "title": "Example 2",
+      "input": "1990-05-15",
+      "output": "Age in years",
+      "description": "Another practical use case for organic long-tail traffic."
+    }
+  ],
+  "faq": [
+    {
+      "question": "How accurate is this tool?",
+      "answer": "The result is calculated directly from the formula or browser-side logic used by this tool."
+    },
+    {
+      "question": "Can I use this tool on mobile?",
+      "answer": "Yes. The page works on desktop and mobile screens with a simple input and result layout."
+    }
+  ],
+  "seo": {
+    "title": "Age Calculator",
+    "description": "Calculate exact age from date of birth. Free online age calculator with instant results.",
+    "keywords": [
+      "age calculator",
+      "age calculator",
+      "calculators tool"
+    ]
+  }
+}

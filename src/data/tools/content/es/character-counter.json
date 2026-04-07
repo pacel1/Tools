@@ -1,0 +1,47 @@
+{
+  "toolId": "character-counter",
+  "locale": "es",
+  "slug": "contador-de-caracteres",
+  "h1": "Contador de caracteres",
+  "title": "Contador de caracteres",
+  "shortDescription": "Cuenta caracteres en texto al instante con resultados rápidos, entradas sencillas y ejemplos prácticos.",
+  "overview": "Cuenta caracteres en texto al instante. Esta página ofrece una respuesta rápida con una herramienta práctica y un flujo de resultados sencillo. Está orientada a usuarios que buscan una respuesta gratuita en línea, resultados rápidos en el navegador y contenido útil de larga cola.",
+  "howItWorks": [
+    "Introduce el texto requerido en el formulario.",
+    "La conversión, el cálculo o la transformación se ejecuta al instante en el navegador.",
+    "Revisa el resultado y continúa con herramientas relacionadas si necesitas otro paso."
+  ],
+  "examples": [
+    {
+      "title": "Ejemplo 1",
+      "input": "Texto de descripción de producto",
+      "output": "Total de caracteres",
+      "description": "Un ejemplo realista de contador de caracteres para una búsqueda cotidiana."
+    },
+    {
+      "title": "Ejemplo 2",
+      "input": "Texto de descripción de producto",
+      "output": "Total de caracteres",
+      "description": "Otro caso de uso práctico para tráfico orgánico de larga cola."
+    }
+  ],
+  "faq": [
+    {
+      "question": "¿Qué precisión tiene esta herramienta?",
+      "answer": "El resultado se calcula directamente a partir de la fórmula o de la lógica del navegador que utiliza esta herramienta."
+    },
+    {
+      "question": "¿Puedo usar esta herramienta en el móvil?",
+      "answer": "Sí. La página funciona en pantallas de escritorio y móviles con un diseño sencillo de entrada y resultado."
+    }
+  ],
+  "seo": {
+    "title": "Contador de caracteres",
+    "description": "Cuenta caracteres en texto al instante. Contador de caracteres online gratis con resultados instantáneos.",
+    "keywords": [
+      "contador de caracteres",
+      "contador de caracteres",
+      "herramienta de texto"
+    ]
+  }
+}

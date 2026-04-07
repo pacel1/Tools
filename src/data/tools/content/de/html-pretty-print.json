@@ -1,0 +1,108 @@
+{
+  "toolId": "html-pretty-print",
+  "locale": "de",
+  "slug": "html-pretty-print",
+  "h1": "HTML Pretty Print",
+  "title": "HTML Pretty Print",
+  "shortDescription": "HTML mit sauberem Abstand für Reviews, Audits und Debugging formatieren.",
+  "metaTitle": "HTML Pretty Print | HTML lesbar formatieren",
+  "metaDescription": "HTML mit sauberem Abstand für Reviews, Audits und Debugging formatieren. Markup direkt im Browser mit einem schnellen, clientseitigen HTML-Formatter bereinigen.",
+  "intro": "Verwandeln Sie unübersichtliches Markup in lesbares HTML mit einheitlichen Einrückungen und Abständen. Dieser HTML-Formatter läuft im Browser und hilft beim Prüfen von Strukturen, Vergleichen von Änderungen und Debuggen ohne Server-Upload.",
+  "overview": "HTML formatieren macht aus kompaktem oder unleserlichem Markup übersichtliches, eingerücktes HTML, das sich leichter prüfen lässt. Das ist nützlich, um verschachtelte Elemente zu analysieren, Attribute zu kontrollieren und Code für Audits oder Übergaben vorzubereiten. Die Verarbeitung erfolgt im Browser für einen schnellen und privaten Workflow.",
+  "howItWorks": [
+    "Fügen Sie Ihr HTML in das Eingabefeld ein.",
+    "Wählen Sie Formatierungsoptionen wie Einzug oder Kommentarbehandlung, falls verfügbar.",
+    "Erstellen Sie die formatierte Ausgabe sofort im Browser.",
+    "Kopieren Sie das Ergebnis für Reviews, Debugging oder Dokumentation."
+  ],
+  "useCases": [
+    "HTML-Strukturen vor dem Rollout prüfen.",
+    "Verschachteltes oder minifiziertes Markup debuggen.",
+    "Code-Snippets für Code-Reviews und Audits vorbereiten.",
+    "Kopiertes HTML in Dokus oder Tickets besser lesbar machen."
+  ],
+  "examples": [
+    {
+      "title": "Kompaktes Markup",
+      "input": "<div><span>Hi</span><a href='/docs'>Docs</a></div>",
+      "output": "<div>\n  <span>Hi</span>\n  <a href=\"/docs\">Docs</a>\n</div>",
+      "description": "Macht kompaktes HTML in einem klaren Blocklayout lesbar."
+    },
+    {
+      "title": "Verschachtelter Inhalt",
+      "input": "<ul><li>One</li><li><strong>Two</strong></li></ul>",
+      "output": "<ul>\n  <li>One</li>\n  <li><strong>Two</strong></li>\n</ul>",
+      "description": "Erleichtert die Prüfung verschachtelter Listen."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Ist dieser HTML-Formatter sicher?",
+      "answer": "Ja. Er ist für die clientseitige Nutzung gedacht und sollte HTML sicher und XSS-bewusst verarbeiten."
+    },
+    {
+      "question": "Ändert die Formatierung den Inhalt?",
+      "answer": "Das Tool konzentriert sich auf Leerzeichen und Einrückungen. Es sollte die Bedeutung Ihres HTML beibehalten und die Lesbarkeit verbessern."
+    },
+    {
+      "question": "Kann ich damit minifiziertes HTML nutzen?",
+      "answer": "Ja. Es eignet sich ideal, um kompaktes oder minifiziertes Markup für Reviews oder Debugging aufzuklappen."
+    },
+    {
+      "question": "Läuft es nur im Browser?",
+      "answer": "Ja. Der Ablauf ist rein clientseitig und benötigt keine externen APIs."
+    }
+  ],
+  "uiLabels": {
+    "copy": "Kopieren",
+    "copied": "Kopiert",
+    "input": "Eingabe",
+    "output": "Ausgabe",
+    "placeholder": "HTML hier einfugen",
+    "indent": "Einzug",
+    "removeComments": "Kommentare entfernen",
+    "preview": "Vorschau",
+    "source": "Quelle",
+    "sanitizedHtml": "Bereinigtes HTML",
+    "plainText": "Klartext",
+    "summary": "Zusammenfassung",
+    "total": "Gesamt",
+    "links": "Links",
+    "images": "Bilder",
+    "errors": "Fehler",
+    "warnings": "Warnungen",
+    "valid": "Gultig",
+    "invalid": "Ungultig",
+    "href": "Href",
+    "text": "Text",
+    "rel": "Rel",
+    "target": "Ziel",
+    "alt": "Alt",
+    "width": "Breite",
+    "height": "Hohe",
+    "empty": "Leer",
+    "outputReady": "Ausgabe bereit",
+    "cleanedHtml": "Bereinigtes HTML",
+    "formattedHtml": "Formatiertes HTML",
+    "minifiedHtml": "Minifiziertes HTML",
+    "markdown": "Markdown",
+    "extractedImages": "Extrahierte Bilder",
+    "extractedLinks": "Extrahierte Links",
+    "validationSummary": "Validierungszusammenfassung",
+    "prettyHtml": "Gut lesbares HTML",
+    "encodedText": "Kodierter Text"
+  },
+  "seo": {
+    "title": "HTML Pretty Print | HTML lesbar formatieren",
+    "description": "HTML mit sauberem Abstand für Reviews, Audits und Debugging formatieren. Markup direkt im Browser mit einem schnellen, clientseitigen HTML-Formatter bereinigen.",
+    "keywords": [
+      "html formatieren",
+      "html formatter",
+      "html pretty print",
+      "html einrueckung",
+      "html online tool",
+      "lesbares html",
+      "html code formatieren"
+    ]
+  }
+}

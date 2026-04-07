@@ -1,0 +1,47 @@
+{
+  "toolId": "percentage-calculator",
+  "locale": "pl",
+  "slug": "kalkulator-procentowy",
+  "h1": "Kalkulator Procentowy",
+  "title": "Kalkulator Procentowy",
+  "shortDescription": "Oblicz, jaki procent jednej liczby stanowi druga liczba — szybko, prosto i z praktycznymi przykładami.",
+  "overview": "Oblicz, jaki procent jednej liczby stanowi druga. Ta strona zapewnia szybki wynik dzięki prostemu narzędziu online i przejrzystemu przebiegowi obliczeń. Jest przeznaczona dla osób, które szukają darmowej odpowiedzi w internecie, natychmiastowych wyników w przeglądarce oraz praktycznych treści z długiego ogona wyszukiwań.",
+  "howItWorks": [
+    "Wpisz wymaganą wartość lub tekst w formularzu.",
+    "Obliczenie lub przekształcenie wykonuje się natychmiast w przeglądarce.",
+    "Sprawdź wynik i skorzystaj z powiązanych narzędzi, jeśli potrzebujesz kolejnego kroku."
+  ],
+  "examples": [
+    {
+      "title": "Przykład 1",
+      "input": "25 z 200",
+      "output": "12,5%",
+      "description": "Realistyczny przykład kalkulatora procentowego dla codziennego zapytania."
+    },
+    {
+      "title": "Przykład 2",
+      "input": "25 z 200",
+      "output": "12,5%",
+      "description": "Kolejny praktyczny przypadek użycia dla ruchu organicznego z długiego ogona."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Jak dokładne jest to narzędzie?",
+      "answer": "Wynik jest obliczany bezpośrednio na podstawie wzoru lub logiki wykonywanej po stronie przeglądarki."
+    },
+    {
+      "question": "Czy mogę korzystać z tego narzędzia na telefonie?",
+      "answer": "Tak. Strona działa na komputerach i urządzeniach mobilnych, oferując prosty układ pola wejściowego i wyniku."
+    }
+  ],
+  "seo": {
+    "title": "Kalkulator Procentowy",
+    "description": "Oblicz, jaki procent jednej liczby stanowi druga. Darmowy kalkulator procentowy online z natychmiastowym wynikiem.",
+    "keywords": [
+      "kalkulator procentowy",
+      "procenty kalkulator",
+      "narzedzie kalkulatory"
+    ]
+  }
+}

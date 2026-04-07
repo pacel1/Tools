@@ -1,0 +1,47 @@
+{
+  "toolId": "base64-encoder",
+  "locale": "es",
+  "slug": "codificador-base64",
+  "h1": "Codificador Base64",
+  "title": "Codificador Base64",
+  "shortDescription": "Convierte texto a Base64 al instante con resultados rápidos, entradas simples y ejemplos prácticos.",
+  "overview": "Convierte texto a Base64 al instante. Esta página ofrece una respuesta rápida con una herramienta útil y un flujo de resultado sencillo. Está pensada para usuarios que buscan una solución gratuita en línea, resultados rápidos en el navegador y contenido práctico de utilidad para búsquedas de cola larga.",
+  "howItWorks": [
+    "Introduce el texto o valor requerido en el formulario.",
+    "La conversión, cálculo o transformación se ejecuta al instante en el navegador.",
+    "Revisa el resultado y continúa con herramientas relacionadas si necesitas otro paso."
+  ],
+  "examples": [
+    {
+      "title": "Ejemplo 1",
+      "input": "hello world",
+      "output": "aGVsbG8gd29ybGQ=",
+      "description": "Un ejemplo realista de codificador Base64 para una búsqueda cotidiana."
+    },
+    {
+      "title": "Ejemplo 2",
+      "input": "hello world",
+      "output": "aGVsbG8gd29ybGQ=",
+      "description": "Otro caso de uso práctico para tráfico orgánico de cola larga."
+    }
+  ],
+  "faq": [
+    {
+      "question": "¿Qué precisión tiene esta herramienta?",
+      "answer": "El resultado se calcula directamente a partir de la fórmula o la lógica en el navegador que usa esta herramienta."
+    },
+    {
+      "question": "¿Puedo usar esta herramienta en el móvil?",
+      "answer": "Sí. La página funciona en pantallas de escritorio y móviles con un diseño sencillo de entrada y resultado."
+    }
+  ],
+  "seo": {
+    "title": "Codificador Base64",
+    "description": "Convierte texto a Base64 al instante. Codificador Base64 online gratis con resultados inmediatos.",
+    "keywords": [
+      "codificador base64",
+      "codificación base64",
+      "herramienta para desarrolladores"
+    ]
+  }
+}

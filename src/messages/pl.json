@@ -1,0 +1,32 @@
+{
+  "common": {
+    "siteName": "ConvertBase.app",
+    "siteTagline": "Darmowe narzędzia online, konwertery i generatory",
+    "footerTagline": "Korzystaj z przydatnych konwerterów, kalkulatorów, generatorów, narzędzi obrazów i narzędzi dla developerów w jednym miejscu.",
+    "heroEyebrow": "Darmowe narzędzia online",
+    "heroTitle": "Setki przydatnych narzędzi online w jednym miejscu",
+    "heroDescription": "Korzystaj z darmowych konwerterów, kalkulatorów, generatorów i narzędzi tekstowych. Szybkie wyniki, proste formularze i praktyczne odpowiedzi do codziennych zadań oraz zapytań long tail z wyszukiwarki.",
+    "heroPanelLabel": "Najczęściej szukane narzędzia",
+    "heroPanelItem1": "Konwertery jednostek, wag, długości i formatów",
+    "heroPanelItem2": "Kalkulatory do codziennych obliczeń i szybkich porównań",
+    "heroPanelItem3": "Generatory i narzędzia tekstowe do pracy z treścią",
+    "heroPanelItem4": "Proste utility tools do szybkiego rozwiązania konkretnego problemu",
+    "categoriesEyebrow": "Kategorie",
+    "categoriesTitle": "Wybierz kategorię i znajdź dokładnie takie narzędzie, jakiego potrzebujesz",
+    "featuredEyebrow": "Przykładowe narzędzia",
+    "featuredTitle": "Popularne narzędzia dostępne od razu",
+    "footerLinks": {
+      "about": "O nas",
+      "privacy": "Polityka prywatności",
+      "terms": "Regulamin",
+      "cookies": "Polityka cookies",
+      "disclaimer": "Zastrzeżenie",
+      "contact": "Kontakt"
+    },
+    "cookieBanner": {
+      "title": "Cookies, analityka i reklamy",
+      "description": "ConvertBase.app używa plików cookie, aby strona działała poprawnie, mierzyć ruch w Google Analytics i wyświetlać reklamy Google AdSense. Kontynuując, akceptujesz ten sposób działania.",
+      "accept": "Akceptuję"
+    }
+  }
+}

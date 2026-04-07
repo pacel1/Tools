@@ -1,0 +1,23 @@
+{
+  "id": "age-calculator",
+  "type": "calculator",
+  "category": "calculators",
+  "componentName": "AgeCalculatorTool",
+  "logicModule": "age-calculator",
+  "inputSchema": "ageCalculatorInputSchema",
+  "outputSchema": "ageCalculatorOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "bmi-calculator",
+    "percentage-calculator",
+    "loan-payment-calculator",
+    "days-between-dates-calculator"
+  ],
+  "seoPriority": 0.98
+}

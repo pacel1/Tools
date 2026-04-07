@@ -1,0 +1,47 @@
+{
+  "toolId": "json-validator",
+  "locale": "en",
+  "slug": "json-validator",
+  "h1": "JSON Validator",
+  "title": "JSON Validator",
+  "shortDescription": "Validate JSON and detect errors instantly with fast results, simple inputs and practical examples.",
+  "overview": "Validate JSON and detect errors instantly. This page gives a fast answer with a practical utility tool and a simple result flow. This page targets users who want a free online answer, fast browser-based results and practical long-tail utility content.",
+  "howItWorks": [
+    "Enter the required value or text into the form.",
+    "The conversion, calculation or transformation runs instantly in the browser.",
+    "Review the result and continue with related tools if you need another step."
+  ],
+  "examples": [
+    {
+      "title": "Example 1",
+      "input": "{\"items\":[1,2,3]}",
+      "output": "Valid JSON",
+      "description": "A realistic json validator example for an everyday search query."
+    },
+    {
+      "title": "Example 2",
+      "input": "{\"items\":[1,2,3]}",
+      "output": "Valid JSON",
+      "description": "Another practical use case for organic long-tail traffic."
+    }
+  ],
+  "faq": [
+    {
+      "question": "How accurate is this tool?",
+      "answer": "The result is calculated directly from the formula or browser-side logic used by this tool."
+    },
+    {
+      "question": "Can I use this tool on mobile?",
+      "answer": "Yes. The page works on desktop and mobile screens with a simple input and result layout."
+    }
+  ],
+  "seo": {
+    "title": "JSON Validator",
+    "description": "Validate JSON and detect errors instantly. Free online json validator with instant results.",
+    "keywords": [
+      "json validator",
+      "json validator",
+      "developer-tools tool"
+    ]
+  }
+}
