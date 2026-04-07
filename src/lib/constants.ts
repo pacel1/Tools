@@ -20,6 +20,6 @@ export type ToolCategory = (typeof toolCategories)[number];
 export const siteConfig = {
   name: "ConvertBase.app",
   description:
-    "SEO-first portal for online tools, converters, calculators and generators.",
+    "Browse free online tools, converters, calculators and generators for everyday tasks and quick answers.",
   defaultLocale
 } as const;

@@ -14,15 +14,15 @@
   "examples": [
     {
       "title": "Przykład 1",
-      "input": "sample headline text",
+      "input": "Przykładowy nagłówek artykułu",
       "output": "WIELKIE / małe / Tytułowy / Zdaniowy",
-      "description": "Realistyczny przykład konwertera wielkości liter dla codziennego zapytania."
+      "description": "Pokazuje typowe użycie narzędzia na prostym przykładzie tekstu."
     },
     {
       "title": "Przykład 2",
-      "input": "sample headline text",
+      "input": "Przykładowy nagłówek artykułu",
       "output": "WIELKIE / małe / Tytułowy / Zdaniowy",
-      "description": "Kolejne praktyczne zastosowanie pod ruch organiczny z długiego ogona."
+      "description": "Przydatne przy szybkiej edycji nagłówków, tytułów i tekstu roboczego."
     }
   ],
   "faq": [
@@ -40,8 +40,7 @@
     "description": "Zamień tekst na wielkie litery, małe litery, zapis tytułowy i zapis zdaniowy. Darmowy konwerter wielkości liter online z natychmiastowym wynikiem.",
     "keywords": [
       "konwerter wielkości liter",
-      "case converter",
-      "text-tools tool"
+      "case converter"
     ]
   }
 }

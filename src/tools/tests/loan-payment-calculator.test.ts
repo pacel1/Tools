@@ -6,4 +6,9 @@ describe("loan-payment-calculator", () => {
     const result = runLoanPaymentCalculator({ principal: 25000, annualRate: 6, termMonths: 60 });
     expect(Number.isFinite(result.result)).toBe(true);
   });
+
+  it("returns zero instead of crashing when term is zero", () => {
+    const result = runLoanPaymentCalculator({ principal: 25000, annualRate: 6, termMonths: 0 });
+    expect(result.result).toBe(0);
+  });
 });

@@ -5,7 +5,7 @@
   "h1": "Word counter",
   "title": "Word counter",
   "shortDescription": "Count words, characters, paragraphs and reading time in one lightweight text analysis tool.",
-  "overview": "The word counter analyzes text locally in the browser and returns fast statistics for writers, editors, marketers and students. It is designed to be cheap to run at scale because no database or external API is needed for the live calculation experience.",
+  "overview": "The word counter analyzes text and returns fast statistics for writers, editors, marketers and students. It is useful for checking length, readability and reading time before publishing, editing or sharing content.",
   "howItWorks": [
     "Paste or type your text into the textarea.",
     "The tool trims whitespace and counts words, characters and paragraph blocks.",
@@ -28,7 +28,7 @@
   "faq": [
     {
       "question": "Is the counting done on the client side?",
-      "answer": "Yes. The starter sample runs the calculation directly in the browser for speed and to avoid infrastructure cost."
+      "answer": "Yes. The counting runs directly on the page, so you can paste text and get results instantly."
     },
     {
       "question": "How is reading time estimated?",
@@ -38,6 +38,10 @@
   "seo": {
     "title": "Word Counter",
     "description": "Free online word counter for words, characters, paragraphs and reading time.",
-    "keywords": ["word counter", "character counter", "reading time calculator"]
+    "keywords": [
+      "word counter",
+      "character counter",
+      "reading time calculator"
+    ]
   }
 }

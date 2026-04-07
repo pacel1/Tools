@@ -13,13 +13,13 @@
   ],
   "examples": [
     {
-      "title": "Example 1",
+      "title": "Common use case",
       "input": "2 gigabytes",
       "output": "2048 megabytes",
       "description": "A practical example for binary storage conversions."
     },
     {
-      "title": "Example 2",
+      "title": "Another quick example",
       "input": "1 gigabyte",
       "output": "1024 megabytes",
       "description": "Useful for storage planning, backups and file size checks."

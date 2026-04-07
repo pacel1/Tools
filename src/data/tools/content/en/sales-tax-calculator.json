@@ -5,7 +5,7 @@
   "h1": "Sales Tax Calculator",
   "title": "Sales Tax Calculator",
   "shortDescription": "Calculate total price after adding sales tax with fast results, simple inputs and practical examples.",
-  "overview": "Calculate total price after adding sales tax. This page gives a fast answer with a practical utility tool and a simple result flow. This page targets users who want a free online answer, fast browser-based results and practical long-tail utility content.",
+  "overview": "Calculate total price after adding sales tax. Use this tool to get a clear result quickly from simple input on the same page. It is useful for everyday checks, comparisons and small tasks when you need a fast online answer.",
   "howItWorks": [
     "Enter the required value or text into the form.",
     "The conversion, calculation or transformation runs instantly in the browser.",
@@ -13,22 +13,22 @@
   ],
   "examples": [
     {
-      "title": "Example 1",
+      "title": "Common use case",
       "input": "100 with 8% tax",
       "output": "108",
-      "description": "A realistic sales tax calculator example for an everyday search query."
+      "description": "Shows a common use case with a clear input and result."
     },
     {
-      "title": "Example 2",
+      "title": "Another quick example",
       "input": "100 with 8% tax",
       "output": "108",
-      "description": "Another practical use case for organic long-tail traffic."
+      "description": "Useful for quick checks, comparisons or repeat tasks."
     }
   ],
   "faq": [
     {
       "question": "How accurate is this tool?",
-      "answer": "The result is calculated directly from the formula or browser-side logic used by this tool."
+      "answer": "The result is based on the input you provide and the calculation or transformation shown on the page."
     },
     {
       "question": "Can I use this tool on mobile?",
@@ -39,9 +39,7 @@
     "title": "Sales Tax Calculator",
     "description": "Calculate total price after adding sales tax. Free online sales tax calculator with instant results.",
     "keywords": [
-      "sales tax calculator",
-      "sales tax calculator",
-      "calculators tool"
+      "sales tax calculator"
     ]
   }
 }

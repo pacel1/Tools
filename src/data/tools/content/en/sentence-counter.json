@@ -5,7 +5,7 @@
   "h1": "Sentence Counter",
   "title": "Sentence Counter",
   "shortDescription": "Count sentences in text instantly with fast results, simple inputs and practical examples.",
-  "overview": "Count sentences in text instantly. This page gives a fast answer with a practical utility tool and a simple result flow. This page targets users who want a free online answer, fast browser-based results and practical long-tail utility content.",
+  "overview": "Count sentences in text instantly. Use this tool to get a clear result quickly from simple input on the same page. It is useful for everyday checks, comparisons and small tasks when you need a fast online answer.",
   "howItWorks": [
     "Enter the required value or text into the form.",
     "The conversion, calculation or transformation runs instantly in the browser.",
@@ -13,22 +13,22 @@
   ],
   "examples": [
     {
-      "title": "Example 1",
+      "title": "Common use case",
       "input": "A paragraph with several sentences.",
       "output": "Sentence total",
-      "description": "A realistic sentence counter example for an everyday search query."
+      "description": "Shows a common use case with a clear input and result."
     },
     {
-      "title": "Example 2",
+      "title": "Another quick example",
       "input": "A paragraph with several sentences.",
       "output": "Sentence total",
-      "description": "Another practical use case for organic long-tail traffic."
+      "description": "Useful for quick checks, comparisons or repeat tasks."
     }
   ],
   "faq": [
     {
       "question": "How accurate is this tool?",
-      "answer": "The result is calculated directly from the formula or browser-side logic used by this tool."
+      "answer": "The result is based on the input you provide and the calculation or transformation shown on the page."
     },
     {
       "question": "Can I use this tool on mobile?",
@@ -39,9 +39,7 @@
     "title": "Sentence Counter",
     "description": "Count sentences in text instantly. Free online sentence counter with instant results.",
     "keywords": [
-      "sentence counter",
-      "sentence counter",
-      "text-tools tool"
+      "sentence counter"
     ]
   }
 }

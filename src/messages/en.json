@@ -1,20 +1,20 @@
 {
   "common": {
     "siteName": "ConvertBase.app",
-    "siteTagline": "Free online tools, converters and generators",
-    "footerTagline": "Browse useful online converters, calculators, generators, image tools and developer utilities in one place.",
+    "siteTagline": "Free online tools for quick conversions, calculations and everyday tasks",
+    "footerTagline": "Find useful converters, calculators, generators, image tools and developer tools in one place.",
     "heroEyebrow": "Free Online Tools",
     "heroTitle": "Hundreds of useful online tools in one place",
-    "heroDescription": "Browse free converters, calculators, generators and text tools with fast results and clear interfaces. Built to answer everyday searches and high-intent long-tail queries with practical utility pages.",
-    "heroPanelLabel": "Most searched tools",
-    "heroPanelItem1": "Unit, weight, length and format converters",
-    "heroPanelItem2": "Calculators for quick everyday math and comparisons",
-    "heroPanelItem3": "Generators and text tools for writing and content work",
-    "heroPanelItem4": "Simple utility pages focused on one clear problem at a time",
+    "heroDescription": "Use free online converters, calculators, generators and utility tools with instant results. Find fast answers for everyday tasks, work, study and technical problems in one place.",
+    "heroPanelLabel": "Popular tool types",
+    "heroPanelItem1": "Unit, weight, length and file converters",
+    "heroPanelItem2": "Everyday calculators for money, health and percentages",
+    "heroPanelItem3": "Text, image and developer tools for quick tasks",
+    "heroPanelItem4": "Fast single-purpose tools with clear results",
     "categoriesEyebrow": "Browse Categories",
     "categoriesTitle": "Pick a category and find the exact tool you need faster",
-    "featuredEyebrow": "Featured Tools",
-    "featuredTitle": "Popular tools available right now",
+    "featuredEyebrow": "Popular searches",
+    "featuredTitle": "Tools people use most",
     "footerLinks": {
       "about": "About",
       "privacy": "Privacy Policy",
@@ -27,6 +27,10 @@
       "title": "Cookies, analytics and ads",
       "description": "ConvertBase.app uses cookies to keep the site working, measure traffic with Google Analytics and show ads through Google AdSense. By continuing, you accept this use.",
       "accept": "Accept"
-    }
+    },
+    "heroChip1": "Free online",
+    "heroChip2": "Instant results",
+    "heroChip3": "No sign-up",
+    "heroChip4": "Works in your browser"
   }
 }

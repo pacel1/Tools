@@ -5,7 +5,7 @@
   "h1": "Percentage Calculator",
   "title": "Percentage Calculator",
   "shortDescription": "Calculate what percentage one number is of another with fast results, simple inputs and practical examples.",
-  "overview": "Calculate what percentage one number is of another. This page gives a fast answer with a practical utility tool and a simple result flow. This page targets users who want a free online answer, fast browser-based results and practical long-tail utility content.",
+  "overview": "Calculate what percentage one number is of another. Use this tool to get a clear result quickly from simple input on the same page. It is useful for everyday checks, comparisons and small tasks when you need a fast online answer.",
   "howItWorks": [
     "Enter the required value or text into the form.",
     "The conversion, calculation or transformation runs instantly in the browser.",
@@ -13,22 +13,22 @@
   ],
   "examples": [
     {
-      "title": "Example 1",
+      "title": "Common use case",
       "input": "25 of 200",
       "output": "12.5%",
-      "description": "A realistic percentage calculator example for an everyday search query."
+      "description": "Shows a common use case with a clear input and result."
     },
     {
-      "title": "Example 2",
+      "title": "Another quick example",
       "input": "25 of 200",
       "output": "12.5%",
-      "description": "Another practical use case for organic long-tail traffic."
+      "description": "Useful for quick checks, comparisons or repeat tasks."
     }
   ],
   "faq": [
     {
       "question": "How accurate is this tool?",
-      "answer": "The result is calculated directly from the formula or browser-side logic used by this tool."
+      "answer": "The result is based on the input you provide and the calculation or transformation shown on the page."
     },
     {
       "question": "Can I use this tool on mobile?",
@@ -39,9 +39,7 @@
     "title": "Percentage Calculator",
     "description": "Calculate what percentage one number is of another. Free online percentage calculator with instant results.",
     "keywords": [
-      "percentage calculator",
-      "percentage calculator",
-      "calculators tool"
+      "percentage calculator"
     ]
   }
 }

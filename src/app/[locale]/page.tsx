@@ -41,16 +41,16 @@ export default async function LocaleHomePage({
           </p>
           <div className="mt-8 flex flex-wrap gap-3 text-sm text-white/65">
             <span className="rounded-full border border-cyan-300/30 px-4 py-2">
-              SEO-first
+              {t("heroChip1")}
             </span>
             <span className="rounded-full border border-cyan-300/30 px-4 py-2">
-              App Router
+              {t("heroChip2")}
             </span>
             <span className="rounded-full border border-cyan-300/30 px-4 py-2">
-              JSON-driven
+              {t("heroChip3")}
             </span>
             <span className="rounded-full border border-cyan-300/30 px-4 py-2">
-              CLI-generated
+              {t("heroChip4")}
             </span>
           </div>
         </div>
