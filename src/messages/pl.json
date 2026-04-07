@@ -1,20 +1,20 @@
 {
   "common": {
     "siteName": "ConvertBase.app",
-    "siteTagline": "Darmowe narzędzia online, konwertery i generatory",
-    "footerTagline": "Korzystaj z przydatnych konwerterów, kalkulatorów, generatorów, narzędzi obrazów i narzędzi dla developerów w jednym miejscu.",
+    "siteTagline": "Darmowe narzędzia online do szybkich przeliczeń, obliczeń i codziennych zadań",
+    "footerTagline": "Znajdź konwertery, kalkulatory, generatory, narzędzia obrazów i narzędzia dla developerów w jednym miejscu.",
     "heroEyebrow": "Darmowe narzędzia online",
     "heroTitle": "Setki przydatnych narzędzi online w jednym miejscu",
-    "heroDescription": "Korzystaj z darmowych konwerterów, kalkulatorów, generatorów i narzędzi tekstowych. Szybkie wyniki, proste formularze i praktyczne odpowiedzi do codziennych zadań oraz zapytań long tail z wyszukiwarki.",
-    "heroPanelLabel": "Najczęściej szukane narzędzia",
-    "heroPanelItem1": "Konwertery jednostek, wag, długości i formatów",
-    "heroPanelItem2": "Kalkulatory do codziennych obliczeń i szybkich porównań",
-    "heroPanelItem3": "Generatory i narzędzia tekstowe do pracy z treścią",
-    "heroPanelItem4": "Proste utility tools do szybkiego rozwiązania konkretnego problemu",
+    "heroDescription": "Korzystaj z darmowych konwerterów, kalkulatorów, generatorów i praktycznych narzędzi online z natychmiastowym wynikiem. Znajdź szybkie odpowiedzi do codziennych zadań, pracy, nauki i problemów technicznych w jednym miejscu.",
+    "heroPanelLabel": "Popularne typy narzędzi",
+    "heroPanelItem1": "Konwertery jednostek, wag, długości i plików",
+    "heroPanelItem2": "Kalkulatory do pieniędzy, zdrowia i procentów na co dzień",
+    "heroPanelItem3": "Narzędzia tekstowe, obrazów i dla developerów do szybkich zadań",
+    "heroPanelItem4": "Szybkie narzędzia do jednego konkretnego problemu",
     "categoriesEyebrow": "Kategorie",
     "categoriesTitle": "Wybierz kategorię i znajdź dokładnie takie narzędzie, jakiego potrzebujesz",
-    "featuredEyebrow": "Przykładowe narzędzia",
-    "featuredTitle": "Popularne narzędzia dostępne od razu",
+    "featuredEyebrow": "Popularne wyszukiwania",
+    "featuredTitle": "Narzędzia, z których ludzie korzystają najczęściej",
     "footerLinks": {
       "about": "O nas",
       "privacy": "Polityka prywatności",
@@ -27,6 +27,10 @@
       "title": "Cookies, analityka i reklamy",
       "description": "ConvertBase.app używa plików cookie, aby strona działała poprawnie, mierzyć ruch w Google Analytics i wyświetlać reklamy Google AdSense. Kontynuując, akceptujesz ten sposób działania.",
       "accept": "Akceptuję"
-    }
+    },
+    "heroChip1": "Darmowe online",
+    "heroChip2": "Natychmiastowe wyniki",
+    "heroChip3": "Bez rejestracji",
+    "heroChip4": "Działa w przeglądarce"
   }
 }

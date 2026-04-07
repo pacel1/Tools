@@ -52,8 +52,8 @@ export const generatorUiLabels: Record<Locale, Record<string, string>> = {
     siteName: "Site name",
     ogImage: "OG image URL",
     clear: "Clear",
-    generatedQr: "Generated QR code",
-    placeholderImage: "Placeholder image",
+    generatedQr: "QR code preview",
+    placeholderImage: "Preview image",
     faviconSet: "Favicon set"
   },
   pl: {
@@ -96,8 +96,8 @@ export const generatorUiLabels: Record<Locale, Record<string, string>> = {
     siteName: "Nazwa strony",
     ogImage: "URL obrazu OG",
     clear: "Wyczysc",
-    generatedQr: "Wygenerowany kod QR",
-    placeholderImage: "Obraz placeholder",
+    generatedQr: "Podglad kodu QR",
+    placeholderImage: "Podglad obrazu",
     faviconSet: "Zestaw favicon"
   },
   es: {
@@ -140,8 +140,8 @@ export const generatorUiLabels: Record<Locale, Record<string, string>> = {
     siteName: "Nombre del sitio",
     ogImage: "URL de imagen OG",
     clear: "Limpiar",
-    generatedQr: "Codigo QR generado",
-    placeholderImage: "Imagen placeholder",
+    generatedQr: "Vista previa del codigo QR",
+    placeholderImage: "Vista previa de la imagen",
     faviconSet: "Set de favicon"
   },
   de: {
@@ -184,8 +184,8 @@ export const generatorUiLabels: Record<Locale, Record<string, string>> = {
     siteName: "Seitenname",
     ogImage: "OG Bild URL",
     clear: "Leeren",
-    generatedQr: "Generierter QR Code",
-    placeholderImage: "Placeholder Bild",
+    generatedQr: "QR-Code-Vorschau",
+    placeholderImage: "Bildvorschau",
     faviconSet: "Favicon Set"
   },
   fr: {
@@ -228,8 +228,8 @@ export const generatorUiLabels: Record<Locale, Record<string, string>> = {
     siteName: "Nom du site",
     ogImage: "URL image OG",
     clear: "Effacer",
-    generatedQr: "Code QR genere",
-    placeholderImage: "Image placeholder",
+    generatedQr: "Apercu du code QR",
+    placeholderImage: "Apercu de l'image",
     faviconSet: "Pack favicon"
   }
 };

@@ -39,9 +39,7 @@
     "title": "SHA-256-Generator",
     "description": "Erzeuge sofort einen SHA-256-Hash aus Text. Kostenloser SHA-256-Generator online mit sofortigen Ergebnissen.",
     "keywords": [
-      "sha256-generator",
-      "sha256-generator",
-      "security-tools tool"
+      "sha256-generator"
     ]
   }
 }

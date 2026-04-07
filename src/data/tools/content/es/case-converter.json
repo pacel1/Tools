@@ -14,15 +14,15 @@
   "examples": [
     {
       "title": "Ejemplo 1",
-      "input": "sample headline text",
+      "input": "Titular de ejemplo para un artículo",
       "output": "MAYÚSCULAS / minúsculas / Título / Oración",
-      "description": "Un ejemplo realista de conversor de mayúsculas y minúsculas para una búsqueda cotidiana."
+      "description": "Muestra un uso típico de la herramienta con un texto sencillo."
     },
     {
       "title": "Ejemplo 2",
-      "input": "sample headline text",
+      "input": "Titular de ejemplo para un artículo",
       "output": "MAYÚSCULAS / minúsculas / Título / Oración",
-      "description": "Otro caso práctico pensado para tráfico orgánico de cola larga."
+      "description": "Es útil para editar títulos, encabezados y borradores rápidamente."
     }
   ],
   "faq": [
@@ -40,8 +40,7 @@
     "description": "Convierte texto a mayúsculas, minúsculas, formato título y formato oración. Conversor online gratuito con resultados instantáneos.",
     "keywords": [
       "conversor de mayúsculas y minúsculas",
-      "case converter",
-      "text-tools tool"
+      "case converter"
     ]
   }
 }

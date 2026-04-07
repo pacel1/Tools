@@ -1,20 +1,20 @@
 {
   "common": {
     "siteName": "ConvertBase.app",
-    "siteTagline": "Kostenlose Online-Tools, Konverter und Generatoren",
-    "footerTagline": "Nutze Konverter, Rechner, Generatoren, Bild-Tools und Entwicklerwerkzeuge an einem Ort.",
+    "siteTagline": "Kostenlose Online-Tools für schnelle Umrechnungen, Berechnungen und Alltagsaufgaben",
+    "footerTagline": "Finde Konverter, Rechner, Generatoren, Bild-Tools und Entwicklerwerkzeuge an einem Ort.",
     "heroEyebrow": "Kostenlose Online-Tools",
     "heroTitle": "Hunderte nützliche Online-Tools an einem Ort",
-    "heroDescription": "Entdecke kostenlose Konverter, Rechner, Generatoren und Text-Tools mit schnellen Ergebnissen und klaren Oberflächen. Entwickelt für alltägliche Suchen und hilfreiche Long-Tail-Anfragen mit klarer Absicht.",
-    "heroPanelLabel": "Am häufigsten gesucht",
-    "heroPanelItem1": "Einheiten-, Gewichts-, Längen- und Format-Konverter",
-    "heroPanelItem2": "Rechner für schnelle Alltagsrechnungen und Vergleiche",
-    "heroPanelItem3": "Generatoren und Text-Tools für Content-Arbeit",
-    "heroPanelItem4": "Einfache Utility-Seiten für ein klar definiertes Problem",
+    "heroDescription": "Nutze kostenlose Konverter, Rechner, Generatoren und praktische Online-Tools mit sofortigen Ergebnissen. Finde schnelle Antworten für Alltag, Arbeit, Lernen und technische Aufgaben an einem Ort.",
+    "heroPanelLabel": "Beliebte Tool-Typen",
+    "heroPanelItem1": "Einheiten-, Gewichts-, Längen- und Dateikonverter",
+    "heroPanelItem2": "Alltagsrechner für Geld, Gesundheit und Prozente",
+    "heroPanelItem3": "Text-, Bild- und Entwickler-Tools für schnelle Aufgaben",
+    "heroPanelItem4": "Schnelle Tools für ein klares Einzelproblem",
     "categoriesEyebrow": "Kategorien",
     "categoriesTitle": "Wähle eine Kategorie und finde schneller genau das richtige Tool",
-    "featuredEyebrow": "Empfohlene Tools",
-    "featuredTitle": "Beliebte Tools, die jetzt verfügbar sind",
+    "featuredEyebrow": "Beliebte Suchanfragen",
+    "featuredTitle": "Tools, die Menschen am meisten nutzen",
     "footerLinks": {
       "about": "Über uns",
       "privacy": "Datenschutz",
@@ -27,6 +27,10 @@
       "title": "Cookies, Analysen und Werbung",
       "description": "ConvertBase.app verwendet Cookies, um die Website funktionsfähig zu halten, Zugriffe mit Google Analytics zu messen und Werbung über Google AdSense anzuzeigen. Wenn du fortfährst, akzeptierst du diese Nutzung.",
       "accept": "Akzeptieren"
-    }
+    },
+    "heroChip1": "Kostenlos online",
+    "heroChip2": "Sofortige Ergebnisse",
+    "heroChip3": "Ohne Registrierung",
+    "heroChip4": "Läuft im Browser"
   }
 }

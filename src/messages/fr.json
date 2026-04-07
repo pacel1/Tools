@@ -1,20 +1,20 @@
 {
   "common": {
     "siteName": "ConvertBase.app",
-    "siteTagline": "Outils en ligne, convertisseurs et générateurs gratuits",
-    "footerTagline": "Retrouvez convertisseurs, calculateurs, générateurs, outils d'image et outils pour développeurs au même endroit.",
+    "siteTagline": "Outils en ligne gratuits pour conversions, calculs et tâches du quotidien",
+    "footerTagline": "Retrouvez convertisseurs, calculateurs, générateurs, outils d’image et outils pour développeurs au même endroit.",
     "heroEyebrow": "Outils en ligne gratuits",
     "heroTitle": "Des centaines d'outils en ligne utiles au même endroit",
-    "heroDescription": "Parcourez des convertisseurs, calculateurs, générateurs et outils de texte avec des résultats rapides et des interfaces simples. Conçu pour répondre aux recherches utiles du quotidien et aux requêtes longue traîne à forte intention.",
-    "heroPanelLabel": "Outils les plus recherchés",
-    "heroPanelItem1": "Convertisseurs d'unités, de poids, de longueur et de formats",
-    "heroPanelItem2": "Calculateurs pour des calculs rapides et des comparaisons utiles",
-    "heroPanelItem3": "Générateurs et outils de texte pour le travail de contenu",
-    "heroPanelItem4": "Pages utiles centrées sur un problème précis",
+    "heroDescription": "Utilisez des convertisseurs, calculateurs, générateurs et outils en ligne gratuits avec des résultats instantanés. Trouvez des réponses rapides pour les tâches du quotidien, le travail, les études et les problèmes techniques au même endroit.",
+    "heroPanelLabel": "Types d’outils populaires",
+    "heroPanelItem1": "Convertisseurs d’unités, de poids, de longueur et de fichiers",
+    "heroPanelItem2": "Calculateurs du quotidien pour l’argent, la santé et les pourcentages",
+    "heroPanelItem3": "Outils de texte, d’image et de développement pour les tâches rapides",
+    "heroPanelItem4": "Outils rapides pour un seul problème clair",
     "categoriesEyebrow": "Catégories",
     "categoriesTitle": "Choisissez une catégorie et trouvez plus vite l'outil exact dont vous avez besoin",
-    "featuredEyebrow": "Outils mis en avant",
-    "featuredTitle": "Outils populaires disponibles maintenant",
+    "featuredEyebrow": "Recherches populaires",
+    "featuredTitle": "Outils les plus utilisés",
     "footerLinks": {
       "about": "À propos",
       "privacy": "Confidentialité",
@@ -27,6 +27,10 @@
       "title": "Cookies, analytics et publicités",
       "description": "ConvertBase.app utilise des cookies pour faire fonctionner le site, mesurer le trafic avec Google Analytics et afficher des annonces via Google AdSense. En continuant, vous acceptez cette utilisation.",
       "accept": "Accepter"
-    }
+    },
+    "heroChip1": "Gratuit en ligne",
+    "heroChip2": "Résultats instantanés",
+    "heroChip3": "Sans inscription",
+    "heroChip4": "Fonctionne dans le navigateur"
   }
 }

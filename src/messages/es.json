@@ -1,20 +1,20 @@
 {
   "common": {
     "siteName": "ConvertBase.app",
-    "siteTagline": "Herramientas online, convertidores y generadores gratis",
-    "footerTagline": "Explora convertidores, calculadoras, generadores, herramientas de imagen y utilidades para desarrollo en un solo lugar.",
+    "siteTagline": "Herramientas online gratis para conversiones, cálculos y tareas diarias",
+    "footerTagline": "Encuentra convertidores, calculadoras, generadores, herramientas de imagen y herramientas para desarrolladores en un solo lugar.",
     "heroEyebrow": "Herramientas Online Gratis",
     "heroTitle": "Cientos de herramientas online útiles en un solo lugar",
-    "heroDescription": "Explora conversores, calculadoras, generadores y herramientas de texto con resultados rápidos y flujos simples. Pensado para responder búsquedas útiles del día a día y consultas long tail con intención clara.",
-    "heroPanelLabel": "Herramientas más buscadas",
-    "heroPanelItem1": "Conversores de unidades, peso, longitud y formatos",
-    "heroPanelItem2": "Calculadoras para cuentas rápidas y comparaciones útiles",
-    "heroPanelItem3": "Generadores y herramientas de texto para trabajo con contenidos",
-    "heroPanelItem4": "Páginas útiles centradas en resolver un problema concreto",
+    "heroDescription": "Usa convertidores, calculadoras, generadores y herramientas online gratis con resultados instantáneos. Encuentra respuestas rápidas para tareas diarias, trabajo, estudio y problemas técnicos en un solo lugar.",
+    "heroPanelLabel": "Tipos de herramientas populares",
+    "heroPanelItem1": "Convertidores de unidades, peso, longitud y archivos",
+    "heroPanelItem2": "Calculadoras diarias para dinero, salud y porcentajes",
+    "heroPanelItem3": "Herramientas de texto, imagen y desarrollo para tareas rápidas",
+    "heroPanelItem4": "Herramientas rápidas para un solo problema claro",
     "categoriesEyebrow": "Categorías",
     "categoriesTitle": "Elige una categoría y encuentra exactamente la herramienta que necesitas",
-    "featuredEyebrow": "Herramientas destacadas",
-    "featuredTitle": "Herramientas populares disponibles ahora",
+    "featuredEyebrow": "Búsquedas populares",
+    "featuredTitle": "Herramientas que más usa la gente",
     "footerLinks": {
       "about": "Acerca de",
       "privacy": "Privacidad",
@@ -27,6 +27,10 @@
       "title": "Cookies, analítica y anuncios",
       "description": "ConvertBase.app usa cookies para que el sitio funcione, medir el tráfico con Google Analytics y mostrar anuncios mediante Google AdSense. Si continúas, aceptas este uso.",
       "accept": "Aceptar"
-    }
+    },
+    "heroChip1": "Gratis online",
+    "heroChip2": "Resultados al instante",
+    "heroChip3": "Sin registro",
+    "heroChip4": "Funciona en el navegador"
   }
 }

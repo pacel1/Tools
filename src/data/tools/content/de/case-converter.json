@@ -14,15 +14,15 @@
   "examples": [
     {
       "title": "Beispiel 1",
-      "input": "sample headline text",
+      "input": "Beispielüberschrift für einen Artikel",
       "output": "GROSS / klein / Titel / Satz",
-      "description": "Ein realistisches Beispiel für die Umwandlung von Groß- und Kleinschreibung bei einer alltäglichen Suchanfrage."
+      "description": "Zeigt einen typischen Einsatz des Tools mit einem einfachen Text."
     },
     {
       "title": "Beispiel 2",
-      "input": "sample headline text",
+      "input": "Beispielüberschrift für einen Artikel",
       "output": "GROSS / klein / Titel / Satz",
-      "description": "Ein weiterer praktischer Anwendungsfall für organischen Long-Tail-Traffic."
+      "description": "Nützlich für schnelle Anpassungen an Überschriften, Titeln und Entwürfen."
     }
   ],
   "faq": [
@@ -40,8 +40,7 @@
     "description": "Wandle Text in Großschreibung, Kleinschreibung, Titel-Schreibweise und Satzschreibung um. Kostenloser Online-Case-Konverter mit sofortigen Ergebnissen.",
     "keywords": [
       "Groß- und Kleinschreibung umwandeln",
-      "case converter",
-      "text-tools tool"
+      "case converter"
     ]
   }
 }

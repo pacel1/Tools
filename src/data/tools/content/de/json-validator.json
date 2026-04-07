@@ -39,9 +39,7 @@
     "title": "JSON-Validator",
     "description": "JSON validieren und Fehler sofort erkennen. Kostenloser Online-JSON-Validator mit sofortigen Ergebnissen.",
     "keywords": [
-      "json-validator",
-      "json-validator",
-      "developer-tools tool"
+      "json-validator"
     ]
   }
 }

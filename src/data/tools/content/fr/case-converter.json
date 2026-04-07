@@ -14,15 +14,15 @@
   "examples": [
     {
       "title": "Exemple 1",
-      "input": "sample headline text",
+      "input": "Titre d’exemple pour un article",
       "output": "MAJUSCULES / minuscules / Titre / Phrase",
-      "description": "Un exemple réaliste de convertisseur de casse pour une recherche courante."
+      "description": "Montre un usage courant de l’outil avec un texte simple."
     },
     {
       "title": "Exemple 2",
-      "input": "sample headline text",
+      "input": "Titre d’exemple pour un article",
       "output": "MAJUSCULES / minuscules / Titre / Phrase",
-      "description": "Un autre cas d’usage pratique pour générer du trafic organique de longue traîne."
+      "description": "Utile pour ajuster rapidement des titres, intertitres et brouillons."
     }
   ],
   "faq": [
@@ -40,8 +40,7 @@
     "description": "Convertissez du texte en majuscules, minuscules, casse de titre et casse de phrase. Convertisseur de casse en ligne gratuit avec résultats instantanés.",
     "keywords": [
       "convertisseur de majuscules et minuscules",
-      "case converter",
-      "text-tools tool"
+      "case converter"
     ]
   }
 }
