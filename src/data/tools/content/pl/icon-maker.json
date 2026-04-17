@@ -1,0 +1,16 @@
+{
+  "toolId": "icon-maker",
+  "locale": "pl",
+  "slug": "generator-ikon",
+  "h1": "Generator ikon",
+  "title": "Generator ikon",
+  "shortDescription": "Tworz ikony aplikacji i proste ikony marki online z jednego obrazu bez wysylania plikow na serwer.",
+  "metaTitle": "Generator ikon | Tworzenie ikon online",
+  "metaDescription": "Tworz ikony online z jednego obrazu. Narzedzie sprawdza sie przy ikonach aplikacji, launcherach i prostych eksportach do brandingowych makiet.",
+  "intro": "Generator ikon rozszerza workflow favicon o szersza intencje tworzenie ikon online. Wgrywasz jeden obraz, ustawiasz rozmiar, margines i tlo, a potem pobierasz gotowa ikone aplikacji albo ikonke marki bez opuszczania przegladarki.",
+  "overview": "To narzedzie jest dobre wtedy, gdy nie potrzebujesz calego zestawu favicon, tylko jednej dopracowanej ikony. Sprawdza sie przy prototypach aplikacji, ikonach launcherow, mockupach produktu i prostych brandowych assetach w kwadratowym formacie.",
+  "howItWorks": ["Wgraj obraz, z ktorego chcesz zrobic ikone.", "Ustaw rozmiar, margines, tlo i format wyjsciowy.", "Sprawdz podglad i pobierz gotowa ikone od razu."],
+  "examples": [{"title": "Ikona aplikacji", "input": "Jedno logo na przezroczystym tle", "output": "Kwadratowa ikona 512px", "description": "Przydatne przy testach aplikacji, PWA i prezentacjach produktu."}, {"title": "Ikona marki", "input": "Prosty sygnet lub znak", "output": "Ikona PNG z dopasowanym marginesem", "description": "Dobre do awatarow, mockupow i materialow prezentacyjnych."}],
+  "faq": [{"question": "Czym generator ikon rozni sie od generatora favicon?", "answer": "Generator ikon skupia sie na jednym dopracowanym eksporcie, a generator favicon zwykle tworzy caly zestaw roznych rozmiarow dla witryny."}, {"question": "Czy obraz jest wysylany na serwer?", "answer": "Nie. Przetwarzanie odbywa sie lokalnie w przegladarce."}],
+  "seo": {"title": "Generator ikon | Tworzenie ikon online", "description": "Tworz ikony online z jednego obrazu. Narzedzie sprawdza sie przy ikonach aplikacji, launcherach i prostych eksportach marki.", "keywords": ["generator ikon", "tworzenie ikon online", "ikona aplikacji", "generator ikon aplikacji", "app icon generator"]}
+}

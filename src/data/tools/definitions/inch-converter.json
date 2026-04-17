@@ -1,0 +1,21 @@
+{
+  "id": "inch-converter",
+  "type": "converter",
+  "category": "converters",
+  "componentName": "InchConverterTool",
+  "logicModule": "inch-converter",
+  "inputSchema": "inchConverterInputSchema",
+  "outputSchema": "inchConverterOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "de"
+  ],
+  "relatedTools": [
+    "cm-to-inches-converter",
+    "inches-to-cm-converter",
+    "mm-to-inches-converter",
+    "storage-converter"
+  ],
+  "seoPriority": 0.94
+}

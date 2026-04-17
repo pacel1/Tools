@@ -1,0 +1,16 @@
+{
+  "toolId": "inch-converter",
+  "locale": "en",
+  "slug": "inch-converter",
+  "h1": "Inch Converter",
+  "title": "Inch Converter",
+  "shortDescription": "Convert inches to cm, mm and feet online with a flexible browser-based unit converter.",
+  "metaTitle": "Inch Converter | Inches, cm, mm and feet",
+  "metaDescription": "Use this inch converter to switch between inches, centimeters, millimeters and feet online. Great for generic inch conversion searches.",
+  "intro": "This inch converter is designed for broad searches where people want a quick answer instead of a one-direction page. Convert inches, centimeters, millimeters and feet from one tool and flip directions without opening a second calculator.",
+  "overview": "Use the converter for product measurements, DIY dimensions, print work and international size checks. It covers the most common inch-related unit pairs while keeping the workflow simple enough for fast mobile or desktop use.",
+  "howItWorks": ["Enter the number you want to convert.", "Pick the starting unit and target unit.", "Read the result instantly and swap the direction when you need the reverse conversion."],
+  "examples": [{"title": "Inches to centimeters", "input": "10 inches", "output": "25.4 centimeters", "description": "Helpful for product specs, packaging and screen sizes."}, {"title": "Feet to inches", "input": "6 feet", "output": "72 inches", "description": "Useful in room planning and building measurements."}],
+  "faq": [{"question": "Which units are included?", "answer": "The tool supports inches, centimeters, millimeters and feet."}, {"question": "Can I use it for reverse conversions too?", "answer": "Yes. You can change the source and target units at any time in the same form."}],
+  "seo": {"title": "Inch Converter | Inches, cm, mm and feet", "description": "Use this inch converter to switch between inches, centimeters, millimeters and feet online.", "keywords": ["inch converter", "inches to cm", "cm to inches", "inch calculator", "generic inch converter"]}
+}

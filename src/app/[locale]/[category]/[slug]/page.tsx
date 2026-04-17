@@ -4,7 +4,9 @@ import { Breadcrumbs } from "@/components/layout/breadcrumbs";
 import { ToolCard } from "@/components/marketing/tool-card";
 import { categoryCatalog } from "@/data/categories/catalog";
 import type { Locale, ToolCategory } from "@/lib/constants";
+import { buildToolStructuredData } from "@/lib/seo/structured-data";
 import { buildToolMetadata } from "@/lib/seo/tool-metadata";
+import { getIntentHubLink } from "@/lib/tools/discovery";
 import {
   getAllToolPaths,
   getRelatedTools,
@@ -111,9 +113,19 @@ export default async function ToolPage({
     model.definition.componentName as keyof typeof import("@/lib/tools/tool-runtime.generated").toolComponents
   );
   const relatedTools = getRelatedTools(locale, model.definition.id);
+  const intentHub = getIntentHubLink(locale, model.definition.id);
+  const structuredData = buildToolStructuredData(locale, model);
 
   return (
     <div className="mx-auto flex max-w-7xl flex-col gap-10 px-6 py-12 lg:px-8 lg:py-16">
+      {structuredData.map((item, index) => (
+        <script
+          key={`${model.definition.id}-schema-${index}`}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(item) }}
+        />
+      ))}
+
       <Breadcrumbs
         items={[
           { href: `/${locale}`, label: labels.home },
@@ -146,6 +158,21 @@ export default async function ToolPage({
               </p>
               <p className="mt-3 max-w-2xl text-base leading-7 text-white/78">
                 {model.content.intro}
+              </p>
+            </div>
+          ) : null}
+          {intentHub ? (
+            <div className="rounded-[28px] border border-white/10 bg-white/5 p-5">
+              <p className="text-sm uppercase tracking-[0.24em] text-cyan-100/75">
+                {intentHub.eyebrow}
+              </p>
+              <h2 className="mt-3 text-xl font-semibold tracking-tight">
+                <a className="transition hover:text-cyan-100" href={intentHub.href}>
+                  {intentHub.title}
+                </a>
+              </h2>
+              <p className="mt-2 text-sm leading-7 text-white/72">
+                {intentHub.description}
               </p>
             </div>
           ) : null}

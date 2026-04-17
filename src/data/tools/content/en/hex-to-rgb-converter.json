@@ -1,0 +1,16 @@
+{
+  "toolId": "hex-to-rgb-converter",
+  "locale": "en",
+  "slug": "hex-to-rgb-converter",
+  "h1": "HEX to RGB Converter",
+  "title": "HEX to RGB Converter",
+  "shortDescription": "Convert HEX colors to RGB values instantly for CSS, design reviews and color system work.",
+  "metaTitle": "HEX to RGB Converter | Convert color codes online",
+  "metaDescription": "Convert HEX to RGB online with instant color code output. Useful for CSS work, design systems and quick color inspection.",
+  "intro": "Use this HEX to RGB converter when a design token, brand color or CSS snippet needs quick translation into channel values. It gives you the normalized HEX code and the exact RGB output in one step.",
+  "overview": "The converter is useful for front-end styling, design handoff, QA reviews and color documentation. It keeps the workflow simple by turning one HEX input into the RGB format often needed in CSS, canvas and design tooling.",
+  "howItWorks": ["Paste or pick the HEX color.", "The tool normalizes the code and reads the red, green and blue channels.", "Copy the RGB result for CSS, design specs or debugging."],
+  "examples": [{"title": "Brand color", "input": "#FF7A18", "output": "rgb(255, 122, 24)", "description": "Helpful when moving from design files to implementation."}, {"title": "Short HEX code", "input": "#0AF", "output": "rgb(0, 170, 255)", "description": "Useful for quickly expanding shorthand colors."}],
+  "faq": [{"question": "Does the converter support shorthand HEX codes?", "answer": "Yes. Three-character HEX values are expanded before conversion."}, {"question": "Can I use it for CSS work?", "answer": "Yes. The output is ideal for CSS variables, rgba workflows and design documentation."}],
+  "seo": {"title": "HEX to RGB Converter | Convert color codes online", "description": "Convert HEX to RGB online with instant color code output for CSS, design systems and quick color inspection.", "keywords": ["hex to rgb", "hex color converter", "convert hex to rgb", "color code converter", "css color converter"]}
+}

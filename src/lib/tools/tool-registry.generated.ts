@@ -3,6 +3,7 @@ import imageCompressor from "@/data/tools/definitions/image-compressor.json";
 import ageCalculator from "@/data/tools/definitions/age-calculator.json";
 import imageResizer from "@/data/tools/definitions/image-resizer.json";
 import percentageCalculator from "@/data/tools/definitions/percentage-calculator.json";
+import storageConverter from "@/data/tools/definitions/storage-converter.json";
 import loanPaymentCalculator from "@/data/tools/definitions/loan-payment-calculator.json";
 import passwordGenerator from "@/data/tools/definitions/password-generator.json";
 import qrCodeGenerator from "@/data/tools/definitions/qr-code-generator.json";
@@ -13,6 +14,7 @@ import imageCropper from "@/data/tools/definitions/image-cropper.json";
 import compoundInterestCalculator from "@/data/tools/definitions/compound-interest-calculator.json";
 import discountCalculator from "@/data/tools/definitions/discount-calculator.json";
 import gradientGenerator from "@/data/tools/definitions/gradient-generator.json";
+import iconMaker from "@/data/tools/definitions/icon-maker.json";
 import imageFormatConverter from "@/data/tools/definitions/image-format-converter.json";
 import kmToMilesConverter from "@/data/tools/definitions/km-to-miles-converter.json";
 import milesToKmConverter from "@/data/tools/definitions/miles-to-km-converter.json";
@@ -20,6 +22,7 @@ import wordCounter from "@/data/tools/definitions/word-counter.json";
 import boxShadowGenerator from "@/data/tools/definitions/box-shadow-generator.json";
 import caseConverter from "@/data/tools/definitions/case-converter.json";
 import cmToInchesConverter from "@/data/tools/definitions/cm-to-inches-converter.json";
+import inchConverter from "@/data/tools/definitions/inch-converter.json";
 import lbsToKgConverter from "@/data/tools/definitions/lbs-to-kg-converter.json";
 import percentageDecreaseCalculator from "@/data/tools/definitions/percentage-decrease-calculator.json";
 import percentageIncreaseCalculator from "@/data/tools/definitions/percentage-increase-calculator.json";
@@ -36,10 +39,12 @@ import jsonValidator from "@/data/tools/definitions/json-validator.json";
 import keywordDensityChecker from "@/data/tools/definitions/keyword-density-checker.json";
 import salesTaxCalculator from "@/data/tools/definitions/sales-tax-calculator.json";
 import feetToMetersConverter from "@/data/tools/definitions/feet-to-meters-converter.json";
+import hexToRgbConverter from "@/data/tools/definitions/hex-to-rgb-converter.json";
 import htmlToText from "@/data/tools/definitions/html-to-text.json";
 import imageMetadataReader from "@/data/tools/definitions/image-metadata-reader.json";
 import kgToLbsConverter from "@/data/tools/definitions/kg-to-lbs-converter.json";
 import metersToFeetConverter from "@/data/tools/definitions/meters-to-feet-converter.json";
+import colorPicker from "@/data/tools/definitions/color-picker.json";
 import gallonsToLitersConverter from "@/data/tools/definitions/gallons-to-liters-converter.json";
 import htmlToMarkdown from "@/data/tools/definitions/html-to-markdown.json";
 import htmlViewer from "@/data/tools/definitions/html-viewer.json";
@@ -52,6 +57,7 @@ import markupCalculator from "@/data/tools/definitions/markup-calculator.json";
 import mmToInchesConverter from "@/data/tools/definitions/mm-to-inches-converter.json";
 import placeholderImageGenerator from "@/data/tools/definitions/placeholder-image-generator.json";
 import simpleInterestCalculator from "@/data/tools/definitions/simple-interest-calculator.json";
+import contrastChecker from "@/data/tools/definitions/contrast-checker.json";
 import htmlCleaner from "@/data/tools/definitions/html-cleaner.json";
 import readingTimeCalculator from "@/data/tools/definitions/reading-time-calculator.json";
 import sha256Generator from "@/data/tools/definitions/sha256-generator.json";
@@ -61,6 +67,7 @@ import base64Encoder from "@/data/tools/definitions/base64-encoder.json";
 import htmlLinkExtractor from "@/data/tools/definitions/html-link-extractor.json";
 import htmlTagRemover from "@/data/tools/definitions/html-tag-remover.json";
 import imageToBase64 from "@/data/tools/definitions/image-to-base64.json";
+import paletteGenerator from "@/data/tools/definitions/palette-generator.json";
 import sentenceCounter from "@/data/tools/definitions/sentence-counter.json";
 import base64ToImage from "@/data/tools/definitions/base64-to-image.json";
 import htmlEscape from "@/data/tools/definitions/html-escape.json";
@@ -84,6 +91,7 @@ export const toolDefinitions = [
   ageCalculator,
   imageResizer,
   percentageCalculator,
+  storageConverter,
   loanPaymentCalculator,
   passwordGenerator,
   qrCodeGenerator,
@@ -94,6 +102,7 @@ export const toolDefinitions = [
   compoundInterestCalculator,
   discountCalculator,
   gradientGenerator,
+  iconMaker,
   imageFormatConverter,
   kmToMilesConverter,
   milesToKmConverter,
@@ -101,6 +110,7 @@ export const toolDefinitions = [
   boxShadowGenerator,
   caseConverter,
   cmToInchesConverter,
+  inchConverter,
   lbsToKgConverter,
   percentageDecreaseCalculator,
   percentageIncreaseCalculator,
@@ -117,10 +127,12 @@ export const toolDefinitions = [
   keywordDensityChecker,
   salesTaxCalculator,
   feetToMetersConverter,
+  hexToRgbConverter,
   htmlToText,
   imageMetadataReader,
   kgToLbsConverter,
   metersToFeetConverter,
+  colorPicker,
   gallonsToLitersConverter,
   htmlToMarkdown,
   htmlViewer,
@@ -133,6 +145,7 @@ export const toolDefinitions = [
   mmToInchesConverter,
   placeholderImageGenerator,
   simpleInterestCalculator,
+  contrastChecker,
   htmlCleaner,
   readingTimeCalculator,
   sha256Generator,
@@ -142,6 +155,7 @@ export const toolDefinitions = [
   htmlLinkExtractor,
   htmlTagRemover,
   imageToBase64,
+  paletteGenerator,
   sentenceCounter,
   base64ToImage,
   htmlEscape,

@@ -1,0 +1,16 @@
+{
+  "toolId": "contrast-checker",
+  "locale": "de",
+  "slug": "kontrast-pruefer",
+  "h1": "Kontrast-Pruefer",
+  "title": "Kontrast-Pruefer",
+  "shortDescription": "Farbkontrast online pruefen und schnell sehen, ob Text und Hintergrund gut lesbar sind.",
+  "metaTitle": "Kontrast-Pruefer | Farbkontrast online",
+  "metaDescription": "Farbkontrast online pruefen und den Wert fuer Text und Hintergrund ablesen. Praktisch fuer Barrierefreiheit, UI-QA und Design-Pruefungen.",
+  "intro": "Der Kontrast-Pruefer hilft dabei, Text- und Hintergrundfarben vor dem Release einer UI schnell zu testen. Du bekommst sofort das Kontrastverhaeltnis und eine klare Einschaetzung, ob die Kombination fuer uebliche Textsituationen stark genug ist.",
+  "overview": "Das Tool ist fuer Accessibility-Checks, Themen-QA und Design-Abgleiche gedacht. Statt Farben nach Gefuehl zu bewerten, bekommst du einen konkreten Wert und eine schnelle Aussage zur Lesbarkeit.",
+  "howItWorks": ["Textfarbe und Hintergrundfarbe waehlen.", "Das Tool berechnet das Kontrastverhaeltnis.", "Pruefen, ob die Kombination fuer normalen oder grossen Text stark genug ist."],
+  "examples": [{"title": "Dunkler Text auf Weiss", "input": "#111827 auf #FFFFFF", "output": "Hohes Kontrastverhaeltnis", "description": "Ein typisches Beispiel fuer gut lesbare Interfaces."}, {"title": "Akzentfarbe pruefen", "input": "Markenfarbe auf hellem Panel", "output": "Pass/Fail-Zusammenfassung", "description": "Nuetzlich fuer Buttons, Links und UI-Zustaende."}],
+  "faq": [{"question": "Was bedeutet das Kontrastverhaeltnis?", "answer": "Es zeigt, wie stark sich Textfarbe und Hintergrund in der wahrgenommenen Helligkeit unterscheiden."}, {"question": "Ist das Tool fuer Barrierefreiheits-Checks geeignet?", "answer": "Ja. Der Kontrast-Pruefer zeigt, ob eine Farbkombination fuer typische Textanforderungen stark genug ist."}],
+  "seo": {"title": "Kontrast-Pruefer | Farbkontrast online", "description": "Farbkontrast online pruefen und den Wert fuer Text und Hintergrund ablesen. Praktisch fuer Barrierefreiheit, UI-QA und Design-Pruefungen.", "keywords": ["kontrast pruefer", "farbkontrast", "wcag kontrast", "barrierefreiheit farben", "contrast checker"]}
+}

@@ -1,0 +1,21 @@
+{
+  "id": "icon-maker",
+  "type": "generator",
+  "category": "generators",
+  "componentName": "IconMakerTool",
+  "logicModule": "icon-maker",
+  "inputSchema": "iconMakerInputSchema",
+  "outputSchema": "iconMakerOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "de"
+  ],
+  "relatedTools": [
+    "favicon-generator",
+    "placeholder-image-generator",
+    "gradient-generator",
+    "image-resizer"
+  ],
+  "seoPriority": 0.95
+}

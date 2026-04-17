@@ -4,44 +4,13 @@
   "slug": "konwerter-mb-na-gb",
   "h1": "Konwerter MB na GB",
   "title": "Konwerter MB na GB",
-  "shortDescription": "Przeliczaj megabajty na gigabajty od razu z uzyciem binarnego przelicznika 1024.",
-  "overview": "Przeliczaj megabajty na gigabajty natychmiast. Ten konwerter uzywa binarnego przelicznika 1 GB = 1024 MB, co jest czeste przy rozmiarach plikow i pamieci masowej.",
-  "howItWorks": [
-    "Wpisz liczbe megabajtow do formularza.",
-    "Przeliczenie wykonuje sie od razu w przegladarce z uzyciem przelicznika 1024.",
-    "Sprawdz wynik i przejdz do powiazanych narzedzi, jesli potrzebujesz kolejnego kroku."
-  ],
-  "examples": [
-    {
-      "title": "Przyklad 1",
-      "input": "512 megabajtow",
-      "output": "0,5 gigabajta",
-      "description": "Praktyczny przyklad dla osob przeliczajacych binarne jednostki pamieci."
-    },
-    {
-      "title": "Przyklad 2",
-      "input": "1024 megabajty",
-      "output": "1 gigabajt",
-      "description": "Przydatne przy plikach, backupach i pojemnosci dysku."
-    }
-  ],
-  "faq": [
-    {
-      "question": "Jakiego przelicznika uzywa to narzedzie?",
-      "answer": "To narzedzie uzywa binarnego przelicznika, czyli 1024 MB = 1 GB."
-    },
-    {
-      "question": "Czy moge uzywac tego narzedzia na telefonie?",
-      "answer": "Tak. Strona dziala na komputerach i urzadzeniach mobilnych z prostym ukladem pola i wyniku."
-    }
-  ],
-  "seo": {
-    "title": "Konwerter MB na GB",
-    "description": "Darmowy konwerter MB na GB online z przelicznikiem 1024 i natychmiastowym wynikiem.",
-    "keywords": [
-      "konwerter mb na gb",
-      "1024 mb na gb",
-      "przelicznik jednostek pamieci"
-    ]
-  }
+  "shortDescription": "Przeliczaj megabajty na gigabajty i szybko sprawdzaj ile GB wychodzi z MB.",
+  "metaTitle": "Konwerter MB na GB | MB na GB online",
+  "metaDescription": "Przeliczaj MB na GB online z przelicznikiem 1024. Przydatne przy pytaniach ile GB z MB i odwrotnej konwersji storage.",
+  "intro": "Ten konwerter MB na GB odpowiada na typowe pytania ile GB wychodzi z MB i jak szybko przeliczyc rozmiar pliku na gigabajty. Narzedzie korzysta z binarnego przelicznika 1024 i dziala od razu w przegladarce.",
+  "overview": "Narzędzie przydaje sie podczas sprawdzania miejsca na dysku, pojemnosci paczek, kopii zapasowych i limitow transferu. Zamiast liczyc recznie, dostajesz szybki wynik i latwo przechodzisz do powiazanych konwerterow pamieci.",
+  "howItWorks": ["Wpisz liczbe megabajtow.", "Narzędzie przelicza wartosc wedlug zasady 1024 MB = 1 GB.", "Odczytaj wynik i w razie potrzeby skorzystaj z odwrotnego konwertera GB na MB."],
+  "examples": [{"title": "Podstawowa konwersja", "input": "1024 MB", "output": "1 GB", "description": "Najprostszy przypadek dla szybkiej odpowiedzi storage."}, {"title": "Mniejszy plik", "input": "512 MB", "output": "0,5 GB", "description": "Pomocne przy porownywaniu plikow, instalatorow i przestrzeni dyskowej."}],
+  "faq": [{"question": "Ile GB ma 1024 MB?", "answer": "W tym narzedziu 1024 MB = 1 GB zgodnie z binarnym przelicznikiem 1024."}, {"question": "Czy narzedzie obsluguje szybka odwrotna konwersje?", "answer": "Tak. Dla odwrotnego kierunku mozesz od razu przejsc do powiazanego konwertera GB na MB."}],
+  "seo": {"title": "Konwerter MB na GB | MB na GB online", "description": "Przeliczaj MB na GB online z przelicznikiem 1024. Przydatne przy pytaniach ile GB z MB i odwrotnej konwersji storage.", "keywords": ["konwerter mb na gb", "mb na gb", "ile gb z mb", "1024 mb ile to gb", "przelicznik mb na gb"]}
 }

@@ -1,0 +1,16 @@
+{
+  "toolId": "contrast-checker",
+  "locale": "pl",
+  "slug": "sprawdzanie-kontrastu",
+  "h1": "Sprawdzanie kontrastu",
+  "title": "Sprawdzanie kontrastu",
+  "shortDescription": "Sprawdzaj kontrast kolorow online i oceniaj czy polaczenie tekstu oraz tla jest czytelne.",
+  "metaTitle": "Sprawdzanie kontrastu | Kontrast kolorow online",
+  "metaDescription": "Sprawdzaj kontrast kolorow online i odczytuj wspolczynnik dla tekstu oraz tla. Przydatne do dostepnosci, QA i pracy nad interfejsem.",
+  "intro": "To narzedzie pomaga szybko sprawdzic, czy kolor tekstu i kolor tla sa wystarczajaco czytelne przed wdrozeniem zmian w interfejsie. Dostajesz wspolczynnik kontrastu od razu oraz prosty komunikat, czy para kolorow wypada dobrze dla typowych scenariuszy tekstowych.",
+  "overview": "Sprawdzanie kontrastu jest przydatne przy audytach dostepnosci, testach designu i pracy z motywami. Zamiast zgadywac, czy dwa kolory beda czytelne, mozesz od razu zobaczyc wynik i podjac decyzje projektowa.",
+  "howItWorks": ["Wybierz kolor tekstu i kolor tla.", "Narzedzie obliczy wspolczynnik kontrastu pomiedzy tymi kolorami.", "Sprawdz czy para przechodzi podstawowe progi czytelnosci dla tekstu zwyklego lub wiekszego."],
+  "examples": [{"title": "Ciemny tekst na bialym tle", "input": "#111827 na #FFFFFF", "output": "Wysoki kontrast", "description": "Dobry punkt odniesienia dla czytelnych interfejsow i dokumentacji."}, {"title": "Kontrola koloru akcentu", "input": "Kolor marki na jasnym panelu", "output": "Ocena pass/fail", "description": "Pomocne przy sprawdzaniu przyciskow, linkow i stanów UI."}],
+  "faq": [{"question": "Co oznacza wspolczynnik kontrastu?", "answer": "Pokazuje, jak bardzo roznia sie jasnoscia kolor tekstu i kolor tla."}, {"question": "Czy to narzedzie pomaga w dostepnosci?", "answer": "Tak. Narzedzie wskazuje, czy polaczenie kolorow jest wystarczajaco mocne dla typowych progow czytelnosci."}],
+  "seo": {"title": "Sprawdzanie kontrastu | Kontrast kolorow online", "description": "Sprawdzaj kontrast kolorow online i odczytuj wspolczynnik dla tekstu oraz tla. Przydatne do dostepnosci, QA i pracy nad interfejsem.", "keywords": ["sprawdzanie kontrastu", "kontrast kolorow", "wcag kontrast", "czytelnosc tekstu", "contrast checker"]}
+}

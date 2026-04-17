@@ -2,46 +2,15 @@
   "toolId": "unit-price-calculator",
   "locale": "pl",
   "slug": "kalkulator-ceny-za-jednostke",
-  "h1": "Kalkulator ceny za jednostkę",
-  "title": "Kalkulator ceny za jednostkę",
-  "shortDescription": "Porównaj cenę za jednostkę na podstawie ceny całkowitej i ilości — szybkie wyniki, proste pola i praktyczne przykłady.",
-  "overview": "Porównuj cenę za jednostkę na podstawie ceny całkowitej i ilości. Ta strona zapewnia szybki wynik dzięki praktycznemu narzędziu i prostemu przebiegowi obliczeń. Treść jest stworzona dla osób szukających darmowej odpowiedzi online, szybkich wyników w przeglądarce i użytecznego, długiego opisu pod SEO.",
-  "howItWorks": [
-    "Wpisz wymagane dane do formularza.",
-    "Obliczenie, przeliczenie lub transformacja uruchamia się natychmiast w przeglądarce.",
-    "Sprawdź wynik i skorzystaj z powiązanych narzędzi, jeśli potrzebujesz kolejnego kroku."
-  ],
-  "examples": [
-    {
-      "title": "Przykład 1",
-      "input": "12 za 3 jednostki",
-      "output": "4 za jednostkę",
-      "description": "Realistyczny przykład kalkulatora ceny jednostkowej dla codziennego zapytania."
-    },
-    {
-      "title": "Przykład 2",
-      "input": "12 za 3 jednostki",
-      "output": "4 za jednostkę",
-      "description": "Kolejny praktyczny przypadek użycia dla organicznego ruchu z długiego ogona."
-    }
-  ],
-  "faq": [
-    {
-      "question": "Jak dokładne jest to narzędzie?",
-      "answer": "Wynik jest liczony bezpośrednio na podstawie wzoru lub logiki po stronie przeglądarki używanej przez to narzędzie."
-    },
-    {
-      "question": "Czy mogę używać tego narzędzia na telefonie?",
-      "answer": "Tak. Strona działa na komputerach i urządzeniach mobilnych dzięki prostemu układowi pól i wyniku."
-    }
-  ],
-  "seo": {
-    "title": "Kalkulator ceny za jednostkę",
-    "description": "Porównaj cenę za jednostkę na podstawie ceny całkowitej i ilości. Darmowy kalkulator ceny jednostkowej online z natychmiastowymi wynikami.",
-    "keywords": [
-      "kalkulator ceny za jednostkę",
-      "kalkulator ceny jednostkowej",
-      "narzędzie kalkulatory"
-    ]
-  }
+  "h1": "Kalkulator cen jednostkowych",
+  "title": "Kalkulator cen jednostkowych",
+  "shortDescription": "Porownuj cene za kg, litr, sztuke lub opakowanie i szybko sprawdzaj, co faktycznie jest tansze.",
+  "metaTitle": "Kalkulator cen jednostkowych | Cena za kg, l i szt.",
+  "metaDescription": "Oblicz cene jednostkowa online. Porownuj cene za kg, litr, sztuke i inne ilosci w prostym kalkulatorze cen jednostkowych.",
+  "intro": "Ten kalkulator cen jednostkowych pomaga szybko policzyc, ile realnie kosztuje kilogram, litr, sztuka albo dowolna inna jednostka. To wygodne narzedzie do zakupow, porownywania ofert i decyzji, czy wieksze opakowanie rzeczywiscie wychodzi taniej.",
+  "overview": "Strona odpowiada na intencje kalkulator cen jednostkowych i cena za jednostke online. Przydaje sie podczas porownywania produktow spozywczych, chemii domowej, materialow budowlanych i pakietow sprzedawanych w roznych gramaturach lub wielkosciach.",
+  "howItWorks": ["Wpisz cene laczna i ilosc produktu.", "Narzędzie dzieli wartosc przez ilosc, aby pokazac cene za jedna jednostke.", "Porownaj wynik dla kilku ofert i wybierz wariant, ktory ma najlepsza cene jednostkowa."],
+  "examples": [{"title": "Cena za kilogram", "input": "18 zl za 1,5 kg", "output": "12 zl za kg", "description": "Przydatne przy zakupach spozywczych i porownaniu roznych opakowan."}, {"title": "Cena za litr", "input": "9 zl za 750 ml", "output": "12 zl za litr", "description": "Pomaga sprawdzic czy mniejsze opakowanie nie wychodzi drozej."}],
+  "faq": [{"question": "Czy moge liczyc cene za kg, litr i sztuke?", "answer": "Tak. Wystarczy wpisac cene laczna i ilosc w jednostce, ktora chcesz porownac."}, {"question": "Do czego przydaje sie kalkulator cen jednostkowych?", "answer": "Najczesciej do zakupow, analizy ofert i szybkiego sprawdzania, ktory produkt jest faktycznie tanszy po przeliczeniu na jednostke."}],
+  "seo": {"title": "Kalkulator cen jednostkowych | Cena za kg, l i szt.", "description": "Oblicz cene jednostkowa online. Porownuj cene za kg, litr, sztuke i inne ilosci w prostym kalkulatorze cen jednostkowych.", "keywords": ["kalkulator cen jednostkowych", "cena za jednostke", "kalkulator ceny za kg", "cena za litr", "porownanie ceny jednostkowej"]}
 }

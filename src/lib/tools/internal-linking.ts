@@ -1,4 +1,5 @@
 import type { Locale, ToolCategory } from "@/lib/constants";
+import { getIntentRelatedIds } from "@/lib/tools/discovery";
 import { toolContent } from "@/lib/tools/tool-content.generated";
 import { toolDefinitions } from "@/lib/tools/tool-registry.generated";
 import type { ToolLocaleContent } from "@/lib/tools/types";
@@ -62,15 +63,20 @@ export function getSuggestedLinks(
     return [];
   }
 
+  const intentPreferred = getIntentRelatedIds(currentToolId)
+    .map((id) => toolDefinitions.find((item) => item.id === id))
+    .filter((value): value is (typeof toolDefinitions)[number] => Boolean(value));
+
   const preferred = current.relatedTools
     .map((id) => toolDefinitions.find((item) => item.id === id))
     .filter((value): value is (typeof toolDefinitions)[number] => Boolean(value));
 
-  const candidates = [...preferred].concat(
+  const candidates = [...intentPreferred, ...preferred].concat(
     toolDefinitions.filter(
       (item) =>
         item.id !== currentToolId &&
         item.category === current.category &&
+        !intentPreferred.some((preferredItem) => preferredItem.id === item.id) &&
         !preferred.some((preferredItem) => preferredItem.id === item.id)
     )
   );
@@ -93,5 +99,8 @@ export function getSuggestedLinks(
       } satisfies ToolLink;
     })
     .filter((value): value is ToolLink => value !== null)
+    .filter(
+      (value, index, all) => all.findIndex((candidate) => candidate.id === value.id) === index
+    )
     .slice(0, limit);
 }

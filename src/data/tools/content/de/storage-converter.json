@@ -1,0 +1,16 @@
+{
+  "toolId": "storage-converter",
+  "locale": "de",
+  "slug": "speicher-umrechner",
+  "h1": "Speicher-Umrechner",
+  "title": "Speicher-Umrechner",
+  "shortDescription": "KB, MB, GB und TB online mit schnellen 1024-basierten Ergebnissen im Browser umrechnen.",
+  "metaTitle": "Speicher-Umrechner | KB, MB, GB und TB online",
+  "metaDescription": "Speichereinheiten online umrechnen. Der Rechner deckt KB, MB, GB und TB fuer Suchanfragen wie GB zu MB oder MB zu GB ab.",
+  "intro": "Nutze diesen Speicher-Umrechner fuer schnelle Antworten auf Dateigroessen, Speichereinheiten und das 1024-System. Er deckt typische Suchanfragen wie GB zu MB, MB zu GB und allgemeine Speicher-Umrechnungen in einem Tool ab.",
+  "overview": "Der Rechner ist fuer alltaegliche Fragen zu Dateigroessen, Uploads, Backups und Geraetespeicher gedacht. Du kannst Quelleinheit und Zieleinheit direkt wechseln, ohne zwischen mehreren Einzelseiten fuer Speicherwerte zu springen.",
+  "howItWorks": ["Wert eingeben.", "Quelleinheit und Zieleinheit zwischen KB, MB, GB und TB waehlen.", "Ergebnis sofort ablesen und bei Bedarf die Richtung tauschen."],
+  "examples": [{"title": "GB zu MB", "input": "2 GB", "output": "2048 MB", "description": "Sinnvoll fuer schnelle Speicher-Checks im 1024-System."}, {"title": "TB zu GB", "input": "1,5 TB", "output": "1536 GB", "description": "Hilfreich bei Speicherplanung, Archiven und Backups."}],
+  "faq": [{"question": "Nutzt der Rechner 1000 oder 1024?", "answer": "Er nutzt den binaeren 1024-Faktor, wie er bei vielen Speicher- und Dateigroessenfragen verwendet wird."}, {"question": "Kann ich in beide Richtungen umrechnen?", "answer": "Ja. Du kannst KB, MB, GB und TB frei als Start- und Zielwert kombinieren."}],
+  "seo": {"title": "Speicher-Umrechner | KB, MB, GB und TB online", "description": "Speichereinheiten online umrechnen. Der Rechner deckt KB, MB, GB und TB fuer Suchanfragen wie GB zu MB oder MB zu GB ab.", "keywords": ["speicher umrechner", "gb zu mb", "mb zu gb", "kb mb gb tb", "dateigroesse umrechnen"]}
+}

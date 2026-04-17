@@ -1,0 +1,16 @@
+{
+  "toolId": "icon-maker",
+  "locale": "de",
+  "slug": "icon-generator",
+  "h1": "Icon Generator",
+  "title": "Icon Generator",
+  "shortDescription": "Erstelle App-Icons und quadratische Marken-Icons online aus einem Bild im Browser.",
+  "metaTitle": "Icon Generator | App-Icons online erstellen",
+  "metaDescription": "Erstelle Icons online aus einem Quellbild. Der Icon Generator eignet sich fuer App-Icons, Launcher-Icons und quadratische Marken-Assets ohne Server-Upload.",
+  "intro": "Der Icon Generator deckt eine breitere Suchintention als ein klassischer Favicon-Generator ab. Lade ein Bild hoch, stelle Groesse, Innenabstand und Hintergrund ein und exportiere direkt im Browser ein fertiges Icon fuer App, Launcher oder Marke.",
+  "overview": "Das Tool ist fuer Workflows gedacht, in denen du ein einzelnes sauberes Icon statt eines kompletten Favicon-Pakets brauchst. Typische Einsaetze sind App-Prototypen, PWA-Assets, Launcher-Icons und schnelle Branding-Mockups mit quadratischem Format.",
+  "howItWorks": ["Quellbild hochladen.", "Groesse, Innenabstand, Hintergrund und Format einstellen.", "Vorschau pruefen und die fertige Icon-Datei direkt herunterladen."],
+  "examples": [{"title": "App-Icon", "input": "Ein transparentes Logo", "output": "Ein zentriertes 512px-Icon", "description": "Praktisch fuer Produktdemos, App-Vorschauen und Launcher-Assets."}, {"title": "Marken-Icon", "input": "Ein einfacher Bildmarken-Export", "output": "Quadratisches PNG mit Hintergrundfarbe", "description": "Hilfreich fuer Avatare, Platzhalter und schnelle Mockups."}],
+  "faq": [{"question": "Worin unterscheidet sich das Tool vom Favicon-Generator?", "answer": "Der Icon Generator konzentriert sich auf ein einzelnes fertiges Icon, waehrend ein Favicon-Generator meist mehrere Groessen fuer Websites erzeugt."}, {"question": "Werden meine Bilder hochgeladen?", "answer": "Nein. Die Verarbeitung laeuft lokal im Browser."}],
+  "seo": {"title": "Icon Generator | App-Icons online erstellen", "description": "Erstelle Icons online aus einem Quellbild fuer Apps, Launcher und Branding ohne Server-Upload.", "keywords": ["icon generator", "app icon generator", "icons online erstellen", "launcher icon", "icon maker"]}
+}

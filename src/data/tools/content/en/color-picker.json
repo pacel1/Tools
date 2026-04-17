@@ -1,0 +1,16 @@
+{
+  "toolId": "color-picker",
+  "locale": "en",
+  "slug": "color-picker",
+  "h1": "Color Picker",
+  "title": "Color Picker",
+  "shortDescription": "Pick a color online and inspect the HEX, RGB and HSL values in one browser-based panel.",
+  "metaTitle": "Color Picker | HEX, RGB and HSL values",
+  "metaDescription": "Pick colors online and inspect HEX, RGB and HSL values instantly. Helpful for design systems, CSS work and quick color matching.",
+  "intro": "This color picker gives you a fast way to inspect one color in multiple formats without opening heavier design software. It is useful when you need a quick HEX, RGB and HSL snapshot for CSS, UI reviews or brand color checks.",
+  "overview": "Use the picker for front-end styling, design QA, quick palette reviews and handoff notes. One color input updates the matching HEX, RGB and HSL values immediately so you can copy the format that fits your workflow.",
+  "howItWorks": ["Pick a color or paste a HEX code.", "The tool reads the selected color and converts it to RGB and HSL.", "Use the values in CSS, design documentation or component work."],
+  "examples": [{"title": "UI accent color", "input": "#0EA5E9", "output": "HEX, RGB and HSL values", "description": "Useful when you need one source color expressed in multiple formats."}, {"title": "Brand review", "input": "#111827", "output": "Dark neutral values for documentation", "description": "Helpful during design QA or theme updates."}],
+  "faq": [{"question": "What formats does the color picker show?", "answer": "It shows HEX, RGB and HSL values for the selected color."}, {"question": "Can I paste my own HEX value?", "answer": "Yes. You can type or paste a HEX code and the other color formats update automatically."}],
+  "seo": {"title": "Color Picker | HEX, RGB and HSL values", "description": "Pick colors online and inspect HEX, RGB and HSL values instantly for CSS, design systems and quick color matching.", "keywords": ["color picker", "hex rgb hsl picker", "pick color online", "color value inspector", "css color picker"]}
+}

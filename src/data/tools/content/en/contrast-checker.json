@@ -1,0 +1,16 @@
+{
+  "toolId": "contrast-checker",
+  "locale": "en",
+  "slug": "contrast-checker",
+  "h1": "Contrast Checker",
+  "title": "Contrast Checker",
+  "shortDescription": "Check color contrast online and see WCAG-style pass or fail guidance for text combinations.",
+  "metaTitle": "Contrast Checker | WCAG color contrast online",
+  "metaDescription": "Check color contrast online and review the ratio for text and background combinations. Useful for accessibility, UI audits and design QA.",
+  "intro": "Use this contrast checker to test text and background colors before shipping UI changes. It gives you the ratio instantly and tells you whether the combination is strong enough for common accessibility targets like normal text and large text.",
+  "overview": "The checker is made for accessibility reviews, design handoff and quick QA on component themes. Instead of guessing whether two colors work together, you get a ratio and a clear summary you can use during implementation.",
+  "howItWorks": ["Pick the text color and background color.", "The tool calculates the contrast ratio between the two colors.", "Review whether the pair passes common accessibility thresholds for normal or large text."],
+  "examples": [{"title": "Dark text on white", "input": "#111827 on #FFFFFF", "output": "High contrast ratio", "description": "A common pairing for readable interfaces and documentation."}, {"title": "Accent color audit", "input": "Brand color on a light panel", "output": "Pass or fail summary", "description": "Helpful when checking UI accents and button states."}],
+  "faq": [{"question": "What does the contrast ratio mean?", "answer": "The ratio shows how different the text color and background color are in perceived brightness."}, {"question": "Is this useful for accessibility checks?", "answer": "Yes. The tool highlights whether the color pair is strong enough for common WCAG-style text targets."}],
+  "seo": {"title": "Contrast Checker | WCAG color contrast online", "description": "Check color contrast online and review the ratio for text and background combinations for accessibility and UI audits.", "keywords": ["contrast checker", "wcag contrast checker", "color contrast", "accessibility color checker", "text background contrast"]}
+}

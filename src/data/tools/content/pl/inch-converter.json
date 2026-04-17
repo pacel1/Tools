@@ -1,0 +1,16 @@
+{
+  "toolId": "inch-converter",
+  "locale": "pl",
+  "slug": "przelicznik-cali",
+  "h1": "Przelicznik cali",
+  "title": "Przelicznik cali",
+  "shortDescription": "Przeliczaj cale, centymetry, milimetry i stopy online w jednym prostym narzedziu.",
+  "metaTitle": "Przelicznik cali | Cale, cm, mm i stopy",
+  "metaDescription": "Uzyj przelicznika cali, aby szybko zamieniac cale na cm, mm i stopy. Dziala online i obsluguje obie strony konwersji.",
+  "intro": "Ten przelicznik cali odpowiada na ogolne intencje typu przelicznik cali, cale na cm i cm na cale. Zamiast osobnych stron dla kazdego kierunku masz jedno narzedzie, ktore pozwala zmieniac jednostki i od razu widziec wynik.",
+  "overview": "Narzędzie sprawdza sie przy wymiarach produktow, druku, budowie, meblach i ekranach. Obsluguje najczesciej potrzebne jednostki zwiazane z calami i pozwala szybko odwracac przeliczenie bez dodatkowych klikniec.",
+  "howItWorks": ["Wpisz liczbe do przeliczenia.", "Wybierz jednostke poczatkowa i docelowa.", "Odczytaj wynik od razu i zamien kierunek, gdy potrzebujesz odwrotnej konwersji."],
+  "examples": [{"title": "Cale na cm", "input": "10 cali", "output": "25,4 cm", "description": "Przydatne przy wymiarach ekranow, opakowan i elementow technicznych."}, {"title": "Stopy na cale", "input": "6 stop", "output": "72 cale", "description": "Pomocne przy remontach, projektach DIY i pomiarach pomieszczen."}],
+  "faq": [{"question": "Jakie jednostki obsluguje narzedzie?", "answer": "Przelicznik obsluguje cale, centymetry, milimetry i stopy."}, {"question": "Czy moge przeliczac w obie strony?", "answer": "Tak. W jednej formie zmienisz kierunek i sprawdzisz odwrotna konwersje."}],
+  "seo": {"title": "Przelicznik cali | Cale, cm, mm i stopy", "description": "Uzyj przelicznika cali, aby szybko zamieniac cale na cm, mm i stopy. Dziala online i obsluguje obie strony konwersji.", "keywords": ["przelicznik cali", "cale na cm", "cm na cale", "kalkulator cali", "cale mm cm"]}
+}
