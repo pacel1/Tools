@@ -1,0 +1,16 @@
+{
+  "toolId": "hex-to-rgb-converter",
+  "locale": "de",
+  "slug": "hex-zu-rgb-umrechner",
+  "h1": "HEX-zu-RGB-Umrechner",
+  "title": "HEX-zu-RGB-Umrechner",
+  "shortDescription": "HEX-Farben online in RGB-Werte fuer CSS, Design und schnelle Farbpruefungen umrechnen.",
+  "metaTitle": "HEX-zu-RGB-Umrechner | Farbcodes online",
+  "metaDescription": "HEX online in RGB umrechnen. Praktisch fuer CSS, Design-Systeme und schnelle Farbcode-Pruefungen.",
+  "intro": "Der HEX-zu-RGB-Umrechner hilft, wenn du einen Farbwert aus Design, CSS oder Dokumentation schnell in einzelne RGB-Kanaele uebertragen willst. Das Tool liefert den normalisierten HEX-Code und den passenden RGB-String sofort im Browser.",
+  "overview": "Der Rechner ist fuer Frontend-Arbeit, Design-Handoffs, QA und Farb-Dokumentation gedacht. Mit einem Eingabefeld bekommst du direkt die benoetigten RGB-Werte fuer Stylesheets, Canvas oder Komponentenbibliotheken.",
+  "howItWorks": ["HEX-Farbe einfuegen oder per Picker waehlen.", "Das Tool liest die RGB-Kanaele aus und normalisiert den Code.", "RGB-Wert fuer CSS, Dokumentation oder Debugging uebernehmen."],
+  "examples": [{"title": "Markenfarbe", "input": "#FF7A18", "output": "rgb(255, 122, 24)", "description": "Nuetzlich beim Uebergang von Design zu Umsetzung."}, {"title": "Kurzer HEX-Code", "input": "#0AF", "output": "rgb(0, 170, 255)", "description": "Hilfreich zum schnellen Erweitern kuerzer Farbcodes."}],
+  "faq": [{"question": "Unterstuetzt der Rechner kurze HEX-Codes?", "answer": "Ja. Drei Zeichen lange HEX-Codes werden vor der Umrechnung erweitert."}, {"question": "Ist der Output fuer CSS geeignet?", "answer": "Ja. Die RGB-Ausgabe passt fuer CSS, Dokumentation und technische Farbpruefungen."}],
+  "seo": {"title": "HEX-zu-RGB-Umrechner | Farbcodes online", "description": "HEX online in RGB umrechnen. Praktisch fuer CSS, Design-Systeme und schnelle Farbcode-Pruefungen.", "keywords": ["hex zu rgb", "hex farbe umrechnen", "rgb farbcode", "css farben umrechner", "hex rgb converter"]}
+}

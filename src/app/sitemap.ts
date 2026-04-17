@@ -1,26 +1,10 @@
 import type { MetadataRoute } from "next";
 import { getSiteUrl } from "@/lib/env";
 import { legalPageKeys } from "@/lib/pages/types";
+import { buildLanguageAlternates } from "@/lib/seo/alternates";
+import { buildStorageHubHref, getStorageHubContent } from "@/lib/tools/discovery";
 import { getAllToolDefinitions, getContentById } from "@/lib/tools/registry";
 import { locales, toolCategories } from "@/lib/constants";
-
-function buildLanguageAlternates(
-  getPath: (locale: (typeof locales)[number]) => string | null
-) {
-  return {
-    languages: Object.fromEntries(
-      locales.flatMap((locale) => {
-        const path = getPath(locale);
-
-        if (!path) {
-          return [];
-        }
-
-        return [[locale, `${getSiteUrl()}${path}`]];
-      })
-    )
-  };
-}
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = getSiteUrl();
@@ -51,7 +35,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
           (entryLocale) => `/${entryLocale}/${pageKey}`
         )
       }))
-    )
+    ),
+    ...locales.flatMap((locale) => {
+      const href = buildStorageHubHref(locale);
+
+      if (!href || !getStorageHubContent(locale)) {
+        return [];
+      }
+
+      return [
+        {
+          url: `${baseUrl}${href}`,
+          changeFrequency: "weekly" as const,
+          priority: 0.78,
+          alternates: buildLanguageAlternates((entryLocale) => buildStorageHubHref(entryLocale))
+        }
+      ];
+    })
   ];
 
   const toolEntries = getAllToolDefinitions().flatMap((definition) =>

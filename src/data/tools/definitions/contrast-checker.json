@@ -1,0 +1,21 @@
+{
+  "id": "contrast-checker",
+  "type": "calculator",
+  "category": "calculators",
+  "componentName": "ContrastCheckerTool",
+  "logicModule": "contrast-checker",
+  "inputSchema": "contrastCheckerInputSchema",
+  "outputSchema": "contrastCheckerOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "de"
+  ],
+  "relatedTools": [
+    "color-picker",
+    "hex-to-rgb-converter",
+    "palette-generator",
+    "percentage-calculator"
+  ],
+  "seoPriority": 0.89
+}

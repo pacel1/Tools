@@ -1,0 +1,21 @@
+{
+  "id": "storage-converter",
+  "type": "converter",
+  "category": "converters",
+  "componentName": "StorageConverterTool",
+  "logicModule": "storage-converter",
+  "inputSchema": "storageConverterInputSchema",
+  "outputSchema": "storageConverterOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "de"
+  ],
+  "relatedTools": [
+    "gb-to-mb-converter",
+    "mb-to-gb-converter",
+    "inch-converter",
+    "hex-to-rgb-converter"
+  ],
+  "seoPriority": 0.98
+}

@@ -1,13 +1,16 @@
 {
   "converters": [
+    "storage-converter",
     "celsius-to-fahrenheit-converter",
     "fahrenheit-to-celsius-converter",
     "km-to-miles-converter",
     "miles-to-km-converter",
     "cm-to-inches-converter",
+    "inch-converter",
     "lbs-to-kg-converter",
     "inches-to-cm-converter",
     "feet-to-meters-converter",
+    "hex-to-rgb-converter",
     "kg-to-lbs-converter",
     "meters-to-feet-converter",
     "gallons-to-liters-converter",
@@ -31,15 +34,19 @@
     "sales-tax-calculator",
     "markup-calculator",
     "simple-interest-calculator",
+    "contrast-checker",
     "unit-price-calculator"
   ],
   "generators": [
     "qr-code-generator",
     "gradient-generator",
+    "icon-maker",
     "box-shadow-generator",
     "meta-tag-generator",
     "favicon-generator",
-    "placeholder-image-generator"
+    "color-picker",
+    "placeholder-image-generator",
+    "palette-generator"
   ],
   "text-tools": [
     "word-counter",

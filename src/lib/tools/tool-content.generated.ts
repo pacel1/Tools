@@ -8,7 +8,9 @@ import enCaseConverter from "@/data/tools/content/en/case-converter.json";
 import enCelsiusToFahrenheitConverter from "@/data/tools/content/en/celsius-to-fahrenheit-converter.json";
 import enCharacterCounter from "@/data/tools/content/en/character-counter.json";
 import enCmToInchesConverter from "@/data/tools/content/en/cm-to-inches-converter.json";
+import enColorPicker from "@/data/tools/content/en/color-picker.json";
 import enCompoundInterestCalculator from "@/data/tools/content/en/compound-interest-calculator.json";
+import enContrastChecker from "@/data/tools/content/en/contrast-checker.json";
 import enDaysBetweenDatesCalculator from "@/data/tools/content/en/days-between-dates-calculator.json";
 import enDiscountCalculator from "@/data/tools/content/en/discount-calculator.json";
 import enFahrenheitToCelsiusConverter from "@/data/tools/content/en/fahrenheit-to-celsius-converter.json";
@@ -17,6 +19,7 @@ import enFeetToMetersConverter from "@/data/tools/content/en/feet-to-meters-conv
 import enGallonsToLitersConverter from "@/data/tools/content/en/gallons-to-liters-converter.json";
 import enGbToMbConverter from "@/data/tools/content/en/gb-to-mb-converter.json";
 import enGradientGenerator from "@/data/tools/content/en/gradient-generator.json";
+import enHexToRgbConverter from "@/data/tools/content/en/hex-to-rgb-converter.json";
 import enHtmlCleaner from "@/data/tools/content/en/html-cleaner.json";
 import enHtmlEntityEncoder from "@/data/tools/content/en/html-entity-encoder.json";
 import enHtmlEscape from "@/data/tools/content/en/html-escape.json";
@@ -31,12 +34,14 @@ import enHtmlToText from "@/data/tools/content/en/html-to-text.json";
 import enHtmlUnescape from "@/data/tools/content/en/html-unescape.json";
 import enHtmlValidator from "@/data/tools/content/en/html-validator.json";
 import enHtmlViewer from "@/data/tools/content/en/html-viewer.json";
+import enIconMaker from "@/data/tools/content/en/icon-maker.json";
 import enImageCompressor from "@/data/tools/content/en/image-compressor.json";
 import enImageCropper from "@/data/tools/content/en/image-cropper.json";
 import enImageFormatConverter from "@/data/tools/content/en/image-format-converter.json";
 import enImageMetadataReader from "@/data/tools/content/en/image-metadata-reader.json";
 import enImageResizer from "@/data/tools/content/en/image-resizer.json";
 import enImageToBase64 from "@/data/tools/content/en/image-to-base64.json";
+import enInchConverter from "@/data/tools/content/en/inch-converter.json";
 import enInchesToCmConverter from "@/data/tools/content/en/inches-to-cm-converter.json";
 import enInchesToMmConverter from "@/data/tools/content/en/inches-to-mm-converter.json";
 import enJsonFormatter from "@/data/tools/content/en/json-formatter.json";
@@ -56,6 +61,7 @@ import enMetaTagGenerator from "@/data/tools/content/en/meta-tag-generator.json"
 import enMetersToFeetConverter from "@/data/tools/content/en/meters-to-feet-converter.json";
 import enMilesToKmConverter from "@/data/tools/content/en/miles-to-km-converter.json";
 import enMmToInchesConverter from "@/data/tools/content/en/mm-to-inches-converter.json";
+import enPaletteGenerator from "@/data/tools/content/en/palette-generator.json";
 import enPasswordGenerator from "@/data/tools/content/en/password-generator.json";
 import enPercentageCalculator from "@/data/tools/content/en/percentage-calculator.json";
 import enPercentageDecreaseCalculator from "@/data/tools/content/en/percentage-decrease-calculator.json";
@@ -69,6 +75,7 @@ import enSentenceCounter from "@/data/tools/content/en/sentence-counter.json";
 import enSha256Generator from "@/data/tools/content/en/sha256-generator.json";
 import enSimpleInterestCalculator from "@/data/tools/content/en/simple-interest-calculator.json";
 import enSlugGenerator from "@/data/tools/content/en/slug-generator.json";
+import enStorageConverter from "@/data/tools/content/en/storage-converter.json";
 import enTextReverser from "@/data/tools/content/en/text-reverser.json";
 import enTipCalculator from "@/data/tools/content/en/tip-calculator.json";
 import enUnitPriceCalculator from "@/data/tools/content/en/unit-price-calculator.json";
@@ -86,7 +93,9 @@ import plCaseConverter from "@/data/tools/content/pl/case-converter.json";
 import plCelsiusToFahrenheitConverter from "@/data/tools/content/pl/celsius-to-fahrenheit-converter.json";
 import plCharacterCounter from "@/data/tools/content/pl/character-counter.json";
 import plCmToInchesConverter from "@/data/tools/content/pl/cm-to-inches-converter.json";
+import plColorPicker from "@/data/tools/content/pl/color-picker.json";
 import plCompoundInterestCalculator from "@/data/tools/content/pl/compound-interest-calculator.json";
+import plContrastChecker from "@/data/tools/content/pl/contrast-checker.json";
 import plDaysBetweenDatesCalculator from "@/data/tools/content/pl/days-between-dates-calculator.json";
 import plDiscountCalculator from "@/data/tools/content/pl/discount-calculator.json";
 import plFahrenheitToCelsiusConverter from "@/data/tools/content/pl/fahrenheit-to-celsius-converter.json";
@@ -95,6 +104,7 @@ import plFeetToMetersConverter from "@/data/tools/content/pl/feet-to-meters-conv
 import plGallonsToLitersConverter from "@/data/tools/content/pl/gallons-to-liters-converter.json";
 import plGbToMbConverter from "@/data/tools/content/pl/gb-to-mb-converter.json";
 import plGradientGenerator from "@/data/tools/content/pl/gradient-generator.json";
+import plHexToRgbConverter from "@/data/tools/content/pl/hex-to-rgb-converter.json";
 import plHtmlCleaner from "@/data/tools/content/pl/html-cleaner.json";
 import plHtmlEntityEncoder from "@/data/tools/content/pl/html-entity-encoder.json";
 import plHtmlEscape from "@/data/tools/content/pl/html-escape.json";
@@ -109,12 +119,14 @@ import plHtmlToText from "@/data/tools/content/pl/html-to-text.json";
 import plHtmlUnescape from "@/data/tools/content/pl/html-unescape.json";
 import plHtmlValidator from "@/data/tools/content/pl/html-validator.json";
 import plHtmlViewer from "@/data/tools/content/pl/html-viewer.json";
+import plIconMaker from "@/data/tools/content/pl/icon-maker.json";
 import plImageCompressor from "@/data/tools/content/pl/image-compressor.json";
 import plImageCropper from "@/data/tools/content/pl/image-cropper.json";
 import plImageFormatConverter from "@/data/tools/content/pl/image-format-converter.json";
 import plImageMetadataReader from "@/data/tools/content/pl/image-metadata-reader.json";
 import plImageResizer from "@/data/tools/content/pl/image-resizer.json";
 import plImageToBase64 from "@/data/tools/content/pl/image-to-base64.json";
+import plInchConverter from "@/data/tools/content/pl/inch-converter.json";
 import plInchesToCmConverter from "@/data/tools/content/pl/inches-to-cm-converter.json";
 import plInchesToMmConverter from "@/data/tools/content/pl/inches-to-mm-converter.json";
 import plJsonFormatter from "@/data/tools/content/pl/json-formatter.json";
@@ -134,6 +146,7 @@ import plMetaTagGenerator from "@/data/tools/content/pl/meta-tag-generator.json"
 import plMetersToFeetConverter from "@/data/tools/content/pl/meters-to-feet-converter.json";
 import plMilesToKmConverter from "@/data/tools/content/pl/miles-to-km-converter.json";
 import plMmToInchesConverter from "@/data/tools/content/pl/mm-to-inches-converter.json";
+import plPaletteGenerator from "@/data/tools/content/pl/palette-generator.json";
 import plPasswordGenerator from "@/data/tools/content/pl/password-generator.json";
 import plPercentageCalculator from "@/data/tools/content/pl/percentage-calculator.json";
 import plPercentageDecreaseCalculator from "@/data/tools/content/pl/percentage-decrease-calculator.json";
@@ -147,6 +160,7 @@ import plSentenceCounter from "@/data/tools/content/pl/sentence-counter.json";
 import plSha256Generator from "@/data/tools/content/pl/sha256-generator.json";
 import plSimpleInterestCalculator from "@/data/tools/content/pl/simple-interest-calculator.json";
 import plSlugGenerator from "@/data/tools/content/pl/slug-generator.json";
+import plStorageConverter from "@/data/tools/content/pl/storage-converter.json";
 import plTextReverser from "@/data/tools/content/pl/text-reverser.json";
 import plTipCalculator from "@/data/tools/content/pl/tip-calculator.json";
 import plUnitPriceCalculator from "@/data/tools/content/pl/unit-price-calculator.json";
@@ -242,7 +256,9 @@ import deCaseConverter from "@/data/tools/content/de/case-converter.json";
 import deCelsiusToFahrenheitConverter from "@/data/tools/content/de/celsius-to-fahrenheit-converter.json";
 import deCharacterCounter from "@/data/tools/content/de/character-counter.json";
 import deCmToInchesConverter from "@/data/tools/content/de/cm-to-inches-converter.json";
+import deColorPicker from "@/data/tools/content/de/color-picker.json";
 import deCompoundInterestCalculator from "@/data/tools/content/de/compound-interest-calculator.json";
+import deContrastChecker from "@/data/tools/content/de/contrast-checker.json";
 import deDaysBetweenDatesCalculator from "@/data/tools/content/de/days-between-dates-calculator.json";
 import deDiscountCalculator from "@/data/tools/content/de/discount-calculator.json";
 import deFahrenheitToCelsiusConverter from "@/data/tools/content/de/fahrenheit-to-celsius-converter.json";
@@ -251,6 +267,7 @@ import deFeetToMetersConverter from "@/data/tools/content/de/feet-to-meters-conv
 import deGallonsToLitersConverter from "@/data/tools/content/de/gallons-to-liters-converter.json";
 import deGbToMbConverter from "@/data/tools/content/de/gb-to-mb-converter.json";
 import deGradientGenerator from "@/data/tools/content/de/gradient-generator.json";
+import deHexToRgbConverter from "@/data/tools/content/de/hex-to-rgb-converter.json";
 import deHtmlCleaner from "@/data/tools/content/de/html-cleaner.json";
 import deHtmlEntityEncoder from "@/data/tools/content/de/html-entity-encoder.json";
 import deHtmlEscape from "@/data/tools/content/de/html-escape.json";
@@ -265,12 +282,14 @@ import deHtmlToText from "@/data/tools/content/de/html-to-text.json";
 import deHtmlUnescape from "@/data/tools/content/de/html-unescape.json";
 import deHtmlValidator from "@/data/tools/content/de/html-validator.json";
 import deHtmlViewer from "@/data/tools/content/de/html-viewer.json";
+import deIconMaker from "@/data/tools/content/de/icon-maker.json";
 import deImageCompressor from "@/data/tools/content/de/image-compressor.json";
 import deImageCropper from "@/data/tools/content/de/image-cropper.json";
 import deImageFormatConverter from "@/data/tools/content/de/image-format-converter.json";
 import deImageMetadataReader from "@/data/tools/content/de/image-metadata-reader.json";
 import deImageResizer from "@/data/tools/content/de/image-resizer.json";
 import deImageToBase64 from "@/data/tools/content/de/image-to-base64.json";
+import deInchConverter from "@/data/tools/content/de/inch-converter.json";
 import deInchesToCmConverter from "@/data/tools/content/de/inches-to-cm-converter.json";
 import deInchesToMmConverter from "@/data/tools/content/de/inches-to-mm-converter.json";
 import deJsonFormatter from "@/data/tools/content/de/json-formatter.json";
@@ -290,6 +309,7 @@ import deMetaTagGenerator from "@/data/tools/content/de/meta-tag-generator.json"
 import deMetersToFeetConverter from "@/data/tools/content/de/meters-to-feet-converter.json";
 import deMilesToKmConverter from "@/data/tools/content/de/miles-to-km-converter.json";
 import deMmToInchesConverter from "@/data/tools/content/de/mm-to-inches-converter.json";
+import dePaletteGenerator from "@/data/tools/content/de/palette-generator.json";
 import dePasswordGenerator from "@/data/tools/content/de/password-generator.json";
 import dePercentageCalculator from "@/data/tools/content/de/percentage-calculator.json";
 import dePercentageDecreaseCalculator from "@/data/tools/content/de/percentage-decrease-calculator.json";
@@ -303,6 +323,7 @@ import deSentenceCounter from "@/data/tools/content/de/sentence-counter.json";
 import deSha256Generator from "@/data/tools/content/de/sha256-generator.json";
 import deSimpleInterestCalculator from "@/data/tools/content/de/simple-interest-calculator.json";
 import deSlugGenerator from "@/data/tools/content/de/slug-generator.json";
+import deStorageConverter from "@/data/tools/content/de/storage-converter.json";
 import deTextReverser from "@/data/tools/content/de/text-reverser.json";
 import deTipCalculator from "@/data/tools/content/de/tip-calculator.json";
 import deUnitPriceCalculator from "@/data/tools/content/de/unit-price-calculator.json";
@@ -405,7 +426,9 @@ export const toolContent = {
     "celsius-to-fahrenheit-converter": enCelsiusToFahrenheitConverter,
     "character-counter": enCharacterCounter,
     "cm-to-inches-converter": enCmToInchesConverter,
+    "color-picker": enColorPicker,
     "compound-interest-calculator": enCompoundInterestCalculator,
+    "contrast-checker": enContrastChecker,
     "days-between-dates-calculator": enDaysBetweenDatesCalculator,
     "discount-calculator": enDiscountCalculator,
     "fahrenheit-to-celsius-converter": enFahrenheitToCelsiusConverter,
@@ -414,6 +437,7 @@ export const toolContent = {
     "gallons-to-liters-converter": enGallonsToLitersConverter,
     "gb-to-mb-converter": enGbToMbConverter,
     "gradient-generator": enGradientGenerator,
+    "hex-to-rgb-converter": enHexToRgbConverter,
     "html-cleaner": enHtmlCleaner,
     "html-entity-encoder": enHtmlEntityEncoder,
     "html-escape": enHtmlEscape,
@@ -428,12 +452,14 @@ export const toolContent = {
     "html-unescape": enHtmlUnescape,
     "html-validator": enHtmlValidator,
     "html-viewer": enHtmlViewer,
+    "icon-maker": enIconMaker,
     "image-compressor": enImageCompressor,
     "image-cropper": enImageCropper,
     "image-format-converter": enImageFormatConverter,
     "image-metadata-reader": enImageMetadataReader,
     "image-resizer": enImageResizer,
     "image-to-base64": enImageToBase64,
+    "inch-converter": enInchConverter,
     "inches-to-cm-converter": enInchesToCmConverter,
     "inches-to-mm-converter": enInchesToMmConverter,
     "json-formatter": enJsonFormatter,
@@ -453,6 +479,7 @@ export const toolContent = {
     "meters-to-feet-converter": enMetersToFeetConverter,
     "miles-to-km-converter": enMilesToKmConverter,
     "mm-to-inches-converter": enMmToInchesConverter,
+    "palette-generator": enPaletteGenerator,
     "password-generator": enPasswordGenerator,
     "percentage-calculator": enPercentageCalculator,
     "percentage-decrease-calculator": enPercentageDecreaseCalculator,
@@ -466,6 +493,7 @@ export const toolContent = {
     "sha256-generator": enSha256Generator,
     "simple-interest-calculator": enSimpleInterestCalculator,
     "slug-generator": enSlugGenerator,
+    "storage-converter": enStorageConverter,
     "text-reverser": enTextReverser,
     "tip-calculator": enTipCalculator,
     "unit-price-calculator": enUnitPriceCalculator,
@@ -485,7 +513,9 @@ export const toolContent = {
     "celsius-to-fahrenheit-converter": plCelsiusToFahrenheitConverter,
     "character-counter": plCharacterCounter,
     "cm-to-inches-converter": plCmToInchesConverter,
+    "color-picker": plColorPicker,
     "compound-interest-calculator": plCompoundInterestCalculator,
+    "contrast-checker": plContrastChecker,
     "days-between-dates-calculator": plDaysBetweenDatesCalculator,
     "discount-calculator": plDiscountCalculator,
     "fahrenheit-to-celsius-converter": plFahrenheitToCelsiusConverter,
@@ -494,6 +524,7 @@ export const toolContent = {
     "gallons-to-liters-converter": plGallonsToLitersConverter,
     "gb-to-mb-converter": plGbToMbConverter,
     "gradient-generator": plGradientGenerator,
+    "hex-to-rgb-converter": plHexToRgbConverter,
     "html-cleaner": plHtmlCleaner,
     "html-entity-encoder": plHtmlEntityEncoder,
     "html-escape": plHtmlEscape,
@@ -508,12 +539,14 @@ export const toolContent = {
     "html-unescape": plHtmlUnescape,
     "html-validator": plHtmlValidator,
     "html-viewer": plHtmlViewer,
+    "icon-maker": plIconMaker,
     "image-compressor": plImageCompressor,
     "image-cropper": plImageCropper,
     "image-format-converter": plImageFormatConverter,
     "image-metadata-reader": plImageMetadataReader,
     "image-resizer": plImageResizer,
     "image-to-base64": plImageToBase64,
+    "inch-converter": plInchConverter,
     "inches-to-cm-converter": plInchesToCmConverter,
     "inches-to-mm-converter": plInchesToMmConverter,
     "json-formatter": plJsonFormatter,
@@ -533,6 +566,7 @@ export const toolContent = {
     "meters-to-feet-converter": plMetersToFeetConverter,
     "miles-to-km-converter": plMilesToKmConverter,
     "mm-to-inches-converter": plMmToInchesConverter,
+    "palette-generator": plPaletteGenerator,
     "password-generator": plPasswordGenerator,
     "percentage-calculator": plPercentageCalculator,
     "percentage-decrease-calculator": plPercentageDecreaseCalculator,
@@ -546,6 +580,7 @@ export const toolContent = {
     "sha256-generator": plSha256Generator,
     "simple-interest-calculator": plSimpleInterestCalculator,
     "slug-generator": plSlugGenerator,
+    "storage-converter": plStorageConverter,
     "text-reverser": plTextReverser,
     "tip-calculator": plTipCalculator,
     "unit-price-calculator": plUnitPriceCalculator,
@@ -645,7 +680,9 @@ export const toolContent = {
     "celsius-to-fahrenheit-converter": deCelsiusToFahrenheitConverter,
     "character-counter": deCharacterCounter,
     "cm-to-inches-converter": deCmToInchesConverter,
+    "color-picker": deColorPicker,
     "compound-interest-calculator": deCompoundInterestCalculator,
+    "contrast-checker": deContrastChecker,
     "days-between-dates-calculator": deDaysBetweenDatesCalculator,
     "discount-calculator": deDiscountCalculator,
     "fahrenheit-to-celsius-converter": deFahrenheitToCelsiusConverter,
@@ -654,6 +691,7 @@ export const toolContent = {
     "gallons-to-liters-converter": deGallonsToLitersConverter,
     "gb-to-mb-converter": deGbToMbConverter,
     "gradient-generator": deGradientGenerator,
+    "hex-to-rgb-converter": deHexToRgbConverter,
     "html-cleaner": deHtmlCleaner,
     "html-entity-encoder": deHtmlEntityEncoder,
     "html-escape": deHtmlEscape,
@@ -668,12 +706,14 @@ export const toolContent = {
     "html-unescape": deHtmlUnescape,
     "html-validator": deHtmlValidator,
     "html-viewer": deHtmlViewer,
+    "icon-maker": deIconMaker,
     "image-compressor": deImageCompressor,
     "image-cropper": deImageCropper,
     "image-format-converter": deImageFormatConverter,
     "image-metadata-reader": deImageMetadataReader,
     "image-resizer": deImageResizer,
     "image-to-base64": deImageToBase64,
+    "inch-converter": deInchConverter,
     "inches-to-cm-converter": deInchesToCmConverter,
     "inches-to-mm-converter": deInchesToMmConverter,
     "json-formatter": deJsonFormatter,
@@ -693,6 +733,7 @@ export const toolContent = {
     "meters-to-feet-converter": deMetersToFeetConverter,
     "miles-to-km-converter": deMilesToKmConverter,
     "mm-to-inches-converter": deMmToInchesConverter,
+    "palette-generator": dePaletteGenerator,
     "password-generator": dePasswordGenerator,
     "percentage-calculator": dePercentageCalculator,
     "percentage-decrease-calculator": dePercentageDecreaseCalculator,
@@ -706,6 +747,7 @@ export const toolContent = {
     "sha256-generator": deSha256Generator,
     "simple-interest-calculator": deSimpleInterestCalculator,
     "slug-generator": deSlugGenerator,
+    "storage-converter": deStorageConverter,
     "text-reverser": deTextReverser,
     "tip-calculator": deTipCalculator,
     "unit-price-calculator": deUnitPriceCalculator,

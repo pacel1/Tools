@@ -1,0 +1,21 @@
+{
+  "id": "palette-generator",
+  "type": "generator",
+  "category": "generators",
+  "componentName": "PaletteGeneratorTool",
+  "logicModule": "palette-generator",
+  "inputSchema": "paletteGeneratorInputSchema",
+  "outputSchema": "paletteGeneratorOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "de"
+  ],
+  "relatedTools": [
+    "color-picker",
+    "hex-to-rgb-converter",
+    "contrast-checker",
+    "gradient-generator"
+  ],
+  "seoPriority": 0.88
+}

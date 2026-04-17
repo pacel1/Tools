@@ -1,0 +1,16 @@
+{
+  "toolId": "storage-converter",
+  "locale": "pl",
+  "slug": "konwerter-pamieci",
+  "h1": "Konwerter pamieci",
+  "title": "Konwerter pamieci",
+  "shortDescription": "Przeliczaj KB, MB, GB i TB online z natychmiastowym wynikiem opartym na przeliczniku 1024.",
+  "metaTitle": "Konwerter pamieci | KB, MB, GB i TB online",
+  "metaDescription": "Przeliczaj jednostki pamieci online. Ten konwerter KB, MB, GB i TB odpowiada na frazy typu ile MB w GB, GB na MB i MB na GB.",
+  "intro": "Ten konwerter pamieci zbiera najczestsze pytania o rozmiar plikow i przelicznik 1024 w jednym miejscu. Zamiast otwierac kilka osobnych stron, mozesz od razu przeliczac KB, MB, GB i TB w obu kierunkach.",
+  "overview": "Narzędzie laczy typowe intencje zwiazane z jednostkami storage: ile MB w GB, ile GB w TB i szybkie przeliczanie pojemnosci. Dziala w przegladarce, daje natychmiastowy wynik i pasuje do workflowow z plikami, backupami i dyskami.",
+  "howItWorks": ["Wpisz wartosc do przeliczenia.", "Wybierz jednostke zrodlowa i docelowa: KB, MB, GB albo TB.", "Odczytaj wynik i w razie potrzeby zamien kierunek jednym kliknieciem."],
+  "examples": [{"title": "GB na MB", "input": "2 GB", "output": "2048 MB", "description": "Przydatne, gdy sprawdzasz rozmiary plikow i pakietow danych."}, {"title": "TB na GB", "input": "1,5 TB", "output": "1536 GB", "description": "Pomocne przy planowaniu pojemnosci dyskow i kopii zapasowych."}],
+  "faq": [{"question": "Czy ten konwerter uzywa przelicznika 1000 czy 1024?", "answer": "Narzędzie uzywa binarnego przelicznika 1024, czesto stosowanego przy pamieci i rozmiarach plikow."}, {"question": "Czy moge przeliczac w obie strony?", "answer": "Tak. Z jednego formularza przeliczysz KB, MB, GB i TB w dowolnym kierunku."}],
+  "seo": {"title": "Konwerter pamieci | KB, MB, GB i TB online", "description": "Przeliczaj jednostki pamieci online. Ten konwerter KB, MB, GB i TB odpowiada na frazy typu ile MB w GB, GB na MB i MB na GB.", "keywords": ["konwerter pamieci", "ile mb w gb", "gb na mb", "mb na gb", "kb mb gb tb"]}
+}

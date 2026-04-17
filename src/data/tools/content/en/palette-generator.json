@@ -1,0 +1,16 @@
+{
+  "toolId": "palette-generator",
+  "locale": "en",
+  "slug": "palette-generator",
+  "h1": "Palette Generator",
+  "title": "Palette Generator",
+  "shortDescription": "Generate a simple color palette online from one base color for UI, branding and quick concept work.",
+  "metaTitle": "Palette Generator | Build color palettes online",
+  "metaDescription": "Generate color palettes online from one base color. Useful for branding, UI systems, quick concept boards and CSS work.",
+  "intro": "Use the palette generator when one color needs a few supporting tones for a UI, design system or brand concept. It creates a ready-to-scan set of swatches from a single base color so you can move faster through moodboards, components and theme experiments.",
+  "overview": "The generator is built for fast palette exploration rather than heavy design software. It works well for quick color systems, early branding, landing page experiments and developer-friendly theme starting points.",
+  "howItWorks": ["Choose the base color.", "Select how many swatches you want in the palette.", "Review the generated colors and use the HEX values in your design or code."],
+  "examples": [{"title": "UI palette", "input": "One base teal color", "output": "A set of lighter and darker supporting swatches", "description": "Helpful for buttons, surfaces, highlights and states."}, {"title": "Brand exploration", "input": "A single accent color", "output": "A broader palette for quick concept boards", "description": "Useful during early branding and moodboard work."}],
+  "faq": [{"question": "How many colors can I generate?", "answer": "The tool creates compact palettes with several supporting shades from one base color."}, {"question": "Is this useful for CSS themes?", "answer": "Yes. The generated HEX values are practical for CSS variables, tokens and quick theme drafts."}],
+  "seo": {"title": "Palette Generator | Build color palettes online", "description": "Generate color palettes online from one base color for branding, UI systems and quick concept work.", "keywords": ["palette generator", "color palette generator", "generate palette online", "ui color palette", "brand palette generator"]}
+}

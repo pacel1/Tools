@@ -4,104 +4,15 @@
   "slug": "html-pretty-print",
   "h1": "HTML Pretty Print",
   "title": "HTML Pretty Print",
-  "shortDescription": "Pretty print HTML with stable spacing for reviews, audits and debugging.",
-  "metaTitle": "HTML Pretty Print | Format HTML Online",
-  "metaDescription": "Pretty print HTML with stable spacing for reviews, audits and debugging. Clean up markup in your browser with a fast, client-side HTML formatter.",
-  "intro": "Format messy markup into readable HTML with consistent indentation and spacing. This client-side HTML pretty printer helps you review code, compare changes, and debug structure without sending data to a server.",
-  "overview": "HTML Pretty Print turns compact or messy markup into clean, indented HTML that is easier to read and review. It is useful for debugging nested elements, checking attribute placement, and preparing code for audits or handoff. Processing happens in the browser for a fast, private workflow.",
-  "howItWorks": [
-    "Paste your HTML into the input field.",
-    "Choose formatting options such as indentation or comment handling if available.",
-    "Generate the pretty printed output instantly in your browser.",
-    "Copy the formatted HTML and use it for reviews, debugging, or documentation."
-  ],
-  "useCases": [
-    "Reviewing HTML structure before deployment.",
-    "Debugging deeply nested or minified markup.",
-    "Preparing code snippets for code reviews and audits.",
-    "Making copied HTML easier to read in documentation or tickets."
-  ],
-  "examples": [
-    {
-      "title": "Compact markup",
-      "input": "<div><span>Hi</span><a href='/docs'>Docs</a></div>",
-      "output": "<div>\n  <span>Hi</span>\n  <a href=\"/docs\">Docs</a>\n</div>",
-      "description": "Transforms compact HTML into a readable block layout."
-    },
-    {
-      "title": "Nested content",
-      "input": "<ul><li>One</li><li><strong>Two</strong></li></ul>",
-      "output": "<ul>\n  <li>One</li>\n  <li><strong>Two</strong></li>\n</ul>",
-      "description": "Makes nested lists easier to inspect."
-    }
-  ],
-  "faq": [
-    {
-      "question": "Is this HTML pretty printer safe to use?",
-      "answer": "Yes. It is designed for client-side use and should handle HTML safely with XSS-aware processing."
-    },
-    {
-      "question": "Does formatting change the content?",
-      "answer": "The tool focuses on whitespace and indentation. It should preserve the meaning of your HTML while making it easier to read."
-    },
-    {
-      "question": "Can I use it on minified HTML?",
-      "answer": "Yes. It is ideal for minified or compact markup that needs to be expanded for review or debugging."
-    },
-    {
-      "question": "Does it work in the browser only?",
-      "answer": "Yes. The workflow is client-side only and does not require external APIs."
-    }
-  ],
-  "uiLabels": {
-    "copy": "Copy",
-    "copied": "Copied",
-    "input": "Input",
-    "output": "Output",
-    "placeholder": "Paste HTML here",
-    "indent": "Indent",
-    "removeComments": "Remove comments",
-    "preview": "Preview",
-    "source": "Source",
-    "sanitizedHtml": "Sanitized HTML",
-    "plainText": "Plain text",
-    "summary": "Summary",
-    "total": "Total",
-    "links": "Links",
-    "images": "Images",
-    "errors": "Errors",
-    "warnings": "Warnings",
-    "valid": "Valid",
-    "invalid": "Invalid",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Width",
-    "height": "Height",
-    "empty": "Empty",
-    "outputReady": "Output ready",
-    "cleanedHtml": "Cleaned HTML",
-    "formattedHtml": "Formatted HTML",
-    "minifiedHtml": "Minified HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extracted images",
-    "extractedLinks": "Extracted links",
-    "validationSummary": "Validation summary",
-    "prettyHtml": "Pretty HTML",
-    "encodedText": "Encoded text"
-  },
-  "seo": {
-    "title": "HTML Pretty Print | Format HTML Online",
-    "description": "Pretty print HTML with stable spacing for reviews, audits and debugging. Clean up markup in your browser with a fast, client-side HTML formatter.",
-    "keywords": [
-      "html pretty print",
-      "format html",
-      "html formatter",
-      "pretty print html online",
-      "html indentation",
-      "html code formatter"
-    ]
-  }
+  "shortDescription": "Pretty print HTML, format messy markup and use it as a lightweight HTML beautifier online.",
+  "metaTitle": "HTML Pretty Print | HTML beautifier and formatter",
+  "metaDescription": "Pretty print HTML and format messy markup online. Useful for searches like html pretty, html beautifier and format HTML online.",
+  "intro": "This page is tuned for the intent behind html pretty, html beautifier and format HTML online. Paste compact or messy markup, turn it into readable code in seconds and keep the whole workflow inside your browser.",
+  "overview": "HTML Pretty Print is useful for debugging nested markup, reviewing template output and cleaning copied HTML before documentation or QA. It focuses on readable indentation and predictable structure so you can inspect code faster without sending source to a server.",
+  "howItWorks": ["Paste the HTML you want to clean up.", "The formatter applies readable indentation and stable spacing.", "Copy the formatted output for debugging, review or handoff."],
+  "useCases": ["Use it as a quick HTML beautifier for messy source.", "Format HTML online before code review or QA.", "Make copied markup readable in tickets and documentation.", "Inspect nested tags without opening a full IDE."],
+  "examples": [{"title": "HTML beautifier workflow", "input": "<div><span>Hi</span><a href='/docs'>Docs</a></div>", "output": "<div>...</div> with readable spacing", "description": "Good for turning compact markup into review-ready output."}, {"title": "html pretty cleanup", "input": "<ul><li>One</li><li><strong>Two</strong></li></ul>", "output": "Indented list markup", "description": "Helpful when nested structures are hard to read in raw form."}],
+  "faq": [{"question": "Is this tool the same as an HTML beautifier?", "answer": "Yes. It pretty prints and formats HTML online so messy markup becomes easier to read."}, {"question": "Can I use it on minified HTML?", "answer": "Yes. It works well on compact or minified markup that needs readable spacing for review."}],
+  "uiLabels": {"copy": "Copy", "copied": "Copied", "input": "Input", "output": "Output", "placeholder": "Paste HTML here", "indent": "Indent", "removeComments": "Remove comments", "preview": "Preview", "source": "Source", "sanitizedHtml": "Sanitized HTML", "plainText": "Plain text", "summary": "Summary", "total": "Total", "links": "Links", "images": "Images", "errors": "Errors", "warnings": "Warnings", "valid": "Valid", "invalid": "Invalid", "href": "Href", "text": "Text", "rel": "Rel", "target": "Target", "alt": "Alt", "width": "Width", "height": "Height", "empty": "Empty", "outputReady": "Output ready", "cleanedHtml": "Cleaned HTML", "formattedHtml": "Formatted HTML", "minifiedHtml": "Minified HTML", "markdown": "Markdown", "extractedImages": "Extracted images", "extractedLinks": "Extracted links", "validationSummary": "Validation summary", "prettyHtml": "Pretty HTML", "encodedText": "Encoded text"},
+  "seo": {"title": "HTML Pretty Print | HTML beautifier and formatter", "description": "Pretty print HTML and format messy markup online. Useful for html pretty, html beautifier and format HTML online.", "keywords": ["html pretty print", "html pretty", "html beautifier", "format html online", "html formatter"]}
 }

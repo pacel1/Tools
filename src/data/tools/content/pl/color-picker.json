@@ -1,0 +1,16 @@
+{
+  "toolId": "color-picker",
+  "locale": "pl",
+  "slug": "wybierak-kolorow",
+  "h1": "Wybierak kolorow",
+  "title": "Wybierak kolorow",
+  "shortDescription": "Wybieraj kolory online i od razu sprawdzaj wartosci HEX, RGB oraz HSL w jednym panelu.",
+  "metaTitle": "Wybierak kolorow | HEX, RGB i HSL",
+  "metaDescription": "Wybieraj kolory online i odczytuj wartosci HEX, RGB i HSL. Przydatne do CSS, design systemow i szybkiego dopasowania kolorow.",
+  "intro": "Wybierak kolorow daje szybki podglad jednego koloru w kilku formatach bez otwierania ciezszych narzedzi graficznych. To wygodne rozwiazanie do CSS, projektow interfejsow i szybkiej pracy z paletami.",
+  "overview": "Narzedzie sprawdza sie przy stylowaniu frontendu, kontroli designu, dokumentacji komponentow i sprawdzaniu kolorow marki. Jeden wybor koloru natychmiast aktualizuje zapis HEX, RGB i HSL.",
+  "howItWorks": ["Wybierz kolor albo wklej kod HEX.", "Narzedzie przeliczy wybrany kolor na RGB i HSL.", "Uzyj wartosci w CSS, dokumentacji albo dalszej pracy z paleta."],
+  "examples": [{"title": "Kolor akcentu UI", "input": "#0EA5E9", "output": "Wartosci HEX, RGB i HSL", "description": "Pomocne, gdy jeden kolor musi trafic do kilku formatow."}, {"title": "Kontrola koloru marki", "input": "#111827", "output": "Gotowe wartosci do dokumentacji", "description": "Przydatne przy aktualizacji motywu albo QA interfejsu."}],
+  "faq": [{"question": "Jakie formaty pokazuje wybierak kolorow?", "answer": "Narzedzie pokazuje wartosci HEX, RGB i HSL dla wybranego koloru."}, {"question": "Czy moge wpisac wlasny kod HEX?", "answer": "Tak. Po wpisaniu kodu HEX pozostale formaty aktualizuja sie automatycznie."}],
+  "seo": {"title": "Wybierak kolorow | HEX, RGB i HSL", "description": "Wybieraj kolory online i odczytuj wartosci HEX, RGB i HSL do CSS, design systemow i dokumentacji.", "keywords": ["wybierak kolorow", "color picker", "hex rgb hsl", "kolory online", "kody kolorow"]}
+}

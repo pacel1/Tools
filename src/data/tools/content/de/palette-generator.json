@@ -1,0 +1,16 @@
+{
+  "toolId": "palette-generator",
+  "locale": "de",
+  "slug": "farbpaletten-generator",
+  "h1": "Farbpaletten-Generator",
+  "title": "Farbpaletten-Generator",
+  "shortDescription": "Farbpaletten online aus einer Basisfarbe fuer UI, Branding und schnelle Konzepte erzeugen.",
+  "metaTitle": "Farbpaletten-Generator | Farbpaletten online",
+  "metaDescription": "Farbpaletten online aus einer Basisfarbe generieren. Praktisch fuer Branding, UI-Systeme, Moodboards und schnelle CSS-Themen.",
+  "intro": "Der Farbpaletten-Generator ist fuer Situationen gedacht, in denen eine Basisfarbe schnell zu mehreren passenden Toenen erweitert werden soll. Das ist hilfreich fuer UI-Systeme, Branding, Landing Pages und erste visuelle Konzepte.",
+  "overview": "Das Tool bietet schnelle Paletten-Entwuerfe ohne grosse Design-Software. Es passt gut zu Theme-Experimenten, Komponenten-Arbeit, Moodboards und fruehen Markenentwuerfen, bei denen du zuerst mehrere passende Farbstufen sehen willst.",
+  "howItWorks": ["Basisfarbe waehlen.", "Anzahl der Farbstufen festlegen.", "Die generierten Farben fuer Design oder Code uebernehmen."],
+  "examples": [{"title": "UI-Palette", "input": "Eine tuerkise Basisfarbe", "output": "Mehrere hellere und dunklere Abstufungen", "description": "Nuetzlich fuer Buttons, Flaechen, Highlights und States."}, {"title": "Branding-Idee", "input": "Eine einzelne Akzentfarbe", "output": "Eine breitere Palette fuer schnelle Konzepte", "description": "Hilfreich fuer Moodboards und fruehe Markenarbeit."}],
+  "faq": [{"question": "Wie viele Farben erzeugt das Tool?", "answer": "Es erstellt kompakte Paletten mit mehreren abgestuften Farben aus einer Basisfarbe."}, {"question": "Kann ich die Farben fuer CSS-Themes verwenden?", "answer": "Ja. Die erzeugten HEX-Werte eignen sich gut fuer CSS-Variablen, Tokens und schnelle Theme-Entwuerfe."}],
+  "seo": {"title": "Farbpaletten-Generator | Farbpaletten online", "description": "Farbpaletten online aus einer Basisfarbe generieren fuer Branding, UI-Systeme und schnelle CSS-Themen.", "keywords": ["farbpaletten generator", "color palette generator", "palette online", "farben fuer ui", "branding farbpalette"]}
+}

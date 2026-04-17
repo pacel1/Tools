@@ -1,0 +1,21 @@
+{
+  "id": "color-picker",
+  "type": "generator",
+  "category": "generators",
+  "componentName": "ColorPickerTool",
+  "logicModule": "color-picker",
+  "inputSchema": "colorPickerInputSchema",
+  "outputSchema": "colorPickerOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "de"
+  ],
+  "relatedTools": [
+    "hex-to-rgb-converter",
+    "contrast-checker",
+    "palette-generator",
+    "gradient-generator"
+  ],
+  "seoPriority": 0.9
+}

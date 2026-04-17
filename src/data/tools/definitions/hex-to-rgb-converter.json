@@ -1,0 +1,21 @@
+{
+  "id": "hex-to-rgb-converter",
+  "type": "converter",
+  "category": "converters",
+  "componentName": "HexToRgbConverterTool",
+  "logicModule": "hex-to-rgb-converter",
+  "inputSchema": "hexToRgbConverterInputSchema",
+  "outputSchema": "hexToRgbConverterOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "de"
+  ],
+  "relatedTools": [
+    "color-picker",
+    "contrast-checker",
+    "palette-generator",
+    "gradient-generator"
+  ],
+  "seoPriority": 0.91
+}

@@ -1,0 +1,16 @@
+{
+  "toolId": "storage-converter",
+  "locale": "en",
+  "slug": "storage-converter",
+  "h1": "Storage Converter",
+  "title": "Storage Converter",
+  "shortDescription": "Convert KB, MB, GB and TB online with instant 1024-based results in your browser.",
+  "metaTitle": "Storage Converter | KB, MB, GB and TB Online",
+  "metaDescription": "Convert storage units online with a fast KB, MB, GB and TB converter. Great for queries like convert GB to MB, MB to GB and binary 1024 calculations.",
+  "intro": "Use this storage converter when you need a quick answer for file size math, binary 1024 ratios and common searches like convert GB to MB or how many MB are in a GB. It works instantly in the browser and lets you switch between KB, MB, GB and TB from one form.",
+  "overview": "The storage converter is built for everyday file size questions, upload planning and memory unit checks. Instead of jumping between separate one-direction tools, you can change the source unit, target unit and value in one place while keeping the same 1024-based logic used across storage-focused calculations.",
+  "howItWorks": ["Enter the numeric value you want to convert.", "Choose the source unit and target unit from KB, MB, GB or TB.", "Read the converted result instantly and swap directions whenever you need the reverse calculation."],
+  "examples": [{"title": "GB to MB", "input": "2 GB", "output": "2048 MB", "description": "Useful when you need a quick binary storage answer for file sizes."}, {"title": "TB to GB", "input": "1.5 TB", "output": "1536 GB", "description": "Helpful for storage planning, backups and device capacity checks."}],
+  "faq": [{"question": "Does this storage converter use 1000 or 1024?", "answer": "It uses the binary 1024 ratio, which is common in storage and memory calculations."}, {"question": "Can I convert in both directions?", "answer": "Yes. You can switch between KB, MB, GB and TB in any direction from the same tool."}],
+  "seo": {"title": "Storage Converter | KB, MB, GB and TB Online", "description": "Convert storage units online with a fast KB, MB, GB and TB converter. Great for GB to MB, MB to GB and binary 1024 calculations.", "keywords": ["storage converter", "gb to mb converter", "mb to gb converter", "kb mb gb tb converter", "binary storage converter"]}
+}

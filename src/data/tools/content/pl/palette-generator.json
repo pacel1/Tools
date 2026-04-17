@@ -1,0 +1,16 @@
+{
+  "toolId": "palette-generator",
+  "locale": "pl",
+  "slug": "generator-palety-kolorow",
+  "h1": "Generator palety kolorow",
+  "title": "Generator palety kolorow",
+  "shortDescription": "Generuj palety kolorow online z jednego koloru bazowego do UI, brandingu i szybkich koncepcji.",
+  "metaTitle": "Generator palety kolorow | Palety online",
+  "metaDescription": "Generuj palety kolorow online z jednego koloru bazowego. Przydatne do brandingu, interfejsow, moodboardow i szybkiej pracy z CSS.",
+  "intro": "Generator palety kolorow pomaga wtedy, gdy jeden kolor bazowy trzeba szybko rozwinac o kilka dopasowanych probek. To wygodne rozwiazanie do interfejsow, brandingu, motywow stron i prostych eksperymentow wizualnych.",
+  "overview": "Narzedzie jest lekkie i szybkie, wiec dobrze nadaje sie do wstepnego budowania palet bez otwierania rozbudowanego edytora. Sprawdza sie przy landing pageach, design systemach, projektach komponentow i robieniu pierwszych wersji motywu.",
+  "howItWorks": ["Wybierz kolor bazowy.", "Ustaw ile probek ma zawierac paleta.", "Skorzystaj z wygenerowanych kolorow w projekcie albo kodzie."],
+  "examples": [{"title": "Paleta dla UI", "input": "Jeden kolor turkusowy", "output": "Zestaw jasniejszych i ciemniejszych probek", "description": "Przydatne do przyciskow, tla, akcentow i stanow."}, {"title": "Szybki branding", "input": "Jeden kolor akcentu", "output": "Szersza paleta do moodboardu", "description": "Pomocne przy pierwszych wersjach identyfikacji wizualnej."}],
+  "faq": [{"question": "Ile kolorow moge wygenerowac?", "answer": "Narzedzie tworzy kompaktowe palety z kilkoma probkami opartymi na jednym kolorze bazowym."}, {"question": "Czy to przyda sie do CSS?", "answer": "Tak. Wygenerowane kody HEX dobrze nadaja sie do zmiennych CSS, tokenow i prostych motywow."}],
+  "seo": {"title": "Generator palety kolorow | Palety online", "description": "Generuj palety kolorow online z jednego koloru bazowego do UI, brandingu i szybkiej pracy z CSS.", "keywords": ["generator palety kolorow", "paleta kolorow online", "generator kolorow", "palette generator", "paleta do ui"]}
+}
