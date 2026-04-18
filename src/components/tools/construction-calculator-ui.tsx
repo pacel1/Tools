@@ -3,7 +3,7 @@
 import type { ReactNode } from "react";
 import { useLocale } from "next-intl";
 
-export type ConstructionLocale = "en" | "pl";
+export type ConstructionLocale = string;
 
 export const inputClassName =
   "w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-slate-900 outline-none transition focus:border-sky-500 focus:ring-2 focus:ring-sky-200";
@@ -14,8 +14,7 @@ export const sectionCardClassName =
   "rounded-2xl border border-slate-200 bg-white p-6 shadow-sm";
 
 export function useConstructionLocale(): ConstructionLocale {
-  const locale = useLocale();
-  return locale === "en" ? "en" : "pl";
+  return useLocale();
 }
 
 export function pickConstructionText<T>(
@@ -23,15 +22,32 @@ export function pickConstructionText<T>(
   plValue: T,
   enValue: T,
 ) {
-  return locale === "en" ? enValue : plValue;
+  return locale === "pl" ? plValue : enValue;
+}
+
+function getNumberLocale(locale: ConstructionLocale) {
+  switch (locale) {
+    case "pl":
+      return "pl-PL";
+    case "de":
+      return "de-DE";
+    case "es":
+      return "es-ES";
+    case "fr":
+      return "fr-FR";
+    case "en":
+      return "en-US";
+    default:
+      return locale || "en-US";
+  }
 }
 
 export function formatPlNumber(
   value: number,
   maximumFractionDigits = 2,
-  locale: ConstructionLocale = "pl",
+  locale: ConstructionLocale = "en",
 ) {
-  return new Intl.NumberFormat(locale === "en" ? "en-US" : "pl-PL", {
+  return new Intl.NumberFormat(getNumberLocale(locale), {
     minimumFractionDigits: 0,
     maximumFractionDigits,
   }).format(value);
