@@ -1,0 +1,23 @@
+{
+  "id": "kalkulator-zbrojenia",
+  "type": "calculator",
+  "category": "construction-calculators",
+  "componentName": "KalkulatorZbrojeniaTool",
+  "logicModule": "kalkulator-zbrojenia",
+  "inputSchema": "kalkulatorZbrojeniaInputSchema",
+  "outputSchema": "kalkulatorZbrojeniaOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "kalkulator-betonu",
+    "kalkulator-fundamentow",
+    "kalkulator-wylewki",
+    "kalkulator-ogrzewania-podlogowego"
+  ],
+  "seoPriority": 0.9
+}

@@ -1,0 +1,23 @@
+{
+  "id": "kalkulator-fugi",
+  "type": "calculator",
+  "category": "construction-calculators",
+  "componentName": "KalkulatorFugiTool",
+  "logicModule": "kalkulator-fugi",
+  "inputSchema": "kalkulatorFugiInputSchema",
+  "outputSchema": "kalkulatorFugiOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "bmi-calculator",
+    "kalkulator-betonu",
+    "age-calculator",
+    "kalkulator-dachu"
+  ],
+  "seoPriority": 0.89
+}

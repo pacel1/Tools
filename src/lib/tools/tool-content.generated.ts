@@ -47,6 +47,26 @@ import enInchesToMmConverter from "@/data/tools/content/en/inches-to-mm-converte
 import enJsonFormatter from "@/data/tools/content/en/json-formatter.json";
 import enJsonMinifier from "@/data/tools/content/en/json-minifier.json";
 import enJsonValidator from "@/data/tools/content/en/json-validator.json";
+import enKalkulatorBetonu from "@/data/tools/content/en/kalkulator-betonu.json";
+import enKalkulatorDachu from "@/data/tools/content/en/kalkulator-dachu.json";
+import enKalkulatorFarby from "@/data/tools/content/en/kalkulator-farby.json";
+import enKalkulatorFugi from "@/data/tools/content/en/kalkulator-fugi.json";
+import enKalkulatorFundamentow from "@/data/tools/content/en/kalkulator-fundamentow.json";
+import enKalkulatorGladzi from "@/data/tools/content/en/kalkulator-gladzi.json";
+import enKalkulatorHydroizolacji from "@/data/tools/content/en/kalkulator-hydroizolacji.json";
+import enKalkulatorKlejuDoPlytek from "@/data/tools/content/en/kalkulator-kleju-do-plytek.json";
+import enKalkulatorKostkiBrukowej from "@/data/tools/content/en/kalkulator-kostki-brukowej.json";
+import enKalkulatorOgrodzenia from "@/data/tools/content/en/kalkulator-ogrodzenia.json";
+import enKalkulatorOgrzewaniaPodlogowego from "@/data/tools/content/en/kalkulator-ogrzewania-podlogowego.json";
+import enKalkulatorPaneliPodlogowych from "@/data/tools/content/en/kalkulator-paneli-podlogowych.json";
+import enKalkulatorPlytGk from "@/data/tools/content/en/kalkulator-plyt-gk.json";
+import enKalkulatorPlytek from "@/data/tools/content/en/kalkulator-plytek.json";
+import enKalkulatorRynien from "@/data/tools/content/en/kalkulator-rynien.json";
+import enKalkulatorStyropianu from "@/data/tools/content/en/kalkulator-styropianu.json";
+import enKalkulatorTynku from "@/data/tools/content/en/kalkulator-tynku.json";
+import enKalkulatorWelnyMineralnej from "@/data/tools/content/en/kalkulator-welny-mineralnej.json";
+import enKalkulatorWylewki from "@/data/tools/content/en/kalkulator-wylewki.json";
+import enKalkulatorZbrojenia from "@/data/tools/content/en/kalkulator-zbrojenia.json";
 import enKeywordDensityChecker from "@/data/tools/content/en/keyword-density-checker.json";
 import enKgToLbsConverter from "@/data/tools/content/en/kg-to-lbs-converter.json";
 import enKmToMilesConverter from "@/data/tools/content/en/km-to-miles-converter.json";
@@ -132,6 +152,26 @@ import plInchesToMmConverter from "@/data/tools/content/pl/inches-to-mm-converte
 import plJsonFormatter from "@/data/tools/content/pl/json-formatter.json";
 import plJsonMinifier from "@/data/tools/content/pl/json-minifier.json";
 import plJsonValidator from "@/data/tools/content/pl/json-validator.json";
+import plKalkulatorBetonu from "@/data/tools/content/pl/kalkulator-betonu.json";
+import plKalkulatorDachu from "@/data/tools/content/pl/kalkulator-dachu.json";
+import plKalkulatorFarby from "@/data/tools/content/pl/kalkulator-farby.json";
+import plKalkulatorFugi from "@/data/tools/content/pl/kalkulator-fugi.json";
+import plKalkulatorFundamentow from "@/data/tools/content/pl/kalkulator-fundamentow.json";
+import plKalkulatorGladzi from "@/data/tools/content/pl/kalkulator-gladzi.json";
+import plKalkulatorHydroizolacji from "@/data/tools/content/pl/kalkulator-hydroizolacji.json";
+import plKalkulatorKlejuDoPlytek from "@/data/tools/content/pl/kalkulator-kleju-do-plytek.json";
+import plKalkulatorKostkiBrukowej from "@/data/tools/content/pl/kalkulator-kostki-brukowej.json";
+import plKalkulatorOgrodzenia from "@/data/tools/content/pl/kalkulator-ogrodzenia.json";
+import plKalkulatorOgrzewaniaPodlogowego from "@/data/tools/content/pl/kalkulator-ogrzewania-podlogowego.json";
+import plKalkulatorPaneliPodlogowych from "@/data/tools/content/pl/kalkulator-paneli-podlogowych.json";
+import plKalkulatorPlytGk from "@/data/tools/content/pl/kalkulator-plyt-gk.json";
+import plKalkulatorPlytek from "@/data/tools/content/pl/kalkulator-plytek.json";
+import plKalkulatorRynien from "@/data/tools/content/pl/kalkulator-rynien.json";
+import plKalkulatorStyropianu from "@/data/tools/content/pl/kalkulator-styropianu.json";
+import plKalkulatorTynku from "@/data/tools/content/pl/kalkulator-tynku.json";
+import plKalkulatorWelnyMineralnej from "@/data/tools/content/pl/kalkulator-welny-mineralnej.json";
+import plKalkulatorWylewki from "@/data/tools/content/pl/kalkulator-wylewki.json";
+import plKalkulatorZbrojenia from "@/data/tools/content/pl/kalkulator-zbrojenia.json";
 import plKeywordDensityChecker from "@/data/tools/content/pl/keyword-density-checker.json";
 import plKgToLbsConverter from "@/data/tools/content/pl/kg-to-lbs-converter.json";
 import plKmToMilesConverter from "@/data/tools/content/pl/km-to-miles-converter.json";
@@ -212,6 +252,26 @@ import esInchesToMmConverter from "@/data/tools/content/es/inches-to-mm-converte
 import esJsonFormatter from "@/data/tools/content/es/json-formatter.json";
 import esJsonMinifier from "@/data/tools/content/es/json-minifier.json";
 import esJsonValidator from "@/data/tools/content/es/json-validator.json";
+import esKalkulatorBetonu from "@/data/tools/content/es/kalkulator-betonu.json";
+import esKalkulatorDachu from "@/data/tools/content/es/kalkulator-dachu.json";
+import esKalkulatorFarby from "@/data/tools/content/es/kalkulator-farby.json";
+import esKalkulatorFugi from "@/data/tools/content/es/kalkulator-fugi.json";
+import esKalkulatorFundamentow from "@/data/tools/content/es/kalkulator-fundamentow.json";
+import esKalkulatorGladzi from "@/data/tools/content/es/kalkulator-gladzi.json";
+import esKalkulatorHydroizolacji from "@/data/tools/content/es/kalkulator-hydroizolacji.json";
+import esKalkulatorKlejuDoPlytek from "@/data/tools/content/es/kalkulator-kleju-do-plytek.json";
+import esKalkulatorKostkiBrukowej from "@/data/tools/content/es/kalkulator-kostki-brukowej.json";
+import esKalkulatorOgrodzenia from "@/data/tools/content/es/kalkulator-ogrodzenia.json";
+import esKalkulatorOgrzewaniaPodlogowego from "@/data/tools/content/es/kalkulator-ogrzewania-podlogowego.json";
+import esKalkulatorPaneliPodlogowych from "@/data/tools/content/es/kalkulator-paneli-podlogowych.json";
+import esKalkulatorPlytGk from "@/data/tools/content/es/kalkulator-plyt-gk.json";
+import esKalkulatorPlytek from "@/data/tools/content/es/kalkulator-plytek.json";
+import esKalkulatorRynien from "@/data/tools/content/es/kalkulator-rynien.json";
+import esKalkulatorStyropianu from "@/data/tools/content/es/kalkulator-styropianu.json";
+import esKalkulatorTynku from "@/data/tools/content/es/kalkulator-tynku.json";
+import esKalkulatorWelnyMineralnej from "@/data/tools/content/es/kalkulator-welny-mineralnej.json";
+import esKalkulatorWylewki from "@/data/tools/content/es/kalkulator-wylewki.json";
+import esKalkulatorZbrojenia from "@/data/tools/content/es/kalkulator-zbrojenia.json";
 import esKeywordDensityChecker from "@/data/tools/content/es/keyword-density-checker.json";
 import esKgToLbsConverter from "@/data/tools/content/es/kg-to-lbs-converter.json";
 import esKmToMilesConverter from "@/data/tools/content/es/km-to-miles-converter.json";
@@ -295,6 +355,26 @@ import deInchesToMmConverter from "@/data/tools/content/de/inches-to-mm-converte
 import deJsonFormatter from "@/data/tools/content/de/json-formatter.json";
 import deJsonMinifier from "@/data/tools/content/de/json-minifier.json";
 import deJsonValidator from "@/data/tools/content/de/json-validator.json";
+import deKalkulatorBetonu from "@/data/tools/content/de/kalkulator-betonu.json";
+import deKalkulatorDachu from "@/data/tools/content/de/kalkulator-dachu.json";
+import deKalkulatorFarby from "@/data/tools/content/de/kalkulator-farby.json";
+import deKalkulatorFugi from "@/data/tools/content/de/kalkulator-fugi.json";
+import deKalkulatorFundamentow from "@/data/tools/content/de/kalkulator-fundamentow.json";
+import deKalkulatorGladzi from "@/data/tools/content/de/kalkulator-gladzi.json";
+import deKalkulatorHydroizolacji from "@/data/tools/content/de/kalkulator-hydroizolacji.json";
+import deKalkulatorKlejuDoPlytek from "@/data/tools/content/de/kalkulator-kleju-do-plytek.json";
+import deKalkulatorKostkiBrukowej from "@/data/tools/content/de/kalkulator-kostki-brukowej.json";
+import deKalkulatorOgrodzenia from "@/data/tools/content/de/kalkulator-ogrodzenia.json";
+import deKalkulatorOgrzewaniaPodlogowego from "@/data/tools/content/de/kalkulator-ogrzewania-podlogowego.json";
+import deKalkulatorPaneliPodlogowych from "@/data/tools/content/de/kalkulator-paneli-podlogowych.json";
+import deKalkulatorPlytGk from "@/data/tools/content/de/kalkulator-plyt-gk.json";
+import deKalkulatorPlytek from "@/data/tools/content/de/kalkulator-plytek.json";
+import deKalkulatorRynien from "@/data/tools/content/de/kalkulator-rynien.json";
+import deKalkulatorStyropianu from "@/data/tools/content/de/kalkulator-styropianu.json";
+import deKalkulatorTynku from "@/data/tools/content/de/kalkulator-tynku.json";
+import deKalkulatorWelnyMineralnej from "@/data/tools/content/de/kalkulator-welny-mineralnej.json";
+import deKalkulatorWylewki from "@/data/tools/content/de/kalkulator-wylewki.json";
+import deKalkulatorZbrojenia from "@/data/tools/content/de/kalkulator-zbrojenia.json";
 import deKeywordDensityChecker from "@/data/tools/content/de/keyword-density-checker.json";
 import deKgToLbsConverter from "@/data/tools/content/de/kg-to-lbs-converter.json";
 import deKmToMilesConverter from "@/data/tools/content/de/km-to-miles-converter.json";
@@ -375,6 +455,26 @@ import frInchesToMmConverter from "@/data/tools/content/fr/inches-to-mm-converte
 import frJsonFormatter from "@/data/tools/content/fr/json-formatter.json";
 import frJsonMinifier from "@/data/tools/content/fr/json-minifier.json";
 import frJsonValidator from "@/data/tools/content/fr/json-validator.json";
+import frKalkulatorBetonu from "@/data/tools/content/fr/kalkulator-betonu.json";
+import frKalkulatorDachu from "@/data/tools/content/fr/kalkulator-dachu.json";
+import frKalkulatorFarby from "@/data/tools/content/fr/kalkulator-farby.json";
+import frKalkulatorFugi from "@/data/tools/content/fr/kalkulator-fugi.json";
+import frKalkulatorFundamentow from "@/data/tools/content/fr/kalkulator-fundamentow.json";
+import frKalkulatorGladzi from "@/data/tools/content/fr/kalkulator-gladzi.json";
+import frKalkulatorHydroizolacji from "@/data/tools/content/fr/kalkulator-hydroizolacji.json";
+import frKalkulatorKlejuDoPlytek from "@/data/tools/content/fr/kalkulator-kleju-do-plytek.json";
+import frKalkulatorKostkiBrukowej from "@/data/tools/content/fr/kalkulator-kostki-brukowej.json";
+import frKalkulatorOgrodzenia from "@/data/tools/content/fr/kalkulator-ogrodzenia.json";
+import frKalkulatorOgrzewaniaPodlogowego from "@/data/tools/content/fr/kalkulator-ogrzewania-podlogowego.json";
+import frKalkulatorPaneliPodlogowych from "@/data/tools/content/fr/kalkulator-paneli-podlogowych.json";
+import frKalkulatorPlytGk from "@/data/tools/content/fr/kalkulator-plyt-gk.json";
+import frKalkulatorPlytek from "@/data/tools/content/fr/kalkulator-plytek.json";
+import frKalkulatorRynien from "@/data/tools/content/fr/kalkulator-rynien.json";
+import frKalkulatorStyropianu from "@/data/tools/content/fr/kalkulator-styropianu.json";
+import frKalkulatorTynku from "@/data/tools/content/fr/kalkulator-tynku.json";
+import frKalkulatorWelnyMineralnej from "@/data/tools/content/fr/kalkulator-welny-mineralnej.json";
+import frKalkulatorWylewki from "@/data/tools/content/fr/kalkulator-wylewki.json";
+import frKalkulatorZbrojenia from "@/data/tools/content/fr/kalkulator-zbrojenia.json";
 import frKeywordDensityChecker from "@/data/tools/content/fr/keyword-density-checker.json";
 import frKgToLbsConverter from "@/data/tools/content/fr/kg-to-lbs-converter.json";
 import frKmToMilesConverter from "@/data/tools/content/fr/km-to-miles-converter.json";
@@ -465,6 +565,26 @@ export const toolContent = {
     "json-formatter": enJsonFormatter,
     "json-minifier": enJsonMinifier,
     "json-validator": enJsonValidator,
+    "kalkulator-betonu": enKalkulatorBetonu,
+    "kalkulator-dachu": enKalkulatorDachu,
+    "kalkulator-farby": enKalkulatorFarby,
+    "kalkulator-fugi": enKalkulatorFugi,
+    "kalkulator-fundamentow": enKalkulatorFundamentow,
+    "kalkulator-gladzi": enKalkulatorGladzi,
+    "kalkulator-hydroizolacji": enKalkulatorHydroizolacji,
+    "kalkulator-kleju-do-plytek": enKalkulatorKlejuDoPlytek,
+    "kalkulator-kostki-brukowej": enKalkulatorKostkiBrukowej,
+    "kalkulator-ogrodzenia": enKalkulatorOgrodzenia,
+    "kalkulator-ogrzewania-podlogowego": enKalkulatorOgrzewaniaPodlogowego,
+    "kalkulator-paneli-podlogowych": enKalkulatorPaneliPodlogowych,
+    "kalkulator-plyt-gk": enKalkulatorPlytGk,
+    "kalkulator-plytek": enKalkulatorPlytek,
+    "kalkulator-rynien": enKalkulatorRynien,
+    "kalkulator-styropianu": enKalkulatorStyropianu,
+    "kalkulator-tynku": enKalkulatorTynku,
+    "kalkulator-welny-mineralnej": enKalkulatorWelnyMineralnej,
+    "kalkulator-wylewki": enKalkulatorWylewki,
+    "kalkulator-zbrojenia": enKalkulatorZbrojenia,
     "keyword-density-checker": enKeywordDensityChecker,
     "kg-to-lbs-converter": enKgToLbsConverter,
     "km-to-miles-converter": enKmToMilesConverter,
@@ -552,6 +672,26 @@ export const toolContent = {
     "json-formatter": plJsonFormatter,
     "json-minifier": plJsonMinifier,
     "json-validator": plJsonValidator,
+    "kalkulator-betonu": plKalkulatorBetonu,
+    "kalkulator-dachu": plKalkulatorDachu,
+    "kalkulator-farby": plKalkulatorFarby,
+    "kalkulator-fugi": plKalkulatorFugi,
+    "kalkulator-fundamentow": plKalkulatorFundamentow,
+    "kalkulator-gladzi": plKalkulatorGladzi,
+    "kalkulator-hydroizolacji": plKalkulatorHydroizolacji,
+    "kalkulator-kleju-do-plytek": plKalkulatorKlejuDoPlytek,
+    "kalkulator-kostki-brukowej": plKalkulatorKostkiBrukowej,
+    "kalkulator-ogrodzenia": plKalkulatorOgrodzenia,
+    "kalkulator-ogrzewania-podlogowego": plKalkulatorOgrzewaniaPodlogowego,
+    "kalkulator-paneli-podlogowych": plKalkulatorPaneliPodlogowych,
+    "kalkulator-plyt-gk": plKalkulatorPlytGk,
+    "kalkulator-plytek": plKalkulatorPlytek,
+    "kalkulator-rynien": plKalkulatorRynien,
+    "kalkulator-styropianu": plKalkulatorStyropianu,
+    "kalkulator-tynku": plKalkulatorTynku,
+    "kalkulator-welny-mineralnej": plKalkulatorWelnyMineralnej,
+    "kalkulator-wylewki": plKalkulatorWylewki,
+    "kalkulator-zbrojenia": plKalkulatorZbrojenia,
     "keyword-density-checker": plKeywordDensityChecker,
     "kg-to-lbs-converter": plKgToLbsConverter,
     "km-to-miles-converter": plKmToMilesConverter,
@@ -634,6 +774,26 @@ export const toolContent = {
     "json-formatter": esJsonFormatter,
     "json-minifier": esJsonMinifier,
     "json-validator": esJsonValidator,
+    "kalkulator-betonu": esKalkulatorBetonu,
+    "kalkulator-dachu": esKalkulatorDachu,
+    "kalkulator-farby": esKalkulatorFarby,
+    "kalkulator-fugi": esKalkulatorFugi,
+    "kalkulator-fundamentow": esKalkulatorFundamentow,
+    "kalkulator-gladzi": esKalkulatorGladzi,
+    "kalkulator-hydroizolacji": esKalkulatorHydroizolacji,
+    "kalkulator-kleju-do-plytek": esKalkulatorKlejuDoPlytek,
+    "kalkulator-kostki-brukowej": esKalkulatorKostkiBrukowej,
+    "kalkulator-ogrodzenia": esKalkulatorOgrodzenia,
+    "kalkulator-ogrzewania-podlogowego": esKalkulatorOgrzewaniaPodlogowego,
+    "kalkulator-paneli-podlogowych": esKalkulatorPaneliPodlogowych,
+    "kalkulator-plyt-gk": esKalkulatorPlytGk,
+    "kalkulator-plytek": esKalkulatorPlytek,
+    "kalkulator-rynien": esKalkulatorRynien,
+    "kalkulator-styropianu": esKalkulatorStyropianu,
+    "kalkulator-tynku": esKalkulatorTynku,
+    "kalkulator-welny-mineralnej": esKalkulatorWelnyMineralnej,
+    "kalkulator-wylewki": esKalkulatorWylewki,
+    "kalkulator-zbrojenia": esKalkulatorZbrojenia,
     "keyword-density-checker": esKeywordDensityChecker,
     "kg-to-lbs-converter": esKgToLbsConverter,
     "km-to-miles-converter": esKmToMilesConverter,
@@ -719,6 +879,26 @@ export const toolContent = {
     "json-formatter": deJsonFormatter,
     "json-minifier": deJsonMinifier,
     "json-validator": deJsonValidator,
+    "kalkulator-betonu": deKalkulatorBetonu,
+    "kalkulator-dachu": deKalkulatorDachu,
+    "kalkulator-farby": deKalkulatorFarby,
+    "kalkulator-fugi": deKalkulatorFugi,
+    "kalkulator-fundamentow": deKalkulatorFundamentow,
+    "kalkulator-gladzi": deKalkulatorGladzi,
+    "kalkulator-hydroizolacji": deKalkulatorHydroizolacji,
+    "kalkulator-kleju-do-plytek": deKalkulatorKlejuDoPlytek,
+    "kalkulator-kostki-brukowej": deKalkulatorKostkiBrukowej,
+    "kalkulator-ogrodzenia": deKalkulatorOgrodzenia,
+    "kalkulator-ogrzewania-podlogowego": deKalkulatorOgrzewaniaPodlogowego,
+    "kalkulator-paneli-podlogowych": deKalkulatorPaneliPodlogowych,
+    "kalkulator-plyt-gk": deKalkulatorPlytGk,
+    "kalkulator-plytek": deKalkulatorPlytek,
+    "kalkulator-rynien": deKalkulatorRynien,
+    "kalkulator-styropianu": deKalkulatorStyropianu,
+    "kalkulator-tynku": deKalkulatorTynku,
+    "kalkulator-welny-mineralnej": deKalkulatorWelnyMineralnej,
+    "kalkulator-wylewki": deKalkulatorWylewki,
+    "kalkulator-zbrojenia": deKalkulatorZbrojenia,
     "keyword-density-checker": deKeywordDensityChecker,
     "kg-to-lbs-converter": deKgToLbsConverter,
     "km-to-miles-converter": deKmToMilesConverter,
@@ -801,6 +981,26 @@ export const toolContent = {
     "json-formatter": frJsonFormatter,
     "json-minifier": frJsonMinifier,
     "json-validator": frJsonValidator,
+    "kalkulator-betonu": frKalkulatorBetonu,
+    "kalkulator-dachu": frKalkulatorDachu,
+    "kalkulator-farby": frKalkulatorFarby,
+    "kalkulator-fugi": frKalkulatorFugi,
+    "kalkulator-fundamentow": frKalkulatorFundamentow,
+    "kalkulator-gladzi": frKalkulatorGladzi,
+    "kalkulator-hydroizolacji": frKalkulatorHydroizolacji,
+    "kalkulator-kleju-do-plytek": frKalkulatorKlejuDoPlytek,
+    "kalkulator-kostki-brukowej": frKalkulatorKostkiBrukowej,
+    "kalkulator-ogrodzenia": frKalkulatorOgrodzenia,
+    "kalkulator-ogrzewania-podlogowego": frKalkulatorOgrzewaniaPodlogowego,
+    "kalkulator-paneli-podlogowych": frKalkulatorPaneliPodlogowych,
+    "kalkulator-plyt-gk": frKalkulatorPlytGk,
+    "kalkulator-plytek": frKalkulatorPlytek,
+    "kalkulator-rynien": frKalkulatorRynien,
+    "kalkulator-styropianu": frKalkulatorStyropianu,
+    "kalkulator-tynku": frKalkulatorTynku,
+    "kalkulator-welny-mineralnej": frKalkulatorWelnyMineralnej,
+    "kalkulator-wylewki": frKalkulatorWylewki,
+    "kalkulator-zbrojenia": frKalkulatorZbrojenia,
     "keyword-density-checker": frKeywordDensityChecker,
     "kg-to-lbs-converter": frKgToLbsConverter,
     "km-to-miles-converter": frKmToMilesConverter,

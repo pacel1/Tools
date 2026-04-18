@@ -1,0 +1,23 @@
+{
+  "id": "kalkulator-paneli-podlogowych",
+  "type": "calculator",
+  "category": "construction-calculators",
+  "componentName": "KalkulatorPaneliPodlogowychTool",
+  "logicModule": "kalkulator-paneli-podlogowych",
+  "inputSchema": "kalkulatorPaneliPodlogowychInputSchema",
+  "outputSchema": "kalkulatorPaneliPodlogowychOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "kalkulator-fugi",
+    "kalkulator-kostki-brukowej",
+    "kalkulator-gladzi",
+    "bmi-calculator"
+  ],
+  "seoPriority": 0.9
+}

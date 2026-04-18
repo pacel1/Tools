@@ -1,0 +1,23 @@
+{
+  "id": "kalkulator-fundamentow",
+  "type": "calculator",
+  "category": "construction-calculators",
+  "componentName": "KalkulatorFundamentowTool",
+  "logicModule": "kalkulator-fundamentow",
+  "inputSchema": "kalkulatorFundamentowInputSchema",
+  "outputSchema": "kalkulatorFundamentowOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "kalkulator-betonu",
+    "bmi-calculator",
+    "age-calculator",
+    "kalkulator-dachu"
+  ],
+  "seoPriority": 0.94
+}

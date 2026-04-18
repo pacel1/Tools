@@ -1,0 +1,23 @@
+{
+  "id": "kalkulator-farby",
+  "type": "calculator",
+  "category": "construction-calculators",
+  "componentName": "KalkulatorFarbyTool",
+  "logicModule": "kalkulator-farby",
+  "inputSchema": "kalkulatorFarbyInputSchema",
+  "outputSchema": "kalkulatorFarbyOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "bmi-calculator",
+    "kalkulator-betonu",
+    "age-calculator",
+    "kalkulator-dachu"
+  ],
+  "seoPriority": 0.97
+}

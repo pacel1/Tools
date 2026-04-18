@@ -1,0 +1,23 @@
+{
+  "id": "kalkulator-hydroizolacji",
+  "type": "calculator",
+  "category": "construction-calculators",
+  "componentName": "KalkulatorHydroizolacjiTool",
+  "logicModule": "kalkulator-hydroizolacji",
+  "inputSchema": "kalkulatorHydroizolacjiInputSchema",
+  "outputSchema": "kalkulatorHydroizolacjiOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "kalkulator-fundamentow",
+    "bmi-calculator",
+    "kalkulator-betonu",
+    "age-calculator"
+  ],
+  "seoPriority": 0.86
+}

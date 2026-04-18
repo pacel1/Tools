@@ -1,0 +1,23 @@
+{
+  "id": "kalkulator-tynku",
+  "type": "calculator",
+  "category": "construction-calculators",
+  "componentName": "KalkulatorTynkuTool",
+  "logicModule": "kalkulator-tynku",
+  "inputSchema": "kalkulatorTynkuInputSchema",
+  "outputSchema": "kalkulatorTynkuOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "kalkulator-gladzi",
+    "kalkulator-farby",
+    "kalkulator-styropianu",
+    "kalkulator-plyt-gk"
+  ],
+  "seoPriority": 0.92
+}

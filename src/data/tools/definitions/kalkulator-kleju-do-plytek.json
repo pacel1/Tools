@@ -1,0 +1,23 @@
+{
+  "id": "kalkulator-kleju-do-plytek",
+  "type": "calculator",
+  "category": "construction-calculators",
+  "componentName": "KalkulatorKlejuDoPlytekTool",
+  "logicModule": "kalkulator-kleju-do-plytek",
+  "inputSchema": "kalkulatorKlejuDoPlytekInputSchema",
+  "outputSchema": "kalkulatorKlejuDoPlytekOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "kalkulator-fugi",
+    "kalkulator-hydroizolacji",
+    "bmi-calculator",
+    "kalkulator-betonu"
+  ],
+  "seoPriority": 0.91
+}

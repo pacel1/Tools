@@ -1,0 +1,23 @@
+{
+  "id": "kalkulator-plytek",
+  "type": "calculator",
+  "category": "construction-calculators",
+  "componentName": "KalkulatorPlytekTool",
+  "logicModule": "kalkulator-plytek",
+  "inputSchema": "kalkulatorPlytekInputSchema",
+  "outputSchema": "kalkulatorPlytekOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "kalkulator-kleju-do-plytek",
+    "kalkulator-fugi",
+    "kalkulator-paneli-podlogowych",
+    "kalkulator-hydroizolacji"
+  ],
+  "seoPriority": 0.96
+}

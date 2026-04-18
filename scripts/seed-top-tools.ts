@@ -4,7 +4,13 @@ import { writeFileSafe, writeJson } from "./shared/filesystem";
 import { syncGeneratedArtifacts } from "./shared/registry-writer";
 
 type ToolKind = "converter" | "calculator" | "text-tool" | "developer-tool" | "security-tool";
-type Category = "converters" | "calculators" | "text-tools" | "developer-tools" | "security-tools";
+type Category =
+  | "converters"
+  | "calculators"
+  | "construction-calculators"
+  | "text-tools"
+  | "developer-tools"
+  | "security-tools";
 type Family = "converter" | "calculator" | "date" | "text-metric" | "text-transform" | "json" | "generator";
 
 type Seed = {

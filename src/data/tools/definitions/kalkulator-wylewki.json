@@ -1,0 +1,23 @@
+{
+  "id": "kalkulator-wylewki",
+  "type": "calculator",
+  "category": "construction-calculators",
+  "componentName": "KalkulatorWylewkiTool",
+  "logicModule": "kalkulator-wylewki",
+  "inputSchema": "kalkulatorWylewkiInputSchema",
+  "outputSchema": "kalkulatorWylewkiOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "kalkulator-betonu",
+    "kalkulator-fundamentow",
+    "kalkulator-ogrzewania-podlogowego",
+    "bmi-calculator"
+  ],
+  "seoPriority": 0.95
+}

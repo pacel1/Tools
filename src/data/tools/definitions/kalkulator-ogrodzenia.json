@@ -1,0 +1,23 @@
+{
+  "id": "kalkulator-ogrodzenia",
+  "type": "calculator",
+  "category": "construction-calculators",
+  "componentName": "KalkulatorOgrodzeniaTool",
+  "logicModule": "kalkulator-ogrodzenia",
+  "inputSchema": "kalkulatorOgrodzeniaInputSchema",
+  "outputSchema": "kalkulatorOgrodzeniaOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "kalkulator-kostki-brukowej",
+    "kalkulator-betonu",
+    "bmi-calculator",
+    "age-calculator"
+  ],
+  "seoPriority": 0.94
+}
