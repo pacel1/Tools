@@ -1,0 +1,23 @@
+{
+  "id": "kalkulator-styropianu",
+  "type": "calculator",
+  "category": "construction-calculators",
+  "componentName": "KalkulatorStyropianuTool",
+  "logicModule": "kalkulator-styropianu",
+  "inputSchema": "kalkulatorStyropianuInputSchema",
+  "outputSchema": "kalkulatorStyropianuOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "kalkulator-hydroizolacji",
+    "kalkulator-dachu",
+    "bmi-calculator",
+    "kalkulator-betonu"
+  ],
+  "seoPriority": 0.99
+}

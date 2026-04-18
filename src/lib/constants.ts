@@ -6,6 +6,7 @@ export type Locale = (typeof locales)[number];
 export const toolCategories = [
   "converters",
   "calculators",
+  "construction-calculators",
   "generators",
   "text-tools",
   "developer-tools",

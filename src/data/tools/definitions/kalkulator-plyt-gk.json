@@ -1,0 +1,23 @@
+{
+  "id": "kalkulator-plyt-gk",
+  "type": "calculator",
+  "category": "construction-calculators",
+  "componentName": "KalkulatorPlytGkTool",
+  "logicModule": "kalkulator-plyt-gk",
+  "inputSchema": "kalkulatorPlytGkInputSchema",
+  "outputSchema": "kalkulatorPlytGkOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "kalkulator-gladzi",
+    "kalkulator-farby",
+    "bmi-calculator",
+    "kalkulator-betonu"
+  ],
+  "seoPriority": 0.9
+}

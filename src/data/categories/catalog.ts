@@ -41,6 +41,23 @@ export const categoryCatalog: Record<ToolCategory, CategoryMeta> = {
     },
     accent: "from-emerald-400/40 to-lime-400/10"
   },
+  "construction-calculators": {
+    label: {
+      en: "Construction Calculators",
+      pl: "Kalkulatory budowlane",
+      es: "Calculadoras de construccion",
+      de: "Bau-Rechner",
+      fr: "Calculateurs de construction"
+    },
+    description: {
+      en: "Material and quantity calculators for roofs, concrete, insulation, finishing and building projects.",
+      pl: "Kalkulatory materialow i ilosci do dachu, betonu, ocieplenia, wykonczenia i prac budowlanych.",
+      es: "Calculadoras de materiales y cantidades para tejados, hormigon, aislamiento, acabados y obras.",
+      de: "Material- und Mengenrechner fuer Dach, Beton, Daemmung, Ausbau und Bauprojekte.",
+      fr: "Calculateurs de materiaux et de quantites pour toiture, beton, isolation, finitions et travaux."
+    },
+    accent: "from-orange-400/40 to-amber-400/10"
+  },
   generators: {
     label: {
       en: "Generators",

@@ -1,0 +1,23 @@
+{
+  "id": "kalkulator-betonu",
+  "type": "calculator",
+  "category": "construction-calculators",
+  "componentName": "KalkulatorBetonuTool",
+  "logicModule": "kalkulator-betonu",
+  "inputSchema": "kalkulatorBetonuInputSchema",
+  "outputSchema": "kalkulatorBetonuOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "bmi-calculator",
+    "age-calculator",
+    "percentage-calculator",
+    "loan-payment-calculator"
+  ],
+  "seoPriority": 0.99
+}

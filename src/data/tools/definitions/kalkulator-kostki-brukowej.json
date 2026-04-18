@@ -1,0 +1,23 @@
+{
+  "id": "kalkulator-kostki-brukowej",
+  "type": "calculator",
+  "category": "construction-calculators",
+  "componentName": "KalkulatorKostkiBrukowejTool",
+  "logicModule": "kalkulator-kostki-brukowej",
+  "inputSchema": "kalkulatorKostkiBrukowejInputSchema",
+  "outputSchema": "kalkulatorKostkiBrukowejOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "kalkulator-betonu",
+    "bmi-calculator",
+    "age-calculator",
+    "kalkulator-dachu"
+  ],
+  "seoPriority": 0.93
+}

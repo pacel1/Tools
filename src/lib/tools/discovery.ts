@@ -160,6 +160,26 @@ const categoryHubContent: Partial<
   Record<Locale, Partial<Record<ToolCategory, CategoryHubContent>>>
 > = {
   en: {
+    "construction-calculators": {
+      eyebrow: "Construction hub",
+      title: "Construction calculators for material estimates and planning",
+      description:
+        "Estimate concrete, roofing, insulation, plaster, tiles and other building materials in one focused category.",
+      intro:
+        "This construction calculator hub groups the highest-intent tools for planning renovation and building work. Start with the material you need to estimate, then compare related tools for adjacent parts of the project such as insulation, waterproofing, drywall or finishing.",
+      featuredSearches: [
+        "concrete calculator",
+        "roof calculator",
+        "insulation calculator",
+        "tile calculator"
+      ],
+      featuredToolIds: [
+        "kalkulator-betonu",
+        "kalkulator-dachu",
+        "kalkulator-styropianu",
+        "kalkulator-plytek"
+      ]
+    },
     "html-tools": {
       eyebrow: "HTML hub",
       title: "HTML tools for formatting, extraction and markup cleanup",
@@ -202,6 +222,26 @@ const categoryHubContent: Partial<
     }
   },
   pl: {
+    "construction-calculators": {
+      eyebrow: "Hub budowlany",
+      title: "Kalkulatory budowlane do liczenia materialow i planowania prac",
+      description:
+        "Policz beton, dach, ocieplenie, tynki, plytki i inne materialy potrzebne do remontu oraz budowy.",
+      intro:
+        "Ten hub kalkulatorow budowlanych zbiera narzedzia o najwyzszej intencji zakupowej i wykonawczej. Mozesz szybko oszacowac ilosc materialu, a potem przejsc do powiazanych kalkulatorow dla kolejnych etapow prac, takich jak hydroizolacja, zabudowa GK czy wykonczenie.",
+      featuredSearches: [
+        "kalkulator betonu",
+        "kalkulator dachu",
+        "kalkulator styropianu",
+        "kalkulator plytek"
+      ],
+      featuredToolIds: [
+        "kalkulator-betonu",
+        "kalkulator-dachu",
+        "kalkulator-styropianu",
+        "kalkulator-plytek"
+      ]
+    },
     "html-tools": {
       eyebrow: "Hub HTML",
       title: "Narzędzia HTML do formatowania, ekstrakcji i konwersji",

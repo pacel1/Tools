@@ -1,0 +1,23 @@
+{
+  "id": "kalkulator-dachu",
+  "type": "calculator",
+  "category": "construction-calculators",
+  "componentName": "KalkulatorDachuTool",
+  "logicModule": "kalkulator-dachu",
+  "inputSchema": "kalkulatorDachuInputSchema",
+  "outputSchema": "kalkulatorDachuOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "bmi-calculator",
+    "kalkulator-betonu",
+    "age-calculator",
+    "percentage-calculator"
+  ],
+  "seoPriority": 0.98
+}

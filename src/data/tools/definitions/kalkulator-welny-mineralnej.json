@@ -1,0 +1,23 @@
+{
+  "id": "kalkulator-welny-mineralnej",
+  "type": "calculator",
+  "category": "construction-calculators",
+  "componentName": "KalkulatorWelnyMineralnejTool",
+  "logicModule": "kalkulator-welny-mineralnej",
+  "inputSchema": "kalkulatorWelnyMineralnejInputSchema",
+  "outputSchema": "kalkulatorWelnyMineralnejOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "kalkulator-styropianu",
+    "kalkulator-dachu",
+    "kalkulator-plyt-gk",
+    "kalkulator-ogrzewania-podlogowego"
+  ],
+  "seoPriority": 0.9
+}

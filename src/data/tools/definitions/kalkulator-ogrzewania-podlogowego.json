@@ -1,0 +1,23 @@
+{
+  "id": "kalkulator-ogrzewania-podlogowego",
+  "type": "calculator",
+  "category": "construction-calculators",
+  "componentName": "KalkulatorOgrzewaniaPodlogowegoTool",
+  "logicModule": "kalkulator-ogrzewania-podlogowego",
+  "inputSchema": "kalkulatorOgrzewaniaPodlogowegoInputSchema",
+  "outputSchema": "kalkulatorOgrzewaniaPodlogowegoOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "kalkulator-hydroizolacji",
+    "bmi-calculator",
+    "kalkulator-betonu",
+    "age-calculator"
+  ],
+  "seoPriority": 0.89
+}

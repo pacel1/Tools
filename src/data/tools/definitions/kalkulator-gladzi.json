@@ -1,0 +1,23 @@
+{
+  "id": "kalkulator-gladzi",
+  "type": "calculator",
+  "category": "construction-calculators",
+  "componentName": "KalkulatorGladziTool",
+  "logicModule": "kalkulator-gladzi",
+  "inputSchema": "kalkulatorGladziInputSchema",
+  "outputSchema": "kalkulatorGladziOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "kalkulator-farby",
+    "bmi-calculator",
+    "kalkulator-betonu",
+    "age-calculator"
+  ],
+  "seoPriority": 0.88
+}

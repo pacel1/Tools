@@ -37,6 +37,28 @@
     "contrast-checker",
     "unit-price-calculator"
   ],
+  "construction-calculators": [
+    "kalkulator-betonu",
+    "kalkulator-styropianu",
+    "kalkulator-dachu",
+    "kalkulator-farby",
+    "kalkulator-plytek",
+    "kalkulator-wylewki",
+    "kalkulator-fundamentow",
+    "kalkulator-ogrodzenia",
+    "kalkulator-kostki-brukowej",
+    "kalkulator-tynku",
+    "kalkulator-kleju-do-plytek",
+    "kalkulator-paneli-podlogowych",
+    "kalkulator-plyt-gk",
+    "kalkulator-welny-mineralnej",
+    "kalkulator-zbrojenia",
+    "kalkulator-fugi",
+    "kalkulator-ogrzewania-podlogowego",
+    "kalkulator-gladzi",
+    "kalkulator-rynien",
+    "kalkulator-hydroizolacji"
+  ],
   "generators": [
     "qr-code-generator",
     "gradient-generator",
