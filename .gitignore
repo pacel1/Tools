@@ -4,3 +4,7 @@ coverage
 .vercel
 .env
 dist
+.tmp-building-tools/
+coverage_report/
+tmp_*/
+tmp_*.log
