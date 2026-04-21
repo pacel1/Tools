@@ -25,6 +25,22 @@ describe("legal page content", () => {
     expect(metadata.alternates?.languages?.en).toBe(
       "http://localhost:3000/en/cookies"
     );
+    expect(metadata.alternates?.languages?.["x-default"]).toBe(
+      "http://localhost:3000/en/cookies"
+    );
+    expect(metadata.robots).toEqual({
+      index: false,
+      follow: true
+    });
+  });
+
+  it("keeps unique utility pages like about indexable", async () => {
+    const metadata = await buildLegalPageMetadata("en", "about");
+
+    expect(metadata.robots).toEqual({
+      index: true,
+      follow: true
+    });
   });
 
   it("returns one static param per locale", () => {

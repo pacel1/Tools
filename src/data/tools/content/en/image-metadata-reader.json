@@ -5,10 +5,10 @@
   "h1": "Image Metadata Reader",
   "title": "Image Metadata Reader",
   "shortDescription": "Read EXIF photo metadata online, including camera details, resolution, timestamps and GPS when available.",
-  "metaTitle": "Image Metadata Reader Online | Read EXIF Photo Details",
-  "metaDescription": "View EXIF and photo metadata online. Check camera model, date taken, resolution, GPS location, file size and other image details instantly.",
-  "intro": "Read photo metadata online in your browser. This EXIF reader shows camera details, capture time, resolution, GPS coordinates and other embedded image information without installing software.",
-  "overview": "Use this online image metadata reader to inspect EXIF data from photos quickly and privately. Upload an image and see camera model, lens, exposure settings, image size, date taken and location data when available. Processing stays client-side, making it useful for photographers, editors and anyone checking image details before sharing or archiving.",
+  "metaTitle": "Image Metadata Reader Online | Read EXIF Data Fast",
+  "metaDescription": "Read EXIF and image metadata online. Check camera model, date taken, resolution, GPS location, file size and other photo details instantly.",
+  "intro": "Read photo metadata online in your browser. This EXIF reader shows camera details, capture time, resolution, GPS coordinates and other embedded image information without installing software or uploading the file to a server.",
+  "overview": "Use this online image metadata reader to inspect EXIF data from photos quickly and privately. Upload an image and view camera model, lens, exposure settings, image size, date taken and location data when available. It is especially useful for photographers, editors, marketplace uploads and anyone checking image details before sharing, publishing or archiving.",
   "howItWorks": [
     "Upload a photo from your device.",
     "The tool scans embedded EXIF and metadata in the browser.",
@@ -27,13 +27,13 @@
       "title": "Camera info check",
       "input": "Upload a JPEG from your phone",
       "output": "Camera model, exposure, aperture, ISO and focal length are displayed.",
-      "description": "Helpful for reviewing shooting settings."
+      "description": "Helpful for reviewing shooting settings before editing, publishing or archiving."
     },
     {
       "title": "Location lookup",
       "input": "Open a photo with GPS tags",
       "output": "Latitude and longitude appear if embedded in the file.",
-      "description": "Useful for travel and event photos."
+      "description": "Useful for travel, event and field photos when location data matters."
     }
   ],
   "faq": [
@@ -166,12 +166,13 @@
   },
   "seo": {
     "title": "Image Metadata Reader Online | Read EXIF Photo Details",
-    "description": "View EXIF and photo metadata online. Check camera model, date taken, resolution, GPS location, file size and other image details instantly.",
+    "description": "Read EXIF and image metadata online. Check camera model, date taken, resolution, GPS location, file size and other photo details instantly.",
     "keywords": [
       "image metadata reader",
       "EXIF reader",
       "photo metadata",
       "read EXIF online",
+      "exif data viewer",
       "camera metadata",
       "GPS photo data",
       "image details"

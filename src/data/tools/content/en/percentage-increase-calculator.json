@@ -4,31 +4,44 @@
   "slug": "percentage-increase-calculator",
   "h1": "Percentage Increase Calculator",
   "title": "Percentage Increase Calculator",
-  "shortDescription": "Calculate a value after a percentage increase with fast results, simple inputs and practical examples.",
-  "overview": "Calculate a value after a percentage increase. Use this tool to get a clear result quickly from simple input on the same page. It is useful for everyday checks, comparisons and small tasks when you need a fast online answer.",
+  "shortDescription": "Calculate the final value after a percentage increase with instant results, formula guidance and practical examples.",
+  "metaTitle": "Percentage Increase Calculator | Find the New Value Fast",
+  "metaDescription": "Calculate a percentage increase online and get the new value fast. Useful for price rises, salary increases, growth tracking and quick percentage math.",
+  "intro": "Use this percentage increase calculator when you need the value after an increase. It is useful for price changes, salary raises, traffic growth, budgets and any scenario where a number goes up by a percentage.",
+  "overview": "This calculator matches the intent behind searches like percentage increase calculator, increase by 15 percent and percentage growth formula. It helps you find the final value after an increase without doing the math manually, which makes it handy for business, finance and everyday comparisons.",
   "howItWorks": [
-    "Enter the required value or text into the form.",
-    "The conversion, calculation or transformation runs instantly in the browser.",
-    "Review the result and continue with related tools if you need another step."
+    "Enter the original value and the percentage increase.",
+    "The calculator adds the percentage to the starting number.",
+    "Review the new value and repeat the calculation for other growth scenarios if needed."
+  ],
+  "useCases": [
+    "Calculate a salary raise or price increase.",
+    "Model growth in traffic, revenue or inventory.",
+    "Check markups, forecasts or scenario planning.",
+    "Verify spreadsheet calculations before sharing them."
   ],
   "examples": [
     {
-      "title": "Common use case",
+      "title": "Price increased by 15%",
       "input": "120 increased by 15%",
       "output": "138",
-      "description": "Shows a common use case with a clear input and result."
+      "description": "Useful for quoting new prices, renewals or percentage-based adjustments."
     },
     {
-      "title": "Another quick example",
-      "input": "120 increased by 15%",
-      "output": "138",
-      "description": "Useful for quick checks, comparisons or repeat tasks."
+      "title": "Traffic growth of 8%",
+      "input": "2500 increased by 8%",
+      "output": "2700",
+      "description": "Helpful for dashboards, forecasts and performance reporting."
     }
   ],
   "faq": [
     {
-      "question": "How accurate is this tool?",
-      "answer": "The result is based on the input you provide and the calculation or transformation shown on the page."
+      "question": "What does a percentage increase calculator show?",
+      "answer": "It shows the final value after adding a percentage to the original number."
+    },
+    {
+      "question": "Can I use it for salary, price or traffic growth?",
+      "answer": "Yes. It works well for raises, markups, growth reporting, forecasting and similar percentage-based changes."
     },
     {
       "question": "Can I use this tool on mobile?",
@@ -36,10 +49,14 @@
     }
   ],
   "seo": {
-    "title": "Percentage Increase Calculator",
-    "description": "Calculate a value after a percentage increase. Free online percentage increase calculator with instant results.",
+    "title": "Percentage Increase Calculator | Find the New Value Fast",
+    "description": "Calculate a percentage increase online and get the new value fast. Useful for price rises, salary increases, growth tracking and quick percentage math.",
     "keywords": [
-      "percentage increase calculator"
+      "percentage increase calculator",
+      "calculate percentage increase",
+      "percentage growth calculator",
+      "increase by percentage",
+      "price increase calculator"
     ]
   }
 }

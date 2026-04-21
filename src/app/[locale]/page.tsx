@@ -2,10 +2,20 @@ import { getTranslations } from "next-intl/server";
 import { CategoryGrid } from "@/components/marketing/category-grid";
 import { ToolCard } from "@/components/marketing/tool-card";
 import { locales, type Locale } from "@/lib/constants";
+import { buildHomePageMetadata } from "@/lib/pages/home-page-metadata";
 import { getToolsForLocale } from "@/lib/tools/registry";
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
+}
+
+export async function generateMetadata({
+  params
+}: {
+  params: Promise<{ locale: Locale }>;
+}) {
+  const { locale } = await params;
+  return buildHomePageMetadata(locale);
 }
 
 export default async function LocaleHomePage({

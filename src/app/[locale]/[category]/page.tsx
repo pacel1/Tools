@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { ToolCard } from "@/components/marketing/tool-card";
 import { categoryCatalog } from "@/data/categories/catalog";
 import { locales, toolCategories, type Locale, type ToolCategory } from "@/lib/constants";
-import { getSiteUrl } from "@/lib/env";
+import { getSiteName, getSiteUrl } from "@/lib/env";
 import { buildCategoryAlternates } from "@/lib/seo/tool-metadata";
 import { getCategoryHubContent } from "@/lib/tools/discovery";
 import { getToolsByCategory } from "@/lib/tools/registry";
@@ -55,12 +55,24 @@ export async function generateMetadata({
     return {};
   }
 
+  const title = hub?.title ?? meta.label[locale];
+  const description = hub?.description ?? meta.description[locale];
+  const canonical = `${getSiteUrl()}/${locale}/${category}`;
+
   return {
-    title: hub?.title ?? meta.label[locale],
-    description: hub?.description ?? meta.description[locale],
+    title,
+    description,
     alternates: {
-      canonical: `${getSiteUrl()}/${locale}/${category}`,
+      canonical,
       ...buildCategoryAlternates(category)
+    },
+    openGraph: {
+      title,
+      description,
+      url: canonical,
+      siteName: getSiteName(),
+      locale,
+      type: "website"
     }
   };
 }

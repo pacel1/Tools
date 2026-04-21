@@ -4,31 +4,44 @@
   "slug": "convertidor-km-a-millas",
   "h1": "Convertidor de kilómetros a millas",
   "title": "Convertidor de kilómetros a millas",
-  "shortDescription": "Convierte kilómetros a millas al instante con resultados rápidos, entradas sencillas y ejemplos prácticos.",
-  "overview": "Convierte kilómetros a millas al instante. Esta página ofrece una respuesta rápida con una herramienta útil y un flujo de resultados sencillo. Está pensada para quienes buscan una respuesta online gratuita, resultados rápidos desde el navegador y contenido práctico optimizado para búsquedas de cola larga.",
+  "shortDescription": "Convierte kilómetros a millas al instante con fórmula, ejemplos útiles y resultados rápidos en el navegador.",
+  "metaTitle": "Convertidor de kilómetros a millas | Km a millas online",
+  "metaDescription": "Convierte kilómetros a millas online con fórmula, ejemplos y resultados inmediatos. Útil para viajes, running, mapas y distancias internacionales.",
+  "intro": "Si necesitas pasar de kilómetros a millas, esta herramienta te da una respuesta inmediata. Usa la equivalencia estándar 1 km = 0,621371 millas y está pensada para consultas como km a millas o convertir kilómetros a millas.",
+  "overview": "Este convertidor de kilómetros a millas es útil para viajes, rutas de running, mapas, carretera y cualquier contexto donde una distancia aparece en kilómetros pero necesitas verla en millas. Evita cálculos manuales y obtén una conversión clara en segundos.",
   "howItWorks": [
-    "Introduce el valor necesario en el formulario.",
-    "La conversión se realiza al instante en el navegador.",
-    "Revisa el resultado y sigue con herramientas relacionadas si necesitas otro paso."
+    "Introduce la distancia en kilómetros.",
+    "La herramienta multiplica el valor por 0,621371 para convertirlo a millas.",
+    "Revisa el resultado y repite el cálculo si necesitas comparar varias distancias."
+  ],
+  "useCases": [
+    "Convertir distancias para viajes por carretera.",
+    "Interpretar rutas de running o ciclismo.",
+    "Comparar mapas y señales internacionales.",
+    "Pasar medidas de kilómetros a millas en hojas de cálculo o informes."
   ],
   "examples": [
     {
-      "title": "Ejemplo 1",
+      "title": "5 km a millas",
       "input": "5 kilómetros",
       "output": "3,1069 millas",
-      "description": "Un ejemplo realista de conversión de km a millas para una búsqueda cotidiana."
+      "description": "Útil para carreras cortas, caminatas y trayectos urbanos."
     },
     {
-      "title": "Ejemplo 2",
-      "input": "5 kilómetros",
-      "output": "3,1069 millas",
-      "description": "Otro caso práctico para tráfico orgánico de cola larga."
+      "title": "42,195 km a millas",
+      "input": "42,195 kilómetros",
+      "output": "26,2188 millas",
+      "description": "Práctico para entender la distancia de un maratón en sistema imperial."
     }
   ],
   "faq": [
     {
-      "question": "¿Qué precisión tiene esta herramienta?",
-      "answer": "El resultado se calcula directamente a partir de la fórmula o de la lógica del navegador utilizada por esta herramienta."
+      "question": "¿Qué fórmula usa este convertidor de kilómetros a millas?",
+      "answer": "Usa la equivalencia estándar 1 kilómetro = 0,621371 millas."
+    },
+    {
+      "question": "¿Sirve para viajes y running?",
+      "answer": "Sí. Es útil para trayectos, rutas deportivas, mapas, turismo y distancias internacionales."
     },
     {
       "question": "¿Puedo usar esta herramienta en el móvil?",
@@ -36,12 +49,14 @@
     }
   ],
   "seo": {
-    "title": "Convertidor de kilómetros a millas",
-    "description": "Convierte kilómetros a millas al instante. Convertidor online gratuito de km a millas con resultados inmediatos.",
+    "title": "Convertidor de kilómetros a millas | Km a millas online",
+    "description": "Convierte kilómetros a millas online con fórmula, ejemplos y resultados inmediatos. Útil para viajes, running, mapas y distancias internacionales.",
     "keywords": [
       "convertidor km a millas",
       "convertir km a millas",
-      "herramienta de conversión"
+      "kilómetros a millas",
+      "km a millas",
+      "cuántas millas son"
     ]
   }
 }

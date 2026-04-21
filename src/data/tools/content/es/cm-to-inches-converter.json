@@ -4,31 +4,44 @@
   "slug": "convertidor-de-cm-a-pulgadas",
   "h1": "Convertidor de cm a pulgadas",
   "title": "Convertidor de cm a pulgadas",
-  "shortDescription": "Convierte centímetros a pulgadas al instante con resultados rápidos, entradas simples y ejemplos prácticos.",
-  "overview": "Convierte centímetros a pulgadas al instante. Esta página ofrece una respuesta rápida con una herramienta útil y un flujo de resultados sencillo. Está pensada para usuarios que buscan una solución gratis en línea, resultados inmediatos en el navegador y contenido práctico de cola larga.",
+  "shortDescription": "Convierte centímetros a pulgadas al instante con fórmula, ejemplos prácticos y resultados rápidos en el navegador.",
+  "metaTitle": "Convertidor de cm a pulgadas | Centímetros a pulgadas online",
+  "metaDescription": "Convierte centímetros a pulgadas online con fórmula, ejemplos y resultados inmediatos. Útil para medidas de ropa, pantallas, bricolaje y productos.",
+  "intro": "Si necesitas pasar de cm a pulgadas, esta herramienta te da la respuesta en segundos. Usa el factor 1 cm = 0,3937007874 pulgadas y está pensada para consultas como convertir cm a pulgadas o saber cuántas pulgadas son 10 cm.",
+  "overview": "Este convertidor de centímetros a pulgadas responde a búsquedas de alta intención como cm a pulgadas, convertir centímetros a pulgadas y medidas en pulgadas. Es útil para ropa, pantallas, muebles, bricolaje y fichas de producto cuando una medida aparece en sistema métrico y necesitas verla en pulgadas.",
   "howItWorks": [
-    "Introduce el valor o texto requerido en el formulario.",
-    "La conversión, el cálculo o la transformación se ejecuta al instante en el navegador.",
-    "Revisa el resultado y continúa con herramientas relacionadas si necesitas otro paso."
+    "Introduce el valor en centímetros en el formulario.",
+    "La herramienta multiplica el número por 0,3937007874 para convertirlo a pulgadas.",
+    "Revisa el resultado y usa herramientas relacionadas si necesitas convertir en el sentido contrario."
+  ],
+  "useCases": [
+    "Comparar medidas de ropa o accesorios con tablas internacionales.",
+    "Entender tamaños de pantalla o monitor en pulgadas.",
+    "Convertir medidas para bricolaje, costura o manualidades.",
+    "Leer fichas de producto de tiendas internacionales."
   ],
   "examples": [
     {
-      "title": "Ejemplo 1",
+      "title": "10 cm a pulgadas",
       "input": "10 centímetros",
       "output": "3,937 pulgadas",
-      "description": "Un ejemplo realista del convertidor de cm a pulgadas para una búsqueda cotidiana."
+      "description": "Útil para medidas pequeñas de accesorios, embalajes o piezas."
     },
     {
-      "title": "Ejemplo 2",
-      "input": "10 centímetros",
-      "output": "3,937 pulgadas",
-      "description": "Otro caso práctico pensado para tráfico orgánico de cola larga."
+      "title": "120 cm a pulgadas",
+      "input": "120 centímetros",
+      "output": "47,244 pulgadas",
+      "description": "Práctico para pantallas, muebles o dimensiones de espacios."
     }
   ],
   "faq": [
     {
-      "question": "¿Qué precisión tiene esta herramienta?",
-      "answer": "El resultado se calcula directamente a partir de la fórmula o de la lógica en el navegador que usa esta herramienta."
+      "question": "¿Qué fórmula usa este convertidor de cm a pulgadas?",
+      "answer": "Usa el factor fijo 1 cm = 0,3937007874 pulgadas, que es la equivalencia estándar entre ambas unidades."
+    },
+    {
+      "question": "¿Sirve para medidas de ropa o pantallas?",
+      "answer": "Sí. Es útil para interpretar tallas, pantallas, productos y cualquier ficha técnica que mezcle centímetros con pulgadas."
     },
     {
       "question": "¿Puedo usar esta herramienta en el móvil?",
@@ -36,12 +49,14 @@
     }
   ],
   "seo": {
-    "title": "Convertidor de cm a pulgadas",
-    "description": "Convierte centímetros a pulgadas al instante. Convertidor gratis de cm a pulgadas online con resultados inmediatos.",
+    "title": "Convertidor de cm a pulgadas | Centímetros a pulgadas online",
+    "description": "Convierte centímetros a pulgadas online con fórmula, ejemplos y resultados inmediatos. Útil para medidas de ropa, pantallas, bricolaje y productos.",
     "keywords": [
       "convertidor de cm a pulgadas",
       "cm a pulgadas",
-      "herramienta de conversión"
+      "convertir centímetros a pulgadas",
+      "centímetros a pulgadas",
+      "cuántas pulgadas son"
     ]
   }
 }

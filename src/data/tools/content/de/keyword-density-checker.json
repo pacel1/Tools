@@ -2,15 +2,15 @@
   "toolId": "keyword-density-checker",
   "locale": "de",
   "slug": "keyword-dichte-pruefer",
-  "h1": "Keyworddichte Tool",
-  "title": "Keyworddichte Tool",
+  "h1": "Keyword-Dichte pruefen",
+  "title": "Keyword-Dichte pruefen",
   "shortDescription": "Keyworddichte ermitteln, Texte pruefen und die Haeufigkeit von Suchbegriffen schnell im Browser sehen.",
-  "metaTitle": "Keyworddichte Tool | Keyworddichte ermitteln",
-  "metaDescription": "Keyworddichte ermitteln und Texte online pruefen. Das Keyworddichte Tool zeigt dir schnell, wie oft ein Begriff in einem Text vorkommt.",
-  "intro": "Dieses Keyworddichte Tool ist auf Suchanfragen wie keyworddichte tool und keyworddichte ermitteln ausgerichtet. Du gibst Text und Suchbegriff ein und bekommst direkt die Haeufigkeit, den Anteil und einen schnellen Eindruck davon, wie stark das Keyword im Text vertreten ist.",
-  "overview": "Der Pruefer eignet sich fuer SEO-Texte, Landing Pages, Blogartikel und Content-Checks. Er ist leichtgewichtig, arbeitet sofort im Browser und hilft dabei, Ueberoptimierung oder zu schwache Keyword-Nutzung schneller zu erkennen.",
+  "metaTitle": "Keyword-Dichte pruefen | Keyworddichte ermitteln",
+  "metaDescription": "Keyword-Dichte online pruefen und die Haeufigkeit eines Begriffs im Text analysieren. Praktisch fuer SEO-Texte, Landing Pages und Content-Checks.",
+  "intro": "Dieses Tool passt zu Suchanfragen wie Keyword-Dichte pruefen, Keyworddichte ermitteln und Keyworddichte Tool. Du gibst Text und Zielbegriff ein und bekommst sofort Haeufigkeit, Anteil und einen schnellen Eindruck, ob ein Keyword zu oft oder zu selten vorkommt.",
+  "overview": "Der Pruefer eignet sich fuer SEO-Texte, Landing Pages, Blogartikel, Produktseiten und redaktionelle Content-Checks. Er arbeitet sofort im Browser und hilft dabei, Ueberoptimierung oder zu schwache Keyword-Nutzung schneller zu erkennen, bevor Inhalte live gehen.",
   "howItWorks": ["Text und Ziel-Keyword eingeben.", "Das Tool zaehlt die Vorkommen und berechnet den prozentualen Anteil.", "Ergebnis fuer SEO-Checks, Ueberarbeitung oder Content-QA verwenden."],
   "examples": [{"title": "SEO-Absatz pruefen", "input": "Ein Textblock plus Zielbegriff", "output": "Keyword-Anteil in Prozent", "description": "Nuetzlich fuer schnelle Onpage-Pruefungen und Redaktionsarbeit."}, {"title": "Landing Page kontrollieren", "input": "Produktseite mit Fokus-Keyword", "output": "Vorkommen und Dichte", "description": "Hilfreich beim Nachschaerfen von Suchbegriffen ohne Ratespiel."}],
-  "faq": [{"question": "Kann ich mit dem Tool die Keyworddichte ermitteln?", "answer": "Ja. Genau dafuer ist das Tool gedacht: Es zeigt die Haeufigkeit und den Anteil eines Begriffs im Text."}, {"question": "Ist das Tool fuer schnelle SEO-Pruefungen gedacht?", "answer": "Ja. Es eignet sich gut fuer redaktionelle Checks, Landing Pages und einfache Onpage-Analysen."}],
-  "seo": {"title": "Keyworddichte Tool | Keyworddichte ermitteln", "description": "Keyworddichte ermitteln und Texte online pruefen. Das Tool zeigt die Haeufigkeit eines Begriffs direkt im Browser.", "keywords": ["keyworddichte tool", "keyworddichte ermitteln", "keyword dichte tool", "keyworddichte pruefer", "seo text pruefen"]}
+  "faq": [{"question": "Kann ich mit dem Tool die Keyworddichte ermitteln?", "answer": "Ja. Genau dafuer ist das Tool gedacht: Es zeigt die Haeufigkeit und den Anteil eines Begriffs im Text."}, {"question": "Ist das Tool fuer schnelle SEO-Pruefungen gedacht?", "answer": "Ja. Es eignet sich gut fuer redaktionelle Checks, Landing Pages und einfache Onpage-Analysen."}, {"question": "Ist eine hohe Keyworddichte automatisch besser?", "answer": "Nein. Zu hohe Dichte kann unnatuerlich wirken. Das Tool hilft dir dabei, einen besseren Mittelweg fuer Lesbarkeit und Suchintention zu finden."}],
+  "seo": {"title": "Keyword-Dichte pruefen | Keyworddichte ermitteln", "description": "Keyword-Dichte online pruefen und die Haeufigkeit eines Begriffs im Text analysieren. Praktisch fuer SEO-Texte, Landing Pages und Content-Checks.", "keywords": ["keyworddichte tool", "keyworddichte ermitteln", "keyword dichte pruefen", "keyworddichte pruefer", "seo text pruefen"]}
 }

@@ -5,14 +5,50 @@
   "h1": "HTML Link Extractor",
   "title": "HTML Link Extractor",
   "shortDescription": "Extract href values, URLs, anchor text and rel data from raw HTML in your browser.",
-  "metaTitle": "HTML Link Extractor | Href extractor for HTML",
-  "metaDescription": "Extract URLs from HTML, pull href values and review anchor text online. Helpful for searches like href extractor, extract links from HTML and extract URLs from HTML file.",
-  "intro": "Use this HTML link extractor when you need an href extractor for audits, migrations or quick markup reviews. It is built for common search intent around extract URLs from HTML, extract links from HTML file and checking anchor text without running a separate crawler.",
-  "overview": "Paste HTML and get a clean list of links with href, visible text, rel values and target attributes. The tool is useful for SEO reviews, content migrations, QA passes on templates and fast inspection of raw HTML copied from a page or file.",
-  "howItWorks": ["Paste the HTML snippet or source you want to inspect.", "The extractor scans the markup for links and related attributes.", "Review the output list and copy the link data you need for audits or documentation."],
-  "useCases": ["Extract href values from raw HTML quickly.", "Review anchor text for SEO and content audits.", "Check rel attributes like nofollow, sponsored and ugc.", "Turn copied markup into a usable link inventory."],
-  "examples": [{"title": "Href extractor", "input": "<a href=\"https://example.com\" rel=\"nofollow\">Visit site</a>", "output": "href: https://example.com | text: Visit site | rel: nofollow", "description": "Useful when you need a fast href extractor for one or many links."}, {"title": "Extract URLs from HTML file", "input": "<p><a href=\"/docs\">Docs</a><a href=\"/contact\">Contact</a></p>", "output": "2 links found", "description": "Helpful for pulling links out of copied template code or page source."}],
-  "faq": [{"question": "Can this tool extract URLs from HTML files and snippets?", "answer": "Yes. Paste the HTML source and the tool will list the URLs, anchor text and related attributes it finds."}, {"question": "Is this the same as an href extractor?", "answer": "Yes. It is designed for the same job and also shows extra link context such as text, rel and target values."}],
+  "metaTitle": "HTML Link Extractor | Extract href and URLs from HTML",
+  "metaDescription": "Extract href values, URLs and anchor text from HTML online. Useful for href extractor, extract links from HTML and extract URLs from HTML file searches.",
+  "intro": "Use this HTML link extractor when you need to pull href values, anchor text and rel attributes out of raw markup. It fits search intent around href extractor, extract links from HTML file and extract URLs from HTML without opening a crawler or parser locally.",
+  "overview": "Paste HTML and get a structured list of links with href, visible text, rel values and target attributes. The tool is useful for SEO audits, internal-link reviews, migrations, QA checks and quick inspection of copied source code from templates, CMS output or live pages.",
+  "howItWorks": [
+    "Paste the HTML snippet, full source or template fragment you want to inspect.",
+    "The extractor scans the markup for anchor tags and collects href, text, rel and target values.",
+    "Review the output list and copy the extracted link inventory for audits, QA or documentation."
+  ],
+  "useCases": [
+    "Extract href values from raw HTML quickly.",
+    "Review anchor text for SEO and content audits.",
+    "Check rel attributes such as nofollow, sponsored and ugc.",
+    "Pull links out of template code before a migration.",
+    "Turn copied markup into a clean link inventory."
+  ],
+  "examples": [
+    {
+      "title": "Href extractor for a single link",
+      "input": "<a href=\"https://example.com\" rel=\"nofollow\">Visit site</a>",
+      "output": "href: https://example.com | text: Visit site | rel: nofollow",
+      "description": "Helpful when you want a fast href extractor for one or many links."
+    },
+    {
+      "title": "Extract links from copied source",
+      "input": "<p><a href=\"/docs\">Docs</a><a href=\"/contact\">Contact</a></p>",
+      "output": "2 links found",
+      "description": "Useful for extracting internal links from copied page source or template HTML."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Can this tool extract URLs from HTML files and snippets?",
+      "answer": "Yes. Paste the HTML source and the tool will list the URLs, anchor text and related attributes it finds."
+    },
+    {
+      "question": "Is this the same as an href extractor?",
+      "answer": "Yes. It performs the same job and also shows extra link context such as anchor text, rel and target values."
+    },
+    {
+      "question": "Can I use it for internal-link audits?",
+      "answer": "Yes. It is useful for quick internal-link reviews, migration QA and copied-markup audits where you need a clean list of links fast."
+    }
+  ],
   "uiLabels": {"copy": "Copy", "copied": "Copied", "input": "HTML input", "output": "Extracted links", "placeholder": "Paste HTML here to extract links", "indent": "Indent", "removeComments": "Remove comments", "preview": "Preview", "source": "Source", "sanitizedHtml": "Sanitized HTML", "plainText": "Plain text", "summary": "Summary", "total": "Total", "links": "Links", "images": "Images", "errors": "Errors", "warnings": "Warnings", "valid": "Valid", "invalid": "Invalid", "href": "href", "text": "Text", "rel": "rel", "target": "Target", "alt": "Alt", "width": "Width", "height": "Height", "empty": "Empty", "outputReady": "Output ready", "cleanedHtml": "Cleaned HTML", "formattedHtml": "Formatted HTML", "minifiedHtml": "Minified HTML", "markdown": "Markdown", "extractedImages": "Extracted images", "extractedLinks": "Extracted links", "validationSummary": "Validation summary", "prettyHtml": "Pretty HTML", "encodedText": "Encoded text"},
-  "seo": {"title": "HTML Link Extractor | Href extractor for HTML", "description": "Extract URLs from HTML, pull href values and review anchor text online. Helpful for href extractor and extract links from HTML searches.", "keywords": ["html link extractor", "href extractor", "extract urls from html", "extract links from html file", "anchor text extractor"]}
+  "seo": {"title": "HTML Link Extractor | Extract href and URLs from HTML", "description": "Extract href values, URLs and anchor text from HTML online. Useful for href extractor, extract links from HTML and extract URLs from HTML file searches.", "keywords": ["html link extractor", "href extractor", "extract urls from html", "extract links from html file", "extract href from html", "anchor text extractor"]}
 }

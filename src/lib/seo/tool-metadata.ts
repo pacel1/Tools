@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import type { Locale } from "@/lib/constants";
-import { locales } from "@/lib/constants";
 import { getSiteName, getSiteUrl } from "@/lib/env";
+import { buildLanguageAlternates } from "@/lib/seo/alternates";
 import { buildToolHref } from "@/lib/tools/internal-linking";
 import { getContentById, getDefinitionById } from "@/lib/tools/registry";
 
@@ -12,24 +12,15 @@ export function buildAlternates(toolId: string) {
     return {};
   }
 
-  const languages = Object.fromEntries(
-    definition.supportedLocales.flatMap((locale) => {
-      const content = getContentById(locale, toolId);
+  return buildLanguageAlternates((locale) => {
+    const content = getContentById(locale, toolId);
 
-      if (!content) {
-        return [];
-      }
+    if (!content) {
+      return null;
+    }
 
-      return [
-        [
-          locale,
-          `${getSiteUrl()}${buildToolHref(locale, definition.category, content.slug)}`
-        ]
-      ];
-    })
-  );
-
-  return { languages };
+    return buildToolHref(locale, definition.category, content.slug);
+  });
 }
 
 export function buildToolMetadata(toolId: string, locale: Locale): Metadata {
@@ -66,9 +57,5 @@ export function buildToolMetadata(toolId: string, locale: Locale): Metadata {
 }
 
 export function buildCategoryAlternates(category: string) {
-  return {
-    languages: Object.fromEntries(
-      locales.map((locale) => [locale, `${getSiteUrl()}/${locale}/${category}`])
-    )
-  };
+  return buildLanguageAlternates((locale) => `/${locale}/${category}`);
 }
