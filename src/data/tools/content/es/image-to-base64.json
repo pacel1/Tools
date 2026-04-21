@@ -5,9 +5,9 @@
   "h1": "Imagen a Base64",
   "title": "Convertidor de imagen a Base64",
   "shortDescription": "Convierte archivos de imagen a Base64 y data URLs al instante en tu navegador.",
-  "metaTitle": "Convertidor de imagen a Base64 | Herramienta online gratuita",
-  "metaDescription": "Convierte imágenes a Base64 o data URLs al instante en tu navegador. Rápido, privado y fácil de copiar para código y uso web.",
-  "intro": "Convierte una imagen a Base64 o a una data URL directamente en el navegador. Sin subir archivos a un servidor, sin esperas y sin configuración adicional.",
+  "metaTitle": "Imagen a Base64 | Convertidor online de imagen a texto",
+  "metaDescription": "Convierte imágenes a Base64 o data URL al instante en tu navegador. Útil para HTML, CSS, JSON, email y pruebas rápidas de desarrollo.",
+  "intro": "Convierte una imagen a Base64 o a una data URL directamente en el navegador. Sin subir archivos a un servidor, sin esperas y sin configuración adicional, ideal para consultas como imagen a Base64 o convertir imagen a Base64.",
   "overview": "Esta herramienta codifica los datos de una imagen en una cadena Base64 para copiar y pegar rápidamente en HTML, CSS, JSON y otros flujos de trabajo de desarrollo. Es útil para incrustar imágenes pequeñas, compartir recursos o probar la entrega de imágenes sin usar un archivo aparte.",
   "howItWorks": [
     "Pega o carga la data URL de la imagen.",
@@ -33,7 +33,7 @@
       "title": "Recurso para correo",
       "input": "data:image/jpeg;base64,...",
       "output": "/9j/4AAQSkZJRgABAQ...",
-      "description": "Guarda una imagen compacta como texto para plantillas de email."
+      "description": "Guarda una imagen compacta como texto para plantillas de email o recursos incrustados."
     }
   ],
   "faq": [
@@ -147,14 +147,15 @@
     "imagePreview": "Vista previa de la imagen"
   },
   "seo": {
-    "title": "Convertidor de imagen a Base64",
-    "description": "Convierte imágenes a Base64 o data URLs al instante en tu navegador. Privado, rápido y fácil de copiar para desarrollo y uso web.",
+    "title": "Imagen a Base64 | Convertidor online de imagen a texto",
+    "description": "Convierte imágenes a Base64 o data URL al instante en tu navegador. Útil para HTML, CSS, JSON, email y pruebas rápidas de desarrollo.",
     "keywords": [
       "imagen a base64",
       "convertidor de imagen a base64",
       "data url",
       "convertir imagen a base64",
-      "codificador base64"
+      "codificador base64",
+      "image to base64"
     ]
   }
 }

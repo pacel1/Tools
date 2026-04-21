@@ -9,6 +9,13 @@ export const legalPageKeys = [
   "contact"
 ] as const;
 
+export const noindexLegalPageKeys = [
+  "privacy",
+  "terms",
+  "cookies",
+  "disclaimer"
+] as const;
+
 export type LegalPageKey = (typeof legalPageKeys)[number];
 
 export type LegalPageSection = {

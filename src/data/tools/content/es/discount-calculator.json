@@ -4,31 +4,44 @@
   "slug": "calculadora-de-descuentos",
   "h1": "Calculadora de descuentos",
   "title": "Calculadora de descuentos",
-  "shortDescription": "Calcula el precio final tras un porcentaje de descuento con resultados rápidos, entradas sencillas y ejemplos prácticos.",
-  "overview": "Calcula el precio de venta después de aplicar un descuento porcentual. Esta página ofrece una respuesta rápida con una herramienta útil y un flujo de resultados sencillo. Está pensada para quienes buscan una respuesta gratis en línea, resultados instantáneos en el navegador y contenido práctico para búsquedas de cola larga.",
+  "shortDescription": "Calcula el precio final tras un descuento porcentual con resultados instantáneos, fórmula clara y ejemplos reales.",
+  "metaTitle": "Calculadora de descuentos | Precio final con porcentaje",
+  "metaDescription": "Calcula descuentos online y obtén el precio final al instante. Útil para rebajas, promociones, márgenes comerciales y compras diarias.",
+  "intro": "Usa esta calculadora de descuentos para saber cuánto pagarás después de aplicar un porcentaje de rebaja. Es práctica para ofertas, promociones, liquidaciones, precios tachados y cualquier cálculo rápido de ahorro.",
+  "overview": "La calculadora responde a búsquedas como calculadora de descuentos, precio con descuento y cuánto cuesta con 20 por ciento menos. Solo introduces el precio original y el porcentaje de descuento para obtener el importe final y el ahorro sin hacer la cuenta manualmente.",
   "howItWorks": [
-    "Introduce el valor requerido en el formulario.",
-    "El cálculo se realiza al instante en el navegador.",
-    "Revisa el resultado y sigue con herramientas relacionadas si necesitas otro paso."
+    "Introduce el precio original y el porcentaje de descuento.",
+    "La herramienta resta el descuento al valor inicial y calcula el ahorro.",
+    "Revisa el precio final y repite la operación si quieres comparar promociones."
+  ],
+  "useCases": [
+    "Calcular ofertas y rebajas en tiendas online.",
+    "Comparar promociones antes de comprar.",
+    "Revisar márgenes comerciales y campañas.",
+    "Comprobar el ahorro real en descuentos porcentuales."
   ],
   "examples": [
     {
-      "title": "Ejemplo 1",
+      "title": "20% de descuento",
       "input": "100 con 20% de descuento",
       "output": "80",
-      "description": "Un ejemplo realista de calculadora de descuentos para una búsqueda habitual."
+      "description": "Muestra el precio final y el ahorro en una promoción sencilla."
     },
     {
-      "title": "Ejemplo 2",
-      "input": "100 con 20% de descuento",
-      "output": "80",
-      "description": "Otro caso práctico para atraer tráfico orgánico de cola larga."
+      "title": "35% de descuento",
+      "input": "249 con 35% de descuento",
+      "output": "161,85",
+      "description": "Útil para comparar rebajas más agresivas y validar precios de campaña."
     }
   ],
   "faq": [
     {
-      "question": "¿Qué precisión tiene esta herramienta?",
-      "answer": "El resultado se calcula directamente a partir de la fórmula o de la lógica que usa esta herramienta en el navegador."
+      "question": "¿Qué muestra esta calculadora de descuentos?",
+      "answer": "Muestra el precio final después del descuento y cuánto dinero se ahorra respecto al precio original."
+    },
+    {
+      "question": "¿Sirve para rebajas y promociones comerciales?",
+      "answer": "Sí. Es útil para campañas, precios tachados, comparativas de ofertas y decisiones rápidas de compra."
     },
     {
       "question": "¿Puedo usar esta herramienta en el móvil?",
@@ -36,11 +49,14 @@
     }
   ],
   "seo": {
-    "title": "Calculadora de descuentos",
-    "description": "Calcula el precio final tras un porcentaje de descuento. Calculadora de descuentos online gratis con resultados instantáneos.",
+    "title": "Calculadora de descuentos | Precio final con porcentaje",
+    "description": "Calcula descuentos online y obtén el precio final al instante. Útil para rebajas, promociones, márgenes comerciales y compras diarias.",
     "keywords": [
       "calculadora de descuentos",
-      "herramientas de calculo"
+      "calcular descuento",
+      "precio con descuento",
+      "calculadora de rebajas",
+      "porcentaje de descuento"
     ]
   }
 }

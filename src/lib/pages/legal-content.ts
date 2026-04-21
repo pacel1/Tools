@@ -5,8 +5,10 @@ import type { Metadata } from "next";
 import { z } from "zod";
 import { locales, type Locale } from "@/lib/constants";
 import { getSiteName, getSiteUrl } from "@/lib/env";
+import { buildLanguageAlternates } from "@/lib/seo/alternates";
 import {
   legalPageKeys,
+  noindexLegalPageKeys,
   type LegalPageContent,
   type LegalPageKey
 } from "@/lib/pages/types";
@@ -29,6 +31,7 @@ const legalPageContentSchema = z.object({
 });
 
 const contentRoot = path.join(process.cwd(), "content", "pages");
+const noindexLegalPageKeySet = new Set<LegalPageKey>(noindexLegalPageKeys);
 
 export function getAllLegalPageParams() {
   return locales.map((locale) => ({ locale }));
@@ -52,18 +55,27 @@ export async function buildLegalPageMetadata(
 ): Promise<Metadata> {
   const page = await getLegalPageContent(locale, pageKey);
   const canonical = `${getSiteUrl()}${buildLegalPageHref(locale, pageKey)}`;
+  const shouldNoindex = noindexLegalPageKeySet.has(pageKey);
 
   return {
-    title: page.metaTitle,
+    title: {
+      absolute: page.metaTitle
+    },
     description: page.metaDescription,
     keywords: page.keywords,
+    robots: shouldNoindex
+      ? {
+          index: false,
+          follow: true
+        }
+      : {
+          index: true,
+          follow: true
+        },
     alternates: {
       canonical,
-      languages: Object.fromEntries(
-        locales.map((entryLocale) => [
-          entryLocale,
-          `${getSiteUrl()}${buildLegalPageHref(entryLocale, pageKey)}`
-        ])
+      ...buildLanguageAlternates((entryLocale) =>
+        buildLegalPageHref(entryLocale, pageKey)
       )
     },
     openGraph: {
