@@ -10,6 +10,7 @@ import { SiteShell } from "@/components/layout/site-shell";
 import { locales, siteConfig, type Locale } from "@/lib/constants";
 import { getSiteUrl } from "@/lib/env";
 import { normalizeMetaDescription } from "@/lib/seo/meta-description";
+import { buildSocialMetadata } from "@/lib/seo/social";
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -40,7 +41,13 @@ export const metadata: Metadata = {
     ],
     shortcut: ["/favicon-32x32.png"],
     apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }]
-  }
+  },
+  ...buildSocialMetadata({
+    title: "ConvertBase.app",
+    description: normalizeMetaDescription(siteConfig.description),
+    url: getSiteUrl(),
+    locale: siteConfig.defaultLocale
+  })
 };
 
 export function generateStaticParams() {

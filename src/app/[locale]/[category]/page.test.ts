@@ -4,6 +4,7 @@ import {
   buildCategoryCanonical,
   buildCategoryStructuredData,
 } from "@/lib/seo/category-hub";
+import { buildSocialMetadata } from "@/lib/seo/social";
 
 const htmlTools = [
   {
@@ -63,5 +64,36 @@ describe("category page SEO", () => {
         "@type": "ItemList"
       }
     });
+  });
+
+  it("builds complete social metadata with a large image card", () => {
+    process.env.SITE_URL = "https://www.convertbase.app";
+    const social = buildSocialMetadata({
+      title: "NarzÄ™dzia HTML",
+      description: "NarzÄ™dzia HTML do formatowania i ekstrakcji.",
+      url: "https://www.convertbase.app/pl/html-tools",
+      locale: "pl"
+    });
+
+    expect(social.openGraph).toMatchObject({
+      images: [
+        {
+          width: 1200,
+          height: 630
+        }
+      ]
+    });
+    expect(String(social.openGraph?.images?.[0].url)).toBe(
+      "https://www.convertbase.app/pl/opengraph-image"
+    );
+    expect(social.twitter).toMatchObject({
+      card: "summary_large_image",
+      images: [
+        {}
+      ]
+    });
+    expect(String(social.twitter?.images?.[0].url)).toBe(
+      "https://www.convertbase.app/pl/opengraph-image"
+    );
   });
 });
