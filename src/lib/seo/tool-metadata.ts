@@ -43,7 +43,9 @@ export function buildToolMetadata(toolId: string, locale: Locale): Metadata {
     content.metaDescription ?? content.seo.description,
     content.shortDescription
   );
-  const title = normalizeMetaTitle(content.metaTitle ?? content.seo.title);
+  const title = normalizeMetaTitle(content.metaTitle ?? content.seo.title, {
+    fallback: content.shortDescription
+  });
 
   return {
     metadataBase: new URL(getSiteUrl()),

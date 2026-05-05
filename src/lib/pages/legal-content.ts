@@ -81,12 +81,16 @@ export async function buildLegalPageMetadata(
           index: true,
           follow: true
         },
-    alternates: {
-      canonical,
-      ...buildLanguageAlternates((entryLocale) =>
-        buildLegalPageHref(entryLocale, pageKey)
-      )
-    },
+    alternates: shouldNoindex
+      ? {
+          canonical
+        }
+      : {
+          canonical,
+          ...buildLanguageAlternates((entryLocale) =>
+            buildLegalPageHref(entryLocale, pageKey)
+          )
+        },
     ...buildSocialMetadata({
       title,
       description,

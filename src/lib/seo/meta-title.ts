@@ -1,6 +1,7 @@
 import { siteConfig } from "@/lib/constants";
 
 export const maxMetaTitleLength = 60;
+export const minMetaTitleLength = 30;
 
 const trailingPunctuationPattern = /[\s,;:.-]+$/;
 
@@ -41,8 +42,12 @@ export function normalizeMetaTitle(
   const suffixLength = reserveSiteName ? getTextLength(getTitledPageSuffix()) : 0;
   const maxLength = Math.max(20, maxMetaTitleLength - suffixLength);
   const value = cleanMetaTitle(title ?? "") || fallback;
+  const expanded =
+    getTextLength(value) < minMetaTitleLength && fallback && fallback !== value
+      ? cleanMetaTitle(`${value} - ${fallback}`)
+      : value;
 
-  return trimMetaTitle(value, maxLength);
+  return trimMetaTitle(expanded, maxLength);
 }
 
 export function buildTitledPageTitle(title: string) {

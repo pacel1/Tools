@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import {
   buildTitledPageTitle,
   maxMetaTitleLength,
+  minMetaTitleLength,
   normalizeMetaTitle
 } from "@/lib/seo/meta-title";
 
@@ -27,5 +28,14 @@ describe("normalizeMetaTitle", () => {
     );
 
     expect(lengthOf(title)).toBeLessThanOrEqual(maxMetaTitleLength);
+  });
+
+  it("expands very short titles with a meaningful fallback", () => {
+    const title = normalizeMetaTitle("BMI", {
+      fallback: "BMI calculator for quick health estimates"
+    });
+
+    expect(lengthOf(title)).toBeGreaterThanOrEqual(minMetaTitleLength);
+    expect(title).toContain("BMI calculator");
   });
 });

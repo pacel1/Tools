@@ -10,7 +10,9 @@ import { buildSocialMetadata } from "@/lib/seo/social";
 export async function buildHomePageMetadata(locale: Locale): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: "common" });
   const canonical = `${getSiteUrl()}/${locale}`;
-  const title = normalizeMetaTitle(t("heroTitle"));
+  const title = normalizeMetaTitle(t("heroTitle"), {
+    fallback: t("siteTagline")
+  });
   const description = normalizeMetaDescription(
     t("heroDescription"),
     t("siteTagline")

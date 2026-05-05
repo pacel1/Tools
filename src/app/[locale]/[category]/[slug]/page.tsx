@@ -9,6 +9,7 @@ import { buildToolMetadata } from "@/lib/seo/tool-metadata";
 import { getIntentHubLink } from "@/lib/tools/discovery";
 import {
   getAllToolPaths,
+  getToolsByCategory,
   getRelatedTools,
   getToolComponent,
   getToolPageModel
@@ -24,6 +25,7 @@ const toolPageLabels = {
     examples: "Examples",
     faq: "FAQ",
     related: "Related tools",
+    categoryTools: "Popular tools in this category",
     input: "Input",
     output: "Output"
   },
@@ -36,6 +38,7 @@ const toolPageLabels = {
     examples: "Przyklady",
     faq: "FAQ",
     related: "Powiazane narzedzia",
+    categoryTools: "Popularne narzedzia w kategorii",
     input: "Wejscie",
     output: "Wynik"
   },
@@ -48,6 +51,7 @@ const toolPageLabels = {
     examples: "Ejemplos",
     faq: "FAQ",
     related: "Herramientas relacionadas",
+    categoryTools: "Herramientas populares de la categoria",
     input: "Entrada",
     output: "Salida"
   },
@@ -60,6 +64,7 @@ const toolPageLabels = {
     examples: "Beispiele",
     faq: "FAQ",
     related: "Verwandte Tools",
+    categoryTools: "Beliebte Tools in dieser Kategorie",
     input: "Eingabe",
     output: "Ausgabe"
   },
@@ -72,9 +77,18 @@ const toolPageLabels = {
     examples: "Exemples",
     faq: "FAQ",
     related: "Outils associes",
+    categoryTools: "Outils populaires dans cette categorie",
     input: "Entree",
     output: "Sortie"
   }
+} as const;
+
+const toolPageStrongIntro = {
+  en: "Best for",
+  pl: "Najlepsze do",
+  es: "Ideal para",
+  de: "Gut geeignet fuer",
+  fr: "Ideal pour"
 } as const;
 
 export function generateStaticParams() {
@@ -113,6 +127,17 @@ export default async function ToolPage({
     model.definition.componentName as keyof typeof import("@/lib/tools/tool-runtime.generated").toolComponents
   );
   const relatedTools = getRelatedTools(locale, model.definition.id);
+  const categoryTools = getToolsByCategory(locale, category)
+    .filter((tool) => tool.definition.id !== model.definition.id)
+    .slice(0, 6)
+    .map(({ definition, content }) => ({
+      id: definition.id,
+      href: `/${locale}/${definition.category}/${content.slug}`,
+      title: content.title,
+      shortDescription: content.shortDescription,
+      category: definition.category,
+      seoPriority: definition.seoPriority
+    }));
   const intentHub = getIntentHubLink(locale, model.definition.id);
   const structuredData = buildToolStructuredData(locale, model);
 
@@ -151,6 +176,13 @@ export default async function ToolPage({
           <p className="max-w-2xl text-lg leading-8 text-white/70">
             {model.content.shortDescription}
           </p>
+          <p className="max-w-2xl text-base leading-8 text-white/70">
+            <strong className="font-semibold text-white">
+              {toolPageStrongIntro[locale]}:
+            </strong>{" "}
+            {model.content.useCases?.slice(0, 2).join(", ") ||
+              model.content.shortDescription}
+          </p>
           {model.content.intro ? (
             <div className="rounded-[28px] border border-cyan-300/15 bg-cyan-300/10 p-5">
               <p className="text-sm uppercase tracking-[0.24em] text-cyan-100/75">
@@ -166,11 +198,14 @@ export default async function ToolPage({
               <p className="text-sm uppercase tracking-[0.24em] text-cyan-100/75">
                 {intentHub.eyebrow}
               </p>
-              <h2 className="mt-3 text-xl font-semibold tracking-tight">
-                <a className="transition hover:text-cyan-100" href={intentHub.href}>
+              <p className="mt-3 text-xl font-semibold tracking-tight">
+                <a
+                  className="transition hover:text-cyan-100"
+                  href={intentHub.href}
+                >
                   {intentHub.title}
                 </a>
-              </h2>
+              </p>
               <p className="mt-2 text-sm leading-7 text-white/72">
                 {intentHub.description}
               </p>
@@ -275,6 +310,29 @@ export default async function ToolPage({
               <ToolCard key={tool.id} tool={tool} titleAs="p" />
             ))}
           </div>
+
+          {categoryTools.length ? (
+            <section className="space-y-4">
+              <h2 className="text-2xl font-semibold tracking-tight">
+                {labels.categoryTools}
+              </h2>
+              <ul className="space-y-3">
+                {categoryTools.map((tool) => (
+                  <li key={tool.id}>
+                    <a
+                      href={tool.href}
+                      className="block rounded-[20px] border border-white/10 bg-white/5 p-4 text-sm leading-6 text-white/72 transition hover:border-cyan-300/40 hover:text-white"
+                    >
+                      <strong className="font-semibold text-white">
+                        {tool.title}
+                      </strong>{" "}
+                      - {tool.shortDescription}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ) : null}
         </aside>
       </section>
     </div>

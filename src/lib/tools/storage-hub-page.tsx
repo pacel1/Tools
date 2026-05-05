@@ -23,7 +23,9 @@ export function buildStorageHubMetadata(locale: Locale): Metadata {
     content.metaDescription,
     content.description
   );
-  const title = normalizeMetaTitle(content.metaTitle);
+  const title = normalizeMetaTitle(content.metaTitle, {
+    fallback: content.description
+  });
 
   return {
     metadataBase: new URL(getSiteUrl()),
