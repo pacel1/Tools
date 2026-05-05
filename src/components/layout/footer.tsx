@@ -3,15 +3,61 @@ import type { Route } from "next";
 import Link from "next/link";
 import type { Locale } from "@/lib/constants";
 
+const footerSeoLabels = {
+  en: {
+    about: "About ConvertBase",
+    privacy: "Privacy policy",
+    terms: "Terms of use",
+    cookies: "Cookie policy",
+    disclaimer: "Usage disclaimer",
+    contact: "Contact ConvertBase"
+  },
+  pl: {
+    about: "O ConvertBase",
+    privacy: "Polityka prywatnosci",
+    terms: "Regulamin ConvertBase",
+    cookies: "Polityka cookies",
+    disclaimer: "Zastrzezenie uzytkowania",
+    contact: "Kontakt z ConvertBase"
+  },
+  es: {
+    about: "Sobre ConvertBase",
+    privacy: "Politica de privacidad",
+    terms: "Terminos de uso",
+    cookies: "Politica de cookies",
+    disclaimer: "Aviso de uso",
+    contact: "Contacto ConvertBase"
+  },
+  de: {
+    about: "Uber ConvertBase",
+    privacy: "Datenschutzerklaerung",
+    terms: "Nutzungsbedingungen",
+    cookies: "Cookie-Richtlinie",
+    disclaimer: "Nutzungshinweis",
+    contact: "Kontakt ConvertBase"
+  },
+  fr: {
+    about: "A propos de ConvertBase",
+    privacy: "Politique de confidentialite",
+    terms: "Conditions d'utilisation",
+    cookies: "Politique de cookies",
+    disclaimer: "Avertissement d'utilisation",
+    contact: "Contact ConvertBase"
+  }
+} as const;
+
 export async function Footer({ locale }: { locale: Locale }) {
   const t = await getTranslations({ locale, namespace: "common" });
   const links = [
-    { href: `/${locale}/about`, label: t("footerLinks.about") },
-    { href: `/${locale}/privacy`, label: t("footerLinks.privacy") },
-    { href: `/${locale}/terms`, label: t("footerLinks.terms") },
-    { href: `/${locale}/cookies`, label: t("footerLinks.cookies") },
-    { href: `/${locale}/disclaimer`, label: t("footerLinks.disclaimer") },
-    { href: `/${locale}/contact`, label: t("footerLinks.contact") }
+    { href: `/${locale}/about`, label: footerSeoLabels[locale].about },
+    { href: `/${locale}/privacy`, label: footerSeoLabels[locale].privacy },
+    { href: `/${locale}/terms`, label: footerSeoLabels[locale].terms },
+    { href: `/${locale}/cookies`, label: footerSeoLabels[locale].cookies },
+    {
+      href: `/${locale}/disclaimer`,
+      label: footerSeoLabels[locale].disclaimer
+    },
+    { href: `/${locale}/contact`, label: footerSeoLabels[locale].contact }
   ];
 
   return (
