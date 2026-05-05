@@ -6,7 +6,8 @@ import { getTranslations } from "next-intl/server";
 import { categoryCatalog } from "@/data/categories/catalog";
 import { CookieBanner } from "@/components/layout/cookie-banner";
 import { Footer } from "@/components/layout/footer";
-import { toolCategories, type Locale } from "@/lib/constants";
+import type { Locale } from "@/lib/constants";
+import { getActiveCategories } from "@/lib/tools/categories";
 
 export async function SiteShell({
   children,
@@ -16,6 +17,7 @@ export async function SiteShell({
   locale: Locale;
 }) {
   const t = await getTranslations({ locale, namespace: "common" });
+  const categories = getActiveCategories(locale);
 
   return (
     <div className="min-h-screen bg-[radial-gradient(circle_at_top,_rgba(103,232,249,0.16),_transparent_28%),linear-gradient(180deg,_#07111f_0%,_#0b1525_45%,_#090d15_100%)] text-white">
@@ -32,7 +34,7 @@ export async function SiteShell({
               width={40}
               height={40}
               priority
-              className="h-10 w-10 rounded-2xl bg-white/95 p-1.5 object-contain shadow-[0_10px_30px_rgba(15,23,42,0.28)] md:hidden"
+              className="h-10 w-10 rounded-2xl bg-white/95 object-contain p-1.5 shadow-[0_10px_30px_rgba(15,23,42,0.28)] md:hidden"
             />
             <div className="hidden md:flex md:flex-col">
               <div className="inline-flex w-fit rounded-full border border-slate-200/80 bg-white/95 px-4 py-2 shadow-[0_14px_38px_rgba(15,23,42,0.24)]">
@@ -50,7 +52,7 @@ export async function SiteShell({
           </Link>
 
           <nav className="hidden items-center gap-3 lg:flex lg:flex-wrap lg:justify-end">
-            {toolCategories.map((category) => (
+            {categories.map((category) => (
               <Link
                 key={category}
                 href={`/${locale}/${category}` as Route}
