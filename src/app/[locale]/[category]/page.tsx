@@ -4,13 +4,14 @@ import { notFound } from "next/navigation";
 import { ToolCard } from "@/components/marketing/tool-card";
 import { categoryCatalog } from "@/data/categories/catalog";
 import { locales, type Locale, type ToolCategory } from "@/lib/constants";
-import { getSiteName } from "@/lib/env";
+import { getSiteUrl } from "@/lib/env";
 import {
   buildCategoryCanonical,
   buildCategoryStructuredData
 } from "@/lib/seo/category-hub";
 import { normalizeMetaDescription } from "@/lib/seo/meta-description";
 import { normalizeMetaTitle } from "@/lib/seo/meta-title";
+import { buildSocialMetadata } from "@/lib/seo/social";
 import { buildCategoryAlternates } from "@/lib/seo/tool-metadata";
 import { getActiveCategories } from "@/lib/tools/categories";
 import {
@@ -142,6 +143,29 @@ const fallbackCopy = {
   }
 } as const;
 
+const metaDescriptionFillers = {
+  en: {
+    base: "Includes practical browser tools for quick formatting, conversion and everyday workflows.",
+    tasks: "Key tasks"
+  },
+  pl: {
+    base: "Obejmuje praktyczne narzedzia online do szybkiego formatowania, konwersji i codziennej pracy.",
+    tasks: "Wazne zadania"
+  },
+  es: {
+    base: "Incluye herramientas online para formatear, convertir y resolver tareas rapidas en el navegador.",
+    tasks: "Tareas clave"
+  },
+  de: {
+    base: "Enthaelt praktische Browser-Tools fuer Formatierung, Umrechnung und schnelle Alltagsaufgaben.",
+    tasks: "Wichtige Aufgaben"
+  },
+  fr: {
+    base: "Inclut des outils en ligne pour formater, convertir et traiter rapidement les taches courantes.",
+    tasks: "Taches cles"
+  }
+} as const;
+
 function buildToolLinks(locale: Locale, category: ToolCategory) {
   return getToolsByCategory(locale, category).map(({ definition, content }) => ({
     id: definition.id,
@@ -151,6 +175,32 @@ function buildToolLinks(locale: Locale, category: ToolCategory) {
     category: definition.category,
     seoPriority: definition.seoPriority
   }));
+}
+
+function getTextLength(value: string) {
+  return Array.from(value).length;
+}
+
+function buildCategoryMetaDescription({
+  locale,
+  description,
+  featuredSearches
+}: {
+  locale: Locale;
+  description: string;
+  featuredSearches: string[];
+}) {
+  if (getTextLength(description) >= 120) {
+    return description;
+  }
+
+  const searches = featuredSearches.slice(0, 2).join(", ");
+  const filler = metaDescriptionFillers[locale];
+  const extension = searches
+    ? `${filler.base} ${filler.tasks}: ${searches}.`
+    : filler.base;
+
+  return `${description} ${extension}`;
 }
 
 function buildFallbackCategoryHubContent({
@@ -253,26 +303,24 @@ export async function generateMetadata({
 
   const title = normalizeMetaTitle(hub?.title ?? meta.label[locale]);
   const description = normalizeMetaDescription(
-    hub?.description ?? meta.description[locale],
+    buildCategoryMetaDescription({
+      locale,
+      description: hub?.description ?? meta.description[locale],
+      featuredSearches: hub?.featuredSearches ?? []
+    }),
     title
   );
   const canonical = buildCategoryCanonical(locale, category);
 
   return {
+    metadataBase: new URL(getSiteUrl()),
     title,
     description,
     alternates: {
       canonical,
       ...buildCategoryAlternates(category)
     },
-    openGraph: {
-      title,
-      description,
-      url: canonical,
-      siteName: getSiteName(),
-      locale,
-      type: "website"
-    }
+    ...buildSocialMetadata({ title, description, url: canonical, locale })
   };
 }
 
@@ -332,16 +380,24 @@ export default async function CategoryPage({
           {hub.description}
         </p>
         <p className="mt-5 text-base leading-8 text-white/65">{hub.intro}</p>
-        <div className="mt-6 flex flex-wrap gap-3">
+        {hub.featuredSearches.length ? (
+          <p className="mt-5 text-base leading-8 text-white/70">
+            <strong className="font-semibold text-white">
+              {labels.featured}:
+            </strong>{" "}
+            {hub.featuredSearches.slice(0, 3).join(", ")}.
+          </p>
+        ) : null}
+        <ul className="mt-6 flex flex-wrap gap-3">
           {hub.featuredSearches.map((item) => (
-            <span
+            <li
               key={item}
               className="rounded-full border border-cyan-300/20 bg-cyan-300/10 px-4 py-2 text-sm text-cyan-50/90"
             >
               {item}
-            </span>
+            </li>
           ))}
-        </div>
+        </ul>
       </section>
 
       {featuredTools.length ? (

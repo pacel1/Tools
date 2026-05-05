@@ -1,6 +1,5 @@
 import type { ReactNode } from "react";
 import type { Route } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { getTranslations } from "next-intl/server";
 import { categoryCatalog } from "@/data/categories/catalog";
@@ -8,6 +7,18 @@ import { CookieBanner } from "@/components/layout/cookie-banner";
 import { Footer } from "@/components/layout/footer";
 import type { Locale } from "@/lib/constants";
 import { getActiveCategories } from "@/lib/tools/categories";
+
+function buildCategoryAnchorLabel(locale: Locale, label: string) {
+  if (locale === "en") {
+    return `Online ${label.toLowerCase()}`;
+  }
+
+  if (locale === "fr") {
+    return `${label} en ligne`;
+  }
+
+  return `${label} online`;
+}
 
 export async function SiteShell({
   children,
@@ -18,6 +29,7 @@ export async function SiteShell({
 }) {
   const t = await getTranslations({ locale, namespace: "common" });
   const categories = getActiveCategories(locale);
+  const siteName = t("siteName");
 
   return (
     <div className="min-h-screen bg-[radial-gradient(circle_at_top,_rgba(103,232,249,0.16),_transparent_28%),linear-gradient(180deg,_#07111f_0%,_#0b1525_45%,_#090d15_100%)] text-white">
@@ -26,28 +38,24 @@ export async function SiteShell({
           <Link
             href={`/${locale}` as Route}
             className="flex items-center gap-3"
-            aria-label={t("siteName")}
+            aria-label={siteName}
           >
-            <Image
-              src="/favicon-32x32.png"
-              alt={t("siteName")}
-              width={40}
-              height={40}
-              priority
-              className="h-10 w-10 rounded-2xl bg-white/95 object-contain p-1.5 shadow-[0_10px_30px_rgba(15,23,42,0.28)] md:hidden"
-            />
-            <div className="hidden md:flex md:flex-col">
-              <div className="inline-flex w-fit rounded-full border border-slate-200/80 bg-white/95 px-4 py-2 shadow-[0_14px_38px_rgba(15,23,42,0.24)]">
-                <Image
-                  src="/logo-wordmark.png"
-                  alt={t("siteName")}
-                  width={787}
-                  height={170}
-                  priority
-                  className="h-10 w-auto max-w-[220px] object-contain lg:h-11 lg:max-w-[260px]"
-                />
+            <div className="flex flex-col">
+              <div className="inline-flex w-fit rounded-2xl bg-white/95 p-1.5 shadow-[0_10px_30px_rgba(15,23,42,0.28)] md:rounded-full md:border md:border-slate-200/80 md:px-4 md:py-2 md:shadow-[0_14px_38px_rgba(15,23,42,0.24)]">
+                <picture>
+                  <source media="(min-width: 768px)" srcSet="/logo-wordmark.png" />
+                  <img
+                    src="/favicon-32x32.png"
+                    alt={`${siteName} online tools`}
+                    width={787}
+                    height={170}
+                    className="h-7 w-7 object-contain md:h-10 md:w-auto md:max-w-[220px] lg:h-11 lg:max-w-[260px]"
+                  />
+                </picture>
               </div>
-              <p className="text-xs text-white/55">{t("siteTagline")}</p>
+              <p className="hidden text-xs text-white/55 md:block">
+                {t("siteTagline")}
+              </p>
             </div>
           </Link>
 
@@ -58,7 +66,10 @@ export async function SiteShell({
                 href={`/${locale}/${category}` as Route}
                 className="rounded-full border border-white/10 px-4 py-2 text-sm text-white/70 transition hover:border-cyan-300/40 hover:text-white"
               >
-                {categoryCatalog[category].label[locale]}
+                {buildCategoryAnchorLabel(
+                  locale,
+                  categoryCatalog[category].label[locale]
+                )}
               </Link>
             ))}
           </nav>

@@ -2,10 +2,11 @@ import type { Metadata } from "next";
 import { Breadcrumbs } from "@/components/layout/breadcrumbs";
 import { ToolCard } from "@/components/marketing/tool-card";
 import type { Locale } from "@/lib/constants";
-import { getSiteName, getSiteUrl } from "@/lib/env";
+import { getSiteUrl } from "@/lib/env";
 import { buildLanguageAlternates } from "@/lib/seo/alternates";
 import { normalizeMetaDescription } from "@/lib/seo/meta-description";
 import { buildTitledPageTitle, normalizeMetaTitle } from "@/lib/seo/meta-title";
+import { buildSocialMetadata } from "@/lib/seo/social";
 import { buildStorageHubHref, getStorageHubContent } from "@/lib/tools/discovery";
 import { getToolsForLocale } from "@/lib/tools/registry";
 
@@ -25,20 +26,19 @@ export function buildStorageHubMetadata(locale: Locale): Metadata {
   const title = normalizeMetaTitle(content.metaTitle);
 
   return {
+    metadataBase: new URL(getSiteUrl()),
     title,
     description,
     alternates: {
       canonical,
       ...buildLanguageAlternates((entryLocale) => buildStorageHubHref(entryLocale))
     },
-    openGraph: {
+    ...buildSocialMetadata({
       title: buildTitledPageTitle(title),
       description,
       url: canonical,
-      siteName: getSiteName(),
-      locale,
-      type: "website"
-    }
+      locale
+    })
   };
 }
 
@@ -124,16 +124,27 @@ export function StorageHubPage({ locale }: { locale: Locale }) {
         </h1>
         <p className="mt-4 text-lg leading-8 text-white/70">{content.description}</p>
         <p className="mt-5 text-base leading-8 text-white/65">{content.intro}</p>
-        <div className="mt-6 flex flex-wrap gap-3">
+        <p className="mt-5 text-base leading-8 text-white/70">
+          <strong className="font-semibold text-white">
+            {locale === "pl"
+              ? "Popularne zapytania"
+              : locale === "de"
+                ? "Wichtige Suchanfragen"
+                : "Popular searches"}
+            :
+          </strong>{" "}
+          {content.featuredSearches.slice(0, 3).join(", ")}.
+        </p>
+        <ul className="mt-6 flex flex-wrap gap-3">
           {content.featuredSearches.map((item) => (
-            <span
+            <li
               key={item}
               className="rounded-full border border-cyan-300/20 bg-cyan-300/10 px-4 py-2 text-sm text-cyan-50/90"
             >
               {item}
-            </span>
+            </li>
           ))}
-        </div>
+        </ul>
       </section>
 
       <section className="space-y-4">
