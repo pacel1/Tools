@@ -4,6 +4,7 @@ import { ToolCard } from "@/components/marketing/tool-card";
 import { categoryCatalog } from "@/data/categories/catalog";
 import { locales, toolCategories, type Locale, type ToolCategory } from "@/lib/constants";
 import { getSiteName, getSiteUrl } from "@/lib/env";
+import { normalizeMetaDescription } from "@/lib/seo/meta-description";
 import { buildCategoryAlternates } from "@/lib/seo/tool-metadata";
 import { getCategoryHubContent } from "@/lib/tools/discovery";
 import { getToolsByCategory } from "@/lib/tools/registry";
@@ -56,7 +57,10 @@ export async function generateMetadata({
   }
 
   const title = hub?.title ?? meta.label[locale];
-  const description = hub?.description ?? meta.description[locale];
+  const description = normalizeMetaDescription(
+    hub?.description ?? meta.description[locale],
+    title
+  );
   const canonical = `${getSiteUrl()}/${locale}/${category}`;
 
   return {

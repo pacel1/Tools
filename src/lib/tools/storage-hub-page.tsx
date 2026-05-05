@@ -4,6 +4,7 @@ import { ToolCard } from "@/components/marketing/tool-card";
 import type { Locale } from "@/lib/constants";
 import { getSiteName, getSiteUrl } from "@/lib/env";
 import { buildLanguageAlternates } from "@/lib/seo/alternates";
+import { normalizeMetaDescription } from "@/lib/seo/meta-description";
 import { buildStorageHubHref, getStorageHubContent } from "@/lib/tools/discovery";
 import { getToolsForLocale } from "@/lib/tools/registry";
 
@@ -16,17 +17,21 @@ export function buildStorageHubMetadata(locale: Locale): Metadata {
   }
 
   const canonical = `${getSiteUrl()}${href}`;
+  const description = normalizeMetaDescription(
+    content.metaDescription,
+    content.description
+  );
 
   return {
     title: content.metaTitle,
-    description: content.metaDescription,
+    description,
     alternates: {
       canonical,
       ...buildLanguageAlternates((entryLocale) => buildStorageHubHref(entryLocale))
     },
     openGraph: {
       title: `${content.title} | ${getSiteName()}`,
-      description: content.metaDescription,
+      description,
       url: canonical,
       siteName: getSiteName(),
       locale,

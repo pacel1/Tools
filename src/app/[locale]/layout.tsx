@@ -7,8 +7,9 @@ import { notFound } from "next/navigation";
 import Script from "next/script";
 import "../globals.css";
 import { SiteShell } from "@/components/layout/site-shell";
-import { locales, type Locale } from "@/lib/constants";
+import { locales, siteConfig, type Locale } from "@/lib/constants";
 import { getSiteUrl } from "@/lib/env";
+import { normalizeMetaDescription } from "@/lib/seo/meta-description";
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -27,8 +28,7 @@ export const metadata: Metadata = {
     default: "ConvertBase.app",
     template: "%s | ConvertBase.app"
   },
-  description:
-    "Browse hundreds of free online tools, converters, calculators, generators and text utilities with fast answers for everyday tasks.",
+  description: normalizeMetaDescription(siteConfig.description),
   applicationName: "ConvertBase.app",
   icons: {
     icon: [
