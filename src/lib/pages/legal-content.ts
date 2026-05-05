@@ -6,6 +6,8 @@ import { z } from "zod";
 import { locales, type Locale } from "@/lib/constants";
 import { getSiteName, getSiteUrl } from "@/lib/env";
 import { buildLanguageAlternates } from "@/lib/seo/alternates";
+import { normalizeMetaDescription } from "@/lib/seo/meta-description";
+import { normalizeMetaTitle } from "@/lib/seo/meta-title";
 import {
   legalPageKeys,
   noindexLegalPageKeys,
@@ -56,12 +58,17 @@ export async function buildLegalPageMetadata(
   const page = await getLegalPageContent(locale, pageKey);
   const canonical = `${getSiteUrl()}${buildLegalPageHref(locale, pageKey)}`;
   const shouldNoindex = noindexLegalPageKeySet.has(pageKey);
+  const description = normalizeMetaDescription(
+    page.metaDescription,
+    page.content[0] ?? page.title
+  );
+  const title = normalizeMetaTitle(page.metaTitle, { reserveSiteName: false });
 
   return {
     title: {
-      absolute: page.metaTitle
+      absolute: title
     },
-    description: page.metaDescription,
+    description,
     keywords: page.keywords,
     robots: shouldNoindex
       ? {
@@ -79,8 +86,8 @@ export async function buildLegalPageMetadata(
       )
     },
     openGraph: {
-      title: page.metaTitle,
-      description: page.metaDescription,
+      title,
+      description,
       url: canonical,
       siteName: getSiteName(),
       locale,

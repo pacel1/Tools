@@ -1,9 +1,17 @@
 import type { MetadataRoute } from "next";
-import { locales, toolCategories } from "@/lib/constants";
+import { locales } from "@/lib/constants";
 import { getSiteUrl } from "@/lib/env";
-import { legalPageKeys, noindexLegalPageKeys, type LegalPageKey } from "@/lib/pages/types";
+import {
+  legalPageKeys,
+  noindexLegalPageKeys,
+  type LegalPageKey
+} from "@/lib/pages/types";
 import { buildLanguageAlternates } from "@/lib/seo/alternates";
-import { buildStorageHubHref, getStorageHubContent } from "@/lib/tools/discovery";
+import { getActiveCategories } from "@/lib/tools/categories";
+import {
+  buildStorageHubHref,
+  getStorageHubContent
+} from "@/lib/tools/discovery";
 import { toolContent } from "@/lib/tools/tool-content.generated";
 import { toolDefinitions } from "@/lib/tools/tool-registry.generated";
 import type { ToolLocaleContent } from "@/lib/tools/types";
@@ -26,12 +34,14 @@ export function buildSitemapEntries(): MetadataRoute.Sitemap {
       alternates: buildLanguageAlternates((entryLocale) => `/${entryLocale}`)
     })),
     ...locales.flatMap((locale) =>
-      toolCategories.map((category) => ({
+      getActiveCategories(locale).map((category) => ({
         url: `${baseUrl}/${locale}/${category}`,
         changeFrequency: "weekly" as const,
         priority: 0.75,
-        alternates: buildLanguageAlternates(
-          (entryLocale) => `/${entryLocale}/${category}`
+        alternates: buildLanguageAlternates((entryLocale) =>
+          getActiveCategories(entryLocale).includes(category)
+            ? `/${entryLocale}/${category}`
+            : null
         )
       }))
     ),

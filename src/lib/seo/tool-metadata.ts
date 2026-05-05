@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import type { Locale } from "@/lib/constants";
 import { getSiteName, getSiteUrl } from "@/lib/env";
 import { buildLanguageAlternates } from "@/lib/seo/alternates";
+import { normalizeMetaDescription } from "@/lib/seo/meta-description";
+import { normalizeMetaTitle } from "@/lib/seo/meta-title";
 import { buildToolHref } from "@/lib/tools/internal-linking";
 import { getContentById, getDefinitionById } from "@/lib/tools/registry";
 
@@ -36,18 +38,23 @@ export function buildToolMetadata(toolId: string, locale: Locale): Metadata {
     definition.category,
     content.slug
   )}`;
+  const description = normalizeMetaDescription(
+    content.metaDescription ?? content.seo.description,
+    content.shortDescription
+  );
+  const title = normalizeMetaTitle(content.metaTitle ?? content.seo.title);
 
   return {
-    title: content.metaTitle ?? content.seo.title,
-    description: content.metaDescription ?? content.seo.description,
+    title,
+    description,
     keywords: content.seo.keywords,
     alternates: {
       canonical,
       ...buildAlternates(toolId)
     },
     openGraph: {
-      title: content.metaTitle ?? content.seo.title,
-      description: content.metaDescription ?? content.seo.description,
+      title,
+      description,
       url: canonical,
       siteName: getSiteName(),
       locale,
