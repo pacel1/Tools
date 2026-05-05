@@ -10,9 +10,21 @@ describe("sitemap", () => {
     const entries = sitemap();
 
     expect(entries.length).toBeGreaterThan(0);
-    expect(entries.every((entry) => entry.url.startsWith("https://www.convertbase.app/"))).toBe(
-      true
-    );
+    expect(
+      entries.every((entry) =>
+        entry.url.startsWith("https://www.convertbase.app/")
+      )
+    ).toBe(true);
+    expect(
+      entries.some((entry) => entry.url.startsWith("https://convertbase.app/"))
+    ).toBe(false);
+  });
+
+  it("includes the Polish HTML tools hub on the canonical host", () => {
+    const urls = sitemap().map((entry) => entry.url);
+
+    expect(urls).toContain("https://www.convertbase.app/pl/html-tools");
+    expect(urls).not.toContain("https://convertbase.app/pl/html-tools");
   });
 
   it("excludes noindex legal pages from the sitemap", () => {
@@ -34,5 +46,12 @@ describe("sitemap", () => {
     expect(homeEntry?.alternates?.languages?.["x-default"]).toBe(
       "https://www.convertbase.app/en"
     );
+  });
+
+  it("does not publish empty category hubs", () => {
+    const urls = sitemap().map((entry) => entry.url);
+
+    expect(urls).not.toContain("https://www.convertbase.app/en/date-time");
+    expect(urls).not.toContain("https://www.convertbase.app/pl/date-time");
   });
 });

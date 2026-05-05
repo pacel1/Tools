@@ -14,6 +14,9 @@ export type CategoryHubContent = {
   intro: string;
   featuredSearches: string[];
   featuredToolIds: string[];
+  workflows: Array<{ title: string; description: string; toolId: string }>;
+  useCases: Array<{ title: string; description: string }>;
+  faq: Array<{ question: string; answer: string }>;
 };
 
 export type StorageHubContent = {
@@ -178,6 +181,44 @@ const categoryHubContent: Partial<
         "kalkulator-dachu",
         "kalkulator-styropianu",
         "kalkulator-plytek"
+      ],
+      workflows: [
+        {
+          title: "Estimate a concrete pour",
+          description:
+            "Start with slab, footing or post dimensions and move from volume to bags or ready-mix quantity.",
+          toolId: "kalkulator-betonu"
+        },
+        {
+          title: "Plan roof material quantities",
+          description:
+            "Use roof dimensions to estimate surface, sheets or related material before comparing insulation and finishing needs.",
+          toolId: "kalkulator-dachu"
+        }
+      ],
+      useCases: [
+        {
+          title: "Renovation planning",
+          description:
+            "Compare material quantities before ordering concrete, tiles, insulation or finishing materials."
+        },
+        {
+          title: "Contractor checks",
+          description:
+            "Use quick estimates to review supplier quotes and spot missing allowance for waste."
+        }
+      ],
+      faq: [
+        {
+          question: "Are these construction calculators exact quotes?",
+          answer:
+            "No. They provide planning estimates and should be checked against local product data, site conditions and contractor guidance."
+        },
+        {
+          question: "Do the calculators include waste?",
+          answer:
+            "Many tools include waste or margin fields so you can compare a base estimate with a safer order quantity."
+        }
       ]
     },
     "html-tools": {
@@ -198,6 +239,50 @@ const categoryHubContent: Partial<
         "html-link-extractor",
         "html-formatter",
         "html-to-markdown"
+      ],
+      workflows: [
+        {
+          title: "Format messy HTML",
+          description:
+            "Paste compact markup and turn it into readable indentation before review or debugging.",
+          toolId: "html-pretty-print"
+        },
+        {
+          title: "Extract links from markup",
+          description:
+            "Pull href values from copied HTML when auditing pages, migrations or scraped snippets.",
+          toolId: "html-link-extractor"
+        },
+        {
+          title: "Convert HTML to Markdown",
+          description:
+            "Move browser or CMS content into Markdown for docs, notes and publishing workflows.",
+          toolId: "html-to-markdown"
+        }
+      ],
+      useCases: [
+        {
+          title: "Content cleanup",
+          description:
+            "Clean copied HTML before moving it into documentation, tickets or a CMS editor."
+        },
+        {
+          title: "Technical audits",
+          description:
+            "Inspect links, text and structure without setting up a local parser or sending data to an API."
+        }
+      ],
+      faq: [
+        {
+          question: "Do these HTML tools run in the browser?",
+          answer:
+            "Yes. The tools are built for browser-side workflows so common formatting, extraction and conversion tasks are fast and private."
+        },
+        {
+          question: "Which HTML tool should I start with?",
+          answer:
+            "Use the formatter or pretty printer for messy markup, the link extractor for href audits, and the converters when moving content between HTML, Markdown and text."
+        }
       ]
     },
     "image-tools": {
@@ -218,6 +303,44 @@ const categoryHubContent: Partial<
         "image-resizer",
         "image-format-converter",
         "icon-maker"
+      ],
+      workflows: [
+        {
+          title: "Compress images for the web",
+          description:
+            "Reduce image file size before uploading assets to websites, stores or documentation.",
+          toolId: "image-compressor"
+        },
+        {
+          title: "Resize an image quickly",
+          description:
+            "Set browser-side dimensions for screenshots, product images or social assets.",
+          toolId: "image-resizer"
+        }
+      ],
+      useCases: [
+        {
+          title: "Website publishing",
+          description:
+            "Prepare lighter image files and consistent dimensions before adding them to a page."
+        },
+        {
+          title: "Quick asset handoff",
+          description:
+            "Crop, resize and export images without opening a heavier desktop editor."
+        }
+      ],
+      faq: [
+        {
+          question: "Do images need to be uploaded to a server?",
+          answer:
+            "The featured image tools are designed for browser-side workflows, which helps keep quick edits private."
+        },
+        {
+          question: "Which image tool should I choose first?",
+          answer:
+            "Start with compression for file size, resizing for dimensions, conversion for format changes and cropping when the visible area needs adjustment."
+        }
       ]
     }
   },
@@ -240,6 +363,44 @@ const categoryHubContent: Partial<
         "kalkulator-dachu",
         "kalkulator-styropianu",
         "kalkulator-plytek"
+      ],
+      workflows: [
+        {
+          title: "Policz beton na pierwszy etap prac",
+          description:
+            "Wpisz wymiary plyty, lawy lub slupka i szybko sprawdz objetosc, zapas oraz liczbe workow.",
+          toolId: "kalkulator-betonu"
+        },
+        {
+          title: "Oszacuj materialy na dach",
+          description:
+            "Zacznij od powierzchni dachu, a potem przejdz do powiazanych obliczen izolacji i wykonczenia.",
+          toolId: "kalkulator-dachu"
+        }
+      ],
+      useCases: [
+        {
+          title: "Planowanie zakupow",
+          description:
+            "Sprawdz przyblizone ilosci materialow przed zamowieniem betonu, plytek, ocieplenia lub wykonczenia."
+        },
+        {
+          title: "Kontrola wyceny",
+          description:
+            "Porownaj szybkie obliczenia z oferta wykonawcy i upewnij sie, ze uwzgledniono zapas materialu."
+        }
+      ],
+      faq: [
+        {
+          question: "Czy kalkulatory budowlane daja gotowa wycene?",
+          answer:
+            "Nie. Daja szybkie szacunki do planowania, ktore warto porownac z karta produktu, warunkami na budowie i zaleceniami wykonawcy."
+        },
+        {
+          question: "Czy moge doliczyc zapas materialu?",
+          answer:
+            "Wiele narzedzi ma pole zapasu lub strat, dzieki czemu mozna porownac wynik bazowy z bezpieczniejsza iloscia do zamowienia."
+        }
       ]
     },
     "html-tools": {
@@ -260,6 +421,60 @@ const categoryHubContent: Partial<
         "html-link-extractor",
         "html-formatter",
         "html-to-markdown"
+      ],
+      workflows: [
+        {
+          title: "Sformatuj nieczytelny kod HTML",
+          description:
+            "Wklej zbity markup i zamien go na czytelny uklad z wcieciami przed review, audytem albo debugowaniem.",
+          toolId: "html-pretty-print"
+        },
+        {
+          title: "Wyciagnij linki z HTML",
+          description:
+            "Zbierz adresy href z fragmentu strony, mailingu albo eksportu CMS bez pisania parsera.",
+          toolId: "html-link-extractor"
+        },
+        {
+          title: "Zamien HTML na Markdown",
+          description:
+            "Przenies tresc z HTML do Markdown, gdy przygotowujesz dokumentacje, notatki albo migracje contentu.",
+          toolId: "html-to-markdown"
+        }
+      ],
+      useCases: [
+        {
+          title: "Porzadkowanie kodu po skopiowaniu",
+          description:
+            "Uzyj formattera, gdy HTML z edytora, CMS albo zrodla strony jest zbity i trudny do sprawdzenia."
+        },
+        {
+          title: "Audyt linkow i tresci",
+          description:
+            "Ekstraktory pomagaja szybko sprawdzic adresy URL, obrazy i tekst bez uruchamiania lokalnych skryptow."
+        },
+        {
+          title: "Migracja tresci",
+          description:
+            "Konwertery ulatwiaja przejscie miedzy HTML, Markdown i plain text podczas pracy nad dokumentacja lub publikacja."
+        }
+      ],
+      faq: [
+        {
+          question: "Czy narzedzia HTML wysylaja kod na serwer?",
+          answer:
+            "Nie w typowym workflow. Narzedzia sa projektowane jako szybkie operacje w przegladarce, co pomaga zachowac prywatnosc fragmentow kodu."
+        },
+        {
+          question: "Ktore narzedzie HTML wybrac jako pierwsze?",
+          answer:
+            "Do nieczytelnego kodu wybierz formatter lub pretty print, do audytu adresow ekstraktor linkow, a do migracji tresci konwerter HTML na Markdown."
+        },
+        {
+          question: "Czy hub HTML jest tylko lista linkow?",
+          answer:
+            "Nie. Hub grupuje typowe zadania, opisuje kiedy uzyc konkretnych narzedzi i prowadzi do powiazanych workflowow pracy z markupem."
+        }
       ]
     },
     "image-tools": {
@@ -280,6 +495,44 @@ const categoryHubContent: Partial<
         "image-resizer",
         "image-format-converter",
         "icon-maker"
+      ],
+      workflows: [
+        {
+          title: "Zmniejsz rozmiar pliku",
+          description:
+            "Skompresuj obraz przed dodaniem go do strony, sklepu albo dokumentacji.",
+          toolId: "image-compressor"
+        },
+        {
+          title: "Dopasuj wymiary obrazu",
+          description:
+            "Zmien szerokosc i wysokosc grafiki w przegladarce, zanim uzyjesz jej w projekcie.",
+          toolId: "image-resizer"
+        }
+      ],
+      useCases: [
+        {
+          title: "Publikacja na stronie",
+          description:
+            "Przygotuj lzejsze pliki i przewidywalne wymiary przed dodaniem obrazow do witryny."
+        },
+        {
+          title: "Szybka obrobka assetow",
+          description:
+            "Przytnij, zmien rozmiar lub eksportuj obraz bez otwierania ciezszego edytora graficznego."
+        }
+      ],
+      faq: [
+        {
+          question: "Czy obrazy trzeba wysylac na serwer?",
+          answer:
+            "Narzędzia sa projektowane pod prace w przegladarce, co pomaga przy szybkiej i prywatnej obrobce plikow."
+        },
+        {
+          question: "Od ktorego narzedzia zaczac?",
+          answer:
+            "Wybierz kompresor dla rozmiaru pliku, resizer dla wymiarow, konwerter dla formatu i cropper dla kadrowania."
+        }
       ]
     }
   },
@@ -302,6 +555,44 @@ const categoryHubContent: Partial<
         "html-link-extractor",
         "html-formatter",
         "html-to-markdown"
+      ],
+      workflows: [
+        {
+          title: "HTML lesbar formatieren",
+          description:
+            "Formatiere kompaktes Markup mit stabilen Einrueckungen fuer Review, Debugging und Audits.",
+          toolId: "html-pretty-print"
+        },
+        {
+          title: "Links aus HTML extrahieren",
+          description:
+            "Ziehe href-Werte aus kopiertem Markup, CMS-Ausgaben oder Seitenfragmenten.",
+          toolId: "html-link-extractor"
+        }
+      ],
+      useCases: [
+        {
+          title: "Markup pruefen",
+          description:
+            "Nutze Formatter und Viewer, um HTML-Struktur schneller zu lesen und Fehler zu finden."
+        },
+        {
+          title: "Content migrieren",
+          description:
+            "Konvertiere Inhalte zwischen HTML, Markdown und Text fuer Dokumentation oder CMS-Arbeit."
+        }
+      ],
+      faq: [
+        {
+          question: "Laufen die HTML-Tools im Browser?",
+          answer:
+            "Ja. Sie sind fuer schnelle Browser-Workflows gedacht, ohne dass du fuer Standardaufgaben eine externe API brauchst."
+        },
+        {
+          question: "Welches Tool passt zu welchem Job?",
+          answer:
+            "Formatter helfen bei unlesbarem Markup, Extraktoren bei Links und Text, Konverter bei HTML-, Markdown- und Text-Workflows."
+        }
       ]
     },
     "image-tools": {
@@ -322,6 +613,44 @@ const categoryHubContent: Partial<
         "image-resizer",
         "image-format-converter",
         "icon-maker"
+      ],
+      workflows: [
+        {
+          title: "Bilder fuer das Web komprimieren",
+          description:
+            "Reduziere Dateigroessen, bevor du Bilder in Webseiten, Shops oder Dokumentation verwendest.",
+          toolId: "image-compressor"
+        },
+        {
+          title: "Bildgroesse aendern",
+          description:
+            "Passe Breite und Hoehe direkt im Browser fuer Screenshots, Produktbilder oder Assets an.",
+          toolId: "image-resizer"
+        }
+      ],
+      useCases: [
+        {
+          title: "Web-Publishing",
+          description:
+            "Bereite leichtere Dateien und konsistente Masse vor, bevor Bilder live gehen."
+        },
+        {
+          title: "Schnelle Asset-Arbeit",
+          description:
+            "Schneide, skaliere oder exportiere Bilder ohne schweres Desktop-Programm."
+        }
+      ],
+      faq: [
+        {
+          question: "Muessen Bilder hochgeladen werden?",
+          answer:
+            "Die vorgestellten Tools sind fuer browserseitige Workflows gedacht und eignen sich fuer schnelle private Bearbeitung."
+        },
+        {
+          question: "Womit soll ich anfangen?",
+          answer:
+            "Starte mit Komprimierung fuer Dateigroesse, Resizing fuer Abmessungen und Konvertierung fuer Formatwechsel."
+        }
       ]
     }
   }
