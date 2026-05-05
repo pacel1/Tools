@@ -7,6 +7,7 @@ import { locales, type Locale } from "@/lib/constants";
 import { getSiteName, getSiteUrl } from "@/lib/env";
 import { buildLanguageAlternates } from "@/lib/seo/alternates";
 import { normalizeMetaDescription } from "@/lib/seo/meta-description";
+import { normalizeMetaTitle } from "@/lib/seo/meta-title";
 import {
   legalPageKeys,
   noindexLegalPageKeys,
@@ -61,10 +62,11 @@ export async function buildLegalPageMetadata(
     page.metaDescription,
     page.content[0] ?? page.title
   );
+  const title = normalizeMetaTitle(page.metaTitle, { reserveSiteName: false });
 
   return {
     title: {
-      absolute: page.metaTitle
+      absolute: title
     },
     description,
     keywords: page.keywords,
@@ -84,7 +86,7 @@ export async function buildLegalPageMetadata(
       )
     },
     openGraph: {
-      title: page.metaTitle,
+      title,
       description,
       url: canonical,
       siteName: getSiteName(),

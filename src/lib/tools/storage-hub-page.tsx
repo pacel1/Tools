@@ -5,6 +5,7 @@ import type { Locale } from "@/lib/constants";
 import { getSiteName, getSiteUrl } from "@/lib/env";
 import { buildLanguageAlternates } from "@/lib/seo/alternates";
 import { normalizeMetaDescription } from "@/lib/seo/meta-description";
+import { buildTitledPageTitle, normalizeMetaTitle } from "@/lib/seo/meta-title";
 import { buildStorageHubHref, getStorageHubContent } from "@/lib/tools/discovery";
 import { getToolsForLocale } from "@/lib/tools/registry";
 
@@ -21,16 +22,17 @@ export function buildStorageHubMetadata(locale: Locale): Metadata {
     content.metaDescription,
     content.description
   );
+  const title = normalizeMetaTitle(content.metaTitle);
 
   return {
-    title: content.metaTitle,
+    title,
     description,
     alternates: {
       canonical,
       ...buildLanguageAlternates((entryLocale) => buildStorageHubHref(entryLocale))
     },
     openGraph: {
-      title: `${content.title} | ${getSiteName()}`,
+      title: buildTitledPageTitle(title),
       description,
       url: canonical,
       siteName: getSiteName(),

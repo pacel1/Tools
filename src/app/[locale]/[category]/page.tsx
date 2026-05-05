@@ -5,6 +5,7 @@ import { categoryCatalog } from "@/data/categories/catalog";
 import { locales, toolCategories, type Locale, type ToolCategory } from "@/lib/constants";
 import { getSiteName, getSiteUrl } from "@/lib/env";
 import { normalizeMetaDescription } from "@/lib/seo/meta-description";
+import { normalizeMetaTitle } from "@/lib/seo/meta-title";
 import { buildCategoryAlternates } from "@/lib/seo/tool-metadata";
 import { getCategoryHubContent } from "@/lib/tools/discovery";
 import { getToolsByCategory } from "@/lib/tools/registry";
@@ -56,7 +57,7 @@ export async function generateMetadata({
     return {};
   }
 
-  const title = hub?.title ?? meta.label[locale];
+  const title = normalizeMetaTitle(hub?.title ?? meta.label[locale]);
   const description = normalizeMetaDescription(
     hub?.description ?? meta.description[locale],
     title
