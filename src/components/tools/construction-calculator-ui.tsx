@@ -71,7 +71,7 @@ export function CalculatorShell({
   return (
     <div className={`${sectionCardClassName} mx-auto w-full max-w-5xl`}>
       <div className="mb-6 space-y-2">
-        <h2 className="text-2xl font-semibold tracking-tight text-slate-900">{title}</h2>
+        <p className="text-2xl font-semibold tracking-tight text-slate-900">{title}</p>
         <p className="text-sm leading-6 text-slate-600">{description}</p>
       </div>
       {children}

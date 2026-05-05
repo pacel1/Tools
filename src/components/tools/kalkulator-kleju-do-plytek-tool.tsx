@@ -33,7 +33,7 @@ export function KalkulatorKlejuDoPlytekTool() {
   return (
     <div className="mx-auto w-full max-w-2xl rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
       <div className="mb-6">
-        <h2 className="text-2xl font-semibold tracking-tight text-slate-900">{t("Kalkulator kleju do plytek", "Tile adhesive calculator")}</h2>
+        <p className="text-2xl font-semibold tracking-tight text-slate-900">{t("Kalkulator kleju do plytek", "Tile adhesive calculator")}</p>
         <p className="mt-2 text-sm leading-6 text-slate-600">
           {t("Oblicz ile kilogramow i ile workow kleju trzeba na dana powierzchnie.", "Estimate how many kilograms and bags of adhesive you need for a given area.")}
         </p>
@@ -67,7 +67,7 @@ export function KalkulatorKlejuDoPlytekTool() {
       </div>
 
       <div className="mt-6 rounded-2xl bg-slate-50 p-5">
-        <h3 className="text-sm font-semibold uppercase tracking-wide text-slate-500">{t("Wynik", "Result")}</h3>
+        <p className="text-sm font-semibold uppercase tracking-wide text-slate-500">{t("Wynik", "Result")}</p>
         <div className="mt-4 grid gap-4 sm:grid-cols-3">
           <div className="rounded-xl bg-white p-4 shadow-sm">
             <div className="text-sm text-slate-500">{t("Klej bez zapasu", "Adhesive without waste")}</div>

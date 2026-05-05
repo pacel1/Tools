@@ -50,7 +50,7 @@ export default function KalkulatorKostkiBrukowejTool() {
   return (
     <div className="mx-auto w-full max-w-3xl rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
       <div className="mb-6">
-        <h1 className="text-2xl font-bold tracking-tight text-slate-900">{t("Kalkulator kostki brukowej", "Paving block calculator")}</h1>
+        <p className="text-2xl font-bold tracking-tight text-slate-900">{t("Kalkulator kostki brukowej", "Paving block calculator")}</p>
         <p className="mt-2 text-sm text-slate-600">
           {t(
             "Sprawdz ile kostki potrzeba na podjazd, chodnik lub taras oraz policz obrzeza i palety.",

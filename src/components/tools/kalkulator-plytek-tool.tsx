@@ -54,7 +54,7 @@ export function KalkulatorPlytekTool({ className = "" }: KalkulatorPlytekToolPro
   return (
     <div className={`mx-auto w-full max-w-3xl rounded-2xl border border-slate-200 bg-white p-6 shadow-sm ${className}`}>
       <div className="mb-6 space-y-2">
-        <h2 className="text-2xl font-semibold tracking-tight text-slate-900">{t("Kalkulator plytek", "Tile calculator")}</h2>
+        <p className="text-2xl font-semibold tracking-tight text-slate-900">{t("Kalkulator plytek", "Tile calculator")}</p>
         <p className="text-sm leading-6 text-slate-600">
           {t(
             "Oblicz, ile plytek potrzeba na podloge lub sciane z uwzglednieniem docinek i zapasu.",

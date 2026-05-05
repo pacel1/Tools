@@ -42,7 +42,7 @@ export function KalkulatorTynkuTool() {
   return (
     <div className="w-full rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
       <div className="mb-6 space-y-2">
-        <h2 className="text-2xl font-semibold tracking-tight text-slate-900">{t("Kalkulator tynku", "Plaster calculator")}</h2>
+        <p className="text-2xl font-semibold tracking-tight text-slate-900">{t("Kalkulator tynku", "Plaster calculator")}</p>
         <p className="text-sm leading-6 text-slate-600">
           {t(
             "Oblicz ile tynku potrzeba na elewacje lub sciany wewnetrzne oraz ile workow tynku potrzeba.",
