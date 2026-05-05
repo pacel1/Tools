@@ -56,7 +56,7 @@ export function KalkulatorFarbyTool() {
   return (
     <div className="mx-auto w-full max-w-4xl rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
       <div className="mb-6 space-y-2">
-        <h2 className="text-2xl font-bold tracking-tight text-slate-900">{t("Kalkulator farby", "Paint calculator")}</h2>
+        <p className="text-2xl font-bold tracking-tight text-slate-900">{t("Kalkulator farby", "Paint calculator")}</p>
         <p className="text-sm leading-6 text-slate-600">
           {t(
             "Sprawdz ile farby potrzeba na sciany i sufity. Wpisz powierzchnie, wydajnosc, liczbe warstw, zapas i pojemnosc puszki, a kalkulator policzy wynik w litrach oraz liczbe puszek.",
@@ -89,7 +89,7 @@ export function KalkulatorFarbyTool() {
         </div>
 
         <div className="rounded-2xl bg-slate-50 p-5">
-          <h3 className="text-lg font-semibold text-slate-900">{t("Wynik", "Result")}</h3>
+          <p className="text-lg font-semibold text-slate-900">{t("Wynik", "Result")}</p>
           {result ? (
             <dl className="mt-4 space-y-4">
               <div className="rounded-xl bg-white p-4 shadow-sm">
