@@ -301,7 +301,9 @@ export async function generateMetadata({
     return {};
   }
 
-  const title = normalizeMetaTitle(hub?.title ?? meta.label[locale]);
+  const title = normalizeMetaTitle(hub?.title ?? meta.label[locale], {
+    fallback: hub?.description ?? meta.description[locale]
+  });
   const description = normalizeMetaDescription(
     buildCategoryMetaDescription({
       locale,

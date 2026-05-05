@@ -51,7 +51,7 @@ export function getToolLinksByLocale(locale: Locale): ToolLink[] {
 export function getSuggestedLinks(
   locale: Locale,
   currentToolId: string,
-  limit = 4
+  limit = 8
 ): ToolLink[] {
   const localizedContent = toolContent[locale] as Record<
     string,

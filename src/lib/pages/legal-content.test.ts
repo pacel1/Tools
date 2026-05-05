@@ -15,19 +15,14 @@ describe("legal page content", () => {
     expect(page.keywords).toContain("privacy policy");
   });
 
-  it("builds legal page metadata with canonical and hreflang links", async () => {
+  it("keeps noindex legal page metadata canonical-only without hreflang", async () => {
     const metadata = await buildLegalPageMetadata("pl", "cookies");
 
     expect(metadata.title).toBeTruthy();
     expect(metadata.alternates?.canonical).toBe(
       "http://localhost:3000/pl/cookies"
     );
-    expect(metadata.alternates?.languages?.en).toBe(
-      "http://localhost:3000/en/cookies"
-    );
-    expect(metadata.alternates?.languages?.["x-default"]).toBe(
-      "http://localhost:3000/en/cookies"
-    );
+    expect(metadata.alternates?.languages).toBeUndefined();
     expect(metadata.robots).toEqual({
       index: false,
       follow: true
@@ -41,6 +36,12 @@ describe("legal page content", () => {
       index: true,
       follow: true
     });
+    expect(metadata.alternates?.languages?.pl).toBe(
+      "http://localhost:3000/pl/about"
+    );
+    expect(metadata.alternates?.languages?.["x-default"]).toBe(
+      "http://localhost:3000/en/about"
+    );
   });
 
   it("returns one static param per locale", () => {
