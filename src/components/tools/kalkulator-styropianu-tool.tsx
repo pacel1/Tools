@@ -38,7 +38,7 @@ export default function KalkulatorStyropianuTool() {
   return (
     <div className="mx-auto w-full max-w-3xl rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
       <div className="mb-6 space-y-2">
-        <h2 className="text-2xl font-semibold tracking-tight text-slate-900">{t("Kalkulator styropianu", "EPS insulation calculator")}</h2>
+        <p className="text-2xl font-semibold tracking-tight text-slate-900">{t("Kalkulator styropianu", "EPS insulation calculator")}</p>
         <p className="text-sm leading-6 text-slate-600">
           {t(
             "Sprawdz, ile paczek styropianu potrzeba do ocieplenia scian, podlogi, dachu lub fundamentu.",
@@ -69,7 +69,7 @@ export default function KalkulatorStyropianuTool() {
       </div>
 
       <div className="mt-6 rounded-2xl bg-slate-50 p-5">
-        <h3 className="mb-4 text-lg font-semibold text-slate-900">{t("Wynik", "Result")}</h3>
+        <p className="mb-4 text-lg font-semibold text-slate-900">{t("Wynik", "Result")}</p>
         <div className="grid gap-4 sm:grid-cols-3">
           <ResultCard label={t("Objetosc izolacji (m3)", "Insulation volume (m3)")} value={formatPlNumber(result.volume, 2, locale)} />
           <ResultCard label={t("Liczba paczek", "Pack count")} value={formatPlNumber(result.packages, 0, locale)} />

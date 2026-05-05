@@ -55,7 +55,7 @@ export function KalkulatorOgrodzeniaTool() {
   return (
     <div className="mx-auto w-full max-w-4xl rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
       <div className="mb-6">
-        <h2 className="text-2xl font-semibold text-slate-900">{t("Kalkulator ogrodzenia", "Fence calculator")}</h2>
+        <p className="text-2xl font-semibold text-slate-900">{t("Kalkulator ogrodzenia", "Fence calculator")}</p>
         <p className="mt-2 text-sm text-slate-600">
           {t(
             "Sprawdz, ile paneli ogrodzeniowych potrzeba oraz jaka bedzie liczba slupkow i dlugosc wypelnienia.",

@@ -233,7 +233,7 @@ export default async function ToolPage({
                   key={example.title}
                   className="rounded-[28px] border border-white/10 bg-slate-950/50 p-5"
                 >
-                  <h3 className="text-lg font-semibold">{example.title}</h3>
+                  <p className="text-lg font-semibold">{example.title}</p>
                   <p className="mt-3 text-sm text-white/65">
                     {labels.input}:{" "}
                     <span className="font-mono text-white">{example.input}</span>
@@ -272,7 +272,7 @@ export default async function ToolPage({
           <h2 className="text-2xl font-semibold tracking-tight">{labels.related}</h2>
           <div className="grid gap-4">
             {relatedTools.map((tool) => (
-              <ToolCard key={tool.id} tool={tool} />
+              <ToolCard key={tool.id} tool={tool} titleAs="p" />
             ))}
           </div>
         </aside>

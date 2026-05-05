@@ -69,7 +69,7 @@ export default function KalkulatorPlytGkTool() {
   return (
     <div className="mx-auto w-full max-w-3xl rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
       <div className="mb-6">
-        <h2 className="text-2xl font-semibold text-slate-900">{t("Kalkulator plyt GK", "Drywall board calculator")}</h2>
+        <p className="text-2xl font-semibold text-slate-900">{t("Kalkulator plyt GK", "Drywall board calculator")}</p>
         <p className="mt-2 text-sm text-slate-600">{t("Oblicz ile plyt gk trzeba, a takze ile wkretow i profili przygotowac do zabudowy.", "Estimate how many drywall boards, screws, and profiles you need for the assembly.")}</p>
       </div>
 

@@ -70,7 +70,7 @@ export default function KalkulatorFugiTool() {
   return (
     <div className="mx-auto w-full max-w-3xl rounded-2xl bg-white p-6 shadow-lg ring-1 ring-slate-200">
       <div className="mb-6 space-y-2">
-        <h2 className="text-2xl font-bold text-slate-900">{t("Kalkulator fugi", "Grout calculator")}</h2>
+        <p className="text-2xl font-bold text-slate-900">{t("Kalkulator fugi", "Grout calculator")}</p>
         <p className="text-sm leading-6 text-slate-600">
           {t(
             "Sprawdz, ile fugi potrzeba do plytek. To szybka estymacja planistyczna dla doboru materialu.",

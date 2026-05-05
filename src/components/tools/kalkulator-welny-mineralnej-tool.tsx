@@ -31,7 +31,7 @@ export default function KalkulatorWelnyMineralnejTool() {
   return (
     <div className="mx-auto w-full max-w-3xl rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
       <div className="mb-6 space-y-2">
-        <h1 className="text-2xl font-semibold tracking-tight text-slate-900">{t("Kalkulator welny mineralnej", "Mineral wool calculator")}</h1>
+        <p className="text-2xl font-semibold tracking-tight text-slate-900">{t("Kalkulator welny mineralnej", "Mineral wool calculator")}</p>
         <p className="text-sm leading-6 text-slate-600">
           {t(
             "Sprawdz ile welny potrzeba do ocieplenia poddasza, scian lub stropu. Oblicz powierzchnie z zapasem, objetosc izolacji i liczbe paczek albo rolek.",

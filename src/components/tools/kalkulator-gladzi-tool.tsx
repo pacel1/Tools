@@ -50,7 +50,7 @@ export default function KalkulatorGladziTool() {
   return (
     <div className="mx-auto w-full max-w-3xl rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
       <div className="mb-6 space-y-2">
-        <h2 className="text-2xl font-semibold tracking-tight text-slate-900">{t("Kalkulator gladzi", "Skim coat calculator")}</h2>
+        <p className="text-2xl font-semibold tracking-tight text-slate-900">{t("Kalkulator gladzi", "Skim coat calculator")}</p>
         <p className="text-sm leading-6 text-slate-600">
           {t(
             "Sprawdz ile gladzi potrzeba na sciany i sufity. Oblicz zuzycie, zapas oraz liczbe workow.",

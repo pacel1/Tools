@@ -351,7 +351,7 @@ export default async function CategoryPage({
           </h2>
           <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
             {featuredTools.map((tool) => (
-              <ToolCard key={tool.id} tool={tool} />
+              <ToolCard key={tool.id} tool={tool} titleAs="p" />
             ))}
           </div>
         </section>
@@ -400,9 +400,9 @@ export default async function CategoryPage({
                 key={item.title}
                 className="border-l border-cyan-300/30 pl-5"
               >
-                <h3 className="text-lg font-semibold text-white">
+                <p className="text-lg font-semibold text-white">
                   {item.title}
-                </h3>
+                </p>
                 <p className="mt-2 text-sm leading-6 text-white/65">
                   {item.description}
                 </p>
@@ -415,7 +415,9 @@ export default async function CategoryPage({
       <section className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
         <h2 className="sr-only">{labels.allTools}</h2>
         {tools.length > 0 ? (
-          tools.map((tool) => <ToolCard key={tool.id} tool={tool} />)
+          tools.map((tool) => (
+            <ToolCard key={tool.id} tool={tool} titleAs="p" />
+          ))
         ) : (
           <div className="rounded-[28px] border border-dashed border-white/15 bg-white/5 p-8 text-white/65">
             {labels.empty} <code>pnpm add-tool</code>.
