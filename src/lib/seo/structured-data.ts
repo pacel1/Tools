@@ -34,19 +34,16 @@ export function buildToolStructuredData(locale: Locale, model: ToolPageModel) {
   const graphs: Array<Record<string, unknown>> = [
     {
       "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
+      "@type": "WebPage",
       name: model.content.h1,
       description: model.content.metaDescription ?? model.content.seo.description,
-      applicationCategory: categoryCatalog[model.definition.category].label[locale],
-      operatingSystem: "Any",
-      isAccessibleForFree: true,
-      offers: {
-        "@type": "Offer",
-        price: "0",
-        priceCurrency: "USD"
-      },
       url: canonical,
       inLanguage: locale,
+      isPartOf: {
+        "@type": "WebSite",
+        name: getSiteName(),
+        url: getSiteUrl()
+      },
       publisher: {
         "@type": "Organization",
         name: getSiteName()
