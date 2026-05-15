@@ -4,159 +4,99 @@
   "slug": "generador-de-imagenes-de-relleno",
   "h1": "Generador de imágenes de relleno",
   "title": "Generador de imágenes de relleno",
-  "shortDescription": "Crea imágenes de relleno para maquetas UI, portadas de blog, borradores de imágenes OG y sistemas de diseño.",
-  "metaTitle": "Generador de imágenes de relleno | Crea maquetas rápidas",
-  "metaDescription": "Genera imágenes de relleno para maquetas UI, portadas de blog, vistas previas sociales y sistemas de diseño directamente en tu navegador.",
-  "intro": "Crea al instante imágenes de relleno limpias para wireframes, cabeceras de blog, vistas previas sociales y trabajos de diseño. Define el tamaño, genera la imagen en el navegador y descárgala enseguida.",
-  "overview": "Este generador de imágenes de relleno funciona en el navegador y usa canvas para crear gráficos simples y rápidos sin subir archivos. Es útil para maquetas, borradores de contenido y sistemas de diseño cuando necesitas una imagen temporal con las dimensiones correctas.",
+  "shortDescription": "Crea imágenes de relleno para wireframes, tarjetas sociales, cabeceras de blog y sistemas de diseño.",
+  "metaTitle": "Generador de imágenes de relleno",
+  "metaDescription": "Crea imágenes de relleno a medida para maquetas, cabeceras, tarjetas sociales y sistemas de diseño en el navegador.",
+  "intro": "Genera una imagen de relleno con las dimensiones exactas que necesitas y luego prévisualízala y descárgala como PNG o SVG.",
+  "overview": "Usa esta herramienta cuando necesites una imagen provisional con medidas precisas para una maquetación, un borrador de contenido o una idea de interfaz. La imagen se crea de forma local en el navegador, así que puedes seguir trabajando sin esperar al material final.\n\nSirve para marcar huecos de imagen, probar el aire de una sección principal o preparar un diseño para una tarjeta de compartir. El resultado es simple y predecible, lo que facilita sustituirlo más tarde por el archivo definitivo.\n\nComo la imagen se genera según el tamaño y los ajustes que elijas, funciona bien para piezas que deben encajar en un contenedor concreto, desde miniaturas pequeñas hasta banners anchos.",
   "howItWorks": [
-    "Introduce el ancho y el alto deseados.",
-    "Elige opcionalmente estilos o texto si están disponibles.",
-    "Genera la imagen de relleno en tu navegador.",
-    "Previsualiza el resultado y descárgalo cuando lo necesites."
+    "Introduce el ancho y el alto objetivo.",
+    "Añade texto opcional o ajustes visuales si están disponibles.",
+    "Genera la imagen en el navegador.",
+    "Revisa la vista previa y descarga el archivo que necesites."
   ],
   "useCases": [
-    "Maquetas de UI y aplicaciones",
-    "Borradores de portadas de blog",
-    "Previsualizaciones de imágenes Open Graph",
-    "Sistemas de diseño para landing pages",
-    "Diseños de email y newsletters",
-    "Recursos de prototipo para presentaciones"
+    {
+      "title": "Borrador de banner principal",
+      "description": "Crea un placeholder ancho para la cabecera de una landing antes de tener la pieza final de campaña."
+    },
+    {
+      "title": "Maqueta de pantalla de app",
+      "description": "Rellena los espacios de imagen en un dashboard o prototipo móvil para que la estructura se entienda mejor."
+    },
+    {
+      "title": "Diseño de tarjeta para redes",
+      "description": "Reserva el espacio correcto para una imagen Open Graph o una previsualización de compartido antes de publicar."
+    },
+    {
+      "title": "Planificación de portada editorial",
+      "description": "Maqueta cabeceras de artículos y portadas de blog mientras llega la imagen definitiva."
+    },
+    {
+      "title": "Componentes de sistema de diseño",
+      "description": "Mantén tamaños coherentes en tarjetas, mosaicos y bloques multimedia con placeholders repetibles."
+    },
+    {
+      "title": "Presentaciones para cliente",
+      "description": "Inserta una imagen de sustitución realista en diapositivas cuando el recurso final todavía no está listo."
+    }
   ],
   "examples": [
     {
-      "title": "Borrador de cabecera de blog",
+      "title": "Cabecera ancha de artículo",
       "input": "1200 × 630",
-      "output": "Imagen de relleno lista para una portada o vista previa social.",
-      "description": "Útil para visualizar un artículo antes de tener el diseño final."
+      "output": "Placeholder horizontal listo para cabeceras de artículo y vistas previas sociales.",
+      "description": "Encaja con un formato muy usado para compartir y ayuda a planificar la composición."
     },
     {
-      "title": "Maqueta de producto",
-      "input": "800 × 600",
-      "output": "Gráfico simple de relleno para diseños de interfaz.",
-      "description": "Ayuda a mantener proporciones y composición durante el diseño."
+      "title": "Espacio para foto de producto",
+      "input": "960 × 720",
+      "output": "Placeholder rectangular medio para tarjetas de catálogo o bloques destacados.",
+      "description": "Útil para comprobar cómo se ve una rejilla cuando aún faltan las fotos finales."
+    },
+    {
+      "title": "Banner de newsletter",
+      "input": "600 × 300",
+      "output": "Placeholder compacto para el encabezado de un email o un módulo promocional.",
+      "description": "Facilita revisar cómo encaja un banner en una plantilla estrecha de correo."
     }
   ],
   "faq": [
     {
-      "question": "¿Para qué sirve un generador de imágenes de relleno?",
-      "answer": "Crea imágenes temporales para diseños, borradores y prototipos cuando la imagen final aún no está lista."
+      "question": "¿Puedo definir un tamaño personalizado en lugar de un preset?",
+      "answer": "Sí. Introduce el ancho y el alto exactos que necesites, incluso si el formato es poco habitual."
     },
     {
-      "question": "¿Puedo usarlo sin subir un archivo?",
-      "answer": "Sí. Se genera localmente en el navegador, así que no hace falta subir nada."
+      "question": "¿Qué pasa si elijo dimensiones muy grandes?",
+      "answer": "La herramienta intentará crear la imagen, pero los lienzos enormes pueden tardar más en renderizar y pesar más al descargarlos."
     },
     {
-      "question": "¿Qué tamaños puedo crear?",
-      "answer": "Puedes crear cualquier tamaño común para banners, miniaturas, tarjetas y vistas previas sociales."
+      "question": "¿El fondo sale transparente o con color?",
+      "answer": "Depende de los ajustes disponibles. Si no activas la transparencia, la imagen se dibuja con el fondo predeterminado."
     },
     {
-      "question": "¿La imagen se descarga automáticamente?",
-      "answer": "No. Primero la ves en la vista previa y luego la descargas cuando quieras."
+      "question": "¿Puedo usar el resultado como imagen final de producción?",
+      "answer": "No. Está pensado como recurso provisional para planificación, no como gráfica final de marca."
+    },
+    {
+      "question": "¿Por qué el archivo descargado a veces no se ve idéntico a la vista previa?",
+      "answer": "Puede haber pequeñas diferencias porque la vista previa se adapta al espacio de pantalla y el archivo descargado usa las dimensiones exactas generadas."
+    },
+    {
+      "question": "¿Cuál es el error más común al usar esta herramienta?",
+      "answer": "Elegir una proporción equivocada. Si la imagen debe encajar en un contenedor concreto, usa sus medidas reales antes de generar."
     }
   ],
-  "uiLabels": {
-    "copy": "Copiar",
-    "copied": "Copiado",
-    "input": "Entrada",
-    "output": "Salida",
-    "placeholder": "Texto de vista previa",
-    "indent": "Sangría",
-    "removeComments": "Eliminar comentarios",
-    "preview": "Vista previa",
-    "source": "Fuente",
-    "sanitizedHtml": "HTML sanitizado",
-    "plainText": "Texto sin formato",
-    "summary": "Resumen",
-    "total": "Total",
-    "links": "Enlaces",
-    "images": "Imágenes",
-    "errors": "Errores",
-    "warnings": "Advertencias",
-    "valid": "Válido",
-    "invalid": "No válido",
-    "href": "Href",
-    "text": "Texto",
-    "rel": "Rel",
-    "target": "Destino",
-    "alt": "Alt",
-    "width": "Ancho",
-    "height": "Alto",
-    "empty": "Vacío",
-    "outputReady": "Salida lista",
-    "cleanedHtml": "HTML limpio",
-    "formattedHtml": "HTML formateado",
-    "minifiedHtml": "HTML minificado",
-    "markdown": "Markdown",
-    "extractedImages": "Imágenes extraídas",
-    "extractedLinks": "Enlaces extraídos",
-    "validationSummary": "Resumen de validación",
-    "prettyHtml": "HTML legible",
-    "encodedText": "Texto codificado",
-    "file": "Archivo",
-    "size": "Tamaño",
-    "format": "Formato",
-    "quality": "Calidad",
-    "colorOne": "Color 1",
-    "colorTwo": "Color 2",
-    "background": "Fondo",
-    "foreground": "Primer plano",
-    "angle": "Ángulo",
-    "margin": "Margen",
-    "level": "Nivel",
-    "gradientType": "Tipo de degradado",
-    "linear": "Lineal",
-    "radial": "Radial",
-    "blur": "Desenfoque",
-    "spread": "Extensión",
-    "offsetX": "Desplazamiento X",
-    "offsetY": "Desplazamiento Y",
-    "opacity": "Opacidad",
-    "inset": "Inset",
-    "cssCode": "Código CSS",
-    "snippet": "Fragmento",
-    "download": "Descargar",
-    "downloadSvg": "Descargar SVG",
-    "downloadPng": "Descargar PNG",
-    "downloadAll": "Descargar todo",
-    "upload": "Subir",
-    "title": "Título",
-    "description": "Descripción",
-    "canonicalUrl": "URL canónica",
-    "siteName": "Nombre del sitio",
-    "ogImage": "Imagen OG",
-    "clear": "Limpiar",
-    "generatedQr": "Vista previa del codigo QR",
-    "placeholderImage": "Vista previa de la imagen",
-    "faviconSet": "Conjunto de favicon",
-    "keepAspectRatio": "Mantener proporción",
-    "cropX": "Recorte X",
-    "cropY": "Recorte Y",
-    "cropWidth": "Ancho del recorte",
-    "cropHeight": "Alto del recorte",
-    "originalSize": "Tamaño original",
-    "outputSize": "Tamaño de salida",
-    "savedSize": "Tamaño guardado",
-    "result": "Resultado",
-    "base64": "Base64",
-    "mimeType": "Tipo MIME",
-    "resizedImage": "Imagen redimensionada",
-    "compressedImage": "Imagen comprimida",
-    "croppedImage": "Imagen recortada",
-    "convertedImage": "Imagen convertida",
-    "decodedImage": "Imagen decodificada",
-    "imagePreview": "Vista previa de la imagen"
-  },
   "seo": {
     "title": "Generador de imágenes de relleno",
-    "description": "Genera imágenes de relleno para maquetas UI, portadas de blog, vistas previas sociales y sistemas de diseño directamente en tu navegador.",
+    "description": "Crea imágenes de relleno a medida para maquetas, cabeceras, tarjetas sociales y sistemas de diseño en el navegador.",
     "keywords": [
       "generador de imagenes de relleno",
       "imagen de relleno",
-      "generador de maquetas",
-      "imagen placeholder",
-      "imagen og placeholder",
-      "generador de imagenes canvas"
+      "imagen para maqueta",
+      "placeholder para wireframe",
+      "imagen para tarjeta social",
+      "recurso para sistema de diseño"
     ]
   }
 }

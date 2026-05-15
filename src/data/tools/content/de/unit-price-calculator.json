@@ -4,44 +4,76 @@
   "slug": "einheitspreis-rechner",
   "h1": "Einheitspreis-Rechner",
   "title": "Einheitspreis-Rechner",
-  "shortDescription": "Vergleiche den Preis pro Einheit anhand von Gesamtpreis und Menge mit schnellen Ergebnissen, einfachen Eingaben und praktischen Beispielen.",
-  "overview": "Vergleiche den Preis pro Einheit anhand von Gesamtpreis und Menge. Diese Seite liefert eine schnelle Antwort mit einem praktischen Tool und einem einfachen Ergebnisablauf. Der Inhalt richtet sich an Nutzer, die eine kostenlose Online-Antwort, schnelle Ergebnisse im Browser und hilfreiche Long-Tail-SEO-Inhalte suchen.",
+  "shortDescription": "Berechne den Preis pro Einheit aus Gesamtpreis und Menge und vergleiche Packungen, Größen und Angebote.",
+  "metaTitle": "Einheitspreis-Rechner",
+  "metaDescription": "Berechne den Preis pro Einheit aus Preis und Menge und vergleiche Packungen, Größen und Angebote.",
+  "intro": "Gib Gesamtpreis und Menge ein, dann erhältst du den Preis pro Einheit für einen direkten Vergleich.",
+  "overview": "Dieser Rechner macht aus einem Gesamtpreis und einer Menge einen klaren Einheitspreis. Das ist hilfreich, wenn Produkte in unterschiedlichen Packungsgrößen, Gewichten, Volumina oder Stückzahlen verkauft werden und du fair vergleichen möchtest.\n\nDas Ergebnis zeigt, was eine einzelne Einheit kostet. So erkennst du schnell, ob eine größere Packung wirklich günstiger ist oder nur günstiger wirkt, weil der Endpreis auf den ersten Blick niedriger erscheint.",
   "howItWorks": [
-    "Gib den benötigten Wert oder Text in das Formular ein.",
-    "Die Umrechnung, Berechnung oder Transformation läuft sofort im Browser.",
-    "Prüfe das Ergebnis und nutze bei Bedarf verwandte Tools für den nächsten Schritt."
+    "Gesamtpreis eingeben.",
+    "Menge in der passenden Einheit eintragen.",
+    "Einheitspreis mit anderen Angeboten vergleichen."
+  ],
+  "useCases": [
+    {
+      "title": "Supermarktpreise vergleichen",
+      "description": "Rechne Müsli, Kaffee, Joghurt oder Reinigungsmittel auf Kilogramm, Liter oder Stück um."
+    },
+    {
+      "title": "Angebote von Lieferanten prüfen",
+      "description": "Vergleiche Schrauben, Papier, Putzmittel oder Verbrauchsmaterialien in verschiedenen Packungen."
+    },
+    {
+      "title": "Tarife und Pakete bewerten",
+      "description": "Berechne Kosten pro Monat, pro Platz oder pro Nutzung bei gestaffelten Angeboten."
+    }
   ],
   "examples": [
     {
-      "title": "Beispiel 1",
-      "input": "12 für 3 Einheiten",
-      "output": "4 pro Einheit",
-      "description": "Ein realistisches Beispiel für den Einheitspreis-Rechner bei einer alltäglichen Suche."
+      "title": "Preis pro Kilogramm",
+      "input": "18,00 € bei 1,5 kg",
+      "output": "12,00 €/kg",
+      "description": "Nützlich, um unterschiedliche Packungen auf einen Kilopreis zu bringen."
     },
     {
-      "title": "Beispiel 2",
-      "input": "12 für 3 Einheiten",
-      "output": "4 pro Einheit",
-      "description": "Ein weiterer praktischer Anwendungsfall für organischen Long-Tail-Traffic."
+      "title": "Preis pro Liter",
+      "input": "7,49 € bei 750 ml",
+      "output": "9,99 €/l",
+      "description": "Hilft beim Vergleich von Flaschen mit verschiedenen Füllmengen."
+    },
+    {
+      "title": "Preis pro Stück",
+      "input": "24,00 € bei 8 Stück",
+      "output": "3,00 €/Stück",
+      "description": "Praktisch für Multipacks und Artikel, die nach Anzahl verkauft werden."
     }
   ],
   "faq": [
     {
-      "question": "Wie genau ist dieses Tool?",
-      "answer": "Das Ergebnis wird direkt aus der Formel oder der browserseitigen Logik dieses Tools berechnet."
+      "question": "Kann ich Gramm, Milliliter und Stück verwenden?",
+      "answer": "Ja, solange du bei allen verglichenen Angeboten dieselbe Einheit nutzt."
     },
     {
-      "question": "Kann ich dieses Tool auf dem Handy verwenden?",
-      "answer": "Ja. Die Seite funktioniert auf Desktop- und Mobilgeräten mit einem einfachen Eingabe- und Ergebnislayout."
+      "question": "Muss ich die Einheiten vorher umrechnen?",
+      "answer": "Wenn die Angebote unterschiedliche Maße verwenden, ja. Sonst vergleichst du keine gleichartige Einheit."
+    },
+    {
+      "question": "Welcher Fehler verfälscht das Ergebnis am häufigsten?",
+      "answer": "Eine falsche Mengeneingabe, zum Beispiel 750 statt 0,75 bei einer Berechnung pro Liter."
+    },
+    {
+      "question": "Ist der niedrigste Einheitspreis immer die beste Wahl?",
+      "answer": "Nicht automatisch. Qualität, Inhalt, Leistung und Haltbarkeit sollten ebenfalls berücksichtigt werden."
     }
   ],
   "seo": {
     "title": "Einheitspreis-Rechner",
-    "description": "Vergleiche den Preis pro Einheit anhand von Gesamtpreis und Menge. Kostenloser Online-Einheitspreis-Rechner mit sofortigen Ergebnissen.",
+    "description": "Berechne den Preis pro Einheit aus Preis und Menge und vergleiche Packungen, Größen und Angebote.",
     "keywords": [
       "einheitspreis-rechner",
-      "preis-pro-einheit-rechner",
-      "rechner-tool"
+      "preis pro einheit",
+      "kilopreis",
+      "literpreis"
     ]
   }
 }

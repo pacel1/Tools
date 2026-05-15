@@ -4,44 +4,76 @@
   "slug": "calculateur-de-prix-unitaire",
   "h1": "Calculateur de prix unitaire",
   "title": "Calculateur de prix unitaire",
-  "shortDescription": "Comparez le prix par unité à partir du coût total et de la quantité avec des résultats rapides, des saisies simples et des exemples pratiques.",
-  "overview": "Comparez le prix par unité à partir du coût total et de la quantité. Cette page fournit une réponse rapide grâce à un outil pratique et un parcours de résultat simple. Elle cible les utilisateurs qui recherchent une réponse gratuite en ligne, des résultats rapides dans le navigateur et un contenu utilitaire longue traîne optimisé SEO.",
+  "shortDescription": "Calculez le prix par unité à partir du coût total et de la quantité pour comparer formats, tailles et offres.",
+  "metaTitle": "Calculateur de prix unitaire",
+  "metaDescription": "Calculez le prix par unité à partir du coût total et de la quantité pour comparer formats, tailles et offres.",
+  "intro": "Saisissez le coût total et la quantité pour obtenir le prix par unité et comparer les offres sur une base commune.",
+  "overview": "Ce calculateur transforme un prix total et une quantité en prix unitaire clair. Il est utile lorsque des produits sont vendus dans des formats, poids, volumes ou nombres de pièces différents et que vous souhaitez les comparer correctement.\n\nLe résultat indique combien coûte une seule unité de la mesure saisie. Vous voyez ainsi rapidement si un grand format est réellement plus avantageux ou seulement plus attractif en apparence.",
   "howItWorks": [
-    "Saisissez la valeur ou le texte requis dans le formulaire.",
-    "La conversion, le calcul ou la transformation s’exécute instantanément dans le navigateur.",
-    "Consultez le résultat et poursuivez avec des outils associés si vous avez besoin d’une étape supplémentaire."
+    "Saisissez le coût total.",
+    "Ajoutez la quantité dans l’unité à comparer.",
+    "Utilisez le prix unitaire pour comparer d’autres offres."
+  ],
+  "useCases": [
+    {
+      "title": "Comparer des produits alimentaires",
+      "description": "Mettez en parallèle riz, café, yaourt ou lessive vendus en grammes, litres ou pièces."
+    },
+    {
+      "title": "Vérifier des devis fournisseurs",
+      "description": "Comparez vis, papier, produits d’entretien ou consommables dans des conditionnements différents."
+    },
+    {
+      "title": "Évaluer des forfaits",
+      "description": "Calculez un coût par mois, par place ou par usage quand une offre existe en plusieurs tailles."
+    }
   ],
   "examples": [
     {
-      "title": "Exemple 1",
-      "input": "12 pour 3 unités",
-      "output": "4 par unité",
-      "description": "Un exemple réaliste de calculateur de prix unitaire pour une recherche courante."
+      "title": "Prix au kilogramme",
+      "input": "18,00 € pour 1,5 kg",
+      "output": "12,00 €/kg",
+      "description": "Convertit un prix de lot en tarif comparable au kilogramme."
     },
     {
-      "title": "Exemple 2",
-      "input": "12 pour 3 unités",
-      "output": "4 par unité",
-      "description": "Un autre cas d’usage pratique pour générer du trafic organique longue traîne."
+      "title": "Prix au litre",
+      "input": "7,49 € pour 750 ml",
+      "output": "9,99 €/l",
+      "description": "Pratique pour comparer des bouteilles de volumes différents."
+    },
+    {
+      "title": "Prix à la pièce",
+      "input": "24,00 € pour 8 pièces",
+      "output": "3,00 €/pièce",
+      "description": "Utile pour les lots multiples et les articles vendus à l’unité."
     }
   ],
   "faq": [
     {
-      "question": "Quelle est la précision de cet outil ?",
-      "answer": "Le résultat est calculé directement à partir de la formule ou de la logique côté navigateur utilisée par cet outil."
+      "question": "Puis-je utiliser des grammes, des millilitres ou des pièces ?",
+      "answer": "Oui, à condition d’utiliser la même unité pour toutes les offres que vous comparez."
     },
     {
-      "question": "Puis-je utiliser cet outil sur mobile ?",
-      "answer": "Oui. La page fonctionne sur ordinateur et sur mobile avec une interface simple de saisie et de résultat."
+      "question": "Dois-je convertir les unités avant le calcul ?",
+      "answer": "Si les offres n’emploient pas la même mesure, oui. Il faut les ramener à une unité identique pour comparer correctement."
+    },
+    {
+      "question": "Quelle erreur fausse le plus souvent le résultat ?",
+      "answer": "Saisir une mauvaise quantité, par exemple 750 au lieu de 0,75 pour un calcul au litre."
+    },
+    {
+      "question": "Le prix unitaire suffit-il pour choisir ?",
+      "answer": "Pas toujours. La qualité, le contenu net, la durée d’usage et le rendement réel comptent aussi."
     }
   ],
   "seo": {
     "title": "Calculateur de prix unitaire",
-    "description": "Comparez le prix par unité à partir du coût total et de la quantité. Calculateur de prix unitaire gratuit en ligne avec résultats instantanés.",
+    "description": "Calculez le prix par unité à partir du coût total et de la quantité pour comparer formats, tailles et offres.",
     "keywords": [
       "calculateur de prix unitaire",
-      "calculateur de prix à l'unité",
-      "outil de calcul"
+      "prix unitaire",
+      "prix au kilo",
+      "prix au litre"
     ]
   }
 }

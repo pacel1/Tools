@@ -4,104 +4,90 @@
   "slug": "extracteur-d-images-html",
   "h1": "Extracteur d’images HTML",
   "title": "Extracteur d’images HTML",
-  "shortDescription": "Extrayez les sources d’images, le texte alt et les dimensions depuis du HTML.",
-  "metaTitle": "Extracteur d’images HTML | Extraire les URLs, le texte alt et les dimensions",
-  "metaDescription": "Extrayez les sources d’images, le texte alt, la largeur et la hauteur depuis du HTML directement dans votre navigateur. Rapide, sûr et sans API externe.",
-  "intro": "Utilisez cet extracteur d’images HTML pour récupérer rapidement les URLs d’images, le texte alternatif et les dimensions à partir de n’importe quel code HTML. Il fonctionne uniquement côté client, dans le navigateur, sans API externe.",
-  "overview": "Collez votre HTML et extrayez toutes les balises img dans une liste claire et lisible. L’outil affiche src, alt, width et height pour vous aider à vérifier l’accessibilité, contrôler le contenu et réutiliser plus vite les données d’images. Comme le traitement est local, c’est une solution sûre pour le balisage sensible.",
+  "shortDescription": "Extrayez les sources, l’alt et les dimensions des images depuis du HTML.",
+  "metaTitle": "Extracteur d’images HTML",
+  "metaDescription": "Extrayez les sources d’images, le texte alt, la largeur et la hauteur depuis du HTML directement dans votre navigateur.",
+  "intro": "Collez du HTML pour extraire toutes les balises img avec leur source, leur texte alt et leurs dimensions dans une liste structurée.",
+  "overview": "Cet outil lit le HTML et isole les éléments d’image dans un résultat clair que vous pouvez vérifier ou copier. Chaque entrée peut inclure la source de l’image, le texte alternatif, la largeur, la hauteur et d’autres attributs présents dans la balise, ce qui facilite une vérification précise du balisage.\n\nIl est particulièrement utile lorsque les données d’image sont cachées dans des exports de CMS, des modèles d’e-mail ou de longs extraits mêlant plusieurs types de contenu. Comme l’analyse se fait localement dans le navigateur, vous pouvez travailler sur du balisage confidentiel sans l’envoyer ailleurs.",
   "howItWorks": [
     "Collez votre HTML dans le champ de saisie.",
-    "L’outil analyse le balisage à la recherche des éléments img.",
-    "Il extrait l’URL de l’image et les attributs courants comme alt, width et height.",
-    "Relisez la sortie structurée et copiez le résultat si nécessaire."
+    "Le parser recherche les éléments img dans le balisage.",
+    "Il extrait src, alt, width, height et les attributs associés lorsqu’ils existent.",
+    "Relisez la liste et copiez les données d’image extraites si besoin."
   ],
   "useCases": [
-    "Vérifier l’accessibilité des images en contrôlant les textes alt.",
-    "Récupérer les URLs d’images depuis un HTML exporté.",
-    "Contrôler les valeurs width et height avant la publication.",
-    "Extraire les références d’images depuis un CMS ou des modèles d’e-mail.",
-    "Accélérer le QA sur les pages avec beaucoup d’images."
+    {
+      "title": "Vérifier les alt manquants",
+      "description": "Passez un export de page en revue pour repérer les balises img sans valeur alt utile avant la mise en ligne."
+    },
+    {
+      "title": "Rassembler les URLs d’images",
+      "description": "Extrayez toutes les sources d’image d’un modèle d’e-mail ou d’un fragment CMS dans une liste simple."
+    },
+    {
+      "title": "Contrôler les dimensions déclarées",
+      "description": "Inspectez width et height pour repérer les images étirées, inversées ou mal dimensionnées."
+    },
+    {
+      "title": "Analyser le lazy loading",
+      "description": "Trouvez les chemins d’image stockés dans data-src ou d’autres attributs de modèle similaires."
+    },
+    {
+      "title": "Extraire les images d’un HTML mixte",
+      "description": "Séparez les données d’image d’extraits longs contenant aussi des liens, du texte et de la mise en page."
+    }
   ],
   "examples": [
     {
-      "title": "Balise image simple",
-      "input": "<img src=\"/images/banner.jpg\" alt=\"Bannière d’accueil\" width=\"1200\" height=\"400\">",
-      "output": "src: /images/banner.jpg | alt: Bannière d’accueil | width: 1200 | height: 400",
-      "description": "Une balise img est transformée en champs structurés."
+      "title": "Une balise img simple",
+      "input": "<img src=\"/assets/hero.jpg\" alt=\"Silhouette urbaine au crépuscule\" width=\"1440\" height=\"900\">",
+      "output": "1) src: /assets/hero.jpg | alt: Silhouette urbaine au crépuscule | width: 1440 | height: 900",
+      "description": "Un élément img standard est transformé en champs séparés."
     },
     {
-      "title": "Image en chargement différé",
-      "input": "<img data-src=\"photo.jpg\" alt=\"Photo du produit\">",
-      "output": "src: photo.jpg | alt: Photo du produit",
-      "description": "Pratique pour vérifier des attributs de source alternatifs dans les modèles."
+      "title": "Image sans largeur explicite",
+      "input": "<figure><img src=\"product.png\" alt=\"Vue de face du produit\"></figure>",
+      "output": "1) src: product.png | alt: Vue de face du produit",
+      "description": "Seuls les attributs réellement présents dans la balise sont renvoyés."
+    },
+    {
+      "title": "Image de modèle avec attribut data",
+      "input": "<img data-src=\"/img/gallery-03.jpg\" alt=\"Élément de galerie 3\" loading=\"lazy\">",
+      "output": "1) data-src: /img/gallery-03.jpg | alt: Élément de galerie 3 | loading: lazy",
+      "description": "Pratique pour les modèles qui stockent le vrai chemin dans un attribut data."
     }
   ],
   "faq": [
     {
-      "question": "Cet outil envoie-t-il mon HTML sur un serveur ?",
-      "answer": "Non. Il fonctionne entièrement dans votre navigateur, donc votre HTML n’est pas transmis à un serveur."
+      "question": "L’outil lit-il uniquement les balises img ?",
+      "answer": "Oui. Il se concentre sur les éléments img du HTML et n’inspecte ni les images de fond CSS ni les images chargées par script."
     },
     {
-      "question": "Quels attributs d’image sont extraits ?",
-      "answer": "L’outil se concentre sur src, alt, width et height, et peut aussi afficher d’autres attributs d’image utiles lorsqu’ils sont disponibles."
+      "question": "Que se passe-t-il si une balise image est incomplète ?",
+      "answer": "L’outil renvoie les attributs qu’il trouve, donc une balise avec seulement src et alt donnera un résultat plus court qu’une balise complète."
     },
     {
-      "question": "Peut-il analyser du HTML non sûr ?",
-      "answer": "Oui, l’analyse se fait localement côté client, mais il reste préférable de vérifier soigneusement tout balisage non fiable."
+      "question": "Puis-je l’utiliser sur un fragment avec beaucoup d’images répétées ?",
+      "answer": "Oui. Chaque élément img correspondant est extrait séparément, même si plusieurs balises utilisent la même source."
     },
     {
-      "question": "Détecte-t-il les images CSS ?",
-      "answer": "Non. Il extrait les balises image du HTML, pas les images de fond définies en CSS."
+      "question": "Pourquoi vois-je parfois data-src au lieu de src ?",
+      "answer": "Certains modèles stockent le vrai chemin dans data-src, data-original ou un attribut similaire. L’extracteur peut afficher ces valeurs lorsqu’elles figurent dans le balisage."
+    },
+    {
+      "question": "L’outil modifie-t-il le HTML ?",
+      "answer": "Non. Il lit seulement le balisage et affiche les attributs liés aux images. Il ne réécrit pas les balises et ne devine pas les valeurs manquantes."
     }
   ],
-  "uiLabels": {
-    "copy": "Copier",
-    "copied": "Copié",
-    "input": "Entrée HTML",
-    "output": "Images extraites",
-    "placeholder": "Collez votre HTML ici",
-    "indent": "Retrait",
-    "removeComments": "Supprimer les commentaires",
-    "preview": "Aperçu",
-    "source": "Source",
-    "sanitizedHtml": "HTML nettoyé",
-    "plainText": "Texte brut",
-    "summary": "Résumé",
-    "total": "Total",
-    "links": "Liens",
-    "images": "Images",
-    "errors": "Erreurs",
-    "warnings": "Avertissements",
-    "valid": "Valide",
-    "invalid": "Invalide",
-    "href": "Href",
-    "text": "Texte",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Largeur",
-    "height": "Hauteur",
-    "empty": "Aucune image trouvée",
-    "outputReady": "Résultat prêt",
-    "cleanedHtml": "HTML nettoyé",
-    "formattedHtml": "HTML formaté",
-    "minifiedHtml": "HTML minifié",
-    "markdown": "Markdown",
-    "extractedImages": "Images extraites",
-    "extractedLinks": "Liens extraits",
-    "validationSummary": "Résumé de validation",
-    "prettyHtml": "HTML lisible",
-    "encodedText": "Texte encodé"
-  },
   "seo": {
     "title": "Extracteur d’images HTML",
-    "description": "Extrayez les sources d’images, le texte alt, la largeur et la hauteur depuis du HTML avec un outil sûr dans le navigateur.",
+    "description": "Extrayez les sources d’images, l’alt, la largeur et la hauteur depuis du HTML directement dans votre navigateur.",
     "keywords": [
       "extracteur d’images HTML",
-      "extraire src depuis HTML",
-      "texte alt",
+      "extraire balises img",
+      "src depuis HTML",
+      "extraire alt",
       "dimensions d’image",
-      "analyser les balises img",
       "outils HTML"
     ]
   }

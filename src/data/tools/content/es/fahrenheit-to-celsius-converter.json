@@ -4,44 +4,75 @@
   "slug": "convertidor-de-fahrenheit-a-celsius",
   "h1": "Convertidor de Fahrenheit a Celsius",
   "title": "Convertidor de Fahrenheit a Celsius",
-  "shortDescription": "Convierte Fahrenheit a Celsius al instante con resultados rápidos, entradas sencillas y ejemplos prácticos.",
-  "overview": "Convierte Fahrenheit a Celsius al instante. Esta página ofrece una respuesta rápida con una herramienta útil y un flujo de resultados sencillo. Está pensada para quienes buscan una respuesta gratis en línea, resultados rápidos en el navegador y contenido práctico para búsquedas específicas.",
+  "shortDescription": "Convierte Fahrenheit a Celsius con la fórmula correcta y resultados claros al instante.",
+  "metaTitle": "Convertidor Fahrenheit a Celsius",
+  "metaDescription": "Convierte valores de Fahrenheit a Celsius con una fórmula precisa y resultados fáciles de leer.",
+  "intro": "Escribe una temperatura en Fahrenheit y obtén su equivalente en Celsius al momento.",
+  "overview": "Esta herramienta convierte temperaturas de Fahrenheit a Celsius usando la fórmula estándar: resta 32 y multiplica por 5/9. Sirve para leer pronósticos del tiempo, ajustar recetas, interpretar termostatos y comparar registros en distintas unidades.\n\nEl resultado aparece en Celsius para que puedas usarlo de inmediato en notas, tablas o cálculos posteriores. También admite valores decimales y devuelve un equivalente coherente con la operación matemática.",
   "howItWorks": [
-    "Introduce el valor o texto requerido en el formulario.",
-    "La conversión, el cálculo o la transformación se ejecuta al instante en el navegador.",
-    "Revisa el resultado y continúa con herramientas relacionadas si necesitas otro paso."
+    "Introduce un valor de temperatura en Fahrenheit.",
+    "La herramienta aplica automáticamente la fórmula de conversión.",
+    "Lee el resultado en Celsius y úsalo donde necesites."
+  ],
+  "useCases": [
+    {
+      "title": "Lectura del pronóstico",
+      "description": "Convierte una temperatura como 86 °F para compararla con tu referencia habitual en Celsius."
+    },
+    {
+      "title": "Temperatura de horno",
+      "description": "Comprueba recetas o ajustes de cocina escritos en Fahrenheit y tradúcelos a Celsius."
+    },
+    {
+      "title": "Registro técnico",
+      "description": "Convierte lecturas de sensores o equipos para informes, mantenimiento o documentación."
+    }
   ],
   "examples": [
     {
-      "title": "Ejemplo 1",
-      "input": "68 fahrenheit",
-      "output": "20 celsius",
-      "description": "Un ejemplo realista de conversión de Fahrenheit a Celsius para una consulta cotidiana."
+      "title": "Día templado",
+      "input": "68 °F",
+      "output": "20 °C",
+      "description": "Un ejemplo habitual para pasar una temperatura suave a Celsius."
     },
     {
-      "title": "Ejemplo 2",
-      "input": "68 fahrenheit",
-      "output": "20 celsius",
-      "description": "Otro caso práctico para atraer tráfico orgánico de cola larga."
+      "title": "Calor intenso",
+      "input": "95 °F",
+      "output": "35 °C",
+      "description": "Muestra una conversión de una temperatura alta de verano."
+    },
+    {
+      "title": "Entrada decimal",
+      "input": "72.5 °F",
+      "output": "22.5 °C",
+      "description": "Demuestra cómo se procesa una temperatura con decimales."
     }
   ],
   "faq": [
     {
-      "question": "¿Qué precisión tiene esta herramienta?",
-      "answer": "El resultado se calcula directamente a partir de la fórmula o la lógica en el navegador que usa esta herramienta."
+      "question": "¿Qué fórmula utiliza este convertidor?",
+      "answer": "Usa la fórmula estándar: Celsius = (Fahrenheit - 32) × 5/9."
     },
     {
-      "question": "¿Puedo usar esta herramienta en el móvil?",
-      "answer": "Sí. La página funciona en escritorio y móvil con un diseño sencillo de entrada y resultado."
+      "question": "¿Puedo introducir decimales?",
+      "answer": "Sí. Valores como 72.5 °F se convierten correctamente y pueden dar un resultado decimal."
+    },
+    {
+      "question": "¿Por qué a veces el resultado no es entero?",
+      "answer": "Porque no todas las temperaturas en Fahrenheit corresponden a números enteros en Celsius."
+    },
+    {
+      "question": "¿Qué error es más común al interpretar el resultado?",
+      "answer": "Confundir la unidad. El número final ya está en °C, no en °F."
     }
   ],
   "seo": {
-    "title": "Convertidor de Fahrenheit a Celsius",
-    "description": "Convierte Fahrenheit a Celsius al instante. Convertidor gratis online de Fahrenheit a Celsius con resultados inmediatos.",
+    "title": "Convertidor Fahrenheit a Celsius",
+    "description": "Convierte valores de Fahrenheit a Celsius con una fórmula precisa y resultados fáciles de leer.",
     "keywords": [
       "convertidor de fahrenheit a celsius",
       "fahrenheit a celsius",
-      "herramienta de conversion"
+      "convertidor de temperatura"
     ]
   }
 }

@@ -4,51 +4,89 @@
   "slug": "html-link-extractor",
   "h1": "HTML Link Extractor",
   "title": "HTML Link Extractor",
-  "shortDescription": "Extract href values, URLs, anchor text and rel data from raw HTML in your browser.",
-  "metaTitle": "HTML Link Extractor | Extract href and URLs from HTML",
-  "metaDescription": "Extract href values, URLs and anchor text from HTML online. Useful for href extractor, extract links from HTML and extract URLs from HTML file searches.",
-  "intro": "Use this HTML link extractor when you need to pull href values, anchor text and rel attributes out of raw markup. It fits search intent around href extractor, extract links from HTML file and extract URLs from HTML without opening a crawler or parser locally.",
-  "overview": "Paste HTML and get a structured list of links with href, visible text, rel values and target attributes. The tool is useful for SEO audits, internal-link reviews, migrations, QA checks and quick inspection of copied source code from templates, CMS output or live pages.",
+  "shortDescription": "Pull hrefs, visible link text, rel values, and target attributes from raw HTML.",
+  "metaTitle": "HTML Link Extractor",
+  "metaDescription": "Extract href, anchor text, rel, and target data from pasted HTML in your browser.",
+  "intro": "Paste HTML here to extract every link’s href, anchor text, rel, and target values in one pass.",
+  "overview": "This tool scans pasted HTML and returns each anchor tag with the fields you actually need: href, visible text, rel tokens, and target. It is useful when you need to inspect template output, compare link sets between pages, or turn a block of markup into a clean link list.\n\nIt handles full page source, partial snippets, and copied fragments from CMS content or email templates. The output helps you spot empty anchors, unexpected redirect targets, missing attributes, and link labels that do not match the destination.",
   "howItWorks": [
-    "Paste the HTML snippet, full source or template fragment you want to inspect.",
-    "The extractor scans the markup for anchor tags and collects href, text, rel and target values.",
-    "Review the output list and copy the extracted link inventory for audits, QA or documentation."
+    "Paste the HTML snippet, file source, or copied page fragment into the input.",
+    "The tool parses anchor tags and captures href, text, rel, target, and similar link data.",
+    "Review the extracted rows, then copy the result for your notes or workflow."
   ],
   "useCases": [
-    "Extract href values from raw HTML quickly.",
-    "Review anchor text for SEO and content audits.",
-    "Check rel attributes such as nofollow, sponsored and ugc.",
-    "Pull links out of template code before a migration.",
-    "Turn copied markup into a clean link inventory."
+    {
+      "title": "Template link review",
+      "description": "Inspect navigation or footer markup before publishing to catch incorrect destinations and stray placeholders."
+    },
+    {
+      "title": "Redirect and tracking check",
+      "description": "Review anchors that point through tracking URLs or redirect chains and see the final link target at a glance."
+    },
+    {
+      "title": "Rel attribute inspection",
+      "description": "Verify whether a link is marked nofollow, sponsored, or ugc when preparing partner or editorial content."
+    },
+    {
+      "title": "Migration link inventory",
+      "description": "List all links from old HTML during a site move so you can map destinations and preserve important references."
+    },
+    {
+      "title": "Content QA for anchor labels",
+      "description": "Compare visible link text with the href it points to and catch mismatches, empty labels, or duplicated labels."
+    }
   ],
   "examples": [
     {
-      "title": "Href extractor for a single link",
-      "input": "<a href=\"https://example.com\" rel=\"nofollow\">Visit site</a>",
-      "output": "href: https://example.com | text: Visit site | rel: nofollow",
-      "description": "Helpful when you want a fast href extractor for one or many links."
+      "title": "Single branded link",
+      "input": "<a href=\"https://store.example.com/products/42\" rel=\"sponsored\" target=\"_blank\">Shop the model</a>",
+      "output": "1 link\nhref: https://store.example.com/products/42\ntext: Shop the model\nrel: sponsored\ntarget: _blank",
+      "description": "Shows one outbound link with both rel and target values preserved."
     },
     {
-      "title": "Extract links from copied source",
-      "input": "<p><a href=\"/docs\">Docs</a><a href=\"/contact\">Contact</a></p>",
-      "output": "2 links found",
-      "description": "Useful for extracting internal links from copied page source or template HTML."
+      "title": "Mixed internal links",
+      "input": "<div><a href=\"/guides/install\">Install guide</a><a href=\"/support\">Support</a></div>",
+      "output": "2 links\n1. /guides/install — Install guide\n2. /support — Support",
+      "description": "Useful when a snippet contains several internal links that need a quick inventory."
+    },
+    {
+      "title": "Broken or empty anchor example",
+      "input": "<p><a href=\"\">Read more</a> <a>Missing destination</a></p>",
+      "output": "2 links\n1. href: [empty]\n   text: Read more\n2. href: [missing]\n   text: Missing destination",
+      "description": "Helps identify anchors that render without a usable destination."
     }
   ],
   "faq": [
     {
-      "question": "Can this tool extract URLs from HTML files and snippets?",
-      "answer": "Yes. Paste the HTML source and the tool will list the URLs, anchor text and related attributes it finds."
+      "question": "Does the extractor only read anchor tags?",
+      "answer": "It is centered on anchor links, so it reports the href and related attributes from <a> elements. If the markup uses a different pattern for navigation, those items will not appear as standard links."
     },
     {
-      "question": "Is this the same as an href extractor?",
-      "answer": "Yes. It performs the same job and also shows extra link context such as anchor text, rel and target values."
+      "question": "How are multiple rel values shown?",
+      "answer": "When rel contains more than one token, the tool keeps the full set so you can see the complete link policy instead of only the first value."
     },
     {
-      "question": "Can I use it for internal-link audits?",
-      "answer": "Yes. It is useful for quick internal-link reviews, migration QA and copied-markup audits where you need a clean list of links fast."
+      "question": "What happens with relative URLs?",
+      "answer": "Relative hrefs are preserved exactly as written, such as /about or ../contact. The tool does not rewrite them into absolute URLs."
+    },
+    {
+      "question": "Can it detect anchors without href?",
+      "answer": "Yes, but they are reported as missing or empty destinations. That is useful for finding decorative anchors or unfinished markup before it goes live."
+    },
+    {
+      "question": "Will script or malformed markup break extraction?",
+      "answer": "The parser ignores content that is not a valid link element and skips over malformed pieces as much as possible. If a tag is broken, its link data may not be recovered correctly."
     }
   ],
-  "uiLabels": {"copy": "Copy", "copied": "Copied", "input": "HTML input", "output": "Extracted links", "placeholder": "Paste HTML here to extract links", "indent": "Indent", "removeComments": "Remove comments", "preview": "Preview", "source": "Source", "sanitizedHtml": "Sanitized HTML", "plainText": "Plain text", "summary": "Summary", "total": "Total", "links": "Links", "images": "Images", "errors": "Errors", "warnings": "Warnings", "valid": "Valid", "invalid": "Invalid", "href": "href", "text": "Text", "rel": "rel", "target": "Target", "alt": "Alt", "width": "Width", "height": "Height", "empty": "Empty", "outputReady": "Output ready", "cleanedHtml": "Cleaned HTML", "formattedHtml": "Formatted HTML", "minifiedHtml": "Minified HTML", "markdown": "Markdown", "extractedImages": "Extracted images", "extractedLinks": "Extracted links", "validationSummary": "Validation summary", "prettyHtml": "Pretty HTML", "encodedText": "Encoded text"},
-  "seo": {"title": "HTML Link Extractor | Extract href and URLs from HTML", "description": "Extract href values, URLs and anchor text from HTML online. Useful for href extractor, extract links from HTML and extract URLs from HTML file searches.", "keywords": ["html link extractor", "href extractor", "extract urls from html", "extract links from html file", "extract href from html", "anchor text extractor"]}
+  "seo": {
+    "title": "HTML Link Extractor",
+    "description": "Extract href, anchor text, rel, and target data from pasted HTML in your browser.",
+    "keywords": [
+      "html link extractor",
+      "href extractor",
+      "anchor text extractor",
+      "extract links from html",
+      "rel attribute parser"
+    ]
+  }
 }

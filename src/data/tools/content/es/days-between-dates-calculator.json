@@ -4,44 +4,80 @@
   "slug": "calculadora-dias-entre-fechas",
   "h1": "Calculadora de días entre fechas",
   "title": "Calculadora de días entre fechas",
-  "shortDescription": "Calcula el número de días entre dos fechas con resultados rápidos, entradas sencillas y ejemplos prácticos.",
-  "overview": "Calcula el número de días entre dos fechas. Esta página ofrece una respuesta rápida con una herramienta práctica y un flujo de resultados sencillo. Está pensada para usuarios que buscan una respuesta gratuita en línea, resultados rápidos en el navegador y contenido útil de cola larga.",
+  "shortDescription": "Calcula el número exacto de días entre dos fechas para plazos, calendarios y periodos de control.",
+  "metaTitle": "Calculadora de días entre fechas",
+  "metaDescription": "Calcula el número exacto de días entre dos fechas para plazos, calendarios y periodos de control.",
+  "intro": "Introduce dos fechas y obtén el número exacto de días entre ellas.",
+  "overview": "Esta calculadora sirve para medir el intervalo exacto entre una fecha inicial y una fecha final. Es útil cuando necesitas comprobar plazos, comparar periodos o evitar errores al contar días a mano.\n\nTambién ayuda con contratos, reservas, bajas, planificación de viajes y rangos de facturación. Funciona con fechas del mismo mes o de meses y años distintos, así que puedes revisar tanto tramos cortos como periodos largos.",
   "howItWorks": [
-    "Introduce el valor o texto requerido en el formulario.",
-    "La conversión, el cálculo o la transformación se ejecuta al instante en el navegador.",
-    "Revisa el resultado y continúa con herramientas relacionadas si necesitas otro paso."
+    "Elige la fecha de inicio y la fecha de fin.",
+    "La herramienta calcula la diferencia completa en días entre ambas fechas.",
+    "Lee el resultado y modifica las fechas si quieres comparar otro intervalo."
+  ],
+  "useCases": [
+    {
+      "title": "Fechas de un proyecto",
+      "description": "Comprueba cuántos días hay entre el inicio de una tarea y su entrega prevista."
+    },
+    {
+      "title": "Reserva o estancia",
+      "description": "Mide la duración de una reserva, alquiler o viaje entre dos fechas del calendario."
+    },
+    {
+      "title": "Registro de ausencias",
+      "description": "Verifica los días cubiertos por vacaciones, baja médica o permiso no retribuido."
+    },
+    {
+      "title": "Periodo de factura o contrato",
+      "description": "Confirma el tramo temporal cubierto por una factura, suscripción o contrato."
+    }
   ],
   "examples": [
     {
-      "title": "Ejemplo 1",
-      "input": "2025-01-01 a 2025-01-31",
-      "output": "30 días",
-      "description": "Un ejemplo real de calculadora de días entre fechas para una búsqueda cotidiana."
+      "title": "Periodo de facturación",
+      "input": "Fecha inicial: 2025-03-01; fecha final: 2025-03-29",
+      "output": "28 días",
+      "description": "Sirve para revisar un tramo mensual que no empieza el día 1."
     },
     {
-      "title": "Ejemplo 2",
-      "input": "2025-01-01 a 2025-01-31",
-      "output": "30 días",
-      "description": "Otro caso práctico para tráfico orgánico de cola larga."
+      "title": "Plan de viaje",
+      "input": "Fecha inicial: 2024-11-18; fecha final: 2025-01-05",
+      "output": "48 días",
+      "description": "Muestra un intervalo que cruza al año siguiente."
+    },
+    {
+      "title": "Ausencia breve",
+      "input": "Fecha inicial: 2025-07-14; fecha final: 2025-07-19",
+      "output": "5 días",
+      "description": "Útil para comprobar una ausencia corta entre dos fechas laborales."
     }
   ],
   "faq": [
     {
-      "question": "¿Qué precisión tiene esta herramienta?",
-      "answer": "El resultado se calcula directamente a partir de la fórmula o de la lógica en el navegador que utiliza esta herramienta."
+      "question": "¿El cálculo incluye el primer día y el último?",
+      "answer": "No. El resultado muestra la diferencia entre las dos fechas. Si necesitas el conteo inclusivo, tendrás que sumar un día al valor mostrado."
     },
     {
-      "question": "¿Puedo usar esta herramienta en el móvil?",
-      "answer": "Sí. La página funciona en ordenador y móvil con un diseño sencillo de entrada y resultado."
+      "question": "¿Qué ocurre si la fecha final es anterior a la inicial?",
+      "answer": "Las fechas deben introducirse en el orden correcto para obtener un resultado positivo. Si las inviertes, el intervalo se interpreta en sentido contrario o no coincide con el periodo esperado."
+    },
+    {
+      "question": "¿Por qué el resultado no coincide con contar días a mano?",
+      "answer": "Al contar a mano es fácil incluir por error el día de inicio o el de fin. Esta herramienta muestra la diferencia real entre fechas, así que puede no coincidir con un conteo inclusivo."
+    },
+    {
+      "question": "¿Puedo usar fechas de distintos meses o años?",
+      "answer": "Sí. La calculadora funciona a través de cambios de mes y de año, así que sirve tanto para intervalos cortos como para periodos más largos."
     }
   ],
   "seo": {
     "title": "Calculadora de días entre fechas",
-    "description": "Calcula el número de días entre dos fechas. Calculadora gratuita de días entre fechas online con resultados instantáneos.",
+    "description": "Calcula el número exacto de días entre dos fechas para plazos, calendarios y periodos de control.",
     "keywords": [
-      "calculadora de días entre fechas",
-      "días entre fechas calculadora",
-      "herramienta calculadoras"
+      "días entre fechas",
+      "calculadora diferencia fechas",
+      "calculadora días entre fechas",
+      "intervalo entre fechas"
     ]
   }
 }

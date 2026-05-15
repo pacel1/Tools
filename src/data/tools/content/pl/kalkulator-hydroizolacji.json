@@ -4,174 +4,86 @@
   "slug": "kalkulator-hydroizolacji",
   "h1": "Kalkulator hydroizolacji",
   "title": "Kalkulator hydroizolacji",
-  "shortDescription": "Policz ilosc hydroizolacji i tasmy uszczelniajacej dla lazienki, balkonu, tarasu albo fundamentu.",
-  "metaTitle": "Kalkulator hydroizolacji | Folia w plynie, masa i tasma",
-  "metaDescription": "Oblicz ile hydroizolacji potrzeba na lazienke, balkon, taras albo fundament. Kalkulator pokazuje ilosc materialu bez zapasu, z zapasem, liczbe opakowan i tasme uszczelniajaca.",
-  "intro": "Kalkulator hydroizolacji pomaga szybko policzyc zapotrzebowanie na folie w plynie albo mase hydroizolacyjna. W zaleznosci od powierzchni mozesz skorzystac z presetow pod lazienke, balkon, taras lub fundament.",
-  "overview": "Narzedzie uwzglednia liczbe warstw, wydajnosc produktu, wielkosc opakowania i dodatkowa tasme uszczelniajaca na narozniki oraz przejscia instalacyjne. To dobry punkt startowy do zakupu materialow przed ukladaniem plytek albo zasypaniem fundamentu.",
+  "shortDescription": "Oblicz ilość folii w płynie, masy i taśmy do łazienki, balkonu, tarasu lub fundamentu.",
+  "metaTitle": "Kalkulator hydroizolacji",
+  "metaDescription": "Oblicz ilość hydroizolacji do łazienki, balkonu, tarasu i fundamentu. Uwzględnij warstwy, wydajność, zapas i wielkość opakowania.",
+  "intro": "Podaj powierzchnię, liczbę warstw, wydajność, zapas i wielkość opakowania, a poznasz ilość hydroizolacji do zakupu.",
+  "overview": "To narzędzie liczy zużycie folii w płynie, masy uszczelniającej lub podobnych produktów na płaskich powierzchniach i w strefach narażonych na wilgoć. Uwzględnia liczbę warstw, wydajność z karty produktu, zapas na odpady oraz pojemność opakowania, dzięki czemu pokazuje zarówno ilość materiału, jak i liczbę wiader lub baniaków.\n\nPrzydaje się przy łazienkach pod płytki, balkonach, tarasach i ścianach fundamentowych. Wynik jest orientacyjnym zestawieniem materiału, więc warto porównać go z zaleceniami producenta oraz doliczyć narożniki, dylatacje i przejścia instalacyjne, jeśli nie zostały ujęte w powierzchni.",
   "howItWorks": [
-    "Pomnoz powierzchnie przez liczbe warstw.",
-    "Podziel wynik przez wydajnosc, aby uzyskac ilosc materialu.",
-    "Dodaj zapas procentowy, aby uniknac brakow.",
-    "Podziel przez wielkosc opakowania i zaokraglij w gore."
+    "Wpisz powierzchnię do zabezpieczenia.",
+    "Określ liczbę warstw systemu.",
+    "Podaj wydajność produktu z opakowania lub karty technicznej.",
+    "Dodaj zapas i przelicz wynik na pełne opakowania, zaokrąglając w górę."
   ],
   "useCases": [
-    "Obliczanie ile folii w plynie potrzeba do lazienki.",
-    "Planowanie hydroizolacji balkonu lub tarasu.",
-    "Szacowanie materialu na fundamenty i strefy wilgotne.",
-    "Szybka kontrola, ile kupic masy uszczelniajacej."
+    {
+      "title": "Strefa prysznica przed płytkami",
+      "description": "Policz potrzebną ilość folii w płynie na podłogę i pas przy ścianach w łazience."
+    },
+    {
+      "title": "Balkon z obróbką krawędzi",
+      "description": "Oszałuj zużycie materiału z uwzględnieniem krawędzi, spadków i odpływu."
+    },
+    {
+      "title": "Ściana fundamentowa",
+      "description": "Sprawdź ilość hydroizolacji do pionowej izolacji przed zasypaniem wykopu."
+    },
+    {
+      "title": "Miejscowa naprawa przy rurach",
+      "description": "Dobierz ilość masy uszczelniającej do uszczelnienia przejść instalacyjnych i narożników."
+    }
   ],
   "examples": [
     {
-      "title": "Podloga w lazience",
-      "input": "10 m², 2 warstwy, 1 m²/kg, 10% zapasu, opakowanie 5 kg",
-      "output": "20 kg bez zapasu, 22 kg z zapasem, 5 opakowan.",
-      "description": "Praktyczny wynik dla malej lazienki."
+      "title": "Mała łazienka",
+      "input": "8,5 m², 2 warstwy, wydajność 1,2 m²/kg, 12% zapasu, opakowanie 5 kg",
+      "output": "Baza: 14,2 kg; z zapasem: 15,9 kg; 4 opakowania.",
+      "description": "Praktyczny wynik dla niewielkiej łazienki z dwiema warstwami."
     },
     {
-      "title": "Taras",
-      "input": "25 m², 2 warstwy, 0.8 m²/l, 15% zapasu, opakowanie 10 l",
-      "output": "62.5 l bez zapasu, 71.9 l z zapasem, 8 opakowan.",
-      "description": "Pomaga przy planowaniu materialu na taras."
+      "title": "Taras na zewnątrz",
+      "input": "31 m², 3 warstwy, wydajność 0,75 m²/l, 10% zapasu, opakowanie 10 l",
+      "output": "Baza: 124,0 l; z zapasem: 136,4 l; 14 opakowań.",
+      "description": "Dobre do planowania materiału na taras z grubszym systemem izolacji."
+    },
+    {
+      "title": "Odcinek ściany fundamentowej",
+      "input": "18 m², 2 warstwy, wydajność 1,5 m²/kg, 8% zapasu, opakowanie 20 kg",
+      "output": "Baza: 24,0 kg; z zapasem: 25,9 kg; 2 opakowania.",
+      "description": "Pomocne przy prostym odcinku ściany z niewielkim naddatkiem."
     }
   ],
   "faq": [
     {
-      "question": "Co oblicza ten kalkulator?",
-      "answer": "Oblicza ilosc hydroizolacji potrzebnej do lazienki, balkonu, tarasu lub fundamentu."
+      "question": "Czy wynik uwzględnia narożniki, zakłady i mankiety przy rurach?",
+      "answer": "Tylko wtedy, gdy doliczysz je do powierzchni albo zwiększysz zapas. Detale zużywają zwykle więcej materiału niż sama płaska powierzchnia."
     },
     {
-      "question": "Czy uwzglednia zapas?",
-      "answer": "Tak. Wystarczy wpisac procent zapasu, a wynik bedzie bardziej realistyczny."
+      "question": "Jaką wydajność wpisać?",
+      "answer": "Najlepiej tę z karty technicznej konkretnego produktu i sposobu aplikacji. Pędzel, wałek i paca mogą dawać inne zużycie."
     },
     {
-      "question": "Czy liczbe opakowan trzeba zaokraglic?",
-      "answer": "Tak, zawsze zaokraglij w gore, aby miec wystarczajaca ilosc materialu."
+      "question": "Dlaczego liczba opakowań wyszła wyższa niż spodziewałem się?",
+      "answer": "Kalkulator zawsze zaokrągla w górę do pełnych opakowań, więc nawet mała reszta może wymusić zakup dodatkowego wiadra."
     },
     {
-      "question": "Czy nadaje sie do folii w plynie?",
-      "answer": "Tak. Kalkulator dobrze sprawdza sie dla folii w plynie i podobnych produktow hydroizolacyjnych."
+      "question": "Czy mogę mieszać litry i kilogramy?",
+      "answer": "Tylko jeśli producent podaje przelicznik lub gęstość pozwala na takie porównanie. Narzędzie liczy w jednostce, którą wpiszesz."
+    },
+    {
+      "question": "Jaki błąd najczęściej zaniża wynik?",
+      "answer": "Pominięcie pasów przy ścianach, progach, wpustach i przejściach instalacyjnych. Jeśli nie są wliczone w powierzchnię, trzeba je dodać osobno."
     }
   ],
-  "uiLabels": {
-    "copy": "Kopiuj",
-    "copied": "Skopiowano",
-    "input": "Wejscie",
-    "output": "Wyjscie",
-    "placeholder": "Wpisz wartosc",
-    "indent": "Wciecie",
-    "removeComments": "Usun komentarze",
-    "preview": "Podglad",
-    "source": "Zrodlo",
-    "sanitizedHtml": "Oczyszczony HTML",
-    "plainText": "Tekst prosty",
-    "summary": "Podsumowanie",
-    "total": "Lacznie",
-    "links": "Linki",
-    "images": "Obrazy",
-    "errors": "Bledy",
-    "warnings": "Ostrzezenia",
-    "valid": "Poprawne",
-    "invalid": "Niepoprawne",
-    "href": "Href",
-    "text": "Tekst",
-    "rel": "Rel",
-    "target": "Cel",
-    "alt": "Alt",
-    "width": "Szerokosc",
-    "height": "Wysokosc",
-    "empty": "Puste",
-    "outputReady": "Wynik gotowy",
-    "cleanedHtml": "Oczyszczony HTML",
-    "formattedHtml": "Sformatowany HTML",
-    "minifiedHtml": "Zminifikowany HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Wyodrebnione obrazy",
-    "extractedLinks": "Wyodrebnione linki",
-    "validationSummary": "Podsumowanie walidacji",
-    "prettyHtml": "Czytelny HTML",
-    "encodedText": "Tekst zakodowany",
-    "file": "Plik",
-    "size": "Rozmiar",
-    "format": "Format",
-    "quality": "Jakosc",
-    "colorOne": "Kolor 1",
-    "colorTwo": "Kolor 2",
-    "background": "Tlo",
-    "foreground": "Pierwszy plan",
-    "angle": "Kat",
-    "margin": "Margines",
-    "level": "Poziom",
-    "gradientType": "Typ gradientu",
-    "linear": "Liniowy",
-    "radial": "Radialny",
-    "blur": "Rozmycie",
-    "spread": "Rozproszenie",
-    "offsetX": "Przesuniecie X",
-    "offsetY": "Przesuniecie Y",
-    "opacity": "Przezroczystosc",
-    "inset": "Wewnetrzny",
-    "cssCode": "Kod CSS",
-    "snippet": "Fragment",
-    "download": "Pobierz",
-    "downloadSvg": "Pobierz SVG",
-    "downloadPng": "Pobierz PNG",
-    "downloadAll": "Pobierz wszystko",
-    "upload": "Przeslij",
-    "title": "Tytul",
-    "description": "Opis",
-    "canonicalUrl": "Adres kanoniczny",
-    "siteName": "Nazwa serwisu",
-    "ogImage": "Obraz OG",
-    "clear": "Wyczysc",
-    "generatedQr": "Wygenerowany QR",
-    "placeholderImage": "Obraz zastępczy",
-    "faviconSet": "Zestaw favicon",
-    "keepAspectRatio": "Zachowaj proporcje",
-    "cropX": "Przyciecie X",
-    "cropY": "Przyciecie Y",
-    "cropWidth": "Szerokosc przyciecia",
-    "cropHeight": "Wysokosc przyciecia",
-    "originalSize": "Rozmiar oryginalny",
-    "outputSize": "Rozmiar wyjsciowy",
-    "savedSize": "Zaoszczedzony rozmiar",
-    "result": "Wynik",
-    "base64": "Base64",
-    "mimeType": "Typ MIME",
-    "resizedImage": "Obraz po zmianie rozmiaru",
-    "compressedImage": "Obraz skompresowany",
-    "croppedImage": "Obraz po przycieciu",
-    "convertedImage": "Obraz po konwersji",
-    "decodedImage": "Obraz zdekodowany",
-    "imagePreview": "Podglad obrazu",
-    "camera": "Aparat",
-    "lens": "Obiektyw",
-    "dateTaken": "Data wykonania",
-    "resolution": "Rozdzielczosc",
-    "fileSize": "Rozmiar pliku",
-    "iso": "ISO",
-    "exposure": "Czas naświetlania",
-    "aperture": "Przyslona",
-    "focalLength": "Ogniskowa",
-    "flash": "Lampa blyskowa",
-    "orientation": "Orientacja",
-    "latitude": "Szerokosc geograficzna",
-    "longitude": "Dlugosc geograficzna",
-    "openMap": "Otworz mape",
-    "rawMetadata": "Surowe metadane",
-    "noMetadataFound": "Nie znaleziono metadanych",
-    "gpsLocation": "Lokalizacja GPS",
-    "metadataSummary": "Podsumowanie metadanych"
-  },
   "seo": {
-    "title": "Kalkulator hydroizolacji - folia w plynie i masa uszczelniajaca",
-    "description": "Sprawdz, ile hydroizolacji potrzebujesz do lazienki, balkonu, tarasu lub fundamentu. Oblicz ilosc bez zapasu, z zapasem i liczbe opakowan.",
+    "title": "Kalkulator hydroizolacji",
+    "description": "Oblicz ilość hydroizolacji do łazienki, balkonu, tarasu i fundamentu. Uwzględnij warstwy, wydajność, zapas i wielkość opakowania.",
     "keywords": [
       "kalkulator hydroizolacji",
-      "ile folii w plynie potrzeba",
-      "hydroizolacja kalkulator",
-      "ile hydroizolacji na m2",
-      "kalkulator folii w plynie"
+      "ile folii w plynie",
+      "ilosc hydroizolacji",
+      "kalkulator folii w plynie",
+      "hydroizolacja na m2"
     ]
   }
 }

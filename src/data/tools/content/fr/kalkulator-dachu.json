@@ -4,176 +4,88 @@
   "slug": "calculateur-de-toiture",
   "h1": "Calculateur de toiture",
   "title": "Calculateur de toiture",
-  "shortDescription": "Estimez la surface de toiture, la couverture necessaire, la membrane et le nombre approximatif de paquets ou de plaques.",
-  "metaTitle": "Calculateur de toiture - Surface et materiaux",
-  "metaDescription": "Calculez la surface de toiture, la surface avec marge et le nombre de tuiles, plaques ou paquets necessaires pour une toiture a deux pans.",
-  "intro": "Utilisez ce calculateur de toiture pour estimer la surface d’une toiture a deux pans et savoir combien de tuiles, plaques ou paquets acheter, avec une marge de perte incluse.",
-  "overview": "Saisissez la longueur et la largeur du batiment, l’angle de pente, le pourcentage de perte et la couverture par paquet ou par plaque. Le calculateur estime la surface de toiture, ajoute la marge choisie et convertit le resultat en quantite a acheter.",
+  "shortDescription": "Calculez la surface d’une toiture inclinée, ajoutez une marge et convertissez-la en paquets, plaques ou rouleaux.",
+  "metaTitle": "Surface de toiture et materiaux",
+  "metaDescription": "Calculez la surface d’une toiture inclinée, ajoutez une marge et estimez les tuiles, plaques ou rouleaux nécessaires.",
+  "intro": "Pour une toiture inclinée simple, cet outil calcule la surface réelle, ajoute une marge de perte et la convertit en paquets, plaques ou rouleaux à acheter.",
+  "overview": "Indiquez la longueur et la largeur du bâtiment, l’angle de pente, le pourcentage de perte et la couverture par paquet, par plaque ou par rouleau. L’outil calcule alors la surface réelle de la toiture et la quantité finale à commander.\n\nIl convient aux toitures simples lorsque la couverture du produit est connue. Vous pouvez ainsi comparer des tuiles, des plaques ou une membrane sur une base commune et avec la même réserve pour les découpes et les recouvrements.\n\nSi la toiture comporte des noues, des arêtiers, des lucarnes, des décrochements ou plusieurs pans, considérez le résultat comme une base à ajuster selon le plan réel et les prescriptions du fabricant.",
   "howItWorks": [
-    "Indiquez la longueur et la largeur du batiment en metres.",
-    "Renseignez l’angle de pente de la toiture en degres.",
-    "Definissez le pourcentage de perte pour les decoupes et recouvrements.",
-    "Entrez la couverture par paquet ou par plaque en m2.",
-    "Obtenez la surface de toiture, le total avec marge et la quantite necessaire."
+    "Saisissez la longueur et la largeur du bâtiment en mètres.",
+    "Renseignez l’angle de pente de la toiture en degrés.",
+    "Définissez un pourcentage de perte pour les découpes, recouvrements et chutes de pose.",
+    "Entrez la couverture par paquet, plaque ou rouleau en m².",
+    "Consultez la surface de toiture, le total avec marge et la quantité nécessaire."
   ],
   "useCases": [
-    "Estimer combien de tuiles acheter.",
-    "Preparer une commande de materiaux pour une toiture a deux pans.",
-    "Verifier si une membrane ou des plaques suffisent.",
-    "Faire une estimation rapide avant un devis."
+    {
+      "title": "Commande de tuiles",
+      "description": "Déterminez combien de paquets acheter avant de passer commande chez un fournisseur."
+    },
+    {
+      "title": "Plaques de couverture",
+      "description": "Convertissez la surface du toit en nombre de plaques lorsque la couverture par unité est connue."
+    },
+    {
+      "title": "Membrane de sous-toiture",
+      "description": "Vérifiez si un ou plusieurs rouleaux couvrent toute la surface avec la marge choisie."
+    },
+    {
+      "title": "Base de devis",
+      "description": "Établissez une base de quantités avant de demander une offre à un couvreur ou à un négociant."
+    }
   ],
   "examples": [
     {
-      "title": "Exemple de calcul",
-      "input": "Longueur 10 m, largeur 8 m, pente 30°, perte 10 %, couverture 1,2 m2 par paquet",
-      "output": "L’outil affiche la surface de toiture, la surface avec marge et le nombre de paquets.",
-      "description": "Pratique pour une estimation rapide avant achat."
+      "title": "Maison individuelle",
+      "input": "Longueur 10 m, largeur 8 m, pente 30°, perte 10 %, couverture 1,2 m² par paquet",
+      "output": "Surface de toiture : 92,4 m². Avec marge : 101,6 m². Paquets nécessaires : 85.",
+      "description": "Adapté à une maison classique lorsque la couverture par paquet est connue."
     },
     {
-      "title": "Combien de tuiles faut-il",
-      "input": "Toute toiture a deux pans simple avec couverture connue par paquet",
-      "output": "Estimez le nombre approximatif de tuiles, paquets ou plaques.",
-      "description": "Utile pour rechercher combien de tuiles il faut."
+      "title": "Plaques pour un garage",
+      "input": "Longueur 14 m, largeur 6,5 m, pente 22°, perte 7 %, couverture 0,85 m² par plaque",
+      "output": "Surface de toiture : 72,8 m². Avec marge : 77,9 m². Plaques nécessaires : 92.",
+      "description": "Utile pour un garage ou un petit bâtiment couvert en plaques profilées."
+    },
+    {
+      "title": "Contrôle de rouleaux de membrane",
+      "input": "Longueur 12 m, largeur 9 m, pente 35°, perte 12 %, couverture 50 m² par rouleau",
+      "output": "Surface de toiture : 132,5 m². Avec marge : 148,4 m². Rouleaux nécessaires : 3.",
+      "description": "Permet de vérifier si deux rouleaux suffisent ou si un troisième est nécessaire à cause des recouvrements."
     }
   ],
   "faq": [
     {
-      "question": "Ce calculateur fonctionne-t-il pour les toitures complexes ?",
-      "answer": "Il repose sur une toiture a deux pans simple. Pour les toits en croupe, les lucarnes ou les formes irregulieres, le resultat reste approximatif."
+      "question": "Quel type de toiture est pris en compte ?",
+      "answer": "Le calcul repose sur une toiture à deux pans simple. Il est plus fiable lorsque la géométrie est régulière et sans intersections complexes."
     },
     {
-      "question": "Puis-je l’utiliser pour des tuiles ?",
-      "answer": "Oui. Entrez simplement la couverture par paquet ou par plaque pour estimer le nombre de tuiles, plaques ou lots necessaires."
+      "question": "Pourquoi la pente et la marge changent-elles le résultat ?",
+      "answer": "La pente modifie la surface réelle par rapport au plan du bâtiment, et la marge couvre les découpes, recouvrements et pertes de pose."
     },
     {
-      "question": "Que signifie le pourcentage de perte ?",
-      "answer": "Il s’agit du supplement prevu pour les decoupes, recouvrements et pertes usuelles de pose."
+      "question": "Comment saisir la couverture par paquet ou par plaque ?",
+      "answer": "Utilisez la couverture indiquée par le fabricant pour une unité, un paquet ou un rouleau. Une valeur nette en m² par unité donne le résultat le plus utile."
     },
     {
-      "question": "Le resultat est-il exact ?",
-      "answer": "Non, c’est une estimation. Verifiez toujours les donnees avec le fabricant et le couvreur."
+      "question": "Pourquoi le nombre d’unités peut-il sembler élevé ?",
+      "answer": "Une faible couverture, une pente forte ou une marge importante augmentent vite la quantité. Vérifiez si vous avez saisi des m² par unité ou par carton complet."
+    },
+    {
+      "question": "Puis-je commander exactement la quantité affichée ?",
+      "answer": "Mieux vaut utiliser le résultat comme base, puis vérifier les tuiles faîtières, les départs, les raccords et le conditionnement du produit."
     }
   ],
-  "uiLabels": {
-    "copy": "Copier",
-    "copied": "Copie",
-    "input": "Saisie",
-    "output": "Resultat",
-    "placeholder": "Saisir une valeur",
-    "indent": "Retrait",
-    "removeComments": "Supprimer les commentaires",
-    "preview": "Apercu",
-    "source": "Source",
-    "sanitizedHtml": "HTML nettoye",
-    "plainText": "Texte brut",
-    "summary": "Resume",
-    "total": "Total",
-    "links": "Liens",
-    "images": "Images",
-    "errors": "Erreurs",
-    "warnings": "Avertissements",
-    "valid": "Valide",
-    "invalid": "Invalide",
-    "href": "Href",
-    "text": "Texte",
-    "rel": "Rel",
-    "target": "Cible",
-    "alt": "Alt",
-    "width": "Largeur",
-    "height": "Hauteur",
-    "empty": "Vide",
-    "outputReady": "Resultat pret",
-    "cleanedHtml": "HTML nettoye",
-    "formattedHtml": "HTML formate",
-    "minifiedHtml": "HTML minifie",
-    "markdown": "Markdown",
-    "extractedImages": "Images extraites",
-    "extractedLinks": "Liens extraits",
-    "validationSummary": "Resume de validation",
-    "prettyHtml": "HTML lisible",
-    "encodedText": "Texte code",
-    "file": "Fichier",
-    "size": "Taille",
-    "format": "Format",
-    "quality": "Qualite",
-    "colorOne": "Couleur 1",
-    "colorTwo": "Couleur 2",
-    "background": "Arriere-plan",
-    "foreground": "Premier plan",
-    "angle": "Angle",
-    "margin": "Marge",
-    "level": "Niveau",
-    "gradientType": "Type de gradient",
-    "linear": "Lineaire",
-    "radial": "Radial",
-    "blur": "Flou",
-    "spread": "Etalement",
-    "offsetX": "Decalage X",
-    "offsetY": "Decalage Y",
-    "opacity": "Opacite",
-    "inset": "Interieur",
-    "cssCode": "Code CSS",
-    "snippet": "Extrait",
-    "download": "Telecharger",
-    "downloadSvg": "Telecharger SVG",
-    "downloadPng": "Telecharger PNG",
-    "downloadAll": "Telecharger tout",
-    "upload": "Importer",
-    "title": "Titre",
-    "description": "Description",
-    "canonicalUrl": "URL canonique",
-    "siteName": "Nom du site",
-    "ogImage": "Image OG",
-    "clear": "Effacer",
-    "generatedQr": "QR genere",
-    "placeholderImage": "Image par defaut",
-    "faviconSet": "Jeu de favicons",
-    "keepAspectRatio": "Conserver les proportions",
-    "cropX": "Recadrage X",
-    "cropY": "Recadrage Y",
-    "cropWidth": "Largeur du recadrage",
-    "cropHeight": "Hauteur du recadrage",
-    "originalSize": "Taille originale",
-    "outputSize": "Taille de sortie",
-    "savedSize": "Taille economisee",
-    "result": "Resultat",
-    "base64": "Base64",
-    "mimeType": "Type MIME",
-    "resizedImage": "Image redimensionnee",
-    "compressedImage": "Image compressee",
-    "croppedImage": "Image recadree",
-    "convertedImage": "Image convertie",
-    "decodedImage": "Image decodee",
-    "imagePreview": "Apercu de l’image",
-    "camera": "Camera",
-    "lens": "Objectif",
-    "dateTaken": "Date de prise",
-    "resolution": "Resolution",
-    "fileSize": "Taille du fichier",
-    "iso": "ISO",
-    "exposure": "Exposition",
-    "aperture": "Ouverture",
-    "focalLength": "Distance focale",
-    "flash": "Flash",
-    "orientation": "Orientation",
-    "latitude": "Latitude",
-    "longitude": "Longitude",
-    "openMap": "Ouvrir la carte",
-    "rawMetadata": "Metadonnees brutes",
-    "noMetadataFound": "Aucune metadonnee trouvee",
-    "gpsLocation": "Position GPS",
-    "metadataSummary": "Resume des metadonnees"
-  },
   "seo": {
-    "title": "Calculateur de toiture - Surface et materiaux",
-    "description": "Calculez la surface de toiture, la surface avec marge et le nombre de tuiles, plaques ou paquets necessaires pour une toiture a deux pans.",
+    "title": "Surface de toiture et materiaux",
+    "description": "Calculez la surface d’une toiture inclinée, ajoutez une marge et estimez les tuiles, plaques ou rouleaux nécessaires.",
     "keywords": [
       "calculateur de toiture",
-      "calculer surface toiture",
+      "surface toiture",
       "combien de tuiles faut-il",
       "calculateur tuiles",
-      "toiture a deux pans",
-      "materiaux toiture"
+      "toiture à deux pans",
+      "matériaux toiture"
     ]
   }
 }

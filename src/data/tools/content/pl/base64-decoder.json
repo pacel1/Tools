@@ -1,46 +1,83 @@
 {
   "toolId": "base64-decoder",
   "locale": "pl",
-  "slug": "dekoder-base64",
+  "slug": "base64-decoder",
   "h1": "Dekoder Base64",
   "title": "Dekoder Base64",
-  "shortDescription": "Dekoduj tekst Base64 natychmiast dzięki szybkim wynikom, prostemu wprowadzaniu i praktycznym przykładom.",
-  "overview": "Dekoduj tekst Base64 natychmiast. Ta strona zapewnia szybka odpowiedz dzieki praktycznemu narzedziu i prostemu przeplywowi wyniku. Strona jest skierowana do uzytkownikow, ktorzy szukaja darmowej odpowiedzi online, szybkich wynikow w przegladarce i praktycznej tresci narzedziowej dlugiego ogona.",
+  "shortDescription": "Dekoduj Base64 do czytelnego tekstu, bajtów lub danych strukturalnych z prostego pola wejściowego.",
+  "metaTitle": "Dekoder Base64 online",
+  "metaDescription": "Dekoduj ciągi Base64 do tekstu lub danych binarnych. Wklej zakodowaną treść i sprawdź wynik od razu.",
+  "intro": "Wklej ciąg Base64, a narzędzie natychmiast zwróci czytelny tekst lub dane bajtowe.",
+  "overview": "Base64 to format kodowania, a nie szyfrowanie. Ten dekoder przywraca dane do postaci źródłowej, o ile wejście jest kompletne i poprawne. Jeśli w treści są znaki nowej linii, wariant URL-safe albo brakujące dopełnienie, wynik może się różnić lub nie zostać odczytany tak jak oczekujesz.\n\nNarzędzie sprawdza się przy fragmentach tekstu, ładunkach API, kawałkach JSON oraz zakodowanych nagłówkach. Gdy wynik nie jest zwykłym tekstem, zobaczysz surowe dane albo bajty zamiast sztucznie zamienionych znaków.\n\nNajlepiej wklejać dokładnie tę wartość, która przyszła z systemu źródłowego. Dodatkowe spacje, prefiksy z kopiowania albo ucięty ciąg to najczęstsze powody, dla których dekodowanie nie daje oczekiwanego wyniku.",
   "howItWorks": [
-    "Wpisz wymagane wartosc lub tekst do formularza.",
-    "Konwersja, obliczenie lub transformacja uruchamia sie natychmiast w przegladarce.",
-    "Sprawdz wynik i przejdz do powiazanych narzedzi, jesli potrzebujesz kolejnego kroku."
+    "Wklej wartość Base64 do pola wejściowego.",
+    "Narzędzie dekoduje zawartość i pokazuje wynik od razu.",
+    "Skopiuj tekst albo obejrzyj surowe dane, jeśli wynik nie jest zwykłym tekstem."
+  ],
+  "useCases": [
+    {
+      "title": "Analiza pól z API",
+      "description": "Odczytaj pola zakodowane w Base64 z odpowiedzi API, aby sprawdzić wiadomości, identyfikatory lub zagnieżdżone dane."
+    },
+    {
+      "title": "Odtwarzanie załączonych plików",
+      "description": "Przywróć zakodowane fragmenty plików lub załączników do pierwotnych bajtów albo tekstu na potrzeby weryfikacji."
+    },
+    {
+      "title": "Sprawdzanie tokenów i nagłówków",
+      "description": "Podejrzyj zakodowane wartości z nagłówków, tokenów lub podpisanych ciągów i zobacz, co naprawdę zapisano."
+    },
+    {
+      "title": "Dekodowanie wpisów z logów",
+      "description": "Rozszyfruj wartości skopiowane z logów, plików konfiguracyjnych lub terminala, gdy system zapisuje dane w Base64."
+    }
   ],
   "examples": [
     {
-      "title": "Przyklad 1",
+      "title": "Prosty tekst",
       "input": "aGVsbG8gd29ybGQ=",
       "output": "hello world",
-      "description": "Realistyczny przyklad dekodera Base64 dla codziennego zapytania w wyszukiwarce."
+      "description": "Klasyczny ciąg Base64 odtworzony do czytelnego tekstu."
     },
     {
-      "title": "Przyklad 2",
-      "input": "aGVsbG8gd29ybGQ=",
-      "output": "hello world",
-      "description": "Kolejny praktyczny scenariusz dla organicznego ruchu z dlugiego ogona."
+      "title": "Fragment JSON",
+      "input": "eyJzdGF0dXMiOiJvayIsImNvZGUiOjIwMH0=",
+      "output": "{\"status\":\"ok\",\"code\":200}",
+      "description": "Dekoduje uporządkowany fragment JSON bez zmiany treści."
+    },
+    {
+      "title": "Wejście wieloliniowe",
+      "input": "U2Vj\ncmV0\nIHZhbHVl",
+      "output": "Secret value",
+      "description": "Pokazuje, że zawinięty zapis może działać, jeśli dane są kompletne."
     }
   ],
   "faq": [
     {
-      "question": "Jak dokladne jest to narzedzie?",
-      "answer": "Wynik jest obliczany bezposrednio na podstawie wzoru lub logiki po stronie przegladarki uzywanej przez to narzedzie."
+      "question": "Dlaczego wynik wygląda jak znaki lub bełkot?",
+      "answer": "Najczęściej oznacza to, że po dekodowaniu otrzymujesz bajty binarne, a nie zwykły tekst. Źródłem może być obraz, archiwum albo inny plik."
     },
     {
-      "question": "Czy moge uzywac tego narzedzia na telefonie?",
-      "answer": "Tak. Strona dziala na ekranach desktopowych i mobilnych, oferujac prosty uklad pola wprowadzania i wyniku."
+      "question": "Co jeśli ciąg ma brakujące dopełnienie?",
+      "answer": "Niektóre wartości Base64 wymagają pełnego dopełnienia na końcu. Jeśli źródło ucięło znaki '=', dekodowanie może się nie powieść lub zwrócić inny rezultat."
+    },
+    {
+      "question": "Czy można tu dekodować Base64 URL-safe?",
+      "answer": "Wariant URL-safe używa w niektórych systemach innych znaków. Jeśli ciąg pochodzi z tokenu lub adresu URL, dopasuj format do wersji używanej przez źródło."
+    },
+    {
+      "question": "Dlaczego wynik różni się od oryginału?",
+      "answer": "Różnica zwykle wynika z dodatkowych spacji, utraty znaków albo użycia niewłaściwego wariantu. Sprawdź pełny ciąg dokładnie tak, jak został zapisany w źródle."
     }
   ],
   "seo": {
-    "title": "Dekoder Base64",
-    "description": "Dekoduj tekst Base64 natychmiast. Darmowy internetowy dekoder Base64 z natychmiastowymi wynikami.",
+    "title": "Dekoder Base64 online",
+    "description": "Dekoduj ciągi Base64 do tekstu lub danych binarnych. Wklej zakodowaną treść i sprawdź wynik od razu.",
     "keywords": [
       "dekoder base64",
-      "base64 decoder"
+      "base64 decode",
+      "base64 na tekst",
+      "dekodowanie base64"
     ]
   }
 }

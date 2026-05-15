@@ -4,42 +4,94 @@
   "slug": "base64-encoder",
   "h1": "Base64 Encoder",
   "title": "Base64 Encoder",
-  "shortDescription": "Encode text to Base64 instantly with fast results, simple inputs and practical examples.",
-  "overview": "Encode text to Base64 instantly. Use this tool to get a clear result quickly from simple input on the same page. It is useful for everyday checks, comparisons and small tasks when you need a fast online answer.",
+  "shortDescription": "Turn text into Base64 for headers, API payloads, test data, and developer notes.",
+  "metaTitle": "Base64 Encoder for Text",
+  "metaDescription": "Encode plain text to Base64 in your browser for headers, API payloads, test fixtures, and technical notes.",
+  "intro": "Paste text and get a Base64 string you can copy into a header, request body, fixture, or script.",
+  "overview": "Base64 turns bytes into ASCII characters so text can pass through systems that expect character-safe data. It is often used when preparing Authorization values, encoding small request fragments, storing sample content in fixtures, or matching what another service returns.\n\nThis tool is for text input, so it is best suited to small and medium strings rather than files or binary blobs. The output is reversible: Base64 does not protect secrets, and anyone who receives the encoded string can decode it back to the original text.",
   "howItWorks": [
-    "Enter the required value or text into the form.",
-    "The conversion, calculation or transformation runs instantly in the browser.",
-    "Review the result and continue with related tools if you need another step."
+    "Enter the exact text you want to encode.",
+    "The browser converts the text’s UTF-8 bytes into a Base64 string.",
+    "Copy the result into your API client, header, documentation, or test case."
+  ],
+  "useCases": [
+    {
+      "title": "Authorization header prep",
+      "description": "Encode a user:password or client:secret pair before placing it in a Basic Authorization header for a request test."
+    },
+    {
+      "title": "Webhook payload samples",
+      "description": "Represent small text fragments in Base64 when a receiving system expects encoded values inside a payload."
+    },
+    {
+      "title": "Fixture values for tests",
+      "description": "Create stable encoded strings for snapshots, mocks, sample responses, and integration test fixtures."
+    },
+    {
+      "title": "Release notes and support cases",
+      "description": "Share an encoded example in internal documentation when you need a reproducible text value without manual formatting."
+    }
   ],
   "examples": [
     {
-      "title": "Common use case",
+      "title": "Readable phrase",
       "input": "hello world",
       "output": "aGVsbG8gd29ybGQ=",
-      "description": "Shows a common use case with a clear input and result."
+      "description": "A straightforward text sample that makes the encoding pattern easy to verify."
     },
     {
-      "title": "Another quick example",
-      "input": "hello world",
-      "output": "aGVsbG8gd29ybGQ=",
-      "description": "Useful for quick checks, comparisons or repeat tasks."
+      "title": "Credential-style pair",
+      "input": "api:test-key",
+      "output": "YXBpOnRlc3Qta2V5",
+      "description": "Shows the Base64 form of a colon-separated value commonly prepared before Basic Auth testing."
+    },
+    {
+      "title": "Mini JSON payload",
+      "input": "{\"user\":\"ana\",\"role\":\"admin\"}",
+      "output": "eyJ1c2VyIjoiYW5hIiwicm9sZSI6ImFkbWluIn0=",
+      "description": "Useful when a compact JSON fragment must be embedded as encoded text in a test or note."
+    },
+    {
+      "title": "Unicode text",
+      "input": "Café déjà vu",
+      "output": "Q2Fmw6kgZMOpasOgIHZ1",
+      "description": "Demonstrates that accented characters are encoded from their UTF-8 bytes, not stripped or normalized."
     }
   ],
   "faq": [
     {
-      "question": "How accurate is this tool?",
-      "answer": "The result is based on the input you provide and the calculation or transformation shown on the page."
+      "question": "Does Base64 hide the content of my text?",
+      "answer": "No. Base64 is only an encoding format. It can be reversed immediately, so it should never be treated as secret storage."
     },
     {
-      "question": "Can I use this tool on mobile?",
-      "answer": "Yes. The page works on desktop and mobile screens with a simple input and result layout."
+      "question": "Can I encode characters like accents, emojis, or non-Latin text?",
+      "answer": "Yes. The tool encodes the text as UTF-8 bytes, which preserves Unicode input such as ñ, ü, 漢字, and emoji."
+    },
+    {
+      "question": "Why does my output end with one or two equals signs?",
+      "answer": "Padding is part of standard Base64 for many inputs. It helps align the encoded output to the expected block size."
+    },
+    {
+      "question": "Can I paste the result directly into an HTTP header?",
+      "answer": "Yes, if the server expects Base64. For Basic Auth, the encoded value is usually written after the Basic prefix."
+    },
+    {
+      "question": "What mistakes cause bad output?",
+      "answer": "Changing the input text, adding extra spaces, or encoding already-encoded text are the most common issues. If the receiving system expects raw bytes instead of text, the result will also be wrong."
+    },
+    {
+      "question": "Is this tool suitable for large files?",
+      "answer": "No. It is designed for text conversion. Large files and binary data are better handled with file-oriented tools built for that purpose."
     }
   ],
   "seo": {
     "title": "Base64 Encoder",
-    "description": "Encode text to Base64 instantly. Free online base64 encoder with instant results.",
+    "description": "Encode text to Base64 for headers, API payloads, fixtures, and technical examples.",
     "keywords": [
-      "base64 encoder"
+      "base64 encoder",
+      "encode text to base64",
+      "basic auth base64",
+      "base64 for api"
     ]
   }
 }

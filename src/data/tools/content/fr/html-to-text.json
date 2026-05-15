@@ -5,102 +5,80 @@
   "h1": "HTML en texte",
   "title": "HTML en texte",
   "shortDescription": "Extrait du texte lisible depuis des extraits HTML et des documents complets.",
-  "metaTitle": "Convertisseur HTML en texte | Extraire du texte brut depuis le HTML",
-  "metaDescription": "Convertissez du HTML en texte brut instantanément dans votre navigateur. Extrayez du texte lisible à partir d’extraits ou de pages complètes, sans API externe.",
-  "intro": "Convertissez le HTML en texte brut clair et lisible directement dans votre navigateur. Collez un extrait ou un document complet, et l’outil supprime les balises pour ne garder que le contenu utile.",
-  "overview": "Cet outil HTML en texte est un convertisseur rapide côté client pour les développeurs, rédacteurs et équipes contenu. Il supprime le balisage de manière sûre, réduit le bruit et renvoie un texte brut plus simple à rechercher, indexer, citer ou réutiliser. Comme tout s’exécute en local, aucune API externe n’est nécessaire et le traitement HTML reste privé et conscient des risques XSS.",
+  "metaTitle": "HTML en texte",
+  "metaDescription": "Convertissez le HTML en texte lisible dans le navigateur. Collez des extraits ou des documents complets et copiez le résultat sans balises.",
+  "intro": "Collez du HTML et récupérez immédiatement un texte brut lisible dans le navigateur.",
+  "overview": "Cet outil supprime les balises HTML et conserve seulement le contenu sous forme de texte simple. Il est utile lorsque vous voulez transférer un texte dans une note, un ticket, un éditeur ou un système qui n’a pas besoin de balisage.\n\nIl accepte aussi bien de courts extraits que des documents plus longs, afin de vérifier comment le contenu se lit sans la structure HTML. Le résultat reste facile à copier et à réutiliser dans d’autres étapes de travail.\n\nLe traitement s’effectue localement dans le navigateur, sans envoi vers un service externe.",
   "howItWorks": [
     "Collez le HTML dans le champ de saisie.",
-    "L’outil analyse le balisage dans le navigateur.",
-    "Il supprime les balises HTML et renvoie un texte lisible.",
-    "Copiez le texte nettoyé ou utilisez-le dans votre flux de travail."
+    "Le navigateur analyse la structure.",
+    "Les balises sont supprimées et le texte est conservé.",
+    "Copiez le résultat ou continuez votre travail."
   ],
   "useCases": [
-    "Extraire du texte depuis le HTML d’un site pour des notes ou de la documentation.",
-    "Convertir des extraits en texte brut pour des e-mails, tickets ou chats.",
-    "Préparer du contenu pour l’indexation, la recherche ou l’analyse.",
-    "Retirer la mise en forme d’un HTML avant de le coller dans une autre application.",
-    "Prévisualiser la version texte lisible d’une page ou d’un composant."
+    {
+      "title": "Nettoyer du contenu copié depuis un CMS",
+      "description": "Retirer la mise en forme d’un article copié et ne garder que le texte pour un document ou une tâche."
+    },
+    {
+      "title": "Relire des messages sans balisage",
+      "description": "Lire le texte d’e-mails, de notifications ou de modèles sans balises pour vérifier le contenu final."
+    },
+    {
+      "title": "Préparer du texte pour l’analyse",
+      "description": "Extraire le contenu visible d’un HTML pour l’utiliser dans des scripts, des notes ou des outils texte."
+    },
+    {
+      "title": "Convertir des exports archivés",
+      "description": "Transformer un HTML enregistré en texte lisible pour la documentation, l’audit ou la référence."
+    }
   ],
   "examples": [
     {
-      "title": "Paragraphe simple",
-      "input": "<p>Bonjour <strong>le monde</strong> !</p>",
-      "output": "Bonjour le monde !",
-      "description": "Les balises sont supprimées et le texte reste lisible."
+      "title": "Paragraphe avec emphase",
+      "input": "<p>La <strong>nouvelle</strong> version est prête.</p>",
+      "output": "La nouvelle version est prête.",
+      "description": "Les balises inline disparaissent et la phrase reste claire."
     },
     {
-      "title": "Liens et listes",
-      "input": "<div><a href=\"/docs\">Documentation</a><ul><li>Un</li><li>Deux</li></ul></div>",
-      "output": "Documentation\nUn\nDeux",
-      "description": "Le contenu textuel est conservé dans une sortie propre."
+      "title": "Titre et lien",
+      "input": "<article><h2>Statut</h2><p>Le build <a href=\"/builds/18\">#18</a> est passé.</p></article>",
+      "output": "Statut\nLe build #18 est passé.",
+      "description": "Le titre et le texte visible du lien sont conservés en lignes lisibles."
+    },
+    {
+      "title": "Liste avec saut de ligne",
+      "input": "<div>Tâches :<br><ul><li>Relire le texte</li><li>Envoyer au client</li></ul></div>",
+      "output": "Tâches :\nRelire le texte\nEnvoyer au client",
+      "description": "Les éléments de liste deviennent des lignes distinctes."
     }
   ],
   "faq": [
     {
-      "question": "Cet outil conserve-t-il les balises HTML ?",
-      "answer": "Non. Il supprime les balises et renvoie uniquement du texte brut."
+      "question": "Les cibles de lien et les attributs alt sont-ils conservés ?",
+      "answer": "Le texte visible est conservé, mais les attributs HTML ne sont pas exportés comme données séparées."
     },
     {
-      "question": "La conversion se fait-elle dans le navigateur ?",
-      "answer": "Oui. L’outil utilise une logique côté client et n’appelle aucune API externe."
+      "question": "Que deviennent les scripts, styles et commentaires ?",
+      "answer": "Ils n’apparaissent pas dans le résultat afin que le texte final se concentre sur le contenu visible."
     },
     {
-      "question": "Puis-je convertir des documents HTML complets ?",
-      "answer": "Oui. Il fonctionne aussi bien avec de courts extraits qu’avec des documents complets."
+      "question": "Pourquoi les espaces diffèrent-ils parfois du HTML d’origine ?",
+      "answer": "Le HTML décrit une structure, pas la mise en page exacte du texte. La sortie privilégie la lisibilité plutôt qu’une reproduction visuelle parfaite."
     },
     {
-      "question": "Mon HTML est-il envoyé à un serveur ?",
-      "answer": "Non. Le contenu est traité localement dans votre navigateur."
+      "question": "Puis-je retrouver un formatage exact avec cet outil ?",
+      "answer": "Non. Pour les tableaux, retraits ou espacements précis, il faut parfois ajuster le résultat manuellement."
     }
   ],
-  "uiLabels": {
-    "copy": "Copier",
-    "copied": "Copié",
-    "input": "HTML input",
-    "output": "Texte brut",
-    "placeholder": "Collez le HTML ici...",
-    "indent": "Retrait",
-    "removeComments": "Supprimer les commentaires",
-    "preview": "Aperçu",
-    "source": "Source",
-    "sanitizedHtml": "HTML nettoyé",
-    "plainText": "Texte brut",
-    "summary": "Résumé",
-    "total": "Total",
-    "links": "Liens",
-    "images": "Images",
-    "errors": "Erreurs",
-    "warnings": "Avertissements",
-    "valid": "Valide",
-    "invalid": "Invalide",
-    "href": "Href",
-    "text": "Texte",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Largeur",
-    "height": "Hauteur",
-    "empty": "Vide",
-    "outputReady": "Résultat prêt",
-    "cleanedHtml": "HTML nettoyé",
-    "formattedHtml": "HTML formaté",
-    "minifiedHtml": "HTML minifié",
-    "markdown": "Markdown",
-    "extractedImages": "Images extraites",
-    "extractedLinks": "Liens extraits",
-    "validationSummary": "Résumé de validation",
-    "prettyHtml": "HTML lisible",
-    "encodedText": "Texte encodé"
-  },
   "seo": {
-    "title": "Convertisseur HTML en texte",
-    "description": "Extrayez instantanément du texte brut depuis des extraits HTML et des documents complets dans votre navigateur.",
+    "title": "HTML en texte",
+    "description": "Convertissez le HTML en texte lisible dans le navigateur. Collez des extraits ou des documents complets et copiez le résultat sans balises.",
     "keywords": [
       "html en texte",
+      "convertir html en texte",
+      "supprimer balises html",
       "html vers texte",
-      "convertisseur html en texte",
-      "supprimer les balises html",
       "texte brut"
     ]
   }

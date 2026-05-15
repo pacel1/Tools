@@ -4,106 +4,91 @@
   "slug": "html-bereiniger",
   "h1": "HTML-Bereiniger",
   "title": "HTML-Bereiniger",
-  "shortDescription": "Bereinige unsicheres oder unnötiges Markup, indem du Skripte, Kommentare und riskante Attribute entfernst.",
-  "metaTitle": "HTML-Bereiniger | Skripte, Kommentare und unsicheres HTML entfernen",
-  "metaDescription": "HTML online bereinigen durch das Entfernen von Skripten, Kommentaren, Event-Handlern und riskanten Attributen. Schneller clientseitiger HTML-Sanitizer.",
-  "intro": "Nutze diesen HTML-Bereiniger, um unordentliches Markup direkt im Browser zu säubern. Er entfernt Skripte, Kommentare und riskante Attribute, damit aus unsicherem oder überflüssigem HTML saubere Ausgabe wird, ohne Daten an einen Server zu senden.",
-  "overview": "Der HTML-Bereiniger ist ein clientseitiges Werkzeug zum Bereinigen von HTML vor dem Veröffentlichen, Vorschauen oder erneuten Verwenden. Er hilft, gängige XSS-Vektoren, unnötige Kommentare und unerwünschte Attribute zu entfernen, während die benötigte Struktur erhalten bleibt. Ideal für Entwickler, Redakteure und alle, die mit eingefügtem oder generiertem Markup arbeiten.",
+  "shortDescription": "Entferne Skripte, Kommentare und riskante Attribute aus HTML, bevor du es weiterverwendest oder veröffentlichst.",
+  "metaTitle": "HTML-Bereiniger | Unsicheres HTML entfernen",
+  "metaDescription": "Entferne Skripte, Kommentare, Event-Handler und riskante Attribute direkt im Browser aus HTML, bevor du es kopierst oder veröffentlichst.",
+  "intro": "Füge HTML hier ein, um Skripte, Kommentare und riskante Attribute zu entfernen, ohne die benötigte Struktur zu verlieren.",
+  "overview": "Der HTML-Bereiniger hilft dir, eingefügtes oder generiertes Markup vor der Weiterverwendung in einer Seite, E-Mail, Vorschau oder Dokumentation zu säubern. Er konzentriert sich auf gefährliche Elemente wie Skripte und Inline-Event-Handler sowie auf unnötige Kommentare und störende Attribute.\n\nDas ist besonders nützlich bei HTML aus einem CMS, einem Rich-Text-Editor, Nutzereingaben oder kopierten Inhalten aus anderen Quellen. Die bereinigte Ausgabe wird im Browser erstellt, sodass du das Ergebnis vor dem Einfügen prüfen kannst.",
   "howItWorks": [
-    "Füge dein HTML in das Eingabefeld ein oder lade es hoch.",
-    "Das Tool prüft das Markup auf unsichere Tags, Kommentare und riskante Attribute.",
-    "Es entfernt Skripte, Event-Handler und andere unerwünschte Elemente.",
-    "Prüfe das bereinigte HTML im Ausgabebereich und kopiere es bei Bedarf."
+    "Füge HTML in das Eingabefeld ein oder lade es hoch.",
+    "Das Tool prüft Tags, Kommentare und Attribute auf unsicheres oder unnötiges Markup.",
+    "Es entfernt Skripte, Event-Handler und andere riskante Elemente gemäß den Bereinigungsregeln.",
+    "Prüfe das bereinigte HTML im Ausgabebereich und kopiere es, wenn es passt."
   ],
   "useCases": [
-    "Skripte und Inline-Event-Handler aus nutzergeneriertem HTML entfernen.",
-    "HTML aus CMS, E-Mail-Programmen oder Textverarbeitungen bereinigen.",
-    "Sichere Snippets für Vorschauen, Dokumentationen oder Demos vorbereiten.",
-    "Kommentare und überflüssige Attribute vor dem Formatieren oder Minifizieren entfernen.",
-    "Eingefügtes Markup prüfen und bereinigen, bevor es in einem Projekt weiterverwendet wird."
+    {
+      "title": "Nutzergenerierte Inhalte absichern",
+      "description": "Entferne Inline-Handler und eingebettete Skripte aus Inhalten aus Formularen, Kommentaren oder Editoren, bevor sie weiterverwendet werden."
+    },
+    {
+      "title": "CMS-Export für ein anderes System vorbereiten",
+      "description": "Bereinige aus einer Content-Plattform kopiertes Markup, damit es leichter in einen Website-Builder, eine Mailvorlage oder Dokumentation passt."
+    },
+    {
+      "title": "Kopiertes Markup von Ballast befreien",
+      "description": "Entferne Kommentare, Tracking-Attribute und andere Reste aus Textverarbeitungen oder WYSIWYG-Editoren."
+    },
+    {
+      "title": "Code für Vorschauen und Demos säubern",
+      "description": "Reduziere riskantes Markup in Beispiel-HTML, bevor es in einer Vorschau, Sandbox oder Präsentation verwendet wird."
+    },
+    {
+      "title": "Markup vor der Integration prüfen",
+      "description": "Untersuche aus fremden Quellen eingefügtes HTML und entferne unsichere Teile, bevor es in ein Projekt gelangt."
+    }
   ],
   "examples": [
     {
-      "title": "Skripte aus eingefügtem HTML entfernen",
-      "input": "<div onclick=\"alert(1)\"><script>alert('x')</script>Hallo<!-- Hinweis --></div>",
-      "output": "<div>Hallo</div>",
-      "description": "Der Elementinhalt bleibt erhalten, während Skripte, Kommentare und unsichere Handler entfernt werden."
+      "title": "Handler und Skript aus einem Abschnitt entfernen",
+      "input": "<section onclick=\"track()\"><script>bad()</script><h2>Aktualisierung</h2><!-- Entwurf --></section>",
+      "output": "<section><h2>Aktualisierung</h2></section>",
+      "description": "Skript, Kommentar und Event-Handler werden entfernt, der Inhalt des Abschnitts bleibt erhalten."
     },
     {
-      "title": "Überflüssige Attribute bereinigen",
-      "input": "<p style=\"color:red\" data-id=\"1\" onmouseover=\"doBad()\">Text</p>",
-      "output": "<p style=\"color:red\" data-id=\"1\">Text</p>",
-      "description": "Entfernt Event-Handler und lässt unkritische Attribute stehen, wenn sie erlaubt sind."
+      "title": "Linkinhalt behalten, riskantes Verhalten löschen",
+      "input": "<p>Lies <a href=\"/docs\" onmouseover=\"steal()\">die Anleitung</a> jetzt.</p>",
+      "output": "<p>Lies <a href=\"/docs\">die Anleitung</a> jetzt.</p>",
+      "description": "Der Linktext und das Ziel bleiben erhalten, das unsichere Event-Attribut wird entfernt."
+    },
+    {
+      "title": "Eingefügtes Markup mit Zusatzattributen bereinigen",
+      "input": "<div class=\"box\" data-id=\"42\" onclick=\"alert(1)\"><img src=\"banner.png\" alt=\"Banner\" width=\"800\" height=\"300\"></div>",
+      "output": "<div class=\"box\" data-id=\"42\"><img src=\"banner.png\" alt=\"Banner\" width=\"800\" height=\"300\"></div>",
+      "description": "Nützliche Layout- und Bildattribute bleiben stehen, der riskante Klick-Handler wird entfernt."
     }
   ],
   "faq": [
     {
-      "question": "Was entfernt der HTML-Bereiniger?",
-      "answer": "Er entfernt Skripte, Kommentare und riskante Attribute wie Inline-Event-Handler. Das genaue Ergebnis hängt von den Sanitizing-Regeln des Tools ab."
+      "question": "Was entfernt das Tool genau?",
+      "answer": "Es entfernt Skripte, Kommentare und Attribute, die Code ausführen oder unerwünschtes Verhalten hinzufügen können, etwa Inline-Event-Handler. Was bleibt, hängt von den Bereinigungsregeln für den Eingabetext ab."
     },
     {
-      "question": "Wird das HTML auf dem Server verarbeitet?",
-      "answer": "Nein. Dieses Tool ist für die reine Client-Seite gedacht, sodass dein HTML lokal im Browser bereinigt werden kann."
+      "question": "Werden normale Tags wie div, p oder img verändert?",
+      "answer": "In der Regel nicht. Der Fokus liegt auf unsicheren oder störenden Teilen, nicht auf einer kompletten Neuschreibung des Dokuments."
     },
     {
-      "question": "Kann es ungültiges HTML reparieren?",
-      "answer": "Es kann Markup bereinigen und teilweise normalisieren, ist aber kein vollständiges Reparatur-Tool. Für strukturelle Korrekturen nutze zusätzlich einen HTML-Formatter oder Validator."
+      "question": "Warum bleiben manche Attribute erhalten und andere nicht?",
+      "answer": "Als unkritisch eingestufte Attribute können erhalten bleiben, riskante werden entfernt. Deshalb kann ein Datenattribut bleiben, während ein Event-Handler verschwindet."
     },
     {
-      "question": "Entfernt es alle Attribute?",
-      "answer": "Nein. Es zielt auf unsichere oder überflüssige Attribute und erhält nützliches Markup, wo immer es möglich ist."
+      "question": "Repariert das Tool kaputtes HTML oder falsche Verschachtelungen?",
+      "answer": "Nein. Es kann Markup bereinigen, ist aber kein vollständiges Reparaturwerkzeug. Für strukturelle Korrekturen solltest du danach zusätzlich einen HTML-Formatter oder Validator nutzen."
+    },
+    {
+      "question": "Warum ist die Ausgabe manchmal kürzer als die Eingabe?",
+      "answer": "Kommentare, Skripte und unsichere Attribute werden absichtlich entfernt. Wenn dein Original-HTML von diesen Teilen abhängig war, wird die Ausgabe kürzer und verhält sich möglicherweise anders."
     }
   ],
-  "uiLabels": {
-    "copy": "Kopieren",
-    "copied": "Kopiert",
-    "input": "Eingabe",
-    "output": "Ausgabe",
-    "placeholder": "HTML hier einfügen...",
-    "indent": "Einzug",
-    "removeComments": "Kommentare entfernen",
-    "preview": "Vorschau",
-    "source": "Quelle",
-    "sanitizedHtml": "Bereinigtes HTML",
-    "plainText": "Klartext",
-    "summary": "Zusammenfassung",
-    "total": "Gesamt",
-    "links": "Links",
-    "images": "Bilder",
-    "errors": "Fehler",
-    "warnings": "Warnungen",
-    "valid": "Gültig",
-    "invalid": "Ungültig",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Breite",
-    "height": "Höhe",
-    "empty": "Leer",
-    "outputReady": "Ausgabe bereit",
-    "cleanedHtml": "Bereinigtes HTML",
-    "formattedHtml": "Formatiertes HTML",
-    "minifiedHtml": "Minifiziertes HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extrahierte Bilder",
-    "extractedLinks": "Extrahierte Links",
-    "validationSummary": "Validierungszusammenfassung",
-    "prettyHtml": "Gut lesbares HTML",
-    "encodedText": "Kodierter Text"
-  },
   "seo": {
-    "title": "HTML-Bereiniger online | Unsichere Tags und Attribute entfernen",
-    "description": "HTML online bereinigen durch das Entfernen von Skripten, Kommentaren und riskanten Attributen. Schneller clientseitiger HTML-Bereiniger für sichereres Markup.",
+    "title": "HTML-Bereiniger | Unsicheres HTML entfernen",
+    "description": "Entferne Skripte, Kommentare, Event-Handler und riskante Attribute direkt im Browser aus HTML, bevor du es kopierst oder veröffentlichst.",
     "keywords": [
       "html bereinigen",
       "html sanitizen",
       "skripte aus html entfernen",
       "html kommentare entfernen",
-      "html online bereinigen",
-      "html sanitizer",
-      "sicheres html"
+      "unsichere attribute entfernen",
+      "html sanitizer"
     ]
   }
 }

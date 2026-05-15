@@ -4,179 +4,87 @@
   "slug": "kalkulator-betonu",
   "h1": "Kalkulator betonu",
   "title": "Kalkulator betonu",
-  "shortDescription": "Oblicz objetosc betonu dla plyty, lawy albo otworu pod slupek, dolicz zapas i porownaj worki z zamowieniem betonu towarowego.",
-  "metaTitle": "Kalkulator betonu | Plyta, lawa, slupek i zamowienie m3",
-  "metaDescription": "Policz beton dla plyty, lawy fundamentowej albo otworu pod slupek. Kalkulator pokazuje objetosc, zapas, liczbe workow i bezpieczna wielkosc zamowienia z betoniarni.",
-  "intro": "Kalkulator betonu pomaga szybko sprawdzic, ile mieszanki potrzeba na plyte, lawe fundamentowa albo punktowe zalanie otworow pod slupki. Poza sama objetoscia dostajesz tez liczbe workow oraz orientacyjne zamowienie w m3.",
-  "overview": "W tej wersji wybierasz typ projektu, wpisujesz podstawowe wymiary i od razu widzisz objetosc jednego elementu, laczna objetosc, wynik z zapasem oraz liczbe workow. Dodatkowy wynik zamowienia z betoniarni pomaga zaokraglic zapotrzebowanie do praktycznego kroku dostawy.",
+  "shortDescription": "Oblicz objetosc betonu, zapas i liczbe workow dla plyty, lawy lub otworow pod slupki.",
+  "metaTitle": "Kalkulator betonu m3",
+  "metaDescription": "Policz objetosc betonu, dolicz zapas i przelicz wynik na liczbe workow albo wielkosc zamowienia z betoniarni.",
+  "intro": "Wpisz wymiary plyty, lawy albo otworu pod slupek, a dostaniesz objetosc betonu, zapas i liczbe workow.",
+  "overview": "To narzedzie przelicza wymiary projektu na objetosc betonu w metrach szesciennych. Wpisz dlugosc, szerokosc i grubosc, a potem dodaj zapas na straty przy rozkladaniu, zagęszczaniu i drobnych nierownosciach podloza.\n\nDzieki temu latwiej porownasz beton workowany z dostawa z betoniarni. Przy otworach po slupki albo nieregularnych wykopach najlepiej wpisac najblizszy prosty odpowiednik wymiarow i lekko zawyzyc zapas, jesli scianki sa nierowne albo dno nie jest idealnie poziome.",
   "howItWorks": [
     "Wpisz dlugosc i szerokosc w metrach.",
     "Podaj grubosc w centymetrach.",
-    "Ustaw procent zapasu na straty i nierownosci.",
+    "Ustaw procent zapasu na straty i poprawki.",
     "Wpisz wydajnosc jednego worka w m3.",
-    "Odczytaj objetosc, objetosc z zapasem i liczbe workow."
+    "Odczytaj objetosc bazowa, objetosc po zapasie i liczbe workow."
   ],
   "useCases": [
-    "Obliczanie betonu na plyte tarasowa lub garazowa.",
-    "Planowanie betonu na lawe fundamentowa.",
-    "Szacowanie mieszanki do slupkow i stopek pod slupy.",
-    "Porownanie betonu workowanego z betonem towarowym."
+    {
+      "title": "Plyta tarasowa lub chodnik",
+      "description": "Szybkie wyliczenie betonu pod plyte tarasowa, sciezke ogrodowa albo niewielki podjazd."
+    },
+    {
+      "title": "Lawa fundamentowa",
+      "description": "Szacunek dla waskich law, zeby porownac worki z betonem towarowym przed zlozeniem zamowienia."
+    },
+    {
+      "title": "Otwory pod slupki",
+      "description": "Obliczenie ilosci mieszanki do pojedynczych otworow pod ogrodzenie, pergole albo brame."
+    },
+    {
+      "title": "Stopy i podesty",
+      "description": "Wyliczenie betonu dla punktowych podstaw pod slupy, kolumny i male podpory."
+    }
   ],
   "examples": [
     {
-      "title": "Przyklad dla plyty",
-      "input": "4 m x 3 m x 10 cm",
-      "output": "1,2 m3 betonu bez zapasu.",
-      "description": "Prosty przyklad dla niewielkiej plyty lub podbudowy."
+      "title": "Niewielka plyta ogrodowa",
+      "input": "3,6 m x 2,4 m x 12 cm, 7% zapasu, 0,018 m3 na worek",
+      "output": "Objetosc bazowa: 1,0368 m3; z zapasem: 1,1094 m3; worki: 62",
+      "description": "Przyklad dla malej plyty przy tarasie albo podstawy pod domek narzedziowy."
     },
     {
-      "title": "Przyklad dla lawy",
-      "input": "2 m x 0,5 m x 30 cm",
-      "output": "0,3 m3 betonu bez zapasu.",
-      "description": "Przydatne przy lawach i stopach fundamentowych."
+      "title": "Lawa pod ogrodzenie",
+      "input": "8 m x 0,25 m x 20 cm, 10% zapasu, 0,02 m3 na worek",
+      "output": "Objetosc bazowa: 0,4 m3; z zapasem: 0,44 m3; worki: 22",
+      "description": "Pomocny przy waskiej lawie na dlugim odcinku ogrodzenia."
+    },
+    {
+      "title": "Otwor pod slupek",
+      "input": "0,45 m x 0,45 m x 0,85 m, 12% zapasu, 0,02 m3 na worek",
+      "output": "Objetosc bazowa: 0,1721 m3; z zapasem: 0,1928 m3; worki: 10",
+      "description": "Realistyczny przyklad dla ciezkiego slupka lub podpory."
     }
   ],
   "faq": [
     {
-      "question": "Jak obliczyc objetosc betonu?",
-      "answer": "Pomnorz dlugosc, szerokosc i grubosc, a grubosc zamien z centymetrow na metry."
+      "question": "Jak liczyc, gdy otwor jest okragly?",
+      "answer": "Najprosciej przyjac najblizszy odpowiednik prostokatny albo przeliczyc srednice na przyblizona podstawe. Przy nierownych sciankach lepiej przyjac lekki naddatek."
     },
     {
-      "question": "Dlaczego warto dodac zapas?",
-      "answer": "Zapas pokrywa straty, nierownosci podloza i drobne bledy pomiaru."
+      "question": "Czy zapas wlicza sie do liczby workow?",
+      "answer": "Tak. Wynik liczby workow opiera sie na objetosci z zapasem, a nie na samej objetosci bazowej."
     },
     {
-      "question": "Czy moge liczyc beton towarowy?",
-      "answer": "Tak. Objetosc z zapasem pomoze oszacowac, ile mieszanki zamowic."
+      "question": "Dlaczego dla malej roboty wychodzi duzo workow?",
+      "answer": "Najczesciej powodem jest mala wydajnosc worka wpisana w zlych jednostkach albo zbyt niski przyjety uzysk na worek."
     },
     {
-      "question": "Jak obliczyc liczbe workow?",
-      "answer": "Podziel objetosc z zapasem przez wydajnosc jednego worka i zaokraglij w gore."
+      "question": "Czy moge liczyc element ze skosem?",
+      "answer": "Tak, ale najlepiej podzielic go na prostsze odcinki albo przyjac srednia grubosc. Jedna stala wartosc jest tylko przyblizeniem."
     },
     {
-      "question": "Czy kalkulator nadaje sie do slupkow?",
-      "answer": "Tak, jesli wpiszesz wymiary otworu lub przyjmiesz prosty odpowiednik prostokatny."
+      "question": "Jak odczytac wynik dla betoniarni?",
+      "answer": "Traktuj go jako wartosc do rozmowy z dostawca. Przy trudnym dojezdzie lub nieregularnym szalunku warto zostawic mala rezerwe."
     }
   ],
-  "uiLabels": {
-    "copy": "Kopiuj",
-    "copied": "Skopiowano",
-    "input": "Wejscie",
-    "output": "Wyjscie",
-    "placeholder": "Wpisz wartosc",
-    "indent": "Wciecie",
-    "removeComments": "Usun komentarze",
-    "preview": "Podglad",
-    "source": "Zrodlo",
-    "sanitizedHtml": "Oczyszczony HTML",
-    "plainText": "Tekst zwykly",
-    "summary": "Podsumowanie",
-    "total": "Suma",
-    "links": "Linki",
-    "images": "Obrazy",
-    "errors": "Bledy",
-    "warnings": "Ostrzezenia",
-    "valid": "Poprawne",
-    "invalid": "Niepoprawne",
-    "href": "Href",
-    "text": "Tekst",
-    "rel": "Rel",
-    "target": "Cel",
-    "alt": "Alt",
-    "width": "Szerokosc",
-    "height": "Wysokosc",
-    "empty": "Puste",
-    "outputReady": "Wynik gotowy",
-    "cleanedHtml": "Oczyszczony HTML",
-    "formattedHtml": "Sformatowany HTML",
-    "minifiedHtml": "Zminifikowany HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Wyodrebnione obrazy",
-    "extractedLinks": "Wyodrebnione linki",
-    "validationSummary": "Podsumowanie walidacji",
-    "prettyHtml": "Czytelny HTML",
-    "encodedText": "Tekst zakodowany",
-    "file": "Plik",
-    "size": "Rozmiar",
-    "format": "Format",
-    "quality": "Jakosc",
-    "colorOne": "Kolor 1",
-    "colorTwo": "Kolor 2",
-    "background": "Tlo",
-    "foreground": "Pierwszy plan",
-    "angle": "Kat",
-    "margin": "Margines",
-    "level": "Poziom",
-    "gradientType": "Typ gradientu",
-    "linear": "Liniowy",
-    "radial": "Promienisty",
-    "blur": "Rozmycie",
-    "spread": "Rozproszenie",
-    "offsetX": "Przesuniecie X",
-    "offsetY": "Przesuniecie Y",
-    "opacity": "Przezroczystosc",
-    "inset": "Wewnetrzny",
-    "cssCode": "Kod CSS",
-    "snippet": "Fragment",
-    "download": "Pobierz",
-    "downloadSvg": "Pobierz SVG",
-    "downloadPng": "Pobierz PNG",
-    "downloadAll": "Pobierz wszystko",
-    "upload": "Wgraj",
-    "title": "Tytul",
-    "description": "Opis",
-    "canonicalUrl": "Adres kanoniczny",
-    "siteName": "Nazwa strony",
-    "ogImage": "Obraz OG",
-    "clear": "Wyczysc",
-    "generatedQr": "Wygenerowany QR",
-    "placeholderImage": "Obraz zastępczy",
-    "faviconSet": "Zestaw favicon",
-    "keepAspectRatio": "Zachowaj proporcje",
-    "cropX": "Kadruj X",
-    "cropY": "Kadruj Y",
-    "cropWidth": "Szerokosc kadru",
-    "cropHeight": "Wysokosc kadru",
-    "originalSize": "Oryginalny rozmiar",
-    "outputSize": "Rozmiar wyjsciowy",
-    "savedSize": "Zapisany rozmiar",
-    "result": "Wynik",
-    "base64": "Base64",
-    "mimeType": "Typ MIME",
-    "resizedImage": "Obraz po zmianie rozmiaru",
-    "compressedImage": "Obraz skompresowany",
-    "croppedImage": "Obraz przycięty",
-    "convertedImage": "Obraz przekonwertowany",
-    "decodedImage": "Obraz zdekodowany",
-    "imagePreview": "Podglad obrazu",
-    "camera": "Aparat",
-    "lens": "Obiektyw",
-    "dateTaken": "Data wykonania",
-    "resolution": "Rozdzielczosc",
-    "fileSize": "Rozmiar pliku",
-    "iso": "ISO",
-    "exposure": "Czas naświetlania",
-    "aperture": "Przyslona",
-    "focalLength": "Ogniskowa",
-    "flash": "Lampa blyskowa",
-    "orientation": "Orientacja",
-    "latitude": "Szerokosc geograficzna",
-    "longitude": "Dlugosc geograficzna",
-    "openMap": "Otworz mape",
-    "rawMetadata": "Surowe metadane",
-    "noMetadataFound": "Nie znaleziono metadanych",
-    "gpsLocation": "Lokalizacja GPS",
-    "metadataSummary": "Podsumowanie metadanych"
-  },
   "seo": {
-    "title": "Kalkulator betonu | Objetosc, zapas i worki",
-    "description": "Oblicz objetosc betonu w m3, dodaj zapas i oszacuj liczbe workow lub mieszanki gotowej do plyt, law i slupkow.",
+    "title": "Kalkulator betonu m3",
+    "description": "Policz objetosc betonu, dolicz zapas i przelicz wynik na liczbe workow albo wielkosc zamowienia z betoniarni.",
     "keywords": [
       "kalkulator betonu",
-      "obliczanie betonu",
-      "kalkulator objetosci betonu",
-      "ile betonu na plyte",
-      "kalkulator workow betonu"
+      "objetosc betonu",
+      "liczba workow betonu",
+      "beton towarowy",
+      "lawa fundamentowa"
     ]
   }
 }

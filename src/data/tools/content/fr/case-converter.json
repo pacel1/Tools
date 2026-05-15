@@ -4,43 +4,87 @@
   "slug": "convertisseur-de-majuscules-et-minuscules",
   "h1": "Convertisseur de majuscules et minuscules",
   "title": "Convertisseur de majuscules et minuscules",
-  "shortDescription": "Convertissez du texte en majuscules, minuscules, casse de titre et casse de phrase avec des résultats rapides, une saisie simple et des exemples pratiques.",
-  "overview": "Convertissez du texte en majuscules, minuscules, casse de titre et casse de phrase. Cette page fournit une réponse rapide grâce à un outil utilitaire pratique et un flux de résultat simple. Elle cible les utilisateurs à la recherche d’une solution gratuite en ligne, de résultats instantanés dans le navigateur et d’un contenu pratique pour les requêtes de longue traîne.",
+  "shortDescription": "Passez un texte en majuscules, minuscules, casse de titre ou casse de phrase avec un résultat clair pour texte saisi ou collé.",
+  "metaTitle": "Convertisseur de casse",
+  "metaDescription": "Transformez un texte en majuscules, minuscules, casse de titre ou casse de phrase dans un outil simple du navigateur.",
+  "intro": "Collez ou saisissez votre texte, puis convertissez-le immédiatement en majuscules, minuscules, casse de titre ou casse de phrase.",
+  "overview": "Cet outil réécrit votre texte dans la casse choisie. Il est utile quand un titre doit suivre une capitalisation cohérente, qu’un brouillon doit être uniformisé ou qu’un texte copié doit correspondre à une charte éditoriale.\n\nVous pouvez tester de courtes expressions, des phrases complètes, des titres et des passages plus longs. Le résultat dépend du texte exact saisi, donc la ponctuation, les espaces et les retours à la ligne restent présents sauf si le mode choisi les traite autrement.\n\nUtilisez-le avant de publier, de coller dans un document ou de partager un texte, quand vous voulez une présentation plus propre et plus régulière.",
   "howItWorks": [
-    "Saisissez le texte requis dans le formulaire.",
-    "La conversion, le calcul ou la transformation s’effectue instantanément dans le navigateur.",
-    "Consultez le résultat et continuez avec des outils associés si vous avez besoin d’une autre étape."
+    "Saisissez ou collez le texte à modifier.",
+    "Choisissez la casse cible parmi les options disponibles.",
+    "Copiez le résultat converti et réutilisez-le où vous voulez."
+  ],
+  "useCases": [
+    {
+      "title": "Titres d’articles",
+      "description": "Passez un brouillon de titre en casse de titre ou en casse de phrase avant de l’intégrer dans un document ou un CMS."
+    },
+    {
+      "title": "Notes collées depuis des messages",
+      "description": "Harmonisez un texte copié depuis un chat, un e-mail ou des notes dans une casse uniforme."
+    },
+    {
+      "title": "Libellés d’interface",
+      "description": "Formatez des boutons, menus et libellés courts selon une règle typographique cohérente."
+    },
+    {
+      "title": "Listes et tableaux",
+      "description": "Uniformisez des noms d’éléments ou des puces pour rendre les listes plus lisibles."
+    }
   ],
   "examples": [
     {
-      "title": "Exemple 1",
-      "input": "Titre d’exemple pour un article",
-      "output": "MAJUSCULES / minuscules / Titre / Phrase",
-      "description": "Montre un usage courant de l’outil avec un texte simple."
+      "title": "Nom de produit en majuscules",
+      "input": "casque sans fil à réduction de bruit",
+      "output": "CASQUE SANS FIL À RÉDUCTION DE BRUIT",
+      "description": "Pratique lorsqu’un nom doit ressortir davantage dans un titre ou un libellé."
     },
     {
-      "title": "Exemple 2",
-      "input": "Titre d’exemple pour un article",
-      "output": "MAJUSCULES / minuscules / Titre / Phrase",
-      "description": "Utile pour ajuster rapidement des titres, intertitres et brouillons."
+      "title": "Phrase issue de notes collées",
+      "input": "la réunion commence demain à 9 h.",
+      "output": "La réunion commence demain à 9 h.",
+      "description": "Montre la casse de phrase avec une majuscule initiale."
+    },
+    {
+      "title": "Titre de blog en casse de titre",
+      "input": "comment rédiger de meilleurs objets d’e-mail",
+      "output": "Comment Rédiger De Meilleurs Objets D’E-mail",
+      "description": "Transforme un texte simple en titre prêt à être utilisé dans un brouillon."
+    },
+    {
+      "title": "Petit libellé en minuscules",
+      "input": "Service Client",
+      "output": "service client",
+      "description": "Utile quand un système ou une maquette demande du texte en minuscules."
     }
   ],
   "faq": [
     {
-      "question": "Quelle est la précision de cet outil ?",
-      "answer": "Le résultat est calculé directement à partir de la formule ou de la logique côté navigateur utilisée par cet outil."
+      "question": "L’outil modifie-t-il seulement les lettres ?",
+      "answer": "Oui. Les chiffres et les symboles restent inchangés ; seules les lettres sont remises dans la casse choisie."
     },
     {
-      "question": "Puis-je utiliser cet outil sur mobile ?",
-      "answer": "Oui. La page fonctionne sur ordinateur et mobile avec une interface simple de saisie et de résultat."
+      "question": "La casse de titre met-elle chaque mot en majuscule de la même façon ?",
+      "answer": "L’outil applique ses propres règles de capitalisation. Pour les noms propres, sigles et termes techniques, vérifiez le résultat final."
+    },
+    {
+      "question": "Que deviennent les espaces et les retours à la ligne ?",
+      "answer": "La structure saisie est conservée, mais des espaces superflus peuvent modifier l’apparence finale."
+    },
+    {
+      "question": "Pourquoi un nom de marque ou un sigle a-t-il changé ?",
+      "answer": "Parce que la casse choisie est appliquée à tout le texte. Corrigez manuellement les éléments qui doivent rester identiques."
     }
   ],
   "seo": {
-    "title": "Convertisseur de majuscules et minuscules",
-    "description": "Convertissez du texte en majuscules, minuscules, casse de titre et casse de phrase. Convertisseur de casse en ligne gratuit avec résultats instantanés.",
+    "title": "Convertisseur de casse",
+    "description": "Transformez un texte en majuscules, minuscules, casse de titre ou casse de phrase dans un outil simple du navigateur.",
     "keywords": [
       "convertisseur de majuscules et minuscules",
-      "case converter"
+      "majuscules",
+      "minuscules",
+      "casse de titre",
+      "casse de phrase"
     ]
   }
 }

@@ -4,42 +4,76 @@
   "slug": "einfache-zinsrechner",
   "h1": "Einfacher Zinsrechner",
   "title": "Einfacher Zinsrechner",
-  "shortDescription": "Berechnen Sie den einfachen Zins aus Kapital, Zinssatz und Laufzeit mit schnellen Ergebnissen, einfachen Eingaben und praktischen Beispielen.",
-  "overview": "Berechnen Sie den einfachen Zins aus Kapital, Zinssatz und Laufzeit. Diese Seite liefert eine schnelle Antwort mit einem praktischen Online-Tool und einem einfachen Ergebnisablauf. Sie richtet sich an Nutzer, die eine kostenlose Online-Antwort, schnelle Ergebnisse im Browser und praktische Long-Tail-Inhalte suchen.",
+  "shortDescription": "Berechnen Sie einfachen Zins, Gesamtzins und Endbetrag aus Kapital, Zinssatz und Laufzeit.",
+  "metaTitle": "Einfacher Zinsrechner",
+  "metaDescription": "Berechnen Sie einfachen Zins, Gesamtzins und Endbetrag aus Kapital, Zinssatz und Laufzeit.",
+  "intro": "Geben Sie Kapital, Jahreszinssatz und Laufzeit ein, um den einfachen Zins und den Endbetrag zu sehen.",
+  "overview": "Einfacher Zins wird nur auf das ursprüngliche Kapital berechnet, nicht auf bereits aufgelaufene Zinsen. Dieses Tool zeigt Ihnen mit einer klaren Formel, wie viel Zins in einem festen Zeitraum anfällt — nützlich für Festgeldvergleiche, einfache Darlehen oder Rechenaufgaben.\n\nWenn Ihre Laufzeit nicht in Jahren angegeben ist, sollten Sie sie passend zum Zinssatz umrechnen. Bei einem Jahreszinssatz werden Monate und Tage vor der Interpretation in Jahre umgerechnet. Der Rechner zeigt Zinsbetrag und Endsumme an, damit Sie das gesamte Ergebnis auf einen Blick prüfen können.",
   "howItWorks": [
-    "Geben Sie den benötigten Wert oder Text in das Formular ein.",
-    "Die Umrechnung, Berechnung oder Umwandlung läuft sofort im Browser.",
-    "Prüfen Sie das Ergebnis und nutzen Sie bei Bedarf verwandte Tools für den nächsten Schritt."
+    "Kapital, Zinssatz und Laufzeit eingeben.",
+    "Der Rechner verwendet die Formel: Zins = Kapital × Zinssatz × Zeit.",
+    "Zins und Endbetrag prüfen und bei Bedarf die Werte für einen Vergleich anpassen."
+  ],
+  "useCases": [
+    {
+      "title": "Festgeld mit fester Laufzeit",
+      "description": "Ermitteln Sie, wie viel Zins ein Betrag über eine bestimmte Anzahl von Jahren bei festem Satz bringt."
+    },
+    {
+      "title": "Einfaches Privatdarlehen",
+      "description": "Berechnen Sie die Kosten eines Darlehens ohne Zinseszins und ohne variable Raten."
+    },
+    {
+      "title": "Schul- und Studienaufgaben",
+      "description": "Kontrollieren Sie Finanzaufgaben und sehen Sie, wie Kapital, Zinssatz und Laufzeit das Ergebnis verändern."
+    }
   ],
   "examples": [
     {
-      "title": "Beispiel 1",
-      "input": "5000, 4 %, 3 Jahre",
-      "output": "600",
-      "description": "Ein realistisches Beispiel für den einfachen Zinsrechner bei einer typischen Suchanfrage."
+      "title": "Anlage über 3 Jahre",
+      "input": "Kapital: 5.000; Zinssatz: 4 %; Laufzeit: 3 Jahre",
+      "output": "Zins: 600; Endbetrag: 5.600",
+      "description": "Ein Festgeldbeispiel mit drei Jahren Laufzeit und festem Jahreszins."
     },
     {
-      "title": "Beispiel 2",
-      "input": "5000, 4 %, 3 Jahre",
-      "output": "600",
-      "description": "Ein weiteres praktisches Anwendungsbeispiel für organischen Long-Tail-Traffic."
+      "title": "Darlehenskosten für 1 Jahr",
+      "input": "Kapital: 12.000; Zinssatz: 7,5 %; Laufzeit: 1 Jahr",
+      "output": "Zins: 900; Endbetrag: 12.900",
+      "description": "Zeigt die Kosten eines einfachen Darlehens ohne Zinseszins."
+    },
+    {
+      "title": "Halbes Jahr",
+      "input": "Kapital: 8.000; Zinssatz: 6 %; Laufzeit: 0,5 Jahre",
+      "output": "Zins: 240; Endbetrag: 8.240",
+      "description": "Ein Beispiel mit einer Laufzeit als Bruchteil eines Jahres."
     }
   ],
   "faq": [
     {
-      "question": "Wie genau ist dieses Tool?",
-      "answer": "Das Ergebnis wird direkt mit der Formel oder der browserseitigen Logik dieses Tools berechnet."
+      "question": "Enthält dieser Rechner Zinseszins?",
+      "answer": "Nein. Er berechnet nur einfachen Zins auf das ursprüngliche Kapital. Wenn Zinsen dem Guthaben zugeschlagen werden, brauchen Sie einen Zinseszinsrechner."
     },
     {
-      "question": "Kann ich dieses Tool auf dem Smartphone nutzen?",
-      "answer": "Ja. Die Seite funktioniert auf Desktop- und Mobilgeräten mit einem einfachen Eingabe- und Ergebnislayout."
+      "question": "Wie gebe ich eine Laufzeit unter einem Jahr ein?",
+      "answer": "Verwenden Sie eine zur Rate passende Einheit. Bei Jahreszinsen geben Sie Monate oder Tage als Bruchteil eines Jahres ein, zum Beispiel 6 Monate = 0,5 Jahre."
+    },
+    {
+      "question": "Warum weicht das Ergebnis von einer Bankberechnung ab?",
+      "answer": "Banken nutzen oft Zinseszins, Rundungen oder andere Tageskonventionen. Dann stimmt das Ergebnis nicht exakt überein."
+    },
+    {
+      "question": "Kann ich monatliche oder tägliche Zinssätze verwenden?",
+      "answer": "Ja, aber die Zeit muss in derselben Einheit vorliegen. Ein monatlicher Zinssatz braucht Monate, ein täglicher Zinssatz Tage."
     }
   ],
   "seo": {
     "title": "Einfacher Zinsrechner",
-    "description": "Berechnen Sie den einfachen Zins aus Kapital, Zinssatz und Laufzeit. Kostenloser Online-Zinsrechner mit sofortigen Ergebnissen.",
+    "description": "Berechnen Sie einfachen Zins, Gesamtzins und Endbetrag aus Kapital, Zinssatz und Laufzeit.",
     "keywords": [
-      "einfacher zinsrechner"
+      "einfacher zinsrechner",
+      "zinsrechner",
+      "kapital zins laufzeit",
+      "einfache zinsformel"
     ]
   }
 }

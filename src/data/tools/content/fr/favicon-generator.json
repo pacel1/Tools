@@ -4,157 +4,87 @@
   "slug": "generateur-de-favicon",
   "h1": "Générateur de favicon",
   "title": "Générateur de favicon",
-  "shortDescription": "Générez des tailles de favicon à partir d’un seul fichier image directement dans votre navigateur avec des téléchargements instantanés.",
-  "metaTitle": "Générateur de favicon - créez des favicons en ligne",
-  "metaDescription": "Créez des favicons à partir d’une image dans votre navigateur. Générez plusieurs fichiers d’icône instantanément, avec des téléchargements rapides et sans envoi vers un serveur.",
-  "intro": "Créez des favicons à partir d’un seul fichier image dans votre navigateur. Générez rapidement les tailles d’icône nécessaires pour vos sites web et téléchargez-les immédiatement.",
-  "overview": "Ce générateur de favicon vous aide à préparer les icônes de site à partir d’une seule image source sans installer de logiciel. Il fonctionne localement dans le navigateur, afin que votre fichier reste sur votre appareil pendant la génération des tailles pour les onglets, les favoris et les icônes d’application.",
+  "shortDescription": "Transformez une image en fichiers favicon et en tailles d’icônes dans votre navigateur, sans envoi vers un serveur.",
+  "metaTitle": "Générateur de favicon pour site",
+  "metaDescription": "Créez des fichiers favicon à partir d’une image dans votre navigateur et téléchargez les tailles d’icônes nécessaires à votre site web.",
+  "intro": "Importez une image et transformez-la en fichiers favicon et en tailles d’icônes pour votre site directement dans le navigateur.",
+  "overview": "Cet outil vous aide à préparer un jeu de favicon à partir d’une seule image source sans installer de logiciel de design. Le traitement se fait localement dans le navigateur, ce qui laisse le fichier sur votre appareil pendant que vous créez les icônes nécessaires aux onglets, aux favoris et aux installations d’application.\n\nIl est particulièrement utile lorsque vous avez déjà un logo et que vous avez besoin de sorties concrètes en plusieurs tailles. Vous pouvez partir d’un symbole carré, d’un logo complet ou d’une autre image et obtenir des fichiers prêts à placer dans un dossier d’assets web ou dans une build d’application.",
   "howItWorks": [
-    "Importez ou collez un fichier image comme source.",
-    "L’outil crée automatiquement un ensemble de tailles de favicon.",
-    "Prévisualisez le résultat dans le navigateur.",
-    "Téléchargez les fichiers favicon instantanément."
+    "Choisissez une image source depuis votre appareil.",
+    "Le générateur crée les tailles de favicon et d’icône à partir de cette image.",
+    "Prévisualisez le résultat avant de l’enregistrer.",
+    "Téléchargez les fichiers utiles pour votre site ou votre application."
   ],
   "useCases": [
-    "Créer un favicon pour un nouveau site web.",
-    "Générer des tailles d’icônes pour les onglets et les favoris.",
-    "Préparer rapidement des ressources d’icônes pour une application et une PWA.",
-    "Convertir un logo en plusieurs formats de favicon."
+    {
+      "title": "Lancement d’un nouveau site",
+      "description": "Créez les fichiers favicon avant la mise en ligne pour que l’icône de l’onglet et des favoris corresponde à la marque."
+    },
+    {
+      "title": "Du logo au jeu d’icônes",
+      "description": "Transformez un logo en un pack compact de favicon pour les en-têtes, les onglets du navigateur et les applications web installables."
+    },
+    {
+      "title": "Préparation d’assets PWA",
+      "description": "Générez les tailles d’icônes souvent demandées par les applications installables à partir d’une seule image de base."
+    },
+    {
+      "title": "Changement d’identité visuelle",
+      "description": "Remplacez une ancienne icône de site par un nouveau jeu cohérent et téléchargez tous les fichiers d’un seul coup."
+    }
   ],
   "examples": [
     {
-      "title": "Un logo pour tout le jeu de favicons",
-      "input": "Importez une image carrée du logo.",
-      "output": "Obtenez plusieurs tailles de favicon prêtes à télécharger.",
-      "description": "Idéal pour transformer une marque en icônes de site cohérentes."
+      "title": "Logo carré pour le jeu de favicon",
+      "input": "Entrée : logo PNG 1024×1024 avec un symbole blanc simple sur fond sombre.",
+      "output": "Sortie : un jeu de favicon aux tailles habituelles pour navigateur et application, prêt à télécharger.",
+      "description": "Une source carrée et lisible donne les résultats les plus cohérents en petite taille."
     },
     {
-      "title": "Génération locale rapide",
-      "input": "Choisissez une image depuis votre appareil.",
-      "output": "Générez des icônes sans envoyer de fichiers à un serveur.",
-      "description": "Utile si vous voulez un processus rapide et privé."
+      "title": "Marque produit en PNG transparent",
+      "input": "Entrée : PNG transparent 512×512 avec un mot-symbole rouge.",
+      "output": "Sortie : des fichiers d’icône nets qui conservent la transparence là où elle est prise en charge.",
+      "description": "Pratique si vous voulez que l’icône s’adapte à différents thèmes de site."
+    },
+    {
+      "title": "Illustration utilisée comme icône de site",
+      "input": "Entrée : JPG 1200×800 avec une illustration de campagne.",
+      "output": "Sortie : des tailles de favicon adaptées ou recadrées pour un usage navigateur.",
+      "description": "Utile lorsqu’une image n’est pas un logo, mais doit devenir une icône de site."
     }
   ],
   "faq": [
     {
-      "question": "Quels types d’image puis-je utiliser ?",
-      "answer": "Utilisez un fichier image standard comme PNG, JPG ou SVG, s’il est pris en charge par le navigateur et l’interface de l’outil."
+      "question": "Que se passe-t-il si mon image n’est pas carrée ?",
+      "answer": "Le générateur peut tout de même créer les fichiers favicon, mais le résultat peut nécessiter un recadrage ou perdre des détails sur les très petites tailles. Une image source carrée donne généralement le rendu le plus propre."
     },
     {
-      "question": "Mes fichiers sont-ils envoyés sur un serveur ?",
-      "answer": "Non. La génération du favicon s’effectue dans votre navigateur, donc le fichier est traité localement sur votre appareil."
+      "question": "Puis-je utiliser des fichiers SVG, PNG ou JPG ?",
+      "answer": "Oui, tant que le format est pris en charge par le navigateur et par le flux d’import de l’outil. Une image simple et contrastée fonctionne mieux pour les très petites icônes."
     },
     {
-      "question": "Combien de tailles de favicon sont générées ?",
-      "answer": "L’outil crée les tailles de favicon courantes nécessaires aux sites web modernes, selon l’image source et les paramètres de sortie."
+      "question": "Pourquoi les petits favicons semblent-ils plus simples que l’image d’origine ?",
+      "answer": "Un favicon dispose de très peu d’espace, donc les traits fins, le petit texte et les dégradés complexes peuvent disparaître. Si le résultat paraît trop chargé, simplifiez la source puis générez à nouveau."
     },
     {
-      "question": "Puis-je utiliser une image non carrée ?",
-      "answer": "Oui, mais une image source carrée donne généralement le résultat le plus propre pour un favicon."
+      "question": "L’outil crée-t-il tous les formats pour toutes les plateformes ?",
+      "answer": "Il crée les tailles de favicon et d’icône les plus courantes, mais certains environnements peuvent demander des fichiers supplémentaires. Vérifiez la liste d’icônes requise par votre cible."
+    },
+    {
+      "question": "Pourquoi une taille de sortie semble-t-elle floue ?",
+      "answer": "Les très petites sorties sont plus sensibles au niveau de détail. Si une taille semble adoucie, utilisez une source plus grande et plus nette ou réduisez la complexité du visuel."
     }
   ],
-  "uiLabels": {
-    "copy": "Copier",
-    "copied": "Copié",
-    "input": "Fichier image",
-    "output": "Tailles de favicon générées",
-    "placeholder": "Choisissez un fichier image",
-    "indent": "Retrait",
-    "removeComments": "Supprimer les commentaires",
-    "preview": "Aperçu",
-    "source": "Source",
-    "sanitizedHtml": "HTML nettoyé",
-    "plainText": "Texte brut",
-    "summary": "Résumé",
-    "total": "Total",
-    "links": "Liens",
-    "images": "Images",
-    "errors": "Erreurs",
-    "warnings": "Avertissements",
-    "valid": "Valide",
-    "invalid": "Invalide",
-    "href": "Href",
-    "text": "Texte",
-    "rel": "Rel",
-    "target": "Cible",
-    "alt": "Alt",
-    "width": "Largeur",
-    "height": "Hauteur",
-    "empty": "Vide",
-    "outputReady": "Résultat prêt",
-    "cleanedHtml": "HTML nettoyé",
-    "formattedHtml": "HTML formaté",
-    "minifiedHtml": "HTML minifié",
-    "markdown": "Markdown",
-    "extractedImages": "Images extraites",
-    "extractedLinks": "Liens extraits",
-    "validationSummary": "Résumé de validation",
-    "prettyHtml": "HTML lisible",
-    "encodedText": "Texte encodé",
-    "file": "Fichier",
-    "size": "Taille",
-    "format": "Format",
-    "quality": "Qualité",
-    "colorOne": "Couleur 1",
-    "colorTwo": "Couleur 2",
-    "background": "Arrière-plan",
-    "foreground": "Premier plan",
-    "angle": "Angle",
-    "margin": "Marge",
-    "level": "Niveau",
-    "gradientType": "Type de dégradé",
-    "linear": "Linéaire",
-    "radial": "Radial",
-    "blur": "Flou",
-    "spread": "Étendue",
-    "offsetX": "Décalage X",
-    "offsetY": "Décalage Y",
-    "opacity": "Opacité",
-    "inset": "Interne",
-    "cssCode": "Code CSS",
-    "snippet": "Extrait",
-    "download": "Télécharger",
-    "downloadSvg": "Télécharger SVG",
-    "downloadPng": "Télécharger PNG",
-    "downloadAll": "Tout télécharger",
-    "upload": "Importer",
-    "title": "Titre",
-    "description": "Description",
-    "canonicalUrl": "URL canonique",
-    "siteName": "Nom du site",
-    "ogImage": "Image OG",
-    "clear": "Effacer",
-    "generatedQr": "Apercu du code QR",
-    "placeholderImage": "Apercu de l image",
-    "faviconSet": "Jeu de favicons",
-    "keepAspectRatio": "Conserver les proportions",
-    "cropX": "Recadrage X",
-    "cropY": "Recadrage Y",
-    "cropWidth": "Largeur du recadrage",
-    "cropHeight": "Hauteur du recadrage",
-    "originalSize": "Taille d’origine",
-    "outputSize": "Taille de sortie",
-    "savedSize": "Taille enregistrée",
-    "result": "Résultat",
-    "base64": "Base64",
-    "mimeType": "Type MIME",
-    "resizedImage": "Image redimensionnée",
-    "compressedImage": "Image compressée",
-    "croppedImage": "Image recadrée",
-    "convertedImage": "Image convertie",
-    "decodedImage": "Image décodée",
-    "imagePreview": "Aperçu de l’image"
-  },
   "seo": {
-    "title": "Générateur de favicon - créez des favicons en ligne",
-    "description": "Créez des favicons à partir d’une image dans votre navigateur. Générez plusieurs fichiers d’icône instantanément, avec des téléchargements rapides et sans envoi vers un serveur.",
+    "title": "Générateur de favicon pour site",
+    "description": "Créez des fichiers favicon à partir d’une image dans votre navigateur et téléchargez les tailles d’icônes nécessaires à votre site web.",
     "keywords": [
       "générateur de favicon",
-      "créer un favicon",
-      "favicons en ligne",
-      "générateur d'icônes de site",
+      "favicon pour site",
+      "fichiers favicon",
+      "générateur d'icônes web",
       "favicon navigateur",
-      "tailles favicon"
+      "tailles d'icône"
     ]
   }
 }

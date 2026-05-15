@@ -4,43 +4,80 @@
   "slug": "licznik-linii",
   "h1": "Licznik linii",
   "title": "Licznik linii",
-  "shortDescription": "Zliczaj linie w tekście natychmiast — szybko, prosto i z praktycznymi przykładami.",
-  "overview": "Zliczaj linie w tekście natychmiast. Ta strona zapewnia szybki wynik dzięki prostemu narzędziu online i przejrzystemu sposobowi prezentacji rezultatu. Skierowana jest do osób, które szukają darmowej odpowiedzi w internecie, szybkich wyników w przeglądarce oraz praktycznych treści narzędziowych z długiego ogona.",
+  "shortDescription": "Policz liczbę linii w wklejonym tekście, także pustych, jeśli są częścią danych.",
+  "metaTitle": "Licznik linii tekstu",
+  "metaDescription": "Policz liczbę linii w wklejonym tekście, uwzględniając puste wiersze i końcowy znak nowej linii.",
+  "intro": "Wklej tekst, a narzędzie natychmiast pokaże liczbę linii, także tych pustych, jeśli występują w treści.",
+  "overview": "Ten licznik linii podaje dokładną liczbę wierszy w tekście wklejonym do pola. Sprawdza się przy weryfikacji szkicu, porównywaniu wersji dokumentu oraz kontroli list, notatek i bloków kodu, gdzie układ linii ma znaczenie.\n\nWynik zależy od rzeczywistych znaków nowej linii w danych wejściowych. Końcowy podział wiersza może zmienić liczbę, dlatego warto porównać rezultat z dokładnie tym samym tekstem, który został skopiowany. Przy dłuższych treściach narzędzie ułatwia szybkie sprawdzenie struktury bez ręcznego liczenia.",
   "howItWorks": [
-    "Wpisz wymagane dane lub tekst w formularzu.",
-    "Konwersja, obliczenie lub przekształcenie odbywa się natychmiast w przeglądarce.",
-    "Sprawdź wynik i skorzystaj z powiązanych narzędzi, jeśli potrzebujesz kolejnego kroku."
+    "Wklej lub wpisz tekst do pola wejściowego.",
+    "Narzędzie zlicza linie na podstawie dokładnej treści, razem z pustymi wierszami.",
+    "Odczytaj wynik i porównaj go ze źródłem, jeśli chcesz potwierdzić formatowanie."
+  ],
+  "useCases": [
+    {
+      "title": "Kontrola szkicu przed wysłaniem",
+      "description": "Sprawdź, ile linii ma wiadomość, notatka albo fragment raportu przed udostępnieniem."
+    },
+    {
+      "title": "Weryfikacja wklejonego kodu",
+      "description": "Policz linie w bloku kodu, aby upewnić się, że format nie zmienił się po skopiowaniu."
+    },
+    {
+      "title": "Porównanie dwóch wersji tekstu",
+      "description": "Zobacz, czy po edycji dokument ma więcej lub mniej podziałów wierszy."
+    },
+    {
+      "title": "Sprawdzanie treści o stałym układzie",
+      "description": "Przydatne dla list, konspektów, transkrypcji i tekstów, w których liczba linii wpływa na układ."
+    }
   ],
   "examples": [
     {
-      "title": "Przykład 1",
-      "input": "Trzy linie tekstu",
-      "output": "Łączna liczba linii",
-      "description": "Realistyczny przykład licznika linii do codziennego wyszukiwania."
+      "title": "Krótka notatka",
+      "input": "Pierwsza linia\nDruga linia\nTrzecia linia",
+      "output": "3 linie",
+      "description": "Trzy widoczne wiersze dają wynik 3."
     },
     {
-      "title": "Przykład 2",
-      "input": "Trzy linie tekstu",
-      "output": "Łączna liczba linii",
-      "description": "Kolejny praktyczny przypadek użycia pod ruch z długiego ogona."
+      "title": "Tekst z pustym wierszem",
+      "input": "Alfa\n\nGamma",
+      "output": "3 linie",
+      "description": "Pusty środkowy wiersz jest liczony, bo znajduje się między znakami nowej linii."
+    },
+    {
+      "title": "Końcowy enter",
+      "input": "Jeden\nDwa\nTrzy\n",
+      "output": "4 linie",
+      "description": "Końcowy znak nowej linii może dodać dodatkowy wiersz do wyniku."
     }
   ],
   "faq": [
     {
-      "question": "Jak dokładne jest to narzędzie?",
-      "answer": "Wynik jest obliczany bezpośrednio na podstawie formuły lub logiki działającej po stronie przeglądarki, używanej przez to narzędzie."
+      "question": "Czy pusty wiersz jest liczony jako linia?",
+      "answer": "Tak. Jeśli między dwoma znakami nowej linii znajduje się pusty wiersz, jest on uwzględniony w wyniku."
     },
     {
-      "question": "Czy mogę używać tego narzędzia na telefonie?",
-      "answer": "Tak. Strona działa na komputerach i urządzeniach mobilnych, oferując prosty układ pola 입력 i wyniku."
+      "question": "Dlaczego wynik wzrósł po dodaniu końcowego entera?",
+      "answer": "Końcowy znak nowej linii może utworzyć dodatkową granicę wiersza. Dlatego liczba linii bywa większa niż liczba widocznych zdań."
+    },
+    {
+      "question": "Jak interpretować tekst wklejony z edytora lub komunikatora?",
+      "answer": "Liczy się dokładna treść w polu, więc ukryte podziały wierszy, dodatkowe entery i formatowanie skopiowane z źródła wpływają na wynik."
+    },
+    {
+      "question": "Jaki błąd popełnia się najczęściej?",
+      "answer": "Najczęściej pomija się puste linie oraz końcowy podział wiersza na końcu tekstu."
     }
   ],
   "seo": {
-    "title": "Licznik linii",
-    "description": "Zliczaj linie w tekście natychmiast. Darmowy licznik linii online z natychmiastowymi wynikami.",
+    "title": "Licznik linii tekstu",
+    "description": "Policz liczbę linii w wklejonym tekście, uwzględniając puste wiersze i końcowy znak nowej linii.",
     "keywords": [
       "licznik linii",
-      "narzędzie do tekstu"
+      "liczenie linii",
+      "ilość linii w tekście",
+      "narzędzie tekstowe"
     ]
   }
 }

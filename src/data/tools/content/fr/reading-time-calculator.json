@@ -4,43 +4,80 @@
   "slug": "calculateur-de-temps-de-lecture",
   "h1": "Calculateur de temps de lecture",
   "title": "Calculateur de temps de lecture",
-  "shortDescription": "Estimez instantanément le temps de lecture à partir du nombre de mots, avec des résultats rapides, une interface simple et des exemples pratiques.",
-  "overview": "Estimez instantanément le temps de lecture à partir du nombre de mots. Cette page fournit une réponse rapide grâce à un outil pratique et à un flux de résultat simple. Elle s’adresse aux utilisateurs qui recherchent une réponse gratuite en ligne, des résultats instantanés dans le navigateur et un contenu utilitaire pratique pour les recherches de longue traîne.",
+  "shortDescription": "Estimez le temps nécessaire pour lire un texte à partir de son nombre de mots.",
+  "metaTitle": "Calculateur de lecture",
+  "metaDescription": "Estimez le temps de lecture à partir du nombre de mots et obtenez une durée en minutes et secondes.",
+  "intro": "Collez votre texte ou saisissez le nombre de mots pour obtenir une estimation du temps de lecture en minutes et secondes.",
+  "overview": "Ce calculateur permet d’estimer combien de temps un texte demandera à la lecture avant sa publication, son envoi ou sa relecture. Il transforme un nombre de mots en durée lisible pour savoir si un contenu paraît court, développé ou adapté à l’objectif.\n\nLe résultat s’appuie sur une vitesse moyenne de lecture ; il s’agit donc d’un repère utile, pas d’un chronomètre exact. Il est particulièrement pratique pour préparer des articles, des newsletters, des supports pédagogiques et des documents dont la durée de lecture compte.",
   "howItWorks": [
-    "Saisissez la valeur ou le texte demandé dans le formulaire.",
-    "La conversion, le calcul ou la transformation s’exécute instantanément dans le navigateur.",
-    "Consultez le résultat puis poursuivez avec des outils associés si vous avez besoin d’une autre étape."
+    "Collez le texte ou indiquez le nombre de mots.",
+    "L’outil calcule le temps de lecture à partir d’un rythme moyen standard.",
+    "Consultez le résultat en minutes et secondes, puis comparez-le à votre objectif."
+  ],
+  "useCases": [
+    {
+      "title": "Préparer un article",
+      "description": "Vérifiez avant publication si un brouillon correspond à un format court, moyen ou long."
+    },
+    {
+      "title": "Évaluer une newsletter",
+      "description": "Mesurez le temps que prendra la lecture et réduisez le texte s’il devient trop dense."
+    },
+    {
+      "title": "Fiches de cours",
+      "description": "Déterminez si une note de cours peut être lue rapidement ou mérite d’être raccourcie."
+    },
+    {
+      "title": "Rapports et propositions",
+      "description": "Annoncez une durée de lecture approximative pour aider à cadrer l’effort attendu."
+    }
   ],
   "examples": [
     {
-      "title": "Exemple 1",
-      "input": "Un brouillon d’article de blog",
-      "output": "Temps de lecture estimé",
-      "description": "Un exemple réaliste de calculateur de temps de lecture pour une recherche courante."
+      "title": "Texte court",
+      "input": "420 mots",
+      "output": "Environ 2 minutes",
+      "description": "Un message, une note ou un article bref à lire rapidement."
     },
     {
-      "title": "Exemple 2",
-      "input": "Un brouillon d’article de blog",
-      "output": "Temps de lecture estimé",
-      "description": "Un autre cas d’usage pratique pour générer du trafic organique de longue traîne."
+      "title": "Brouillon moyen",
+      "input": "1 150 mots",
+      "output": "Environ 5 minutes",
+      "description": "Un format d’article courant qui se lit en quelques minutes."
+    },
+    {
+      "title": "Long article",
+      "input": "2 700 mots",
+      "output": "Environ 12 minutes",
+      "description": "Un texte développé qui demande davantage de temps et d’attention."
     }
   ],
   "faq": [
     {
-      "question": "Quelle est la précision de cet outil ?",
-      "answer": "Le résultat est calculé directement à partir de la formule ou de la logique côté navigateur utilisée par cet outil."
+      "question": "Quelle vitesse de lecture est utilisée ?",
+      "answer": "L’outil utilise une vitesse moyenne standard pour convertir les mots en durée estimée. Le temps réel peut varier selon la complexité du texte."
     },
     {
-      "question": "Puis-je utiliser cet outil sur mobile ?",
-      "answer": "Oui. La page fonctionne sur ordinateur et sur mobile avec une mise en page simple pour la saisie et le résultat."
+      "question": "Pourquoi deux textes de même longueur peuvent-ils demander des temps différents ?",
+      "answer": "Les titres, les phrases longues, les termes techniques, les listes et le code ralentissent souvent la lecture même si le nombre de mots est identique."
+    },
+    {
+      "question": "Faut-il compter les titres, légendes et listes à puces ?",
+      "answer": "S’ils font partie du contenu lu, mieux vaut les inclure. Les omettre peut rendre l’estimation trop courte."
+    },
+    {
+      "question": "Est-ce équivalent à un temps d’oral ?",
+      "answer": "Non. Lire et parler ne prennent pas le même temps, donc la durée estimée ne correspond pas à un exposé."
     }
   ],
   "seo": {
-    "title": "Calculateur de temps de lecture",
-    "description": "Estimez instantanément le temps de lecture à partir du nombre de mots. Calculateur de temps de lecture en ligne gratuit avec résultats immédiats.",
+    "title": "Calculateur de lecture",
+    "description": "Estimez le temps de lecture à partir du nombre de mots et obtenez une durée en minutes et secondes.",
     "keywords": [
       "calculateur de temps de lecture",
-      "outil text-tools"
+      "temps de lecture",
+      "estimer la lecture",
+      "mots en minutes"
     ]
   }
 }

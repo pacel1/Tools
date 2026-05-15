@@ -4,104 +4,90 @@
   "slug": "ekstraktor-obrazow-html",
   "h1": "Ekstraktor obrazów HTML",
   "title": "Ekstraktor obrazów HTML",
-  "shortDescription": "Wyodrębnij źródła obrazów, tekst alt i wymiary z HTML.",
-  "metaTitle": "Ekstraktor obrazów HTML | Wyodrębnij adresy obrazów, alt i wymiary",
-  "metaDescription": "Wyodrębnij źródła obrazów, tekst alt, szerokość i wysokość z HTML bezpośrednio w przeglądarce. Bezpiecznie, lokalnie i szybko.",
-  "intro": "Ten ekstraktor obrazów HTML pomaga szybko pobrać adresy URL obrazów, tekst alternatywny oraz wymiary z dowolnego kodu HTML. Działa lokalnie w przeglądarce, bez zewnętrznych API, i ułatwia analizę znaczników obrazów.",
-  "overview": "Wklej HTML i wyodrębnij wszystkie znaczniki img do czytelnej listy. Narzędzie pokazuje src, alt, width i height, dzięki czemu łatwiej sprawdzisz dostępność, uporządkujesz treść i szybciej wykorzystasz dane o obrazach. Ponieważ wszystko odbywa się lokalnie, to bezpieczne rozwiązanie także dla wrażliwego kodu.",
+  "shortDescription": "Wyodrębnij źródła obrazów, alt i wymiary z HTML.",
+  "metaTitle": "Ekstraktor obrazów HTML",
+  "metaDescription": "Wyodrębniaj źródła obrazów, tekst alt, szerokość i wysokość z HTML bezpośrednio w przeglądarce.",
+  "intro": "Wklej HTML, aby wyciągnąć wszystkie znaczniki img wraz ze źródłem, tekstem alt i wymiarami w uporządkowanej liście.",
+  "overview": "To narzędzie analizuje kod HTML i wyciąga elementy obrazów do przejrzystego wyniku, który można od razu przejrzeć lub skopiować. Każdy wpis może zawierać adres obrazu, tekst alternatywny, szerokość, wysokość oraz inne atrybuty obecne w znaczniku, co ułatwia dokładną kontrolę markup’u.\n\nPrzydaje się zwłaszcza wtedy, gdy dane o obrazach są ukryte w eksporcie z CMS, szablonach newsletterów albo długich fragmentach HTML z wieloma elementami. Ponieważ parsowanie odbywa się lokalnie w przeglądarce, możesz pracować także z poufnym kodem bez wysyłania go dalej.",
   "howItWorks": [
     "Wklej HTML do pola wejściowego.",
-    "Narzędzie skanuje kod w poszukiwaniu elementów img.",
-    "Wyodrębnia adresy obrazów i podstawowe atrybuty, takie jak alt, width i height.",
-    "Sprawdź uporządkowany wynik i skopiuj dane, jeśli chcesz."
+    "Parser skanuje kod w poszukiwaniu elementów img.",
+    "Wyodrębnia src, alt, width, height i powiązane atrybuty, jeśli występują.",
+    "Sprawdź listę i skopiuj dane obrazów, jeśli chcesz."
   ],
   "useCases": [
-    "Sprawdzenie dostępności obrazów przez kontrolę tekstów alt.",
-    "Zebranie adresów obrazów z wyeksportowanego HTML.",
-    "Weryfikacja wartości width i height przed publikacją.",
-    "Wyodrębnianie odwołań do obrazów z CMS lub szablonów e-mail.",
-    "Szybsza kontrola jakości stron z dużą liczbą obrazów."
+    {
+      "title": "Sprawdzenie brakujących tekstów alt",
+      "description": "Przejrzyj eksport strony pod kątem znaczników img bez sensownego atrybutu alt przed publikacją treści."
+    },
+    {
+      "title": "Zebranie adresów obrazów z szablonu",
+      "description": "Wyciągnij wszystkie źródła obrazów z newslettera lub fragmentu CMS do jednej prostej listy."
+    },
+    {
+      "title": "Kontrola deklarowanych wymiarów",
+      "description": "Sprawdź width i height, aby wykryć obrazy rozciągnięte, zamienione lub źle dobrane rozmiarowo."
+    },
+    {
+      "title": "Analiza lazy load",
+      "description": "Odszukaj odwołania do obrazów zapisane w data-src lub podobnych atrybutach szablonu."
+    },
+    {
+      "title": "Wyodrębnianie obrazów z mieszanego HTML",
+      "description": "Oddziel dane o obrazach od dłuższych fragmentów zawierających też linki, tekst i układ strony."
+    }
   ],
   "examples": [
     {
-      "title": "Podstawowy znacznik obrazu",
-      "input": "<img src=\"/images/banner.jpg\" alt=\"Baner strony\" width=\"1200\" height=\"400\">",
-      "output": "src: /images/banner.jpg | alt: Baner strony | width: 1200 | height: 400",
-      "description": "Pojedynczy znacznik obrazu jest zamieniany na uporządkowane pola."
+      "title": "Jeden znacznik obrazu",
+      "input": "<img src=\"/assets/hero.jpg\" alt=\"Panorama miasta o zmierzchu\" width=\"1440\" height=\"900\">",
+      "output": "1) src: /assets/hero.jpg | alt: Panorama miasta o zmierzchu | width: 1440 | height: 900",
+      "description": "Standardowy element img zostaje rozbity na osobne pola."
     },
     {
-      "title": "Obraz z lazy loading",
-      "input": "<img data-src=\"photo.jpg\" alt=\"Zdjęcie produktu\">",
-      "output": "src: photo.jpg | alt: Zdjęcie produktu",
-      "description": "Pomaga sprawdzać alternatywne atrybuty źródła obrazu w szablonach."
+      "title": "Obraz bez szerokości",
+      "input": "<figure><img src=\"product.png\" alt=\"Widok produktu z przodu\"></figure>",
+      "output": "1) src: product.png | alt: Widok produktu z przodu",
+      "description": "Zwracane są tylko atrybuty, które faktycznie znajdują się w znaczniku."
+    },
+    {
+      "title": "Obraz z atrybutem danych",
+      "input": "<img data-src=\"/img/gallery-03.jpg\" alt=\"Element galerii 3\" loading=\"lazy\">",
+      "output": "1) data-src: /img/gallery-03.jpg | alt: Element galerii 3 | loading: lazy",
+      "description": "Przydatne w szablonach, które przechowują ścieżkę obrazu w atrybucie danych."
     }
   ],
   "faq": [
     {
-      "question": "Czy to narzędzie wysyła mój HTML na serwer?",
-      "answer": "Nie. Działa wyłącznie w przeglądarce, więc Twój HTML nie jest przesyłany do serwera."
+      "question": "Czy ekstraktor czyta tylko znaczniki img?",
+      "answer": "Tak. Skupia się na elementach img w HTML i nie analizuje obrazów tła z CSS ani grafik ładowanych przez skrypty."
     },
     {
-      "question": "Jakie atrybuty obrazów są wyodrębniane?",
-      "answer": "Narzędzie skupia się na src, alt, width i height, a w razie potrzeby może też pokazać inne przydatne atrybuty obrazu."
+      "question": "Co się dzieje, gdy znacznik obrazu jest niepełny?",
+      "answer": "Narzędzie zwraca te atrybuty, które uda się znaleźć, więc tag z samym src i alt da krótszy wynik niż pełny znacznik."
     },
     {
-      "question": "Czy można analizować niebezpieczny HTML?",
-      "answer": "Tak, narzędzie parsuje HTML lokalnie, ale nadal warto ostrożnie sprawdzać niezaufany kod."
+      "question": "Czy mogę użyć go na fragmencie z wieloma powtórzonymi obrazami?",
+      "answer": "Tak. Każdy pasujący element img jest wyodrębniany osobno, nawet jeśli kilka znaczników używa tego samego źródła."
     },
     {
-      "question": "Czy wykrywa obrazy z CSS?",
-      "answer": "Nie. Wyodrębnia znaczniki obrazów z HTML, a nie obrazy tła z CSS."
+      "question": "Dlaczego czasem widzę data-src zamiast src?",
+      "answer": "Niektóre szablony przechowują prawdziwą ścieżkę obrazu w data-src, data-original lub podobnym atrybucie. Ekstraktor może pokazać takie wartości, jeśli występują w kodzie."
+    },
+    {
+      "question": "Czy narzędzie poprawia lub przepisuje HTML?",
+      "answer": "Nie. Tylko odczytuje kod i raportuje atrybuty związane z obrazami. Nie zmienia znaczników ani nie zgaduje brakujących wartości."
     }
   ],
-  "uiLabels": {
-    "copy": "Kopiuj",
-    "copied": "Skopiowano",
-    "input": "HTML input",
-    "output": "Wyodrębnione obrazy",
-    "placeholder": "Wklej tutaj swój HTML",
-    "indent": "Wcięcie",
-    "removeComments": "Usuń komentarze",
-    "preview": "Podgląd",
-    "source": "Źródło",
-    "sanitizedHtml": "Oczyszczony HTML",
-    "plainText": "Zwykły tekst",
-    "summary": "Podsumowanie",
-    "total": "Razem",
-    "links": "Linki",
-    "images": "Obrazy",
-    "errors": "Błędy",
-    "warnings": "Ostrzeżenia",
-    "valid": "Poprawne",
-    "invalid": "Niepoprawne",
-    "href": "Href",
-    "text": "Tekst",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Szerokość",
-    "height": "Wysokość",
-    "empty": "Nie znaleziono obrazów",
-    "outputReady": "Wynik gotowy",
-    "cleanedHtml": "Oczyszczony HTML",
-    "formattedHtml": "Sformatowany HTML",
-    "minifiedHtml": "HTML zminifikowany",
-    "markdown": "Markdown",
-    "extractedImages": "Wyodrębnione obrazy",
-    "extractedLinks": "Wyodrębnione linki",
-    "validationSummary": "Podsumowanie walidacji",
-    "prettyHtml": "Czytelny HTML",
-    "encodedText": "Tekst zakodowany"
-  },
   "seo": {
     "title": "Ekstraktor obrazów HTML",
-    "description": "Wyodrębnij źródła obrazów, tekst alt, szerokość i wysokość z HTML za pomocą bezpiecznego narzędzia działającego lokalnie.",
+    "description": "Wyodrębniaj źródła obrazów, alt, szerokość i wysokość z HTML bezpośrednio w przeglądarce.",
     "keywords": [
       "ekstraktor obrazów HTML",
-      "wyodrębnianie src z HTML",
-      "tekst alt",
-      "wymiary obrazów",
-      "parsowanie tagów img",
+      "wyodrębnianie znaczników img",
+      "src z HTML",
+      "ekstraktor alt",
+      "wymiary obrazów z HTML",
       "narzędzia HTML"
     ]
   }

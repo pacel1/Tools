@@ -4,42 +4,80 @@
   "slug": "slug-generator",
   "h1": "Slug-Generator",
   "title": "Slug-Generator",
-  "shortDescription": "Wandle Text in einen SEO-freundlichen URL-Slug um – mit schnellen Ergebnissen, einfacher Eingabe und praxisnahen Beispielen.",
-  "overview": "Wandle Text in einen SEO-freundlichen URL-Slug um. Diese Seite liefert eine schnelle Antwort mit einem praktischen Tool und einem einfachen Ergebnisablauf. Sie richtet sich an Nutzer, die eine kostenlose Online-Lösung, sofortige Ergebnisse im Browser und praxisnahe Long-Tail-Inhalte suchen.",
+  "shortDescription": "Wandle Überschriften und Phrasen in saubere URL-Slugs mit Kleinbuchstaben, Bindestrichen und ohne überflüssige Leerzeichen um.",
+  "metaTitle": "Slug-Generator für saubere URLs",
+  "metaDescription": "Wandle Überschriften und Phrasen in saubere URL-Slugs mit Kleinbuchstaben, Bindestrichen und ohne überflüssige Leerzeichen um.",
+  "intro": "Wandle Text in einen sauberen URL-Slug mit Kleinbuchstaben und Bindestrichen statt Leerzeichen um.",
+  "overview": "Dieses Tool macht aus Titeln, Überschriften und kurzen Phrasen einen URL-Slug, den du direkt für Seitenpfade nutzen kannst. Es hilft dir, Namen einheitlich zu halten, wenn du klare Adressen für Beiträge, Kategorien oder Produktseiten brauchst.\n\nBesonders praktisch ist es, wenn Inhalte aus unterschiedlichen Quellen zusammenkommen und vor dem Veröffentlichen vereinheitlicht werden sollen. Füge den Text ein, prüfe die Ausgabe und kürze oder präzisiere sie, falls du einen passenderen Pfad möchtest.\n\nAuch bei der Strukturpflege einer Website ist das nützlich, weil sich neue Bezeichnungen so in ein einheitliches Adressschema bringen lassen.",
   "howItWorks": [
-    "Gib den erforderlichen Wert oder Text in das Formular ein.",
-    "Die Umwandlung, Berechnung oder Transformation läuft sofort im Browser ab.",
-    "Prüfe das Ergebnis und nutze bei Bedarf passende weitere Tools für den nächsten Schritt."
+    "Füge den Titel, die Phrase oder den Satz in das Feld ein.",
+    "Das Tool wandelt den Text in ein Slug-Format mit Kleinbuchstaben und Bindestrichen um.",
+    "Kopiere das Ergebnis und passe es an, wenn du einen kürzeren oder konkreteren Pfad brauchst."
+  ],
+  "useCases": [
+    {
+      "title": "Beitrags-URL aus einer Überschrift",
+      "description": "Verwandle eine Überschrift wie „Wie man einen kleinen Garten anlegt“ in einen Pfad wie wie-man-einen-kleinen-garten-anlegt."
+    },
+    {
+      "title": "Kategoriename für den Shop",
+      "description": "Wandle eine Kategorie wie „Winterschuhe zum Laufen“ in einen konsistenten URL-Abschnitt für den Katalog um."
+    },
+    {
+      "title": "Produktpfad für den Warenkatalog",
+      "description": "Erstelle aus Produktnamen wie „Edelstahl-Trinkflasche 750 ml“ einen lesbaren Slug für Produktseiten."
+    },
+    {
+      "title": "Landingpage für Kampagne oder Event",
+      "description": "Forme einen Titel wie „Frühlings-Webinar für Designer“ in einen sauberen Slug für eine Zielseite um."
+    }
   ],
   "examples": [
     {
-      "title": "Beispiel 1",
-      "input": "Bester SEO-Tool-Seitentitel",
-      "output": "bester-seo-tool-seitentitel",
-      "description": "Ein realistisches Beispiel für einen Slug-Generator bei einer alltäglichen Suche."
+      "title": "Blogtitel",
+      "input": "Wie man einen kleinen Garten anlegt",
+      "output": "wie-man-einen-kleinen-garten-anlegt",
+      "description": "Leerzeichen werden zu Bindestrichen und der Text wird URL-tauglich."
     },
     {
-      "title": "Beispiel 2",
-      "input": "Bester SEO-Tool-Seitentitel",
-      "output": "bester-seo-tool-seitentitel",
-      "description": "Ein weiterer praktischer Anwendungsfall für organischen Long-Tail-Traffic."
+      "title": "Produktname mit Zahlen",
+      "input": "Ultra-HD-Monitor 27 Zoll",
+      "output": "ultra-hd-monitor-27-zoll",
+      "description": "Zahlen bleiben erhalten und die Ausgabe ist als URL-Segment gut lesbar."
+    },
+    {
+      "title": "Text mit Satzzeichen",
+      "input": "Frische, schnelle und einfache Mahlzeiten!",
+      "output": "frische-schnelle-und-einfache-mahlzeiten",
+      "description": "Satzzeichen werden entfernt, damit der Slug sauber bleibt."
     }
   ],
   "faq": [
     {
-      "question": "Wie genau ist dieses Tool?",
-      "answer": "Das Ergebnis wird direkt aus der Formel oder der browserseitigen Logik dieses Tools berechnet."
+      "question": "Was passiert mit Großbuchstaben und Satzzeichen?",
+      "answer": "Großbuchstaben werden in Kleinbuchstaben umgewandelt, und Satzzeichen wie Kommas, Ausrufezeichen oder & werden aus dem Slug entfernt."
     },
     {
-      "question": "Kann ich das Tool auf dem Smartphone nutzen?",
-      "answer": "Ja. Die Seite funktioniert auf Desktop- und Mobilgeräten mit einem einfachen Eingabe- und Ergebnislayout."
+      "question": "Bleiben Umlaute und Sonderzeichen erhalten?",
+      "answer": "Umlaute und andere Sonderzeichen können je nach Regelwerk vereinfacht werden. Wenn eine Normalisierung nötig ist, zeigt das Ergebnis eine URL-sichere Form."
+    },
+    {
+      "question": "Warum ist mein Ergebnis kürzer als der Originaltext?",
+      "answer": "Verbindungswörter, Symbole und bestimmte Sonderzeichen können entfernt werden, damit der Slug sauber bleibt. Wenn du eine bestimmte Struktur brauchst, kürze den Ausgangstext gezielt vor der Umwandlung."
+    },
+    {
+      "question": "Kann ich das Ergebnis direkt als URL verwenden?",
+      "answer": "Meistens ja, aber prüfe vorher, ob deine Website zusätzliche Regeln nutzt, etwa Kategorien-Präfixe, Datumsangaben oder sprachspezifische Pfade."
     }
   ],
   "seo": {
-    "title": "Slug-Generator",
-    "description": "Wandle Text in einen SEO-freundlichen URL-Slug um. Kostenloser Online-Slug-Generator mit sofortigen Ergebnissen.",
+    "title": "Slug-Generator für saubere URLs",
+    "description": "Wandle Überschriften und Phrasen in saubere URL-Slugs mit Kleinbuchstaben, Bindestrichen und ohne überflüssige Leerzeichen um.",
     "keywords": [
-      "slug-generator"
+      "slug generator",
+      "URL-Slug",
+      "Permalink-Generator",
+      "Text zu Slug"
     ]
   }
 }

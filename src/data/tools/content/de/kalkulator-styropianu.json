@@ -4,176 +4,97 @@
   "slug": "styropor-daemmstoffrechner",
   "h1": "Styropor-Dämmstoffrechner",
   "title": "Styropor-Dämmstoffrechner",
-  "shortDescription": "Berechnen Sie, wie viele Styropor-Pakete Sie für Wand, Boden, Dach oder Fundament benötigen.",
-  "metaTitle": "Styropor-Dämmstoffrechner - Pakete berechnen",
-  "metaDescription": "Berechnen Sie Dämmvolumen, Fläche mit Zuschlag und die Anzahl der Styropor-Pakete für Wand-, Boden-, Dach- oder Fundamentdämmung.",
-  "intro": "Mit diesem Styropor-Dämmstoffrechner ermitteln Sie schnell, wie viele Pakete Sie für Fassade, Boden, Dach oder Fundament benötigen. Geben Sie Fläche, Dämmstärke, Deckung pro Paket, Verschnitt und Paketvolumen ein und erhalten Sie sofort ein klares Ergebnis.",
-  "overview": "Dieses Tool hilft bei der präzisen Planung von Dämmmaterial. Es rechnet Fläche und Dicke in das Dämmvolumen um, berücksichtigt einen Verschnittzuschlag und schätzt die Paketanzahl anhand von Deckung und Paketvolumen. Geeignet für EPS-Dämmung an Wänden, Böden, Dächern und Fundamenten.",
+  "shortDescription": "Berechnen Sie, wie viele EPS-Pakete Sie für Wand, Boden, Dach oder Fundament benötigen.",
+  "metaTitle": "EPS-Pakete berechnen",
+  "metaDescription": "Berechnen Sie Dämmvolumen, Zuschlag für Zuschnitte und die benötigte Anzahl an Styropor-Paketen für Ihr Bauvorhaben.",
+  "intro": "Geben Sie Dämmfläche, Dicke, Paketdeckung, Verschnittzuschlag und Paketvolumen ein, um die nötige Paketanzahl zu ermitteln.",
+  "overview": "Mit diesem Rechner wandeln Sie Projektdaten in eine realistische Bestellmenge für EPS-Dämmung um. Aus Fläche und Dicke wird zuerst das Dämmvolumen berechnet; anschließend werden Zuschnitte, Randstücke und Montageverluste über einen Zuschlag berücksichtigt, damit die Menge näher am tatsächlichen Bedarf liegt.\n\nDer Rechner ist für Fassaden, Böden, Dächer und Fundamente gedacht, bei denen sich der Packungsinhalt je nach Hersteller unterscheiden kann. Wenn Sie sowohl die Flächenabdeckung als auch das Paketvolumen eintragen, lässt sich das Ergebnis besser mit dem gewählten Produkt abgleichen.",
   "howItWorks": [
     "Geben Sie die zu dämmende Fläche in Quadratmetern ein.",
     "Wählen Sie die Dämmstärke in Zentimetern.",
-    "Tragen Sie die Deckung pro Paket und das Paketvolumen ein.",
-    "Fügen Sie den Verschnitt in Prozent für Zuschnitte und Verluste hinzu.",
-    "Erhalten Sie Dämmvolumen, Fläche mit Zuschlag und die benötigte Paketanzahl."
+    "Tragen Sie die Deckung pro Paket und das Paketvolumen aus dem Produktdatenblatt ein.",
+    "Fügen Sie einen Verschnittprozentsatz für Zuschnitte und Verluste hinzu.",
+    "Lesen Sie Dämmvolumen, angepasste Fläche und aufgerundete Paketanzahl ab."
   ],
   "useCases": [
-    "Styropor-Pakete für Fassadendämmung berechnen.",
-    "EPS-Menge für Bodendämmung planen.",
-    "Materialbedarf für Dachdämmung prüfen.",
-    "Pakete für Fundamentdämmung schätzen.",
-    "Materialbedarf vor dem Kauf vergleichen."
+    {
+      "title": "Fassadenbestellung vorbereiten",
+      "description": "Ermitteln Sie vor der Bestellung, wie viele EPS-Pakete für Außenwände benötigt werden."
+    },
+    {
+      "title": "Bodendämmung planen",
+      "description": "Schätzen Sie das Material unter Estrich oder Bodenplatte passend zum Grundriss ein."
+    },
+    {
+      "title": "Dachaufbau prüfen",
+      "description": "Vergleichen Sie die benötigte Menge für Flachdach oder Steildach vor der Lieferung."
+    },
+    {
+      "title": "Fundament und Sockel",
+      "description": "Berechnen Sie Pakete für erdberührte Bereiche mit vielen Kanten- und Eckzuschnitten."
+    },
+    {
+      "title": "Angebote vergleichen",
+      "description": "Vergleichen Sie mehrere Produkte, wenn sich Deckung und Packungsinhalt unterscheiden."
+    }
   ],
   "examples": [
     {
-      "title": "Fassadendämmung",
-      "input": "150 m2 Fläche, 15 cm Dicke, 5 m2 pro Paket, 8% Verschnitt, 0,75 m3 Paketvolumen",
-      "output": "Zeigt das benötigte Volumen, die angepasste Fläche und die geschätzte Paketanzahl.",
-      "description": "Hilfreich, um die richtige Menge EPS-Platten für Außenwände zu bestellen."
+      "title": "Fassade eines Einfamilienhauses",
+      "input": "168 m2 Fläche, 16 cm Dicke, 5,0 m2 pro Paket, 9% Verschnitt, 0,80 m3 Paketvolumen",
+      "output": "Gibt das benötigte Volumen, die angepasste Fläche und die aufgerundete Paketzahl aus.",
+      "description": "Sinnvoll für die Bestellung von EPS-Platten für Außenwände."
     },
     {
-      "title": "Bodendämmung",
-      "input": "80 m2 Fläche, 10 cm Dicke, 4 m2 pro Paket, 5% Verschnitt, 0,4 m3 Paketvolumen",
-      "output": "Zeigt Materialvolumen und Paketbedarf für Bodenarbeiten an.",
-      "description": "Praktisch, um Engpässe bei der Dämmung unter Estrich oder Platte zu vermeiden."
+      "title": "Hallenboden",
+      "input": "240 m2 Fläche, 12 cm Dicke, 4,8 m2 pro Paket, 6% Verschnitt, 0,58 m3 Paketvolumen",
+      "output": "Zeigt das Gesamtvolumen und die geschätzte Paketanzahl für die Bodendämmung.",
+      "description": "Hilfreich bei der Materialplanung vor dem Estricheinbau."
+    },
+    {
+      "title": "Fundamentrand",
+      "input": "62 m2 Fläche, 10 cm Dicke, 3,6 m2 pro Paket, 12% Verschnitt, 0,36 m3 Paketvolumen",
+      "output": "Stellt das Dämmvolumen und eine höhere Paketzahl durch den Zuschlag dar.",
+      "description": "Passend für Bereiche mit vielen Anschlüssen, Kanten und kleinen Reststücken."
+    },
+    {
+      "title": "Sanierung eines Flachdachs",
+      "input": "93 m2 Fläche, 18 cm Dicke, 4,2 m2 pro Paket, 8% Verschnitt, 0,76 m3 Paketvolumen",
+      "output": "Berechnet das Volumen und die benötigte Paketanzahl für den Dachaufbau.",
+      "description": "Praktisch für die Prüfung vor der Lieferung eines Warmdachs."
     }
   ],
   "faq": [
     {
-      "question": "Was berechnet der Styropor-Dämmstoffrechner?",
-      "answer": "Er berechnet das Dämmvolumen in m3, die Fläche mit Verschnitt sowie die geschätzte Anzahl der benötigten Pakete."
+      "question": "Warum sollte ich Deckung pro Paket und Paketvolumen beide eintragen?",
+      "answer": "Je nach Produkt wird nach Fläche oder Volumen gerechnet, und beide Angaben passen nicht immer exakt zusammen. Wenn Sie beide Werte eingeben, orientiert sich das Ergebnis am konkreten Produkt."
     },
     {
-      "question": "Kann ich ihn für Wände, Böden, Dächer und Fundamente verwenden?",
-      "answer": "Ja. Der Rechner ist für die gängigen EPS-Anwendungen ausgelegt."
+      "question": "Wie gehe ich bei vielen Ecken oder Öffnungen vor?",
+      "answer": "Tragen Sie diese Verluste über den Verschnittzuschlag ein. Der Rechner verwendet die Gesamtfläche, daher sollten komplexe Geometrien mit einem höheren Zuschlag abgedeckt werden."
     },
     {
-      "question": "Warum muss ich einen Verschnittprozentsatz angeben?",
-      "answer": "Der Verschnitt deckt Zuschnitte, Anpassungen und kleine Materialverluste bei der Montage ab."
+      "question": "Kann ich die aufgerundete Paketanzahl direkt bestellen?",
+      "answer": "Als Bestellbasis ja. Vor dem finalen Auftrag sollten Sie aber Plattenformat, Paketinhalt und besondere Details prüfen, die mehr Material erfordern können."
     },
     {
-      "question": "Was ist wichtiger: Deckung pro Paket oder Paketvolumen?",
-      "answer": "Beides ist nützlich. Die Deckung hilft bei der Flächenplanung, das Volumen prüft die Gesamtmenge des Materials."
+      "question": "Welcher Eingabefehler bei der Dicke ist am häufigsten?",
+      "answer": "Zentimeter und Millimeter werden oft verwechselt. 12 cm müssen als 12 eingegeben werden, nicht als 120 oder 0,12."
+    },
+    {
+      "question": "Was tun, wenn das Datenblatt Stückzahl und m3 pro Paket angibt?",
+      "answer": "Nehmen Sie die Angaben desselben Produkts. Wenn beides genannt wird, sollte die Paketanzahl zum Volumen und zum Plattenmaß auf dem Etikett passen."
     }
   ],
-  "uiLabels": {
-    "copy": "Kopieren",
-    "copied": "Kopiert",
-    "input": "Eingabe",
-    "output": "Ausgabe",
-    "placeholder": "Wert eingeben",
-    "indent": "Einzug",
-    "removeComments": "Kommentare entfernen",
-    "preview": "Vorschau",
-    "source": "Quelle",
-    "sanitizedHtml": "Bereinigtes HTML",
-    "plainText": "Klartext",
-    "summary": "Zusammenfassung",
-    "total": "Gesamt",
-    "links": "Links",
-    "images": "Bilder",
-    "errors": "Fehler",
-    "warnings": "Warnungen",
-    "valid": "Gültig",
-    "invalid": "Ungültig",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Ziel",
-    "alt": "Alt",
-    "width": "Breite",
-    "height": "Höhe",
-    "empty": "Leer",
-    "outputReady": "Ergebnis bereit",
-    "cleanedHtml": "Bereinigtes HTML",
-    "formattedHtml": "Formatiertes HTML",
-    "minifiedHtml": "Minifiziertes HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extrahierte Bilder",
-    "extractedLinks": "Extrahierte Links",
-    "validationSummary": "Validierungsübersicht",
-    "prettyHtml": "Gut lesbares HTML",
-    "encodedText": "Kodierter Text",
-    "file": "Datei",
-    "size": "Größe",
-    "format": "Format",
-    "quality": "Qualität",
-    "colorOne": "Farbe 1",
-    "colorTwo": "Farbe 2",
-    "background": "Hintergrund",
-    "foreground": "Vordergrund",
-    "angle": "Winkel",
-    "margin": "Rand",
-    "level": "Stufe",
-    "gradientType": "Verlaufstyp",
-    "linear": "Linear",
-    "radial": "Radial",
-    "blur": "Unschärfe",
-    "spread": "Ausbreitung",
-    "offsetX": "Versatz X",
-    "offsetY": "Versatz Y",
-    "opacity": "Deckkraft",
-    "inset": "Innen",
-    "cssCode": "CSS-Code",
-    "snippet": "Snippet",
-    "download": "Herunterladen",
-    "downloadSvg": "SVG herunterladen",
-    "downloadPng": "PNG herunterladen",
-    "downloadAll": "Alles herunterladen",
-    "upload": "Hochladen",
-    "title": "Titel",
-    "description": "Beschreibung",
-    "canonicalUrl": "Kanonische URL",
-    "siteName": "Webseitenname",
-    "ogImage": "OG-Bild",
-    "clear": "Löschen",
-    "generatedQr": "Generierter QR-Code",
-    "placeholderImage": "Platzhalterbild",
-    "faviconSet": "Favicon-Set",
-    "keepAspectRatio": "Seitenverhältnis beibehalten",
-    "cropX": "Zuschneiden X",
-    "cropY": "Zuschneiden Y",
-    "cropWidth": "Zuschneidebreite",
-    "cropHeight": "Zuschneidehöhe",
-    "originalSize": "Originalgröße",
-    "outputSize": "Ausgabegröße",
-    "savedSize": "Gespeicherte Größe",
-    "result": "Ergebnis",
-    "base64": "Base64",
-    "mimeType": "MIME-Typ",
-    "resizedImage": "Skaliertes Bild",
-    "compressedImage": "Komprimiertes Bild",
-    "croppedImage": "Zugeschnittenes Bild",
-    "convertedImage": "Konvertiertes Bild",
-    "decodedImage": "Dekodiertes Bild",
-    "imagePreview": "Bildvorschau",
-    "camera": "Kamera",
-    "lens": "Objektiv",
-    "dateTaken": "Aufnahmedatum",
-    "resolution": "Auflösung",
-    "fileSize": "Dateigröße",
-    "iso": "ISO",
-    "exposure": "Belichtung",
-    "aperture": "Blende",
-    "focalLength": "Brennweite",
-    "flash": "Blitz",
-    "orientation": "Ausrichtung",
-    "latitude": "Breitengrad",
-    "longitude": "Längengrad",
-    "openMap": "Karte öffnen",
-    "rawMetadata": "Rohdaten-Metadaten",
-    "noMetadataFound": "Keine Metadaten gefunden",
-    "gpsLocation": "GPS-Position",
-    "metadataSummary": "Metadaten-Zusammenfassung"
-  },
   "seo": {
-    "title": "Styropor-Dämmstoffrechner",
-    "description": "Berechnen Sie, wie viele Styropor-Pakete Sie brauchen und wie groß das Dämmvolumen für Wand, Boden, Dach oder Fundament ist.",
+    "title": "EPS-Pakete berechnen",
+    "description": "Berechnen Sie Dämmvolumen, Zuschlag für Zuschnitte und die benötigte Anzahl an Styropor-Paketen für Ihr Bauvorhaben.",
     "keywords": [
-      "Styropor-Rechner",
-      "Dämmstoffrechner",
-      "Styropor Pakete berechnen",
+      "Styropor Rechner",
       "EPS Rechner",
-      "Dämmvolumen berechnen"
+      "Styropor Pakete berechnen",
+      "Dämmvolumen berechnen",
+      "EPS Menge"
     ]
   }
 }

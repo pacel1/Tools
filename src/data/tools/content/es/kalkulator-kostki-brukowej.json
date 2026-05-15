@@ -4,178 +4,97 @@
   "slug": "calculadora-de-adoquines",
   "h1": "Calculadora de adoquines",
   "title": "Calculadora de adoquines",
-  "shortDescription": "Calcula cuántos adoquines, palets y bordes necesitas para un camino, entrada o terraza.",
-  "metaTitle": "Calculadora de adoquines - calcula piezas, palets y bordes",
-  "metaDescription": "Calcula cuántos adoquines necesitas para una entrada, camino o terraza. Obtén piezas, palets o paquetes y metros de borde en segundos.",
-  "intro": "Usa esta calculadora de adoquines para estimar rápidamente cuánto material necesitas para una entrada, un camino o una terraza. Introduce el area, el tamaño del adoquin, el desperdicio, la cobertura por palet y la proporcion de bordes para obtener un cálculo practico.",
-  "overview": "Esta herramienta responde a la pregunta clave: cuántos adoquines necesito. Convierte el area y las dimensiones de la pieza en una cantidad estimada de adoquines, luego calcula cuántos palets o paquetes comprar y cuántos metros de borde harán falta.",
+  "shortDescription": "Calcula adoquines, palets, paquetes y bordes para una entrada, camino o terraza.",
+  "metaTitle": "Calculadora de adoquines",
+  "metaDescription": "Calcula cuántos adoquines, palets, paquetes y bordes necesitas para una entrada, camino o terraza.",
+  "intro": "Introduce el área, las medidas del adoquín, el desperdicio y la cobertura por palet para obtener una estimación de material.",
+  "overview": "Esta herramienta sirve para calcular cuánto material necesitas de verdad para una entrada, un camino, una terraza o el contorno de una zona pavimentada. Convierte el área y el tamaño del adoquín en una cantidad aproximada de piezas y después la transforma en paquetes o palets según la cobertura que indiques.\n\nTambién calcula la longitud de borde, de modo que puedas planificar las piezas de remate junto con la superficie principal. Es especialmente útil cuando hay cortes, esquinas, cambios de ancho o remates contra césped, muros o escalones.\n\nPara un resultado coherente, introduce solo la superficie que se va a pavimentar. Si el diseño tiene muchas piezas cortadas o líneas inclinadas, conviene subir el porcentaje de desperdicio para no quedarte corto al pedir el material.",
   "howItWorks": [
-    "Introduce el area total en metros cuadrados.",
-    "Añade el ancho y el largo del adoquin en centimetros.",
-    "Define el porcentaje de desperdicio por cortes y ajustes.",
-    "Indica la cobertura de un paquete o palet en m2.",
-    "Especifica el borde necesario por 1 m2 para estimar la longitud.",
-    "Revisa el resultado: adoquines, palets o paquetes, y bordes."
+    "Introduce la superficie total en metros cuadrados.",
+    "Escribe el ancho y el largo del adoquín en centímetros.",
+    "Define el porcentaje de desperdicio por cortes y roturas.",
+    "Indica la cobertura de un paquete o palet en m².",
+    "Añade el borde por cada 1 m² si quieres estimar la longitud de remate.",
+    "Lee el resultado: piezas, paquetes o palets, y metros de borde."
   ],
   "useCases": [
-    "Planificar una entrada para coche.",
-    "Calcular materiales para un camino de jardin.",
-    "Comprobar cuántos palets pedir al proveedor.",
-    "Estimar bordes para renovar una terraza.",
-    "Comparar necesidades de material antes de pedir presupuesto."
+    {
+      "title": "Entrada para coche antes del pedido",
+      "description": "Calcula cuántas piezas y cuántos palets hacen falta para una entrada de vivienda, incluyendo el material extra para recortes."
+    },
+    {
+      "title": "Camino de jardín con tramos estrechos",
+      "description": "Ajusta el cálculo a un recorrido que cambia de anchura para comprar la cantidad correcta sin desperdiciar palets completos."
+    },
+    {
+      "title": "Terraza con bordes visibles",
+      "description": "Estima los metros de borde necesarios junto con la superficie para cerrar bien el perímetro de la terraza."
+    },
+    {
+      "title": "Revisión de cantidades del proveedor",
+      "description": "Compara tu cálculo con la cobertura real que ofrece el almacén y convierte el resultado en unidades de compra completas."
+    },
+    {
+      "title": "Presupuesto de una reforma exterior",
+      "description": "Calcula el material antes de pedir un presupuesto para que la partida de pavimento refleje la superficie y el margen de corte."
+    }
   ],
   "examples": [
     {
-      "title": "Entrada residencial",
-      "input": "Area 40 m2, adoquin 20 x 10 cm, desperdicio 8%, cobertura 6,5 m2 por paquete, borde 0,6 m por m2",
-      "output": "Estimación de piezas, paquetes y bordes para una entrada estándar.",
-      "description": "Una forma rapida de dimensionar un proyecto comun."
+      "title": "Entrada para dos coches",
+      "input": "Área 48 m², adoquín 20 x 10 cm, desperdicio 9%, cobertura 6,4 m² por paquete, borde 0,7 m por m²",
+      "output": "Aproximadamente 26.400 piezas, 8 paquetes y 33,6 m de borde.",
+      "description": "Adecuado para una entrada rectangular con pocos cortes."
     },
     {
-      "title": "Revision de terraza",
-      "input": "Area 25 m2, adoquin 20 x 20 cm, desperdicio 10%, cobertura 5 m2 por palet, borde 0,4 m por m2",
-      "output": "Cantidades de material para una terraza pequeña.",
-      "description": "Util antes de hacer un pedido."
+      "title": "Terraza pequeña de jardín",
+      "input": "Área 18,5 m², adoquín 30 x 15 cm, desperdicio 12%, cobertura 4,8 m² por palet, borde 0,5 m por m²",
+      "output": "Aproximadamente 4.730 piezas, 4 palets y 9,3 m de borde.",
+      "description": "Útil cuando hay esquinas y remates contra pared."
+    },
+    {
+      "title": "Sendero lateral estrecho",
+      "input": "Área 11,2 m², adoquín 25 x 25 cm, desperdicio 7%, cobertura 5,5 m² por paquete, borde 0,8 m por m²",
+      "output": "Aproximadamente 191 piezas, 3 paquetes y 9,0 m de borde.",
+      "description": "Práctico para un camino corto con bordes a ambos lados."
     }
   ],
   "faq": [
     {
-      "question": "¿Cómo calculo cuántos adoquines necesito?",
-      "answer": "Multiplica el area por 10 000, divide entre el area de una pieza en centimetros cuadrados y añade el porcentaje de desperdicio. La calculadora lo hace automaticamente."
+      "question": "¿Cómo convierte el calculador los metros cuadrados en número de adoquines?",
+      "answer": "Divide la superficie entre el área de una pieza y después añade el porcentaje de desperdicio. Si añades un 10 %, la cantidad de compra sube un 10 % sobre la cobertura base."
     },
     {
-      "question": "¿Por qué debo añadir desperdicio?",
-      "answer": "El desperdicio cubre cortes, roturas y pérdidas de ajuste. Para la mayoría de los proyectos se usa entre 5% y 10%, aunque los diseños complejos pueden requerir más."
+      "question": "¿Debo introducir toda la parcela o solo la zona pavimentada?",
+      "answer": "Solo la parte que realmente se va a cubrir con adoquines. Zonas verdes, franjas sin pavimentar y huecos deben quedar fuera del cálculo."
     },
     {
-      "question": "¿La calculadora indica cuántos paquetes o palets comprar?",
-      "answer": "Sí. Tras calcular la superficie necesaria, divide el resultado entre la cobertura de un paquete o palet y redondea hacia arriba."
+      "question": "¿Qué significa el resultado de bordes?",
+      "answer": "Es una estimación de metros lineales para borduras, remates o contenciones laterales. No equivale automáticamente al número de piezas si el proveedor vende por metro."
     },
     {
-      "question": "¿Puedo usarla para una entrada, un camino o una terraza?",
-      "answer": "Sí. Funciona para cualquier superficie pavimentada siempre que conozcas el area total y las dimensiones de la pieza."
+      "question": "¿Por qué el número de paquetes o palets puede subir de golpe?",
+      "answer": "Porque la herramienta redondea siempre hacia arriba a unidades completas. Si tu pedido está cerca del límite de cobertura, una variación pequeña puede añadir una unidad más."
+    },
+    {
+      "question": "¿Qué pasa si las medidas están en milímetros?",
+      "answer": "Convierte primero a centímetros. Si escribes 200 x 100 mm como 200 x 100 cm, el resultado será incorrecto de forma importante."
+    },
+    {
+      "question": "¿Sirve para superficies irregulares?",
+      "answer": "Sí, si ya conoces la superficie final total. En diseños irregulares suele ser mejor aumentar el desperdicio porque habrá más recortes."
     }
   ],
-  "uiLabels": {
-    "copy": "Copiar",
-    "copied": "Copiado",
-    "input": "Entrada",
-    "output": "Salida",
-    "placeholder": "Introduce un valor",
-    "indent": "Sangria",
-    "removeComments": "Eliminar comentarios",
-    "preview": "Vista previa",
-    "source": "Origen",
-    "sanitizedHtml": "HTML saneado",
-    "plainText": "Texto plano",
-    "summary": "Resumen",
-    "total": "Total",
-    "links": "Enlaces",
-    "images": "Imagenes",
-    "errors": "Errores",
-    "warnings": "Avisos",
-    "valid": "Valido",
-    "invalid": "Invalido",
-    "href": "Href",
-    "text": "Texto",
-    "rel": "Rel",
-    "target": "Destino",
-    "alt": "Alt",
-    "width": "Ancho",
-    "height": "Alto",
-    "empty": "Vacio",
-    "outputReady": "Resultado listo",
-    "cleanedHtml": "HTML limpio",
-    "formattedHtml": "HTML formateado",
-    "minifiedHtml": "HTML minificado",
-    "markdown": "Markdown",
-    "extractedImages": "Imagenes extraidas",
-    "extractedLinks": "Enlaces extraidos",
-    "validationSummary": "Resumen de validacion",
-    "prettyHtml": "HTML legible",
-    "encodedText": "Texto codificado",
-    "file": "Archivo",
-    "size": "Tamaño",
-    "format": "Formato",
-    "quality": "Calidad",
-    "colorOne": "Color 1",
-    "colorTwo": "Color 2",
-    "background": "Fondo",
-    "foreground": "Primer plano",
-    "angle": "Angulo",
-    "margin": "Margen",
-    "level": "Nivel",
-    "gradientType": "Tipo de degradado",
-    "linear": "Lineal",
-    "radial": "Radial",
-    "blur": "Desenfoque",
-    "spread": "Extension",
-    "offsetX": "Desplazamiento X",
-    "offsetY": "Desplazamiento Y",
-    "opacity": "Opacidad",
-    "inset": "Inset",
-    "cssCode": "Codigo CSS",
-    "snippet": "Fragmento",
-    "download": "Descargar",
-    "downloadSvg": "Descargar SVG",
-    "downloadPng": "Descargar PNG",
-    "downloadAll": "Descargar todo",
-    "upload": "Subir",
-    "title": "Titulo",
-    "description": "Descripcion",
-    "canonicalUrl": "URL canonica",
-    "siteName": "Nombre del sitio",
-    "ogImage": "Imagen OG",
-    "clear": "Borrar",
-    "generatedQr": "QR generado",
-    "placeholderImage": "Imagen de marcador",
-    "faviconSet": "Conjunto de favicon",
-    "keepAspectRatio": "Mantener proporción",
-    "cropX": "Recorte X",
-    "cropY": "Recorte Y",
-    "cropWidth": "Ancho del recorte",
-    "cropHeight": "Alto del recorte",
-    "originalSize": "Tamaño original",
-    "outputSize": "Tamaño de salida",
-    "savedSize": "Tamaño guardado",
-    "result": "Resultado",
-    "base64": "Base64",
-    "mimeType": "Tipo MIME",
-    "resizedImage": "Imagen redimensionada",
-    "compressedImage": "Imagen comprimida",
-    "croppedImage": "Imagen recortada",
-    "convertedImage": "Imagen convertida",
-    "decodedImage": "Imagen decodificada",
-    "imagePreview": "Vista previa de la imagen",
-    "camera": "Cámara",
-    "lens": "Lente",
-    "dateTaken": "Fecha de captura",
-    "resolution": "Resolución",
-    "fileSize": "Tamaño del archivo",
-    "iso": "ISO",
-    "exposure": "Exposición",
-    "aperture": "Apertura",
-    "focalLength": "Distancia focal",
-    "flash": "Flash",
-    "orientation": "Orientación",
-    "latitude": "Latitud",
-    "longitude": "Longitud",
-    "openMap": "Abrir mapa",
-    "rawMetadata": "Metadatos sin procesar",
-    "noMetadataFound": "No se encontraron metadatos",
-    "gpsLocation": "Ubicación GPS",
-    "metadataSummary": "Resumen de metadatos"
-  },
   "seo": {
     "title": "Calculadora de adoquines",
-    "description": "Calcula cuántos adoquines, palets o paquetes y metros de borde necesitas para una entrada, camino o terraza.",
+    "description": "Calcula cuántos adoquines, paquetes o palets y metros de borde necesitas para una entrada, camino o terraza.",
     "keywords": [
       "calculadora de adoquines",
       "cuantos adoquines necesito",
-      "calculadora adoquines",
-      "estimador de adoquines",
-      "materiales para pavimentar",
-      "calculadora de terraza"
+      "adoquines calcular",
+      "material de pavimento",
+      "bordes de adoquines",
+      "palets de adoquines"
     ]
   }
 }

@@ -4,44 +4,84 @@
   "slug": "encodeur-url",
   "h1": "Encodeur d’URL",
   "title": "Encodeur d’URL",
-  "shortDescription": "Encodez du texte pour une utilisation sûre dans les URL avec des résultats rapides, des entrées simples et des exemples pratiques.",
-  "overview": "Encodez du texte pour une utilisation sûre dans les URL. Cette page fournit une réponse rapide avec un outil pratique et un flux de résultat simple. Elle s’adresse aux utilisateurs qui recherchent une réponse gratuite en ligne, des résultats rapides dans le navigateur et un contenu utilitaire de longue traîne.",
+  "shortDescription": "Transformez du texte en forme sûre pour les URL, les paramètres, les chemins et les valeurs de formulaire.",
+  "metaTitle": "Encodeur d’URL pour texte",
+  "metaDescription": "Transformez du texte en forme sûre pour les URL, les paramètres et les formulaires avec un encodage en pourcentage précis.",
+  "intro": "Collez votre texte et l’outil renvoie une version encodée pour URL avec les caractères réservés et les espaces convertis en séquences %.",
+  "overview": "Utilisez cet outil quand un texte brut doit être inséré dans une URL sans casser sa structure. Il convertit les espaces, points d’interrogation, esperluettes, barres obliques et caractères non ASCII en forme percent-encoded.\n\nC’est utile pour construire des paramètres de requête, préparer un segment de chemin ou transmettre du texte saisi par un utilisateur à une API. Le résultat conserve le sens du texte tout en le rendant compatible avec le transport dans une adresse ou une requête.",
   "howItWorks": [
-    "Saisissez la valeur ou le texte requis dans le formulaire.",
-    "La conversion, le calcul ou la transformation s’exécute instantanément dans le navigateur.",
-    "Consultez le résultat et poursuivez avec des outils associés si vous avez besoin d’une étape supplémentaire."
+    "Saisissez le texte à encoder.",
+    "L’outil remplace immédiatement les caractères réservés par des séquences en pourcentage.",
+    "Copiez le résultat pour l’utiliser dans une URL, un paramètre ou une chaîne de requête."
+  ],
+  "useCases": [
+    {
+      "title": "Recherche dans un paramètre",
+      "description": "Transformez une requête comme café & thé en valeur sûre pour une page de résultats ou un appel API."
+    },
+    {
+      "title": "URL cible dans une redirection",
+      "description": "Encodez une adresse complète avant de l’insérer dans une autre URL afin d’éviter de casser les paramètres imbriqués."
+    },
+    {
+      "title": "Nom de fichier ou de chemin",
+      "description": "Rendez un segment comme photos d’été 2024 compatible avec une URL en encodant espaces et ponctuation."
+    },
+    {
+      "title": "Texte de formulaire vers un endpoint",
+      "description": "Encodez notes, étiquettes ou libellés avant de les joindre à une requête GET ou à une URL de retour."
+    }
   ],
   "examples": [
     {
-      "title": "Exemple 1",
-      "input": "hello world?x=1&y=2",
-      "output": "hello%20world%3Fx%3D1%26y%3D2",
-      "description": "Un exemple réaliste d’encodeur d’URL pour une requête de recherche courante."
+      "title": "Requête avec symboles",
+      "input": "laptop stand?brand=acme & co",
+      "output": "laptop%20stand%3Fbrand%3Dacme%20%26%20co",
+      "description": "Les espaces et les caractères réservés sont échappés pour pouvoir être insérés sans risque dans une URL."
     },
     {
-      "title": "Exemple 2",
-      "input": "hello world?x=1&y=2",
-      "output": "hello%20world%3Fx%3D1%26y%3D2",
-      "description": "Un autre cas d’usage pratique pour le trafic organique de longue traîne."
+      "title": "Nom avec accents",
+      "input": "élève très motivé",
+      "output": "%C3%A9l%C3%A8ve%20tr%C3%A8s%20motiv%C3%A9",
+      "description": "Les caractères non ASCII sont convertis en octets UTF-8 puis encodés en pourcentage."
+    },
+    {
+      "title": "Segment avec barre oblique",
+      "input": "rapports/2024 Q3",
+      "output": "rapports%2F2024%20Q3",
+      "description": "La barre oblique à l’intérieur d’un segment est encodée pour ne pas être lue comme séparateur de chemin."
     }
   ],
   "faq": [
     {
-      "question": "Quelle est la précision de cet outil ?",
-      "answer": "Le résultat est calculé directement à partir de la formule ou de la logique côté navigateur utilisée par cet outil."
+      "question": "Quels caractères sont encodés ?",
+      "answer": "Les caractères réservés des URL, comme les espaces, ?, &, =, #, /, ainsi que les caractères non ASCII, sont encodés pour un transport sûr."
     },
     {
-      "question": "Puis-je utiliser cet outil sur mobile ?",
-      "answer": "Oui. La page fonctionne sur ordinateur et sur mobile avec une interface simple de saisie et de résultat."
+      "question": "Pourquoi l’espace devient-il %20 et pas + ?",
+      "answer": "%20 est la forme standard de l’encodage en pourcentage pour un espace. Le signe + est surtout utilisé dans les formulaires au format application/x-www-form-urlencoded."
+    },
+    {
+      "question": "Puis-je encoder une URL complète ici ?",
+      "answer": "Oui, mais seulement si c’est voulu : cela encode aussi les séparateurs comme : et /. C’est adapté lorsque l’URL entière doit servir de valeur à un autre paramètre."
+    },
+    {
+      "question": "Pourquoi le résultat est-il plus long ?",
+      "answer": "Les caractères hors du jeu sûr sont transformés en plusieurs octets encodés, ce qui allonge souvent le texte final."
+    },
+    {
+      "question": "Quelle est l’erreur la plus fréquente ?",
+      "answer": "On encode souvent toute l’adresse alors qu’il fallait seulement encoder une valeur précise. Pour un lien normal, encodez uniquement la partie qui doit entrer dans l’URL."
     }
   ],
   "seo": {
     "title": "Encodeur d’URL",
-    "description": "Encodez du texte pour une utilisation sûre dans les URL. Encodeur d’URL en ligne gratuit avec résultats instantanés.",
+    "description": "Transformez du texte en forme sûre pour les URL, les paramètres et les formulaires avec un encodage en pourcentage précis.",
     "keywords": [
       "encodeur url",
-      "encodeur d url",
-      "outils développeur"
+      "encodage url",
+      "percent encoding",
+      "texte pour url"
     ]
   }
 }

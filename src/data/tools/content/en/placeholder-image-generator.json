@@ -4,159 +4,99 @@
   "slug": "placeholder-image-generator",
   "h1": "Placeholder Image Generator",
   "title": "Placeholder Image Generator",
-  "shortDescription": "Create placeholder images for UI mocks, blog covers, OG image drafts and design systems.",
-  "metaTitle": "Placeholder Image Generator | Create Quick Mockup Images",
-  "metaDescription": "Generate placeholder images for UI mockups, blog covers, social previews and design systems in your browser.",
-  "intro": "Create clean placeholder images instantly for wireframes, blog headers, social previews and design work. Set the size, generate the image in your browser and download it right away.",
-  "overview": "This client-side placeholder image generator uses canvas to create simple, fast placeholder graphics without uploading files. It is useful for mockups, content drafts and design systems when you need a temporary image with the right dimensions.",
+  "shortDescription": "Create placeholder images for wireframes, social cards, blog headers, and design systems.",
+  "metaTitle": "Placeholder Image Generator",
+  "metaDescription": "Create custom placeholder images for mockups, headers, social cards, and design systems directly in the browser.",
+  "intro": "Generate a placeholder image at the exact dimensions you need, then preview and download it as PNG or SVG.",
+  "overview": "Use this tool when you need a stand-in image with precise dimensions for layouts, content drafts, or interface concepts. It creates a simple graphic locally in the browser, so you can keep working without waiting for final artwork.\n\nYou can use it to mark empty image areas, test spacing around a hero section, or prepare a draft for a social share card. The output is meant to be lightweight and predictable, making it easy to swap out later for the final asset.\n\nBecause the image is generated from your chosen size and settings, it is useful for assets that must fit a specific container, from tiny thumbnails to wide banners.",
   "howItWorks": [
-    "Enter the desired width and height.",
-    "Choose optional styling or text settings if available.",
-    "Generate the placeholder image in your browser.",
-    "Preview the result and download it as needed."
+    "Enter the target width and height.",
+    "Add optional label text or visual settings if the tool exposes them.",
+    "Generate the image in the browser.",
+    "Check the preview and download the file you need."
   ],
   "useCases": [
-    "UI and app mockups",
-    "Blog cover drafts",
-    "Open Graph image previews",
-    "Landing page design systems",
-    "Email and newsletter layouts",
-    "Prototype assets for presentations"
+    {
+      "title": "Hero banner draft",
+      "description": "Create a wide image placeholder for a landing-page hero before the final campaign artwork arrives."
+    },
+    {
+      "title": "App screen wireframe",
+      "description": "Fill image regions in dashboard or mobile app mockups so the layout reads clearly during review."
+    },
+    {
+      "title": "Social share card layout",
+      "description": "Reserve the correct space for an Open Graph or social preview image before publishing."
+    },
+    {
+      "title": "Editorial cover planning",
+      "description": "Mock up article headers and blog covers without depending on the finished illustration."
+    },
+    {
+      "title": "Design system tokens",
+      "description": "Use consistent placeholder sizes across components such as cards, tiles, and media blocks."
+    },
+    {
+      "title": "Client presentation mockups",
+      "description": "Insert realistic stand-in visuals into slides when the final product image is still pending."
+    }
   ],
   "examples": [
     {
-      "title": "Blog header draft",
+      "title": "Wide article header",
       "input": "1200 × 630",
-      "output": "Ready-to-use placeholder image for a cover or social share preview.",
-      "description": "Useful for article visuals before final artwork is available."
+      "output": "A landscape placeholder suited to article headers and social preview cards.",
+      "description": "Matches a common share-image ratio and keeps text or composition planning simple."
     },
     {
-      "title": "Product mockup",
-      "input": "800 × 600",
-      "output": "Simple placeholder graphic for interface layouts.",
-      "description": "Helps keep spacing and composition consistent during design."
+      "title": "Product card image slot",
+      "input": "960 × 720",
+      "output": "A medium rectangle placeholder for catalog cards or feature tiles.",
+      "description": "Useful when a product grid needs balanced image blocks before photography is ready."
+    },
+    {
+      "title": "Newsletter banner",
+      "input": "600 × 300",
+      "output": "A compact banner placeholder for email headers or promotional modules.",
+      "description": "Helps you check how a top banner fits inside a narrow email template."
     }
   ],
   "faq": [
     {
-      "question": "What is a placeholder image generator used for?",
-      "answer": "It creates temporary images for layouts, drafts and prototypes when the final visual is not ready."
+      "question": "Can I create a placeholder with a custom size outside standard presets?",
+      "answer": "Yes. Enter the exact width and height you need, even if it is an unusual ratio for a special layout."
     },
     {
-      "question": "Can I use it without uploading a file?",
-      "answer": "Yes. It generates the image locally in your browser, so no upload is needed."
+      "question": "What happens if I choose very large dimensions?",
+      "answer": "The generator will still try to build the image, but very large canvases can be slower to render and heavier to download."
     },
     {
-      "question": "What sizes can I create?",
-      "answer": "You can create any common custom size for banners, thumbnails, cards and social previews."
+      "question": "Does the tool produce a transparent background or a filled one?",
+      "answer": "That depends on the available settings. If transparency is not selected, the image is rendered with the tool’s default background."
     },
     {
-      "question": "Is the generated image downloaded automatically?",
-      "answer": "No. You preview it first and then download it when you are ready."
+      "question": "Can I rely on the output as a final production image?",
+      "answer": "No. It is intended as a temporary stand-in for planning, not as finished artwork or brand imagery."
+    },
+    {
+      "question": "Why does the output sometimes look different from the on-screen preview?",
+      "answer": "Minor differences can happen because the preview is resized for display, while the downloaded file uses the exact generated dimensions."
+    },
+    {
+      "question": "What is the most common mistake when using this tool?",
+      "answer": "Entering the wrong aspect ratio. If the placeholder must fit a specific container, match the exact container dimensions before generating."
     }
   ],
-  "uiLabels": {
-    "copy": "Copy",
-    "copied": "Copied",
-    "input": "Input",
-    "output": "Output",
-    "placeholder": "Preview text",
-    "indent": "Indent",
-    "removeComments": "Remove comments",
-    "preview": "Preview",
-    "source": "Source",
-    "sanitizedHtml": "Sanitized HTML",
-    "plainText": "Plain text",
-    "summary": "Summary",
-    "total": "Total",
-    "links": "Links",
-    "images": "Images",
-    "errors": "Errors",
-    "warnings": "Warnings",
-    "valid": "Valid",
-    "invalid": "Invalid",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Width",
-    "height": "Height",
-    "empty": "Empty",
-    "outputReady": "Output ready",
-    "cleanedHtml": "Cleaned HTML",
-    "formattedHtml": "Formatted HTML",
-    "minifiedHtml": "Minified HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extracted images",
-    "extractedLinks": "Extracted links",
-    "validationSummary": "Validation summary",
-    "prettyHtml": "Pretty HTML",
-    "encodedText": "Encoded text",
-    "file": "File",
-    "size": "Size",
-    "format": "Format",
-    "quality": "Quality",
-    "colorOne": "Color 1",
-    "colorTwo": "Color 2",
-    "background": "Background",
-    "foreground": "Foreground",
-    "angle": "Angle",
-    "margin": "Margin",
-    "level": "Level",
-    "gradientType": "Gradient type",
-    "linear": "Linear",
-    "radial": "Radial",
-    "blur": "Blur",
-    "spread": "Spread",
-    "offsetX": "Offset X",
-    "offsetY": "Offset Y",
-    "opacity": "Opacity",
-    "inset": "Inset",
-    "cssCode": "CSS code",
-    "snippet": "Snippet",
-    "download": "Download",
-    "downloadSvg": "Download SVG",
-    "downloadPng": "Download PNG",
-    "downloadAll": "Download all",
-    "upload": "Upload",
-    "title": "Title",
-    "description": "Description",
-    "canonicalUrl": "Canonical URL",
-    "siteName": "Site name",
-    "ogImage": "OG image",
-    "clear": "Clear",
-    "generatedQr": "QR code preview",
-    "placeholderImage": "Preview image",
-    "faviconSet": "Favicon set",
-    "keepAspectRatio": "Keep aspect ratio",
-    "cropX": "Crop X",
-    "cropY": "Crop Y",
-    "cropWidth": "Crop width",
-    "cropHeight": "Crop height",
-    "originalSize": "Original size",
-    "outputSize": "Output size",
-    "savedSize": "Saved size",
-    "result": "Result",
-    "base64": "Base64",
-    "mimeType": "MIME type",
-    "resizedImage": "Resized image",
-    "compressedImage": "Compressed image",
-    "croppedImage": "Cropped image",
-    "convertedImage": "Converted image",
-    "decodedImage": "Decoded image",
-    "imagePreview": "Image preview"
-  },
   "seo": {
     "title": "Placeholder Image Generator",
-    "description": "Generate placeholder images for UI mockups, blog covers, social previews and design systems directly in your browser.",
+    "description": "Create custom placeholder images for mockups, headers, social cards, and design systems directly in the browser.",
     "keywords": [
       "placeholder image generator",
       "placeholder image",
-      "mockup image generator",
-      "OG image placeholder",
-      "design system images",
-      "canvas image generator"
+      "mockup image",
+      "wireframe image",
+      "social card placeholder",
+      "design system asset"
     ]
   }
 }

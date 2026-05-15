@@ -4,105 +4,87 @@
   "slug": "markdown-zu-html",
   "h1": "Markdown zu HTML",
   "title": "Markdown-zu-HTML-Konverter",
-  "shortDescription": "Wandle Markdown sofort im Browser in sauberes, sicheres HTML um.",
-  "metaTitle": "Markdown-zu-HTML-Konverter | Markdown online umwandeln",
-  "metaDescription": "Wandle Markdown im Browser in sauberes HTML um – mit sofortiger Ausgabe, ohne Server-Upload und mit sicherer Verarbeitung.",
-  "intro": "Wandle Markdown direkt im Browser in sauberes, geprüftes HTML um. Einfach einfügen, das Ergebnis sofort ansehen und sicheres HTML für Webprojekte kopieren.",
-  "overview": "Dieses Tool konvertiert gängige Markdown-Syntax direkt im Browser in HTML, ohne Inhalte an einen Server zu senden. Es eignet sich für Autoren, Entwickler und Redakteure, die schnelle Ergebnisse mit grundlegender Bereinigung benötigen, um XSS-Risiken zu reduzieren und ein zuverlässiges Format zu erhalten.",
+  "shortDescription": "Markdown direkt im Browser in sauberes HTML umwandeln.",
+  "metaTitle": "Markdown-zu-HTML-Konverter",
+  "metaDescription": "Wandle Markdown im Browser in sauberes HTML um, ohne Upload und mit sofortigem Ergebnis.",
+  "intro": "Füge Markdown ein und erhalte sofort nutzbares HTML direkt im Browser.",
+  "overview": "Dieses Tool wandelt Überschriften, Listen, Links, Hervorhebungen, Zitate und Code aus Markdown in strukturiertes HTML um, ohne Inhalte an einen Server zu senden. Die Ausgabe wird bereinigt, damit du die Struktur leichter prüfen und in Dokumentation, Content-Systemen oder App-Oberflächen mit weniger Handarbeit weiterverwenden kannst.\n\nEs ist praktisch, wenn du vorhersehbares HTML aus handgeschriebenem Markdown oder aus einem anderen Editor brauchst. Der gesamte Ablauf läuft lokal im Browser und hilft dabei, rohes Markdown nicht in Ziele einzufügen, die nur HTML akzeptieren.\n\nPrüfe vor dem Kopieren die Vorschau, um Einrückungen, Zeilenumbrüche und Link-Attribute zu kontrollieren. Enthält die Quelle rohes HTML, nicht unterstützte Konstruktionen oder fehlerhaftes Markdown, solltest du das Ergebnis genau ansehen, da das Tool nur sicher interpretierbare Inhalte rendern kann.",
   "howItWorks": [
-    "Markdown in das Eingabefeld einfügen oder eintippen.",
-    "Das Tool erkennt Überschriften, Listen, Links, Hervorhebungen, Code und andere typische Markdown-Elemente.",
-    "Unsichere oder nicht unterstützte HTML-Inhalte werden für mehr Sicherheit bereinigt.",
-    "Das erzeugte HTML in der Vorschau oder im Ausgabebereich prüfen.",
-    "Das bereinigte HTML kopieren und in Website, CMS oder App verwenden."
+    "Markdown in das Eingabefeld schreiben oder einfügen.",
+    "Der Parser wandelt gängige Blöcke und Inline-Formatierungen in HTML-Tags um.",
+    "Unsichere oder nicht unterstützte Markups werden bei der Ausgabe entfernt oder normalisiert.",
+    "In der HTML-Vorschau oder Quellansicht die Struktur und Links prüfen.",
+    "Das finale HTML kopieren und in CMS, Editor oder Codebasis einfügen."
   ],
   "useCases": [
-    "README-Inhalte in HTML für Dokumentationen umwandeln.",
-    "Blog- oder Wissensdatenbank-Inhalte für ein HTML-fähiges CMS vorbereiten.",
-    "Schnell prüfen, wie Markdown nach dem Veröffentlichen aussieht.",
-    "Von Nutzern eingereichtes Markdown in einem Client-side-Workflow bereinigen.",
-    "Notizen, Entwürfe oder Snippets in wiederverwendbares HTML umwandeln."
+    {
+      "title": "Technische README als HTML veröffentlichen",
+      "description": "Wandle ein Repository-README in HTML für eine Dokumentationsseite, Wissensdatenbank oder Produkt-Hilfe um, ohne den Inhalt per Hand neu zu schreiben."
+    },
+    {
+      "title": "Inhalte für ein Markdown-freies CMS vorbereiten",
+      "description": "Konvertiere einen Markdown-Entwurf in HTML, wenn das Zielsystem Rich Text oder rohes Markup statt Markdown erwartet."
+    },
+    {
+      "title": "Struktur vor der Veröffentlichung prüfen",
+      "description": "Überprüfe die Reihenfolge von Überschriften, verschachtelten Listen, Zitaten und Inline-Code vor dem Livegang."
+    },
+    {
+      "title": "Nutzer-Markdown für Speicherung bereinigen",
+      "description": "Verarbeite von Nutzern eingereichtes Markdown zu bereinigtem HTML, bevor es für die spätere Anzeige gespeichert wird."
+    },
+    {
+      "title": "Notizen in einer anderen Oberfläche wiederverwenden",
+      "description": "Wandle Besprechungsnotizen, Aufgabenlisten oder Release-Pläne in wiederverwendbare HTML-Snippets für interne Tools oder Dashboards um."
+    }
   ],
   "examples": [
     {
-      "title": "Einfaches Markdown",
-      "input": "# Hallo\\n\\nDas ist **fett** und das ist ein [Link](https://example.com).",
-      "output": "<h1>Hallo</h1><p>Das ist <strong>fett</strong> und das ist ein <a href=\"https://example.com\">Link</a>.</p>",
-      "description": "Ein einfaches Beispiel mit Überschrift, Absatz, Hervorhebung und Link."
+      "title": "Überschrift, Absatz und Link",
+      "input": "# Projektupdate\n\nWir haben den Fehler beim **Login** behoben und ihn in den [Release-Notes](https://example.com/releases) dokumentiert.",
+      "output": "<h1>Projektupdate</h1><p>Wir haben den Fehler beim <strong>Login</strong> behoben und ihn in den <a href=\"https://example.com/releases\">Release-Notes</a> dokumentiert.</p>",
+      "description": "Zeigt eine Überschrift, Fettformatierung und einen Standardlink in einem Beispiel."
     },
     {
-      "title": "Liste und Code",
-      "input": "- Eintrag eins\\n- Eintrag zwei\\n\\n`npm install`",
-      "output": "<ul><li>Eintrag eins</li><li>Eintrag zwei</li></ul><p><code>npm install</code></p>",
-      "description": "Typische Umwandlung von Liste und Inline-Code."
+      "title": "Zitat und Code",
+      "input": "> Prüfe zuerst die Konfiguration.\n\n`npm run build`",
+      "output": "<blockquote><p>Prüfe zuerst die Konfiguration.</p></blockquote><p><code>npm run build</code></p>",
+      "description": "Ein Zitat und ein Inline-Code-Snippet werden in HTML-Elemente umgewandelt."
+    },
+    {
+      "title": "Verschachtelte Liste und Hervorhebung",
+      "input": "- Entwurf\n  - Gliederung\n  - Quellen\n- Endkontrolle\n\nBitte **die Daten prüfen**.",
+      "output": "<ul><li>Entwurf<ul><li>Gliederung</li><li>Quellen</li></ul></li><li>Endkontrolle</li></ul><p>Bitte <strong>die Daten prüfen</strong>.</p>",
+      "description": "Zeigt Verschachtelung und Inline-Hervorhebung, die erhalten bleiben müssen."
     }
   ],
   "faq": [
     {
-      "question": "Findet die Konvertierung im Browser statt?",
-      "answer": "Ja. Das Tool arbeitet clientseitig, daher wird Markdown lokal im Browser umgewandelt."
+      "question": "Was passiert, wenn mein Markdown rohes HTML enthält?",
+      "answer": "Der Konverter behält nur sicheres, unterstütztes Markup und entfernt oder normalisiert riskante Fragmente. Wenn deine Quelle auf benutzerdefiniertem HTML basiert, prüfe das Ergebnis sehr genau."
     },
     {
-      "question": "Ist die Ausgabe bereinigt?",
-      "answer": "Ja. Das erzeugte HTML wird bereinigt, um unsichere Markups und XSS-Risiken zu reduzieren."
+      "question": "Warum weichen die Zeilenumbrüche von der Quelle ab?",
+      "answer": "Markdown behandelt manche Umbrüche als weichen Zeilenumbruch und andere als Absatzgrenze. Wenn du einen sichtbaren Umbruch brauchst, verwende die Markdown-Syntax für einen harten Zeilenumbruch."
     },
     {
-      "question": "Unterstützt es alle Markdown-Funktionen?",
-      "answer": "Es unterstützt die gängige Markdown-Syntax. Der genaue Umfang hängt vom verwendeten Renderer im Browser ab."
+      "question": "Bleiben Link-Ziele und Attribute erhalten?",
+      "answer": "Standard-URLs bleiben erhalten, aber nicht unterstützte oder unsichere Attribute werden entfernt. Prüfe nach der Umwandlung die Links, die in einem neuen Tab öffnen sollen."
     },
     {
-      "question": "Kann ich das HTML-Ergebnis kopieren?",
-      "answer": "Ja. Du kannst das bereinigte HTML kopieren und in dein Projekt oder CMS einfügen."
+      "question": "Kann ich Markdown mit Tabellen oder Task-Listen einfügen?",
+      "answer": "Wenn der Parser diese Konstruktionen unterstützt, werden sie gerendert; andernfalls landen sie als einfacher Text oder reduziertes HTML. Teste das Ergebnis, wenn die Struktur wichtig ist."
     }
   ],
-  "uiLabels": {
-    "copy": "Kopieren",
-    "copied": "Kopiert",
-    "input": "Eingabe",
-    "output": "Ausgabe",
-    "placeholder": "Markdown hier einfügen...",
-    "indent": "Einrücken",
-    "removeComments": "Kommentare entfernen",
-    "preview": "Vorschau",
-    "source": "Quelle",
-    "sanitizedHtml": "Bereinigtes HTML",
-    "plainText": "Klartext",
-    "summary": "Zusammenfassung",
-    "total": "Gesamt",
-    "links": "Links",
-    "images": "Bilder",
-    "errors": "Fehler",
-    "warnings": "Warnungen",
-    "valid": "Gültig",
-    "invalid": "Ungültig",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Ziel",
-    "alt": "Alt",
-    "width": "Breite",
-    "height": "Höhe",
-    "empty": "Leer",
-    "outputReady": "Ausgabe bereit",
-    "cleanedHtml": "Bereinigtes HTML",
-    "formattedHtml": "Formatiertes HTML",
-    "minifiedHtml": "Minifiziertes HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extrahierte Bilder",
-    "extractedLinks": "Extrahierte Links",
-    "validationSummary": "Validierungsübersicht",
-    "prettyHtml": "Gut lesbares HTML",
-    "encodedText": "Kodierter Text"
-  },
   "seo": {
     "title": "Markdown-zu-HTML-Konverter",
-    "description": "Wandle Markdown im Browser in bereinigtes HTML um – mit sofortigem Ergebnis und sicherer clientseitiger Verarbeitung.",
+    "description": "Wandle Markdown im Browser in sauberes HTML um, ohne Upload und mit sofortigem Ergebnis.",
     "keywords": [
       "markdown zu html",
       "markdown konverter",
-      "html bereinigen",
-      "markdown zu html online",
-      "markdown html browser"
+      "markdown in html umwandeln",
+      "markdown html browser",
+      "sauberes html"
     ]
   }
 }

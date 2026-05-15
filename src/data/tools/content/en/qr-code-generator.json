@@ -4,155 +4,85 @@
   "slug": "qr-code-generator",
   "h1": "QR Code Generator",
   "title": "QR Code Generator",
-  "shortDescription": "Create QR codes online from text, links, Wi-Fi credentials and short contact payloads.",
-  "metaTitle": "QR Code Generator Online | Create QR Codes from Text, Links and Wi‑Fi",
-  "metaDescription": "Generate QR codes instantly online from text, URLs, Wi‑Fi details and contact data. Preview in real time and download SVG or PNG files.",
-  "intro": "Create QR codes online in seconds. Paste text, a link, Wi‑Fi details or contact data, then preview and download a clean SVG or PNG version.",
-  "overview": "This online QR code generator is a fast, client-side tool for turning plain text, URLs, Wi‑Fi credentials and simple contact payloads into scannable QR codes. It updates instantly as you type, shows a live preview and lets you download the result in SVG or PNG format. No sign-up or server upload is needed, making it a practical choice for quick sharing, offline use and print-ready graphics.",
+  "shortDescription": "Create scannable QR codes from text, URLs, Wi‑Fi settings, and contact details.",
+  "metaTitle": "QR Code Generator Online",
+  "metaDescription": "Create QR codes from text, URLs, Wi‑Fi settings, and contact details. Download SVG or PNG for print or sharing.",
+  "intro": "Turn text, links, Wi‑Fi details, or contact data into a QR code, then download it as SVG or PNG.",
+  "overview": "Use this generator when you need a scannable code for a web address, network login, short note, or contact card. Type or paste the content, check the live preview, and export a version that fits posters, menus, labels, or digital sharing.\n\nSVG is the best choice when the code needs to stay sharp in print or be edited later. PNG is useful when you want a simple image file for documents, slides, chat apps, or product mockups. Keep the content concise: very long text creates denser codes that are harder to scan and may need a larger size or stronger error correction.",
   "howItWorks": [
-    "Enter the text or data you want to encode.",
-    "Watch the QR code preview update instantly.",
-    "Download the result as SVG or PNG for sharing or printing."
+    "Paste the content you want to encode.",
+    "Check the QR preview and adjust the data if needed.",
+    "Download the result as SVG or PNG."
   ],
   "useCases": [
-    "Share website links with a scannable QR code.",
-    "Create Wi‑Fi QR codes for guests and office visitors.",
-    "Generate contact or event QR codes for flyers and business cards.",
-    "Prepare print-ready QR graphics for packaging, posters and menus."
+    {
+      "title": "Restaurant menu link",
+      "description": "Create a QR code that opens a digital menu, reservation page, or daily specials page from a table tent or receipt."
+    },
+    {
+      "title": "Guest Wi‑Fi login",
+      "description": "Encode the network name, security type, and password so visitors can join without typing credentials manually."
+    },
+    {
+      "title": "Business card contact block",
+      "description": "Add a QR code that opens a phone number, email address, or contact record on a printed card."
+    },
+    {
+      "title": "Product insert or package label",
+      "description": "Point buyers to setup instructions, warranty registration, support pages, or a product video."
+    }
   ],
   "examples": [
     {
-      "title": "Website link",
+      "title": "Homepage link",
       "input": "https://example.com",
-      "output": "Scannable QR code for a webpage.",
-      "description": "Use it on posters, social posts or product inserts."
+      "output": "QR code that opens the homepage when scanned.",
+      "description": "Good for posters, handouts, and packaging."
     },
     {
-      "title": "Wi‑Fi access",
-      "input": "WIFI:T:WPA;S:MyNetwork;P:password123;;",
-      "output": "QR code for quick network joining.",
-      "description": "Useful for homes, cafes and offices."
+      "title": "Office Wi‑Fi",
+      "input": "WIFI:T:WPA;S:StudioGuest;P:Seaside2025!;;",
+      "output": "QR code for joining the guest network.",
+      "description": "Useful near reception desks and meeting rooms."
+    },
+    {
+      "title": "Email contact",
+      "input": "mailto:hello@example.com?subject=Project%20quote",
+      "output": "QR code that opens a prefilled email message.",
+      "description": "Helps on invoices, support cards, and event stands."
     }
   ],
   "faq": [
     {
-      "question": "What can I encode in a QR code?",
-      "answer": "You can encode plain text, URLs, Wi‑Fi credentials, contact details and other short payloads that fit into a QR code."
+      "question": "What kinds of content work best in a QR code?",
+      "answer": "Short URLs, Wi‑Fi credentials, contact details, phone links, email links, and brief text work well. The longer the content, the denser the code becomes."
     },
     {
-      "question": "Can I download the QR code as SVG or PNG?",
-      "answer": "Yes. You can download a vector SVG for editing and printing, or a PNG for easy sharing."
+      "question": "Why does a long message sometimes look crowded?",
+      "answer": "A QR code stores data in a compact grid. More data means more modules, so the code becomes harder to scan unless you enlarge it or reduce the text."
     },
     {
-      "question": "Does the generator work in the browser?",
-      "answer": "Yes. It runs client-side, so your input is processed locally in the browser for fast preview and export."
+      "question": "Can I use this for Wi‑Fi sharing?",
+      "answer": "Yes. Use the standard Wi‑Fi format with security type, network name, and password. If one of those fields is wrong, the scan may open but fail to connect."
     },
     {
-      "question": "Is the QR code suitable for print?",
-      "answer": "Yes. SVG is especially good for print because it scales without losing quality."
+      "question": "Which format should I choose for printing?",
+      "answer": "Choose SVG when you need clean scaling on business cards, stickers, posters, or packaging. Use PNG when you need a regular image file for slides or documents."
+    },
+    {
+      "question": "What is the most common mistake when generating a QR code?",
+      "answer": "People often paste too much text, include extra spaces, or use the wrong Wi‑Fi syntax. Trim the content and make sure special characters are entered exactly as needed."
     }
   ],
-  "uiLabels": {
-    "copy": "Copy",
-    "copied": "Copied",
-    "input": "Input",
-    "output": "Output",
-    "placeholder": "Enter text, a link, Wi‑Fi data or contact details",
-    "indent": "Indent",
-    "removeComments": "Remove comments",
-    "preview": "Preview",
-    "source": "Source",
-    "sanitizedHtml": "Sanitized HTML",
-    "plainText": "Plain text",
-    "summary": "Summary",
-    "total": "Total",
-    "links": "Links",
-    "images": "Images",
-    "errors": "Errors",
-    "warnings": "Warnings",
-    "valid": "Valid",
-    "invalid": "Invalid",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Width",
-    "height": "Height",
-    "empty": "Empty",
-    "outputReady": "Output ready",
-    "cleanedHtml": "Cleaned HTML",
-    "formattedHtml": "Formatted HTML",
-    "minifiedHtml": "Minified HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extracted images",
-    "extractedLinks": "Extracted links",
-    "validationSummary": "Validation summary",
-    "prettyHtml": "Pretty HTML",
-    "encodedText": "Encoded text",
-    "file": "File",
-    "size": "Size",
-    "format": "Format",
-    "quality": "Quality",
-    "colorOne": "Color 1",
-    "colorTwo": "Color 2",
-    "background": "Background",
-    "foreground": "Foreground",
-    "angle": "Angle",
-    "margin": "Margin",
-    "level": "Error correction",
-    "gradientType": "Gradient type",
-    "linear": "Linear",
-    "radial": "Radial",
-    "blur": "Blur",
-    "spread": "Spread",
-    "offsetX": "Offset X",
-    "offsetY": "Offset Y",
-    "opacity": "Opacity",
-    "inset": "Inset",
-    "cssCode": "CSS code",
-    "snippet": "Snippet",
-    "download": "Download",
-    "downloadSvg": "Download SVG",
-    "downloadPng": "Download PNG",
-    "downloadAll": "Download all",
-    "upload": "Upload",
-    "title": "Title",
-    "description": "Description",
-    "canonicalUrl": "Canonical URL",
-    "siteName": "Site name",
-    "ogImage": "OG image",
-    "clear": "Clear",
-    "generatedQr": "QR code preview",
-    "placeholderImage": "Preview image",
-    "faviconSet": "Favicon set",
-    "keepAspectRatio": "Keep aspect ratio",
-    "cropX": "Crop X",
-    "cropY": "Crop Y",
-    "cropWidth": "Crop width",
-    "cropHeight": "Crop height",
-    "originalSize": "Original size",
-    "outputSize": "Output size",
-    "savedSize": "Saved size",
-    "result": "Result",
-    "base64": "Base64",
-    "mimeType": "MIME type",
-    "resizedImage": "Resized image",
-    "compressedImage": "Compressed image",
-    "croppedImage": "Cropped image",
-    "convertedImage": "Converted image",
-    "decodedImage": "Decoded image",
-    "imagePreview": "Image preview"
-  },
   "seo": {
     "title": "QR Code Generator Online",
-    "description": "Fast online QR code generator with instant preview and SVG or PNG download.",
+    "description": "Create QR codes from text, URLs, Wi‑Fi settings, and contact details. Download SVG or PNG for print or sharing.",
     "keywords": [
       "qr code generator",
-      "generate qr code online",
-      "qr code svg download",
-      "qr code png download",
-      "wifi qr code generator",
+      "wifi qr code",
+      "svg qr download",
+      "png qr download",
+      "contact qr code",
       "text to qr code"
     ]
   }

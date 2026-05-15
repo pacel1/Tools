@@ -4,43 +4,82 @@
   "slug": "calculadora-de-aumento-porcentual",
   "h1": "Calculadora de aumento porcentual",
   "title": "Calculadora de aumento porcentual",
-  "shortDescription": "Calcula un valor después de un aumento porcentual con resultados rápidos, entradas sencillas y ejemplos prácticos.",
-  "overview": "Calcula un valor después de un aumento porcentual. Esta página ofrece una respuesta rápida con una herramienta útil y un flujo de resultados sencillo. Está pensada para usuarios que buscan una respuesta online gratuita, resultados instantáneos en el navegador y contenido práctico de cola larga.",
+  "shortDescription": "Calcula el valor final después de un aumento porcentual con un resultado claro y ejemplos reales.",
+  "metaTitle": "Calculadora de aumento porcentual",
+  "metaDescription": "Calcula el valor final tras un aumento porcentual en precios, sueldos, presupuestos o previsiones con un resultado claro.",
+  "intro": "Introduce el valor inicial y el porcentaje de aumento para obtener el nuevo valor al instante.",
+  "overview": "Esta calculadora te ayuda a convertir una cifra base en su valor final después de aplicar un aumento porcentual. Es útil para revisar subidas de precios, revisiones salariales, ajustes de tarifas o cualquier cambio al alza que necesites estimar sin hacer cuentas a mano.\n\nEl resultado muestra la cantidad final después del incremento, lo que facilita comparar el valor inicial con el nuevo. También sirve para comprobar cálculos propios, preparar presupuestos o probar distintos escenarios de crecimiento antes de decidir.",
   "howItWorks": [
-    "Introduce el valor o texto requerido en el formulario.",
-    "La conversión, el cálculo o la transformación se ejecuta al instante en el navegador.",
-    "Revisa el resultado y sigue con herramientas relacionadas si necesitas otro paso."
+    "Introduce el valor inicial.",
+    "Escribe el porcentaje de aumento.",
+    "Obtén el valor final tras aplicar el incremento.",
+    "Vuelve a calcular con otro porcentaje si necesitas comparar escenarios."
+  ],
+  "useCases": [
+    {
+      "title": "Cambio de precio en tienda",
+      "description": "Actualiza el precio de un producto tras aplicar un margen, un coste mayor o una subida de proveedor."
+    },
+    {
+      "title": "Subida salarial o tarifa",
+      "description": "Comprueba el importe nuevo después de una revisión de sueldo, honorarios o cuota de servicio."
+    },
+    {
+      "title": "Previsión de negocio",
+      "description": "Calcula cómo quedaría una cifra de ingresos, visitas o clientes con un escenario de crecimiento."
+    },
+    {
+      "title": "Ajuste de presupuesto",
+      "description": "Estima el nuevo tope de gasto después de aumentar un presupuesto existente por un porcentaje fijo."
+    }
   ],
   "examples": [
     {
-      "title": "Ejemplo 1",
-      "input": "120 aumentado en 15%",
-      "output": "138",
-      "description": "Un ejemplo realista de calculadora de aumento porcentual para una búsqueda cotidiana."
+      "title": "Actualización de precio",
+      "input": "80 aumentado en 12%",
+      "output": "89,6",
+      "description": "Un artículo de 80 pasa a 89,6 tras un aumento del 12%."
     },
     {
-      "title": "Ejemplo 2",
-      "input": "120 aumentado en 15%",
-      "output": "138",
-      "description": "Otro caso práctico para tráfico orgánico de cola larga."
+      "title": "Subida anual de sueldo",
+      "input": "42.000 aumentado en 7%",
+      "output": "44.940",
+      "description": "Un salario de 42.000 se convierte en 44.940 después de una subida del 7%."
+    },
+    {
+      "title": "Previsión de tráfico",
+      "input": "18.500 aumentado en 5%",
+      "output": "19.425",
+      "description": "Una cifra de tráfico mensual sube a 19.425 con un aumento del 5%."
     }
   ],
   "faq": [
     {
-      "question": "¿Qué precisión tiene esta herramienta?",
-      "answer": "El resultado se calcula directamente a partir de la fórmula o de la lógica en el navegador que usa esta herramienta."
+      "question": "¿Qué resultado muestra esta calculadora?",
+      "answer": "Muestra el valor final después de añadir el porcentaje indicado al valor inicial."
     },
     {
-      "question": "¿Puedo usar esta herramienta en el móvil?",
-      "answer": "Sí. La página funciona en pantallas de escritorio y móviles con un diseño sencillo de entrada y resultado."
+      "question": "¿Cómo interpreto el resultado?",
+      "answer": "El resultado es el total nuevo, no el porcentaje. Si quieres saber cuánto se añadió, resta el valor inicial al resultado."
+    },
+    {
+      "question": "¿Puedo introducir decimales o cifras grandes?",
+      "answer": "Sí. Se aceptan números decimales y grandes siempre que la entrada sea válida."
+    },
+    {
+      "question": "¿Cuál es el error más habitual al usarla?",
+      "answer": "El error más común es escribir una cantidad como si fuera un porcentaje. Por ejemplo, 15 significa 15%, no 15 unidades."
     }
   ],
   "seo": {
     "title": "Calculadora de aumento porcentual",
-    "description": "Calcula un valor después de un aumento porcentual. Calculadora de aumento porcentual gratis online con resultados instantáneos.",
+    "description": "Calcula el valor final tras un aumento porcentual en precios, sueldos, presupuestos o previsiones con un resultado claro.",
     "keywords": [
       "calculadora de aumento porcentual",
-      "herramienta calculadoras"
+      "aumento porcentual",
+      "valor final tras aumento",
+      "calculadora de subida",
+      "calculadora de crecimiento porcentual"
     ]
   }
 }

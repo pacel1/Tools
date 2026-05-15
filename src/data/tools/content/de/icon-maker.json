@@ -4,13 +4,85 @@
   "slug": "icon-generator",
   "h1": "Icon Generator",
   "title": "Icon Generator",
-  "shortDescription": "Erstelle App-Icons und quadratische Marken-Icons online aus einem Bild im Browser.",
-  "metaTitle": "Icon Generator | App-Icons online erstellen",
-  "metaDescription": "Erstelle Icons online aus einem Quellbild. Der Icon Generator eignet sich fuer App-Icons, Launcher-Icons und quadratische Marken-Assets ohne Server-Upload.",
-  "intro": "Der Icon Generator deckt eine breitere Suchintention als ein klassischer Favicon-Generator ab. Lade ein Bild hoch, stelle Groesse, Innenabstand und Hintergrund ein und exportiere direkt im Browser ein fertiges Icon fuer App, Launcher oder Marke.",
-  "overview": "Das Tool ist fuer Workflows gedacht, in denen du ein einzelnes sauberes Icon statt eines kompletten Favicon-Pakets brauchst. Typische Einsaetze sind App-Prototypen, PWA-Assets, Launcher-Icons und schnelle Branding-Mockups mit quadratischem Format.",
-  "howItWorks": ["Quellbild hochladen.", "Groesse, Innenabstand, Hintergrund und Format einstellen.", "Vorschau pruefen und die fertige Icon-Datei direkt herunterladen."],
-  "examples": [{"title": "App-Icon", "input": "Ein transparentes Logo", "output": "Ein zentriertes 512px-Icon", "description": "Praktisch fuer Produktdemos, App-Vorschauen und Launcher-Assets."}, {"title": "Marken-Icon", "input": "Ein einfacher Bildmarken-Export", "output": "Quadratisches PNG mit Hintergrundfarbe", "description": "Hilfreich fuer Avatare, Platzhalter und schnelle Mockups."}],
-  "faq": [{"question": "Worin unterscheidet sich das Tool vom Favicon-Generator?", "answer": "Der Icon Generator konzentriert sich auf ein einzelnes fertiges Icon, waehrend ein Favicon-Generator meist mehrere Groessen fuer Websites erzeugt."}, {"question": "Werden meine Bilder hochgeladen?", "answer": "Nein. Die Verarbeitung laeuft lokal im Browser."}],
-  "seo": {"title": "Icon Generator | App-Icons online erstellen", "description": "Erstelle Icons online aus einem Quellbild fuer Apps, Launcher und Branding ohne Server-Upload.", "keywords": ["icon generator", "app icon generator", "icons online erstellen", "launcher icon", "icon maker"]}
+  "shortDescription": "Wandle ein Bild in App-Icons oder quadratische Marken-Icons mit Groessen-, Innenabstand- und Hintergrundsteuerung um.",
+  "metaTitle": "Icon Generator | App-Icons erstellen",
+  "metaDescription": "Wandle ein Quellbild in App-Icons, Launcher-Icons oder quadratische Marken-Assets mit Export im Browser um.",
+  "intro": "Erstelle aus einem einzigen Bild ein sauberes Icon, indem du Groesse, Innenabstand, Hintergrund und Dateiformat festlegst und das Ergebnis direkt im Browser herunterlaedst.",
+  "overview": "Dieses Tool ist fuer einen gezielten Icon-Workflow gemacht, bei dem du ein einzelnes quadratisches Asset statt eines kompletten Pakets brauchst. Es eignet sich fuer App-Prototypen, Launcher-Kacheln, PWA-Assets, Produkt-Demos und Marken-Avatare mit einheitlichem Bildaufbau.\n\nDu kannst mit Logo, Symbol oder Monogramm starten und den Innenraum so anpassen, dass der Schwerpunkt im Quadrat ausgewogen sitzt. Ein Vollfarb-Hintergrund sorgt fuer einen klaren Badge-Look, waehrend Transparenz sinnvoll ist, wenn das Icon auf wechselnden Flaechen erscheinen soll.\n\nDas Ergebnis ist eine nutzbare Datei und nicht nur eine Vorschau. Das hilft bei der Uebergabe an die Entwicklung, bei fruehen App-Tests, bei Store-Ansichten und ueberall dort, wo ein wiederverwendbares quadratisches Icon mit verlaesslichen Proportionen gebraucht wird.",
+  "howItWorks": [
+    "Quellbild hochladen.",
+    "Groesse, Innenabstand, Hintergrundfarbe und Ausgabeformat festlegen.",
+    "Vorschau pruefen und die fertige Icon-Datei herunterladen."
+  ],
+  "useCases": [
+    {
+      "title": "App-Kachel",
+      "description": "Erstelle aus einem Logo ein quadratisches Icon fuer App-Vorschau, internen Build oder Store-Mockup."
+    },
+    {
+      "title": "PWA-Asset",
+      "description": "Generiere ein klares Zeichen mit passendem Innenabstand, damit es auf dem Homescreen und im Launcher-Grid gut wirkt."
+    },
+    {
+      "title": "Produkt-Avatar",
+      "description": "Wandle ein Markenzeichen in ein quadratisches Profil-Asset fuer Dashboards, Admin-Ansichten oder Lieferantenlisten um."
+    },
+    {
+      "title": "Marken-Badge",
+      "description": "Setze ein einfaches Zeichen auf eine einfarbige Flaeche und erhalte ein kompaktes Icon fuer Praesentationen und Pitches."
+    }
+  ],
+  "examples": [
+    {
+      "title": "Transparentes Logo als App-Icon",
+      "input": "Ein transparentes SVG-Logo ohne langen Schriftzug",
+      "output": "Ein 512×512 PNG-Icon mit zentriertem Symbol und 18 % Innenabstand",
+      "description": "Sinnvoll fuer App-Tests, wenn ein schlichtes, gut lesbares Quadrat benoetigt wird."
+    },
+    {
+      "title": "Monogramm auf dunklem Badge",
+      "input": "Ein zweibuchstabiges Monogramm mit transparentem Hintergrund",
+      "output": "Ein 1024×1024-Icon mit dunkelblauem Hintergrund und weissem Zeichen",
+      "description": "Gut geeignet fuer einen Marken-Avatar oder eine Launcher-Kachel mit starkem Kontrast."
+    },
+    {
+      "title": "Produktsymbol fuer Marketplace",
+      "input": "Ein kleines Glyph aus einer Designdatei",
+      "output": "Ein 256×256 WebP-Icon mit mehr Innenabstand und transparentem Hintergrund",
+      "description": "Hilfreich, wenn das Symbol auf unterschiedlichen Flaechen ohne festen Rahmen funktionieren soll."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Welche Bildart liefert die beste Ausgabe?",
+      "answer": "Am besten eignen sich Logos, Symbole oder Monogramme mit klaren Kanten und genuegend Freiraum. Sehr komplexe Motive verlieren beim Verkleinern oft an Lesbarkeit."
+    },
+    {
+      "question": "Warum ist der Innenabstand so wichtig?",
+      "answer": "Er bestimmt, wie viel Luft das Motiv im Quadrat hat. Zu wenig Abstand wirkt gequetscht, zu viel Abstand laesst das Icon klein und schwach erscheinen."
+    },
+    {
+      "question": "Kann der Hintergrund transparent bleiben?",
+      "answer": "Ja. Transparenz ist ideal, wenn das Icon auf verschiedene Farben oder in unterschiedliche Designsysteme eingesetzt wird."
+    },
+    {
+      "question": "Was passiert bei einem rechteckigen Ausgangsbild?",
+      "answer": "Das Tool passt es an einen quadratischen Canvas an. Bei breiten Motiven kann es helfen, den Innenabstand zu verringern oder eine besser vorbereitete Version zu verwenden."
+    },
+    {
+      "question": "Welches Format soll ich waehlen?",
+      "answer": "PNG ist die sicherste Wahl fuer scharfe Kanten und Transparenz. WebP kann kleiner sein, waehrend ein einfarbiger Hintergrund gut zu Badge-Icons passt."
+    }
+  ],
+  "seo": {
+    "title": "Icon Generator | App-Icons erstellen",
+    "description": "Wandle ein Quellbild in App-Icons, Launcher-Icons oder quadratische Marken-Assets mit Export im Browser um.",
+    "keywords": [
+      "icon generator",
+      "app icon generator",
+      "icon erstellen",
+      "launcher icon",
+      "marken icon"
+    ]
+  }
 }

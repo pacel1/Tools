@@ -4,44 +4,84 @@
   "slug": "calculateur-de-marge",
   "h1": "Calculateur de marge",
   "title": "Calculateur de marge",
-  "shortDescription": "Calculez le pourcentage de marge et le prix de vente final avec des résultats rapides, des saisies simples et des exemples pratiques.",
-  "overview": "Calculez le pourcentage de marge et le prix de vente final. Cette page fournit une réponse rapide grâce à un outil pratique et à un parcours de résultat simple. Elle s’adresse aux utilisateurs qui recherchent une réponse gratuite en ligne, des résultats rapides dans le navigateur et un contenu pratique de longue traîne.",
+  "shortDescription": "Calculez la marge, le prix de vente et le bénéfice à partir du coût ou du prix cible.",
+  "metaTitle": "Calculateur de marge en ligne",
+  "metaDescription": "Calculez la marge, le prix de vente et le bénéfice à partir du coût ou du prix cible en une étape.",
+  "intro": "Saisissez votre coût puis la marge ou le prix de vente pour obtenir immédiatement les valeurs manquantes.",
+  "overview": "Le calculateur de marge permet de transformer un coût d’achat en prix de vente, ou de retrouver la marge à partir d’un prix final connu. Il est utile pour fixer un tarif en boutique, comparer des fournisseurs et vérifier qu’un prix laisse suffisamment de place au bénéfice.\n\nIl sert aussi à contrôler plusieurs produits avec la même logique de prix. Le résultat affiche le montant de la marge, le prix final et le pourcentage, ce qui rend la formation du prix plus lisible.\n\nSi vous appliquez déjà une méthode de tarification précise, vous pouvez tester différents coûts et scénarios sans faire le calcul à la main.",
   "howItWorks": [
-    "Saisissez la valeur requise dans le formulaire.",
-    "Le calcul ou la transformation s’exécute instantanément dans le navigateur.",
-    "Consultez le résultat puis continuez avec des outils associés si vous avez besoin d’une autre étape."
+    "Saisissez le coût du produit.",
+    "Ajoutez le pourcentage de marge ou le prix de vente.",
+    "Lisez le montant de la marge, le prix final et le bénéfice calculé."
+  ],
+  "useCases": [
+    {
+      "title": "Tarification en magasin",
+      "description": "Définissez le prix de vente à partir du coût d’achat et de la marge souhaitée."
+    },
+    {
+      "title": "Devis de prestation",
+      "description": "Vérifiez si un tarif couvre le travail, les frais fixes et la marge prévue."
+    },
+    {
+      "title": "Comparaison de fournisseurs",
+      "description": "Mesurez l’impact d’un coût d’achat différent sur le prix final."
+    },
+    {
+      "title": "Lots et assortiments",
+      "description": "Calculez le prix d’un lot lorsque le coût total est connu et qu’une marge fixe s’applique."
+    }
   ],
   "examples": [
     {
-      "title": "Exemple 1",
-      "input": "Coût 50, marge 30 %",
-      "output": "65",
-      "description": "Un exemple réaliste de calculateur de marge pour une recherche du quotidien."
+      "title": "Tarifer un objet artisanal",
+      "input": "Coût : 18,40 €, marge : 65 %",
+      "output": "Marge : 11,96 €, Prix de vente : 30,36 €",
+      "description": "Montre comment passer du coût de fabrication au prix de vente."
     },
     {
-      "title": "Exemple 2",
-      "input": "Coût 50, marge 30 %",
-      "output": "65",
-      "description": "Un autre cas d’usage pratique pour le trafic organique de longue traîne."
+      "title": "Retrouver la marge depuis le prix final",
+      "input": "Coût : 42,00 €, prix de vente : 59,50 €",
+      "output": "Marge : 17,50 €, Marge en % : 41,67 %",
+      "description": "Utile quand le prix final est connu et que la marge implicite doit être vérifiée."
+    },
+    {
+      "title": "Contrôler une offre en gros",
+      "input": "Coût : 126,00 €, marge : 22 %",
+      "output": "Marge : 27,72 €, Prix de vente : 153,72 €",
+      "description": "Permet de vérifier si un achat en gros reste dans la fourchette de prix prévue."
     }
   ],
   "faq": [
     {
-      "question": "Quelle est la précision de cet outil ?",
-      "answer": "Le résultat est calculé directement à partir de la formule ou de la logique côté navigateur utilisée par cet outil."
+      "question": "Quelle est la différence entre marge et majoration ?",
+      "answer": "La majoration se calcule sur le coût. La marge se calcule sur le prix de vente. Les deux notions ne donnent donc pas le même pourcentage."
     },
     {
-      "question": "Puis-je utiliser cet outil sur mobile ?",
-      "answer": "Oui. La page fonctionne sur ordinateur et sur mobile avec une interface simple de saisie et de résultat."
+      "question": "Puis-je saisir un prix de vente au lieu d’un pourcentage ?",
+      "answer": "Oui, si l’outil prend en charge le calcul inverse. Vous pouvez alors voir la majoration implicite à partir du coût et du prix final."
+    },
+    {
+      "question": "Pourquoi le résultat affiche-t-il des décimales ?",
+      "answer": "Beaucoup de coûts ne donnent pas un montant rond avec un pourcentage précis. L’outil peut donc afficher des centimes ou des décimales."
+    },
+    {
+      "question": "Quelle erreur revient le plus souvent ?",
+      "answer": "Appliquer la majoration sur la mauvaise base. En général, elle s’applique au coût, pas au prix final."
+    },
+    {
+      "question": "Une marge plus élevée garantit-elle un meilleur bénéfice ?",
+      "answer": "Pas forcément. Le bénéfice dépend aussi des remises, frais, taxes et autres charges."
     }
   ],
   "seo": {
-    "title": "Calculateur de marge",
-    "description": "Calculez le pourcentage de marge et le prix de vente final. Calculateur de marge gratuit en ligne avec résultats instantanés.",
+    "title": "Calculateur de marge en ligne",
+    "description": "Calculez la marge, le prix de vente et le bénéfice à partir du coût ou du prix cible en une étape.",
     "keywords": [
       "calculateur de marge",
-      "markup calculator",
-      "outil calculateur"
+      "calcul marge",
+      "prix de vente",
+      "calcul bénéfice"
     ]
   }
 }

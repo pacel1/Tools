@@ -4,43 +4,76 @@
   "slug": "inverseur-de-texte",
   "h1": "Inverseur de texte",
   "title": "Inverseur de texte",
-  "shortDescription": "Inversez du texte en ligne instantanément avec des résultats rapides, une saisie simple et des exemples pratiques.",
-  "overview": "Inversez du texte en ligne instantanément. Cette page fournit une réponse rapide avec un outil pratique et un parcours de résultat simple. Elle s’adresse aux utilisateurs qui recherchent une solution gratuite en ligne, des résultats rapides dans le navigateur et un contenu pratique de type longue traîne.",
+  "shortDescription": "Inversez votre texte caractère par caractère en conservant la ponctuation, les espaces et les symboles.",
+  "metaTitle": "Inverseur de texte",
+  "metaDescription": "Inversez n’importe quel texte caractère par caractère tout en gardant espaces, ponctuation et symboles dans le résultat.",
+  "intro": "Collez votre texte et obtenez l’inversion des caractères immédiatement.",
+  "overview": "Cet outil inverse exactement les caractères de votre texte, du dernier au premier. Les lettres, chiffres, espaces, signes de ponctuation et symboles changent de place, ce qui est utile lorsque vous voulez retourner le texte lui-même et non le reformuler.\n\nIl convient aux courtes phrases, aux noms, aux étiquettes, aux codes et aux chaînes de test. Si vous souhaitez voir un message à l’envers ou préparer un texte inversé pour une maquette, une énigme ou un test de mise en forme, le résultat s’affiche tout de suite sur la page.\n\nL’outil ne traduit pas, ne corrige pas et ne réorganise pas les mots selon leur sens. Si vous incluez des retours à la ligne, ils font aussi partie du texte inversé, ce qui peut modifier l’aspect visuel de manière prévisible.",
   "howItWorks": [
-    "Saisissez le texte requis dans le formulaire.",
-    "La conversion, le calcul ou la transformation s’exécute instantanément dans le navigateur.",
-    "Consultez le résultat et poursuivez avec des outils associés si vous avez besoin d’une autre étape."
+    "Saisissez ou collez le texte à inverser.",
+    "L’outil retourne les caractères du dernier au premier.",
+    "Copiez le résultat inversé et réutilisez-le où vous voulez."
+  ],
+  "useCases": [
+    {
+      "title": "Texte affiché à l’envers",
+      "description": "Transformez une phrase en caractères inversés pour des affiches, des énigmes ou des compositions graphiques."
+    },
+    {
+      "title": "Contrôle des symboles et des espaces",
+      "description": "Vérifiez l’effet de l’inversion sur la ponctuation, les emojis et les espaces supplémentaires."
+    },
+    {
+      "title": "Aperçu pour maquettes",
+      "description": "Créez un texte inversé pour prévisualiser des étiquettes, badges ou visuels."
+    }
   ],
   "examples": [
     {
-      "title": "Exemple 1",
-      "input": "utility tools",
-      "output": "sloot ytilitu",
-      "description": "Un exemple réaliste d’inversion de texte pour une recherche courante."
+      "title": "Inversion d’une phrase",
+      "input": "Open the door",
+      "output": "rood eht nepO",
+      "description": "Chaque caractère est inversé, tout en conservant l’espace dans l’ordre inversé."
     },
     {
-      "title": "Exemple 2",
-      "input": "utility tools",
-      "output": "sloot ytilitu",
-      "description": "Un autre cas d’usage pratique pour le trafic organique longue traîne."
+      "title": "Symboles et chiffres",
+      "input": "A1! B2?",
+      "output": "?2B !1A",
+      "description": "Montre comment lettres, nombres, espaces et ponctuation changent de place ensemble."
+    },
+    {
+      "title": "Exemple avec saut de ligne",
+      "input": "première ligne\ndeuxième ligne",
+      "output": "enigL emèixued\nenignil erèimerp",
+      "description": "Montre que les retours à la ligne restent présents dans le texte inversé."
     }
   ],
   "faq": [
     {
-      "question": "Quelle est la précision de cet outil ?",
-      "answer": "Le résultat est calculé directement à partir de la formule ou de la logique côté navigateur utilisée par cet outil."
+      "question": "L’outil inverse-t-il les mots ou les caractères ?",
+      "answer": "Il inverse les caractères. Avec deux mots, les lettres et l’espace changent de place ensemble, donc le texte est retourné au niveau des caractères."
     },
     {
-      "question": "Puis-je utiliser cet outil sur mobile ?",
-      "answer": "Oui. La page fonctionne sur ordinateur et sur mobile avec une interface simple de saisie et de résultat."
+      "question": "Que devient la ponctuation et les chiffres ?",
+      "answer": "Ils sont inversés avec le reste du texte. Une virgule, un tiret ou un chiffre garde son caractère, mais se retrouve à une autre position."
+    },
+    {
+      "question": "Pourquoi le résultat paraît-il différent avec des retours à la ligne ?",
+      "answer": "Les retours à la ligne sont traités comme une partie du texte. Lors de l’inversion complète, l’ordre visuel des lignes peut changer par rapport à l’original."
+    },
+    {
+      "question": "Puis-je inverser seulement une partie d’une phrase ?",
+      "answer": "Oui. Supprimez les parties à conserver ou inversez séparément un fragment choisi, puis replacez-le dans votre texte."
     }
   ],
   "seo": {
     "title": "Inverseur de texte",
-    "description": "Inversez du texte en ligne instantanément. Inverseur de texte gratuit avec résultats immédiats.",
+    "description": "Inversez n’importe quel texte caractère par caractère tout en gardant espaces, ponctuation et symboles dans le résultat.",
     "keywords": [
       "inverseur de texte",
-      "outil text-tools"
+      "texte inversé",
+      "inverser texte",
+      "retourner les caractères"
     ]
   }
 }

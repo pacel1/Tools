@@ -4,43 +4,87 @@
   "slug": "umwandlung-gross-und-kleinschreibung",
   "h1": "Groß- und Kleinschreibung umwandeln",
   "title": "Groß- und Kleinschreibung umwandeln",
-  "shortDescription": "Wandle Text in Großschreibung, Kleinschreibung, Titel-Schreibweise und Satzschreibung um – schnell, einfach und mit praktischen Beispielen.",
-  "overview": "Wandle Text in Großschreibung, Kleinschreibung, Titel-Schreibweise und Satzschreibung um. Diese Seite liefert eine schnelle Antwort mit einem praktischen Online-Tool und einem einfachen Ergebnisablauf. Sie richtet sich an Nutzer, die eine kostenlose Lösung im Browser, sofortige Ergebnisse und praxisnahe Inhalte für Long-Tail-Suchen suchen.",
+  "shortDescription": "Text in Großbuchstaben, Kleinbuchstaben, Titel-Schreibweise oder Satzschreibung umwandeln – klar für eingefügten oder getippten Text.",
+  "metaTitle": "Groß- und Kleinschreibung",
+  "metaDescription": "Text in Großbuchstaben, Kleinbuchstaben, Titel-Schreibweise oder Satzschreibung direkt im Browser umwandeln.",
+  "intro": "Text einfügen oder tippen und sofort in Großbuchstaben, Kleinbuchstaben, Titel-Schreibweise oder Satzschreibung umwandeln.",
+  "overview": "Dieses Tool schreibt deinen Text in die gewählte Schreibweise um. Es hilft, wenn eine Überschrift einheitlich formatiert werden soll, ein Entwurf konsistent aussehen muss oder kopierter Text an einen Stil angepasst werden soll.\n\nDu kannst kurze Begriffe, ganze Sätze, Überschriften und längere Abschnitte testen. Das Ergebnis basiert auf dem exakt eingegebenen Text, daher bleiben Satzzeichen, Abstände und Zeilenumbrüche Teil der Ausgabe, sofern der gewählte Modus sie nicht anders behandelt.\n\nNutze es vor dem Veröffentlichen, Einfügen in ein Dokument oder Teilen von Text, wenn du eine saubere und einheitliche Darstellung brauchst.",
   "howItWorks": [
-    "Gib den benötigten Text in das Formular ein.",
-    "Die Umwandlung, Berechnung oder Transformation erfolgt sofort im Browser.",
-    "Prüfe das Ergebnis und nutze bei Bedarf verwandte Tools für den nächsten Schritt."
+    "Gib den Text ein oder füge ihn ein, den du ändern möchtest.",
+    "Wähle die gewünschte Schreibweise aus den verfügbaren Optionen.",
+    "Kopiere das umgewandelte Ergebnis und verwende es direkt weiter."
+  ],
+  "useCases": [
+    {
+      "title": "Überschriften für Artikel",
+      "description": "Wandle Entwurfsüberschriften vor dem Einfügen in ein CMS oder Dokument in Titel- oder Satzschreibung um."
+    },
+    {
+      "title": "Eingefügte Notizen",
+      "description": "Vereinheitliche Text aus Chats, E-Mails oder Notizen in eine durchgängige Schreibweise."
+    },
+    {
+      "title": "UI-Beschriftungen",
+      "description": "Formatiere kurze Menüeinträge, Schaltflächen und Labels nach einer klaren Schreibregel."
+    },
+    {
+      "title": "Listen bereinigen",
+      "description": "Bringe Einträge und Aufzählungspunkte in eine einheitliche Schreibweise für Tabellen und Checklisten."
+    }
   ],
   "examples": [
     {
-      "title": "Beispiel 1",
-      "input": "Beispielüberschrift für einen Artikel",
-      "output": "GROSS / klein / Titel / Satz",
-      "description": "Zeigt einen typischen Einsatz des Tools mit einem einfachen Text."
+      "title": "Produktname in Großbuchstaben",
+      "input": "kabellose kopfhörer mit geräuschunterdrückung",
+      "output": "KABELLOSE KOPFHÖRER MIT GERÄUSCHUNTERDRÜCKUNG",
+      "description": "Sinnvoll, wenn ein Name in einer Überschrift stärker hervorstechen soll."
     },
     {
-      "title": "Beispiel 2",
-      "input": "Beispielüberschrift für einen Artikel",
-      "output": "GROSS / klein / Titel / Satz",
-      "description": "Nützlich für schnelle Anpassungen an Überschriften, Titeln und Entwürfen."
+      "title": "Satz aus kopierten Notizen",
+      "input": "das meeting beginnt morgen um 9 uhr.",
+      "output": "Das meeting beginnt morgen um 9 uhr.",
+      "description": "Zeigt die Satzschreibung mit großem Anfangsbuchstaben."
+    },
+    {
+      "title": "Blog-Überschrift in Titel-Schreibweise",
+      "input": "wie man bessere e-mail-betreffzeilen schreibt",
+      "output": "Wie Man Bessere E-Mail-Betreffzeilen Schreibt",
+      "description": "Macht aus einem einfachen Text eine brauchbare Überschrift."
+    },
+    {
+      "title": "Kurzes Label in Kleinbuchstaben",
+      "input": "Kundenservice",
+      "output": "kundenservice",
+      "description": "Hilfreich, wenn ein System oder Design Kleinbuchstaben verlangt."
     }
   ],
   "faq": [
     {
-      "question": "Wie genau ist dieses Tool?",
-      "answer": "Das Ergebnis wird direkt auf Grundlage der Formel oder der browserseitigen Logik dieses Tools berechnet."
+      "question": "Ändert das Tool nur Buchstaben?",
+      "answer": "Ja. Zahlen und Sonderzeichen bleiben unverändert; nur die Buchstaben werden umgeschrieben."
     },
     {
-      "question": "Kann ich dieses Tool auf dem Smartphone nutzen?",
-      "answer": "Ja. Die Seite funktioniert auf Desktop- und Mobilgeräten mit einem einfachen Eingabe- und Ergebnislayout."
+      "question": "Wird in Titel-Schreibweise jedes Wort gleich behandelt?",
+      "answer": "Das Tool folgt seinen eigenen Regeln für die Großschreibung. Bei Eigennamen, Abkürzungen und Fachbegriffen sollte das Ergebnis kurz geprüft werden."
+    },
+    {
+      "question": "Was passiert mit Leerzeichen und Zeilenumbrüchen?",
+      "answer": "Die eingegebene Struktur bleibt erhalten, aber doppelte Leerzeichen können das Erscheinungsbild beeinflussen."
+    },
+    {
+      "question": "Warum wurde ein Markenname oder eine Abkürzung verändert?",
+      "answer": "Weil die gewählte Schreibweise auf den gesamten Text angewendet wird. Solche Stellen musst du bei Bedarf manuell korrigieren."
     }
   ],
   "seo": {
-    "title": "Groß- und Kleinschreibung umwandeln",
-    "description": "Wandle Text in Großschreibung, Kleinschreibung, Titel-Schreibweise und Satzschreibung um. Kostenloser Online-Case-Konverter mit sofortigen Ergebnissen.",
+    "title": "Groß- und Kleinschreibung",
+    "description": "Text in Großbuchstaben, Kleinbuchstaben, Titel-Schreibweise oder Satzschreibung direkt im Browser umwandeln.",
     "keywords": [
       "Groß- und Kleinschreibung umwandeln",
-      "case converter"
+      "Großbuchstaben",
+      "Kleinbuchstaben",
+      "Titel-Schreibweise",
+      "Satzschreibung"
     ]
   }
 }

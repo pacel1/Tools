@@ -4,179 +4,87 @@
   "slug": "kalkulator-plyt-gk",
   "h1": "Kalkulator płyt GK",
   "title": "Kalkulator płyt GK",
-  "shortDescription": "Oblicz ile płyt gipsowo-kartonowych, wkrętów i profili potrzeba do zabudowy ściany lub sufitu.",
-  "metaTitle": "Kalkulator płyt GK | Ile płyt GK trzeba",
-  "metaDescription": "Sprawdź ile płyt GK, wkrętów i metrów profili potrzebujesz do zabudowy na podstawie powierzchni, wymiarów płyty i zapasu.",
-  "intro": "Ten kalkulator płyt GK szybko pokazuje, ile płyt gipsowo-kartonowych, wkrętów i profili potrzeba do wykonania ściany lub sufitu.",
-  "overview": "Wpisz powierzchnię zabudowy, wymiary płyty, zapas na odpady, liczbę wkrętów na płytę oraz zużycie profili na 1 m2. Narzędzie oblicza orientacyjną liczbę płyt, wkrętów i metrów bieżących profili potrzebnych do pracy.",
+  "shortDescription": "Oblicz liczbę płyt, wkrętów i długość profili do ścian oraz sufitów z płyt GK.",
+  "metaTitle": "Kalkulator płyt GK",
+  "metaDescription": "Oblicz liczbę płyt GK, wkrętów i metrów profili na podstawie powierzchni, wymiaru płyty i zapasu na odpady.",
+  "intro": "Wpisz powierzchnię, wymiary płyty i zapas, a kalkulator pokaże orientacyjną liczbę płyt, wkrętów i profili.",
+  "overview": "To narzędzie zamienia powierzchnię zabudowy na praktyczne ilości materiałów do prac z płytami GK. Na podstawie wymiaru płyty wylicza przybliżoną liczbę arkuszy, a następnie dolicza zapas na docinki, odpad i uszkodzenia.\n\nMożesz też określić liczbę wkrętów na jedną płytę oraz zużycie profili na 1 m2. Dzięki temu łatwiej przygotować listę zakupów, porównać różne formaty płyt albo sprawdzić, czy zamówienie pokryje cały zakres prac.\n\nWynik ma charakter orientacyjny. Na końcową ilość materiału wpływają otwory, układ rusztu, liczba warstw okładziny i sposób prowadzenia profili.",
   "howItWorks": [
-    "Podaj powierzchnię zabudowy w m2.",
+    "Podaj całkowitą powierzchnię w m2.",
     "Wpisz szerokość i wysokość płyty w cm.",
     "Ustal procent zapasu na docinki i odpady.",
-    "Podaj liczbę wkrętów na jedną płytę oraz zużycie profili na 1 m2.",
-    "Otrzymaj wynik: liczba płyt, wkrętów i długość profili."
+    "Określ liczbę wkrętów na jedną płytę oraz metry profili na 1 m2.",
+    "Odczytaj szacowaną liczbę płyt, wkrętów i profili."
   ],
   "useCases": [
-    "Planowanie materiałów do zabudowy ściany działowej.",
-    "Szacowanie ilości materiałów na sufit podwieszany.",
-    "Sprawdzenie, ile płyt GK trzeba kupić przed remontem.",
-    "Obliczenie zapotrzebowania na wkręty i profile do wykończenia wnętrz."
+    {
+      "title": "Ścianka działowa",
+      "description": "Policz materiały potrzebne do wykonania pojedynczej ścianki z płyt GK przed zakupem profili i płyt."
+    },
+    {
+      "title": "Sufit podwieszany",
+      "description": "Oszacuj ilość płyt i profili dla sufitu z uwzględnieniem docinek przy krawędziach."
+    },
+    {
+      "title": "Dobór formatu płyty",
+      "description": "Porównaj różne wymiary płyt, żeby sprawdzić, który format ograniczy liczbę łączeń."
+    },
+    {
+      "title": "Lista materiałów do wyceny",
+      "description": "Przelicz powierzchnię na płyty, wkręty i profile potrzebne do prostego kosztorysu."
+    }
   ],
   "examples": [
     {
-      "title": "Ile płyt GK trzeba na ścianę?",
-      "input": "Powierzchnia 24 m2, płyta 120 × 250 cm, zapas 10%, 8 wkrętów na płytę, 3,5 mb profili na m2.",
-      "output": "Kalkulator pokazuje orientacyjną liczbę płyt, wkrętów i profili.",
-      "description": "Wygodne narzędzie do szybkiej wyceny materiałów przed zakupem."
+      "title": "Mała ścianka w biurze",
+      "input": "Powierzchnia 21,6 m2, płyta 120 × 260 cm, zapas 8%, 9 wkrętów na płytę, 3,2 mb profili na m2.",
+      "output": "Wynik orientacyjny: 8 płyt, 72 wkręty i 69,1 mb profili.",
+      "description": "Pokazuje, jak z metrażu powstaje realna lista zakupów."
     },
     {
-      "title": "Materiały na sufit podwieszany",
-      "input": "Powierzchnia 18 m2, płyta 120 × 260 cm, zapas 12%, 10 wkrętów na płytę, 4 mb profili na m2.",
-      "output": "Wynik pojawia się od razu.",
-      "description": "Pomaga przy planowaniu sufitu podwieszanego."
+      "title": "Naprawa sufitu w kuchni",
+      "input": "Powierzchnia 13,5 m2, płyta 120 × 200 cm, zapas 12%, 10 wkrętów na płytę, 4,1 mb profili na m2.",
+      "output": "Wynik orientacyjny: 7 płyt, 70 wkrętów i 55,4 mb profili.",
+      "description": "Przydatne przy krótszych płytach i gęstszym ruszcie."
+    },
+    {
+      "title": "Zabudowa piwnicy większym formatem",
+      "input": "Powierzchnia 32 m2, płyta 120 × 300 cm, zapas 10%, 8 wkrętów na płytę, 2,8 mb profili na m2.",
+      "output": "Wynik orientacyjny: 10 płyt, 80 wkrętów i 89,6 mb profili.",
+      "description": "Pomaga porównać dłuższe płyty ze standardowym formatem."
     }
   ],
   "faq": [
     {
-      "question": "Co oblicza ten kalkulator płyt GK?",
-      "answer": "Szacuje liczbę płyt GK, wkrętów i metrów profili potrzebnych do podanej powierzchni i wymiarów płyty."
+      "question": "Czy zapas jest doliczany do liczby płyt?",
+      "answer": "Tak. Najpierw powierzchnia jest powiększana o podany zapas, a dopiero potem przeliczana na pełne płyty."
     },
     {
-      "question": "Czy uwzględnia zapas?",
-      "answer": "Tak, możesz dodać procent zapasu na docinki, odpady i uszkodzenia."
+      "question": "Dlaczego liczba płyt może być wyższa niż sugeruje sama powierzchnia?",
+      "answer": "Bo wynik jest zawsze zaokrąglany do pełnych arkuszy. Nawet niewielki brak powierzchni oznacza dodatkową płytę, a zapas może podnieść liczbę jeszcze bardziej."
     },
     {
-      "question": "Czy nadaje się do ścian i sufitów?",
-      "answer": "Tak, kalkulator sprawdza się przy zabudowie ścian i sufitów podwieszanych."
+      "question": "Czy wkręty liczone są na sztuki czy na m2?",
+      "answer": "Wkręty są liczone od szacowanej liczby płyt. Jeśli zmienisz wartość wkrętów na płytę, zmieni się też wynik końcowy."
     },
     {
-      "question": "Jak liczone są wkręty?",
-      "answer": "Narzędzie mnoży liczbę płyt przez liczbę wkrętów przypadających na jedną płytę."
+      "question": "Czy nadaje się do okładziny dwuwarstwowej?",
+      "answer": "Tak, ale każdą warstwę trzeba liczyć osobno albo samodzielnie odpowiednio zwiększyć powierzchnię i założenie dotyczące wkrętów."
     },
     {
-      "question": "Czy długość profili jest dokładna?",
-      "answer": "Nie, to wartość orientacyjna oparta na zużyciu na 1 m2. Ostateczny wynik może zależeć od projektu."
+      "question": "Dlaczego długość profili jest tylko orientacyjna?",
+      "answer": "Bo zależy od układu rusztu, rozstawu profili, obwodu pomieszczenia i otworów. Kalkulator używa podanego zużycia na 1 m2 jako punktu odniesienia."
     }
   ],
-  "uiLabels": {
-    "copy": "Kopiuj",
-    "copied": "Skopiowano",
-    "input": "Dane wejściowe",
-    "output": "Wynik",
-    "placeholder": "Wpisz wartość",
-    "indent": "Wcięcie",
-    "removeComments": "Usuń komentarze",
-    "preview": "Podgląd",
-    "source": "Źródło",
-    "sanitizedHtml": "Oczyszczony HTML",
-    "plainText": "Tekst zwykły",
-    "summary": "Podsumowanie",
-    "total": "Razem",
-    "links": "Linki",
-    "images": "Obrazy",
-    "errors": "Błędy",
-    "warnings": "Ostrzeżenia",
-    "valid": "Poprawne",
-    "invalid": "Niepoprawne",
-    "href": "Adres URL",
-    "text": "Tekst",
-    "rel": "Rel",
-    "target": "Cel",
-    "alt": "Alt",
-    "width": "Szerokość",
-    "height": "Wysokość",
-    "empty": "Puste",
-    "outputReady": "Wyniki gotowe",
-    "cleanedHtml": "Oczyszczony HTML",
-    "formattedHtml": "Sformatowany HTML",
-    "minifiedHtml": "Zminifikowany HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Wyodrębnione obrazy",
-    "extractedLinks": "Wyodrębnione linki",
-    "validationSummary": "Podsumowanie walidacji",
-    "prettyHtml": "Czytelny HTML",
-    "encodedText": "Tekst zakodowany",
-    "file": "Plik",
-    "size": "Rozmiar",
-    "format": "Format",
-    "quality": "Jakość",
-    "colorOne": "Kolor 1",
-    "colorTwo": "Kolor 2",
-    "background": "Tło",
-    "foreground": "Pierwszy plan",
-    "angle": "Kąt",
-    "margin": "Margines",
-    "level": "Poziom",
-    "gradientType": "Typ gradientu",
-    "linear": "Liniowy",
-    "radial": "Promienisty",
-    "blur": "Rozmycie",
-    "spread": "Rozszerzenie",
-    "offsetX": "Przesunięcie X",
-    "offsetY": "Przesunięcie Y",
-    "opacity": "Krycie",
-    "inset": "Wewnętrzny",
-    "cssCode": "Kod CSS",
-    "snippet": "Fragment",
-    "download": "Pobierz",
-    "downloadSvg": "Pobierz SVG",
-    "downloadPng": "Pobierz PNG",
-    "downloadAll": "Pobierz wszystko",
-    "upload": "Prześlij",
-    "title": "Tytuł",
-    "description": "Opis",
-    "canonicalUrl": "Adres kanoniczny",
-    "siteName": "Nazwa serwisu",
-    "ogImage": "Obraz Open Graph",
-    "clear": "Wyczyść",
-    "generatedQr": "Wygenerowany kod QR",
-    "placeholderImage": "Obraz zastępczy",
-    "faviconSet": "Zestaw favicon",
-    "keepAspectRatio": "Zachowaj proporcje",
-    "cropX": "Kadrowanie X",
-    "cropY": "Kadrowanie Y",
-    "cropWidth": "Szerokość kadru",
-    "cropHeight": "Wysokość kadru",
-    "originalSize": "Rozmiar oryginalny",
-    "outputSize": "Rozmiar wyjściowy",
-    "savedSize": "Zapisany rozmiar",
-    "result": "Wynik",
-    "base64": "Base64",
-    "mimeType": "Typ MIME",
-    "resizedImage": "Obraz po zmianie rozmiaru",
-    "compressedImage": "Obraz skompresowany",
-    "croppedImage": "Obraz przycięty",
-    "convertedImage": "Obraz przekonwertowany",
-    "decodedImage": "Obraz zdekodowany",
-    "imagePreview": "Podgląd obrazu",
-    "camera": "Kamera",
-    "lens": "Obiektyw",
-    "dateTaken": "Data wykonania",
-    "resolution": "Rozdzielczość",
-    "fileSize": "Rozmiar pliku",
-    "iso": "ISO",
-    "exposure": "Czas naświetlania",
-    "aperture": "Przysłona",
-    "focalLength": "Ogniskowa",
-    "flash": "Lampa błyskowa",
-    "orientation": "Orientacja",
-    "latitude": "Szerokość geograficzna",
-    "longitude": "Długość geograficzna",
-    "openMap": "Otwórz mapę",
-    "rawMetadata": "Surowe metadane",
-    "noMetadataFound": "Nie znaleziono metadanych",
-    "gpsLocation": "Lokalizacja GPS",
-    "metadataSummary": "Podsumowanie metadanych"
-  },
   "seo": {
-    "title": "Kalkulator płyt GK | Ile płyt GK trzeba",
-    "description": "Oblicz ile płyt GK, wkrętów i metrów profili potrzeba do ściany lub sufitu na podstawie powierzchni i wymiarów płyty.",
+    "title": "Kalkulator płyt GK",
+    "description": "Oblicz liczbę płyt GK, wkrętów i metrów profili do ścian i sufitów.",
     "keywords": [
       "kalkulator płyt GK",
-      "ile płyt GK trzeba",
-      "kalkulator GK",
-      "wkręty do płyt GK",
-      "profile do GK"
+      "płyty gk",
+      "wkręty do gk",
+      "profile do gk",
+      "obliczanie materiałów"
     ]
   }
 }

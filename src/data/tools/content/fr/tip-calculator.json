@@ -4,44 +4,81 @@
   "slug": "calculateur-de-pourboire",
   "h1": "Calculateur de pourboire",
   "title": "Calculateur de pourboire",
-  "shortDescription": "Calculez le pourboire et le total de l’addition instantanément avec des résultats rapides, des saisies simples et des exemples pratiques.",
-  "overview": "Calculez le pourboire et le total de l’addition instantanément. Cette page fournit une réponse rapide grâce à un outil pratique et à un flux de résultat simple. Elle vise les utilisateurs qui recherchent une réponse gratuite en ligne, des résultats rapides dans le navigateur et un contenu utile à longue traîne.",
+  "shortDescription": "Calculez le pourboire, le total final et la part par personne à partir du montant de l’addition et du pourcentage choisi.",
+  "metaTitle": "Calculateur de pourboire simple",
+  "metaDescription": "Calculez le pourboire, le total final et la part par personne à partir du montant de l’addition et du pourcentage choisi.",
+  "intro": "Saisissez le montant de l’addition, choisissez le pourcentage de pourboire et obtenez immédiatement le pourboire, le total et la part par personne.",
+  "overview": "Cet outil permet d’ajouter un pourboire à une addition de restaurant, à une course de taxi, à une visite chez le coiffeur ou à tout service facturé en pourcentage du montant de base. Il sert aussi à répartir le total entre plusieurs personnes et à voir la part de chacun.\n\nLe résultat affiche le montant de base, le pourboire et le total final pour vérifier la somme avant de payer. Si vous partagez l’addition, le calcul se fait sur le total avec pourboire, ce qui simplifie le partage équitable du montant.",
   "howItWorks": [
-    "Saisissez la valeur ou le texte demandé dans le formulaire.",
-    "La conversion, le calcul ou la transformation s’exécute instantanément dans le navigateur.",
-    "Vérifiez le résultat et poursuivez avec des outils associés si vous avez besoin d’une étape supplémentaire."
+    "Saisissez le montant de l’addition.",
+    "Choisissez ou tapez le pourcentage de pourboire.",
+    "Indiquez le nombre de personnes si vous souhaitez partager le total.",
+    "Vérifiez le pourboire, le total final et la part par personne."
+  ],
+  "useCases": [
+    {
+      "title": "Addition de restaurant",
+      "description": "Ajoutez 10 %, 15 % ou 20 % à un repas et voyez le montant total à régler."
+    },
+    {
+      "title": "Partage d’un repas en groupe",
+      "description": "Répartissez l’addition finale entre amis en incluant le pourboire dans le calcul."
+    },
+    {
+      "title": "Paiement d’un service",
+      "description": "Calculez le pourboire pour une coupe de cheveux, un massage ou un autre service sans gratuity intégrée."
+    },
+    {
+      "title": "Courses et livraisons",
+      "description": "Estimez le montant final d’un taxi, d’une livraison ou d’un service similaire avec un pourboire en pourcentage."
+    }
   ],
   "examples": [
     {
-      "title": "Exemple 1",
-      "input": "86 avec 15 % de pourboire",
-      "output": "98.90",
-      "description": "Un exemple réaliste de calculateur de pourboire pour une recherche courante."
+      "title": "Dîner avec pourboire habituel",
+      "input": "Addition : 86.00, Pourboire : 15 %",
+      "output": "Pourboire : 12.90, Total : 98.90",
+      "description": "Montre le pourboire ajouté et le total final d’une addition classique."
     },
     {
-      "title": "Exemple 2",
-      "input": "86 avec 15 % de pourboire",
-      "output": "98.90",
-      "description": "Un autre cas pratique pour le trafic organique de longue traîne."
+      "title": "Partage à quatre",
+      "input": "Addition : 142.50, Pourboire : 18 %, Personnes : 4",
+      "output": "Pourboire : 25.65, Total : 168.15, Chacun : 42.04",
+      "description": "Utile lorsqu’une addition doit être partagée après ajout du pourboire."
+    },
+    {
+      "title": "Service à montant rond",
+      "input": "Addition : 50, Pourboire : 20 %",
+      "output": "Pourboire : 10.00, Total : 60.00",
+      "description": "Cas simple pour un paiement de service avec un pourcentage clair."
     }
   ],
   "faq": [
     {
-      "question": "Quelle est la précision de cet outil ?",
-      "answer": "Le résultat est calculé directement à partir de la formule ou de la logique côté navigateur utilisée par cet outil."
+      "question": "Le pourboire est-il calculé avant ou après taxes ?",
+      "answer": "L’outil applique le pourcentage au montant que vous saisissez. Si vous voulez calculer sur le total TTC, entrez ce montant comme base."
     },
     {
-      "question": "Puis-je utiliser cet outil sur mobile ?",
-      "answer": "Oui. La page fonctionne sur ordinateur et sur mobile avec une interface simple de saisie et de résultat."
+      "question": "Comment est calculée la part par personne ?",
+      "answer": "Le total final avec pourboire est d’abord calculé, puis divisé par le nombre de personnes indiqué."
+    },
+    {
+      "question": "Puis-je saisir un pourcentage avec des décimales ?",
+      "answer": "Oui. Vous pouvez utiliser une valeur comme 12,5 % pour obtenir un résultat plus précis."
+    },
+    {
+      "question": "Pourquoi le résultat peut-il différer d’un reçu ?",
+      "answer": "Certains établissements arrondissent, calculent le pourboire différemment ou utilisent une autre base. Il faut donc saisir le même montant de départ que sur l’addition."
     }
   ],
   "seo": {
-    "title": "Calculateur de pourboire",
-    "description": "Calculez le pourboire et le total de l’addition instantanément. Calculateur de pourboire gratuit en ligne avec résultats immédiats.",
+    "title": "Calculateur de pourboire simple",
+    "description": "Calculez le pourboire, le total final et la part par personne à partir du montant de l’addition et du pourcentage choisi.",
     "keywords": [
       "calculateur de pourboire",
-      "pourboire calculateur",
-      "outils calculateur"
+      "calcul pourboire",
+      "partage addition",
+      "pourboire pourcentage"
     ]
   }
 }

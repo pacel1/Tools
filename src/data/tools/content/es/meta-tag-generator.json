@@ -4,159 +4,87 @@
   "slug": "generador-de-metaetiquetas",
   "h1": "Generador de metaetiquetas",
   "title": "Generador de metaetiquetas",
-  "shortDescription": "Genera metaetiquetas HTML para título, descripción, canonical y Open Graph.",
-  "metaTitle": "Generador de Metaetiquetas | Crea metatags SEO al instante",
-  "metaDescription": "Crea metaetiquetas de título, descripción, canonical y Open Graph en segundos con un generador online sencillo.",
-  "intro": "Genera metaetiquetas SEO limpias para páginas web, artículos y landing pages. Crea rápido las etiquetas title, description, canonical y Open Graph y copia un fragmento HTML listo para usar.",
-  "overview": "Este generador de metaetiquetas te ayuda a crear metadatos HTML optimizados para buscadores sin programar manualmente. Introduce los datos de tu página, revisa la vista previa y copia un snippet preparado para SEO, redes sociales y fragmentos del navegador.",
+  "shortDescription": "Crea metaetiquetas HTML para el título, la descripción, la URL canonical y Open Graph.",
+  "metaTitle": "Generador de Metaetiquetas | Crea tags",
+  "metaDescription": "Genera metaetiquetas HTML listas para pegar para título, descripción, URL canonical y datos de Open Graph en un solo lugar.",
+  "intro": "Crea las metaetiquetas HTML que necesita tu página: title, description, canonical URL y campos Open Graph.",
+  "overview": "Esta herramienta te ayuda a preparar los metadatos del head sin escribir cada etiqueta a mano. Genera un bloque ordenado que puedes pegar en tu HTML, útil cuando necesitas un título coherente, una descripción breve, una URL canonical clara y datos de vista previa social en la misma página.\n\nFunciona especialmente bien al crear una página nueva, actualizar un artículo o unificar metadatos en un sitio. Introduce los datos una sola vez, revisa el resultado y copia solo lo que vayas a usar. Así es más fácil mantener las metaetiquetas alineadas con el contenido y evitar campos incompletos o atributos mal formados.",
   "howItWorks": [
-    "Introduce el título de la página y otros metadatos.",
-    "Genera un fragmento completo de metaetiquetas HTML.",
-    "Revisa el resultado para SEO y vista previa social.",
-    "Copia el código y pégalo en la sección head."
+    "Introduce el título de la página, la descripción, la URL canonical, el nombre del sitio y, si quieres, una imagen Open Graph.",
+    "Genera el fragmento de metaetiquetas a partir de los valores que has indicado.",
+    "Revisa el resultado y comprueba que cada campo encaja con el contenido de la página.",
+    "Copia el código y pégalo en la sección head del documento HTML."
   ],
   "useCases": [
-    "Metaetiquetas SEO para landing pages",
-    "Etiquetas Open Graph para compartir en redes sociales",
-    "Generación de etiqueta canonical",
-    "Configuración rápida de metadatos para artículos del blog",
-    "Pruebas de títulos y descripciones"
+    {
+      "title": "Metadatos de ficha de producto",
+      "description": "Prepara título, descripción, canonical y etiquetas para la vista previa social de una página de producto."
+    },
+    {
+      "title": "Cabecera de artículo",
+      "description": "Configura metadatos para una guía, noticia o entrada del blog y haz que el título y el resumen reflejen el contenido real."
+    },
+    {
+      "title": "Limpieza de URLs duplicadas",
+      "description": "Añade canonical a una versión filtrada, paginada o con parámetros para señalar la dirección principal."
+    },
+    {
+      "title": "Landing de campaña",
+      "description": "Genera metadatos para una página promocional con título de campaña, descripción breve e imagen de marca."
+    },
+    {
+      "title": "Control del enlace compartido",
+      "description": "Define título, descripción, nombre del sitio e imagen Open Graph para que el enlace compartido muestre el mensaje correcto."
+    }
   ],
   "examples": [
     {
-      "title": "Mejores zapatillas para correr 2026",
-      "input": "Título y descripción para una página de producto",
-      "output": "Fragmento de metaetiquetas listo para SEO con title, description y Open Graph.",
-      "description": "Útil para páginas de producto y categorías."
+      "title": "Mochila de running compacta",
+      "input": "Título: Mochila de running compacta\nDescripción: Modelo ligero de 8 L con bolsillo para hidratación y correa pectoral.\nURL canonical: https://example.com/productos/mochila-running-compacta\nNombre del sitio: TrailForge\nImagen OG: https://example.com/images/mochila-og.jpg",
+      "output": "<title>Mochila de running compacta</title>\n<meta name=\"description\" content=\"Modelo ligero de 8 L con bolsillo para hidratación y correa pectoral.\">\n<link rel=\"canonical\" href=\"https://example.com/productos/mochila-running-compacta\">\n<meta property=\"og:site_name\" content=\"TrailForge\">\n<meta property=\"og:title\" content=\"Mochila de running compacta\">\n<meta property=\"og:description\" content=\"Modelo ligero de 8 L con bolsillo para hidratación y correa pectoral.\">\n<meta property=\"og:image\" content=\"https://example.com/images/mochila-og.jpg\">",
+      "description": "Útil para una ficha de producto con una URL preferida y una imagen de vista previa."
     },
     {
-      "title": "Cómo empezar un podcast",
-      "input": "Título del artículo y resumen breve",
-      "output": "Metaetiquetas limpias para resultados de búsqueda y vista previa social.",
-      "description": "Ideal para guías y artículos."
+      "title": "Guía de Lisboa en 3 días",
+      "input": "Título: Guía de Lisboa con presupuesto\nDescripción: Plan día a día con costes de transporte, comida y alojamiento.\nURL canonical: https://example.com/guias/lisboa-presupuesto\nNombre del sitio: RouteNotes",
+      "output": "<title>Guía de Lisboa con presupuesto</title>\n<meta name=\"description\" content=\"Plan día a día con costes de transporte, comida y alojamiento.\">\n<link rel=\"canonical\" href=\"https://example.com/guias/lisboa-presupuesto\">\n<meta property=\"og:site_name\" content=\"RouteNotes\">\n<meta property=\"og:title\" content=\"Guía de Lisboa con presupuesto\">\n<meta property=\"og:description\" content=\"Plan día a día con costes de transporte, comida y alojamiento.\">",
+      "description": "Adecuado para contenido editorial con un resumen corto y concreto."
+    },
+    {
+      "title": "Página de registro de webinar",
+      "input": "Título: Webinar sobre sistemas de diseño\nDescripción: Sesión en directo sobre tokens, componentes y trabajo en equipo.\nURL canonical: https://example.com/webinars/sistemas-diseno\nNombre del sitio: StudioLine\nImagen OG: https://cdn.example.com/webinars/sistemas-diseno.png",
+      "output": "<title>Webinar sobre sistemas de diseño</title>\n<meta name=\"description\" content=\"Sesión en directo sobre tokens, componentes y trabajo en equipo.\">\n<link rel=\"canonical\" href=\"https://example.com/webinars/sistemas-diseno\">\n<meta property=\"og:site_name\" content=\"StudioLine\">\n<meta property=\"og:title\" content=\"Webinar sobre sistemas de diseño\">\n<meta property=\"og:description\" content=\"Sesión en directo sobre tokens, componentes y trabajo en equipo.\">\n<meta property=\"og:image\" content=\"https://cdn.example.com/webinars/sistemas-diseno.png\">",
+      "description": "Perfecto para una página de evento con una vista previa bien definida al compartirse."
     }
   ],
   "faq": [
     {
-      "question": "¿Qué hace un generador de metaetiquetas?",
-      "answer": "Crea metadatos HTML como title, description, canonical y etiquetas Open Graph para páginas web."
+      "question": "¿Qué campos conviene rellenar primero si solo necesito lo básico?",
+      "answer": "Empieza por el título, la descripción y la URL canonical. Añade el nombre del sitio y la imagen si quieres enriquecer la vista previa al compartir."
     },
     {
-      "question": "¿Las etiquetas generadas son aptas para SEO?",
-      "answer": "Sí. La herramienta está pensada para SEO práctico y vistas previas en redes sociales."
+      "question": "¿La herramienta cambia automáticamente el título o la descripción de mi página?",
+      "answer": "No. Genera el código a partir de los datos que introduces. Si el contenido cambia, tendrás que volver a generar el fragmento."
     },
     {
-      "question": "¿Puedo copiar el código directamente?",
-      "answer": "Sí. Genera el fragmento y cópialo en la sección head de tu página."
+      "question": "¿Para qué sirve la URL canonical en el resultado?",
+      "answer": "Indica la dirección principal de la página. Usa la URL final preferida, no un enlace con parámetros de seguimiento ni una versión de pruebas."
     },
     {
-      "question": "¿Necesito saber programar?",
-      "answer": "No. Puedes generar metaetiquetas sin escribir HTML manualmente."
+      "question": "¿Cuál es el error más común al usar el resultado?",
+      "answer": "Suele ocurrir que el código se pega en una parte incorrecta del documento o que la descripción es demasiado larga, genérica o no coincide con la página."
     }
   ],
-  "uiLabels": {
-    "copy": "Copiar",
-    "copied": "Copiado",
-    "input": "Entrada",
-    "output": "Salida",
-    "placeholder": "Introduce el título de la página",
-    "indent": "Sangría",
-    "removeComments": "Eliminar comentarios",
-    "preview": "Vista previa",
-    "source": "Fuente",
-    "sanitizedHtml": "HTML saneado",
-    "plainText": "Texto plano",
-    "summary": "Resumen",
-    "total": "Total",
-    "links": "Enlaces",
-    "images": "Imágenes",
-    "errors": "Errores",
-    "warnings": "Advertencias",
-    "valid": "Válido",
-    "invalid": "No válido",
-    "href": "Href",
-    "text": "Texto",
-    "rel": "Rel",
-    "target": "Destino",
-    "alt": "Alt",
-    "width": "Ancho",
-    "height": "Alto",
-    "empty": "Vacío",
-    "outputReady": "Salida lista",
-    "cleanedHtml": "HTML limpiado",
-    "formattedHtml": "HTML formateado",
-    "minifiedHtml": "HTML minificado",
-    "markdown": "Markdown",
-    "extractedImages": "Imágenes extraídas",
-    "extractedLinks": "Enlaces extraídos",
-    "validationSummary": "Resumen de validación",
-    "prettyHtml": "HTML legible",
-    "encodedText": "Texto codificado",
-    "file": "Archivo",
-    "size": "Tamaño",
-    "format": "Formato",
-    "quality": "Calidad",
-    "colorOne": "Color 1",
-    "colorTwo": "Color 2",
-    "background": "Fondo",
-    "foreground": "Primer plano",
-    "angle": "Ángulo",
-    "margin": "Margen",
-    "level": "Nivel",
-    "gradientType": "Tipo de degradado",
-    "linear": "Lineal",
-    "radial": "Radial",
-    "blur": "Desenfoque",
-    "spread": "Extensión",
-    "offsetX": "Desplazamiento X",
-    "offsetY": "Desplazamiento Y",
-    "opacity": "Opacidad",
-    "inset": "Inset",
-    "cssCode": "Código CSS",
-    "snippet": "Fragmento",
-    "download": "Descargar",
-    "downloadSvg": "Descargar SVG",
-    "downloadPng": "Descargar PNG",
-    "downloadAll": "Descargar todo",
-    "upload": "Subir",
-    "title": "Título",
-    "description": "Descripción",
-    "canonicalUrl": "URL canonical",
-    "siteName": "Nombre del sitio",
-    "ogImage": "Imagen OG",
-    "clear": "Limpiar",
-    "generatedQr": "Vista previa del codigo QR",
-    "placeholderImage": "Vista previa de la imagen",
-    "faviconSet": "Conjunto de favicon",
-    "keepAspectRatio": "Mantener proporción",
-    "cropX": "Recorte X",
-    "cropY": "Recorte Y",
-    "cropWidth": "Ancho del recorte",
-    "cropHeight": "Alto del recorte",
-    "originalSize": "Tamaño original",
-    "outputSize": "Tamaño de salida",
-    "savedSize": "Tamaño ahorrado",
-    "result": "Resultado",
-    "base64": "Base64",
-    "mimeType": "Tipo MIME",
-    "resizedImage": "Imagen redimensionada",
-    "compressedImage": "Imagen comprimida",
-    "croppedImage": "Imagen recortada",
-    "convertedImage": "Imagen convertida",
-    "decodedImage": "Imagen decodificada",
-    "imagePreview": "Vista previa de la imagen"
-  },
   "seo": {
-    "title": "Generador de Metaetiquetas | Crea metatags SEO al instante",
-    "description": "Crea metaetiquetas de título, descripción, canonical y Open Graph en segundos con un generador online sencillo.",
+    "title": "Generador de Metaetiquetas | Crea tags",
+    "description": "Genera metaetiquetas HTML listas para pegar para título, descripción, URL canonical y datos de Open Graph en un solo lugar.",
     "keywords": [
       "generador de metaetiquetas",
-      "metatags seo",
-      "generador open graph",
-      "generador etiqueta canonical",
-      "etiquetas meta html",
+      "metaetiquetas html",
+      "url canonical",
+      "open graph tags",
       "generador title tag",
-      "generador de descripción meta"
+      "meta description"
     ]
   }
 }

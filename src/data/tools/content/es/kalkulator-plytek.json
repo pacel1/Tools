@@ -4,177 +4,92 @@
   "slug": "calculadora-de-azulejos",
   "h1": "Calculadora de azulejos",
   "title": "Calculadora de azulejos para suelo y pared",
-  "shortDescription": "Calcula cuántos azulejos y cajas necesitas para un suelo o una pared, incluyendo cortes y margen de desperdicio.",
-  "metaTitle": "Calculadora de azulejos - ¿Cuántos azulejos necesito?",
-  "metaDescription": "Calcula el número de azulejos, las cajas necesarias y la superficie con margen para reformas de suelos y paredes.",
-  "intro": "Usa esta calculadora de azulejos para planificar tu compra con rapidez. Introduce la superficie total, el tamaño del azulejo, el porcentaje de desperdicio y cuántos azulejos trae cada caja.",
-  "overview": "Esta calculadora de azulejos estima cuántas piezas necesitas para suelos y paredes. Convierte las medidas del azulejo a metros cuadrados, añade el margen por cortes y roturas, y redondea el resultado a azulejos y cajas completas. Así sabrás enseguida cuántos azulejos necesitas.",
+  "shortDescription": "Calcula cuántos azulejos y cajas necesitas para un suelo o una pared, con cortes y margen de reserva.",
+  "metaTitle": "Calculadora de azulejos para obra",
+  "metaDescription": "Calcula cuántos azulejos y cajas comprar, incluyendo margen por cortes, roturas y reserva.",
+  "intro": "Introduce la superficie, el tamaño del azulejo, el porcentaje de reserva y los azulejos por caja para obtener una cantidad de compra concreta.",
+  "overview": "Esta calculadora de azulejos convierte las medidas de cada pieza a superficie, añade la reserva que indiques para cortes, remates y posibles roturas, y después redondea el resultado a azulejos y cajas completas. Es útil para baños, cocinas, terrazas y paredes con huecos, esquinas o zonas de instalación complicada.\n\nEl resultado muestra la cantidad que conviene comprar, no solo la superficie visible. Así puedes comparar la cifra con el formato de venta del comercio y evitar quedarte corto cuando falte una caja del mismo lote.",
   "howItWorks": [
     "Introduce la superficie total en metros cuadrados.",
-    "Añade el ancho y el alto del azulejo en centímetros.",
-    "Define el porcentaje de desperdicio para cortes y sobrantes.",
-    "Indica cuántos azulejos trae una caja.",
-    "Obtén el total de azulejos, cajas necesarias y la superficie con margen."
+    "Escribe el ancho y el alto del azulejo en centímetros.",
+    "Define el porcentaje de reserva para cortes y roturas.",
+    "Indica cuántos azulejos trae cada caja.",
+    "Obtén el total de azulejos, cajas y superficie de compra."
   ],
   "useCases": [
-    "Calcular azulejos para un baño.",
-    "Planificar la compra de azulejos para cocina, pasillo o terraza.",
-    "Comprobar cuántos azulejos comprar antes de una reforma.",
-    "Comparar el número de cajas en una tienda de azulejos.",
-    "Añadir margen para colocaciones en diagonal o cortes difíciles."
+    {
+      "title": "Baño con muchos recortes",
+      "description": "Calcula los azulejos de ducha, tras el lavabo y en la zona del inodoro, donde suelen aparecer más cortes."
+    },
+    {
+      "title": "Suelo de cocina con rincones",
+      "description": "Planifica la compra cuando hay esquinas, pasos de puerta o huecos por muebles fijos."
+    },
+    {
+      "title": "Terraza exterior",
+      "description": "Añade margen extra para bordes, remates y piezas que puedan romperse durante la colocación."
+    },
+    {
+      "title": "Verificación de cajas",
+      "description": "Comprueba cuántas cajas necesitas realmente antes de ir a la tienda o hacer el pedido."
+    },
+    {
+      "title": "Colocación en diagonal",
+      "description": "Suma un margen mayor si el patrón de colocación genera más desperdicio y piezas pequeñas."
+    }
   ],
   "examples": [
     {
-      "title": "Ejemplo de cálculo",
-      "input": "Superficie: 12 m², azulejo: 30 x 60 cm, desperdicio: 10%, azulejos por caja: 8",
-      "output": "Superficie con margen: 13,2 m². El número de azulejos y cajas se redondea hacia arriba.",
-      "description": "Sirve para estimar la compra rápidamente."
+      "title": "Cálculo para pared de baño",
+      "input": "Superficie: 18 m², azulejo: 25 x 40 cm, desperdicio: 12%, azulejos por caja: 10",
+      "output": "Superficie con margen: 20,16 m². Resultado redondeado: 202 azulejos y 21 cajas.",
+      "description": "Útil para una pared con varios cortes y reservas."
     },
     {
-      "title": "Fórmula",
-      "input": "Superficie del azulejo = ancho × alto / 10.000. Superficie con margen = superficie × (1 + desperdicio/100). Azulejos = ceil(superficie con margen / superficie del azulejo). Cajas = ceil(azulejos / azulejos por caja).",
-      "output": "Todos los resultados finales se redondean hacia arriba.",
-      "description": "Lógica de cálculo clara para planificar la compra."
+      "title": "Suelo de cocina con formato grande",
+      "input": "Superficie: 9,5 m², azulejo: 60 x 60 cm, desperdicio: 8%, azulejos por caja: 4",
+      "output": "Superficie con margen: 10,26 m². Resultado redondeado: 29 azulejos y 8 cajas.",
+      "description": "Muestra cómo influye el formato grande en el número de cajas."
+    },
+    {
+      "title": "Terraza con azulejo pequeño",
+      "input": "Superficie: 27,4 m², azulejo: 20 x 20 cm, desperdicio: 15%, azulejos por caja: 25",
+      "output": "Superficie con margen: 31,51 m². Resultado redondeado: 788 azulejos y 32 cajas.",
+      "description": "Refleja el efecto de un margen mayor en una superficie grande."
     }
   ],
   "faq": [
     {
-      "question": "¿Cómo calculo cuántos azulejos necesito?",
-      "answer": "Mide la superficie en m², convierte el tamaño del azulejo a m², añade desperdicio y divide entre la superficie de un azulejo. Luego redondea hacia arriba."
+      "question": "¿Debo introducir toda la habitación o solo la zona que se va a alicatar?",
+      "answer": "Introduce solo la superficie que realmente se va a cubrir con azulejo. No hace falta sumar zonas que no llevarán revestimiento."
     },
     {
-      "question": "¿Por qué debo añadir desperdicio al comprar azulejos?",
-      "answer": "El desperdicio cubre cortes, roturas, ajustes de patrón y posibles errores durante la instalación."
+      "question": "¿Por qué el número de cajas puede parecer alto?",
+      "answer": "Porque siempre se redondea hacia arriba a cajas completas. Si falta parte de una caja, igualmente debes comprarla entera."
     },
     {
-      "question": "¿La calculadora sirve para paredes y suelos?",
-      "answer": "Sí. Funciona para cualquier superficie alicatada si conoces el área total y el tamaño del azulejo."
+      "question": "¿Puedo poner el tamaño del azulejo en milímetros?",
+      "answer": "Conviene convertirlo a centímetros antes de calcular. Mezclar unidades cambia la superficie de cada pieza y altera el resultado."
     },
     {
-      "question": "¿Debo redondear el número de azulejos?",
-      "answer": "Sí. Redondea siempre a azulejos y cajas completas para no quedarte corto."
+      "question": "¿Qué margen conviene en una colocación recta?",
+      "answer": "En una disposición sencilla basta con una reserva menor. Si hay diagonales, patrones o muchas esquinas, conviene subirla."
+    },
+    {
+      "question": "¿Sirve si el comercio vende por metro cuadrado y no por unidades?",
+      "answer": "Sí. En ese caso, usa sobre todo la superficie con margen y compárala con la cobertura que indique el paquete o el vendedor."
     }
   ],
-  "uiLabels": {
-    "copy": "Copiar",
-    "copied": "Copiado",
-    "input": "Entrada",
-    "output": "Salida",
-    "placeholder": "Introduce un valor",
-    "indent": "Sangria",
-    "removeComments": "Eliminar comentarios",
-    "preview": "Vista previa",
-    "source": "Fuente",
-    "sanitizedHtml": "HTML saneado",
-    "plainText": "Texto plano",
-    "summary": "Resumen",
-    "total": "Total",
-    "links": "Enlaces",
-    "images": "Imagenes",
-    "errors": "Errores",
-    "warnings": "Avisos",
-    "valid": "Valido",
-    "invalid": "Invalido",
-    "href": "Href",
-    "text": "Texto",
-    "rel": "Rel",
-    "target": "Destino",
-    "alt": "Alt",
-    "width": "Ancho",
-    "height": "Alto",
-    "empty": "Vacio",
-    "outputReady": "Resultado listo",
-    "cleanedHtml": "HTML limpio",
-    "formattedHtml": "HTML formateado",
-    "minifiedHtml": "HTML minificado",
-    "markdown": "Markdown",
-    "extractedImages": "Imagenes extraidas",
-    "extractedLinks": "Enlaces extraidos",
-    "validationSummary": "Resumen de validacion",
-    "prettyHtml": "HTML legible",
-    "encodedText": "Texto codificado",
-    "file": "Archivo",
-    "size": "Tamaño",
-    "format": "Formato",
-    "quality": "Calidad",
-    "colorOne": "Color 1",
-    "colorTwo": "Color 2",
-    "background": "Fondo",
-    "foreground": "Primer plano",
-    "angle": "Angulo",
-    "margin": "Margen",
-    "level": "Nivel",
-    "gradientType": "Tipo de degradado",
-    "linear": "Lineal",
-    "radial": "Radial",
-    "blur": "Desenfoque",
-    "spread": "Difusion",
-    "offsetX": "Desplazamiento X",
-    "offsetY": "Desplazamiento Y",
-    "opacity": "Opacidad",
-    "inset": "Inset",
-    "cssCode": "Codigo CSS",
-    "snippet": "Fragmento",
-    "download": "Descargar",
-    "downloadSvg": "Descargar SVG",
-    "downloadPng": "Descargar PNG",
-    "downloadAll": "Descargar todo",
-    "upload": "Subir",
-    "title": "Titulo",
-    "description": "Descripcion",
-    "canonicalUrl": "URL canonica",
-    "siteName": "Nombre del sitio",
-    "ogImage": "Imagen OG",
-    "clear": "Limpiar",
-    "generatedQr": "QR generado",
-    "placeholderImage": "Imagen de marcador",
-    "faviconSet": "Conjunto de favicon",
-    "keepAspectRatio": "Mantener relacion de aspecto",
-    "cropX": "Recorte X",
-    "cropY": "Recorte Y",
-    "cropWidth": "Ancho del recorte",
-    "cropHeight": "Alto del recorte",
-    "originalSize": "Tamano original",
-    "outputSize": "Tamano de salida",
-    "savedSize": "Tamano ahorrado",
-    "result": "Resultado",
-    "base64": "Base64",
-    "mimeType": "Tipo MIME",
-    "resizedImage": "Imagen redimensionada",
-    "compressedImage": "Imagen comprimida",
-    "croppedImage": "Imagen recortada",
-    "convertedImage": "Imagen convertida",
-    "decodedImage": "Imagen decodificada",
-    "imagePreview": "Vista previa de la imagen",
-    "camera": "Camara",
-    "lens": "Lente",
-    "dateTaken": "Fecha de captura",
-    "resolution": "Resolucion",
-    "fileSize": "Tamano del archivo",
-    "iso": "ISO",
-    "exposure": "Exposicion",
-    "aperture": "Apertura",
-    "focalLength": "Distancia focal",
-    "flash": "Flash",
-    "orientation": "Orientacion",
-    "latitude": "Latitud",
-    "longitude": "Longitud",
-    "openMap": "Abrir mapa",
-    "rawMetadata": "Metadatos sin procesar",
-    "noMetadataFound": "No se encontraron metadatos",
-    "gpsLocation": "Ubicacion GPS",
-    "metadataSummary": "Resumen de metadatos"
-  },
   "seo": {
-    "title": "Calculadora de azulejos - ¿Cuántos azulejos necesito?",
-    "description": "Calcula cuántos azulejos y cajas comprar para suelo o pared, con margen por cortes y desperdicio.",
+    "title": "Calculadora de azulejos para obra",
+    "description": "Calcula cuántos azulejos y cajas comprar, incluyendo margen por cortes, roturas y reserva.",
     "keywords": [
       "calculadora de azulejos",
-      "cuantos azulejos necesito",
       "azulejos por caja",
-      "calculadora de azulejos suelo",
-      "calculadora de azulejos pared",
-      "desperdicio azulejos"
+      "cuantos azulejos necesito",
+      "azulejos para pared",
+      "azulejos para suelo",
+      "margen de desperdicio"
     ]
   }
 }

@@ -4,104 +4,87 @@
   "slug": "html-formatierer",
   "h1": "HTML-Formatierer",
   "title": "HTML-Formatierer",
-  "shortDescription": "Formatiere unübersichtliches HTML mit lesbaren Einzügen und sauberer Struktur.",
-  "metaTitle": "HTML-Formatierer online | HTML-Code sauber formatieren",
-  "metaDescription": "Formatiere unübersichtliches HTML online mit klaren Einzügen, besserer Verschachtelung und sauber strukturiertem HTML.",
-  "intro": "Mit diesem HTML-Formatierer machst du aus unübersichtlichem Code sauber lesbares HTML. Er verbessert Einzüge, Verschachtelung und Struktur und erleichtert so Prüfung, Fehleranalyse und Pflege.",
-  "overview": "Dieser HTML-Formatierer ordnet Tags, verbessert Einrückungen und macht verschachtelte Elemente übersichtlich, ohne die Bedeutung deines Markups zu verändern. Er läuft direkt im Browser, sodass dein HTML clientseitig bleibt. Ideal zum Aufräumen von Code, zum Prüfen von Vorlagen oder zum Vorbereiten von Snippets.",
+  "shortDescription": "Wandle unübersichtliches HTML in lesbaren Code mit sauberen Einzügen um.",
+  "metaTitle": "HTML-Formatierer | Klarer Code",
+  "metaDescription": "Wandle unübersichtliches HTML in lesbares, sauber eingerücktes Markup um, ohne die Dokumentstruktur zu verändern.",
+  "intro": "Füge dein HTML ein und erhalte sauber eingerückten, gut lesbaren Code ohne Änderungen an der Dokumentstruktur.",
+  "overview": "Dieser Formatierer ordnet Tags, Verschachtelungen und Leerzeichen so, dass Markup leichter geprüft und bearbeitet werden kann. Die Reihenfolge der Elemente und der Inhalt bleiben erhalten, die Hierarchie wird jedoch sofort sichtbar.\n\nDas ist nützlich, wenn HTML aus einem CMS, aus einem Build-Ergebnis oder aus mehreren Quellen stammt. Da das Tool im Browser arbeitet, eignet es sich gut zum Prüfen von Snippets, Vergleichen von Vorlagenversionen und für manuelle Nacharbeiten.",
   "howItWorks": [
     "HTML in das Eingabefeld einfügen.",
-    "Falls verfügbar, Formatoptionen wie Einzug oder Kommentarentfernung auswählen.",
-    "Zum Formatieren klicken und sauberes HTML erzeugen.",
-    "Das Ergebnis kopieren und im Projekt verwenden."
+    "Falls verfügbar, Einzug oder Kommentarverhalten einstellen.",
+    "Den Formatter starten, um sauber strukturiertes HTML zu erzeugen.",
+    "Das Ergebnis kopieren und im Editor, in Notizen oder im Projekt verwenden."
   ],
   "useCases": [
-    "Minifiziertes oder chaotisches HTML bereinigen.",
-    "Vorlagen vor dem Deployment prüfen.",
-    "Eingefügten Code leichter lesbar und bearbeitbar machen.",
-    "HTML-Snippets für Dokumentation oder Zusammenarbeit vorbereiten.",
-    "Strukturen in Seiten, E-Mails oder Komponenten kontrollieren."
+    {
+      "title": "CMS-Ausgabe prüfen",
+      "description": "Bereinige vom Editor erzeugtes HTML, bevor du nach fehlenden Containern oder falscher Verschachtelung suchst."
+    },
+    {
+      "title": "Vorlagenversionen vergleichen",
+      "description": "Formatiere beide Versionen vor dem Diff, damit Strukturänderungen besser auffallen."
+    },
+    {
+      "title": "E-Mail-Markup aufräumen",
+      "description": "Lange Tabellen- und Inline-Fragmente werden übersichtlicher und lassen sich sicherer manuell anpassen."
+    },
+    {
+      "title": "Snippets für Dokumentation aufbereiten",
+      "description": "Zeige dem Team das Markup in einer klaren Form, damit die Komponentenstruktur schneller erkennbar ist."
+    }
   ],
   "examples": [
     {
-      "title": "Unübersichtliches HTML",
-      "input": "<div><p>Hello</p><ul><li>One</li><li>Two</li></ul></div>",
-      "output": "<div>\n  <p>Hello</p>\n  <ul>\n    <li>One</li>\n    <li>Two</li>\n  </ul>\n</div>",
-      "description": "Macht kompaktes Markup als verschachteltes HTML lesbar."
+      "title": "Kompakte Produktkarte",
+      "input": "<article><h3>Pro Plan</h3><p>Everything included</p><a href=\"/pricing\">View plans</a></article>",
+      "output": "<article>\n  <h3>Pro Plan</h3>\n  <p>Everything included</p>\n  <a href=\"/pricing\">View plans</a>\n</article>",
+      "description": "Macht ein einzeiliges Component-Markup lesbar."
     },
     {
-      "title": "Unformatiertes Template",
-      "input": "<section><h2>Title</h2><div><img src=\"a.jpg\" alt=\"A\"></div></section>",
-      "output": "<section>\n  <h2>Title</h2>\n  <div>\n    <img src=\"a.jpg\" alt=\"A\">\n  </div>\n</section>",
-      "description": "Verbessert die Einrückung, ohne die Struktur zu verändern."
+      "title": "Verschachtelter Layout-Ausschnitt",
+      "input": "<div class=\"wrap\"><header><nav><a href=\"/\">Home</a><a href=\"/docs\">Docs</a></nav></header><main><section><img src=\"hero.jpg\" alt=\"Hero\"></section></main></div>",
+      "output": "<div class=\"wrap\">\n  <header>\n    <nav>\n      <a href=\"/\">Home</a>\n      <a href=\"/docs\">Docs</a>\n    </nav>\n  </header>\n  <main>\n    <section>\n      <img src=\"hero.jpg\" alt=\"Hero\">\n    </section>\n  </main>\n</div>",
+      "description": "Teilt ein dichtes Layout in klar erkennbare Bereiche auf."
+    },
+    {
+      "title": "E-Mail-Tabellenfragment",
+      "input": "<table><tr><td><strong>Order #4821</strong></td><td align=\"right\">Shipped</td></tr><tr><td colspan=\"2\"><a href=\"https://example.com\">Track package</a></td></tr></table>",
+      "output": "<table>\n  <tr>\n    <td><strong>Order #4821</strong></td>\n    <td align=\"right\">Shipped</td>\n  </tr>\n  <tr>\n    <td colspan=\"2\">\n      <a href=\"https://example.com\">Track package</a>\n    </td>\n  </tr>\n</table>",
+      "description": "Zeigt, wie tabellenlastiges HTML leichter geprüft und bearbeitet werden kann."
     }
   ],
   "faq": [
     {
-      "question": "Ändert die Formatierung mein HTML?",
-      "answer": "Nein. Es werden nur Abstände, Einzüge und die Strukturansicht verbessert. Die Bedeutung des Codes bleibt gleich."
+      "question": "Ändert das Formatieren die Attributreihenfolge oder den Inhalt?",
+      "answer": "Es sollte die Bedeutung des HTML nicht verändern. Das Ziel ist bessere Einrückung und Lesbarkeit, nicht das Umschreiben von Inhalten."
     },
     {
-      "question": "Ist dieses Tool sicher?",
-      "answer": "Ja. Es ist für die Nutzung im Browser ausgelegt und sendet deinen Code nicht an eine externe API."
+      "question": "Warum bleibt manches Inline-Markup in einer Zeile?",
+      "answer": "Kurze Inline-Strukturen können kompakt bleiben, wenn der Formatter sie so belässt. Das ist meist normal und vermeidet unnötige Zeilenumbrüche."
     },
     {
-      "question": "Kann ich minifiziertes HTML formatieren?",
-      "answer": "Ja. Das Tool eignet sich sehr gut für minifiziertes, chaotisches oder eingefügtes HTML und macht es lesbar."
+      "question": "Was passiert bei fehlerhaftem HTML?",
+      "answer": "Stark beschädigtes Markup kann dennoch formatiert werden, aber das Ergebnis folgt dann der bestmöglichen Parser-Interpretation. Fehlerhafte Tags solltest du möglichst zuerst korrigieren."
     },
     {
-      "question": "Werden Kommentare entfernt?",
-      "answer": "Das hängt von den verfügbaren Optionen ab. Wenn das Entfernen von Kommentaren aktiviert ist, können sie beim Formatieren entfernt werden."
+      "question": "Kann ich Kommentare beim Formatieren entfernen?",
+      "answer": "Wenn das Entfernen von Kommentaren aktiviert ist, können sie gelöscht werden. Andernfalls bleiben sie erhalten."
+    },
+    {
+      "question": "Warum unterscheidet sich das Ergebnis von der Pretty-Ansicht meines Editors?",
+      "answer": "Verschiedene Formatter nutzen unterschiedliche Regeln für Zeilenumbrüche, Leerzeichen und leere Elemente. Kleine Abweichungen sind normal."
     }
   ],
-  "uiLabels": {
-    "copy": "Kopieren",
-    "copied": "Kopiert",
-    "input": "HTML input",
-    "output": "Formatiertes HTML",
-    "placeholder": "HTML hier einfügen...",
-    "indent": "Einzug",
-    "removeComments": "Kommentare entfernen",
-    "preview": "Vorschau",
-    "source": "Quelle",
-    "sanitizedHtml": "Bereinigtes HTML",
-    "plainText": "Klartext",
-    "summary": "Zusammenfassung",
-    "total": "Gesamt",
-    "links": "Links",
-    "images": "Bilder",
-    "errors": "Fehler",
-    "warnings": "Warnungen",
-    "valid": "Gültig",
-    "invalid": "Ungültig",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Breite",
-    "height": "Höhe",
-    "empty": "Leer",
-    "outputReady": "Formatiertes HTML bereit",
-    "cleanedHtml": "Bereinigtes HTML",
-    "formattedHtml": "Formatiertes HTML",
-    "minifiedHtml": "Minifiziertes HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extrahierte Bilder",
-    "extractedLinks": "Extrahierte Links",
-    "validationSummary": "Validierungszusammenfassung",
-    "prettyHtml": "Schön formatiertes HTML",
-    "encodedText": "Kodierter Text"
-  },
   "seo": {
-    "title": "HTML-Formatierer online | HTML-Code sauber formatieren",
-    "description": "Formatiere unübersichtliches HTML online mit klaren Einzügen, besserer Verschachtelung und sauber strukturiertem HTML.",
+    "title": "HTML-Formatierer | Klarer Code",
+    "description": "Wandle unübersichtliches HTML in lesbares, sauber eingerücktes Markup um, ohne die Dokumentstruktur zu verändern.",
     "keywords": [
       "html formatierer",
       "html formatieren",
-      "html einruecken",
-      "html sauber machen",
-      "html beautifier"
+      "html einrücken",
+      "html aufräumen",
+      "html beautifier",
+      "schöner html code"
     ]
   }
 }

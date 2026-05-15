@@ -4,44 +4,85 @@
   "slug": "sprawdzanie-gestosci-fraz-kluczowych",
   "h1": "Sprawdzanie gęstości fraz kluczowych",
   "title": "Sprawdzanie gęstości fraz kluczowych",
-  "shortDescription": "Sprawdź gęstość słów kluczowych w tekście — szybko, prosto i z praktycznymi przykładami.",
-  "overview": "Sprawdź gęstość słów kluczowych w dowolnym fragmencie tekstu. Ta strona daje szybki wynik dzięki prostemu narzędziu online i przejrzystemu przebiegowi działania. To rozwiązanie dla osób, które szukają darmowej odpowiedzi w przeglądarce, natychmiastowych wyników i praktycznej treści pod długie frazy.",
+  "shortDescription": "Sprawdź, jak często fraza pojawia się w tekście i jaki ma udział w całości.",
+  "metaTitle": "Sprawdzanie gęstości fraz",
+  "metaDescription": "Sprawdź liczbę wystąpień frazy, liczbę słów i gęstość tekstu w jednym miejscu.",
+  "intro": "Wklej tekst i wpisz frazę docelową, aby zobaczyć liczbę wystąpień, łączną liczbę słów oraz procent gęstości.",
+  "overview": "To narzędzie przydaje się, gdy chcesz ocenić, jak często konkretna fraza pojawia się w artykule, opisie produktu, landing page’u albo roboczym szkicu. Pokazuje jednocześnie wystąpienia frazy i liczbę słów w tekście, więc łatwiej ocenić, czy termin pojawia się zbyt często, zbyt rzadko, czy w odpowiednim tempie.\n\nWynik pomaga przy redakcji przed publikacją, porównywaniu kilku sekcji tej samej strony oraz sprawdzaniu, czy powtórzenia nie brzmią sztucznie. Przydaje się też wtedy, gdy chcesz osobno przejrzeć wstęp, rozwinięcie i zakończenie oraz zobaczyć, gdzie fraza skupia się najmocniej.",
   "howItWorks": [
-    "Wpisz wymagane słowo, frazę lub tekst w formularzu.",
-    "Obliczenie lub analiza uruchamia się od razu w przeglądarce.",
-    "Sprawdź wynik i skorzystaj z powiązanych narzędzi, jeśli potrzebujesz kolejnego kroku."
+    "Wklej lub wpisz tekst do analizy.",
+    "Podaj słowo lub frazę, którą chcesz policzyć.",
+    "Odczytaj liczbę wystąpień, liczbę słów i gęstość w wyniku."
+  ],
+  "useCases": [
+    {
+      "title": "Przegląd szkicu artykułu",
+      "description": "Sprawdź, ile razy główna fraza pojawia się w tekście przed przekazaniem materiału do korekty lub publikacji."
+    },
+    {
+      "title": "Dopasowanie strony ofertowej",
+      "description": "Porównaj użycie frazy w sekcji sprzedażowej, aby treść była spójna, ale nie brzmiała nienaturalnie."
+    },
+    {
+      "title": "Kontrola opisu produktu",
+      "description": "Zobacz, czy opis produktu nie powtarza jednego zwrotu zbyt często albo nie jest zbyt ogólny."
+    },
+    {
+      "title": "Analiza sekcji osobno",
+      "description": "Testuj wstęp, środek i zakończenie oddzielnie, żeby ustalić, która część zwiększa liczbę wystąpień."
+    }
   ],
   "examples": [
     {
-      "title": "Przykład 1",
-      "input": "Artykuł SEO + fraza docelowa",
-      "output": "Procent gęstości słowa kluczowego",
-      "description": "Realistyczny przykład sprawdzania gęstości fraz kluczowych dla codziennego zapytania."
+      "title": "Artykuł blogowy",
+      "input": "Tekst: \"Gęstość fraz pomaga uniknąć zbyt częstych powtórzeń. Sprawdzanie gęstości fraz pokazuje, czy fraza jest użyta rozsądnie.\"\nFraza: \"gęstość fraz\"",
+      "output": "Wystąpienia: 3\nLiczba słów: 18\nGęstość: 16,67%",
+      "description": "Pokazuje liczenie powtórzeń w krótkim fragmencie artykułu."
     },
     {
-      "title": "Przykład 2",
-      "input": "Artykuł SEO + fraza docelowa",
-      "output": "Procent gęstości słowa kluczowego",
-      "description": "Kolejny praktyczny przypadek użycia pod ruch organiczny z długiego ogona."
+      "title": "Opis produktu",
+      "input": "Tekst: \"Buty do biegania na co dzień. Te buty do biegania są lekkie, wygodne i trwałe, a buty do biegania sprawdzają się na dłuższych trasach.\"\nFraza: \"buty do biegania\"",
+      "output": "Wystąpienia: 3\nLiczba słów: 22\nGęstość: 13,64%",
+      "description": "Przydatne przy kontroli powtórzeń w opisie sprzedażowym."
+    },
+    {
+      "title": "Fraza z przecinkami",
+      "input": "Tekst: \"Marketing e-mailowy, marketing e-mailowy w praktyce i lepsze wyniki marketingu e-mailowego mają znaczenie.\"\nFraza: \"marketing e-mailowy\"",
+      "output": "Wystąpienia: 2\nLiczba słów: 13\nGęstość: 15,38%",
+      "description": "Pokazuje, jak narzędzie liczy frazę mimo znaków interpunkcyjnych i odmiany."
     }
   ],
   "faq": [
     {
-      "question": "Jak dokładne jest to narzędzie?",
-      "answer": "Wynik jest obliczany bezpośrednio na podstawie wzoru lub logiki po stronie przeglądarki użytej w tym narzędziu."
+      "question": "Czy narzędzie liczy tylko dokładne dopasowania?",
+      "answer": "Liczy frazę tak, jak została wpisana. Jeśli chcesz sprawdzić warianty liczby pojedynczej i mnogiej, przeanalizuj je osobno."
     },
     {
-      "question": "Czy mogę używać tego narzędzia na telefonie?",
-      "answer": "Tak. Strona działa na komputerach i urządzeniach mobilnych, oferując prosty układ pola wejściowego i wyniku."
+      "question": "Dlaczego gęstość rośnie po skróceniu tekstu?",
+      "answer": "Bo gęstość zależy zarówno od liczby wystąpień, jak i od całkowitej liczby słów. Gdy tekst jest krótszy, ten sam termin daje wyższy procent."
+    },
+    {
+      "question": "Jak interpretować bardzo wysoki wynik?",
+      "answer": "Zwykle oznacza to, że fraza pojawia się wiele razy w krótkim tekście. W krótkiej notatce może to być normalne, ale w dopracowanej treści często brzmi zbyt powtarzalnie."
+    },
+    {
+      "question": "Jaki błąd zdarza się najczęściej?",
+      "answer": "Często wpisuje się jedno słowo zamiast pełnej frazy wielowyrazowej. Taki wynik nie pokazuje wtedy rzeczywistego obrazu użycia terminu."
+    },
+    {
+      "question": "Czy mogę sprawdzić tylko jedną sekcję strony?",
+      "answer": "Tak. Wklejanie pojedynczych fragmentów pozwala zobaczyć, gdzie fraza występuje najczęściej, bez mieszania całej treści."
     }
   ],
   "seo": {
-    "title": "Sprawdzanie gęstości fraz kluczowych",
-    "description": "Sprawdź gęstość słów kluczowych w tekście. Darmowe narzędzie online do analizy gęstości fraz z natychmiastowym wynikiem.",
+    "title": "Sprawdzanie gęstości fraz",
+    "description": "Sprawdź liczbę wystąpień frazy, liczbę słów i gęstość tekstu w jednym miejscu.",
     "keywords": [
-      "sprawdzanie gęstości fraz kluczowych",
-      "sprawdzanie gęstości słów kluczowych",
-      "narzędzie tekstowe"
+      "sprawdzanie gęstości fraz",
+      "gęstość słów kluczowych",
+      "analiza tekstu",
+      "licznik fraz",
+      "sprawdzenie frazy"
     ]
   }
 }

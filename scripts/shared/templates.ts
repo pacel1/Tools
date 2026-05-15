@@ -183,11 +183,31 @@ export function createFallbackToolContent(
         h1: locale === "en" ? definition.title : `${definition.title}`,
         title: definition.title,
         shortDescription: definition.shortDescription,
-        overview: `${definition.title} is scaffolded from a single JSON definition and designed to be extended with localized SEO sections.`,
+        metaTitle: definition.title,
+        metaDescription: definition.shortDescription,
+        intro: `${definition.title} gives users a focused place to enter the relevant values, review the result and continue their workflow without leaving the page.`,
+        overview: `${definition.title} starts with a generated baseline so the tool can be reviewed in the browser before final editorial work begins. Replace this paragraph with domain-specific guidance, realistic examples and local terminology before publishing the page as finished content. The final version should explain when to use the tool, what the result means and which limits users should keep in mind.`,
         howItWorks: [
           `${localePrefixes[locale]} ${definition.title}.`,
           "Generated code validates inputs with Zod before running the core logic.",
           "The page includes examples, FAQ, metadata and related internal links."
+        ],
+        useCases: [
+          {
+            title: "Initial review",
+            description:
+              "Use the generated page to verify that inputs, output labels and page structure match the intended tool workflow."
+          },
+          {
+            title: "Editorial rewrite",
+            description:
+              "Replace scaffolded copy with specific use cases, examples and answers before the page is treated as production content."
+          },
+          {
+            title: "Quality validation",
+            description:
+              "Run content validation after editing to catch generic phrases, thin sections and repeated example data."
+          }
         ],
         examples: [
           {
@@ -195,6 +215,18 @@ export function createFallbackToolContent(
             input: "Sample input",
             output: "Sample output",
             description: "Replace this generated example with domain-specific examples."
+          },
+          {
+            title: "Second sample scenario",
+            input: "Another sample input",
+            output: "Another sample output",
+            description: "Use a different input to show how the tool behaves in another realistic scenario."
+          },
+          {
+            title: "Edge sample scenario",
+            input: "Boundary sample input",
+            output: "Boundary sample output",
+            description: "Document a practical limit or interpretation detail users should understand."
           }
         ],
         faq: [
@@ -206,6 +238,16 @@ export function createFallbackToolContent(
             question: "Where should I customize this tool?",
             answer:
               "Update the generated schema, logic, component and locale JSON files after scaffolding."
+          },
+          {
+            question: "Should this generated copy be published as-is?",
+            answer:
+              "No. Treat the fallback text as a scaffold and replace it with specific, reviewed content for each locale."
+          },
+          {
+            question: "How should examples be prepared?",
+            answer:
+              "Use varied realistic inputs, exact outputs and short explanations that match the intent of the tool."
           }
         ],
         seo: {

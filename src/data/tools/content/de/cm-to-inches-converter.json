@@ -4,59 +4,79 @@
   "slug": "cm-zu-zoll-umrechner",
   "h1": "CM-zu-Zoll-Umrechner",
   "title": "CM-zu-Zoll-Umrechner",
-  "shortDescription": "Zentimeter sofort in Zoll umrechnen, inklusive Formel, Beispielen und schnellen Ergebnissen im Browser.",
-  "metaTitle": "CM in Zoll umrechnen | Zentimeter-zu-Zoll-Umrechner",
-  "metaDescription": "Rechne Zentimeter in Zoll um. Kostenloser Online-Umrechner mit Formel, Beispielen und schnellen Ergebnissen fuer Kleidung, Displays und DIY-Masse.",
-  "intro": "Wenn du cm in Zoll umrechnen willst, liefert dir diese Seite sofort die passende Antwort. Der Rechner nutzt den festen Faktor 1 cm = 0,3937007874 Zoll und eignet sich fuer Alltag, Technik, Handwerk und Produktmasse.",
-  "overview": "Dieser Zentimeter-zu-Zoll-Umrechner passt zur Suchintention hinter Anfragen wie cm zu Zoll, Zentimeter in Zoll umrechnen und 10 cm in Zoll. Er ist hilfreich fuer Kleidungsgroessen, Bildschirmangaben, Bastelmasse und technische Datenblaetter, bei denen eine schnelle und saubere Umrechnung gebraucht wird.",
+  "shortDescription": "Wandle Zentimeter mit dem Standardfaktor in Zoll um und erhalte sofort einen klaren Messwert.",
+  "metaTitle": "CM-zu-Zoll-Umrechner",
+  "metaDescription": "Wandle Zentimeter in Zoll um mit Standardfaktor, klaren Ergebnissen und Beispielen für Maße, Produkte und technische Angaben.",
+  "intro": "Gib einen Wert in Zentimetern ein und erhalte sofort das passende Ergebnis in Zoll mit dem Standardfaktor 1 cm = 0,3937007874 in.",
+  "overview": "Dieser Umrechner hilft, wenn ein Maß in Zentimetern vorliegt, du es aber in Zoll brauchst. Die Berechnung basiert auf der festen Beziehung zwischen beiden Einheiten und eignet sich daher für Vergleiche, technische Angaben und Produktdaten.\n\nBesonders nützlich ist das Tool bei Größenangaben für Möbel, Verpackungen, Bildschirme und Werkstattmaße. Wenn du die andere Richtung brauchst, verwende den Zoll-zu-Zentimeter-Umrechner.",
   "howItWorks": [
-    "Gib den Wert in Zentimetern in das Formular ein.",
-    "Der Rechner multipliziert den Wert mit 0,3937007874 und zeigt das Ergebnis in Zoll an.",
-    "Pruefe das Resultat und nutze bei Bedarf den passenden Gegenrechner fuer Zoll in Zentimeter."
+    "Zentimeterwert eingeben.",
+    "Das Tool multipliziert mit 0,3937007874.",
+    "Ergebnis in Zoll ablesen und bei Bedarf übernehmen."
   ],
   "useCases": [
-    "Kleidung, Schuhe oder Accessoires mit Zollangaben vergleichen.",
-    "Bildschirm- und Monitorgroessen besser einordnen.",
-    "Werkstatt-, Bastel- oder DIY-Masse umrechnen.",
-    "Technische Produktdaten aus internationalen Shops lesen."
+    {
+      "title": "Produkt- und Verpackungsangaben",
+      "description": "Zentimeterangaben aus Katalogen oder Lieferantendaten in Zoll umrechnen."
+    },
+    {
+      "title": "Möbel und Raumplanung",
+      "description": "Prüfen, ob Breite, Tiefe oder Höhe in ein zollbasiertes Konzept passt."
+    },
+    {
+      "title": "Werkstatt, Hobby und Zuschnitt",
+      "description": "Längen und Materialmaße für Holz, Stoff oder Bastelprojekte in Zoll übertragen."
+    },
+    {
+      "title": "Technische Geräte und Displays",
+      "description": "Gerätemaße in Zentimetern mit Dokumentationen vergleichen, die in Zoll geführt werden."
+    }
   ],
   "examples": [
     {
-      "title": "10 cm in Zoll",
-      "input": "10 Zentimeter",
-      "output": "3,937 Zoll",
-      "description": "Ein typisches Beispiel fuer Produktmasse, Verpackungen oder kleine Bauteile."
+      "title": "Kleines Bauteil",
+      "input": "7,5 cm",
+      "output": "2,9528 Zoll",
+      "description": "Praktisch für Zubehör, Kleinteile und Einlagen."
     },
     {
-      "title": "120 cm in Zoll",
-      "input": "120 Zentimeter",
-      "output": "47,244 Zoll",
-      "description": "Praktisch fuer Groessenangaben bei Moebeln, Displays oder Wandabstaenden."
+      "title": "Einbauöffnung",
+      "input": "180 cm",
+      "output": "70,8661 Zoll",
+      "description": "Hilfreich für Höhe, Breite oder verfügbaren Einbauraum."
+    },
+    {
+      "title": "Möbeltiefe",
+      "input": "42 cm",
+      "output": "16,5354 Zoll",
+      "description": "Nützlich für Regale, Schränke und kompakte Aufbewahrung."
     }
   ],
   "faq": [
     {
-      "question": "Welche Formel wird fuer cm in Zoll verwendet?",
-      "answer": "Der Rechner nutzt den festen Faktor 1 cm = 0,3937007874 Zoll. Damit lassen sich Zentimeterwerte direkt in Zoll umrechnen."
+      "question": "Welche Umrechnung verwendet das Tool?",
+      "answer": "Es wird 1 cm = 0,3937007874 Zoll verwendet, also die standardisierte Beziehung zwischen den Einheiten."
     },
     {
-      "question": "Ist der Rechner auch fuer Bildschirmgroessen hilfreich?",
-      "answer": "Ja. Er ist praktisch, wenn du internationale Angaben in Zoll mit metrischen Massen vergleichen willst."
+      "question": "Kann ich Dezimalzahlen eingeben?",
+      "answer": "Ja. Werte wie 12,4 cm oder 0,8 cm werden direkt verarbeitet."
     },
     {
-      "question": "Kann ich das Tool auf dem Handy nutzen?",
-      "answer": "Ja. Die Seite funktioniert auf Desktop- und Mobilgeraeten mit einem einfachen Eingabe- und Ergebnislayout."
+      "question": "Warum zeigt das Ergebnis manchmal viele Nachkommastellen?",
+      "answer": "Die Genauigkeit bleibt erhalten, damit du je nach Einsatzzweck selbst passend runden kannst."
+    },
+    {
+      "question": "Welcher Fehler passiert am häufigsten?",
+      "answer": "Centimeter und Millimeter werden verwechselt. Bei Millimetern musst du zuerst durch 10 teilen."
     }
   ],
   "seo": {
-    "title": "CM in Zoll umrechnen | Zentimeter-zu-Zoll-Umrechner",
-    "description": "Rechne Zentimeter in Zoll um. Kostenloser Online-Umrechner mit Formel, Beispielen und schnellen Ergebnissen fuer Kleidung, Displays und DIY-Masse.",
+    "title": "CM-zu-Zoll-Umrechner",
+    "description": "Wandle Zentimeter in Zoll um mit Standardfaktor, klaren Ergebnissen und Beispielen für Maße, Produkte und technische Angaben.",
     "keywords": [
-      "cm in zoll",
+      "cm zu zoll",
       "cm zu zoll umrechner",
-      "zentimeter in zoll umrechnen",
-      "cm in zoll umrechnen",
-      "cm zu zoll"
+      "zentimeter in zoll"
     ]
   }
 }

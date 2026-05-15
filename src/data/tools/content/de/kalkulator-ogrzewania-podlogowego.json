@@ -4,173 +4,85 @@
   "slug": "fussbodenheizung-rechner",
   "h1": "Fußbodenheizung-Rechner",
   "title": "Fußbodenheizung-Rechner",
-  "shortDescription": "Schätze Rohrlänge und Anzahl der Heizkreise für eine wassergeführte Fußbodenheizung.",
-  "metaTitle": "Fußbodenheizung-Rechner | Rohrlänge und Heizkreise",
-  "metaDescription": "Berechne, wie viel Rohr du für eine Fußbodenheizung brauchst, wie viele Heizkreise nötig sind und wie lang ein Kreis im Durchschnitt ist – basierend auf Fläche, Verlegeabstand und Verschnitt.",
-  "intro": "Nutze diesen Fußbodenheizung-Rechner, um Rohrlänge, Anzahl der Heizkreise und die durchschnittliche Kreislänge für eine wassergeführte Anlage zu schätzen. Er ist eine praktische Grundlage für die Materialplanung und die Frage: Wie viel Rohr braucht man für die Fußbodenheizung?",
-  "overview": "Gib die beheizte Fläche, den Rohrabstand, die maximale Kreislänge, die zusätzliche Anschlusslänge und den Verschnitt ein, um eine schnelle Schätzung für Rohrbedarf und Kreislänge zu erhalten.",
+  "shortDescription": "Schätze Rohrlänge und Heizkreisanzahl für eine wassergeführte Fußbodenheizung.",
+  "metaTitle": "Fußbodenheizung-Rechner",
+  "metaDescription": "Berechne Rohrlänge, Heizkreise und die durchschnittliche Kreislänge für eine wassergeführte Fußbodenheizung aus Fläche, Abstand und Verschnitt.",
+  "intro": "Schätze Rohrbedarf, Heizkreisanzahl und durchschnittliche Kreislänge für eine wassergeführte Fußbodenheizung.",
+  "overview": "Dieser Rechner ermittelt den Rohrbedarf einer wassergeführten Fußbodenheizung anhand der beheizten Fläche, des Verlegeabstands, der maximalen Kreislänge, zusätzlicher Anschlusswege zum Verteiler und eines Verschnittanteils. Er hilft bei der Materialplanung, bevor Rohrrollen bestellt oder Verteilergrößen festgelegt werden. Außerdem zeigt das Ergebnis, ob eine Fläche mit einem Kreis auskommt oder auf mehrere Heizkreise aufgeteilt werden sollte.",
   "howItWorks": [
     "Gib die beheizte Fläche in Quadratmetern ein.",
-    "Lege den Rohrabstand in Zentimetern fest.",
-    "Trage die maximal erlaubte Kreislänge ein.",
+    "Lege den Verlegeabstand in Zentimetern fest.",
+    "Trage die zulässige maximale Kreislänge ein.",
     "Füge die zusätzliche Anschlusslänge zum Verteiler hinzu.",
-    "Berücksichtige einen Verschnittprozentsatz für Zuschnitte und Verlegung."
+    "Berücksichtige einen Verschnittsatz für Zuschnitt und Verlegung."
   ],
   "useCases": [
-    "Berechnen, wie viel Rohr für die Fußbodenheizung benötigt wird.",
-    "Planung der Anzahl der Heizkreise vor der Installation.",
-    "Prüfen, ob ein Raum innerhalb der zulässigen Kreislänge bleibt.",
-    "Schnelle Materialabschätzung für Neubau oder Sanierung."
+    {
+      "title": "Rohrbedarf für einen Raum bestimmen",
+      "description": "Berechne die ungefähre Rohrmenge für Wohnzimmer, Schlafzimmer oder eine offene Zone vor der Bestellung."
+    },
+    {
+      "title": "Heizkreise am Verteiler planen",
+      "description": "Prüfe, wie viele Kreise nötig sind, damit jede Schleife unter deiner Maximalvorgabe bleibt."
+    },
+    {
+      "title": "Verlegeabstände vergleichen",
+      "description": "Teste, wie sich ein engerer oder weiterer Abstand auf Rohrlänge und Kreisanzahl auswirkt."
+    },
+    {
+      "title": "Sanierung mit längeren Zuleitungen",
+      "description": "Beziehe Leitungen zum Verteiler mit ein, wenn dieser nicht direkt neben der beheizten Fläche sitzt."
+    }
   ],
   "examples": [
     {
-      "title": "Rechenbeispiel",
-      "input": "100 m2 Fläche, 15 cm Abstand, 100 m maximale Kreislänge, 5 m Zusatzlänge, 10 % Verschnitt",
-      "output": "Rohrlänge, Kreisanzahl und durchschnittliche Kreislänge werden aus den Eingaben geschätzt.",
-      "description": "Typisches Planungsszenario für eine wassergeführte Fußbodenheizung."
+      "title": "Wohnzimmer mit naher Verteilung",
+      "input": "Fläche: 34 m2, Abstand: 15 cm, max. Kreis: 95 m, Zusatzlänge: 8 m, Verschnitt: 7 %",
+      "output": "Der geschätzte Rohrbedarf liegt bei rund 265 m, verteilt auf 3 Heizkreise mit etwa 88 m pro Kreis.",
+      "description": "Typischer Fall für einen mittelgroßen Raum mit kurzem Weg zum Verteiler."
     },
     {
-      "title": "Materialplanung",
-      "input": "Vergleiche das Ergebnis mit Verteilerkapazität und Rohrrollenlänge",
-      "output": "Hilft, Rohrmenge und benötigte Kreise realistisch einzuplanen.",
-      "description": "Nützlich für die frühe Budgetplanung."
+      "title": "Offener Erdgeschossbereich",
+      "input": "Fläche: 82 m2, Abstand: 10 cm, max. Kreis: 100 m, Zusatzlänge: 12 m, Verschnitt: 10 %",
+      "output": "Der geschätzte Rohrbedarf steigt auf rund 922 m, sodass 10 Heizkreise mit durchschnittlich etwa 92 m nötig sind.",
+      "description": "Zeigt, wie stark dichter Verlegeabstand den Rohrbedarf erhöht."
+    },
+    {
+      "title": "Kleines Bad",
+      "input": "Fläche: 9,5 m2, Abstand: 20 cm, max. Kreis: 70 m, Zusatzlänge: 6 m, Verschnitt: 5 %",
+      "output": "Der geschätzte Rohrbedarf liegt bei rund 59 m, also reicht ein einzelner Heizkreis innerhalb des Limits.",
+      "description": "Geeignet für eine kleine Zone mit nur einem Kreis."
     }
   ],
   "faq": [
     {
-      "question": "Wie genau ist dieser Rechner?",
-      "answer": "Er liefert eine praxisnahe Schätzung für die Planung. Das Endergebnis kann je nach Raumform, Randzonen, Verteileranordnung und Verlegeart abweichen."
+      "question": "Was ändert der Verlegeabstand am Ergebnis?",
+      "answer": "Ein kleinerer Abstand führt zu mehr Rohr und oft zu mehr Heizkreisen. Ein größerer Abstand senkt den Rohrbedarf, kann aber die Wärmeverteilung beeinflussen."
     },
     {
-      "question": "Worauf wirkt sich der Rohrabstand aus?",
-      "answer": "Kleinere Abstände erhöhen die gesamte Rohrlänge, größere Abstände verringern sie. Der Rechner nutzt den Abstand zur Schätzung des Rohrbedarfs."
+      "question": "Warum muss ich die Anschlusslänge angeben?",
+      "answer": "Weil das Rohr vom Verteiler zur Heizfläche und wieder zurück geführt wird. Ohne diese Strecke wäre die Schätzung zu knapp."
     },
     {
-      "question": "Warum ist die zusätzliche Anschlusslänge wichtig?",
-      "answer": "Sie deckt die Leitungen vom Verteiler zur beheizten Fläche und zurück ab. Dadurch wird die Schätzung realistischer."
+      "question": "Kann der Rechner unregelmäßige Räume abbilden?",
+      "answer": "Nur näherungsweise. Nischen, Pfeiler, Randzonen und verwinkelte Grundrisse können den echten Rohrbedarf erhöhen."
     },
     {
-      "question": "Was passiert, wenn die Kreislänge zu lang ist?",
-      "answer": "Der Rechner zeigt an, dass mehr Heizkreise nötig sind, damit jeder Kreis unter der vorgegebenen Maximal Länge bleibt."
+      "question": "Wie lese ich die Kreislänge?",
+      "answer": "Sie zeigt die durchschnittliche Länge pro Heizkreis. Liegt sie nahe an deinem Maximum, solltest du mehr Kreise einplanen oder den Verlauf anpassen."
     },
     {
-      "question": "Ist das auch für elektrische Fußbodenheizung geeignet?",
-      "answer": "Nein. Dieses Tool ist für die Planung von wassergeführten Rohrsystemen gedacht, nicht für elektrische Matten oder Heizkabel."
+      "question": "Kann ich mehrere Räume zusammenrechnen?",
+      "answer": "Ja, wenn sie dieselbe Heizzone bilden und gleiche Einstellungen nutzen. Bei abweichenden Abständen oder Grenzen lieber getrennt rechnen."
+    },
+    {
+      "question": "Wozu dient der Verschnitt?",
+      "answer": "Er deckt Zuschnitte, Bögen und kleine Korrekturen ab. Ohne Verschnitt kann am Ende Rohr fehlen."
     }
   ],
-  "uiLabels": {
-    "copy": "Kopieren",
-    "copied": "Kopiert",
-    "input": "Eingabe",
-    "output": "Ausgabe",
-    "placeholder": "Wert eingeben",
-    "indent": "Einzug",
-    "removeComments": "Kommentare entfernen",
-    "preview": "Vorschau",
-    "source": "Quelle",
-    "sanitizedHtml": "Bereinigtes HTML",
-    "plainText": "Klartext",
-    "summary": "Zusammenfassung",
-    "total": "Gesamt",
-    "links": "Links",
-    "images": "Bilder",
-    "errors": "Fehler",
-    "warnings": "Warnungen",
-    "valid": "Gültig",
-    "invalid": "Ungültig",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Ziel",
-    "alt": "Alt",
-    "width": "Breite",
-    "height": "Höhe",
-    "empty": "Leer",
-    "outputReady": "Ergebnis bereit",
-    "cleanedHtml": "Bereinigtes HTML",
-    "formattedHtml": "Formatiertes HTML",
-    "minifiedHtml": "Minifiziertes HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extrahierte Bilder",
-    "extractedLinks": "Extrahierte Links",
-    "validationSummary": "Validierungsübersicht",
-    "prettyHtml": "Lesbares HTML",
-    "encodedText": "Kodierter Text",
-    "file": "Datei",
-    "size": "Größe",
-    "format": "Format",
-    "quality": "Qualität",
-    "colorOne": "Farbe 1",
-    "colorTwo": "Farbe 2",
-    "background": "Hintergrund",
-    "foreground": "Vordergrund",
-    "angle": "Winkel",
-    "margin": "Rand",
-    "level": "Stufe",
-    "gradientType": "Verlaufstyp",
-    "linear": "Linear",
-    "radial": "Radial",
-    "blur": "Unschärfe",
-    "spread": "Ausdehnung",
-    "offsetX": "Versatz X",
-    "offsetY": "Versatz Y",
-    "opacity": "Deckkraft",
-    "inset": "Innen",
-    "cssCode": "CSS-Code",
-    "snippet": "Snippet",
-    "download": "Herunterladen",
-    "downloadSvg": "SVG herunterladen",
-    "downloadPng": "PNG herunterladen",
-    "downloadAll": "Alle herunterladen",
-    "upload": "Hochladen",
-    "title": "Titel",
-    "description": "Beschreibung",
-    "canonicalUrl": "Kanonische URL",
-    "siteName": "Seitenname",
-    "ogImage": "OG-Bild",
-    "clear": "Löschen",
-    "generatedQr": "Generierter QR-Code",
-    "placeholderImage": "Platzhalterbild",
-    "faviconSet": "Favicon-Set",
-    "keepAspectRatio": "Seitenverhältnis beibehalten",
-    "cropX": "Zuschneiden X",
-    "cropY": "Zuschneiden Y",
-    "cropWidth": "Zuschneidebreite",
-    "cropHeight": "Zuschneidehöhe",
-    "originalSize": "Originalgröße",
-    "outputSize": "Ausgabegröße",
-    "savedSize": "Gesparte Größe",
-    "result": "Ergebnis",
-    "base64": "Base64",
-    "mimeType": "MIME-Typ",
-    "resizedImage": "Skaliertes Bild",
-    "compressedImage": "Komprimiertes Bild",
-    "croppedImage": "Zugeschnittenes Bild",
-    "convertedImage": "Konvertiertes Bild",
-    "decodedImage": "Dekodiertes Bild",
-    "imagePreview": "Bildvorschau",
-    "camera": "Kamera",
-    "lens": "Objektiv",
-    "dateTaken": "Aufnahmedatum",
-    "resolution": "Auflösung",
-    "fileSize": "Dateigröße",
-    "iso": "ISO",
-    "exposure": "Belichtung",
-    "aperture": "Blende",
-    "focalLength": "Brennweite",
-    "flash": "Blitz",
-    "orientation": "Ausrichtung",
-    "latitude": "Breitengrad",
-    "longitude": "Längengrad",
-    "openMap": "Karte öffnen",
-    "rawMetadata": "Rohmetadaten",
-    "noMetadataFound": "Keine Metadaten gefunden",
-    "gpsLocation": "GPS-Position",
-    "metadataSummary": "Metadatenübersicht"
-  },
   "seo": {
     "title": "Fußbodenheizung-Rechner",
-    "description": "Berechne Rohrlänge, Anzahl der Heizkreise und die durchschnittliche Kreislänge für wassergeführte Fußbodenheizung anhand von Fläche, Verlegeabstand und Verschnitt.",
+    "description": "Berechne Rohrlänge, Heizkreise und die durchschnittliche Kreislänge für eine wassergeführte Fußbodenheizung aus Fläche, Abstand und Verschnitt.",
     "keywords": [
       "fußbodenheizung rechner",
       "rohrlänge berechnen",

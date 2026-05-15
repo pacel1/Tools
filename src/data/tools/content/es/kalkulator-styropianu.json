@@ -4,176 +4,97 @@
   "slug": "calculadora-de-aislamiento-de-poliestireno",
   "h1": "Calculadora de aislamiento de poliestireno",
   "title": "Calculadora de aislamiento de poliestireno",
-  "shortDescription": "Calcula cuántos paquetes de poliestireno necesitas para paredes, suelos, techos o cimentaciones.",
-  "metaTitle": "Calculadora de aislamiento de poliestireno - paquetes necesarios",
-  "metaDescription": "Calcula el volumen de aislamiento, la superficie con desperdicio y cuántos paquetes de poliestireno necesitas.",
-  "intro": "Usa esta calculadora de aislamiento de poliestireno para estimar rápidamente cuántos paquetes necesitas para una fachada, suelo, techo o cimentación. Introduce la superficie, el grosor, la cobertura del paquete, el desperdicio y el volumen por paquete para obtener un resultado claro.",
-  "overview": "Esta herramienta ayuda a planificar mejor la cantidad de material aislante. Convierte la superficie y el grosor en volumen de aislamiento, añade un margen de desperdicio y estima el número de paquetes según la cobertura y el volumen del paquete. Es útil para placas EPS en paredes, suelos, cubiertas y cimentaciones.",
+  "shortDescription": "Calcula cuántos paquetes de EPS necesitas para paredes, suelos, cubiertas o cimentaciones a partir de la superficie y el grosor.",
+  "metaTitle": "Calculadora de paquetes EPS",
+  "metaDescription": "Calcula el volumen de aislamiento, el margen para cortes y el número de paquetes de poliestireno que necesitas para la obra.",
+  "intro": "Introduce la superficie a aislar, el grosor de la placa, la cobertura por paquete, el porcentaje de desperdicio y el volumen del paquete para saber cuántos paquetes pedir.",
+  "overview": "Esta calculadora convierte los datos del proyecto en una cantidad de compra razonable para EPS. Parte de la superficie y del espesor para obtener el volumen de aislamiento, y luego añade un margen por cortes, ajustes y pérdidas de montaje, de modo que el pedido se acerque más al consumo real.\n\nFunciona para fachadas, suelos, cubiertas y cimentaciones, donde el contenido de cada paquete puede variar entre fabricantes. Al introducir tanto la cobertura por paquete como el volumen del embalaje, puedes adaptar el cálculo al producto exacto que tienes previsto comprar.",
   "howItWorks": [
     "Introduce la superficie a aislar en metros cuadrados.",
-    "Define el grosor del aislamiento en centímetros.",
-    "Indica la cobertura por paquete y el volumen del paquete.",
-    "Añade el porcentaje de desperdicio por cortes y ajustes.",
-    "Obtén el volumen de aislamiento, la superficie con desperdicio y el número de paquetes."
+    "Define el grosor del poliestireno en centímetros.",
+    "Añade la cobertura por paquete y el volumen del paquete según la ficha del producto.",
+    "Indica un porcentaje de desperdicio para cortes, recortes y pérdidas en obra.",
+    "Consulta el volumen de aislamiento, la superficie ajustada y el número de paquetes redondeado."
   ],
   "useCases": [
-    "Calcular paquetes de poliestireno para una fachada.",
-    "Planificar la cantidad de EPS para el aislamiento del suelo.",
-    "Comprobar material necesario para un tejado o cubierta.",
-    "Estimar paquetes para aislar una cimentación.",
-    "Comparar necesidades de material antes de comprar."
-  ],
-  "examples": [
     {
-      "title": "Aislamiento de fachada",
-      "input": "150 m2 de superficie, 15 cm de grosor, 5 m2 por paquete, 8% de desperdicio, 0,75 m3 por paquete",
-      "output": "Muestra el volumen necesario, la superficie ajustada y los paquetes estimados.",
-      "description": "Útil para pedir la cantidad correcta de placas EPS para paredes exteriores."
+      "title": "Pedido para fachada exterior",
+      "description": "Calcula cuántos paquetes necesitas antes de encargar placas EPS para los muros exteriores."
     },
     {
       "title": "Aislamiento de suelo",
-      "input": "80 m2 de superficie, 10 cm de grosor, 4 m2 por paquete, 5% de desperdicio, 0,4 m3 por paquete",
-      "output": "Muestra el volumen de material y la estimación de paquetes para el suelo.",
-      "description": "Ayuda a evitar faltantes al aislar bajo la solera."
+      "description": "Estima el material bajo la solera o la losa para que la capa aislante encaje con el plano."
+    },
+    {
+      "title": "Cubierta plana o inclinada",
+      "description": "Comprueba la cantidad de paneles antes de organizar la entrega en obra."
+    },
+    {
+      "title": "Cimentación y zócalo",
+      "description": "Calcula paquetes para zonas enterradas o perimetrales con muchos remates y cortes."
+    },
+    {
+      "title": "Comparación de presupuestos",
+      "description": "Compara varias referencias cuando cambian la cobertura por paquete o el volumen del embalaje."
+    }
+  ],
+  "examples": [
+    {
+      "title": "Fachada de vivienda unifamiliar",
+      "input": "168 m2 de superficie, 16 cm de grosor, 5,0 m2 por paquete, 9% de desperdicio, 0,80 m3 por paquete",
+      "output": "Muestra el volumen necesario, la superficie ajustada y la cantidad de paquetes redondeada al alza.",
+      "description": "Útil para encargar placas EPS para un sistema de fachada."
+    },
+    {
+      "title": "Suelo de nave",
+      "input": "240 m2 de superficie, 12 cm de grosor, 4,8 m2 por paquete, 6% de desperdicio, 0,58 m3 por paquete",
+      "output": "Devuelve el volumen total y el número estimado de paquetes para la capa de suelo.",
+      "description": "Ayuda a preparar la compra antes del recrecido o la solera."
+    },
+    {
+      "title": "Perímetro de cimentación",
+      "input": "62 m2 de superficie, 10 cm de grosor, 3,6 m2 por paquete, 12% de desperdicio, 0,36 m3 por paquete",
+      "output": "Presenta el volumen de aislamiento y una cantidad mayor por el margen de cortes.",
+      "description": "Adecuado para zonas con esquinas, encuentros y piezas pequeñas."
+    },
+    {
+      "title": "Rehabilitación de cubierta plana",
+      "input": "93 m2 de superficie, 18 cm de grosor, 4,2 m2 por paquete, 8% de desperdicio, 0,76 m3 por paquete",
+      "output": "Calcula el volumen y el total de paquetes necesarios para la cubierta.",
+      "description": "Sirve para revisar el material antes de la entrega de la cubierta caliente."
     }
   ],
   "faq": [
     {
-      "question": "¿Qué calcula la calculadora de aislamiento de poliestireno?",
-      "answer": "Calcula el volumen del aislamiento en m3, la superficie con desperdicio y el número estimado de paquetes necesarios."
+      "question": "¿Por qué conviene introducir cobertura por paquete y volumen por paquete a la vez?",
+      "answer": "Porque algunos productos se venden por superficie y otros por volumen, y no siempre coinciden exactamente. Introducir ambos datos permite que el cálculo refleje el formato real del paquete."
     },
     {
-      "question": "¿Sirve para paredes, suelos, techos y cimentaciones?",
-      "answer": "Sí. La calculadora es válida para las aplicaciones más comunes del EPS."
+      "question": "¿Qué hago si mi obra tiene muchas esquinas u huecos?",
+      "answer": "Añade esa complejidad al porcentaje de desperdicio. La calculadora trabaja con la superficie total que escribes, así que las pérdidas por cortes deben cubrirse con un margen mayor."
     },
     {
-      "question": "¿Por qué debo introducir un porcentaje de desperdicio?",
-      "answer": "El desperdicio cubre cortes, ajustes y pequeñas pérdidas durante la instalación."
+      "question": "¿Puedo usar el número redondeado como pedido final?",
+      "answer": "Sí, como base del pedido. Antes de cerrar la compra, revisa el tamaño de las placas, el contenido del paquete y los detalles constructivos que puedan aumentar el consumo."
     },
     {
-      "question": "¿Importa más la cobertura por paquete o el volumen por paquete?",
-      "answer": "Ambos datos son útiles. La cobertura ayuda con la superficie y el volumen confirma la cantidad total de material."
+      "question": "¿Cuál es el error más habitual al escribir el grosor?",
+      "answer": "Confundir centímetros con milímetros. El campo espera centímetros: 12 cm se escribe como 12, no como 120 ni 0,12."
+    },
+    {
+      "question": "¿Qué pasa si la ficha del producto indica piezas y m3 por paquete?",
+      "answer": "Usa los datos del mismo producto. Si la ficha incluye ambas referencias, la cantidad de paquetes debería ser coherente con el volumen y el tamaño de las placas."
     }
   ],
-  "uiLabels": {
-    "copy": "Copiar",
-    "copied": "Copiado",
-    "input": "Entrada",
-    "output": "Salida",
-    "placeholder": "Introduce un valor",
-    "indent": "Sangría",
-    "removeComments": "Eliminar comentarios",
-    "preview": "Vista previa",
-    "source": "Fuente",
-    "sanitizedHtml": "HTML saneado",
-    "plainText": "Texto plano",
-    "summary": "Resumen",
-    "total": "Total",
-    "links": "Enlaces",
-    "images": "Imágenes",
-    "errors": "Errores",
-    "warnings": "Avisos",
-    "valid": "Válido",
-    "invalid": "No válido",
-    "href": "Href",
-    "text": "Texto",
-    "rel": "Rel",
-    "target": "Destino",
-    "alt": "Alt",
-    "width": "Ancho",
-    "height": "Alto",
-    "empty": "Vacío",
-    "outputReady": "Resultado listo",
-    "cleanedHtml": "HTML limpio",
-    "formattedHtml": "HTML formateado",
-    "minifiedHtml": "HTML minificado",
-    "markdown": "Markdown",
-    "extractedImages": "Imágenes extraídas",
-    "extractedLinks": "Enlaces extraídos",
-    "validationSummary": "Resumen de validación",
-    "prettyHtml": "HTML legible",
-    "encodedText": "Texto codificado",
-    "file": "Archivo",
-    "size": "Tamaño",
-    "format": "Formato",
-    "quality": "Calidad",
-    "colorOne": "Color 1",
-    "colorTwo": "Color 2",
-    "background": "Fondo",
-    "foreground": "Primer plano",
-    "angle": "Ángulo",
-    "margin": "Margen",
-    "level": "Nivel",
-    "gradientType": "Tipo de degradado",
-    "linear": "Lineal",
-    "radial": "Radial",
-    "blur": "Desenfoque",
-    "spread": "Extensión",
-    "offsetX": "Desplazamiento X",
-    "offsetY": "Desplazamiento Y",
-    "opacity": "Opacidad",
-    "inset": "Interior",
-    "cssCode": "Código CSS",
-    "snippet": "Fragmento",
-    "download": "Descargar",
-    "downloadSvg": "Descargar SVG",
-    "downloadPng": "Descargar PNG",
-    "downloadAll": "Descargar todo",
-    "upload": "Subir",
-    "title": "Título",
-    "description": "Descripción",
-    "canonicalUrl": "URL canónica",
-    "siteName": "Nombre del sitio",
-    "ogImage": "Imagen OG",
-    "clear": "Limpiar",
-    "generatedQr": "QR generado",
-    "placeholderImage": "Imagen de marcador",
-    "faviconSet": "Conjunto de favicon",
-    "keepAspectRatio": "Mantener proporción",
-    "cropX": "Recorte X",
-    "cropY": "Recorte Y",
-    "cropWidth": "Ancho del recorte",
-    "cropHeight": "Alto del recorte",
-    "originalSize": "Tamaño original",
-    "outputSize": "Tamaño de salida",
-    "savedSize": "Tamaño ahorrado",
-    "result": "Resultado",
-    "base64": "Base64",
-    "mimeType": "Tipo MIME",
-    "resizedImage": "Imagen redimensionada",
-    "compressedImage": "Imagen comprimida",
-    "croppedImage": "Imagen recortada",
-    "convertedImage": "Imagen convertida",
-    "decodedImage": "Imagen decodificada",
-    "imagePreview": "Vista previa de la imagen",
-    "camera": "Cámara",
-    "lens": "Lente",
-    "dateTaken": "Fecha de captura",
-    "resolution": "Resolución",
-    "fileSize": "Tamaño de archivo",
-    "iso": "ISO",
-    "exposure": "Exposición",
-    "aperture": "Apertura",
-    "focalLength": "Distancia focal",
-    "flash": "Flash",
-    "orientation": "Orientación",
-    "latitude": "Latitud",
-    "longitude": "Longitud",
-    "openMap": "Abrir mapa",
-    "rawMetadata": "Metadatos sin procesar",
-    "noMetadataFound": "No se encontraron metadatos",
-    "gpsLocation": "Ubicación GPS",
-    "metadataSummary": "Resumen de metadatos"
-  },
   "seo": {
-    "title": "Calculadora de aislamiento de poliestireno",
-    "description": "Calcula cuántos paquetes de poliestireno necesitas y el volumen de aislamiento para paredes, suelos, techos o cimentaciones.",
+    "title": "Calculadora de paquetes EPS",
+    "description": "Calcula el volumen de aislamiento, el margen para cortes y el número de paquetes de poliestireno que necesitas para la obra.",
     "keywords": [
       "calculadora de poliestireno",
-      "calculadora EPS",
-      "paquetes de poliestireno",
-      "aislamiento de poliestireno",
-      "volumen de aislamiento"
+      "paquetes EPS",
+      "volumen de aislamiento",
+      "cantidad de poliestireno",
+      "aislamiento EPS"
     ]
   }
 }

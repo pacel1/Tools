@@ -4,42 +4,84 @@
   "slug": "json-validator",
   "h1": "JSON Validator",
   "title": "JSON Validator",
-  "shortDescription": "Validate JSON and detect errors instantly with fast results, simple inputs and practical examples.",
-  "overview": "Validate JSON and detect errors instantly. Use this tool to get a clear result quickly from simple input on the same page. It is useful for everyday checks, comparisons and small tasks when you need a fast online answer.",
+  "shortDescription": "Check whether JSON is valid and see the first syntax issue clearly, with line-by-line feedback for malformed input.",
+  "metaTitle": "JSON Validator for Syntax Errors",
+  "metaDescription": "Check JSON syntax, find the first parsing error, and spot missing commas, quotes, or brackets in your text.",
+  "intro": "Paste your JSON to see whether it parses, and if not, where the first syntax error starts.",
+  "overview": "This tool checks JSON structure against the parser rules used by modern applications. It is useful when you need to confirm that objects, arrays, strings, numbers, booleans, and null values are written in valid JSON form.\n\nWhen the input is invalid, the result points to the first issue so you can fix the exact character or line that breaks parsing. That makes it easier to catch missing commas, unescaped quotes, trailing commas, and bracket mismatches before you pass data to an API, config file, or script.\n\nUse it as a direct sanity check when copying payloads, editing request bodies, or reviewing exported data. It helps you separate valid JSON from text that only looks similar.",
   "howItWorks": [
-    "Enter the required value or text into the form.",
-    "The conversion, calculation or transformation runs instantly in the browser.",
-    "Review the result and continue with related tools if you need another step."
+    "Paste JSON into the input field.",
+    "The parser checks the text and reports whether it is valid.",
+    "If there is an error, review the position and fix the syntax before checking again."
+  ],
+  "useCases": [
+    {
+      "title": "API request body review",
+      "description": "Confirm that a POST payload is valid before sending it to an endpoint, especially when nested objects and arrays are involved."
+    },
+    {
+      "title": "Configuration file verification",
+      "description": "Check app settings, feature flags, or environment config exported as JSON so one typo does not break startup."
+    },
+    {
+      "title": "Webhook payload inspection",
+      "description": "Validate sample webhook data copied from logs or test events before mapping fields in another system."
+    },
+    {
+      "title": "Data export cleanup",
+      "description": "Detect broken exports from dashboards or scripts where an extra comma, quote, or bracket slipped into the output."
+    }
   ],
   "examples": [
     {
-      "title": "Common use case",
-      "input": "{\"items\":[1,2,3]}",
+      "title": "Valid nested object",
+      "input": "{\"user\":{\"id\":42,\"roles\":[\"admin\",\"editor\"],\"active\":true}}",
       "output": "Valid JSON",
-      "description": "Shows a common use case with a clear input and result."
+      "description": "A complete object with nested data types, booleans, and an array."
     },
     {
-      "title": "Another quick example",
-      "input": "{\"items\":[1,2,3]}",
-      "output": "Valid JSON",
-      "description": "Useful for quick checks, comparisons or repeat tasks."
+      "title": "Missing comma between fields",
+      "input": "{\"name\":\"Mina\" \"age\":29}",
+      "output": "Invalid JSON: expected a comma after \"Mina\"",
+      "description": "Shows how a small punctuation mistake stops parsing."
+    },
+    {
+      "title": "Trailing comma in array",
+      "input": "{\"items\":[\"a\",\"b\",]}",
+      "output": "Invalid JSON: trailing comma is not allowed",
+      "description": "Illustrates a common mistake when editing arrays by hand."
     }
   ],
   "faq": [
     {
-      "question": "How accurate is this tool?",
-      "answer": "The result is based on the input you provide and the calculation or transformation shown on the page."
+      "question": "What does this validator check first?",
+      "answer": "It checks whether the text is valid JSON syntax. If parsing fails, it reports the first point where the structure breaks, such as a missing comma, unmatched bracket, or unclosed string."
     },
     {
-      "question": "Can I use this tool on mobile?",
-      "answer": "Yes. The page works on desktop and mobile screens with a simple input and result layout."
+      "question": "Why does a string with single quotes fail?",
+      "answer": "JSON requires double quotes for strings and property names. Single quotes are valid in JavaScript objects, but not in JSON text."
+    },
+    {
+      "question": "Does a trailing comma count as valid?",
+      "answer": "No. JSON does not allow trailing commas in arrays or objects, even if some programming languages tolerate them in their own syntax."
+    },
+    {
+      "question": "How should I read the error location?",
+      "answer": "Start at the reported line or character position and inspect the surrounding punctuation, quotes, and brackets. The real issue is often just before the marked spot."
+    },
+    {
+      "question": "Can valid-looking text still fail validation?",
+      "answer": "Yes. Text may look formatted correctly but still fail because of an unescaped quote, a missing colon, a control character, or a number written in an unsupported form."
     }
   ],
   "seo": {
-    "title": "JSON Validator",
-    "description": "Validate JSON and detect errors instantly. Free online json validator with instant results.",
+    "title": "JSON Validator for Syntax Errors",
+    "description": "Check JSON syntax, find the first parsing error, and spot missing commas, quotes, or brackets in your text.",
     "keywords": [
-      "json validator"
+      "json validator",
+      "json syntax checker",
+      "validate json",
+      "json parser error"
     ]
   }
 }

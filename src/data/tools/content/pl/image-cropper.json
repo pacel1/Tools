@@ -4,156 +4,85 @@
   "slug": "przycinacz-obrazow",
   "h1": "Przycinacz obrazów",
   "title": "Przycinacz obrazów",
-  "shortDescription": "Przycinaj obrazy online, podając własne współrzędne i oglądając podgląd od razu w przeglądarce.",
-  "metaTitle": "Przycinacz obrazów online | Przytnij zdjęcie w przeglądarce",
-  "metaDescription": "Przycinaj obrazy online z dokładnymi współrzędnymi i natychmiastowym podglądem. Szybkie, prywatne narzędzie działające w przeglądarce, bez wysyłania pliku.",
-  "intro": "Przycinaj obrazy online na podstawie dokładnych współrzędnych i od razu widź efekt w przeglądarce. To darmowe narzędzie jest szybkie, prywatne i proste w obsłudze.",
-  "overview": "Użyj tego przycinacza obrazów, aby kadrować zdjęcia, zrzuty ekranu, banery i grafiki przez podanie własnych wartości. Wszystko działa lokalnie w przeglądarce, więc edycja jest szybka i bezpieczniejsza dla prywatności.",
+  "shortDescription": "Przytnij obraz według dokładnych współrzędnych i sprawdź efekt przed pobraniem.",
+  "metaTitle": "Przycinacz obrazów online",
+  "metaDescription": "Przycinaj obrazy według dokładnych współrzędnych, sprawdzaj podgląd od razu i pobieraj czysty wycinek z przeglądarki.",
+  "intro": "Przytnij obraz, wpisując dokładne wartości X, Y, szerokości i wysokości, a potem sprawdź wynik przed pobraniem.",
+  "overview": "Ten przycinacz obrazów jest przeznaczony do precyzyjnego kadrowania. Wpisz współrzędne, aby poprawić zdjęcie produktu, wyciąć fragment wykresu albo usunąć zbędne krawędzie z banera bez zgadywania obszaru.\n\nNarzędzie działa bezpośrednio w przeglądarce, więc od razu widzisz zmianę kadru i możesz dopasować go do konkretnego układu. Sprawdza się wtedy, gdy obraz ma trafić do szablonu, dokumentacji albo konkretnego pola na stronie.\n\nJeśli potrzebujesz kwadratowego avatara, szerokiego nagłówka lub ciasnego wycinka zrzutu ekranu, masz pełną kontrolę nad widocznym obszarem i końcową kompozycją.",
   "howItWorks": [
-    "Prześlij lub wklej plik obrazu do narzędzia.",
-    "Ustaw współrzędne i wymiary kadru.",
-    "Sprawdź efekt w natychmiastowym podglądzie.",
-    "Pobierz gotowy obraz, gdy będzie pasował."
+    "Wczytaj obraz z urządzenia lub wklej go do narzędzia.",
+    "Ustaw wartości crop X, crop Y, crop width i crop height.",
+    "Sprawdź podgląd, aby potwierdzić widoczny obszar i krawędzie.",
+    "Pobierz przycięty obraz, gdy kadr będzie poprawny."
   ],
   "useCases": [
-    "Przytnij zdjęcie profilowe do konkretnego rozmiaru.",
-    "Wytnij fragment zrzutu ekranu, aby skupić się na ważnym obszarze.",
-    "Przygotuj zdjęcia produktów do sklepów i marketplace’ów.",
-    "Usuń puste marginesy z banerów i grafik."
+    {
+      "title": "Porządkujesz zdjęcie produktu do sklepu",
+      "description": "Przytnij nadmiar tła wokół produktu, aby obiekt był lepiej wyeksponowany w karcie towaru."
+    },
+    {
+      "title": "Wycinanie fragmentu zrzutu ekranu do instrukcji",
+      "description": "Zostaw tylko okno dialogowe, tabelę lub blok kodu potrzebny w artykule pomocy lub notatce."
+    },
+    {
+      "title": "Dopasowanie banera do sekcji nagłówka",
+      "description": "Przytnij szeroką grafikę do dokładnej przestrzeni przewidzianej w hero sekcji lub mailingu."
+    },
+    {
+      "title": "Kadrowanie portretu do avatara",
+      "description": "Wybierz twarz i ramiona do zdjęcia profilowego bez pustej przestrzeni wokół osoby."
+    }
   ],
   "examples": [
     {
-      "title": "Przycinanie zdjęcia do social media",
-      "input": "Ustaw kwadratowy obszar kadru wokół obiektu.",
-      "output": "Wyśrodkowany kwadratowy obraz gotowy do publikacji.",
-      "description": "Przydatne do avatarów, postów i miniaturek."
+      "title": "Przycięcie zdjęcia produktu do kwadratu",
+      "input": "cropX=120, cropY=80, cropWidth=900, cropHeight=900 na poziomym zdjęciu produktu",
+      "output": "Kwadratowy obraz z produktem pośrodku i usuniętymi bocznymi marginesami.",
+      "description": "Przydatne, gdy katalog albo karta społecznościowa wymaga kwadratowego kadru."
     },
     {
-      "title": "Przycinanie zrzutu ekranu",
-      "input": "Wpisz dokładne współrzędne dla widocznej części.",
-      "output": "Czysty zrzut ekranu z samą potrzebną treścią.",
-      "description": "Świetne do poradników, raportów i dokumentacji."
+      "title": "Wycięcie jednego panelu z dashboardu",
+      "input": "cropX=40, cropY=210, cropWidth=1280, cropHeight=620 na pełnym zrzucie ekranu",
+      "output": "Zostaje sam obszar wykresu, bez nawigacji i stopki.",
+      "description": "Pomaga wydzielić jeden element wizualny z większego interfejsu."
+    },
+    {
+      "title": "Przycięcie szerokiego banera do paska hero",
+      "input": "cropX=0, cropY=140, cropWidth=1920, cropHeight=520 na projekcie banera",
+      "output": "Węższy baner z zachowanym głównym nagłówkiem i motywem graficznym.",
+      "description": "Przydatne, gdy grafika ma trafić na stronę lub do maila."
     }
   ],
   "faq": [
     {
-      "question": "Czy przycinacz obrazów jest darmowy?",
-      "answer": "Tak, możesz przycinać obrazy online za darmo."
+      "question": "Co oznaczają wartości crop X i crop Y?",
+      "answer": "To punkt startowy prostokąta przycinania liczony od lewego górnego rogu obrazu. X przesuwa kadr w poziomie, Y w pionie."
     },
     {
-      "question": "Czy plik opuszcza moją przeglądarkę?",
-      "answer": "Nie, przycinanie odbywa się lokalnie w przeglądarce, co zwiększa prywatność."
+      "question": "Co się stanie, jeśli obszar przycięcia wyjdzie poza obraz?",
+      "answer": "Kadr nie może obejmować pikseli, których nie ma. Wartości szerokości i wysokości muszą mieścić się w granicach obrazu, inaczej wynik może zostać obcięty albo odrzucony."
     },
     {
-      "question": "Czy mogę przycinać z dokładnymi współrzędnymi?",
-      "answer": "Tak, możesz wpisać własne wartości do precyzyjnego kadrowania."
+      "question": "Dlaczego przycięcie wygląda inaczej niż w podglądzie?",
+      "answer": "Najczęściej wynika to z obróconego obrazu, innej skali niż oczekiwana albo z użycia współrzędnych skopiowanych z pliku o innym rozmiarze. Sprawdź oryginalne wymiary przed wpisaniem liczb."
     },
     {
-      "question": "Jakie formaty obrazów są obsługiwane?",
-      "answer": "Możesz używać popularnych formatów obsługiwanych przez przeglądarkę."
+      "question": "Czy da się zachować proporcje podczas przycinania?",
+      "answer": "Przycinanie tworzy nowy kadr, więc proporcje wynikają z ustawionej szerokości i wysokości. Jeśli potrzebujesz konkretnego formatu, dobierz współrzędne do tego układu."
+    },
+    {
+      "question": "Dlaczego zrzuty ekranu wymagają zwykle innych współrzędnych niż zdjęcia?",
+      "answer": "Zrzuty mają ostre krawędzie, elementy interfejsu i układ oparty na pikselach, więc dokładne wartości są ważniejsze niż przy zwykłych fotografiach."
     }
   ],
-  "uiLabels": {
-    "copy": "Kopiuj",
-    "copied": "Skopiowano",
-    "input": "Wejście",
-    "output": "Wyjście",
-    "placeholder": "Wklej lub prześlij obraz",
-    "indent": "Wcięcie",
-    "removeComments": "Usuń komentarze",
-    "preview": "Podgląd",
-    "source": "Źródło",
-    "sanitizedHtml": "Oczyszczony HTML",
-    "plainText": "Czysty tekst",
-    "summary": "Podsumowanie",
-    "total": "Razem",
-    "links": "Linki",
-    "images": "Obrazy",
-    "errors": "Błędy",
-    "warnings": "Ostrzeżenia",
-    "valid": "Prawidłowe",
-    "invalid": "Nieprawidłowe",
-    "href": "Adres",
-    "text": "Tekst",
-    "rel": "Rel",
-    "target": "Cel",
-    "alt": "Alt",
-    "width": "Szerokość",
-    "height": "Wysokość",
-    "empty": "Puste",
-    "outputReady": "Wynik gotowy",
-    "cleanedHtml": "Oczyszczony HTML",
-    "formattedHtml": "Sformatowany HTML",
-    "minifiedHtml": "Skompresowany HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Wyodrębnione obrazy",
-    "extractedLinks": "Wyodrębnione linki",
-    "validationSummary": "Podsumowanie walidacji",
-    "prettyHtml": "Czytelny HTML",
-    "encodedText": "Zakodowany tekst",
-    "file": "Plik",
-    "size": "Rozmiar",
-    "format": "Format",
-    "quality": "Jakość",
-    "colorOne": "Kolor 1",
-    "colorTwo": "Kolor 2",
-    "background": "Tło",
-    "foreground": "Pierwszy plan",
-    "angle": "Kąt",
-    "margin": "Margines",
-    "level": "Poziom",
-    "gradientType": "Typ gradientu",
-    "linear": "Liniowy",
-    "radial": "Radialny",
-    "blur": "Rozmycie",
-    "spread": "Rozszerzenie",
-    "offsetX": "Przesunięcie X",
-    "offsetY": "Przesunięcie Y",
-    "opacity": "Przezroczystość",
-    "inset": "Wewnętrzny",
-    "cssCode": "Kod CSS",
-    "snippet": "Fragment",
-    "download": "Pobierz",
-    "downloadSvg": "Pobierz SVG",
-    "downloadPng": "Pobierz PNG",
-    "downloadAll": "Pobierz wszystko",
-    "upload": "Prześlij",
-    "title": "Tytuł",
-    "description": "Opis",
-    "canonicalUrl": "Adres kanoniczny",
-    "siteName": "Nazwa serwisu",
-    "ogImage": "Obraz OG",
-    "clear": "Wyczyść",
-    "generatedQr": "Podglad kodu QR",
-    "placeholderImage": "Podglad obrazu",
-    "faviconSet": "Zestaw favicon",
-    "keepAspectRatio": "Zachowaj proporcje",
-    "cropX": "Kadrowanie X",
-    "cropY": "Kadrowanie Y",
-    "cropWidth": "Szerokość kadru",
-    "cropHeight": "Wysokość kadru",
-    "originalSize": "Oryginalny rozmiar",
-    "outputSize": "Rozmiar wyjściowy",
-    "savedSize": "Zaoszczędzony rozmiar",
-    "result": "Wynik",
-    "base64": "Base64",
-    "mimeType": "Typ MIME",
-    "resizedImage": "Obraz po zmianie rozmiaru",
-    "compressedImage": "Obraz skompresowany",
-    "croppedImage": "Obraz po przycięciu",
-    "convertedImage": "Obraz po konwersji",
-    "decodedImage": "Obraz zdekodowany",
-    "imagePreview": "Podgląd obrazu"
-  },
   "seo": {
-    "title": "Przycinacz obrazów online | Przytnij zdjęcie w przeglądarce",
-    "description": "Przycinaj obrazy online z dokładnymi współrzędnymi i natychmiastowym podglądem. Szybkie, prywatne narzędzie działające w przeglądarce, bez wysyłania pliku.",
+    "title": "Przycinacz obrazów online",
+    "description": "Przycinaj obrazy według dokładnych współrzędnych, sprawdzaj podgląd od razu i pobieraj czysty wycinek z przeglądarki.",
     "keywords": [
       "przycinacz obrazow",
-      "przytnij zdjecie online",
       "przycinanie obrazu",
-      "przycinanie zdjec",
-      "kadrowanie zdjec",
+      "przytnij obraz",
+      "kadrowanie zdjecia",
       "przycinanie zrzutu ekranu"
     ]
   }

@@ -1,0 +1,80 @@
+{
+  "toolId": "color-picker",
+  "locale": "fr",
+  "slug": "color-picker",
+  "h1": "Sélecteur de couleur",
+  "title": "Sélecteur de couleur",
+  "shortDescription": "Choisissez une couleur et affichez ses valeurs HEX, RGB et HSL dans un seul panneau.",
+  "metaTitle": "Sélecteur de couleur | HEX RGB HSL",
+  "metaDescription": "Choisissez une couleur et affichez ses valeurs HEX, RGB et HSL dans un seul panneau pour CSS, UI et travail de marque.",
+  "intro": "Choisissez une couleur ou collez un code HEX pour voir immédiatement ses valeurs HEX, RGB et HSL.",
+  "overview": "Cet outil sert quand une couleur doit être vérifiée dans plusieurs formats sans changer d’application. Il affiche le même ton en HEX, RGB et HSL afin que vous puissiez copier le format adapté à votre feuille CSS, à votre fiche composant ou à votre note de design.\n\nIl est particulièrement utile pour les couleurs de marque, les échanges avec l’équipe de développement et la vérification de tokens de thème. Les valeurs se mettent à jour ensemble, ce qui facilite la comparaison des nuances et la conservation de références couleur cohérentes.",
+  "howItWorks": [
+    "Choisissez une couleur avec le sélecteur ou saisissez une valeur HEX.",
+    "L’outil calcule les valeurs équivalentes en RGB et en HSL.",
+    "Copiez le format nécessaire pour CSS, documentation ou styles de composant."
+  ],
+  "useCases": [
+    {
+      "title": "Vérification de tokens de thème",
+      "description": "Contrôler une couleur de token en HEX, RGB et HSL avant son intégration dans un système de design ou une feuille de style."
+    },
+    {
+      "title": "Alignement d’une palette de marque",
+      "description": "Vérifier qu’une couleur de marque reste identique entre les maquettes, la documentation et le développement."
+    },
+    {
+      "title": "États d’un composant",
+      "description": "Examiner une couleur de survol, d’état actif ou de focus et noter le format exact utilisé dans le code."
+    }
+  ],
+  "examples": [
+    {
+      "title": "Bleu du bouton principal",
+      "input": "#2563EB",
+      "output": "HEX #2563EB, RGB 37, 99, 235, HSL 221, 83%, 53%",
+      "description": "Utile pour une couleur d’interface qui doit être notée avec précision dans les styles et la documentation."
+    },
+    {
+      "title": "Teinte neutre sombre",
+      "input": "rgb(17, 24, 39)",
+      "output": "HEX #111827, RGB 17, 24, 39, HSL 220, 39%, 11%",
+      "description": "Pratique pour contrôler un neutre sombre utilisé sur des cartes, des fonds ou du texte."
+    },
+    {
+      "title": "Vert de succès doux",
+      "input": "hsl(142, 72%, 29%)",
+      "output": "HEX #14913E, RGB 20, 145, 62, HSL 142, 72%, 29%",
+      "description": "Utile quand le design stocke la couleur en HSL et que le CSS attend du HEX ou du RGB."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Puis-je saisir une couleur dans un format autre que HEX ?",
+      "answer": "Oui. Si le format collé est pris en charge, l’outil affiche les valeurs équivalentes en HEX, RGB et HSL."
+    },
+    {
+      "question": "Pourquoi les valeurs changent-elles quand je déplace légèrement le sélecteur ?",
+      "answer": "Chaque petit déplacement choisit une nuance différente, donc les valeurs numériques se mettent à jour immédiatement. C’est normal et cela aide à viser la couleur exacte."
+    },
+    {
+      "question": "Quelle est la différence entre RGB et HSL ici ?",
+      "answer": "RGB décrit le mélange rouge, vert et bleu. HSL représente la couleur par teinte, saturation et luminosité, ce qui peut être plus simple pour comparer des nuances."
+    },
+    {
+      "question": "Pourquoi les valeurs copiées semblent-elles différentes dans une autre application ?",
+      "answer": "Certaines applications arrondissent les canaux ou affichent différemment l’alpha et le rendu. Comparez surtout les nombres, pas seulement l’aperçu."
+    }
+  ],
+  "seo": {
+    "title": "Sélecteur de couleur | HEX RGB HSL",
+    "description": "Choisissez une couleur et affichez ses valeurs HEX, RGB et HSL dans un seul panneau pour CSS, UI et travail de marque.",
+    "keywords": [
+      "sélecteur de couleur",
+      "HEX RGB HSL",
+      "valeurs couleur",
+      "couleurs CSS",
+      "vérifier une couleur"
+    ]
+  }
+}

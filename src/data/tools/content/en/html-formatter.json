@@ -4,107 +4,87 @@
   "slug": "html-formatter",
   "h1": "HTML Formatter",
   "title": "HTML Formatter",
-  "shortDescription": "Format messy HTML with readable indentation and clean structure.",
-  "metaTitle": "HTML Formatter Online | Format HTML Code Fast",
-  "metaDescription": "Format HTML online with readable indentation, cleaner nesting and browser-based processing. Useful for messy markup, copied code and template review.",
-  "intro": "Use this HTML formatter to turn messy code into clean, readable markup. It is built for people searching for html formatter, format HTML online and clean up HTML code without sending source to a server.",
-  "overview": "This online HTML formatter indents tags, organizes nested elements and improves code readability without changing the meaning of your markup. It runs client-side, which makes it useful for copied templates, CMS output, debug sessions and collaboration workflows where you want cleaner HTML fast.",
+  "shortDescription": "Turn messy HTML into clean, readable markup with proper indentation.",
+  "metaTitle": "HTML Formatter | Clean Code",
+  "metaDescription": "Reformat messy HTML into readable, well-indented markup while keeping structure intact in the browser.",
+  "intro": "Paste HTML in and get neatly indented, human-readable markup without changing the document structure.",
+  "overview": "This HTML formatter reorganizes tags, nested blocks, and spacing so your markup is easier to inspect and edit. It keeps the original element order and content while making the hierarchy obvious.\n\nUse it when HTML has been pasted from a CMS, copied from a build output, or stitched together from several sources. Because the result is browser-side, it’s practical for reviewing snippets, comparing template versions, or preparing code for hand edits.",
   "howItWorks": [
     "Paste your HTML into the input field.",
-    "Choose formatting options such as indentation or comment handling if available.",
-    "Click to format and generate clean HTML instantly in the browser.",
-    "Copy the formatted output for debugging, QA, documentation or project work."
+    "Adjust indentation or comment-handling options if they’re available.",
+    "Run the formatter to produce cleanly structured HTML.",
+    "Copy the result into your editor, notes, or project files."
   ],
   "useCases": [
-    "Cleaning up minified or messy HTML.",
-    "Reviewing templates before deployment.",
-    "Making copied code easier to read and edit.",
-    "Preparing HTML snippets for documentation or collaboration.",
-    "Checking structure in landing pages, emails, or components."
+    {
+      "title": "Reviewing pasted CMS output",
+      "description": "Make editor-generated markup readable before you inspect missing wrappers, broken nesting, or duplicated elements."
+    },
+    {
+      "title": "Preparing template diffs",
+      "description": "Format two HTML versions before comparing them so small structural changes are easier to spot."
+    },
+    {
+      "title": "Cleaning email markup",
+      "description": "Reformat long email fragments with nested tables and inline elements for safer manual edits."
+    },
+    {
+      "title": "Documenting component snippets",
+      "description": "Present formatted HTML in internal docs, reviews, or handoff notes so teammates can follow the structure."
+    }
   ],
   "examples": [
     {
-      "title": "Messy HTML",
-      "input": "<div><p>Hello</p><ul><li>One</li><li>Two</li></ul></div>",
-      "output": "<div>\n  <p>Hello</p>\n  <ul>\n    <li>One</li>\n    <li>Two</li>\n  </ul>\n</div>",
-      "description": "Transforms compact markup into readable, nested HTML."
+      "title": "Compact product card",
+      "input": "<article><h3>Pro Plan</h3><p>Everything included</p><a href=\"/pricing\">View plans</a></article>",
+      "output": "<article>\n  <h3>Pro Plan</h3>\n  <p>Everything included</p>\n  <a href=\"/pricing\">View plans</a>\n</article>",
+      "description": "Expands a single-line component into a readable block."
     },
     {
-      "title": "Unformatted template",
-      "input": "<section><h2>Title</h2><div><img src=\"a.jpg\" alt=\"A\"></div></section>",
-      "output": "<section>\n  <h2>Title</h2>\n  <div>\n    <img src=\"a.jpg\" alt=\"A\">\n  </div>\n</section>",
-      "description": "Improves indentation while keeping the original structure intact."
+      "title": "Nested layout fragment",
+      "input": "<div class=\"wrap\"><header><nav><a href=\"/\">Home</a><a href=\"/docs\">Docs</a></nav></header><main><section><img src=\"hero.jpg\" alt=\"Hero\"></section></main></div>",
+      "output": "<div class=\"wrap\">\n  <header>\n    <nav>\n      <a href=\"/\">Home</a>\n      <a href=\"/docs\">Docs</a>\n    </nav>\n  </header>\n  <main>\n    <section>\n      <img src=\"hero.jpg\" alt=\"Hero\">\n    </section>\n  </main>\n</div>",
+      "description": "Breaks a dense layout into clear semantic sections."
+    },
+    {
+      "title": "Email table snippet",
+      "input": "<table><tr><td><strong>Order #4821</strong></td><td align=\"right\">Shipped</td></tr><tr><td colspan=\"2\"><a href=\"https://example.com\">Track package</a></td></tr></table>",
+      "output": "<table>\n  <tr>\n    <td><strong>Order #4821</strong></td>\n    <td align=\"right\">Shipped</td>\n  </tr>\n  <tr>\n    <td colspan=\"2\">\n      <a href=\"https://example.com\">Track package</a>\n    </td>\n  </tr>\n</table>",
+      "description": "Shows how table-heavy HTML becomes easier to inspect and edit."
     }
   ],
   "faq": [
     {
-      "question": "Does formatting change my HTML content?",
-      "answer": "No. Formatting only improves spacing, indentation, and structure. It does not alter the meaning of your HTML."
+      "question": "Will formatting change attribute order or text content?",
+      "answer": "It should not change the meaning of your HTML. The purpose is to improve indentation and layout, not rewrite content."
     },
     {
-      "question": "Is this HTML formatter safe to use?",
-      "answer": "Yes. It is designed for client-side use and does not require sending your code to an external API."
+      "question": "Why does some inline markup stay on one line?",
+      "answer": "Short inline structures may remain compact if the formatter preserves them that way. That is usually normal and helps avoid unnecessary line noise."
     },
     {
-      "question": "Can I format minified HTML?",
-      "answer": "Yes. It works well on minified, messy, or copied HTML and turns it into readable code."
+      "question": "What happens to malformed HTML?",
+      "answer": "Severely broken markup may still format, but the result can reflect the parser’s best interpretation rather than your original intent. Fix tag errors first when possible."
     },
     {
-      "question": "Will comments be removed?",
-      "answer": "That depends on the available options. If comment removal is enabled, comments can be stripped during formatting."
+      "question": "Can I remove comments while formatting?",
+      "answer": "If comment removal is enabled, comments may be stripped. Otherwise, they should stay in place."
+    },
+    {
+      "question": "Why does the output differ from my editor’s prettify feature?",
+      "answer": "Different formatters use different rules for wrapping, whitespace, and void elements. Small differences in line breaks are expected."
     }
   ],
-  "uiLabels": {
-    "copy": "Copy",
-    "copied": "Copied",
-    "input": "HTML input",
-    "output": "Formatted HTML",
-    "placeholder": "Paste HTML here...",
-    "indent": "Indent",
-    "removeComments": "Remove comments",
-    "preview": "Preview",
-    "source": "Source",
-    "sanitizedHtml": "Sanitized HTML",
-    "plainText": "Plain text",
-    "summary": "Summary",
-    "total": "Total",
-    "links": "Links",
-    "images": "Images",
-    "errors": "Errors",
-    "warnings": "Warnings",
-    "valid": "Valid",
-    "invalid": "Invalid",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Width",
-    "height": "Height",
-    "empty": "Empty",
-    "outputReady": "Formatted HTML ready",
-    "cleanedHtml": "Cleaned HTML",
-    "formattedHtml": "Formatted HTML",
-    "minifiedHtml": "Minified HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extracted images",
-    "extractedLinks": "Extracted links",
-    "validationSummary": "Validation summary",
-    "prettyHtml": "Pretty HTML",
-    "encodedText": "Encoded text"
-  },
   "seo": {
-    "title": "HTML Formatter Online | Clean Up HTML Code",
-    "description": "Format HTML online with readable indentation, cleaner nesting and browser-based processing. Useful for messy markup, copied code and template review.",
+    "title": "HTML Formatter | Clean Code",
+    "description": "Reformat messy HTML into readable, well-indented markup while keeping structure intact in the browser.",
     "keywords": [
       "html formatter",
       "format html",
+      "html beautifier",
       "pretty html",
       "html indentation",
-      "clean html code",
-      "html beautifier",
-      "online html formatter",
-      "format html online"
+      "clean html"
     ]
   }
 }

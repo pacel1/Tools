@@ -4,176 +4,88 @@
   "slug": "calculadora-de-canalones",
   "h1": "Calculadora de canalones",
   "title": "Calculadora de canalones",
-  "shortDescription": "Calcula la cantidad de canalones, soportes y bajantes necesarios para el drenaje del tejado.",
-  "metaTitle": "Calculadora de canalones - estima canalones, soportes y bajantes",
-  "metaDescription": "Usa esta calculadora de canalones para estimar metros de canalón, número de soportes y bajantes según el alero, las aristas del tejado, la separación y el desperdicio.",
-  "intro": "Calcula rápidamente los materiales para un sistema de canalones. Introduce la longitud del alero, el número de bordes del tejado, la separación de bajantes, la separación de soportes y el porcentaje de desperdicio para obtener una estimación práctica.",
-  "overview": "Esta calculadora de canalones te ayuda a planificar los materiales de drenaje del tejado antes de comprar o instalar. Estima la longitud total de canalón, la cantidad de soportes y el número de bajantes según las dimensiones del tejado y las separaciones indicadas. Añade un margen de desperdicio para cortes, uniones y ajustes de obra.",
+  "shortDescription": "Calcula la longitud de canalones, soportes y bajantes para una cubierta concreta.",
+  "metaTitle": "Calculadora de canalones para cubiertas",
+  "metaDescription": "Calcula metros de canalón, soportes y bajantes a partir del alero, las aristas del tejado, la separación y el desperdicio.",
+  "intro": "Introduce la longitud del alero, el número de bordes del tejado, la separación de soportes, la separación de bajantes y el desperdicio para estimar los materiales necesarios.",
+  "overview": "Esta calculadora de canalones ofrece una estimación práctica de materiales para el drenaje de una cubierta. Convierte la longitud de las aristas que indiques en un tramo total de canalón y después calcula soportes y bajantes según la separación elegida.\n\nSirve para planificar una instalación nueva, sustituir tramos dañados o comparar cantidades antes de pedir el material. El desperdicio ayuda a cubrir cortes, solapes, uniones y correcciones de obra, de modo que la cifra final se acerque más a lo que vas a montar realmente.",
   "howItWorks": [
-    "Introduce la longitud del alero en metros.",
-    "Indica el número de bordes del tejado a equipar con canalones.",
-    "Define la separación de bajantes en metros.",
-    "Introduce la separación de soportes en centímetros.",
-    "Añade un porcentaje de desperdicio para material extra.",
-    "Revisa los metros de canalón, soportes y bajantes estimados."
+    "Mide la longitud del alero o borde del tejado en metros.",
+    "Indica cuántos bordes llevarán canalón.",
+    "Define la separación de los soportes en centímetros.",
+    "Define la distancia prevista entre bajantes en metros.",
+    "Añade un porcentaje de desperdicio para cortes y uniones.",
+    "Revisa la longitud estimada de canalón, los soportes y las bajantes."
   ],
   "useCases": [
-    "Estimar materiales para una instalación nueva de canalones.",
-    "Comprobar cuántos soportes se necesitan para una reparación.",
-    "Planificar la ubicación de bajantes en viviendas o locales.",
-    "Pedir componentes de canalón con un margen adecuado."
+    {
+      "title": "Instalación nueva en una vivienda",
+      "description": "Calcula materiales para montar un sistema completo de canalones antes de comprar las piezas."
+    },
+    {
+      "title": "Sustitución parcial tras daños",
+      "description": "Estima cuántos tramos, soportes y bajantes hay que reemplazar en una reparación localizada."
+    },
+    {
+      "title": "Cubierta con varios lados",
+      "description": "Compara las necesidades de material de cada borde cuando la cubierta no tiene medidas uniformes."
+    },
+    {
+      "title": "Revisión de presupuesto",
+      "description": "Comprueba si la lista de piezas propuesta coincide con las medidas reales y con la separación elegida."
+    }
   ],
   "examples": [
     {
-      "title": "Ejemplo de cálculo",
-      "input": "Longitud del alero: 12 m, bordes del tejado: 2, separación de bajantes: 10 m, separación de soportes: 60 cm, desperdicio: 10%",
-      "output": "Longitud estimada de canalones, soportes y bajantes para el tejado.",
-      "description": "Usa el resultado como estimación rápida antes de comprar los componentes."
+      "title": "Tejado de dos aguas",
+      "input": "Longitud del alero: 12 m, bordes del tejado: 2, separación de soportes: 60 cm, separación de bajantes: 10 m, desperdicio: 10%",
+      "output": "Longitud estimada de canalón: 26,4 m. Soportes: 44. Bajantes: 3.",
+      "description": "Un caso habitual de vivienda con un desagüe por cada lado y un pequeño margen adicional."
     },
     {
-      "title": "Planificación de una mejora del drenaje",
-      "input": "Mide cada tramo del alero por separado y suma la longitud total antes de calcular.",
-      "output": "Una estimación más clara de canalones y soportes.",
-      "description": "Útil al sustituir canalones antiguos o ampliar un sistema existente."
+      "title": "Cobertura de un garaje",
+      "input": "Longitud del alero: 8,5 m, bordes del tejado: 1, separación de soportes: 50 cm, separación de bajantes: 7 m, desperdicio: 5%",
+      "output": "Longitud estimada de canalón: 8,9 m. Soportes: 18. Bajantes: 2.",
+      "description": "Útil en cubiertas pequeñas donde el número de fijaciones sigue siendo importante."
+    },
+    {
+      "title": "Nave de taller alargada",
+      "input": "Longitud del alero: 24 m, bordes del tejado: 2, separación de soportes: 70 cm, separación de bajantes: 12 m, desperdicio: 8%",
+      "output": "Longitud estimada de canalón: 51,8 m. Soportes: 74. Bajantes: 5.",
+      "description": "Ayuda a distribuir varios puntos de descarga en edificios largos."
     }
   ],
   "faq": [
     {
-      "question": "¿Cómo calculo la longitud de canalones?",
-      "answer": "Multiplica la longitud del alero por el número de bordes del tejado y añade el porcentaje de desperdicio elegido."
+      "question": "¿La calculadora incluye esquinas y tapones automáticamente?",
+      "answer": "No. Las esquinas, tapones, uniones y embudos se suelen contar aparte. Usa la longitud calculada como base y añade esos accesorios según el trazado real."
     },
     {
-      "question": "¿Cómo se estima el número de soportes?",
-      "answer": "Divide la longitud total de canalón entre la separación de soportes y redondea al alza."
+      "question": "¿Por qué el número de soportes puede salir más alto de lo esperado?",
+      "answer": "Porque la cuenta se hace con la separación que introduces a lo largo de todo el tramo. Cuanto menor es la separación, más soportes hacen falta, y cerca de esquinas o juntas a menudo se añaden piezas extra."
     },
     {
-      "question": "¿Cómo se estima el número de bajantes?",
-      "answer": "Divide la longitud total de canalón entre la separación de bajantes y redondea al alza."
+      "question": "¿Cómo calculo una cubierta con lados de distinta longitud?",
+      "answer": "Calcula cada borde por separado y suma los resultados. No conviene usar una media si las longitudes o los puntos de descarga cambian mucho entre lados."
     },
     {
-      "question": "¿Por qué añadir desperdicio?",
-      "answer": "El desperdicio cubre cortes, solapes, esquinas y ajustes de instalación."
+      "question": "¿Qué cubre el porcentaje de desperdicio?",
+      "answer": "Cubre cortes, solapes, ajustes de montaje y pequeñas correcciones en obra. No sustituye el cálculo aparte de uniones ni de piezas especiales."
+    },
+    {
+      "question": "¿El número de bajantes es el número exacto de salidas?",
+      "answer": "No. Es una estimación según la separación indicada, no un diseño definitivo de todos los puntos de evacuación. La colocación final depende de la pendiente, el caudal y el punto de descarga seguro."
     }
   ],
-  "uiLabels": {
-    "copy": "Copiar",
-    "copied": "Copiado",
-    "input": "Entrada",
-    "output": "Salida",
-    "placeholder": "Introduce un valor",
-    "indent": "Sangría",
-    "removeComments": "Eliminar comentarios",
-    "preview": "Vista previa",
-    "source": "Fuente",
-    "sanitizedHtml": "HTML saneado",
-    "plainText": "Texto plano",
-    "summary": "Resumen",
-    "total": "Total",
-    "links": "Enlaces",
-    "images": "Imágenes",
-    "errors": "Errores",
-    "warnings": "Avisos",
-    "valid": "Válido",
-    "invalid": "No válido",
-    "href": "Href",
-    "text": "Texto",
-    "rel": "Rel",
-    "target": "Destino",
-    "alt": "Alt",
-    "width": "Ancho",
-    "height": "Alto",
-    "empty": "Vacío",
-    "outputReady": "Resultado listo",
-    "cleanedHtml": "HTML limpio",
-    "formattedHtml": "HTML formateado",
-    "minifiedHtml": "HTML minimizado",
-    "markdown": "Markdown",
-    "extractedImages": "Imágenes extraídas",
-    "extractedLinks": "Enlaces extraídos",
-    "validationSummary": "Resumen de validación",
-    "prettyHtml": "HTML legible",
-    "encodedText": "Texto codificado",
-    "file": "Archivo",
-    "size": "Tamaño",
-    "format": "Formato",
-    "quality": "Calidad",
-    "colorOne": "Color 1",
-    "colorTwo": "Color 2",
-    "background": "Fondo",
-    "foreground": "Primer plano",
-    "angle": "Ángulo",
-    "margin": "Margen",
-    "level": "Nivel",
-    "gradientType": "Tipo de degradado",
-    "linear": "Lineal",
-    "radial": "Radial",
-    "blur": "Desenfoque",
-    "spread": "Difusión",
-    "offsetX": "Desplazamiento X",
-    "offsetY": "Desplazamiento Y",
-    "opacity": "Opacidad",
-    "inset": "Inset",
-    "cssCode": "Código CSS",
-    "snippet": "Fragmento",
-    "download": "Descargar",
-    "downloadSvg": "Descargar SVG",
-    "downloadPng": "Descargar PNG",
-    "downloadAll": "Descargar todo",
-    "upload": "Subir",
-    "title": "Título",
-    "description": "Descripción",
-    "canonicalUrl": "URL canónica",
-    "siteName": "Nombre del sitio",
-    "ogImage": "Imagen OG",
-    "clear": "Limpiar",
-    "generatedQr": "QR generado",
-    "placeholderImage": "Imagen de marcador",
-    "faviconSet": "Conjunto de favicon",
-    "keepAspectRatio": "Mantener la proporción",
-    "cropX": "Recorte X",
-    "cropY": "Recorte Y",
-    "cropWidth": "Ancho del recorte",
-    "cropHeight": "Alto del recorte",
-    "originalSize": "Tamaño original",
-    "outputSize": "Tamaño de salida",
-    "savedSize": "Tamaño ahorrado",
-    "result": "Resultado",
-    "base64": "Base64",
-    "mimeType": "Tipo MIME",
-    "resizedImage": "Imagen redimensionada",
-    "compressedImage": "Imagen comprimida",
-    "croppedImage": "Imagen recortada",
-    "convertedImage": "Imagen convertida",
-    "decodedImage": "Imagen decodificada",
-    "imagePreview": "Vista previa de imagen",
-    "camera": "Cámara",
-    "lens": "Lente",
-    "dateTaken": "Fecha tomada",
-    "resolution": "Resolución",
-    "fileSize": "Tamaño del archivo",
-    "iso": "ISO",
-    "exposure": "Exposición",
-    "aperture": "Apertura",
-    "focalLength": "Distancia focal",
-    "flash": "Flash",
-    "orientation": "Orientación",
-    "latitude": "Latitud",
-    "longitude": "Longitud",
-    "openMap": "Abrir mapa",
-    "rawMetadata": "Metadatos sin procesar",
-    "noMetadataFound": "No se encontraron metadatos",
-    "gpsLocation": "Ubicación GPS",
-    "metadataSummary": "Resumen de metadatos"
-  },
   "seo": {
-    "title": "Calculadora de canalones",
-    "description": "Estima metros de canalón, soportes y bajantes para el drenaje del tejado con una calculadora online sencilla.",
+    "title": "Calculadora de canalones para cubiertas",
+    "description": "Calcula metros de canalón, soportes y bajantes a partir del alero, las aristas del tejado, la separación y el desperdicio.",
     "keywords": [
       "calculadora de canalones",
-      "calculadora de drenaje del tejado",
       "calcular canalones",
       "calculadora de bajantes",
-      "calculadora de soportes"
+      "soportes de canalón",
+      "drenaje de cubierta"
     ]
   }
 }

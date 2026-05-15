@@ -1,0 +1,84 @@
+{
+  "toolId": "hex-to-rgb-converter",
+  "locale": "fr",
+  "slug": "hex-to-rgb-converter",
+  "h1": "Convertisseur HEX vers RGB",
+  "title": "Convertisseur HEX vers RGB",
+  "shortDescription": "Transformez des couleurs HEX en valeurs RGB pour le CSS, les specs et la vérification des couleurs.",
+  "metaTitle": "Convertisseur HEX vers RGB",
+  "metaDescription": "Transformez des couleurs HEX en valeurs RGB pour le CSS, les specs et la vérification des couleurs.",
+  "intro": "Collez une couleur HEX comme #FF7A18 ou #0AF pour obtenir immédiatement sa valeur RGB.",
+  "overview": "Ce convertisseur transforme une couleur au format HEX en canaux RGB prêts à être utilisés dans une feuille de style, une fiche technique ou une note de composant. Il normalise aussi l’entrée, afin que les variantes abrégées et les majuscules soient traitées de manière cohérente.\n\nIl est utile lorsqu’une couleur doit passer d’un fichier de design, d’un token ou d’une maquette vers un format basé sur le rouge, le vert et le bleu. Le résultat est lisible et facile à comparer avec d’autres définitions pendant l’implémentation ou la vérification.",
+  "howItWorks": [
+    "Saisissez une valeur HEX ou choisissez une couleur avec le sélecteur.",
+    "L’outil développe les codes HEX abrégés, valide la saisie et lit les canaux rouge, vert et bleu.",
+    "Copiez le résultat RGB pour le CSS, la documentation ou les notes de livraison."
+  ],
+  "useCases": [
+    {
+      "title": "Styles front-end",
+      "description": "Convertissez les couleurs de marque et d’interface en chaînes rgb(...) pour les variables CSS, les composants et les fichiers de thème."
+    },
+    {
+      "title": "Vérification de maquette",
+      "description": "Comparez la couleur d’un visuel avec la valeur codée avant l’intégration finale."
+    },
+    {
+      "title": "Documentation des tokens",
+      "description": "Consignez une couleur en HEX et en RGB pour que design et développement partagent la même définition."
+    },
+    {
+      "title": "Développement des formats abrégés",
+      "description": "Transformez un HEX à trois caractères en RGB complet lorsque vous relisez d’anciens styles ou des palettes compactes."
+    }
+  ],
+  "examples": [
+    {
+      "title": "Couleur d’accent chaude",
+      "input": "#FF7A18",
+      "output": "rgb(255, 122, 24)",
+      "description": "Un orange marqué pour les boutons, les surlignages ou les illustrations."
+    },
+    {
+      "title": "Valeur abrégée bleu cyan",
+      "input": "#0AF",
+      "output": "rgb(0, 170, 255)",
+      "description": "L’outil développe le HEX abrégé avant de le convertir en RGB."
+    },
+    {
+      "title": "Neutre sombre",
+      "input": "#1E293B",
+      "output": "rgb(30, 41, 59)",
+      "description": "Pratique pour convertir des neutres d’interface en valeurs de canaux."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Le convertisseur accepte-t-il les HEX à trois chiffres ?",
+      "answer": "Oui. Une valeur abrégée comme #0AF est d’abord développée dans sa forme complète avant la conversion, ce qui donne des canaux RGB corrects."
+    },
+    {
+      "question": "Que se passe-t-il si j’entre un HEX sans le signe # ?",
+      "answer": "L’outil attend la notation HEX standard. Si le format est incomplet ou contient des caractères invalides, aucun résultat RGB fiable ne sera produit, car la valeur doit être correctement formée."
+    },
+    {
+      "question": "Pourquoi le résultat RGB semble-t-il différent du HEX ?",
+      "answer": "HEX et RGB sont deux écritures différentes d’une même couleur. Les canaux sont identiques, seule la base numérique change, d’où l’aspect différent des nombres."
+    },
+    {
+      "question": "Peut-on convertir une couleur avec transparence ?",
+      "answer": "Ce convertisseur est prévu pour des valeurs HEX représentant une couleur opaque. Si une transparence est incluse, il faut généralement un autre format, comme RGBA, car RGB ne transporte pas la composante alpha."
+    }
+  ],
+  "seo": {
+    "title": "Convertisseur HEX vers RGB",
+    "description": "Transformez des couleurs HEX en valeurs RGB pour le CSS, les specs et la vérification des couleurs.",
+    "keywords": [
+      "hex vers rgb",
+      "convertisseur hex rgb",
+      "couleur hex en rgb",
+      "valeurs rgb",
+      "code couleur"
+    ]
+  }
+}

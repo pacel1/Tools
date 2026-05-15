@@ -4,176 +4,97 @@
   "slug": "calculateur-de-polystyrene-isolant",
   "h1": "Calculateur de polystyrène isolant",
   "title": "Calculateur de polystyrène isolant",
-  "shortDescription": "Estimez combien de paquets de polystyrène il vous faut pour un mur, un sol, une toiture ou une fondation.",
-  "metaTitle": "Calculateur de polystyrène isolant - paquets nécessaires",
-  "metaDescription": "Calculez le volume d’isolation, la surface avec marge et le nombre de paquets de polystyrène nécessaires.",
-  "intro": "Ce calculateur de polystyrène isolant vous aide à estimer rapidement le nombre de paquets nécessaires pour une façade, un sol, une toiture ou une fondation. Renseignez la surface, l’épaisseur, la couverture par paquet, la marge de perte et le volume du paquet pour obtenir un résultat immédiat.",
-  "overview": "Cet outil facilite la planification de la quantité de matériau isolant. Il convertit la surface et l’épaisseur en volume d’isolation, ajoute une marge de pertes et estime le nombre de paquets selon la couverture et le volume du paquet. Il convient pour les panneaux EPS sur murs, sols, toitures et fondations.",
+  "shortDescription": "Estimez le nombre de paquets de polystyrène nécessaires pour un mur, un sol, une toiture ou une fondation.",
+  "metaTitle": "Calculateur paquets polystyrène",
+  "metaDescription": "Estimez le volume d’isolation, la marge pour découpes et le nombre de paquets de polystyrène nécessaires au chantier.",
+  "intro": "Saisissez la surface à isoler, l’épaisseur, la couverture par paquet, la marge de pertes et le volume du paquet pour estimer le nombre de paquets à commander.",
+  "overview": "Cet outil transforme les dimensions du chantier en quantité d’achat exploitable pour le polystyrène EPS. À partir de la surface et de l’épaisseur, il calcule le volume d’isolation, puis ajoute une marge pour les découpes, les ajustements et les pertes de pose afin d’approcher la consommation réelle.\n\nIl convient aux façades, sols, toitures et fondations, où le conditionnement peut varier selon les fabricants. En renseignant à la fois la couverture par paquet et le volume du colis, vous alignez le calcul sur le produit exact que vous comptez acheter.",
   "howItWorks": [
     "Saisissez la surface à isoler en mètres carrés.",
-    "Définissez l’épaisseur de l’isolation en centimètres.",
-    "Indiquez la couverture par paquet et le volume du paquet.",
-    "Ajoutez le pourcentage de pertes pour les découpes et ajustements.",
-    "Obtenez le volume d’isolation, la surface avec marge et le nombre de paquets."
+    "Indiquez l’épaisseur du polystyrène en centimètres.",
+    "Ajoutez la couverture par paquet et le volume du colis depuis la fiche produit.",
+    "Entrez un pourcentage de pertes pour les découpes et ajustements.",
+    "Consultez le volume d’isolation, la surface corrigée et le nombre de paquets arrondi."
   ],
   "useCases": [
-    "Calculer les paquets de polystyrène pour une façade.",
-    "Planifier la quantité d’EPS pour l’isolation d’un sol.",
-    "Vérifier le matériau nécessaire pour une toiture.",
-    "Estimer les paquets pour isoler une fondation.",
-    "Comparer les besoins en matériaux avant achat."
-  ],
-  "examples": [
     {
-      "title": "Isolation de façade",
-      "input": "150 m2 de surface, 15 cm d’épaisseur, 5 m2 par paquet, 8% de marge, 0,75 m3 par paquet",
-      "output": "Affiche le volume requis, la surface ajustée et le nombre de paquets estimé.",
-      "description": "Pratique pour commander la bonne quantité de panneaux EPS pour les murs extérieurs."
+      "title": "Commande pour façade",
+      "description": "Déterminez combien de paquets EPS sont nécessaires avant de commander les panneaux pour les murs extérieurs."
     },
     {
       "title": "Isolation de sol",
-      "input": "80 m2 de surface, 10 cm d’épaisseur, 4 m2 par paquet, 5% de marge, 0,4 m3 par paquet",
-      "output": "Affiche le volume de matériau et l’estimation des paquets pour le sol.",
-      "description": "Utile pour éviter les manques lors de l’isolation sous chape."
+      "description": "Estimez le matériau sous chape ou dalle pour que la couche isolante suive le plan de pose."
+    },
+    {
+      "title": "Toiture plate ou inclinée",
+      "description": "Vérifiez la quantité de panneaux avant d’organiser la livraison sur chantier."
+    },
+    {
+      "title": "Fondations et soubassement",
+      "description": "Calculez les paquets pour les zones enterrées où les découpes et reprises sont nombreuses."
+    },
+    {
+      "title": "Comparaison de devis",
+      "description": "Comparez plusieurs références lorsque la couverture par paquet ou le volume du colis change."
+    }
+  ],
+  "examples": [
+    {
+      "title": "Façade de maison individuelle",
+      "input": "168 m2 de surface, 16 cm d’épaisseur, 5,0 m2 par paquet, 9% de pertes, 0,80 m3 par paquet",
+      "output": "Affiche le volume nécessaire, la surface corrigée et le nombre de paquets arrondi au supérieur.",
+      "description": "Utile pour commander des panneaux EPS pour une façade extérieure."
+    },
+    {
+      "title": "Sol d’entrepôt",
+      "input": "240 m2 de surface, 12 cm d’épaisseur, 4,8 m2 par paquet, 6% de pertes, 0,58 m3 par paquet",
+      "output": "Renvoie le volume total et le nombre estimé de paquets pour la couche de sol.",
+      "description": "Pratique pour préparer l’achat avant la chape ou la dalle."
+    },
+    {
+      "title": "Périphérie de fondation",
+      "input": "62 m2 de surface, 10 cm d’épaisseur, 3,6 m2 par paquet, 12% de pertes, 0,36 m3 par paquet",
+      "output": "Présente le volume d’isolation et un nombre de paquets plus élevé à cause de la marge de coupe.",
+      "description": "Adapté aux zones avec nombreux angles, raccords et petites pièces."
+    },
+    {
+      "title": "Réfection de toiture plate",
+      "input": "93 m2 de surface, 18 cm d’épaisseur, 4,2 m2 par paquet, 8% de pertes, 0,76 m3 par paquet",
+      "output": "Calcule le volume et le total de paquets nécessaires pour la composition de toiture.",
+      "description": "Utile pour vérifier le matériau avant la livraison d’une toiture chaude."
     }
   ],
   "faq": [
     {
-      "question": "Que calcule le calculateur de polystyrène isolant ?",
-      "answer": "Il calcule le volume d’isolation en m3, la surface avec marge et le nombre estimé de paquets nécessaires."
+      "question": "Pourquoi saisir à la fois la couverture par paquet et le volume du paquet ?",
+      "answer": "Selon le produit, le calcul peut être exprimé en surface ou en volume, et les deux valeurs ne coïncident pas toujours parfaitement. Renseigner les deux aide à coller au conditionnement réel du produit."
     },
     {
-      "question": "Puis-je l’utiliser pour les murs, sols, toitures et fondations ?",
-      "answer": "Oui. Le calculateur convient aux applications EPS les plus courantes."
+      "question": "Que faire si mon chantier comporte beaucoup d’angles ou d’ouvertures ?",
+      "answer": "Intégrez cette complexité dans la marge de pertes. Le calcul part de la surface totale saisie, donc les formes complexes doivent être couvertes par un pourcentage plus élevé."
     },
     {
-      "question": "Pourquoi faut-il saisir un pourcentage de pertes ?",
-      "answer": "La marge de pertes couvre les découpes, ajustements et petites pertes pendant la pose."
+      "question": "Puis-je commander directement avec le nombre arrondi ?",
+      "answer": "Oui, comme base de commande. Avant de valider, vérifiez néanmoins le format des plaques, le contenu du paquet et les détails techniques qui peuvent augmenter la consommation."
     },
     {
-      "question": "Qu’est-ce qui compte le plus : la couverture par paquet ou le volume du paquet ?",
-      "answer": "Les deux sont utiles. La couverture aide pour la surface, tandis que le volume vérifie la quantité totale de matériau."
+      "question": "Quelle erreur sur l’épaisseur provoque le plus d’écart ?",
+      "answer": "Confondre centimètres et millimètres. Le champ attend des centimètres : 12 cm doit être saisi comme 12, pas comme 120 ni 0,12."
+    },
+    {
+      "question": "Que faire si la fiche indique un nombre de plaques et un m3 par paquet ?",
+      "answer": "Utilisez les données du même produit. Si les deux sont indiquées, le nombre de paquets doit rester cohérent avec le volume et les dimensions des plaques."
     }
   ],
-  "uiLabels": {
-    "copy": "Copier",
-    "copied": "Copié",
-    "input": "Entrée",
-    "output": "Résultat",
-    "placeholder": "Saisissez une valeur",
-    "indent": "Retrait",
-    "removeComments": "Supprimer les commentaires",
-    "preview": "Aperçu",
-    "source": "Source",
-    "sanitizedHtml": "HTML nettoyé",
-    "plainText": "Texte brut",
-    "summary": "Résumé",
-    "total": "Total",
-    "links": "Liens",
-    "images": "Images",
-    "errors": "Erreurs",
-    "warnings": "Avertissements",
-    "valid": "Valide",
-    "invalid": "Non valide",
-    "href": "Href",
-    "text": "Texte",
-    "rel": "Rel",
-    "target": "Cible",
-    "alt": "Alt",
-    "width": "Largeur",
-    "height": "Hauteur",
-    "empty": "Vide",
-    "outputReady": "Résultat prêt",
-    "cleanedHtml": "HTML nettoyé",
-    "formattedHtml": "HTML formaté",
-    "minifiedHtml": "HTML minifié",
-    "markdown": "Markdown",
-    "extractedImages": "Images extraites",
-    "extractedLinks": "Liens extraits",
-    "validationSummary": "Résumé de validation",
-    "prettyHtml": "HTML lisible",
-    "encodedText": "Texte encodé",
-    "file": "Fichier",
-    "size": "Taille",
-    "format": "Format",
-    "quality": "Qualité",
-    "colorOne": "Couleur 1",
-    "colorTwo": "Couleur 2",
-    "background": "Arrière-plan",
-    "foreground": "Premier plan",
-    "angle": "Angle",
-    "margin": "Marge",
-    "level": "Niveau",
-    "gradientType": "Type de dégradé",
-    "linear": "Linéaire",
-    "radial": "Radial",
-    "blur": "Flou",
-    "spread": "Étendue",
-    "offsetX": "Décalage X",
-    "offsetY": "Décalage Y",
-    "opacity": "Opacité",
-    "inset": "Interne",
-    "cssCode": "Code CSS",
-    "snippet": "Extrait",
-    "download": "Télécharger",
-    "downloadSvg": "Télécharger SVG",
-    "downloadPng": "Télécharger PNG",
-    "downloadAll": "Tout télécharger",
-    "upload": "Importer",
-    "title": "Titre",
-    "description": "Description",
-    "canonicalUrl": "URL canonique",
-    "siteName": "Nom du site",
-    "ogImage": "Image OG",
-    "clear": "Effacer",
-    "generatedQr": "QR généré",
-    "placeholderImage": "Image placeholder",
-    "faviconSet": "Jeu de favicon",
-    "keepAspectRatio": "Conserver les proportions",
-    "cropX": "Recadrage X",
-    "cropY": "Recadrage Y",
-    "cropWidth": "Largeur de recadrage",
-    "cropHeight": "Hauteur de recadrage",
-    "originalSize": "Taille d’origine",
-    "outputSize": "Taille de sortie",
-    "savedSize": "Taille économisée",
-    "result": "Résultat",
-    "base64": "Base64",
-    "mimeType": "Type MIME",
-    "resizedImage": "Image redimensionnée",
-    "compressedImage": "Image compressée",
-    "croppedImage": "Image recadrée",
-    "convertedImage": "Image convertie",
-    "decodedImage": "Image décodée",
-    "imagePreview": "Aperçu de l’image",
-    "camera": "Caméra",
-    "lens": "Objectif",
-    "dateTaken": "Date de prise de vue",
-    "resolution": "Résolution",
-    "fileSize": "Taille du fichier",
-    "iso": "ISO",
-    "exposure": "Exposition",
-    "aperture": "Ouverture",
-    "focalLength": "Distance focale",
-    "flash": "Flash",
-    "orientation": "Orientation",
-    "latitude": "Latitude",
-    "longitude": "Longitude",
-    "openMap": "Ouvrir la carte",
-    "rawMetadata": "Métadonnées brutes",
-    "noMetadataFound": "Aucune métadonnée trouvée",
-    "gpsLocation": "Position GPS",
-    "metadataSummary": "Résumé des métadonnées"
-  },
   "seo": {
-    "title": "Calculateur de polystyrène isolant",
-    "description": "Calculez le nombre de paquets de polystyrène nécessaires et le volume d’isolation pour un mur, un sol, une toiture ou une fondation.",
+    "title": "Calculateur paquets polystyrène",
+    "description": "Estimez le volume d’isolation, la marge pour découpes et le nombre de paquets de polystyrène nécessaires au chantier.",
     "keywords": [
       "calculateur polystyrène",
-      "calculateur EPS",
-      "paquets de polystyrène",
-      "isolation polystyrène",
-      "volume d’isolation"
+      "paquets EPS",
+      "volume d’isolation",
+      "quantité polystyrène",
+      "isolation EPS"
     ]
   }
 }

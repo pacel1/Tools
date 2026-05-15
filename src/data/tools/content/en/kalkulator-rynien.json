@@ -4,176 +4,88 @@
   "slug": "gutter-calculator",
   "h1": "Gutter Calculator",
   "title": "Gutter Calculator",
-  "shortDescription": "Calculate gutter length, hangers, and downspouts needed for roof drainage.",
-  "metaTitle": "Gutter Calculator - Estimate Gutters, Hangers & Downspouts",
-  "metaDescription": "Use this gutter calculator to estimate gutter meters, hanger count, and downspouts based on roof eaves, edge count, spacing, and waste allowance.",
-  "intro": "Quickly estimate the gutter system you need for a roof. Enter eave length, roof edge count, downspout spacing, hanger spacing, and waste percentage to get a practical material estimate.",
-  "overview": "This gutter calculator helps you plan roof drainage materials before purchase or installation. It estimates total gutter length, the number of hangers, and the number of downspouts based on your roof dimensions and spacing rules. Add a waste margin to account for cuts, joins, and on-site adjustments.",
+  "shortDescription": "Estimate gutter runs, hangers, and downspouts for a specific roof layout.",
+  "metaTitle": "Gutter Calculator for Roof Drainage",
+  "metaDescription": "Estimate gutter length, hangers, and downspouts from eave length, roof edges, spacing, and waste allowance.",
+  "intro": "Enter your eave length, roof edge count, hanger spacing, downspout spacing, and waste allowance to estimate the gutter materials you need.",
+  "overview": "This gutter calculator gives you a practical material estimate for a roof drainage setup. It converts the roof edge length you enter into a total gutter run, then estimates the number of hangers and downspouts based on the spacing you choose.\n\nUse it when you are planning a new installation, replacing damaged sections, or comparing material quantities before placing an order. The waste allowance helps account for cuts, overlaps, end pieces, and on-site corrections, so the estimate is closer to what you will actually need.",
   "howItWorks": [
-    "Enter the eave length in meters.",
-    "Provide the number of roof edges to be fitted with gutters.",
-    "Set the downspout spacing in meters.",
-    "Enter hanger spacing in centimeters.",
-    "Add a waste percentage for extra material.",
-    "Review the estimated gutter meters, hangers, and downspouts."
+    "Measure the eave or roof edge length in meters.",
+    "Enter how many edges will receive gutters.",
+    "Set hanger spacing in centimeters.",
+    "Set the planned distance between downspouts in meters.",
+    "Add a waste allowance for cuts and joints.",
+    "Review the calculated gutter length, hangers, and downspouts."
   ],
   "useCases": [
-    "Estimating materials for a new gutter installation.",
-    "Checking how many hangers are needed for a roof repair.",
-    "Planning downspout placement for residential or commercial roofs.",
-    "Ordering gutter parts with a proper waste allowance."
+    {
+      "title": "New roof drainage layout",
+      "description": "Work out the materials for a fresh gutter system on a house, garage, or annex before ordering parts."
+    },
+    {
+      "title": "Replacement after storm damage",
+      "description": "Estimate how many sections, hangers, and downspouts are needed when only part of the system is being renewed."
+    },
+    {
+      "title": "Multi-side roof planning",
+      "description": "Compare material needs for different roof edges when each side has a different length or outlet layout."
+    },
+    {
+      "title": "Material order check",
+      "description": "Confirm whether a quoted parts list matches the roof dimensions and spacing you measured on site."
+    }
   ],
   "examples": [
     {
-      "title": "Example calculation",
-      "input": "Eave length: 12 m, roof edges: 2, downspout spacing: 10 m, hanger spacing: 60 cm, waste: 10%",
-      "output": "Estimated gutter length, hangers, and downspouts for the roof.",
-      "description": "Use the result as a fast material estimate before buying components."
+      "title": "Two-sided house roof",
+      "input": "Eave length: 12 m, roof edges: 2, hanger spacing: 60 cm, downspout spacing: 10 m, waste: 10%",
+      "output": "Estimated total gutter run: 26.4 m. Hangers: 44. Downspouts: 3.",
+      "description": "A typical detached house layout with one outlet planned per roof side and a small allowance for cuts."
     },
     {
-      "title": "Planning a roof drainage upgrade",
-      "input": "Measure each eave section separately and sum the total length before calculating.",
-      "output": "A clearer estimate for gutters and supports.",
-      "description": "Useful when replacing old gutters or expanding an existing system."
+      "title": "Single garage roof",
+      "input": "Eave length: 8.5 m, roof edges: 1, hanger spacing: 50 cm, downspout spacing: 7 m, waste: 5%",
+      "output": "Estimated total gutter run: 8.9 m. Hangers: 18. Downspouts: 2.",
+      "description": "Useful for a compact roof where even a short run still needs a safe hanger count."
+    },
+    {
+      "title": "Long workshop building",
+      "input": "Eave length: 24 m, roof edges: 2, hanger spacing: 70 cm, downspout spacing: 12 m, waste: 8%",
+      "output": "Estimated total gutter run: 51.8 m. Hangers: 74. Downspouts: 5.",
+      "description": "Helps when a long building needs several outlets to avoid overloading one section."
     }
   ],
   "faq": [
     {
-      "question": "How do I calculate gutter length?",
-      "answer": "Multiply the eave length by the number of roof edges, then add the chosen waste percentage."
+      "question": "Does this calculator include corners and end caps automatically?",
+      "answer": "No. Corners, end caps, connectors, and outlets are usually counted separately. Use the gutter length result as the base run, then add those fittings from your roof layout."
     },
     {
-      "question": "How are hangers estimated?",
-      "answer": "Divide the total gutter length by the hanger spacing and round up to the next whole hanger."
+      "question": "Why can the hanger count be higher than I expected?",
+      "answer": "The calculator uses the spacing you enter across the full gutter length, so shorter spacing produces more hangers. Many installations also need extra hangers near corners, outlets, and joins."
     },
     {
-      "question": "How are downspouts estimated?",
-      "answer": "Divide the total gutter length by the downspout spacing and round up to get the required number of downspouts."
+      "question": "How should I treat a roof with different edge lengths?",
+      "answer": "Calculate each edge separately and add the results. Do not use one average length if the sides have very different runs or different drain points."
     },
     {
-      "question": "Why add waste percentage?",
-      "answer": "Waste covers cuts, overlaps, corner fitting, and installation adjustments."
+      "question": "What does the waste allowance cover in practice?",
+      "answer": "It covers cut losses, overlaps, fitting adjustments, and small mistakes made during installation. It is not the same as the number of connectors or special fittings you may still need to buy."
+    },
+    {
+      "question": "Can I use the downspout result as the exact number of outlets?",
+      "answer": "No. The downspout figure is an estimate based on spacing, not a design for every drainage point. Final outlet placement depends on roof pitch, runoff volume, and where water can be safely discharged."
     }
   ],
-  "uiLabels": {
-    "copy": "Copy",
-    "copied": "Copied",
-    "input": "Input",
-    "output": "Output",
-    "placeholder": "Enter a value",
-    "indent": "Indent",
-    "removeComments": "Remove comments",
-    "preview": "Preview",
-    "source": "Source",
-    "sanitizedHtml": "Sanitized HTML",
-    "plainText": "Plain text",
-    "summary": "Summary",
-    "total": "Total",
-    "links": "Links",
-    "images": "Images",
-    "errors": "Errors",
-    "warnings": "Warnings",
-    "valid": "Valid",
-    "invalid": "Invalid",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Width",
-    "height": "Height",
-    "empty": "Empty",
-    "outputReady": "Output ready",
-    "cleanedHtml": "Cleaned HTML",
-    "formattedHtml": "Formatted HTML",
-    "minifiedHtml": "Minified HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extracted images",
-    "extractedLinks": "Extracted links",
-    "validationSummary": "Validation summary",
-    "prettyHtml": "Pretty HTML",
-    "encodedText": "Encoded text",
-    "file": "File",
-    "size": "Size",
-    "format": "Format",
-    "quality": "Quality",
-    "colorOne": "Color 1",
-    "colorTwo": "Color 2",
-    "background": "Background",
-    "foreground": "Foreground",
-    "angle": "Angle",
-    "margin": "Margin",
-    "level": "Level",
-    "gradientType": "Gradient type",
-    "linear": "Linear",
-    "radial": "Radial",
-    "blur": "Blur",
-    "spread": "Spread",
-    "offsetX": "Offset X",
-    "offsetY": "Offset Y",
-    "opacity": "Opacity",
-    "inset": "Inset",
-    "cssCode": "CSS code",
-    "snippet": "Snippet",
-    "download": "Download",
-    "downloadSvg": "Download SVG",
-    "downloadPng": "Download PNG",
-    "downloadAll": "Download all",
-    "upload": "Upload",
-    "title": "Title",
-    "description": "Description",
-    "canonicalUrl": "Canonical URL",
-    "siteName": "Site name",
-    "ogImage": "OG image",
-    "clear": "Clear",
-    "generatedQr": "Generated QR",
-    "placeholderImage": "Placeholder image",
-    "faviconSet": "Favicon set",
-    "keepAspectRatio": "Keep aspect ratio",
-    "cropX": "Crop X",
-    "cropY": "Crop Y",
-    "cropWidth": "Crop width",
-    "cropHeight": "Crop height",
-    "originalSize": "Original size",
-    "outputSize": "Output size",
-    "savedSize": "Saved size",
-    "result": "Result",
-    "base64": "Base64",
-    "mimeType": "MIME type",
-    "resizedImage": "Resized image",
-    "compressedImage": "Compressed image",
-    "croppedImage": "Cropped image",
-    "convertedImage": "Converted image",
-    "decodedImage": "Decoded image",
-    "imagePreview": "Image preview",
-    "camera": "Camera",
-    "lens": "Lens",
-    "dateTaken": "Date taken",
-    "resolution": "Resolution",
-    "fileSize": "File size",
-    "iso": "ISO",
-    "exposure": "Exposure",
-    "aperture": "Aperture",
-    "focalLength": "Focal length",
-    "flash": "Flash",
-    "orientation": "Orientation",
-    "latitude": "Latitude",
-    "longitude": "Longitude",
-    "openMap": "Open map",
-    "rawMetadata": "Raw metadata",
-    "noMetadataFound": "No metadata found",
-    "gpsLocation": "GPS location",
-    "metadataSummary": "Metadata summary"
-  },
   "seo": {
-    "title": "Gutter Calculator",
-    "description": "Estimate gutter meters, hangers, and downspouts for roof drainage with a simple online calculator.",
+    "title": "Gutter Calculator for Roof Drainage",
+    "description": "Estimate gutter length, hangers, and downspouts from eave length, roof edges, spacing, and waste allowance.",
     "keywords": [
       "gutter calculator",
-      "roof drainage calculator",
-      "gutter length calculator",
-      "downspout calculator",
-      "hanger calculator"
+      "roof gutter estimate",
+      "downspout estimate",
+      "hanger spacing",
+      "roof drainage"
     ]
   }
 }

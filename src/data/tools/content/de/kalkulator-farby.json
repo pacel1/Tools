@@ -4,176 +4,91 @@
   "slug": "farbenrechner",
   "h1": "Farbenrechner",
   "title": "Farbenrechner",
-  "shortDescription": "Berechne, wie viel Farbe du für Wände und Decken brauchst, basierend auf Fläche, Deckkraft, Anstrichen und Reserve.",
-  "metaTitle": "Farbenrechner - Liter und Farbeimer berechnen",
-  "metaDescription": "Berechne, wie viel Farbe du für Wände und Decken brauchst. Gib Fläche, Deckkraft, Anstriche, Reserve und Eimergröße ein, um Liter und Eimer zu schätzen.",
-  "intro": "Mit diesem Farbenrechner kannst du schnell abschätzen, wie viele Liter Farbe du für Wände oder Decken brauchst. Das Tool ist ideal für die Renovierungsplanung und hilft dir, die richtige Menge vor dem Kauf zu ermitteln.",
-  "overview": "Gib die Fläche in Quadratmetern, die Deckkraft der Farbe in m2/l, die Anzahl der Anstriche, den Reserveanteil und die Eimergröße ein. Der Rechner ermittelt den Farbbedarf ohne Reserve, mit Reserve und die geschätzte Anzahl an Eimern. Die Standardwerte entsprechen typischen Praxiswerten: etwa 10-12 m2/l, 2 Anstriche und 10% Reserve.",
+  "shortDescription": "Berechne die benötigte Farbe für Wände und Decken anhand von Fläche, Deckkraft, Anstrichen, Reserve und Gebindegröße.",
+  "metaTitle": "Farbe: Liter und Eimer",
+  "metaDescription": "Berechne die Farbmenge für Wände und Decken mit Fläche, Deckkraft, Anstrichen, Reserve und Gebindegröße.",
+  "intro": "Gib Fläche, Deckkraft, Anstriche, Reserve und Gebindegröße ein, um Literbedarf und Eimerzahl zu erhalten.",
+  "overview": "Dieser Rechner macht aus Wand- und Deckenflächen eine brauchbare Einkaufsmenge für Farbe. Er berücksichtigt die Fläche, die angegebene Deckkraft, die Anzahl der Anstriche, einen Reserveanteil für Verluste und die Gebindegröße, damit du vor dem Kauf planen kannst.\n\nHilfreich ist das vor allem bei rauen Untergründen, Ausbesserungen, Deckenanstrichen oder deutlichen Farbwechseln. Das Ergebnis zeigt dir die Menge ohne Reserve, die Menge mit Reserve und die geschätzte Zahl der Eimer.\n\nWenn du verschiedene Produkte vergleichst, orientiere dich an der echten Deckkraft auf dem Datenblatt oder dem Gebinde. Strukturputz und stark saugende Flächen benötigen oft mehr Farbe, deshalb ist die Reserve ein wichtiger Teil der Schätzung.",
   "howItWorks": [
-    "Multipliziere die Fläche mit der Anzahl der Anstriche, um die gesamte zu streichende Fläche zu erhalten.",
-    "Teile das Ergebnis durch die Deckkraft, um die Liter ohne Reserve zu berechnen.",
-    "Addiere den Reserveanteil, um eine sichere Menge zu erhalten.",
-    "Teile durch die Eimergröße, um die benötigte Anzahl an Eimern zu schätzen.",
-    "Runde die Eimerzahl auf, damit dir während des Streichens nichts ausgeht."
+    "Gib die zu streichende Fläche in Quadratmetern ein.",
+    "Trage die Deckkraft laut Produkt in m2/l ein.",
+    "Wähle die Anzahl der benötigten Anstriche.",
+    "Füge Reserve für Werkzeugverlust, Kantenarbeit, Ausbesserungen und Saugverhalten hinzu.",
+    "Teile die Liter durch die Gebindegröße und runde auf volle Eimer auf."
   ],
   "useCases": [
-    "Planung eines Anstrichs im Wohnzimmer oder Schlafzimmer.",
-    "Berechnung des Farbbedarfs für eine Decke.",
-    "Vergleich verschiedener Farben nach ihrer Deckkraft.",
-    "Ermittlung der benötigten Eimer für ein Renovierungsbudget.",
-    "Vermeidung von zu wenig Farbe bei mehreren Anstrichen."
+    {
+      "title": "Wohnzimmer streichen",
+      "description": "Ermittle die Farbmenge für ein größeres Wohnzimmer mit zwei deckenden Anstrichen."
+    },
+    {
+      "title": "Decke planen",
+      "description": "Prüfe, ob eine Decke in einen 5-Liter-Eimer passt oder ein größeres Gebinde nötig ist."
+    },
+    {
+      "title": "Produkte vergleichen",
+      "description": "Vergleiche zwei Farben mit unterschiedlicher Deckkraft für dieselbe Fläche."
+    },
+    {
+      "title": "Mehrere Räume kalkulieren",
+      "description": "Summiere den Bedarf für Flur, Schlafzimmer und Arbeitszimmer in einem Projekt."
+    },
+    {
+      "title": "Saugender Untergrund",
+      "description": "Plane bei gespachtelten oder strukturierten Flächen mit zusätzlicher Reserve."
+    }
   ],
   "examples": [
     {
-      "title": "Schätzung für einen Raum",
-      "input": "Fläche: 40 m2, Deckkraft: 11 m2/l, Anstriche: 2, Reserve: 10%, Eimer: 5 l",
-      "output": "Liter ohne Reserve: 7,27 l, Liter mit Reserve: 8,00 l, Eimer: 2.",
-      "description": "Ein typischer Raum braucht oft einen zusätzlichen Eimer, wenn Reserve und Aufrundung berücksichtigt werden."
+      "title": "Mittelgroßes Schlafzimmer",
+      "input": "Fläche: 32 m2, Deckkraft: 11 m2/l, Anstriche: 2, Reserve: 8%, Eimer: 2,5 l",
+      "output": "Farbe ohne Reserve: 5,82 l, Farbe mit Reserve: 6,28 l, Eimer: 3.",
+      "description": "Bei diesem Raum sind drei kleine Gebinde meist die sichere Wahl."
     },
     {
-      "title": "Decke neu streichen",
-      "input": "Fläche: 25 m2, Deckkraft: 10 m2/l, Anstriche: 2, Reserve: 10%, Eimer: 10 l",
-      "output": "Liter ohne Reserve: 5,00 l, Liter mit Reserve: 5,50 l, Eimer: 1.",
-      "description": "Geeignet für eine schnelle Schätzung bei kleineren Deckenflächen."
+      "title": "Küchendecke",
+      "input": "Fläche: 18 m2, Deckkraft: 9,5 m2/l, Anstriche: 2, Reserve: 12%, Eimer: 10 l",
+      "output": "Farbe ohne Reserve: 3,79 l, Farbe mit Reserve: 4,24 l, Eimer: 1.",
+      "description": "Für eine kleine Decke reicht oft ein großer Eimer, selbst mit Reserve."
+    },
+    {
+      "title": "Rauer Flur",
+      "input": "Fläche: 54 m2, Deckkraft: 8,5 m2/l, Anstriche: 2, Reserve: 15%, Eimer: 5 l",
+      "output": "Farbe ohne Reserve: 12,71 l, Farbe mit Reserve: 14,62 l, Eimer: 3.",
+      "description": "Eine raue Wandoberfläche erhöht die benötigte Menge deutlich."
     }
   ],
   "faq": [
     {
-      "question": "Wie wird die Farbmenge berechnet?",
-      "answer": "Der Rechner multipliziert die Fläche mit der Anzahl der Anstriche und teilt durch die Deckkraft. Danach wird die Reserve addiert, um eine praxisnahe Kaufmenge zu erhalten."
+      "question": "Zählt der Rechner jede Schicht einzeln?",
+      "answer": "Ja. Die Fläche wird mit der Anzahl der Anstriche multipliziert, daher verdoppeln zwei Schichten den Grundbedarf."
     },
     {
-      "question": "Sollte ich das Ergebnis aufrunden?",
-      "answer": "Ja. Farbe sollte auf volle Eimer aufgerundet werden, damit du während der Arbeit nicht knapp wirst."
+      "question": "Warum kann das Ergebnis über der Herstellerangabe liegen?",
+      "answer": "Weil die Reserve Verluste durch Werkzeug, Randbereiche, Ausbesserungen und saugende Flächen einbezieht. Ohne Reserve bekommst du den theoretischen Mindestwert."
     },
     {
-      "question": "Welche Deckkraft sollte ich eingeben?",
-      "answer": "Am besten den Wert vom Farbgebinde. Wenn du unsicher bist, sind 10-12 m2 pro Liter ein üblicher Praxisbereich für viele Wandfarben."
+      "question": "Was trage ich bei Strukturputz oder Spachtelstellen ein?",
+      "answer": "Wähle eine niedrigere Deckkraft und eine höhere Reserve. Solche Untergründe verbrauchen meist mehr Farbe als glatte Wände."
     },
     {
-      "question": "Funktioniert das Tool auch für Decken?",
-      "answer": "Ja. Gib einfach die Deckenfläche in Quadratmetern und die vom Hersteller angegebene Deckkraft ein."
+      "question": "Soll ich die Nennfüllmenge oder den echten Literwert eingeben?",
+      "answer": "Verwende den tatsächlichen Literinhalt des Gebindes. Wenn auf dem Eimer 2,5 l steht, trage 2,5 ein."
+    },
+    {
+      "question": "Wie deute ich 2,1 Eimer?",
+      "answer": "Auf ganze Eimer aufrunden, also auf 3. So bleibt genug Puffer für kleine Ausbesserungen und Farbangleichungen."
     }
   ],
-  "uiLabels": {
-    "copy": "Kopieren",
-    "copied": "Kopiert",
-    "input": "Eingabe",
-    "output": "Ergebnis",
-    "placeholder": "Wert eingeben",
-    "indent": "Einzug",
-    "removeComments": "Kommentare entfernen",
-    "preview": "Vorschau",
-    "source": "Quelle",
-    "sanitizedHtml": "Bereinigtes HTML",
-    "plainText": "Klartext",
-    "summary": "Zusammenfassung",
-    "total": "Gesamt",
-    "links": "Links",
-    "images": "Bilder",
-    "errors": "Fehler",
-    "warnings": "Warnungen",
-    "valid": "Gültig",
-    "invalid": "Ungültig",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Ziel",
-    "alt": "Alt",
-    "width": "Breite",
-    "height": "Höhe",
-    "empty": "Leer",
-    "outputReady": "Ergebnis bereit",
-    "cleanedHtml": "Bereinigtes HTML",
-    "formattedHtml": "Formatiertes HTML",
-    "minifiedHtml": "Minifiziertes HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extrahierte Bilder",
-    "extractedLinks": "Extrahierte Links",
-    "validationSummary": "Validierungszusammenfassung",
-    "prettyHtml": "Schön formatiertes HTML",
-    "encodedText": "Kodierter Text",
-    "file": "Datei",
-    "size": "Größe",
-    "format": "Format",
-    "quality": "Qualität",
-    "colorOne": "Farbe 1",
-    "colorTwo": "Farbe 2",
-    "background": "Hintergrund",
-    "foreground": "Vordergrund",
-    "angle": "Winkel",
-    "margin": "Rand",
-    "level": "Stufe",
-    "gradientType": "Verlaufsart",
-    "linear": "Linear",
-    "radial": "Radial",
-    "blur": "Unschärfe",
-    "spread": "Ausbreitung",
-    "offsetX": "Versatz X",
-    "offsetY": "Versatz Y",
-    "opacity": "Deckkraft",
-    "inset": "Innen",
-    "cssCode": "CSS-Code",
-    "snippet": "Snippet",
-    "download": "Herunterladen",
-    "downloadSvg": "SVG herunterladen",
-    "downloadPng": "PNG herunterladen",
-    "downloadAll": "Alles herunterladen",
-    "upload": "Hochladen",
-    "title": "Titel",
-    "description": "Beschreibung",
-    "canonicalUrl": "Kanonische URL",
-    "siteName": "Seitenname",
-    "ogImage": "OG-Bild",
-    "clear": "Löschen",
-    "generatedQr": "Generierter QR-Code",
-    "placeholderImage": "Platzhalterbild",
-    "faviconSet": "Favicon-Set",
-    "keepAspectRatio": "Seitenverhältnis beibehalten",
-    "cropX": "Zuschneiden X",
-    "cropY": "Zuschneiden Y",
-    "cropWidth": "Zuschneiderbreite",
-    "cropHeight": "Zuschneiderhöhe",
-    "originalSize": "Originalgröße",
-    "outputSize": "Ausgabegröße",
-    "savedSize": "Gespeicherte Größe",
-    "result": "Ergebnis",
-    "base64": "Base64",
-    "mimeType": "MIME-Typ",
-    "resizedImage": "Größenangepasstes Bild",
-    "compressedImage": "Komprimiertes Bild",
-    "croppedImage": "Zugeschnittenes Bild",
-    "convertedImage": "Konvertiertes Bild",
-    "decodedImage": "Dekodiertes Bild",
-    "imagePreview": "Bildvorschau",
-    "camera": "Kamera",
-    "lens": "Objektiv",
-    "dateTaken": "Aufnahmedatum",
-    "resolution": "Auflösung",
-    "fileSize": "Dateigröße",
-    "iso": "ISO",
-    "exposure": "Belichtung",
-    "aperture": "Blende",
-    "focalLength": "Brennweite",
-    "flash": "Blitz",
-    "orientation": "Ausrichtung",
-    "latitude": "Breitengrad",
-    "longitude": "Längengrad",
-    "openMap": "Karte öffnen",
-    "rawMetadata": "Rohmetadaten",
-    "noMetadataFound": "Keine Metadaten gefunden",
-    "gpsLocation": "GPS-Position",
-    "metadataSummary": "Metadatenübersicht"
-  },
   "seo": {
-    "title": "Farbenrechner - wie viel Farbe brauche ich?",
-    "description": "Kostenloser Farbenrechner für Wände und Decken. Berechne Liter ohne Reserve, mit Reserve und die Anzahl der Eimer anhand von Fläche, Deckkraft, Anstrichen und Eimergröße.",
+    "title": "Farbe: Liter und Eimer",
+    "description": "Berechne die Farbmenge für Wände und Decken mit Fläche, Deckkraft, Anstrichen, Reserve und Gebindegröße.",
     "keywords": [
       "Farbenrechner",
-      "wie viel Farbe brauche ich",
       "Farbe berechnen",
-      "Wandfarbe Rechner",
-      "Deckenfarbe Rechner"
+      "Wandfarbe berechnen",
+      "Deckenfarbe berechnen",
+      "Liter Farbe"
     ]
   }
 }

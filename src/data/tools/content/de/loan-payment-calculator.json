@@ -4,42 +4,79 @@
   "slug": "kreditratenrechner",
   "h1": "Kreditratenrechner",
   "title": "Kreditratenrechner",
-  "shortDescription": "Berechnen Sie die monatliche Kreditrate anhand von Betrag, Zinssatz und Laufzeit – mit schnellen Ergebnissen, einfachen Eingaben und praktischen Beispielen.",
-  "overview": "Berechnen Sie die monatliche Kreditrate anhand von Betrag, Zinssatz und Laufzeit. Diese Seite liefert eine schnelle Antwort mit einem praktischen Online-Tool und einem einfachen Ergebnisablauf. Sie richtet sich an Nutzer, die eine kostenlose Online-Antwort, sofortige browserbasierte Ergebnisse und praxisnahe Inhalte für Long-Tail-Suchanfragen suchen.",
+  "shortDescription": "Berechnen Sie die geschätzte monatliche Kreditrate aus Betrag, Zinssatz und Laufzeit.",
+  "metaTitle": "Kreditratenrechner",
+  "metaDescription": "Berechnen Sie die geschätzte monatliche Kreditrate aus Betrag, Zinssatz und Laufzeit.",
+  "intro": "Tragen Sie Kreditsumme, Zinssatz und Laufzeit ein, um die geschätzte Monatsrate sofort zu sehen.",
+  "overview": "Dieser Rechner zeigt eine geschätzte Monatsrate anhand von Kreditsumme, effektivem Jahreszins und Laufzeit. Er eignet sich zum Vergleichen von Angeboten, zum Testen verschiedener Laufzeiten und zum Einschätzen, wie sich Zins und Dauer auf die Rate auswirken.\n\nDas Ergebnis ist ein Richtwert. Zusätzliche Gebühren, Versicherungen, Abschlusskosten oder andere vertragliche Posten sind nicht enthalten, sofern Sie sie nicht als Eingabe berücksichtigen. Bei Sonderformen wie Raten mit Schlusszahlung oder anderen Zahlungsrhythmen dient die Monatsrate nur als Vergleichswert.",
   "howItWorks": [
-    "Geben Sie den erforderlichen Wert oder Text in das Formular ein.",
-    "Die Umrechnung, Berechnung oder Umwandlung läuft sofort im Browser.",
-    "Prüfen Sie das Ergebnis und nutzen Sie bei Bedarf verwandte Tools für den nächsten Schritt."
+    "Geben Sie Kreditsumme, Jahreszins und Laufzeit ein.",
+    "Das Tool verwendet die Standardformel für einen annuitätischen Kredit.",
+    "Prüfen Sie die geschätzte Monatsrate und ändern Sie die Werte für einen Vergleich."
+  ],
+  "useCases": [
+    {
+      "title": "Autofinanzierung vergleichen",
+      "description": "Prüfen Sie, ob ein niedrigerer Zins oder eine längere Laufzeit die Monatsrate für denselben Kaufpreis stärker senkt."
+    },
+    {
+      "title": "Privatkredit planen",
+      "description": "Schätzen Sie vor dem Antrag, ob die Rate in Ihr monatliches Budget passt."
+    },
+    {
+      "title": "Umschuldung bewerten",
+      "description": "Vergleichen Sie den aktuellen Restbetrag mit einem neuen Angebot und sehen Sie, wie sich die Monatsrate verändert."
+    }
   ],
   "examples": [
     {
-      "title": "Beispiel 1",
-      "input": "25000, 6 %, 60 Monate",
-      "output": "Monatliche Rate",
-      "description": "Ein realistisches Beispiel für einen Kreditratenrechner bei einer alltäglichen Suchanfrage."
+      "title": "Klassischer Annuitätendarlehen",
+      "input": "Betrag: 25000 | Zinssatz: 6% | Laufzeit: 60 Monate",
+      "output": "Geschätzte Monatsrate: 483,32",
+      "description": "Typisches Beispiel für einen fünfjährigen Kredit mit festem Jahreszins."
     },
     {
-      "title": "Beispiel 2",
-      "input": "25000, 6 %, 60 Monate",
-      "output": "Monatliche Rate",
-      "description": "Ein weiteres praktisches Anwendungsbeispiel für organischen Long-Tail-Traffic."
+      "title": "Kürzere Laufzeit",
+      "input": "Betrag: 18000 | Zinssatz: 4,9% | Laufzeit: 36 Monate",
+      "output": "Geschätzte Monatsrate: 537,62",
+      "description": "Zeigt, wie eine kürzere Laufzeit die Rate erhöht, aber die Rückzahlung verkürzt."
+    },
+    {
+      "title": "Längere Laufzeit",
+      "input": "Betrag: 42000 | Zinssatz: 7,25% | Laufzeit: 84 Monate",
+      "output": "Geschätzte Monatsrate: 633,37",
+      "description": "Hilft beim Vergleich einer niedrigeren Monatsrate über einen längeren Zeitraum."
     }
   ],
   "faq": [
     {
-      "question": "Wie genau ist dieses Tool?",
-      "answer": "Das Ergebnis wird direkt aus der Formel oder der browserseitigen Logik dieses Tools berechnet."
+      "question": "Sind Gebühren und Versicherungen enthalten?",
+      "answer": "Nein. Die Berechnung basiert auf Betrag, Zinssatz und Laufzeit. Zusätzliche Kosten müssen separat berücksichtigt werden."
     },
     {
-      "question": "Kann ich dieses Tool auf dem Handy verwenden?",
-      "answer": "Ja. Die Seite funktioniert auf Desktop- und Mobilgeräten mit einem einfachen Eingabe- und Ergebnislayout."
+      "question": "Warum weicht meine Bankrate ab?",
+      "answer": "Banken nutzen teils Rundungen, Bearbeitungsgebühren oder andere Zahlungsmodelle. Auch gebundene Zusatzprodukte können die Rate beeinflussen."
+    },
+    {
+      "question": "Soll ich die Laufzeit in Jahren oder Monaten eingeben?",
+      "answer": "Geben Sie die Laufzeit in Monaten ein. Fünf Jahre entsprechen also 60 Monaten."
+    },
+    {
+      "question": "Was bedeutet 0 % Zins?",
+      "answer": "Dann wird nur die Kreditsumme auf die gewählte Laufzeit verteilt. Das ist nützlich für Sonderkonditionen oder Vergleiche."
+    },
+    {
+      "question": "Eignet sich das für endfällige Kredite?",
+      "answer": "Nein. Endfällige Kredite folgen einer anderen Struktur, daher passt diese Schätzung dort nicht."
     }
   ],
   "seo": {
     "title": "Kreditratenrechner",
-    "description": "Berechnen Sie die monatliche Kreditrate anhand von Betrag, Zinssatz und Laufzeit. Kostenloser Kreditratenrechner online mit sofortigen Ergebnissen.",
+    "description": "Berechnen Sie die geschätzte monatliche Kreditrate aus Betrag, Zinssatz und Laufzeit.",
     "keywords": [
-      "kreditratenrechner"
+      "kreditratenrechner",
+      "kreditrate berechnen",
+      "monatsrate kredit"
     ]
   }
 }

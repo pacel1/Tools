@@ -4,43 +4,79 @@
   "slug": "kalkulator-raty-kredytu",
   "h1": "Kalkulator raty kredytu",
   "title": "Kalkulator raty kredytu",
-  "shortDescription": "Oszacuj miesięczną ratę kredytu na podstawie kwoty, oprocentowania i okresu spłaty — szybko, prosto i z praktycznymi przykładami.",
-  "overview": "Oszacuj miesięczną ratę kredytu na podstawie kwoty, oprocentowania i okresu spłaty. Ta strona daje szybką odpowiedź dzięki prostemu narzędziu online i przejrzystemu wynikowi. Treść jest skierowana do osób szukających darmowego kalkulatora online, błyskawicznych wyników w przeglądarce i praktycznych informacji dopasowanych do popularnych zapytań.",
+  "shortDescription": "Oblicz szacowaną miesięczną ratę kredytu na podstawie kwoty, oprocentowania i okresu spłaty.",
+  "metaTitle": "Kalkulator raty kredytu",
+  "metaDescription": "Oblicz szacowaną miesięczną ratę kredytu na podstawie kwoty, oprocentowania i okresu spłaty.",
+  "intro": "Wpisz kwotę kredytu, oprocentowanie i okres spłaty, aby od razu zobaczyć szacowaną ratę miesięczną.",
+  "overview": "Ten kalkulator pokazuje orientacyjną miesięczną ratę na podstawie kwoty kapitału, rocznej stopy procentowej i czasu spłaty. Przydaje się, gdy chcesz porównać oferty, sprawdzić wpływ zmiany oprocentowania albo ocenić, czy rata mieści się w budżecie.\n\nWynik ma charakter szacunkowy. Nie uwzględnia opłat dodatkowych, prowizji, ubezpieczenia ani kosztów wymaganych przez konkretną umowę, jeśli nie podasz ich w danych wejściowych. Jeżeli kredyt ma niestandardowy harmonogram spłat, potraktuj wynik jako punkt odniesienia, a nie gotową wartość z umowy.",
   "howItWorks": [
-    "Wpisz wymagane dane w formularzu.",
-    "Obliczenie uruchamia się natychmiast w przeglądarce.",
-    "Sprawdź wynik i skorzystaj z powiązanych narzędzi, jeśli potrzebujesz kolejnego kroku."
+    "Wpisz kwotę kredytu, roczne oprocentowanie i okres spłaty.",
+    "Narzędzie oblicza ratę według standardowego wzoru dla kredytu amortyzowanego.",
+    "Sprawdź wynik i zmień dane, aby porównać różne warianty."
+  ],
+  "useCases": [
+    {
+      "title": "Porównanie oferty na samochód",
+      "description": "Sprawdź, czy niższe oprocentowanie albo dłuższy okres spłaty bardziej obniża miesięczną ratę przy tej samej cenie auta."
+    },
+    {
+      "title": "Planowanie kredytu gotówkowego",
+      "description": "Oceń, czy rata będzie pasować do domowego budżetu przed złożeniem wniosku."
+    },
+    {
+      "title": "Analiza refinansowania",
+      "description": "Porównaj obecne saldo z nową ofertą, żeby zobaczyć wpływ refinansowania na miesięczny koszt."
+    }
   ],
   "examples": [
     {
-      "title": "Przykład 1",
-      "input": "25000, 6%, 60 miesięcy",
-      "output": "Miesięczna rata",
-      "description": "Realistyczny przykład kalkulatora raty kredytu dla codziennego zapytania."
+      "title": "Standardowy kredyt ratalny",
+      "input": "Kwota: 25000 | Oprocentowanie: 6% | Okres: 60 miesięcy",
+      "output": "Szacowana rata miesięczna: 483,32",
+      "description": "Typowy przykład kredytu na pięć lat ze stałym oprocentowaniem."
     },
     {
-      "title": "Przykład 2",
-      "input": "25000, 6%, 60 miesięcy",
-      "output": "Miesięczna rata",
-      "description": "Kolejny praktyczny przypadek użycia dla ruchu organicznego z długiego ogona."
+      "title": "Krótszy okres spłaty",
+      "input": "Kwota: 18000 | Oprocentowanie: 4,9% | Okres: 36 miesięcy",
+      "output": "Szacowana rata miesięczna: 537,62",
+      "description": "Pokazuje, jak krótszy termin podnosi ratę, ale skraca czas spłaty."
+    },
+    {
+      "title": "Dłuższy okres spłaty",
+      "input": "Kwota: 42000 | Oprocentowanie: 7,25% | Okres: 84 miesiące",
+      "output": "Szacowana rata miesięczna: 633,37",
+      "description": "Pomaga ocenić niższą ratę miesięczną przy dłuższym okresie spłaty."
     }
   ],
   "faq": [
     {
-      "question": "Jak dokładny jest ten kalkulator?",
-      "answer": "Wynik jest obliczany bezpośrednio na podstawie wzoru lub logiki przeglądarkowej używanej przez to narzędzie."
+      "question": "Czy kalkulator uwzględnia prowizję i ubezpieczenie?",
+      "answer": "Nie. Wynik bazuje na kwocie, oprocentowaniu i okresie spłaty. Dodatkowe koszty trzeba doliczyć osobno."
     },
     {
-      "question": "Czy mogę używać tego narzędzia na telefonie?",
-      "answer": "Tak. Strona działa na komputerach i urządzeniach mobilnych, z prostym układem pola i wyniku."
+      "question": "Dlaczego rata z kalkulatora różni się od oferty banku?",
+      "answer": "Bank może stosować zaokrąglenia, doliczać prowizję albo liczyć raty według innego harmonogramu. Na różnicę wpływają też produkty dodatkowe."
+    },
+    {
+      "question": "Czy okres spłaty mam wpisywać w latach czy miesiącach?",
+      "answer": "Wpisz liczbę miesięcy. Jeśli masz okres w latach, przelicz go na miesiące, na przykład 5 lat to 60 miesięcy."
+    },
+    {
+      "question": "Co oznacza wynik przy oprocentowaniu 0%?",
+      "answer": "Kalkulator rozkłada wtedy sam kapitał na wybrany okres spłaty. To przydatne przy ofertach promocyjnych lub do porównań."
+    },
+    {
+      "question": "Czy to działa dla kredytu z ratą balonową?",
+      "answer": "Nie. Raty balonowe mają inną strukturę spłaty, więc ten wynik nie będzie odpowiadał takiej umowie."
     }
   ],
   "seo": {
     "title": "Kalkulator raty kredytu",
-    "description": "Oszacuj miesięczną ratę kredytu na podstawie kwoty, oprocentowania i okresu spłaty. Darmowy kalkulator raty kredytu online z natychmiastowym wynikiem.",
+    "description": "Oblicz szacowaną miesięczną ratę kredytu na podstawie kwoty, oprocentowania i okresu spłaty.",
     "keywords": [
       "kalkulator raty kredytu",
-      "narzedzie kalkulatory"
+      "rata kredytu",
+      "obliczanie raty kredytu"
     ]
   }
 }

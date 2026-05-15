@@ -4,158 +4,87 @@
   "slug": "generador-de-degradados-css",
   "h1": "Generador de degradados CSS",
   "title": "Generador de degradados CSS",
-  "shortDescription": "Crea degradados CSS limpios con vista previa en vivo, control de ángulo y código listo para copiar.",
-  "metaTitle": "Generador de degradados CSS - Crea degradados lineales y radiales",
-  "metaDescription": "Genera degradados CSS online con vista previa en vivo, control de ángulo, colores predefinidos y código CSS listo para copiar.",
-  "intro": "Crea degradados CSS modernos en segundos. Ajusta colores, ángulo y tipo, revisa el resultado en vivo y copia un código CSS limpio para tu web o interfaz.",
-  "overview": "Este generador de degradados CSS te ayuda a crear degradados lineales y radiales rápido, sin escribir código a mano. Es útil para fondos, botones, secciones hero, tarjetas y detalles de interfaz. Elige tus colores, ajusta la dirección y obtén CSS listo para usar al instante.",
+  "shortDescription": "Crea degradados CSS precisos con vista previa en vivo, control de ángulo y código listo para copiar.",
+  "metaTitle": "Generador de degradados CSS",
+  "metaDescription": "Crea degradados CSS lineales y radiales con vista previa en vivo, control de ángulo y código listo para copiar.",
+  "intro": "Genera un degradado CSS en segundos, míralo en vivo y copia el código exacto que necesitas.",
+  "overview": "Esta herramienta convierte la elección de colores en un degradado CSS utilizable sin probar valores a mano. Cambia entre modo lineal y radial, ajusta el ángulo o el punto focal, y observa cada cambio en la vista previa al instante.\n\nFunciona bien cuando necesitas un fondo con intención: secciones de portada, botones, tarjetas, superposiciones, badges y detalles visuales suaves. El resultado es CSS limpio que puedes pegar en una hoja de estilos, un componente o un flujo de diseño basado en tokens.",
   "howItWorks": [
-    "Elige uno o varios colores para el degradado.",
-    "Selecciona el modo lineal o radial.",
-    "Ajusta el ángulo, la posición o la expansión si lo necesitas.",
-    "Mira la vista previa en vivo mientras editas.",
-    "Copia el CSS generado y pégalo en tu proyecto."
+    "Elige los colores del degradado.",
+    "Selecciona modo lineal o radial.",
+    "Define ángulo, posición o expansión.",
+    "Revisa la vista previa en vivo.",
+    "Copia el CSS en tu proyecto."
   ],
   "useCases": [
-    "Crear fondos de sitio web con transiciones suaves de color.",
-    "Generar degradados para botones, banners y secciones hero.",
-    "Probar combinaciones de color antes de usarlas en un sistema de diseño.",
-    "Obtener fragmentos CSS rápidos para maquetas y prototipos.",
-    "Crear efectos radiales de luz para tarjetas, paneles y badges."
+    {
+      "title": "Fondo para hero",
+      "description": "Crea un degradado fuerte para la parte superior de la página que acompañe el titular y la marca."
+    },
+    {
+      "title": "Botón principal",
+      "description": "Genera un degradado de dos colores para llamadas a la acción y controles interactivos."
+    },
+    {
+      "title": "Resplandor de tarjeta",
+      "description": "Añade una luz radial suave detrás de tarjetas de precios, bloques de funciones o paneles."
+    },
+    {
+      "title": "Prueba de paleta",
+      "description": "Compara varias combinaciones antes de incorporarlas a una guía de estilos o sistema UI."
+    },
+    {
+      "title": "Superposición sobre imagen",
+      "description": "Construye una capa de degradado para mejorar el contraste del texto en banners e imágenes destacadas."
+    }
   ],
   "examples": [
     {
-      "title": "Fondo lineal",
-      "input": "#ff7a18 a #af002d",
-      "output": "background: linear-gradient(135deg, #ff7a18, #af002d);",
-      "description": "Un degradado diagonal simple para secciones modernas."
+      "title": "Fondo diagonal de marca",
+      "input": "#0f172a → #2563eb a 135°",
+      "output": "background: linear-gradient(135deg, #0f172a, #2563eb);",
+      "description": "Un degradado diagonal de oscuro a brillante para secciones principales."
     },
     {
-      "title": "Foco radial",
-      "input": "#ffffff a #dbeafe",
-      "output": "background: radial-gradient(circle, #ffffff 0%, #dbeafe 100%);",
-      "description": "Un degradado radial suave para resaltados claros de UI."
+      "title": "Brillo radial suave",
+      "input": "#fff7ed → #fdba74 centrado",
+      "output": "background: radial-gradient(circle at center, #fff7ed 0%, #fdba74 100%);",
+      "description": "Un resaltado cálido para tarjetas y paneles."
+    },
+    {
+      "title": "Cabecera con tres paradas",
+      "input": "#111827 → #4f46e5 → #c084fc",
+      "output": "background: linear-gradient(120deg, #111827 0%, #4f46e5 52%, #c084fc 100%);",
+      "description": "Una transición más rica para encabezados y hero blocks."
     }
   ],
   "faq": [
     {
-      "question": "¿Qué es un generador de degradados CSS?",
-      "answer": "Es una herramienta que crea código CSS de degradado a partir de colores y ajustes seleccionados, para usarlo directamente en tu proyecto."
+      "question": "¿Puedo controlar dónde empieza el degradado?",
+      "answer": "Sí. En el modo lineal defines el ángulo, y en el radial también puedes mover el centro y el área de dispersión."
     },
     {
-      "question": "¿Puedo crear degradados lineales y radiales?",
-      "answer": "Sí. Puedes generar degradados lineales y radiales y copiar el CSS al instante."
+      "question": "¿Por qué la vista previa puede verse distinta en mi proyecto?",
+      "answer": "Influyen el tamaño del elemento, el color de fondo que haya detrás y la forma en que cada navegador renderiza el degradado."
     },
     {
-      "question": "¿La herramienta muestra vista previa en vivo?",
-      "answer": "Sí. La vista previa se actualiza al cambiar colores, ángulo y tipo de degradado."
+      "question": "¿Cuántos puntos de color conviene usar?",
+      "answer": "Dos puntos funcionan bien para fondos simples; tres o más dan transiciones más ricas. Demasiados pueden recargar el diseño."
     },
     {
-      "question": "¿El código generado está listo para producción?",
-      "answer": "Sí. La herramienta produce CSS limpio que puedes pegar en tu hoja de estilos o componente."
+      "question": "¿Puedo pegar el resultado en CSS normal y en estilos de componentes?",
+      "answer": "Sí. La declaración generada se puede usar en una hoja de estilos, un bloque inline o una definición de componente."
     }
   ],
-  "uiLabels": {
-    "copy": "Copiar",
-    "copied": "Copiado",
-    "input": "Entrada",
-    "output": "Salida",
-    "placeholder": "Escribe un color o elige un ajuste predefinido",
-    "indent": "Sangría",
-    "removeComments": "Eliminar comentarios",
-    "preview": "Vista previa",
-    "source": "Fuente",
-    "sanitizedHtml": "HTML saneado",
-    "plainText": "Texto plano",
-    "summary": "Resumen",
-    "total": "Total",
-    "links": "Enlaces",
-    "images": "Imágenes",
-    "errors": "Errores",
-    "warnings": "Advertencias",
-    "valid": "Válido",
-    "invalid": "Inválido",
-    "href": "Href",
-    "text": "Texto",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Ancho",
-    "height": "Alto",
-    "empty": "Vacío",
-    "outputReady": "Salida lista",
-    "cleanedHtml": "HTML limpio",
-    "formattedHtml": "HTML formateado",
-    "minifiedHtml": "HTML minificado",
-    "markdown": "Markdown",
-    "extractedImages": "Imágenes extraídas",
-    "extractedLinks": "Enlaces extraídos",
-    "validationSummary": "Resumen de validación",
-    "prettyHtml": "HTML legible",
-    "encodedText": "Texto codificado",
-    "file": "Archivo",
-    "size": "Tamaño",
-    "format": "Formato",
-    "quality": "Calidad",
-    "colorOne": "Color uno",
-    "colorTwo": "Color dos",
-    "background": "Fondo",
-    "foreground": "Primer plano",
-    "angle": "Ángulo",
-    "margin": "Margen",
-    "level": "Nivel",
-    "gradientType": "Tipo de degradado",
-    "linear": "Lineal",
-    "radial": "Radial",
-    "blur": "Desenfoque",
-    "spread": "Extensión",
-    "offsetX": "Desplazamiento X",
-    "offsetY": "Desplazamiento Y",
-    "opacity": "Opacidad",
-    "inset": "Inset",
-    "cssCode": "Código CSS",
-    "snippet": "Fragmento",
-    "download": "Descargar",
-    "downloadSvg": "Descargar SVG",
-    "downloadPng": "Descargar PNG",
-    "downloadAll": "Descargar todo",
-    "upload": "Subir",
-    "title": "Título",
-    "description": "Descripción",
-    "canonicalUrl": "URL canónica",
-    "siteName": "Nombre del sitio",
-    "ogImage": "Imagen OG",
-    "clear": "Limpiar",
-    "generatedQr": "Vista previa del codigo QR",
-    "placeholderImage": "Vista previa de la imagen",
-    "faviconSet": "Conjunto de favicon",
-    "keepAspectRatio": "Mantener proporción",
-    "cropX": "Recorte X",
-    "cropY": "Recorte Y",
-    "cropWidth": "Ancho del recorte",
-    "cropHeight": "Alto del recorte",
-    "originalSize": "Tamaño original",
-    "outputSize": "Tamaño de salida",
-    "savedSize": "Tamaño ahorrado",
-    "result": "Resultado",
-    "base64": "Base64",
-    "mimeType": "Tipo MIME",
-    "resizedImage": "Imagen redimensionada",
-    "compressedImage": "Imagen comprimida",
-    "croppedImage": "Imagen recortada",
-    "convertedImage": "Imagen convertida",
-    "decodedImage": "Imagen decodificada",
-    "imagePreview": "Vista previa de imagen"
-  },
   "seo": {
-    "title": "Generador de degradados CSS - Crea degradados lineales y radiales",
-    "description": "Genera degradados CSS online con vista previa en vivo, control de ángulo, colores predefinidos y código CSS listo para copiar.",
+    "title": "Generador de degradados CSS",
+    "description": "Crea degradados CSS lineales y radiales con vista previa en vivo, control de ángulo y código listo para copiar.",
     "keywords": [
       "generador de degradados css",
-      "generador de degradado lineal",
-      "generador de degradado radial",
-      "degradado css",
-      "código css degradado"
+      "degradado lineal css",
+      "degradado radial css",
+      "fondo degradado css",
+      "codigo css degradado"
     ]
   }
 }

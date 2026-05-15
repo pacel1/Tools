@@ -4,44 +4,81 @@
   "slug": "calculadora-de-disminucion-porcentual",
   "h1": "Calculadora de disminución porcentual",
   "title": "Calculadora de disminución porcentual",
-  "shortDescription": "Calcula un valor después de una disminución porcentual con resultados rápidos, entradas sencillas y ejemplos prácticos.",
-  "overview": "Calcula un valor después de una disminución porcentual. Esta página ofrece una respuesta rápida con una herramienta útil en línea y un flujo de resultados sencillo. Está pensada para personas que buscan una solución gratuita en el navegador, resultados instantáneos y contenido práctico de cola larga.",
+  "shortDescription": "Calcula el valor final tras una disminución porcentual introduciendo el valor inicial y el porcentaje de bajada.",
+  "metaTitle": "Calculadora de disminución",
+  "metaDescription": "Calcula el valor final tras una disminución porcentual introduciendo el valor inicial y el porcentaje de bajada.",
+  "intro": "Escribe el valor original y el porcentaje de disminución para obtener el valor reducido al instante.",
+  "overview": "Esta calculadora muestra el valor final después de aplicar una bajada porcentual, de modo que puedas ver con claridad cuánto queda tras la reducción. Resulta útil cuando un precio, presupuesto, objetivo, cantidad o medida debe rebajarse en un porcentaje concreto. El cálculo parte del valor inicial y del porcentaje de descenso, así que ayuda a evitar errores al hacerlo a mano.\n\nTambién sirve para comparar varios escenarios sin repetir fórmulas. Puedes revisar un descuento sobre un precio, una recorte de presupuesto o una meta ajustada a la baja y obtener directamente la cifra revisada.",
   "howItWorks": [
-    "Introduce el valor o texto necesario en el formulario.",
-    "La conversión, el cálculo o la transformación se ejecuta al instante en el navegador.",
-    "Revisa el resultado y continúa con herramientas relacionadas si necesitas otro paso."
+    "Introduce el valor inicial.",
+    "Escribe el porcentaje de disminución.",
+    "Consulta el valor final y cambia los datos si quieres probar otro escenario."
+  ],
+  "useCases": [
+    {
+      "title": "Descuentos en tienda",
+      "description": "Calcula el precio final después de una rebaja de temporada, liquidación o promoción."
+    },
+    {
+      "title": "Recortes de presupuesto",
+      "description": "Saber cuánto queda de un presupuesto de departamento, proyecto o gasto tras una reducción."
+    },
+    {
+      "title": "Caídas de rendimiento",
+      "description": "Obtener el nuevo nivel tras una bajada de ingresos, pedidos, registros u otras métricas."
+    },
+    {
+      "title": "Ajuste de objetivos",
+      "description": "Reducir una meta de ventas, ahorro o producción en un porcentaje fijo y ver el nuevo objetivo."
+    }
   ],
   "examples": [
     {
-      "title": "Ejemplo 1",
-      "input": "120 reducido en 15%",
-      "output": "102",
-      "description": "Un ejemplo realista de calculadora de disminución porcentual para una búsqueda cotidiana."
+      "title": "Precio rebajado",
+      "input": "Valor inicial: 84, disminución: 25%",
+      "output": "63",
+      "description": "Un artículo de 84 baja a 63 con una reducción del 25%."
     },
     {
-      "title": "Ejemplo 2",
-      "input": "120 reducido en 15%",
-      "output": "102",
-      "description": "Otro caso práctico para tráfico orgánico de cola larga."
+      "title": "Alquiler reducido",
+      "input": "Valor inicial: 1600, disminución: 7,5%",
+      "output": "1480",
+      "description": "Una cantidad mensual de 1600 pasa a 1480 tras la bajada."
+    },
+    {
+      "title": "Menos contactos",
+      "input": "Valor inicial: 2400, disminución: 12%",
+      "output": "2112",
+      "description": "Un total de 2400 se reduce a 2112 al aplicar la disminución."
     }
   ],
   "faq": [
     {
-      "question": "¿Qué precisión tiene esta herramienta?",
-      "answer": "El resultado se calcula directamente a partir de la fórmula o de la lógica ejecutada en el navegador por esta herramienta."
+      "question": "¿Cómo interpreto el resultado?",
+      "answer": "El resultado es el valor inicial menos el porcentaje elegido de ese mismo valor."
     },
     {
-      "question": "¿Puedo usar esta herramienta en el móvil?",
-      "answer": "Sí. La página funciona tanto en escritorio como en móviles con un diseño sencillo de entrada y resultado."
+      "question": "¿Admite porcentajes con decimales?",
+      "answer": "Sí. Puedes introducir 7,5% o 12,25% y la calculadora aplicará esa disminución al valor inicial."
+    },
+    {
+      "question": "¿Por qué a veces aparece un decimal?",
+      "answer": "Si la reducción no encaja de forma exacta, el valor final puede incluir decimales."
+    },
+    {
+      "question": "¿Qué error debo evitar?",
+      "answer": "No introduzcas como valor inicial una cifra que ya esté rebajada, porque el descenso se aplicaría dos veces."
     }
   ],
   "seo": {
-    "title": "Calculadora de disminución porcentual",
-    "description": "Calcula un valor después de una disminución porcentual. Calculadora gratuita en línea con resultados instantáneos.",
+    "title": "Calculadora de disminución",
+    "description": "Calcula el valor final tras una disminución porcentual introduciendo el valor inicial y el porcentaje de bajada.",
     "keywords": [
       "calculadora de disminucion porcentual",
       "calculadora de reduccion porcentual",
-      "herramienta calculadoras"
+      "disminucion porcentual",
+      "valor final tras rebaja",
+      "reduccion de porcentaje"
     ]
   }
 }

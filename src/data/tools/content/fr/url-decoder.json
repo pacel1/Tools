@@ -4,44 +4,76 @@
   "slug": "decodeur-url",
   "h1": "Décodeur d’URL",
   "title": "Décodeur d’URL",
-  "shortDescription": "Décodez instantanément du texte encodé dans une URL, avec des résultats rapides, une saisie simple et des exemples pratiques.",
-  "overview": "Décodez instantanément du texte encodé dans une URL. Cette page fournit une réponse rapide avec un outil pratique et un flux de résultat simple. Elle s’adresse aux utilisateurs qui recherchent une réponse gratuite en ligne, des résultats rapides dans le navigateur et un contenu pratique de longue traîne.",
+  "shortDescription": "Décodez immédiatement les URL, chemins et paramètres encodés en pourcentage.",
+  "metaTitle": "Décodeur d’URL",
+  "metaDescription": "Décodez les URL, chemins et paramètres encodés en texte lisible directement dans le navigateur.",
+  "intro": "Collez une URL ou une chaîne encodée pour obtenir immédiatement la version lisible.",
+  "overview": "Cet outil transforme les séquences en pourcentage comme %20, %3F et %26 en caractères ordinaires. Il est utile pour vérifier des liens, des paramètres de requête, des cibles de redirection ou des fragments copiés qui contiennent de la ponctuation encodée.\n\nLe décodeur agit sur le texte collé et remplace les séquences valides par leurs caractères équivalents. Si certaines séquences sont incomplètes ou incorrectes, elles peuvent rester inchangées ou provoquer une erreur selon la saisie. Vous pouvez ainsi vérifier précisément comment une partie d’URL sera interprétée avant de la partager, de la stocker ou de la déboguer.",
   "howItWorks": [
-    "Saisissez la valeur ou le texte requis dans le formulaire.",
-    "La conversion, le calcul ou la transformation s’exécute instantanément dans le navigateur.",
-    "Consultez le résultat puis poursuivez avec des outils associés si vous avez besoin d’une autre étape."
+    "Collez l’URL, le chemin ou la requête encodée dans le champ.",
+    "L’outil décode les échappements en pourcentage et affiche immédiatement le texte lisible.",
+    "Comparez le résultat à l’original pour repérer un problème d’encodage."
+  ],
+  "useCases": [
+    {
+      "title": "Lire un lien collé",
+      "description": "Décodez un lien copié depuis un chat, un e-mail ou des logs pour voir le chemin et les paramètres réels sans pourcentages."
+    },
+    {
+      "title": "Contrôler des paramètres de requête",
+      "description": "Faites apparaître des noms et valeurs comme des redirections, des termes de recherche ou des filtres cachés dans une requête encodée."
+    },
+    {
+      "title": "Vérifier des destinations de redirection",
+      "description": "Décodez des callbacks ou des URL de redirection avant de les utiliser dans le code, les tests ou une revue de sécurité."
+    }
   ],
   "examples": [
     {
-      "title": "Exemple 1",
-      "input": "hello%20world%3Fx%3D1%26y%3D2",
-      "output": "hello world?x=1&y=2",
-      "description": "Un exemple réaliste de décodeur d’URL pour une recherche du quotidien."
+      "title": "Décoder une chaîne de requête",
+      "input": "search%3Fq%3Dcoffee%20beans%26page%3D2",
+      "output": "search?q=coffee beans&page=2",
+      "description": "Montre comment la ponctuation et les espaces encodés redeviennent du texte lisible."
     },
     {
-      "title": "Exemple 2",
-      "input": "hello%20world%3Fx%3D1%26y%3D2",
-      "output": "hello world?x=1&y=2",
-      "description": "Un autre cas d’usage pratique pour le trafic organique de longue traîne."
+      "title": "Décoder un chemin avec caractères réservés",
+      "input": "docs%2Fapi%2Fv1%2Fusers%3Factive%3Dtrue",
+      "output": "docs/api/v1/users?active=true",
+      "description": "Utile lorsqu’un chemin et ses paramètres sont stockés dans une seule chaîne encodée."
+    },
+    {
+      "title": "Décoder une URL de retour",
+      "input": "https%3A%2F%2Fexample.com%2Fcheckout%3Fref%3Demail%2520promo",
+      "output": "https://example.com/checkout?ref=email%20promo",
+      "description": "Montre qu’un élément doublement encodé reste partiellement encodé après un seul passage."
     }
   ],
   "faq": [
     {
-      "question": "Quelle est la précision de cet outil ?",
-      "answer": "Le résultat est calculé directement à partir de la formule ou de la logique côté navigateur utilisée par cet outil."
+      "question": "Le + est-il converti en espace ?",
+      "answer": "Non. Seuls les échappements en pourcentage sont décodés. Le signe + reste un +, sauf s’il provient d’un autre format où il représente un espace."
     },
     {
-      "question": "Puis-je utiliser cet outil sur mobile ?",
-      "answer": "Oui. La page fonctionne sur ordinateur et sur mobile avec une interface simple de saisie et de résultat."
+      "question": "Pourquoi une partie reste-t-elle encodée après le décodage ?",
+      "answer": "Certains textes sont encodés deux fois. Un passage transforme %2520 en %20 ; il faudrait un second décodage pour obtenir un espace."
+    },
+    {
+      "question": "Puis-je coller une URL complète ?",
+      "answer": "Oui. Vous pouvez coller une URL complète ; seules les séquences encodées valides sont modifiées, le reste de la structure est conservé."
+    },
+    {
+      "question": "Que se passe-t-il avec des séquences en pourcentage invalides ?",
+      "answer": "Les séquences mal formées peuvent rester inchangées ou générer une erreur, selon la saisie et le comportement du navigateur."
     }
   ],
   "seo": {
     "title": "Décodeur d’URL",
-    "description": "Décodez instantanément du texte encodé dans une URL. Décodeur d’URL en ligne gratuit avec résultats immédiats.",
+    "description": "Décodez les URL, chemins et paramètres encodés en texte lisible directement dans le navigateur.",
     "keywords": [
       "décodeur url",
-      "url decoder",
-      "outil developer-tools"
+      "décoder url",
+      "décodage %20",
+      "décodeur de query string"
     ]
   }
 }

@@ -2,15 +2,87 @@
   "toolId": "storage-converter",
   "locale": "pl",
   "slug": "konwerter-pamieci",
-  "h1": "Konwerter pamieci",
-  "title": "Konwerter pamieci",
-  "shortDescription": "Przeliczaj KB, MB, GB i TB online z natychmiastowym wynikiem opartym na przeliczniku 1024.",
-  "metaTitle": "Konwerter pamieci | KB, MB, GB i TB online",
-  "metaDescription": "Przeliczaj jednostki pamieci online. Ten konwerter KB, MB, GB i TB odpowiada na frazy typu ile MB w GB, GB na MB i MB na GB.",
-  "intro": "Ten konwerter pamieci zbiera najczestsze pytania o rozmiar plikow i przelicznik 1024 w jednym miejscu. Zamiast otwierac kilka osobnych stron, mozesz od razu przeliczac KB, MB, GB i TB w obu kierunkach.",
-  "overview": "Narzędzie laczy typowe intencje zwiazane z jednostkami storage: ile MB w GB, ile GB w TB i szybkie przeliczanie pojemnosci. Dziala w przegladarce, daje natychmiastowy wynik i pasuje do workflowow z plikami, backupami i dyskami.",
-  "howItWorks": ["Wpisz wartosc do przeliczenia.", "Wybierz jednostke zrodlowa i docelowa: KB, MB, GB albo TB.", "Odczytaj wynik i w razie potrzeby zamien kierunek jednym kliknieciem."],
-  "examples": [{"title": "GB na MB", "input": "2 GB", "output": "2048 MB", "description": "Przydatne, gdy sprawdzasz rozmiary plikow i pakietow danych."}, {"title": "TB na GB", "input": "1,5 TB", "output": "1536 GB", "description": "Pomocne przy planowaniu pojemnosci dyskow i kopii zapasowych."}],
-  "faq": [{"question": "Czy ten konwerter uzywa przelicznika 1000 czy 1024?", "answer": "Narzędzie uzywa binarnego przelicznika 1024, czesto stosowanego przy pamieci i rozmiarach plikow."}, {"question": "Czy moge przeliczac w obie strony?", "answer": "Tak. Z jednego formularza przeliczysz KB, MB, GB i TB w dowolnym kierunku."}],
-  "seo": {"title": "Konwerter pamieci | KB, MB, GB i TB online", "description": "Przeliczaj jednostki pamieci online. Ten konwerter KB, MB, GB i TB odpowiada na frazy typu ile MB w GB, GB na MB i MB na GB.", "keywords": ["konwerter pamieci", "ile mb w gb", "gb na mb", "mb na gb", "kb mb gb tb"]}
+  "h1": "Konwerter pamięci",
+  "title": "Konwerter pamięci",
+  "shortDescription": "Przeliczaj KB, MB, GB i TB według skali 1024.",
+  "metaTitle": "Konwerter pamięci KB MB GB TB",
+  "metaDescription": "Przeliczaj jednostki pamięci w skali 1024 dla KB, MB, GB i TB. Porównuj rozmiary plików, dysków i kopii zapasowych.",
+  "intro": "Przelicz KB, MB, GB i TB według binarnej skali 1024, gdy potrzebujesz wyniku w innej jednostce pamięci.",
+  "overview": "Ten konwerter jest przeznaczony do pracy z binarnymi jednostkami pamięci, więc otrzymane wartości pasują do sposobu, w jaki wiele systemów opisuje pliki, pamięć i miejsce na dysku. Wpisujesz liczbę, wybierasz jednostkę źródłową i docelową, a wynik jest liczony z użyciem 1024 na każdym etapie.\n\nTo wygodne przy porównywaniu instalatora z dostępnym miejscem, sprawdzaniu rozmiaru archiwum przed kopiowaniem albo szacowaniu, ile miejsca zajmie pełna kopia zapasowa. Z tego samego formularza możesz przejść z GB na MB, z TB na GB albo z KB na MB bez ponownego wpisywania wartości.\n\nWyniki pomagają też wtedy, gdy etykieta, raport lub menedżer plików pokazuje rozmiar w innej jednostce niż ta, której potrzebujesz do planowania. Zamiast liczyć na oko, możesz przeliczyć dokładną wartość i zachować spójne porównanie.",
+  "howItWorks": [
+    "Wpisz liczbę, którą chcesz przeliczyć.",
+    "Wybierz jednostkę źródłową i docelową: KB, MB, GB albo TB.",
+    "Odczytaj wynik i w razie potrzeby zamień kierunek przeliczenia."
+  ],
+  "useCases": [
+    {
+      "title": "Sprawdzenie instalatora względem wolnego miejsca",
+      "description": "Przelicz plik instalacyjny 3,7 GB na MB, zanim porównasz go z prawie pełną partycją albo pendrive’em."
+    },
+    {
+      "title": "Szacowanie potrzeb dla kopii zapasowej",
+      "description": "Zamień archiwum 4,2 TB na GB, aby obliczyć, ile dysków lub zasobów chmury potrzeba na pełną kopię."
+    },
+    {
+      "title": "Porządkowanie biblioteki zdjęć i wideo",
+      "description": "Przelicz folder z klipami o 812 MB na GB podczas przygotowania materiałów do uploadu lub przeniesienia."
+    },
+    {
+      "title": "Porównanie specyfikacji urządzeń",
+      "description": "Uzgodnij rozmiar pokazany przez system, menedżer plików lub kartę produktu, gdy wartości zapisano w różnych jednostkach."
+    }
+  ],
+  "examples": [
+    {
+      "title": "GB na MB",
+      "input": "2 GB",
+      "output": "2048 MB",
+      "description": "Przydatne, gdy rozmiar pobieranego pliku łatwiej odczytać w megabajtach."
+    },
+    {
+      "title": "TB na GB",
+      "input": "3,25 TB",
+      "output": "3328 GB",
+      "description": "Pomaga rozbić duży plan backupu na porcje dopasowane do dysków."
+    },
+    {
+      "title": "MB na KB",
+      "input": "750 MB",
+      "output": "768000 KB",
+      "description": "Praktyczne, gdy limit albo transfer jest podany w kilobajtach."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Czy narzędzie używa 1000 czy 1024?",
+      "answer": "Używa binarnej skali 1024, więc 1 GB to 1024 MB, a 1 TB to 1024 GB."
+    },
+    {
+      "question": "Dlaczego system operacyjny może pokazywać inną pojemność?",
+      "answer": "Niektóre systemy i producenci opisują pojemność w systemie dziesiętnym, a ten konwerter stosuje jednostki binarne. Przy różnych konwencjach liczby nie będą się zgadzać idealnie."
+    },
+    {
+      "question": "Czy mogę przeliczać z mniejszych jednostek na większe?",
+      "answer": "Tak. Możesz przejść z KB na MB, z MB na GB albo z GB na TB, a także wrócić w drugą stronę."
+    },
+    {
+      "question": "Co dzieje się z wartościami dziesiętnymi, na przykład 1,5 TB?",
+      "answer": "Wartości dziesiętne są obsługiwane, a wynik jest liczony dokładnie z tej liczby według skali 1024."
+    },
+    {
+      "question": "Jaki błąd pojawia się najczęściej przy odczycie wyniku?",
+      "answer": "Ludzie często zakładają, że 1 GB to 1000 MB. Jeśli spojrzysz na wynik przez taki filtr, liczba wyda się za duża, bo tutaj obowiązuje 1024."
+    }
+  ],
+  "seo": {
+    "title": "Konwerter pamięci KB MB GB TB",
+    "description": "Przeliczaj jednostki pamięci w skali 1024 dla KB, MB, GB i TB. Porównuj rozmiary plików, dysków i kopii zapasowych.",
+    "keywords": [
+      "konwerter pamięci",
+      "kb na mb",
+      "mb na gb",
+      "gb na tb",
+      "jednostki binarne"
+    ]
+  }
 }

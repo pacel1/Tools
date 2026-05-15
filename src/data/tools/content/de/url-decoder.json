@@ -1,46 +1,79 @@
 {
   "toolId": "url-decoder",
   "locale": "de",
-  "slug": "url-dekoder",
+  "slug": "url-decoder",
   "h1": "URL-Dekodierer",
   "title": "URL-Dekodierer",
-  "shortDescription": "Dekodiere URL-codierten Text sofort – mit schnellen Ergebnissen, einfacher Bedienung und praktischen Beispielen.",
-  "overview": "Dekodiere URL-codierten Text sofort. Diese Seite liefert eine schnelle Antwort mit einem praktischen Tool und einem einfachen Ergebnisablauf. Sie richtet sich an Nutzer, die eine kostenlose Online-Antwort, schnelle browserbasierte Ergebnisse und praxisnahe Long-Tail-Inhalte suchen.",
+  "shortDescription": "Dekodiere prozentkodierte URLs, Pfade und Abfragen sofort in lesbaren Text.",
+  "metaTitle": "URL-Dekodierer",
+  "metaDescription": "Dekodiere prozentkodierte URLs, Pfade und Query-Strings direkt im Browser in lesbaren Text.",
+  "intro": "Füge eine codierte URL oder Query ein und sie wird sofort lesbar angezeigt.",
+  "overview": "Dieses Tool wandelt Prozentfolgen wie %20, %3F und %26 wieder in normale Zeichen um. Es ist nützlich, wenn du Links, Anfrageparameter, Redirect-Ziele oder kopierte Textstücke mit codierter Interpunktion prüfen möchtest.\n\nDer Dekodierer arbeitet auf dem eingefügten Text und ersetzt gültige Escapes durch die passenden Zeichen. Sind Sequenzen unvollständig oder fehlerhaft, bleiben sie je nach Eingabe unverändert oder lösen einen Fehler aus. So kannst du vor dem Teilen, Speichern oder Debuggen genau sehen, wie ein URL-Teil interpretiert wird.",
   "howItWorks": [
-    "Gib den benötigten Wert oder Text in das Formular ein.",
-    "Die Umwandlung, Berechnung oder Transformation läuft sofort im Browser.",
-    "Prüfe das Ergebnis und nutze bei Bedarf anschließend verwandte Tools für den nächsten Schritt."
+    "Füge die codierte URL, den Pfad oder die Query in das Feld ein.",
+    "Das Tool dekodiert Prozent-Escapes und zeigt den lesbaren Text sofort an.",
+    "Vergleiche das Ergebnis mit dem Original, wenn du Kodierungsprobleme finden willst."
+  ],
+  "useCases": [
+    {
+      "title": "Einen kopierten Link lesen",
+      "description": "Dekodiere einen Link aus Chat, Mail oder Logs, um den echten Pfad und die Parameter ohne Prozentzeichen zu sehen."
+    },
+    {
+      "title": "Query-Parameter prüfen",
+      "description": "Mache Namen und Werte sichtbar, etwa Redirects, Suchbegriffe oder Filter in einer kodierten Abfrage."
+    },
+    {
+      "title": "Weiterleitungen validieren",
+      "description": "Prüfe Callback- und Redirect-URLs vor dem Einsatz in Code, Tests oder Sicherheitsanalysen."
+    }
   ],
   "examples": [
     {
-      "title": "Beispiel 1",
-      "input": "hello%20world%3Fx%3D1%26y%3D2",
-      "output": "hello world?x=1&y=2",
-      "description": "Ein realistisches URL-Dekoder-Beispiel für eine alltägliche Suchanfrage."
+      "title": "Query-String dekodieren",
+      "input": "search%3Fq%3Dcoffee%20beans%26page%3D2",
+      "output": "search?q=coffee beans&page=2",
+      "description": "Zeigt, wie kodierte Satzzeichen und Leerzeichen wieder normal lesbar werden."
     },
     {
-      "title": "Beispiel 2",
-      "input": "hello%20world%3Fx%3D1%26y%3D2",
-      "output": "hello world?x=1&y=2",
-      "description": "Ein weiteres praktisches Anwendungsbeispiel für organischen Long-Tail-Traffic."
+      "title": "Pfad mit reservierten Zeichen dekodieren",
+      "input": "docs%2Fapi%2Fv1%2Fusers%3Factive%3Dtrue",
+      "output": "docs/api/v1/users?active=true",
+      "description": "Hilfreich, wenn Pfad und Parameter als ein codierter String vorliegen."
+    },
+    {
+      "title": "Return-URL dekodieren",
+      "input": "https%3A%2F%2Fexample.com%2Fcheckout%3Fref%3Demail%2520promo",
+      "output": "https://example.com/checkout?ref=email%20promo",
+      "description": "Zeigt, dass doppelt kodierte Teile nach einem Durchlauf teilweise kodiert bleiben."
     }
   ],
   "faq": [
     {
-      "question": "Wie genau ist dieses Tool?",
-      "answer": "Das Ergebnis wird direkt aus der Formel oder der browserseitigen Logik dieses Tools berechnet."
+      "question": "Wird ein Pluszeichen als Leerzeichen dekodiert?",
+      "answer": "Nein. Es werden nur Prozent-Escapes dekodiert. Ein + bleibt ein +, außer es stammt aus einem anderen URL-Format, das Plus als Leerzeichen meint."
     },
     {
-      "question": "Kann ich dieses Tool auf dem Handy verwenden?",
-      "answer": "Ja. Die Seite funktioniert auf Desktop- und Mobilgeräten mit einem einfachen Eingabe- und Ergebnislayout."
+      "question": "Warum bleibt nach dem Dekodieren noch etwas kodiert?",
+      "answer": "Weil manche Strings doppelt kodiert sind. Ein Durchlauf macht aus %2520 erst %20; für ein echtes Leerzeichen wäre ein weiterer Schritt nötig."
+    },
+    {
+      "question": "Kann ich eine komplette URL einfügen?",
+      "answer": "Ja. Du kannst die komplette URL einfügen; dekodiert werden nur gültige Escapes, der Rest der Struktur bleibt erhalten."
+    },
+    {
+      "question": "Was passiert bei ungültigen Prozentfolgen?",
+      "answer": "Ungültige Sequenzen können unverändert bleiben oder einen Fehler auslösen, abhängig von der Eingabe und dem Browserverhalten."
     }
   ],
   "seo": {
     "title": "URL-Dekodierer",
-    "description": "Dekodiere URL-codierten Text sofort. Kostenloser Online-URL-Dekodierer mit sofortigen Ergebnissen.",
+    "description": "Dekodiere prozentkodierte URLs, Pfade und Query-Strings direkt im Browser in lesbaren Text.",
     "keywords": [
       "url dekodierer",
-      "url decoder"
+      "url decoder",
+      "url dekodieren",
+      "query string dekodierer"
     ]
   }
 }

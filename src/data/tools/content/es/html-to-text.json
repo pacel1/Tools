@@ -5,103 +5,81 @@
   "h1": "HTML a texto",
   "title": "HTML a texto",
   "shortDescription": "Extrae texto legible de fragmentos HTML y documentos completos.",
-  "metaTitle": "Convertidor de HTML a texto | Extrae texto plano de HTML",
-  "metaDescription": "Convierte HTML a texto plano al instante en tu navegador. Extrae texto legible de fragmentos o páginas completas de forma segura, sin API externa.",
-  "intro": "Convierte HTML en texto plano limpio y legible directamente en tu navegador. Pega un fragmento o un documento completo, y esta herramienta elimina las etiquetas sin perder el contenido útil.",
-  "overview": "Esta herramienta de HTML a texto es un convertidor rápido del lado del cliente para desarrolladores, redactores y editores de contenido. Elimina el marcado de forma segura, reduce el ruido y devuelve texto plano más fácil de buscar, indexar, citar o reutilizar. Como todo se procesa de forma local, no usa API externas y mantiene el manejo de HTML privado y consciente de XSS.",
+  "metaTitle": "HTML a texto",
+  "metaDescription": "Convierte HTML en texto legible en el navegador. Pega fragmentos o documentos completos y copia el resultado sin etiquetas.",
+  "intro": "Pega HTML y obtén texto plano legible al instante en el navegador.",
+  "overview": "Esta herramienta elimina etiquetas HTML y conserva solo el contenido en formato de texto simple. Sirve cuando necesitas pasar el texto a notas, incidencias, editores o sistemas que no trabajan con marcado.\n\nFunciona tanto con fragmentos pequeños como con documentos más largos, así que puedes revisar cómo se leerá el contenido sin la estructura HTML. El resultado queda listo para copiar y reutilizar en otros flujos de trabajo.\n\nEl proceso se realiza en local dentro del navegador, sin depender de un servicio externo.",
   "howItWorks": [
     "Pega el HTML en el campo de entrada.",
-    "La herramienta analiza el marcado en el navegador.",
-    "Elimina las etiquetas HTML y devuelve texto legible.",
-    "Copia el texto limpio o úsalo en tu flujo de trabajo."
+    "El navegador analiza la estructura.",
+    "Se eliminan las etiquetas y se conserva el texto.",
+    "Copia el resultado o sigue trabajando con él."
   ],
   "useCases": [
-    "Extraer texto de HTML web para notas o documentación.",
-    "Convertir fragmentos a texto plano para correos, tickets o chats.",
-    "Preparar contenido para indexación, búsqueda o análisis.",
-    "Quitar formato de HTML antes de pegarlo en otra app.",
-    "Previsualizar la versión en texto de una página o componente."
+    {
+      "title": "Limpiar contenido copiado de un CMS",
+      "description": "Quita el formato incrustado de un artículo copiado y deja solo el texto para un documento o una tarea."
+    },
+    {
+      "title": "Revisar mensajes sin marcado",
+      "description": "Lee el texto de correos, notificaciones o plantillas sin etiquetas para comprobar el contenido final."
+    },
+    {
+      "title": "Preparar texto para análisis",
+      "description": "Extrae el contenido visible de HTML para usarlo en scripts, notas o herramientas de texto."
+    },
+    {
+      "title": "Convertir exportaciones archivadas",
+      "description": "Transforma un HTML guardado en texto legible para documentación, auditorías o referencias."
+    }
   ],
   "examples": [
     {
-      "title": "Párrafo simple",
-      "input": "<p>Hola <strong>mundo</strong>!</p>",
-      "output": "Hola mundo!",
-      "description": "Las etiquetas se eliminan y el texto sigue siendo legible."
+      "title": "Párrafo con énfasis",
+      "input": "<p>La <strong>nueva</strong> versión está lista.</p>",
+      "output": "La nueva versión está lista.",
+      "description": "Las etiquetas inline desaparecen y la frase sigue siendo clara."
     },
     {
-      "title": "Enlaces y listas",
-      "input": "<div><a href=\"/docs\">Documentación</a><ul><li>Uno</li><li>Dos</li></ul></div>",
-      "output": "Documentación\nUno\nDos",
-      "description": "El contenido de texto se conserva en una salida limpia."
+      "title": "Encabezado y enlace",
+      "input": "<article><h2>Estado</h2><p>La compilación <a href=\"/builds/18\">#18</a> pasó las pruebas.</p></article>",
+      "output": "Estado\nLa compilación #18 pasó las pruebas.",
+      "description": "El encabezado y el texto visible del enlace se conservan como líneas legibles."
+    },
+    {
+      "title": "Lista con salto de línea",
+      "input": "<div>Tareas:<br><ul><li>Revisar copia</li><li>Enviar al cliente</li></ul></div>",
+      "output": "Tareas:\nRevisar copia\nEnviar al cliente",
+      "description": "Los elementos de la lista quedan en líneas separadas."
     }
   ],
   "faq": [
     {
-      "question": "¿Esta herramienta conserva las etiquetas HTML?",
-      "answer": "No. Elimina las etiquetas y devuelve solo texto plano."
+      "question": "¿Se conservan los destinos de los enlaces y el alt de las imágenes?",
+      "answer": "Se conserva el texto visible, pero los atributos HTML no se exportan como datos separados."
     },
     {
-      "question": "¿La conversión se realiza en el navegador?",
-      "answer": "Sí. La herramienta usa lógica del lado del cliente y no llama a API externas."
+      "question": "¿Qué pasa con scripts, estilos y comentarios?",
+      "answer": "No aparecen en el resultado, para que el texto final se centre en el contenido visible."
     },
     {
-      "question": "¿Puedo convertir documentos HTML completos?",
-      "answer": "Sí. Funciona con fragmentos cortos y documentos completos."
+      "question": "¿Por qué los espacios no coinciden siempre con el HTML original?",
+      "answer": "El HTML describe estructura, no la presentación exacta del texto. La salida prioriza legibilidad, no un calco visual."
     },
     {
-      "question": "¿Mi HTML se envía a un servidor?",
-      "answer": "No. El contenido se procesa localmente en tu navegador."
+      "question": "¿Puedo usar el resultado para reproducir formato exacto?",
+      "answer": "No del todo. Si necesitas tablas, sangrías o espaciado preciso, revisa y ajusta el texto antes de reutilizarlo."
     }
   ],
-  "uiLabels": {
-    "copy": "Copiar",
-    "copied": "Copiado",
-    "input": "HTML input",
-    "output": "Texto plano",
-    "placeholder": "Pega HTML aquí...",
-    "indent": "Sangría",
-    "removeComments": "Eliminar comentarios",
-    "preview": "Vista previa",
-    "source": "Fuente",
-    "sanitizedHtml": "HTML saneado",
-    "plainText": "Texto plano",
-    "summary": "Resumen",
-    "total": "Total",
-    "links": "Enlaces",
-    "images": "Imágenes",
-    "errors": "Errores",
-    "warnings": "Avisos",
-    "valid": "Válido",
-    "invalid": "No válido",
-    "href": "Href",
-    "text": "Texto",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Ancho",
-    "height": "Alto",
-    "empty": "Vacío",
-    "outputReady": "Salida lista",
-    "cleanedHtml": "HTML limpio",
-    "formattedHtml": "HTML formateado",
-    "minifiedHtml": "HTML minimizado",
-    "markdown": "Markdown",
-    "extractedImages": "Imágenes extraídas",
-    "extractedLinks": "Enlaces extraídos",
-    "validationSummary": "Resumen de validación",
-    "prettyHtml": "HTML legible",
-    "encodedText": "Texto codificado"
-  },
   "seo": {
-    "title": "Convertidor de HTML a texto",
-    "description": "Extrae texto plano de fragmentos HTML y documentos completos al instante en tu navegador.",
+    "title": "HTML a texto",
+    "description": "Convierte HTML en texto legible en el navegador. Pega fragmentos o documentos completos y copia el resultado sin etiquetas.",
     "keywords": [
       "html a texto",
-      "html a texto plano",
       "convertir html a texto",
       "quitar etiquetas html",
-      "convertidor de texto plano"
+      "html a texto plano",
+      "extraer texto"
     ]
   }
 }

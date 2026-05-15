@@ -4,13 +4,81 @@
   "slug": "kontrast-pruefer",
   "h1": "Kontrast-Pruefer",
   "title": "Kontrast-Pruefer",
-  "shortDescription": "Farbkontrast online pruefen und schnell sehen, ob Text und Hintergrund gut lesbar sind.",
-  "metaTitle": "Kontrast-Pruefer | Farbkontrast online",
-  "metaDescription": "Farbkontrast online pruefen und den Wert fuer Text und Hintergrund ablesen. Praktisch fuer Barrierefreiheit, UI-QA und Design-Pruefungen.",
-  "intro": "Der Kontrast-Pruefer hilft dabei, Text- und Hintergrundfarben vor dem Release einer UI schnell zu testen. Du bekommst sofort das Kontrastverhaeltnis und eine klare Einschaetzung, ob die Kombination fuer uebliche Textsituationen stark genug ist.",
-  "overview": "Das Tool ist fuer Accessibility-Checks, Themen-QA und Design-Abgleiche gedacht. Statt Farben nach Gefuehl zu bewerten, bekommst du einen konkreten Wert und eine schnelle Aussage zur Lesbarkeit.",
-  "howItWorks": ["Textfarbe und Hintergrundfarbe waehlen.", "Das Tool berechnet das Kontrastverhaeltnis.", "Pruefen, ob die Kombination fuer normalen oder grossen Text stark genug ist."],
-  "examples": [{"title": "Dunkler Text auf Weiss", "input": "#111827 auf #FFFFFF", "output": "Hohes Kontrastverhaeltnis", "description": "Ein typisches Beispiel fuer gut lesbare Interfaces."}, {"title": "Akzentfarbe pruefen", "input": "Markenfarbe auf hellem Panel", "output": "Pass/Fail-Zusammenfassung", "description": "Nuetzlich fuer Buttons, Links und UI-Zustaende."}],
-  "faq": [{"question": "Was bedeutet das Kontrastverhaeltnis?", "answer": "Es zeigt, wie stark sich Textfarbe und Hintergrund in der wahrgenommenen Helligkeit unterscheiden."}, {"question": "Ist das Tool fuer Barrierefreiheits-Checks geeignet?", "answer": "Ja. Der Kontrast-Pruefer zeigt, ob eine Farbkombination fuer typische Textanforderungen stark genug ist."}],
-  "seo": {"title": "Kontrast-Pruefer | Farbkontrast online", "description": "Farbkontrast online pruefen und den Wert fuer Text und Hintergrund ablesen. Praktisch fuer Barrierefreiheit, UI-QA und Design-Pruefungen.", "keywords": ["kontrast pruefer", "farbkontrast", "wcag kontrast", "barrierefreiheit farben", "contrast checker"]}
+  "shortDescription": "Text- und Hintergrundfarben vergleichen, das Kontrastverhaeltnis sehen und die Lesbarkeit der Kombination einschaetzen.",
+  "metaTitle": "Kontrast-Pruefer | Farbkontrast",
+  "metaDescription": "Text- und Hintergrundfarben vergleichen, das Kontrastverhaeltnis ablesen und beurteilen, ob die Paarung fuer normalen Text, grossen Text oder UI passt.",
+  "intro": "Gib Textfarbe und Hintergrundfarbe ein, um sofort das Kontrastverhaeltnis und eine klare Einschaetzung fuer die Lesbarkeit in deiner Oberfläche zu erhalten.",
+  "overview": "Dieses Tool richtet sich an Designer, Entwickler und Reviewer, die Farbpaarungen nicht nach Gefuehl bewerten wollen. Es zeigt das Kontrastverhaeltnis zweier Farben und hilft dir, den Wert in echtem UI-Kontext zu verstehen: Fliesstext, Labels, Buttons, Karten und Flaechen.\n\nSinnvoll ist es beim Anpassen von Themes, beim Pruefen von Markenfarben und vor dem Livegang einzelner Komponenten. Besonders hilfreich ist es dort, wo Farben auf den ersten Blick gut wirken, aber in kleinen Schriftgroessen, deaktivierten Zustaenden oder auf getoenten Flaechen an Klarheit verlieren.",
+  "howItWorks": [
+    "Textfarbe und Hintergrundfarbe auswaehlen.",
+    "Das Tool berechnet das Kontrastverhaeltnis zwischen beiden Farben.",
+    "Das Ergebnis fuer normalen Text, groesseren Text und UI-Flaechen mit Blick auf Lesbarkeit pruefen."
+  ],
+  "useCases": [
+    {
+      "title": "Fliesstext auf hellem Hintergrund",
+      "description": "Pruefen, ob ein Absatz auf Weiss, Creme oder sehr hellen Karten lesbar bleibt."
+    },
+    {
+      "title": "Button-Beschriftung auf Markenfarbe",
+      "description": "Testen, ob weisse, dunkle oder leicht getoente Schrift auf einer gefuellten Schaltflaeche klar genug ist."
+    },
+    {
+      "title": "Sekundaertext in Datenansichten",
+      "description": "Ueberpruefen, ob Metadaten, Zeitstempel und Hilfstexte in dichten Dashboards noch hervorstechen."
+    },
+    {
+      "title": "Dark-Mode-Pruefung",
+      "description": "Text auf anthrazitfarbenen Panels, Karten und Overlay-Flachen vor dem Release absichern."
+    }
+  ],
+  "examples": [
+    {
+      "title": "Redaktionstext auf Weiss",
+      "input": "Text #1F2937 / Hintergrund #FFFFFF",
+      "output": "Hohes Kontrastverhaeltnis; geeignet fuer normalen Lesetext.",
+      "description": "Eine typische neutrale Kombination fuer Artikel, Formulare und Dokumentation."
+    },
+    {
+      "title": "Weisse Beschriftung auf blauem Button",
+      "input": "Text #FFFFFF / Hintergrund #2563EB",
+      "output": "Gut lesbar fuer eine Aktionsschaltflaeche; Schriftgroesse mitpruefen.",
+      "description": "Praktisch, um zu sehen, ob ein primärer CTA mit weisser Schrift funktionieren kann."
+    },
+    {
+      "title": "Helles Grau auf Karte",
+      "input": "Text #6B7280 / Hintergrund #F3F4F6",
+      "output": "Niedrigeres Kontrastverhaeltnis; eher fuer kleinere Nebenhinweise ungeeignet.",
+      "description": "Zeigt, warum feine Grautoene auf sehr hellen Flaechen schnell zu schwach werden."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Was sagt mir das Kontrastverhaeltnis genau?",
+      "answer": "Es beschreibt den Helligkeitsunterschied zweier Farben. Ein hoeherer Wert bedeutet in der Regel deutlichere Trennung von Text und Hintergrund."
+    },
+    {
+      "question": "Warum wirkt eine Farbkombination gut, obwohl das Ergebnis schwach ist?",
+      "answer": "Gesattigte Farben koennen lebendig aussehen, aber eine zu geringe Helligkeitsdifferenz haben. Das Verhaeltnis basiert auf Luminanz, nicht auf Farbstaerke."
+    },
+    {
+      "question": "Spielt die Schriftgroesse bei der Bewertung eine Rolle?",
+      "answer": "Ja. Kleine Schrift braucht mehr Kontrast als grosse Ueberschriften. Was fuer einen Titel reicht, kann fuer Fliesstext oder Formulare zu schwach sein."
+    },
+    {
+      "question": "Welcher Fehler passiert bei Buttons und Badges am haeufigsten?",
+      "answer": "Oft wird nur der Standardzustand geprueft, nicht Hover, Disabled oder Outline. Diese Varianten koennen den Kontrast verringern und die Lesbarkeit verschlechtern."
+    }
+  ],
+  "seo": {
+    "title": "Kontrast-Pruefer | Farbkontrast",
+    "description": "Text- und Hintergrundfarben vergleichen, das Kontrastverhaeltnis ablesen und beurteilen, ob die Paarung fuer normalen Text, grossen Text oder UI passt.",
+    "keywords": [
+      "kontrast-pruefer",
+      "farbkontrast",
+      "text und hintergrund",
+      "barrierefreiheit farben",
+      "wcag kontrast"
+    ]
+  }
 }

@@ -1,0 +1,84 @@
+{
+  "toolId": "inch-converter",
+  "locale": "fr",
+  "slug": "inch-converter",
+  "h1": "Convertisseur de pouces",
+  "title": "Convertisseur de pouces",
+  "shortDescription": "Convertissez pouces, centimètres, millimètres et pieds dans un seul outil de mesure.",
+  "metaTitle": "Convertisseur de pouces : in, cm, mm, pieds",
+  "metaDescription": "Convertissez pouces, centimètres, millimètres et pieds dans un seul calculateur pour mesures, plans, emballages et fiches techniques.",
+  "intro": "Convertissez pouces, centimètres, millimètres et pieds au même endroit. Saisissez une valeur, choisissez l’unité de départ et l’unité d’arrivée, puis lisez le résultat immédiatement.",
+  "overview": "Cet outil sert à passer avec précision d’une unité à l’autre parmi les quatre formats de longueur les plus utilisés autour du pouce. Les deux sens de conversion sont disponibles dans la même interface, ce qui permet de passer du système impérial au métrique, ou l’inverse, sans changer d’outil.\n\nIl convient aux fiches produit, aux découpes d’atelier, à l’aménagement intérieur, aux plans, aux tailles d’écran et aux dimensions d’emballage. Le résultat reste lisible, et la paire d’unités peut être modifiée dès que la référence change.\n\nComme les pieds sont aussi pris en charge, le convertisseur fonctionne bien avec des documents où plusieurs systèmes cohabitent. On compare ainsi les dimensions plus facilement, sans calculs manuels ni outil séparé.",
+  "howItWorks": [
+    "Saisissez la longueur à convertir.",
+    "Choisissez l’unité de départ et l’unité d’arrivée.",
+    "Lisez le résultat, puis inversez le sens si besoin."
+  ],
+  "useCases": [
+    {
+      "title": "Dimensions produit",
+      "description": "Transformez des mesures fournisseur en pouces vers centimètres ou millimètres pour les catalogues, étiquettes et contrôles d’ajustement."
+    },
+    {
+      "title": "Découpe en atelier",
+      "description": "Passez des pieds, pouces et millimètres lors du traçage de planches, moulures ou réglages machine."
+    },
+    {
+      "title": "Mobilier et aménagement",
+      "description": "Comparez tailles et dégagements écrits dans différents systèmes avant achat ou installation."
+    },
+    {
+      "title": "Plans et documents techniques",
+      "description": "Adaptez les mesures lors de la préparation de plans, croquis ou fiches de travail."
+    }
+  ],
+  "examples": [
+    {
+      "title": "Diagonale d’écran",
+      "input": "27 pouces en cm",
+      "output": "68,58 centimètres",
+      "description": "Pratique quand la taille d’un écran est donnée en pouces et le document en métrique."
+    },
+    {
+      "title": "Longueur d’une pièce",
+      "input": "8,5 pieds en pouces",
+      "output": "102 pouces",
+      "description": "Utile pour couper un matériau selon un plan exprimé en pieds."
+    },
+    {
+      "title": "Petite pièce",
+      "input": "18 mm en pouces",
+      "output": "0,7087 pouce",
+      "description": "Adapté aux quincailleries ou pièces de rechange mesurées en millimètres."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Puis-je convertir directement entre n’importe quelles unités prises en charge ?",
+      "answer": "Oui. Choisissez simplement l’unité de départ et l’unité d’arrivée parmi pouces, centimètres, millimètres et pieds."
+    },
+    {
+      "question": "Pourquoi certains résultats affichent-ils plusieurs décimales ?",
+      "answer": "Parce que certaines conversions ne donnent pas un nombre entier ; les décimales sont conservées pour garder la précision."
+    },
+    {
+      "question": "Que vérifier si le résultat semble incorrect ?",
+      "answer": "Contrôlez la valeur saisie et le sens de conversion. Une erreur fréquente consiste à utiliser le bon nombre avec la mauvaise unité de départ."
+    },
+    {
+      "question": "Les pieds sont-ils traités comme une valeur décimale ou comme un format pieds-pouces ?",
+      "answer": "Le convertisseur traite des valeurs numériques décimales. Pour un format mixte comme 5 pieds 7 pouces, il faut d’abord séparer les éléments."
+    }
+  ],
+  "seo": {
+    "title": "Convertisseur de pouces : in, cm, mm, pieds",
+    "description": "Convertissez pouces, centimètres, millimètres et pieds dans un seul calculateur pour mesures, plans, emballages et fiches techniques.",
+    "keywords": [
+      "convertisseur de pouces",
+      "pouces en cm",
+      "cm en pouces",
+      "mm en pouces",
+      "pieds en pouces"
+    ]
+  }
+}

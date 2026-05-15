@@ -4,43 +4,77 @@
   "slug": "minifikator-json",
   "h1": "Minifikator JSON",
   "title": "Minifikator JSON",
-  "shortDescription": "Minifikuj JSON online od razu — szybko, wygodnie i z praktycznymi przykładami.",
-  "overview": "Minifikuj JSON online natychmiast. Ta strona daje szybkie rozwiązanie z praktycznym narzędziem i prostym przebiegiem wyniku. Kierujemy ją do osób szukających darmowej odpowiedzi online, szybkich rezultatów w przeglądarce oraz praktycznych treści typu long tail dotyczących narzędzi.",
+  "shortDescription": "Usuń zbędne odstępy z JSON i zachowaj poprawną strukturę w zwartej postaci.",
+  "metaTitle": "Minifikator JSON",
+  "metaDescription": "Skróć JSON, usuwając spacje i znaki nowej linii, bez zmiany struktury ani wartości danych.",
+  "intro": "Wklej JSON, a narzędzie zwróci zwartą wersję bez zbędnych odstępów, z tą samą strukturą danych.",
+  "overview": "Minifikator JSON zamienia sformatowany zapis na możliwie krótki ciąg, usuwając niepotrzebne spacje, wcięcia i łamanie linii. Dane pozostają takie same, ale wynik zajmuje mniej miejsca i łatwiej go wstawić do kodu, wysłać w żądaniu albo zapisać w logach.\n\nTo narzędzie przydaje się przy payloadach API, przykładach konfiguracji, danych testowych i eksportach diagnostycznych. Jeśli JSON jest niepoprawny, minifikacja nie będzie bezpieczna, więc najpierw popraw błędy składni, takie jak przecinki końcowe, brak cudzysłowów przy kluczach czy niedomknięte nawiasy.\n\nWynik jest przeznaczony głównie do odczytu przez maszynę. Jeśli chcesz wrócić do czytelnego układu, użyj formatowania JSON po minifikacji albo wtedy, gdy chcesz przejrzeć strukturę.",
   "howItWorks": [
-    "Wpisz wymagane dane lub tekst do formularza.",
-    "Konwersja, obliczenie lub przekształcenie wykonuje się natychmiast w przeglądarce.",
-    "Sprawdź wynik i przejdź do powiązanych narzędzi, jeśli potrzebujesz kolejnego kroku."
+    "Wklej poprawny JSON do pola wejściowego.",
+    "Narzędzie usuwa zbędne odstępy, zachowując wartości i zagnieżdżenia.",
+    "Skopiuj zwarty wynik do kodu, transferu lub zapisu."
+  ],
+  "useCases": [
+    {
+      "title": "Zwiń body zapytania API przed wysyłką",
+      "description": "Sformatowany wcześniej JSON można zamienić w jedną linię do testów, integracji lub wklejenia do żądania."
+    },
+    {
+      "title": "Przechowuj próbki danych w zwartej formie",
+      "description": "Zachowaj przykładowe odpowiedzi lub fixture’y testowe w krótszym, prostszym zapisie."
+    },
+    {
+      "title": "Przygotuj fragment konfiguracji do przeniesienia",
+      "description": "Usuń wcięcia i podziały linii przed wklejeniem JSON do innego systemu lub zmiennej środowiskowej."
+    }
   ],
   "examples": [
     {
-      "title": "Przykład 1",
-      "input": "{\"name\":\"tool\",\"value\":1}",
-      "output": "{\"name\":\"tool\",\"value\":1}",
-      "description": "Realistyczny przykład minifikatora JSON dla codziennego zapytania w wyszukiwarce."
+      "title": "Czytelny JSON do wersji zwartej",
+      "input": "{\n  \"użytkownik\": \"ola\",\n  \"role\": [\n    \"admin\",\n    \"redaktor\"\n  ],\n  \"aktywny\": true\n}",
+      "output": "{\"użytkownik\":\"ola\",\"role\":[\"admin\",\"redaktor\"],\"aktywny\":true}",
+      "description": "Usuwane są odstępy i nowe linie, ale tablice, wartości logiczne i struktura pozostają bez zmian."
     },
     {
-      "title": "Przykład 2",
-      "input": "{\"name\":\"tool\",\"value\":1}",
-      "output": "{\"name\":\"tool\",\"value\":1}",
-      "description": "Kolejny praktyczny przypadek użycia pod ruch organiczny z długiego ogona."
+      "title": "Obiekt zagnieżdżony i liczby",
+      "input": "{\n  \"zamówienie\": {\n    \"id\": 1042,\n    \"pozycje\": [\n      { \"sku\": \"A1\", \"ilość\": 2 },\n      { \"sku\": \"B7\", \"ilość\": 1 }\n    ]\n  }\n}",
+      "output": "{\"zamówienie\":{\"id\":1042,\"pozycje\":[{\"sku\":\"A1\",\"ilość\":2},{\"sku\":\"B7\",\"ilość\":1}]}}",
+      "description": "Zagnieżdżone obiekty i tablice zostają spłaszczone do jednej linii bez zmiany wartości."
+    },
+    {
+      "title": "Tekst z przecinkami i spacjami",
+      "input": "{\n  \"komunikat\": \"Zapisz i spróbuj ponownie.\",\n  \"uwaga\": \"Spacje wewnątrz tekstu pozostają bez zmian.\"\n}",
+      "output": "{\"komunikat\":\"Zapisz i spróbuj ponownie.\",\"uwaga\":\"Spacje wewnątrz tekstu pozostają bez zmian.\"}",
+      "description": "Spacje w cudzysłowach są częścią wartości, więc nie są usuwane przez minifikację."
     }
   ],
   "faq": [
     {
-      "question": "Jak dokładne jest to narzędzie?",
-      "answer": "Wynik jest obliczany bezpośrednio na podstawie formuły lub logiki po stronie przeglądarki używanej przez to narzędzie."
+      "question": "Czy minifikator zmienia liczby, wartości logiczne albo tekst?",
+      "answer": "Nie. Poprawna minifikacja usuwa tylko formatowanie poza łańcuchami JSON. Wartości danych powinny pozostać identyczne."
     },
     {
-      "question": "Czy mogę używać tego narzędzia na telefonie?",
-      "answer": "Tak. Strona działa na komputerach i urządzeniach mobilnych, oferując prosty układ pola wejściowego i wyniku."
+      "question": "Co się stanie, jeśli JSON jest niepoprawny?",
+      "answer": "Narzędzie nie powinno zwracać bezpiecznego wyniku dla uszkodzonej składni. Najpierw popraw przecinki końcowe, cudzysłowy przy kluczach lub niedomknięte nawiasy."
+    },
+    {
+      "question": "Czy spacje wewnątrz tekstu są usuwane?",
+      "answer": "Nie. Spacje w cudzysłowach należą do wartości i muszą pozostać bez zmian. Usuwane są tylko odstępy formatowania poza stringami."
+    },
+    {
+      "question": "Czy mogę minifikować JSON z escapami i znakami Unicode?",
+      "answer": "Tak, o ile JSON jest poprawny. Sekwencje takie jak \\n, \\t, \\\\ oraz znaki Unicode pozostają zgodne z danymi wejściowymi."
     }
   ],
   "seo": {
     "title": "Minifikator JSON",
-    "description": "Minifikuj JSON online natychmiast. Darmowy minifikator JSON online z wynikami od razu.",
+    "description": "Skróć JSON, usuwając spacje i znaki nowej linii, bez zmiany struktury ani wartości danych.",
     "keywords": [
       "minifikator json",
-      "narzedzia programistyczne"
+      "minifikacja json",
+      "skompresuj json",
+      "usuń spacje z json",
+      "kompresor json"
     ]
   }
 }

@@ -1,0 +1,84 @@
+{
+  "toolId": "contrast-checker",
+  "locale": "fr",
+  "slug": "contrast-checker",
+  "h1": "Vérificateur de contraste",
+  "title": "Vérificateur de contraste",
+  "shortDescription": "Comparez une couleur de texte et une couleur de fond pour voir le ratio de contraste et juger la lisibilité.",
+  "metaTitle": "Vérificateur de contraste | Couleurs",
+  "metaDescription": "Comparez les couleurs de texte et de fond, lisez le ratio de contraste et vérifiez si la paire convient au texte normal, grand ou aux éléments UI.",
+  "intro": "Saisissez la couleur du texte et celle du fond pour obtenir immédiatement le ratio de contraste et une indication claire sur la lisibilité de la combinaison.",
+  "overview": "Cet outil s’adresse aux designers, développeurs et relecteurs qui doivent évaluer une paire de couleurs sans approximation. Il affiche le ratio de contraste entre deux couleurs et aide à comprendre ce que ce résultat signifie dans un vrai contexte d’interface : texte, libellés, boutons, cartes et surfaces.\n\nUtilisez-le lors de l’ajustement d’un thème, de la validation d’une couleur de marque ou avant la mise en ligne d’un composant. Il est particulièrement utile quand une combinaison paraît correcte à l’écran mais devient difficile à lire en petit texte, sur des états désactivés ou sur des surfaces teintées.",
+  "howItWorks": [
+    "Choisissez la couleur du texte et la couleur du fond.",
+    "L’outil calcule le ratio de contraste entre les deux couleurs.",
+    "Analysez le résultat pour le texte normal, les grands titres et les surfaces d’interface où la lisibilité compte."
+  ],
+  "useCases": [
+    {
+      "title": "Texte de paragraphe sur fond clair",
+      "description": "Vérifiez qu’un texte courant reste lisible sur du blanc, de l’ivoire ou des cartes très pâles."
+    },
+    {
+      "title": "Libellé de bouton sur couleur de marque",
+      "description": "Testez si un texte blanc, foncé ou légèrement teinté reste net sur un bouton plein."
+    },
+    {
+      "title": "Texte secondaire dans un tableau de bord",
+      "description": "Contrôlez si les métadonnées, dates et indications restent visibles dans des écrans denses."
+    },
+    {
+      "title": "Revue d’un thème sombre",
+      "description": "Évaluez le texte sur des panneaux anthracite, des cartes et des calques avant de livrer une interface dark mode."
+    }
+  ],
+  "examples": [
+    {
+      "title": "Texte éditorial sur blanc",
+      "input": "Texte #1F2937 / Fond #FFFFFF",
+      "output": "Contraste élevé ; adapté au texte de lecture courant.",
+      "description": "Une combinaison classique pour articles, formulaires et documentation."
+    },
+    {
+      "title": "Libellé blanc sur bouton bleu",
+      "input": "Texte #FFFFFF / Fond #2563EB",
+      "output": "Lisible pour un bouton d’action ; vérifier aussi la taille du texte.",
+      "description": "Utile pour savoir si un CTA principal peut conserver une police blanche."
+    },
+    {
+      "title": "Sous-texte gris doux sur carte",
+      "input": "Texte #6B7280 / Fond #F3F4F6",
+      "output": "Contraste plus faible ; plutôt réservé à un texte secondaire plus grand.",
+      "description": "Montre pourquoi des gris subtils peuvent devenir trop faibles sur des fonds très clairs."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Que représente exactement le ratio de contraste ?",
+      "answer": "Il compare la différence de luminosité perçue entre deux couleurs. Plus le ratio est élevé, plus le texte ressort nettement du fond."
+    },
+    {
+      "question": "Pourquoi une paire peut-elle sembler correcte et pourtant donner un résultat faible ?",
+      "answer": "Une couleur saturée peut paraître vive sans offrir une différence de luminance suffisante. Le ratio repose sur la luminosité, pas sur l’intensité visuelle."
+    },
+    {
+      "question": "La taille du texte change-t-elle l’interprétation du résultat ?",
+      "answer": "Oui. Le petit texte demande un contraste plus fort qu’un grand titre. Une paire valable pour un en-tête peut être trop faible pour un paragraphe ou un libellé."
+    },
+    {
+      "question": "Quelle erreur revient le plus souvent avec les boutons et les badges ?",
+      "answer": "On teste uniquement l’état principal et on oublie hover, disabled ou outline. Ces variantes peuvent réduire le contraste et nuire à la lecture."
+    }
+  ],
+  "seo": {
+    "title": "Vérificateur de contraste | Couleurs",
+    "description": "Comparez les couleurs de texte et de fond, lisez le ratio de contraste et vérifiez si la paire convient au texte normal, grand ou aux éléments UI.",
+    "keywords": [
+      "vérificateur de contraste",
+      "contraste couleur",
+      "texte et fond",
+      "accessibilité couleurs",
+      "wcag contraste"
+    ]
+  }
+}

@@ -4,99 +4,86 @@
   "slug": "html-escapen",
   "h1": "HTML escapen",
   "title": "HTML escapen",
-  "shortDescription": "Wandle reservierte HTML-Zeichen in Entitäten um, damit du sie sicher in Code und Inhalte einbetten kannst.",
-  "metaTitle": "HTML escapen | Sonderzeichen in HTML-Entities umwandeln",
-  "metaDescription": "Escape HTML-Zeichen wie <, >, &, Anführungszeichen und Apostrophe für die sichere Verwendung in Code, Vorlagen und Inhalten.",
-  "intro": "Nutze dieses HTML-Escaping-Tool, um reservierte Zeichen in HTML-Entities umzuwandeln und Text, Code sowie Beispiele sicher darzustellen.",
-  "overview": "Beim HTML-Escaping werden Zeichen mit spezieller Bedeutung in HTML durch ihre entsprechenden Entities ersetzt. So wird der Text nicht als Markup interpretiert und kann sicher in Seiten, Snippets und Dokumentationen eingebettet werden. Besonders nützlich ist das, wenn du Code oder Benutzereingaben als reinen Text anzeigen möchtest.",
+  "shortDescription": "Wandle reservierte HTML-Zeichen in Entities um, damit sich Text sicher in Markup, Vorlagen und Codeausschnitte einfügen lässt.",
+  "metaTitle": "HTML escapen",
+  "metaDescription": "Wandle <, >, &, Anführungszeichen und Apostrophe in HTML-Entities um für die sichere Nutzung in Markup, Vorlagen und Codebeispielen.",
+  "intro": "Wandle reservierte HTML-Zeichen in Entities um, damit du das Ergebnis in Markup, Vorlagen oder Codebeispielen einfügen kannst, ohne die Seite zu beschädigen.",
+  "overview": "Beim HTML-Escaping werden Zeichen mit besonderer Bedeutung in HTML in ihre Entity-Form umgewandelt, zum Beispiel < zu &lt; und & zu &amp;. Dadurch zeigt der Browser den Text wörtlich an, statt ihn als Tags oder Attribute zu lesen.\n\nDas ist sinnvoll, wenn Inhalte spitze Klammern, Ampersands, Anführungszeichen oder Apostrophe enthalten und als reiner Text erhalten bleiben sollen. Auch beim Einfügen roher Ausschnitte in Dokumentation, Vorlagen oder HTML-Dateien verhindert das, dass versehentliches Markup die Struktur verändert.",
   "howItWorks": [
-    "Füge den Text ein oder tippe ihn ein, den du escapen möchtest.",
-    "Das Tool wandelt reservierte HTML-Zeichen wie <, >, &, \", und ' in Entities um.",
-    "Kopiere das Ergebnis und verwende es in HTML, Vorlagen oder Dokumentation."
+    "Text eingeben oder einfügen, der escaped werden soll.",
+    "Das Tool wandelt reservierte Zeichen wie <, >, &, \", und ' in HTML-Entities um.",
+    "Ergebnis kopieren und dort einsetzen, wo der Text in HTML wörtlich erscheinen soll."
   ],
   "useCases": [
-    "Code-Beispiele anzeigen, ohne HTML-Tags zu rendern.",
-    "Benutzertext sicher in HTML-Inhalte einbetten.",
-    "Snippets, Dokumentationen oder Vorlagen für die Veröffentlichung vorbereiten.",
-    "Ungewolltes Markup beim Anzeigen von Sonderzeichen vermeiden."
+    {
+      "title": "Codebeispiel als Text anzeigen",
+      "description": "HTML oder Template-Snippets in Doku anzeigen, ohne dass der Browser daraus echte Elemente macht."
+    },
+    {
+      "title": "Benutzertext für HTML-Ausgabe vorbereiten",
+      "description": "Namen, Kommentare oder Antworten so einfügen, dass Sonderzeichen sichtbar als Text bleiben."
+    },
+    {
+      "title": "Sichere Vorlagenfragmente erstellen",
+      "description": "Ausschnitte mit Klammern und Ampersands speichern, ohne bei späterem Einfügen unbeabsichtigtes Markup auszulösen."
+    },
+    {
+      "title": "Technische Hinweise mit Symbolen veröffentlichen",
+      "description": "Vergleiche, Operatoren und Zitate in Wissensdatenbanken lesbar halten."
+    }
   ],
   "examples": [
     {
-      "title": "Einfaches Escaping",
+      "title": "Einfaches Tag escapen",
       "input": "<p>Tom & Jerry</p>",
       "output": "&lt;p&gt;Tom &amp; Jerry&lt;/p&gt;",
-      "description": "Reservierte Zeichen werden in HTML-Entities umgewandelt."
+      "description": "Spitze Klammern und Ampersand werden zu Entities und erscheinen dadurch nur als Text."
     },
     {
-      "title": "Anführungszeichen und Apostrophe",
-      "input": "He said: \"It's fine\"",
-      "output": "He said: &quot;It&#39;s fine&quot;",
-      "description": "Anführungszeichen werden für die sicherere Einbettung in Attribute oder Inhalt escaped."
+      "title": "Text mit Anführungszeichen",
+      "input": "Sie schrieb: \"Nutze die 'sichere' Version.\"",
+      "output": "Sie schrieb: &quot;Nutze die &#39;sichere&#39; Version.&quot;",
+      "description": "Anführungszeichen und Apostrophe werden für eine sicherere Einbettung in HTML escaped."
+    },
+    {
+      "title": "Vergleich mit Operatoren",
+      "input": "if (a < b && b > 10)",
+      "output": "if (a &lt; b &amp;&amp; b &gt; 10)",
+      "description": "Vergleichszeichen und Ampersands bleiben lesbarer Text statt HTML-Markup."
     }
   ],
   "faq": [
     {
-      "question": "Was macht HTML-Escaping?",
-      "answer": "Es wandelt reservierte Zeichen in HTML-Entities um, damit Text in HTML sicher angezeigt wird, ohne als Markup interpretiert zu werden."
+      "question": "Welche Zeichen werden beim HTML-Escaping typischerweise ersetzt?",
+      "answer": "Meist <, >, &, doppelte Anführungszeichen und Apostrophe. Das sind die Zeichen, die HTML leicht als Syntax statt als Text versteht."
     },
     {
-      "question": "Ist HTML-Escaping dasselbe wie Sanitizing?",
-      "answer": "Nein. Escaping macht Text sicher für die Anzeige, während Sanitizing unsicheren HTML-Code entfernt oder filtert. Das sind unterschiedliche Aufgaben."
+      "question": "Verändert Escaping den Inhalt meines Textes?",
+      "answer": "Der sichtbare Inhalt bleibt gleich, aber die Verarbeitung durch den Browser ändert sich. &lt; wird zum Beispiel als < angezeigt und bleibt im Quelltext sicher."
     },
     {
-      "question": "Wann sollte ich HTML escapen?",
-      "answer": "Wenn du Text oder Code in HTML wörtlich anzeigen möchtest, besonders bei Benutzerinhalten, Snippets oder Dokumentation."
+      "question": "Warum sollte ich Anführungszeichen escapen, wenn ich keine Attribute nutze?",
+      "answer": "Weil derselbe Text später doch in Attribute oder Vorlagen wandern kann. Frühzeitiges Escaping reduziert Fehler bei wiederverwendeten Inhalten."
+    },
+    {
+      "question": "Kann ich HTML mehrmals escapen?",
+      "answer": "Ja, aber doppeltes Escaping erzeugt sichtbare Entities wie &amp;lt;. Wenn der Output doppelt kodiert wirkt, wurde er zu oft escaped."
+    },
+    {
+      "question": "Was ist der häufigste Fehler bei diesem Tool?",
+      "answer": "Escaped Text wird oft mit echtem HTML verwechselt. Das Ergebnis mit Entities ist zum Anzeigen gedacht, nicht zum Erzeugen von Elementen oder Attributen."
     }
   ],
-  "uiLabels": {
-    "copy": "Kopieren",
-    "copied": "Kopiert",
-    "input": "Texteingabe",
-    "output": "Escaped HTML",
-    "placeholder": "Text zum Escapen einfügen",
-    "indent": "Einzug",
-    "removeComments": "Kommentare entfernen",
-    "preview": "Vorschau",
-    "source": "Quelle",
-    "sanitizedHtml": "Bereinigtes HTML",
-    "plainText": "Klartext",
-    "summary": "Zusammenfassung",
-    "total": "Gesamt",
-    "links": "Links",
-    "images": "Bilder",
-    "errors": "Fehler",
-    "warnings": "Warnungen",
-    "valid": "Gültig",
-    "invalid": "Ungültig",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Ziel",
-    "alt": "Alt",
-    "width": "Breite",
-    "height": "Höhe",
-    "empty": "Leer",
-    "outputReady": "Ausgabe bereit",
-    "cleanedHtml": "Bereinigtes HTML",
-    "formattedHtml": "Formatiertes HTML",
-    "minifiedHtml": "Minimiertes HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extrahierte Bilder",
-    "extractedLinks": "Extrahierte Links",
-    "validationSummary": "Validierungsübersicht",
-    "prettyHtml": "Lesbares HTML",
-    "encodedText": "Kodierter Text"
-  },
   "seo": {
-    "title": "HTML escapen | Sonderzeichen in HTML-Entities umwandeln",
-    "description": "Escape HTML-Zeichen wie <, >, &, Anführungszeichen und Apostrophe für die sichere Verwendung in Code, Vorlagen und Inhalten.",
+    "title": "HTML escapen",
+    "description": "Wandle <, >, &, Anführungszeichen und Apostrophe in HTML-Entities um für die sichere Nutzung in Markup, Vorlagen und Codebeispielen.",
     "keywords": [
       "html escapen",
       "html escape",
       "html entities",
+      "html text kodieren",
       "html encoder",
-      "sonderzeichen",
-      "html text kodieren"
+      "sonderzeichen"
     ]
   }
 }

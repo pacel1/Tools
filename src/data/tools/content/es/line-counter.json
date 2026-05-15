@@ -4,42 +4,79 @@
   "slug": "contador-de-lineas",
   "h1": "Contador de líneas",
   "title": "Contador de líneas",
-  "shortDescription": "Cuenta líneas en texto al instante con resultados rápidos, entrada simple y ejemplos prácticos.",
-  "overview": "Cuenta líneas en texto al instante. Esta página ofrece una respuesta rápida con una herramienta práctica y un flujo de resultados sencillo. Está pensada para usuarios que buscan una respuesta gratis en línea, resultados rápidos en el navegador y contenido útil de cola larga.",
+  "shortDescription": "Cuenta cuántas líneas tiene un texto pegado, incluidas las líneas en blanco si forman parte del contenido.",
+  "metaTitle": "Contador de líneas",
+  "metaDescription": "Cuenta las líneas de un texto pegado, incluidas las líneas en blanco, y revisa el total con claridad.",
+  "intro": "Pega tu texto y obtén al instante el número de líneas, incluidas las vacías si están presentes en el contenido.",
+  "overview": "Este contador muestra el número exacto de líneas del texto que pegas en el campo. Es útil para revisar un borrador, comparar versiones de un documento o comprobar si un bloque copiado conserva saltos de línea importantes.\n\nEl resultado depende de los saltos de línea reales del texto de entrada. Si el contenido termina con un salto final, el total puede cambiar, así que conviene revisar el resultado con el texto exacto que has copiado. En notas largas, fragmentos de código y textos estructurados, la herramienta ayuda a ver la organización sin contar a mano.",
   "howItWorks": [
-    "Introduce el valor o el texto requerido en el formulario.",
-    "La conversión, cálculo o transformación se ejecuta al instante en el navegador.",
-    "Revisa el resultado y continúa con herramientas relacionadas si necesitas un paso más."
+    "Pega o escribe tu texto en el área de entrada.",
+    "La herramienta cuenta las líneas a partir del texto exacto, incluidas las líneas en blanco.",
+    "Consulta el total y compáralo con el original si necesitas confirmar el formato."
+  ],
+  "useCases": [
+    {
+      "title": "Revisar un borrador antes de enviarlo",
+      "description": "Comprueba cuántas líneas tiene un correo, nota o informe antes de compartirlo."
+    },
+    {
+      "title": "Verificar bloques de código pegados",
+      "description": "Cuenta las líneas de un fragmento de código para confirmar su estructura después de copiarlo."
+    },
+    {
+      "title": "Comparar dos versiones de texto",
+      "description": "Comprueba si una edición añadió o eliminó saltos de línea en un documento."
+    },
+    {
+      "title": "Validar contenido estructurado",
+      "description": "Útil para listas, esquemas, transcripciones o letras donde el número de líneas afecta al formato."
+    }
   ],
   "examples": [
     {
-      "title": "Ejemplo 1",
-      "input": "Tres líneas de texto",
-      "output": "Total de líneas",
-      "description": "Un ejemplo realista de contador de líneas para una búsqueda cotidiana."
+      "title": "Nota breve",
+      "input": "Primera línea\nSegunda línea\nTercera línea",
+      "output": "3 líneas",
+      "description": "Tres líneas visibles producen un total de 3."
     },
     {
-      "title": "Ejemplo 2",
-      "input": "Tres líneas de texto",
-      "output": "Total de líneas",
-      "description": "Otro caso práctico para tráfico orgánico de cola larga."
+      "title": "Texto con línea en blanco",
+      "input": "Alfa\n\nGamma",
+      "output": "3 líneas",
+      "description": "La línea vacía del centro también cuenta porque forma parte del texto."
+    },
+    {
+      "title": "Salto final",
+      "input": "Uno\nDos\nTres\n",
+      "output": "4 líneas",
+      "description": "Un salto de línea al final puede añadir una línea más al recuento."
     }
   ],
   "faq": [
     {
-      "question": "¿Qué tan precisa es esta herramienta?",
-      "answer": "El resultado se calcula directamente a partir de la fórmula o la lógica en el navegador que utiliza esta herramienta."
+      "question": "¿Una línea en blanco cuenta como línea?",
+      "answer": "Sí. Si hay una línea vacía entre dos saltos de línea, se cuenta porque forma parte de la estructura del texto."
     },
     {
-      "question": "¿Puedo usar esta herramienta en el móvil?",
-      "answer": "Sí. La página funciona en escritorio y en móvil con una interfaz simple de entrada y resultado."
+      "question": "¿Por qué subió el total al añadir un salto al final?",
+      "answer": "Un salto final puede crear un límite adicional de línea. Por eso el total puede ser mayor que el texto visible sugiere."
+    },
+    {
+      "question": "¿Cómo interpreto texto pegado desde editores o chats?",
+      "answer": "Se analiza el texto exacto pegado, así que los saltos ocultos, retornos extra y formato copiado afectan al total."
+    },
+    {
+      "question": "¿Cuál es el error más habitual al contar?",
+      "answer": "Suele olvidarse contar las líneas vacías y el salto de línea final del contenido."
     }
   ],
   "seo": {
     "title": "Contador de líneas",
-    "description": "Cuenta líneas en texto al instante. Contador de líneas online gratis con resultados inmediatos.",
+    "description": "Cuenta las líneas de un texto pegado, incluidas las líneas en blanco, y revisa el total con claridad.",
     "keywords": [
       "contador de líneas",
+      "contar líneas",
+      "líneas de texto",
       "herramienta de texto"
     ]
   }

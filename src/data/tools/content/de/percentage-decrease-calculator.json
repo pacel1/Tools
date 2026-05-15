@@ -4,43 +4,80 @@
   "slug": "prozentsatz-senkungsrechner",
   "h1": "Prozentsatz-Senkungsrechner",
   "title": "Prozentsatz-Senkungsrechner",
-  "shortDescription": "Berechne einen Wert nach einer prozentualen Senkung mit schnellen Ergebnissen, einfachen Eingaben und praktischen Beispielen.",
-  "overview": "Berechne einen Wert nach einer prozentualen Senkung. Diese Seite liefert eine schnelle Antwort mit einem praktischen Online-Tool und einem einfachen Ergebnisablauf. Sie richtet sich an Nutzer, die eine kostenlose Antwort im Browser, sofortige Ergebnisse und praktische Long-Tail-Inhalte suchen.",
+  "shortDescription": "Berechne den Endwert nach einer prozentualen Senkung mit Startwert und Absenkung in Prozent.",
+  "metaTitle": "Prozentsatz-Senkungsrechner",
+  "metaDescription": "Berechne den Endwert nach einer prozentualen Senkung mit Startwert und Absenkung in Prozent.",
+  "intro": "Gib den Ausgangswert und die prozentuale Senkung ein, um sofort den reduzierten Wert zu erhalten.",
+  "overview": "Dieser Rechner zeigt den Endwert nach einer prozentualen Senkung und macht sichtbar, wie viel nach der Reduktion übrig bleibt. Er ist nützlich, wenn Preise, Budgets, Ziele, Mengen oder Messwerte um einen festen Prozentsatz verringert werden sollen. Das Ergebnis basiert auf dem Startwert und dem Senkungssatz und hilft so, Rechenfehler von Hand zu vermeiden.\n\nAußerdem kannst du verschiedene Senkungsszenarien direkt vergleichen. So prüfst du, wie sich ein Preisnachlass, eine Budgetkürzung oder ein herabgesetztes Ziel auf den neuen Wert auswirkt.",
   "howItWorks": [
-    "Gib den benötigten Wert oder Text in das Formular ein.",
-    "Die Umrechnung, Berechnung oder Transformation läuft sofort im Browser.",
-    "Prüfe das Ergebnis und nutze bei Bedarf verwandte Tools für den nächsten Schritt."
+    "Gib den Ausgangswert ein.",
+    "Trage die prozentuale Senkung ein.",
+    "Lies den neuen Endwert ab und ändere die Eingaben, wenn du weitere Varianten testen willst."
+  ],
+  "useCases": [
+    {
+      "title": "Preisnachlässe im Handel",
+      "description": "Ermittle den neuen Preis nach Rabatt, Abverkauf oder saisonaler Reduktion."
+    },
+    {
+      "title": "Budgetkürzungen",
+      "description": "Berechne, wie viel von einem Abteilungs-, Projekt- oder Kostenbudget nach einer Kürzung übrig bleibt."
+    },
+    {
+      "title": "Rückgänge bei Kennzahlen",
+      "description": "Bestimme den neuen Wert nach einem Rückgang bei Umsatz, Aufträgen, Leads oder anderen Messgrößen."
+    },
+    {
+      "title": "Zielanpassung",
+      "description": "Senke ein Verkaufs-, Spar- oder Produktionsziel um einen festen Prozentsatz und sieh den neuen Sollwert."
+    }
   ],
   "examples": [
     {
-      "title": "Beispiel 1",
-      "input": "120 reduziert um 15 %",
-      "output": "102",
-      "description": "Ein realistisches Beispiel für den prozentualen Senkungsrechner bei einer alltäglichen Suchanfrage."
+      "title": "Preis im Ausverkauf",
+      "input": "Ausgangswert: 84, Senkung: 25%",
+      "output": "63",
+      "description": "Ein Preis von 84 sinkt bei 25 % Absenkung auf 63."
     },
     {
-      "title": "Beispiel 2",
-      "input": "120 reduziert um 15 %",
-      "output": "102",
-      "description": "Ein weiterer praktischer Anwendungsfall für organischen Long-Tail-Traffic."
+      "title": "Mietsenkung",
+      "input": "Ausgangswert: 1.600, Senkung: 7,5%",
+      "output": "1.480",
+      "description": "Ein Monatsbetrag von 1.600 reduziert sich auf 1.480."
+    },
+    {
+      "title": "Weniger Leads",
+      "input": "Ausgangswert: 2.400, Senkung: 12%",
+      "output": "2.112",
+      "description": "Aus 2.400 werden nach der Senkung 2.112."
     }
   ],
   "faq": [
     {
-      "question": "Wie genau ist dieses Tool?",
-      "answer": "Das Ergebnis wird direkt aus der Formel oder der browserseitigen Logik dieses Tools berechnet."
+      "question": "Wie lese ich das Ergebnis richtig?",
+      "answer": "Der Endwert ist der Ausgangswert minus der gewählten prozentualen Senkung dieses Ausgangswerts."
     },
     {
-      "question": "Kann ich das Tool auf dem Smartphone nutzen?",
-      "answer": "Ja. Die Seite funktioniert auf Desktop- und Mobilgeräten mit einem einfachen Eingabe- und Ergebnislayout."
+      "question": "Kann ich Dezimalwerte bei Prozenten eingeben?",
+      "answer": "Ja. Werte wie 7,5 % oder 12,25 % werden übernommen und auf den Ausgangswert angewendet."
+    },
+    {
+      "question": "Warum ist das Ergebnis manchmal eine Dezimalzahl?",
+      "answer": "Wenn die Senkung nicht exakt aufgeht, kann der Endwert eine Dezimalstelle enthalten."
+    },
+    {
+      "question": "Welcher Fehler passiert am häufigsten?",
+      "answer": "Gib nicht schon den reduzierten Wert als Ausgangswert ein, sonst wird die Senkung zweimal angewendet."
     }
   ],
   "seo": {
     "title": "Prozentsatz-Senkungsrechner",
-    "description": "Berechne einen Wert nach einer prozentualen Senkung. Kostenloser Online-Rechner mit sofortigen Ergebnissen.",
+    "description": "Berechne den Endwert nach einer prozentualen Senkung mit Startwert und Absenkung in Prozent.",
     "keywords": [
       "prozentsatz-senkungsrechner",
-      "prozent senkung rechner"
+      "prozentuale senkung",
+      "endwert nach senkung",
+      "prozent rechner"
     ]
   }
 }

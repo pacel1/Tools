@@ -4,44 +4,81 @@
   "slug": "convertisseur-de-pieds-en-metres",
   "h1": "Convertisseur de pieds en mètres",
   "title": "Convertisseur de pieds en mètres",
-  "shortDescription": "Convertissez les pieds en mètres instantanément avec des résultats rapides, des saisies simples et des exemples pratiques.",
-  "overview": "Convertissez les pieds en mètres instantanément. Cette page fournit une réponse rapide grâce à un outil pratique et à un flux de résultat simple. Elle s’adresse aux utilisateurs qui recherchent une réponse gratuite en ligne, des résultats rapides dans le navigateur et un contenu utile de longue traîne autour de la conversion.",
+  "shortDescription": "Convertissez les pieds en mètres avec le facteur standard exact et obtenez des valeurs décimales claires.",
+  "metaTitle": "Convertisseur pieds en mètres",
+  "metaDescription": "Convertissez les pieds en mètres avec le facteur exact 0,3048. Obtenez des valeurs précises pour hauteurs, plans et mesures techniques.",
+  "intro": "Saisissez une valeur en pieds et obtenez immédiatement son équivalent en mètres : 1 pied = 0,3048 mètre.",
+  "overview": "Ce convertisseur est conçu pour les mesures exprimées en pieds et à reporter en mètres sans calcul manuel. Il est pratique pour les tailles, les dimensions de pièces, les meubles, les notes de chantier et les spécifications techniques en unités impériales.\n\nLe calcul repose sur le facteur standard exact, donc 6 pieds donnent 1,8288 mètre. Si vous devez vérifier plusieurs mesures, vous pouvez les convertir une par une et utiliser un format métrique plus simple pour les plans, la documentation ou les comparaisons.",
   "howItWorks": [
-    "Saisissez la valeur ou le texte requis dans le formulaire.",
-    "La conversion, le calcul ou la transformation s’effectue instantanément dans le navigateur.",
-    "Consultez le résultat et poursuivez avec des outils associés si vous avez besoin d’une autre étape."
+    "Saisissez le nombre de pieds dans le champ prévu.",
+    "L’outil multiplie la valeur par 0,3048 et l’affiche en mètres.",
+    "Lisez le résultat et, si nécessaire, convertissez une autre mesure de la même manière."
+  ],
+  "useCases": [
+    {
+      "title": "Taille d’une personne",
+      "description": "Transformez une taille exprimée en pieds en mètres pour des formulaires, dossiers ou comparaisons."
+    },
+    {
+      "title": "Dimensions de pièces et de cloisons",
+      "description": "Convertissez les longueurs de murs, hauteurs de plafond et dimensions intérieures en unités métriques."
+    },
+    {
+      "title": "Fiches techniques de mobilier",
+      "description": "Relisez les dimensions de produits indiquées en pieds et conservez-les en mètres."
+    },
+    {
+      "title": "Plans et documents de chantier",
+      "description": "Préparez des valeurs en mètres pour les dessins, implantations et dossiers de projet."
+    }
   ],
   "examples": [
     {
-      "title": "Exemple 1",
-      "input": "6 pieds",
-      "output": "1,8288 mètres",
-      "description": "Un exemple réaliste de convertisseur de pieds en mètres pour une recherche courante."
+      "title": "Convertir 6 pieds",
+      "input": "6",
+      "output": "1,8288 mètre",
+      "description": "Exemple classique pour une taille ou une mesure intérieure."
     },
     {
-      "title": "Exemple 2",
-      "input": "6 pieds",
-      "output": "1,8288 mètres",
-      "description": "Un autre cas pratique pour attirer un trafic organique de longue traîne."
+      "title": "Convertir 12,5 pieds",
+      "input": "12,5",
+      "output": "3,81 mètres",
+      "description": "Montre la conversion d’une valeur décimale."
+    },
+    {
+      "title": "Convertir 0,5 pied",
+      "input": "0,5",
+      "output": "0,1524 mètre",
+      "description": "Utile pour de petites longueurs ou des jeux de pose."
     }
   ],
   "faq": [
     {
-      "question": "Quelle est la précision de cet outil ?",
-      "answer": "Le résultat est calculé directement à partir de la formule ou de la logique côté navigateur utilisée par cet outil."
+      "question": "Quel facteur utilise ce convertisseur ?",
+      "answer": "Il utilise le facteur standard exact : 1 pied = 0,3048 mètre."
     },
     {
-      "question": "Puis-je utiliser cet outil sur mobile ?",
-      "answer": "Oui. La page fonctionne sur ordinateur et sur mobile avec une mise en page simple pour la saisie et le résultat."
+      "question": "Faut-il saisir seulement des pieds ?",
+      "answer": "Oui. Cet outil convertit uniquement les pieds. Si votre mesure comprend des pouces, convertissez d’abord l’ensemble en pieds ou calculez la valeur complète avant de l’entrer."
+    },
+    {
+      "question": "Pourquoi le résultat comporte-t-il parfois plusieurs décimales ?",
+      "answer": "La valeur est affichée en décimal pour conserver la précision de la conversion. Vous pouvez ensuite l’arrondir selon votre besoin."
+    },
+    {
+      "question": "Quelle erreur revient le plus souvent ?",
+      "answer": "L’erreur la plus fréquente consiste à saisir des pouces comme s’il s’agissait de pieds. Vérifiez que la valeur entrée correspond bien aux pieds."
     }
   ],
   "seo": {
-    "title": "Convertisseur de pieds en mètres",
-    "description": "Convertissez les pieds en mètres instantanément. Convertisseur en ligne gratuit de pieds en mètres avec résultats immédiats.",
+    "title": "Convertisseur pieds en mètres",
+    "description": "Convertissez les pieds en mètres avec le facteur exact 0,3048. Obtenez des valeurs précises pour hauteurs, plans et mesures techniques.",
     "keywords": [
-      "convertisseur de pieds en mètres",
+      "convertisseur pieds en mètres",
       "pieds en mètres",
-      "outil de conversion"
+      "convertir pieds en mètres",
+      "pied en mètre",
+      "conversion d’unités"
     ]
   }
 }

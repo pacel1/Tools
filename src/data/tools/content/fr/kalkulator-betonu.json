@@ -4,179 +4,87 @@
   "slug": "calculateur-de-beton",
   "h1": "Calculateur de béton",
   "title": "Calculateur de béton",
-  "shortDescription": "Calculez le volume de béton, la marge de perte et le nombre de sacs pour une dalle, une semelle ou un poteau.",
-  "metaTitle": "Calculateur de béton | Volume, pertes et sacs",
-  "metaDescription": "Calculez le volume de béton en m3, ajoutez une marge de perte et estimez le nombre de sacs ou le béton prêt à l'emploi nécessaire.",
-  "intro": "Utilisez ce calculateur de béton pour estimer rapidement la quantité nécessaire pour une dalle, une semelle ou un trou de poteau. Saisissez les dimensions, ajoutez une marge de perte et obtenez le volume ainsi que le nombre estimé de sacs.",
-  "overview": "Ce calculateur convertit la longueur, la largeur et l’épaisseur en volume de béton en mètres cubes. Il ajoute aussi une marge de perte et estime le nombre de sacs selon le rendement d’un sac. Pratique pour les commandes de béton prêt à l’emploi ou de béton en sacs.",
+  "shortDescription": "Calculez le volume de béton, la marge et le nombre de sacs pour une dalle, une semelle ou un poteau.",
+  "metaTitle": "Calculateur de béton m3",
+  "metaDescription": "Calculez le volume de béton, ajoutez une marge et convertissez le résultat en nombre de sacs ou en quantité à commander.",
+  "intro": "Saisissez les dimensions de votre ouvrage pour obtenir le volume de béton, la marge de perte et le nombre de sacs estimé.",
+  "overview": "Cet outil transforme la longueur, la largeur et l’épaisseur en volume de béton en mètres cubes. Il ajoute ensuite la marge que vous choisissez pour couvrir les pertes de manipulation, le compactage et les petites irrégularités du terrain.\n\nVous pouvez ainsi comparer plus facilement le béton en sacs et le béton prêt à l’emploi. Pour un trou irrégulier ou une base non homogène, une approximation simple est souvent la meilleure lecture, avec un léger surplus si les bords sont creusés ou que le fond n’est pas bien nivelé.",
   "howItWorks": [
     "Saisissez la longueur et la largeur en mètres.",
-    "Saisissez l’épaisseur en centimètres.",
-    "Définissez le pourcentage de perte.",
-    "Indiquez le rendement d’un sac en m3.",
-    "Consultez le volume, le volume avec perte et le nombre de sacs."
+    "Indiquez l’épaisseur en centimètres.",
+    "Définissez le pourcentage de marge.",
+    "Renseignez le rendement d’un sac en m3.",
+    "Consultez le volume de base, le volume ajusté et le nombre de sacs."
   ],
   "useCases": [
-    "Calculer le béton pour une dalle ou un sol de garage.",
-    "Prévoir le béton pour une semelle de fondation.",
-    "Estimer le matériau pour des poteaux et des bases de colonnes.",
-    "Comparer le béton en sacs et le béton prêt à l’emploi."
+    {
+      "title": "Dalle de terrasse ou de garage",
+      "description": "Évaluer le béton nécessaire avant de lancer un coulage ou une commande de matériaux."
+    },
+    {
+      "title": "Semelle filante",
+      "description": "Calculer la quantité pour des fondations linéaires et comparer sacs et béton prêt à l’emploi."
+    },
+    {
+      "title": "Trous de poteaux",
+      "description": "Dimensionner le béton d’un trou individuel pour clôture, pergola ou support léger."
+    },
+    {
+      "title": "Plots et bases de poteaux",
+      "description": "Obtenir une quantité cohérente pour des appuis ponctuels et petites bases structurelles."
+    }
   ],
   "examples": [
     {
-      "title": "Estimation pour une dalle",
-      "input": "4 m x 3 m x 10 cm",
-      "output": "1,2 m3 de béton avant perte.",
-      "description": "Un exemple simple pour une petite dalle ou une base de terrasse."
+      "title": "Petite dalle",
+      "input": "3,6 m x 2,4 m x 12 cm, 7 % de marge, 0,018 m3 par sac",
+      "output": "Volume de base : 1,0368 m3 ; avec marge : 1,1094 m3 ; sacs : 62",
+      "description": "Exemple concret pour une dalle de jardin ou une base de cabanon."
     },
     {
-      "title": "Estimation pour une semelle",
-      "input": "2 m x 0,5 m x 30 cm",
-      "output": "0,3 m3 de béton avant perte.",
-      "description": "Utile pour les semelles filantes ou les plots de fondation."
+      "title": "Semelle de clôture",
+      "input": "8 m x 0,25 m x 20 cm, 10 % de marge, 0,02 m3 par sac",
+      "output": "Volume de base : 0,4 m3 ; avec marge : 0,44 m3 ; sacs : 22",
+      "description": "Adapté à une semelle étroite le long d’une clôture."
+    },
+    {
+      "title": "Trou de poteau",
+      "input": "0,45 m x 0,45 m x 0,85 m, 12 % de marge, 0,02 m3 par sac",
+      "output": "Volume de base : 0,1721 m3 ; avec marge : 0,1928 m3 ; sacs : 10",
+      "description": "Convient à un poteau lourd ou à un support de signalisation."
     }
   ],
   "faq": [
     {
-      "question": "Comment calculer le volume de béton ?",
-      "answer": "Multipliez la longueur par la largeur par l’épaisseur, puis convertissez l’épaisseur de centimètres en mètres."
+      "question": "Comment traiter un trou rond ?",
+      "answer": "Utilisez une équivalence rectangulaire simple ou une surface de base proche. Si les parois sont irrégulières, ajoutez une petite marge."
     },
     {
-      "question": "Pourquoi ajouter une marge de perte ?",
-      "answer": "La marge couvre les pertes, les irrégularités et les petites erreurs de mesure."
+      "question": "La marge est-elle incluse dans le nombre de sacs ?",
+      "answer": "Oui. Le calcul des sacs se fait sur le volume ajusté, pas sur le volume de base."
     },
     {
-      "question": "Puis-je l’utiliser pour du béton prêt à l’emploi ?",
-      "answer": "Oui. Le volume avec perte aide à estimer la quantité à commander."
+      "question": "Pourquoi un petit chantier demande-t-il autant de sacs ?",
+      "answer": "Le plus souvent, le rendement par sac est trop faible ou l’unité saisie n’est pas la bonne."
     },
     {
-      "question": "Comment calculer le nombre de sacs ?",
-      "answer": "Divisez le volume avec perte par le rendement d’un sac, puis arrondissez au supérieur."
+      "question": "Peut-on calculer une surface en pente ?",
+      "answer": "Oui, mais il vaut mieux la diviser en zones ou utiliser une épaisseur moyenne. Une seule épaisseur reste une approximation."
     },
     {
-      "question": "Convient-il pour les poteaux ?",
-      "answer": "Oui, si vous entrez les dimensions du trou ou une équivalence rectangulaire simple."
+      "question": "Comment lire le résultat pour une livraison de béton prêt à l’emploi ?",
+      "answer": "Considérez-le comme une base de commande à discuter avec le fournisseur. Si l’accès est difficile ou le coffrage irrégulier, gardez une petite réserve."
     }
   ],
-  "uiLabels": {
-    "copy": "Copier",
-    "copied": "Copié",
-    "input": "Entrée",
-    "output": "Sortie",
-    "placeholder": "Saisissez une valeur",
-    "indent": "Retrait",
-    "removeComments": "Supprimer les commentaires",
-    "preview": "Aperçu",
-    "source": "Source",
-    "sanitizedHtml": "HTML nettoyé",
-    "plainText": "Texte brut",
-    "summary": "Résumé",
-    "total": "Total",
-    "links": "Liens",
-    "images": "Images",
-    "errors": "Erreurs",
-    "warnings": "Avertissements",
-    "valid": "Valide",
-    "invalid": "Invalide",
-    "href": "Href",
-    "text": "Texte",
-    "rel": "Rel",
-    "target": "Cible",
-    "alt": "Alt",
-    "width": "Largeur",
-    "height": "Hauteur",
-    "empty": "Vide",
-    "outputReady": "Résultat prêt",
-    "cleanedHtml": "HTML nettoyé",
-    "formattedHtml": "HTML formaté",
-    "minifiedHtml": "HTML minifié",
-    "markdown": "Markdown",
-    "extractedImages": "Images extraites",
-    "extractedLinks": "Liens extraits",
-    "validationSummary": "Résumé de validation",
-    "prettyHtml": "HTML lisible",
-    "encodedText": "Texte encodé",
-    "file": "Fichier",
-    "size": "Taille",
-    "format": "Format",
-    "quality": "Qualité",
-    "colorOne": "Couleur 1",
-    "colorTwo": "Couleur 2",
-    "background": "Arrière-plan",
-    "foreground": "Premier plan",
-    "angle": "Angle",
-    "margin": "Marge",
-    "level": "Niveau",
-    "gradientType": "Type de dégradé",
-    "linear": "Linéaire",
-    "radial": "Radial",
-    "blur": "Flou",
-    "spread": "Diffusion",
-    "offsetX": "Décalage X",
-    "offsetY": "Décalage Y",
-    "opacity": "Opacité",
-    "inset": "Interne",
-    "cssCode": "Code CSS",
-    "snippet": "Extrait",
-    "download": "Télécharger",
-    "downloadSvg": "Télécharger SVG",
-    "downloadPng": "Télécharger PNG",
-    "downloadAll": "Télécharger tout",
-    "upload": "Importer",
-    "title": "Titre",
-    "description": "Description",
-    "canonicalUrl": "URL canonique",
-    "siteName": "Nom du site",
-    "ogImage": "Image OG",
-    "clear": "Effacer",
-    "generatedQr": "QR généré",
-    "placeholderImage": "Image factice",
-    "faviconSet": "Jeu de favicon",
-    "keepAspectRatio": "Conserver les proportions",
-    "cropX": "Recadrage X",
-    "cropY": "Recadrage Y",
-    "cropWidth": "Largeur du recadrage",
-    "cropHeight": "Hauteur du recadrage",
-    "originalSize": "Taille originale",
-    "outputSize": "Taille de sortie",
-    "savedSize": "Taille enregistrée",
-    "result": "Résultat",
-    "base64": "Base64",
-    "mimeType": "Type MIME",
-    "resizedImage": "Image redimensionnée",
-    "compressedImage": "Image compressée",
-    "croppedImage": "Image recadrée",
-    "convertedImage": "Image convertie",
-    "decodedImage": "Image décodée",
-    "imagePreview": "Aperçu de l’image",
-    "camera": "Caméra",
-    "lens": "Objectif",
-    "dateTaken": "Date de prise de vue",
-    "resolution": "Résolution",
-    "fileSize": "Taille du fichier",
-    "iso": "ISO",
-    "exposure": "Exposition",
-    "aperture": "Ouverture",
-    "focalLength": "Distance focale",
-    "flash": "Flash",
-    "orientation": "Orientation",
-    "latitude": "Latitude",
-    "longitude": "Longitude",
-    "openMap": "Ouvrir la carte",
-    "rawMetadata": "Métadonnées brutes",
-    "noMetadataFound": "Aucune métadonnée trouvée",
-    "gpsLocation": "Position GPS",
-    "metadataSummary": "Résumé des métadonnées"
-  },
   "seo": {
-    "title": "Calculateur de béton | Volume, pertes et sacs",
-    "description": "Calculez le volume de béton en m3, ajoutez une marge de perte et estimez le nombre de sacs ou le béton prêt à l’emploi nécessaire pour une dalle, une semelle ou un poteau.",
+    "title": "Calculateur de béton m3",
+    "description": "Calculez le volume de béton, ajoutez une marge et convertissez le résultat en nombre de sacs ou en quantité à commander.",
     "keywords": [
       "calculateur de béton",
-      "calculer volume béton",
-      "calculateur de sacs de béton",
+      "volume béton",
+      "nombre de sacs béton",
       "béton prêt à l'emploi",
-      "calculateur dalle béton"
+      "semelle filante"
     ]
   }
 }

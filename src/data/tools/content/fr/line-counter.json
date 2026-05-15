@@ -4,42 +4,79 @@
   "slug": "compteur-de-lignes",
   "h1": "Compteur de lignes",
   "title": "Compteur de lignes",
-  "shortDescription": "Compte les lignes d’un texte instantanément avec des résultats rapides, une saisie simple et des exemples pratiques.",
-  "overview": "Compte les lignes d’un texte instantanément. Cette page fournit une réponse rapide grâce à un outil pratique et à un affichage simple du résultat. Elle s’adresse aux utilisateurs qui recherchent une réponse gratuite en ligne, des résultats rapides dans le navigateur et un contenu utile orienté longue traîne.",
+  "shortDescription": "Comptez le nombre de lignes d’un texte collé, y compris les lignes vides si elles font partie du contenu.",
+  "metaTitle": "Compteur de lignes",
+  "metaDescription": "Comptez les lignes d’un texte collé, lignes vides incluses, et vérifiez le total de façon claire.",
+  "intro": "Collez votre texte et obtenez immédiatement le nombre de lignes, y compris les lignes vides si elles sont présentes.",
+  "overview": "Ce compteur de lignes donne le nombre exact de lignes du texte que vous collez dans le champ. Il sert à vérifier un brouillon, comparer deux versions d’un document ou contrôler des listes, notes et blocs de code où les retours à la ligne comptent.\n\nLe résultat dépend des sauts de ligne réels du texte saisi. Un retour final peut modifier le total, il est donc utile de comparer le résultat avec le texte exact copié. Pour les contenus longs, l’outil permet de voir la structure d’un coup d’œil sans compter manuellement.",
   "howItWorks": [
-    "Saisissez la valeur ou le texte requis dans le formulaire.",
-    "La conversion, le calcul ou la transformation s’exécute instantanément dans le navigateur.",
-    "Consultez le résultat et utilisez d’autres outils associés si vous avez besoin d’une étape supplémentaire."
+    "Collez ou saisissez votre texte dans la zone prévue.",
+    "L’outil compte les lignes à partir du texte exact, y compris les lignes vides.",
+    "Lisez le total et comparez-le à la source si vous devez confirmer la mise en forme."
+  ],
+  "useCases": [
+    {
+      "title": "Relire un brouillon avant envoi",
+      "description": "Vérifiez combien de lignes contient un message, un rapport ou une note avant de le partager."
+    },
+    {
+      "title": "Contrôler un bloc de code collé",
+      "description": "Comptez les lignes d’un extrait de code pour vérifier sa structure après copie."
+    },
+    {
+      "title": "Comparer deux versions d’un texte",
+      "description": "Repérez si une modification a ajouté ou supprimé des retours à la ligne dans un document."
+    },
+    {
+      "title": "Valider un contenu structuré",
+      "description": "Utile pour les listes, plans, transcriptions ou paroles où le nombre de lignes influence la présentation."
+    }
   ],
   "examples": [
     {
-      "title": "Exemple 1",
-      "input": "Trois lignes de texte",
-      "output": "Total des lignes",
-      "description": "Un exemple réaliste de compteur de lignes pour une recherche courante."
+      "title": "Note courte",
+      "input": "Première ligne\nDeuxième ligne\nTroisième ligne",
+      "output": "3 lignes",
+      "description": "Trois lignes visibles donnent un total de 3."
     },
     {
-      "title": "Exemple 2",
-      "input": "Trois lignes de texte",
-      "output": "Total des lignes",
-      "description": "Un autre cas pratique pour le trafic organique de longue traîne."
+      "title": "Texte avec ligne vide",
+      "input": "Alpha\n\nGamma",
+      "output": "3 lignes",
+      "description": "La ligne vide au milieu est comptée car elle fait partie du texte."
+    },
+    {
+      "title": "Retour final",
+      "input": "Un\nDeux\nTrois\n",
+      "output": "4 lignes",
+      "description": "Un saut de ligne final peut ajouter une ligne supplémentaire au total."
     }
   ],
   "faq": [
     {
-      "question": "Quelle est la précision de cet outil ?",
-      "answer": "Le résultat est calculé directement à partir de la formule ou de la logique côté navigateur utilisée par cet outil."
+      "question": "Une ligne vide compte-t-elle comme une ligne ?",
+      "answer": "Oui. Si une ligne vide se trouve entre deux sauts de ligne, elle est comptée car elle fait partie de la structure du texte."
     },
     {
-      "question": "Puis-je utiliser cet outil sur mobile ?",
-      "answer": "Oui. La page fonctionne sur ordinateur et sur mobile avec une interface simple de saisie et de résultat."
+      "question": "Pourquoi le total a-t-il augmenté après un retour final ?",
+      "answer": "Un saut de ligne final peut créer une limite de ligne supplémentaire. Le total peut donc dépasser le texte visible."
+    },
+    {
+      "question": "Comment interpréter un texte collé depuis un éditeur ou un chat ?",
+      "answer": "L’outil se base sur le texte exact collé. Les sauts cachés, retours supplémentaires et mises en forme copiées influencent donc le résultat."
+    },
+    {
+      "question": "Quelle est l’erreur la plus fréquente ?",
+      "answer": "On oublie souvent de compter les lignes vides et le dernier saut de ligne à la fin du texte."
     }
   ],
   "seo": {
     "title": "Compteur de lignes",
-    "description": "Compte les lignes d’un texte instantanément. Compteur de lignes en ligne gratuit avec résultats immédiats.",
+    "description": "Comptez les lignes d’un texte collé, lignes vides incluses, et vérifiez le total de façon claire.",
     "keywords": [
       "compteur de lignes",
+      "compter les lignes",
+      "lignes de texte",
       "outil texte"
     ]
   }

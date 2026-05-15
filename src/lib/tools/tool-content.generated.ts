@@ -218,7 +218,9 @@ import esCaseConverter from "@/data/tools/content/es/case-converter.json";
 import esCelsiusToFahrenheitConverter from "@/data/tools/content/es/celsius-to-fahrenheit-converter.json";
 import esCharacterCounter from "@/data/tools/content/es/character-counter.json";
 import esCmToInchesConverter from "@/data/tools/content/es/cm-to-inches-converter.json";
+import esColorPicker from "@/data/tools/content/es/color-picker.json";
 import esCompoundInterestCalculator from "@/data/tools/content/es/compound-interest-calculator.json";
+import esContrastChecker from "@/data/tools/content/es/contrast-checker.json";
 import esDaysBetweenDatesCalculator from "@/data/tools/content/es/days-between-dates-calculator.json";
 import esDiscountCalculator from "@/data/tools/content/es/discount-calculator.json";
 import esFahrenheitToCelsiusConverter from "@/data/tools/content/es/fahrenheit-to-celsius-converter.json";
@@ -227,6 +229,7 @@ import esFeetToMetersConverter from "@/data/tools/content/es/feet-to-meters-conv
 import esGallonsToLitersConverter from "@/data/tools/content/es/gallons-to-liters-converter.json";
 import esGbToMbConverter from "@/data/tools/content/es/gb-to-mb-converter.json";
 import esGradientGenerator from "@/data/tools/content/es/gradient-generator.json";
+import esHexToRgbConverter from "@/data/tools/content/es/hex-to-rgb-converter.json";
 import esHtmlCleaner from "@/data/tools/content/es/html-cleaner.json";
 import esHtmlEntityEncoder from "@/data/tools/content/es/html-entity-encoder.json";
 import esHtmlEscape from "@/data/tools/content/es/html-escape.json";
@@ -241,12 +244,14 @@ import esHtmlToText from "@/data/tools/content/es/html-to-text.json";
 import esHtmlUnescape from "@/data/tools/content/es/html-unescape.json";
 import esHtmlValidator from "@/data/tools/content/es/html-validator.json";
 import esHtmlViewer from "@/data/tools/content/es/html-viewer.json";
+import esIconMaker from "@/data/tools/content/es/icon-maker.json";
 import esImageCompressor from "@/data/tools/content/es/image-compressor.json";
 import esImageCropper from "@/data/tools/content/es/image-cropper.json";
 import esImageFormatConverter from "@/data/tools/content/es/image-format-converter.json";
 import esImageMetadataReader from "@/data/tools/content/es/image-metadata-reader.json";
 import esImageResizer from "@/data/tools/content/es/image-resizer.json";
 import esImageToBase64 from "@/data/tools/content/es/image-to-base64.json";
+import esInchConverter from "@/data/tools/content/es/inch-converter.json";
 import esInchesToCmConverter from "@/data/tools/content/es/inches-to-cm-converter.json";
 import esInchesToMmConverter from "@/data/tools/content/es/inches-to-mm-converter.json";
 import esJsonFormatter from "@/data/tools/content/es/json-formatter.json";
@@ -286,6 +291,7 @@ import esMetaTagGenerator from "@/data/tools/content/es/meta-tag-generator.json"
 import esMetersToFeetConverter from "@/data/tools/content/es/meters-to-feet-converter.json";
 import esMilesToKmConverter from "@/data/tools/content/es/miles-to-km-converter.json";
 import esMmToInchesConverter from "@/data/tools/content/es/mm-to-inches-converter.json";
+import esPaletteGenerator from "@/data/tools/content/es/palette-generator.json";
 import esPasswordGenerator from "@/data/tools/content/es/password-generator.json";
 import esPercentageCalculator from "@/data/tools/content/es/percentage-calculator.json";
 import esPercentageDecreaseCalculator from "@/data/tools/content/es/percentage-decrease-calculator.json";
@@ -299,6 +305,7 @@ import esSentenceCounter from "@/data/tools/content/es/sentence-counter.json";
 import esSha256Generator from "@/data/tools/content/es/sha256-generator.json";
 import esSimpleInterestCalculator from "@/data/tools/content/es/simple-interest-calculator.json";
 import esSlugGenerator from "@/data/tools/content/es/slug-generator.json";
+import esStorageConverter from "@/data/tools/content/es/storage-converter.json";
 import esTextReverser from "@/data/tools/content/es/text-reverser.json";
 import esTipCalculator from "@/data/tools/content/es/tip-calculator.json";
 import esUnitPriceCalculator from "@/data/tools/content/es/unit-price-calculator.json";
@@ -421,7 +428,9 @@ import frCaseConverter from "@/data/tools/content/fr/case-converter.json";
 import frCelsiusToFahrenheitConverter from "@/data/tools/content/fr/celsius-to-fahrenheit-converter.json";
 import frCharacterCounter from "@/data/tools/content/fr/character-counter.json";
 import frCmToInchesConverter from "@/data/tools/content/fr/cm-to-inches-converter.json";
+import frColorPicker from "@/data/tools/content/fr/color-picker.json";
 import frCompoundInterestCalculator from "@/data/tools/content/fr/compound-interest-calculator.json";
+import frContrastChecker from "@/data/tools/content/fr/contrast-checker.json";
 import frDaysBetweenDatesCalculator from "@/data/tools/content/fr/days-between-dates-calculator.json";
 import frDiscountCalculator from "@/data/tools/content/fr/discount-calculator.json";
 import frFahrenheitToCelsiusConverter from "@/data/tools/content/fr/fahrenheit-to-celsius-converter.json";
@@ -430,6 +439,7 @@ import frFeetToMetersConverter from "@/data/tools/content/fr/feet-to-meters-conv
 import frGallonsToLitersConverter from "@/data/tools/content/fr/gallons-to-liters-converter.json";
 import frGbToMbConverter from "@/data/tools/content/fr/gb-to-mb-converter.json";
 import frGradientGenerator from "@/data/tools/content/fr/gradient-generator.json";
+import frHexToRgbConverter from "@/data/tools/content/fr/hex-to-rgb-converter.json";
 import frHtmlCleaner from "@/data/tools/content/fr/html-cleaner.json";
 import frHtmlEntityEncoder from "@/data/tools/content/fr/html-entity-encoder.json";
 import frHtmlEscape from "@/data/tools/content/fr/html-escape.json";
@@ -444,12 +454,14 @@ import frHtmlToText from "@/data/tools/content/fr/html-to-text.json";
 import frHtmlUnescape from "@/data/tools/content/fr/html-unescape.json";
 import frHtmlValidator from "@/data/tools/content/fr/html-validator.json";
 import frHtmlViewer from "@/data/tools/content/fr/html-viewer.json";
+import frIconMaker from "@/data/tools/content/fr/icon-maker.json";
 import frImageCompressor from "@/data/tools/content/fr/image-compressor.json";
 import frImageCropper from "@/data/tools/content/fr/image-cropper.json";
 import frImageFormatConverter from "@/data/tools/content/fr/image-format-converter.json";
 import frImageMetadataReader from "@/data/tools/content/fr/image-metadata-reader.json";
 import frImageResizer from "@/data/tools/content/fr/image-resizer.json";
 import frImageToBase64 from "@/data/tools/content/fr/image-to-base64.json";
+import frInchConverter from "@/data/tools/content/fr/inch-converter.json";
 import frInchesToCmConverter from "@/data/tools/content/fr/inches-to-cm-converter.json";
 import frInchesToMmConverter from "@/data/tools/content/fr/inches-to-mm-converter.json";
 import frJsonFormatter from "@/data/tools/content/fr/json-formatter.json";
@@ -489,6 +501,7 @@ import frMetaTagGenerator from "@/data/tools/content/fr/meta-tag-generator.json"
 import frMetersToFeetConverter from "@/data/tools/content/fr/meters-to-feet-converter.json";
 import frMilesToKmConverter from "@/data/tools/content/fr/miles-to-km-converter.json";
 import frMmToInchesConverter from "@/data/tools/content/fr/mm-to-inches-converter.json";
+import frPaletteGenerator from "@/data/tools/content/fr/palette-generator.json";
 import frPasswordGenerator from "@/data/tools/content/fr/password-generator.json";
 import frPercentageCalculator from "@/data/tools/content/fr/percentage-calculator.json";
 import frPercentageDecreaseCalculator from "@/data/tools/content/fr/percentage-decrease-calculator.json";
@@ -502,6 +515,7 @@ import frSentenceCounter from "@/data/tools/content/fr/sentence-counter.json";
 import frSha256Generator from "@/data/tools/content/fr/sha256-generator.json";
 import frSimpleInterestCalculator from "@/data/tools/content/fr/simple-interest-calculator.json";
 import frSlugGenerator from "@/data/tools/content/fr/slug-generator.json";
+import frStorageConverter from "@/data/tools/content/fr/storage-converter.json";
 import frTextReverser from "@/data/tools/content/fr/text-reverser.json";
 import frTipCalculator from "@/data/tools/content/fr/tip-calculator.json";
 import frUnitPriceCalculator from "@/data/tools/content/fr/unit-price-calculator.json";
@@ -740,7 +754,9 @@ export const toolContent = {
     "celsius-to-fahrenheit-converter": esCelsiusToFahrenheitConverter,
     "character-counter": esCharacterCounter,
     "cm-to-inches-converter": esCmToInchesConverter,
+    "color-picker": esColorPicker,
     "compound-interest-calculator": esCompoundInterestCalculator,
+    "contrast-checker": esContrastChecker,
     "days-between-dates-calculator": esDaysBetweenDatesCalculator,
     "discount-calculator": esDiscountCalculator,
     "fahrenheit-to-celsius-converter": esFahrenheitToCelsiusConverter,
@@ -749,6 +765,7 @@ export const toolContent = {
     "gallons-to-liters-converter": esGallonsToLitersConverter,
     "gb-to-mb-converter": esGbToMbConverter,
     "gradient-generator": esGradientGenerator,
+    "hex-to-rgb-converter": esHexToRgbConverter,
     "html-cleaner": esHtmlCleaner,
     "html-entity-encoder": esHtmlEntityEncoder,
     "html-escape": esHtmlEscape,
@@ -763,12 +780,14 @@ export const toolContent = {
     "html-unescape": esHtmlUnescape,
     "html-validator": esHtmlValidator,
     "html-viewer": esHtmlViewer,
+    "icon-maker": esIconMaker,
     "image-compressor": esImageCompressor,
     "image-cropper": esImageCropper,
     "image-format-converter": esImageFormatConverter,
     "image-metadata-reader": esImageMetadataReader,
     "image-resizer": esImageResizer,
     "image-to-base64": esImageToBase64,
+    "inch-converter": esInchConverter,
     "inches-to-cm-converter": esInchesToCmConverter,
     "inches-to-mm-converter": esInchesToMmConverter,
     "json-formatter": esJsonFormatter,
@@ -808,6 +827,7 @@ export const toolContent = {
     "meters-to-feet-converter": esMetersToFeetConverter,
     "miles-to-km-converter": esMilesToKmConverter,
     "mm-to-inches-converter": esMmToInchesConverter,
+    "palette-generator": esPaletteGenerator,
     "password-generator": esPasswordGenerator,
     "percentage-calculator": esPercentageCalculator,
     "percentage-decrease-calculator": esPercentageDecreaseCalculator,
@@ -821,6 +841,7 @@ export const toolContent = {
     "sha256-generator": esSha256Generator,
     "simple-interest-calculator": esSimpleInterestCalculator,
     "slug-generator": esSlugGenerator,
+    "storage-converter": esStorageConverter,
     "text-reverser": esTextReverser,
     "tip-calculator": esTipCalculator,
     "unit-price-calculator": esUnitPriceCalculator,
@@ -947,7 +968,9 @@ export const toolContent = {
     "celsius-to-fahrenheit-converter": frCelsiusToFahrenheitConverter,
     "character-counter": frCharacterCounter,
     "cm-to-inches-converter": frCmToInchesConverter,
+    "color-picker": frColorPicker,
     "compound-interest-calculator": frCompoundInterestCalculator,
+    "contrast-checker": frContrastChecker,
     "days-between-dates-calculator": frDaysBetweenDatesCalculator,
     "discount-calculator": frDiscountCalculator,
     "fahrenheit-to-celsius-converter": frFahrenheitToCelsiusConverter,
@@ -956,6 +979,7 @@ export const toolContent = {
     "gallons-to-liters-converter": frGallonsToLitersConverter,
     "gb-to-mb-converter": frGbToMbConverter,
     "gradient-generator": frGradientGenerator,
+    "hex-to-rgb-converter": frHexToRgbConverter,
     "html-cleaner": frHtmlCleaner,
     "html-entity-encoder": frHtmlEntityEncoder,
     "html-escape": frHtmlEscape,
@@ -970,12 +994,14 @@ export const toolContent = {
     "html-unescape": frHtmlUnescape,
     "html-validator": frHtmlValidator,
     "html-viewer": frHtmlViewer,
+    "icon-maker": frIconMaker,
     "image-compressor": frImageCompressor,
     "image-cropper": frImageCropper,
     "image-format-converter": frImageFormatConverter,
     "image-metadata-reader": frImageMetadataReader,
     "image-resizer": frImageResizer,
     "image-to-base64": frImageToBase64,
+    "inch-converter": frInchConverter,
     "inches-to-cm-converter": frInchesToCmConverter,
     "inches-to-mm-converter": frInchesToMmConverter,
     "json-formatter": frJsonFormatter,
@@ -1015,6 +1041,7 @@ export const toolContent = {
     "meters-to-feet-converter": frMetersToFeetConverter,
     "miles-to-km-converter": frMilesToKmConverter,
     "mm-to-inches-converter": frMmToInchesConverter,
+    "palette-generator": frPaletteGenerator,
     "password-generator": frPasswordGenerator,
     "percentage-calculator": frPercentageCalculator,
     "percentage-decrease-calculator": frPercentageDecreaseCalculator,
@@ -1028,6 +1055,7 @@ export const toolContent = {
     "sha256-generator": frSha256Generator,
     "simple-interest-calculator": frSimpleInterestCalculator,
     "slug-generator": frSlugGenerator,
+    "storage-converter": frStorageConverter,
     "text-reverser": frTextReverser,
     "tip-calculator": frTipCalculator,
     "unit-price-calculator": frUnitPriceCalculator,

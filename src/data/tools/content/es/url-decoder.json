@@ -4,44 +4,76 @@
   "slug": "decodificador-url",
   "h1": "Decodificador de URL",
   "title": "Decodificador de URL",
-  "shortDescription": "Decodifica texto codificado en URL al instante, con resultados rápidos, uso sencillo y ejemplos prácticos.",
-  "overview": "Decodifica texto codificado en URL al instante. Esta página ofrece una respuesta rápida con una herramienta práctica y un flujo de resultados sencillo. Está pensada para usuarios que buscan una respuesta gratuita en línea, resultados rápidos en el navegador y contenido útil de cola larga.",
+  "shortDescription": "Convierte texto con codificación porcentual en URL legible al instante.",
+  "metaTitle": "Decodificador de URL",
+  "metaDescription": "Convierte URLs, rutas y parámetros codificados en texto legible directamente en el navegador.",
+  "intro": "Pega una URL o cadena codificada y verás el texto decodificado al momento.",
+  "overview": "Esta herramienta convierte secuencias porcentuales como %20, %3F y %26 en caracteres normales. Resulta útil para revisar enlaces, parámetros de consulta, destinos de redirección y fragmentos copiados que incluyen signos codificados.\n\nEl decodificador trabaja sobre el texto que pegas y transforma las secuencias válidas en sus caracteres equivalentes. Si hay secuencias incompletas o incorrectas, pueden quedarse tal cual o provocar un error según el contenido introducido. Así puedes comprobar con precisión cómo se leerá una parte de la URL antes de compartirla, guardarla o depurarla.",
   "howItWorks": [
-    "Introduce el valor o el texto necesario en el formulario.",
-    "La conversión, el cálculo o la transformación se ejecuta al instante en el navegador.",
-    "Revisa el resultado y continúa con herramientas relacionadas si necesitas otro paso."
+    "Pega la URL, ruta o cadena de consulta codificada en el campo.",
+    "La herramienta decodifica los escapes porcentuales y muestra el texto legible al instante.",
+    "Compara el resultado con el original si necesitas localizar problemas de codificación."
+  ],
+  "useCases": [
+    {
+      "title": "Leer un enlace pegado",
+      "description": "Decodifica un enlace copiado desde chat, correo o registros para ver la ruta y los parámetros reales sin signos porcentuales."
+    },
+    {
+      "title": "Revisar parámetros de consulta",
+      "description": "Muestra nombres y valores como redirecciones, términos de búsqueda o filtros ocultos dentro de una consulta codificada."
+    },
+    {
+      "title": "Validar destinos de redirección",
+      "description": "Comprueba callbacks o URLs de redirección antes de usarlos en código, pruebas o auditorías."
+    }
   ],
   "examples": [
     {
-      "title": "Ejemplo 1",
-      "input": "hello%20world%3Fx%3D1%26y%3D2",
-      "output": "hello world?x=1&y=2",
-      "description": "Un ejemplo realista de decodificador de URL para una búsqueda cotidiana."
+      "title": "Decodificar una cadena de consulta",
+      "input": "search%3Fq%3Dcoffee%20beans%26page%3D2",
+      "output": "search?q=coffee beans&page=2",
+      "description": "Muestra cómo la puntuación y los espacios codificados vuelven a ser texto normal."
     },
     {
-      "title": "Ejemplo 2",
-      "input": "hello%20world%3Fx%3D1%26y%3D2",
-      "output": "hello world?x=1&y=2",
-      "description": "Otro caso práctico pensado para tráfico orgánico de cola larga."
+      "title": "Decodificar una ruta con caracteres reservados",
+      "input": "docs%2Fapi%2Fv1%2Fusers%3Factive%3Dtrue",
+      "output": "docs/api/v1/users?active=true",
+      "description": "Útil cuando la ruta y los parámetros de una URL se guardan en una sola cadena codificada."
+    },
+    {
+      "title": "Decodificar una URL de retorno",
+      "input": "https%3A%2F%2Fexample.com%2Fcheckout%3Fref%3Demail%2520promo",
+      "output": "https://example.com/checkout?ref=email%20promo",
+      "description": "Muestra que lo doblemente codificado sigue parcialmente codificado tras una sola pasada."
     }
   ],
   "faq": [
     {
-      "question": "¿Qué precisión tiene esta herramienta?",
-      "answer": "El resultado se calcula directamente a partir de la fórmula o la lógica en el navegador utilizada por esta herramienta."
+      "question": "¿Decodifica los signos más como espacios?",
+      "answer": "No. Solo se decodifican los escapes porcentuales. El signo + permanece como + salvo que en su origen represente un espacio por otro formato."
     },
     {
-      "question": "¿Puedo usar esta herramienta en el móvil?",
-      "answer": "Sí. La página funciona en pantallas de escritorio y móviles con un diseño simple de entrada y resultado."
+      "question": "¿Por qué una parte sigue codificada después de decodificar?",
+      "answer": "Porque algunos textos están codificados dos veces. Una pasada convierte %2520 en %20; para llegar al espacio haría falta otra decodificación."
+    },
+    {
+      "question": "¿Puedo pegar una URL completa?",
+      "answer": "Sí. Puedes pegar la URL completa y la herramienta solo cambiará las secuencias codificadas válidas, manteniendo intacta la estructura restante."
+    },
+    {
+      "question": "¿Qué ocurre con secuencias porcentuales inválidas?",
+      "answer": "Las secuencias mal formadas pueden quedarse sin cambios o generar un error, según el patrón introducido y el comportamiento del navegador."
     }
   ],
   "seo": {
     "title": "Decodificador de URL",
-    "description": "Decodifica texto codificado en URL al instante. Decodificador de URL online gratis con resultados inmediatos.",
+    "description": "Convierte URLs, rutas y parámetros codificados en texto legible directamente en el navegador.",
     "keywords": [
       "decodificador de url",
-      "decodificador url",
-      "herramienta developer-tools"
+      "decodificar url",
+      "decodificar %20",
+      "decodificador de query string"
     ]
   }
 }

@@ -4,42 +4,85 @@
   "slug": "keyword-density-checker",
   "h1": "Keyword Density Checker",
   "title": "Keyword Density Checker",
-  "shortDescription": "Check keyword density in a block of text with fast results, simple inputs and practical examples.",
-  "overview": "Check keyword density in a block of text. Use this tool to get a clear result quickly from simple input on the same page. It is useful for everyday checks, comparisons and small tasks when you need a fast online answer.",
+  "shortDescription": "Measure how often a keyword appears in a text and see its share of the total words.",
+  "metaTitle": "Keyword Density Checker",
+  "metaDescription": "Measure keyword frequency in any text and review counts, total words, and density in one place.",
+  "intro": "Paste your text and the target keyword to see how often it appears, how many total words the text has, and the keyword’s density.",
+  "overview": "Use this tool when you need a clear count of a specific keyword inside an article, landing page, product description, or draft. It shows the keyword occurrences alongside the total word count so you can judge whether a term is used lightly, repeatedly, or too heavily.\n\nThe result is useful for editing content before publishing, comparing sections of the same page, or checking whether a phrase is being repeated in a way that sounds forced. It is especially helpful when the keyword has variants, punctuation around it, or appears in headings and body copy.",
   "howItWorks": [
-    "Enter the required value or text into the form.",
-    "The conversion, calculation or transformation runs instantly in the browser.",
-    "Review the result and continue with related tools if you need another step."
+    "Paste or type the text you want to inspect.",
+    "Enter the keyword or phrase you want to count.",
+    "Review occurrences, total word count, and density in the result."
+  ],
+  "useCases": [
+    {
+      "title": "Review a blog draft",
+      "description": "Check how often the main phrase appears in an article draft before you send it to an editor or publish it."
+    },
+    {
+      "title": "Balance a landing page",
+      "description": "Compare the keyword use across a sales page so the message stays focused without sounding repetitive."
+    },
+    {
+      "title": "Audit product copy",
+      "description": "See whether a product description repeats the same phrase too often or leaves the topic too vague."
+    },
+    {
+      "title": "Compare section by section",
+      "description": "Test the introduction, body, and conclusion separately to find which part is driving the keyword count."
+    }
   ],
   "examples": [
     {
-      "title": "Common use case",
-      "input": "SEO article + target keyword",
-      "output": "Keyword density percent",
-      "description": "Shows a common use case with a clear input and result."
+      "title": "Blog article review",
+      "input": "Text: \"Keyword density helps writers avoid repeating the same phrase too often. A keyword density checker can show whether keyword density is balanced.\"\nKeyword: \"keyword density\"",
+      "output": "Occurrences: 3\nTotal words: 21\nDensity: 14.29%",
+      "description": "Shows how repeated phrase matches are counted inside a short article snippet."
     },
     {
-      "title": "Another quick example",
-      "input": "SEO article + target keyword",
-      "output": "Keyword density percent",
-      "description": "Useful for quick checks, comparisons or repeat tasks."
+      "title": "Product page audit",
+      "input": "Text: \"Buy running shoes for daily training. These running shoes are lightweight, durable, and comfortable running shoes for long distances.\"\nKeyword: \"running shoes\"",
+      "output": "Occurrences: 3\nTotal words: 18\nDensity: 16.67%",
+      "description": "Useful for spotting repetition in sales copy where a phrase appears in several nearby sentences."
+    },
+    {
+      "title": "Phrase with punctuation",
+      "input": "Text: \"Email marketing, email marketing strategies, and better email marketing results all matter.\"\nKeyword: \"email marketing\"",
+      "output": "Occurrences: 3\nTotal words: 11\nDensity: 27.27%",
+      "description": "Demonstrates how a phrase is counted even when punctuation separates nearby mentions."
     }
   ],
   "faq": [
     {
-      "question": "How accurate is this tool?",
-      "answer": "The result is based on the input you provide and the calculation or transformation shown on the page."
+      "question": "Does the tool count exact words or partial matches too?",
+      "answer": "It counts the keyword or phrase you enter as it appears in the text. If you need singular and plural forms counted separately, test each version on its own."
     },
     {
-      "question": "Can I use this tool on mobile?",
-      "answer": "Yes. The page works on desktop and mobile screens with a simple input and result layout."
+      "question": "Why does the density change when I shorten the text?",
+      "answer": "Density depends on both keyword occurrences and total word count. If the text gets shorter while the keyword stays the same, the percentage rises."
+    },
+    {
+      "question": "How should I read a very high density result?",
+      "answer": "A high percentage usually means the phrase appears many times in a short text. That can be fine in a short note, but it may sound repetitive in polished copy."
+    },
+    {
+      "question": "What is a common mistake when checking a phrase?",
+      "answer": "A frequent mistake is entering only one word when the real target is a two- or three-word phrase. That gives a different count and can make the result misleading."
+    },
+    {
+      "question": "Can I check different sections separately?",
+      "answer": "Yes. Pasting one section at a time is the best way to see where the keyword is concentrated instead of mixing the whole page together."
     }
   ],
   "seo": {
     "title": "Keyword Density Checker",
-    "description": "Check keyword density in a block of text. Free online keyword density checker with instant results.",
+    "description": "Measure keyword frequency in any text and review counts, total words, and density in one place.",
     "keywords": [
-      "keyword density checker"
+      "keyword density checker",
+      "keyword frequency",
+      "keyword count",
+      "density checker",
+      "text analysis"
     ]
   }
 }

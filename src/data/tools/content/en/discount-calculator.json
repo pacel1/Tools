@@ -4,42 +4,81 @@
   "slug": "discount-calculator",
   "h1": "Discount Calculator",
   "title": "Discount Calculator",
-  "shortDescription": "Calculate sale price after a discount percentage with fast results, simple inputs and practical examples.",
-  "overview": "Calculate sale price after a discount percentage. Use this tool to get a clear result quickly from simple input on the same page. It is useful for everyday checks, comparisons and small tasks when you need a fast online answer.",
+  "shortDescription": "Find the final price, the amount saved, and the discounted total from any percentage reduction.",
+  "metaTitle": "Discount Calculator | Final Price",
+  "metaDescription": "Enter an original price and discount rate to see the final price and savings instantly.",
+  "intro": "Enter the original price and discount percentage to get the final price and savings immediately.",
+  "overview": "Use this discount calculator when you want the price after a percentage reduction. It shows the final amount and the money saved, which makes it useful for comparing promotions, checking a marked-down item, or confirming a sale price before you buy.\n\nYou can work with simple percentage discounts such as 10%, 25%, or 40%, and the result reflects the price after the reduction is applied. If you need to compare different offers, calculate each one separately and compare the final totals rather than the discount percentage alone.\n\nThe result is meant for a single discount applied to one original price. If a store applies several reductions in sequence, calculate them step by step because the final amount changes after each reduction.",
   "howItWorks": [
-    "Enter the required value or text into the form.",
-    "The conversion, calculation or transformation runs instantly in the browser.",
-    "Review the result and continue with related tools if you need another step."
+    "Enter the original price and the discount percentage.",
+    "The calculator subtracts the discount from the original amount.",
+    "Review the final price and savings, then compare another offer if needed."
+  ],
+  "useCases": [
+    {
+      "title": "Retail markdowns",
+      "description": "Check the new shelf price after a seasonal markdown on clothing, electronics, or home goods."
+    },
+    {
+      "title": "Sale comparison",
+      "description": "Compare two promotions with different percentages and see which one leaves the lower final price."
+    },
+    {
+      "title": "Budget planning",
+      "description": "Estimate how much money stays in your budget after applying a known discount to an item."
+    },
+    {
+      "title": "Order review",
+      "description": "Verify the discounted total before placing an order, especially when a coupon or sale price is shown."
+    }
   ],
   "examples": [
     {
-      "title": "Common use case",
-      "input": "100 with 20% discount",
-      "output": "80",
-      "description": "Shows a common use case with a clear input and result."
+      "title": "Single-item sale",
+      "input": "Original price: 120, discount: 15%",
+      "output": "Final price: 102; savings: 18",
+      "description": "A straightforward reduction on a mid-priced item."
     },
     {
-      "title": "Another quick example",
-      "input": "100 with 20% discount",
-      "output": "80",
-      "description": "Useful for quick checks, comparisons or repeat tasks."
+      "title": "Large markdown",
+      "input": "Original price: 249.90, discount: 35%",
+      "output": "Final price: 162.44; savings: 87.46",
+      "description": "Useful for checking a stronger promotion with cents included."
+    },
+    {
+      "title": "Small discount on a subscription",
+      "input": "Original price: 19.99, discount: 5%",
+      "output": "Final price: 18.99; savings: 1.00",
+      "description": "Shows how a modest reduction affects a low-cost purchase."
     }
   ],
   "faq": [
     {
-      "question": "How accurate is this tool?",
-      "answer": "The result is based on the input you provide and the calculation or transformation shown on the page."
+      "question": "Does this calculator show both the final price and the savings?",
+      "answer": "Yes. It returns the amount after the discount and the difference from the original price so you can see the actual reduction."
     },
     {
-      "question": "Can I use this tool on mobile?",
-      "answer": "Yes. The page works on desktop and mobile screens with a simple input and result layout."
+      "question": "How should I interpret a 100% discount?",
+      "answer": "A 100% discount removes the full original price, so the final price becomes zero and the savings equal the original amount."
+    },
+    {
+      "question": "What happens if I enter a discount above 100%?",
+      "answer": "That means the reduction is larger than the original price, which is not a normal sale price. Check the input before using the result."
+    },
+    {
+      "question": "Can I use it for several discounts on one item?",
+      "answer": "For multiple reductions, calculate them one after another. Each step changes the base price for the next reduction."
     }
   ],
   "seo": {
-    "title": "Discount Calculator",
-    "description": "Calculate sale price after a discount percentage. Free online discount calculator with instant results.",
+    "title": "Discount Calculator | Final Price",
+    "description": "Enter an original price and discount rate to see the final price and savings instantly.",
     "keywords": [
-      "discount calculator"
+      "discount calculator",
+      "price after discount",
+      "sale price calculator",
+      "percentage discount",
+      "savings calculator"
     ]
   }
 }

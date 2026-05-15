@@ -4,105 +4,87 @@
   "slug": "usuwacz-znacznikow-html",
   "h1": "Usuwacz znaczników HTML",
   "title": "Usuwacz znaczników HTML",
-  "shortDescription": "Usuń znaczniki HTML i zachowaj czytelny tekst z oryginalnej treści.",
-  "metaTitle": "Usuwacz znaczników HTML | HTML do tekstu",
-  "metaDescription": "Usuń znaczniki HTML online i zachowaj czytelny tekst. Szybkie, bezpieczne czyszczenie HTML w przeglądarce, bez zewnętrznych API.",
-  "intro": "Wklej kod HTML i od razu otrzymaj czysty, czytelny tekst. To narzędzie działa w przeglądarce, usuwa znaczniki i zachowuje treść widoczną dla użytkownika, bez korzystania z zewnętrznych API.",
-  "overview": "Usuwacz znaczników HTML to proste narzędzie client-side do zamiany HTML na zwykły tekst. Wklej fragment, pełną stronę albo skopiowaną treść sformatowaną, a narzędzie usunie znaczniki i zachowa czytelne słowa oraz podziały linii tam, gdzie to możliwe. Sprawdza się przy czyszczeniu treści, wyciąganiu tekstu do notatek, przygotowaniu fragmentów do wyszukiwania i porównywaniu zawartości bez znaczników. Całość działa lokalnie w przeglądarce, więc jest szybka i wygodna.",
+  "shortDescription": "Usuń znaczniki HTML i zostaw sam czytelny tekst z wklejonego kodu.",
+  "metaTitle": "Usuwacz znaczników HTML",
+  "metaDescription": "Usuń znaczniki HTML i zachowaj czytelny tekst z wklejonego kodu w przeglądarce, bez wysyłania danych dalej.",
+  "intro": "Wklej HTML i od razu otrzymaj zwykły tekst bez znaczników.",
+  "overview": "Usuwacz znaczników HTML zamienia kod HTML na czytelny tekst bez zmieniania źródła. Wklej fragment, całą stronę albo skopiowaną treść sformatowaną, a narzędzie wyodrębni widoczny tekst i odrzuci znaczniki, atrybuty oraz zagnieżdżone elementy. Przydaje się wtedy, gdy potrzebujesz samych słów, a nie struktury.\n\nWynik nadaje się do notatek, porządkowania treści skopiowanej ze stron oraz wyciągania tekstu z szablonów i komponentów. Podziały linii i odstępy są zachowywane tam, gdzie pozwala na to struktura HTML, ale układ bloków może się różnić w zależności od zapisu wejścia.",
   "howItWorks": [
     "Wklej HTML do pola wejściowego.",
-    "Narzędzie analizuje kod lokalnie w przeglądarce.",
-    "Znaczniki HTML są usuwane, a tekst zostaje wyodrębniony.",
-    "Skopiuj wynik jako zwykły tekst do dalszego użycia."
+    "Parser odczytuje kod lokalnie w przeglądarce.",
+    "Znaczniki i atrybuty są usuwane z widoku wynikowego.",
+    "Skopiuj tekst zwykły do użycia w innym miejscu."
   ],
   "useCases": [
-    "Konwersja fragmentów HTML do zwykłego tekstu.",
-    "Czyszczenie treści skopiowanej ze stron przed wklejeniem do maila lub czatu.",
-    "Wyciąganie czytelnego tekstu z kodu szablonów.",
-    "Usuwanie znaczników do analizy tekstu lub przygotowania pod indeksowanie.",
-    "Szybki podgląd treści ukrytej za kodem HTML."
+    {
+      "title": "Zamiana kodu artykułu na notatki",
+      "description": "Usuń nagłówki, linki i formatowanie z wklejonego HTML artykułu, aby zapisać samą treść w notatkach."
+    },
+    {
+      "title": "Porządkowanie szablonów e-mail",
+      "description": "Usuń znaczniki opakowujące z kodu newslettera lub maila przed przeniesieniem tekstu do szkicu dokumentu."
+    },
+    {
+      "title": "Wyciąganie tekstu z fragmentów CMS",
+      "description": "Pobierz czytelną treść z HTML komponentu, gdy potrzebny jest tylko tekst widoczny dla odbiorcy."
+    },
+    {
+      "title": "Przygotowanie treści do ręcznego porównania",
+      "description": "Usuń znaczniki z dwóch fragmentów HTML, aby porównać samą treść bez szumu wynikającego z kodu."
+    }
   ],
   "examples": [
     {
-      "title": "Prosty akapit",
-      "input": "<p>Witaj <strong>świecie</strong>!</p>",
-      "output": "Witaj świecie!",
-      "description": "Podstawowy tekst z usuniętym formatowaniem inline."
+      "title": "Akapit z wyróżnieniem",
+      "input": "<p>Witamy w planowaniu <strong>Q4</strong>.</p>",
+      "output": "Witamy w planowaniu Q4.",
+      "description": "Formatowanie inline znika, a zdanie pozostaje czytelne."
     },
     {
-      "title": "Linki i listy",
-      "input": "<div><a href=\"/docs\">Dokumentacja</a><ul><li>Jeden</li><li>Dwa</li></ul></div>",
-      "output": "Dokumentacja\nJeden\nDwa",
-      "description": "Czytelny tekst zostaje zachowany, a znaczniki są usuwane."
+      "title": "Karta z linkiem i listą",
+      "input": "<section><a href=\"/cennik\">Cennik</a><ul><li>Start</li><li>Biznes</li></ul></section>",
+      "output": "Cennik\nStart\nBiznes",
+      "description": "Elementy blokowe są rozdzielone, więc tekst pozostaje czytelny."
+    },
+    {
+      "title": "Mieszane znaczniki i encje",
+      "input": "<div>Użyj &amp; do łączenia elementów lub <span>rozdziel</span> je później.</div>",
+      "output": "Użyj & do łączenia elementów lub rozdziel je później.",
+      "description": "Encje HTML są zamieniane na zwykłe znaki w wyniku."
     }
   ],
   "faq": [
     {
-      "question": "Czy narzędzie zachowuje tekst znajdujący się w znacznikach?",
-      "answer": "Tak. Usuwa znaczniki HTML, ale pozostawia czytelną treść z elementów."
+      "question": "Co dzieje się z atrybutami, takimi jak href, class i data-*?",
+      "answer": "Są usuwane razem ze znacznikami. W wyniku zostaje tylko czytelna treść tekstowa."
     },
     {
-      "question": "Czy przetwarzanie odbywa się w przeglądarce?",
-      "answer": "Tak. Narzędzie działa wyłącznie po stronie klienta, więc HTML jest przetwarzany lokalnie bez zewnętrznych API."
+      "question": "Czy w wyniku pojawią się sekcje script lub style?",
+      "answer": "Nie powinny trafić do czytelnego wyniku. Narzędzie służy do wydobywania widocznego tekstu, a nie kodu używanego przez stronę w tle."
     },
     {
-      "question": "Czy usuwa też zawartość script i style?",
-      "answer": "Narzędzie skupia się na bezpiecznym wyodrębnianiu czytelnego tekstu, więc niewidoczne treści mogą być pomijane lub usuwane zależnie od działania parsera."
+      "question": "Dlaczego wynik zawiera puste linie?",
+      "answer": "Bloki HTML mogą być zamieniane na osobne wiersze podczas konwersji do tekstu. Przy wielu kontenerach lub pustych elementach odstępy mogą wyglądać nierówno."
     },
     {
-      "question": "Czy zachowane będą podziały linii i odstępy?",
-      "answer": "Narzędzie stara się utrzymać czytelność tekstu, ale dokładne formatowanie może zależeć od struktury HTML."
+      "question": "Czy narzędzie dekoduje encje HTML, takie jak &amp; i &nbsp;?",
+      "answer": "Tak, encje są interpretowane jako znaki tekstowe, jeśli parser potrafi je rozpoznać. Spacje niełamliwe mogą pojawić się jako zwykłe spacje w tekście."
+    },
+    {
+      "question": "Czy mogę użyć narzędzia na niepoprawnym HTML?",
+      "answer": "Często tak, ale uszkodzony kod może zmienić sposób grupowania tekstu. Jeśli znaczniki są urwane lub źle zagnieżdżone, wynik może różnić się od oryginalnego układu."
     }
   ],
-  "uiLabels": {
-    "copy": "Kopiuj",
-    "copied": "Skopiowano",
-    "input": "HTML input",
-    "output": "Text without tags",
-    "placeholder": "Wklej tutaj HTML...",
-    "indent": "Wcięcie",
-    "removeComments": "Usuń komentarze",
-    "preview": "Podgląd",
-    "source": "Źródło",
-    "sanitizedHtml": "Oczyszczony HTML",
-    "plainText": "Zwykły tekst",
-    "summary": "Podsumowanie",
-    "total": "Razem",
-    "links": "Linki",
-    "images": "Obrazy",
-    "errors": "Błędy",
-    "warnings": "Ostrzeżenia",
-    "valid": "Poprawny",
-    "invalid": "Niepoprawny",
-    "href": "Adres URL",
-    "text": "Tekst",
-    "rel": "Rel",
-    "target": "Cel",
-    "alt": "Alt",
-    "width": "Szerokość",
-    "height": "Wysokość",
-    "empty": "Puste",
-    "outputReady": "Wynik gotowy",
-    "cleanedHtml": "Oczyszczony HTML",
-    "formattedHtml": "Sformatowany HTML",
-    "minifiedHtml": "Zminifikowany HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Wyodrębnione obrazy",
-    "extractedLinks": "Wyodrębnione linki",
-    "validationSummary": "Podsumowanie walidacji",
-    "prettyHtml": "Czytelny HTML",
-    "encodedText": "Tekst zakodowany"
-  },
   "seo": {
-    "title": "Usuwacz znaczników HTML | HTML do tekstu",
-    "description": "Usuń znaczniki HTML online i zachowaj czytelny tekst. Szybkie, bezpieczne czyszczenie HTML w przeglądarce, bez zewnętrznych API.",
+    "title": "Usuwacz znaczników HTML",
+    "description": "Usuń znaczniki HTML i zachowaj czytelny tekst z wklejonego kodu w przeglądarce, bez wysyłania danych dalej.",
     "keywords": [
       "usuwacz znaczników html",
       "html do tekstu",
-      "usun znaczniki html",
-      "html do zwyklego tekstu",
-      "czyszczenie html",
-      "konwerter html na tekst"
+      "usuń znaczniki html",
+      "html na tekst",
+      "wyciąganie tekstu z html",
+      "czyszczenie html"
     ]
   }
 }

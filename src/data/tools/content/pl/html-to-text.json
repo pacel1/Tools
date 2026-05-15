@@ -5,103 +5,81 @@
   "h1": "HTML na tekst",
   "title": "HTML na tekst",
   "shortDescription": "Wyodrębnia czytelny tekst z fragmentów HTML i całych dokumentów.",
-  "metaTitle": "Konwerter HTML na tekst | Wyodrębnij zwykły tekst z HTML",
-  "metaDescription": "Konwertuj HTML na zwykły tekst bezpośrednio w przeglądarce. Bezpiecznie wyodrębniaj czytelny tekst z fragmentów i pełnych stron, bez zewnętrznego API.",
-  "intro": "Konwertuj HTML na czysty, czytelny tekst bezpośrednio w przeglądarce. Wklej fragment lub cały dokument, a narzędzie usunie znaczniki i pozostawi treść gotową do kopiowania, czytania i ponownego użycia.",
-  "overview": "To narzędzie HTML na tekst to szybki konwerter po stronie klienta dla programistów, redaktorów i twórców treści. Usuwa znaczniki w bezpieczny sposób, ogranicza szum i zwraca zwykły tekst łatwiejszy do wyszukania, indeksowania, cytowania lub dalszego przetwarzania. Ponieważ wszystko działa lokalnie, nie wymaga zewnętrznych API i pomaga zachować prywatność oraz odporność na XSS.",
+  "metaTitle": "HTML na tekst",
+  "metaDescription": "Przekształć HTML w czytelny tekst w przeglądarce. Wklej fragment lub cały dokument i skopiuj wynik bez znaczników.",
+  "intro": "Wklej HTML, a narzędzie natychmiast zwróci czytelny tekst w przeglądarce.",
+  "overview": "To narzędzie usuwa znaczniki HTML i zostawia samą treść w postaci zwykłego tekstu. Przydaje się, gdy chcesz przenieść treść do notatki, zgłoszenia, edytora albo systemu, który nie potrzebuje formatowania.\n\nObsługuje zarówno krótkie fragmenty, jak i dłuższe dokumenty, więc możesz sprawdzić, jak materiał będzie wyglądał bez układu HTML. Wynik jest prosty do skopiowania i dalszego wykorzystania w pracy z treścią.\n\nPrzetwarzanie odbywa się lokalnie w przeglądarce, więc tekst nie musi być wysyłany do zewnętrznej usługi.",
   "howItWorks": [
     "Wklej HTML do pola wejściowego.",
-    "Narzędzie analizuje znacznik w przeglądarce.",
-    "Usuwa tagi HTML i zwraca czytelny tekst.",
-    "Skopiuj oczyszczony tekst lub użyj go dalej."
+    "Przeglądarka analizuje strukturę dokumentu.",
+    "Tagi są usuwane, a treść pozostaje w tekście.",
+    "Skopiuj wynik albo użyj go dalej."
   ],
   "useCases": [
-    "Wyodrębnianie tekstu z HTML strony do notatek lub dokumentacji.",
-    "Konwersja fragmentów na zwykły tekst do e-maili, zgłoszeń lub czatu.",
-    "Przygotowanie treści do indeksowania, wyszukiwania lub analizy.",
-    "Usuwanie formatowania z HTML przed wklejeniem do innej aplikacji.",
-    "Podgląd czytelnej wersji tekstowej strony lub komponentu."
+    {
+      "title": "Czyszczenie treści z CMS",
+      "description": "Usuń formatowanie z treści skopiowanej z panelu i przenieś sam tekst do dokumentu roboczego lub zgłoszenia."
+    },
+    {
+      "title": "Sprawdzenie treści wiadomości",
+      "description": "Odczytaj kopię e-maila, powiadomienia albo komunikatu bez znaczników, żeby zweryfikować brzmienie i łamanie linii."
+    },
+    {
+      "title": "Przygotowanie tekstu do analizy",
+      "description": "Wyodrębnij samą treść z HTML, aby przekazać ją do skryptów, notatek lub narzędzi tekstowych."
+    },
+    {
+      "title": "Odczyt archiwalnych eksportów",
+      "description": "Zamień zapisany eksport HTML na zwykły tekst do archiwum, dokumentacji lub kontroli treści."
+    }
   ],
   "examples": [
     {
-      "title": "Prosty akapit",
-      "input": "<p>Witaj <strong>świecie</strong>!</p>",
-      "output": "Witaj świecie!",
-      "description": "Tagi są usuwane, a tekst pozostaje czytelny."
+      "title": "Akapit z wyróżnieniem",
+      "input": "<p>Nowa <strong>wersja</strong> jest gotowa.</p>",
+      "output": "Nowa wersja jest gotowa.",
+      "description": "Znaczniki inline znikają, a zdanie zostaje zachowane."
     },
     {
-      "title": "Linki i listy",
-      "input": "<div><a href=\"/docs\">Dokumentacja</a><ul><li>Jeden</li><li>Dwa</li></ul></div>",
-      "output": "Dokumentacja\nJeden\nDwa",
-      "description": "Treść tekstowa jest zachowana w czystym układzie."
+      "title": "Nagłówek i link",
+      "input": "<article><h2>Status</h2><p>Wersja <a href=\"/builds/18\">#18</a> przeszła testy.</p></article>",
+      "output": "Status\nWersja #18 przeszła testy.",
+      "description": "Nagłówek i widoczny tekst linku trafiają do czytelnego wyniku."
+    },
+    {
+      "title": "Lista z łamaniem linii",
+      "input": "<div>Zadania:<br><ul><li>Sprawdź treść</li><li>Wyślij do klienta</li></ul></div>",
+      "output": "Zadania:\nSprawdź treść\nWyślij do klienta",
+      "description": "Elementy listy stają się osobnymi liniami tekstu."
     }
   ],
   "faq": [
     {
-      "question": "Czy to narzędzie zachowuje tagi HTML?",
-      "answer": "Nie. Usuwa znaczniki i zwraca wyłącznie zwykły tekst."
+      "question": "Czy narzędzie zachowuje adresy linków i atrybut alt?",
+      "answer": "Zachowuje widoczny tekst z elementów, ale atrybuty HTML nie są przenoszone jako osobne dane."
     },
     {
-      "question": "Czy konwersja odbywa się w przeglądarce?",
-      "answer": "Tak. Narzędzie działa po stronie klienta i nie korzysta z zewnętrznych API."
+      "question": "Co dzieje się ze skryptami, stylami i komentarzami?",
+      "answer": "Nie trafiają do wyniku, więc tekst końcowy skupia się na treści widocznej dla użytkownika."
     },
     {
-      "question": "Czy mogę konwertować całe dokumenty HTML?",
-      "answer": "Tak. Działa zarówno dla krótkich fragmentów, jak i pełnych dokumentów."
+      "question": "Dlaczego odstępy czasem różnią się od oryginału?",
+      "answer": "HTML opisuje strukturę, a nie dokładny układ tekstu. Narzędzie zamienia ją na czytelne linie, ale nie odtwarza układu 1:1."
     },
     {
-      "question": "Czy mój HTML jest wysyłany na serwer?",
-      "answer": "Nie. Treść jest przetwarzana lokalnie w przeglądarce."
+      "question": "Czy wynik nadaje się do dokładnego odtworzenia formatowania?",
+      "answer": "Nie. To narzędzie służy do استخراجania czytelnego tekstu, więc tabele, wcięcia i precyzyjne odstępy mogą wymagać ręcznej korekty."
     }
   ],
-  "uiLabels": {
-    "copy": "Kopiuj",
-    "copied": "Skopiowano",
-    "input": "HTML input",
-    "output": "Zwykły tekst",
-    "placeholder": "Wklej HTML tutaj...",
-    "indent": "Wcięcie",
-    "removeComments": "Usuń komentarze",
-    "preview": "Podgląd",
-    "source": "Źródło",
-    "sanitizedHtml": "Oczyszczony HTML",
-    "plainText": "Zwykły tekst",
-    "summary": "Podsumowanie",
-    "total": "Razem",
-    "links": "Linki",
-    "images": "Obrazy",
-    "errors": "Błędy",
-    "warnings": "Ostrzeżenia",
-    "valid": "Poprawny",
-    "invalid": "Niepoprawny",
-    "href": "Href",
-    "text": "Tekst",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Szerokość",
-    "height": "Wysokość",
-    "empty": "Puste",
-    "outputReady": "Wynik gotowy",
-    "cleanedHtml": "Oczyszczony HTML",
-    "formattedHtml": "Sformatowany HTML",
-    "minifiedHtml": "Zminimalizowany HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Wyodrębnione obrazy",
-    "extractedLinks": "Wyodrębnione linki",
-    "validationSummary": "Podsumowanie walidacji",
-    "prettyHtml": "Czytelny HTML",
-    "encodedText": "Zakodowany tekst"
-  },
   "seo": {
-    "title": "Konwerter HTML na tekst",
-    "description": "Błyskawicznie wyodrębniaj zwykły tekst z fragmentów HTML i całych dokumentów w przeglądarce.",
+    "title": "HTML na tekst",
+    "description": "Przekształcaj HTML w czytelny tekst w przeglądarce. Wklej fragment lub cały dokument i skopiuj wynik bez znaczników.",
     "keywords": [
       "html na tekst",
       "html do tekstu",
       "konwerter html na tekst",
-      "usun znaczniki html",
-      "zwykly tekst"
+      "usuń znaczniki html",
+      "wyodrębnij tekst"
     ]
   }
 }

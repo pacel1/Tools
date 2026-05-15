@@ -4,44 +4,84 @@
   "slug": "calculadora-de-markup",
   "h1": "Calculadora de markup",
   "title": "Calculadora de markup",
-  "shortDescription": "Calcula el porcentaje de markup y el precio final de venta con resultados rápidos, entradas sencillas y ejemplos prácticos.",
-  "overview": "Calcula el porcentaje de markup y el precio final de venta. Esta página ofrece una respuesta rápida con una herramienta práctica y un flujo de resultado sencillo. Está pensada para usuarios que buscan una respuesta gratis en línea, resultados rápidos en el navegador y contenido útil de cola larga.",
+  "shortDescription": "Calcula el markup, el precio de venta y el beneficio a partir del costo o del precio objetivo.",
+  "metaTitle": "Calculadora de markup",
+  "metaDescription": "Calcula markup, precio de venta y beneficio a partir del costo o del precio objetivo en un solo paso.",
+  "intro": "Introduce tu costo y el porcentaje de markup o el precio de venta para obtener al instante los valores que faltan.",
+  "overview": "La calculadora de markup te ayuda a convertir un costo en un precio de venta o a reconstruir el markup a partir de un precio final conocido. Resulta útil para fijar precios de tienda, comparar proveedores y comprobar si una cotización deja margen suficiente.\n\nTambién sirve para revisar varios productos con la misma lógica de precios. La salida muestra el importe del markup, el precio final y el porcentaje para que veas cómo se forma el precio.\n\nSi ya trabajas con una política de precios definida, puedes probar distintos costos y escenarios sin hacer el cálculo a mano.",
   "howItWorks": [
-    "Introduce el valor requerido en el formulario.",
-    "El cálculo o la transformación se ejecuta al instante en el navegador.",
-    "Revisa el resultado y continúa con herramientas relacionadas si necesitas otro paso."
+    "Introduce el costo del producto.",
+    "Añade el porcentaje de markup o el precio de venta.",
+    "Revisa el importe del markup, el precio final y el beneficio calculado."
+  ],
+  "useCases": [
+    {
+      "title": "Etiquetado en tienda",
+      "description": "Define el precio de venta de un producto a partir del costo de compra y una política de markup."
+    },
+    {
+      "title": "Presupuesto de servicios",
+      "description": "Comprueba si una tarifa cubre mano de obra, gastos fijos y el markup previsto."
+    },
+    {
+      "title": "Comparación de proveedores",
+      "description": "Evalúa cómo cambia el precio final si cambia el costo de adquisición."
+    },
+    {
+      "title": "Paquetes y lotes",
+      "description": "Calcula el precio de un conjunto cuando conoces el costo total y quieres aplicar un markup fijo."
+    }
   ],
   "examples": [
     {
-      "title": "Ejemplo 1",
-      "input": "Costo 50, markup 30%",
-      "output": "65",
-      "description": "Un ejemplo realista de calculadora de markup para una búsqueda habitual."
+      "title": "Precio de una pieza artesanal",
+      "input": "Costo: 18,40 €, markup: 65%",
+      "output": "Markup: 11,96 €, Precio de venta: 30,36 €",
+      "description": "Muestra cómo pasar del costo de fabricación al precio minorista."
     },
     {
-      "title": "Ejemplo 2",
-      "input": "Costo 50, markup 30%",
-      "output": "65",
-      "description": "Otro caso práctico para atraer tráfico orgánico de cola larga."
+      "title": "Obtener el markup desde el precio final",
+      "input": "Costo: 42,00 €, precio de venta: 59,50 €",
+      "output": "Markup: 17,50 €, Markup porcentual: 41,67%",
+      "description": "Útil cuando conoces el precio final y quieres ver el markup implícito."
+    },
+    {
+      "title": "Revisar una oferta mayorista",
+      "input": "Costo: 126,00 €, markup: 22%",
+      "output": "Markup: 27,72 €, Precio de venta: 153,72 €",
+      "description": "Sirve para comprobar si una compra mayorista encaja con tu precio previsto."
     }
   ],
   "faq": [
     {
-      "question": "¿Qué precisión tiene esta herramienta?",
-      "answer": "El resultado se calcula directamente a partir de la fórmula o de la lógica en el navegador que usa esta herramienta."
+      "question": "¿En qué se diferencia el markup del margen?",
+      "answer": "El markup se calcula sobre el costo. El margen se calcula sobre el precio de venta. No conviene confundirlos porque dan porcentajes distintos."
     },
     {
-      "question": "¿Puedo usar esta herramienta en el móvil?",
-      "answer": "Sí. La página funciona en pantallas de escritorio y móviles con un diseño simple de entrada y resultado."
+      "question": "¿Puedo introducir el precio de venta en lugar del porcentaje?",
+      "answer": "Sí, si la herramienta admite cálculo inverso. Así puedes ver el markup implícito a partir del costo y el precio final."
+    },
+    {
+      "question": "¿Por qué aparece un resultado decimal?",
+      "answer": "Muchos costos no encajan en números enteros cuando se aplica un porcentaje. Por eso la herramienta puede mostrar decimales o céntimos."
+    },
+    {
+      "question": "¿Cuál es el error más frecuente?",
+      "answer": "Aplicar el markup sobre la base equivocada. Normalmente se aplica sobre el costo, no sobre el precio final."
+    },
+    {
+      "question": "¿Un markup más alto garantiza más beneficio?",
+      "answer": "No necesariamente. El beneficio también depende de descuentos, comisiones, impuestos y otros gastos."
     }
   ],
   "seo": {
     "title": "Calculadora de markup",
-    "description": "Calcula el porcentaje de markup y el precio final de venta. Calculadora de markup gratuita en línea con resultados instantáneos.",
+    "description": "Calcula markup, precio de venta y beneficio a partir del costo o del precio objetivo en un solo paso.",
     "keywords": [
       "calculadora de markup",
-      "markup calculator",
-      "herramienta calculadora"
+      "calculadora de precio",
+      "markup precio de venta",
+      "beneficio markup"
     ]
   }
 }

@@ -4,160 +4,93 @@
   "slug": "image-resizer",
   "h1": "Image Resizer",
   "title": "Image Resizer",
-  "shortDescription": "Resize images online in your browser with custom dimensions and aspect ratio controls.",
-  "metaTitle": "Image Resizer Online | Resize Images in Browser",
-  "metaDescription": "Resize images online for free with custom dimensions, aspect ratio lock, preview, and instant download. Fast client-side image resizing in your browser.",
-  "intro": "Resize images online without installing software. Upload an image, set custom dimensions, keep the aspect ratio if needed, preview the result, and download the resized file instantly.",
-  "overview": "This browser-based image resizer lets you change image width and height quickly and accurately. It is ideal for preparing photos for websites, social media, email, and documents while keeping the workflow simple and private on the client side.",
+  "shortDescription": "Set exact pixel dimensions for photos, screenshots, logos, and banners.",
+  "metaTitle": "Exact Image Resizer",
+  "metaDescription": "Resize images to exact pixel dimensions, preserve proportions, and download a file ready for your layout or upload.",
+  "intro": "Resize an image to an exact width and height, or keep the original proportions so it stays undistorted.",
+  "overview": "Use this tool when an image has to fit a fixed space in a document, listing, slide, email header, or page layout. You can enter the final width and height directly, or keep the original ratio and scale the image without changing its shape.\n\nThe preview helps you check whether text remains readable, whether the subject stays centered, and whether edges still look clean before you save anything. That makes it practical for photos, screenshots, banners, thumbnails, logos, and product shots that need to match a specific space.\n\nIf you are preparing files for upload or placing visuals into a design, resizing first reduces later edits and gives you a file that is ready to use right away.",
   "howItWorks": [
-    "Upload an image file from your device.",
-    "Enter the desired width and height.",
-    "Lock the aspect ratio to avoid distortion.",
-    "Preview the resized image in your browser.",
-    "Download the output file when it looks right."
+    "Upload an image from your device.",
+    "Enter the target width and height.",
+    "Lock the aspect ratio to avoid stretching.",
+    "Review the preview before downloading.",
+    "Save the resized image to your device."
   ],
   "useCases": [
-    "Resize photos for websites and blogs.",
-    "Make images smaller for email sharing.",
-    "Prepare social media graphics in exact dimensions.",
-    "Adjust product images for ecommerce listings.",
-    "Create lightweight images for documents and presentations."
+    {
+      "title": "Fit a product photo into a listing slot",
+      "description": "Resize a marketplace image so it matches the exact frame used by a catalog or sales page."
+    },
+    {
+      "title": "Scale a logo for headers and footers",
+      "description": "Reduce a logo or signature graphic to a fixed width for reports, templates, or email signatures."
+    },
+    {
+      "title": "Prepare a screenshot for a slide deck",
+      "description": "Shrink a long or wide screenshot so it fits cleanly inside a presentation or internal report."
+    },
+    {
+      "title": "Create a square profile image",
+      "description": "Turn a portrait or branded graphic into a square format for team pages, author cards, or account avatars."
+    },
+    {
+      "title": "Match a hero image to a layout column",
+      "description": "Set a banner or section image to the final container dimensions so it drops into the design without rework."
+    }
   ],
   "examples": [
     {
-      "title": "Resize a profile photo",
-      "input": "1200 × 1200 px",
-      "output": "400 × 400 px",
-      "description": "Reduce a square image for avatars and profile pictures."
+      "title": "Square avatar from a portrait",
+      "input": "Original: 1600 × 2000 px",
+      "output": "Resized: 640 × 640 px",
+      "description": "Crop if needed, then reduce the usable area to a clean square for a profile image."
     },
     {
-      "title": "Prepare a web banner",
-      "input": "2400 × 1200 px",
-      "output": "1200 × 600 px",
-      "description": "Create a smaller version for faster page loading."
+      "title": "Email banner downscaled",
+      "input": "Original: 2400 × 900 px",
+      "output": "Resized: 1200 × 450 px",
+      "description": "Halve a wide banner so it is easier to place inside a newsletter layout."
+    },
+    {
+      "title": "Marketplace product image",
+      "input": "Original: 3000 × 3000 px",
+      "output": "Resized: 1500 × 1500 px",
+      "description": "Keep a centered product shot balanced while reducing the file to a more practical display size."
     }
   ],
   "faq": [
     {
-      "question": "Does the image resizer work in the browser?",
-      "answer": "Yes. The resizing happens client-side in your browser for a fast and private workflow."
+      "question": "Can I resize an image without changing its shape?",
+      "answer": "Yes. Lock the aspect ratio before changing the size. That keeps the image from becoming stretched or squeezed."
     },
     {
-      "question": "Can I keep the original aspect ratio?",
-      "answer": "Yes. Use the aspect ratio lock to resize without stretching the image."
+      "question": "What happens if I enter only one dimension?",
+      "answer": "If the ratio is locked, the missing dimension is calculated from the original proportions. If it is unlocked, set both values so the output matches your intended shape."
     },
     {
-      "question": "Will the tool reduce image quality?",
-      "answer": "You can resize images while preserving visual quality as much as possible, depending on the source file and output size."
+      "question": "Will the downloaded file keep the same format?",
+      "answer": "Usually it does, as long as the source type is supported for resizing. Check the downloaded file name and extension before using it elsewhere."
     },
     {
-      "question": "Do I need to install anything?",
-      "answer": "No. The tool works online and does not require any installation."
+      "question": "Why does a smaller image sometimes look softer?",
+      "answer": "Downscaling removes pixels, so fine details can disappear. Start with the best source file you have and choose the smallest size that still looks clear."
+    },
+    {
+      "question": "Why do logos and faces sometimes look wrong after resizing?",
+      "answer": "That usually happens when the dimensions were changed without respecting the aspect ratio, or when the source image was already too small for the target size."
     }
   ],
-  "uiLabels": {
-    "copy": "Copy",
-    "copied": "Copied",
-    "input": "Input",
-    "output": "Output",
-    "placeholder": "Choose an image file or paste image data",
-    "indent": "Indent",
-    "removeComments": "Remove comments",
-    "preview": "Preview",
-    "source": "Source",
-    "sanitizedHtml": "Sanitized HTML",
-    "plainText": "Plain text",
-    "summary": "Summary",
-    "total": "Total",
-    "links": "Links",
-    "images": "Images",
-    "errors": "Errors",
-    "warnings": "Warnings",
-    "valid": "Valid",
-    "invalid": "Invalid",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Width",
-    "height": "Height",
-    "empty": "Empty",
-    "outputReady": "Output ready",
-    "cleanedHtml": "Cleaned HTML",
-    "formattedHtml": "Formatted HTML",
-    "minifiedHtml": "Minified HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extracted images",
-    "extractedLinks": "Extracted links",
-    "validationSummary": "Validation summary",
-    "prettyHtml": "Pretty HTML",
-    "encodedText": "Encoded text",
-    "file": "File",
-    "size": "Size",
-    "format": "Format",
-    "quality": "Quality",
-    "colorOne": "Color 1",
-    "colorTwo": "Color 2",
-    "background": "Background",
-    "foreground": "Foreground",
-    "angle": "Angle",
-    "margin": "Margin",
-    "level": "Level",
-    "gradientType": "Gradient type",
-    "linear": "Linear",
-    "radial": "Radial",
-    "blur": "Blur",
-    "spread": "Spread",
-    "offsetX": "Offset X",
-    "offsetY": "Offset Y",
-    "opacity": "Opacity",
-    "inset": "Inset",
-    "cssCode": "CSS code",
-    "snippet": "Snippet",
-    "download": "Download",
-    "downloadSvg": "Download SVG",
-    "downloadPng": "Download PNG",
-    "downloadAll": "Download all",
-    "upload": "Upload",
-    "title": "Title",
-    "description": "Description",
-    "canonicalUrl": "Canonical URL",
-    "siteName": "Site name",
-    "ogImage": "OG image",
-    "clear": "Clear",
-    "generatedQr": "QR code preview",
-    "placeholderImage": "Preview image",
-    "faviconSet": "Favicon set",
-    "keepAspectRatio": "Keep aspect ratio",
-    "cropX": "Crop X",
-    "cropY": "Crop Y",
-    "cropWidth": "Crop width",
-    "cropHeight": "Crop height",
-    "originalSize": "Original size",
-    "outputSize": "Output size",
-    "savedSize": "Saved size",
-    "result": "Result",
-    "base64": "Base64",
-    "mimeType": "MIME type",
-    "resizedImage": "Resized image",
-    "compressedImage": "Compressed image",
-    "croppedImage": "Cropped image",
-    "convertedImage": "Converted image",
-    "decodedImage": "Decoded image",
-    "imagePreview": "Image preview"
-  },
   "seo": {
-    "title": "Image Resizer Online | Resize Images in Browser",
-    "description": "Resize images online for free with custom dimensions, aspect ratio lock, preview, and instant download. Fast client-side image resizing in your browser.",
+    "title": "Exact Image Resizer",
+    "description": "Resize images to exact pixel dimensions, preserve proportions, and download a file ready for your layout or upload.",
     "keywords": [
       "image resizer",
-      "resize image online",
-      "photo resizer",
-      "picture resizer",
+      "resize image",
       "change image size",
-      "browser image resizer",
-      "aspect ratio"
+      "aspect ratio",
+      "photo resize",
+      "picture dimensions",
+      "browser image tool"
     ]
   }
 }

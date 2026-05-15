@@ -4,44 +4,84 @@
   "slug": "kalkulator-marzy",
   "h1": "Kalkulator marży",
   "title": "Kalkulator marży",
-  "shortDescription": "Oblicz marżę procentową i cenę sprzedaży końcowej dzięki szybkim wynikom, prostym danym wejściowym i praktycznym przykładom.",
-  "overview": "Oblicz marżę procentową i cenę sprzedaży końcowej. Ta strona daje szybką odpowiedź dzięki praktycznemu narzędziu i prostemu przebiegowi wyniku. Strona jest skierowana do użytkowników, którzy szukają bezpłatnej odpowiedzi online, szybkich wyników w przeglądarce i praktycznych treści narzędziowych o długim ogonie.",
+  "shortDescription": "Oblicz marżę, cenę sprzedaży i zysk na podstawie kosztu lub ceny docelowej.",
+  "metaTitle": "Kalkulator marży online",
+  "metaDescription": "Oblicz marżę procentową, cenę sprzedaży i zysk z kosztu lub ceny docelowej w jednym kroku.",
+  "intro": "Podaj koszt i marżę albo cenę sprzedaży, a narzędzie od razu pokaże brakujące wartości.",
+  "overview": "Kalkulator marży pomaga przeliczyć koszt produktu na cenę sprzedaży albo odtworzyć marżę na podstawie znanej ceny końcowej. Przydaje się przy wycenie towarów, porównywaniu ofert dostawców i sprawdzaniu, czy cena zostawia odpowiedni zapas na zysk.\n\nNarzędzie sprawdza się zarówno przy pojedynczym produkcie, jak i przy wielu pozycjach wycenianych według tego samego schematu. Otrzymujesz kwotę marży, cenę sprzedaży oraz procent, dzięki czemu łatwiej ocenić, jak powstała cena.\n\nJeśli masz już własną politykę cenową, możesz szybko testować różne koszty i sprawdzać efekt bez liczenia ręcznego.",
   "howItWorks": [
-    "Wprowadź wymagane wartości do formularza.",
-    "Obliczenie lub przekształcenie uruchamia się natychmiast w przeglądarce.",
-    "Sprawdź wynik i przejdź do powiązanych narzędzi, jeśli potrzebujesz kolejnego kroku."
+    "Wpisz koszt produktu.",
+    "Dodaj procent marży albo cenę sprzedaży.",
+    "Odczytaj marżę kwotową, cenę końcową i wynik zysku."
+  ],
+  "useCases": [
+    {
+      "title": "Cennik sklepu",
+      "description": "Ustal cenę detaliczną na podstawie kosztu zakupu i planowanej marży przed wydrukiem etykiet."
+    },
+    {
+      "title": "Wycena usługi",
+      "description": "Sprawdź, czy stawka za usługę pokrywa pracę, koszty stałe i zakładaną marżę."
+    },
+    {
+      "title": "Porównanie ofert dostawców",
+      "description": "Zobacz, jak zmiana kosztu zakupu wpływa na końcową cenę sprzedaży."
+    },
+    {
+      "title": "Pakiety i zestawy",
+      "description": "Policz cenę zestawu, gdy znasz koszt całkowity i chcesz dodać stałą marżę."
+    }
   ],
   "examples": [
     {
-      "title": "Przykład 1",
-      "input": "Koszt 50, marża 30%",
-      "output": "65",
-      "description": "Realistyczny przykład kalkulatora marży do codziennego wyszukiwania."
+      "title": "Wycenienie produktu rękodzielniczego",
+      "input": "Koszt: 18,40 zł, marża: 65%",
+      "output": "Marża: 11,96 zł, Cena sprzedaży: 30,36 zł",
+      "description": "Pokazuje, jak z kosztu materiałów otrzymać cenę detaliczną."
     },
     {
-      "title": "Przykład 2",
-      "input": "Koszt 50, marża 30%",
-      "output": "65",
-      "description": "Kolejny praktyczny przypadek użycia dla ruchu organicznego z długiego ogona."
+      "title": "Odczyt marży z ceny końcowej",
+      "input": "Koszt: 42,00 zł, cena sprzedaży: 59,50 zł",
+      "output": "Marża: 17,50 zł, Marża procentowa: 41,67%",
+      "description": "Przydatne, gdy znasz cenę końcową i chcesz sprawdzić narzut."
+    },
+    {
+      "title": "Sprawdzenie oferty hurtowej",
+      "input": "Koszt: 126,00 zł, marża: 22%",
+      "output": "Marża: 27,72 zł, Cena sprzedaży: 153,72 zł",
+      "description": "Pomaga ocenić, czy zakup hurtowy mieści się w planowanej cenie."
     }
   ],
   "faq": [
     {
-      "question": "Jak dokładne jest to narzędzie?",
-      "answer": "Wynik jest obliczany bezpośrednio na podstawie wzoru lub logiki po stronie przeglądarki używanej przez to narzędzie."
+      "question": "Czym różni się marża od narzutu?",
+      "answer": "Marżę liczy się od ceny sprzedaży, a narzut od kosztu. To nie są te same wartości, więc nie należy ich zamieniać."
     },
     {
-      "question": "Czy mogę używać tego narzędzia na telefonie?",
-      "answer": "Tak. Strona działa na ekranach komputerów i urządzeń mobilnych, ma prosty układ z polem wejściowym i wynikiem."
+      "question": "Czy mogę wpisać cenę sprzedaży zamiast procentu marży?",
+      "answer": "Tak, jeśli narzędzie obsługuje obliczenie odwrotne. Wtedy zobaczysz, jaki narzut wynika z kosztu i ceny końcowej."
+    },
+    {
+      "question": "Dlaczego wynik ma grosze lub ułamki?",
+      "answer": "Koszt często nie dzieli się równo przez procent marży, więc wynik może zawierać miejsca po przecinku. W praktyce stosuj sposób zaokrąglania używany w cenniku."
+    },
+    {
+      "question": "Jaki błąd pojawia się najczęściej?",
+      "answer": "Najczęściej marżę liczy się od złej podstawy. Marżę stosuj do kosztu, chyba że Twoja metoda cenowa mówi inaczej."
+    },
+    {
+      "question": "Czy większa marża zawsze oznacza większy zysk?",
+      "answer": "Nie zawsze. Zysk zależy też od rabatów, opłat, podatków i kosztów stałych. Sama marża nie pokazuje całego obrazu."
     }
   ],
   "seo": {
-    "title": "Kalkulator marży",
-    "description": "Oblicz marżę procentową i cenę sprzedaży końcowej. Darmowy kalkulator marży online z natychmiastowymi wynikami.",
+    "title": "Kalkulator marży online",
+    "description": "Oblicz marżę procentową, cenę sprzedaży i zysk z kosztu lub ceny docelowej w jednym kroku.",
     "keywords": [
       "kalkulator marży",
-      "kalkulator marzy",
-      "narzędzia kalkulatorowe"
+      "marża kalkulator",
+      "kalkulator narzutu",
+      "cena sprzedaży"
     ]
   }
 }

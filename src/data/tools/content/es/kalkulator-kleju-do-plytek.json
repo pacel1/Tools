@@ -4,178 +4,87 @@
   "slug": "calculadora-de-adhesivo-para-baldosas",
   "h1": "Calculadora de adhesivo para baldosas",
   "title": "Calculadora de adhesivo para baldosas",
-  "shortDescription": "Calcula cuantos kilos y sacos de adhesivo para baldosas necesitas para una superficie y un grosor dados.",
-  "metaTitle": "Calculadora de adhesivo para baldosas | kg y sacos",
-  "metaDescription": "Calcula el consumo de adhesivo para baldosas en kg y sacos. Introduce superficie, consumo por mm, grosor, desperdicio y peso del saco para obtener un resultado claro.",
-  "intro": "Usa esta calculadora de adhesivo para baldosas para estimar rapidamente cuanto material necesitas. Muestra el consumo sin desperdicio, con desperdicio y el numero de sacos a comprar.",
-  "overview": "La calculadora usa una formula sencilla basada en la superficie, el consumo por 1 mm, el grosor de la capa, el porcentaje de desperdicio y el peso del saco. Es facil de revisar y util para planificar compras.",
+  "shortDescription": "Calcula kilos y sacos de adhesivo para baldosas a partir de superficie, consumo, grosor y desperdicio.",
+  "metaTitle": "Calculadora de adhesivo para baldosas",
+  "metaDescription": "Calcula el adhesivo para baldosas en kg y sacos con superficie, consumo por mm, grosor de capa, desperdicio y peso del saco.",
+  "intro": "Introduce la superficie, el consumo por 1 mm, el grosor de la capa, el desperdicio y el peso del saco para saber cuántos kilos y sacos necesitas.",
+  "overview": "Esta calculadora convierte los datos de tu alicatado en una cantidad de compra concreta. Primero obtiene el consumo base a partir de la superficie, el consumo por milímetro y el grosor de la capa; después añade el margen que indiques y lo transforma en sacos.\n\nEs útil cuando el soporte tiene irregularidades, cuando trabajas con piezas grandes o cuando comparas dos adhesivos con consumos distintos. Así puedes preparar el pedido con una cifra clara en lugar de una estimación vaga.",
   "howItWorks": [
-    "Introduce la superficie en metros cuadrados.",
-    "Indica el consumo de adhesivo por 1 mm en kg/m2/mm.",
-    "Define el grosor de la capa en milimetros.",
-    "Anade un porcentaje de desperdicio por cortes, irregularidades y perdidas de aplicacion.",
-    "Introduce el peso del saco para calcular cuantos necesitas."
+    "Mide la superficie en metros cuadrados.",
+    "Introduce el consumo del producto por 1 mm en kg/m²/mm.",
+    "Define el grosor previsto de la capa en milímetros.",
+    "Añade un porcentaje de desperdicio para cortes, pérdidas e irregularidades.",
+    "Escribe el peso del saco para convertir los kilos en número de sacos."
   ],
   "useCases": [
-    "Calcular adhesivo para banos, cocinas o pasillos.",
-    "Planificar la compra de materiales antes de una reforma.",
-    "Comprobar cuantos sacos se necesitan para un sistema de baldosas concreto.",
-    "Comparar necesidades segun el grosor de la capa."
+    {
+      "title": "Baño con paredes y suelo distintos",
+      "description": "Calcula cantidades diferentes si una zona necesita una capa más gruesa por desniveles o formato de pieza."
+    },
+    {
+      "title": "Baldosas de gran formato",
+      "description": "Comprueba cómo aumenta el consumo cuando el fabricante recomienda una cama de adhesivo más generosa."
+    },
+    {
+      "title": "Pedido antes de empezar la obra",
+      "description": "Convierte el plano del proyecto en kilos y sacos antes de comprar el material."
+    },
+    {
+      "title": "Comparar dos marcas",
+      "description": "Revisa si una menor cobertura compensa un precio unitario más alto al calcular el total necesario."
+    }
   ],
   "examples": [
     {
-      "title": "Formula basica",
-      "input": "Superficie × consumo por mm × grosor de la capa",
-      "output": "Cantidad base de adhesivo en kg antes del desperdicio.",
-      "description": "Da la necesidad neta de adhesivo para la superficie a cubrir."
+      "title": "Pasillo pequeño",
+      "input": "Superficie: 12 m²; consumo: 1,4 kg/m²/mm; grosor: 4 mm; desperdicio: 8%; peso del saco: 25 kg",
+      "output": "Base: 67,2 kg; con desperdicio: 72,6 kg; sacos: 3",
+      "description": "Aunque el área es pequeña, el resultado final sigue obligando a comprar tres sacos completos."
     },
     {
-      "title": "Con desperdicio",
-      "input": "Kg base × (1 + desperdicio / 100)",
-      "output": "Cantidad total de adhesivo en kg.",
-      "description": "Anade un margen practico para perdidas e irregularidades del soporte."
+      "title": "Cocina con capa más gruesa",
+      "input": "Superficie: 18,5 m²; consumo: 1,6 kg/m²/mm; grosor: 6 mm; desperdicio: 10%; peso del saco: 20 kg",
+      "output": "Base: 177,6 kg; con desperdicio: 195,4 kg; sacos: 10",
+      "description": "Una capa más gruesa dispara el consumo y el redondeo final importa mucho."
     },
     {
-      "title": "Sacos necesarios",
-      "input": "Kg total ÷ peso del saco, redondeado hacia arriba",
-      "output": "Numero de sacos a comprar.",
-      "description": "Redondea siempre hacia arriba para no quedarte corto en obra."
+      "title": "Cuarto auxiliar",
+      "input": "Superficie: 7,8 m²; consumo: 1,2 kg/m²/mm; grosor: 3 mm; desperdicio: 5%; peso del saco: 25 kg",
+      "output": "Base: 28,1 kg; con desperdicio: 29,5 kg; sacos: 2",
+      "description": "Incluso un espacio reducido puede requerir dos sacos cuando se añade un pequeño margen."
     }
   ],
   "faq": [
     {
-      "question": "¿Como calculo cuanto adhesivo para baldosas necesito?",
-      "answer": "Multiplica la superficie por el consumo por 1 mm y por el grosor de la capa. Luego anade el desperdicio y divide por el peso del saco para obtener los sacos necesarios."
+      "question": "¿Por qué el grosor cambia tanto el resultado?",
+      "answer": "Porque el cálculo multiplica el consumo por milímetro por el grosor previsto. Cada milímetro extra se aplica sobre toda la superficie, así que el total crece con rapidez."
     },
     {
-      "question": "¿Por que debo anadir desperdicio?",
-      "answer": "El desperdicio cubre perdidas al mezclar, pequenas irregularidades de suelos o paredes y diferencias de aplicacion. Ayuda a comprar una cantidad mas segura."
+      "question": "¿Qué hago si la ficha técnica da el consumo por metro cuadrado y no por mm?",
+      "answer": "Usa el valor del fabricante tal como está si ya corresponde al espesor previsto. Si se expresa por milímetro, mantén el grosor como la capa que realmente vas a colocar."
     },
     {
-      "question": "¿Debo redondear los sacos hacia arriba?",
-      "answer": "Si. Los sacos siempre deben redondearse al entero superior porque no se pueden comprar fracciones de saco."
+      "question": "¿Tengo que poner el peso exacto del saco?",
+      "answer": "Sí. Un saco de 20 kg no produce el mismo número de unidades que uno de 25 kg, y un peso incorrecto altera el pedido final."
+    },
+    {
+      "question": "¿Por qué se redondea hacia arriba el número de sacos?",
+      "answer": "Porque el adhesivo se compra en sacos enteros. Redondear hacia abajo puede dejarte sin material al final o para corregir zonas irregulares."
+    },
+    {
+      "question": "¿Qué errores suelen dejar el cálculo corto?",
+      "answer": "Los más típicos son usar una unidad de superficie equivocada, olvidar el desperdicio, poner un grosor distinto al previsto o elegir un consumo de otro producto."
     }
   ],
-  "uiLabels": {
-    "copy": "Copiar",
-    "copied": "Copiado",
-    "input": "Entrada",
-    "output": "Salida",
-    "placeholder": "Introduce un valor",
-    "indent": "Sangria",
-    "removeComments": "Eliminar comentarios",
-    "preview": "Vista previa",
-    "source": "Origen",
-    "sanitizedHtml": "HTML saneado",
-    "plainText": "Texto plano",
-    "summary": "Resumen",
-    "total": "Total",
-    "links": "Enlaces",
-    "images": "Imagenes",
-    "errors": "Errores",
-    "warnings": "Avisos",
-    "valid": "Valido",
-    "invalid": "No valido",
-    "href": "Href",
-    "text": "Texto",
-    "rel": "Rel",
-    "target": "Destino",
-    "alt": "Alt",
-    "width": "Ancho",
-    "height": "Alto",
-    "empty": "Vacio",
-    "outputReady": "Resultado listo",
-    "cleanedHtml": "HTML limpiado",
-    "formattedHtml": "HTML formateado",
-    "minifiedHtml": "HTML minimizado",
-    "markdown": "Markdown",
-    "extractedImages": "Imagenes extraidas",
-    "extractedLinks": "Enlaces extraidos",
-    "validationSummary": "Resumen de validacion",
-    "prettyHtml": "HTML legible",
-    "encodedText": "Texto codificado",
-    "file": "Archivo",
-    "size": "Tamano",
-    "format": "Formato",
-    "quality": "Calidad",
-    "colorOne": "Color 1",
-    "colorTwo": "Color 2",
-    "background": "Fondo",
-    "foreground": "Primer plano",
-    "angle": "Angulo",
-    "margin": "Margen",
-    "level": "Nivel",
-    "gradientType": "Tipo de degradado",
-    "linear": "Lineal",
-    "radial": "Radial",
-    "blur": "Desenfoque",
-    "spread": "Extension",
-    "offsetX": "Desplazamiento X",
-    "offsetY": "Desplazamiento Y",
-    "opacity": "Opacidad",
-    "inset": "Interior",
-    "cssCode": "Codigo CSS",
-    "snippet": "Fragmento",
-    "download": "Descargar",
-    "downloadSvg": "Descargar SVG",
-    "downloadPng": "Descargar PNG",
-    "downloadAll": "Descargar todo",
-    "upload": "Subir",
-    "title": "Titulo",
-    "description": "Descripcion",
-    "canonicalUrl": "URL canonica",
-    "siteName": "Nombre del sitio",
-    "ogImage": "Imagen OG",
-    "clear": "Limpiar",
-    "generatedQr": "QR generado",
-    "placeholderImage": "Imagen de relleno",
-    "faviconSet": "Conjunto de favicon",
-    "keepAspectRatio": "Mantener proporcion",
-    "cropX": "Recorte X",
-    "cropY": "Recorte Y",
-    "cropWidth": "Ancho del recorte",
-    "cropHeight": "Alto del recorte",
-    "originalSize": "Tamano original",
-    "outputSize": "Tamano de salida",
-    "savedSize": "Tamano ahorrado",
-    "result": "Resultado",
-    "base64": "Base64",
-    "mimeType": "Tipo MIME",
-    "resizedImage": "Imagen redimensionada",
-    "compressedImage": "Imagen comprimida",
-    "croppedImage": "Imagen recortada",
-    "convertedImage": "Imagen convertida",
-    "decodedImage": "Imagen decodificada",
-    "imagePreview": "Vista previa de la imagen",
-    "camera": "Camara",
-    "lens": "Lente",
-    "dateTaken": "Fecha de captura",
-    "resolution": "Resolucion",
-    "fileSize": "Tamano del archivo",
-    "iso": "ISO",
-    "exposure": "Exposicion",
-    "aperture": "Apertura",
-    "focalLength": "Distancia focal",
-    "flash": "Flash",
-    "orientation": "Orientacion",
-    "latitude": "Latitud",
-    "longitude": "Longitud",
-    "openMap": "Abrir mapa",
-    "rawMetadata": "Metadatos sin procesar",
-    "noMetadataFound": "No se encontraron metadatos",
-    "gpsLocation": "Ubicacion GPS",
-    "metadataSummary": "Resumen de metadatos"
-  },
   "seo": {
     "title": "Calculadora de adhesivo para baldosas",
-    "description": "Calcula cuantos kg y sacos de adhesivo para baldosas necesitas. Obtén el resultado sin desperdicio, con desperdicio y el numero de sacos a partir de la superficie, el consumo, el grosor y el peso del saco.",
+    "description": "Calcula el adhesivo para baldosas en kg y sacos con superficie, consumo por mm, grosor de capa, desperdicio y peso del saco.",
     "keywords": [
       "calculadora de adhesivo para baldosas",
-      "calculadora de pegamento para baldosas",
-      "kg de adhesivo para baldosas",
+      "kg adhesivo baldosas",
       "sacos de adhesivo",
-      "consumo de adhesivo",
-      "calculadora de materiales para baldosas"
+      "consumo adhesivo baldosas",
+      "calculadora de materiales"
     ]
   }
 }

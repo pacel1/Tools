@@ -4,177 +4,93 @@
   "slug": "foundation-calculator",
   "h1": "Foundation Calculator",
   "title": "Foundation Calculator",
-  "shortDescription": "Estimate concrete volume, rebar, and waterproofing needed for your foundation.",
-  "metaTitle": "Foundation Calculator | Concrete Volume, Bags and Side Area",
-  "metaDescription": "Calculate foundation concrete volume, required bags, and side area for waterproofing or insulation. Fast, simple foundation calculator.",
-  "intro": "Use this foundation calculator to estimate concrete volume, the number of bags, and the side area to waterproof or insulate. Enter the foundation length, width, height, waste margin, and bag yield to get quick results.",
-  "overview": "This tool helps you plan a foundation pour by converting basic dimensions into practical material estimates. It calculates concrete volume in cubic meters, estimates how many bags are needed based on bag yield, and shows the side area for waterproofing or insulation.",
+  "shortDescription": "Estimate concrete, formwork area, and side waterproofing area for strip foundations and footings.",
+  "metaTitle": "Foundation Calculator | Concrete Volume",
+  "metaDescription": "Estimate concrete volume, bag count, and side area for waterproofing or insulation on strip foundations, footings, and pads.",
+  "intro": "Get the concrete volume, bag count, and side area for a foundation in one result.",
+  "overview": "Enter the foundation’s length, width, and height to convert the shape into concrete volume in cubic meters. Add a waste allowance if you want the result to include a reserve for spillage, uneven excavation, or minor overfill.\n\nThe calculator also shows the side area of the foundation, which helps when ordering waterproofing, insulation boards, or protective coating. It is suitable for linear strips, isolated footings, and other simple rectangular foundation elements where a straight volume estimate is enough.",
   "howItWorks": [
-    "Enter the foundation length in meters and width in meters.",
-    "Provide the foundation height in centimeters.",
-    "Add the waste percentage to include a safety margin.",
-    "Enter the concrete bag yield in cubic meters per bag.",
-    "Review the calculated concrete volume, bag count, and side area."
+    "Enter the foundation length in meters.",
+    "Enter the width in meters.",
+    "Enter the height in centimeters.",
+    "Set the waste allowance percentage.",
+    "Choose the concrete yield per bag if you are buying bagged mix.",
+    "Review the adjusted volume, bag count, and side area."
   ],
   "useCases": [
-    "Estimating concrete for strip foundations and footings.",
-    "Checking how many bags of concrete mix to buy.",
-    "Calculating the area for foundation waterproofing.",
-    "Planning insulation materials for foundation sides.",
-    "Creating a quick material estimate before ordering supplies."
+    {
+      "title": "Strip foundation takeoff",
+      "description": "Estimate the concrete needed for a long, narrow strip before placing an order."
+    },
+    {
+      "title": "Footing material list",
+      "description": "Work out the mix quantity for isolated footings under posts or columns."
+    },
+    {
+      "title": "Waterproofing area planning",
+      "description": "Measure the side area that needs membrane, coating, or damp-proofing."
+    },
+    {
+      "title": "Bagged mix purchase check",
+      "description": "Convert the cubic volume into a realistic number of sacks from the product yield."
+    },
+    {
+      "title": "Insulation board planning",
+      "description": "Size the vertical foundation surfaces that will receive perimeter insulation."
+    }
   ],
   "examples": [
     {
-      "title": "Example",
-      "input": "Length 10 m, width 0.5 m, height 80 cm, waste 10%, bag yield 0.02 m3",
-      "output": "Concrete volume, bag count, and side area are calculated automatically.",
-      "description": "A typical planning scenario for a foundation strip."
+      "title": "Strip foundation for an extension",
+      "input": "Length 14 m, width 0.45 m, height 70 cm, waste 8%, bag yield 0.02 m3",
+      "output": "Concrete volume: 4.75 m3. With waste: 5.13 m3. Bags: 257. Side area: 19.60 m2.",
+      "description": "A typical narrow foundation around an extension footprint."
     },
     {
-      "title": "Example",
-      "input": "Length 12 m, width 0.4 m, height 60 cm, waste 5%, bag yield 0.025 m3",
-      "output": "The tool estimates total concrete and required bags with reserve.",
-      "description": "Useful for comparing material options before purchase."
+      "title": "Pad footing under posts",
+      "input": "Length 2.4 m, width 0.8 m, height 40 cm, waste 5%, bag yield 0.025 m3",
+      "output": "Concrete volume: 0.77 m3. With waste: 0.81 m3. Bags: 33. Side area: 2.56 m2.",
+      "description": "Useful when planning a small isolated footing with a known pour size."
+    },
+    {
+      "title": "Retaining wall base",
+      "input": "Length 9 m, width 0.6 m, height 90 cm, waste 12%, bag yield 0.03 m3",
+      "output": "Concrete volume: 4.86 m3. With waste: 5.44 m3. Bags: 182. Side area: 17.10 m2.",
+      "description": "A stronger footing layout where the reserve helps cover losses during the pour."
     }
   ],
   "faq": [
     {
-      "question": "What does the foundation calculator calculate?",
-      "answer": "It calculates concrete volume, the number of bags needed, and the side area for waterproofing or insulation."
+      "question": "What dimensions should I enter for a stepped foundation?",
+      "answer": "Use the dimensions of the rectangular section only. If the foundation has steps or thickened edges, calculate each section separately and add the results."
     },
     {
-      "question": "How do I enter the height?",
-      "answer": "Enter the foundation height in centimeters. The calculator converts it to meters internally."
+      "question": "Why is the side area useful if I already have the volume?",
+      "answer": "The volume tells you how much concrete is needed. The side area helps estimate the amount of waterproofing, coating, or insulation applied to the vertical faces."
     },
     {
-      "question": "Does the result include waste?",
-      "answer": "Yes. The waste percentage is added to the calculated concrete volume before estimating bags."
+      "question": "Does the calculator account for reinforcement bars?",
+      "answer": "No. It estimates concrete, bag count, and side area only. Rebar must be measured from the structural design or bar schedule."
     },
     {
-      "question": "Can I use it for foundation strips?",
-      "answer": "Yes. It works well for strip foundations, footings, and similar linear foundation elements."
+      "question": "How do I choose the waste allowance?",
+      "answer": "Use a small reserve for neat excavations and a higher reserve if the trench is irregular, the formwork is complex, or the pour is difficult to control."
+    },
+    {
+      "question": "Can I use the bag count directly for purchase?",
+      "answer": "Use it as a buying estimate, not an exact count. Real bag usage changes with compaction, rounding of package yield, and site losses."
     }
   ],
-  "uiLabels": {
-    "copy": "Copy",
-    "copied": "Copied",
-    "input": "Input",
-    "output": "Output",
-    "placeholder": "Enter value",
-    "indent": "Indent",
-    "removeComments": "Remove comments",
-    "preview": "Preview",
-    "source": "Source",
-    "sanitizedHtml": "Sanitized HTML",
-    "plainText": "Plain text",
-    "summary": "Summary",
-    "total": "Total",
-    "links": "Links",
-    "images": "Images",
-    "errors": "Errors",
-    "warnings": "Warnings",
-    "valid": "Valid",
-    "invalid": "Invalid",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Width",
-    "height": "Height",
-    "empty": "Empty",
-    "outputReady": "Output ready",
-    "cleanedHtml": "Cleaned HTML",
-    "formattedHtml": "Formatted HTML",
-    "minifiedHtml": "Minified HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extracted images",
-    "extractedLinks": "Extracted links",
-    "validationSummary": "Validation summary",
-    "prettyHtml": "Pretty HTML",
-    "encodedText": "Encoded text",
-    "file": "File",
-    "size": "Size",
-    "format": "Format",
-    "quality": "Quality",
-    "colorOne": "Color 1",
-    "colorTwo": "Color 2",
-    "background": "Background",
-    "foreground": "Foreground",
-    "angle": "Angle",
-    "margin": "Margin",
-    "level": "Level",
-    "gradientType": "Gradient type",
-    "linear": "Linear",
-    "radial": "Radial",
-    "blur": "Blur",
-    "spread": "Spread",
-    "offsetX": "Offset X",
-    "offsetY": "Offset Y",
-    "opacity": "Opacity",
-    "inset": "Inset",
-    "cssCode": "CSS code",
-    "snippet": "Snippet",
-    "download": "Download",
-    "downloadSvg": "Download SVG",
-    "downloadPng": "Download PNG",
-    "downloadAll": "Download all",
-    "upload": "Upload",
-    "title": "Title",
-    "description": "Description",
-    "canonicalUrl": "Canonical URL",
-    "siteName": "Site name",
-    "ogImage": "OG image",
-    "clear": "Clear",
-    "generatedQr": "Generated QR",
-    "placeholderImage": "Placeholder image",
-    "faviconSet": "Favicon set",
-    "keepAspectRatio": "Keep aspect ratio",
-    "cropX": "Crop X",
-    "cropY": "Crop Y",
-    "cropWidth": "Crop width",
-    "cropHeight": "Crop height",
-    "originalSize": "Original size",
-    "outputSize": "Output size",
-    "savedSize": "Saved size",
-    "result": "Result",
-    "base64": "Base64",
-    "mimeType": "MIME type",
-    "resizedImage": "Resized image",
-    "compressedImage": "Compressed image",
-    "croppedImage": "Cropped image",
-    "convertedImage": "Converted image",
-    "decodedImage": "Decoded image",
-    "imagePreview": "Image preview",
-    "camera": "Camera",
-    "lens": "Lens",
-    "dateTaken": "Date taken",
-    "resolution": "Resolution",
-    "fileSize": "File size",
-    "iso": "ISO",
-    "exposure": "Exposure",
-    "aperture": "Aperture",
-    "focalLength": "Focal length",
-    "flash": "Flash",
-    "orientation": "Orientation",
-    "latitude": "Latitude",
-    "longitude": "Longitude",
-    "openMap": "Open map",
-    "rawMetadata": "Raw metadata",
-    "noMetadataFound": "No metadata found",
-    "gpsLocation": "GPS location",
-    "metadataSummary": "Metadata summary"
-  },
   "seo": {
     "title": "Foundation Calculator",
-    "description": "Calculate concrete volume, required bags, and side area for waterproofing or insulation with this foundation calculator.",
+    "description": "Estimate concrete volume, bag count, and side area for waterproofing or insulation on strip foundations, footings, and pads.",
     "keywords": [
       "foundation calculator",
-      "concrete volume calculator",
-      "bag calculator",
-      "waterproofing area calculator",
-      "insulation calculator",
-      "foundation materials estimate"
+      "concrete volume",
+      "bag count",
+      "strip foundation",
+      "footing calculator",
+      "waterproofing area"
     ]
   }
 }

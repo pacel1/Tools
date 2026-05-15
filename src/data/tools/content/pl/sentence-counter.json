@@ -4,42 +4,78 @@
   "slug": "licznik-zdan",
   "h1": "Licznik zdań",
   "title": "Licznik zdań",
-  "shortDescription": "Policz zdania w tekście natychmiast — szybko, prosto i z praktycznymi przykładami.",
-  "overview": "Policz zdania w tekście natychmiast. Ta strona daje szybki wynik dzięki praktycznemu narzędziu i prostemu przebiegowi działania. Jest skierowana do osób, które szukają darmowej odpowiedzi online, błyskawicznych wyników w przeglądarce oraz praktycznej treści narzędziowej pod dłuższe zapytania.",
+  "shortDescription": "Policz zdania w tekście i zobacz jasny wynik bez dodatkowych kroków.",
+  "metaTitle": "Licznik zdań online",
+  "metaDescription": "Policz zdania w swoim tekście i otrzymaj czytelny wynik dla akapitów, notatek, szkiców lub wklejonej treści.",
+  "intro": "Wklej tekst do pola, a narzędzie pokaże łączną liczbę zdań od razu.",
+  "overview": "To narzędzie zlicza zdania w wklejonym tekście i podaje prostą, czytelną liczbę. Przydaje się podczas przeglądu akapitu, porównywania dwóch wersji tekstu albo sprawdzania, czy fragment ma oczekiwaną budowę.\n\nNa wynik mogą wpływać skróty, inicjały, liczby dziesiętne i nietypowa interpunkcja. Jeśli tekst zawiera takie elementy, warto spojrzeć na rezultat z uwzględnieniem kontekstu, zwłaszcza w materiałach technicznych, dialogach lub treściach kopiowanych z innych źródeł.\n\nNajlepiej działa na pełnych fragmentach tekstu, a nie na pojedynczych urwanych zdaniach. Dla bardziej wiarygodnej interpretacji zachowuj spójną interpunkcję i nie traktuj samych łamań linii jako końca zdania.",
   "howItWorks": [
-    "Wpisz wymagany tekst do formularza.",
-    "Zliczanie działa natychmiast w przeglądarce.",
-    "Sprawdź wynik i przejdź do powiązanych narzędzi, jeśli potrzebujesz kolejnego kroku."
+    "Wklej lub wpisz tekst do pola wejściowego.",
+    "Narzędzie rozpoznaje końce zdań na podstawie interpunkcji w tekście.",
+    "Odczytaj liczbę zdań i porównaj fragmenty, jeśli trzeba."
+  ],
+  "useCases": [
+    {
+      "title": "Redakcja szkicu artykułu",
+      "description": "Sprawdź, czy akapit ma oczekiwany rytm i liczbę zdań przed wysłaniem do korekty."
+    },
+    {
+      "title": "Porównanie tłumaczenia",
+      "description": "Zestaw liczbę zdań w wersji źródłowej i tłumaczeniu, aby wychwycić pominięcia lub połączenia zdań."
+    },
+    {
+      "title": "Notatki ze spotkania",
+      "description": "Oceń, ile pełnych wypowiedzi zawiera fragment notatek przepisany z transkrypcji lub podsumowania."
+    },
+    {
+      "title": "Krótki komunikat firmowy",
+      "description": "Sprawdź, czy wiadomość ma właściwą liczbę czytelnych zdań przed wysyłką."
+    }
   ],
   "examples": [
     {
-      "title": "Przykład 1",
-      "input": "Akapit z kilkoma zdaniami.",
-      "output": "Łączna liczba zdań",
-      "description": "Przykład licznika zdań dla codziennego zapytania w wyszukiwarce."
+      "title": "Trzy krótkie zdania",
+      "input": "Przyszliśmy wcześniej. Sala była cicha. Wszyscy usiedli.",
+      "output": "3 zdania",
+      "description": "Każda kropka zamyka osobne zdanie, więc wynik to trzy."
     },
     {
-      "title": "Przykład 2",
-      "input": "Akapit z kilkoma zdaniami.",
-      "output": "Łączna liczba zdań",
-      "description": "Kolejny praktyczny przypadek użycia pod ruch organiczny z długiego ogona."
+      "title": "Różna interpunkcja",
+      "input": "Czy skończyłeś raport? Mój już wysłałem! Sprawdź liczby.",
+      "output": "3 zdania",
+      "description": "Znak zapytania i wykrzyknik też są liczone jako zakończenia zdań."
+    },
+    {
+      "title": "Skrót w środku tekstu",
+      "input": "Pani dr Nowak sprawdziła dokument. Potem dodała uwagi.",
+      "output": "2 zdania",
+      "description": "Kropka w skrócie nie powinna być traktowana jak osobne zakończenie zdania."
     }
   ],
   "faq": [
     {
-      "question": "Jak dokładne jest to narzędzie?",
-      "answer": "Wynik jest obliczany bezpośrednio na podstawie logiki działającej w tym narzędziu lub w przeglądarce."
+      "question": "Jak narzędzie rozpoznaje granice zdań?",
+      "answer": "Liczy zakończenia zdań oznaczone interpunkcją, przede wszystkim kropkami, znakami zapytania i wykrzyknikami."
     },
     {
-      "question": "Czy mogę używać tego narzędzia na telefonie?",
-      "answer": "Tak. Strona działa na komputerach i urządzeniach mobilnych, oferując prosty układ pola tekstowego i wyniku."
+      "question": "Dlaczego skróty czasem zmieniają wynik?",
+      "answer": "Skróty i inicjały zawierają kropki, które mogą wyglądać jak koniec zdania. Przy wielu takich przypadkach warto sprawdzić wynik ręcznie."
+    },
+    {
+      "question": "Czy podziały wierszy liczą się jako zdania?",
+      "answer": "Nie. Sam podział wiersza jest tylko formatowaniem, chyba że towarzyszy mu interpunkcja kończąca zdanie."
+    },
+    {
+      "question": "Co z tekstem bez interpunkcji końcowej?",
+      "answer": "Jeśli w treści nie ma znaków kończących zdania, wynik może być zerowy albo niższy, zależnie od struktury tekstu."
     }
   ],
   "seo": {
-    "title": "Licznik zdań",
-    "description": "Policz zdania w tekście natychmiast. Darmowy licznik zdań online z wynikiem od razu.",
+    "title": "Licznik zdań online",
+    "description": "Policz zdania w swoim tekście i otrzymaj czytelny wynik dla akapitów, notatek, szkiców lub wklejonej treści.",
     "keywords": [
       "licznik zdań",
+      "zliczanie zdań",
       "narzędzie do tekstu"
     ]
   }

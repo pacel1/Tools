@@ -4,44 +4,85 @@
   "slug": "calculadora-de-porcentajes",
   "h1": "Calculadora de Porcentajes",
   "title": "Calculadora de Porcentajes",
-  "shortDescription": "Calcula qué porcentaje representa un número respecto a otro con resultados rápidos, entradas sencillas y ejemplos prácticos.",
-  "overview": "Calcula qué porcentaje representa un número respecto a otro. Esta página ofrece una respuesta rápida con una herramienta útil y un flujo de resultados sencillo. Está pensada para usuarios que buscan una respuesta gratis en línea, resultados instantáneos en el navegador y contenido práctico de cola larga.",
+  "shortDescription": "Calcula porcentajes, proporciones y cambios porcentuales a partir de números conocidos.",
+  "metaTitle": "Calculadora de Porcentajes",
+  "metaDescription": "Calcula porcentajes, proporciones y cambios porcentuales para precios, notas, presupuestos y totales con resultados claros.",
+  "intro": "Introduce dos números para obtener un porcentaje de un valor, una parte del total o el cambio porcentual entre dos cantidades.",
+  "overview": "Esta calculadora cubre tres tareas habituales: expresar una parte como porcentaje del total, calcular cuánto vale un porcentaje y comparar dos números como variación. Elige el modo que corresponda, escribe los datos y obtén el resultado en una sola lectura.\n\nEs útil para precios, calificaciones, ajustes de facturas, movimientos de stock y comparaciones de rendimiento donde importa más la magnitud del cambio que la cifra en bruto. También admite decimales y números grandes, así que sirve tanto para ajustes pequeños como para totales mayores.\n\nSi el valor inicial es cero, el cambio porcentual no tiene una referencia válida y no puede interpretarse de manera normal. La herramienta muestra esa limitación con claridad para evitar lecturas incorrectas.",
   "howItWorks": [
-    "Introduce el valor o texto requerido en el formulario.",
-    "La conversión, el cálculo o la transformación se ejecuta al instante en el navegador.",
-    "Revisa el resultado y continúa con herramientas relacionadas si necesitas otro paso."
+    "Elige el tipo de cálculo: parte de un total, porcentaje de un valor o cambio porcentual.",
+    "Escribe los números tal como los tienes, con decimales si hace falta.",
+    "Revisa el resultado y, si se trata de un cambio, compáralo con el valor original."
+  ],
+  "useCases": [
+    {
+      "title": "Descuento en una compra",
+      "description": "Comprueba qué porcentaje representa un descuento de 18,50 € sobre una compra de 74,00 €."
+    },
+    {
+      "title": "Nota de un examen",
+      "description": "Convierte 42 puntos sobre 60 en porcentaje para una calificación."
+    },
+    {
+      "title": "Subida de una factura",
+      "description": "Mide el aumento de 96 a 114 y exprésalo en porcentaje para un presupuesto."
+    },
+    {
+      "title": "Informe de visitas",
+      "description": "Convierte el crecimiento de 1.250 a 1.480 visitas en cambio porcentual para un resumen semanal."
+    }
   ],
   "examples": [
     {
-      "title": "Ejemplo 1",
-      "input": "25 de 200",
-      "output": "12,5%",
-      "description": "Un ejemplo realista de calculadora de porcentajes para una búsqueda cotidiana."
+      "title": "Parte de un total",
+      "input": "37 de 148",
+      "output": "25%",
+      "description": "Muestra qué tamaño tiene una parte respecto al total."
     },
     {
-      "title": "Ejemplo 2",
-      "input": "25 de 200",
-      "output": "12,5%",
-      "description": "Otro caso práctico para tráfico orgánico de cola larga."
+      "title": "Porcentaje de un valor",
+      "input": "15% de 240",
+      "output": "36",
+      "description": "Calcula la cantidad que representa ese porcentaje."
+    },
+    {
+      "title": "Aumento desde una cifra anterior",
+      "input": "80 a 92",
+      "output": "15% de aumento",
+      "description": "Compara el valor nuevo con el inicial y muestra la variación."
     }
   ],
   "faq": [
     {
-      "question": "¿Qué precisión tiene esta herramienta?",
-      "answer": "El resultado se calcula directamente a partir de la fórmula o de la lógica del navegador utilizada por esta herramienta."
+      "question": "¿Qué puedo calcular exactamente aquí?",
+      "answer": "Puedes calcular un porcentaje de un valor, la parte que representa una cifra dentro de otra o el cambio porcentual entre dos cantidades."
     },
     {
-      "question": "¿Puedo usar esta herramienta en el móvil?",
-      "answer": "Sí. La página funciona en ordenador y móvil con un diseño sencillo de entrada y resultado."
+      "question": "¿Por qué a veces el resultado es negativo?",
+      "answer": "Un resultado negativo indica que el segundo valor es menor que el primero. Esa es la forma correcta de mostrar una bajada."
+    },
+    {
+      "question": "¿Qué ocurre si el valor inicial es cero?",
+      "answer": "Un cambio porcentual desde cero no tiene una base de comparación válida, por lo que no se define de forma normal."
+    },
+    {
+      "question": "¿Puedo usar decimales y números grandes?",
+      "answer": "Sí. La calculadora acepta decimales y cantidades grandes y aplica la misma regla porcentual."
+    },
+    {
+      "question": "¿Por qué entradas parecidas dan respuestas distintas?",
+      "answer": "Porque la parte del total, el porcentaje de un valor y el cambio porcentual usan fórmulas diferentes. Debes escoger el modo que coincida con tu pregunta."
     }
   ],
   "seo": {
     "title": "Calculadora de Porcentajes",
-    "description": "Calcula qué porcentaje representa un número respecto a otro. Calculadora de porcentajes gratis en línea con resultados instantáneos.",
+    "description": "Calcula porcentajes, proporciones y cambios porcentuales para precios, notas, presupuestos y totales con resultados claros.",
     "keywords": [
       "calculadora de porcentajes",
-      "porcentajes calculadora",
-      "herramienta calculadoras"
+      "cambio porcentual",
+      "porcentaje de un valor",
+      "calcular porcentaje",
+      "proporción porcentual"
     ]
   }
 }

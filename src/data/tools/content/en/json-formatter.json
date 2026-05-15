@@ -4,44 +4,81 @@
   "slug": "json-formatter",
   "h1": "JSON formatter",
   "title": "JSON formatter",
-  "shortDescription": "Format and validate JSON with readable indentation and immediate error feedback.",
-  "overview": "The JSON formatter parses pasted JSON, prints a prettified version and also returns a minified output. It is useful for debugging payloads, cleaning copied data and sharing readable JSON during development.",
+  "shortDescription": "Turn raw JSON into a clean, readable format and catch syntax errors before you ship.",
+  "metaTitle": "JSON Formatter & Validator",
+  "metaDescription": "Paste JSON to format it with consistent indentation, spot syntax errors, and switch to a compact version when needed.",
+  "intro": "Paste JSON, choose an indent size, and get a readable, validated result with syntax errors shown clearly.",
+  "overview": "This JSON formatter parses pasted JSON and renders it with consistent indentation so nested objects and arrays are easy to inspect. It also produces a compact minified version, which is useful when you need to compare structure or move data between systems.\n\nIf the input is not valid JSON, the tool reports the parsing problem instead of guessing. That makes it suitable for debugging API responses, cleaning copied snippets from logs, and reviewing configuration files before they are committed.\n\nThe output keeps the data structure intact while changing presentation only. Objects stay objects, arrays stay arrays, and numbers, booleans, null values, and strings remain exactly as parsed.",
   "howItWorks": [
-    "Paste JSON and choose an indentation size.",
-    "The parser validates the input and throws an error if the JSON is invalid.",
-    "When valid, the tool returns prettified output, minified output and line count."
+    "Paste a JSON document into the input field.",
+    "Select the indentation width you want for the formatted view.",
+    "The parser checks whether the text is valid JSON and returns a clear error if it is not.",
+    "When the input is valid, the tool shows the prettified JSON, a minified version, and the line count."
+  ],
+  "useCases": [
+    {
+      "title": "Inspect API responses",
+      "description": "Reformat nested response bodies so status fields, pagination data, and arrays are easier to scan during debugging."
+    },
+    {
+      "title": "Clean copied configuration",
+      "description": "Turn dense settings blocks into readable JSON before comparing values or moving them into a repository."
+    },
+    {
+      "title": "Prepare payloads for sharing",
+      "description": "Switch between formatted and compact JSON when sending examples to teammates or pasting into documentation."
+    }
   ],
   "examples": [
     {
-      "title": "API payload cleanup",
-      "input": "{\"status\":\"ok\",\"items\":[1,2]}",
-      "output": "Pretty-printed JSON",
-      "description": "Makes logs and payloads easier to inspect during debugging."
+      "title": "Read a webhook payload",
+      "input": "{\"event\":\"invoice.paid\",\"data\":{\"id\":4821,\"amount\":1299,\"currency\":\"USD\"}}",
+      "output": "{\n  \"event\": \"invoice.paid\",\n  \"data\": {\n    \"id\": 4821,\n    \"amount\": 1299,\n    \"currency\": \"USD\"\n  }\n}",
+      "description": "Expands a nested event payload into a structure that is easier to review field by field."
     },
     {
-      "title": "Share compact output",
-      "input": "Formatted JSON",
-      "output": "Minified JSON",
-      "description": "Useful when you need the smallest payload representation."
+      "title": "Compact a settings object",
+      "input": "{\n  \"theme\": \"dark\",\n  \"layout\": {\n    \"sidebar\": true,\n    \"density\": \"comfortable\"\n  }\n}",
+      "output": "{\"theme\":\"dark\",\"layout\":{\"sidebar\":true,\"density\":\"comfortable\"}}",
+      "description": "Removes whitespace to create a smaller version while preserving the same data."
+    },
+    {
+      "title": "Catch an invalid comma",
+      "input": "{\"name\":\"Mira\", \"roles\":[\"admin\",], \"active\":true}",
+      "output": "Error: Unexpected token ] in JSON at position 36",
+      "description": "Shows the syntax issue so the bad comma can be fixed before the payload is used."
     }
   ],
   "faq": [
     {
-      "question": "Does it change key order?",
-      "answer": "No. The formatter preserves the parsed object's key order as returned by JavaScript."
+      "question": "Does formatting change the actual JSON values?",
+      "answer": "No. Formatting changes spacing and line breaks only. Strings, numbers, booleans, null values, arrays, and objects keep the same content."
     },
     {
-      "question": "Can it fix broken JSON automatically?",
-      "answer": "No. The formatter validates valid JSON and shows an error when the input is broken so you can fix it safely."
+      "question": "Will the formatter preserve key order?",
+      "answer": "It keeps the order returned by the parser, which matches the input order in normal JSON objects. It does not sort keys unless your source is already ordered that way."
+    },
+    {
+      "question": "Can it repair broken JSON automatically?",
+      "answer": "No. If the input is invalid, the tool reports the parse error rather than guessing at missing quotes, commas, or brackets."
+    },
+    {
+      "question": "Why do I see an error on trailing commas?",
+      "answer": "Trailing commas are not allowed in standard JSON. Remove the extra comma after the last item in an array or object."
+    },
+    {
+      "question": "How should I read the minified output?",
+      "answer": "The minified version is the same data without extra whitespace. It is useful for copying into tests, payload samples, or transport logs, but it is harder to read by eye."
     }
   ],
   "seo": {
-    "title": "JSON Formatter",
-    "description": "Online JSON formatter and validator with pretty print and minify output.",
+    "title": "JSON Formatter & Validator",
+    "description": "Paste JSON to format it with consistent indentation, spot syntax errors, and switch to a compact version when needed.",
     "keywords": [
       "json formatter",
       "json validator",
-      "pretty print json"
+      "pretty print json",
+      "minify json"
     ]
   }
 }

@@ -4,42 +4,82 @@
   "slug": "kalkulator-procentowego-wzrostu",
   "h1": "Kalkulator procentowego wzrostu",
   "title": "Kalkulator procentowego wzrostu",
-  "shortDescription": "Oblicz wartość po zwiększeniu o procent — szybko, prosto i z praktycznymi przykładami.",
-  "overview": "Oblicz wartość po procentowym zwiększeniu. Ta strona zapewnia szybką odpowiedź dzięki prostemu narzędziu online i przejrzystemu wynikowi. Kierujemy ją do osób, które szukają darmowego kalkulatora w przeglądarce, natychmiastowych wyników i praktycznych treści dopasowanych do dłuższych zapytań.",
+  "shortDescription": "Oblicz nową wartość po zwiększeniu o procent, bez ręcznych obliczeń i z czytelnym wynikiem.",
+  "metaTitle": "Kalkulator procentowego wzrostu",
+  "metaDescription": "Sprawdź nową wartość po zwiększeniu o procent dla cen, pensji, budżetu lub prognozy. Otrzymasz jasny wynik i prosty formularz.",
+  "intro": "Wpisz wartość początkową i procent wzrostu, a narzędzie od razu pokaże nową wartość.",
+  "overview": "Ten kalkulator pozwala szybko przeliczyć wartość bazową po zastosowaniu procentowego wzrostu. Przydaje się przy zmianach cen, podwyżkach, korektach budżetu, marżach i prostych prognozach liczbowych.\n\nWynik pokazuje końcową kwotę po dodaniu wzrostu, dzięki czemu łatwo porównać stan przed i po zmianie. To wygodne także wtedy, gdy chcesz zweryfikować własne obliczenia albo sprawdzić kilka wariantów podwyżki przed podjęciem decyzji.",
   "howItWorks": [
-    "Wpisz wymaganą wartość lub tekst w formularzu.",
-    "Obliczenie, konwersja lub przekształcenie uruchamia się natychmiast w przeglądarce.",
-    "Sprawdź wynik i skorzystaj z powiązanych narzędzi, jeśli potrzebujesz kolejnego kroku."
+    "Wpisz wartość początkową.",
+    "Podaj procent wzrostu.",
+    "Odczytaj nową wartość po zwiększeniu.",
+    "W razie potrzeby przelicz kolejny wariant z innym procentem."
+  ],
+  "useCases": [
+    {
+      "title": "Zmiana ceny produktu",
+      "description": "Oblicz nową cenę po podwyżce marży, wzroście kosztu dostawy albo zmianie cennika."
+    },
+    {
+      "title": "Podwyżka wynagrodzenia",
+      "description": "Sprawdź, ile wyniesie pensja po zastosowaniu określonego procentu podwyżki."
+    },
+    {
+      "title": "Prognoza biznesowa",
+      "description": "Oszacuj wzrost przychodu, ruchu lub liczby klientów na podstawie wybranego scenariusza."
+    },
+    {
+      "title": "Korekta budżetu",
+      "description": "Wyznacz nowy limit wydatków po zwiększeniu planowanego budżetu o ustalony procent."
+    }
   ],
   "examples": [
     {
-      "title": "Przykład 1",
-      "input": "120 zwiększone o 15%",
-      "output": "138",
-      "description": "Realistyczny przykład użycia kalkulatora procentowego wzrostu dla codziennego zapytania."
+      "title": "Aktualizacja ceny towaru",
+      "input": "80 zwiększone o 12%",
+      "output": "89,6",
+      "description": "Cena 80 rośnie do 89,6 po zastosowaniu wzrostu o 12%."
     },
     {
-      "title": "Przykład 2",
-      "input": "120 zwiększone o 15%",
-      "output": "138",
-      "description": "Kolejny praktyczny przykład dla ruchu organicznego z długiego ogona."
+      "title": "Roczna podwyżka pensji",
+      "input": "42 000 zwiększone o 7%",
+      "output": "44 940",
+      "description": "Wynagrodzenie 42 000 po podwyżce 7% wynosi 44 940."
+    },
+    {
+      "title": "Prognoza ruchu",
+      "input": "18 500 zwiększone o 5%",
+      "output": "19 425",
+      "description": "Wartość 18 500 rośnie do 19 425 po wzroście o 5%."
     }
   ],
   "faq": [
     {
-      "question": "Jak dokładne jest to narzędzie?",
-      "answer": "Wynik jest obliczany bezpośrednio na podstawie wzoru lub logiki po stronie przeglądarki używanej przez to narzędzie."
+      "question": "Co dokładnie pokazuje ten kalkulator?",
+      "answer": "Pokazuje nową wartość po dodaniu wskazanego procentu do kwoty początkowej."
     },
     {
-      "question": "Czy mogę korzystać z tego narzędzia na telefonie?",
-      "answer": "Tak. Strona działa na komputerach i urządzeniach mobilnych, oferując prosty układ pola wejściowego i wyniku."
+      "question": "Jak odczytać wynik?",
+      "answer": "To wartość końcowa po wzroście. Jeśli chcesz znać samą kwotę dodaną, odejmij wartość wyjściową od wyniku."
+    },
+    {
+      "question": "Czy mogę wpisywać liczby dziesiętne?",
+      "answer": "Tak. Narzędzie obsługuje liczby całkowite i dziesiętne, o ile wpisana wartość jest poprawna."
+    },
+    {
+      "question": "Jaki błąd pojawia się najczęściej?",
+      "answer": "Najczęściej mylone jest wpisanie liczby jako kwoty zamiast procentu. Na przykład 15 oznacza 15%, a nie 15 jednostek."
     }
   ],
   "seo": {
     "title": "Kalkulator procentowego wzrostu",
-    "description": "Oblicz wartość po zwiększeniu o procent. Darmowy kalkulator procentowego wzrostu online z natychmiastowym wynikiem.",
+    "description": "Sprawdź nową wartość po zwiększeniu o procent dla cen, pensji, budżetu lub prognozy. Otrzymasz jasny wynik i prosty formularz.",
     "keywords": [
-      "kalkulator procentowego wzrostu"
+      "kalkulator procentowego wzrostu",
+      "wzrost o procent",
+      "nowa wartość po wzroście",
+      "kalkulator podwyżki",
+      "kalkulator wzrostu procentowego"
     ]
   }
 }

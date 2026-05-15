@@ -4,43 +4,77 @@
   "slug": "minificador-de-json",
   "h1": "Minificador de JSON",
   "title": "Minificador de JSON",
-  "shortDescription": "Minifica JSON al instante en línea con resultados rápidos, entradas simples y ejemplos prácticos.",
-  "overview": "Minifica JSON al instante en línea. Esta página ofrece una respuesta rápida con una herramienta práctica y un flujo de resultados sencillo. Está pensada para usuarios que buscan una solución gratuita en línea, resultados rápidos en el navegador y contenido útil de cola larga.",
+  "shortDescription": "Quita espacios sobrantes del JSON y conserva su estructura válida en una versión compacta.",
+  "metaTitle": "Minificador de JSON",
+  "metaDescription": "Compacta JSON eliminando espacios y saltos de línea sin alterar la estructura ni los valores del contenido.",
+  "intro": "Pega tu JSON y obtén una versión compacta con el mismo contenido, pero sin espacios innecesarios.",
+  "overview": "Un minificador de JSON convierte un bloque formateado en una sola cadena más corta al eliminar espacios, tabulaciones y saltos de línea que no forman parte de los datos. El contenido no cambia, pero el resultado ocupa menos y se integra mejor en código, peticiones o registros.\n\nEs útil para cuerpos de API, fragmentos de configuración, datos de prueba y exportaciones de depuración. Si el JSON tiene errores de sintaxis, no se puede minificar con seguridad: corrige primero comas finales, claves sin comillas o corchetes sin cerrar.\n\nEl resultado está pensado para procesamiento y transporte, no para lectura cómoda. Si necesitas revisarlo visualmente, vuelve a formatearlo después o usa una herramienta de formato cuando quieras inspeccionar la estructura.",
   "howItWorks": [
-    "Introduce el valor o texto requerido en el formulario.",
-    "La conversión, el cálculo o la transformación se ejecuta al instante en el navegador.",
-    "Revisa el resultado y continúa con herramientas relacionadas si necesitas otro paso."
+    "Pega JSON válido en el campo de entrada.",
+    "La herramienta elimina el espacio no esencial y conserva valores y anidación.",
+    "Copia el resultado compacto para código, envío o almacenamiento."
+  ],
+  "useCases": [
+    {
+      "title": "Reducir el cuerpo de una petición API",
+      "description": "Convierte un JSON formateado en una sola línea para pruebas, ejemplos o llamadas a endpoints."
+    },
+    {
+      "title": "Guardar fixtures de prueba en formato compacto",
+      "description": "Mantén respuestas de ejemplo o datos de prueba en una versión más corta y fácil de incrustar."
+    },
+    {
+      "title": "Preparar configuración para moverla entre sistemas",
+      "description": "Elimina saltos de línea e indentación antes de pegar JSON en otra plataforma o variable de entorno."
+    }
   ],
   "examples": [
     {
-      "title": "Ejemplo 1",
-      "input": "{\"name\":\"tool\",\"value\":1}",
-      "output": "{\"name\":\"tool\",\"value\":1}",
-      "description": "Un ejemplo realista de minificador de JSON para una búsqueda cotidiana."
+      "title": "JSON legible a versión compacta",
+      "input": "{\n  \"usuario\": \"ana\",\n  \"roles\": [\n    \"admin\",\n    \"editor\"\n  ],\n  \"activo\": true\n}",
+      "output": "{\"usuario\":\"ana\",\"roles\":[\"admin\",\"editor\"],\"activo\":true}",
+      "description": "Se eliminan espacios y saltos de línea, pero se mantiene la estructura del objeto y la matriz."
     },
     {
-      "title": "Ejemplo 2",
-      "input": "{\"name\":\"tool\",\"value\":1}",
-      "output": "{\"name\":\"tool\",\"value\":1}",
-      "description": "Otro caso práctico para tráfico orgánico de cola larga."
+      "title": "Objeto anidado con números",
+      "input": "{\n  \"pedido\": {\n    \"id\": 1042,\n    \"articulos\": [\n      { \"sku\": \"A1\", \"cantidad\": 2 },\n      { \"sku\": \"B7\", \"cantidad\": 1 }\n    ]\n  }\n}",
+      "output": "{\"pedido\":{\"id\":1042,\"articulos\":[{\"sku\":\"A1\",\"cantidad\":2},{\"sku\":\"B7\",\"cantidad\":1}]}}",
+      "description": "Los objetos y arreglos anidados se convierten en una sola línea sin cambiar los valores."
+    },
+    {
+      "title": "Texto con comas y espacios",
+      "input": "{\n  \"mensaje\": \"Guarda y vuelve a intentar.\",\n  \"nota\": \"Los espacios dentro de cadenas se conservan.\"\n}",
+      "output": "{\"mensaje\":\"Guarda y vuelve a intentar.\",\"nota\":\"Los espacios dentro de cadenas se conservan.\"}",
+      "description": "Los espacios dentro de comillas forman parte del dato y no se eliminan."
     }
   ],
   "faq": [
     {
-      "question": "¿Qué tan precisa es esta herramienta?",
-      "answer": "El resultado se calcula directamente a partir de la fórmula o la lógica en el navegador que usa esta herramienta."
+      "question": "¿El minificador cambia números, booleanos o cadenas?",
+      "answer": "No. Una minificación correcta elimina solo el formato externo al texto JSON. Los valores deben permanecer iguales."
     },
     {
-      "question": "¿Puedo usar esta herramienta en el móvil?",
-      "answer": "Sí. La página funciona en pantallas de escritorio y móviles con un diseño sencillo de entrada y resultado."
+      "question": "¿Qué pasa si el JSON no es válido?",
+      "answer": "No se debe generar un resultado seguro a partir de sintaxis rota. Corrige primero comas finales, claves sin comillas o llaves sin cerrar."
+    },
+    {
+      "question": "¿Se eliminan los espacios dentro de las cadenas?",
+      "answer": "No. Los espacios dentro de comillas forman parte del valor y deben mantenerse. Solo se quita el formato fuera de las cadenas."
+    },
+    {
+      "question": "¿Puedo minificar JSON con caracteres escapados o Unicode?",
+      "answer": "Sí, siempre que el JSON sea válido. Secuencias como \\n, \\t, \\\\ y caracteres Unicode se conservan según los datos de entrada."
     }
   ],
   "seo": {
     "title": "Minificador de JSON",
-    "description": "Minifica JSON al instante en línea. Minificador de JSON gratuito con resultados inmediatos.",
+    "description": "Compacta JSON eliminando espacios y saltos de línea sin alterar la estructura ni los valores del contenido.",
     "keywords": [
       "minificador de json",
-      "herramientas para desarrolladores"
+      "minificar json",
+      "json compacto",
+      "quitar espacios json",
+      "compresor json"
     ]
   }
 }

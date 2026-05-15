@@ -2,61 +2,86 @@
   "toolId": "inches-to-mm-converter",
   "locale": "de",
   "slug": "zoll-in-millimeter-umrechner",
-  "h1": "Zoll-in-Millimeter-Umrechner",
-  "title": "Zoll-in-Millimeter-Umrechner",
-  "shortDescription": "Zoll sofort in Millimeter umrechnen, inklusive Formel, Beispielen und schnellen Ergebnissen im Browser.",
-  "metaTitle": "Zoll in mm umrechnen | Zoll-zu-Millimeter-Rechner",
-  "metaDescription": "Rechne Zoll in Millimeter um. Kostenloser Online-Rechner mit Formel, Beispielen und schnellen Ergebnissen fuer Technik, Handwerk und Produktspezifikationen.",
-  "intro": "Wenn du Zoll in Millimeter umrechnen musst, liefert dir dieser Rechner sofort das Ergebnis. Er nutzt die feste Umrechnung 1 Zoll = 25,4 mm und ist fuer Suchanfragen wie 1 Zoll in mm, 1/2 Zoll in mm oder Zoll zu Millimeter gedacht.",
-  "overview": "Der Rechner ist praktisch fuer Werkstatt, Maschinenbau, Rohrgroessen, Schraubenmasse und internationale Produktdaten. Statt Tabellen oder Taschenrechner zu nutzen, kannst du Zollwerte direkt im Browser in Millimeter umrechnen.",
+  "h1": "Zoll in Millimeter Umrechner",
+  "title": "Zoll in Millimeter Umrechner",
+  "shortDescription": "Wandle Zoll mit dem festen Faktor 25,4 in Millimeter um und erhalte klare Dezimalwerte.",
+  "metaTitle": "Zoll in Millimeter Umrechner",
+  "metaDescription": "Wandle Zoll in Millimeter mit dem festen Faktor 25,4 um. Klare Ergebnisse für Maße, Teile und technische Pläne.",
+  "intro": "Gib einen Zollwert ein und erhalte sofort den passenden Millimeterwert. Es gilt die feste Umrechnung 1 Zoll = 25,4 mm.",
+  "overview": "Dieser Umrechner wandelt Zollmaße mit dem genauen Standardfaktor 25,4 in Millimeter um. Er ist nützlich, wenn du Werte aus technischen Unterlagen, Bauteilen oder Produktangaben in ein metrisches Format übertragen willst.\n\nBesonders praktisch ist er bei Zeichnungen, Maschinenbauteilen, Rohr- und Schraubmaßen oder bei Spezifikationen aus internationalen Datenblättern. Das Ergebnis in Millimetern lässt sich direkt weiterverwenden, ohne selbst rechnen zu müssen.",
   "howItWorks": [
-    "Gib den Wert in Zoll in das Formular ein.",
-    "Der Rechner multipliziert ihn mit 25,4 und zeigt das Ergebnis in Millimetern an.",
-    "Pruefe das Resultat und nutze bei Bedarf passende Gegen- oder Folgeumrechner."
+    "Zollwert in das Eingabefeld eintragen.",
+    "Das Tool multipliziert den Wert mit 25,4.",
+    "Millimeterergebnis ablesen und in Planung, Dokumentation oder Prüfung verwenden."
   ],
   "useCases": [
-    "Rohr-, Schrauben- oder Werkzeugmasse in mm umrechnen.",
-    "Internationale Produktdaten technisch einordnen.",
-    "Zeichnungen, Plaene und Werkstattmasse vergleichen.",
-    "Zollangaben aus Shops oder Datenblaettern in mm lesen."
+    {
+      "title": "Bauteilmaße umrechnen",
+      "description": "Zollangaben für Wellen, Platten oder Halterungen in Millimeter übertragen, bevor gefertigt oder geprüft wird."
+    },
+    {
+      "title": "Produktdaten übernehmen",
+      "description": "Importierte Maßangaben aus Zoll in metrische Werte für Kataloge, Bestellungen oder Etiketten umwandeln."
+    },
+    {
+      "title": "Werkstatt und Montage",
+      "description": "Abstände, Bohrergrößen oder Einbauwerte prüfen, wenn Vorlagen in Zoll und Werkzeuge in Millimeter arbeiten."
+    },
+    {
+      "title": "Technische Zeichnungen lesen",
+      "description": "Zollbasierte Maße beim Durchsehen von Plänen, Revisionen oder CAD-Notizen in Millimeter einordnen."
+    }
   ],
   "examples": [
     {
-      "title": "1 Zoll in mm",
-      "input": "1 Zoll",
-      "output": "25,4 Millimeter",
-      "description": "Die Standardumrechnung fuer die haeufigste Suchanfrage."
+      "title": "Dezimalwert",
+      "input": "2,5",
+      "output": "63,5 mm",
+      "description": "Direkte Umrechnung eines Dezimalwerts in Zoll."
     },
     {
-      "title": "4 Zoll in mm",
-      "input": "4 Zoll",
-      "output": "101,6 Millimeter",
-      "description": "Praktisch fuer groessere Abstaende, Bauteile oder Montageangaben."
+      "title": "Ganze Zahl",
+      "input": "7",
+      "output": "177,8 mm",
+      "description": "Hilfreich für größere Abmessungen von Teilen, Rohren oder Platten."
+    },
+    {
+      "title": "Bruch als Dezimalwert",
+      "input": "0,75",
+      "output": "19,05 mm",
+      "description": "Drei Viertel Zoll werden in einen metrischen Wert umgerechnet."
     }
   ],
   "faq": [
     {
-      "question": "Welche Formel wird fuer Zoll in Millimeter verwendet?",
-      "answer": "Die Standardformel lautet: Zollwert × 25,4 = Millimeter."
+      "question": "Welche Formel verwendet der Umrechner?",
+      "answer": "Es gilt die exakte Beziehung 1 Zoll = 25,4 Millimeter. Daher wird der Zollwert mit 25,4 multipliziert."
     },
     {
-      "question": "Ist der Rechner fuer Handwerk und Technik geeignet?",
-      "answer": "Ja. Er ist vor allem bei technischen Massen, Schrauben, Rohren, Zeichnungen und Werkstattarbeiten hilfreich."
+      "question": "Kann ich Dezimalzahlen oder Brüche eingeben?",
+      "answer": "Dezimalwerte kannst du direkt eingeben. Brüche solltest du zuerst in Dezimalform umwandeln, zum Beispiel 1/2 = 0,5."
     },
     {
-      "question": "Kann ich dieses Tool auf dem Smartphone nutzen?",
-      "answer": "Ja. Die Seite funktioniert auf Desktop- und Mobilgeraeten mit einem einfachen Eingabe- und Ergebnislayout."
+      "question": "Warum hat das Ergebnis manchmal Nachkommastellen?",
+      "answer": "Viele Zollwerte ergeben in Millimetern keine ganze Zahl. Die Nachkommastellen gehören zum exakten metrischen Wert."
+    },
+    {
+      "question": "Was ist ein häufiger Fehler beim Ablesen?",
+      "answer": "Zu früh zu runden. Bei Passungen, Plänen und Bauteilen solltest du den Wert erst dann kürzen, wenn du die benötigte Genauigkeit kennst."
+    },
+    {
+      "question": "Rechnet das Tool auch in Zentimeter um?",
+      "answer": "Nein. Dieses Tool wandelt nur Zoll in Millimeter um. Für Zentimeter teilst du das Millimeterergebnis durch 10."
     }
   ],
   "seo": {
-    "title": "Zoll in mm umrechnen | Zoll-zu-Millimeter-Rechner",
-    "description": "Rechne Zoll in Millimeter um. Kostenloser Online-Rechner mit Formel, Beispielen und schnellen Ergebnissen fuer Technik, Handwerk und Produktspezifikationen.",
+    "title": "Zoll in Millimeter Umrechner",
+    "description": "Wandle Zoll in Millimeter mit dem festen Faktor 25,4 um. Klare Ergebnisse für Maße, Teile und technische Pläne.",
     "keywords": [
-      "1 zoll in mm",
+      "zoll in millimeter",
       "zoll in mm",
-      "zoll in millimeter umrechner",
-      "zoll in mm umrechner",
-      "zoll in millimeter"
+      "zoll mm umrechner",
+      "zoll in mm umrechnen"
     ]
   }
 }

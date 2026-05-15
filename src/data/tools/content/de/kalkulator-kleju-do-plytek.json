@@ -4,178 +4,87 @@
   "slug": "fliesenkleber-rechner",
   "h1": "Fliesenkleber-Rechner",
   "title": "Fliesenkleber-Rechner",
-  "shortDescription": "Berechne, wie viele Kilogramm und Säcke Fliesenkleber du für eine bestimmte Fläche und Schichtdicke brauchst.",
-  "metaTitle": "Fliesenkleber-Rechner | kg und Säcke",
-  "metaDescription": "Berechne den Bedarf an Fliesenkleber in kg und Säcken. Gib Fläche, Verbrauch pro mm, Schichtdicke, Verschnitt und Sackgewicht ein und erhalte ein klares Ergebnis.",
-  "intro": "Mit diesem Fliesenkleber-Rechner ermittelst du schnell, wie viel Material du für das Verlegen von Fliesen brauchst. Angezeigt werden Menge ohne Verschnitt, mit Verschnitt und die benötigte Sackzahl.",
-  "overview": "Der Rechner basiert auf einer einfachen Formel aus Fläche, Verbrauch pro 1 mm, Schichtdicke, Verschnitt und Sackgewicht. So lässt sich der Materialbedarf leicht nachvollziehen und planen.",
+  "shortDescription": "Berechne Kilogramm und Säcke Fliesenkleber aus Fläche, Verbrauch, Schichtdicke und Reserve.",
+  "metaTitle": "Fliesenkleber-Rechner",
+  "metaDescription": "Berechne den Fliesenkleberbedarf in kg und Säcken mit Fläche, Verbrauch pro mm, Schichtdicke, Verschnitt und Sackgewicht.",
+  "intro": "Trage Fläche, Verbrauch pro 1 mm, Schichtdicke, Verschnitt und Sackgewicht ein, um die benötigten Kilogramm und Säcke zu ermitteln.",
+  "overview": "Der Rechner übersetzt die Daten deiner Fliesenarbeit in eine konkrete Einkaufsmenge. Zuerst wird der Grundbedarf aus Fläche, Verbrauch pro Millimeter und Schichtdicke ermittelt, dann kommt der gewünschte Verschnitt dazu und am Ende wird alles auf Säcke umgerechnet.\n\nDas ist besonders nützlich bei unebenen Untergründen, großformatigen Fliesen oder wenn du zwei Kleber mit unterschiedlichem Verbrauch vergleichen willst. So bekommst du eine belastbare Menge statt einer groben Schätzung.",
   "howItWorks": [
-    "Fläche in Quadratmetern eingeben.",
-    "Verbrauch pro 1 mm in kg/m2/mm angeben.",
-    "Schichtdicke des Klebers in Millimetern festlegen.",
+    "Fläche in Quadratmetern messen.",
+    "Produktverbrauch pro 1 mm in kg/m²/mm eintragen.",
+    "Geplante Schichtdicke in Millimetern festlegen.",
     "Verschnitt für Zuschnitt, Unebenheiten und Verarbeitungsverluste hinzufügen.",
-    "Sackgewicht eingeben, um die benötigte Anzahl Säcke zu berechnen."
+    "Sackgewicht angeben, damit die Kilogramm in Säcke umgerechnet werden."
   ],
   "useCases": [
-    "Fliesenkleber für Bad, Küche oder Flur berechnen.",
-    "Materialkauf vor einer Renovierung planen.",
-    "Prüfen, wie viele Säcke für ein bestimmtes Fliesensystem nötig sind.",
-    "Den Bedarf bei unterschiedlicher Schichtdicke vergleichen."
+    {
+      "title": "Bad mit unterschiedlichen Untergründen",
+      "description": "Berechne getrennt, wenn Wand und Boden nicht die gleiche Schichtdicke oder denselben Verbrauch haben."
+    },
+    {
+      "title": "Großformatige Feinsteinzeugfliesen",
+      "description": "Prüfe den höheren Materialbedarf bei dickerem Kleberbett und vergleiche ihn mit Standardfliesen."
+    },
+    {
+      "title": "Einkauf vor Beginn der Arbeiten",
+      "description": "Wandle die geplante Fläche in Kilogramm und Sackanzahl um, bevor du beim Händler bestellst."
+    },
+    {
+      "title": "Vergleich zweier Kleberprodukte",
+      "description": "Sieh sofort, wie sich ein anderer Verbrauchswert auf die Gesamtmenge auswirkt."
+    }
   ],
   "examples": [
     {
-      "title": "Einfache Formel",
-      "input": "Fläche × Verbrauch pro mm × Schichtdicke",
-      "output": "Klebermenge ohne Verschnitt in kg.",
-      "description": "Das ergibt den reinen Bedarf für die zu belegende Fläche."
+      "title": "Kleiner Flur",
+      "input": "Fläche: 12 m²; Verbrauch: 1,4 kg/m²/mm; Schichtdicke: 4 mm; Verschnitt: 8 %; Sackgewicht: 25 kg",
+      "output": "Basis: 67,2 kg; mit Verschnitt: 72,6 kg; Säcke: 3",
+      "description": "Auch eine kleine Fläche führt mit Reserve schnell zu drei ganzen Säcken."
     },
     {
-      "title": "Mit Verschnitt",
-      "input": "Basis-kg × (1 + Verschnitt / 100)",
-      "output": "Gesamtmenge Kleber in kg.",
-      "description": "Ein praxisnaher Puffer für Verluste und Untergrundunebenheiten."
+      "title": "Küche mit stärkerem Bett",
+      "input": "Fläche: 18,5 m²; Verbrauch: 1,6 kg/m²/mm; Schichtdicke: 6 mm; Verschnitt: 10 %; Sackgewicht: 20 kg",
+      "output": "Basis: 177,6 kg; mit Verschnitt: 195,4 kg; Säcke: 10",
+      "description": "Je dicker die Schicht, desto stärker wirkt sich das auf die Sackzahl aus."
     },
     {
-      "title": "Benötigte Säcke",
-      "input": "Gesamt-kg ÷ Sackgewicht, aufgerundet",
-      "output": "Anzahl der zu kaufenden Säcke.",
-      "description": "Immer aufrunden, damit auf der Baustelle genug Material vorhanden ist."
+      "title": "Hauswirtschaftsraum",
+      "input": "Fläche: 7,8 m²; Verbrauch: 1,2 kg/m²/mm; Schichtdicke: 3 mm; Verschnitt: 5 %; Sackgewicht: 25 kg",
+      "output": "Basis: 28,1 kg; mit Verschnitt: 29,5 kg; Säcke: 2",
+      "description": "Selbst kleine Räume können durch den Zuschlag auf zwei Säcke kommen."
     }
   ],
   "faq": [
     {
-      "question": "Wie berechne ich den Fliesenkleberbedarf?",
-      "answer": "Multipliziere die Fläche mit dem Verbrauch pro 1 mm und mit der Schichtdicke. Danach den Verschnitt hinzufügen und durch das Sackgewicht teilen, um die Sackzahl zu erhalten."
+      "question": "Warum beeinflusst die Schichtdicke das Ergebnis so stark?",
+      "answer": "Weil der Verbrauch pro 1 mm mit der geplanten Dicke multipliziert wird. Jeder zusätzliche Millimeter erhöht die Menge über die gesamte Fläche."
     },
     {
-      "question": "Warum sollte ich Verschnitt einplanen?",
-      "answer": "Verschnitt berücksichtigt Mischverluste, Unebenheiten an Wand oder Boden und kleine Unterschiede bei der Verarbeitung. So vermeidest du zu wenig Material."
+      "question": "Was mache ich, wenn das Datenblatt den Verbrauch nur pro m² angibt?",
+      "answer": "Dann verwende den vom Hersteller angegebenen Wert in der passenden Einheit und vermeide eine doppelte Umrechnung. Ist der Wert pro Millimeter angegeben, bleibt die Schichtdicke der eigentliche Multiplikator."
     },
     {
-      "question": "Sollte ich Säcke aufrunden?",
-      "answer": "Ja. Säcke immer auf die nächste ganze Zahl aufrunden, da man keine Teilmengen kaufen kann."
+      "question": "Muss ich das exakte Sackgewicht eingeben?",
+      "answer": "Ja. Ein 20-kg-Sack und ein 25-kg-Sack ergeben unterschiedliche Stückzahlen, deshalb sollte das reale Verpackungsgewicht verwendet werden."
+    },
+    {
+      "question": "Warum wird die Sackzahl aufgerundet?",
+      "answer": "Weil Kleber nur in ganzen Säcken verkauft wird. Abrunden kann dazu führen, dass am Ende Material fehlt."
+    },
+    {
+      "question": "Welche Eingabefehler machen den Bedarf zu klein?",
+      "answer": "Typisch sind falsche Flächeneinheiten, kein Verschnitt, eine zu geringe Schichtdicke oder der Verbrauchswert eines anderen Produktes."
     }
   ],
-  "uiLabels": {
-    "copy": "Kopieren",
-    "copied": "Kopiert",
-    "input": "Eingabe",
-    "output": "Ausgabe",
-    "placeholder": "Wert eingeben",
-    "indent": "Einzug",
-    "removeComments": "Kommentare entfernen",
-    "preview": "Vorschau",
-    "source": "Quelle",
-    "sanitizedHtml": "Bereinigtes HTML",
-    "plainText": "Klartext",
-    "summary": "Zusammenfassung",
-    "total": "Gesamt",
-    "links": "Links",
-    "images": "Bilder",
-    "errors": "Fehler",
-    "warnings": "Warnungen",
-    "valid": "Gultig",
-    "invalid": "Ungultig",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Ziel",
-    "alt": "Alt",
-    "width": "Breite",
-    "height": "Hoehe",
-    "empty": "Leer",
-    "outputReady": "Ergebnis bereit",
-    "cleanedHtml": "Bereinigtes HTML",
-    "formattedHtml": "Formatiertes HTML",
-    "minifiedHtml": "Minifiziertes HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extrahierte Bilder",
-    "extractedLinks": "Extrahierte Links",
-    "validationSummary": "Validierungszusammenfassung",
-    "prettyHtml": "Lesbares HTML",
-    "encodedText": "Kodierter Text",
-    "file": "Datei",
-    "size": "Groesse",
-    "format": "Format",
-    "quality": "Qualitaet",
-    "colorOne": "Farbe 1",
-    "colorTwo": "Farbe 2",
-    "background": "Hintergrund",
-    "foreground": "Vordergrund",
-    "angle": "Winkel",
-    "margin": "Rand",
-    "level": "Stufe",
-    "gradientType": "Verlaufsart",
-    "linear": "Linear",
-    "radial": "Radial",
-    "blur": "Unschärfe",
-    "spread": "Ausbreitung",
-    "offsetX": "X-Versatz",
-    "offsetY": "Y-Versatz",
-    "opacity": "Deckkraft",
-    "inset": "Innen",
-    "cssCode": "CSS-Code",
-    "snippet": "Ausschnitt",
-    "download": "Herunterladen",
-    "downloadSvg": "SVG herunterladen",
-    "downloadPng": "PNG herunterladen",
-    "downloadAll": "Alles herunterladen",
-    "upload": "Hochladen",
-    "title": "Titel",
-    "description": "Beschreibung",
-    "canonicalUrl": "Kanonische URL",
-    "siteName": "Seitenname",
-    "ogImage": "OG-Bild",
-    "clear": "Leeren",
-    "generatedQr": "Generierter QR-Code",
-    "placeholderImage": "Platzhalterbild",
-    "faviconSet": "Favicon-Set",
-    "keepAspectRatio": "Seitenverhältnis beibehalten",
-    "cropX": "Zuschneiden X",
-    "cropY": "Zuschneiden Y",
-    "cropWidth": "Zuschneiderbreite",
-    "cropHeight": "Zuschneiderhoehe",
-    "originalSize": "Originalgroesse",
-    "outputSize": "Ausgabegroesse",
-    "savedSize": "Gesparte Groesse",
-    "result": "Ergebnis",
-    "base64": "Base64",
-    "mimeType": "MIME-Typ",
-    "resizedImage": "Skaliertes Bild",
-    "compressedImage": "Komprimiertes Bild",
-    "croppedImage": "Zugeschnittenes Bild",
-    "convertedImage": "Konvertiertes Bild",
-    "decodedImage": "Dekodiertes Bild",
-    "imagePreview": "Bildvorschau",
-    "camera": "Kamera",
-    "lens": "Objektiv",
-    "dateTaken": "Aufnahmedatum",
-    "resolution": "Aufloesung",
-    "fileSize": "Dateigroesse",
-    "iso": "ISO",
-    "exposure": "Belichtung",
-    "aperture": "Blende",
-    "focalLength": "Brennweite",
-    "flash": "Blitz",
-    "orientation": "Ausrichtung",
-    "latitude": "Breitengrad",
-    "longitude": "Laengengrad",
-    "openMap": "Karte oeffnen",
-    "rawMetadata": "Rohe Metadaten",
-    "noMetadataFound": "Keine Metadaten gefunden",
-    "gpsLocation": "GPS-Standort",
-    "metadataSummary": "Metadaten-Zusammenfassung"
-  },
   "seo": {
     "title": "Fliesenkleber-Rechner",
-    "description": "Berechne, wie viele kg und Säcke Fliesenkleber du brauchst. Ermittle den Bedarf ohne Verschnitt, mit Verschnitt und die Sackanzahl anhand von Fläche, Verbrauch, Schichtdicke und Sackgewicht.",
+    "description": "Berechne den Fliesenkleberbedarf in kg und Säcken mit Fläche, Verbrauch pro mm, Schichtdicke, Verschnitt und Sackgewicht.",
     "keywords": [
       "Fliesenkleber-Rechner",
       "Fliesenkleber berechnen",
-      "Säcke Fliesenkleber",
       "kg Fliesenkleber",
-      "Kleberbedarf Fliesen",
-      "Materialrechner Fliesen"
+      "Säcke Fliesenkleber",
+      "Kleberbedarf Fliesen"
     ]
   }
 }

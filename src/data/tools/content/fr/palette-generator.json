@@ -1,0 +1,84 @@
+{
+  "toolId": "palette-generator",
+  "locale": "fr",
+  "slug": "palette-generator",
+  "h1": "Générateur de palette",
+  "title": "Générateur de palette",
+  "shortDescription": "Créer des ensembles de couleurs cohérents à partir d’une couleur de base pour interfaces, branding et concepts.",
+  "metaTitle": "Générateur de palette | Couleurs",
+  "metaDescription": "Créer des ensembles de couleurs cohérents à partir d’une couleur de base pour branding, interfaces, thèmes et maquettes.",
+  "intro": "Transformez une couleur de départ en une série de teintes, nuances et accents liés en quelques secondes.",
+  "overview": "Cet outil vous aide à faire passer une couleur unique vers un ensemble structuré de couleurs associées. Il devient alors plus simple de construire une interface avec des surfaces, des états et des accents cohérents sans devoir deviner chaque étape.\n\nIl est aussi utile quand vous cherchez une direction visuelle précoce pour une marque, une landing page ou un concept produit. Au lieu de travailler avec une seule couleur isolée, vous obtenez une petite famille chromatique pour les titres, les fonds, les surlignages et les interactions.\n\nServez-vous des valeurs générées comme base, puis ajustez-les dans votre fichier de conception ou dans votre code si vous avez besoin de plus de contraste, de tons neutres plus chauds ou d’un rendu plus discret.",
+  "howItWorks": [
+    "Choisissez une couleur de base qui sert de point de départ.",
+    "Définissez le nombre de couleurs associées souhaitées.",
+    "Examinez les échantillons et copiez les valeurs dans votre design ou votre code."
+  ],
+  "useCases": [
+    {
+      "title": "Échelle de couleurs pour interface",
+      "description": "Construisez des tons pour boutons, panneaux, états au survol et fonds discrets à partir d’une couleur centrale."
+    },
+    {
+      "title": "Direction de landing page",
+      "description": "Testez un hero, une couleur d’accent et des sections de soutien avec une famille chromatique cohérente avant de finaliser la mise en page."
+    },
+    {
+      "title": "Brouillon de design system",
+      "description": "Créez des jetons de départ pour les couleurs primary, secondary, surface et emphasis lors de la définition d’un nouveau thème."
+    },
+    {
+      "title": "Planche de marque",
+      "description": "Développez une couleur signature en une palette exploitable pour présentations, moodboards et esquisses d’identité."
+    }
+  ],
+  "examples": [
+    {
+      "title": "Palette pour tableau de bord SaaS",
+      "input": "Couleur de base : #1F7A8C, 7 échantillons",
+      "output": "Un ensemble équilibré avec des fonds turquoise très clairs, des accents UI de ton moyen et une teinte sombre d’ancrage",
+      "description": "Convient aux menus, graphiques et indicateurs d’état."
+    },
+    {
+      "title": "Landing page éditoriale",
+      "input": "Couleur de base : corail chaud, 5 échantillons",
+      "output": "Des nuances pêche douces, un corail central plus soutenu et une teinte plus sombre pour l’emphase",
+      "description": "Utile quand la page doit rester chaleureuse sans être criarde."
+    },
+    {
+      "title": "Moodboard de lancement produit",
+      "input": "Couleur de base : violet profond, 9 échantillons",
+      "output": "Plusieurs étapes allant d’un prune presque noir à une lavande claire",
+      "description": "Offre assez de variation pour les cartes, séparateurs de section et encarts produit."
+    }
+  ],
+  "faq": [
+    {
+      "question": "La palette garde-t-elle toujours la même ambiance que la couleur de base ?",
+      "answer": "La palette reste liée à la couleur de départ, mais les étapes claires et foncées peuvent paraître plus neutres ou plus intenses selon leur distance. Si vous cherchez une ambiance précise, gardez seulement les teintes qui s’en rapprochent le plus."
+    },
+    {
+      "question": "Puis-je utiliser les résultats directement dans le code ?",
+      "answer": "Oui. Les valeurs générées sont prévues pour être copiées dans des styles, des jetons ou des fichiers de thème. Si votre projet impose des noms spécifiques, renommez-les avant l’intégration."
+    },
+    {
+      "question": "Que faire si un échantillon est trop clair pour du texte ou des boutons ?",
+      "answer": "Cet échantillon convient souvent mieux à un fond ou à une bordure. Pour le texte et les éléments interactifs, choisissez une teinte plus profonde dans la même palette."
+    },
+    {
+      "question": "Une palette plus grande est-elle toujours meilleure ?",
+      "answer": "Pas forcément. Plus d’échantillons donnent davantage de choix, mais rendent parfois l’ensemble moins cohérent. Pour un produit, il est souvent plus simple de partir avec moins de tons et d’ajouter seulement ceux dont vous avez vraiment besoin."
+    }
+  ],
+  "seo": {
+    "title": "Générateur de palette | Couleurs",
+    "description": "Créer des ensembles de couleurs cohérents à partir d’une couleur de base pour branding, interfaces, thèmes et maquettes.",
+    "keywords": [
+      "générateur de palette",
+      "palette de couleurs",
+      "générateur de couleurs",
+      "palette ui",
+      "palette de marque"
+    ]
+  }
+}

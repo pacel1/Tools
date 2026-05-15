@@ -4,105 +4,87 @@
   "slug": "markdown-a-html",
   "h1": "Markdown a HTML",
   "title": "Convertidor de Markdown a HTML",
-  "shortDescription": "Convierte Markdown en HTML limpio y seguro al instante en tu navegador.",
-  "metaTitle": "Convertidor de Markdown a HTML | Convierte Markdown online",
-  "metaDescription": "Convierte Markdown a HTML limpio en tu navegador con resultado instantáneo, sin subir archivos y con procesamiento seguro.",
-  "intro": "Convierte Markdown en HTML limpio y seguro directamente en el navegador. Pega tu texto, revisa el resultado al instante y copia el HTML listo para usar.",
-  "overview": "Esta herramienta convierte sintaxis Markdown habitual a HTML desde el navegador, sin enviar contenido a ningún servidor. Es ideal para redactores, desarrolladores y editores que necesitan un resultado rápido con limpieza básica para reducir riesgos de XSS y mantener un formato consistente.",
+  "shortDescription": "Convierte Markdown en HTML limpio dentro del navegador.",
+  "metaTitle": "Convertidor de Markdown a HTML",
+  "metaDescription": "Convierte Markdown en HTML limpio dentro del navegador, sin subir contenido y con resultado inmediato.",
+  "intro": "Pega Markdown y obtén HTML listo para usar en el navegador al instante.",
+  "overview": "Esta herramienta convierte encabezados, listas, enlaces, énfasis, citas y código de Markdown a HTML estructurado sin enviar el contenido a un servidor. El resultado se limpia para que puedas revisar la estructura y reutilizarlo en documentación, sistemas de contenido o pantallas de aplicación con menos trabajo manual.\n\nEs útil cuando necesitas HTML predecible a partir de texto escrito a mano o exportado desde otro editor. Todo el proceso ocurre localmente en el navegador y te ayuda a evitar pegar Markdown sin procesar en sitios que solo aceptan HTML.\n\nAntes de copiar, revisa la vista previa para comprobar sangrías, saltos de línea y atributos de enlaces. Si tu fuente incluye HTML crudo, construcciones no admitidas o Markdown mal formado, comprueba la salida con atención porque la herramienta solo puede representar lo que interpreta de forma segura.",
   "howItWorks": [
-    "Pega o escribe tu Markdown en el campo de entrada.",
-    "La herramienta analiza títulos, listas, enlaces, énfasis, código y otros elementos comunes de Markdown.",
-    "El HTML no seguro o no compatible se sanea para mejorar la protección.",
-    "Revisa el HTML generado en la vista previa o en el panel de salida.",
-    "Copia el HTML saneado y úsalo en tu web, CMS o aplicación."
+    "Escribe o pega tu Markdown en el campo de entrada.",
+    "El analizador convierte bloques y formato en línea habituales a etiquetas HTML.",
+    "El marcado inseguro o no compatible se elimina o normaliza al generar la salida.",
+    "Revisa la vista previa de HTML o la vista de código para verificar la estructura y los enlaces.",
+    "Copia el HTML final y pégalo en tu CMS, editor o base de código."
   ],
   "useCases": [
-    "Convertir contenido README en HTML para documentación.",
-    "Preparar artículos de blog o base de conocimientos para un CMS que acepta HTML.",
-    "Previsualizar rápidamente cómo se verá el Markdown antes de publicar.",
-    "Sanear Markdown enviado por usuarios en un flujo client-side.",
-    "Transformar notas, borradores o fragmentos en HTML reutilizable."
+    {
+      "title": "Publicar un README técnico como HTML",
+      "description": "Convierte un README de repositorio en HTML para una página de documentación, una base de conocimiento o ayuda del producto sin reescribir el contenido a mano."
+    },
+    {
+      "title": "Preparar contenido para un CMS sin Markdown",
+      "description": "Transforma un borrador en Markdown a HTML cuando el sistema de destino acepta texto enriquecido o marcado crudo."
+    },
+    {
+      "title": "Revisar la estructura antes de publicar",
+      "description": "Comprueba el orden de encabezados, listas anidadas, citas y código en línea antes de publicar el material."
+    },
+    {
+      "title": "Limpiar Markdown de usuarios para almacenarlo",
+      "description": "Procesa Markdown enviado por usuarios en HTML saneado antes de guardarlo para mostrarlo más tarde en una app o panel admin."
+    },
+    {
+      "title": "Reutilizar notas en otra interfaz",
+      "description": "Convierte notas de reuniones, tareas o planes de lanzamiento en fragmentos HTML reutilizables para herramientas internas o paneles."
+    }
   ],
   "examples": [
     {
-      "title": "Markdown básico",
-      "input": "# Hola\\n\\nEsto es **negrita** y esto es un [enlace](https://example.com).",
-      "output": "<h1>Hola</h1><p>Esto es <strong>negrita</strong> y esto es un <a href=\"https://example.com\">enlace</a>.</p>",
-      "description": "Un ejemplo simple de título, párrafo, énfasis y enlace."
+      "title": "Encabezado, párrafo y enlace",
+      "input": "# Actualización del proyecto\n\nHemos corregido el error de **inicio de sesión** y lo documentamos en [notas de lanzamiento](https://example.com/releases).",
+      "output": "<h1>Actualización del proyecto</h1><p>Hemos corregido el error de <strong>inicio de sesión</strong> y lo documentamos en <a href=\"https://example.com/releases\">notas de lanzamiento</a>.</p>",
+      "description": "Muestra un título, texto en negrita y un enlace estándar en un solo ejemplo."
     },
     {
-      "title": "Lista y código",
-      "input": "- Elemento uno\\n- Elemento dos\\n\\n`npm install`",
-      "output": "<ul><li>Elemento uno</li><li>Elemento dos</li></ul><p><code>npm install</code></p>",
-      "description": "Conversión típica de lista y código en línea."
+      "title": "Cita y código",
+      "input": "> Revisa primero la configuración.\n\n`npm run build`",
+      "output": "<blockquote><p>Revisa primero la configuración.</p></blockquote><p><code>npm run build</code></p>",
+      "description": "Una cita y una línea de código convertidas en elementos HTML."
+    },
+    {
+      "title": "Lista anidada y énfasis",
+      "input": "- Borrador\n  - Esquema\n  - Fuentes\n- Revisión final\n\nRecuerda **comprobar las fechas**.",
+      "output": "<ul><li>Borrador<ul><li>Esquema</li><li>Fuentes</li></ul></li><li>Revisión final</li></ul><p>Recuerda <strong>comprobar las fechas</strong>.</p>",
+      "description": "Demuestra anidación y énfasis en el texto que deben conservarse."
     }
   ],
   "faq": [
     {
-      "question": "¿La conversión se realiza en el navegador?",
-      "answer": "Sí. La herramienta funciona del lado del cliente, así que el Markdown se convierte localmente en tu navegador."
+      "question": "¿Qué pasa si mi Markdown incluye HTML crudo?",
+      "answer": "El convertidor puede conservar solo el marcado seguro y compatible, y eliminar o normalizar fragmentos de riesgo. Si tu fuente depende de HTML personalizado, revisa el resultado con cuidado antes de reutilizarlo."
     },
     {
-      "question": "¿El resultado está saneado?",
-      "answer": "Sí. El HTML generado se sanea para ayudar a reducir markup inseguro y riesgos de XSS."
+      "question": "¿Por qué mis saltos de línea no coinciden exactamente con el origen?",
+      "answer": "Markdown trata algunos saltos como ajuste suave y otros como separadores de párrafo. Si necesitas un salto visible, usa la sintaxis de salto de línea duro."
     },
     {
-      "question": "¿Admite todas las funciones de Markdown?",
-      "answer": "Admite la sintaxis Markdown más común. La compatibilidad exacta depende del renderizador usado en el navegador."
+      "question": "¿La herramienta conserva los destinos y atributos de los enlaces?",
+      "answer": "Conserva las URLs estándar, pero los atributos no compatibles o inseguros se eliminan. Revisa los enlaces que deban abrirse en una pestaña nueva después de convertir."
     },
     {
-      "question": "¿Puedo copiar el resultado HTML?",
-      "answer": "Sí. Puedes copiar el HTML saneado y pegarlo en tu proyecto o CMS."
+      "question": "¿Puedo pegar Markdown con tablas o listas de tareas?",
+      "answer": "Si esas construcciones son compatibles con el analizador, se renderizarán; si no, pueden quedar como texto simple o HTML más básico. Conviene probar la salida cuando la estructura importa."
     }
   ],
-  "uiLabels": {
-    "copy": "Copiar",
-    "copied": "Copiado",
-    "input": "Entrada",
-    "output": "Salida",
-    "placeholder": "Pega Markdown aquí...",
-    "indent": "Sangrar",
-    "removeComments": "Eliminar comentarios",
-    "preview": "Vista previa",
-    "source": "Fuente",
-    "sanitizedHtml": "HTML saneado",
-    "plainText": "Texto plano",
-    "summary": "Resumen",
-    "total": "Total",
-    "links": "Enlaces",
-    "images": "Imágenes",
-    "errors": "Errores",
-    "warnings": "Avisos",
-    "valid": "Válido",
-    "invalid": "Inválido",
-    "href": "Href",
-    "text": "Texto",
-    "rel": "Rel",
-    "target": "Destino",
-    "alt": "Alt",
-    "width": "Ancho",
-    "height": "Alto",
-    "empty": "Vacío",
-    "outputReady": "Salida lista",
-    "cleanedHtml": "HTML limpio",
-    "formattedHtml": "HTML formateado",
-    "minifiedHtml": "HTML minificado",
-    "markdown": "Markdown",
-    "extractedImages": "Imágenes extraídas",
-    "extractedLinks": "Enlaces extraídos",
-    "validationSummary": "Resumen de validación",
-    "prettyHtml": "HTML legible",
-    "encodedText": "Texto codificado"
-  },
   "seo": {
     "title": "Convertidor de Markdown a HTML",
-    "description": "Convierte Markdown a HTML saneado en tu navegador con resultado instantáneo y procesamiento seguro del lado del cliente.",
+    "description": "Convierte Markdown en HTML limpio dentro del navegador, sin subir contenido y con resultado inmediato.",
     "keywords": [
       "markdown a html",
       "convertidor markdown",
-      "sanear html",
-      "markdown a html online",
-      "markdown html navegador"
+      "convertir markdown a html",
+      "markdown html navegador",
+      "html limpio"
     ]
   }
 }

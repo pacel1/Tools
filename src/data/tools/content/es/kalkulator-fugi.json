@@ -4,175 +4,87 @@
   "slug": "calculadora-de-lechada",
   "h1": "Calculadora de lechada",
   "title": "Calculadora de lechada",
-  "shortDescription": "Calcula cuánta lechada necesitas para baldosas según el tamaño de la baldosa, el ancho de la junta y la superficie.",
-  "metaTitle": "Calculadora de lechada - calcula cuánta lechada necesitas",
-  "metaDescription": "Calcula el consumo de lechada para baldosas. Introduce superficie, tamaño de la baldosa, ancho y profundidad de la junta, densidad de la lechada, porcentaje de desperdicio y peso del saco.",
-  "intro": "Usa esta calculadora de lechada para estimar cuánta lechada necesitas en tu proyecto de alicatado. Ofrece un resultado práctico para planificación según las dimensiones de las baldosas, el tamaño de la junta, la superficie y el margen de desperdicio.",
-  "overview": "Esta herramienta te ayuda a saber cuánta lechada necesitas. Introduce la superficie en m2, el ancho y alto de la baldosa en cm, el ancho y la profundidad de la junta en mm, la densidad de la lechada, el porcentaje de desperdicio y el peso del saco. La calculadora devuelve una estimación en kilogramos y el número de sacos a comprar. Está pensada como una estimación de planificación para compras y preparación de material.",
+  "shortDescription": "Calcula la lechada necesaria para baldosas a partir de la superficie, el tamaño de la baldosa, la junta y el peso del saco.",
+  "metaTitle": "Calculadora de lechada para baldosas",
+  "metaDescription": "Calcula la lechada necesaria en kg y sacos usando superficie, tamaño de baldosa, ancho y profundidad de junta, desperdicio y peso del envase.",
+  "intro": "Introduce la superficie, el tamaño de la baldosa, el ancho y la profundidad de la junta, el desperdicio y el peso del saco para estimar la lechada en kg y sacos.",
+  "overview": "Esta calculadora sirve para planificar la cantidad de lechada en trabajos de alicatado. Tiene en cuenta la superficie, las medidas de la baldosa, el ancho de la junta, la profundidad de la junta, la densidad de la lechada, el margen por desperdicio y el peso del envase que vas a comprar.\n\nEl resultado te ayuda a preparar el pedido antes de empezar la obra y a decidir cuántos sacos necesitas. Es útil cuando cambian los formatos de baldosa, cuando las juntas son más anchas de lo habitual o cuando quieres evitar quedarte corto durante la instalación.\n\nConviene introducir medidas reales del proyecto, no valores aproximados de catálogo. Las baldosas biseladas, los soportes irregulares y las juntas muy profundas pueden hacer que el consumo real sea algo mayor que la estimación.",
   "howItWorks": [
-    "Introduce el área total alicatada en m2.",
+    "Introduce la superficie total a alicatar en m2.",
     "Añade el ancho y el alto de la baldosa en cm.",
     "Define el ancho y la profundidad de la junta en mm.",
-    "Selecciona la densidad de la lechada, el desperdicio y el peso del saco.",
-    "Obtén la cantidad estimada de lechada en kg y los sacos necesarios."
+    "Selecciona densidad, desperdicio y peso del saco.",
+    "Consulta la cantidad estimada en kg y el número de sacos."
   ],
   "useCases": [
-    "Planificar la compra de lechada para un baño, cocina o pasillo.",
-    "Estimar materiales antes de pedir baldosas y accesorios.",
-    "Comprobar cuánta lechada comprar para una reforma o reparación.",
-    "Comparar el consumo entre distintos tamaños de baldosa y juntas."
+    {
+      "title": "Suelo de baño con baldosa porcelánica",
+      "description": "Calcular la lechada para un baño pequeño con juntas finas y formato medio."
+    },
+    {
+      "title": "Revestimiento de cocina",
+      "description": "Estimar la cantidad para un frente de cocina o un paño completo de pared."
+    },
+    {
+      "title": "Reparación parcial del pavimento",
+      "description": "Saber cuánto material comprar para reemplazar una zona pequeña sin excederse."
+    },
+    {
+      "title": "Comparar formatos de baldosa",
+      "description": "Ver cómo cambia el consumo al pasar de piezas pequeñas a formatos grandes."
+    }
   ],
   "examples": [
     {
-      "title": "Planificación rápida para el suelo de un baño",
-      "input": "Área 12 m2, baldosa 30x60 cm, junta 2 mm, profundidad 8 mm, desperdicio 10%, saco 5 kg",
-      "output": "Estimación de lechada en kg y sacos necesarios para comprar.",
-      "description": "Un caso típico para quien se pregunta cuánta lechada necesito antes de comprar."
+      "title": "Suelo de baño pequeño",
+      "input": "Superficie 12 m2, baldosa 30x60 cm, junta 2 mm, profundidad 8 mm, desperdicio 10%, saco 5 kg",
+      "output": "Cantidad estimada de lechada en kg y sacos de 5 kg necesarios.",
+      "description": "Un caso habitual para un baño con baldosa de formato medio."
     },
     {
-      "title": "Estimación para azulejos de pared",
-      "input": "Área 18 m2, baldosa 20x20 cm, junta 3 mm, profundidad 10 mm, desperdicio 12%, saco 2 kg",
-      "output": "Una estimación práctica para evitar comprar demasiada o muy poca lechada.",
-      "description": "Útil para baldosas de formato pequeño con juntas más anchas."
+      "title": "Salpicadero de cocina",
+      "input": "Superficie 7,5 m2, baldosa 10x10 cm, junta 3 mm, profundidad 6 mm, desperdicio 8%, saco 2 kg",
+      "output": "Consumo estimado y número de sacos redondeado hacia arriba.",
+      "description": "Las baldosas pequeñas generan más junta por metro cuadrado y elevan el consumo."
+    },
+    {
+      "title": "Arreglo de una zona del suelo",
+      "input": "Superficie 4,2 m2, baldosa 20x20 cm, junta 4 mm, profundidad 10 mm, desperdicio 12%, saco 1 kg",
+      "output": "Lechada estimada y número de paquetes pequeños necesarios.",
+      "description": "Útil para reparaciones puntuales donde interesa comprar solo lo necesario."
     }
   ],
   "faq": [
     {
-      "question": "¿Esta calculadora de lechada es exacta?",
-      "answer": "Es una estimación simplificada de planificación, no un valor de consumo de laboratorio. El uso real puede variar según el perfil de la baldosa, el diseño y la aplicación."
+      "question": "¿La calculadora tiene en cuenta todos los tipos de baldosa?",
+      "answer": "Usa las medidas y la junta, pero no distingue cada acabado. Las baldosas con bisel, relieves o cantos irregulares pueden aumentar el consumo real."
     },
     {
-      "question": "¿Por qué necesito la profundidad de la junta?",
-      "answer": "La profundidad de la junta afecta al volumen a rellenar, así que las juntas más profundas suelen requerir más lechada."
+      "question": "¿Qué significa la profundidad de junta?",
+      "answer": "Es el fondo que se rellena entre baldosas. Cuanto mayor sea, más material se necesita para completar el volumen."
     },
     {
-      "question": "¿La calculadora incluye desperdicio?",
-      "answer": "Sí. Puedes indicar un porcentaje de desperdicio para considerar pérdidas al mezclar, derrames y superficies irregulares."
+      "question": "¿Debo introducir la superficie total de la habitación?",
+      "answer": "Introduce solo la zona que se va a alicatar. Conviene excluir huecos, interrupciones y áreas sin baldosa."
     },
     {
-      "question": "¿Cómo sé cuántos sacos comprar?",
-      "answer": "La calculadora convierte la cantidad total necesaria en número de sacos según el peso que introduzcas y redondea hacia arriba para la compra."
+      "question": "¿Por qué el número de sacos se redondea hacia arriba?",
+      "answer": "Porque se compran envases completos. Si el resultado queda cerca del siguiente saco, es mejor considerar una pequeña reserva."
+    },
+    {
+      "question": "¿Las juntas anchas cambian mucho el resultado?",
+      "answer": "Sí. A mayor ancho de junta, mayor volumen a rellenar. En piezas pequeñas la diferencia puede ser notable."
     }
   ],
-  "uiLabels": {
-    "copy": "Copiar",
-    "copied": "Copiado",
-    "input": "Entrada",
-    "output": "Salida",
-    "placeholder": "Introduce un valor",
-    "indent": "Sangría",
-    "removeComments": "Eliminar comentarios",
-    "preview": "Vista previa",
-    "source": "Fuente",
-    "sanitizedHtml": "HTML sanitizado",
-    "plainText": "Texto plano",
-    "summary": "Resumen",
-    "total": "Total",
-    "links": "Enlaces",
-    "images": "Imágenes",
-    "errors": "Errores",
-    "warnings": "Avisos",
-    "valid": "Válido",
-    "invalid": "No válido",
-    "href": "Href",
-    "text": "Texto",
-    "rel": "Rel",
-    "target": "Destino",
-    "alt": "Alt",
-    "width": "Ancho",
-    "height": "Alto",
-    "empty": "Vacío",
-    "outputReady": "Resultado listo",
-    "cleanedHtml": "HTML limpio",
-    "formattedHtml": "HTML formateado",
-    "minifiedHtml": "HTML minificado",
-    "markdown": "Markdown",
-    "extractedImages": "Imágenes extraídas",
-    "extractedLinks": "Enlaces extraídos",
-    "validationSummary": "Resumen de validación",
-    "prettyHtml": "HTML legible",
-    "encodedText": "Texto codificado",
-    "file": "Archivo",
-    "size": "Tamaño",
-    "format": "Formato",
-    "quality": "Calidad",
-    "colorOne": "Color 1",
-    "colorTwo": "Color 2",
-    "background": "Fondo",
-    "foreground": "Primer plano",
-    "angle": "Ángulo",
-    "margin": "Margen",
-    "level": "Nivel",
-    "gradientType": "Tipo de degradado",
-    "linear": "Lineal",
-    "radial": "Radial",
-    "blur": "Desenfoque",
-    "spread": "Extensión",
-    "offsetX": "Desplazamiento X",
-    "offsetY": "Desplazamiento Y",
-    "opacity": "Opacidad",
-    "inset": "Inset",
-    "cssCode": "Código CSS",
-    "snippet": "Fragmento",
-    "download": "Descargar",
-    "downloadSvg": "Descargar SVG",
-    "downloadPng": "Descargar PNG",
-    "downloadAll": "Descargar todo",
-    "upload": "Subir",
-    "title": "Título",
-    "description": "Descripción",
-    "canonicalUrl": "URL canónica",
-    "siteName": "Nombre del sitio",
-    "ogImage": "Imagen OG",
-    "clear": "Limpiar",
-    "generatedQr": "QR generado",
-    "placeholderImage": "Imagen de marcador",
-    "faviconSet": "Juego de favicon",
-    "keepAspectRatio": "Mantener proporción",
-    "cropX": "Recorte X",
-    "cropY": "Recorte Y",
-    "cropWidth": "Ancho del recorte",
-    "cropHeight": "Alto del recorte",
-    "originalSize": "Tamaño original",
-    "outputSize": "Tamaño de salida",
-    "savedSize": "Tamaño guardado",
-    "result": "Resultado",
-    "base64": "Base64",
-    "mimeType": "Tipo MIME",
-    "resizedImage": "Imagen redimensionada",
-    "compressedImage": "Imagen comprimida",
-    "croppedImage": "Imagen recortada",
-    "convertedImage": "Imagen convertida",
-    "decodedImage": "Imagen decodificada",
-    "imagePreview": "Vista previa de imagen",
-    "camera": "Cámara",
-    "lens": "Lente",
-    "dateTaken": "Fecha de captura",
-    "resolution": "Resolución",
-    "fileSize": "Tamaño del archivo",
-    "iso": "ISO",
-    "exposure": "Exposición",
-    "aperture": "Apertura",
-    "focalLength": "Distancia focal",
-    "flash": "Flash",
-    "orientation": "Orientación",
-    "latitude": "Latitud",
-    "longitude": "Longitud",
-    "openMap": "Abrir mapa",
-    "rawMetadata": "Metadatos en bruto",
-    "noMetadataFound": "No se encontraron metadatos",
-    "gpsLocation": "Ubicación GPS",
-    "metadataSummary": "Resumen de metadatos"
-  },
   "seo": {
     "title": "Calculadora de lechada",
-    "description": "Calcula cuánta lechada necesitas para baldosas en kg y sacos según superficie, tamaño de la baldosa, ancho de junta, profundidad de junta, desperdicio y peso del saco.",
+    "description": "Calcula la lechada necesaria en kg y sacos usando superficie, tamaño de baldosa, ancho y profundidad de junta, desperdicio y peso del envase.",
     "keywords": [
       "calculadora de lechada",
       "cuánta lechada necesito",
       "consumo de lechada",
       "lechada para baldosas",
-      "calculadora de baldosas"
+      "cálculo de juntas"
     ]
   }
 }

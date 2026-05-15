@@ -4,44 +4,80 @@
   "slug": "convertidor-de-kg-a-lbs",
   "h1": "Convertidor de kg a lbs",
   "title": "Convertidor de kg a lbs",
-  "shortDescription": "Convierte kilogramos a libras al instante con un resultado claro y legible para fitness, envíos y uso diario.",
-  "overview": "Este convertidor transforma valores de kilogramos a libras usando el factor estándar de 2.2046226218. La interfaz mantiene la calculadora visible sin desplazamiento para que el usuario convierta de inmediato, al mismo tiempo que ofrece contenido de apoyo indexable para los motores de búsqueda debajo.",
+  "shortDescription": "Pasa kilogramos a libras con decimales exactos y un resultado legible para envíos, entrenamiento y mediciones.",
+  "metaTitle": "Convertidor kg a lbs",
+  "metaDescription": "Pasa kilogramos a libras con decimales exactos, resultado redondeado y valores claros para envíos, entrenamiento y mediciones.",
+  "intro": "Escribe el valor en kilogramos y obtén su equivalente en libras al momento.",
+  "overview": "Este convertidor transforma kilogramos en libras usando el factor estándar 2.2046226218. Es útil cuando necesitas pasar un peso del sistema métrico al imperial para un albarán, una tabla de entrenamiento, una etiqueta de paquete o un apunte personal.\n\nTambién admite decimales, así que puedes convertir 0.75 kg, 3.25 kg o 18.5 kg sin redondear antes. El resultado se muestra como cifra exacta y como versión redondeada de lectura simple, para copiarlo fácilmente en formularios o cálculos posteriores.",
   "howItWorks": [
-    "Introduce un valor en kilogramos con decimales opcionales.",
+    "Introduce un valor en kilogramos, con decimales si hace falta.",
     "La herramienta valida el número y lo multiplica por el factor de conversión.",
-    "El resultado se muestra como un valor numérico preciso y una versión redondeada de lectura fácil."
+    "Recibes el valor en libras en formato preciso y en una versión redondeada."
+  ],
+  "useCases": [
+    {
+      "title": "Registro de peso corporal",
+      "description": "Convierte lecturas de báscula métricas a libras para diarios de seguimiento o consultas."
+    },
+    {
+      "title": "Etiquetas de envío",
+      "description": "Pasa el peso de un paquete a libras cuando el transportista pide unidades imperiales."
+    },
+    {
+      "title": "Cargas de entrenamiento",
+      "description": "Comprueba el peso de discos, mancuernas o máquinas cuando el plan está escrito en kilos."
+    },
+    {
+      "title": "Preparación de lotes",
+      "description": "Traduce el peso de materias primas para cocina o producción cuando el objetivo está en libras."
+    }
   ],
   "examples": [
     {
-      "title": "Planificación de gimnasio",
-      "input": "5 kg",
-      "output": "11.02 lb",
-      "description": "Útil al leer planes de entrenamiento que mezclan pesos métricos e imperiales."
+      "title": "Peso matinal",
+      "input": "72.4 kg",
+      "output": "159.61 lb",
+      "description": "Sirve para anotar un peso corporal en libras."
     },
     {
-      "title": "Estimación de paquete",
-      "input": "18.5 kg",
-      "output": "40.79 lb",
-      "description": "Práctico para formularios de envío y límites de transportistas en libras."
+      "title": "Paquete pequeño",
+      "input": "3.25 kg",
+      "output": "7.17 lb",
+      "description": "Útil para declarar un envío ligero en un formulario imperial."
+    },
+    {
+      "title": "Carga de barra",
+      "input": "20 kg",
+      "output": "44.09 lb",
+      "description": "Ayuda a comparar una carga métrica con una rutina en libras."
     }
   ],
   "faq": [
     {
-      "question": "¿Qué fórmula se utiliza?",
-      "answer": "El convertidor multiplica los kilogramos por 2.2046226218, que es el factor estándar de conversión de kilogramo a libra."
+      "question": "¿Qué factor de conversión usa?",
+      "answer": "Usa 2.2046226218 libras por kilogramo, que es el factor estándar de conversión."
     },
     {
-      "question": "¿Puedo convertir valores decimales?",
-      "answer": "Sí. El campo acepta números decimales, lo que lo hace práctico para peso corporal, peso de paquetes y cantidades de ingredientes."
+      "question": "¿Acepta decimales?",
+      "answer": "Sí. Puedes introducir valores como 0.5, 2.75 o 18.5 y se convertirán directamente."
+    },
+    {
+      "question": "¿Por qué el resultado visible puede ser distinto de la cifra exacta?",
+      "answer": "El cálculo conserva la precisión completa, pero la salida visible se redondea para que sea más fácil de leer y usar."
+    },
+    {
+      "question": "¿Qué error es más habitual al usar el resultado?",
+      "answer": "El más común es escribir libras en el campo de kilogramos o redondear demasiado pronto si necesitas un total exacto."
     }
   ],
   "seo": {
-    "title": "Convertidor de kg a lbs",
-    "description": "Convertidor gratuito de kg a lbs online con resultados instantáneos y ejemplos claros.",
+    "title": "Convertidor kg a lbs",
+    "description": "Pasa kilogramos a libras con decimales exactos, resultado redondeado y valores claros para envíos, entrenamiento y mediciones.",
     "keywords": [
       "kg a lbs",
       "kilogramos a libras",
-      "convertidor de peso"
+      "convertidor de peso",
+      "kg a lb"
     ]
   }
 }

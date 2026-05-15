@@ -4,177 +4,92 @@
   "slug": "tile-calculator",
   "h1": "Tile Calculator",
   "title": "Tile Calculator for Floors and Walls",
-  "shortDescription": "Calculate how many tiles and boxes you need for a floor or wall, including cuts and waste.",
-  "metaTitle": "Tile Calculator - How Many Tiles Do I Need?",
-  "metaDescription": "Use this tile calculator to estimate tile count, boxes needed, and area with waste for floors and walls.",
-  "intro": "Plan your tile purchase with a simple tile calculator. Enter the total area, tile size, waste percentage, and tiles per box to see how many tiles and boxes you need.",
-  "overview": "This tile calculator helps you estimate tile quantity for flooring and wall tiling projects. It converts tile dimensions from centimeters into square meters, adds your waste allowance for cuts and breakage, then rounds up to whole tiles and whole boxes. Use it to answer the common question: how many tiles do I need?",
+  "shortDescription": "Estimate how many tiles and boxes you need for a floor or wall, including cuts and spare material.",
+  "metaTitle": "Tile Calculator for Rooms",
+  "metaDescription": "Estimate tile counts, box quantities, and waste allowance for floors and walls before you buy.",
+  "intro": "Enter your area, tile size, waste allowance, and tiles per box to get the number of tiles and boxes you should buy.",
+  "overview": "This tile calculator converts the tile dimensions into area, adds the waste you set aside for cuts, edge pieces, and breakage, then rounds everything up to whole tiles and whole boxes. That makes it useful when you need a purchase figure for a bathroom wall, a kitchen floor, or a terrace with awkward cuts.\n\nIf your layout includes diagonal lines, niches, stair edges, or small offcuts around pipes and corners, the waste setting matters even more. The result shows the total coverage you should plan for, not just the visible surface area, so you can order with a realistic reserve and avoid stopping work mid-project because of missing material.",
   "howItWorks": [
-    "Enter the total area in square meters.",
-    "Add the tile width and height in centimeters.",
-    "Set the waste percentage for cuts and extra coverage.",
-    "Enter how many tiles come in one box.",
-    "Get the total tile count, boxes needed, and purchase area with waste."
+    "Enter the surface area in square meters.",
+    "Type the tile width and height in centimeters.",
+    "Set the waste percentage for cuts and breakage.",
+    "Add how many tiles are in one box.",
+    "Read the total tiles, boxes, and coverage to purchase."
   ],
   "useCases": [
-    "Estimating tiles for a bathroom wall.",
-    "Calculating floor tiles for a kitchen, hallway, or terrace.",
-    "Planning tile purchases before renovation.",
-    "Checking how many boxes to buy from a tile store.",
-    "Adding a waste margin for diagonal layouts or tricky cuts."
+    {
+      "title": "Bathroom wall layout",
+      "description": "Work out tiles for shower walls, vanity splash zones, and boxed-in pipe areas where many cuts are needed."
+    },
+    {
+      "title": "Kitchen floor order",
+      "description": "Estimate the exact quantity for a kitchen floor that includes a pantry corner, door recess, or appliance gaps."
+    },
+    {
+      "title": "Terrace purchase planning",
+      "description": "Plan tiles for an outdoor terrace and include extra material for edge trimming and weather-related breakage."
+    },
+    {
+      "title": "Box count check at the store",
+      "description": "Compare your required tile count with box size so you can buy full cartons instead of loose pieces."
+    },
+    {
+      "title": "Diagonal pattern planning",
+      "description": "Add a larger reserve when the installation uses a diagonal or herringbone layout with more offcuts."
+    }
   ],
   "examples": [
     {
-      "title": "Example calculation",
-      "input": "Area: 12 m², tile size: 30 x 60 cm, waste: 10%, tiles per box: 8",
-      "output": "Area with waste: 13.2 m². Tile count and boxes are rounded up to the next whole number.",
-      "description": "Useful for quickly estimating purchase quantities."
+      "title": "Bathroom wall estimate",
+      "input": "Area: 18 m², tile size: 25 x 40 cm, waste: 12%, tiles per box: 10",
+      "output": "Tile area: 0.10 m². Purchase area with waste: 20.16 m². Rounded up: 202 tiles, 21 boxes.",
+      "description": "Shows a realistic wall order with a higher reserve for cut pieces."
     },
     {
-      "title": "Formula",
-      "input": "Tile area = width × height / 10,000. Area with waste = area × (1 + waste/100). Tiles = ceil(area with waste / tile area). Boxes = ceil(tiles / tiles per box).",
-      "output": "All final quantities are rounded up.",
-      "description": "Clear calculation logic for shopping planning."
+      "title": "Kitchen floor with large-format tiles",
+      "input": "Area: 9.5 m², tile size: 60 x 60 cm, waste: 8%, tiles per box: 4",
+      "output": "Tile area: 0.36 m². Purchase area with waste: 10.26 m². Rounded up: 29 tiles, 8 boxes.",
+      "description": "Useful when the box count is driven by large tile size and rounding."
+    },
+    {
+      "title": "Terrace with many edge cuts",
+      "input": "Area: 27.4 m², tile size: 20 x 20 cm, waste: 15%, tiles per box: 25",
+      "output": "Tile area: 0.04 m². Purchase area with waste: 31.51 m². Rounded up: 788 tiles, 32 boxes.",
+      "description": "Illustrates how small tiles and a higher reserve affect the order size."
     }
   ],
   "faq": [
     {
-      "question": "How do I calculate how many tiles I need?",
-      "answer": "Measure the area in square meters, convert the tile size to square meters, add waste, then divide by tile area and round up."
+      "question": "Does the calculator use the visible room area or the total surface to be tiled?",
+      "answer": "Use the actual surface that will receive tiles. If there are openings, recesses, or built-in fixtures, subtract only the areas you truly will not tile."
     },
     {
-      "question": "Why should I add waste when buying tiles?",
-      "answer": "Waste covers cuts, breakage, pattern matching, and possible mistakes during installation."
+      "question": "Why can the box count look higher than expected?",
+      "answer": "Boxes are rounded up after the tile count is calculated. Even if you need only part of the last carton, you still have to buy the whole box."
     },
     {
-      "question": "Does this calculator work for walls and floors?",
-      "answer": "Yes. It works for any tiled surface as long as you know the total area and tile size."
+      "question": "What happens if my tile size is given in millimeters?",
+      "answer": "Convert it to centimeters first, or use the same unit consistently. If you mix units, the final quantity will be wrong."
     },
     {
-      "question": "Should I round up the tile count?",
-      "answer": "Yes. Always round up to whole tiles and whole boxes so you do not run short."
+      "question": "How much waste should I set for a simple straight layout?",
+      "answer": "Use a smaller reserve for uncomplicated layouts and a larger one when cuts, diagonal placement, or pattern matching increase offcuts."
+    },
+    {
+      "question": "Can I rely on the result when tiles are sold by square meter instead of by piece?",
+      "answer": "Yes. The calculator still helps because it gives the purchase area with waste. You can compare that number with the coverage shown on the packaging."
     }
   ],
-  "uiLabels": {
-    "copy": "Copy",
-    "copied": "Copied",
-    "input": "Input",
-    "output": "Output",
-    "placeholder": "Enter a value",
-    "indent": "Indent",
-    "removeComments": "Remove comments",
-    "preview": "Preview",
-    "source": "Source",
-    "sanitizedHtml": "Sanitized HTML",
-    "plainText": "Plain text",
-    "summary": "Summary",
-    "total": "Total",
-    "links": "Links",
-    "images": "Images",
-    "errors": "Errors",
-    "warnings": "Warnings",
-    "valid": "Valid",
-    "invalid": "Invalid",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Width",
-    "height": "Height",
-    "empty": "Empty",
-    "outputReady": "Output ready",
-    "cleanedHtml": "Cleaned HTML",
-    "formattedHtml": "Formatted HTML",
-    "minifiedHtml": "Minified HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extracted images",
-    "extractedLinks": "Extracted links",
-    "validationSummary": "Validation summary",
-    "prettyHtml": "Pretty HTML",
-    "encodedText": "Encoded text",
-    "file": "File",
-    "size": "Size",
-    "format": "Format",
-    "quality": "Quality",
-    "colorOne": "Color 1",
-    "colorTwo": "Color 2",
-    "background": "Background",
-    "foreground": "Foreground",
-    "angle": "Angle",
-    "margin": "Margin",
-    "level": "Level",
-    "gradientType": "Gradient type",
-    "linear": "Linear",
-    "radial": "Radial",
-    "blur": "Blur",
-    "spread": "Spread",
-    "offsetX": "Offset X",
-    "offsetY": "Offset Y",
-    "opacity": "Opacity",
-    "inset": "Inset",
-    "cssCode": "CSS code",
-    "snippet": "Snippet",
-    "download": "Download",
-    "downloadSvg": "Download SVG",
-    "downloadPng": "Download PNG",
-    "downloadAll": "Download all",
-    "upload": "Upload",
-    "title": "Title",
-    "description": "Description",
-    "canonicalUrl": "Canonical URL",
-    "siteName": "Site name",
-    "ogImage": "OG image",
-    "clear": "Clear",
-    "generatedQr": "Generated QR",
-    "placeholderImage": "Placeholder image",
-    "faviconSet": "Favicon set",
-    "keepAspectRatio": "Keep aspect ratio",
-    "cropX": "Crop X",
-    "cropY": "Crop Y",
-    "cropWidth": "Crop width",
-    "cropHeight": "Crop height",
-    "originalSize": "Original size",
-    "outputSize": "Output size",
-    "savedSize": "Saved size",
-    "result": "Result",
-    "base64": "Base64",
-    "mimeType": "MIME type",
-    "resizedImage": "Resized image",
-    "compressedImage": "Compressed image",
-    "croppedImage": "Cropped image",
-    "convertedImage": "Converted image",
-    "decodedImage": "Decoded image",
-    "imagePreview": "Image preview",
-    "camera": "Camera",
-    "lens": "Lens",
-    "dateTaken": "Date taken",
-    "resolution": "Resolution",
-    "fileSize": "File size",
-    "iso": "ISO",
-    "exposure": "Exposure",
-    "aperture": "Aperture",
-    "focalLength": "Focal length",
-    "flash": "Flash",
-    "orientation": "Orientation",
-    "latitude": "Latitude",
-    "longitude": "Longitude",
-    "openMap": "Open map",
-    "rawMetadata": "Raw metadata",
-    "noMetadataFound": "No metadata found",
-    "gpsLocation": "GPS location",
-    "metadataSummary": "Metadata summary"
-  },
   "seo": {
-    "title": "Tile Calculator - How Many Tiles Do I Need?",
-    "description": "Estimate tile count, boxes needed, and area with waste for floors and walls with this easy tile calculator.",
+    "title": "Tile Calculator for Rooms",
+    "description": "Estimate tile counts, box quantities, and waste allowance for floors and walls before you buy.",
     "keywords": [
       "tile calculator",
-      "how many tiles do i need",
       "tiles per box",
-      "floor tile calculator",
-      "wall tile calculator",
-      "tile waste calculator"
+      "floor tile estimate",
+      "wall tile estimate",
+      "tile waste allowance",
+      "tile quantity planner"
     ]
   }
 }

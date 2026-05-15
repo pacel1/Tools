@@ -4,177 +4,93 @@
   "slug": "bildmetadaten-leser",
   "h1": "Bildmetadaten-Reader",
   "title": "Bildmetadaten-Reader",
-  "shortDescription": "EXIF-Fotometadaten online auslesen, inklusive Kameradaten, Auflösung, Zeitstempel und GPS, falls vorhanden.",
-  "metaTitle": "Bildmetadaten-Reader online | EXIF-Fotos auslesen",
-  "metaDescription": "EXIF- und Fotometadaten online anzeigen. Kameramodell, Aufnahmedatum, Auflösung, GPS-Standort, Dateigröße und weitere Bilddetails sofort prüfen.",
-  "intro": "Lies Fotometadaten direkt im Browser online aus. Dieser EXIF-Reader zeigt Kameradaten, Aufnahmezeit, Auflösung, GPS-Koordinaten und weitere eingebettete Bildinformationen ohne Installation.",
-  "overview": "Nutze diesen Online-Bildmetadaten-Reader, um EXIF-Daten schnell und privat zu prüfen. Lade ein Bild hoch und sieh Kameramodell, Objektiv, Belichtungseinstellungen, Bildgröße, Aufnahmedatum und Standortdaten, wenn sie vorhanden sind. Die Verarbeitung läuft clientseitig und eignet sich für Fotografen, Editoren und alle, die Bilddetails vor dem Teilen oder Archivieren prüfen möchten.",
+  "shortDescription": "Lies EXIF-Daten eines Fotos aus, etwa Kamera, Aufnahmedatum, Auflösung und GPS, sofern sie im File gespeichert sind.",
+  "metaTitle": "Bildmetadaten-Reader",
+  "metaDescription": "EXIF-Daten von Fotos im Browser prüfen: Kameramodell, Aufnahmedatum, Auflösung, Dateigröße und GPS-Koordinaten direkt auslesen.",
+  "intro": "Öffne ein Bild und lies die eingebetteten Metadaten sofort aus: Kamera, Objektiv, Belichtung, Aufnahmedatum, Auflösung, Ausrichtung und GPS, falls die Datei sie enthält.",
+  "overview": "Dieses Tool zeigt die Informationen, die im Bildfile gespeichert sind, damit du nicht nur das Foto selbst, sondern auch seine technischen Angaben prüfen kannst. Sichtbar werden Kameramodell und Objektiv, Belichtungseinstellungen, Aufnahmezeit, Abmessungen, Format, Ausrichtung und, wenn vorhanden, Standortdaten.\n\nDas ist nützlich, um die Herkunft einer Datei zu prüfen, Aufnahmedaten nach einem Shooting zu vergleichen oder zu verstehen, warum ein Foto in manchen Programmen gedreht erscheint. Wenn Metadaten beim Export oder Teilen entfernt wurden, zeigt der Reader den fehlenden Zustand an, statt Werte zu raten.",
   "howItWorks": [
-    "Lade ein Foto von deinem Gerät hoch.",
-    "Das Tool liest EXIF und Metadaten direkt im Browser aus.",
-    "Prüfe Kamera, Datum, Auflösung, Ausrichtung und GPS.",
-    "Kopiere die Daten oder nutze sie zur Prüfung der Bildherkunft."
+    "Lade ein Bild von deinem Gerät hoch.",
+    "Der Reader analysiert die eingebetteten Metadaten im Browser.",
+    "Prüfe Kamera, Objektiv, Belichtung, Datum, Auflösung, Ausrichtung und GPS.",
+    "Kopiere die Daten oder nutze sie, bevor du das Bild bearbeitest, veröffentlichst oder archiviertst."
   ],
   "useCases": [
-    "Kameraeinstellungen eines Fotos prüfen.",
-    "Herausfinden, wann und wo ein Bild aufgenommen wurde.",
-    "Auflösung vor der Veröffentlichung kontrollieren.",
-    "Metadaten vor dem Entfernen zum Schutz der Privatsphäre prüfen.",
-    "Dateidetails für Bearbeitung oder Archivierung untersuchen."
+    {
+      "title": "Aufnahmeeinstellungen nachsehen",
+      "description": "Shutter, Blende, ISO und Brennweite auslesen, um ein Foto mit den tatsächlichen Kameraeinstellungen abzugleichen."
+    },
+    {
+      "title": "Standortdaten einer Aufnahme prüfen",
+      "description": "Kontrollieren, ob Breiten- und Längengrad vor dem Teilen eines Reise-, Event- oder Feldfotos gespeichert wurden."
+    },
+    {
+      "title": "Ausrichtung eines Bildes verstehen",
+      "description": "Erkennen, ob ein Foto per Orientierungs-Tag angezeigt wird oder bereits physisch gedreht gespeichert ist."
+    },
+    {
+      "title": "Dateien für ein Archiv sortieren",
+      "description": "Datum, Kameramodell und Größe prüfen, damit Bilder korrekt Projekten oder Ordnern zugeordnet werden können."
+    },
+    {
+      "title": "Nach einem Export vergleichen",
+      "description": "Sehen, welche Metadaten nach dem Speichern aus Editor, Messenger oder Konverter noch vorhanden sind."
+    }
   ],
   "examples": [
     {
-      "title": "Kamera-Check",
-      "input": "Lade ein JPEG vom Smartphone hoch",
-      "output": "Kameramodell, Belichtung, Blende, ISO und Brennweite werden angezeigt.",
-      "description": "Praktisch zur Auswertung der Aufnahmeparameter."
+      "title": "Portrait-Shooting prüfen",
+      "input": "Lade ein aus einer DSLR exportiertes 24-MP-JPEG hoch",
+      "output": "Kameramodell, Objektiv, 1/200 s, f/2.8, ISO 400, Brennweite und Bildabmessungen werden angezeigt.",
+      "description": "Hilfreich, um das Ergebnis mit den Aufnahmeparametern zu verknüpfen."
     },
     {
-      "title": "Standort abfragen",
-      "input": "Öffne ein Foto mit GPS-Tags",
-      "output": "Breiten- und Längengrad erscheinen, wenn sie in der Datei gespeichert sind.",
-      "description": "Nützlich für Reise- und Eventfotos."
+      "title": "Handyfoto mit Reisedaten",
+      "input": "Öffne eine HEIC-Datei, die auf einer Städtereise mit dem Smartphone gespeichert wurde",
+      "output": "Aufnahmedatum, Gerätemodell, Ausrichtung und GPS-Koordinaten erscheinen, falls sie gespeichert wurden.",
+      "description": "Nützlich, um Ort und Zeitpunkt einer Aufnahme zu bestätigen."
+    },
+    {
+      "title": "Über Messenger erneut gespeicherte Datei",
+      "input": "Lade ein JPEG, das nach dem Chatversand erneut gespeichert wurde",
+      "output": "Es bleiben eventuell nur Basisdaten übrig, während Kamera- und GPS-Felder leer sind.",
+      "description": "Zeigt, wie Versand und Komprimierung Metadaten entfernen können."
     }
   ],
   "faq": [
     {
-      "question": "Welche Metadaten kann das Tool lesen?",
-      "answer": "Es liest gängige EXIF-Felder wie Kameramodell, Aufnahmedatum, Auflösung, Ausrichtung, Belichtungseinstellungen, Dateigröße und GPS-Daten, sofern vorhanden."
+      "question": "Warum sehe ich weniger Felder als im Kameramenü?",
+      "answer": "Auslesbar ist nur, was tatsächlich in der Datei gespeichert wurde. Viele Kameraeinstellungen werden nie eingebettet oder nur teilweise abgelegt."
     },
     {
-      "question": "Funktioniert es im Browser?",
-      "answer": "Ja. Der Reader verarbeitet Bilder lokal im Browser für eine schnelle und private Metadatenprüfung."
+      "question": "Was passiert, wenn ein Bild EXIF und andere Metadaten-Blöcke hat?",
+      "answer": "Das Tool zeigt die verfügbaren Informationen zusammen an. Ist ein Block unvollständig, können andere eingebettete Daten trotzdem sichtbar bleiben."
     },
     {
-      "question": "Warum zeigen manche Fotos keine Metadaten?",
-      "answer": "Metadaten können von Kamera, App oder Export entfernt worden sein oder das Dateiformat enthält keine EXIF-Daten."
+      "question": "Ist das angezeigte Datum immer der echte Aufnahmezeitpunkt?",
+      "answer": "Nicht zwingend. In der Datei kann auch der Exportzeitpunkt, ein Bearbeitungszeitpunkt oder eine falsch eingestellte Kamerauhr stehen."
     },
     {
-      "question": "Kann ich in jedem Bild einen GPS-Standort finden?",
-      "answer": "Nein. GPS-Daten werden nur angezeigt, wenn sie in der Originaldatei gespeichert und später nicht entfernt wurden."
+      "question": "Warum ist GPS leer, obwohl das Foto mit dem Handy aufgenommen wurde?",
+      "answer": "Standortdienste waren möglicherweise deaktiviert, die Kamera-App hat keine Koordinaten gespeichert oder die Metadaten wurden beim Teilen entfernt."
+    },
+    {
+      "question": "Ändert die Ausrichtung die Pixel im Bild?",
+      "answer": "Nicht immer. Häufig nutzt ein Foto nur einen Orientierungs-Tag statt gedrehter Pixel, weshalb verschiedene Apps es unterschiedlich anzeigen können."
     }
   ],
-  "uiLabels": {
-    "copy": "Kopieren",
-    "copied": "Kopiert",
-    "input": "Eingabe",
-    "output": "Ausgabe",
-    "placeholder": "Bild hier ablegen oder Datei auswählen",
-    "indent": "Einrücken",
-    "removeComments": "Kommentare entfernen",
-    "preview": "Vorschau",
-    "source": "Quelle",
-    "sanitizedHtml": "Bereinigtes HTML",
-    "plainText": "Klartext",
-    "summary": "Zusammenfassung",
-    "total": "Gesamt",
-    "links": "Links",
-    "images": "Bilder",
-    "errors": "Fehler",
-    "warnings": "Warnungen",
-    "valid": "Gültig",
-    "invalid": "Ungültig",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Ziel",
-    "alt": "Alt",
-    "width": "Breite",
-    "height": "Höhe",
-    "empty": "Leer",
-    "outputReady": "Ausgabe bereit",
-    "cleanedHtml": "Bereinigtes HTML",
-    "formattedHtml": "Formatiertes HTML",
-    "minifiedHtml": "Minifiziertes HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extrahierte Bilder",
-    "extractedLinks": "Extrahierte Links",
-    "validationSummary": "Validierungsübersicht",
-    "prettyHtml": "Lesbares HTML",
-    "encodedText": "Kodierter Text",
-    "file": "Datei",
-    "size": "Größe",
-    "format": "Format",
-    "quality": "Qualität",
-    "colorOne": "Farbe 1",
-    "colorTwo": "Farbe 2",
-    "background": "Hintergrund",
-    "foreground": "Vordergrund",
-    "angle": "Winkel",
-    "margin": "Rand",
-    "level": "Stufe",
-    "gradientType": "Verlaufstyp",
-    "linear": "Linear",
-    "radial": "Radial",
-    "blur": "Unschärfe",
-    "spread": "Ausbreitung",
-    "offsetX": "Versatz X",
-    "offsetY": "Versatz Y",
-    "opacity": "Deckkraft",
-    "inset": "Innen",
-    "cssCode": "CSS-Code",
-    "snippet": "Snippet",
-    "download": "Herunterladen",
-    "downloadSvg": "SVG herunterladen",
-    "downloadPng": "PNG herunterladen",
-    "downloadAll": "Alle herunterladen",
-    "upload": "Hochladen",
-    "title": "Titel",
-    "description": "Beschreibung",
-    "canonicalUrl": "Kanonische URL",
-    "siteName": "Websitename",
-    "ogImage": "OG-Bild",
-    "clear": "Löschen",
-    "generatedQr": "QR-Code-Vorschau",
-    "placeholderImage": "Bildvorschau",
-    "faviconSet": "Favicon-Set",
-    "keepAspectRatio": "Seitenverhältnis beibehalten",
-    "cropX": "Zuschneiden X",
-    "cropY": "Zuschneiden Y",
-    "cropWidth": "Zuschneidebreite",
-    "cropHeight": "Zuschneidehöhe",
-    "originalSize": "Ursprüngliche Größe",
-    "outputSize": "Ausgabegröße",
-    "savedSize": "Gesparte Größe",
-    "result": "Ergebnis",
-    "base64": "Base64",
-    "mimeType": "MIME-Typ",
-    "resizedImage": "Verkleinertes Bild",
-    "compressedImage": "Komprimiertes Bild",
-    "croppedImage": "Zugeschnittenes Bild",
-    "convertedImage": "Konvertiertes Bild",
-    "decodedImage": "Dekodiertes Bild",
-    "imagePreview": "Bildvorschau",
-    "camera": "Kamera",
-    "lens": "Objektiv",
-    "dateTaken": "Aufnahmedatum",
-    "resolution": "Auflösung",
-    "fileSize": "Dateigröße",
-    "iso": "ISO",
-    "exposure": "Belichtung",
-    "aperture": "Blende",
-    "focalLength": "Brennweite",
-    "flash": "Blitz",
-    "orientation": "Ausrichtung",
-    "latitude": "Breitengrad",
-    "longitude": "Längengrad",
-    "openMap": "Karte öffnen",
-    "rawMetadata": "Rohmetadaten",
-    "noMetadataFound": "Keine Metadaten gefunden",
-    "gpsLocation": "GPS-Standort",
-    "metadataSummary": "Metadatenübersicht"
-  },
   "seo": {
-    "title": "Bildmetadaten-Reader online | EXIF-Fotos auslesen",
-    "description": "EXIF- und Fotometadaten online anzeigen. Kameramodell, Aufnahmedatum, Auflösung, GPS-Standort, Dateigröße und weitere Bilddetails sofort prüfen.",
+    "title": "Bildmetadaten-Reader",
+    "description": "EXIF-Daten von Fotos im Browser prüfen: Kameramodell, Aufnahmedatum, Auflösung, Dateigröße und GPS-Koordinaten direkt auslesen.",
     "keywords": [
       "Bildmetadaten-Reader",
       "EXIF-Reader",
       "Fotometadaten",
-      "EXIF online auslesen",
-      "Kamerametadaten",
+      "Kameradaten",
       "GPS-Bilddaten",
-      "Bilddetails"
+      "Bilddetails",
+      "Metadaten anzeigen",
+      "EXIF auslesen"
     ]
   }
 }

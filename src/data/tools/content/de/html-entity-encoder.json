@@ -4,97 +4,79 @@
   "slug": "html-entitaeten-encoder",
   "h1": "HTML-Entitäten-Encoder",
   "title": "HTML-Entitäten-Encoder",
-  "shortDescription": "Sonderzeichen und Symbole als HTML-Entitäten kodieren.",
-  "metaTitle": "HTML-Entitäten-Encoder | Text als HTML-Entitäten kodieren",
-  "metaDescription": "Wandle Sonderzeichen, Symbole und unsichere Zeichen direkt im Browser in HTML-Entitäten um.",
-  "intro": "Nutze diesen HTML-Entitäten-Encoder, um Sonderzeichen in sichere HTML-Entitäten für Webseiten, Vorlagen und Codeausschnitte umzuwandeln. Er läuft vollständig im Browser und hilft dabei, HTML-Interpretation zu vermeiden, wenn Rohtext angezeigt werden soll.",
-  "overview": "Der HTML-Entitäten-Encoder wandelt Zeichen wie <, >, &, Anführungszeichen und andere Symbole in die passenden HTML-Entitäten um. Das ist nützlich, wenn Text in HTML wörtlich angezeigt werden soll, ohne als Markup interpretiert zu werden. Das Tool arbeitet nur clientseitig, ist schnell und für sichere Textverarbeitung im Entwickleralltag gemacht.",
+  "shortDescription": "Reservierte Zeichen in HTML-Entitäten umwandeln und sicher darstellen.",
+  "metaTitle": "HTML-Entitäten-Encoder",
+  "metaDescription": "Wandle reservierte Zeichen, Anführungszeichen und Symbole in HTML-Entitäten für sichere HTML-Ausgabe im Browser oder Editor um.",
+  "intro": "Wandle Zeichen wie <, >, &, und Anführungszeichen in HTML-Entitäten um, damit sie in HTML als Text angezeigt werden.",
+  "overview": "Der HTML-Entitäten-Encoder verwandelt reservierte Zeichen und ausgewählte Symbole in ihre Entitätsform, sodass das Ergebnis in HTML eingefügt werden kann, ohne als Markup zu gelten. Das ist sinnvoll, wenn roher Text angezeigt, Codebeispiele erhalten oder Inhalte vorbereitet werden sollen, die sonst eine Seite beschädigen könnten.\n\nBesonders nützlich ist das bei Text aus Formularen, Dokumentationen, Vorlagen oder CMS-Feldern, der exakt so erscheinen soll, wie er eingegeben wurde. Das kodierte Ergebnis lässt sich in HTML, Snippets, E-Mails oder Quellbeispielen verwenden, in denen die wörtliche Darstellung zählt.",
   "howItWorks": [
-    "Text einfügen oder eingeben, der kodiert werden soll.",
-    "Das Tool wandelt reservierte Zeichen und Symbole in HTML-Entitäten um.",
-    "Das Ergebnis kopieren und in HTML, Vorlagen, Doku oder Codebeispielen verwenden."
+    "Text eingeben oder einfügen, der kodiert werden soll.",
+    "Das Tool ersetzt reservierte HTML-Zeichen und unterstützte Symbole durch Entitäten.",
+    "Das Ergebnis kopieren und in HTML, Vorlagen oder Codebeispielen verwenden."
   ],
   "useCases": [
-    "Text vor dem Einfügen in HTML-Inhalte absichern.",
-    "Codebeispiele für Dokumentationen vorbereiten.",
-    "Benutzereingaben in Vorschauen oder Vorlagen sicher anzeigen.",
-    "Sonderzeichen für CMS-Inhalte oder HTML-E-Mails kodieren.",
-    "Verhindern, dass Markup als Tags interpretiert wird."
+    {
+      "title": "Wörtlichen Text in HTML veröffentlichen",
+      "description": "Text mit spitzen Klammern oder Ampersand kodieren, bevor er auf eine Seite kommt, damit der Browser die Zeichen wörtlich anzeigt."
+    },
+    {
+      "title": "Codebeispiele für Dokus vorbereiten",
+      "description": "HTML- oder Vorlagenfragmente in Entitäten umwandeln, damit das Beispiel sichtbar bleibt und nicht ausgeführt wird."
+    },
+    {
+      "title": "Benutzereingaben in Vorschauen sicher anzeigen",
+      "description": "Namen, Kommentare oder Nachrichten exakt so darstellen, wie sie eingegeben wurden, wenn sie HTML-Strukturen verändern könnten."
+    },
+    {
+      "title": "CMS-Inhalte mit Symbolen formatieren",
+      "description": "Text mit Währungszeichen, Pfeilen oder mathematischen Symbolen ablegen oder einfügen, ohne HTML-Interpretation zu riskieren."
+    }
   ],
   "examples": [
     {
-      "title": "Einfache Kodierung",
-      "input": "5 < 10 & 7 > 3",
-      "output": "5 &lt; 10 &amp; 7 &gt; 3",
-      "description": "Reservierte HTML-Zeichen werden in Entitäten umgewandelt."
+      "title": "Reservierte Zeichen",
+      "input": "preis < 20 & bestand > 0",
+      "output": "preis &lt; 20 &amp; bestand &gt; 0",
+      "description": "Spitze Klammern und Ampersand werden in HTML-Entitäten umgewandelt."
     },
     {
-      "title": "Anführungszeichen und Symbole",
-      "input": "\"Hallo\" & 'Welt'",
-      "output": "&quot;Hallo&quot; &amp; &#39;Welt&#39;",
-      "description": "Anführungszeichen und Ampersand werden sicher kodiert."
+      "title": "Anführungszeichen im Text",
+      "input": "Er sagte: \"speichere es\" & bleib",
+      "output": "Er sagte: &quot;speichere es&quot; &amp; bleib",
+      "description": "Anführungszeichen und Ampersand werden in eine wörtliche Darstellung überführt."
+    },
+    {
+      "title": "Gemischte Symbole und Text",
+      "input": "Nutze <code> und 50% > 25%",
+      "output": "Nutze &lt;code&gt; und 50% &gt; 25%",
+      "description": "Tag-ähnlicher Text wird neutralisiert, der Rest bleibt lesbar."
     }
   ],
   "faq": [
     {
-      "question": "Was macht die HTML-Entitäten-Kodierung?",
-      "answer": "Sie ersetzt Sonderzeichen durch HTML-Entitäten, damit der Browser sie als Text statt als HTML anzeigt."
+      "question": "Welche Zeichen werden immer kodiert?",
+      "answer": "Reservierte HTML-Zeichen wie <, > und & werden immer kodiert. Anführungszeichen können je nach Einstellung ebenfalls kodiert werden."
     },
     {
-      "question": "Ist das Tool im Browser sicher?",
-      "answer": "Ja. Es arbeitet nur clientseitig und sendet deinen Text weder an einen Server noch an eine externe API."
+      "question": "Bleibt das Ergebnis lesbar?",
+      "answer": "Ja. Der Text bleibt verständlich, aber Zeichen, die als HTML interpretiert werden könnten, erscheinen in Entitätsform."
     },
     {
-      "question": "Kodiert das Tool alle Zeichen?",
-      "answer": "Es kodiert immer die reservierten HTML-Zeichen und kann je nach Implementierung zusätzlich weitere Symbole kodieren."
+      "question": "Kann ich bereits kodierten Text nochmals kodieren?",
+      "answer": "Ja, aber dadurch entstehen oft verschachtelte Entitäten wie &amp;amp;. Das ist ein typischer Fehler, wenn Text schon zuvor verarbeitet wurde."
     },
     {
-      "question": "Wann sollte ich HTML-Entitäten kodieren?",
-      "answer": "Wenn du Rohtext, Benutzereingaben oder Code sicher innerhalb eines HTML-Dokuments anzeigen möchtest."
+      "question": "Warum zeigt mein Beispiel Tags statt Text?",
+      "answer": "Meist wurde der Inhalt ohne Kodierung eingesetzt. Führe ihn vorher durch den Encoder, bevor du ihn in HTML einfügst."
+    },
+    {
+      "question": "Ändert das Tool auch gewöhnliche Symbole?",
+      "answer": "Nur unterstützte Symbole werden umgewandelt. Buchstaben, Zahlen und die meisten Satzzeichen bleiben unverändert, sofern sie HTML nicht beeinflussen."
     }
   ],
-  "uiLabels": {
-    "copy": "Kopieren",
-    "copied": "Kopiert",
-    "input": "Texteingabe",
-    "output": "Kodierte Ausgabe",
-    "placeholder": "Text zum Kodieren einfügen",
-    "indent": "Einzug",
-    "removeComments": "Kommentare entfernen",
-    "preview": "Vorschau",
-    "source": "Quelle",
-    "sanitizedHtml": "Bereinigtes HTML",
-    "plainText": "Klartext",
-    "summary": "Zusammenfassung",
-    "total": "Gesamt",
-    "links": "Links",
-    "images": "Bilder",
-    "errors": "Fehler",
-    "warnings": "Warnungen",
-    "valid": "Gültig",
-    "invalid": "Ungültig",
-    "href": "href",
-    "text": "Text",
-    "rel": "rel",
-    "target": "target",
-    "alt": "alt",
-    "width": "Breite",
-    "height": "Höhe",
-    "empty": "Leer",
-    "outputReady": "Ausgabe bereit",
-    "cleanedHtml": "Bereinigtes HTML",
-    "formattedHtml": "Formatiertes HTML",
-    "minifiedHtml": "Minifiziertes HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extrahierte Bilder",
-    "extractedLinks": "Extrahierte Links",
-    "validationSummary": "Validierungsübersicht",
-    "prettyHtml": "Lesbares HTML",
-    "encodedText": "Kodierter Text"
-  },
   "seo": {
     "title": "HTML-Entitäten-Encoder",
-    "description": "Sonderzeichen und Symbole sofort im Browser als HTML-Entitäten kodieren.",
+    "description": "Wandle reservierte Zeichen, Anführungszeichen und Symbole in HTML-Entitäten für sichere HTML-Ausgabe im Browser oder Editor um.",
     "keywords": [
       "html entitäten encoder",
       "html kodieren",

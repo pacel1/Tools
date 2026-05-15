@@ -4,42 +4,81 @@
   "slug": "tip-calculator",
   "h1": "Tip Calculator",
   "title": "Tip Calculator",
-  "shortDescription": "Calculate tip amount and total bill instantly with fast results, simple inputs and practical examples.",
-  "overview": "Calculate tip amount and total bill instantly. Use this tool to get a clear result quickly from simple input on the same page. It is useful for everyday checks, comparisons and small tasks when you need a fast online answer.",
+  "shortDescription": "Calculate tip and total from a bill amount and tip rate, including split-per-person results.",
+  "metaTitle": "Tip Calculator for Bills",
+  "metaDescription": "Calculate tip, final total, and per-person share from a bill amount and chosen tip rate.",
+  "intro": "Enter the bill amount, choose a tip rate, and get the tip, total, and split amount immediately.",
+  "overview": "Use this calculator to add a tip to a restaurant bill, taxi fare, salon visit, or any service charge that is based on a percentage. You can also split the final amount between several people and see each person’s share without doing the math yourself.\n\nThe result shows the base amount, the tip value, and the final total so you can check the numbers before paying. If you split the bill, the per-person amount is calculated from the full total, which helps when the tip should be shared evenly across the group.",
   "howItWorks": [
-    "Enter the required value or text into the form.",
-    "The conversion, calculation or transformation runs instantly in the browser.",
-    "Review the result and continue with related tools if you need another step."
+    "Enter the bill amount.",
+    "Select or type the tip percentage.",
+    "Choose how many people will split the total, if needed.",
+    "Review the tip amount, final total, and per-person share."
+  ],
+  "useCases": [
+    {
+      "title": "Restaurant bill after dinner",
+      "description": "Add 10%, 15%, or 20% to a dining bill and see the full amount before paying."
+    },
+    {
+      "title": "Split a group meal",
+      "description": "Divide the final total across friends so everyone knows their share, including tip."
+    },
+    {
+      "title": "Service appointment payment",
+      "description": "Work out the tip for a haircut, massage, or other service where the bill does not include gratuity."
+    },
+    {
+      "title": "Travel and taxi expenses",
+      "description": "Estimate a fair final payment for rides, deliveries, or similar services with a percentage-based tip."
+    }
   ],
   "examples": [
     {
-      "title": "Common use case",
-      "input": "86 with 15% tip",
-      "output": "98.90",
-      "description": "Shows a common use case with a clear input and result."
+      "title": "Dinner bill with standard tip",
+      "input": "Bill: 86.00, Tip: 15%",
+      "output": "Tip: 12.90, Total: 98.90",
+      "description": "Shows the added tip and the final amount for a typical restaurant bill."
     },
     {
-      "title": "Another quick example",
-      "input": "86 with 15% tip",
-      "output": "98.90",
-      "description": "Useful for quick checks, comparisons or repeat tasks."
+      "title": "Split among four people",
+      "input": "Bill: 142.50, Tip: 18%, People: 4",
+      "output": "Tip: 25.65, Total: 168.15, Each: 42.04",
+      "description": "Useful when one bill needs to be divided evenly after adding gratuity."
+    },
+    {
+      "title": "Round-number service bill",
+      "input": "Bill: 50, Tip: 20%",
+      "output": "Tip: 10.00, Total: 60.00",
+      "description": "A simple case for service payments where a clear percentage is preferred."
     }
   ],
   "faq": [
     {
-      "question": "How accurate is this tool?",
-      "answer": "The result is based on the input you provide and the calculation or transformation shown on the page."
+      "question": "Does the tip percentage apply before or after tax?",
+      "answer": "This calculator applies the percentage to the bill amount you enter. If you want tip on a taxed total, enter that final amount as the base."
     },
     {
-      "question": "Can I use this tool on mobile?",
-      "answer": "Yes. The page works on desktop and mobile screens with a simple input and result layout."
+      "question": "How is the per-person share calculated?",
+      "answer": "The split is based on the final total after tip is added, then divided by the number of people you enter."
+    },
+    {
+      "question": "Can I enter a decimal tip rate?",
+      "answer": "Yes. You can use values such as 12.5% when you want a more precise amount."
+    },
+    {
+      "question": "Why does the result differ from a receipt?",
+      "answer": "Restaurants may round line items, apply gratuity rules, or include tax differently. Match the base amount to the same figure used on the receipt."
     }
   ],
   "seo": {
-    "title": "Tip Calculator",
-    "description": "Calculate tip amount and total bill instantly. Free online tip calculator with instant results.",
+    "title": "Tip Calculator for Bills",
+    "description": "Calculate tip, final total, and per-person share from a bill amount and chosen tip rate.",
     "keywords": [
-      "tip calculator"
+      "tip calculator",
+      "tip amount",
+      "bill split calculator",
+      "gratuity calculator"
     ]
   }
 }

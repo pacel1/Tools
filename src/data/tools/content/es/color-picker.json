@@ -1,0 +1,80 @@
+{
+  "toolId": "color-picker",
+  "locale": "es",
+  "slug": "color-picker",
+  "h1": "Selector de color",
+  "title": "Selector de color",
+  "shortDescription": "Elige un color y consulta sus valores HEX, RGB y HSL en un solo panel.",
+  "metaTitle": "Selector de color | HEX RGB HSL",
+  "metaDescription": "Elige un color y consulta sus valores HEX, RGB y HSL en un solo panel para CSS, UI y trabajo de marca.",
+  "intro": "Elige un color o pega un código HEX para ver de inmediato sus valores HEX, RGB y HSL.",
+  "overview": "Esta herramienta sirve cuando necesitas revisar un color en varios formatos sin cambiar de app. Muestra el mismo tono como HEX, RGB y HSL para que copies el formato que encaje con tu hoja CSS, tu ficha de componente o tu nota de diseño.\n\nResulta útil al ajustar colores de marca, preparar una entrega para desarrollo o comprobar tokens de un tema. Los valores se actualizan a la vez, así puedes comparar matices y mantener referencias de color coherentes entre equipos.",
+  "howItWorks": [
+    "Elige un color con el selector o escribe un valor HEX.",
+    "La herramienta calcula los valores equivalentes en RGB y HSL.",
+    "Copia el formato que necesites para CSS, documentación o estilos de componentes."
+  ],
+  "useCases": [
+    {
+      "title": "Revisión de tokens de tema",
+      "description": "Comprueba un color de token en HEX, RGB y HSL antes de incorporarlo a un sistema de diseño o a los estilos."
+    },
+    {
+      "title": "Ajuste de paleta de marca",
+      "description": "Verifica que un color de marca se mantenga igual entre archivos de diseño, documentación y desarrollo."
+    },
+    {
+      "title": "Estados de un componente",
+      "description": "Inspecciona un color de hover, active o focus y guarda el formato exacto usado en el código."
+    }
+  ],
+  "examples": [
+    {
+      "title": "Azul de botón principal",
+      "input": "#2563EB",
+      "output": "HEX #2563EB, RGB 37, 99, 235, HSL 221, 83%, 53%",
+      "description": "Útil para un color de interfaz que debe quedar exacto en estilos y documentación."
+    },
+    {
+      "title": "Tono neutro oscuro",
+      "input": "rgb(17, 24, 39)",
+      "output": "HEX #111827, RGB 17, 24, 39, HSL 220, 39%, 11%",
+      "description": "Sirve para revisar un neutro oscuro usado en tarjetas, fondos o texto."
+    },
+    {
+      "title": "Verde de éxito suave",
+      "input": "hsl(142, 72%, 29%)",
+      "output": "HEX #14913E, RGB 20, 145, 62, HSL 142, 72%, 29%",
+      "description": "Práctico cuando el diseño guarda el color en HSL y el CSS necesita HEX o RGB."
+    }
+  ],
+  "faq": [
+    {
+      "question": "¿Puedo introducir un color en un formato distinto de HEX?",
+      "answer": "Sí. Si el formato que pegas es compatible, la herramienta mostrará los valores equivalentes en HEX, RGB y HSL."
+    },
+    {
+      "question": "¿Por qué cambian los valores cuando muevo ligeramente el selector?",
+      "answer": "Cada pequeño cambio selecciona un matiz distinto, así que los valores numéricos se actualizan al instante. Es normal y ayuda a capturar el punto exacto."
+    },
+    {
+      "question": "¿Qué diferencia hay entre RGB y HSL aquí?",
+      "answer": "RGB describe la mezcla de rojo, verde y azul. HSL muestra el color como tono, saturación y luminosidad, algo más cómodo para comparar variaciones."
+    },
+    {
+      "question": "¿Por qué al copiar los valores pueden verse distintos en otra app?",
+      "answer": "Algunas apps redondean canales o muestran la transparencia y el color de forma diferente. Compara siempre los números, no solo la vista previa."
+    }
+  ],
+  "seo": {
+    "title": "Selector de color | HEX RGB HSL",
+    "description": "Elige un color y consulta sus valores HEX, RGB y HSL en un solo panel para CSS, UI y trabajo de marca.",
+    "keywords": [
+      "selector de color",
+      "HEX RGB HSL",
+      "valores de color",
+      "color CSS",
+      "comprobar color"
+    ]
+  }
+}

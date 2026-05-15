@@ -4,42 +4,84 @@
   "slug": "markup-calculator",
   "h1": "Markup Calculator",
   "title": "Markup Calculator",
-  "shortDescription": "Calculate markup percentage and final selling price with fast results, simple inputs and practical examples.",
-  "overview": "Calculate markup percentage and final selling price. Use this tool to get a clear result quickly from simple input on the same page. It is useful for everyday checks, comparisons and small tasks when you need a fast online answer.",
+  "shortDescription": "Work out markup percent, selling price, and profit from your cost and target price.",
+  "metaTitle": "Markup Calculator Online",
+  "metaDescription": "Calculate markup percentage, selling price, and profit from cost or target price in one step.",
+  "intro": "Enter your cost and either the markup rate or sale price to get the missing values instantly.",
+  "overview": "The markup calculator helps you turn a product cost into a selling price, or work backward from a sale price to the markup percent. It is useful when you need to set retail prices, compare supplier costs, or check whether a quoted price leaves enough room for profit.\n\nYou can use it for a single item or for repeated pricing tasks across a list of products. The result shows the markup amount, the final selling price, and the percentage so you can see exactly how the price was built.\n\nIf you already know your target margin strategy, this tool makes it easier to test different cost levels and pricing outcomes without doing the arithmetic by hand.",
   "howItWorks": [
-    "Enter the required value or text into the form.",
-    "The conversion, calculation or transformation runs instantly in the browser.",
-    "Review the result and continue with related tools if you need another step."
+    "Enter the product cost.",
+    "Add either the markup percentage or the selling price.",
+    "Review the calculated markup amount, final price, and profit figure."
+  ],
+  "useCases": [
+    {
+      "title": "Retail shelf pricing",
+      "description": "Set a store price from unit cost and a planned markup before printing labels or updating a catalog."
+    },
+    {
+      "title": "Service quote review",
+      "description": "Check whether a service fee covers labor and overhead after adding your desired markup."
+    },
+    {
+      "title": "Supplier comparison",
+      "description": "Compare two purchase costs and see how each one changes the final selling price."
+    },
+    {
+      "title": "Bundle pricing",
+      "description": "Calculate a price for a set or package when the total cost is known and you want a fixed markup."
+    }
   ],
   "examples": [
     {
-      "title": "Common use case",
-      "input": "Cost 50, markup 30%",
-      "output": "65",
-      "description": "Shows a common use case with a clear input and result."
+      "title": "Price a handmade item",
+      "input": "Cost: 18.40, Markup: 65%",
+      "output": "Markup: 11.96, Selling price: 30.36",
+      "description": "Shows how to convert a craft cost into a retail price."
     },
     {
-      "title": "Another quick example",
-      "input": "Cost 50, markup 30%",
-      "output": "65",
-      "description": "Useful for quick checks, comparisons or repeat tasks."
+      "title": "Recover markup from sale price",
+      "input": "Cost: 42.00, Selling price: 59.50",
+      "output": "Markup: 17.50, Markup percent: 41.67%",
+      "description": "Useful when the final price is known and you want the implied markup."
+    },
+    {
+      "title": "Check a wholesale offer",
+      "input": "Cost: 126.00, Markup: 22%",
+      "output": "Markup: 27.72, Selling price: 153.72",
+      "description": "Helps confirm a wholesale purchase still leaves the planned price room."
     }
   ],
   "faq": [
     {
-      "question": "How accurate is this tool?",
-      "answer": "The result is based on the input you provide and the calculation or transformation shown on the page."
+      "question": "What is the difference between markup and margin?",
+      "answer": "Markup is added on top of cost. Margin is measured against the selling price. The same numbers can produce different percentages, so do not swap them by mistake."
     },
     {
-      "question": "Can I use this tool on mobile?",
-      "answer": "Yes. The page works on desktop and mobile screens with a simple input and result layout."
+      "question": "Can I enter a selling price instead of a markup percent?",
+      "answer": "Yes, if the tool supports reverse calculation. That lets you see the implied markup from a final price and a known cost."
+    },
+    {
+      "question": "Why do I get a decimal result?",
+      "answer": "Many costs do not divide evenly into whole numbers, so the tool may show cents or rounded decimals. Use the displayed rounding method when you set your price."
+    },
+    {
+      "question": "What is the most common mistake when using markup?",
+      "answer": "Users often calculate markup on the wrong base. Always apply markup to cost unless your pricing method explicitly uses a different base."
+    },
+    {
+      "question": "Does a higher markup always mean higher profit?",
+      "answer": "Not necessarily. Profit also depends on overhead, discounts, fees, and taxes. A large markup can still fail if other costs are high."
     }
   ],
   "seo": {
-    "title": "Markup Calculator",
-    "description": "Calculate markup percentage and final selling price. Free online markup calculator with instant results.",
+    "title": "Markup Calculator Online",
+    "description": "Calculate markup percentage, selling price, and profit from cost or target price in one step.",
     "keywords": [
-      "markup calculator"
+      "markup calculator",
+      "price markup calculator",
+      "selling price calculator",
+      "profit from markup"
     ]
   }
 }

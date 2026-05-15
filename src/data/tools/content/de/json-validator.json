@@ -4,42 +4,84 @@
   "slug": "json-validator",
   "h1": "JSON-Validator",
   "title": "JSON-Validator",
-  "shortDescription": "JSON validieren und Fehler sofort erkennen – mit schnellen Ergebnissen, einfacher Eingabe und praktischen Beispielen.",
-  "overview": "JSON validieren und Fehler sofort erkennen. Diese Seite liefert eine schnelle Antwort mit einem praktischen Tool und einem einfachen Ergebnisablauf. Sie richtet sich an Nutzer, die eine kostenlose Online-Antwort, schnelle browserbasierte Ergebnisse und praktische Long-Tail-Tool-Inhalte suchen.",
+  "shortDescription": "Prüfen Sie JSON auf Gültigkeit und sehen Sie den ersten Syntaxfehler mit einer klaren, präzisen Meldung.",
+  "metaTitle": "JSON-Validator für Syntaxfehler",
+  "metaDescription": "JSON-Syntax prüfen, den ersten Parserfehler finden und fehlende Kommas, Anführungszeichen oder Klammern erkennen.",
+  "intro": "Fügen Sie Ihr JSON ein, um die Gültigkeit zu prüfen und sofort den ersten Syntaxfehler zu sehen.",
+  "overview": "Dieses Tool prüft die JSON-Struktur nach den Regeln moderner Parser. Es ist hilfreich, wenn Sie sicherstellen möchten, dass Objekte, Arrays, Strings, Zahlen, Booleans und null im korrekten JSON-Format vorliegen.\n\nIst der Inhalt ungültig, zeigt das Ergebnis die erste Stelle des Problems an. So erkennen Sie leichter fehlende Kommata, nicht maskierte Anführungszeichen, überflüssige Schlusskommata oder falsch gesetzte Klammern, bevor Sie Daten an eine API, eine Konfigurationsdatei oder ein Script übergeben.\n\nNutzen Sie es als direkte Kontrolle beim Einfügen von Payloads, beim Bearbeiten von Request Bodies oder beim Prüfen exportierter Daten. So trennen Sie echtes JSON von Text, der nur ähnlich aussieht.",
   "howItWorks": [
-    "Geben Sie den benötigten Wert oder Text in das Formular ein.",
-    "Die Konvertierung, Berechnung oder Umwandlung läuft sofort im Browser.",
-    "Prüfen Sie das Ergebnis und nutzen Sie bei Bedarf weitere verwandte Tools."
+    "Fügen Sie JSON in das Eingabefeld ein.",
+    "Der Parser prüft den Text und meldet, ob er gültig ist.",
+    "Bei einem Fehler korrigieren Sie die markierte Stelle und prüfen erneut."
+  ],
+  "useCases": [
+    {
+      "title": "Prüfung von API-Request-Bodies",
+      "description": "Bestätigen Sie vor dem Senden, dass ein POST-Payload gültig ist, besonders bei verschachtelten Objekten und Arrays."
+    },
+    {
+      "title": "Kontrolle von Konfigurationsdateien",
+      "description": "Prüfen Sie App-Einstellungen, Feature-Flags oder als JSON exportierte Konfigurationen, bevor ein Tippfehler den Start blockiert."
+    },
+    {
+      "title": "Analyse von Webhook-Daten",
+      "description": "Validieren Sie Beispiel-Payloads aus Logs oder Testereignissen, bevor Felder in einem anderen System gemappt werden."
+    },
+    {
+      "title": "Bereinigung von Datenexporten",
+      "description": "Erkennen Sie beschädigte Exporte aus Dashboards oder Skripten, in denen ein Komma, ein Anführungszeichen oder eine Klammer zu viel steht."
+    }
   ],
   "examples": [
     {
-      "title": "Beispiel 1",
-      "input": "{\"items\":[1,2,3]}",
+      "title": "Gültiges verschachteltes Objekt",
+      "input": "{\"user\":{\"id\":42,\"roles\":[\"admin\",\"editor\"],\"active\":true}}",
       "output": "Gültiges JSON",
-      "description": "Ein realistisches JSON-Validator-Beispiel für eine alltägliche Suchanfrage."
+      "description": "Ein vollständiges Objekt mit verschachtelten Daten, Booleschen Werten und Array."
     },
     {
-      "title": "Beispiel 2",
-      "input": "{\"items\":[1,2,3]}",
-      "output": "Gültiges JSON",
-      "description": "Ein weiteres praktisches Anwendungsbeispiel für organischen Long-Tail-Traffic."
+      "title": "Komma zwischen Feldern fehlt",
+      "input": "{\"name\":\"Mina\" \"age\":29}",
+      "output": "Ungültiges JSON: Nach \"Mina\" wird ein Komma erwartet",
+      "description": "Zeigt, wie ein kleines Satzzeichen den Parser stoppt."
+    },
+    {
+      "title": "Überflüssiges Komma im Array",
+      "input": "{\"items\":[\"a\",\"b\",]}",
+      "output": "Ungültiges JSON: Schlusskomma ist nicht erlaubt",
+      "description": "Veranschaulicht einen typischen Fehler beim manuellen Bearbeiten von Arrays."
     }
   ],
   "faq": [
     {
-      "question": "Wie genau ist dieses Tool?",
-      "answer": "Das Ergebnis wird direkt aus der Formel oder der browserseitigen Logik dieses Tools berechnet."
+      "question": "Was prüft dieser Validator zuerst?",
+      "answer": "Er prüft, ob der Text gültiges JSON ist. Schlägt das Parsen fehl, meldet er die erste Stelle, an der die Struktur bricht, etwa ein fehlendes Komma, eine nicht geschlossene Klammer oder einen offenen String."
     },
     {
-      "question": "Kann ich dieses Tool auf dem Handy nutzen?",
-      "answer": "Ja. Die Seite funktioniert auf Desktop- und Mobilgeräten mit einem einfachen Eingabe- und Ergebnislayout."
+      "question": "Warum schlägt Text mit einfachen Anführungszeichen fehl?",
+      "answer": "JSON verlangt doppelte Anführungszeichen für Strings und Eigenschaftsnamen. Einfache Anführungszeichen sind in JavaScript-Objekten üblich, aber nicht in reinem JSON."
+    },
+    {
+      "question": "Sind Schlusskommas erlaubt?",
+      "answer": "Nein. JSON erlaubt keine Schlusskommas in Arrays oder Objekten, auch wenn manche Programmiersprachen sie in ihrer eigenen Syntax zulassen."
+    },
+    {
+      "question": "Wie lese ich die Fehlerposition?",
+      "answer": "Beginnen Sie bei der angegebenen Zeile oder Zeichenposition und prüfen Sie die umliegenden Kommata, Anführungszeichen und Klammern. Die eigentliche Ursache liegt oft direkt vor der markierten Stelle."
+    },
+    {
+      "question": "Kann Text, der korrekt aussieht, trotzdem fehlschlagen?",
+      "answer": "Ja. Er kann gut formatiert wirken und trotzdem ein nicht maskiertes Anführungszeichen, einen fehlenden Doppelpunkt, ein Steuerzeichen oder eine nicht unterstützte Zahl enthalten."
     }
   ],
   "seo": {
-    "title": "JSON-Validator",
-    "description": "JSON validieren und Fehler sofort erkennen. Kostenloser Online-JSON-Validator mit sofortigen Ergebnissen.",
+    "title": "JSON-Validator für Syntaxfehler",
+    "description": "JSON-Syntax prüfen, den ersten Parserfehler finden und fehlende Kommas, Anführungszeichen oder Klammern erkennen.",
     "keywords": [
-      "json-validator"
+      "json validator",
+      "json prüfen",
+      "json syntax",
+      "json fehler"
     ]
   }
 }

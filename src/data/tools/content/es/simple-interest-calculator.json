@@ -4,43 +4,76 @@
   "slug": "calculadora-de-interes-simple",
   "h1": "Calculadora de interés simple",
   "title": "Calculadora de interés simple",
-  "shortDescription": "Calcula el interés simple a partir del capital, la tasa y el tiempo con resultados rápidos, entradas sencillas y ejemplos prácticos.",
-  "overview": "Calcula el interés simple a partir del capital, la tasa y el tiempo. Esta página ofrece una respuesta rápida con una herramienta útil y un flujo de resultados sencillo. Está pensada para usuarios que buscan una respuesta gratis en línea, resultados rápidos en el navegador y contenido práctico de cola larga.",
+  "shortDescription": "Calcula el interés simple, el interés total y el importe final a partir del capital, la tasa y el tiempo.",
+  "metaTitle": "Calculadora de interés simple",
+  "metaDescription": "Calcula el interés simple, el interés total y el importe final a partir del capital, la tasa y el tiempo.",
+  "intro": "Introduce el capital, la tasa anual y el plazo para ver el interés simple y el importe final.",
+  "overview": "El interés simple solo se calcula sobre el capital inicial, sin sumar intereses previos. Esta herramienta te ayuda a obtener el importe ganado o pagado durante un periodo fijo con una fórmula directa, útil para comparar depósitos a plazo, préstamos a tipo fijo o ejercicios de clase.\n\nSi el plazo no está expresado en años, conviene convertirlo a la misma unidad que la tasa. Con una tasa anual, meses y días deben transformarse antes de interpretar el resultado. La calculadora muestra el interés y el total al vencimiento, para que revises todo el escenario de una vez.",
   "howItWorks": [
-    "Introduce el valor o texto requerido en el formulario.",
-    "La conversión, el cálculo o la transformación se ejecuta al instante en el navegador.",
-    "Revisa el resultado y sigue con herramientas relacionadas si necesitas otro paso."
+    "Escribe el capital, la tasa anual y el periodo.",
+    "La calculadora aplica la fórmula: Interés = Capital × Tasa × Tiempo.",
+    "Revisa el interés y el total final; después cambia los datos si quieres comparar otra opción."
+  ],
+  "useCases": [
+    {
+      "title": "Depósito a plazo fijo",
+      "description": "Calcular cuánto interés genera un depósito durante un número concreto de años con una tasa estable."
+    },
+    {
+      "title": "Préstamo personal sencillo",
+      "description": "Comprobar el coste de un préstamo sin capitalización de intereses ni cuotas variables."
+    },
+    {
+      "title": "Ejercicios de matemáticas financieras",
+      "description": "Verificar problemas de clase y entender cómo cambian los resultados al variar capital, tasa y tiempo."
+    }
   ],
   "examples": [
     {
-      "title": "Ejemplo 1",
-      "input": "5000, 4%, 3 años",
-      "output": "600",
-      "description": "Un ejemplo realista de calculadora de interés simple para una búsqueda habitual."
+      "title": "Depósito a 3 años",
+      "input": "Capital: 5.000; Tasa: 4%; Tiempo: 3 años",
+      "output": "Interés: 600; Total: 5.600",
+      "description": "Ejemplo de un depósito mantenido tres años con tasa anual fija."
     },
     {
-      "title": "Ejemplo 2",
-      "input": "5000, 4%, 3 años",
-      "output": "600",
-      "description": "Otro caso práctico para tráfico orgánico de cola larga."
+      "title": "Coste de un préstamo anual",
+      "input": "Capital: 12.000; Tasa: 7,5%; Tiempo: 1 año",
+      "output": "Interés: 900; Total: 12.900",
+      "description": "Muestra el coste de un préstamo a un año sin capitalización."
+    },
+    {
+      "title": "Periodo de seis meses",
+      "input": "Capital: 8.000; Tasa: 6%; Tiempo: 0,5 años",
+      "output": "Interés: 240; Total: 8.240",
+      "description": "Ejemplo con el tiempo expresado como fracción de año."
     }
   ],
   "faq": [
     {
-      "question": "¿Qué precisión tiene esta herramienta?",
-      "answer": "El resultado se calcula directamente con la fórmula o la lógica en el navegador que usa esta herramienta."
+      "question": "¿Esta calculadora incluye interés compuesto?",
+      "answer": "No. Solo calcula interés simple sobre el capital inicial. Si los intereses se añaden al saldo y vuelven a generar intereses, necesitas una calculadora compuesta."
     },
     {
-      "question": "¿Puedo usar esta herramienta en el móvil?",
-      "answer": "Sí. La página funciona en ordenador y móvil con un diseño simple de entrada y resultado."
+      "question": "¿Cómo debo introducir un plazo inferior a un año?",
+      "answer": "Usa una unidad coherente con la tasa. Si la tasa es anual, convierte meses o días a fracción de año, por ejemplo 6 meses = 0,5 años."
+    },
+    {
+      "question": "¿Por qué no coincide con el cálculo del banco?",
+      "answer": "El banco puede aplicar capitalización, redondeos o convenciones de días distintas. En esos casos, el resultado no será exactamente igual."
+    },
+    {
+      "question": "¿Puedo usar tasas mensuales o diarias?",
+      "answer": "Sí, pero el tiempo también debe estar en la misma unidad. Una tasa mensual requiere meses; una tasa diaria, días."
     }
   ],
   "seo": {
     "title": "Calculadora de interés simple",
-    "description": "Calcula el interés simple a partir del capital, la tasa y el tiempo. Calculadora gratuita de interés simple en línea con resultados instantáneos.",
+    "description": "Calcula el interés simple, el interés total y el importe final a partir del capital, la tasa y el tiempo.",
     "keywords": [
       "calculadora de interes simple",
-      "herramienta calculadoras"
+      "interes simple",
+      "calculadora financiera",
+      "formula interes simple"
     ]
   }
 }

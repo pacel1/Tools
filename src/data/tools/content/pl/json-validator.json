@@ -4,42 +4,84 @@
   "slug": "walidator-json",
   "h1": "Walidator JSON",
   "title": "Walidator JSON",
-  "shortDescription": "Sprawdź poprawność JSON i wykryj błędy natychmiast dzięki szybkim wynikom, prostemu formularzowi i praktycznym przykładom.",
-  "overview": "Sprawdź poprawność JSON i wykryj błędy natychmiast. Ta strona zapewnia szybką odpowiedź dzięki praktycznemu narzędziu i prostemu procesowi prezentacji wyniku. Strona jest skierowana do użytkowników szukających darmowej odpowiedzi online, szybkich wyników w przeglądarce oraz praktycznych treści narzędziowych long-tail.",
+  "shortDescription": "Sprawdź, czy JSON jest poprawny, i zobacz pierwszą literówkę składniową wraz z czytelną informacją o błędzie.",
+  "metaTitle": "Walidator JSON: błędy składni",
+  "metaDescription": "Sprawdź składnię JSON, znajdź pierwszy błąd parsowania i wychwyć brak przecinków, cudzysłowów lub nawiasów.",
+  "intro": "Wklej JSON, aby sprawdzić poprawność składni i od razu zobaczyć miejsce pierwszego błędu.",
+  "overview": "To narzędzie sprawdza strukturę JSON zgodnie z zasadami parsera używanymi przez współczesne aplikacje. Przydaje się, gdy chcesz potwierdzić, że obiekty, tablice, stringi, liczby, wartości logiczne i null są zapisane w poprawnym formacie JSON.\n\nJeśli dane są niepoprawne, wynik wskazuje pierwsze miejsce problemu, dzięki czemu łatwiej poprawić dokładny znak lub linię, która psuje parsowanie. W praktyce pomaga to szybko znaleźć brakujący przecinek, nieucieczony cudzysłów, zbędny przecinek na końcu albo niesparowane nawiasy.\n\nUżywaj go do sprawdzania payloadów API, treści plików konfiguracyjnych i wyeksportowanych danych. Pozwala odróżnić prawdziwy JSON od tekstu, który tylko go przypomina.",
   "howItWorks": [
-    "Wpisz wymagane dane lub tekst w formularzu.",
-    "Konwersja, obliczenie lub przekształcenie odbywa się natychmiast w przeglądarce.",
-    "Sprawdź wynik i przejdź do powiązanych narzędzi, jeśli potrzebujesz kolejnego kroku."
+    "Wklej JSON do pola wejściowego.",
+    "Parser sprawdza tekst i informuje, czy jest poprawny.",
+    "Jeśli pojawi się błąd, popraw wskazane miejsce i sprawdź ponownie."
+  ],
+  "useCases": [
+    {
+      "title": "Weryfikacja body zapytania API",
+      "description": "Sprawdź, czy payload do POST jest poprawny, zwłaszcza gdy zawiera zagnieżdżone obiekty i tablice."
+    },
+    {
+      "title": "Kontrola pliku konfiguracyjnego",
+      "description": "Zweryfikuj ustawienia aplikacji, flagi funkcji lub konfigurację zapisaną w JSON, zanim spowoduje problem przy starcie."
+    },
+    {
+      "title": "Analiza danych webhooka",
+      "description": "Sprawdź przykładowe dane z webhooka skopiowane z logów lub testów przed mapowaniem pól w innym systemie."
+    },
+    {
+      "title": "Czyszczenie eksportu danych",
+      "description": "Wykryj uszkodzone eksporty z paneli lub skryptów, w których pojawił się dodatkowy przecinek, cudzysłów albo nawias."
+    }
   ],
   "examples": [
     {
-      "title": "Przykład 1",
-      "input": "{\"items\":[1,2,3]}",
+      "title": "Poprawny obiekt zagnieżdżony",
+      "input": "{\"user\":{\"id\":42,\"roles\":[\"admin\",\"editor\"],\"active\":true}}",
       "output": "Poprawny JSON",
-      "description": "Realistyczny przykład walidatora JSON dla codziennego zapytania wyszukiwania."
+      "description": "Pełny obiekt z danymi zagnieżdżonymi, typami logicznymi i tablicą."
     },
     {
-      "title": "Przykład 2",
-      "input": "{\"items\":[1,2,3]}",
-      "output": "Poprawny JSON",
-      "description": "Kolejny praktyczny przypadek użycia pod kątem organicznego ruchu long-tail."
+      "title": "Brak przecinka między polami",
+      "input": "{\"name\":\"Mina\" \"age\":29}",
+      "output": "Niepoprawny JSON: po \"Mina\" oczekiwany jest przecinek",
+      "description": "Pokazuje, jak drobny błąd interpunkcyjny zatrzymuje parsowanie."
+    },
+    {
+      "title": "Zbędny przecinek w tablicy",
+      "input": "{\"items\":[\"a\",\"b\",]}",
+      "output": "Niepoprawny JSON: przecinek na końcu nie jest dozwolony",
+      "description": "Ilustruje częsty błąd przy ręcznej edycji tablic."
     }
   ],
   "faq": [
     {
-      "question": "Jak dokładne jest to narzędzie?",
-      "answer": "Wynik jest obliczany bezpośrednio na podstawie formuły lub logiki po stronie przeglądarki używanej przez to narzędzie."
+      "question": "Co to narzędzie sprawdza w pierwszej kolejności?",
+      "answer": "Sprawdza, czy tekst jest poprawnym JSON-em. Jeśli parsowanie się nie powiedzie, podaje pierwsze miejsce, w którym struktura się psuje, na przykład brak przecinka, brakujący nawias albo niezamknięty string."
     },
     {
-      "question": "Czy mogę używać tego narzędzia na telefonie?",
-      "answer": "Tak. Strona działa na ekranach desktopowych i mobilnych, oferując prosty układ wprowadzania danych i prezentacji wyniku."
+      "question": "Dlaczego tekst z apostrofami nie przechodzi?",
+      "answer": "JSON wymaga cudzysłowów podwójnych dla stringów i nazw pól. Apostrofy działają w obiektach JavaScript, ale nie w samym JSON-ie."
+    },
+    {
+      "question": "Czy przecinek na końcu jest dozwolony?",
+      "answer": "Nie. JSON nie dopuszcza przecinków końcowych w tablicach ani obiektach, nawet jeśli niektóre języki programowania akceptują je we własnej składni."
+    },
+    {
+      "question": "Jak czytać informację o pozycji błędu?",
+      "answer": "Sprawdź wskazaną linię lub znak i przejrzyj sąsiednie cudzysłowy, przecinki oraz nawiasy. Prawdziwy problem często znajduje się tuż przed zaznaczonym miejscem."
+    },
+    {
+      "question": "Czy poprawnie wyglądający tekst może mimo to być nieprawidłowy?",
+      "answer": "Tak. Tekst może wyglądać dobrze, ale nadal zawierać nieucieczony cudzysłów, brak dwukropka, znak kontrolny albo liczbę zapisaną w nieobsługiwanej postaci."
     }
   ],
   "seo": {
-    "title": "Walidator JSON",
-    "description": "Sprawdź poprawność JSON i wykryj błędy natychmiast. Darmowy online walidator JSON z natychmiastowymi wynikami.",
+    "title": "Walidator JSON: błędy składni",
+    "description": "Sprawdź składnię JSON, znajdź pierwszy błąd parsowania i wychwyć brak przecinków, cudzysłowów lub nawiasów.",
     "keywords": [
-      "walidator json"
+      "walidator json",
+      "sprawdzenie json",
+      "błąd json",
+      "parser json"
     ]
   }
 }

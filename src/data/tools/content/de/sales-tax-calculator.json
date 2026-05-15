@@ -4,43 +4,79 @@
   "slug": "umsatzsteuer-rechner",
   "h1": "Umsatzsteuer-Rechner",
   "title": "Umsatzsteuer-Rechner",
-  "shortDescription": "Berechne den Gesamtpreis nach Hinzufügen der Umsatzsteuer mit schnellen Ergebnissen, einfachen Eingaben und praktischen Beispielen.",
-  "overview": "Berechne den Gesamtpreis nach Hinzufügen der Umsatzsteuer. Diese Seite liefert eine schnelle Antwort mit einem praktischen Tool und einem einfachen Ergebnisablauf. Sie richtet sich an Nutzer, die eine kostenlose Online-Antwort, schnelle browserbasierte Ergebnisse und praktische Long-Tail-Tool-Inhalte suchen.",
+  "shortDescription": "Gib Nettobetrag und Steuersatz ein, um Steuerbetrag und Endpreis zu berechnen.",
+  "metaTitle": "Umsatzsteuer-Rechner",
+  "metaDescription": "Berechne Umsatzsteuer, Steuerbetrag und Endpreis aus Nettobetrag und Steuersatz für Einkauf, Beleg oder Angebot.",
+  "intro": "Gib den Betrag vor Steuer und den Prozentsatz ein, um Steuerbetrag und Endpreis sofort zu sehen.",
+  "overview": "Ein angezeigter Preis, ein Warenkorb oder eine Angebotsposition zeigt nicht immer den Betrag, der am Ende bezahlt wird. Dieser Rechner schlägt den angegebenen Steuersatz auf den Nettobetrag auf und zeigt sowohl den Steuerbetrag als auch den Gesamtpreis, damit du einen Kauf oder eine Kalkulation vorab prüfen kannst.\n\nDas ist praktisch für Preisvergleiche, Warenkörbe im Onlinehandel, Belegprüfungen und erste Angebotswerte. Das Ergebnis ist eine Rechenhilfe; für Rechnungen, Meldungen und steuerliche Behandlung gelten die Vorschriften der zuständigen Region.",
   "howItWorks": [
-    "Gib den erforderlichen Wert oder Text in das Formular ein.",
-    "Die Umrechnung, Berechnung oder Umwandlung erfolgt sofort im Browser.",
-    "Prüfe das Ergebnis und nutze bei Bedarf verwandte Tools für den nächsten Schritt."
+    "Trage den Betrag vor Steuer ein, etwa einen Artikelpreis, Warenkorbwert oder eine Angebotszeile.",
+    "Gib den Steuersatz als Prozentwert ein, zum Beispiel 6, 7.5 oder 8.25.",
+    "Prüfe den berechneten Steuerbetrag und den Endpreis inklusive Steuer."
+  ],
+  "useCases": [
+    {
+      "title": "Kauf vor dem Bezahlen",
+      "description": "Schätze den Betrag an der Kasse, wenn der Shop einen Preis ohne Steuer zeigt."
+    },
+    {
+      "title": "Online-Warenkorb",
+      "description": "Vergleiche den Zwischensaldo mit dem Preis nach Anwendung einer lokalen oder plattformspezifischen Steuer."
+    },
+    {
+      "title": "Beleg prüfen",
+      "description": "Kontrolliere, ob eine Steuerzeile ungefähr zum Nettobetrag und zum erwarteten Satz passt."
+    }
   ],
   "examples": [
     {
-      "title": "Beispiel 1",
-      "input": "100 mit 8 % Steuer",
-      "output": "108",
-      "description": "Ein realistisches Beispiel für den Umsatzsteuer-Rechner bei einer alltäglichen Suchanfrage."
+      "title": "Artikel für 49,99 mit 8,25%",
+      "input": "49,99 mit 8,25%",
+      "output": "Steuer: 4,12; Gesamt: 54,11",
+      "description": "Ein sichtbarer Preis steigt, sobald die Steuer beim Bezahlen dazugerechnet wird."
     },
     {
-      "title": "Beispiel 2",
-      "input": "100 mit 8 % Steuer",
-      "output": "108",
-      "description": "Ein weiterer praktischer Anwendungsfall für organischen Long-Tail-Traffic."
+      "title": "Abo für 19,00 mit 6%",
+      "input": "19,00 mit 6%",
+      "output": "Steuer: 1,14; Gesamt: 20,14",
+      "description": "Hilfreich bei digitalen Diensten, deren Steuer nach Standortdaten berechnet wird."
+    },
+    {
+      "title": "Angebot über 250,00 mit 7,5%",
+      "input": "250,00 mit 7,5%",
+      "output": "Steuer: 18,75; Gesamt: 268,75",
+      "description": "Praktisch für eine schnelle Schätzung, bevor die finale Rechnung erstellt wird."
     }
   ],
   "faq": [
     {
-      "question": "Wie genau ist dieses Tool?",
-      "answer": "Das Ergebnis wird direkt anhand der Formel oder der browserseitigen Logik dieses Tools berechnet."
+      "question": "Addiert der Rechner Steuer zum eingegebenen Betrag?",
+      "answer": "Ja. Du gibst den Nettobetrag und den Prozentsatz ein; der Rechner zeigt den Steuerbetrag und den Endpreis."
     },
     {
-      "question": "Kann ich dieses Tool auf dem Handy nutzen?",
-      "answer": "Ja. Die Seite funktioniert auf Desktop- und Mobilgeräten mit einem einfachen Eingabe- und Ergebnislayout."
+      "question": "Kann ich verschiedene Steuersätze testen?",
+      "answer": "Ja. Wiederhole die Berechnung mit einem anderen Satz, um Regionen, Shops oder Angebotsvarianten zu vergleichen."
+    },
+    {
+      "question": "Soll ich Versand, Gebühren oder Rabatte einrechnen?",
+      "answer": "Nur wenn diese Positionen in deinem Fall zur steuerpflichtigen Basis gehören. Das hängt von Produkt, Gebühr und Ort ab."
+    },
+    {
+      "question": "Warum weicht das Ergebnis von einem Beleg ab?",
+      "answer": "Belege können anders runden oder Steuer auf eine andere Basis berechnen, etwa nach Rabatt oder mit Versandkosten."
+    },
+    {
+      "question": "Reicht das Ergebnis für steuerliche Meldungen?",
+      "answer": "Nein. Es ist für Schätzungen und Kontrollen gedacht; verbindliche Abrechnungen müssen den aktuellen Regeln folgen."
     }
   ],
   "seo": {
     "title": "Umsatzsteuer-Rechner",
-    "description": "Berechne den Gesamtpreis nach Hinzufügen der Umsatzsteuer. Kostenloser Online-Umsatzsteuer-Rechner mit sofortigen Ergebnissen.",
+    "description": "Berechne Umsatzsteuer, Steuerbetrag und Endpreis aus Nettobetrag und Steuersatz für Einkauf, Beleg oder Angebot.",
     "keywords": [
-      "umsatzsteuer-rechner",
-      "rechner-tool"
+      "umsatzsteuer rechner",
+      "steuerbetrag berechnen",
+      "endpreis mit steuer"
     ]
   }
 }

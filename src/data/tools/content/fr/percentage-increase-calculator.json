@@ -4,44 +4,82 @@
   "slug": "calculateur-daugmentation-en-pourcentage",
   "h1": "Calculateur d’augmentation en pourcentage",
   "title": "Calculateur d’augmentation en pourcentage",
-  "shortDescription": "Calculez une valeur après une augmentation en pourcentage avec des résultats rapides, des saisies simples et des exemples pratiques.",
-  "overview": "Calculez une valeur après une augmentation en pourcentage. Cette page fournit une réponse rapide grâce à un outil pratique et à un parcours de résultat simple. Elle s’adresse aux utilisateurs qui recherchent une réponse gratuite en ligne, des résultats instantanés dans le navigateur et un contenu pratique optimisé pour les requêtes de longue traîne.",
+  "shortDescription": "Calculez la valeur finale après une augmentation en pourcentage avec un résultat clair et des exemples concrets.",
+  "metaTitle": "Calculateur d’augmentation en pourcentage",
+  "metaDescription": "Calculez la valeur finale après une augmentation en pourcentage pour un prix, un salaire, un budget ou une prévision avec un résultat clair.",
+  "intro": "Saisissez la valeur de départ et le pourcentage d’augmentation pour obtenir immédiatement la nouvelle valeur.",
+  "overview": "Ce calculateur transforme une valeur de départ en sa valeur finale après application d’une hausse en pourcentage. Il est utile pour les augmentations de prix, les revalorisations salariales, les révisions de tarifs, les budgets ou toute autre situation où une valeur progresse.\n\nLe résultat affiche le montant final, ce qui permet de comparer facilement l’avant et l’après. L’outil sert aussi à vérifier un calcul personnel, préparer un devis ou tester différents scénarios de hausse avant de prendre une décision.",
   "howItWorks": [
-    "Saisissez la valeur ou le texte requis dans le formulaire.",
-    "La conversion, le calcul ou la transformation s’exécute instantanément dans le navigateur.",
-    "Consultez le résultat puis utilisez des outils associés si vous avez besoin d’une étape supplémentaire."
+    "Saisissez la valeur de départ.",
+    "Indiquez le pourcentage d’augmentation.",
+    "Obtenez la valeur finale après la hausse.",
+    "Relancez le calcul avec un autre pourcentage si besoin."
+  ],
+  "useCases": [
+    {
+      "title": "Changement de prix en magasin",
+      "description": "Recalculez le prix d’un article après une marge, une hausse de coût ou une modification tarifaire."
+    },
+    {
+      "title": "Salaire ou honoraires",
+      "description": "Visualisez le nouveau montant après une augmentation de salaire, d’honoraires ou de frais de service."
+    },
+    {
+      "title": "Prévision d’activité",
+      "description": "Projetez le chiffre d’affaires, le trafic ou le nombre de clients à partir d’un taux de croissance."
+    },
+    {
+      "title": "Ajustement de budget",
+      "description": "Estimez la nouvelle limite de dépenses après une hausse en pourcentage du budget existant."
+    }
   ],
   "examples": [
     {
-      "title": "Exemple 1",
-      "input": "120 augmenté de 15 %",
-      "output": "138",
-      "description": "Un exemple réaliste de calculateur d’augmentation en pourcentage pour une recherche courante."
+      "title": "Mise à jour d’un prix",
+      "input": "80 augmenté de 12 %",
+      "output": "89,6",
+      "description": "Un article à 80 passe à 89,6 après une hausse de 12 %."
     },
     {
-      "title": "Exemple 2",
-      "input": "120 augmenté de 15 %",
-      "output": "138",
-      "description": "Un autre cas d’usage pratique pour le trafic organique de longue traîne."
+      "title": "Augmentation annuelle du salaire",
+      "input": "42 000 augmenté de 7 %",
+      "output": "44 940",
+      "description": "Un salaire de 42 000 devient 44 940 après une augmentation de 7 %."
+    },
+    {
+      "title": "Prévision du trafic",
+      "input": "18 500 augmenté de 5 %",
+      "output": "19 425",
+      "description": "Une valeur de trafic mensuel de 18 500 atteint 19 425 après une hausse de 5 %."
     }
   ],
   "faq": [
     {
-      "question": "Quelle est la précision de cet outil ?",
-      "answer": "Le résultat est calculé directement à partir de la formule ou de la logique côté navigateur utilisée par cet outil."
+      "question": "Que calcule exactement cet outil ?",
+      "answer": "Il calcule la valeur finale après ajout du pourcentage indiqué à la valeur de départ."
     },
     {
-      "question": "Puis-je utiliser cet outil sur mobile ?",
-      "answer": "Oui. La page fonctionne sur ordinateur et sur mobile avec une interface simple de saisie et de résultat."
+      "question": "Comment interpréter le résultat ?",
+      "answer": "Le résultat est le nouveau total. Si vous voulez connaître le montant ajouté, soustrayez la valeur initiale au résultat."
+    },
+    {
+      "question": "Puis-je saisir des décimales ou de grands nombres ?",
+      "answer": "Oui. Les nombres décimaux et les grandes valeurs sont acceptés si la saisie est valide."
+    },
+    {
+      "question": "Quelle erreur est la plus fréquente ?",
+      "answer": "L’erreur la plus courante consiste à saisir un montant au lieu d’un pourcentage. Par exemple, 15 signifie 15 %, pas 15 unités."
     }
   ],
   "seo": {
     "title": "Calculateur d’augmentation en pourcentage",
-    "description": "Calculez une valeur après une augmentation en pourcentage. Calculateur d’augmentation en pourcentage gratuit en ligne avec résultat instantané.",
+    "description": "Calculez la valeur finale après une augmentation en pourcentage pour un prix, un salaire, un budget ou une prévision avec un résultat clair.",
     "keywords": [
       "calculateur d’augmentation en pourcentage",
-      "calculateur augmentation pourcentage",
-      "outil calculatrices"
+      "augmentation en pourcentage",
+      "valeur finale",
+      "calculateur de hausse",
+      "calcul pourcentage"
     ]
   }
 }

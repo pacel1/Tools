@@ -4,42 +4,81 @@
   "slug": "kalkulator-rabatu",
   "h1": "Kalkulator rabatu",
   "title": "Kalkulator rabatu",
-  "shortDescription": "Oblicz cenę po rabacie na podstawie procentu zniżki — szybko, prosto i z praktycznymi przykładami.",
-  "overview": "Oblicz cenę sprzedaży po odjęciu rabatu procentowego. Ta strona daje szybką odpowiedź dzięki prostemu narzędziu online i przejrzystemu wynikowi. Jest skierowana do osób, które szukają darmowego kalkulatora online, natychmiastowych wyników w przeglądarce oraz praktycznych treści odpowiadających na dłuższe zapytania wyszukiwania.",
+  "shortDescription": "Oblicz cenę końcową, kwotę oszczędności i wartość po obniżce procentowej.",
+  "metaTitle": "Kalkulator rabatu | Cena po obniżce",
+  "metaDescription": "Podaj cenę wyjściową i procent rabatu, aby od razu zobaczyć cenę końcową oraz oszczędność.",
+  "intro": "Wpisz cenę początkową i procent rabatu, aby natychmiast poznać cenę końcową oraz oszczędność.",
+  "overview": "Ten kalkulator rabatu pomaga sprawdzić, ile zapłacisz po obniżce procentowej. Pokazuje cenę po rabacie i kwotę oszczędności, więc łatwo porównasz dwie promocje, zweryfikujesz cenę z etykiety albo policzysz, czy oferta faktycznie się opłaca.\n\nNarzędzie działa dla pojedynczego rabatu naliczanego od jednej ceny początkowej. Jeśli sklep stosuje kilka obniżek po kolei, licz je etapami, bo po każdym kroku zmienia się podstawa wyliczenia.\n\nWynik obejmuje cenę końcową i różnicę względem ceny wyjściowej. Dzięki temu od razu widać, czy procent rabatu przekłada się na realną korzyść przy zakupie.",
   "howItWorks": [
-    "Wpisz wymaganą wartość do formularza.",
-    "Obliczenie wykonuje się natychmiast w przeglądarce.",
-    "Sprawdź wynik i skorzystaj z powiązanych narzędzi, jeśli potrzebujesz kolejnego kroku."
+    "Wpisz cenę początkową oraz procent rabatu.",
+    "Kalkulator odejmuje rabat od ceny bazowej.",
+    "Sprawdź cenę końcową i oszczędność, a potem porównaj kolejną ofertę."
+  ],
+  "useCases": [
+    {
+      "title": "Wyprzedaże sezonowe",
+      "description": "Sprawdź nową cenę po obniżce na odzież, elektronikę lub artykuły domowe."
+    },
+    {
+      "title": "Porównanie promocji",
+      "description": "Zestaw dwie oferty z różnym rabatem i wybierz tę z niższą ceną końcową."
+    },
+    {
+      "title": "Planowanie wydatków",
+      "description": "Oceń, ile zostanie w budżecie po uwzględnieniu znanej obniżki."
+    },
+    {
+      "title": "Kontrola zamówienia",
+      "description": "Zweryfikuj cenę po rabacie przed złożeniem zamówienia, zwłaszcza przy kuponie lub cenie promocyjnej."
+    }
   ],
   "examples": [
     {
-      "title": "Przykład 1",
-      "input": "100 z rabatem 20%",
-      "output": "80",
-      "description": "Realistyczny przykład kalkulatora rabatu dla codziennego zapytania w wyszukiwarce."
+      "title": "Obniżka na jeden produkt",
+      "input": "Cena początkowa: 120, rabat: 15%",
+      "output": "Cena końcowa: 102; oszczędność: 18",
+      "description": "Prosty przykład obniżki dla produktu ze średniej półki cenowej."
     },
     {
-      "title": "Przykład 2",
-      "input": "100 z rabatem 20%",
-      "output": "80",
-      "description": "Kolejny praktyczny przykład dla ruchu organicznego z długich fraz."
+      "title": "Duża promocja",
+      "input": "Cena początkowa: 249,90, rabat: 35%",
+      "output": "Cena końcowa: 162,44; oszczędność: 87,46",
+      "description": "Przydatne przy mocniejszej promocji z uwzględnieniem groszy."
+    },
+    {
+      "title": "Niewielka zniżka na subskrypcję",
+      "input": "Cena początkowa: 19,99, rabat: 5%",
+      "output": "Cena końcowa: 18,99; oszczędność: 1,00",
+      "description": "Pokazuje wpływ małej obniżki na tańszy zakup."
     }
   ],
   "faq": [
     {
-      "question": "Jak dokładne jest to narzędzie?",
-      "answer": "Wynik jest obliczany bezpośrednio na podstawie wzoru lub logiki działającej po stronie przeglądarki."
+      "question": "Czy kalkulator pokazuje cenę końcową i oszczędność?",
+      "answer": "Tak. Narzędzie podaje kwotę po rabacie oraz różnicę względem ceny wyjściowej."
     },
     {
-      "question": "Czy mogę używać tego narzędzia na telefonie?",
-      "answer": "Tak. Strona działa na komputerach i urządzeniach mobilnych, oferując prosty układ wejścia i wyniku."
+      "question": "Jak rozumieć rabat 100%?",
+      "answer": "Rabat 100% oznacza, że cena końcowa wynosi 0, a oszczędność jest równa pełnej cenie początkowej."
+    },
+    {
+      "question": "Co jeśli wpiszę rabat większy niż 100%?",
+      "answer": "Taki wynik oznacza zniżkę większą niż wartość produktu, więc warto sprawdzić dane wejściowe przed interpretacją wyniku."
+    },
+    {
+      "question": "Czy mogę policzyć kilka rabatów na jednym produkcie?",
+      "answer": "Tak, ale najlepiej robić to krok po kroku. Każda kolejna obniżka liczy się od nowej ceny po poprzednim rabacie."
     }
   ],
   "seo": {
-    "title": "Kalkulator rabatu",
-    "description": "Oblicz cenę po rabacie procentowym. Darmowy kalkulator rabatu online z natychmiastowym wynikiem.",
+    "title": "Kalkulator rabatu | Cena po obniżce",
+    "description": "Podaj cenę wyjściową i procent rabatu, aby od razu zobaczyć cenę końcową oraz oszczędność.",
     "keywords": [
-      "kalkulator rabatu"
+      "kalkulator rabatu",
+      "cena po rabacie",
+      "oblicz rabat",
+      "kalkulator obniżki",
+      "oszczędność po rabacie"
     ]
   }
 }

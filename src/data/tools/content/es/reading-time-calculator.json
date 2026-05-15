@@ -4,43 +4,80 @@
   "slug": "calculadora-de-tiempo-de-lectura",
   "h1": "Calculadora de tiempo de lectura",
   "title": "Calculadora de tiempo de lectura",
-  "shortDescription": "Calcula al instante el tiempo de lectura según el número de palabras, con resultados rápidos, una interfaz sencilla y ejemplos prácticos.",
-  "overview": "Calcula el tiempo de lectura según el número de palabras al instante. Esta página ofrece una respuesta rápida con una herramienta útil y un flujo de resultados sencillo. Está pensada para usuarios que buscan una respuesta gratuita en línea, resultados inmediatos en el navegador y contenido práctico de utilidad para búsquedas de cola larga.",
+  "shortDescription": "Calcula cuánto tardará en leerse un texto según su número de palabras.",
+  "metaTitle": "Calculadora de lectura",
+  "metaDescription": "Calcula el tiempo de lectura según el número de palabras y obtén una estimación en minutos y segundos.",
+  "intro": "Pega tu texto o introduce el número de palabras para obtener un tiempo de lectura estimado en minutos y segundos.",
+  "overview": "Esta calculadora sirve para saber cuánto tardará una persona en leer un texto antes de publicarlo, enviarlo o revisarlo. Convierte el recuento de palabras en una estimación clara para evaluar si el contenido resulta breve, extenso o adecuado para el objetivo.\n\nEl resultado se basa en una velocidad media de lectura, así que ofrece una referencia útil, no una medición exacta. Es especialmente práctica para planificar artículos, newsletters, materiales de clase y documentos donde conviene controlar la duración de la lectura.",
   "howItWorks": [
-    "Introduce el valor o el texto requerido en el formulario.",
-    "La conversión, el cálculo o la transformación se ejecuta al instante en el navegador.",
-    "Revisa el resultado y sigue con herramientas relacionadas si necesitas otro paso."
+    "Pega el texto o escribe el número de palabras.",
+    "La herramienta calcula el tiempo de lectura con una velocidad media estándar.",
+    "Revisa el resultado en minutos y segundos y compáralo con la duración que buscas."
+  ],
+  "useCases": [
+    {
+      "title": "Planificación de artículos",
+      "description": "Comprueba si un borrador se acerca a un texto breve, medio o largo antes de publicarlo."
+    },
+    {
+      "title": "Newsletters y boletines",
+      "description": "Calcula cuánto tiempo necesitará leerlo tu audiencia y ajusta la extensión si queda demasiado denso."
+    },
+    {
+      "title": "Material docente",
+      "description": "Valora si unas notas o una ficha se pueden leer con rapidez o necesitan una versión más corta."
+    },
+    {
+      "title": "Informes y propuestas",
+      "description": "Presenta una estimación de lectura para ayudar a fijar expectativas sobre documentos de trabajo."
+    }
   ],
   "examples": [
     {
-      "title": "Ejemplo 1",
-      "input": "Un borrador de blog",
-      "output": "Tiempo de lectura estimado",
-      "description": "Un ejemplo realista de calculadora de tiempo de lectura para una consulta habitual."
+      "title": "Texto breve",
+      "input": "420 palabras",
+      "output": "Unos 2 minutos",
+      "description": "Un mensaje, nota o artículo corto para lectura rápida."
     },
     {
-      "title": "Ejemplo 2",
-      "input": "Un borrador de blog",
-      "output": "Tiempo de lectura estimado",
-      "description": "Otro caso práctico pensado para tráfico orgánico de cola larga."
+      "title": "Borrador medio",
+      "input": "1.150 palabras",
+      "output": "Unos 5 minutos",
+      "description": "Un artículo típico que se lee en pocos minutos."
+    },
+    {
+      "title": "Artículo largo",
+      "input": "2.700 palabras",
+      "output": "Unos 12 minutos",
+      "description": "Un texto extenso que requiere más tiempo y concentración."
     }
   ],
   "faq": [
     {
-      "question": "¿Qué precisión tiene esta herramienta?",
-      "answer": "El resultado se calcula directamente a partir de la fórmula o de la lógica en el navegador utilizada por esta herramienta."
+      "question": "¿Qué velocidad de lectura usa la calculadora?",
+      "answer": "Usa una velocidad media estándar para convertir palabras en tiempo estimado. El resultado real puede variar según la dificultad del texto."
     },
     {
-      "question": "¿Puedo usar esta herramienta en móvil?",
-      "answer": "Sí. La página funciona en pantallas de escritorio y móviles con un diseño sencillo de entrada y resultado."
+      "question": "¿Por qué dos textos con las mismas palabras pueden requerir tiempos distintos?",
+      "answer": "Los títulos, las frases largas, la terminología técnica, las listas y el código pueden ralentizar la lectura aunque el número de palabras sea igual."
+    },
+    {
+      "question": "¿Debo incluir títulos, pies de foto y viñetas?",
+      "answer": "Si forman parte del contenido que se leerá, conviene incluirlos. Omitirlos puede hacer que la estimación quede por debajo del tiempo real."
+    },
+    {
+      "question": "¿Esto sirve como tiempo de exposición oral?",
+      "answer": "No. El tiempo de lectura y el tiempo de hablar no suelen coincidir porque la velocidad al leer no es la misma que al presentar en voz alta."
     }
   ],
   "seo": {
-    "title": "Calculadora de tiempo de lectura",
-    "description": "Calcula al instante el tiempo de lectura según el número de palabras. Calculadora gratuita de tiempo de lectura en línea con resultados inmediatos.",
+    "title": "Calculadora de lectura",
+    "description": "Calcula el tiempo de lectura según el número de palabras y obtén una estimación en minutos y segundos.",
     "keywords": [
       "calculadora de tiempo de lectura",
-      "herramienta text-tools"
+      "tiempo de lectura",
+      "estimar lectura",
+      "palabras a tiempo"
     ]
   }
 }

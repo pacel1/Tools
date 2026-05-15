@@ -4,106 +4,91 @@
   "slug": "odkoduj-html",
   "h1": "Odkoduj HTML",
   "title": "Odkoduj HTML",
-  "shortDescription": "Dekoduj zapisane encje HTML do czytelnego kodu lub tekstu.",
-  "metaTitle": "Odkoduj HTML | Dekoder encji HTML",
-  "metaDescription": "Szybko odkoduj encje HTML do czytelnego tekstu lub znaczników dzięki prostemu narzędziu działającemu w przeglądarce.",
-  "intro": "Odkoduj encje HTML, takie jak &amp;, &lt;, &gt; i &quot;, aby od razu zobaczyć czytelny kod HTML lub zwykły tekst.",
-  "overview": "Narzędzie Odkoduj HTML zamienia encje na ich oryginalne znaki, dzięki czemu łatwiej odczytasz, sprawdzisz lub ponownie wykorzystasz treść. Sprawdza się przy wklejonych fragmentach, zakodowanych treściach i analizie odpowiedzi z szablonów lub API. Działa lokalnie w przeglądarce, więc wyniki pojawiają się szybko i bez wysyłania danych na serwer.",
+  "shortDescription": "Dekoduj encje HTML do czytelnego tekstu lub znaczników.",
+  "metaTitle": "Odkoduj HTML | Dekoder encji",
+  "metaDescription": "Odkoduj encje HTML do czytelnego tekstu lub znaczników w narzędziu działającym w przeglądarce.",
+  "intro": "Wklej zapis typu &amp;lt;div&amp;gt; lub &amp;amp;, aby natychmiast odzyskać oryginalne znaki.",
+  "overview": "Odkoduj HTML przywraca encje do ich pierwotnych znaków, więc wklejone fragmenty, odpowiedzi API i zapisane treści znów da się normalnie odczytać. To przydaje się, gdy tekst został zapisany z encjami, gdy chcesz sprawdzić znacznik przed wyrenderowaniem albo gdy trzeba odzyskać cudzysłowy, nawiasy ostrymi końcami i polskie znaki zapisane w formie encji.\n\nWynik to odszyfrowany tekst, a nie automatyczne sprawdzanie poprawności. Jeśli w danych wejściowych są znaczniki HTML, pojawią się one w wyniku w postaci po dekodowaniu, więc przed użyciem treści warto ją przejrzeć. Narzędzie służy do przywracania czytelnej postaci i pokazania rzeczywistych znaków, które były zapisane jako encje.",
   "howItWorks": [
     "Wklej zakodowany HTML lub tekst do pola wejściowego.",
-    "Narzędzie dekoduje popularne encje HTML, takie jak &amp;, &lt;, &gt;, &quot; oraz encje liczbowe.",
-    "Skopiuj odkodowany wynik do edycji, podglądu lub ponownego użycia."
+    "Narzędzie dekoduje encje nazwane, takie jak &amp;, &lt;, &gt;, &quot; i &apos;, a także encje liczbowe dziesiętne i szesnastkowe.",
+    "Skopiuj wynik do sprawdzenia, edycji lub ponownego użycia."
   ],
   "useCases": [
-    "Odczyt zakodowanego HTML skopiowanego z e-maili, CMS lub kodu źródłowego.",
-    "Debugowanie szablonów, odpowiedzi API lub fragmentów tekstu z encjami.",
-    "Konwersja tekstu z encjami do czytelnej postaci przed edycją.",
-    "Analiza znaczników zapisanych lub przesłanych w formie zakodowanej."
+    {
+      "title": "Odzyskanie treści z e-maili",
+      "description": "Przywróć czytelny tekst z newsletterów, wiadomości obsługi klienta i szablonów maili, w których wszystko zapisano jako encje."
+    },
+    {
+      "title": "Sprawdzenie fragmentów z CMS",
+      "description": "Zobacz, czy treść artykułu lub produktu została zapisana jako zakodowany HTML, zanim zaczniesz ją edytować."
+    },
+    {
+      "title": "Analiza odpowiedzi API",
+      "description": "Odkoduj pola z JSON lub XML, które zwracają HTML w formie encji, aby łatwiej porównać zapis źródłowy z wynikiem na ekranie."
+    },
+    {
+      "title": "Naprawa podwójnie zakodowanego tekstu",
+      "description": "Usuń jedną warstwę kodowania z ciągów typu &amp;lt; lub &amp;quot;, aby odczytać treść tak, jak miała wyglądać."
+    }
   ],
   "examples": [
     {
-      "title": "Podstawowe dekodowanie encji",
-      "input": "&lt;strong&gt;Hello &amp; welcome&lt;/strong&gt;",
-      "output": "<strong>Hello & welcome</strong>",
-      "description": "Przywraca zakodowane znaczniki i symbole do czytelnej postaci."
+      "title": "Dekodowanie znaczników",
+      "input": "&lt;h2&gt;Wyprzedaż zimowa&lt;/h2&gt;",
+      "output": "<h2>Wyprzedaż zimowa</h2>",
+      "description": "Przywraca nawiasy ostre, aby znacznik był widoczny."
     },
     {
-      "title": "Cudzysłowy i apostrofy",
-      "input": "&quot;Smart&quot; &amp; &#39;simple&#39;",
-      "output": "\"Smart\" & 'simple'",
-      "description": "Dekoduje popularne encje znaków interpunkcyjnych używane w HTML."
+      "title": "Odzyskiwanie symboli",
+      "input": "Cena: 19 &amp; VAT, rozmiar &quot;L&quot;",
+      "output": "Cena: 19 & VAT, rozmiar \"L\"",
+      "description": "Zamienia popularne encje na zwykłe znaki interpunkcyjne."
+    },
+    {
+      "title": "Encje liczbowe",
+      "input": "Fran&#231;ais &#8212; caf&#233;",
+      "output": "Français — café",
+      "description": "Dekoduje encje dziesiętne do oryginalnych liter i myślnika."
+    },
+    {
+      "title": "Tekst podwójnie zakodowany",
+      "input": "&amp;lt;span class=&amp;quot;note&amp;quot;&amp;gt;Gotowe&amp;lt;/span&amp;gt;",
+      "output": "<span class=\"note\">Gotowe</span>",
+      "description": "Usuwa jedną warstwę kodowania, aby odsłonić właściwy HTML."
     }
   ],
   "faq": [
     {
-      "question": "Co robi Odkoduj HTML?",
-      "answer": "Zamienia zakodowane encje HTML na ich zwykłe znaki, aby tekst lub kod znów były czytelne."
+      "question": "Czy to narzędzie usuwa znaczniki HTML?",
+      "answer": "Nie. Odkodowuje tylko encje. Jeśli wejście zawiera zakodowane znaczniki, zostaną one przywrócone w wyniku."
     },
     {
-      "question": "Czy to jest to samo co kodowanie HTML?",
-      "answer": "Nie. Kodowanie HTML zamienia znaki specjalne na encje, a odkodowywanie robi odwrotną operację."
+      "question": "Dlaczego po dekodowaniu nadal widzę nawiasy ostre?",
+      "answer": "To znaczy, że w źródle były znaczniki HTML. Narzędzie pokazuje dokładnie te znaki, które zostały zapisane jako encje."
     },
     {
-      "question": "Czy narzędzie działa lokalnie w przeglądarce?",
-      "answer": "Tak. Narzędzie jest przeznaczone do działania po stronie klienta i nie wymaga zewnętrznego API."
+      "question": "Czy obsługuje encje dziesiętne i szesnastkowe?",
+      "answer": "Tak. Obsługuje popularne encje nazwane oraz zapis liczbowy, na przykład &#169; i &#xA9;."
     },
     {
-      "question": "Czy dekoduje encje liczbowe?",
-      "answer": "Tak. Obsługuje popularne encje liczbowe HTML oraz encje nazwane."
+      "question": "Co się dzieje z błędnymi lub niepełnymi encjami?",
+      "answer": "Niepoprawne sekwencje pozostają bez zmian. Jeśli brakuje średnika albo kod jest uszkodzony, sprawdź oryginalny ciąg."
     },
     {
-      "question": "Czy taki wynik można od razu renderować?",
-      "answer": "Zawsze sprawdź odkodowaną treść przed wyświetleniem jej na stronie, zwłaszcza jeśli pochodzi z niezaufanego źródła."
+      "question": "Dlaczego tekst podwójnie zakodowany trzeba czasem dekodować dwa razy?",
+      "answer": "Jeśli źródło zawiera &amp;lt; zamiast &lt;, pierwszy krok usuwa tylko zewnętrzną warstwę. Przy kilku warstwach kodowania trzeba wykonać dekodowanie ponownie."
     }
   ],
-  "uiLabels": {
-    "copy": "Kopiuj",
-    "copied": "Skopiowano",
-    "input": "Wejście",
-    "output": "Wyjście",
-    "placeholder": "Wklej tutaj zakodowany HTML lub tekst",
-    "indent": "Wcięcie",
-    "removeComments": "Usuń komentarze",
-    "preview": "Podgląd",
-    "source": "Źródło",
-    "sanitizedHtml": "Oczyszczony HTML",
-    "plainText": "Zwykły tekst",
-    "summary": "Podsumowanie",
-    "total": "Łącznie",
-    "links": "Linki",
-    "images": "Obrazy",
-    "errors": "Błędy",
-    "warnings": "Ostrzeżenia",
-    "valid": "Poprawne",
-    "invalid": "Niepoprawne",
-    "href": "Adres URL",
-    "text": "Tekst",
-    "rel": "Rel",
-    "target": "Cel",
-    "alt": "Alt",
-    "width": "Szerokość",
-    "height": "Wysokość",
-    "empty": "Puste",
-    "outputReady": "Wynik gotowy",
-    "cleanedHtml": "Oczyszczony HTML",
-    "formattedHtml": "Sformatowany HTML",
-    "minifiedHtml": "Zminimalizowany HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Wyodrębnione obrazy",
-    "extractedLinks": "Wyodrębnione linki",
-    "validationSummary": "Podsumowanie walidacji",
-    "prettyHtml": "Czytelny HTML",
-    "encodedText": "Zakodowany tekst"
-  },
   "seo": {
     "title": "Odkoduj HTML",
-    "description": "Odkoduj encje HTML do czytelnego tekstu lub znaczników za pomocą szybkiego narzędzia działającego lokalnie w przeglądarce.",
+    "description": "Odkoduj encje HTML do czytelnego tekstu lub znaczników w narzędziu działającym w przeglądarce.",
     "keywords": [
       "odkoduj html",
-      "dekoder html",
       "dekoder encji html",
+      "html decoder",
       "encje html",
-      "html tools"
+      "dekodowanie html"
     ]
   }
 }

@@ -4,176 +4,91 @@
   "slug": "calculadora-de-pintura",
   "h1": "Calculadora de pintura",
   "title": "Calculadora de pintura",
-  "shortDescription": "Calcula cuánta pintura necesitas para paredes y techos según la superficie, la cobertura, las capas y el margen de desperdicio.",
-  "metaTitle": "Calculadora de pintura - calcula litros y botes",
-  "metaDescription": "Calcula cuánta pintura necesitas para paredes y techos. Introduce la superficie, la cobertura, las capas, el margen y el tamaño del bote para estimar litros y botes.",
-  "intro": "Usa esta calculadora de pintura para estimar rápidamente cuántos litros necesitas para paredes o techos. Es una herramienta práctica para planificar reformas y comprar la cantidad correcta antes de pintar.",
-  "overview": "Introduce la superficie en metros cuadrados, la cobertura de la pintura en m2/l, el número de capas, el porcentaje de desperdicio y el tamaño del bote. La herramienta calcula la pintura necesaria sin desperdicio, con desperdicio y el número estimado de botes. Los valores por defecto reflejan usos comunes: unas 10-12 m2/l, 2 capas y 10% de margen.",
+  "shortDescription": "Calcula cuánta pintura necesitas para paredes y techos según superficie, rendimiento, capas, desperdicio y tamaño del bote.",
+  "metaTitle": "Pintura: litros y botes",
+  "metaDescription": "Calcula la pintura para paredes y techos introduciendo superficie, rendimiento, capas, desperdicio y tamaño del bote.",
+  "intro": "Introduce la superficie, el rendimiento, las capas, el desperdicio y el tamaño del bote para obtener litros y número de botes.",
+  "overview": "Esta calculadora convierte las medidas de una pared o un techo en una cantidad de pintura útil para comprar. Toma la superficie, el rendimiento indicado por el fabricante, el número de capas, un margen de desperdicio y el tamaño del envase para estimar tanto los litros como los botes necesarios.\n\nResulta muy práctica cuando hay paredes con textura, retoques, cambios fuertes de color o recortes en esquinas y remates. El resultado enseña la cantidad base y la cantidad ajustada con desperdicio, para que puedas preparar la compra antes de abrir el primer bote.\n\nSi vas a comparar pinturas, usa el rendimiento real que figura en la lata o ficha del producto. Los soportes porosos, las superficies rugosas y las zonas reparadas suelen consumir más, así que el margen ayuda a ajustar el cálculo a la obra real.",
   "howItWorks": [
-    "Multiplica la superficie por las capas para obtener el área total a cubrir.",
-    "Divide el total entre la cobertura para calcular los litros sin desperdicio.",
-    "Añade el margen para obtener una cantidad más segura.",
-    "Divide entre el tamaño del bote para estimar cuántos botes comprar.",
-    "Redondea hacia arriba para evitar quedarte sin pintura durante el trabajo."
+    "Introduce la superficie a pintar en metros cuadrados.",
+    "Usa el rendimiento de la pintura indicado en la etiqueta, en m2/l.",
+    "Elige cuántas capas vas a aplicar.",
+    "Añade desperdicio por rodillo, brocha, bordes, retoques y absorción.",
+    "Divide los litros finales entre el tamaño del bote y redondea hacia arriba."
   ],
   "useCases": [
-    "Planificar la pintura de una habitación en casa.",
-    "Calcular la pintura necesaria para un techo.",
-    "Comparar marcas de pintura por su cobertura.",
-    "Comprobar cuántos botes hacen falta para una reforma.",
-    "Evitar comprar de menos cuando se dan varias capas."
+    {
+      "title": "Pintar un salón",
+      "description": "Calcular los litros necesarios para renovar un salón grande con dos capas de acabado."
+    },
+    {
+      "title": "Ajustar un techo",
+      "description": "Ver si un techo cabe en un bote de 5 l o si conviene un envase mayor."
+    },
+    {
+      "title": "Comparar dos pinturas",
+      "description": "Poner frente a frente dos productos con distinto rendimiento para la misma estancia."
+    },
+    {
+      "title": "Planificar varias habitaciones",
+      "description": "Sumar el consumo de pintura de pasillo, dormitorio y despacho en una sola compra."
+    },
+    {
+      "title": "Soportes absorbentes",
+      "description": "Añadir margen extra para paredes rugosas, zonas parcheadas o yeso muy poroso."
+    }
   ],
   "examples": [
     {
-      "title": "Estimación de una habitación",
-      "input": "Superficie: 40 m2, cobertura: 11 m2/l, capas: 2, margen: 10%, bote: 5 l",
-      "output": "Litros sin desperdicio: 7,27 l, litros con desperdicio: 8,00 l, botes: 2.",
-      "description": "Una habitación típica suele requerir un bote adicional al incluir margen y redondeo."
+      "title": "Dormitorio mediano con dos capas",
+      "input": "Superficie: 32 m2, rendimiento: 11 m2/l, capas: 2, desperdicio: 8%, bote: 2,5 l",
+      "output": "Pintura sin desperdicio: 5,82 l, pintura con desperdicio: 6,28 l, botes: 3.",
+      "description": "Para un dormitorio de este tamaño, tres botes pequeños dejan un margen cómodo para retoques."
     },
     {
-      "title": "Repintar un techo",
-      "input": "Superficie: 25 m2, cobertura: 10 m2/l, capas: 2, margen: 10%, bote: 10 l",
-      "output": "Litros sin desperdicio: 5,00 l, litros con desperdicio: 5,50 l, botes: 1.",
-      "description": "Ideal para una estimación rápida en techos pequeños."
+      "title": "Techo de cocina",
+      "input": "Superficie: 18 m2, rendimiento: 9,5 m2/l, capas: 2, desperdicio: 12%, bote: 10 l",
+      "output": "Pintura sin desperdicio: 3,79 l, pintura con desperdicio: 4,24 l, botes: 1.",
+      "description": "Un techo pequeño suele caber en un bote grande incluso con margen añadido."
+    },
+    {
+      "title": "Pasillo con pared rugosa",
+      "input": "Superficie: 54 m2, rendimiento: 8,5 m2/l, capas: 2, desperdicio: 15%, bote: 5 l",
+      "output": "Pintura sin desperdicio: 12,71 l, pintura con desperdicio: 14,62 l, botes: 3.",
+      "description": "Una superficie áspera puede elevar bastante el número de botes necesarios."
     }
   ],
   "faq": [
     {
-      "question": "¿Cómo se calcula la cantidad de pintura?",
-      "answer": "La calculadora multiplica la superficie por el número de capas y divide entre la cobertura. Después añade el desperdicio para dar una cifra práctica de compra."
+      "question": "¿La calculadora cuenta cada capa por separado?",
+      "answer": "Sí. La superficie se multiplica por el número de capas, así que dos manos duplican la base antes de aplicar el rendimiento."
     },
     {
-      "question": "¿Debo redondear el resultado?",
-      "answer": "Sí. La pintura debe comprarse en botes completos para no quedarse corto durante la obra."
+      "question": "¿Por qué el resultado puede superar lo que indica la etiqueta?",
+      "answer": "Porque el desperdicio incluye pérdidas por rodillo, cubeta, retoques y absorción del soporte. Si dejas el desperdicio en cero, obtienes el mínimo teórico."
     },
     {
-      "question": "¿Qué cobertura debo usar?",
-      "answer": "Usa el valor indicado por el fabricante. Si no lo sabes, 10-12 m2 por litro es un rango práctico habitual para muchas pinturas de pared."
+      "question": "¿Qué hago si la pared tiene textura o parches de masilla?",
+      "answer": "Usa un rendimiento más bajo y un desperdicio más alto. Esas superficies suelen gastar más pintura que una pared lisa."
     },
     {
-      "question": "¿Sirve también para techos?",
-      "answer": "Sí. Solo tienes que introducir la superficie del techo en metros cuadrados y la cobertura de la pintura."
+      "question": "¿Debo poner la capacidad nominal o el volumen real?",
+      "answer": "Introduce el volumen real de pintura del envase. Si el bote contiene 2,5 l, escribe 2,5."
+    },
+    {
+      "question": "¿Cómo interpreto un resultado de 2,1 botes?",
+      "answer": "Hay que redondear a 3 botes. Así tendrás margen para retoques y para pequeñas correcciones de color."
     }
   ],
-  "uiLabels": {
-    "copy": "Copiar",
-    "copied": "Copiado",
-    "input": "Entrada",
-    "output": "Resultado",
-    "placeholder": "Introduce un valor",
-    "indent": "Sangría",
-    "removeComments": "Eliminar comentarios",
-    "preview": "Vista previa",
-    "source": "Fuente",
-    "sanitizedHtml": "HTML saneado",
-    "plainText": "Texto sin formato",
-    "summary": "Resumen",
-    "total": "Total",
-    "links": "Enlaces",
-    "images": "Imágenes",
-    "errors": "Errores",
-    "warnings": "Avisos",
-    "valid": "Válido",
-    "invalid": "Inválido",
-    "href": "Href",
-    "text": "Texto",
-    "rel": "Rel",
-    "target": "Destino",
-    "alt": "Alt",
-    "width": "Ancho",
-    "height": "Alto",
-    "empty": "Vacío",
-    "outputReady": "Resultado listo",
-    "cleanedHtml": "HTML limpio",
-    "formattedHtml": "HTML formateado",
-    "minifiedHtml": "HTML minificado",
-    "markdown": "Markdown",
-    "extractedImages": "Imágenes extraídas",
-    "extractedLinks": "Enlaces extraídos",
-    "validationSummary": "Resumen de validación",
-    "prettyHtml": "HTML legible",
-    "encodedText": "Texto codificado",
-    "file": "Archivo",
-    "size": "Tamaño",
-    "format": "Formato",
-    "quality": "Calidad",
-    "colorOne": "Color 1",
-    "colorTwo": "Color 2",
-    "background": "Fondo",
-    "foreground": "Primer plano",
-    "angle": "Ángulo",
-    "margin": "Margen",
-    "level": "Nivel",
-    "gradientType": "Tipo de degradado",
-    "linear": "Lineal",
-    "radial": "Radial",
-    "blur": "Desenfoque",
-    "spread": "Extensión",
-    "offsetX": "Desplazamiento X",
-    "offsetY": "Desplazamiento Y",
-    "opacity": "Opacidad",
-    "inset": "Inset",
-    "cssCode": "Código CSS",
-    "snippet": "Fragmento",
-    "download": "Descargar",
-    "downloadSvg": "Descargar SVG",
-    "downloadPng": "Descargar PNG",
-    "downloadAll": "Descargar todo",
-    "upload": "Subir",
-    "title": "Título",
-    "description": "Descripción",
-    "canonicalUrl": "URL canónica",
-    "siteName": "Nombre del sitio",
-    "ogImage": "Imagen OG",
-    "clear": "Limpiar",
-    "generatedQr": "QR generado",
-    "placeholderImage": "Imagen de marcador",
-    "faviconSet": "Conjunto de favicon",
-    "keepAspectRatio": "Mantener proporción",
-    "cropX": "Recorte X",
-    "cropY": "Recorte Y",
-    "cropWidth": "Ancho del recorte",
-    "cropHeight": "Alto del recorte",
-    "originalSize": "Tamaño original",
-    "outputSize": "Tamaño de salida",
-    "savedSize": "Tamaño ahorrado",
-    "result": "Resultado",
-    "base64": "Base64",
-    "mimeType": "Tipo MIME",
-    "resizedImage": "Imagen redimensionada",
-    "compressedImage": "Imagen comprimida",
-    "croppedImage": "Imagen recortada",
-    "convertedImage": "Imagen convertida",
-    "decodedImage": "Imagen decodificada",
-    "imagePreview": "Vista previa de imagen",
-    "camera": "Cámara",
-    "lens": "Lente",
-    "dateTaken": "Fecha tomada",
-    "resolution": "Resolución",
-    "fileSize": "Tamaño del archivo",
-    "iso": "ISO",
-    "exposure": "Exposición",
-    "aperture": "Apertura",
-    "focalLength": "Distancia focal",
-    "flash": "Flash",
-    "orientation": "Orientación",
-    "latitude": "Latitud",
-    "longitude": "Longitud",
-    "openMap": "Abrir mapa",
-    "rawMetadata": "Metadatos sin procesar",
-    "noMetadataFound": "No se encontraron metadatos",
-    "gpsLocation": "Ubicación GPS",
-    "metadataSummary": "Resumen de metadatos"
-  },
   "seo": {
-    "title": "Calculadora de pintura - cuánta pintura necesito",
-    "description": "Calculadora de pintura gratuita para paredes y techos. Estima litros sin desperdicio, con desperdicio y el número de botes según superficie, cobertura, capas y tamaño del bote.",
+    "title": "Pintura: litros y botes",
+    "description": "Calcula la pintura para paredes y techos introduciendo superficie, rendimiento, capas, desperdicio y tamaño del bote.",
     "keywords": [
       "calculadora de pintura",
       "cuánta pintura necesito",
-      "calculadora pintura pared",
-      "calculadora pintura techo",
-      "calcular pintura litros"
+      "pintura para pared",
+      "pintura para techo",
+      "litros de pintura"
     ]
   }
 }

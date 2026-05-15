@@ -4,174 +4,86 @@
   "slug": "calculateur-de-joint",
   "h1": "Calculateur de joint",
   "title": "Calculateur de joint",
-  "shortDescription": "Calculez la quantité de joint pour carrelage selon la taille du carreau, la largeur du joint et la surface.",
-  "metaTitle": "Calculateur de joint - estimer la quantité de joint nécessaire",
-  "metaDescription": "Calculez la consommation de joint pour carrelage. Saisissez la surface, la taille du carreau, la largeur et la profondeur du joint, la densité, le pourcentage de perte et le poids du sac.",
-  "intro": "Utilisez ce calculateur de joint pour estimer rapidement la quantité de joint nécessaire à votre chantier de carrelage. L’outil fournit une estimation pratique basée sur les dimensions des carreaux, la largeur des joints, la surface et la marge de perte.",
-  "overview": "Cet outil vous aide à déterminer quelle quantité de joint est nécessaire. Saisissez la surface en m2, la largeur et la hauteur du carreau en cm, la largeur et la profondeur du joint en mm, la densité du joint, le pourcentage de perte et le poids du sac. Le calculateur renvoie une estimation en kilogrammes ainsi que le nombre de sacs à acheter. Il sert de repère pratique pour l’achat et la préparation des matériaux.",
+  "shortDescription": "Calculez la quantité de joint pour carrelage à partir de la surface, du format du carreau, du joint et du poids du sac.",
+  "metaTitle": "Calculateur de joint pour carrelage",
+  "metaDescription": "Estimez le joint nécessaire en kg et en sacs selon la surface, le format du carreau, la largeur et la profondeur du joint, la perte et le poids du sac.",
+  "intro": "Saisissez la surface, le format du carreau, la largeur et la profondeur du joint, la perte et le poids du sac pour estimer la quantité de joint en kg et en sacs.",
+  "overview": "Ce calculateur sert à préparer la quantité de joint pour des travaux de carrelage au sol ou au mur. Il tient compte de la surface à carreler, des dimensions du carreau, de la largeur du joint, de la profondeur du joint, de la densité du joint, d’une marge de perte et du poids du conditionnement prévu.\n\nLe résultat aide à dimensionner l’achat avant le démarrage du chantier et à choisir le bon nombre de sacs. Il est utile quand les formats changent, quand les joints sont plus larges ou quand on veut éviter de manquer de matière en cours de pose.\n\nPour une estimation pertinente, mieux vaut saisir les mesures réelles du projet. Les carreaux biseautés, les supports irréguliers et les joints profonds peuvent augmenter la consommation réelle par rapport au calcul.",
   "howItWorks": [
     "Saisissez la surface totale à carreler en m2.",
     "Ajoutez la largeur et la hauteur du carreau en cm.",
     "Définissez la largeur et la profondeur du joint en mm.",
-    "Choisissez la densité du joint, le pourcentage de perte et le poids du sac.",
-    "Obtenez la quantité estimée en kg et le nombre de sacs nécessaires."
+    "Choisissez la densité, la perte et le poids du sac.",
+    "Lisez la quantité estimée en kg et le nombre de sacs."
   ],
   "useCases": [
-    "Préparer l’achat de joint pour une salle de bain, une cuisine ou un couloir.",
-    "Estimer les matériaux avant de commander les carreaux et les accessoires.",
-    "Vérifier combien de joint acheter pour une rénovation ou une réparation.",
-    "Comparer la consommation selon les formats de carreaux et la largeur des joints."
+    {
+      "title": "Sol de salle de bain",
+      "description": "Estimer la quantité de joint pour une petite salle de bain avec carreaux de format moyen."
+    },
+    {
+      "title": "Crédence de cuisine",
+      "description": "Calculer le joint nécessaire pour une crédence ou une portion de mur carrelé."
+    },
+    {
+      "title": "Réparation ponctuelle d’un sol",
+      "description": "Déterminer la quantité à acheter pour remplacer une petite zone sans surplus important."
+    },
+    {
+      "title": "Comparaison de formats",
+      "description": "Voir l’impact du format 60x60, 30x60 ou 20x20 cm sur la consommation."
+    }
   ],
   "examples": [
     {
-      "title": "Planification rapide pour un sol de salle de bain",
+      "title": "Sol de salle de bain avec joints standards",
       "input": "Surface 12 m2, carreau 30x60 cm, joint 2 mm, profondeur 8 mm, perte 10%, sac 5 kg",
-      "output": "Estimation de joint en kg et nombre de sacs à acheter.",
-      "description": "Un cas courant pour savoir quelle quantité de joint est nécessaire avant l’achat."
+      "output": "Quantité estimée en kg et nombre de sacs de 5 kg à acheter.",
+      "description": "Un cas courant pour un petit sol de salle de bain avec un format de carreau intermédiaire."
     },
     {
-      "title": "Estimation pour des carreaux muraux",
-      "input": "Surface 18 m2, carreau 20x20 cm, joint 3 mm, profondeur 10 mm, perte 12%, sac 2 kg",
-      "output": "Une estimation pratique pour éviter d’acheter trop peu ou trop de joint.",
-      "description": "Utile pour les carreaux de petit format avec des joints plus larges."
+      "title": "Crédence de cuisine en petits carreaux",
+      "input": "Surface 7,5 m2, carreau 10x10 cm, joint 3 mm, profondeur 6 mm, perte 8%, sac 2 kg",
+      "output": "Consommation estimée et nombre de sacs arrondi au supérieur.",
+      "description": "Les petits carreaux multiplient la longueur de joints et augmentent la quantité nécessaire."
+    },
+    {
+      "title": "Rattrapage d’une zone de sol",
+      "input": "Surface 4,2 m2, carreau 20x20 cm, joint 4 mm, profondeur 10 mm, perte 12%, sac 1 kg",
+      "output": "Quantité calculée et nombre de petits conditionnements requis.",
+      "description": "Pratique pour les réparations limitées où l’on souhaite acheter juste ce qu’il faut."
     }
   ],
   "faq": [
     {
-      "question": "Ce calculateur de joint est-il exact ?",
-      "answer": "Il fournit une estimation simplifiée de planification, pas une consommation de laboratoire. La consommation réelle peut varier selon le profil du carreau, la pose et la mise en œuvre."
+      "question": "Le calculateur prend-il en compte tous les carreaux de la même façon ?",
+      "answer": "Il utilise les dimensions et les joints, mais ne distingue pas chaque texture. Les carreaux biseautés, rainurés ou irréguliers peuvent augmenter la consommation réelle."
     },
     {
-      "question": "Pourquoi la profondeur du joint est-elle nécessaire ?",
-      "answer": "La profondeur du joint détermine le volume à remplir, donc des joints plus profonds demandent généralement plus de joint."
+      "question": "Que représente la profondeur du joint ?",
+      "answer": "C’est la profondeur remplie sous la surface du carreau. Plus elle est importante, plus la quantité de joint augmente."
     },
     {
-      "question": "Le calculateur inclut-il les pertes ?",
-      "answer": "Oui. Vous pouvez indiquer un pourcentage de pertes pour tenir compte des mélanges, éclaboussures et irrégularités du support."
+      "question": "Faut-il saisir la pièce entière ?",
+      "answer": "Non, saisissez seulement la surface réellement carrelée. Il est préférable d’exclure les ouvertures et les zones sans carreaux."
     },
     {
-      "question": "Comment savoir combien de sacs acheter ?",
-      "answer": "Le calculateur convertit la quantité totale nécessaire en nombre de sacs selon le poids saisi, puis arrondit au supérieur pour l’achat."
+      "question": "Pourquoi arrondir le nombre de sacs au supérieur ?",
+      "answer": "Parce qu’on achète des sacs entiers. Si le résultat est proche du sac suivant, mieux vaut prévoir une petite réserve."
+    },
+    {
+      "question": "Les joints larges changent-ils beaucoup le résultat ?",
+      "answer": "Oui. Plus le joint est large, plus le volume à remplir est important. L’effet est marqué sur les petits formats."
     }
   ],
-  "uiLabels": {
-    "copy": "Copier",
-    "copied": "Copié",
-    "input": "Entrée",
-    "output": "Résultat",
-    "placeholder": "Saisissez une valeur",
-    "indent": "Retrait",
-    "removeComments": "Supprimer les commentaires",
-    "preview": "Aperçu",
-    "source": "Source",
-    "sanitizedHtml": "HTML nettoyé",
-    "plainText": "Texte brut",
-    "summary": "Résumé",
-    "total": "Total",
-    "links": "Liens",
-    "images": "Images",
-    "errors": "Erreurs",
-    "warnings": "Avertissements",
-    "valid": "Valide",
-    "invalid": "Invalide",
-    "href": "Href",
-    "text": "Texte",
-    "rel": "Rel",
-    "target": "Cible",
-    "alt": "Alt",
-    "width": "Largeur",
-    "height": "Hauteur",
-    "empty": "Vide",
-    "outputReady": "Résultat prêt",
-    "cleanedHtml": "HTML nettoyé",
-    "formattedHtml": "HTML formaté",
-    "minifiedHtml": "HTML minifié",
-    "markdown": "Markdown",
-    "extractedImages": "Images extraites",
-    "extractedLinks": "Liens extraits",
-    "validationSummary": "Résumé de validation",
-    "prettyHtml": "HTML lisible",
-    "encodedText": "Texte encodé",
-    "file": "Fichier",
-    "size": "Taille",
-    "format": "Format",
-    "quality": "Qualité",
-    "colorOne": "Couleur 1",
-    "colorTwo": "Couleur 2",
-    "background": "Arrière-plan",
-    "foreground": "Premier plan",
-    "angle": "Angle",
-    "margin": "Marge",
-    "level": "Niveau",
-    "gradientType": "Type de dégradé",
-    "linear": "Linéaire",
-    "radial": "Radial",
-    "blur": "Flou",
-    "spread": "Diffusion",
-    "offsetX": "Décalage X",
-    "offsetY": "Décalage Y",
-    "opacity": "Opacité",
-    "inset": "Interne",
-    "cssCode": "Code CSS",
-    "snippet": "Extrait",
-    "download": "Télécharger",
-    "downloadSvg": "Télécharger SVG",
-    "downloadPng": "Télécharger PNG",
-    "downloadAll": "Tout télécharger",
-    "upload": "Importer",
-    "title": "Titre",
-    "description": "Description",
-    "canonicalUrl": "URL canonique",
-    "siteName": "Nom du site",
-    "ogImage": "Image OG",
-    "clear": "Effacer",
-    "generatedQr": "QR généré",
-    "placeholderImage": "Image de remplacement",
-    "faviconSet": "Jeu de favicon",
-    "keepAspectRatio": "Conserver les proportions",
-    "cropX": "Recadrage X",
-    "cropY": "Recadrage Y",
-    "cropWidth": "Largeur du recadrage",
-    "cropHeight": "Hauteur du recadrage",
-    "originalSize": "Taille originale",
-    "outputSize": "Taille de sortie",
-    "savedSize": "Taille enregistrée",
-    "result": "Résultat",
-    "base64": "Base64",
-    "mimeType": "Type MIME",
-    "resizedImage": "Image redimensionnée",
-    "compressedImage": "Image compressée",
-    "croppedImage": "Image recadrée",
-    "convertedImage": "Image convertie",
-    "decodedImage": "Image décodée",
-    "imagePreview": "Aperçu de l'image",
-    "camera": "Caméra",
-    "lens": "Objectif",
-    "dateTaken": "Date de prise de vue",
-    "resolution": "Résolution",
-    "fileSize": "Taille du fichier",
-    "iso": "ISO",
-    "exposure": "Exposition",
-    "aperture": "Ouverture",
-    "focalLength": "Distance focale",
-    "flash": "Flash",
-    "orientation": "Orientation",
-    "latitude": "Latitude",
-    "longitude": "Longitude",
-    "openMap": "Ouvrir la carte",
-    "rawMetadata": "Métadonnées brutes",
-    "noMetadataFound": "Aucune métadonnée trouvée",
-    "gpsLocation": "Position GPS",
-    "metadataSummary": "Résumé des métadonnées"
-  },
   "seo": {
     "title": "Calculateur de joint",
-    "description": "Calculez la quantité de joint nécessaire pour le carrelage en kg et en sacs selon la surface, la taille du carreau, la largeur du joint, la profondeur du joint, la perte et le poids du sac.",
+    "description": "Estimez le joint nécessaire en kg et en sacs selon la surface, le format du carreau, la largeur et la profondeur du joint, la perte et le poids du sac.",
     "keywords": [
       "calculateur de joint",
       "quantité de joint",
-      "calcul de joint",
       "consommation de joint",
+      "joint carrelage",
       "carrelage"
     ]
   }

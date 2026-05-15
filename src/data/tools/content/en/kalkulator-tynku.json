@@ -4,183 +4,89 @@
   "slug": "plaster-calculator",
   "h1": "Plaster Calculator",
   "title": "Plaster Calculator",
-  "shortDescription": "Calculate how much plaster you need for exterior facades or interior walls based on layer thickness.",
-  "metaTitle": "Plaster Calculator | Bags, kg and Waste Estimate",
-  "metaDescription": "Estimate plaster consumption in kg and how many bags you need for facade or interior plaster. Enter area, consumption per mm, thickness, waste and bag weight.",
-  "intro": "Use this plaster calculator to quickly estimate plaster quantity for facade and interior wall work. Enter the area, material consumption per mm, layer thickness, waste percentage and bag weight to find the total kilograms and the number of bags needed.",
-  "overview": "This tool helps you plan plaster orders more accurately for renovation and finishing work. It calculates the base plaster demand, adds your waste allowance and converts the result into bag counts. It works for common facade plaster and interior plaster planning where you need a fast answer to: how much plaster do I need?",
+  "shortDescription": "Estimate plaster for façades and interior walls from area, thickness, consumption rate, waste, and bag size.",
+  "metaTitle": "Plaster Calculator | Bags and kg",
+  "metaDescription": "Estimate plaster needs for façades and interior walls from area, thickness, waste, consumption rate, and bag weight.",
+  "intro": "Enter the wall area, plaster consumption per mm, layer thickness, waste, and bag weight to get the total kilograms and bag count.",
+  "overview": "This calculator is built for plaster planning on façades, partition walls, ceilings, and renovation work where you need to know the material volume before ordering. It multiplies the surface area by the declared consumption per millimetre and by the planned thickness, then adds your waste allowance and converts the result into bags.\n\nUse it when you have product data in kg/m²/mm and want a realistic buying quantity rather than a theoretical minimum. If the substrate is rough, the wall is highly absorbent, or the application is split across several rooms, the waste field helps you avoid under-ordering.",
   "howItWorks": [
-    "Enter the surface area in square meters.",
-    "Set the plaster consumption per 1 mm in kg/m²/mm.",
-    "Provide the intended layer thickness in millimeters.",
-    "Add a waste percentage for cuts, losses or uneven surfaces.",
+    "Enter the area in square metres.",
+    "Set the consumption rate in kg/m²/mm from the product sheet.",
+    "Enter the planned layer thickness in millimetres.",
+    "Add a waste percentage for losses, unevenness, and leftovers.",
     "Enter the bag weight in kilograms.",
-    "View the base kilograms, total kilograms with waste and the required number of bags."
+    "Review base kilograms, total kilograms with waste, and the number of bags."
   ],
   "useCases": [
-    "Estimating facade plaster quantities before ordering materials.",
-    "Planning interior plaster for walls and ceilings.",
-    "Calculating how many bags of plaster are needed for a specific renovation area.",
-    "Adding waste margin for rough substrates or application losses.",
-    "Comparing material demand for different layer thicknesses."
+    {
+      "title": "Facade order for a villa wall",
+      "description": "Estimate the plaster load for an exterior wall before placing a material order, especially when the coating thickness follows a manufacturer specification."
+    },
+    {
+      "title": "Interior renovation of a living room",
+      "description": "Work out how many bags are needed for fresh interior plaster on several walls and a ceiling, including a small reserve for joints and corners."
+    },
+    {
+      "title": "Rough substrate allowance",
+      "description": "Add extra material for masonry with uneven suction or repair patches so the purchase quantity reflects real site conditions."
+    },
+    {
+      "title": "Comparing two plaster systems",
+      "description": "Check how bag count changes when a lighter or denser plaster has a different consumption rate at the same thickness."
+    }
   ],
   "examples": [
     {
-      "title": "Sample calculation",
-      "input": "Area: 100 m², consumption: 1.6 kg/m²/mm, thickness: 10 mm, waste: 10%, bag weight: 25 kg",
-      "output": "Base plaster: 1600 kg, total plaster: 1760 kg, bags needed: 71.04 → 72 bags (rounded up)",
-      "description": "A practical example for planning facade or interior plaster orders."
+      "title": "Typical façade estimate",
+      "input": "Area: 120 m², consumption: 1.7 kg/m²/mm, thickness: 12 mm, waste: 8%, bag weight: 25 kg",
+      "output": "Base plaster: 2448 kg, total plaster: 2643.84 kg, bags needed: 105.75 → 106 bags",
+      "description": "A realistic order check for an exterior façade with a modest reserve."
     },
     {
-      "title": "Quick ordering check",
-      "input": "Area: 45 m², consumption: 1.4 kg/m²/mm, thickness: 8 mm, waste: 5%, bag weight: 30 kg",
-      "output": "Base plaster: 504 kg, total plaster: 529.2 kg, bags needed: 17.64 → 18 bags (rounded up)",
-      "description": "Useful for deciding how many bags to buy before starting work."
+      "title": "Room-by-room interior job",
+      "input": "Area: 38 m², consumption: 1.3 kg/m²/mm, thickness: 9 mm, waste: 6%, bag weight: 30 kg",
+      "output": "Base plaster: 444.6 kg, total plaster: 471.28 kg, bags needed: 15.71 → 16 bags",
+      "description": "Useful for planning a small interior refurbishment with standard sacks."
+    },
+    {
+      "title": "Deep repair layer",
+      "input": "Area: 22 m², consumption: 2.0 kg/m²/mm, thickness: 15 mm, waste: 12%, bag weight: 20 kg",
+      "output": "Base plaster: 660 kg, total plaster: 739.2 kg, bags needed: 36.96 → 37 bags",
+      "description": "Shows how thicker repair layers can raise the total sharply even on a small area."
     }
   ],
   "faq": [
     {
-      "question": "How do I calculate how much plaster I need?",
-      "answer": "Multiply area by consumption per mm and by layer thickness. Then add your waste percentage and divide by the bag weight to get the number of bags."
+      "question": "How is the final bag count calculated?",
+      "answer": "The tool multiplies area by consumption per mm and by thickness, then adds waste. That total is divided by the bag weight to show the number of bags."
     },
     {
-      "question": "Does this calculator work for facade plaster and interior plaster?",
-      "answer": "Yes. It is suitable for both facade plaster and interior plaster planning as long as you know the material consumption per mm."
+      "question": "Why can the result include decimals before rounding?",
+      "answer": "Decimals show the exact arithmetic result. In practice, you should buy whole bags and round up, because a partial bag cannot be purchased."
     },
     {
-      "question": "Why should I add waste?",
-      "answer": "Waste covers application losses, uneven surfaces, leftovers in containers and small calculation differences."
+      "question": "What if the product data is given per centimetre instead of per millimetre?",
+      "answer": "Convert it first. A value per centimetre must be divided by 10 to get kg/m²/mm, otherwise the result will be too high by a factor of ten."
     },
     {
-      "question": "Are the bags rounded up?",
-      "answer": "Yes, in practice you should round up to the next full bag so you do not run short on site."
+      "question": "Does the waste field mean leftover sacks or application losses?",
+      "answer": "It covers both. Use it for material left in the bucket, losses on rough corners, and extra demand from uneven walls."
     },
     {
-      "question": "What if my plaster consumption is given per centimeter?",
-      "answer": "Convert it to per millimeter before using the calculator, or multiply the centimeter value by 10 to get kg/m²/mm."
+      "question": "Can I use it when the same room has different thicknesses?",
+      "answer": "Yes, but calculate each thickness separately and add the results. Using one average thickness can hide large differences in consumption."
     }
   ],
-  "uiLabels": {
-    "copy": "Copy",
-    "copied": "Copied",
-    "input": "Input",
-    "output": "Output",
-    "placeholder": "Enter value",
-    "indent": "Indent",
-    "removeComments": "Remove comments",
-    "preview": "Preview",
-    "source": "Source",
-    "sanitizedHtml": "Sanitized HTML",
-    "plainText": "Plain text",
-    "summary": "Summary",
-    "total": "Total",
-    "links": "Links",
-    "images": "Images",
-    "errors": "Errors",
-    "warnings": "Warnings",
-    "valid": "Valid",
-    "invalid": "Invalid",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Width",
-    "height": "Height",
-    "empty": "Empty",
-    "outputReady": "Output ready",
-    "cleanedHtml": "Cleaned HTML",
-    "formattedHtml": "Formatted HTML",
-    "minifiedHtml": "Minified HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extracted images",
-    "extractedLinks": "Extracted links",
-    "validationSummary": "Validation summary",
-    "prettyHtml": "Pretty HTML",
-    "encodedText": "Encoded text",
-    "file": "File",
-    "size": "Size",
-    "format": "Format",
-    "quality": "Quality",
-    "colorOne": "Color 1",
-    "colorTwo": "Color 2",
-    "background": "Background",
-    "foreground": "Foreground",
-    "angle": "Angle",
-    "margin": "Margin",
-    "level": "Level",
-    "gradientType": "Gradient type",
-    "linear": "Linear",
-    "radial": "Radial",
-    "blur": "Blur",
-    "spread": "Spread",
-    "offsetX": "Offset X",
-    "offsetY": "Offset Y",
-    "opacity": "Opacity",
-    "inset": "Inset",
-    "cssCode": "CSS code",
-    "snippet": "Snippet",
-    "download": "Download",
-    "downloadSvg": "Download SVG",
-    "downloadPng": "Download PNG",
-    "downloadAll": "Download all",
-    "upload": "Upload",
-    "title": "Title",
-    "description": "Description",
-    "canonicalUrl": "Canonical URL",
-    "siteName": "Site name",
-    "ogImage": "OG image",
-    "clear": "Clear",
-    "generatedQr": "Generated QR",
-    "placeholderImage": "Placeholder image",
-    "faviconSet": "Favicon set",
-    "keepAspectRatio": "Keep aspect ratio",
-    "cropX": "Crop X",
-    "cropY": "Crop Y",
-    "cropWidth": "Crop width",
-    "cropHeight": "Crop height",
-    "originalSize": "Original size",
-    "outputSize": "Output size",
-    "savedSize": "Saved size",
-    "result": "Result",
-    "base64": "Base64",
-    "mimeType": "MIME type",
-    "resizedImage": "Resized image",
-    "compressedImage": "Compressed image",
-    "croppedImage": "Cropped image",
-    "convertedImage": "Converted image",
-    "decodedImage": "Decoded image",
-    "imagePreview": "Image preview",
-    "camera": "Camera",
-    "lens": "Lens",
-    "dateTaken": "Date taken",
-    "resolution": "Resolution",
-    "fileSize": "File size",
-    "iso": "ISO",
-    "exposure": "Exposure",
-    "aperture": "Aperture",
-    "focalLength": "Focal length",
-    "flash": "Flash",
-    "orientation": "Orientation",
-    "latitude": "Latitude",
-    "longitude": "Longitude",
-    "openMap": "Open map",
-    "rawMetadata": "Raw metadata",
-    "noMetadataFound": "No metadata found",
-    "gpsLocation": "GPS location",
-    "metadataSummary": "Metadata summary"
-  },
   "seo": {
-    "title": "Plaster Calculator - Estimate kg and bags needed",
-    "description": "Free plaster calculator for facade and interior walls. Calculate plaster consumption, total kilograms and number of bags from area, thickness, waste and bag weight.",
+    "title": "Plaster Calculator | Bags and kg",
+    "description": "Estimate plaster needs for façades and interior walls from area, thickness, waste, consumption rate, and bag weight.",
     "keywords": [
       "plaster calculator",
-      "how much plaster do I need",
-      "bags of plaster",
-      "facade plaster calculator",
-      "interior plaster calculator",
-      "plaster consumption",
-      "kg per m2 mm"
+      "plaster bags",
+      "facade plaster",
+      "interior plaster",
+      "kg per m2 mm",
+      "plaster consumption"
     ]
   }
 }

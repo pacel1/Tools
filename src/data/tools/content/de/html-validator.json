@@ -4,106 +4,91 @@
   "slug": "html-validator",
   "h1": "HTML-Validator",
   "title": "HTML-Validator",
-  "shortDescription": "Prüfe HTML auf unsichere Markups, doppelte IDs und typische Qualitätsprobleme.",
-  "metaTitle": "HTML-Validator | Unsicheres HTML, doppelte IDs und Fehler prüfen",
-  "metaDescription": "HTML online prüfen auf unsichere Tags, doppelte IDs, fehlerhafte Struktur und praktische Qualitätsprobleme mit einem schnellen Browser-Validator.",
-  "intro": "Prüfe HTML vor der Veröffentlichung auf unsichere Markups, doppelte IDs, fehlerhafte Struktur und weitere praktische Probleme.",
-  "overview": "Dieser HTML-Validator hilft dir, typische Markup-Probleme schnell zu erkennen. Er ist nützlich, um unsichere Elemente, doppelte IDs, falsche Verschachtelungen, fehlende Attribute und Qualitätsprobleme zu finden, die Barrierefreiheit, SEO und Rendering beeinträchtigen können. Das Tool läuft clientseitig, sodass dein HTML im Browser bleibt.",
+  "shortDescription": "Prüfe HTML auf unsichere Markups, doppelte IDs und Strukturfehler.",
+  "metaTitle": "HTML-Validator für Markup-Fehler",
+  "metaDescription": "HTML auf unsichere Tags, doppelte IDs, fehlerhafte Verschachtelung und Markup-Probleme prüfen, bevor eine Seite veröffentlicht wird.",
+  "intro": "Füge HTML ein und erhalte einen klaren Bericht über unsichere Tags, doppelte IDs, ungültige Verschachtelung und fehlende Attribute.",
+  "overview": "Dieser Validator ist für die Prüfung von Markup gedacht, nicht für das Layout. Er analysiert den HTML-Baum auf unsichere Elemente, doppelte IDs, falsche Verschachtelung, leere Links, fehlende Alt-Texte und andere strukturelle Fehler, die sich leicht in Vorlagen und kopierte Inhalte einschleichen.\n\nEr ist besonders hilfreich, wenn du einschätzen musst, ob ein Fragment ohne Risiko veröffentlicht oder eingebettet werden kann. Der Bericht trennt Fehler von Warnungen, damit du die wirklich relevanten Probleme zuerst beheben kannst.",
   "howItWorks": [
     "HTML in das Eingabefeld einfügen.",
-    "Die Prüfung starten, um Tags, Attribute, Struktur und IDs zu analysieren.",
-    "Fehler, Warnungen und Details zum sicheren Ergebnis ansehen.",
-    "Probleme beheben und erneut prüfen, bis das HTML sauber ist."
+    "Die Prüfung für Tags, Attribute, Verschachtelung und IDs starten.",
+    "Fehler und Warnungen im Bericht ansehen.",
+    "Den Code korrigieren und erneut prüfen."
   ],
   "useCases": [
-    "Seitenvorlagen vor dem Livegang validieren.",
-    "CMS-Inhalte auf unsichere oder fehlerhafte Markups prüfen.",
-    "Doppelte IDs finden, die Skripte und Barrierefreiheit stören können.",
-    "HTML aus Editoren, E-Mails oder Page-Buildern überprüfen.",
-    "Fehlendes alt, leere Links und andere Qualitätsprobleme erkennen."
+    {
+      "title": "Vorlagen vor dem Go-live prüfen",
+      "description": "Seiten- und Artikelvorlagen auf ungültige Verschachtelungen, fehlende Attribute und doppelte IDs kontrollieren."
+    },
+    {
+      "title": "CMS-Inhalte auditieren",
+      "description": "Aus Editoren oder Altsystemen übernommene Inhalte auf unsichere Tags, leere Links und chaotisches Markup untersuchen."
+    },
+    {
+      "title": "Barrierefreiheit absichern",
+      "description": "Doppelte IDs, leere Anker und Bilder ohne sinnvollen Alt-Text finden, die Screenreader und Navigation stören."
+    },
+    {
+      "title": "HTML aus Baukästen bereinigen",
+      "description": "Von Page-Buildern oder E-Mail-Editoren exportiertes HTML auf nicht unterstützte Elemente und Strukturfehler prüfen."
+    },
+    {
+      "title": "Einbettungen absichern",
+      "description": "Prüfen, ob ein Snippet oder Widget Tags und Attribute enthält, die die Host-Seite beeinträchtigen können."
+    }
   ],
   "examples": [
     {
-      "title": "Einfache Prüfung",
-      "input": "<div id=\"hero\"><a href=\"#\">Mehr lesen</a></div>",
-      "output": "Zeigt Struktur- und Qualitätsprüfungen für das angegebene HTML an.",
-      "description": "Geeignet für einen schnellen Check von einfachem Markup."
+      "title": "Doppelte ID",
+      "input": "<section id=\"promo\"><a id=\"cta\" href=\"/start\">Mehr</a><button id=\"cta\">Los</button></section>",
+      "output": "Der Bericht markiert die doppelte id=\"cta\" und die betroffenen Elemente.",
+      "description": "Hilfreich, wenn dieselbe Kennung bei mehreren interaktiven Elementen verwendet wird."
     },
     {
-      "title": "Prüfung auf unsichere Markups",
-      "input": "<script>alert('x')</script><p>Text</p>",
-      "output": "Markiert unsichere Elemente und mögliche Sicherheitsrisiken.",
-      "description": "Hilft, Code zu erkennen, der nicht veröffentlicht werden sollte."
+      "title": "Unsicheres Tag erkennen",
+      "input": "<div class=\"note\">Hallo</div><script>track()</script>",
+      "output": "Das script-Tag wird als unsicheres Markup für veröffentlichte Inhalte markiert.",
+      "description": "Zeigt, wie das Tool Code behandelt, der vor der Veröffentlichung entfernt werden sollte."
+    },
+    {
+      "title": "Verschachtelung und Attribute",
+      "input": "<p><div>Defekt</div></p><img src=\"cover.jpg\">",
+      "output": "Meldet ungültige Verschachtelung und fehlendes alt beim Bild.",
+      "description": "Hilft, strukturelle Probleme zu finden, die bei kopiertem HTML leicht übersehen werden."
     }
   ],
   "faq": [
     {
-      "question": "Ändert dieses Tool mein HTML?",
-      "answer": "Nein. Es analysiert nur das HTML und zeigt Fehler, Warnungen sowie Validierungsdetails an."
+      "question": "Verändert der Validator mein HTML?",
+      "answer": "Nein. Er analysiert nur die Eingabe und gibt Fehler, Warnungen und Strukturhinweise zurück."
     },
     {
-      "question": "Erkennt es unsichere Markups?",
-      "answer": "Ja. Es prüft auf riskante Tags und Muster, die in veröffentlichten Inhalten unsicher sein können."
+      "question": "Was gilt hier als unsicheres Markup?",
+      "answer": "Tags und Muster mit Risiko in veröffentlichten Inhalten, etwa script-ähnliche Elemente oder andere vom Validator markierte Bausteine."
     },
     {
-      "question": "Findet es doppelte IDs?",
-      "answer": "Ja. Doppelte IDs werden gemeldet, weil sie Anker, Skripte und Barrierefreiheit beeinträchtigen können."
+      "question": "Warum sind doppelte IDs problematisch?",
+      "answer": "IDs müssen eindeutig sein. Teilen sich zwei Elemente dieselbe ID, können Anker, Skripte und Barrierefreiheitsbezüge auf das falsche Element zeigen."
     },
     {
-      "question": "Läuft die Validierung im Browser?",
-      "answer": "Ja. Das Tool ist für die Nutzung im Client ausgelegt und benötigt keine externe API."
+      "question": "Sind leere Links und fehlende Alt-Texte relevant?",
+      "answer": "Ja. Sie werden gemeldet, weil sie die Dokumentstruktur schwächen und die Nutzung erschweren."
+    },
+    {
+      "question": "Warum gibt es Warnungen bei scheinbar korrektem HTML?",
+      "answer": "Ein Fragment kann syntaktisch wirken wie gültig und trotzdem doppelte IDs, leere Attribute oder nicht unterstützte Elemente enthalten, die erkannt werden."
     }
   ],
-  "uiLabels": {
-    "copy": "Kopieren",
-    "copied": "Kopiert",
-    "input": "HTML input",
-    "output": "Validation summary",
-    "placeholder": "HTML hier einfügen",
-    "indent": "Einzug",
-    "removeComments": "Kommentare entfernen",
-    "preview": "Vorschau",
-    "source": "Quelle",
-    "sanitizedHtml": "Bereinigtes HTML",
-    "plainText": "Nur-Text",
-    "summary": "Zusammenfassung",
-    "total": "Gesamt",
-    "links": "Links",
-    "images": "Bilder",
-    "errors": "Fehler",
-    "warnings": "Warnungen",
-    "valid": "Gültig",
-    "invalid": "Ungültig",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Breite",
-    "height": "Höhe",
-    "empty": "Leer",
-    "outputReady": "Ausgabe bereit",
-    "cleanedHtml": "Bereinigtes HTML",
-    "formattedHtml": "Formatiertes HTML",
-    "minifiedHtml": "Minimiertes HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extrahierte Bilder",
-    "extractedLinks": "Extrahierte Links",
-    "validationSummary": "Validierungszusammenfassung",
-    "prettyHtml": "Lesbares HTML",
-    "encodedText": "Codierter Text"
-  },
   "seo": {
-    "title": "HTML-Validator | Unsicheres HTML, doppelte IDs und Fehler prüfen",
-    "description": "HTML online prüfen auf unsichere Tags, doppelte IDs, fehlerhafte Struktur und praktische Qualitätsprobleme mit einem schnellen Browser-Validator.",
+    "title": "HTML-Validator für Markup-Fehler",
+    "description": "HTML auf unsichere Tags, doppelte IDs, fehlerhafte Verschachtelung und Markup-Probleme prüfen, bevor eine Seite veröffentlicht wird.",
     "keywords": [
       "html validator",
       "html prüfen",
-      "html überprüfen",
-      "html checker",
       "doppelte ids",
       "unsicheres html",
-      "html qualität prüfen"
+      "markup prüfen",
+      "html struktur prüfen"
     ]
   }
 }

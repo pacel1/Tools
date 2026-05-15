@@ -4,44 +4,84 @@
   "slug": "aufschlag-rechner",
   "h1": "Aufschlag-Rechner",
   "title": "Aufschlag-Rechner",
-  "shortDescription": "Berechnen Sie den Aufschlagsprozentsatz und den endgültigen Verkaufspreis mit schnellen Ergebnissen, einfachen Eingaben und praktischen Beispielen.",
-  "overview": "Berechnen Sie den Aufschlagsprozentsatz und den endgültigen Verkaufspreis. Diese Seite liefert eine schnelle Antwort mit einem praktischen Tool und einem einfachen Ergebnisablauf. Sie richtet sich an Nutzer, die eine kostenlose Online-Antwort, schnelle browserbasierte Ergebnisse und praxisnahe Long-Tail-Inhalte suchen.",
+  "shortDescription": "Berechnen Sie Aufschlag, Verkaufspreis und Gewinn aus Kosten oder Zielpreis.",
+  "metaTitle": "Aufschlag-Rechner online",
+  "metaDescription": "Berechnen Sie Aufschlag, Verkaufspreis und Gewinn aus Kosten oder Zielpreis in einem Schritt.",
+  "intro": "Geben Sie Ihre Kosten und entweder den Aufschlag oder den Verkaufspreis ein, um die fehlenden Werte sofort zu erhalten.",
+  "overview": "Der Aufschlag-Rechner hilft dabei, aus einem Einkaufspreis einen Verkaufspreis zu machen oder den Aufschlag aus einem bekannten Endpreis zurückzurechnen. Das ist nützlich für die Preisgestaltung im Handel, für Angebotsvergleiche und für die Kontrolle, ob ein Preis genug Spielraum lässt.\n\nAuch bei mehreren Artikeln mit derselben Kalkulation spart das Tool Zeit. Das Ergebnis zeigt den Aufschlagsbetrag, den Endpreis und den Prozentsatz, damit die Preisbildung transparent bleibt.\n\nWenn Sie bereits mit einer festen Kalkulationslogik arbeiten, können Sie verschiedene Kosten und Verkaufspreise direkt vergleichen, ohne selbst zu rechnen.",
   "howItWorks": [
-    "Geben Sie den erforderlichen Wert in das Formular ein.",
-    "Die Berechnung oder Umwandlung läuft sofort im Browser ab.",
-    "Prüfen Sie das Ergebnis und nutzen Sie bei Bedarf verwandte Tools für den nächsten Schritt."
+    "Kosten des Produkts eingeben.",
+    "Aufschlag in Prozent oder Verkaufspreis ergänzen.",
+    "Aufschlagsbetrag, Endpreis und Gewinnwert ablesen."
+  ],
+  "useCases": [
+    {
+      "title": "Einzelhandel kalkulieren",
+      "description": "Bestimmen Sie den Verkaufspreis eines Artikels aus Einkaufskosten und gewünschtem Aufschlag."
+    },
+    {
+      "title": "Dienstleistung bewerten",
+      "description": "Prüfen Sie, ob ein Angebot Arbeitszeit, Fixkosten und gewünschten Aufschlag abdeckt."
+    },
+    {
+      "title": "Lieferantenpreise vergleichen",
+      "description": "Vergleichen Sie, wie sich unterschiedliche Einkaufskosten auf den Verkaufspreis auswirken."
+    },
+    {
+      "title": "Set- und Paketpreise",
+      "description": "Berechnen Sie einen Paketpreis, wenn die Gesamtkosten bekannt sind und ein fixer Aufschlag gelten soll."
+    }
   ],
   "examples": [
     {
-      "title": "Beispiel 1",
-      "input": "Kosten 50, Aufschlag 30 %",
-      "output": "65",
-      "description": "Ein realistisches Beispiel für einen Aufschlag-Rechner bei einer alltäglichen Suche."
+      "title": "Handgemachtes Produkt kalkulieren",
+      "input": "Kosten: 18,40 €, Aufschlag: 65 %",
+      "output": "Aufschlag: 11,96 €, Verkaufspreis: 30,36 €",
+      "description": "Zeigt die Umrechnung von Herstellungskosten in einen Ladenpreis."
     },
     {
-      "title": "Beispiel 2",
-      "input": "Kosten 50, Aufschlag 30 %",
-      "output": "65",
-      "description": "Ein weiteres praktisches Anwendungsbeispiel für organischen Long-Tail-Traffic."
+      "title": "Aufschlag aus Verkaufspreis zurückrechnen",
+      "input": "Kosten: 42,00 €, Verkaufspreis: 59,50 €",
+      "output": "Aufschlag: 17,50 €, Aufschlag in %: 41,67 %",
+      "description": "Hilfreich, wenn der Endpreis bekannt ist und der implizite Aufschlag gesucht wird."
+    },
+    {
+      "title": "Großhandelsangebot prüfen",
+      "input": "Kosten: 126,00 €, Aufschlag: 22 %",
+      "output": "Aufschlag: 27,72 €, Verkaufspreis: 153,72 €",
+      "description": "Praktisch, um zu prüfen, ob ein Einkauf noch zur geplanten Preislage passt."
     }
   ],
   "faq": [
     {
-      "question": "Wie genau ist dieses Tool?",
-      "answer": "Das Ergebnis wird direkt aus der Formel oder der browserseitigen Logik dieses Tools berechnet."
+      "question": "Worin unterscheidet sich Aufschlag von Marge?",
+      "answer": "Der Aufschlag wird auf die Kosten gerechnet. Die Marge bezieht sich auf den Verkaufspreis. Deshalb führen beide Begriffe zu unterschiedlichen Prozentwerten."
     },
     {
-      "question": "Kann ich das Tool auf dem Smartphone nutzen?",
-      "answer": "Ja. Die Seite funktioniert auf Desktop- und Mobilgeräten mit einem einfachen Eingabe- und Ergebnislayout."
+      "question": "Kann ich statt des Aufschlags den Verkaufspreis eingeben?",
+      "answer": "Ja, wenn der Rechner die Rückrechnung unterstützt. Dann sehen Sie den impliziten Aufschlag aus Kosten und Endpreis."
+    },
+    {
+      "question": "Warum bekomme ich Dezimalstellen?",
+      "answer": "Viele Kosten ergeben nach der Prozentrechnung keine glatten Beträge. Dann zeigt das Tool Cent- oder Dezimalwerte an."
+    },
+    {
+      "question": "Was ist der häufigste Fehler?",
+      "answer": "Der Aufschlag wird oft auf die falsche Basis angewendet. In der Regel gehört er auf die Kosten, nicht auf den Endpreis."
+    },
+    {
+      "question": "Bedeutet ein höherer Aufschlag automatisch mehr Gewinn?",
+      "answer": "Nicht unbedingt. Gewinn hängt auch von Rabatten, Gebühren, Steuern und weiteren Kosten ab."
     }
   ],
   "seo": {
-    "title": "Aufschlag-Rechner",
-    "description": "Berechnen Sie den Aufschlagsprozentsatz und den endgültigen Verkaufspreis. Kostenloser Aufschlag-Rechner online mit sofortigen Ergebnissen.",
+    "title": "Aufschlag-Rechner online",
+    "description": "Berechnen Sie Aufschlag, Verkaufspreis und Gewinn aus Kosten oder Zielpreis in einem Schritt.",
     "keywords": [
       "Aufschlag-Rechner",
-      "markup calculator",
-      "Rechner-Tool"
+      "Aufschlag berechnen",
+      "Verkaufspreis Rechner",
+      "Gewinn berechnen"
     ]
   }
 }

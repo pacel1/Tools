@@ -4,42 +4,85 @@
   "slug": "generador-de-uuid",
   "h1": "Generador de UUID",
   "title": "Generador de UUID",
-  "shortDescription": "Genera UUID aleatorios al instante con resultados rápidos, entradas simples y ejemplos prácticos.",
-  "overview": "Genera UUID aleatorios al instante. Esta página ofrece una respuesta rápida con una herramienta práctica y un flujo de resultados sencillo. Está pensada para usuarios que buscan una solución gratuita en línea, resultados rápidos en el navegador y contenido práctico de utilidad para búsquedas de cola larga.",
+  "shortDescription": "Crea UUID v4 al instante para registros, datos de prueba e identificadores.",
+  "metaTitle": "Generador de UUID v4",
+  "metaDescription": "Crea UUID v4 al instante para registros, datos de prueba e identificadores en una herramienta clara de navegador.",
+  "intro": "Genera un UUID v4 con un clic y cópialo listo para usar como identificador.",
+  "overview": "Esta herramienta crea un nuevo UUID v4 cada vez que la ejecutas. Los UUID se usan como identificadores únicos en filas de bases de datos, objetos de API, nombres de archivo y registros temporales de prueba. El resultado sigue el formato estándar 8-4-4-4-12 con guiones.\n\nCada UUID generado es aleatorio y sirve para el trabajo habitual de desarrollo. Puedes crear un solo valor o varios para datos de ejemplo, simulaciones y scripts de carga inicial.\n\nRecuerda que un UUID es un identificador, no un contador ni una marca temporal. No contiene significado propio, así que solo se compara por coincidencia exacta, no por orden ni valor numérico.",
   "howItWorks": [
-    "Introduce el valor o texto requerido en el formulario.",
-    "La conversión, el cálculo o la transformación se ejecuta al instante en el navegador.",
-    "Revisa el resultado y continúa con herramientas relacionadas si necesitas otro paso."
+    "Haz clic en generar para crear un nuevo UUID v4.",
+    "Copia el valor en tu código, base de datos o configuración.",
+    "Vuelve a generar valores cuando necesites más identificadores."
+  ],
+  "useCases": [
+    {
+      "title": "Claves de filas de base de datos",
+      "description": "Asigna un ID único a usuarios, pedidos o documentos sin depender de números secuenciales."
+    },
+    {
+      "title": "Identificadores en respuestas API",
+      "description": "Añade un request ID, job ID o resource ID a tus datos JSON para seguir cada objeto por separado."
+    },
+    {
+      "title": "Datos de prueba y simulaciones",
+      "description": "Crea identificadores realistas para fixtures, mocks y datos semilla durante el desarrollo o QA."
+    },
+    {
+      "title": "Nombres de archivos y carpetas",
+      "description": "Usa un UUID cuando necesites un nombre con riesgo mínimo de colisión con archivos existentes."
+    }
   ],
   "examples": [
     {
-      "title": "Ejemplo 1",
-      "input": "Genera un UUID",
-      "output": "UUID v4",
-      "description": "Un ejemplo realista de generador de UUID para una consulta cotidiana."
+      "title": "Nuevo registro de usuario",
+      "input": "Genera 1 UUID para la tabla users",
+      "output": "9f0e4a56-2b8d-4d1c-9a4f-3c2c8c6d2f91",
+      "description": "Un identificador útil para insertar un nuevo usuario."
     },
     {
-      "title": "Ejemplo 2",
-      "input": "Genera un UUID",
-      "output": "UUID v4",
-      "description": "Otro caso práctico para captar tráfico orgánico de cola larga."
+      "title": "ID de tarea en segundo plano",
+      "input": "Genera 1 UUID para una exportación",
+      "output": "3d7b9f1c-8e21-4b6b-a9c0-5f8d4e1a7b33",
+      "description": "Ideal como referencia única para un trabajo en cola."
+    },
+    {
+      "title": "Lote de identificadores de prueba",
+      "input": "Genera 3 UUID para datos demo",
+      "output": "[\"b2c4f7a1-1d6a-4f79-b7f9-0f4d2a9c6d10\", \"6a8e1d33-5f7b-4af8-9f0a-1b2c3d4e5f60\", \"e1f0a9c8-77d2-4a0b-8d3e-9c6f1a2b3c44\"]",
+      "description": "Útil cuando preparas varios registros de ejemplo."
     }
   ],
   "faq": [
     {
-      "question": "¿Qué precisión tiene esta herramienta?",
-      "answer": "El resultado se calcula directamente a partir de la fórmula o de la lógica en el navegador que utiliza esta herramienta."
+      "question": "¿Los UUID generados son de versión 4?",
+      "answer": "Sí. La herramienta devuelve UUID v4, identificadores basados en aleatoriedad con el formato estándar 8-4-4-4-12."
     },
     {
-      "question": "¿Puedo usar esta herramienta en el móvil?",
-      "answer": "Sí. La página funciona tanto en escritorio como en móviles con una interfaz sencilla de entrada y resultado."
+      "question": "¿Pueden repetirse dos UUID generados?",
+      "answer": "En teoría sí, aunque para usos habituales de desarrollo la posibilidad de colisión es extremadamente baja."
+    },
+    {
+      "question": "¿Por qué el UUID lleva guiones?",
+      "answer": "Los guiones forman parte del formato estándar. Si tu sistema necesita la versión compacta, elimínalos antes de guardar el valor."
+    },
+    {
+      "question": "¿Sirve como token de acceso?",
+      "answer": "No. Un UUID es un identificador, no una contraseña ni un secreto criptográfico. Para eso conviene usar un generador de tokens específico."
+    },
+    {
+      "question": "¿Qué error conviene evitar al almacenarlo?",
+      "answer": "No lo recortes, no cambies su formato sin criterio y no lo trates como un número. Guárdalo exactamente como lo necesita tu sistema."
     }
   ],
   "seo": {
-    "title": "Generador de UUID",
-    "description": "Genera UUID aleatorios al instante. Generador de UUID online gratis con resultados inmediatos.",
+    "title": "Generador de UUID v4",
+    "description": "Crea UUID v4 al instante para registros, datos de prueba e identificadores en una herramienta clara de navegador.",
     "keywords": [
-      "uuid generator"
+      "generador uuid",
+      "uuid v4",
+      "generar uuid",
+      "identificador único",
+      "ids de prueba"
     ]
   }
 }

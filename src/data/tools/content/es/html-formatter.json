@@ -4,105 +4,87 @@
   "slug": "formateador-html",
   "h1": "Formateador de HTML",
   "title": "Formateador de HTML",
-  "shortDescription": "Da formato a HTML desordenado con sangrías legibles y una estructura limpia.",
-  "metaTitle": "Formateador de HTML online | Ordena tu código HTML",
-  "metaDescription": "Da formato a HTML desordenado online con sangrías claras, mejor anidado y una salida HTML bien estructurada.",
-  "intro": "Usa este formateador de HTML para convertir código desordenado en HTML limpio y legible. Facilita la revisión, depuración y mantenimiento de la estructura.",
-  "overview": "Este formateador de HTML organiza etiquetas, mejora la sangría y ordena los elementos anidados sin cambiar el significado del marcado. Funciona en el navegador, así que tu HTML permanece del lado del cliente. Es ideal para limpiar código pegado, revisar plantillas o preparar fragmentos antes de editarlos o compartirlos.",
+  "shortDescription": "Convierte HTML desordenado en código legible con sangrías correctas.",
+  "metaTitle": "Formateador HTML | Código claro",
+  "metaDescription": "Convierte HTML desordenado en un marcado legible y bien sangrado sin cambiar la estructura del documento.",
+  "intro": "Pega tu HTML y obtén un código ordenado, fácil de leer y sin cambios en la estructura del documento.",
+  "overview": "Este formateador reorganiza etiquetas, anidaciones y espacios para que el marcado sea más fácil de revisar y editar. Mantiene el orden de los elementos y el contenido, pero hace que la jerarquía se vea enseguida.\n\nResulta útil cuando el HTML viene de un CMS, de la salida de una compilación o de varias fuentes distintas. Al funcionar en el navegador, es práctico para revisar fragmentos, comparar versiones de plantillas o preparar código para retoques manuales.",
   "howItWorks": [
     "Pega tu HTML en el campo de entrada.",
-    "Elige opciones de formato como la sangría o el tratamiento de comentarios, si están disponibles.",
-    "Pulsa para formatear y generar HTML limpio.",
-    "Copia el resultado y úsalo en tu proyecto."
+    "Ajusta la sangría o el tratamiento de comentarios si esas opciones están disponibles.",
+    "Ejecuta el formateador para generar HTML ordenado.",
+    "Copia el resultado y úsalo en tu editor, notas o proyecto."
   ],
   "useCases": [
-    "Limpiar HTML minificado o desordenado.",
-    "Revisar plantillas antes de publicarlas.",
-    "Hacer que el código pegado sea más fácil de leer y editar.",
-    "Preparar fragmentos HTML para documentación o trabajo en equipo.",
-    "Comprobar la estructura en páginas, emails o componentes."
+    {
+      "title": "Revisar salida de un CMS",
+      "description": "Ordena el HTML generado por un editor de contenidos antes de buscar contenedores faltantes o anidaciones incorrectas."
+    },
+    {
+      "title": "Comparar dos versiones de una plantilla",
+      "description": "Formatea ambas versiones antes de hacer un diff para detectar cambios estructurales con más facilidad."
+    },
+    {
+      "title": "Limpiar HTML de correos",
+      "description": "Revisa fragmentos largos con tablas y elementos en línea en una forma más clara para editarlos mejor."
+    },
+    {
+      "title": "Preparar snippets para documentación",
+      "description": "Muestra el código al equipo en una forma ordenada para entender antes la estructura del componente."
+    }
   ],
   "examples": [
     {
-      "title": "HTML desordenado",
-      "input": "<div><p>Hello</p><ul><li>One</li><li>Two</li></ul></div>",
-      "output": "<div>\n  <p>Hello</p>\n  <ul>\n    <li>One</li>\n    <li>Two</li>\n  </ul>\n</div>",
-      "description": "Convierte un marcado compacto en HTML legible y anidado."
+      "title": "Tarjeta de producto compacta",
+      "input": "<article><h3>Pro Plan</h3><p>Everything included</p><a href=\"/pricing\">View plans</a></article>",
+      "output": "<article>\n  <h3>Pro Plan</h3>\n  <p>Everything included</p>\n  <a href=\"/pricing\">View plans</a>\n</article>",
+      "description": "Convierte un componente en una sola línea en un bloque legible."
     },
     {
-      "title": "Plantilla sin formato",
-      "input": "<section><h2>Title</h2><div><img src=\"a.jpg\" alt=\"A\"></div></section>",
-      "output": "<section>\n  <h2>Title</h2>\n  <div>\n    <img src=\"a.jpg\" alt=\"A\">\n  </div>\n</section>",
-      "description": "Mejora la sangría sin cambiar la estructura original."
+      "title": "Fragmento con diseño anidado",
+      "input": "<div class=\"wrap\"><header><nav><a href=\"/\">Home</a><a href=\"/docs\">Docs</a></nav></header><main><section><img src=\"hero.jpg\" alt=\"Hero\"></section></main></div>",
+      "output": "<div class=\"wrap\">\n  <header>\n    <nav>\n      <a href=\"/\">Home</a>\n      <a href=\"/docs\">Docs</a>\n    </nav>\n  </header>\n  <main>\n    <section>\n      <img src=\"hero.jpg\" alt=\"Hero\">\n    </section>\n  </main>\n</div>",
+      "description": "Separa una estructura densa en secciones semánticas claras."
+    },
+    {
+      "title": "Fragmento de tabla de email",
+      "input": "<table><tr><td><strong>Order #4821</strong></td><td align=\"right\">Shipped</td></tr><tr><td colspan=\"2\"><a href=\"https://example.com\">Track package</a></td></tr></table>",
+      "output": "<table>\n  <tr>\n    <td><strong>Order #4821</strong></td>\n    <td align=\"right\">Shipped</td>\n  </tr>\n  <tr>\n    <td colspan=\"2\">\n      <a href=\"https://example.com\">Track package</a>\n    </td>\n  </tr>\n</table>",
+      "description": "Muestra cómo el HTML de tablas se vuelve más fácil de inspeccionar y editar."
     }
   ],
   "faq": [
     {
-      "question": "¿El formato cambia mi HTML?",
-      "answer": "No. Solo mejora los espacios, la sangría y la estructura visual. No modifica el significado del código."
+      "question": "¿El formateo cambia el orden de atributos o el contenido?",
+      "answer": "No debería cambiar el significado del HTML. El objetivo es mejorar la sangría y la presentación, no reescribir el contenido."
     },
     {
-      "question": "¿Es seguro usar este formateador?",
-      "answer": "Sí. Está pensado para uso en el navegador y no necesita enviar tu código a una API externa."
+      "question": "¿Por qué parte del HTML en línea sigue en una sola línea?",
+      "answer": "Las estructuras inline cortas pueden mantenerse compactas si el formateador las conserva así. Suele ser normal y evita ruido innecesario."
     },
     {
-      "question": "¿Puedo formatear HTML minificado?",
-      "answer": "Sí. Funciona muy bien con HTML minificado, desordenado o pegado, y lo convierte en código legible."
+      "question": "¿Qué pasa con HTML mal formado?",
+      "answer": "El marcado muy roto puede formatearse, pero el resultado dependerá de cómo el parser interprete la estructura. Conviene corregir primero los errores de etiquetas."
     },
     {
-      "question": "¿Se eliminarán los comentarios?",
-      "answer": "Depende de las opciones disponibles. Si activas la eliminación de comentarios, pueden quitarse durante el formateo."
+      "question": "¿Puedo eliminar comentarios al formatear?",
+      "answer": "Si la opción de eliminar comentarios está activada, pueden quitarse. Si no, se conservarán."
+    },
+    {
+      "question": "¿Por qué el resultado difiere del prettify de mi editor?",
+      "answer": "Cada formateador usa reglas distintas para saltos de línea, espacios en blanco y elementos vacíos. Las pequeñas diferencias son normales."
     }
   ],
-  "uiLabels": {
-    "copy": "Copiar",
-    "copied": "Copiado",
-    "input": "HTML input",
-    "output": "HTML formateado",
-    "placeholder": "Pega el HTML aquí...",
-    "indent": "Sangría",
-    "removeComments": "Eliminar comentarios",
-    "preview": "Vista previa",
-    "source": "Fuente",
-    "sanitizedHtml": "HTML sanitizado",
-    "plainText": "Texto plano",
-    "summary": "Resumen",
-    "total": "Total",
-    "links": "Enlaces",
-    "images": "Imágenes",
-    "errors": "Errores",
-    "warnings": "Advertencias",
-    "valid": "Válido",
-    "invalid": "Inválido",
-    "href": "Href",
-    "text": "Texto",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Ancho",
-    "height": "Alto",
-    "empty": "Vacío",
-    "outputReady": "HTML formateado listo",
-    "cleanedHtml": "HTML limpio",
-    "formattedHtml": "HTML formateado",
-    "minifiedHtml": "HTML minificado",
-    "markdown": "Markdown",
-    "extractedImages": "Imágenes extraídas",
-    "extractedLinks": "Enlaces extraídos",
-    "validationSummary": "Resumen de validación",
-    "prettyHtml": "HTML ordenado",
-    "encodedText": "Texto codificado"
-  },
   "seo": {
-    "title": "Formateador de HTML online | Ordena tu código HTML",
-    "description": "Da formato a HTML desordenado online con sangrías claras, mejor anidado y una salida HTML bien estructurada.",
+    "title": "Formateador HTML | Código claro",
+    "description": "Convierte HTML desordenado en un marcado legible y bien sangrado sin cambiar la estructura del documento.",
     "keywords": [
       "formateador html",
       "formatear html",
       "html bonito",
-      "sangria html",
+      "sangría html",
       "ordenar html",
-      "html online"
+      "código html"
     ]
   }
 }

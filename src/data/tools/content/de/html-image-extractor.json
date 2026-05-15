@@ -5,103 +5,89 @@
   "h1": "HTML-Bildextraktor",
   "title": "HTML-Bildextraktor",
   "shortDescription": "Extrahiere Bildquellen, Alt-Text und Maße aus HTML.",
-  "metaTitle": "HTML-Bildextraktor | Bild-URLs, Alt-Text und Maße extrahieren",
-  "metaDescription": "Extrahiere Bildquellen, Alt-Text, Breite und Höhe direkt im Browser aus HTML. Sicher, lokal und einfach zu bedienen.",
-  "intro": "Mit diesem HTML-Bildextraktor kannst du schnell Bild-URLs, Alternativtext und Maße aus beliebigem HTML-Code ziehen. Er läuft direkt im Browser, ohne externe APIs, und hilft dir beim Prüfen von Bild-Tags.",
-  "overview": "Füge HTML ein und extrahiere alle img-Tags in eine klare, lesbare Liste. Das Tool zeigt src, alt, width und height an, damit du Barrierefreiheit prüfen, Inhalte kontrollieren und Bilddaten schneller weiterverwenden kannst. Da alles lokal verarbeitet wird, ist es auch für sensibles Markup eine sichere Lösung.",
+  "metaTitle": "HTML-Bildextraktor",
+  "metaDescription": "Extrahiere Bildquellen, Alt-Text, Breite und Höhe direkt im Browser aus HTML.",
+  "intro": "Füge HTML ein, um alle img-Tags mit Quelle, Alt-Text und Maßen in einer strukturierten Liste zu extrahieren.",
+  "overview": "Dieses Tool liest HTML und zieht Bildelemente in ein klares Ergebnis, das du direkt prüfen oder kopieren kannst. Jeder Eintrag kann die Bildquelle, den Alternativtext, die Breite, die Höhe und weitere im Tag vorhandene Attribute enthalten, was eine genaue Prüfung des Markups erleichtert.\n\nBesonders nützlich ist es, wenn Bilddaten in CMS-Exporten, E-Mail-Vorlagen oder langen Snippets mit gemischtem Inhalt versteckt sind. Da die Analyse lokal im Browser erfolgt, kannst du auch mit vertraulichem Markup arbeiten, ohne es irgendwohin zu senden.",
   "howItWorks": [
     "Füge dein HTML in das Eingabefeld ein.",
-    "Das Tool durchsucht das Markup nach img-Elementen.",
-    "Es extrahiert Bild-URLs und gängige Attribute wie alt, width und height.",
-    "Prüfe die strukturierte Ausgabe und kopiere die Ergebnisse bei Bedarf."
+    "Der Parser durchsucht das Markup nach img-Elementen.",
+    "Er extrahiert src, alt, width, height und verwandte Attribute, wenn vorhanden.",
+    "Prüfe die Liste und kopiere die extrahierten Bilddaten bei Bedarf."
   ],
   "useCases": [
-    "Barrierefreiheit von Bildern durch Prüfung der Alt-Texte auditieren.",
-    "Bild-URLs aus exportiertem HTML sammeln.",
-    "Breite und Höhe vor der Veröffentlichung kontrollieren.",
-    "Bildverweise aus CMS- oder E-Mail-Vorlagen extrahieren.",
-    "QA bei Seiten mit vielen Bildern beschleunigen."
+    {
+      "title": "Fehlende Alt-Texte prüfen",
+      "description": "Kontrolliere einen Seitenexport auf img-Tags ohne sinnvollen alt-Wert, bevor Inhalte live gehen."
+    },
+    {
+      "title": "Bild-URLs aus Vorlagen sammeln",
+      "description": "Ziehe alle Bildquellen aus einem Newsletter oder CMS-Ausschnitt in eine einfache Liste."
+    },
+    {
+      "title": "Deklarierte Maße kontrollieren",
+      "description": "Untersuche width und height, um gestreckte, vertauschte oder falsch dimensionierte Bilder zu erkennen."
+    },
+    {
+      "title": "Lazy-Loading-Markup inspizieren",
+      "description": "Finde Bildpfade, die in data-src oder ähnlichen Vorlagen-Attributen gespeichert sind."
+    },
+    {
+      "title": "Bilder aus gemischtem HTML extrahieren",
+      "description": "Trenne Bilddaten aus längeren Snippets mit Links, Text und Layout-Markup."
+    }
   ],
   "examples": [
     {
-      "title": "Einfaches Bild-Tag",
-      "input": "<img src=\"/images/banner.jpg\" alt=\"Startseiten-Banner\" width=\"1200\" height=\"400\">",
-      "output": "src: /images/banner.jpg | alt: Startseiten-Banner | width: 1200 | height: 400",
-      "description": "Ein einzelnes img-Tag wird in strukturierte Felder aufgeteilt."
+      "title": "Ein einzelnes img-Tag",
+      "input": "<img src=\"/assets/hero.jpg\" alt=\"Stadtsilhouette bei Dämmerung\" width=\"1440\" height=\"900\">",
+      "output": "1) src: /assets/hero.jpg | alt: Stadtsilhouette bei Dämmerung | width: 1440 | height: 900",
+      "description": "Ein normales img-Element wird in separate Felder aufgeteilt."
     },
     {
-      "title": "Lazy-loaded Bild",
-      "input": "<img data-src=\"photo.jpg\" alt=\"Produktfoto\">",
-      "output": "src: photo.jpg | alt: Produktfoto",
-      "description": "Hilfreich, um alternative Bildquellen in Vorlagen zu prüfen."
+      "title": "Bild ohne explizite Breite",
+      "input": "<figure><img src=\"product.png\" alt=\"Produktansicht von vorne\"></figure>",
+      "output": "1) src: product.png | alt: Produktansicht von vorne",
+      "description": "Es werden nur die Attribute zurückgegeben, die im Tag tatsächlich vorhanden sind."
+    },
+    {
+      "title": "Vorlagenbild mit data-Attribut",
+      "input": "<img data-src=\"/img/gallery-03.jpg\" alt=\"Galerieelement 3\" loading=\"lazy\">",
+      "output": "1) data-src: /img/gallery-03.jpg | alt: Galerieelement 3 | loading: lazy",
+      "description": "Hilfreich bei Vorlagen, die den echten Pfad in einem data-Attribut speichern."
     }
   ],
   "faq": [
     {
-      "question": "Lädt dieses Tool mein HTML hoch?",
-      "answer": "Nein. Es arbeitet vollständig im Browser, daher wird dein HTML nicht an einen Server gesendet."
+      "question": "Liest der Extraktor nur img-Tags?",
+      "answer": "Ja. Er konzentriert sich auf img-Elemente im HTML und untersucht weder CSS-Hintergrundbilder noch per Skript geladene Bilder."
     },
     {
-      "question": "Welche Bildattribute werden extrahiert?",
-      "answer": "Das Tool konzentriert sich auf src, alt, width und height und kann bei Bedarf auch weitere nützliche Bildattribute anzeigen."
+      "question": "Was passiert, wenn ein Bild-Tag unvollständig ist?",
+      "answer": "Das Tool gibt die Attribute zurück, die es finden kann, daher ist ein Tag mit nur src und alt kürzer als ein vollständiges Element."
     },
     {
-      "question": "Kann unsicheres HTML analysiert werden?",
-      "answer": "Ja, das Parsen erfolgt lokal und clientseitig, dennoch solltest du nicht vertrauenswürdiges Markup immer sorgfältig prüfen."
+      "question": "Kann ich es auf einen Ausschnitt mit vielen gleichen Bildern anwenden?",
+      "answer": "Ja. Jedes passende img-Element wird separat extrahiert, auch wenn mehrere Tags dieselbe Quelle verwenden."
     },
     {
-      "question": "Werden CSS-Hintergrundbilder erkannt?",
-      "answer": "Nein. Es extrahiert Bild-Tags aus HTML, keine Hintergrundbilder aus CSS."
+      "question": "Warum sehe ich manchmal data-src statt src?",
+      "answer": "Manche Vorlagen speichern den echten Pfad in data-src, data-original oder einem ähnlichen Attribut. Der Extraktor kann solche Werte anzeigen, wenn sie im Markup vorkommen."
+    },
+    {
+      "question": "Ändert das Tool das HTML?",
+      "answer": "Nein. Es liest nur das Markup und meldet bildbezogene Attribute. Es schreibt keine Tags um und errät keine fehlenden Werte."
     }
   ],
-  "uiLabels": {
-    "copy": "Kopieren",
-    "copied": "Kopiert",
-    "input": "HTML-Eingabe",
-    "output": "Extrahierte Bilder",
-    "placeholder": "HTML hier einfügen",
-    "indent": "Einrückung",
-    "removeComments": "Kommentare entfernen",
-    "preview": "Vorschau",
-    "source": "Quelle",
-    "sanitizedHtml": "Bereinigtes HTML",
-    "plainText": "Klartext",
-    "summary": "Zusammenfassung",
-    "total": "Gesamt",
-    "links": "Links",
-    "images": "Bilder",
-    "errors": "Fehler",
-    "warnings": "Warnungen",
-    "valid": "Gültig",
-    "invalid": "Ungültig",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Breite",
-    "height": "Höhe",
-    "empty": "Keine Bilder gefunden",
-    "outputReady": "Ausgabe bereit",
-    "cleanedHtml": "Bereinigtes HTML",
-    "formattedHtml": "Formatiertes HTML",
-    "minifiedHtml": "Minifiziertes HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extrahierte Bilder",
-    "extractedLinks": "Extrahierte Links",
-    "validationSummary": "Validierungsübersicht",
-    "prettyHtml": "Lesbares HTML",
-    "encodedText": "Kodierter Text"
-  },
   "seo": {
     "title": "HTML-Bildextraktor",
-    "description": "Extrahiere Bildquellen, Alt-Text, Breite und Höhe aus HTML mit einem sicheren Browser-Tool.",
+    "description": "Extrahiere Bildquellen, Alt-Text, Breite und Höhe direkt im Browser aus HTML.",
     "keywords": [
       "HTML-Bildextraktor",
-      "src aus HTML extrahieren",
-      "Alt-Text",
+      "img-Tags extrahieren",
+      "src aus HTML",
+      "Alt-Text extrahieren",
       "Bildmaße",
-      "img-Tags analysieren",
       "HTML-Tools"
     ]
   }

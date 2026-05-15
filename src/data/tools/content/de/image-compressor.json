@@ -2,17 +2,94 @@
   "toolId": "image-compressor",
   "locale": "de",
   "slug": "bildkomprimierer",
-  "h1": "Bildkomprimierer online",
-  "title": "Bildkomprimierer online",
-  "shortDescription": "Bilder online verkleinern, JPG-Dateien komprimieren und Dateigroesse direkt im Browser reduzieren.",
-  "metaTitle": "Bildkomprimierer online | Bilder online verkleinern",
-  "metaDescription": "Bilder online verkleinern, JPG komprimieren und Dateigroesse reduzieren. Der Bildkomprimierer arbeitet direkt im Browser ohne Server-Upload.",
-  "intro": "Dieser Bildkomprimierer ist auf Suchanfragen wie Bilder online verkleinern, JPG verkleinern und Bild komprimieren ausgerichtet. Du laedst eine Datei lokal, passt die Qualitaet an und bekommst direkt eine kleinere Bilddatei ohne Server-Upload.",
-  "overview": "Der Bildkomprimierer ist hilfreich fuer Web-Uploads, E-Mail-Anhaenge, CMS-Bilder, Marktplatzfotos und Social-Media-Grafiken, wenn Dateigroesse schnell reduziert werden muss. Er arbeitet komplett im Browser und passt gut in den Workflow aus Verkleinern, Konvertieren und spaeterem Export.",
-  "howItWorks": ["Bild hochladen oder in das Tool ziehen.", "Qualitaet einstellen und die neue Dateigroesse direkt im Browser berechnen.", "Vorschau pruefen und das komprimierte Bild herunterladen."],
-  "useCases": ["Bilder online verkleinern fuer Websites.", "JPG verkleinern fuer E-Mail oder Formulare.", "Produktbilder fuer schnellere Ladezeiten optimieren.", "Bilder fuer Shops, Landing Pages und CMS vorbereiten.", "Private Komprimierung ohne Server-Upload."],
-  "examples": [{"title": "JPG fuer Upload-Limit verkleinern", "input": "Grosses JPG-Foto", "output": "Kleinere JPG-Datei", "description": "Hilfreich fuer Formulare, E-Mail und Plattformen mit Dateigroessen-Limits."}, {"title": "Webbild komprimieren", "input": "PNG oder WebP", "output": "Komprimierte Datei mit geringerer Groesse", "description": "Praktisch fuer Shops, Landing Pages und schnellere Seiten."}],
-  "faq": [{"question": "Kann ich mit diesem Tool Bilder online verkleinern?", "answer": "Ja. Das Tool reduziert die Dateigroesse direkt im Browser und eignet sich fuer JPG, PNG und WebP."}, {"question": "Ist der Bildkomprimierer gut fuer JPG verkleinern?", "answer": "Ja. Genau dafuer ist er besonders praktisch, wenn du schnell eine kleinere JPG-Datei brauchst."}, {"question": "Bleibt mein Bild privat?", "answer": "Ja. Die Komprimierung laeuft lokal im Browser, ohne dass das Bild an einen externen Server gesendet werden muss."}],
-  "uiLabels": {"copy": "Kopieren", "copied": "Kopiert", "input": "Eingabe", "output": "Ausgabe", "placeholder": "Bilddatei auswaehlen oder einfuegen", "indent": "Einzug", "removeComments": "Kommentare entfernen", "preview": "Vorschau", "source": "Quelle", "sanitizedHtml": "Bereinigtes HTML", "plainText": "Klartext", "summary": "Zusammenfassung", "total": "Gesamt", "links": "Links", "images": "Bilder", "errors": "Fehler", "warnings": "Warnungen", "valid": "Gueltig", "invalid": "Ungueltig", "href": "URL", "text": "Text", "rel": "Rel", "target": "Ziel", "alt": "Alt-Text", "width": "Breite", "height": "Hoehe", "empty": "Leer", "outputReady": "Ausgabe bereit", "cleanedHtml": "Bereinigtes HTML", "formattedHtml": "Formatiertes HTML", "minifiedHtml": "Minifiziertes HTML", "markdown": "Markdown", "extractedImages": "Extrahierte Bilder", "extractedLinks": "Extrahierte Links", "validationSummary": "Validierungszusammenfassung", "prettyHtml": "Lesbares HTML", "encodedText": "Kodierter Text", "file": "Datei", "size": "Groesse", "format": "Format", "quality": "Qualitaet", "colorOne": "Farbe 1", "colorTwo": "Farbe 2", "background": "Hintergrund", "foreground": "Vordergrund", "angle": "Winkel", "margin": "Rand", "level": "Stufe", "gradientType": "Verlaufstyp", "linear": "Linear", "radial": "Radial", "blur": "Unschärfe", "spread": "Ausbreitung", "offsetX": "Versatz X", "offsetY": "Versatz Y", "opacity": "Deckkraft", "inset": "Innen", "cssCode": "CSS-Code", "snippet": "Ausschnitt", "download": "Herunterladen", "downloadSvg": "SVG herunterladen", "downloadPng": "PNG herunterladen", "downloadAll": "Alle herunterladen", "upload": "Hochladen", "title": "Titel", "description": "Beschreibung", "canonicalUrl": "Kanonische URL", "siteName": "Seitenname", "ogImage": "OG-Bild", "clear": "Leeren", "generatedQr": "QR-Code-Vorschau", "placeholderImage": "Bildvorschau", "faviconSet": "Favicon-Set", "keepAspectRatio": "Seitenverhaeltnis beibehalten", "cropX": "Zuschneiden X", "cropY": "Zuschneiden Y", "cropWidth": "Zuschneidebreite", "cropHeight": "Zuschneidehoehe", "originalSize": "Originalgroesse", "outputSize": "Ausgabegroesse", "savedSize": "Gesparte Groesse", "result": "Ergebnis", "base64": "Base64", "mimeType": "MIME-Typ", "resizedImage": "Skaliertes Bild", "compressedImage": "Komprimiertes Bild", "croppedImage": "Zugeschnittenes Bild", "convertedImage": "Konvertiertes Bild", "decodedImage": "Dekodiertes Bild", "imagePreview": "Bildvorschau"},
-  "seo": {"title": "Bildkomprimierer online | Bilder online verkleinern", "description": "Bilder online verkleinern, JPG komprimieren und Dateigroesse reduzieren. Der Bildkomprimierer arbeitet direkt im Browser ohne Server-Upload.", "keywords": ["bildkomprimierer", "bilder online verkleinern", "jpg verkleinern", "bild komprimieren", "dateigroesse reduzieren", "bilder komprimieren online"]}
+  "h1": "Bildkomprimierer",
+  "title": "Bildkomprimierer",
+  "shortDescription": "JPG, PNG und WebP im Browser komprimieren und die Dateigroesse ohne Upload auf einen Server reduzieren.",
+  "metaTitle": "Bildkomprimierer JPG",
+  "metaDescription": "JPG, PNG und WebP direkt im Browser komprimieren. Dateigroesse reduzieren, Qualitaet steuern und Dateien auf dem Geraet behalten.",
+  "intro": "Komprimiere ein Bild lokal im Browser, reduziere die Dateigroesse und lade die optimierte Version herunter, ohne es hochzuladen.",
+  "overview": "Dieser Bildkomprimierer ist dafuer gedacht, Grafikdateien kleiner zu machen und dabei das Ergebnis kontrollierbar zu halten. Er arbeitet lokal im Browser, sodass das Bild auf deinem Geraet bleibt, waehrend du die Kompression einstellst und das Resultat pruefst.\n\nSinnvoll ist er, wenn ein Foto, Screenshot, Banner oder eine Grafik fuer eine Website, ein Formular, einen E-Mail-Anhang oder ein geteiltes Dokument leichter werden muss. Du kannst Original und komprimierte Ausgabe vergleichen und den passenden Kompromiss aus geringerer Groesse und sichtbaren Details waehlen.\n\nUnterstuetzt werden JPG, PNG und WebP, also sowohl Fotos als auch UI-Grafiken. Wenn ein Bild bereits stark optimiert ist, faellt der Gewinn oft kleiner aus, aber du kannst die Qualitaet trotzdem so anpassen, dass sichtbare Artefakte vermieden werden.",
+  "howItWorks": [
+    "JPG-, PNG- oder WebP-Datei vom Geraet hinzufuegen.",
+    "Die Qualitaet so anpassen, bis Groesse und Aussehen passen.",
+    "Vorschau der komprimierten Datei und die neue Groesse pruefen.",
+    "Das komprimierte Bild als neue Datei herunterladen."
+  ],
+  "useCases": [
+    {
+      "title": "Produktfotos fuer einen Shop verkleinern",
+      "description": "Grosse Katalogbilder reduzieren, damit Produktseiten schneller laden und weniger Bandbreite verbrauchen."
+    },
+    {
+      "title": "Screenshots fuer Support-Tickets vorbereiten",
+      "description": "Die Dateigroesse von Bildschirmfotos senken, bevor sie in Fehlerberichte oder Hilfefragen kommen."
+    },
+    {
+      "title": "Upload-Grenzen in Formularen einhalten",
+      "description": "Dokumentfotos, Ausweisbilder oder Projektdateien vor dem Upload kleiner machen, wenn ein Formular enge Grenzen hat."
+    },
+    {
+      "title": "Grafiken fuer E-Mails leichter machen",
+      "description": "Banner und Vorschaubilder vor dem Einsatz in Newslettern oder Kampagnen komprimieren."
+    }
+  ],
+  "examples": [
+    {
+      "title": "JPG-Produktfoto mit vielen Details",
+      "input": "6,4 MB JPG, 4000 × 3000, bei Tageslicht aufgenommen",
+      "output": "1,1 MB JPG mit weitgehend erhaltenen Details",
+      "description": "Sinnvoll, wenn das Originalfoto fuer eine Produktseite oder ein Listing zu gross ist."
+    },
+    {
+      "title": "PNG-Interface-Screenshot",
+      "input": "2,8 MB PNG, flache Farben, transparenter Bereich in der Toolbar",
+      "output": "640 KB PNG mit kleinerer Dateigroesse",
+      "description": "Praktisch fuer UI-Aufnahmen, wenn das Layout erhalten bleiben soll."
+    },
+    {
+      "title": "WebP-Hero fuer eine Landingpage",
+      "input": "1,9 MB WebP-Banner mit weichen Verlaeufen",
+      "output": "780 KB optimiertes WebP",
+      "description": "Hilft, ein Marketingbild leichter zu machen, ohne das Format zu wechseln."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Laeuft die Komprimierung auf meinem Geraet?",
+      "answer": "Ja. Das Bild wird im Browser verarbeitet, daher muss es nicht hochgeladen werden, um das komprimierte Ergebnis zu erzeugen."
+    },
+    {
+      "question": "Warum sieht die Vorschau leicht anders aus als das Original?",
+      "answer": "Kompression kann feine Texturen, Verlaeufe und harte Kanten leicht veraendern. Wenn das auffaellt, erhoehe die Qualitaet, bis das Ergebnis passt."
+    },
+    {
+      "question": "Welche Dateien funktionieren hier am besten?",
+      "answer": "Die Hauptformate sind JPG, PNG und WebP. JPG schrumpft oft gut bei Fotos, PNG passt besser zu flachen Grafiken oder Transparenz."
+    },
+    {
+      "question": "Bleibt Transparenz bei PNG erhalten?",
+      "answer": "Wenn das Ausgangsbild Transparenz hat und das Zielformat sie unterstuetzt, sollten transparente Bereiche erhalten bleiben. Sehr starke Kompression kann Kanten dennoch sichtbar verschlechtern."
+    },
+    {
+      "question": "Warum wird die Datei manchmal kaum kleiner?",
+      "answer": "Bereits optimierte Bilder, sehr kleine Dateien oder stark verrauschte Fotos lassen sich oft nur wenig verkleinern. Dann hilft eine niedrigere Qualitaet, allerdings mit mehr Detailverlust."
+    },
+    {
+      "question": "Was ist ein haeufiger Fehler bei Screenshots?",
+      "answer": "Zu starke Kompression macht Text und UI-Linien unscharf. Bei Screenshots lieber schrittweise reduzieren und aufhoeren, sobald der Text noch klar lesbar ist."
+    }
+  ],
+  "seo": {
+    "title": "Bildkomprimierer JPG",
+    "description": "JPG, PNG und WebP direkt im Browser komprimieren. Dateigroesse reduzieren, Qualitaet steuern und Dateien auf dem Geraet behalten.",
+    "keywords": [
+      "bildkomprimierer",
+      "jpg komprimieren",
+      "png komprimieren",
+      "webp komprimieren",
+      "bilder kleiner machen",
+      "bildkompression im browser",
+      "foto komprimieren"
+    ]
+  }
 }

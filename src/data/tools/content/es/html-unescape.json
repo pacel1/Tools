@@ -4,104 +4,89 @@
   "slug": "desescapar-html",
   "h1": "Desescapar HTML",
   "title": "Desescapar HTML",
-  "shortDescription": "Convierte entidades HTML escapadas en marcado o texto legible.",
-  "metaTitle": "Desescapar HTML | Decodificador de entidades HTML",
-  "metaDescription": "Desescapa entidades HTML en texto o marcado legible con una herramienta rápida que funciona en el navegador.",
-  "intro": "Desescapa entidades HTML como &amp;, &lt;, &gt; y &quot; para ver al instante HTML legible o texto plano en tu navegador.",
-  "overview": "Desescapar HTML convierte las entidades escapadas en sus caracteres originales para que puedas leer, revisar o reutilizar el contenido con facilidad. Es ideal para fragmentos pegados, texto codificado y depuración de salidas de plantillas o APIs. La herramienta funciona del lado del cliente para ofrecer resultados rápidos sin enviar datos a un servidor.",
+  "shortDescription": "Convierte entidades HTML escapadas en texto o marcado legible.",
+  "metaTitle": "Desescapar HTML | Decodificador HTML",
+  "metaDescription": "Desescapa entidades HTML en texto o marcado legible con una herramienta que funciona en el navegador.",
+  "intro": "Pega cadenas como &amp;lt;div&amp;gt; o &amp;amp; para recuperar al instante los caracteres originales.",
+  "overview": "Desescapar HTML devuelve las entidades a sus caracteres reales, de modo que fragmentos copiados, respuestas de API y contenido almacenado vuelven a leerse con claridad. Es útil cuando el texto llega con escape extra, cuando necesitas revisar un bloque antes de mostrarlo o cuando quieres recuperar comillas, signos menores y mayores, y símbolos que quedaron codificados.\n\nEl resultado es texto decodificado, no una validación del contenido. Si la entrada incluye etiquetas HTML, esas etiquetas reaparecen tal como estaban al ser decodificadas, así que conviene revisarlas antes de reutilizarlas. La herramienta está pensada para recuperar la forma legible del contenido y mostrar exactamente qué caracteres se escondían detrás de las entidades.",
   "howItWorks": [
     "Pega HTML o texto escapado en el campo de entrada.",
-    "La herramienta decodifica entidades HTML comunes como &amp;, &lt;, &gt;, &quot; y entidades numéricas.",
-    "Copia el resultado desescapado para editarlo, previsualizarlo o reutilizarlo."
+    "La herramienta decodifica entidades con nombre como &amp;, &lt;, &gt;, &quot; y &apos;, además de entidades numéricas decimales y hexadecimales.",
+    "Copia el resultado para revisarlo, editarlo o reutilizarlo."
   ],
   "useCases": [
-    "Leer HTML codificado copiado de correos, CMS o código fuente.",
-    "Depurar plantillas, respuestas de API o fragmentos de texto escapado.",
-    "Convertir texto con entidades en contenido legible antes de editarlo.",
-    "Inspeccionar marcado almacenado o transmitido en formato escapado."
+    {
+      "title": "Recuperar fragmentos de correo",
+      "description": "Convierte textos con entidades de newsletters, tickets o plantillas de email en contenido legible con su puntuación original."
+    },
+    {
+      "title": "Revisar contenido de CMS",
+      "description": "Comprueba si un artículo o ficha de producto fue guardado como HTML escapado antes de editarlo o publicarlo."
+    },
+    {
+      "title": "Analizar respuestas de API",
+      "description": "Desescapa campos de JSON o XML que devuelven HTML dentro de texto, para comparar mejor el origen con la salida."
+    },
+    {
+      "title": "Corregir texto doblemente escapado",
+      "description": "Elimina una capa de escape en cadenas como &amp;lt; o &amp;quot; para leer el contenido como estaba previsto."
+    }
   ],
   "examples": [
     {
-      "title": "Decodificación básica de entidades",
-      "input": "&lt;strong&gt;Hello &amp; welcome&lt;/strong&gt;",
-      "output": "<strong>Hello & welcome</strong>",
-      "description": "Convierte etiquetas y símbolos escapados de nuevo en marcado legible."
+      "title": "Etiquetas escapadas",
+      "input": "&lt;h2&gt;Oferta de invierno&lt;/h2&gt;",
+      "output": "<h2>Oferta de invierno</h2>",
+      "description": "Restaura los signos menores y mayores para que la etiqueta vuelva a verse."
     },
     {
-      "title": "Comillas y apóstrofes",
-      "input": "&quot;Smart&quot; &amp; &#39;simple&#39;",
-      "output": "\"Smart\" & 'simple'",
-      "description": "Decodifica entidades de puntuación comunes usadas en HTML."
+      "title": "Símbolos y comillas",
+      "input": "Precio: 19 &amp; IVA, talla &quot;L&quot;",
+      "output": "Precio: 19 & IVA, talla \"L\"",
+      "description": "Vuelve a convertir entidades comunes en signos normales."
+    },
+    {
+      "title": "Entidades numéricas",
+      "input": "Fran&#231;ais &#8212; caf&#233;",
+      "output": "Français — café",
+      "description": "Decodifica entidades numéricas en letras acentuadas y guion largo."
+    },
+    {
+      "title": "Texto doblemente codificado",
+      "input": "&amp;lt;span class=&amp;quot;note&amp;quot;&amp;gt;Listo&amp;lt;/span&amp;gt;",
+      "output": "<span class=\"note\">Listo</span>",
+      "description": "Quita una capa de escape para revelar el HTML real."
     }
   ],
   "faq": [
     {
-      "question": "¿Qué hace Desescapar HTML?",
-      "answer": "Convierte entidades HTML escapadas en sus caracteres normales para que el texto o el marcado vuelvan a ser legibles."
+      "question": "¿La herramienta elimina etiquetas HTML?",
+      "answer": "No. Solo decodifica entidades. Si la entrada contiene etiquetas escapadas, volverán a aparecer en la salida."
     },
     {
-      "question": "¿Es lo mismo que codificar HTML?",
-      "answer": "No. Codificar HTML convierte caracteres especiales en entidades, mientras que desescapar los vuelve a su forma original."
+      "question": "¿Por qué sigo viendo signos menores y mayores después de desescapar?",
+      "answer": "Eso indica que el texto original contenía marcado HTML. La herramienta muestra exactamente los caracteres que se habían codificado."
     },
     {
-      "question": "¿Funciona localmente en el navegador?",
-      "answer": "Sí. La herramienta está pensada para uso en el cliente y no necesita una API externa."
+      "question": "¿Decodifica entidades decimales y hexadecimales?",
+      "answer": "Sí. Soporta entidades con nombre y formas numéricas como &#169; y &#xA9;."
     },
     {
-      "question": "¿Puede decodificar entidades numéricas?",
-      "answer": "Sí. Puede decodificar entidades numéricas de HTML además de entidades con nombre."
+      "question": "¿Qué ocurre con entidades inválidas o incompletas?",
+      "answer": "Las secuencias no reconocidas se dejan tal cual. Si falta el punto y coma o el código está mal formado, revisa el texto de origen."
     },
     {
-      "question": "¿Es seguro renderizar el resultado directamente?",
-      "answer": "Revisa siempre el contenido desescapado antes de renderizarlo, especialmente si proviene de una fuente no confiable."
+      "question": "¿Por qué a veces hay que desescapar dos veces?",
+      "answer": "Si la cadena incluye &amp;lt; en lugar de &lt;, la primera pasada solo quita la capa exterior. Con contenido con doble escape, puede hacer falta repetir el proceso."
     }
   ],
-  "uiLabels": {
-    "copy": "Copiar",
-    "copied": "Copiado",
-    "input": "Entrada",
-    "output": "Salida",
-    "placeholder": "Pega aquí HTML o texto escapado",
-    "indent": "Sangría",
-    "removeComments": "Eliminar comentarios",
-    "preview": "Vista previa",
-    "source": "Fuente",
-    "sanitizedHtml": "HTML saneado",
-    "plainText": "Texto plano",
-    "summary": "Resumen",
-    "total": "Total",
-    "links": "Enlaces",
-    "images": "Imágenes",
-    "errors": "Errores",
-    "warnings": "Advertencias",
-    "valid": "Válido",
-    "invalid": "No válido",
-    "href": "Href",
-    "text": "Texto",
-    "rel": "Rel",
-    "target": "Destino",
-    "alt": "Alt",
-    "width": "Ancho",
-    "height": "Alto",
-    "empty": "Vacío",
-    "outputReady": "Salida lista",
-    "cleanedHtml": "HTML limpio",
-    "formattedHtml": "HTML formateado",
-    "minifiedHtml": "HTML minimizado",
-    "markdown": "Markdown",
-    "extractedImages": "Imágenes extraídas",
-    "extractedLinks": "Enlaces extraídos",
-    "validationSummary": "Resumen de validación",
-    "prettyHtml": "HTML legible",
-    "encodedText": "Texto codificado"
-  },
   "seo": {
     "title": "Desescapar HTML",
-    "description": "Desescapa entidades HTML en texto o marcado legible con una herramienta rápida y local en el navegador.",
+    "description": "Desescapa entidades HTML en texto o marcado legible con una herramienta que funciona en el navegador.",
     "keywords": [
       "desescapar html",
-      "decodificar entidades html",
       "decodificador html",
+      "entidades html",
       "html unescape",
       "herramientas html"
     ]

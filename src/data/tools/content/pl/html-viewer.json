@@ -4,108 +4,86 @@
   "slug": "podgladacz-html",
   "h1": "Podglądacz HTML",
   "title": "Podglądacz HTML",
-  "shortDescription": "Bezpiecznie wyświetlaj oczyszczony HTML i sprawdzaj jego źródło.",
-  "metaTitle": "Podglądacz HTML | Bezpieczny podgląd oczyszczonego HTML",
-  "metaDescription": "Wyświetlaj HTML w bezpiecznym, oczyszczonym podglądzie i sprawdzaj źródło, linki, obrazy oraz informacje walidacyjne.",
-  "intro": "Bezpiecznie podglądaj HTML w przeglądarce, sprawdzaj oczyszczony wynik i analizuj linki, obrazy oraz strukturę bez ryzyka uruchomienia skryptów.",
-  "overview": "Podglądacz HTML pomaga analizować treść HTML po sanitizacji. To szybkie narzędzie do bezpiecznego podglądu zaufanego lub niepewnego kodu po stronie klienta. Użyj go do sprawdzenia oczyszczonego źródła, wykrycia usuniętych elementów i weryfikacji linków oraz multimediów przed publikacją lub udostępnieniem.",
+  "shortDescription": "Wyświetl oczyszczony HTML i sprawdź jego strukturę w bezpiecznym widoku.",
+  "metaTitle": "Podglądacz HTML bezpiecznie",
+  "metaDescription": "Podglądaj oczyszczony HTML, sprawdzaj źródło, linki, obrazy i atrybuty w jednym bezpiecznym widoku.",
+  "intro": "Wklej HTML, aby zobaczyć wynik po sanitizacji, podgląd renderu oraz wyodrębnione linki i obrazy bez uruchamiania aktywnych skryptów.",
+  "overview": "Podglądacz HTML służy do analizy kodu po sanitizacji i porównania renderu z oczyszczonym źródłem. Przydaje się, gdy chcesz sprawdzić, co zostało zachowane, co usunięto i czy pozostały znacznik nadal ma sens wizualny oraz strukturalny.\n\nNarzędzie działa po stronie klienta i pozwala szybko przejrzeć wklejony markup. Możesz zweryfikować odnośniki, znaczniki multimediów, atrybuty w linii i komunikaty walidacyjne przed przeniesieniem treści do strony, pola CMS, szablonu wiadomości lub pliku eksportu.",
   "howItWorks": [
     "Wklej HTML do pola wejściowego.",
-    "Narzędzie sanitizuje kod po stronie klienta.",
-    "Sprawdź podgląd oraz oczyszczone źródło HTML.",
-    "Przeanalizuj linki, obrazy, atrybuty i komunikaty walidacji.",
-    "Skopiuj oczyszczony wynik, jeśli wszystko wygląda poprawnie."
+    "Narzędzie sanitizuje kod lokalnie.",
+    "Sprawdź podgląd renderu i oczyszczone źródło.",
+    "Przeanalizuj linki, obrazy, atrybuty i uwagi walidacyjne.",
+    "Skopiuj oczyszczony HTML, jeśli spełnia wymagania."
   ],
   "useCases": [
-    "Podgląd fragmentów HTML przed publikacją.",
-    "Sprawdzanie oczyszczonej treści z formularzy użytkowników.",
-    "Analiza linków, obrazów i atrybutów w wygenerowanym kodzie.",
-    "Weryfikacja oczyszczonego HTML po eksporcie lub konwersji.",
-    "Bezpieczne przeglądanie niepoprawnego lub podejrzanego HTML."
+    {
+      "title": "Kontrola fragmentów z CMS",
+      "description": "Sprawdź fragment skopiowany z pola treści przed wstawieniem go do układu strony lub szablonu."
+    },
+    {
+      "title": "Analiza importowanego HTML",
+      "description": "Zobacz, które elementy pozostają po sanitizacji kodu z innego systemu lub eksportu."
+    },
+    {
+      "title": "Weryfikacja wyniku edytora",
+      "description": "Sprawdź adresy linków, znaczniki obrazów i formatowanie wygenerowane przez edytor przed zapisaniem."
+    },
+    {
+      "title": "Audyt zgłoszeń użytkowników",
+      "description": "Przeanalizuj markup z komentarzy, profili lub wpisów i zobacz, co zostało usunięte."
+    }
   ],
   "examples": [
     {
-      "title": "Przed publikacją fragmentu bloga",
-      "input": "<p>Cześć <script>alert(1)</script><a href='https://example.com'>link</a></p>",
-      "output": "<p>Cześć <a href=\"https://example.com\">link</a></p>",
-      "description": "Skrypty są usuwane, a bezpieczna treść pozostaje."
+      "title": "Usuwanie skryptu inline",
+      "input": "<p>Czytaj więcej <script>alert('x')</script><a href='https://example.com/post'>tutaj</a></p>",
+      "output": "<p>Czytaj więcej <a href=\"https://example.com/post\">tutaj</a></p>",
+      "description": "Element script jest usuwany, a bezpieczny akapit i link zostają zachowane."
     },
     {
-      "title": "Kontrola treści od użytkowników",
-      "input": "<img src='photo.jpg' onerror='alert(1)'><strong>Świetny wpis</strong>",
-      "output": "<img src=\"photo.jpg\"><strong>Świetny wpis</strong>",
-      "description": "Niebezpieczne obsługi zdarzeń są usuwane z elementów."
+      "title": "Usuwanie niebezpiecznego atrybutu",
+      "input": "<img src='avatar.png' onerror='alert(1)' alt='Avatar'><span>Profil</span>",
+      "output": "<img src=\"avatar.png\" alt=\"Avatar\"><span>Profil</span>",
+      "description": "Niebezpieczne obsługi zdarzeń są usuwane z tagu obrazu."
+    },
+    {
+      "title": "Porządkowanie błędnie zagnieżdżonego kodu",
+      "input": "<div><strong>Tytuł<p>Treść</strong></p></div>",
+      "output": "<div><strong>Tytuł</strong><p>Treść</p></div>",
+      "description": "Widok pokazuje oczyszczoną strukturę, dzięki czemu łatwiej zauważyć błędne zagnieżdżenie."
     }
   ],
   "faq": [
     {
-      "question": "Czy ten Podglądacz HTML jest bezpieczny?",
-      "answer": "Tak. Służy do podglądu oczyszczonego HTML po stronie klienta i nie powinien uruchamiać aktywnych skryptów w obszarze wynikowym."
+      "question": "Co dzieje się z moim HTML podczas podglądu?",
+      "answer": "Narzędzie usuwa niebezpieczne lub niedozwolone fragmenty podczas sanitizacji i pokazuje wynikowy, oczyszczony markup, więc podgląd może różnić się od oryginału."
     },
     {
-      "question": "Czy usuwa skrypty i niebezpieczne atrybuty?",
-      "answer": "Tak. Sanitizer ma usuwać typowe wektory XSS, takie jak znaczniki script i obsługę zdarzeń."
+      "question": "Dlaczego część atrybutów znika?",
+      "answer": "Usuwane są atrybuty, które mogą uruchamiać skrypty, zmieniać zachowanie albo psuć dozwolony wynik. Dotyczy to między innymi obsługi zdarzeń."
     },
     {
-      "question": "Czy mogę osobno sprawdzić linki i obrazy?",
-      "answer": "Tak. Narzędzie pomaga analizować wyodrębnione linki, obrazy i kluczowe atrybuty w celu walidacji."
+      "question": "Czy mogę polegać na podglądzie jako wyniku końcowym?",
+      "answer": "Traktuj go jako etap weryfikacji, a nie zastępstwo walidacji po stronie aplikacji. Różne środowiska mogą dopuszczać inne znaczniki i atrybuty."
     },
     {
-      "question": "Czy mój HTML jest wysyłany na serwer?",
-      "answer": "Nie. Narzędzie działa wyłącznie po stronie klienta i nie korzysta z zewnętrznych API."
+      "question": "Dlaczego uszkodzony HTML wygląda inaczej po wklejeniu?",
+      "answer": "Przeglądarka i sanitizer normalizują błędny markup. Mogą przez to zmienić kolejność tagów, domknąć je automatycznie albo przenieść tekst do poprawniejszej struktury."
     }
   ],
-  "uiLabels": {
-    "copy": "Kopiuj",
-    "copied": "Skopiowano",
-    "input": "Wejście HTML",
-    "output": "Oczyszczony HTML",
-    "placeholder": "Wklej tutaj HTML",
-    "indent": "Wcięcia",
-    "removeComments": "Usuń komentarze",
-    "preview": "Podgląd",
-    "source": "Źródło",
-    "sanitizedHtml": "Oczyszczony HTML",
-    "plainText": "Zwykły tekst",
-    "summary": "Podsumowanie",
-    "total": "Łącznie",
-    "links": "Linki",
-    "images": "Obrazy",
-    "errors": "Błędy",
-    "warnings": "Ostrzeżenia",
-    "valid": "Prawidłowy",
-    "invalid": "Nieprawidłowy",
-    "href": "Adres URL",
-    "text": "Tekst",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Szerokość",
-    "height": "Wysokość",
-    "empty": "Puste",
-    "outputReady": "Wynik gotowy",
-    "cleanedHtml": "Oczyszczony HTML",
-    "formattedHtml": "Sformatowany HTML",
-    "minifiedHtml": "Zminifikowany HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Wyodrębnione obrazy",
-    "extractedLinks": "Wyodrębnione linki",
-    "validationSummary": "Podsumowanie walidacji",
-    "prettyHtml": "Czytelny HTML",
-    "encodedText": "Zakodowany tekst"
-  },
   "seo": {
-    "title": "Podglądacz HTML | Bezpieczny podgląd oczyszczonego HTML",
-    "description": "Wyświetlaj HTML w bezpiecznym, oczyszczonym podglądzie i sprawdzaj źródło, linki, obrazy oraz informacje walidacyjne.",
+    "title": "Podglądacz HTML bezpiecznie",
+    "description": "Podglądaj oczyszczony HTML, sprawdzaj źródło, linki, obrazy i atrybuty w jednym bezpiecznym widoku.",
     "keywords": [
       "podglądacz HTML",
       "oczyszczony HTML",
       "podgląd HTML",
-      "bezpieczny podgląd HTML",
-      "sanityzacja HTML",
-      "analiza HTML",
-      "oczyszczone źródło",
-      "bezpieczny podgląd XSS"
+      "sprawdzanie HTML",
+      "sanitizer HTML",
+      "bezpieczny widok markup",
+      "podgląd oczyszczonego kodu",
+      "renderowanie HTML"
     ]
   }
 }

@@ -2,15 +2,87 @@
   "toolId": "keyword-density-checker",
   "locale": "de",
   "slug": "keyword-dichte-pruefer",
-  "h1": "Keyword-Dichte pruefen",
-  "title": "Keyword-Dichte pruefen",
-  "shortDescription": "Keyworddichte ermitteln, Texte pruefen und die Haeufigkeit von Suchbegriffen schnell im Browser sehen.",
-  "metaTitle": "Keyword-Dichte pruefen | Keyworddichte ermitteln",
-  "metaDescription": "Keyword-Dichte online pruefen und die Haeufigkeit eines Begriffs im Text analysieren. Praktisch fuer SEO-Texte, Landing Pages und Content-Checks.",
-  "intro": "Dieses Tool passt zu Suchanfragen wie Keyword-Dichte pruefen, Keyworddichte ermitteln und Keyworddichte Tool. Du gibst Text und Zielbegriff ein und bekommst sofort Haeufigkeit, Anteil und einen schnellen Eindruck, ob ein Keyword zu oft oder zu selten vorkommt.",
-  "overview": "Der Pruefer eignet sich fuer SEO-Texte, Landing Pages, Blogartikel, Produktseiten und redaktionelle Content-Checks. Er arbeitet sofort im Browser und hilft dabei, Ueberoptimierung oder zu schwache Keyword-Nutzung schneller zu erkennen, bevor Inhalte live gehen.",
-  "howItWorks": ["Text und Ziel-Keyword eingeben.", "Das Tool zaehlt die Vorkommen und berechnet den prozentualen Anteil.", "Ergebnis fuer SEO-Checks, Ueberarbeitung oder Content-QA verwenden."],
-  "examples": [{"title": "SEO-Absatz pruefen", "input": "Ein Textblock plus Zielbegriff", "output": "Keyword-Anteil in Prozent", "description": "Nuetzlich fuer schnelle Onpage-Pruefungen und Redaktionsarbeit."}, {"title": "Landing Page kontrollieren", "input": "Produktseite mit Fokus-Keyword", "output": "Vorkommen und Dichte", "description": "Hilfreich beim Nachschaerfen von Suchbegriffen ohne Ratespiel."}],
-  "faq": [{"question": "Kann ich mit dem Tool die Keyworddichte ermitteln?", "answer": "Ja. Genau dafuer ist das Tool gedacht: Es zeigt die Haeufigkeit und den Anteil eines Begriffs im Text."}, {"question": "Ist das Tool fuer schnelle SEO-Pruefungen gedacht?", "answer": "Ja. Es eignet sich gut fuer redaktionelle Checks, Landing Pages und einfache Onpage-Analysen."}, {"question": "Ist eine hohe Keyworddichte automatisch besser?", "answer": "Nein. Zu hohe Dichte kann unnatuerlich wirken. Das Tool hilft dir dabei, einen besseren Mittelweg fuer Lesbarkeit und Suchintention zu finden."}],
-  "seo": {"title": "Keyword-Dichte pruefen | Keyworddichte ermitteln", "description": "Keyword-Dichte online pruefen und die Haeufigkeit eines Begriffs im Text analysieren. Praktisch fuer SEO-Texte, Landing Pages und Content-Checks.", "keywords": ["keyworddichte tool", "keyworddichte ermitteln", "keyword dichte pruefen", "keyworddichte pruefer", "seo text pruefen"]}
+  "h1": "Keyword-Dichte Pruefer",
+  "title": "Keyword-Dichte Pruefer",
+  "shortDescription": "Zaehle Vorkommen eines Begriffs im Text und erkenne seinen Anteil an der Gesamtlauenge.",
+  "metaTitle": "Keyword-Dichte Pruefer",
+  "metaDescription": "Begriffsvorkommen, Gesamtwoerter und Keyword-Dichte in einem Text klar auswerten.",
+  "intro": "Fuege deinen Text ein und nenne das Ziel-Keyword, um Vorkommen, Gesamtwoerter und die prozentuale Dichte sofort zu sehen.",
+  "overview": "Dieses Tool ist fuer Texte gedacht, in denen du genau wissen willst, wie oft ein bestimmter Begriff vorkommt. Es zeigt die Treffer zusammen mit der Gesamtwortzahl an, damit du schnell beurteilen kannst, ob ein Begriff dezent eingesetzt wird, sich haeuft oder in einem Abschnitt dominiert.\n\nBesonders hilfreich ist das bei Blogartikeln, Produktseiten, Landing Pages und redaktionellen Entwuerfen. Du kannst damit auch einzelne Abschnitte getrennt pruefen, um zu sehen, wo sich ein Keyword ballt oder ob die Formulierung zu gleichfoermig wirkt.",
+  "howItWorks": [
+    "Text einfuellen oder eintippen.",
+    "Keyword oder Phrase eingeben.",
+    "Treffer, Wortzahl und Dichte im Ergebnis ablesen."
+  ],
+  "useCases": [
+    {
+      "title": "Blogentwurf pruefen",
+      "description": "Kontrolliere, wie oft die Hauptphrase in einem Artikelentwurf vorkommt, bevor der Text weiterbearbeitet wird."
+    },
+    {
+      "title": "Landing Page ausbalancieren",
+      "description": "Vergleiche den Keyword-Einsatz auf einer Verkaufsseite, damit der Text fokussiert bleibt und nicht monoton wirkt."
+    },
+    {
+      "title": "Produkttext analysieren",
+      "description": "Erkenne, ob eine Produktbeschreibung denselben Ausdruck zu oft wiederholt oder thematisch zu unscharf bleibt."
+    },
+    {
+      "title": "Abschnitte getrennt testen",
+      "description": "Pruefe Einleitung, Hauptteil und Schluss separat, um die Stelle mit der hoechsten Begriffsverdichtung zu finden."
+    }
+  ],
+  "examples": [
+    {
+      "title": "Artikelentwurf",
+      "input": "Text: \"Keyword-Dichte hilft dabei, Wiederholungen besser zu steuern. Ein Keyword-Dichte Pruefer zeigt, ob die Dichte ausgewogen ist.\"\nKeyword: \"Keyword-Dichte\"",
+      "output": "Treffer: 2\nWortzahl: 16\nDichte: 12,5%",
+      "description": "Zeigt die Auswertung einer wiederholten Phrase in einem kurzen Text."
+    },
+    {
+      "title": "Produktseite",
+      "input": "Text: \"Laufschuhe fuer den Alltag. Diese Laufschuhe sind leicht, bequem und robust, und die Laufschuhe eignen sich fuer lange Strecken.\"\nKeyword: \"Laufschuhe\"",
+      "output": "Treffer: 3\nWortzahl: 18\nDichte: 16,67%",
+      "description": "Hilfreich, wenn eine Verkaufsseite einen Begriff in mehreren Saetzen nutzt."
+    },
+    {
+      "title": "Phrase mit Satzzeichen",
+      "input": "Text: \"E-Mail-Marketing, E-Mail-Marketing fuer Kampagnen und bessere Ergebnisse im E-Mail-Marketing sind wichtig.\"\nKeyword: \"E-Mail-Marketing\"",
+      "output": "Treffer: 3\nWortzahl: 12\nDichte: 25%",
+      "description": "Zeigt, dass Satzzeichen die Auswertung nicht stoeren, wenn die Phrase mehrfach vorkommt."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Zaehlt das Tool nur exakte Treffer?",
+      "answer": "Es zaehlt den Begriff oder die Phrase so, wie du sie eingibst. Wenn du Singular und Plural vergleichen willst, pruefe beide Varianten getrennt."
+    },
+    {
+      "question": "Warum steigt die Dichte bei kuerzerem Text?",
+      "answer": "Weil die Dichte von Trefferzahl und Gesamtwortzahl abhaengt. Wenn der Text kuerzer wird und der Begriff gleich oft vorkommt, steigt der Prozentwert."
+    },
+    {
+      "question": "Wie bewerte ich einen sehr hohen Wert?",
+      "answer": "Meist bedeutet das, dass der Begriff in einem kurzen Text sehr oft vorkommt. Das kann in Notizen noch passen, wirkt in ausformulierten Texten aber schnell wiederholt."
+    },
+    {
+      "question": "Was ist der haeufigste Fehler?",
+      "answer": "Oft wird nur ein einzelnes Wort eingegeben, obwohl die Zielphrase aus mehreren Woertern besteht. Dann ist die Auswertung nicht passend zum eigentlichen Suchbegriff."
+    },
+    {
+      "question": "Kann ich nur einen Abschnitt pruefen?",
+      "answer": "Ja. Wenn du Abschnitte einzeln einfaengst, erkennst du besser, wo sich der Begriff konzentriert."
+    }
+  ],
+  "seo": {
+    "title": "Keyword-Dichte Pruefer",
+    "description": "Begriffsvorkommen, Gesamtwoerter und Keyword-Dichte in einem Text klar auswerten.",
+    "keywords": [
+      "keyword dichte pruefen",
+      "keyword dichte",
+      "keyworddichte",
+      "text analysieren",
+      "wortzaehler"
+    ]
+  }
 }

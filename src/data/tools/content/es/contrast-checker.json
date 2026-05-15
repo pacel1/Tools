@@ -1,0 +1,84 @@
+{
+  "toolId": "contrast-checker",
+  "locale": "es",
+  "slug": "contrast-checker",
+  "h1": "Comprobador de contraste",
+  "title": "Comprobador de contraste",
+  "shortDescription": "Compara colores de texto y fondo para ver la relacion de contraste y saber si la combinacion se lee bien.",
+  "metaTitle": "Comprobador de contraste | Color",
+  "metaDescription": "Compara colores de texto y fondo, revisa la relacion de contraste y decide si la pareja sirve para texto normal, grande o elementos UI.",
+  "intro": "Introduce el color del texto y el del fondo para ver al instante la relacion de contraste y si la combinacion es adecuada para tu interfaz.",
+  "overview": "Esta herramienta sirve para diseñadores, desarrolladores y revisores que necesitan valorar una pareja de colores sin hacer pruebas a ojo. Muestra la relacion de contraste entre dos colores y ayuda a interpretar ese resultado en textos reales, etiquetas, botones, tarjetas y paneles.\n\nÚsala al ajustar temas visuales, revisar colores de marca o comprobar un componente antes de publicarlo. Resulta especialmente útil cuando una combinación se ve bien en pantalla pero pierde claridad en texto pequeño, estados desactivados o superficies teñidas.",
+  "howItWorks": [
+    "Elige el color del texto y el color del fondo.",
+    "La herramienta calcula la relación de contraste entre ambos colores.",
+    "Revisa el resultado para texto normal, texto grande y superficies de interfaz donde la legibilidad es importante."
+  ],
+  "useCases": [
+    {
+      "title": "Texto de cuerpo sobre fondo claro",
+      "description": "Comprueba si un párrafo sigue siendo legible sobre blanco, marfil o tarjetas muy pálidas."
+    },
+    {
+      "title": "Etiqueta de botón sobre color de marca",
+      "description": "Prueba si una etiqueta blanca, oscura o matizada se mantiene clara sobre un botón sólido."
+    },
+    {
+      "title": "Texto secundario en paneles de datos",
+      "description": "Verifica si metadatos, fechas y avisos siguen destacando en pantallas con mucha información."
+    },
+    {
+      "title": "Revisión de tema oscuro",
+      "description": "Evalúa texto sobre paneles antracita, tarjetas y capas superpuestas antes de lanzar una interfaz dark mode."
+    }
+  ],
+  "examples": [
+    {
+      "title": "Texto editorial sobre blanco",
+      "input": "Texto #1F2937 / Fondo #FFFFFF",
+      "output": "Contraste alto; válido para lectura normal.",
+      "description": "Una combinación habitual para artículos, formularios y documentación."
+    },
+    {
+      "title": "Etiqueta blanca en botón azul",
+      "input": "Texto #FFFFFF / Fondo #2563EB",
+      "output": "Legible para un botón de acción; conviene revisar el tamaño.",
+      "description": "Útil para confirmar si un CTA principal puede usar texto blanco."
+    },
+    {
+      "title": "Subtítulo gris suave en una tarjeta",
+      "input": "Texto #6B7280 / Fondo #F3F4F6",
+      "output": "Contraste bajo; puede servir solo para texto secundario y más grande.",
+      "description": "Muestra por qué los grises suaves pueden quedarse cortos sobre fondos muy claros."
+    }
+  ],
+  "faq": [
+    {
+      "question": "¿Qué indica exactamente la relación de contraste?",
+      "answer": "Compara la diferencia de brillo percibido entre dos colores. Cuanto más alta es la relación, más se separa normalmente el texto del fondo."
+    },
+    {
+      "question": "¿Por qué una combinación puede verse bien y aun así dar un resultado flojo?",
+      "answer": "Porque un color muy saturado no siempre tiene suficiente diferencia de luminancia. La relación se basa en brillo, no en intensidad visual."
+    },
+    {
+      "question": "¿Importa el tamaño del texto al interpretar el resultado?",
+      "answer": "Sí. El texto pequeño necesita una separación más fuerte que un título grande. Una pareja válida para un encabezado puede no funcionar para cuerpo o etiquetas."
+    },
+    {
+      "question": "¿Cuál es el error más común con botones y badges?",
+      "answer": "Se prueba solo el estado principal y se olvidan hover, disabled o contornos. Esos estados pueden bajar el contraste y empeorar la lectura."
+    }
+  ],
+  "seo": {
+    "title": "Comprobador de contraste | Color",
+    "description": "Compara colores de texto y fondo, revisa la relación de contraste y decide si la pareja sirve para texto normal, grande o elementos UI.",
+    "keywords": [
+      "comprobador de contraste",
+      "contraste de color",
+      "texto y fondo",
+      "accesibilidad visual",
+      "wcag contraste"
+    ]
+  }
+}

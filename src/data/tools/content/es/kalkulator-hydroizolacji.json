@@ -4,174 +4,86 @@
   "slug": "calculadora-de-impermeabilizacion",
   "h1": "Calculadora de impermeabilización",
   "title": "Calculadora de impermeabilización",
-  "shortDescription": "Calcula cuánta impermeabilización necesitas para un baño, balcón, terraza o cimentación.",
-  "metaTitle": "Calculadora de impermeabilización - material para membrana líquida",
-  "metaDescription": "Calcula la cantidad de impermeabilización para baños, balcones, terrazas y cimentaciones. Indica superficie, capas, rendimiento, desperdicio y tamaño del envase.",
-  "intro": "Usa esta calculadora de impermeabilización para estimar cuánta membrana líquida, producto sellador o impermeabilizante necesitas en tu obra.",
-  "overview": "Introduce la superficie, el número de capas, el rendimiento, el porcentaje de desperdicio y el tamaño del envase. La herramienta calcula la cantidad sin desperdicio, el total con desperdicio y los envases necesarios.",
+  "shortDescription": "Calcula cuánta membrana líquida, masilla o sellador necesitas para baño, balcón, terraza o cimentación.",
+  "metaTitle": "Calculadora de impermeabilización",
+  "metaDescription": "Calcula la cantidad de impermeabilización para baño, balcón, terraza y cimentación. Incluye capas, rendimiento, desperdicio y tamaño del envase.",
+  "intro": "Introduce la superficie, las capas, el rendimiento, el desperdicio y el tamaño del envase para saber cuánto comprar.",
+  "overview": "Esta calculadora estima membrana líquida, masilla de sellado o productos similares en superficies planas y zonas expuestas a humedad. Tiene en cuenta el número de capas, el rendimiento real del producto, el margen por desperdicio y el tamaño del envase, así que muestra tanto la cantidad necesaria como los botes o cubos a comprar.\n\nSirve para baños alicatados, balcones, terrazas y muros de cimentación. El resultado es una estimación de materiales, no una sustitución de la ficha técnica ni del criterio de obra; conviene revisar también esquinas, juntas y pasos de tubería si no están incluidos en la superficie medida.",
   "howItWorks": [
-    "Multiplica la superficie por el número de capas.",
-    "Divide entre el rendimiento para obtener la cantidad base.",
-    "Añade un margen de desperdicio para una estimación más realista.",
-    "Divide entre el tamaño del envase y redondea hacia arriba."
+    "Indica la superficie a cubrir.",
+    "Define cuántas capas necesita el sistema.",
+    "Introduce el rendimiento del producto.",
+    "Añade desperdicio y convierte el total en envases redondeando hacia arriba."
   ],
   "useCases": [
-    "Estimar impermeabilización de un baño antes de alicatar.",
-    "Planificar membrana líquida para balcón o terraza.",
-    "Calcular material para cimentaciones y zonas húmedas.",
-    "Comprobar rápido cuánta masilla impermeable comprar."
+    {
+      "title": "Ducha antes del alicatado",
+      "description": "Calcular la membrana necesaria para el suelo y el perímetro del baño de una zona de ducha."
+    },
+    {
+      "title": "Balcón con remates perimetrales",
+      "description": "Prever el consumo de impermeabilizante en bordes, desagüe y encuentros con el peto."
+    },
+    {
+      "title": "Muro de cimentación",
+      "description": "Estimar el material para impermeabilizar una pared vertical antes del relleno."
+    },
+    {
+      "title": "Sellado de pasos de tubería",
+      "description": "Ajustar la compra para una reparación localizada alrededor de conductos y esquinas."
+    }
   ],
   "examples": [
     {
-      "title": "Suelo de baño",
-      "input": "10 m², 2 capas, 1 m²/kg, 10% de desperdicio, envase de 5 kg",
-      "output": "20 kg base, 22 kg total, 5 envases.",
-      "description": "Estimación práctica para un baño pequeño."
+      "title": "Baño pequeño",
+      "input": "8,5 m², 2 capas, rendimiento 1,2 m²/kg, 12% desperdicio, envase de 5 kg",
+      "output": "Base: 14,2 kg; total: 15,9 kg; 4 envases.",
+      "description": "Una estimación realista para un baño compacto."
     },
     {
-      "title": "Terraza",
-      "input": "25 m², 2 capas, 0.8 m²/l, 15% de desperdicio, envase de 10 l",
-      "output": "62.5 l base, 71.9 l total, 8 envases.",
-      "description": "Útil para planificar materiales de exterior."
+      "title": "Terraza exterior",
+      "input": "31 m², 3 capas, rendimiento 0,75 m²/l, 10% desperdicio, envase de 10 l",
+      "output": "Base: 124,0 l; total: 136,4 l; 14 envases.",
+      "description": "Útil para una terraza que necesita un sistema más robusto."
+    },
+    {
+      "title": "Tramo de cimentación",
+      "input": "18 m², 2 capas, rendimiento 1,5 m²/kg, 8% desperdicio, envase de 20 kg",
+      "output": "Base: 24,0 kg; total: 25,9 kg; 2 envases.",
+      "description": "Adecuado para un muro de cimentación lineal con pérdidas moderadas."
     }
   ],
   "faq": [
     {
-      "question": "¿Qué puedo calcular con esta herramienta?",
-      "answer": "Puedes estimar la cantidad de impermeabilización necesaria para baños, balcones, terrazas y cimentaciones."
+      "question": "¿Incluye esquinas, solapes y manguitos de tubería?",
+      "answer": "Solo si los añades a la superficie o incrementas el desperdicio. Los detalles consumen más material que una zona lisa."
     },
     {
-      "question": "¿Incluye desperdicio?",
-      "answer": "Sí. Solo tienes que indicar un porcentaje de desperdicio para obtener un total más realista."
+      "question": "¿Qué rendimiento debo usar?",
+      "answer": "El que indica el fabricante para ese producto y ese método de aplicación. Rodillo, brocha y llana pueden dar consumos distintos."
     },
     {
-      "question": "¿Debo redondear los envases?",
-      "answer": "Sí. Siempre conviene redondear hacia arriba para no quedarte corto de material."
+      "question": "¿Por qué salen tantos envases?",
+      "answer": "Porque la herramienta redondea hacia arriba a envases completos. Un resto pequeño puede obligar a comprar uno más."
     },
     {
-      "question": "¿Sirve para membrana líquida?",
-      "answer": "Sí. Funciona muy bien para membrana líquida y productos similares de impermeabilización."
+      "question": "¿Puedo usar litros y kilos indistintamente?",
+      "answer": "Solo si el producto permite convertirlos con su densidad o ficha técnica. La herramienta trabaja con la unidad que introduzcas."
+    },
+    {
+      "question": "¿Cuál es el error más habitual al medir?",
+      "answer": "Olvidar el perímetro, los umbrales, los sumideros y los pasos de instalaciones. Si no están dentro del área, hay que sumarlos aparte."
     }
   ],
-  "uiLabels": {
-    "copy": "Copiar",
-    "copied": "Copiado",
-    "input": "Entrada",
-    "output": "Salida",
-    "placeholder": "Introduce un valor",
-    "indent": "Sangría",
-    "removeComments": "Eliminar comentarios",
-    "preview": "Vista previa",
-    "source": "Fuente",
-    "sanitizedHtml": "HTML saneado",
-    "plainText": "Texto plano",
-    "summary": "Resumen",
-    "total": "Total",
-    "links": "Enlaces",
-    "images": "Imágenes",
-    "errors": "Errores",
-    "warnings": "Avisos",
-    "valid": "Válido",
-    "invalid": "No válido",
-    "href": "Href",
-    "text": "Texto",
-    "rel": "Rel",
-    "target": "Destino",
-    "alt": "Alt",
-    "width": "Ancho",
-    "height": "Alto",
-    "empty": "Vacío",
-    "outputReady": "Resultado listo",
-    "cleanedHtml": "HTML limpio",
-    "formattedHtml": "HTML formateado",
-    "minifiedHtml": "HTML minificado",
-    "markdown": "Markdown",
-    "extractedImages": "Imágenes extraídas",
-    "extractedLinks": "Enlaces extraídos",
-    "validationSummary": "Resumen de validación",
-    "prettyHtml": "HTML legible",
-    "encodedText": "Texto codificado",
-    "file": "Archivo",
-    "size": "Tamaño",
-    "format": "Formato",
-    "quality": "Calidad",
-    "colorOne": "Color 1",
-    "colorTwo": "Color 2",
-    "background": "Fondo",
-    "foreground": "Primer plano",
-    "angle": "Ángulo",
-    "margin": "Margen",
-    "level": "Nivel",
-    "gradientType": "Tipo de degradado",
-    "linear": "Lineal",
-    "radial": "Radial",
-    "blur": "Desenfoque",
-    "spread": "Extensión",
-    "offsetX": "Desplazamiento X",
-    "offsetY": "Desplazamiento Y",
-    "opacity": "Opacidad",
-    "inset": "Inset",
-    "cssCode": "Código CSS",
-    "snippet": "Fragmento",
-    "download": "Descargar",
-    "downloadSvg": "Descargar SVG",
-    "downloadPng": "Descargar PNG",
-    "downloadAll": "Descargar todo",
-    "upload": "Subir",
-    "title": "Título",
-    "description": "Descripción",
-    "canonicalUrl": "URL canónica",
-    "siteName": "Nombre del sitio",
-    "ogImage": "Imagen OG",
-    "clear": "Limpiar",
-    "generatedQr": "QR generado",
-    "placeholderImage": "Imagen de marcador",
-    "faviconSet": "Conjunto de favicon",
-    "keepAspectRatio": "Mantener proporción",
-    "cropX": "Recorte X",
-    "cropY": "Recorte Y",
-    "cropWidth": "Ancho del recorte",
-    "cropHeight": "Alto del recorte",
-    "originalSize": "Tamaño original",
-    "outputSize": "Tamaño de salida",
-    "savedSize": "Tamaño ahorrado",
-    "result": "Resultado",
-    "base64": "Base64",
-    "mimeType": "Tipo MIME",
-    "resizedImage": "Imagen redimensionada",
-    "compressedImage": "Imagen comprimida",
-    "croppedImage": "Imagen recortada",
-    "convertedImage": "Imagen convertida",
-    "decodedImage": "Imagen decodificada",
-    "imagePreview": "Vista previa de imagen",
-    "camera": "Cámara",
-    "lens": "Lente",
-    "dateTaken": "Fecha de toma",
-    "resolution": "Resolución",
-    "fileSize": "Tamaño del archivo",
-    "iso": "ISO",
-    "exposure": "Exposición",
-    "aperture": "Apertura",
-    "focalLength": "Distancia focal",
-    "flash": "Flash",
-    "orientation": "Orientación",
-    "latitude": "Latitud",
-    "longitude": "Longitud",
-    "openMap": "Abrir mapa",
-    "rawMetadata": "Metadatos en bruto",
-    "noMetadataFound": "No se encontraron metadatos",
-    "gpsLocation": "Ubicación GPS",
-    "metadataSummary": "Resumen de metadatos"
-  },
   "seo": {
-    "title": "Calculadora de impermeabilización para membrana líquida",
-    "description": "Calcula rápidamente la cantidad de impermeabilización para baños, balcones, terrazas y cimentaciones. Obtén cantidad base, total con desperdicio y envases necesarios.",
+    "title": "Calculadora de impermeabilización",
+    "description": "Calcula la cantidad de impermeabilización para baño, balcón, terraza y cimentación. Incluye capas, rendimiento, desperdicio y tamaño del envase.",
     "keywords": [
       "calculadora de impermeabilización",
-      "membrana líquida",
       "cantidad de impermeabilización",
-      "cuánta impermeabilización necesito",
-      "calculadora de membrana líquida"
+      "membrana líquida",
+      "sellador impermeable",
+      "impermeabilización de cimentación"
     ]
   }
 }

@@ -4,158 +4,91 @@
   "slug": "image-compressor",
   "h1": "Image Compressor",
   "title": "Image Compressor",
-  "shortDescription": "Compress images online and reduce file size without uploading to a server.",
-  "metaTitle": "Image Compressor Online | Reduce Image File Size Fast",
-  "metaDescription": "Compress JPG, PNG, and WebP images online with a fast client-side image compressor. Reduce file size, control quality, and keep your files private.",
-  "intro": "Compress images in your browser and reduce file size without sending files to a server. Adjust quality, see saved size instantly, and download the optimized image in seconds.",
-  "overview": "This online image compressor helps you make image files smaller while keeping visual quality under control. It runs client-side, so your images stay on your device. Use it for faster uploads, lower storage usage, and better web performance.",
+  "shortDescription": "Compress JPG, PNG, and WebP images in your browser and reduce file size without uploading files.",
+  "metaTitle": "Image Compressor Tool",
+  "metaDescription": "Compress JPG, PNG, and WebP images in your browser. Lower file size, tune quality, and keep files on your device.",
+  "intro": "Compress an image in your browser, reduce its file size, and download the optimized version without sending it anywhere.",
+  "overview": "This tool reduces image file size while letting you control the result. It runs locally in your browser, so the image stays on your device while you adjust compression and inspect the output.\n\nUse it when a product photo, screenshot, banner, or graphic needs to be lighter for a website, a form, an email attachment, or a shared document. You can compare the original and compressed versions and choose the best balance between smaller size and visible detail for that file.\n\nIt supports JPG, PNG, and WebP, which makes it useful for both photographs and interface graphics. If an image is already tightly optimized, the savings may be modest, but you can still fine-tune quality to avoid visible artifacts.",
   "howItWorks": [
-    "Upload or paste an image file into the compressor.",
-    "Adjust the quality slider to balance size and clarity.",
-    "Preview the compressed result and check saved size metrics.",
-    "Download the optimized image when the result looks right."
+    "Add a JPG, PNG, or WebP image from your device.",
+    "Adjust the quality setting until the file size and appearance look right.",
+    "Review the compressed preview and the size change.",
+    "Download the compressed image as a new file."
   ],
   "useCases": [
-    "Reduce JPG file size for websites and blogs.",
-    "Compress PNG images before sharing by email or chat.",
-    "Optimize product photos for faster page loading.",
-    "Shrink image attachments for forms and online submissions."
+    {
+      "title": "Shrink product photos for a catalog",
+      "description": "Reduce large product images so listing pages load faster and media files stay lighter."
+    },
+    {
+      "title": "Prepare screenshots for bug reports",
+      "description": "Compress interface captures so support tickets and issue reports are easier to attach and review."
+    },
+    {
+      "title": "Meet strict upload limits",
+      "description": "Make document photos, ID images, or project assets small enough to pass tight file-size rules."
+    },
+    {
+      "title": "Lighten newsletter graphics",
+      "description": "Cut the weight of banners and thumbnails before placing them in email campaigns."
+    }
   ],
   "examples": [
     {
-      "title": "Best for web uploads",
-      "input": "High-resolution JPG photo",
-      "output": "Smaller JPG with reduced file size and preserved detail.",
-      "description": "Ideal when you need a lighter image for publishing or sharing online."
+      "title": "High-detail product photo",
+      "input": "6.4 MB JPG, 4000 × 3000, daylight shot",
+      "output": "1.1 MB JPG with most visible detail preserved",
+      "description": "Useful when a catalog image is too heavy for a product page or listing."
     },
     {
-      "title": "Best for private compression",
-      "input": "Local image file",
-      "output": "Compressed file created in the browser",
-      "description": "No upload to a remote server, so the workflow stays local."
+      "title": "App screenshot with flat colors",
+      "input": "2.8 MB PNG, flat colors, transparent toolbar area",
+      "output": "640 KB PNG with reduced file size",
+      "description": "Best when you need to keep the layout clean while lowering weight."
+    },
+    {
+      "title": "Hero banner for a campaign page",
+      "input": "1.9 MB WebP banner with soft gradients",
+      "output": "780 KB WebP optimized for delivery",
+      "description": "Helps reduce the size of a marketing visual without changing format."
     }
   ],
   "faq": [
     {
-      "question": "Does this image compressor upload my files?",
-      "answer": "No. The compression happens in your browser, so your files are not sent to a server."
+      "question": "Does compression happen on my device?",
+      "answer": "Yes. The image is processed in your browser, so the file does not need to be uploaded to produce the compressed result."
     },
     {
-      "question": "Which image formats are supported?",
-      "answer": "It works best with common formats such as JPG, PNG, and WebP."
+      "question": "Why can the preview look a little different from the original?",
+      "answer": "Compression can slightly alter fine texture, gradients, and sharp edges. If that happens, raise the quality until the result looks acceptable."
     },
     {
-      "question": "How do I choose the best quality setting?",
-      "answer": "Start with a higher quality value, then lower it until you find the best balance between file size and image clarity."
+      "question": "Which files work best here?",
+      "answer": "JPG, PNG, and WebP are the main supported formats. JPG usually shrinks well for photos, while PNG is better for flat graphics or transparency."
     },
     {
-      "question": "Will compression reduce image quality?",
-      "answer": "Yes, but you control how much. Lower quality creates smaller files, while higher quality keeps more detail."
+      "question": "Will PNG transparency stay intact?",
+      "answer": "If the source image has transparency and the output format supports it, transparent areas should remain intact. Very aggressive compression can still soften edges."
+    },
+    {
+      "question": "Why is the file sometimes not much smaller?",
+      "answer": "Already optimized images, tiny files, or noisy photos may not shrink much. In those cases, lower quality further, but expect more visible loss."
+    },
+    {
+      "question": "What happens if I compress text-heavy screenshots too much?",
+      "answer": "Small UI text and thin lines can become blurry or blocky. For screens with labels, reduce in small steps and stop while the text still reads clearly."
     }
   ],
-  "uiLabels": {
-    "copy": "Copy",
-    "copied": "Copied",
-    "input": "Input",
-    "output": "Output",
-    "placeholder": "Choose or paste an image file",
-    "indent": "Indent",
-    "removeComments": "Remove comments",
-    "preview": "Preview",
-    "source": "Source",
-    "sanitizedHtml": "Sanitized HTML",
-    "plainText": "Plain text",
-    "summary": "Summary",
-    "total": "Total",
-    "links": "Links",
-    "images": "Images",
-    "errors": "Errors",
-    "warnings": "Warnings",
-    "valid": "Valid",
-    "invalid": "Invalid",
-    "href": "URL",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt text",
-    "width": "Width",
-    "height": "Height",
-    "empty": "Empty",
-    "outputReady": "Output ready",
-    "cleanedHtml": "Cleaned HTML",
-    "formattedHtml": "Formatted HTML",
-    "minifiedHtml": "Minified HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extracted images",
-    "extractedLinks": "Extracted links",
-    "validationSummary": "Validation summary",
-    "prettyHtml": "Pretty HTML",
-    "encodedText": "Encoded text",
-    "file": "File",
-    "size": "Size",
-    "format": "Format",
-    "quality": "Quality",
-    "colorOne": "Color 1",
-    "colorTwo": "Color 2",
-    "background": "Background",
-    "foreground": "Foreground",
-    "angle": "Angle",
-    "margin": "Margin",
-    "level": "Level",
-    "gradientType": "Gradient type",
-    "linear": "Linear",
-    "radial": "Radial",
-    "blur": "Blur",
-    "spread": "Spread",
-    "offsetX": "Offset X",
-    "offsetY": "Offset Y",
-    "opacity": "Opacity",
-    "inset": "Inset",
-    "cssCode": "CSS code",
-    "snippet": "Snippet",
-    "download": "Download",
-    "downloadSvg": "Download SVG",
-    "downloadPng": "Download PNG",
-    "downloadAll": "Download all",
-    "upload": "Upload",
-    "title": "Title",
-    "description": "Description",
-    "canonicalUrl": "Canonical URL",
-    "siteName": "Site name",
-    "ogImage": "OG image",
-    "clear": "Clear",
-    "generatedQr": "QR code preview",
-    "placeholderImage": "Preview image",
-    "faviconSet": "Favicon set",
-    "keepAspectRatio": "Keep aspect ratio",
-    "cropX": "Crop X",
-    "cropY": "Crop Y",
-    "cropWidth": "Crop width",
-    "cropHeight": "Crop height",
-    "originalSize": "Original size",
-    "outputSize": "Output size",
-    "savedSize": "Saved size",
-    "result": "Result",
-    "base64": "Base64",
-    "mimeType": "MIME type",
-    "resizedImage": "Resized image",
-    "compressedImage": "Compressed image",
-    "croppedImage": "Cropped image",
-    "convertedImage": "Converted image",
-    "decodedImage": "Decoded image",
-    "imagePreview": "Image preview"
-  },
   "seo": {
-    "title": "Image Compressor Online - Reduce Image File Size",
-    "description": "Compress images online with a private, client-side image compressor. Control quality, reduce file size, and download optimized images quickly.",
+    "title": "Image Compressor Tool",
+    "description": "Compress JPG, PNG, and WebP images in your browser. Lower file size, tune quality, and keep files on your device.",
     "keywords": [
       "image compressor",
-      "compress images online",
-      "reduce image file size",
-      "JPG compressor",
-      "PNG compressor",
-      "WebP compressor",
-      "client-side image compression",
+      "compress jpg",
+      "compress png",
+      "compress webp",
+      "reduce image size",
+      "browser image compression",
       "photo compressor"
     ]
   }

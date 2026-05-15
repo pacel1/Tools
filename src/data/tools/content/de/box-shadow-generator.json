@@ -4,157 +4,87 @@
   "slug": "box-shadows-generator",
   "h1": "Box-Shadow-Generator",
   "title": "Box-Shadow-Generator",
-  "shortDescription": "Erstelle CSS-Box-Shadows mit Versatz, Unschärfe, Ausbreitung, Deckkraft und kopierfertiger Ausgabe.",
+  "shortDescription": "Erstelle CSS-Box-Shadows mit präzisem Versatz, Unschärfe, Ausbreitung, Deckkraft, Inset und kopierfertigem Code.",
   "metaTitle": "Box-Shadow-Generator",
-  "metaDescription": "Erstelle individuelle CSS-Box-Shadows mit Live-Vorschau, Unschärfe, Ausbreitung, Deckkraft und kopierfertigem Code.",
-  "intro": "Erstelle in Sekunden saubere, professionelle box-shadow-Werte in CSS. Passe Versatz, Unschärfe, Ausbreitung, Farbe und Deckkraft an und kopiere das Ergebnis direkt für deine Website oder App.",
-  "overview": "Dieser Box-Shadow-Generator hilft dir dabei, präzise CSS-Schatten mit Live-Vorschau und sofortiger Codeausgabe zu erstellen. Er eignet sich für Buttons, Karten, Dialoge, Bilder und andere UI-Elemente, die Tiefe und visuelle Trennung brauchen.",
+  "metaDescription": "Erstelle individuelle CSS-Box-Shadows mit Vorschau, Unschärfe, Ausbreitung, Deckkraft, Inset und kopierfertigem Code.",
+  "intro": "Erzeuge einen box-shadow-Wert, passe Versatz, Unschärfe, Ausbreitung, Farbe und Deckkraft an und kopiere die fertige Regel.",
+  "overview": "Dieses Tool baut box-shadow-Werte, die du direkt in CSS einsetzen kannst, ohne jedes Detail von Hand zu schreiben. Du steuerst horizontalen und vertikalen Versatz, Unschärferadius, Ausbreitung, Schattenfarbe, Deckkraft und Inset-Stil, damit der Schatten genau zum jeweiligen UI-Element passt.\n\nSinnvoll ist es, wenn ein Schatten bewusst wirken soll und nicht zufällig. Du kannst ihn für Karten, Menüs, Dialoge, Sticky-Bars, Formularfelder und Bildcontainer verwenden; die Vorschau hilft dir dabei, subtile und stärkere Varianten sauber zu vergleichen, bevor du dich festlegst.",
   "howItWorks": [
-    "Lege den horizontalen und vertikalen Versatz fest.",
-    "Passe Unschärfe, Ausbreitung und Deckkraft an den gewünschten Stil an.",
-    "Wähle die Schattenfarbe und optional den Inset-Modus.",
-    "Prüfe die Vorschau live während der Bearbeitung.",
-    "Kopiere den generierten CSS-Code und füge ihn in dein Stylesheet ein."
+    "Lege den horizontalen und vertikalen Versatz fest, um den Schatten zu positionieren.",
+    "Passe Unschärfe und Ausbreitung an, damit Weichheit und Größe stimmen.",
+    "Wähle Schattenfarbe und Deckkraft passend zu Oberfläche und Hintergrund.",
+    "Aktiviere Inset, wenn der Schatten im Element liegen soll.",
+    "Kopiere den generierten CSS-Code und nutze ihn im gewünschten Selektor."
   ],
   "useCases": [
-    "Schatten für Karten, Buttons und Modals gestalten.",
-    "Dezente Elevation-Effekte für Dashboards und Landingpages erstellen.",
-    "Inset-Schatten für Eingabefelder und Panels erzeugen.",
-    "Unterschiedliche Schattenstile schnell testen, ohne CSS manuell anzupassen."
+    {
+      "title": "Tiefe für Produktkarten",
+      "description": "Erzeuge einen weichen Schatten für Kacheln, damit sich einzelne Produkte klar vom Hintergrund abheben."
+    },
+    {
+      "title": "Gedrückter Button-Zustand",
+      "description": "Baue einen kompakteren Schatten mit weniger Unschärfe und negativer Ausbreitung für klickbare Aktionen."
+    },
+    {
+      "title": "Innenschatten für Eingabefelder",
+      "description": "Erstelle Inset-Schatten für Textfelder, Suchleisten oder Panels mit eingezogener Optik."
+    },
+    {
+      "title": "Schwebende Ebene für Popovers",
+      "description": "Stelle eine größere Unschärfe und moderaten Versatz für Tooltips, Dropdowns und Overlays ein."
+    }
   ],
   "examples": [
     {
-      "title": "Weicher Kartenschatten",
-      "input": "0 8px 24px 0 rgba(0,0,0,0.12)",
-      "output": "box-shadow: 0 8px 24px 0 rgba(0,0,0,0.12);",
-      "description": "Ein weicher Schatten für Karten und Inhaltsblöcke."
+      "title": "Weicher neutraler Kartenschatten",
+      "input": "x: 0, y: 10px, blur: 30px, spread: -8px, color: rgba(15, 23, 42, 0.14)",
+      "output": "box-shadow: 0 10px 30px -8px rgba(15, 23, 42, 0.14);",
+      "description": "Ein dezenter Schatten für helle Karten auf ruhigen Flächen."
     },
     {
-      "title": "Stärkerer Buttonschatten",
-      "input": "0 4px 12px -2px rgba(0,0,0,0.25)",
-      "output": "box-shadow: 0 4px 12px -2px rgba(0,0,0,0.25);",
-      "description": "Ein deutlicherer Schatten für interaktive Elemente."
+      "title": "Inset für ein vertieftes Feld",
+      "input": "x: 0, y: 2px, blur: 6px, spread: 0, color: rgba(0, 0, 0, 0.18), inset: true",
+      "output": "box-shadow: inset 0 2px 6px 0 rgba(0, 0, 0, 0.18);",
+      "description": "Ein eingezogener Effekt für ein Eingabefeld oder Panel."
+    },
+    {
+      "title": "Kompakter Hover-Schatten",
+      "input": "x: 0, y: 6px, blur: 16px, spread: -4px, color: rgba(37, 99, 235, 0.22)",
+      "output": "box-shadow: 0 6px 16px -4px rgba(37, 99, 235, 0.22);",
+      "description": "Ein farbiger Schatten für Hover-Kacheln oder Aktionen."
     }
   ],
   "faq": [
     {
-      "question": "Welche CSS-Eigenschaft erzeugt dieses Tool?",
-      "answer": "Es erzeugt box-shadow-Werte, die du direkt in CSS verwenden kannst."
+      "question": "Was verändert der Wert spread am Schatten?",
+      "answer": "Spread verändert die Größe des Schattens vor dem Weichzeichnen. Negative Werte ziehen ihn zusammen, positive vergrößern ihn."
     },
     {
-      "question": "Kann ich Inset-Schatten erstellen?",
-      "answer": "Ja. Aktiviere den Inset-Modus für einen inneren Schatteneffekt."
+      "question": "Warum wirkt ein Schatten auf dunklem Hintergrund zu hart?",
+      "answer": "Meist ist die Farbe zu opak oder die Unschärfe zu gering. Verringere die Deckkraft und erhöhe den Blur-Wert für weichere Kanten."
     },
     {
-      "question": "Ist die Ausgabe sofort kopierbar?",
-      "answer": "Ja. Der generierte CSS-Code ist für schnelles Kopieren und Einfügen vorbereitet."
+      "question": "Wann sollte ich Inset statt eines normalen Schattens verwenden?",
+      "answer": "Inset ist sinnvoll, wenn eine Fläche eingedrückt wirken soll, zum Beispiel bei Formularfeldern, vertieften Panels oder dezenten Innenflächen."
     },
     {
-      "question": "Unterstützt das Tool mehrere Schatten?",
-      "answer": "Ja, du kannst Werte bei Bedarf auch manuell zu mehreren Schattenebenen kombinieren."
+      "question": "Kann ich mehrere Schattenebenen erzeugen?",
+      "answer": "Das Tool erzeugt jeweils eine Regel. Für mehrere Ebenen kannst du mehrere box-shadow-Werte manuell in CSS kombinieren."
+    },
+    {
+      "question": "Warum verschwindet ein Schatten bei stark negativer Ausbreitung?",
+      "answer": "Eine zu große negative Ausbreitung kann den Schatten zu stark verkleinern, besonders bei wenig Unschärfe. Reduziere den negativen Wert oder erhöhe den Blur."
     }
   ],
-  "uiLabels": {
-    "copy": "Kopieren",
-    "copied": "Kopiert",
-    "input": "Eingabe",
-    "output": "Ausgabe",
-    "placeholder": "Werte eingeben",
-    "indent": "Einzug",
-    "removeComments": "Kommentare entfernen",
-    "preview": "Vorschau",
-    "source": "Quelle",
-    "sanitizedHtml": "Bereinigtes HTML",
-    "plainText": "Klartext",
-    "summary": "Zusammenfassung",
-    "total": "Gesamt",
-    "links": "Links",
-    "images": "Bilder",
-    "errors": "Fehler",
-    "warnings": "Warnungen",
-    "valid": "Gültig",
-    "invalid": "Ungültig",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Breite",
-    "height": "Höhe",
-    "empty": "Leer",
-    "outputReady": "Ausgabe bereit",
-    "cleanedHtml": "Bereinigtes HTML",
-    "formattedHtml": "Formatiertes HTML",
-    "minifiedHtml": "Minifiziertes HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extrahierte Bilder",
-    "extractedLinks": "Extrahierte Links",
-    "validationSummary": "Validierungsübersicht",
-    "prettyHtml": "Schönes HTML",
-    "encodedText": "Kodierter Text",
-    "file": "Datei",
-    "size": "Größe",
-    "format": "Format",
-    "quality": "Qualität",
-    "colorOne": "Schattenfarbe",
-    "colorTwo": "Zweite Farbe",
-    "background": "Hintergrund",
-    "foreground": "Vordergrund",
-    "angle": "Winkel",
-    "margin": "Rand",
-    "level": "Stufe",
-    "gradientType": "Verlaufstyp",
-    "linear": "Linear",
-    "radial": "Radial",
-    "blur": "Unschärfe",
-    "spread": "Ausbreitung",
-    "offsetX": "Versatz X",
-    "offsetY": "Versatz Y",
-    "opacity": "Deckkraft",
-    "inset": "Inset",
-    "cssCode": "CSS-Code",
-    "snippet": "Snippet",
-    "download": "Herunterladen",
-    "downloadSvg": "SVG herunterladen",
-    "downloadPng": "PNG herunterladen",
-    "downloadAll": "Alles herunterladen",
-    "upload": "Hochladen",
-    "title": "Titel",
-    "description": "Beschreibung",
-    "canonicalUrl": "Kanonische URL",
-    "siteName": "Seitenname",
-    "ogImage": "OG-Bild",
-    "clear": "Löschen",
-    "generatedQr": "QR-Code-Vorschau",
-    "placeholderImage": "Bildvorschau",
-    "faviconSet": "Favicon-Set",
-    "keepAspectRatio": "Seitenverhältnis beibehalten",
-    "cropX": "Zuschnitt X",
-    "cropY": "Zuschnitt Y",
-    "cropWidth": "Zuschneidebreite",
-    "cropHeight": "Zuschneidehöhe",
-    "originalSize": "Originalgröße",
-    "outputSize": "Ausgabegröße",
-    "savedSize": "Gesparte Größe",
-    "result": "Ergebnis",
-    "base64": "Base64",
-    "mimeType": "MIME-Typ",
-    "resizedImage": "Skaliertes Bild",
-    "compressedImage": "Komprimiertes Bild",
-    "croppedImage": "Zugeschnittenes Bild",
-    "convertedImage": "Konvertiertes Bild",
-    "decodedImage": "Dekodiertes Bild",
-    "imagePreview": "Bildvorschau"
-  },
   "seo": {
     "title": "Box-Shadow-Generator",
-    "description": "Erstelle individuelle CSS-Box-Shadows mit Live-Vorschau, Unschärfe, Ausbreitung, Deckkraft und kopierfertigem Code.",
+    "description": "Erstelle individuelle CSS-Box-Shadows mit Vorschau, Unschärfe, Ausbreitung, Deckkraft, Inset und kopierfertigem Code.",
     "keywords": [
       "box-shadow-generator",
       "css schatten",
-      "shadow generator",
-      "css generator",
-      "box shadow css"
+      "box shadow css",
+      "inset shadow css",
+      "shadow generator"
     ]
   }
 }

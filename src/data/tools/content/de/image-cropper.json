@@ -4,157 +4,86 @@
   "slug": "bildzuschneider",
   "h1": "Bildzuschneider",
   "title": "Bildzuschneider",
-  "shortDescription": "Bilder online mit eigenen Koordinaten zuschneiden und sofort im Browser vorab ansehen.",
-  "metaTitle": "Bildzuschneider online | Bilder im Browser zuschneiden",
-  "metaDescription": "Bilder online mit exakten Koordinaten und sofortiger Vorschau zuschneiden. Schnelles, privates Browser-Tool ohne Upload.",
-  "intro": "Schneide Bilder online mit genauen Koordinaten zu und sieh das Ergebnis sofort im Browser. Dieser kostenlose Bildzuschneider ist schnell, privat und einfach zu bedienen.",
-  "overview": "Nutze diesen Online-Bildzuschneider, um Fotos, Screenshots, Banner und Grafiken mit eigenen Werten zuzuschneiden. Alles läuft direkt im Browser für schnelle Bearbeitung und mehr Privatsphäre.",
+  "shortDescription": "Bilder mit exakten Koordinaten zuschneiden und das Ergebnis vor dem Download prüfen.",
+  "metaTitle": "Bildzuschneider online",
+  "metaDescription": "Bilder mit exakten Koordinaten zuschneiden, das Ergebnis sofort prüfen und einen sauberen Ausschnitt direkt im Browser herunterladen.",
+  "intro": "Schneide ein Bild mit genauen X-, Y-, Breiten- und Höhenwerten zu und prüfe den Ausschnitt vor dem Download.",
+  "overview": "Dieser Bildzuschneider ist für präzise Ausschnitte gedacht. Gib Koordinaten ein, um ein Produktfoto zu verbessern, einen Diagrammbereich freizustellen oder überflüssige Ränder aus einem Banner zu entfernen, ohne den Ausschnitt zu erraten.\n\nDas Werkzeug läuft direkt im Browser, sodass du den Zuschnitt anpassen und die Änderung sofort sehen kannst. Es ist hilfreich, wenn das Endbild in ein festes Layout, in eine Dokumentation oder in einen genau definierten Bereich passen muss.\n\nOb quadratisches Avatarbild, breites Header-Motiv oder enger Screenshot-Ausschnitt: Du behältst die Kontrolle über den sichtbaren Bereich und die endgültige Bildwirkung.",
   "howItWorks": [
-    "Lade eine Bilddatei hoch oder füge sie ein.",
-    "Lege die Zuschneide-Koordinaten und Maße fest.",
-    "Prüfe das Ergebnis sofort in der Vorschau.",
-    "Lade das fertige Bild herunter."
+    "Lade ein Bild von deinem Gerät hoch oder füge es ein.",
+    "Setze crop X, crop Y, crop width und crop height.",
+    "Prüfe in der Vorschau die sichtbare Fläche und die Ränder.",
+    "Lade das zugeschnittene Bild herunter, wenn der Rahmen stimmt."
   ],
   "useCases": [
-    "Profilbilder auf eine passende Größe zuschneiden.",
-    "Screenshots auf den wichtigen Bereich reduzieren.",
-    "Produktfotos für Shops und Marktplätze vorbereiten.",
-    "Leere Ränder aus Bannern und Grafiken entfernen."
+    {
+      "title": "Produktfotos für den Shop bereinigen",
+      "description": "Schneide unnötigen Hintergrund weg, damit das Produkt im Katalog klarer wirkt."
+    },
+    {
+      "title": "Screenshot-Ausschnitt für eine Anleitung",
+      "description": "Behalte nur den Dialog, die Tabelle oder den Codeblock, den du in einem Leitfaden brauchst."
+    },
+    {
+      "title": "Banner auf das Hero-Feld anpassen",
+      "description": "Schneide eine breite Grafik exakt auf die Fläche zu, die in einer Website- oder Mail-Vorlage vorgesehen ist."
+    },
+    {
+      "title": "Porträt auf ein Profilbild zuschneiden",
+      "description": "Wähle Gesicht und Schultern für ein Avatarbild ohne unnötige Leerflächen aus."
+    }
   ],
   "examples": [
     {
-      "title": "Foto für Social Media zuschneiden",
-      "input": "Lege einen quadratischen Zuschnitt um das Motiv fest.",
-      "output": "Ein zentriertes Quadratbild zum direkten Posten.",
-      "description": "Praktisch für Avatare, Beiträge und Thumbnails."
+      "title": "Produktfoto auf Quadrat zuschneiden",
+      "input": "cropX=120, cropY=80, cropWidth=900, cropHeight=900 auf einem breiten Produktfoto",
+      "output": "Ein quadratisches Bild mit dem Produkt in der Mitte und entfernten Seitenrändern.",
+      "description": "Nützlich, wenn ein Shop oder eine Social-Kachel ein Quadrat verlangt."
     },
     {
-      "title": "Screenshot zuschneiden",
-      "input": "Gib exakte Koordinaten für den sichtbaren Bereich ein.",
-      "output": "Ein sauberer Screenshot nur mit dem benötigten Inhalt.",
-      "description": "Ideal für Anleitungen, Berichte und Support."
+      "title": "Einen Bereich aus einem Dashboard freistellen",
+      "input": "cropX=40, cropY=210, cropWidth=1280, cropHeight=620 auf einem vollständigen Screenshot",
+      "output": "Nur der Diagrammbereich bleibt erhalten, ohne Navigation und Fußzeile.",
+      "description": "Hilft, einen einzelnen visuellen Abschnitt aus einer größeren Oberfläche zu isolieren."
+    },
+    {
+      "title": "Breites Banner zu einer Hero-Leiste schneiden",
+      "input": "cropX=0, cropY=140, cropWidth=1920, cropHeight=520 auf einem Banner-Layout",
+      "output": "Ein schmaleres Banner, das die Hauptüberschrift und das Motiv beibehält.",
+      "description": "Praktisch, wenn das Motiv für Webseite oder E-Mail enger zugeschnitten werden muss."
     }
   ],
   "faq": [
     {
-      "question": "Ist der Bildzuschneider kostenlos?",
-      "answer": "Ja, du kannst Bilder online kostenlos zuschneiden."
+      "question": "Was bedeuten crop X und crop Y?",
+      "answer": "Das ist der Startpunkt des Zuschneiderahmens, gemessen von der linken oberen Ecke des Bildes. X verschiebt den Rahmen waagerecht, Y senkrecht."
     },
     {
-      "question": "Verlässt das Bild meinen Browser?",
-      "answer": "Nein, der Zuschnitt erfolgt lokal im Browser für mehr Privatsphäre."
+      "question": "Was passiert, wenn der Zuschnitt über das Bild hinausgeht?",
+      "answer": "Ein Zuschnitt kann keine Pixel enthalten, die nicht vorhanden sind. Breite und Höhe müssen innerhalb der Bildgrenzen liegen, sonst wird das Ergebnis abgeschnitten oder abgelehnt."
     },
     {
-      "question": "Kann ich mit exakten Koordinaten zuschneiden?",
-      "answer": "Ja, du kannst eigene Werte für präzises Zuschneiden eingeben."
+      "question": "Warum weicht mein Zuschnitt von der Vorschau ab?",
+      "answer": "Das passiert oft bei gedrehten Bildern, unerwarteter Skalierung oder wenn Koordinaten aus einer Datei mit anderer Größe übernommen wurden. Prüfe zuerst die Originalmaße."
     },
     {
-      "question": "Welche Bildformate werden unterstützt?",
-      "answer": "Du kannst gängige, vom Browser unterstützte Bildformate verwenden."
+      "question": "Kann ich beim Zuschneiden das Seitenverhältnis beibehalten?",
+      "answer": "Der Zuschnitt selbst definiert ein neues Format. Das Ergebnis hängt daher von Breite und Höhe ab. Für ein festes Verhältnis musst du die Koordinaten entsprechend wählen."
+    },
+    {
+      "question": "Warum brauchen Screenshots andere Koordinaten als Fotos?",
+      "answer": "Screenshots haben harte Kanten, Interface-Elemente und ein pixelgenaues Layout, deshalb sind exakte Werte wichtiger als bei normalen Fotos."
     }
   ],
-  "uiLabels": {
-    "copy": "Kopieren",
-    "copied": "Kopiert",
-    "input": "Eingabe",
-    "output": "Ausgabe",
-    "placeholder": "Bild einfügen oder hochladen",
-    "indent": "Einzug",
-    "removeComments": "Kommentare entfernen",
-    "preview": "Vorschau",
-    "source": "Quelle",
-    "sanitizedHtml": "Bereinigtes HTML",
-    "plainText": "Klartext",
-    "summary": "Zusammenfassung",
-    "total": "Gesamt",
-    "links": "Links",
-    "images": "Bilder",
-    "errors": "Fehler",
-    "warnings": "Warnungen",
-    "valid": "Gültig",
-    "invalid": "Ungültig",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Ziel",
-    "alt": "Alt",
-    "width": "Breite",
-    "height": "Höhe",
-    "empty": "Leer",
-    "outputReady": "Ausgabe bereit",
-    "cleanedHtml": "Bereinigtes HTML",
-    "formattedHtml": "Formatiertes HTML",
-    "minifiedHtml": "Minifiziertes HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extrahierte Bilder",
-    "extractedLinks": "Extrahierte Links",
-    "validationSummary": "Validierungszusammenfassung",
-    "prettyHtml": "Lesbares HTML",
-    "encodedText": "Kodierter Text",
-    "file": "Datei",
-    "size": "Größe",
-    "format": "Format",
-    "quality": "Qualität",
-    "colorOne": "Farbe 1",
-    "colorTwo": "Farbe 2",
-    "background": "Hintergrund",
-    "foreground": "Vordergrund",
-    "angle": "Winkel",
-    "margin": "Rand",
-    "level": "Stufe",
-    "gradientType": "Verlaufstyp",
-    "linear": "Linear",
-    "radial": "Radial",
-    "blur": "Unschärfe",
-    "spread": "Ausdehnung",
-    "offsetX": "X-Versatz",
-    "offsetY": "Y-Versatz",
-    "opacity": "Deckkraft",
-    "inset": "Innen",
-    "cssCode": "CSS-Code",
-    "snippet": "Snippet",
-    "download": "Herunterladen",
-    "downloadSvg": "SVG herunterladen",
-    "downloadPng": "PNG herunterladen",
-    "downloadAll": "Alle herunterladen",
-    "upload": "Hochladen",
-    "title": "Titel",
-    "description": "Beschreibung",
-    "canonicalUrl": "Kanonische URL",
-    "siteName": "Webseitenname",
-    "ogImage": "OG-Bild",
-    "clear": "Leeren",
-    "generatedQr": "QR-Code-Vorschau",
-    "placeholderImage": "Bildvorschau",
-    "faviconSet": "Favicon-Set",
-    "keepAspectRatio": "Seitenverhältnis beibehalten",
-    "cropX": "Zuschneiden X",
-    "cropY": "Zuschneiden Y",
-    "cropWidth": "Zuschneidebreite",
-    "cropHeight": "Zuschneidehöhe",
-    "originalSize": "Originalgröße",
-    "outputSize": "Ausgabegröße",
-    "savedSize": "Gesparte Größe",
-    "result": "Ergebnis",
-    "base64": "Base64",
-    "mimeType": "MIME-Typ",
-    "resizedImage": "Skaliertes Bild",
-    "compressedImage": "Komprimiertes Bild",
-    "croppedImage": "Zugeschnittenes Bild",
-    "convertedImage": "Konvertiertes Bild",
-    "decodedImage": "Dekodiertes Bild",
-    "imagePreview": "Bildvorschau"
-  },
   "seo": {
-    "title": "Bildzuschneider online | Bilder im Browser zuschneiden",
-    "description": "Bilder online mit exakten Koordinaten und sofortiger Vorschau zuschneiden. Schnelles, privates Browser-Tool ohne Upload.",
+    "title": "Bildzuschneider online",
+    "description": "Bilder mit exakten Koordinaten zuschneiden, das Ergebnis sofort prüfen und einen sauberen Ausschnitt direkt im Browser herunterladen.",
     "keywords": [
       "bildzuschneider",
-      "bild online zuschneiden",
+      "bild zuschneiden",
       "foto zuschneiden",
       "screenshot zuschneiden",
-      "bildausschnitt",
-      "bildbearbeitung online"
+      "ausschnitt festlegen"
     ]
   }
 }

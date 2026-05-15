@@ -4,175 +4,87 @@
   "slug": "bodenpaneel-rechner",
   "h1": "Bodenpaneel-Rechner",
   "title": "Bodenpaneel-Rechner",
-  "shortDescription": "Berechne, wie viele Bodenpaneele und Pakete du mit Verschnitt einplanen musst.",
-  "metaTitle": "Bodenpaneel-Rechner - Paneele und Pakete berechnen",
-  "metaDescription": "Berechne mit diesem Bodenpaneel-Rechner, wie viele Paneele und Pakete du anhand von Fläche, Paneelgröße, Verschnitt und Paketabdeckung brauchst.",
-  "intro": "Berechne schnell, wie viele Bodenpaneele du kaufen solltest. Gib Raumfläche, Paneelmaße, Verschnitt und Paketabdeckung ein und erhalte eine praktische Einkaufsmenge.",
-  "overview": "Dieser Bodenpaneel-Rechner hilft dir, den Bedarf für ein Verlegeprojekt zu bestimmen. Er berücksichtigt Raumfläche, Paneelbreite und -länge, Verschnitt in Prozent sowie die Abdeckung pro Paket.",
+  "shortDescription": "Berechne, wie viele Paneele und Pakete du für deinen Boden mit Verschnitt brauchst.",
+  "metaTitle": "Bodenpaneel-Rechner",
+  "metaDescription": "Berechne die benötigte Menge an Bodenpaneelen und Paketen anhand von Raumfläche, Paneelmaßen, Verschnitt und Paketabdeckung.",
+  "intro": "Gib Fläche, Paneelmaße, Verschnitt und Paketabdeckung ein und erhalte die Kaufmenge für deinen Bodenbelag.",
+  "overview": "Dieser Rechner wandelt Raumdaten und Produktangaben in eine praktikable Einkaufsmengen um. Berücksichtigt werden die tatsächliche Paneelfläche, die auf der Packung angegebene Abdeckung und zusätzliches Material für Zuschnitte, Randbereiche und Anpassungen an Türen oder Nischen.\n\nEr eignet sich auch, um Produkte mit unterschiedlichen Paketgrößen zu vergleichen oder zu prüfen, ob eine Fläche auf volle Pakete aufgerundet werden muss. Wenn auf der Verpackung eine Paketabdeckung steht, ist dieser Wert für den Einkauf entscheidend, selbst wenn er leicht von der geometrischen Fläche eines einzelnen Paneels abweicht.",
   "howItWorks": [
     "Raumfläche in Quadratmetern eingeben.",
-    "Paneelbreite und -länge in Zentimetern angeben.",
+    "Paneelbreite und -länge in Zentimetern hinzufügen.",
     "Verschnitt für Zuschnitte und Anpassungen festlegen.",
     "Die Abdeckung eines Pakets in m2 eintragen.",
-    "Anzahl Paneele, Pakete und Fläche mit Verschnitt erhalten."
+    "Paneelbedarf, Paketanzahl und korrigierte Fläche ablesen."
   ],
   "useCases": [
-    "Planung des Kaufs von Laminat- oder Vinylpaneelen.",
-    "Prüfen, wie viele Pakete vor dem Einkauf benötigt werden.",
-    "Zusätzlichen Materialbedarf für Schnitte und Kanten einrechnen.",
-    "Paketabdeckungen verschiedener Produkte vergleichen."
+    {
+      "title": "Bestellung für ein rechteckiges Wohnzimmer",
+      "description": "Ermittle die Paketanzahl für einen Raum mit wenigen Zuschnitten und klaren Kanten."
+    },
+    {
+      "title": "Flur mit Türen und Ecken",
+      "description": "Plane mehr Reserve ein, wenn viele Schnitte um Zargen, Ecken und Übergänge nötig sind."
+    },
+    {
+      "title": "Zwei Bodenprodukte vergleichen",
+      "description": "Prüfe, ob ein Produkt mit größerer Paketabdeckung oder weniger Verschnitt günstiger im Einkauf ist."
+    },
+    {
+      "title": "Material für spätere Reparaturen sichern",
+      "description": "Kaufe einige Paneele zusätzlich, wenn du passende Ersatzstücke aufbewahren möchtest."
+    }
   ],
   "examples": [
     {
-      "title": "Beispielrechnung",
-      "input": "Fläche: 20 m2, Paneel: 19 cm x 138 cm, Verschnitt: 8 %, Paketabdeckung: 2,2 m2",
-      "output": "Der Rechner schätzt die benötigten Paneele, Pakete und die Fläche mit Verschnitt.",
-      "description": "Hilfreich für die Mengenplanung vor der Bestellung."
+      "title": "Normale Raumplanung",
+      "input": "Fläche: 23,6 m2; Paneel: 18,5 cm × 122 cm; Verschnitt: 7 %; Paketabdeckung: 2,22 m2",
+      "output": "Korrigierte Fläche: 25,25 m2. Ergebnis: 12 Pakete, auf Basis von Paneelmaß und Verschnitt berechnet.",
+      "description": "Geeignet für einen einfachen Raum mit wenigen Schnitten."
     },
     {
-      "title": "Boden mit Reserve kaufen",
-      "input": "Fläche: 35 m2, Verschnitt: 10 %, Paketabdeckung: 2,4 m2",
-      "output": "Zeigt die angepasste Fläche und die zu kaufende Paketanzahl.",
-      "description": "Hilft, Materialengpässe bei der Montage zu vermeiden."
+      "title": "Größeres Schlafzimmer",
+      "input": "Fläche: 41,8 m2; Paneel: 20,3 cm × 135,7 cm; Verschnitt: 11 %; Paketabdeckung: 2,48 m2",
+      "output": "Korrigierte Fläche: 46,36 m2. Ergebnis: 19 Pakete, auf volle Kartons aufgerundet.",
+      "description": "Hilfreich, wenn an mehreren Stellen zugeschnitten werden muss."
+    },
+    {
+      "title": "Paketabdeckung laut Hersteller",
+      "input": "Fläche: 12,4 m2; Paneel: 17,8 cm × 89,4 cm; Verschnitt: 9 %; Paketabdeckung: 1,79 m2",
+      "output": "Korrigierte Fläche: 13,52 m2. Ergebnis: 8 Pakete, orientiert an der angegebenen Paketabdeckung.",
+      "description": "Praktisch, wenn die Verpackung den maßgeblichen Einkaufswert vorgibt."
     }
   ],
   "faq": [
     {
-      "question": "Wie berechne ich, wie viele Bodenpaneele ich brauche?",
-      "answer": "Multipliziere die Raumfläche mit dem Verschnitt und teile das Ergebnis durch die Fläche eines Paneels. Der Rechner erledigt das automatisch."
+      "question": "Soll ich mit dem Paneelmaß oder mit der Paketabdeckung rechnen?",
+      "answer": "Für den Einkauf gilt die Paketabdeckung auf der Verpackung. Das einzelne Paneel hilft bei der Kontrolle, aber die nötige Paketanzahl ergibt sich aus der Box-Abdeckung."
     },
     {
-      "question": "Warum sollte ich Verschnitt einplanen?",
-      "answer": "Verschnitt deckt Zuschnitte, Anpassungen an Rändern und mögliche Fehler bei der Verlegung ab."
+      "question": "Welcher Verschnitt ist für einen einfachen Raum sinnvoll?",
+      "answer": "Bei einem geraden Raum mit wenigen Schnitten reicht meist ein moderater Zuschlag. Viele Türen, Nischen oder schräge Kanten erfordern mehr Reserve."
     },
     {
-      "question": "Was, wenn die Paketabdeckung von den Paneelmaßen abweicht?",
-      "answer": "Verwende den auf der Verpackung angegebenen Wert. Er berücksichtigt die Anzahl der Paneele pro Paket."
+      "question": "Warum wird immer auf volle Pakete aufgerundet?",
+      "answer": "Weil Bodenpaneele in ganzen Paketen verkauft werden. Das Aufrunden verhindert, dass am Ende Material fehlt."
     },
     {
-      "question": "Kann ich den Rechner für Laminat- und Vinylpaneele nutzen?",
-      "answer": "Ja, solange du die Paneelmaße und die Paketabdeckung kennst."
+      "question": "Taugt der Rechner für Fischgrät- oder Chevron-Verlegung?",
+      "answer": "Nur als grobe Orientierung. Solche Muster verursachen deutlich mehr Verschnitt und benötigen meist einen höheren Zuschlag."
+    },
+    {
+      "question": "Was mache ich, wenn ich nur Länge und Breite des Raums kenne?",
+      "answer": "Multipliziere Länge und Breite zur Fläche und gib dieses Ergebnis ein. Unregelmäßige Räume am besten in einfache Teilflächen aufteilen und addieren."
     }
   ],
-  "uiLabels": {
-    "copy": "Kopieren",
-    "copied": "Kopiert",
-    "input": "Eingabe",
-    "output": "Ausgabe",
-    "placeholder": "Wert eingeben",
-    "indent": "Einzug",
-    "removeComments": "Kommentare entfernen",
-    "preview": "Vorschau",
-    "source": "Quelle",
-    "sanitizedHtml": "Bereinigtes HTML",
-    "plainText": "Klartext",
-    "summary": "Zusammenfassung",
-    "total": "Gesamt",
-    "links": "Links",
-    "images": "Bilder",
-    "errors": "Fehler",
-    "warnings": "Warnungen",
-    "valid": "Gültig",
-    "invalid": "Ungültig",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Ziel",
-    "alt": "Alt",
-    "width": "Breite",
-    "height": "Höhe",
-    "empty": "Leer",
-    "outputReady": "Ergebnis bereit",
-    "cleanedHtml": "Bereinigtes HTML",
-    "formattedHtml": "Formatiertes HTML",
-    "minifiedHtml": "Minifiziertes HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extrahierte Bilder",
-    "extractedLinks": "Extrahierte Links",
-    "validationSummary": "Validierungszusammenfassung",
-    "prettyHtml": "Gut lesbares HTML",
-    "encodedText": "Kodierter Text",
-    "file": "Datei",
-    "size": "Größe",
-    "format": "Format",
-    "quality": "Qualität",
-    "colorOne": "Farbe 1",
-    "colorTwo": "Farbe 2",
-    "background": "Hintergrund",
-    "foreground": "Vordergrund",
-    "angle": "Winkel",
-    "margin": "Rand",
-    "level": "Stufe",
-    "gradientType": "Verlaufstyp",
-    "linear": "Linear",
-    "radial": "Radial",
-    "blur": "Unschärfe",
-    "spread": "Ausbreitung",
-    "offsetX": "Versatz X",
-    "offsetY": "Versatz Y",
-    "opacity": "Deckkraft",
-    "inset": "Innen",
-    "cssCode": "CSS-Code",
-    "snippet": "Snippet",
-    "download": "Herunterladen",
-    "downloadSvg": "SVG herunterladen",
-    "downloadPng": "PNG herunterladen",
-    "downloadAll": "Alle herunterladen",
-    "upload": "Hochladen",
-    "title": "Titel",
-    "description": "Beschreibung",
-    "canonicalUrl": "Kanonische URL",
-    "siteName": "Website-Name",
-    "ogImage": "OG-Bild",
-    "clear": "Löschen",
-    "generatedQr": "Generierter QR-Code",
-    "placeholderImage": "Platzhalterbild",
-    "faviconSet": "Favicon-Set",
-    "keepAspectRatio": "Seitenverhältnis beibehalten",
-    "cropX": "Zuschneiden X",
-    "cropY": "Zuschneiden Y",
-    "cropWidth": "Zuschneidebreite",
-    "cropHeight": "Zuschneidehöhe",
-    "originalSize": "Originalgröße",
-    "outputSize": "Ausgabegröße",
-    "savedSize": "Gesparte Größe",
-    "result": "Ergebnis",
-    "base64": "Base64",
-    "mimeType": "MIME-Typ",
-    "resizedImage": "Größenangepasstes Bild",
-    "compressedImage": "Komprimiertes Bild",
-    "croppedImage": "Zugeschnittenes Bild",
-    "convertedImage": "Konvertiertes Bild",
-    "decodedImage": "Dekodiertes Bild",
-    "imagePreview": "Bildvorschau",
-    "camera": "Kamera",
-    "lens": "Objektiv",
-    "dateTaken": "Aufnahmedatum",
-    "resolution": "Auflösung",
-    "fileSize": "Dateigröße",
-    "iso": "ISO",
-    "exposure": "Belichtung",
-    "aperture": "Blende",
-    "focalLength": "Brennweite",
-    "flash": "Blitz",
-    "orientation": "Ausrichtung",
-    "latitude": "Breitengrad",
-    "longitude": "Längengrad",
-    "openMap": "Karte öffnen",
-    "rawMetadata": "Rohe Metadaten",
-    "noMetadataFound": "Keine Metadaten gefunden",
-    "gpsLocation": "GPS-Standort",
-    "metadataSummary": "Metadatenübersicht"
-  },
   "seo": {
-    "title": "Bodenpaneel-Rechner - Paneele und Pakete berechnen",
-    "description": "Berechne, wie viele Bodenpaneele und Pakete du mit Verschnitt einplanen musst.",
+    "title": "Bodenpaneel-Rechner",
+    "description": "Berechne die benötigte Menge an Bodenpaneelen und Paketen anhand von Raumfläche, Paneelmaßen, Verschnitt und Paketabdeckung.",
     "keywords": [
       "bodenpaneel-rechner",
       "wie viele paneele brauche ich",
       "laminat rechner",
-      "pakete berechnen",
-      "verschnitt rechner"
+      "paketabdeckung",
+      "verschnitt berechnen"
     ]
   }
 }

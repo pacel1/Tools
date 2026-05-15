@@ -2,46 +2,86 @@
   "toolId": "inches-to-mm-converter",
   "locale": "es",
   "slug": "convertidor-de-pulgadas-a-mm",
-  "h1": "Convertidor de pulgadas a mm",
-  "title": "Convertidor de pulgadas a mm",
-  "shortDescription": "Convierte pulgadas a milímetros al instante con resultados rápidos, entradas sencillas y ejemplos prácticos.",
-  "overview": "Convierte pulgadas a milímetros al instante. Esta página ofrece una respuesta rápida con una herramienta útil y un flujo de resultados sencillo. Está pensada para usuarios que buscan una respuesta gratuita en línea, resultados rápidos en el navegador y contenido práctico de utilidad para búsquedas de cola larga.",
+  "h1": "Convertidor de pulgadas a milímetros",
+  "title": "Convertidor de pulgadas a milímetros",
+  "shortDescription": "Convierte pulgadas a milímetros con el factor fijo 25,4 y resultados decimales claros.",
+  "metaTitle": "Convertidor de pulgadas a milímetros",
+  "metaDescription": "Convierte pulgadas a milímetros con el factor exacto 25,4. Resultados claros para medidas, piezas y planos.",
+  "intro": "Escribe el valor en pulgadas y obtén al instante su equivalente en milímetros. La relación usada es 1 pulgada = 25,4 mm.",
+  "overview": "Este conversor transforma medidas en pulgadas a milímetros con el factor estándar exacto de 25,4. Sirve cuando necesitas pasar una medida imperial a formato métrico sin hacer la operación a mano.\n\nPuedes usarlo con planos técnicos, piezas mecánicas, especificaciones de producto o dimensiones de embalajes indicadas en pulgadas. El resultado aparece en milímetros, lo que facilita revisar ajustes, comparar tamaños y trabajar dentro de un flujo métrico.",
   "howItWorks": [
-    "Introduce el valor o texto necesario en el formulario.",
-    "La conversión, cálculo o transformación se ejecuta al instante en el navegador.",
-    "Revisa el resultado y continúa con herramientas relacionadas si necesitas otro paso."
+    "Introduce el valor en pulgadas en el campo.",
+    "La herramienta multiplica ese valor por 25,4.",
+    "Lee el resultado en milímetros y úsalo en tu documento, plano o cálculo."
+  ],
+  "useCases": [
+    {
+      "title": "Medidas de piezas mecánicas",
+      "description": "Convierte el diámetro de un eje, el ancho de una placa o una holgura de un plano para fabricar o verificar la pieza."
+    },
+    {
+      "title": "Fichas técnicas de producto",
+      "description": "Pasa dimensiones importadas en pulgadas a unidades métricas para catálogos, compras o etiquetado."
+    },
+    {
+      "title": "Taller y montaje",
+      "description": "Comprueba separaciones, brocas o posiciones cuando el proyecto mezcla referencias en pulgadas y herramientas métricas."
+    },
+    {
+      "title": "Planos y notas CAD",
+      "description": "Alinea dimensiones en pulgadas con un entorno de trabajo métrico al revisar planos, cambios o anotaciones."
+    }
   ],
   "examples": [
     {
-      "title": "Ejemplo 1",
-      "input": "4 pulgadas",
-      "output": "101,6 milímetros",
-      "description": "Un ejemplo realista de convertidor de pulgadas a mm para una búsqueda cotidiana."
+      "title": "Valor decimal",
+      "input": "2,5",
+      "output": "63,5 mm",
+      "description": "Conversión directa de una medida decimal en pulgadas."
     },
     {
-      "title": "Ejemplo 2",
-      "input": "4 pulgadas",
-      "output": "101,6 milímetros",
-      "description": "Otro caso práctico pensado para tráfico orgánico de cola larga."
+      "title": "Valor entero",
+      "input": "7",
+      "output": "177,8 mm",
+      "description": "Útil para piezas, tubos o paneles de mayor tamaño."
+    },
+    {
+      "title": "Valor fraccionario expresado en decimal",
+      "input": "0,75",
+      "output": "19,05 mm",
+      "description": "Convierte tres cuartos de pulgada a su equivalente métrico."
     }
   ],
   "faq": [
     {
-      "question": "¿Qué precisión tiene esta herramienta?",
-      "answer": "El resultado se calcula directamente a partir de la fórmula o de la lógica que utiliza esta herramienta en el navegador."
+      "question": "¿Qué fórmula usa este conversor?",
+      "answer": "Usa la relación exacta 1 pulgada = 25,4 milímetros, así que multiplica el valor en pulgadas por 25,4."
     },
     {
-      "question": "¿Puedo usar esta herramienta en el móvil?",
-      "answer": "Sí. La página funciona en escritorio y en móviles con un diseño sencillo de entrada y resultado."
+      "question": "¿Puedo introducir decimales o fracciones?",
+      "answer": "Los decimales se introducen directamente. Si el valor está en fracción, conviene pasarlo primero a decimal, por ejemplo 1/2 = 0,5."
+    },
+    {
+      "question": "¿Por qué el resultado a veces tiene decimales?",
+      "answer": "Porque muchas medidas en pulgadas no se convierten en un número entero de milímetros. La parte decimal forma parte del valor exacto."
+    },
+    {
+      "question": "¿Cuál es el error más habitual al leer el resultado?",
+      "answer": "Redondear demasiado pronto. En piezas, planos o ajustes, conviene conservar el valor completo hasta decidir cuántas cifras necesitas."
+    },
+    {
+      "question": "¿Convierte también a centímetros?",
+      "answer": "No. Esta herramienta convierte solo de pulgadas a milímetros. Si necesitas centímetros, divide el resultado en milímetros entre 10."
     }
   ],
   "seo": {
-    "title": "Convertidor de pulgadas a mm",
-    "description": "Convierte pulgadas a milímetros al instante. Convertidor online gratis de pulgadas a mm con resultados inmediatos.",
+    "title": "Convertidor de pulgadas a milímetros",
+    "description": "Convierte pulgadas a milímetros con el factor exacto 25,4. Resultados claros para medidas, piezas y planos técnicos.",
     "keywords": [
-      "convertidor de pulgadas a mm",
+      "pulgadas a mm",
       "convertidor de pulgadas a milímetros",
-      "herramienta de conversión"
+      "inches a mm",
+      "pulgada a milímetro"
     ]
   }
 }

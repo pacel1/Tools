@@ -4,42 +4,84 @@
   "slug": "url-encoder",
   "h1": "URL Encoder",
   "title": "URL Encoder",
-  "shortDescription": "Encode text for safe use in URLs with fast results, simple inputs and practical examples.",
-  "overview": "Encode text for safe use in URLs. Use this tool to get a clear result quickly from simple input on the same page. It is useful for everyday checks, comparisons and small tasks when you need a fast online answer.",
+  "shortDescription": "Encode text into percent-escaped URL form for query strings, path segments, and form values.",
+  "metaTitle": "URL Encoder for Text Encoding",
+  "metaDescription": "Encode text into URL-safe form for query strings, path segments, and form values with precise percent-escaping.",
+  "intro": "Paste text into the tool and it returns a URL-encoded string using percent escapes for reserved characters and spaces.",
+  "overview": "Use this tool when plain text must be embedded safely in a URL. It converts characters such as spaces, question marks, ampersands, slashes, and non-ASCII text into percent-encoded form so links and parameters stay valid.\n\nThis is especially useful when building query strings, preparing path segments, or passing user-entered text into APIs. The output preserves the original meaning while making the string safe for URL transport and parsing.",
   "howItWorks": [
-    "Enter the required value or text into the form.",
-    "The conversion, calculation or transformation runs instantly in the browser.",
-    "Review the result and continue with related tools if you need another step."
+    "Enter the text you want to encode.",
+    "The tool converts reserved characters into percent-escaped bytes.",
+    "Copy the encoded result into a URL, parameter value, or request string."
+  ],
+  "useCases": [
+    {
+      "title": "Search query in a parameter",
+      "description": "Turn a user search like café & tea into a safe parameter value for a results page or API request."
+    },
+    {
+      "title": "Prepping a redirect target",
+      "description": "Encode a destination URL before placing it inside another URL so nested parameters are not broken."
+    },
+    {
+      "title": "Encoding file or page names",
+      "description": "Convert spaces and punctuation in a path segment such as summer photos 2024 into URL-safe form."
+    },
+    {
+      "title": "Sending form text to an endpoint",
+      "description": "Encode entered notes, tags, or labels before attaching them to a GET request or callback URL."
+    }
   ],
   "examples": [
     {
-      "title": "Common use case",
-      "input": "hello world?x=1&y=2",
-      "output": "hello%20world%3Fx%3D1%26y%3D2",
-      "description": "Shows a common use case with a clear input and result."
+      "title": "Search query with symbols",
+      "input": "laptop stand?brand=acme & co",
+      "output": "laptop%20stand%3Fbrand%3Dacme%20%26%20co",
+      "description": "Spaces and reserved punctuation are escaped so the query can be safely inserted into a URL."
     },
     {
-      "title": "Another quick example",
-      "input": "hello world?x=1&y=2",
-      "output": "hello%20world%3Fx%3D1%26y%3D2",
-      "description": "Useful for quick checks, comparisons or repeat tasks."
+      "title": "Non-ASCII product name",
+      "input": "crème brûlée",
+      "output": "cr%C3%A8me%20br%C3%BBl%C3%A9e",
+      "description": "Accented characters are encoded as UTF-8 bytes before being percent-escaped."
+    },
+    {
+      "title": "Path segment with slashes",
+      "input": "reports/2024 Q3",
+      "output": "reports%2F2024%20Q3",
+      "description": "A slash inside a segment is encoded so it is not treated as a path separator."
     }
   ],
   "faq": [
     {
-      "question": "How accurate is this tool?",
-      "answer": "The result is based on the input you provide and the calculation or transformation shown on the page."
+      "question": "What characters get encoded first?",
+      "answer": "Reserved URL characters such as spaces, ?, &, =, #, /, and non-ASCII letters are encoded so they can be carried safely inside a URL."
     },
     {
-      "question": "Can I use this tool on mobile?",
-      "answer": "Yes. The page works on desktop and mobile screens with a simple input and result layout."
+      "question": "Why does a space become %20 instead of a plus sign?",
+      "answer": "%20 is the standard percent-encoded form for a space. A plus sign is mainly used in application/x-www-form-urlencoded form submissions, not in every URL context."
+    },
+    {
+      "question": "Can I encode a whole URL here?",
+      "answer": "Yes, but be careful: encoding an entire URL also escapes separators like : and /. That is only correct when the full URL must be embedded inside another parameter value."
+    },
+    {
+      "question": "Why do encoded results sometimes look longer?",
+      "answer": "Characters outside the safe URL set are expanded into percent-escaped bytes, so the output can be noticeably longer than the original text."
+    },
+    {
+      "question": "What is the most common mistake?",
+      "answer": "Users often encode the entire address when they only need one parameter value. For normal links, encode only the piece that will be inserted into the URL."
     }
   ],
   "seo": {
     "title": "URL Encoder",
-    "description": "Encode text for safe use in URLs. Free online url encoder with instant results.",
+    "description": "Encode text into URL-safe form for query strings, path segments, and form values with precise percent-escaping.",
     "keywords": [
-      "url encoder"
+      "url encoder",
+      "percent encode text",
+      "encode url parameter",
+      "url safe text"
     ]
   }
 }

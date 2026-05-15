@@ -1,46 +1,79 @@
 {
   "toolId": "url-decoder",
   "locale": "pl",
-  "slug": "dekoder-url",
+  "slug": "url-decoder",
   "h1": "Dekoder URL",
   "title": "Dekoder URL",
-  "shortDescription": "Dekoduj tekst zakodowany w URL natychmiast — szybko, prosto i z praktycznymi przykładami.",
-  "overview": "Dekoduj tekst zakodowany w URL natychmiast. Ta strona daje szybką odpowiedź dzięki praktycznemu narzędziu i prostemu przepływowi wyniku. Strona jest przeznaczona dla osób, które szukają darmowej odpowiedzi online, szybkich wyników w przeglądarce i praktycznych treści narzędziowych long-tail.",
+  "shortDescription": "Dekoduj adresy URL i ciągi zapytania zapisane w kodowaniu procentowym.",
+  "metaTitle": "Dekoder URL online",
+  "metaDescription": "Dekoduj zakodowane adresy URL, parametry i ścieżki do czytelnego tekstu bezpośrednio w przeglądarce.",
+  "intro": "Wklej zakodowany adres URL lub fragment zapytania, a zobaczysz od razu czytelną wersję.",
+  "overview": "To narzędzie zamienia sekwencje procentowe, takie jak %20, %3F i %26, na zwykłe znaki. Przydaje się przy analizie linków, parametrów żądań, przekierowań oraz skopiowanych fragmentów, w których widać zakodowaną interpunkcję.\n\nDekoder działa na tekście wejściowym i zamienia poprawne sekwencje na odpowiadające im znaki. Jeśli w ciągu znajdują się błędne lub niepełne sekwencje, mogą pozostać bez zmian albo spowodować błąd zależnie od wpisanych znaków. Dzięki temu łatwo sprawdzisz, jak dana część URL zostanie odczytana przed udostępnieniem, zapisaniem lub analizą błędu.",
   "howItWorks": [
-    "Wpisz wymagane dane lub tekst w formularzu.",
-    "Konwersja, obliczenie lub transformacja uruchamia się natychmiast w przeglądarce.",
-    "Sprawdź wynik i przejdź do powiązanych narzędzi, jeśli potrzebujesz kolejnego kroku."
+    "Wklej zakodowany URL, ścieżkę lub ciąg zapytania do pola.",
+    "Narzędzie dekoduje sekwencje procentowe i natychmiast pokazuje czytelny tekst.",
+    "Porównaj wynik z oryginałem, jeśli chcesz wyłapać problemy z kodowaniem."
+  ],
+  "useCases": [
+    {
+      "title": "Odczyt skopiowanego linku",
+      "description": "Zdekoduj link z czatu, wiadomości lub logów, aby zobaczyć prawdziwą ścieżkę i parametry bez znaków procentowych."
+    },
+    {
+      "title": "Sprawdzenie parametrów zapytania",
+      "description": "Ujawnij nazwy i wartości parametrów, na przykład adres przekierowania, frazę wyszukiwania albo filtry ukryte w zakodowanym zapytaniu."
+    },
+    {
+      "title": "Weryfikacja adresów przekierowań",
+      "description": "Sprawdź zakodowane callbacki i adresy redirect przed użyciem ich w kodzie, testach lub analizie bezpieczeństwa."
+    }
   ],
   "examples": [
     {
-      "title": "Przykład 1",
-      "input": "hello%20world%3Fx%3D1%26y%3D2",
-      "output": "hello world?x=1&y=2",
-      "description": "Realistyczny przykład dekodera URL dla codziennego zapytania."
+      "title": "Dekodowanie ciągu zapytania",
+      "input": "search%3Fq%3Dcoffee%20beans%26page%3D2",
+      "output": "search?q=coffee beans&page=2",
+      "description": "Pokazuje, jak zakodowana interpunkcja i spacje wracają do czytelnej postaci."
     },
     {
-      "title": "Przykład 2",
-      "input": "hello%20world%3Fx%3D1%26y%3D2",
-      "output": "hello world?x=1&y=2",
-      "description": "Kolejny praktyczny przypadek użycia pod ruch organiczny long-tail."
+      "title": "Dekodowanie ścieżki z symbolami zastrzeżonymi",
+      "input": "docs%2Fapi%2Fv1%2Fusers%3Factive%3Dtrue",
+      "output": "docs/api/v1/users?active=true",
+      "description": "Przydatne, gdy ścieżka URL i parametry są zapisane jako jeden zakodowany ciąg."
+    },
+    {
+      "title": "Dekodowanie adresu zwrotnego",
+      "input": "https%3A%2F%2Fexample.com%2Fcheckout%3Fref%3Demail%2520promo",
+      "output": "https://example.com/checkout?ref=email%20promo",
+      "description": "Pokazuje, że element zakodowany podwójnie pozostaje częściowo zakodowany po jednym dekodowaniu."
     }
   ],
   "faq": [
     {
-      "question": "Jak dokładne jest to narzędzie?",
-      "answer": "Wynik jest obliczany bezpośrednio na podstawie formuły lub logiki po stronie przeglądarki używanej przez to narzędzie."
+      "question": "Czy narzędzie zamienia plusy na spacje?",
+      "answer": "Nie. Dekodowane są tylko sekwencje procentowe. Znak + pozostaje plusem, jeśli źródłowy zapis nie oznaczał nim spacji."
     },
     {
-      "question": "Czy mogę używać tego narzędzia na telefonie?",
-      "answer": "Tak. Strona działa na komputerach i urządzeniach mobilnych, oferując prosty układ pola wejściowego i wyniku."
+      "question": "Dlaczego część tekstu nadal wygląda na zakodowaną?",
+      "answer": "Niektóre dane są kodowane więcej niż raz. Jeden przebieg zmienia %2520 na %20, a do spacji potrzeba byłoby kolejnego dekodowania."
+    },
+    {
+      "question": "Czy mogę wkleić cały adres URL?",
+      "answer": "Tak. Możesz wkleić pełny adres, a narzędzie zmieni tylko poprawne sekwencje zakodowane i pozostawi resztę struktury bez zmian."
+    },
+    {
+      "question": "Co się dzieje z niepoprawnymi sekwencjami procentowymi?",
+      "answer": "Błędne sekwencje mogą pozostać bez zmian albo zostać odrzucone, zależnie od konkretnego zapisu i zachowania przeglądarki."
     }
   ],
   "seo": {
     "title": "Dekoder URL",
-    "description": "Dekoduj tekst zakodowany w URL natychmiast. Darmowy online dekoder URL z natychmiastowymi wynikami.",
+    "description": "Dekoduj zakodowane adresy URL, parametry i ścieżki do czytelnego tekstu bezpośrednio w przeglądarce.",
     "keywords": [
       "dekoder url",
-      "narzędzie developer-tools"
+      "dekodowanie url",
+      "dekodowanie %20",
+      "dekoder ciągu zapytania"
     ]
   }
 }

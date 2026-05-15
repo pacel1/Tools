@@ -4,100 +4,86 @@
   "slug": "escapowanie-html",
   "h1": "Escapowanie HTML",
   "title": "Escapowanie HTML",
-  "shortDescription": "Zamień zastrzeżone znaki HTML na encje, aby bezpiecznie osadzać tekst w kodzie i treści.",
-  "metaTitle": "Escapowanie HTML | Zamiana znaków na encje HTML",
-  "metaDescription": "Escapuj znaki HTML, takie jak <, >, &, cudzysłowy i apostrof, aby bezpiecznie używać ich w kodzie, szablonach i treściach.",
-  "intro": "Użyj tego narzędzia do escapowania HTML, aby zamienić zastrzeżone znaki na encje HTML i bezpiecznie wyświetlać tekst, kod oraz przykłady.",
-  "overview": "Escapowanie HTML zamienia znaki o specjalnym znaczeniu w HTML na odpowiadające im encje. Dzięki temu tekst nie jest interpretowany jako znacznik i można go bezpiecznie osadzić w stronach, snippetach oraz dokumentacji. To szczególnie przydatne przy pokazywaniu kodu lub treści od użytkowników jako zwykłego tekstu.",
+  "shortDescription": "Zamień znaki zastrzeżone HTML na encje, aby wstawiać tekst bezpiecznie do znaczników, szablonów i fragmentów kodu.",
+  "metaTitle": "Escapowanie HTML",
+  "metaDescription": "Zamień znaki <, >, &, cudzysłowy i apostrof na encje HTML do bezpiecznego użycia w znacznikach, szablonach i przykładach kodu.",
+  "intro": "Zamień znaki zastrzeżone HTML na encje, aby wkleić wynik do znaczników, szablonów lub przykładów kodu bez ryzyka uszkodzenia strony.",
+  "overview": "Escapowanie HTML zamienia znaki o specjalnym znaczeniu w HTML na ich odpowiedniki encji, na przykład < na &lt; i & na &amp;. Dzięki temu przeglądarka pokazuje tekst dosłownie zamiast traktować go jak tagi lub atrybuty.\n\nTo przydaje się wtedy, gdy treść zawiera nawiasy ostre, ampersandy, cudzysłowy albo apostrofy i ma pozostać zwykłym tekstem. Sprawdza się też przy wklejaniu surowych fragmentów do dokumentacji, szablonów i plików HTML, gdzie przypadkowe znaczniki mogłyby zmienić strukturę strony.",
   "howItWorks": [
-    "Wklej lub wpisz tekst do escapowania.",
-    "Narzędzie zamieni znaki specjalne HTML, takie jak <, >, &, \", i ', na encje.",
-    "Skopiuj wynik i użyj go w HTML, szablonach lub dokumentacji."
+    "Wpisz lub wklej tekst, który chcesz escapować.",
+    "Narzędzie zamieni znaki zastrzeżone, takie jak <, >, &, \", i ', na encje HTML.",
+    "Skopiuj wynik i użyj go tam, gdzie tekst ma być pokazany dosłownie w HTML."
   ],
   "useCases": [
-    "Wyświetlanie przykładów kodu bez renderowania znaczników HTML.",
-    "Bezpieczne osadzanie tekstu użytkownika w treści HTML.",
-    "Przygotowanie snippetów, dokumentacji i szablonów do publikacji.",
-    "Unikanie przypadkowego HTML podczas pokazywania znaków specjalnych."
+    {
+      "title": "Wyświetlenie fragmentu kodu jako tekstu",
+      "description": "Pokaż HTML lub snippet szablonu w dokumentacji bez zamiany go w prawdziwe elementy strony."
+    },
+    {
+      "title": "Przygotowanie treści użytkownika do wyjścia",
+      "description": "Wstawiaj imiona, komentarze i odpowiedzi do HTML tak, by znaki specjalne pozostały widoczne jako tekst."
+    },
+    {
+      "title": "Tworzenie bezpiecznych fragmentów szablonów",
+      "description": "Przechowuj kawałki z nawiasami i ampersandami bez ryzyka, że po wklejeniu staną się znacznikami."
+    },
+    {
+      "title": "Publikacja notatek technicznych z literalnymi znakami",
+      "description": "Zachowaj czytelność porównań, operatorów i cytatów w treściach na stronach i w bazach wiedzy."
+    }
   ],
   "examples": [
     {
-      "title": "Podstawowe escapowanie",
+      "title": "Escapowanie prostego znacznika",
       "input": "<p>Tom & Jerry</p>",
       "output": "&lt;p&gt;Tom &amp; Jerry&lt;/p&gt;",
-      "description": "Znaki zastrzeżone zostają zamienione na encje HTML."
+      "description": "Nawiasy ostre i ampersand zostają zapisane jako encje, więc tekst wyświetla się dosłownie."
     },
     {
-      "title": "Cudzysłowy i apostrofy",
-      "input": "He said: \"It's fine\"",
-      "output": "He said: &quot;It&#39;s fine&quot;",
-      "description": "Cudzysłowy są escapowane dla bezpieczniejszego użycia w atrybutach i treści."
+      "title": "Tekst z cudzysłowami",
+      "input": "Ona napisała: \"Użyj wersji 'bezpiecznej'.\"",
+      "output": "Ona napisała: &quot;Użyj wersji &#39;bezpiecznej&#39;.&quot;",
+      "description": "Cudzysłowy i apostrofy są escapowane, aby można je było bezpiecznie osadzić w HTML."
+    },
+    {
+      "title": "Porównanie z operatorami",
+      "input": "if (a < b && b > 10)",
+      "output": "if (a &lt; b &amp;&amp; b &gt; 10)",
+      "description": "Znaki porównania i ampersandy pozostają czytelnym tekstem zamiast kodu HTML."
     }
   ],
   "faq": [
     {
-      "question": "Co robi escapowanie HTML?",
-      "answer": "Zamienia znaki zastrzeżone na encje HTML, aby tekst mógł być bezpiecznie wyświetlany w HTML bez interpretacji jako znacznik."
+      "question": "Jakie znaki najczęściej zamienia escapowanie HTML?",
+      "answer": "Najczęściej są to <, >, &, cudzysłowy i apostrof. To znaki, które HTML może odczytać jako składnię zamiast zwykłego tekstu."
     },
     {
-      "question": "Czy escapowanie HTML to to samo co sanitizacja?",
-      "answer": "Nie. Escapowanie sprawia, że tekst jest bezpieczny do wyświetlenia, a sanitizacja usuwa lub filtruje niebezpieczny HTML. To różne zadania."
+      "question": "Czy escapowanie zmienia sens tekstu?",
+      "answer": "Nie zmienia widocznej treści, ale zmienia sposób jej odczytu przez przeglądarkę. Na przykład &lt; jest wyświetlane jako <, a jednocześnie pozostaje bezpieczne w źródle HTML."
     },
     {
-      "question": "Kiedy używać escapowania HTML?",
-      "answer": "Gdy chcesz pokazać tekst lub kod dosłownie w HTML, zwłaszcza dla treści użytkowników, snippetów i dokumentacji."
+      "question": "Po co escapować cudzysłowy, jeśli nie używam atrybutów?",
+      "answer": "Bo tekst często bywa przenoszony między różnymi miejscami, także do atrybutów i szablonów. Escapowanie z wyprzedzeniem ogranicza błędy przy ponownym użyciu treści."
+    },
+    {
+      "question": "Czy można escapować tekst kilka razy?",
+      "answer": "Można, ale podwójne escapowanie da widoczne encje, na przykład &amp;lt;. Jeśli wynik wygląda na podwójnie zakodowany, tekst został escapowany zbyt wiele razy."
+    },
+    {
+      "question": "Jaki błąd zdarza się najczęściej przy użyciu tego narzędzia?",
+      "answer": "Najczęściej myli się tekst escapowany z prawdziwym HTML. Wynik z encjami ma się wyświetlać jako tekst, a nie tworzyć elementy strony."
     }
   ],
-  "uiLabels": {
-    "copy": "Kopiuj",
-    "copied": "Skopiowano",
-    "input": "Tekst wejściowy",
-    "output": "Escapowany HTML",
-    "placeholder": "Wklej tekst do escapowania",
-    "indent": "Wcięcie",
-    "removeComments": "Usuń komentarze",
-    "preview": "Podgląd",
-    "source": "Źródło",
-    "sanitizedHtml": "Oczyszczony HTML",
-    "plainText": "Zwykły tekst",
-    "summary": "Podsumowanie",
-    "total": "Razem",
-    "links": "Linki",
-    "images": "Obrazy",
-    "errors": "Błędy",
-    "warnings": "Ostrzeżenia",
-    "valid": "Poprawny",
-    "invalid": "Niepoprawny",
-    "href": "Href",
-    "text": "Tekst",
-    "rel": "Rel",
-    "target": "Cel",
-    "alt": "Alt",
-    "width": "Szerokość",
-    "height": "Wysokość",
-    "empty": "Puste",
-    "outputReady": "Wynik gotowy",
-    "cleanedHtml": "Oczyszczony HTML",
-    "formattedHtml": "Sformatowany HTML",
-    "minifiedHtml": "Zminifikowany HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Wyodrębnione obrazy",
-    "extractedLinks": "Wyodrębnione linki",
-    "validationSummary": "Podsumowanie walidacji",
-    "prettyHtml": "Czytelny HTML",
-    "encodedText": "Zakodowany tekst"
-  },
   "seo": {
-    "title": "Escapowanie HTML | Zamiana znaków na encje HTML",
-    "description": "Escapuj znaki HTML, takie jak <, >, &, cudzysłowy i apostrof, aby bezpiecznie używać ich w kodzie, szablonach i treściach.",
+    "title": "Escapowanie HTML",
+    "description": "Zamień znaki <, >, &, cudzysłowy i apostrof na encje HTML do bezpiecznego użycia w znacznikach, szablonach i przykładach kodu.",
     "keywords": [
       "escapowanie html",
       "escape html",
       "encje html",
+      "kodowanie html",
       "enkoder html",
-      "znaki specjalne",
-      "narzędzie html",
-      "kodowanie tekstu html"
+      "znaki specjalne"
     ]
   }
 }

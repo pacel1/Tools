@@ -4,104 +4,85 @@
   "slug": "codificador-de-entidades-html",
   "h1": "Codificador de entidades HTML",
   "title": "Codificador de entidades HTML",
-  "shortDescription": "Codifica caracteres especiales y símbolos como entidades HTML.",
-  "metaTitle": "Codificador de entidades HTML | Codifica texto como entidades HTML",
-  "metaDescription": "Convierte al instante caracteres especiales, símbolos y caracteres inseguros en entidades HTML desde el navegador.",
-  "intro": "Usa este codificador de entidades HTML para convertir caracteres especiales en entidades HTML seguras para páginas web, plantillas y fragmentos de código. Funciona completamente en el navegador y ayuda a evitar que el HTML se interprete cuando necesitas mostrar texto sin formato.",
-  "overview": "El codificador de entidades HTML convierte caracteres como <, >, &, comillas y otros símbolos en sus entidades HTML correspondientes. Es útil cuando quieres mostrar texto literalmente dentro de HTML sin que se procese como marcado. La herramienta es rápida, funciona solo en el cliente y está pensada para un manejo seguro del texto en flujos de desarrollo.",
+  "shortDescription": "Convierte caracteres reservados en entidades HTML para mostrarlos sin riesgo.",
+  "metaTitle": "Codificador de entidades HTML",
+  "metaDescription": "Convierte caracteres reservados, comillas y símbolos en entidades HTML para una salida HTML segura en tu editor o navegador.",
+  "intro": "Convierte caracteres como <, >, &, y comillas en entidades HTML para mostrarlos como texto dentro de HTML.",
+  "overview": "El codificador de entidades HTML transforma caracteres reservados y ciertos símbolos en su forma de entidad, de modo que el resultado puede insertarse en HTML sin que se interprete como marcado. Es útil cuando necesitas mostrar texto literal, conservar ejemplos de código o preparar contenido que podría romper una página.\n\nResulta especialmente práctico cuando el texto proviene de formularios, documentación, plantillas o campos de un CMS y debe verse exactamente como fue escrito. El resultado codificado puede copiarse en HTML, fragmentos, correos o ejemplos de código donde importa la visualización literal.",
   "howItWorks": [
-    "Pega o escribe el texto que quieres codificar.",
-    "La herramienta convierte los caracteres reservados y los símbolos en entidades HTML.",
-    "Copia el resultado y úsalo en HTML, plantillas, documentación o ejemplos de código."
+    "Escribe o pega el texto que quieres codificar.",
+    "La herramienta sustituye los caracteres reservados de HTML y los símbolos compatibles por entidades.",
+    "Copia el resultado y úsalo en HTML, una plantilla o un ejemplo de código."
   ],
   "useCases": [
-    "Escapar texto antes de insertarlo en contenido HTML.",
-    "Preparar ejemplos de código para documentación.",
-    "Mostrar entradas de usuario de forma segura en vistas previas o plantillas.",
-    "Codificar símbolos especiales para contenido CMS o correos HTML.",
-    "Evitar que el marcado se interprete como etiquetas."
+    {
+      "title": "Publicar texto literal dentro de HTML",
+      "description": "Codifica texto con signos angulares o ampersands antes de colocarlo en una página para que el navegador lo muestre literalmente."
+    },
+    {
+      "title": "Preparar ejemplos de código para documentación",
+      "description": "Convierte fragmentos de HTML o plantillas en entidades para que el ejemplo se vea y no se ejecute."
+    },
+    {
+      "title": "Mostrar contenido enviado por usuarios en vistas previas",
+      "description": "Presenta nombres, comentarios o mensajes exactamente como se escribieron cuando incluyen caracteres que alterarían el HTML."
+    },
+    {
+      "title": "Formatear contenido de CMS con símbolos",
+      "description": "Guarda o pega texto con monedas, flechas o signos matemáticos sin que se interprete como HTML."
+    }
   ],
   "examples": [
     {
-      "title": "Codificación básica",
-      "input": "5 < 10 & 7 > 3",
-      "output": "5 &lt; 10 &amp; 7 &gt; 3",
-      "description": "Los caracteres HTML reservados se convierten en entidades."
+      "title": "Caracteres reservados",
+      "input": "precio < 20 & stock > 0",
+      "output": "precio &lt; 20 &amp; stock &gt; 0",
+      "description": "Los signos angulares y el ampersand pasan a entidades HTML."
     },
     {
-      "title": "Comillas y símbolos",
-      "input": "\"Hola\" & 'Mundo'",
-      "output": "&quot;Hola&quot; &amp; &#39;Mundo&#39;",
-      "description": "Las comillas y el ampersand se codifican de forma segura."
+      "title": "Comillas en una cadena",
+      "input": "Dijo: \"guárdalo\" & sigue",
+      "output": "Dijo: &quot;guárdalo&quot; &amp; sigue",
+      "description": "Las comillas y el ampersand se codifican para una visualización literal."
+    },
+    {
+      "title": "Símbolos mezclados con texto",
+      "input": "Usa <code> y 50% > 25%",
+      "output": "Usa &lt;code&gt; y 50% &gt; 25%",
+      "description": "El texto con aspecto de etiqueta se neutraliza y el resto sigue legible."
     }
   ],
   "faq": [
     {
-      "question": "¿Qué hace la codificación de entidades HTML?",
-      "answer": "Reemplaza los caracteres especiales por entidades HTML para que el navegador los muestre como texto en lugar de interpretarlos como HTML."
+      "question": "¿Qué caracteres se codifican siempre?",
+      "answer": "Siempre se codifican los caracteres reservados de HTML, como <, > y &. Las comillas también pueden codificarse según la configuración."
     },
     {
-      "question": "¿Es segura esta herramienta en el navegador?",
-      "answer": "Sí. Usa lógica solo del lado del cliente y no envía tu texto a ningún servidor ni API externa."
+      "question": "¿La salida seguirá siendo legible?",
+      "answer": "Sí. El texto sigue siendo entendible, pero los caracteres que podrían interpretarse como HTML aparecen en forma de entidad."
     },
     {
-      "question": "¿Codifica todos los caracteres?",
-      "answer": "Siempre codifica los caracteres HTML reservados y, según la implementación, puede codificar también símbolos adicionales."
+      "question": "¿Puedo volver a codificar texto ya codificado?",
+      "answer": "Sí, pero normalmente generará entidades anidadas como &amp;amp;. Ese es un error común cuando el texto ya pasó por otro encoder."
     },
     {
-      "question": "¿Cuándo debo usar la codificación de entidades HTML?",
-      "answer": "Úsala cuando necesites mostrar texto sin formato, entradas de usuario o código de forma segura dentro de un documento HTML."
+      "question": "¿Por qué mi ejemplo muestra etiquetas en vez de texto?",
+      "answer": "Normalmente ocurre porque el contenido se insertó sin codificación. Pásalo por el codificador antes de colocarlo en HTML."
+    },
+    {
+      "question": "¿La herramienta cambia símbolos que no son HTML?",
+      "answer": "Solo convierte los símbolos que soporta el codificador. Letras, números y la mayoría de la puntuación se mantienen igual salvo que interfieran con el parsing de HTML."
     }
   ],
-  "uiLabels": {
-    "copy": "Copiar",
-    "copied": "Copiado",
-    "input": "Entrada de texto",
-    "output": "Salida codificada",
-    "placeholder": "Pega texto para codificar",
-    "indent": "Sangría",
-    "removeComments": "Eliminar comentarios",
-    "preview": "Vista previa",
-    "source": "Origen",
-    "sanitizedHtml": "HTML sanitizado",
-    "plainText": "Texto plano",
-    "summary": "Resumen",
-    "total": "Total",
-    "links": "Enlaces",
-    "images": "Imágenes",
-    "errors": "Errores",
-    "warnings": "Advertencias",
-    "valid": "Válido",
-    "invalid": "No válido",
-    "href": "href",
-    "text": "Texto",
-    "rel": "rel",
-    "target": "target",
-    "alt": "alt",
-    "width": "ancho",
-    "height": "alto",
-    "empty": "Vacío",
-    "outputReady": "Salida lista",
-    "cleanedHtml": "HTML limpio",
-    "formattedHtml": "HTML formateado",
-    "minifiedHtml": "HTML minimizado",
-    "markdown": "Markdown",
-    "extractedImages": "Imágenes extraídas",
-    "extractedLinks": "Enlaces extraídos",
-    "validationSummary": "Resumen de validación",
-    "prettyHtml": "HTML legible",
-    "encodedText": "Texto codificado"
-  },
   "seo": {
     "title": "Codificador de entidades HTML",
-    "description": "Codifica al instante caracteres especiales y símbolos como entidades HTML desde el navegador.",
+    "description": "Convierte caracteres reservados, comillas y símbolos en entidades HTML para una salida HTML segura en tu editor o navegador.",
     "keywords": [
       "codificador de entidades html",
       "codificar html",
       "escapar caracteres html",
       "entidades html",
-      "texto a entidades html",
-      "herramienta html"
+      "texto a entidades html"
     ]
   }
 }

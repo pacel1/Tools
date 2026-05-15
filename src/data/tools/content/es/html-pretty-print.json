@@ -4,105 +4,87 @@
   "slug": "html-pretty-print",
   "h1": "HTML Pretty Print",
   "title": "HTML Pretty Print",
-  "shortDescription": "Formatea HTML con espaciado estable para revisiones, auditorías y depuración.",
-  "metaTitle": "HTML Pretty Print | Formatear HTML legible online",
-  "metaDescription": "Formatea HTML con espaciado estable para revisiones, auditorías y depuración. Limpia el marcado en tu navegador con un formateador rápido y del lado del cliente.",
-  "intro": "Convierte HTML desordenado en código legible con sangría y espaciado consistentes. Este formateador de HTML funciona en el navegador y ayuda a revisar estructura, comparar cambios y depurar sin enviar datos a un servidor.",
-  "overview": "El formateador de HTML transforma marcado compacto o desordenado en HTML limpio y con sangría, mucho más fácil de leer. Es útil para revisar elementos anidados, comprobar atributos y preparar código para auditorías o entregas. Todo se procesa en el navegador para ofrecer un flujo rápido y privado.",
+  "shortDescription": "Convierte HTML desordenado en marcado limpio y con sangría para revisar y depurar.",
+  "metaTitle": "HTML Pretty Print para HTML limpio",
+  "metaDescription": "Convierte HTML desordenado en marcado limpio y con sangría para revisar y depurar desde tu navegador.",
+  "intro": "Pega HTML minificado o caótico y obtén una versión limpia con sangría lista para leer.",
+  "overview": "HTML Pretty Print reorganiza un marcado compacto o difícil de seguir en una estructura clara y con saltos útiles. Eso facilita revisar jerarquías, detectar etiquetas mal cerradas y comprobar atributos sin perder tiempo descifrando una sola línea interminable.\n\nEs especialmente práctico para fragmentos copiados de un CMS, plantillas generadas, código minificado o bloques que vas a entregar a otra persona. Un formato consistente ayuda a comparar cambios, explicar incidencias y preparar el HTML antes de una revisión técnica.",
   "howItWorks": [
-    "Pega tu HTML en el campo de entrada.",
-    "Elige opciones de formato como la sangría o el manejo de comentarios, si están disponibles.",
-    "Genera el HTML formateado al instante en tu navegador.",
-    "Copia el resultado y úsalo en revisiones, depuración o documentación."
+    "Pega el HTML en el campo de entrada.",
+    "Ajusta la sangría si quieres adaptar el estilo de salida.",
+    "Ejecuta el formateo para reconstruir el marcado.",
+    "Copia el resultado para revisarlo, corregirlo o documentarlo."
   ],
   "useCases": [
-    "Revisar la estructura HTML antes de publicar.",
-    "Depurar marcado anidado o minificado.",
-    "Preparar fragmentos de código para code review y auditorías.",
-    "Hacer más legible el HTML copiado en documentación o incidencias."
+    {
+      "title": "Revisar plantillas generadas",
+      "description": "Convierte HTML producido por un sistema o CMS en un bloque legible por partes."
+    },
+    {
+      "title": "Inspeccionar anidaciones profundas",
+      "description": "Aclara la relación entre contenedores, secciones y elementos internos durante la depuración."
+    },
+    {
+      "title": "Preparar fragmentos para revisión",
+      "description": "Entrega el código con una estructura limpia antes de pedir comentarios o validación."
+    },
+    {
+      "title": "Descomprimir HTML minificado",
+      "description": "Expandir marcado compacto ayuda a localizar errores y comparar versiones."
+    }
   ],
   "examples": [
     {
-      "title": "Marcado compacto",
+      "title": "Bloque de diseño compacto",
       "input": "<div><span>Hi</span><a href='/docs'>Docs</a></div>",
       "output": "<div>\n  <span>Hi</span>\n  <a href=\"/docs\">Docs</a>\n</div>",
-      "description": "Convierte HTML compacto en un bloque fácil de leer."
+      "description": "Pasa un fragmento en una sola línea a un formato claro."
     },
     {
-      "title": "Contenido anidado",
-      "input": "<ul><li>One</li><li><strong>Two</strong></li></ul>",
-      "output": "<ul>\n  <li>One</li>\n  <li><strong>Two</strong></li>\n</ul>",
-      "description": "Facilita la inspección de listas anidadas."
+      "title": "Lista anidada",
+      "input": "<ul><li>Alpha</li><li><strong>Beta</strong><ul><li>Beta 1</li></ul></li></ul>",
+      "output": "<ul>\n  <li>Alpha</li>\n  <li>\n    <strong>Beta</strong>\n    <ul>\n      <li>Beta 1</li>\n    </ul>\n  </li>\n</ul>",
+      "description": "Facilita comprobar listas con varios niveles."
+    },
+    {
+      "title": "Artículo con enlaces",
+      "input": "<article><h2>Documentación</h2><p>Lee la <a href='/guide'>guía</a> y la <a href='/api'>referencia API</a>.</p></article>",
+      "output": "<article>\n  <h2>Documentación</h2>\n  <p>\n    Lee la <a href=\"/guide\">guía</a> y la <a href=\"/api\">referencia API</a>.\n  </p>\n</article>",
+      "description": "Mantiene legibles los enlaces dentro de un párrafo."
     }
   ],
   "faq": [
     {
-      "question": "¿Es seguro usar este formateador de HTML?",
-      "answer": "Sí. Está pensado para uso en el cliente y debe procesar HTML de forma segura con criterios compatibles con XSS."
+      "question": "¿El formateo cambia las etiquetas o atributos?",
+      "answer": "No cambia el significado del marcado. Solo reorganiza espacios, saltos de línea y sangría para que el HTML se lea mejor."
     },
     {
-      "question": "¿El formato cambia el contenido?",
-      "answer": "La herramienta se centra en espacios en blanco y sangría. Debe conservar el significado del HTML y mejorar su lectura."
+      "question": "¿Qué pasa si el HTML ya está bien formateado?",
+      "answer": "El resultado suele ser muy parecido. En algunos casos solo verás ajustes leves de espacios o alineación."
     },
     {
-      "question": "¿Sirve para HTML minificado?",
-      "answer": "Sí. Es ideal para expandir marcado compacto o minificado antes de revisarlo o depurarlo."
+      "question": "¿Puede manejar HTML minificado con muchos atributos?",
+      "answer": "Sí. Está pensado para expandir marcado compacto y mostrar cada atributo con más claridad."
     },
     {
-      "question": "¿Funciona solo en el navegador?",
-      "answer": "Sí. El flujo es solo del lado del cliente y no requiere APIs externas."
+      "question": "¿Por qué algunas partes inline cambian de posición visual?",
+      "answer": "El formateador puede reacomodar saltos de línea para mejorar la lectura. La estructura lógica del HTML debe seguir siendo la misma."
+    },
+    {
+      "question": "¿Quitar comentarios afecta el comportamiento de la página?",
+      "answer": "Los comentarios no cambian la renderización, pero pueden ser útiles en plantillas o notas internas. Elimínalos solo si no los necesitas."
     }
   ],
-  "uiLabels": {
-    "copy": "Copiar",
-    "copied": "Copiado",
-    "input": "Entrada",
-    "output": "Salida",
-    "placeholder": "Pega HTML aquí",
-    "indent": "Sangría",
-    "removeComments": "Eliminar comentarios",
-    "preview": "Vista previa",
-    "source": "Fuente",
-    "sanitizedHtml": "HTML saneado",
-    "plainText": "Texto plano",
-    "summary": "Resumen",
-    "total": "Total",
-    "links": "Enlaces",
-    "images": "Imágenes",
-    "errors": "Errores",
-    "warnings": "Advertencias",
-    "valid": "Válido",
-    "invalid": "Inválido",
-    "href": "Href",
-    "text": "Texto",
-    "rel": "Rel",
-    "target": "Destino",
-    "alt": "Alt",
-    "width": "Ancho",
-    "height": "Alto",
-    "empty": "Vacío",
-    "outputReady": "Resultado listo",
-    "cleanedHtml": "HTML limpio",
-    "formattedHtml": "HTML formateado",
-    "minifiedHtml": "HTML minificado",
-    "markdown": "Markdown",
-    "extractedImages": "Imágenes extraídas",
-    "extractedLinks": "Enlaces extraídos",
-    "validationSummary": "Resumen de validación",
-    "prettyHtml": "HTML legible",
-    "encodedText": "Texto codificado"
-  },
   "seo": {
-    "title": "HTML Pretty Print | Formatear HTML legible online",
-    "description": "Formatea HTML con espaciado estable para revisiones, auditorías y depuración. Limpia el marcado en tu navegador con un formateador rápido y del lado del cliente.",
+    "title": "HTML Pretty Print para HTML limpio",
+    "description": "Convierte HTML desordenado en marcado limpio y con sangría para revisar y depurar desde tu navegador.",
     "keywords": [
       "formateador html",
-      "dar formato a html",
-      "html formatter",
       "pretty print html",
-      "sangria html",
-      "herramienta html online",
-      "html legible"
+      "dar formato a html",
+      "html legible",
+      "sangría html",
+      "html en línea"
     ]
   }
 }

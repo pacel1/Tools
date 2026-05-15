@@ -4,157 +4,86 @@
   "slug": "css-verlauf-generator",
   "h1": "CSS-Verlauf-Generator",
   "title": "CSS-Verlauf-Generator",
-  "shortDescription": "Erzeuge saubere CSS-Verläufe mit Live-Vorschau, Winkelsteuerung und kopierfertigem Code.",
-  "metaTitle": "CSS-Verlauf-Generator - Lineare und radiale Verläufe erstellen",
-  "metaDescription": "Erstelle CSS-Verläufe online mit Live-Vorschau, Winkeleinstellung, Farb-Presets und kopierfertigem CSS-Code für lineare und radiale Verläufe.",
-  "intro": "Erstelle moderne CSS-Verläufe in Sekunden. Wähle Farben, Winkel und Typ, prüfe das Ergebnis live und kopiere anschließend sauberen CSS-Code für Website oder UI.",
-  "overview": "Dieser CSS-Verlauf-Generator hilft dir, lineare und radiale Verläufe schnell zu erstellen, ohne Code von Hand zu schreiben. Ideal für Hintergründe, Buttons, Hero-Bereiche, Karten und UI-Akzente. Farben wählen, Richtung anpassen und sofort produktionsreifen CSS-Code erhalten.",
+  "shortDescription": "Erstelle präzise CSS-Verläufe mit Live-Vorschau, Winkelsteuerung und kopierfertigem Code.",
+  "metaTitle": "CSS-Verlauf-Generator",
+  "metaDescription": "Erstelle lineare und radiale CSS-Verläufe mit Live-Vorschau, Winkeleinstellung und kopierfertigem Code.",
+  "intro": "Erzeuge in Sekunden einen CSS-Verlauf, prüfe ihn live und kopiere den exakten Code.",
+  "overview": "Dieses Tool macht aus einer Farbauswahl direkt nutzbare CSS-Verläufe, ohne dass du Werte per Hand ausprobieren musst. Wechsle zwischen linearem und radialem Modus, passe Winkel oder Fokuspunkt an und sieh jede Änderung sofort in der Vorschau.\n\nSinnvoll ist das überall dort, wo der Hintergrund bewusst gestaltet sein soll: in Hero-Bereichen, auf Buttons, Karten, Overlays, Badges und dezenten UI-Akzenten. Das Ergebnis ist sauberer CSS-Code, den du in Stylesheets, Komponenten oder ein Token-Setup übernehmen kannst.",
   "howItWorks": [
-    "Wähle eine oder mehrere Farben für den Verlauf.",
+    "Wähle die Verlauf-Farben.",
     "Entscheide dich für linear oder radial.",
-    "Passe bei Bedarf Winkel, Position oder Ausdehnung an.",
-    "Sieh dir die Live-Vorschau direkt im Tool an.",
-    "Kopiere den generierten CSS-Code und füge ihn in dein Projekt ein."
+    "Stelle Winkel, Position oder Ausdehnung ein.",
+    "Prüfe die Live-Vorschau.",
+    "Kopiere den CSS-Code ins Projekt."
   ],
   "useCases": [
-    "Website-Hintergründe mit weichen Farbverläufen erstellen.",
-    "Verläufe für Buttons, Banner und Hero-Sections erzeugen.",
-    "Farbkombinationen vor dem Einsatz im Designsystem testen.",
-    "Schnelle CSS-Snippets für Mockups und Prototypen erstellen.",
-    "Radiale Lichteffekte für Karten, Panels und Badges gestalten."
+    {
+      "title": "Hero-Hintergrund",
+      "description": "Erzeuge einen starken Verlauf für den oberen Seitenbereich, der Überschrift und Marke trägt."
+    },
+    {
+      "title": "CTA-Button",
+      "description": "Erstelle einen kompakten Zwei-Farben-Verlauf für Call-to-Action-Buttons und interaktive Elemente."
+    },
+    {
+      "title": "Karten-Glow",
+      "description": "Lege einen weichen radialen Schein hinter Preis-Karten, Feature-Kacheln oder Produkt-Panels."
+    },
+    {
+      "title": "Farbpalette vergleichen",
+      "description": "Teste mehrere Farbkombinationen, bevor sie ins UI-Set oder Stylesheet übernommen werden."
+    },
+    {
+      "title": "Bild-Overlay",
+      "description": "Baue eine Verlaufsebene, die die Lesbarkeit von Text auf Bannern und Bildern verbessert."
+    }
   ],
   "examples": [
     {
-      "title": "Linearer Hintergrund",
-      "input": "#ff7a18 zu #af002d",
-      "output": "background: linear-gradient(135deg, #ff7a18, #af002d);",
-      "description": "Ein einfacher diagonaler Verlauf für moderne Seitenbereiche."
+      "title": "Diagonaler Marken-Hintergrund",
+      "input": "#0f172a → #2563eb bei 135°",
+      "output": "background: linear-gradient(135deg, #0f172a, #2563eb);",
+      "description": "Ein markanter Verlauf von dunkel zu hell für Hauptsektionen."
     },
     {
-      "title": "Radialer Scheinwerfer",
-      "input": "#ffffff zu #dbeafe",
-      "output": "background: radial-gradient(circle, #ffffff 0%, #dbeafe 100%);",
-      "description": "Ein weicher radialer Verlauf für helle UI-Hervorhebungen."
+      "title": "Sanfter radialer Schein",
+      "input": "#fff7ed → #fdba74 zentriert",
+      "output": "background: radial-gradient(circle at center, #fff7ed 0%, #fdba74 100%);",
+      "description": "Ein warmer Glow für Karten und Panels."
+    },
+    {
+      "title": "Header mit drei Farbstopps",
+      "input": "#111827 → #4f46e5 → #c084fc",
+      "output": "background: linear-gradient(120deg, #111827 0%, #4f46e5 52%, #c084fc 100%);",
+      "description": "Ein dichterer Farbverlauf für Header und Hero-Flächen."
     }
   ],
   "faq": [
     {
-      "question": "Was ist ein CSS-Verlauf-Generator?",
-      "answer": "Ein Tool, das CSS-Verlaufscode aus ausgewählten Farben und Einstellungen erstellt, damit du ihn direkt im Projekt verwenden kannst."
+      "question": "Kann ich den Startpunkt des Verlaufs steuern?",
+      "answer": "Ja. Beim linearen Verlauf legst du den Winkel fest, beim radialen zusätzlich den Mittelpunkt und die Verteilung der Fläche."
     },
     {
-      "question": "Kann ich lineare und radiale Verläufe erstellen?",
-      "answer": "Ja. Du kannst sowohl lineare als auch radiale Verläufe erzeugen und den CSS-Code sofort kopieren."
+      "question": "Warum sieht die Vorschau im Projekt anders aus?",
+      "answer": "Größe des Elements, Hintergrundfarbe darunter und das Rendering des jeweiligen Browsers können das Erscheinungsbild leicht verändern."
     },
     {
-      "question": "Zeigt das Tool eine Live-Vorschau?",
-      "answer": "Ja. Die Vorschau aktualisiert sich bei Änderungen von Farben, Winkel und Verlaufstyp."
+      "question": "Wie viele Farbstopps sind sinnvoll?",
+      "answer": "Zwei Stopps reichen für einfache Flächen, drei oder mehr für reichere Übergänge. Zu viele Stopps wirken schnell unruhig."
     },
     {
-      "question": "Ist der erzeugte Code produktionsreif?",
-      "answer": "Ja. Das Tool liefert sauberen CSS-Code, den du direkt in dein Stylesheet oder deine Komponente einfügen kannst."
+      "question": "Kann ich den Code direkt in normales CSS und Komponenten-Stile einfügen?",
+      "answer": "Ja. Die Ausgabe lässt sich in Stylesheets, Inline-Stile oder Komponenten-Definitionen übernehmen."
     }
   ],
-  "uiLabels": {
-    "copy": "Kopieren",
-    "copied": "Kopiert",
-    "input": "Eingabe",
-    "output": "Ausgabe",
-    "placeholder": "Farbe eingeben oder Preset wählen",
-    "indent": "Einzug",
-    "removeComments": "Kommentare entfernen",
-    "preview": "Vorschau",
-    "source": "Quelle",
-    "sanitizedHtml": "Bereinigtes HTML",
-    "plainText": "Klartext",
-    "summary": "Zusammenfassung",
-    "total": "Gesamt",
-    "links": "Links",
-    "images": "Bilder",
-    "errors": "Fehler",
-    "warnings": "Warnungen",
-    "valid": "Gültig",
-    "invalid": "Ungültig",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Breite",
-    "height": "Höhe",
-    "empty": "Leer",
-    "outputReady": "Ausgabe bereit",
-    "cleanedHtml": "Bereinigtes HTML",
-    "formattedHtml": "Formatiertes HTML",
-    "minifiedHtml": "Minifiziertes HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extrahierte Bilder",
-    "extractedLinks": "Extrahierte Links",
-    "validationSummary": "Validierungsübersicht",
-    "prettyHtml": "Lesbares HTML",
-    "encodedText": "Kodierter Text",
-    "file": "Datei",
-    "size": "Größe",
-    "format": "Format",
-    "quality": "Qualität",
-    "colorOne": "Farbe eins",
-    "colorTwo": "Farbe zwei",
-    "background": "Hintergrund",
-    "foreground": "Vordergrund",
-    "angle": "Winkel",
-    "margin": "Rand",
-    "level": "Stufe",
-    "gradientType": "Verlaufstyp",
-    "linear": "Linear",
-    "radial": "Radial",
-    "blur": "Unschärfe",
-    "spread": "Ausdehnung",
-    "offsetX": "Versatz X",
-    "offsetY": "Versatz Y",
-    "opacity": "Deckkraft",
-    "inset": "Innen",
-    "cssCode": "CSS-Code",
-    "snippet": "Snippet",
-    "download": "Herunterladen",
-    "downloadSvg": "SVG herunterladen",
-    "downloadPng": "PNG herunterladen",
-    "downloadAll": "Alle herunterladen",
-    "upload": "Hochladen",
-    "title": "Titel",
-    "description": "Beschreibung",
-    "canonicalUrl": "Kanonische URL",
-    "siteName": "Seitenname",
-    "ogImage": "OG-Bild",
-    "clear": "Leeren",
-    "generatedQr": "QR-Code-Vorschau",
-    "placeholderImage": "Bildvorschau",
-    "faviconSet": "Favicon-Set",
-    "keepAspectRatio": "Seitenverhältnis beibehalten",
-    "cropX": "Zuschneiden X",
-    "cropY": "Zuschneiden Y",
-    "cropWidth": "Zuschneidebreite",
-    "cropHeight": "Zuschneidehöhe",
-    "originalSize": "Originalgröße",
-    "outputSize": "Ausgabegröße",
-    "savedSize": "Gesparte Größe",
-    "result": "Ergebnis",
-    "base64": "Base64",
-    "mimeType": "MIME-Typ",
-    "resizedImage": "Skaliertes Bild",
-    "compressedImage": "Komprimiertes Bild",
-    "croppedImage": "Zugeschnittenes Bild",
-    "convertedImage": "Konvertiertes Bild",
-    "decodedImage": "Dekodiertes Bild",
-    "imagePreview": "Bildvorschau"
-  },
   "seo": {
-    "title": "CSS-Verlauf-Generator - Lineare und radiale Verläufe erstellen",
-    "description": "Erstelle CSS-Verläufe online mit Live-Vorschau, Winkeleinstellung, Farb-Presets und kopierfertigem CSS-Code für lineare und radiale Verläufe.",
+    "title": "CSS-Verlauf-Generator",
+    "description": "Erstelle lineare und radiale CSS-Verläufe mit Live-Vorschau, Winkeleinstellung und kopierfertigem Code.",
     "keywords": [
-      "css-verlauf-generator",
-      "linearer verlauf generator",
-      "radialer verlauf generator",
-      "css verlauf",
+      "css verlauf generator",
+      "linearer css verlauf",
+      "radialer css verlauf",
+      "css hintergrund verlauf",
       "css verlauf code"
     ]
   }

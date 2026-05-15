@@ -4,43 +4,87 @@
   "slug": "konwerter-wielkosci-liter",
   "h1": "Konwerter wielkości liter",
   "title": "Konwerter wielkości liter",
-  "shortDescription": "Zamień tekst na wielkie litery, małe litery, tytułowy zapis i zapis zdaniowy — szybko, prosto i z praktycznymi przykładami.",
-  "overview": "Zamieniaj tekst na wielkie litery, małe litery, zapis tytułowy i zapis zdaniowy. Ta strona daje szybkie rozwiązanie dzięki prostemu narzędziu online i przejrzystemu wynikowi. To miejsce dla użytkowników szukających darmowego narzędzia w przeglądarce, natychmiastowych rezultatów i praktycznych treści pod długie zapytania.",
+  "shortDescription": "Zmień tekst na wielkie litery, małe litery, zapis tytułowy lub zdaniowy — wygodnie dla wklejonego tekstu i wpisywania ręcznego.",
+  "metaTitle": "Konwerter wielkości liter",
+  "metaDescription": "Zmieniaj tekst na wielkie litery, małe litery, zapis tytułowy i zdaniowy w prostym narzędziu w przeglądarce.",
+  "intro": "Wklej albo wpisz tekst i od razu zamień go na wielkie litery, małe litery, zapis tytułowy lub zdaniowy.",
+  "overview": "To narzędzie przepisuje tekst do wybranego wariantu zapisu. Przydaje się, gdy tytuł wymaga poprawnej kapitalizacji, szkic potrzebuje jednolitego formatowania albo wklejony fragment ma zostać dopasowany do zasad redakcyjnych.\n\nMożesz sprawdzać krótkie hasła, pełne zdania, nagłówki i dłuższe fragmenty. Wynik opiera się na dokładnie wprowadzonym tekście, więc znaki interpunkcyjne, odstępy i podziały wierszy pozostają częścią rezultatu, chyba że wybrany tryb zmieni ich zapis.\n\nUżyj go przed publikacją, wklejeniem do dokumentu albo wysłaniem tekstu, gdy zależy Ci na czystszym i bardziej spójnym zapisie.",
   "howItWorks": [
-    "Wpisz wymagany tekst do formularza.",
-    "Konwersja, obliczenie lub przekształcenie odbywa się natychmiast w przeglądarce.",
-    "Sprawdź wynik i przejdź do powiązanych narzędzi, jeśli potrzebujesz kolejnego kroku."
+    "Wpisz lub wklej tekst, który chcesz zmienić.",
+    "Wybierz docelowy wariant zapisu z dostępnych opcji.",
+    "Skopiuj gotowy wynik i użyj go tam, gdzie potrzebujesz."
+  ],
+  "useCases": [
+    {
+      "title": "Nagłówki artykułów",
+      "description": "Zmień roboczy nagłówek na zapis tytułowy lub zdaniowy przed dodaniem go do CMS-a lub dokumentu."
+    },
+    {
+      "title": "Tekst z notatek",
+      "description": "Ujednolić tekst skopiowany z czatu, maila lub notatek do jednego stylu zapisu."
+    },
+    {
+      "title": "Etykiety interfejsu",
+      "description": "Sformatuj krótkie napisy, przyciski i elementy menu zgodnie z jedną zasadą pisowni."
+    },
+    {
+      "title": "Porządkowanie list",
+      "description": "Zamień nazwy pozycji lub punkty listy na spójny zapis, żeby ułatwić pracę z tabelą lub checklistą."
+    }
   ],
   "examples": [
     {
-      "title": "Przykład 1",
-      "input": "Przykładowy nagłówek artykułu",
-      "output": "WIELKIE / małe / Tytułowy / Zdaniowy",
-      "description": "Pokazuje typowe użycie narzędzia na prostym przykładzie tekstu."
+      "title": "Nazwa produktu wielkimi literami",
+      "input": "bezprzewodowe słuchawki z redukcją szumów",
+      "output": "BEZPRZEWODOWE SŁUCHAWKI Z REDUKCJĄ SZUMÓW",
+      "description": "Przydatne, gdy nazwa ma mocniej wybrzmieć w nagłówku lub etykiecie."
     },
     {
-      "title": "Przykład 2",
-      "input": "Przykładowy nagłówek artykułu",
-      "output": "WIELKIE / małe / Tytułowy / Zdaniowy",
-      "description": "Przydatne przy szybkiej edycji nagłówków, tytułów i tekstu roboczego."
+      "title": "Zdanie z wklejonych notatek",
+      "input": "spotkanie zaczyna się jutro o 9:00.",
+      "output": "Spotkanie zaczyna się jutro o 9:00.",
+      "description": "Pokazuje zapis zdaniowy z zachowaniem naturalnej formy zdania."
+    },
+    {
+      "title": "Nagłówek blogowy w zapisie tytułowym",
+      "input": "jak pisać lepsze tematy wiadomości e-mail",
+      "output": "Jak Pisać Lepsze Tematy Wiadomości E-mail",
+      "description": "Zmienia zwykły tekst w nagłówek gotowy do użycia w szkicu."
+    },
+    {
+      "title": "Krótka etykieta małymi literami",
+      "input": "Obsługa Klienta",
+      "output": "obsługa klienta",
+      "description": "Pomaga, gdy system lub projekt wymaga jednolitego zapisu małymi literami."
     }
   ],
   "faq": [
     {
-      "question": "Jak dokładne jest to narzędzie?",
-      "answer": "Wynik jest obliczany bezpośrednio na podstawie formuły lub logiki po stronie przeglądarki używanej przez to narzędzie."
+      "question": "Czy narzędzie zmienia tylko litery?",
+      "answer": "Tak. Cyfry i znaki specjalne pozostają bez zmian, a przekształceniu ulega tylko zapis liter."
     },
     {
-      "question": "Czy mogę używać tego narzędzia na telefonie?",
-      "answer": "Tak. Strona działa na komputerach i urządzeniach mobilnych, oferując prosty układ pola wejściowego i wyniku."
+      "question": "Czy zapis tytułowy kapitalizuje każdy wyraz tak samo?",
+      "answer": "Narzędzie stosuje własne reguły kapitalizacji. Przy nazwach własnych, skrótach i słowach technicznych warto po konwersji zrobić krótki przegląd."
+    },
+    {
+      "question": "Co dzieje się z odstępami i podziałami wierszy?",
+      "answer": "Struktura tekstu jest zachowywana zgodnie z wprowadzonymi danymi, ale nadmiarowe spacje mogą wpływać na wygląd wyniku."
+    },
+    {
+      "question": "Dlaczego nazwa marki albo skrót zmienił zapis?",
+      "answer": "Bo narzędzie stosuje wybrany schemat do całego tekstu. Jeśli nazwa ma pozostać dokładnie taka sama, popraw ją ręcznie po konwersji."
     }
   ],
   "seo": {
     "title": "Konwerter wielkości liter",
-    "description": "Zamień tekst na wielkie litery, małe litery, zapis tytułowy i zapis zdaniowy. Darmowy konwerter wielkości liter online z natychmiastowym wynikiem.",
+    "description": "Zmieniaj tekst na wielkie litery, małe litery, zapis tytułowy i zdaniowy w prostym narzędziu w przeglądarce.",
     "keywords": [
       "konwerter wielkości liter",
-      "case converter"
+      "wielkie litery",
+      "małe litery",
+      "zapis tytułowy",
+      "zapis zdaniowy"
     ]
   }
 }

@@ -5,103 +5,81 @@
   "h1": "HTML zu Text",
   "title": "HTML zu Text",
   "shortDescription": "Extrahiert lesbaren Fließtext aus HTML-Snippets und vollständigen Dokumenten.",
-  "metaTitle": "HTML-zu-Text-Konverter | Klartext aus HTML extrahieren",
-  "metaDescription": "Konvertiere HTML direkt im Browser in Klartext. Extrahiere lesbaren Text aus Snippets oder ganzen Seiten sicher und ohne externe API.",
-  "intro": "Wandle HTML direkt im Browser in sauberen, lesbaren Klartext um. Füge ein Snippet oder ein komplettes Dokument ein, und das Tool entfernt die Tags und lässt nur den gut nutzbaren Inhalt übrig.",
-  "overview": "Dieses HTML-zu-Text-Tool ist ein schneller Client-seitiger Konverter für Entwickler, Redakteure und Content-Teams. Es entfernt Markup sicher, reduziert unnötige Zeichen und gibt Klartext aus, der sich leichter durchsuchen, indexieren, zitieren oder weiterverarbeiten lässt. Da alles lokal läuft, werden keine externen APIs benötigt und die HTML-Verarbeitung bleibt privat und XSS-bewusst.",
+  "metaTitle": "HTML zu Text",
+  "metaDescription": "Wandle HTML im Browser in lesbaren Text um. Füge Snippets oder ganze Dokumente ein und kopiere das Ergebnis ohne Tags.",
+  "intro": "Füge HTML ein und erhalte sofort lesbaren Klartext im Browser.",
+  "overview": "Dieses Tool entfernt HTML-Tags und lässt nur den eigentlichen Inhalt als einfachen Text übrig. Das ist praktisch, wenn du Inhalte in Notizen, Tickets, Editoren oder Systeme übernehmen willst, die kein Markup brauchen.\n\nEs funktioniert mit kurzen Snippets ebenso wie mit längeren Dokumenten, sodass du sehen kannst, wie sich der Text ohne HTML-Struktur liest. Das Ergebnis ist direkt kopierbar und für weitere Arbeitsschritte geeignet.\n\nDie Verarbeitung läuft lokal im Browser, daher muss der Inhalt nicht an einen externen Dienst übertragen werden.",
   "howItWorks": [
     "HTML in das Eingabefeld einfügen.",
-    "Das Tool analysiert das Markup im Browser.",
-    "Es entfernt HTML-Tags und gibt lesbaren Text zurück.",
-    "Den bereinigten Text kopieren oder weiterverwenden."
+    "Der Browser analysiert die Struktur.",
+    "Tags werden entfernt, der Text bleibt erhalten.",
+    "Das Ergebnis kopieren oder weiterverwenden."
   ],
   "useCases": [
-    "Text aus Website-HTML für Notizen oder Dokumentation extrahieren.",
-    "Snippets in Klartext für E-Mails, Tickets oder Chats umwandeln.",
-    "Inhalte für Indexierung, Suche oder Analyse vorbereiten.",
-    "Formatierung aus HTML vor dem Einfügen in andere Apps entfernen.",
-    "Die lesbare Textversion einer Seite oder eines Elements anzeigen."
+    {
+      "title": "CMS-Inhalte bereinigen",
+      "description": "Aus dem Editor kopierten Inhalt von Formatierung lösen und als reinen Text in Doku oder Aufgaben übernehmen."
+    },
+    {
+      "title": "Nachrichten ohne Markup prüfen",
+      "description": "E-Mail-, Hinweis- oder Vorlagentext ohne Tags lesen, um Formulierung und Umbrüche zu kontrollieren."
+    },
+    {
+      "title": "Text für Auswertungen vorbereiten",
+      "description": "Sichtbaren Inhalt aus HTML extrahieren und für Skripte, Notizen oder Textwerkzeuge bereitstellen."
+    },
+    {
+      "title": "Archivierte Exporte lesbar machen",
+      "description": "Gespeicherte HTML-Exporte in Klartext umwandeln für Dokumentation, Audit oder Referenz."
+    }
   ],
   "examples": [
     {
-      "title": "Einfacher Absatz",
-      "input": "<p>Hallo <strong>Welt</strong>!</p>",
-      "output": "Hallo Welt!",
-      "description": "Tags werden entfernt, der Text bleibt lesbar."
+      "title": "Absatz mit Hervorhebung",
+      "input": "<p>Die <strong>neue</strong> Version ist fertig.</p>",
+      "output": "Die neue Version ist fertig.",
+      "description": "Inline-Tags verschwinden, der Satz bleibt verständlich."
     },
     {
-      "title": "Links und Listen",
-      "input": "<div><a href=\"/docs\">Dokumentation</a><ul><li>Eins</li><li>Zwei</li></ul></div>",
-      "output": "Dokumentation\nEins\nZwei",
-      "description": "Textinhalte bleiben in einer sauberen Ausgabe erhalten."
+      "title": "Überschrift und Link",
+      "input": "<article><h2>Status</h2><p>Build <a href=\"/builds/18\">#18</a> ist durchgelaufen.</p></article>",
+      "output": "Status\nBuild #18 ist durchgelaufen.",
+      "description": "Überschrift und sichtbarer Linktext werden lesbar ausgegeben."
+    },
+    {
+      "title": "Liste mit Zeilenumbruch",
+      "input": "<div>Aufgaben:<br><ul><li>Text prüfen</li><li>An Kunde senden</li></ul></div>",
+      "output": "Aufgaben:\nText prüfen\nAn Kunde senden",
+      "description": "Listeneinträge werden als eigene Textzeilen dargestellt."
     }
   ],
   "faq": [
     {
-      "question": "Behält dieses Tool HTML-Tags bei?",
-      "answer": "Nein. Es entfernt Tags und gibt nur Klartext aus."
+      "question": "Bleiben Linkziele und Bild-Alt-Texte erhalten?",
+      "answer": "Der sichtbare Text bleibt erhalten, aber HTML-Attribute werden nicht als eigene Daten exportiert."
     },
     {
-      "question": "Läuft die Konvertierung im Browser?",
-      "answer": "Ja. Das Tool verwendet Client-seitige Logik und ruft keine externen APIs auf."
+      "question": "Was passiert mit Skripten, Styles und Kommentaren?",
+      "answer": "Sie erscheinen nicht im Ergebnis, damit der Klartext auf dem sichtbaren Inhalt basiert."
     },
     {
-      "question": "Kann ich komplette HTML-Dokumente umwandeln?",
-      "answer": "Ja. Es funktioniert mit kurzen Snippets und vollständigen Dokumenten."
+      "question": "Warum weichen Leerzeichen manchmal vom Original ab?",
+      "answer": "HTML beschreibt Struktur, nicht die exakte Textdarstellung. Die Ausgabe priorisiert Lesbarkeit statt 1:1-Layout."
     },
     {
-      "question": "Wird mein HTML an einen Server gesendet?",
-      "answer": "Nein. Die Verarbeitung erfolgt lokal in deinem Browser."
+      "question": "Kann ich damit exakte Formatierung wiederherstellen?",
+      "answer": "Nein. Für Tabellen, Einzüge oder präzise Abstände musst du das Ergebnis bei Bedarf manuell anpassen."
     }
   ],
-  "uiLabels": {
-    "copy": "Kopieren",
-    "copied": "Kopiert",
-    "input": "HTML input",
-    "output": "Klartext",
-    "placeholder": "HTML hier einfügen...",
-    "indent": "Einzug",
-    "removeComments": "Kommentare entfernen",
-    "preview": "Vorschau",
-    "source": "Quelle",
-    "sanitizedHtml": "Bereinigtes HTML",
-    "plainText": "Klartext",
-    "summary": "Zusammenfassung",
-    "total": "Gesamt",
-    "links": "Links",
-    "images": "Bilder",
-    "errors": "Fehler",
-    "warnings": "Warnungen",
-    "valid": "Gültig",
-    "invalid": "Ungültig",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Breite",
-    "height": "Höhe",
-    "empty": "Leer",
-    "outputReady": "Ausgabe bereit",
-    "cleanedHtml": "Bereinigtes HTML",
-    "formattedHtml": "Formatiertes HTML",
-    "minifiedHtml": "Minifiziertes HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extrahierte Bilder",
-    "extractedLinks": "Extrahierte Links",
-    "validationSummary": "Validierungszusammenfassung",
-    "prettyHtml": "Lesbares HTML",
-    "encodedText": "Codierter Text"
-  },
   "seo": {
-    "title": "HTML-zu-Text-Konverter",
-    "description": "Extrahiere sofort Klartext aus HTML-Snippets und vollständigen Dokumenten direkt im Browser.",
+    "title": "HTML zu Text",
+    "description": "Wandle HTML im Browser in lesbaren Text um. Füge Snippets oder ganze Dokumente ein und kopiere das Ergebnis ohne Tags.",
     "keywords": [
       "html zu text",
-      "html in klartext",
-      "html zu text konverter",
+      "html in text",
       "html tags entfernen",
-      "klartext konverter"
+      "html zu klartext",
+      "text extrahieren"
     ]
   }
 }

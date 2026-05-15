@@ -4,42 +4,76 @@
   "slug": "textumkehrer",
   "h1": "Textumkehrer",
   "title": "Textumkehrer",
-  "shortDescription": "Text sofort online umkehren – schnell, einfach und mit praktischen Beispielen.",
-  "overview": "Text sofort online umkehren. Diese Seite liefert eine schnelle Antwort mit einem praktischen Tool und einem einfachen Ergebnisablauf. Sie richtet sich an Nutzer, die eine kostenlose Online-Lösung, schnelle browserbasierte Ergebnisse und praktische Long-Tail-Inhalte für Text-Tools suchen.",
+  "shortDescription": "Text zeichenweise umkehren und dabei Satzzeichen, Leerzeichen und Symbole in neuer Reihenfolge behalten.",
+  "metaTitle": "Textumkehrer",
+  "metaDescription": "Kehrt beliebigen Text zeichenweise um und behält Leerzeichen, Satzzeichen und Symbole im Ergebnis bei.",
+  "intro": "Text einfügen und die Zeichen sofort rückwärts ausgeben lassen.",
+  "overview": "Dieses Tool kehrt Ihren Text exakt zeichenweise um, vom letzten Zeichen bis zum ersten. Buchstaben, Zahlen, Leerzeichen, Satzzeichen und Symbole werden in die umgekehrte Reihenfolge gebracht, sodass das Ergebnis nützlich ist, wenn Sie den Text selbst umdrehen möchten statt ihn umzuschreiben.\n\nEs eignet sich für kurze Phrasen, Namen, Beschriftungen, Codes und Testzeichenfolgen. Wenn Sie sehen möchten, wie eine Nachricht rückwärts aussieht, oder umgekehrten Text für Design, Rätsel oder Formatierungstests brauchen, erscheint das Ergebnis sofort auf der Seite.\n\nDas Tool übersetzt nicht, korrigiert nicht und ordnet Wörter nicht nach Bedeutung neu. Wenn Zeilenumbrüche enthalten sind, bleiben sie Teil des umgekehrten Ergebnisses und verändern die sichtbare Struktur auf vorhersehbare Weise.",
   "howItWorks": [
-    "Geben Sie den benötigten Text in das Formular ein.",
-    "Die Umwandlung, Berechnung oder Transformation erfolgt sofort im Browser.",
-    "Prüfen Sie das Ergebnis und nutzen Sie bei Bedarf verwandte Tools für den nächsten Schritt."
+    "Text eingeben oder einfügen, den Sie umkehren möchten.",
+    "Das Tool dreht die Zeichenfolge vom letzten zum ersten Zeichen um.",
+    "Das Ergebnis kopieren und weiterverwenden."
+  ],
+  "useCases": [
+    {
+      "title": "Rückwärts angezeigte Texte",
+      "description": "Verwandeln Sie einen Satz in umgekehrte Zeichen für Poster, Rätsel oder besondere Layouts."
+    },
+    {
+      "title": "Prüfen von Symbolen und Abständen",
+      "description": "Sehen Sie, wie Satzzeichen, Emojis und zusätzliche Leerzeichen beim Umkehren erscheinen."
+    },
+    {
+      "title": "Layout- und Mockup-Vorschau",
+      "description": "Erstellen Sie umgekehrten Text für Labels, Abzeichen oder visuelle Entwürfe."
+    }
   ],
   "examples": [
     {
-      "title": "Beispiel 1",
-      "input": "utility tools",
-      "output": "sloot ytilitu",
-      "description": "Ein realistisches Beispiel für den Textumkehrer bei einer alltäglichen Suche."
+      "title": "Satzumkehr",
+      "input": "Open the door",
+      "output": "rood eht nepO",
+      "description": "Jedes Zeichen wird umgedreht, während das Leerzeichen in der umgekehrten Reihenfolge bleibt."
     },
     {
-      "title": "Beispiel 2",
-      "input": "utility tools",
-      "output": "sloot ytilitu",
-      "description": "Ein weiteres praktisches Einsatzbeispiel für organischen Long-Tail-Traffic."
+      "title": "Zeichen und Zahlen",
+      "input": "A1! B2?",
+      "output": "?2B !1A",
+      "description": "Zeigt, wie Buchstaben, Zahlen, Leerzeichen und Satzzeichen gemeinsam umgekehrt werden."
+    },
+    {
+      "title": "Beispiel mit Zeilenumbruch",
+      "input": "erste Zeile\nzweite Zeile",
+      "output": "elieZ etiewz\neilieZ etsr e",
+      "description": "Zeigt, dass Zeilenumbrüche im umgekehrten Text erhalten bleiben."
     }
   ],
   "faq": [
     {
-      "question": "Wie genau ist dieses Tool?",
-      "answer": "Das Ergebnis wird direkt aus der Formel oder der browserseitigen Logik dieses Tools berechnet."
+      "question": "Kehrt das Tool Wörter oder Zeichen um?",
+      "answer": "Es kehrt Zeichen um. Bei zwei Wörtern wechseln Buchstaben und Leerzeichen gemeinsam die Position, sodass der Text auf Zeichenebene rückwärts steht."
     },
     {
-      "question": "Kann ich dieses Tool auf dem Handy verwenden?",
-      "answer": "Ja. Die Seite funktioniert auf Desktop- und Mobilgeräten mit einem einfachen Eingabe- und Ergebnislayout."
+      "question": "Was passiert mit Satzzeichen und Zahlen?",
+      "answer": "Sie werden zusammen mit dem restlichen Text umgekehrt. Komma, Bindestrich oder Ziffer behalten ihr Zeichen, landen aber an einer anderen Stelle im Ergebnis."
+    },
+    {
+      "question": "Warum sieht das Ergebnis mit Zeilenumbrüchen anders aus?",
+      "answer": "Zeilenumbrüche werden als Teil des Textes behandelt. Beim vollständigen Umkehren kann die visuelle Reihenfolge der Zeilen anders wirken als im Original."
+    },
+    {
+      "question": "Kann ich nur einen Teil eines Satzes umkehren?",
+      "answer": "Ja. Entfernen Sie die Teile, die unverändert bleiben sollen, oder kehren Sie nur einen ausgewählten Abschnitt separat um."
     }
   ],
   "seo": {
     "title": "Textumkehrer",
-    "description": "Text sofort online umkehren. Kostenloser Textumkehrer mit sofortigen Ergebnissen.",
+    "description": "Kehrt beliebigen Text zeichenweise um und behält Leerzeichen, Satzzeichen und Symbole im Ergebnis bei.",
     "keywords": [
-      "textumkehrer"
+      "textumkehrer",
+      "text umkehren",
+      "rückwärts text",
+      "zeichen umdrehen"
     ]
   }
 }

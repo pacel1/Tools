@@ -4,42 +4,87 @@
   "slug": "case-converter",
   "h1": "Case Converter",
   "title": "Case Converter",
-  "shortDescription": "Convert text to upper case, lower case, title case and sentence case with fast results, simple inputs and practical examples.",
-  "overview": "Convert text to upper case, lower case, title case and sentence case. Use this tool to get a clear result quickly from simple input on the same page. It is useful for everyday checks, comparisons and small tasks when you need a fast online answer.",
+  "shortDescription": "Convert text into uppercase, lowercase, title case, sentence case, and more with clear results for pasted text or typed input.",
+  "metaTitle": "Case Converter Online",
+  "metaDescription": "Change text to uppercase, lowercase, title case, or sentence case with a clean browser-based converter.",
+  "intro": "Paste or type text, then switch it to uppercase, lowercase, title case, or sentence case in one step.",
+  "overview": "This tool rewrites your text into the case style you choose. It is useful when a headline needs standard capitalization, a draft needs consistent formatting, or copied text needs to match a house style.\n\nYou can test short phrases, full sentences, headings, and longer passages. The output updates from the exact characters you enter, so punctuation, spacing, and line breaks stay part of the result unless the selected case rule changes them.\n\nUse it when you need a fast formatting pass before publishing, pasting into a document, or sharing text with a cleaner presentation.",
   "howItWorks": [
-    "Enter the required value or text into the form.",
-    "The conversion, calculation or transformation runs instantly in the browser.",
-    "Review the result and continue with related tools if you need another step."
+    "Enter or paste the text you want to change.",
+    "Choose the target case style from the available options.",
+    "Copy the converted result and use it wherever you need."
+  ],
+  "useCases": [
+    {
+      "title": "Article headings",
+      "description": "Turn draft headlines into title case or sentence case before placing them in a CMS or document."
+    },
+    {
+      "title": "Pasted notes",
+      "description": "Normalize copied text from chats, emails, or notes into a consistent case style."
+    },
+    {
+      "title": "Button and label text",
+      "description": "Format short interface text so labels, menu items, and callouts follow one style."
+    },
+    {
+      "title": "List cleanup",
+      "description": "Convert item names or bullet points into a uniform case for cleaner tables and checklists."
+    }
   ],
   "examples": [
     {
-      "title": "Common use case",
-      "input": "Example article headline",
-      "output": "UPPER / lower / Title / Sentence",
-      "description": "Shows a common use case with a clear input and result."
+      "title": "Product title in all caps",
+      "input": "wireless noise-canceling headphones",
+      "output": "WIRELESS NOISE-CANCELING HEADPHONES",
+      "description": "Useful when a store title or label needs a stronger visual style."
     },
     {
-      "title": "Another quick example",
-      "input": "Example article headline",
-      "output": "UPPER / lower / Title / Sentence",
-      "description": "Useful for quick checks, comparisons or repeat tasks."
+      "title": "Sentence from copied notes",
+      "input": "the meeting starts at 9 am tomorrow.",
+      "output": "The meeting starts at 9 am tomorrow.",
+      "description": "Shows sentence case with the first letter capitalized and the rest kept natural."
+    },
+    {
+      "title": "Blog heading in title case",
+      "input": "how to write better email subject lines",
+      "output": "How To Write Better Email Subject Lines",
+      "description": "Transforms a plain heading into title case for use in a draft or outline."
+    },
+    {
+      "title": "Short label in lowercase",
+      "input": "Customer Support",
+      "output": "customer support",
+      "description": "Helps when a system, field, or design spec requires lowercase text."
     }
   ],
   "faq": [
     {
-      "question": "How accurate is this tool?",
-      "answer": "The result is based on the input you provide and the calculation or transformation shown on the page."
+      "question": "Does this tool change only letters, or does it also touch numbers and symbols?",
+      "answer": "Numbers and symbols are kept as they are. Only the letter casing changes according to the option you choose."
     },
     {
-      "question": "Can I use this tool on mobile?",
-      "answer": "Yes. The page works on desktop and mobile screens with a simple input and result layout."
+      "question": "Will title case capitalize every word the same way?",
+      "answer": "Title case follows the tool's casing rules for words in the text. If you need a strict publication style, review names, abbreviations, and small words after converting."
+    },
+    {
+      "question": "What happens to line breaks and spacing?",
+      "answer": "The text structure is preserved as entered unless the selected case mode requires a different treatment. Extra spaces already in the input may still affect the result."
+    },
+    {
+      "question": "Why did my acronym or brand name change?",
+      "answer": "Case conversion applies the chosen rule to the text, so all-caps brands, acronyms, or special styling may be altered. Edit those terms manually if they must stay exact."
     }
   ],
   "seo": {
-    "title": "Case Converter",
-    "description": "Convert text to upper case, lower case, title case and sentence case. Free online case converter with instant results.",
+    "title": "Case Converter Online",
+    "description": "Change text to uppercase, lowercase, title case, or sentence case with a clean browser-based converter.",
     "keywords": [
-      "case converter"
+      "case converter",
+      "uppercase to lowercase",
+      "title case",
+      "sentence case",
+      "text formatter"
     ]
   }
 }

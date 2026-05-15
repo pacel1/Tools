@@ -4,59 +4,84 @@
   "slug": "convertidor-km-a-millas",
   "h1": "Convertidor de kilómetros a millas",
   "title": "Convertidor de kilómetros a millas",
-  "shortDescription": "Convierte kilómetros a millas al instante con fórmula, ejemplos útiles y resultados rápidos en el navegador.",
-  "metaTitle": "Convertidor de kilómetros a millas | Km a millas online",
-  "metaDescription": "Convierte kilómetros a millas online con fórmula, ejemplos y resultados inmediatos. Útil para viajes, running, mapas y distancias internacionales.",
-  "intro": "Si necesitas pasar de kilómetros a millas, esta herramienta te da una respuesta inmediata. Usa la equivalencia estándar 1 km = 0,621371 millas y está pensada para consultas como km a millas o convertir kilómetros a millas.",
-  "overview": "Este convertidor de kilómetros a millas es útil para viajes, rutas de running, mapas, carretera y cualquier contexto donde una distancia aparece en kilómetros pero necesitas verla en millas. Evita cálculos manuales y obtén una conversión clara en segundos.",
+  "shortDescription": "Pasa kilómetros a millas con la equivalencia estándar y obtén un resultado claro al instante.",
+  "metaTitle": "Convertidor de km a millas",
+  "metaDescription": "Convierte kilómetros a millas con la equivalencia estándar 1 km = 0.621371 millas. Útil para viajes, deporte y distancias.",
+  "intro": "Introduce una distancia en kilómetros y obtén su equivalente en millas con la equivalencia 1 km = 0.621371 millas.",
+  "overview": "Este convertidor transforma valores en kilómetros a millas para que puedas leer la distancia en la unidad que necesitas. Resulta útil cuando una ruta, una carrera, un mapa o un trayecto aparece en kilómetros y quieres verlo en millas sin hacer el cálculo a mano.\n\nLa conversión usa la relación estándar entre kilómetros y millas, por lo que admite decimales, distancias largas y comparaciones precisas. Funciona bien para viajes, entrenamientos y documentos donde necesitas una cifra clara y directamente interpretable.",
   "howItWorks": [
-    "Introduce la distancia en kilómetros.",
-    "La herramienta multiplica el valor por 0,621371 para convertirlo a millas.",
-    "Revisa el resultado y repite el cálculo si necesitas comparar varias distancias."
+    "Escribe la distancia en kilómetros.",
+    "La herramienta multiplica el valor por 0.621371.",
+    "Lee el resultado en millas y compáralo con otra distancia si lo necesitas."
   ],
   "useCases": [
-    "Convertir distancias para viajes por carretera.",
-    "Interpretar rutas de running o ciclismo.",
-    "Comparar mapas y señales internacionales.",
-    "Pasar medidas de kilómetros a millas en hojas de cálculo o informes."
+    {
+      "title": "Planificación de rutas",
+      "description": "Convierte tramos de carretera o trayectos largos mostrados en kilómetros a millas."
+    },
+    {
+      "title": "Entrenamientos de running y ciclismo",
+      "description": "Pasa tus distancias de entrenamiento a millas para diarios deportivos y planes de ritmo."
+    },
+    {
+      "title": "Lectura de mapas y señales",
+      "description": "Entiende distancias de mapas, paneles de ruta y señales fronterizas que usan kilómetros."
+    },
+    {
+      "title": "Informes y tablas",
+      "description": "Convierte cifras de kilómetros a millas para resúmenes, documentos o hojas de cálculo."
+    }
   ],
   "examples": [
     {
-      "title": "5 km a millas",
-      "input": "5 kilómetros",
-      "output": "3,1069 millas",
-      "description": "Útil para carreras cortas, caminatas y trayectos urbanos."
+      "title": "Trayecto urbano corto",
+      "input": "5 km",
+      "output": "3.1069 millas",
+      "description": "Conversión de una distancia corta para referencias cotidianas."
     },
     {
-      "title": "42,195 km a millas",
-      "input": "42,195 kilómetros",
-      "output": "26,2188 millas",
-      "description": "Práctico para entender la distancia de un maratón en sistema imperial."
+      "title": "Media maratón",
+      "input": "21.1 km",
+      "output": "13.1094 millas",
+      "description": "Útil para comparar la distancia de una carrera con el sistema imperial."
+    },
+    {
+      "title": "Viaje largo por carretera",
+      "input": "860 km",
+      "output": "534.2926 millas",
+      "description": "Muestra cómo se comporta la herramienta con distancias mayores."
     }
   ],
   "faq": [
     {
-      "question": "¿Qué fórmula usa este convertidor de kilómetros a millas?",
-      "answer": "Usa la equivalencia estándar 1 kilómetro = 0,621371 millas."
+      "question": "¿Qué fórmula usa este convertidor?",
+      "answer": "Usa la equivalencia estándar: 1 kilómetro = 0.621371 millas."
     },
     {
-      "question": "¿Sirve para viajes y running?",
-      "answer": "Sí. Es útil para trayectos, rutas deportivas, mapas, turismo y distancias internacionales."
+      "question": "¿Puedo escribir decimales?",
+      "answer": "Sí. Valores como 2.5 km o 42.195 km se convierten sin problema."
     },
     {
-      "question": "¿Puedo usar esta herramienta en el móvil?",
-      "answer": "Sí. La página funciona en escritorio y en móviles con un diseño sencillo de entrada y resultado."
+      "question": "¿Por qué el resultado tiene tantos decimales?",
+      "answer": "La herramienta muestra el valor calculado con precisión. Luego puedes redondearlo según tu necesidad."
+    },
+    {
+      "question": "¿Cuál es un error frecuente al convertir km a millas?",
+      "answer": "Un fallo habitual es multiplicar por 1.6 en lugar de usar 0.621371. Eso invierte la conversión."
+    },
+    {
+      "question": "¿También convierte millas a kilómetros?",
+      "answer": "No. Esta página solo convierte de kilómetros a millas. Para la dirección contraria necesitas el convertidor inverso."
     }
   ],
   "seo": {
-    "title": "Convertidor de kilómetros a millas | Km a millas online",
-    "description": "Convierte kilómetros a millas online con fórmula, ejemplos y resultados inmediatos. Útil para viajes, running, mapas y distancias internacionales.",
+    "title": "Convertidor de km a millas",
+    "description": "Convierte kilómetros a millas con la equivalencia estándar 1 km = 0.621371 millas. Útil para viajes, deporte y distancias.",
     "keywords": [
       "convertidor km a millas",
-      "convertir km a millas",
-      "kilómetros a millas",
       "km a millas",
-      "cuántas millas son"
+      "kilómetros a millas",
+      "convertir kilómetros a millas"
     ]
   }
 }

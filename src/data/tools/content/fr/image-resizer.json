@@ -4,160 +4,93 @@
   "slug": "redimensionneur-d-images",
   "h1": "Redimensionneur d’images",
   "title": "Redimensionneur d’images",
-  "shortDescription": "Redimensionnez des images en ligne dans votre navigateur avec des dimensions personnalisées et le contrôle du ratio.",
-  "metaTitle": "Redimensionneur d’images en ligne | Redimensionner dans le navigateur",
-  "metaDescription": "Redimensionnez des images en ligne gratuitement avec dimensions personnalisées, verrouillage du ratio, aperçu et téléchargement instantané.",
-  "intro": "Redimensionnez des images en ligne sans installer de logiciel. Importez une image, définissez la largeur et la hauteur, conservez le ratio si nécessaire, vérifiez l’aperçu et téléchargez le fichier final immédiatement.",
-  "overview": "Ce redimensionneur d’images dans le navigateur permet d’ajuster rapidement et précisément la largeur et la hauteur. Il est idéal pour préparer des photos pour les sites web, les réseaux sociaux, les e-mails et les documents, tout en restant simple et privé côté client.",
+  "shortDescription": "Ajustez des images avec des dimensions précises pour photos, captures, logos et bannières.",
+  "metaTitle": "Redimensionneur d’images",
+  "metaDescription": "Redimensionnez des images à une largeur et une hauteur exactes, gardez le ratio verrouillé, vérifiez l’aperçu et téléchargez le fichier final.",
+  "intro": "Indiquez la largeur et la hauteur exactes dont vous avez besoin, ou verrouillez le ratio pour éviter toute déformation.",
+  "overview": "Cet outil est utile lorsqu’une image doit entrer dans un cadre, une fiche, un document, une diapositive, un en-tête d’e-mail ou une maquette précise. Vous pouvez saisir les dimensions finales directement ou conserver le ratio d’origine et redimensionner l’image sans en changer la forme.\n\nL’aperçu vous permet de vérifier avant l’enregistrement si le texte reste lisible, si les visages restent bien placés et si les bords sont toujours propres. Il convient donc aux photos, captures d’écran, bannières, vignettes, logos et visuels produits.\n\nSi vous préparez des fichiers pour un dépôt ou pour les intégrer à un design, redimensionner en amont évite des retouches plus tard et vous donne un fichier prêt à être utilisé immédiatement.",
   "howItWorks": [
-    "Importez un fichier image depuis votre appareil.",
+    "Importez une image depuis votre appareil.",
     "Saisissez la largeur et la hauteur souhaitées.",
-    "Verrouillez le ratio pour éviter toute déformation.",
-    "Prévisualisez l’image redimensionnée dans le navigateur.",
-    "Téléchargez le fichier une fois le résultat satisfaisant."
+    "Verrouillez le ratio pour éviter les déformations.",
+    "Vérifiez l’aperçu avant de télécharger.",
+    "Enregistrez l’image redimensionnée sur votre appareil."
   ],
   "useCases": [
-    "Redimensionner des photos pour des sites web et des blogs.",
-    "Réduire des images pour les envoyer par e-mail.",
-    "Préparer des visuels pour les réseaux sociaux.",
-    "Adapter des images produits pour le commerce en ligne.",
-    "Créer des images plus légères pour les documents et présentations."
+    {
+      "title": "Adapter une photo produit à une fiche",
+      "description": "Redimensionnez une image de catalogue pour qu’elle corresponde exactement à l’emplacement prévu dans une boutique ou une place de marché."
+    },
+    {
+      "title": "Mettre un logo au format d’un en-tête",
+      "description": "Réduisez un logo ou une signature graphique à une largeur fixe pour des rapports, modèles ou signatures d’e-mail."
+    },
+    {
+      "title": "Préparer une capture pour une présentation",
+      "description": "Réduisez une capture longue ou large pour qu’elle s’intègre proprement dans une diapositive ou un rapport interne."
+    },
+    {
+      "title": "Passer un portrait en carré",
+      "description": "Transformez une photo verticale en carré pour un profil, une équipe ou une carte auteur."
+    },
+    {
+      "title": "Ajuster une bannière à sa colonne",
+      "description": "Réglez une image principale ou une miniature aux dimensions du bloc final pour l’insérer sans autre retouche."
+    }
   ],
   "examples": [
     {
-      "title": "Redimensionner une photo de profil",
-      "input": "1200 × 1200 px",
-      "output": "400 × 400 px",
-      "description": "Réduisez une image carrée pour un avatar ou un profil."
+      "title": "Avatar carré à partir d’un portrait",
+      "input": "Original : 1600 × 2000 px",
+      "output": "Redimensionné : 640 × 640 px",
+      "description": "Après recadrage si besoin, réduisez la zone utile pour obtenir une image de profil nette."
     },
     {
-      "title": "Préparer une bannière web",
-      "input": "2400 × 1200 px",
-      "output": "1200 × 600 px",
-      "description": "Créez une version plus légère pour un chargement plus rapide."
+      "title": "Bannière d’e-mail",
+      "input": "Original : 2400 × 900 px",
+      "output": "Redimensionné : 1200 × 450 px",
+      "description": "Réduisez une bannière large pour la placer plus facilement dans une newsletter."
+    },
+    {
+      "title": "Visuel produit pour catalogue",
+      "input": "Original : 3000 × 3000 px",
+      "output": "Redimensionné : 1500 × 1500 px",
+      "description": "Conservez le cadrage du produit tout en ramenant le fichier à une taille plus pratique."
     }
   ],
   "faq": [
     {
-      "question": "Le redimensionnement fonctionne-t-il dans le navigateur ?",
-      "answer": "Oui. Le traitement est effectué côté client, directement dans votre navigateur, pour un flux rapide et privé."
+      "question": "Puis-je redimensionner sans déformer l’image ?",
+      "answer": "Oui. Verrouillez le ratio avant de modifier les dimensions. L’image garde ainsi sa forme lors du redimensionnement."
     },
     {
-      "question": "Puis-je conserver le ratio d’origine ?",
-      "answer": "Oui. Utilisez le verrouillage du ratio pour redimensionner sans étirer l’image."
+      "question": "Que se passe-t-il si je saisis une seule dimension ?",
+      "answer": "Si le ratio est verrouillé, l’outil calcule automatiquement la dimension manquante. Sinon, il vaut mieux renseigner largeur et hauteur."
     },
     {
-      "question": "La qualité de l’image va-t-elle diminuer ?",
-      "answer": "L’image est redimensionnée en préservant la qualité autant que possible, selon le fichier source et la taille de sortie."
+      "question": "Le fichier téléchargé garde-t-il le même format ?",
+      "answer": "En général oui, tant que le format source peut être traité correctement. Vérifiez l’extension du fichier téléchargé avant de l’utiliser."
     },
     {
-      "question": "Dois-je installer quelque chose ?",
-      "answer": "Non. L’outil fonctionne en ligne et ne nécessite aucune installation."
+      "question": "Pourquoi une image réduite paraît-elle parfois moins nette ?",
+      "answer": "Lors d’une réduction, des pixels sont supprimés et certains détails fins disparaissent. Le mieux est de partir du meilleur fichier source possible."
+    },
+    {
+      "question": "Quelle est l’erreur la plus fréquente ?",
+      "answer": "Saisir largeur et hauteur sans tenir compte du ratio. Cela provoque souvent des photos étirées ou des logos déformés."
     }
   ],
-  "uiLabels": {
-    "copy": "Copier",
-    "copied": "Copié",
-    "input": "Entrée",
-    "output": "Sortie",
-    "placeholder": "Choisissez un fichier image ou collez des données d’image",
-    "indent": "Retrait",
-    "removeComments": "Supprimer les commentaires",
-    "preview": "Aperçu",
-    "source": "Source",
-    "sanitizedHtml": "HTML nettoyé",
-    "plainText": "Texte brut",
-    "summary": "Résumé",
-    "total": "Total",
-    "links": "Liens",
-    "images": "Images",
-    "errors": "Erreurs",
-    "warnings": "Avertissements",
-    "valid": "Valide",
-    "invalid": "Non valide",
-    "href": "Href",
-    "text": "Texte",
-    "rel": "Rel",
-    "target": "Cible",
-    "alt": "Alt",
-    "width": "Largeur",
-    "height": "Hauteur",
-    "empty": "Vide",
-    "outputReady": "Résultat prêt",
-    "cleanedHtml": "HTML nettoyé",
-    "formattedHtml": "HTML formaté",
-    "minifiedHtml": "HTML minifié",
-    "markdown": "Markdown",
-    "extractedImages": "Images extraites",
-    "extractedLinks": "Liens extraits",
-    "validationSummary": "Résumé de validation",
-    "prettyHtml": "HTML lisible",
-    "encodedText": "Texte encodé",
-    "file": "Fichier",
-    "size": "Taille",
-    "format": "Format",
-    "quality": "Qualité",
-    "colorOne": "Couleur 1",
-    "colorTwo": "Couleur 2",
-    "background": "Arrière-plan",
-    "foreground": "Premier plan",
-    "angle": "Angle",
-    "margin": "Marge",
-    "level": "Niveau",
-    "gradientType": "Type de dégradé",
-    "linear": "Linéaire",
-    "radial": "Radial",
-    "blur": "Flou",
-    "spread": "Extension",
-    "offsetX": "Décalage X",
-    "offsetY": "Décalage Y",
-    "opacity": "Opacité",
-    "inset": "Interne",
-    "cssCode": "Code CSS",
-    "snippet": "Extrait",
-    "download": "Télécharger",
-    "downloadSvg": "Télécharger SVG",
-    "downloadPng": "Télécharger PNG",
-    "downloadAll": "Tout télécharger",
-    "upload": "Importer",
-    "title": "Titre",
-    "description": "Description",
-    "canonicalUrl": "URL canonique",
-    "siteName": "Nom du site",
-    "ogImage": "Image OG",
-    "clear": "Effacer",
-    "generatedQr": "Apercu du code QR",
-    "placeholderImage": "Apercu de l image",
-    "faviconSet": "Jeu de favicon",
-    "keepAspectRatio": "Conserver le ratio",
-    "cropX": "Recadrage X",
-    "cropY": "Recadrage Y",
-    "cropWidth": "Largeur du recadrage",
-    "cropHeight": "Hauteur du recadrage",
-    "originalSize": "Taille d’origine",
-    "outputSize": "Taille de sortie",
-    "savedSize": "Taille économisée",
-    "result": "Résultat",
-    "base64": "Base64",
-    "mimeType": "Type MIME",
-    "resizedImage": "Image redimensionnée",
-    "compressedImage": "Image compressée",
-    "croppedImage": "Image recadrée",
-    "convertedImage": "Image convertie",
-    "decodedImage": "Image décodée",
-    "imagePreview": "Aperçu de l’image"
-  },
   "seo": {
-    "title": "Redimensionneur d’images en ligne | Redimensionner dans le navigateur",
-    "description": "Redimensionnez des images en ligne gratuitement avec dimensions personnalisées, verrouillage du ratio, aperçu et téléchargement instantané.",
+    "title": "Redimensionneur d’images",
+    "description": "Redimensionnez des images à une largeur et une hauteur exactes, gardez le ratio verrouillé, vérifiez l’aperçu et téléchargez le fichier final.",
     "keywords": [
       "redimensionner image",
       "redimensionneur d’images",
       "changer taille image",
-      "modifier taille photo",
-      "outil image en ligne",
       "ratio image",
-      "resize image"
+      "taille photo",
+      "outil image",
+      "dimensions image"
     ]
   }
 }

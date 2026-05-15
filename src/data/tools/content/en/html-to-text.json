@@ -5,103 +5,81 @@
   "h1": "HTML to Text",
   "title": "HTML to Text",
   "shortDescription": "Extract readable plain text from HTML snippets and full documents.",
-  "metaTitle": "HTML to Text Converter | Extract Plain Text from HTML",
-  "metaDescription": "Convert HTML to plain text instantly in your browser. Extract readable text from snippets or full pages safely, with no external API.",
-  "intro": "Convert HTML into clean, readable plain text directly in your browser. Paste a snippet or a full document, and this tool removes tags while keeping the content easy to copy, read, and reuse.",
-  "overview": "This HTML to Text tool is a fast client-side converter for developers, writers, and content editors. It strips markup safely, reduces noise, and outputs plain text that is easier to search, index, quote, or repurpose. Because everything runs locally, it avoids external APIs and keeps your HTML handling private and XSS-aware.",
+  "metaTitle": "HTML to Text Converter",
+  "metaDescription": "Turn HTML into readable plain text in your browser. Paste snippets or full documents and copy the extracted text in seconds.",
+  "intro": "Paste HTML and get clean plain text back instantly in the browser.",
+  "overview": "Use this tool when you need the words from HTML without the tags. It strips markup and leaves behind readable text you can copy into notes, tickets, editors, or internal tools.\n\nIt handles short snippets and larger documents, so you can check how content will read once formatting is gone. The result is plain text only, which makes it easier to reuse in downstream workflows without carrying over HTML structure.\n\nBecause the conversion runs locally, your input stays in the browser while the text is processed.",
   "howItWorks": [
     "Paste HTML into the input field.",
-    "The tool parses the markup in the browser.",
-    "It removes HTML tags and returns readable plain text.",
-    "Copy the cleaned text or use it in your workflow."
+    "The browser parses the markup.",
+    "Tags are removed and text content is preserved.",
+    "Copy the plain-text result or continue working with it."
   ],
   "useCases": [
-    "Extract text from website HTML for notes or documentation.",
-    "Convert snippets to plain text for emails, tickets, or chat.",
-    "Prepare content for indexing, search, or analysis.",
-    "Strip formatting from copied HTML before pasting into another app.",
-    "Preview the readable text version of a page or component."
+    {
+      "title": "Clean pasted CMS content",
+      "description": "Remove embedded formatting from copied article HTML before placing it into an editor, brief, or issue tracker."
+    },
+    {
+      "title": "Read template copy without markup",
+      "description": "Inspect email, notification, or landing-page content as plain text to verify wording and line breaks."
+    },
+    {
+      "title": "Prepare content for text processing",
+      "description": "Feed extracted wording into scripts, search tools, or review workflows that need text instead of markup."
+    },
+    {
+      "title": "Review page text from a saved export",
+      "description": "Convert archived HTML exports into readable text for documentation, audits, or reference notes."
+    }
   ],
   "examples": [
     {
-      "title": "Simple paragraph",
-      "input": "<p>Hello <strong>world</strong>!</p>",
-      "output": "Hello world!",
-      "description": "Tags are removed and the text remains readable."
+      "title": "Paragraph with emphasis",
+      "input": "<p>Release <strong>notes</strong> are ready.</p>",
+      "output": "Release notes are ready.",
+      "description": "Inline tags disappear and the sentence stays intact."
     },
     {
-      "title": "Links and lists",
-      "input": "<div><a href=\"/docs\">Docs</a><ul><li>One</li><li>Two</li></ul></div>",
-      "output": "Docs\nOne\nTwo",
-      "description": "Text content is preserved in a clean plain-text layout."
+      "title": "Nested content with a link",
+      "input": "<article><h2>Status</h2><p>Build <a href=\"/builds/18\">#18</a> passed.</p></article>",
+      "output": "Status\nBuild #18 passed.",
+      "description": "Headings and linked text are preserved as readable lines."
+    },
+    {
+      "title": "List and line break",
+      "input": "<div>Tasks:<br><ul><li>Review copy</li><li>Send to client</li></ul></div>",
+      "output": "Tasks:\nReview copy\nSend to client",
+      "description": "Line breaks and list items become separate text lines."
     }
   ],
   "faq": [
     {
-      "question": "Does this tool keep HTML tags?",
-      "answer": "No. It removes tags and outputs plain text only."
+      "question": "Does this tool keep links or image alt text?",
+      "answer": "It keeps the visible text inside elements, but it does not preserve HTML attributes as structured output."
     },
     {
-      "question": "Is the conversion done in the browser?",
-      "answer": "Yes. The tool uses client-side logic and does not call external APIs."
+      "question": "What happens to scripts, styles, and comments?",
+      "answer": "They are not included in the plain-text result, so the output focuses on visible content."
     },
     {
-      "question": "Can I convert full HTML documents?",
-      "answer": "Yes. It works with short snippets and complete documents alike."
+      "question": "Why does spacing sometimes look different from the source?",
+      "answer": "HTML layout and text layout are not the same. The tool converts structure into readable lines, but exact visual spacing is not preserved."
     },
     {
-      "question": "Is my HTML sent to a server?",
-      "answer": "No. The content is processed locally in your browser."
+      "question": "Can I rely on the output for legal or technical formatting?",
+      "answer": "Use it for readable extraction, not for exact rendering. If spacing, tables, or indentation matter, review the result before reuse."
     }
   ],
-  "uiLabels": {
-    "copy": "Copy",
-    "copied": "Copied",
-    "input": "HTML input",
-    "output": "Plain text",
-    "placeholder": "Paste HTML here...",
-    "indent": "Indent",
-    "removeComments": "Remove comments",
-    "preview": "Preview",
-    "source": "Source",
-    "sanitizedHtml": "Sanitized HTML",
-    "plainText": "Plain text",
-    "summary": "Summary",
-    "total": "Total",
-    "links": "Links",
-    "images": "Images",
-    "errors": "Errors",
-    "warnings": "Warnings",
-    "valid": "Valid",
-    "invalid": "Invalid",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Width",
-    "height": "Height",
-    "empty": "Empty",
-    "outputReady": "Output ready",
-    "cleanedHtml": "Cleaned HTML",
-    "formattedHtml": "Formatted HTML",
-    "minifiedHtml": "Minified HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extracted images",
-    "extractedLinks": "Extracted links",
-    "validationSummary": "Validation summary",
-    "prettyHtml": "Pretty HTML",
-    "encodedText": "Encoded text"
-  },
   "seo": {
     "title": "HTML to Text Converter",
-    "description": "Extract plain text from HTML snippets and full documents instantly in your browser.",
+    "description": "Turn HTML into readable plain text in your browser. Paste snippets or full documents and copy the extracted text in seconds.",
     "keywords": [
       "html to text",
-      "html to plain text",
       "convert html to text",
       "strip html tags",
-      "plain text converter"
+      "html to plain text",
+      "plain text extractor"
     ]
   }
 }

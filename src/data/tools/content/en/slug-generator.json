@@ -4,42 +4,80 @@
   "slug": "slug-generator",
   "h1": "Slug Generator",
   "title": "Slug Generator",
-  "shortDescription": "Convert text into an SEO friendly URL slug with fast results, simple inputs and practical examples.",
-  "overview": "Convert text into an SEO friendly URL slug. Use this tool to get a clear result quickly from simple input on the same page. It is useful for everyday checks, comparisons and small tasks when you need a fast online answer.",
+  "shortDescription": "Turn headings and phrases into clean URL slugs with lowercase text, hyphens, and no unwanted spaces.",
+  "metaTitle": "Slug Generator for Clean URLs",
+  "metaDescription": "Turn headings and phrases into clean URL slugs with lowercase text, hyphens, and no unwanted spaces.",
+  "intro": "Convert text into a clean, lowercase URL slug with hyphens instead of spaces.",
+  "overview": "Use this tool to turn titles, headings, and short phrases into web-ready slugs that are easy to read and easy to place in a URL. It removes spacing issues and helps keep the result consistent when you want a neat path for a page, post, or category.\n\nThe output is useful when you want to standardize names from different sources. Paste the text, review the transformed slug, and compare a few versions if you need a shorter or more readable path before publishing.\n\nIt is also helpful for content planning and site cleanup, where the same naming rules need to be applied across many pages.",
   "howItWorks": [
-    "Enter the required value or text into the form.",
-    "The conversion, calculation or transformation runs instantly in the browser.",
-    "Review the result and continue with related tools if you need another step."
+    "Paste or type the title, phrase, or sentence you want to transform.",
+    "The tool converts the text into a slug format with lowercase characters and hyphens.",
+    "Copy the result and adjust it if you want a shorter or more specific path."
+  ],
+  "useCases": [
+    {
+      "title": "Article title to permalink",
+      "description": "Convert a blog headline such as “How to Prepare a Product Launch” into a structured path like how-to-prepare-a-product-launch."
+    },
+    {
+      "title": "Category page naming",
+      "description": "Turn a category label such as “Winter Running Shoes” into a consistent URL segment like winter-running-shoes."
+    },
+    {
+      "title": "Product page URLs",
+      "description": "Create readable product paths from names like “Stainless Steel Water Bottle 750 ml” for catalog pages."
+    },
+    {
+      "title": "Event and landing page paths",
+      "description": "Transform campaign or event titles such as “Spring Webinar for Designers” into a neat slug for a landing page."
+    }
   ],
   "examples": [
     {
-      "title": "Common use case",
-      "input": "Best SEO Tool Page Title",
-      "output": "best-seo-tool-page-title",
-      "description": "Shows a common use case with a clear input and result."
+      "title": "Blog post title",
+      "input": "How to Start a Small Garden",
+      "output": "how-to-start-a-small-garden",
+      "description": "A title with spaces becomes a lowercase slug with hyphens between each word."
     },
     {
-      "title": "Another quick example",
-      "input": "Best SEO Tool Page Title",
-      "output": "best-seo-tool-page-title",
-      "description": "Useful for quick checks, comparisons or repeat tasks."
+      "title": "Product name with numbers",
+      "input": "Ultra HD Monitor 27 Inch",
+      "output": "ultra-hd-monitor-27-inch",
+      "description": "Numbers stay in place and the words are separated into a readable URL segment."
+    },
+    {
+      "title": "Mixed punctuation",
+      "input": "Fresh, Fast & Easy Meals!",
+      "output": "fresh-fast-easy-meals",
+      "description": "Commas, symbols, and punctuation are removed so the result stays clean."
     }
   ],
   "faq": [
     {
-      "question": "How accurate is this tool?",
-      "answer": "The result is based on the input you provide and the calculation or transformation shown on the page."
+      "question": "What happens to capital letters and punctuation?",
+      "answer": "Capital letters are converted to lowercase, and punctuation such as commas, exclamation marks, and ampersands is removed from the final slug."
     },
     {
-      "question": "Can I use this tool on mobile?",
-      "answer": "Yes. The page works on desktop and mobile screens with a simple input and result layout."
+      "question": "Will accents and special characters stay in the slug?",
+      "answer": "Characters with accents may be normalized depending on the text rules used by the tool. If a letter has to be simplified, the output will show the standard URL-safe form."
+    },
+    {
+      "question": "Why does my result have fewer words than my original text?",
+      "answer": "Short connecting words, symbols, or special characters may be removed to keep the slug clean. If you need every word preserved, shorten the source text carefully before converting it."
+    },
+    {
+      "question": "Can I use the output exactly as it is in a URL?",
+      "answer": "Usually yes, but it is still a good idea to check whether your site has extra rules for dates, folders, or language-specific paths before publishing."
     }
   ],
   "seo": {
-    "title": "Slug Generator",
-    "description": "Convert text into an SEO friendly URL slug. Free online slug generator with instant results.",
+    "title": "Slug Generator for Clean URLs",
+    "description": "Turn headings and phrases into clean URL slugs with lowercase text, hyphens, and no unwanted spaces.",
     "keywords": [
-      "slug generator"
+      "slug generator",
+      "URL slug",
+      "permalink generator",
+      "text to slug"
     ]
   }
 }

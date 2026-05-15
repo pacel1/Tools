@@ -4,105 +4,87 @@
   "slug": "html-pretty-print",
   "h1": "HTML Pretty Print",
   "title": "HTML Pretty Print",
-  "shortDescription": "Formatez le HTML avec un espacement stable pour les revues, audits et débogages.",
-  "metaTitle": "HTML Pretty Print | Formater du HTML lisible",
-  "metaDescription": "Formatez le HTML avec un espacement stable pour les revues, audits et débogages. Nettoyez le balisage dans votre navigateur avec un formateur HTML rapide côté client.",
-  "intro": "Transformez un balisage désordonné en HTML lisible avec une indentation et un espacement cohérents. Ce formateur HTML fonctionne dans le navigateur et aide à relire le code, comparer les changements et déboguer sans envoi vers un serveur.",
-  "overview": "Le formatage HTML convertit un balisage compact ou illisible en HTML propre et indenté, plus facile à examiner. C’est utile pour vérifier des éléments imbriqués, contrôler les attributs et préparer du code pour des audits ou des transmissions. Le traitement s’effectue dans le navigateur pour un flux rapide et privé.",
+  "shortDescription": "Transformez un HTML désordonné en balisage propre et indenté pour la relecture et le débogage.",
+  "metaTitle": "HTML Pretty Print pour HTML lisible",
+  "metaDescription": "Transformez un HTML désordonné en balisage propre et indenté pour la relecture et le débogage dans votre navigateur.",
+  "intro": "Collez un HTML minifié ou désordonné et obtenez immédiatement une version propre, indentée et facile à lire.",
+  "overview": "HTML Pretty Print remet en forme un balisage compact ou difficile à suivre pour le rendre clair et structuré. Cela facilite l’analyse des imbrications, la détection des balises mal fermées et la vérification des attributs sans devoir décoder une seule ligne compacte.\n\nC’est très utile pour des extraits générés par un CMS, des templates, du code minifié ou un fragment que vous devez transmettre à quelqu’un d’autre. Une structure régulière simplifie aussi les revues de code, les corrections et la comparaison entre plusieurs versions.",
   "howItWorks": [
-    "Collez votre HTML dans le champ de saisie.",
-    "Choisissez des options de mise en forme comme l’indentation ou la gestion des commentaires, si elles sont disponibles.",
-    "Générez instantanément le HTML formaté dans votre navigateur.",
-    "Copiez le résultat pour les revues, le débogage ou la documentation."
+    "Collez votre HTML dans la zone de saisie.",
+    "Ajustez le retrait si vous voulez un style de sortie particulier.",
+    "Lancez le formatage pour reconstruire le balisage.",
+    "Copiez le résultat pour la relecture, la correction ou la documentation."
   ],
   "useCases": [
-    "Relire la structure HTML avant mise en production.",
-    "Déboguer un balisage imbriqué ou minifié.",
-    "Préparer des extraits de code pour les revues de code et les audits.",
-    "Rendre le HTML copié plus lisible dans la documentation ou les tickets."
+    {
+      "title": "Relire des templates générés",
+      "description": "Mettre en forme du HTML produit par un CMS ou un système pour l’examiner bloc par bloc."
+    },
+    {
+      "title": "Déboguer des imbrications complexes",
+      "description": "Rendre lisibles les couches de conteneurs et de composants pour repérer plus vite les erreurs."
+    },
+    {
+      "title": "Préparer un extrait pour une revue",
+      "description": "Nettoyer un fragment avant de le partager afin que la structure soit immédiatement visible."
+    },
+    {
+      "title": "Développer du HTML minifié",
+      "description": "Réorganiser un balisage compact pour comparer les versions et corriger les anomalies."
+    }
   ],
   "examples": [
     {
-      "title": "Balisage compact",
+      "title": "Bloc de mise en page compact",
       "input": "<div><span>Hi</span><a href='/docs'>Docs</a></div>",
       "output": "<div>\n  <span>Hi</span>\n  <a href=\"/docs\">Docs</a>\n</div>",
-      "description": "Transforme un HTML compact en bloc lisible."
+      "description": "Transforme un extrait en une structure lisible."
     },
     {
-      "title": "Contenu imbriqué",
-      "input": "<ul><li>One</li><li><strong>Two</strong></li></ul>",
-      "output": "<ul>\n  <li>One</li>\n  <li><strong>Two</strong></li>\n</ul>",
-      "description": "Simplifie l’inspection des listes imbriquées."
+      "title": "Liste imbriquée",
+      "input": "<ul><li>Alpha</li><li><strong>Beta</strong><ul><li>Beta 1</li></ul></li></ul>",
+      "output": "<ul>\n  <li>Alpha</li>\n  <li>\n    <strong>Beta</strong>\n    <ul>\n      <li>Beta 1</li>\n    </ul>\n  </li>\n</ul>",
+      "description": "Aide à vérifier des listes à plusieurs niveaux."
+    },
+    {
+      "title": "Article avec liens",
+      "input": "<article><h2>Documentation</h2><p>Lisez le <a href='/guide'>guide</a> et la <a href='/api'>référence API</a>.</p></article>",
+      "output": "<article>\n  <h2>Documentation</h2>\n  <p>\n    Lisez le <a href=\"/guide\">guide</a> et la <a href=\"/api\">référence API</a>.\n  </p>\n</article>",
+      "description": "Conserve la lisibilité des liens dans un paragraphe."
     }
   ],
   "faq": [
     {
-      "question": "Ce formateur HTML est-il sûr à utiliser ?",
-      "answer": "Oui. Il est conçu pour un usage côté client et doit traiter le HTML de manière sûre, avec une prise en compte des risques XSS."
+      "question": "Le formatage modifie-t-il les balises ou les attributs ?",
+      "answer": "Non. L’outil réorganise la présentation du balisage, mais conserve le sens du HTML. Les balises, attributs et valeurs restent en place, hors normalisation des espaces."
     },
     {
-      "question": "Le formatage modifie-t-il le contenu ?",
-      "answer": "L’outil se concentre sur les espaces et l’indentation. Il doit préserver le sens de votre HTML tout en améliorant sa lisibilité."
+      "question": "Que se passe-t-il si le HTML est déjà bien présenté ?",
+      "answer": "La sortie reste généralement très proche de l’entrée. Seules de petites corrections d’espacement ou d’indentation peuvent apparaître."
     },
     {
-      "question": "Puis-je l’utiliser sur du HTML minifié ?",
-      "answer": "Oui. Il est idéal pour développer un balisage compact ou minifié avant une revue ou un débogage."
+      "question": "Peut-il traiter du HTML minifié avec beaucoup d’attributs ?",
+      "answer": "Oui. Il est conçu pour développer un balisage compact et rendre chaque attribut plus facile à contrôler."
     },
     {
-      "question": "Fonctionne-t-il uniquement dans le navigateur ?",
-      "answer": "Oui. Le flux est entièrement côté client et ne nécessite aucune API externe."
+      "question": "Pourquoi certaines lignes inline semblent-elles bouger ?",
+      "answer": "Le formateur peut déplacer des retours à la ligne pour rendre le contenu plus lisible. La structure logique du HTML doit rester la même."
+    },
+    {
+      "question": "Supprimer les commentaires change-t-il le rendu ?",
+      "answer": "Les commentaires n’influencent pas l’affichage, mais ils peuvent être utiles dans des templates ou de la documentation. Supprimez-les seulement si vous êtes certain qu’ils ne servent pas."
     }
   ],
-  "uiLabels": {
-    "copy": "Copier",
-    "copied": "Copié",
-    "input": "Entrée",
-    "output": "Sortie",
-    "placeholder": "Collez le HTML ici",
-    "indent": "Retrait",
-    "removeComments": "Supprimer les commentaires",
-    "preview": "Aperçu",
-    "source": "Source",
-    "sanitizedHtml": "HTML assaini",
-    "plainText": "Texte brut",
-    "summary": "Résumé",
-    "total": "Total",
-    "links": "Liens",
-    "images": "Images",
-    "errors": "Erreurs",
-    "warnings": "Avertissements",
-    "valid": "Valide",
-    "invalid": "Invalide",
-    "href": "Href",
-    "text": "Texte",
-    "rel": "Rel",
-    "target": "Cible",
-    "alt": "Alt",
-    "width": "Largeur",
-    "height": "Hauteur",
-    "empty": "Vide",
-    "outputReady": "Sortie prête",
-    "cleanedHtml": "HTML nettoyé",
-    "formattedHtml": "HTML formaté",
-    "minifiedHtml": "HTML minifié",
-    "markdown": "Markdown",
-    "extractedImages": "Images extraites",
-    "extractedLinks": "Liens extraits",
-    "validationSummary": "Résumé de validation",
-    "prettyHtml": "HTML lisible",
-    "encodedText": "Texte encodé"
-  },
   "seo": {
-    "title": "HTML Pretty Print | Formater du HTML lisible",
-    "description": "Formatez le HTML avec un espacement stable pour les revues, audits et débogages. Nettoyez le balisage dans votre navigateur avec un formateur HTML rapide côté client.",
+    "title": "HTML Pretty Print pour HTML lisible",
+    "description": "Transformez un HTML désordonné en balisage propre et indenté pour la relecture et le débogage dans votre navigateur.",
     "keywords": [
-      "formatage html",
-      "formater html",
-      "html formatter",
+      "formateur html",
       "pretty print html",
+      "html lisible",
       "indentation html",
-      "outil html en ligne",
-      "html lisible"
+      "formater html",
+      "html en ligne"
     ]
   }
 }

@@ -4,183 +4,89 @@
   "slug": "putzrechner",
   "h1": "Putzrechner",
   "title": "Putzrechner",
-  "shortDescription": "Berechne, wie viel Putz du für Fassaden oder Innenwände bei gegebener Schichtdicke brauchst.",
-  "metaTitle": "Putzrechner | kg und Säcke berechnen",
-  "metaDescription": "Berechne den Putzverbrauch in kg und die benötigte Sackzahl für Fassade oder Innenputz. Fläche, Verbrauch, Schichtdicke, Reserve und Sackgewicht eingeben.",
-  "intro": "Mit diesem Putzrechner kannst du schnell ermitteln, wie viel Putz du für Fassade oder Innenwände brauchst. Gib Fläche, Verbrauch pro mm, Schichtdicke, Reserve und Sackgewicht ein und erhalte Ergebnis in Kilogramm und Sackzahl.",
-  "overview": "Dieses Tool hilft dir bei der Materialplanung für Sanierung und Ausbau. Es berechnet den Grundbedarf, addiert die Reserve und wandelt das Ergebnis in Säcke um. Ideal für Fassadenputz und Innenputz, wenn du schnell wissen willst: wie viel Putz brauche ich?",
+  "shortDescription": "Berechne Putz für Fassaden und Innenwände aus Fläche, Schichtdicke, Verbrauch, Reserve und Sackgewicht.",
+  "metaTitle": "Putzrechner | Säcke und kg",
+  "metaDescription": "Berechne den Putzbedarf für Fassaden und Innenputz mit Fläche, Schichtdicke, Reserve, Verbrauch und Sackgewicht.",
+  "intro": "Gib Fläche, Verbrauch pro mm, Schichtdicke, Reserve und Sackgewicht ein, um die Gesamtmenge in Kilogramm und die Sackzahl zu erhalten.",
+  "overview": "Dieses Werkzeug ist für die Materialplanung bei Fassaden, Trennwänden, Decken und Renovierungen gedacht, wenn die benötigte Menge vor dem Einkauf feststehen soll. Es multipliziert die Fläche mit dem angegebenen Verbrauch pro Millimeter und der geplanten Dicke, addiert die Reserve und rechnet das Ergebnis in Säcke um.\n\nEs ist sinnvoll, wenn du Produktdaten in kg/m²/mm vorliegen hast und keine theoretische Mindestmenge, sondern eine praxisnahe Bestellmenge brauchst. Bei saugfähigem Untergrund, unebenen Flächen oder Arbeiten in mehreren Räumen hilft das Reservenfeld, zu knappe Bestellungen zu vermeiden.",
   "howItWorks": [
     "Fläche in Quadratmetern eingeben.",
-    "Verbrauch pro 1 mm in kg/m²/mm festlegen.",
-    "Gewünschte Schichtdicke in Millimetern angeben.",
-    "Reserve für Verschnitt, Verluste und unebene Flächen hinzufügen.",
+    "Verbrauch in kg/m²/mm aus dem Datenblatt übernehmen.",
+    "Geplante Schichtdicke in Millimetern angeben.",
+    "Reserve für Verluste, Unebenheiten und Reste hinzufügen.",
     "Sackgewicht in Kilogramm eintragen.",
-    "Grundbedarf, Gesamtbedarf mit Reserve und benötigte Säcke anzeigen lassen."
+    "Grundbedarf, Gesamtbedarf mit Reserve und Sackzahl anzeigen."
   ],
   "useCases": [
-    "Putzmenge für Fassaden vor der Bestellung berechnen.",
-    "Innenputz für Wände und Decken planen.",
-    "Schnell prüfen, wie viele Säcke Putz benötigt werden.",
-    "Reserve für Materialverluste und raue Untergründe einplanen.",
-    "Materialbedarf bei unterschiedlichen Schichtdicken vergleichen."
+    {
+      "title": "Material für eine Fassadenwand bestellen",
+      "description": "Bestimme die Putzmenge vor der Bestellung, wenn der Hersteller den Verbrauch für eine bestimmte Schichtdicke angibt und du Sackzahl und Reserve festlegen musst."
+    },
+    {
+      "title": "Wohnzimmer und Flur renovieren",
+      "description": "Berechne den Bedarf für mehrere Innenräume zusammen und berücksichtige Material für Ecken, Anschlüsse und kleine Ausbesserungen."
+    },
+    {
+      "title": "Saugfähiger oder ausgebesserter Untergrund",
+      "description": "Plane einen Zuschlag ein, wenn Mauerwerk ungleichmäßig ist, Flicken hat oder den Putz stärker aufnimmt."
+    },
+    {
+      "title": "Zwei Putzsysteme vergleichen",
+      "description": "Vergleiche Produkte mit unterschiedlichem Verbrauch und prüfe, wie sich die Sackzahl bei gleicher Fläche und Dicke verändert."
+    }
   ],
   "examples": [
     {
-      "title": "Beispielrechnung",
-      "input": "Fläche: 100 m², Verbrauch: 1,6 kg/m²/mm, Dicke: 10 mm, Reserve: 10%, Sackgewicht: 25 kg",
-      "output": "Grundbedarf: 1600 kg, Gesamtbedarf: 1760 kg, Säcke: 71,04 → 72 Säcke (aufgerundet)",
-      "description": "Ein praktisches Beispiel für die Planung von Fassaden- oder Innenputz."
+      "title": "Fassadenfläche eines Einfamilienhauses",
+      "input": "Fläche: 120 m², Verbrauch: 1,7 kg/m²/mm, Dicke: 12 mm, Reserve: 8%, Sackgewicht: 25 kg",
+      "output": "Grundbedarf: 2448 kg, Gesamtbedarf: 2643,84 kg, Säcke: 105,75 → 106 Säcke",
+      "description": "Ein realistisches Rechenbeispiel für eine Fassadenbestellung mit moderater Reserve."
     },
     {
-      "title": "Schnelle Bestellkontrolle",
-      "input": "Fläche: 45 m², Verbrauch: 1,4 kg/m²/mm, Dicke: 8 mm, Reserve: 5%, Sackgewicht: 30 kg",
-      "output": "Grundbedarf: 504 kg, Gesamtbedarf: 529,2 kg, Säcke: 17,64 → 18 Säcke (aufgerundet)",
-      "description": "Hilfreich, um vor Arbeitsbeginn die richtige Sackzahl zu kaufen."
+      "title": "Innenausbau im Wohnbereich",
+      "input": "Fläche: 38 m², Verbrauch: 1,3 kg/m²/mm, Dicke: 9 mm, Reserve: 6%, Sackgewicht: 30 kg",
+      "output": "Grundbedarf: 444,6 kg, Gesamtbedarf: 471,28 kg, Säcke: 15,71 → 16 Säcke",
+      "description": "Praktisch für die Planung einer kleineren Innenrenovierung."
+    },
+    {
+      "title": "Dicke Ausgleichsschicht",
+      "input": "Fläche: 22 m², Verbrauch: 2,0 kg/m²/mm, Dicke: 15 mm, Reserve: 12%, Sackgewicht: 20 kg",
+      "output": "Grundbedarf: 660 kg, Gesamtbedarf: 739,2 kg, Säcke: 36,96 → 37 Säcke",
+      "description": "Zeigt, wie stark der Bedarf bei dicken Schichten selbst auf kleiner Fläche steigt."
     }
   ],
   "faq": [
     {
-      "question": "Wie berechne ich, wie viel Putz ich brauche?",
-      "answer": "Multipliziere die Fläche mit dem Verbrauch pro mm und mit der Schichtdicke. Danach die Reserve addieren und durch das Sackgewicht teilen, um die Sackzahl zu erhalten."
+      "question": "Wie wird die Sackzahl berechnet?",
+      "answer": "Die Fläche wird mit dem Verbrauch pro mm und der Dicke multipliziert. Danach wird die Reserve addiert und durch das Sackgewicht geteilt."
     },
     {
-      "question": "Funktioniert der Rechner für Fassadenputz und Innenputz?",
-      "answer": "Ja, er eignet sich für beide Fälle, solange der Materialverbrauch pro 1 mm bekannt ist."
+      "question": "Warum erscheinen Dezimalwerte im Ergebnis?",
+      "answer": "Dezimalwerte zeigen die exakte Rechnung. Im Einkauf brauchst du ganze Säcke und solltest deshalb immer aufrunden."
     },
     {
-      "question": "Warum sollte ich eine Reserve einrechnen?",
-      "answer": "Die Reserve deckt Verarbeitungsverluste, unebene Untergründe, Reste im Eimer und kleine Rechenabweichungen ab."
+      "question": "Was mache ich bei Verbrauchswerten pro Zentimeter?",
+      "answer": "Erst auf Millimeter umrechnen. Ein Wert pro Zentimeter muss durch 10 geteilt werden, sonst ist das Ergebnis zehnmal zu hoch."
     },
     {
-      "question": "Wird auf ganze Säcke aufgerundet?",
-      "answer": "Ja, in der Praxis solltest du auf den nächsten vollen Sack aufrunden, damit vor Ort nichts fehlt."
+      "question": "Deckt die Reserve nur Verarbeitungsverluste ab?",
+      "answer": "Nein. Sie berücksichtigt auch Reste im Eimer, ungleichmäßige Flächen und zusätzliche Aufnahme durch den Untergrund."
     },
     {
-      "question": "Was tun, wenn der Verbrauch pro Zentimeter angegeben ist?",
-      "answer": "Vor der Nutzung in mm umrechnen oder den cm-Wert mit 10 multiplizieren, um kg/m²/mm zu erhalten."
+      "question": "Kann ich unterschiedliche Schichtdicken gemeinsam rechnen?",
+      "answer": "Ja, aber am besten rechnest du die Bereiche getrennt und addierst die Ergebnisse. Ein Mittelwert kann den Bedarf verfälschen."
     }
   ],
-  "uiLabels": {
-    "copy": "Kopieren",
-    "copied": "Kopiert",
-    "input": "Eingabe",
-    "output": "Ergebnis",
-    "placeholder": "Wert eingeben",
-    "indent": "Einzug",
-    "removeComments": "Kommentare entfernen",
-    "preview": "Vorschau",
-    "source": "Quelle",
-    "sanitizedHtml": "Bereinigtes HTML",
-    "plainText": "Klartext",
-    "summary": "Zusammenfassung",
-    "total": "Gesamt",
-    "links": "Links",
-    "images": "Bilder",
-    "errors": "Fehler",
-    "warnings": "Warnungen",
-    "valid": "Gültig",
-    "invalid": "Ungültig",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Ziel",
-    "alt": "Alt",
-    "width": "Breite",
-    "height": "Höhe",
-    "empty": "Leer",
-    "outputReady": "Ergebnis bereit",
-    "cleanedHtml": "Bereinigtes HTML",
-    "formattedHtml": "Formatiertes HTML",
-    "minifiedHtml": "Minifiziertes HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extrahierte Bilder",
-    "extractedLinks": "Extrahierte Links",
-    "validationSummary": "Validierungsübersicht",
-    "prettyHtml": "Lesbares HTML",
-    "encodedText": "Kodierter Text",
-    "file": "Datei",
-    "size": "Größe",
-    "format": "Format",
-    "quality": "Qualität",
-    "colorOne": "Farbe 1",
-    "colorTwo": "Farbe 2",
-    "background": "Hintergrund",
-    "foreground": "Vordergrund",
-    "angle": "Winkel",
-    "margin": "Rand",
-    "level": "Ebene",
-    "gradientType": "Verlaufsart",
-    "linear": "Linear",
-    "radial": "Radial",
-    "blur": "Unschärfe",
-    "spread": "Ausbreitung",
-    "offsetX": "Offset X",
-    "offsetY": "Offset Y",
-    "opacity": "Deckkraft",
-    "inset": "Innen",
-    "cssCode": "CSS-Code",
-    "snippet": "Snippet",
-    "download": "Herunterladen",
-    "downloadSvg": "SVG herunterladen",
-    "downloadPng": "PNG herunterladen",
-    "downloadAll": "Alle herunterladen",
-    "upload": "Hochladen",
-    "title": "Titel",
-    "description": "Beschreibung",
-    "canonicalUrl": "Kanonische URL",
-    "siteName": "Seitenname",
-    "ogImage": "OG-Bild",
-    "clear": "Löschen",
-    "generatedQr": "Generierter QR-Code",
-    "placeholderImage": "Platzhalterbild",
-    "faviconSet": "Favicon-Set",
-    "keepAspectRatio": "Seitenverhältnis beibehalten",
-    "cropX": "Zuschneiden X",
-    "cropY": "Zuschneiden Y",
-    "cropWidth": "Zuschneidebreite",
-    "cropHeight": "Zuschneidehöhe",
-    "originalSize": "Originalgröße",
-    "outputSize": "Ausgabegröße",
-    "savedSize": "Gesparte Größe",
-    "result": "Ergebnis",
-    "base64": "Base64",
-    "mimeType": "MIME-Typ",
-    "resizedImage": "Größenangepasstes Bild",
-    "compressedImage": "Komprimiertes Bild",
-    "croppedImage": "Zugeschnittenes Bild",
-    "convertedImage": "Konvertiertes Bild",
-    "decodedImage": "Dekodiertes Bild",
-    "imagePreview": "Bildvorschau",
-    "camera": "Kamera",
-    "lens": "Objektiv",
-    "dateTaken": "Aufnahmedatum",
-    "resolution": "Auflösung",
-    "fileSize": "Dateigröße",
-    "iso": "ISO",
-    "exposure": "Belichtung",
-    "aperture": "Blende",
-    "focalLength": "Brennweite",
-    "flash": "Blitz",
-    "orientation": "Ausrichtung",
-    "latitude": "Breitengrad",
-    "longitude": "Längengrad",
-    "openMap": "Karte öffnen",
-    "rawMetadata": "Rohmetadaten",
-    "noMetadataFound": "Keine Metadaten gefunden",
-    "gpsLocation": "GPS-Position",
-    "metadataSummary": "Metadatenübersicht"
-  },
   "seo": {
-    "title": "Putzrechner - kg und Säcke berechnen",
-    "description": "Kostenloser Putzrechner für Fassade und Innenputz. Verbrauch, Gesamtmenge und Sackzahl aus Fläche, Schichtdicke, Reserve und Sackgewicht berechnen.",
+    "title": "Putzrechner | Säcke und kg",
+    "description": "Berechne den Putzbedarf für Fassaden und Innenputz mit Fläche, Schichtdicke, Reserve, Verbrauch und Sackgewicht.",
     "keywords": [
       "Putzrechner",
-      "wie viel Putz brauche ich",
-      "Putzsäcke berechnen",
-      "Fassadenputz Rechner",
-      "Innenputz Rechner",
-      "Putzverbrauch",
-      "kg pro m2 mm"
+      "Putzsäcke",
+      "Fassadenputz",
+      "Innenputz",
+      "kg pro m2 mm",
+      "Putzverbrauch"
     ]
   }
 }

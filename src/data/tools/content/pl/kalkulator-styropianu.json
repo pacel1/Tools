@@ -4,176 +4,97 @@
   "slug": "kalkulator-styropianu",
   "h1": "Kalkulator styropianu",
   "title": "Kalkulator styropianu",
-  "shortDescription": "Oblicz ile paczek styropianu potrzeba do ocieplenia ścian, podłogi, dachu lub fundamentu.",
-  "metaTitle": "Kalkulator styropianu - oblicz ile paczek potrzeba",
-  "metaDescription": "Oblicz objętość styropianu, powierzchnię z zapasem i liczbę paczek do ocieplenia ścian, podłogi, dachu lub fundamentu.",
-  "intro": "Ten kalkulator styropianu pomoże szybko sprawdzić, ile paczek styropianu potrzeba do ocieplenia elewacji, podłogi, dachu lub fundamentu. Wpisz powierzchnię, grubość, pokrycie paczki, zapas i objętość paczki, aby od razu otrzymać praktyczny wynik.",
-  "overview": "Narzędzie ułatwia planowanie ilości materiału do ocieplenia. Przelicza powierzchnię i grubość na objętość izolacji, dolicza zapas na docinki oraz szacuje liczbę paczek na podstawie pokrycia i objętości opakowania. Sprawdza się przy planowaniu styropianu EPS na ściany, podłogi, dachy i fundamenty.",
+  "shortDescription": "Oblicz liczbę paczek EPS do ścian, podłogi, dachu lub fundamentu na podstawie powierzchni i grubości płyt.",
+  "metaTitle": "Kalkulator paczek EPS",
+  "metaDescription": "Oblicz objętość styropianu, zapas na docinki i liczbę paczek potrzebnych do ocieplenia ścian, podłogi, dachu lub fundamentu.",
+  "intro": "Podaj powierzchnię ocieplenia, grubość płyt, pokrycie paczki, procent zapasu i objętość paczki, aby otrzymać liczbę paczek do zamówienia.",
+  "overview": "To narzędzie zamienia dane z projektu na konkretną ilość zakupową styropianu EPS. Najpierw liczy objętość izolacji z powierzchni i grubości, a potem dodaje zapas na docinki, narożniki i straty przy montażu, żeby wynik był bliższy rzeczywistemu zużyciu.\n\nSprawdza się przy elewacji, podłodze, dachu i fundamentach, gdzie różne systemy pakowania mogą dawać inne wyniki. Dzięki podaniu zarówno pokrycia paczki, jak i objętości opakowania łatwiej dopasujesz obliczenie do konkretnego produktu z oferty.",
   "howItWorks": [
     "Wpisz powierzchnię ocieplenia w metrach kwadratowych.",
-    "Ustaw grubość izolacji w centymetrach.",
-    "Podaj pokrycie jednej paczki i objętość paczki.",
-    "Dodaj procent zapasu na docinki i straty montażowe.",
-    "Otrzymaj objętość izolacji, powierzchnię z zapasem i liczbę paczek."
+    "Ustaw grubość styropianu w centymetrach.",
+    "Podaj pokrycie jednej paczki i objętość paczki z etykiety produktu.",
+    "Dodaj procent zapasu na cięcie, dopasowanie i odpady na budowie.",
+    "Odczytaj objętość izolacji, powierzchnię po korekcie i zaokrągloną liczbę paczek."
   ],
   "useCases": [
-    "Obliczenie ile paczek styropianu potrzeba na elewację.",
-    "Planowanie ilości EPS na ocieplenie podłogi.",
-    "Sprawdzenie zapotrzebowania na styropian na dach.",
-    "Wyliczenie paczek do ocieplenia fundamentu.",
-    "Porównanie potrzeb materiałowych przed zakupem."
+    {
+      "title": "Zamówienie styropianu na elewację",
+      "description": "Policz liczbę paczek przed wysłaniem zapytania do hurtowni lub składu budowlanego."
+    },
+    {
+      "title": "Izolacja podłogi na gruncie",
+      "description": "Oszacuj ilość płyt pod wylewkę, aby warstwa izolacji pasowała do układu pomieszczeń."
+    },
+    {
+      "title": "Ocieplenie dachu",
+      "description": "Sprawdź materiał na dach płaski albo skośny przed organizacją dostawy."
+    },
+    {
+      "title": "Fundament i strefa cokołowa",
+      "description": "Wylicz paczki dla miejsc przy gruncie, gdzie zwykle powstaje więcej odpadów z cięcia."
+    },
+    {
+      "title": "Porównanie ofert producentów",
+      "description": "Zestaw liczbę paczek dla kilku produktów, które mają inne pokrycie albo inną objętość opakowania."
+    }
   ],
   "examples": [
     {
-      "title": "Ocieplenie elewacji",
-      "input": "150 m2 powierzchni, 15 cm grubości, 5 m2 na paczkę, 8% zapasu, 0,75 m3 objętości paczki",
-      "output": "Pokazuje potrzebną objętość izolacji, powierzchnię z zapasem i szacowaną liczbę paczek.",
-      "description": "Pomaga zamówić odpowiednią ilość płyt EPS na ściany zewnętrzne."
+      "title": "Elewacja domu jednorodzinnego",
+      "input": "168 m2 powierzchni, 16 cm grubości, 5,0 m2 na paczkę, 9% zapasu, 0,80 m3 objętości paczki",
+      "output": "Pokazuje objętość izolacji, powierzchnię po doliczeniu zapasu i liczbę paczek zaokrągloną w górę.",
+      "description": "Przydatne przy zamówieniu styropianu na ocieplenie ścian zewnętrznych."
     },
     {
-      "title": "Ocieplenie podłogi",
-      "input": "80 m2 powierzchni, 10 cm grubości, 4 m2 na paczkę, 5% zapasu, 0,4 m3 objętości paczki",
-      "output": "Wyświetla objętość materiału i liczbę paczek dla prac podłogowych.",
-      "description": "Przydatne przy ociepleniu pod wylewkę lub płytę."
+      "title": "Podłoga w hali",
+      "input": "240 m2 powierzchni, 12 cm grubości, 4,8 m2 na paczkę, 6% zapasu, 0,58 m3 objętości paczki",
+      "output": "Zwraca całkowitą objętość materiału i szacowaną liczbę paczek do warstwy podłogowej.",
+      "description": "Pomaga przygotować zakup przed wykonaniem podkładu lub wylewki."
+    },
+    {
+      "title": "Pas fundamentowy przy tarasie",
+      "input": "62 m2 powierzchni, 10 cm grubości, 3,6 m2 na paczkę, 12% zapasu, 0,36 m3 objętości paczki",
+      "output": "Wyświetla objętość izolacji i większą liczbę paczek wynikającą z dodatkowego zapasu na docinki.",
+      "description": "Dobre dla miejsc z wieloma narożnikami, krawędziami i wąskimi odcinkami."
+    },
+    {
+      "title": "Remont dachu płaskiego",
+      "input": "93 m2 powierzchni, 18 cm grubości, 4,2 m2 na paczkę, 8% zapasu, 0,76 m3 objętości paczki",
+      "output": "Oblicza objętość i liczbę paczek potrzebnych do warstw dachu.",
+      "description": "Przydatne przy sprawdzaniu materiału przed dostawą na dach ciepły."
     }
   ],
   "faq": [
     {
-      "question": "Co oblicza kalkulator styropianu?",
-      "answer": "Oblicza objętość izolacji w m3, powierzchnię z zapasem oraz szacowaną liczbę paczek potrzebnych do zakupu."
+      "question": "Po co podawać jednocześnie pokrycie paczki i objętość paczki?",
+      "answer": "Różne produkty bywają liczone inaczej, a wartości z opakowania nie zawsze wynikają z tego samego sposobu pakowania. Podanie obu danych pozwala oprzeć wynik na konkretnej paczce z karty produktu."
     },
     {
-      "question": "Czy mogę użyć go do ścian, podłóg, dachów i fundamentów?",
-      "answer": "Tak. Kalkulator jest uniwersalny dla najczęstszych zastosowań styropianu EPS."
+      "question": "Co zrobić, jeśli projekt ma dużo narożników lub otworów?",
+      "answer": "Warto doliczyć to w zapasie. Kalkulator liczy podaną powierzchnię, więc skomplikowany układ ścian, wnęk i otworów powinien podnieść procent strat."
     },
     {
-      "question": "Dlaczego trzeba podać procent zapasu?",
-      "answer": "Zapas uwzględnia docinki, przycięcia, straty montażowe i drobne korekty podczas układania."
+      "question": "Czy zaokrąglona liczba paczek nadaje się od razu do zamówienia?",
+      "answer": "Tak, jako baza zamówienia. Przed złożeniem zamówienia trzeba jeszcze sprawdzić wymiar płyt, układ warstw oraz detale, które mogą zwiększyć zużycie."
     },
     {
-      "question": "Co jest ważniejsze: pokrycie paczki czy objętość paczki?",
-      "answer": "Oba parametry są przydatne. Pokrycie pomaga oszacować powierzchnię, a objętość paczki potwierdza ilość materiału."
+      "question": "Jaki błąd przy grubości powoduje największe przekłamanie?",
+      "answer": "Mylenie centymetrów z milimetrami. W kalkulatorze 12 cm należy wpisać jako 12, a nie 120 ani 0,12."
+    },
+    {
+      "question": "Co jeśli na etykiecie produktu są podane zarówno sztuki, jak i m3 na paczkę?",
+      "answer": "Kieruj się danymi z tego samego produktu. Jeśli etykieta podaje oba parametry, liczba paczek powinna zgadzać się z objętością i wymiarem płyt z opakowania."
     }
   ],
-  "uiLabels": {
-    "copy": "Kopiuj",
-    "copied": "Skopiowano",
-    "input": "Dane wejściowe",
-    "output": "Wynik",
-    "placeholder": "Wpisz wartość",
-    "indent": "Wcięcie",
-    "removeComments": "Usuń komentarze",
-    "preview": "Podgląd",
-    "source": "Źródło",
-    "sanitizedHtml": "Oczyszczony HTML",
-    "plainText": "Zwykły tekst",
-    "summary": "Podsumowanie",
-    "total": "Razem",
-    "links": "Linki",
-    "images": "Obrazy",
-    "errors": "Błędy",
-    "warnings": "Ostrzeżenia",
-    "valid": "Poprawne",
-    "invalid": "Niepoprawne",
-    "href": "Adres URL",
-    "text": "Tekst",
-    "rel": "Rel",
-    "target": "Cel",
-    "alt": "Alt",
-    "width": "Szerokość",
-    "height": "Wysokość",
-    "empty": "Puste",
-    "outputReady": "Wynik gotowy",
-    "cleanedHtml": "Oczyszczony HTML",
-    "formattedHtml": "Sformatowany HTML",
-    "minifiedHtml": "Zminifikowany HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Wyodrębnione obrazy",
-    "extractedLinks": "Wyodrębnione linki",
-    "validationSummary": "Podsumowanie walidacji",
-    "prettyHtml": "Czytelny HTML",
-    "encodedText": "Tekst zakodowany",
-    "file": "Plik",
-    "size": "Rozmiar",
-    "format": "Format",
-    "quality": "Jakość",
-    "colorOne": "Kolor 1",
-    "colorTwo": "Kolor 2",
-    "background": "Tło",
-    "foreground": "Pierwszy plan",
-    "angle": "Kąt",
-    "margin": "Margines",
-    "level": "Poziom",
-    "gradientType": "Typ gradientu",
-    "linear": "Liniowy",
-    "radial": "Radialny",
-    "blur": "Rozmycie",
-    "spread": "Rozszerzenie",
-    "offsetX": "Przesunięcie X",
-    "offsetY": "Przesunięcie Y",
-    "opacity": "Przezroczystość",
-    "inset": "Wewnętrzny",
-    "cssCode": "Kod CSS",
-    "snippet": "Fragment",
-    "download": "Pobierz",
-    "downloadSvg": "Pobierz SVG",
-    "downloadPng": "Pobierz PNG",
-    "downloadAll": "Pobierz wszystko",
-    "upload": "Prześlij",
-    "title": "Tytuł",
-    "description": "Opis",
-    "canonicalUrl": "Adres kanoniczny",
-    "siteName": "Nazwa serwisu",
-    "ogImage": "Obraz OG",
-    "clear": "Wyczyść",
-    "generatedQr": "Wygenerowany QR",
-    "placeholderImage": "Obraz zastępczy",
-    "faviconSet": "Zestaw favicon",
-    "keepAspectRatio": "Zachowaj proporcje",
-    "cropX": "Przycięcie X",
-    "cropY": "Przycięcie Y",
-    "cropWidth": "Szerokość kadru",
-    "cropHeight": "Wysokość kadru",
-    "originalSize": "Rozmiar oryginalny",
-    "outputSize": "Rozmiar wynikowy",
-    "savedSize": "Oszczędzony rozmiar",
-    "result": "Wynik",
-    "base64": "Base64",
-    "mimeType": "Typ MIME",
-    "resizedImage": "Obraz po zmianie rozmiaru",
-    "compressedImage": "Obraz skompresowany",
-    "croppedImage": "Obraz przycięty",
-    "convertedImage": "Obraz przekonwertowany",
-    "decodedImage": "Obraz zdekodowany",
-    "imagePreview": "Podgląd obrazu",
-    "camera": "Aparat",
-    "lens": "Obiektyw",
-    "dateTaken": "Data wykonania",
-    "resolution": "Rozdzielczość",
-    "fileSize": "Rozmiar pliku",
-    "iso": "ISO",
-    "exposure": "Czas naświetlania",
-    "aperture": "Przysłona",
-    "focalLength": "Ogniskowa",
-    "flash": "Lampa błyskowa",
-    "orientation": "Orientacja",
-    "latitude": "Szerokość geograficzna",
-    "longitude": "Długość geograficzna",
-    "openMap": "Otwórz mapę",
-    "rawMetadata": "Surowe metadane",
-    "noMetadataFound": "Nie znaleziono metadanych",
-    "gpsLocation": "Lokalizacja GPS",
-    "metadataSummary": "Podsumowanie metadanych"
-  },
   "seo": {
-    "title": "Kalkulator styropianu",
-    "description": "Oblicz ile paczek styropianu potrzeba i jaka będzie objętość izolacji z zapasem na ściany, podłogę, dach lub fundament.",
+    "title": "Kalkulator paczek EPS",
+    "description": "Oblicz objętość styropianu, zapas na docinki i liczbę paczek potrzebnych do ocieplenia ścian, podłogi, dachu lub fundamentu.",
     "keywords": [
       "kalkulator styropianu",
       "ile paczek styropianu",
-      "obliczanie styropianu",
       "kalkulator EPS",
-      "styropian m3 paczki"
+      "objętość styropianu",
+      "styropian na m2"
     ]
   }
 }

@@ -4,43 +4,76 @@
   "slug": "kalkulator-odsetek-prostych",
   "h1": "Kalkulator odsetek prostych",
   "title": "Kalkulator odsetek prostych",
-  "shortDescription": "Oblicz odsetki proste na podstawie kapitału, stopy procentowej i czasu — szybko, wygodnie i z praktycznymi przykładami.",
-  "overview": "Oblicz odsetki proste na podstawie kapitału, stopy procentowej i czasu. Ta strona zapewnia szybki wynik dzięki praktycznemu narzędziu online i prostemu procesowi obliczeń. Jest przeznaczona dla użytkowników szukających darmowej odpowiedzi w internecie, szybkich wyników w przeglądarce oraz przydatnych treści długoogonowych.",
+  "shortDescription": "Oblicz odsetki proste, kwotę odsetek i wartość końcową na podstawie kapitału, stopy i czasu.",
+  "metaTitle": "Kalkulator odsetek prostych",
+  "metaDescription": "Oblicz odsetki proste, kwotę odsetek i wartość końcową na podstawie kapitału, stopy i czasu.",
+  "intro": "Wpisz kapitał, roczną stopę i czas, aby zobaczyć odsetki oraz kwotę końcową.",
+  "overview": "Odsetki proste są liczone wyłącznie od kapitału początkowego, bez kapitalizacji. To narzędzie pokazuje wynik w przejrzysty sposób, dzięki czemu łatwo sprawdzisz koszt pożyczki, zysk z lokaty o stałej stopie albo wynik zadania z finansów.\n\nJeśli czas podajesz w miesiącach lub dniach, dopasuj go do jednostki stopy procentowej. Najczęściej roczną stopę przelicza się na część roku, na przykład 6 miesięcy to 0,5 roku. Kalkulator zwraca samą kwotę odsetek oraz sumę końcową, więc od razu widzisz pełny rezultat.",
   "howItWorks": [
-    "Wpisz wymagane wartości do formularza.",
-    "Obliczenie uruchamia się natychmiast w przeglądarce.",
-    "Sprawdź wynik i skorzystaj z powiązanych narzędzi, jeśli potrzebujesz kolejnego kroku."
+    "Wpisz kwotę kapitału, stopę procentową i czas trwania.",
+    "Kalkulator stosuje wzór: Odsetki = Kapitał × Stopa × Czas.",
+    "Sprawdź odsetki i kwotę końcową, a potem zmień dane, jeśli chcesz porównać inny wariant."
+  ],
+  "useCases": [
+    {
+      "title": "Lokata na stały okres",
+      "description": "Sprawdź, ile odsetek przyniesie depozyt o stałym oprocentowaniu po określonej liczbie lat."
+    },
+    {
+      "title": "Pożyczka bez kapitalizacji",
+      "description": "Oblicz koszt pożyczki z prostym oprocentowaniem, gdy odsetki nie są doliczane do salda."
+    },
+    {
+      "title": "Zadania i ćwiczenia szkolne",
+      "description": "Zweryfikuj wynik zadań z matematyki finansowej i pokaż wpływ kapitału, stopy oraz czasu."
+    }
   ],
   "examples": [
     {
-      "title": "Przykład 1",
-      "input": "5000, 4%, 3 lata",
-      "output": "600",
-      "description": "Realistyczny przykład kalkulatora odsetek prostych dla typowego wyszukiwania."
+      "title": "Lokata na 3 lata",
+      "input": "Kapitał: 5000; Stopa: 4%; Czas: 3 lata",
+      "output": "Odsetki: 600; Kwota końcowa: 5600",
+      "description": "Przykład lokaty trzymanej przez trzy lata przy stałej stopie rocznej."
     },
     {
-      "title": "Przykład 2",
-      "input": "5000, 4%, 3 lata",
-      "output": "600",
-      "description": "Kolejny praktyczny przypadek użycia dla ruchu organicznego z długiego ogona."
+      "title": "Koszt pożyczki rocznej",
+      "input": "Kapitał: 12000; Stopa: 7,5%; Czas: 1 rok",
+      "output": "Odsetki: 900; Kwota końcowa: 12900",
+      "description": "Pokazuje koszt pożyczki bez kapitalizacji odsetek."
+    },
+    {
+      "title": "Pół roku",
+      "input": "Kapitał: 8000; Stopa: 6%; Czas: 0,5 roku",
+      "output": "Odsetki: 240; Kwota końcowa: 8240",
+      "description": "Przykład z czasem zapisanym jako ułamek roku."
     }
   ],
   "faq": [
     {
-      "question": "Jak dokładne jest to narzędzie?",
-      "answer": "Wynik jest obliczany bezpośrednio na podstawie wzoru lub logiki po stronie przeglądarki użytej przez to narzędzie."
+      "question": "Czy ten kalkulator uwzględnia kapitalizację odsetek?",
+      "answer": "Nie. Liczy wyłącznie odsetki proste, czyli od kapitału początkowego. Jeśli odsetki są dopisywane do salda i dalej oprocentowane, potrzebny jest kalkulator składany."
     },
     {
-      "question": "Czy mogę używać tego narzędzia na telefonie?",
-      "answer": "Tak. Strona działa na komputerach i urządzeniach mobilnych, oferując prosty układ pól i wyniku."
+      "question": "Jak wpisać czas krótszy niż rok?",
+      "answer": "Najlepiej użyć wartości zgodnej z jednostką stopy. Przy stopie rocznej czas wpisz jako część roku, na przykład 6 miesięcy = 0,5 roku."
+    },
+    {
+      "question": "Dlaczego wynik różni się od wyliczeń w banku?",
+      "answer": "Bank może stosować kapitalizację, zaokrąglenia albo inną konwencję liczenia dni. W takich przypadkach wynik nie będzie identyczny."
+    },
+    {
+      "question": "Czy mogę używać stopy miesięcznej lub dziennej?",
+      "answer": "Tak, ale czas też musi być podany w tej samej jednostce. Stopa miesięczna wymaga miesięcy, a dzienna — dni."
     }
   ],
   "seo": {
     "title": "Kalkulator odsetek prostych",
-    "description": "Oblicz odsetki proste na podstawie kapitału, stopy procentowej i czasu. Darmowy kalkulator odsetek prostych online z natychmiastowym wynikiem.",
+    "description": "Oblicz odsetki proste, kwotę odsetek i wartość końcową na podstawie kapitału, stopy i czasu.",
     "keywords": [
       "kalkulator odsetek prostych",
-      "narzedzie kalkulatory"
+      "odsetki proste",
+      "kalkulator finansowy",
+      "wzór na odsetki proste"
     ]
   }
 }

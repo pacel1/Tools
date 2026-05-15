@@ -4,13 +4,85 @@
   "slug": "generator-ikon",
   "h1": "Generator ikon",
   "title": "Generator ikon",
-  "shortDescription": "Tworz ikony aplikacji i proste ikony marki online z jednego obrazu bez wysylania plikow na serwer.",
-  "metaTitle": "Generator ikon | Tworzenie ikon online",
-  "metaDescription": "Tworz ikony online z jednego obrazu. Narzedzie sprawdza sie przy ikonach aplikacji, launcherach i prostych eksportach do brandingowych makiet.",
-  "intro": "Generator ikon rozszerza workflow favicon o szersza intencje tworzenie ikon online. Wgrywasz jeden obraz, ustawiasz rozmiar, margines i tlo, a potem pobierasz gotowa ikone aplikacji albo ikonke marki bez opuszczania przegladarki.",
-  "overview": "To narzedzie jest dobre wtedy, gdy nie potrzebujesz calego zestawu favicon, tylko jednej dopracowanej ikony. Sprawdza sie przy prototypach aplikacji, ikonach launcherow, mockupach produktu i prostych brandowych assetach w kwadratowym formacie.",
-  "howItWorks": ["Wgraj obraz, z ktorego chcesz zrobic ikone.", "Ustaw rozmiar, margines, tlo i format wyjsciowy.", "Sprawdz podglad i pobierz gotowa ikone od razu."],
-  "examples": [{"title": "Ikona aplikacji", "input": "Jedno logo na przezroczystym tle", "output": "Kwadratowa ikona 512px", "description": "Przydatne przy testach aplikacji, PWA i prezentacjach produktu."}, {"title": "Ikona marki", "input": "Prosty sygnet lub znak", "output": "Ikona PNG z dopasowanym marginesem", "description": "Dobre do awatarow, mockupow i materialow prezentacyjnych."}],
-  "faq": [{"question": "Czym generator ikon rozni sie od generatora favicon?", "answer": "Generator ikon skupia sie na jednym dopracowanym eksporcie, a generator favicon zwykle tworzy caly zestaw roznych rozmiarow dla witryny."}, {"question": "Czy obraz jest wysylany na serwer?", "answer": "Nie. Przetwarzanie odbywa sie lokalnie w przegladarce."}],
-  "seo": {"title": "Generator ikon | Tworzenie ikon online", "description": "Tworz ikony online z jednego obrazu. Narzedzie sprawdza sie przy ikonach aplikacji, launcherach i prostych eksportach marki.", "keywords": ["generator ikon", "tworzenie ikon online", "ikona aplikacji", "generator ikon aplikacji", "app icon generator"]}
+  "shortDescription": "Zmien jeden obraz w ikone aplikacji lub kwadratowy znak marki z kontrola rozmiaru, marginesu i tla.",
+  "metaTitle": "Generator ikon | Ikony aplikacji",
+  "metaDescription": "Zmien jeden obraz w ikone aplikacji, ikone launchera lub kwadratowy asset marki z eksportem w przegladarce.",
+  "intro": "Stworz jedna dopracowana ikone z jednego obrazu: ustaw rozmiar, margines, tlo i format pliku, a nastepnie pobierz gotowy plik bezposrednio z przegladarki.",
+  "overview": "To narzedzie jest stworzone do pracy nad jedna, czytelna ikona zamiast pelnego zestawu plikow. Dobrze sprawdza sie przy prototypach aplikacji, kafelkach launcherow, assetach PWA, prezentacjach produktu i awatarach, ktore musza zachowac kwadratowy uklad.\n\nMozesz zaczac od logo, sygnetu albo monogramu i dopasowac odstepy tak, aby znak dobrze wypadal w srodku kadru. Tlo jednolite daje efekt wyrazistej plakietki, a przezroczystosc pozwala wstawic ikone w rozne interfejsy bez dodatkowej obrobki.\n\nWynik jest gotowym plikiem do uzycia, a nie tylko podgladem. To ulatwia przekazanie projektu dalej, testy wczesnej wersji aplikacji, przygotowanie materialow prezentacyjnych i budowe spójnych, kwadratowych ikon o przewidywalnych proporcjach.",
+  "howItWorks": [
+    "Wgraj obraz, ktory chcesz zamienic w ikone.",
+    "Ustaw rozmiar canvasu, margines, kolor tla i format wyjsciowy.",
+    "Sprawdz podglad i pobierz gotowy plik ikony."
+  ],
+  "useCases": [
+    {
+      "title": "Kafelek aplikacji",
+      "description": "Utworz kwadratowa ikone z logo do podgladu aplikacji mobilnej, buildu testowego lub makiety sklepowej."
+    },
+    {
+      "title": "Asset PWA",
+      "description": "Wygeneruj czytelny znak z dobranym marginesem, aby dobrze wygladal na ekranie startowym i w siatce launcherow."
+    },
+    {
+      "title": "Ikona profilu produktu",
+      "description": "Przerob symbol marki na kwadratowy avatar do paneli, dashboardow lub list dostawcow."
+    },
+    {
+      "title": "Plakietka marki",
+      "description": "Umiesc prosty znak na jednolitym tle i zyskaj kompaktowa ikone do prezentacji i pitch deckow."
+    }
+  ],
+  "examples": [
+    {
+      "title": "Logo na ikone aplikacji",
+      "input": "Przezroczyste logo SVG bez dlugiego napisu",
+      "output": "Ikona PNG 512×512 z wycentrowanym symbolem i marginesem 18%",
+      "description": "Dobre rozwiazanie do testow aplikacji, gdy potrzebujesz prostego i czytelnego assetu."
+    },
+    {
+      "title": "Monogram na ciemna plakietke",
+      "input": "Dwuliterowy monogram na przezroczystym tle",
+      "output": "Ikona 1024×1024 z granatowym tlem i bialym znakiem",
+      "description": "Przydatne przy avatarze marki albo kafelku launchera z mocnym kontrastem."
+    },
+    {
+      "title": "Symbol produktu do marketplace",
+      "input": "Mały znak eksportowany z pliku projektowego",
+      "output": "Ikona WebP 256×256 z wiekszym marginesem i przezroczystym tlem",
+      "description": "Pomaga, gdy symbol ma dobrze wygladac na roznych nawijanych tla i kartach."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Co warto wgrac, zeby ikona wyszla najczytelniej?",
+      "answer": "Najlepiej sprawdza sie logo, symbol albo monogram z wyraznym konturem i odpowiednia iloscia pustej przestrzeni wokol znaku. Bardzo zlozone ilustracje moga stracic czytelnosc po zmniejszeniu."
+    },
+    {
+      "question": "Dlaczego margines jest tak wazny?",
+      "answer": "Margines decyduje o tym, ile oddechu ma znak wewnatrz kwadratu. Za maly sprawia, ze ikona jest scisnieta, a za duzy, ze wydaje sie zbyt drobna."
+    },
+    {
+      "question": "Czy moge zostawic przezroczyste tlo?",
+      "answer": "Tak. Przezroczyste tlo jest najlepsze, gdy ikona ma trafic na rozne kolory interfejsu albo do roznych systemow wizualnych."
+    },
+    {
+      "question": "Co jesli zrodlowy obraz jest prostokatny?",
+      "answer": "Narzędzie dopasuje go do kwadratowego canvasu. Jesli znak jest szeroki, zwykle trzeba zmniejszyc margines albo uzyc wersji lepiej przygotowanej do kadrowania."
+    },
+    {
+      "question": "Jaki format wybrac?",
+      "answer": "PNG jest najbezpieczniejszy dla ostrych krawedzi i przezroczystosci. WebP moze byc lzejszy, a jednolite tlo pasuje do ikon w formie plakietki."
+    }
+  ],
+  "seo": {
+    "title": "Generator ikon | Ikony aplikacji",
+    "description": "Zmien jeden obraz w ikone aplikacji, ikone launchera lub kwadratowy asset marki z eksportem w przegladarce.",
+    "keywords": [
+      "generator ikon",
+      "ikona aplikacji",
+      "tworzenie ikon",
+      "ikona launchera",
+      "generator ikon marki"
+    ]
+  }
 }

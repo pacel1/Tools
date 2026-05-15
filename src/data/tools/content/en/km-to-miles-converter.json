@@ -4,42 +4,84 @@
   "slug": "km-to-miles-converter",
   "h1": "KM to Miles Converter",
   "title": "KM to Miles Converter",
-  "shortDescription": "Convert kilometers to miles instantly with fast results, simple inputs and practical examples.",
-  "overview": "Convert kilometers to miles instantly. Use this tool to get a clear result quickly from simple input on the same page. It is useful for everyday checks, comparisons and small tasks when you need a fast online answer.",
+  "shortDescription": "Convert kilometers to miles with a standard conversion factor and clear results.",
+  "metaTitle": "KM to Miles Converter",
+  "metaDescription": "Convert kilometers to miles using the standard factor 1 km = 0.621371 miles. Ideal for trips, runs, and distance planning.",
+  "intro": "Enter a distance in kilometers and get the equivalent in miles using the standard factor 1 km = 0.621371 miles.",
+  "overview": "This converter turns kilometer values into miles so you can read distances in the unit you need. It is useful when a route, race, map, or vehicle trip is given in kilometers and you want the imperial equivalent without doing the math yourself.\n\nThe result is based on the standard kilometer-to-mile relationship, so it works for decimal values, large distances, and precise comparisons. If you are checking travel plans, training logs, or distance labels, this tool keeps the conversion straightforward and easy to read.",
   "howItWorks": [
-    "Enter the required value or text into the form.",
-    "The conversion, calculation or transformation runs instantly in the browser.",
-    "Review the result and continue with related tools if you need another step."
+    "Type the distance in kilometers.",
+    "The tool multiplies the value by 0.621371.",
+    "Read the result in miles and, if needed, compare it with another distance."
+  ],
+  "useCases": [
+    {
+      "title": "Route planning in mixed units",
+      "description": "Convert road or ferry distances shown in kilometers into miles when comparing trip segments."
+    },
+    {
+      "title": "Training distances",
+      "description": "Translate cycling, running, or hiking distances from km into miles for workout logs and pace notes."
+    },
+    {
+      "title": "Map and signage reading",
+      "description": "Understand distances on maps, route boards, or cross-border signs that use kilometers."
+    },
+    {
+      "title": "Report and spreadsheet conversion",
+      "description": "Turn kilometer figures into miles for summaries, client documents, or data tables."
+    }
   ],
   "examples": [
     {
-      "title": "Common use case",
-      "input": "5 kilometers",
+      "title": "Short city distance",
+      "input": "5 km",
       "output": "3.1069 miles",
-      "description": "Shows a common use case with a clear input and result."
+      "description": "A short urban route converted into miles for a familiar reference."
     },
     {
-      "title": "Another quick example",
-      "input": "5 kilometers",
-      "output": "3.1069 miles",
-      "description": "Useful for quick checks, comparisons or repeat tasks."
+      "title": "Half-marathon segment",
+      "input": "21.1 km",
+      "output": "13.1094 miles",
+      "description": "Useful for race planning and comparing event distances across unit systems."
+    },
+    {
+      "title": "Long road trip",
+      "input": "860 km",
+      "output": "534.2926 miles",
+      "description": "Shows how the tool handles larger travel distances with the same formula."
     }
   ],
   "faq": [
     {
-      "question": "How accurate is this tool?",
-      "answer": "The result is based on the input you provide and the calculation or transformation shown on the page."
+      "question": "What formula does this converter use?",
+      "answer": "It uses the standard conversion factor: 1 kilometer = 0.621371 miles."
     },
     {
-      "question": "Can I use this tool on mobile?",
-      "answer": "Yes. The page works on desktop and mobile screens with a simple input and result layout."
+      "question": "Can I enter decimal kilometers?",
+      "answer": "Yes. Values such as 2.5 km or 42.195 km are converted directly."
+    },
+    {
+      "question": "Why do I see many decimal places?",
+      "answer": "The tool shows a precise converted value. You can round it to the level your task needs."
+    },
+    {
+      "question": "What is a frequent mistake when converting km to miles?",
+      "answer": "A common mistake is multiplying by 1.6 instead of by 0.621371. That reverses the direction of the conversion."
+    },
+    {
+      "question": "Does this tool convert miles back to kilometers?",
+      "answer": "No. This page is only for kilometers to miles. Use the reverse converter for miles to km."
     }
   ],
   "seo": {
     "title": "KM to Miles Converter",
-    "description": "Convert kilometers to miles instantly. Free online km to miles converter with instant results.",
+    "description": "Convert kilometers to miles using the standard factor 1 km = 0.621371 miles. Ideal for trips, runs, and distance planning.",
     "keywords": [
-      "km to miles converter"
+      "km to miles converter",
+      "kilometers to miles",
+      "km to miles",
+      "distance converter"
     ]
   }
 }

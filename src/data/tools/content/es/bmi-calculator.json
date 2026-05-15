@@ -4,44 +4,80 @@
   "slug": "calculadora-imc",
   "h1": "Calculadora de IMC",
   "title": "Calculadora de IMC",
-  "shortDescription": "Calcula el índice de masa corporal a partir de la altura y el peso con resultados rápidos, entradas simples y ejemplos prácticos.",
-  "overview": "Calcula el índice de masa corporal a partir de la altura y el peso. Esta página ofrece una respuesta rápida con una herramienta útil y un flujo de resultados sencillo. Está pensada para quienes buscan una respuesta gratis en línea, resultados instantáneos en el navegador y contenido práctico de cola larga.",
+  "shortDescription": "Introduce altura y peso para obtener un IMC claro con valor decimal y categoría.",
+  "metaTitle": "Calculadora IMC valor",
+  "metaDescription": "Calcula el IMC a partir de altura y peso con unidades claras, resultado decimal y categoría fácil de leer.",
+  "intro": "Introduce tu altura y tu peso, y verás el IMC en decimal junto con su categoría.",
+  "overview": "Esta calculadora de IMC aplica la fórmula estándar del índice de masa corporal a la altura y al peso que indiques, y devuelve un único valor para comparar. Sirve para revisar una cifra anotada, repetir una medición más adelante o mantener un registro coherente.\n\nEl IMC es una referencia general, no un diagnóstico. No distingue entre músculo, grasa, hueso o agua corporal, así que conviene interpretarlo junto con la constitución de la persona y el contexto en que se tomó la medida.\n\nPara que el resultado tenga sentido, usa siempre el mismo sistema de unidades y escribe valores medidos, no estimados. Si la cifra parece extraña, lo más habitual es una mezcla de unidades, como libras donde debían ir kilos o pies y pulgadas cuando se esperaba centímetros.",
   "howItWorks": [
-    "Introduce el valor o el texto requerido en el formulario.",
-    "La conversión, el cálculo o la transformación se ejecuta al instante en el navegador.",
-    "Revisa el resultado y sigue con herramientas relacionadas si necesitas otro paso."
+    "Elige el sistema de unidades que coincida con tus medidas.",
+    "Introduce altura y peso con ese mismo sistema.",
+    "Lee el valor de IMC y la categoría mostrada.",
+    "Si el resultado no cuadra, revisa las unidades y vuelve a escribir los datos."
+  ],
+  "useCases": [
+    {
+      "title": "Registrar una medición",
+      "description": "Guarda el IMC junto a un peso fechado de una revisión, entrenamiento o registro personal."
+    },
+    {
+      "title": "Comparar dos fechas",
+      "description": "Calcula el IMC de dos momentos distintos para ver cómo cambió el valor con el tiempo."
+    },
+    {
+      "title": "Comprobar un dato publicado",
+      "description": "Repite el cálculo con la altura y el peso indicados para verificar una cifra en un informe o perfil."
+    }
   ],
   "examples": [
     {
-      "title": "Ejemplo 1",
-      "input": "70 kg y 175 cm",
-      "output": "22,86",
-      "description": "Un ejemplo realista de calculadora de IMC para una consulta habitual."
+      "title": "Entrada métrica de adulto",
+      "input": "Altura: 175 cm, Peso: 70 kg",
+      "output": "IMC = 22,9",
+      "description": "Cálculo habitual en sistema métrico con un valor intermedio."
     },
     {
-      "title": "Ejemplo 2",
-      "input": "70 kg y 175 cm",
-      "output": "22,86",
-      "description": "Otro caso práctico para atraer tráfico orgánico de cola larga."
+      "title": "Misma altura, más peso",
+      "input": "Altura: 160 cm, Peso: 82 kg",
+      "output": "IMC = 32,0",
+      "description": "Muestra cómo sube el índice al aumentar el peso sin cambiar la altura."
+    },
+    {
+      "title": "Figura alta y ligera",
+      "input": "Altura: 182 cm, Peso: 66 kg",
+      "output": "IMC = 19,9",
+      "description": "Ejemplo de un valor más bajo por la combinación de más altura y menos peso."
     }
   ],
   "faq": [
     {
-      "question": "¿Qué precisión tiene esta herramienta?",
-      "answer": "El resultado se calcula directamente a partir de la fórmula o de la lógica en el navegador utilizada por esta herramienta."
+      "question": "¿Qué unidades debo usar?",
+      "answer": "Usa un solo sistema de forma coherente: kilos con centímetros, o libras con pulgadas. Mezclar unidades produce un resultado incorrecto."
     },
     {
-      "question": "¿Puedo usar esta herramienta en el móvil?",
-      "answer": "Sí. La página funciona en escritorio y en dispositivos móviles con una interfaz sencilla de entrada y resultado."
+      "question": "¿Por qué el resultado tiene un decimal?",
+      "answer": "Un decimal basta para comparar valores sin dar la impresión de una exactitud excesiva."
+    },
+    {
+      "question": "¿Puedo escribir la altura en pies y pulgadas?",
+      "answer": "Solo si la herramienta lo admite expresamente. Si no, convierte la altura antes de introducirla."
+    },
+    {
+      "question": "¿Por qué el IMC puede ser engañoso en personas muy musculadas?",
+      "answer": "Porque solo usa altura y peso. No puede saber si la masa adicional viene del músculo, la grasa, el hueso o el agua."
+    },
+    {
+      "question": "¿Cuál es el error de entrada más frecuente?",
+      "answer": "El fallo más común es poner la unidad equivocada en un campo, por ejemplo libras en lugar de kilos o pulgadas en lugar de centímetros."
     }
   ],
   "seo": {
-    "title": "Calculadora de IMC",
-    "description": "Calcula el índice de masa corporal a partir de la altura y el peso. Calculadora de IMC gratis en línea con resultados instantáneos.",
+    "title": "Calculadora IMC valor",
+    "description": "Calcula el IMC a partir de altura y peso con unidades claras, resultado decimal y categoría fácil de leer.",
     "keywords": [
       "calculadora imc",
-      "bmi calculator",
-      "herramienta calculadoras"
+      "índice de masa corporal",
+      "altura y peso imc"
     ]
   }
 }

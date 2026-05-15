@@ -4,43 +4,76 @@
   "slug": "calculateur-dinteret-simple",
   "h1": "Calculateur d’intérêt simple",
   "title": "Calculateur d’intérêt simple",
-  "shortDescription": "Calculez l’intérêt simple à partir du capital, du taux et de la durée avec des résultats rapides, des saisies simples et des exemples pratiques.",
-  "overview": "Calculez l’intérêt simple à partir du capital, du taux et de la durée. Cette page fournit une réponse rapide grâce à un outil pratique et un parcours de résultat simple. Elle s’adresse aux utilisateurs qui recherchent une réponse gratuite en ligne, des résultats rapides dans le navigateur et un contenu pratique de longue traîne.",
+  "shortDescription": "Calculez l’intérêt simple, le montant des intérêts et le total final à partir du capital, du taux et de la durée.",
+  "metaTitle": "Calculateur d’intérêt simple",
+  "metaDescription": "Calculez l’intérêt simple, le montant des intérêts et le total final à partir du capital, du taux et de la durée.",
+  "intro": "Saisissez le capital, le taux annuel et la durée pour voir l’intérêt simple et le montant final.",
+  "overview": "L’intérêt simple se calcule uniquement sur le capital de départ, sans capitalisation. Cet outil vous donne un résultat clair à partir d’une formule directe, utile pour comparer un placement à taux fixe, un prêt simple ou un exercice de finance.\n\nSi la durée n’est pas exprimée en années, il faut la convertir dans la même unité que le taux. Avec un taux annuel, les mois ou les jours doivent être ramenés à une fraction d’année avant l’interprétation. Le calculateur affiche le montant des intérêts et le total à l’échéance pour que vous puissiez vérifier l’ensemble du scénario en une seule lecture.",
   "howItWorks": [
-    "Saisissez la valeur ou le texte demandé dans le formulaire.",
-    "Le calcul ou la transformation s’exécute instantanément dans le navigateur.",
-    "Consultez le résultat puis utilisez des outils liés si vous avez besoin d’une étape supplémentaire."
+    "Saisissez le capital, le taux annuel et la durée.",
+    "Le calculateur applique la formule : Intérêt = Capital × Taux × Temps.",
+    "Consultez les intérêts et le total final, puis modifiez les valeurs si vous voulez comparer un autre cas."
+  ],
+  "useCases": [
+    {
+      "title": "Placement à terme fixe",
+      "description": "Estimer les intérêts générés par un dépôt sur un nombre donné d’années à taux constant."
+    },
+    {
+      "title": "Prêt simple à taux fixe",
+      "description": "Calculer le coût d’un prêt sans capitalisation ni échéances variables."
+    },
+    {
+      "title": "Exercices de finance",
+      "description": "Vérifier un devoir ou illustrer l’effet du capital, du taux et de la durée sur le résultat."
+    }
   ],
   "examples": [
     {
-      "title": "Exemple 1",
-      "input": "5000, 4 %, 3 ans",
-      "output": "600",
-      "description": "Un exemple réaliste de calculateur d’intérêt simple pour une recherche courante."
+      "title": "Placement sur 3 ans",
+      "input": "Capital : 5 000 ; Taux : 4 % ; Durée : 3 ans",
+      "output": "Intérêt : 600 ; Total : 5 600",
+      "description": "Exemple d’un dépôt conservé trois ans à taux annuel fixe."
     },
     {
-      "title": "Exemple 2",
-      "input": "5000, 4 %, 3 ans",
-      "output": "600",
-      "description": "Un autre cas pratique pour le trafic organique de longue traîne."
+      "title": "Coût d’un prêt sur 1 an",
+      "input": "Capital : 12 000 ; Taux : 7,5 % ; Durée : 1 an",
+      "output": "Intérêt : 900 ; Total : 12 900",
+      "description": "Montre le coût d’un prêt simple sans capitalisation."
+    },
+    {
+      "title": "Période de six mois",
+      "input": "Capital : 8 000 ; Taux : 6 % ; Durée : 0,5 an",
+      "output": "Intérêt : 240 ; Total : 8 240",
+      "description": "Exemple avec une durée saisie sous forme de fraction d’année."
     }
   ],
   "faq": [
     {
-      "question": "Quel est le niveau de précision de cet outil ?",
-      "answer": "Le résultat est calculé directement à partir de la formule ou de la logique côté navigateur utilisée par cet outil."
+      "question": "Ce calculateur prend-il en compte les intérêts composés ?",
+      "answer": "Non. Il calcule uniquement l’intérêt simple sur le capital initial. Si les intérêts s’ajoutent au solde et produisent eux-mêmes des intérêts, il faut un calculateur d’intérêts composés."
     },
     {
-      "question": "Puis-je utiliser cet outil sur mobile ?",
-      "answer": "Oui. La page fonctionne sur ordinateur et sur mobile avec une interface simple de saisie et de résultat."
+      "question": "Comment saisir une durée inférieure à un an ?",
+      "answer": "Utilisez une unité cohérente avec le taux. Avec un taux annuel, convertissez les mois ou les jours en fraction d’année, par exemple 6 mois = 0,5 an."
+    },
+    {
+      "question": "Pourquoi le résultat diffère-t-il d’un relevé bancaire ?",
+      "answer": "Une banque peut appliquer des intérêts composés, des arrondis ou une convention de calcul des jours différente. Le résultat ne sera alors pas identique."
+    },
+    {
+      "question": "Puis-je utiliser un taux mensuel ou journalier ?",
+      "answer": "Oui, mais la durée doit être dans la même unité. Un taux mensuel demande des mois, et un taux journalier demande des jours."
     }
   ],
   "seo": {
     "title": "Calculateur d’intérêt simple",
-    "description": "Calculez l’intérêt simple à partir du capital, du taux et de la durée. Calculateur d’intérêt simple gratuit en ligne avec résultats instantanés.",
+    "description": "Calculez l’intérêt simple, le montant des intérêts et le total final à partir du capital, du taux et de la durée.",
     "keywords": [
       "calculateur d interet simple",
-      "outil calculatrice"
+      "interet simple",
+      "calculateur financier",
+      "formule interet simple"
     ]
   }
 }

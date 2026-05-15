@@ -4,44 +4,81 @@
   "slug": "formateador-json",
   "h1": "Formateador JSON",
   "title": "Formateador JSON",
-  "shortDescription": "Formatea y valida JSON con sangría legible y errores inmediatos.",
-  "overview": "El formateador JSON analiza el JSON pegado, muestra una versión legible y también devuelve una salida minificada. Es ideal para páginas de herramientas para desarrolladores porque puede funcionar sin backend y, al mismo tiempo, ofrecer contenido SEO sólido con ejemplos y solución de problemas.",
+  "shortDescription": "Convierte JSON bruto en una versión clara, detecta errores de sintaxis y conserva la estructura.",
+  "metaTitle": "Formateador JSON y validador",
+  "metaDescription": "Pega JSON para formatearlo con sangría uniforme, detectar errores de sintaxis y obtener una versión compacta.",
+  "intro": "Pega JSON, elige la sangría y obtén una salida legible o un error de sintaxis explicado con claridad.",
+  "overview": "Este formateador analiza el JSON pegado y lo muestra con una sangría coherente para que los objetos y arrays anidados se entiendan de un vistazo. También genera una versión minificada, útil cuando necesitas comparar estructuras o pasar datos entre sistemas.\n\nSi el texto no es JSON válido, la herramienta devuelve el problema de análisis en lugar de intentar corregirlo. Eso la hace práctica para revisar respuestas de API, limpiar fragmentos copiados desde registros y revisar archivos de configuración antes de integrarlos.\n\nEl resultado solo cambia la presentación, no el contenido. Los objetos siguen siendo objetos, los arrays siguen siendo arrays y los valores numéricos, booleanos, nulos y de texto se mantienen intactos.",
   "howItWorks": [
-    "Pega el JSON y elige el tamaño de sangría.",
-    "El analizador valida la entrada y muestra un error si el JSON no es válido.",
-    "Cuando es correcto, la herramienta devuelve el JSON formateado, la versión minificada y el número de líneas."
+    "Pega un documento JSON en el campo de entrada.",
+    "Selecciona el tamaño de sangría para la vista formateada.",
+    "El analizador verifica si el texto es JSON válido y muestra un error si no lo es.",
+    "Cuando la entrada es correcta, la herramienta muestra la versión formateada, la versión minificada y el número de líneas."
+  ],
+  "useCases": [
+    {
+      "title": "Revisar respuestas de API",
+      "description": "Reordena cuerpos de respuesta complejos para inspeccionar estados, arrays y campos anidados con menos esfuerzo."
+    },
+    {
+      "title": "Limpiar configuración copiada",
+      "description": "Convierte bloques densos de ajustes en JSON legible antes de compararlos o llevarlos a un repositorio."
+    },
+    {
+      "title": "Preparar ejemplos para compartir",
+      "description": "Alterna entre JSON formateado y compacto al enviar muestras al equipo o pegarlas en documentación."
+    }
   ],
   "examples": [
     {
-      "title": "Limpieza de un payload de API",
-      "input": "{\"status\":\"ok\",\"items\":[1,2]}",
-      "output": "JSON con formato legible",
-      "description": "Facilita revisar logs y payloads durante la depuración."
+      "title": "Leer un webhook",
+      "input": "{\"event\":\"invoice.paid\",\"data\":{\"id\":4821,\"amount\":1299,\"currency\":\"USD\"}}",
+      "output": "{\n  \"event\": \"invoice.paid\",\n  \"data\": {\n    \"id\": 4821,\n    \"amount\": 1299,\n    \"currency\": \"USD\"\n  }\n}",
+      "description": "Expande un payload anidado para revisar cada campo con más facilidad."
     },
     {
-      "title": "Compartir salida compacta",
-      "input": "JSON formateado",
-      "output": "JSON minificado",
-      "description": "Útil cuando necesitas la representación más pequeña posible."
+      "title": "Compactar un objeto de ajustes",
+      "input": "{\n  \"theme\": \"dark\",\n  \"layout\": {\n    \"sidebar\": true,\n    \"density\": \"comfortable\"\n  }\n}",
+      "output": "{\"theme\":\"dark\",\"layout\":{\"sidebar\":true,\"density\":\"comfortable\"}}",
+      "description": "Elimina espacios sobrantes y conserva los mismos datos en una forma más corta."
+    },
+    {
+      "title": "Detectar una coma extra",
+      "input": "{\"name\":\"Mira\", \"roles\":[\"admin\",], \"active\":true}",
+      "output": "Error: Unexpected token ] in JSON at position 36",
+      "description": "Señala el punto exacto del problema para corregir la coma final no permitida."
     }
   ],
   "faq": [
     {
-      "question": "¿Cambia el orden de las claves?",
-      "answer": "No. El formateador conserva el orden de las claves del objeto tal como lo devuelve JavaScript tras el análisis."
+      "question": "¿El formateo cambia los valores del JSON?",
+      "answer": "No. Solo cambia el espaciado y los saltos de línea. Los strings, números, booleanos, null, arrays y objetos mantienen su contenido."
+    },
+    {
+      "question": "¿Se conserva el orden de las claves?",
+      "answer": "Sí, la herramienta muestra el orden devuelto por el analizador. No ordena ni reescribe las claves."
     },
     {
       "question": "¿Puede reparar JSON roto automáticamente?",
-      "answer": "Este formateador de ejemplo valida y da formato al JSON válido. Si la entrada está rota, devuelve un error para que el usuario pueda corregir el origen con seguridad."
+      "answer": "No. Si la entrada es inválida, devuelve el error de análisis en lugar de inventar comillas, comas o corchetes faltantes."
+    },
+    {
+      "question": "¿Por qué falla una coma al final?",
+      "answer": "En JSON estándar no se permiten comas finales. Debes quitar la coma extra después del último elemento de un array o de un objeto."
+    },
+    {
+      "question": "¿Cómo interpreto la salida minificada?",
+      "answer": "Es exactamente el mismo contenido sin espacios ni saltos de línea. Sirve para copiar, comparar o transportar datos, pero es menos legible."
     }
   ],
   "seo": {
-    "title": "Formateador JSON",
-    "description": "Formateador y validador JSON online con salida pretty print y minificación.",
+    "title": "Formateador JSON y validador",
+    "description": "Pega JSON para formatearlo con sangría uniforme, detectar errores de sintaxis y obtener una versión compacta.",
     "keywords": [
       "formateador json",
       "validador json",
-      "pretty print json"
+      "pretty print json",
+      "minificar json"
     ]
   }
 }

@@ -4,43 +4,80 @@
   "slug": "calculateur-interets-composes",
   "h1": "Calculateur d’intérêts composés",
   "title": "Calculateur d’intérêts composés",
-  "shortDescription": "Calculez la croissance des intérêts composés dans le temps avec des résultats rapides, des saisies simples et des exemples pratiques.",
-  "overview": "Calculez la croissance des intérêts composés dans le temps. Cette page fournit une réponse rapide grâce à un outil pratique et à un parcours de résultat simple. Elle s’adresse aux utilisateurs qui cherchent une réponse gratuite en ligne, des résultats rapides dans le navigateur et un contenu utile de longue traîne.",
+  "shortDescription": "Voyez comment un capital évolue avec les intérêts composés au fil du temps, selon le taux, la durée et la fréquence de capitalisation.",
+  "metaTitle": "Calculateur d’intérêts composés",
+  "metaDescription": "Calculez la valeur finale, les intérêts totaux et la croissance avec capital initial, taux, durée et fréquence de capitalisation.",
+  "intro": "Indiquez le capital initial, le taux annuel, la durée et la fréquence de capitalisation pour voir la valeur finale et les intérêts générés.",
+  "overview": "Ce calculateur montre comment un capital progresse lorsque les intérêts sont ajoutés au solde, puis produisent eux-mêmes des intérêts. Il est utile pour les placements, les livrets et tous les cas où la fréquence de capitalisation modifie le montant final. Vous pouvez comparer différents taux, durées et intervalles de capitalisation pour voir l’impact sur le résultat.\n\nLe résultat affiche la valeur finale et les intérêts obtenus, ce qui permet de distinguer votre capital de départ du gain généré par la capitalisation. Si vous ajoutez des versements réguliers, saisissez-les exactement comme l’outil le demande, car la fréquence ou le moment du versement peut changer le calcul. Pour les emprunts, un calculateur de mensualités est généralement plus adapté.",
   "howItWorks": [
-    "Saisissez la valeur ou le texte requis dans le formulaire.",
-    "La conversion, le calcul ou la transformation s’exécute instantanément dans le navigateur.",
-    "Consultez le résultat et poursuivez avec des outils associés si vous avez besoin d’une autre étape."
+    "Saisissez le capital initial, le taux annuel, la durée et la fréquence de capitalisation.",
+    "L’outil applique la formule des intérêts composés pour estimer la valeur finale et les intérêts totaux.",
+    "Consultez le résultat puis modifiez les données si vous souhaitez comparer plusieurs scénarios d’épargne."
+  ],
+  "useCases": [
+    {
+      "title": "Comparer deux placements",
+      "description": "Comparez deux solutions avec le même capital de départ mais un taux ou une capitalisation différente."
+    },
+    {
+      "title": "Estimer un dépôt à terme",
+      "description": "Calculez la croissance possible d’un dépôt à terme avec des intérêts versés chaque mois, trimestre ou année."
+    },
+    {
+      "title": "Préparer un objectif d’épargne",
+      "description": "Évaluez le temps nécessaire pour atteindre une somme cible à un taux donné."
+    }
   ],
   "examples": [
     {
-      "title": "Exemple 1",
-      "input": "5000, 5 %, 10 ans",
-      "output": "Croissance dans le temps",
-      "description": "Un exemple réaliste de calculateur d’intérêts composés pour une recherche courante."
+      "title": "Capitalisation annuelle sur un dépôt",
+      "input": "Capital initial : 8 000 ; Taux : 4,5 % ; Durée : 6 ans ; Capitalisation : annuelle",
+      "output": "Valeur finale : 10 411,07 ; Intérêts générés : 2 411,07",
+      "description": "Montre la croissance d’un dépôt lorsque les intérêts sont ajoutés une fois par an."
     },
     {
-      "title": "Exemple 2",
-      "input": "5000, 5 %, 10 ans",
-      "output": "Croissance dans le temps",
-      "description": "Un autre cas d’usage pratique pour générer du trafic organique de longue traîne."
+      "title": "Capitalisation mensuelle sur un livret",
+      "input": "Capital initial : 2 500 ; Taux : 6,2 % ; Durée : 3 ans ; Capitalisation : mensuelle",
+      "output": "Valeur finale : 3 007,39 ; Intérêts générés : 507,39",
+      "description": "Utile pour comparer une capitalisation mensuelle avec un taux nominal annuel."
+    },
+    {
+      "title": "Durée courte avec taux plus élevé",
+      "input": "Capital initial : 1 200 ; Taux : 9 % ; Durée : 18 mois ; Capitalisation : trimestrielle",
+      "output": "Valeur finale : 1 341,68 ; Intérêts générés : 141,68",
+      "description": "Pratique pour vérifier des durées courtes où la fréquence de capitalisation reste importante."
     }
   ],
   "faq": [
     {
-      "question": "Quelle est la précision de cet outil ?",
-      "answer": "Le résultat est calculé directement à partir de la formule ou de la logique côté navigateur utilisée par cet outil."
+      "question": "Quels paramètres influencent le plus le résultat ?",
+      "answer": "Le capital initial, le taux annuel, la durée et la fréquence de capitalisation ont le plus d’impact. Une petite variation du taux ou de l’intervalle de capitalisation peut changer sensiblement le résultat."
     },
     {
-      "question": "Puis-je utiliser cet outil sur mobile ?",
-      "answer": "Oui. La page fonctionne sur ordinateur et sur mobile avec une mise en page simple de saisie et de résultat."
+      "question": "Pourquoi la capitalisation mensuelle diffère-t-elle de la capitalisation annuelle ?",
+      "answer": "Avec une capitalisation plus fréquente, les intérêts sont ajoutés plus souvent au solde. Les calculs suivants partent donc d’un montant légèrement plus élevé, ce qui donne généralement une valeur finale supérieure."
+    },
+    {
+      "question": "L’outil inclut-il les impôts, frais ou l’inflation ?",
+      "answer": "Non. Il calcule uniquement la croissance issue des données saisies. Les impôts, les frais, l’inflation et les versements ou retraits doivent être pris en compte séparément."
+    },
+    {
+      "question": "Comment interpréter la valeur finale et les intérêts générés ?",
+      "answer": "La valeur finale correspond au solde total à la fin de la période. Les intérêts générés sont la différence entre ce solde et le capital initial."
+    },
+    {
+      "question": "Pourquoi certains résultats sont-ils arrondis ?",
+      "answer": "Les valeurs sont arrondies pour l’affichage, donc de très petits écarts décimaux peuvent ne pas apparaître. Pour un calcul comptable exact, il faut utiliser la formule avec toute sa précision."
     }
   ],
   "seo": {
     "title": "Calculateur d’intérêts composés",
-    "description": "Calculez la croissance des intérêts composés dans le temps. Calculateur d’intérêts composés gratuit en ligne avec résultats instantanés.",
+    "description": "Calculez la valeur finale, les intérêts totaux et la croissance avec capital initial, taux, durée et fréquence de capitalisation.",
     "keywords": [
       "calculateur d’intérêts composés",
-      "outil calculateurs"
+      "calculateur valeur finale",
+      "calculateur épargne",
+      "calculateur intérêts"
     ]
   }
 }

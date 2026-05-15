@@ -4,106 +4,87 @@
   "slug": "minifikator-html",
   "h1": "Minifikator HTML",
   "title": "Minifikator HTML",
-  "shortDescription": "Minifikuj HTML online, aby zmniejszyć rozmiar pliku bez korzystania z zewnętrznych API.",
-  "metaTitle": "Minifikator HTML online | Szybka kompresja HTML",
-  "metaDescription": "Minifikuj HTML w przeglądarce, aby zmniejszyć rozmiar pliku, usunąć zbędne białe znaki i zoptymalizować znacznik bez zewnętrznych API.",
-  "intro": "Minifikuj HTML w przeglądarce, aby zmniejszyć rozmiar kodu, usunąć zbędne białe znaki i przygotować znacznik do produkcji. To narzędzie działa lokalnie po stronie klienta i nie wysyła kodu do zewnętrznych usług.",
-  "overview": "Użyj tego minifikatora HTML, aby szybko i bezpiecznie skompresować znacznik. Usuwa nadmiarowe spacje, podziały linii i komentarze tam, gdzie to możliwe, zachowując strukturę dokumentu. Ponieważ działa po stronie klienta, jest wygodnym wyborem dla programistów, którzy chcą szybszego ładowania stron, czystszego kodu źródłowego i braku zależności od API.",
+  "shortDescription": "Minifikuj HTML w przeglądarce, aby zmniejszyć rozmiar znaczników bez wysyłania kodu na serwer.",
+  "metaTitle": "Minifikator HTML | Kompresuj HTML",
+  "metaDescription": "Minifikuj HTML w przeglądarce, aby zmniejszyć rozmiar pliku, usunąć zbędne odstępy i przygotować znacznik do wdrożenia.",
+  "intro": "Wklej HTML i otrzymaj mniejszą wersję kodu z usuniętymi nadmiarowymi odstępami, podziałami linii i opcjonalnie komentarzami.",
+  "overview": "Ten minifikator HTML kompresuje znacznik, zachowując jego strukturę. Sprawdza się przy szablonach, stronach statycznych, fragmentach komponentów oraz kodzie eksportowanym z narzędzi, które dodają dużo wcięć i pustych linii.\n\nPrzetwarzanie odbywa się w przeglądarce, więc kod pozostaje lokalnie podczas pracy. Możesz od razu ocenić wynik, skopiować go do buildu, CMS-a albo szablonu i zdecydować, czy komentarze mają zostać, czy lepiej je usunąć.",
   "howItWorks": [
     "Wklej HTML do pola wejściowego.",
-    "Wybierz dostępne opcje czyszczenia, na przykład usuwanie komentarzy.",
+    "Wybierz, czy komentarze mają zostać usunięte.",
     "Uruchom minifikację, aby skompresować znacznik.",
-    "Skopiuj wynikowy HTML i użyj go w projekcie."
+    "Skopiuj zminifikowany HTML i użyj go w projekcie."
   ],
   "useCases": [
-    "Przygotowanie HTML do wdrożenia produkcyjnego.",
-    "Zmniejszanie rozmiaru szablonu przed publikacją strony.",
-    "Czyszczenie eksportowanego HTML z edytorów lub generatorów.",
-    "Optymalizacja fragmentów dla szablonów e-mail lub stron statycznych.",
-    "Sprawdzanie, ile można zyskać na usunięciu białych znaków i komentarzy."
+    {
+      "title": "Wynik buildu przed publikacją",
+      "description": "Zmniejsz objętość finalnego HTML przed wdrożeniem, aby plik był prostszy do przeniesienia przez kolejne etapy wdrożenia."
+    },
+    {
+      "title": "Porządkowanie eksportu z narzędzi",
+      "description": "Usuń wcięcia i bloki komentarzy z HTML wygenerowanego przez kreatory stron, edytory lub generatory."
+    },
+    {
+      "title": "Publikacja stron statycznych",
+      "description": "Przygotuj ręcznie pisany HTML strony docelowej przed uploadem, gdy chcesz mieć zwięzłe źródło."
+    },
+    {
+      "title": "Czyszczenie szablonów e-mail",
+      "description": "Kompresuj fragmenty HTML używane w e-mailach transakcyjnych i marketingowych, gdzie liczy się każdy znak."
+    },
+    {
+      "title": "Analiza zmian w znaczniku",
+      "description": "Sprawdź, jak bardzo białe znaki i komentarze zwiększają rozmiar konkretnego dokumentu lub fragmentu."
+    }
   ],
   "examples": [
     {
-      "title": "Podstawowa minifikacja",
-      "input": "<div>\n  <h1>Title</h1>\n  <p> Hello world </p>\n</div>",
-      "output": "<div><h1>Title</h1><p>Hello world</p></div>",
-      "description": "Usuwa podziały linii i nadmiarowe spacje, zachowując poprawny znacznik."
+      "title": "Spłaszczenie zagnieżdżonych odstępów",
+      "input": "<main>\n  <article>\n    <h2>About</h2>\n    <p>   Built for release   </p>\n  </article>\n</main>",
+      "output": "<main><article><h2>About</h2><p>Built for release</p></article></main>",
+      "description": "Usuwa podziały linii i powtórzone spacje, nie zmieniając struktury tagów."
     },
     {
-      "title": "Usuwanie komentarzy",
-      "input": "<section>\n  <!-- note -->\n  <span>Text</span>\n</section>",
-      "output": "<section><span>Text</span></section>",
-      "description": "Usuwa komentarze HTML, jeśli opcja jest włączona."
+      "title": "Zachowaj treść, usuń komentarze",
+      "input": "<div class=\"card\">\n  <!-- pricing block -->\n  <strong>$19</strong>\n  <span>per month</span>\n</div>",
+      "output": "<div class=\"card\"><strong>$19</strong><span>per month</span></div>",
+      "description": "Komentarze HTML znikają, jeśli opcja usuwania komentarzy jest włączona."
+    },
+    {
+      "title": "Krótszy fragment listy",
+      "input": "<ul>\n        <li>One</li>\n        <li>Two</li>\n        <li>Three</li>\n</ul>",
+      "output": "<ul><li>One</li><li>Two</li><li>Three</li></ul>",
+      "description": "Przydatne dla wklejonych fragmentów z dużym wcięciem pochodzącym z edytora."
     }
   ],
   "faq": [
     {
-      "question": "Czy ten minifikator HTML wysyła mój kod na serwer?",
-      "answer": "Nie. Działa w przeglądarce i korzysta wyłącznie z logiki po stronie klienta."
+      "question": "Czy narzędzie zachowuje tagi i atrybuty bez zmian?",
+      "answer": "Zachowuje strukturę HTML, ale może normalizować odstępy przy węzłach tekstowych i usuwać komentarze, jeśli wybierzesz tę opcję."
     },
     {
-      "question": "Czy może zepsuć mój HTML?",
-      "answer": "Narzędzie usuwa zbędne białe znaki i komentarze, starając się zachować poprawną strukturę. Jeśli Twój kod zależy od dokładnych odstępów, sprawdź wynik."
+      "question": "Kiedy lepiej nie minifikować fragmentu?",
+      "answer": "Unikaj tego w treściach, w których pojedyncze spacje mają znaczenie widoczne dla użytkownika, na przykład w preformatowanych blokach lub specyficznie sformatowanym tekście."
     },
     {
-      "question": "Czy mogę używać go do kodu produkcyjnego?",
-      "answer": "Tak. Nadaje się do przygotowania HTML przed wdrożeniem, ale zawsze warto przetestować wynik w swoim środowisku."
+      "question": "Dlaczego wynik wygląda inaczej po minifikacji?",
+      "answer": "Narzędzie usuwa podziały linii i kompresuje powtórzone spacje, więc źródło staje się krótsze, nawet jeśli render strony powinien pozostać taki sam."
     },
     {
-      "question": "Czy usuwa komentarze?",
-      "answer": "Tak, jeśli opcja jest włączona. W razie potrzeby możesz je zachować."
+      "question": "Czy komentarze można zostawić w wyniku?",
+      "answer": "Tak. Jeśli usuwanie komentarzy jest wyłączone, narzędzie pozostawia komentarze HTML w kodzie."
     }
   ],
-  "uiLabels": {
-    "copy": "Kopiuj",
-    "copied": "Skopiowano",
-    "input": "Wejście",
-    "output": "Wyjście",
-    "placeholder": "Wklej HTML tutaj",
-    "indent": "Wcięcie",
-    "removeComments": "Usuń komentarze",
-    "preview": "Podgląd",
-    "source": "Źródło",
-    "sanitizedHtml": "Oczyszczony HTML",
-    "plainText": "Zwykły tekst",
-    "summary": "Podsumowanie",
-    "total": "Razem",
-    "links": "Linki",
-    "images": "Obrazy",
-    "errors": "Błędy",
-    "warnings": "Ostrzeżenia",
-    "valid": "Poprawny",
-    "invalid": "Niepoprawny",
-    "href": "Href",
-    "text": "Tekst",
-    "rel": "Rel",
-    "target": "Cel",
-    "alt": "Alt",
-    "width": "Szerokość",
-    "height": "Wysokość",
-    "empty": "Pusto",
-    "outputReady": "Wynik gotowy",
-    "cleanedHtml": "Oczyszczony HTML",
-    "formattedHtml": "Sformatowany HTML",
-    "minifiedHtml": "Zminifikowany HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Wyodrębnione obrazy",
-    "extractedLinks": "Wyodrębnione linki",
-    "validationSummary": "Podsumowanie walidacji",
-    "prettyHtml": "Czytelny HTML",
-    "encodedText": "Zakodowany tekst"
-  },
   "seo": {
-    "title": "Minifikator HTML online | Szybka kompresja HTML",
-    "description": "Minifikuj HTML w przeglądarce, aby zmniejszyć rozmiar pliku, usunąć zbędne białe znaki i zoptymalizować znacznik bez zewnętrznych API.",
+    "title": "Minifikator HTML | Kompresuj HTML",
+    "description": "Minifikuj HTML w przeglądarce, aby zmniejszyć rozmiar pliku, usunąć zbędne odstępy i przygotować znacznik do wdrożenia.",
     "keywords": [
       "minifikator html",
       "minifikacja html",
       "kompresja html",
-      "kompresuj html online",
+      "kompresuj html",
       "usun biale znaki html",
-      "czyszczenie html",
-      "minifikator html po stronie klienta"
+      "czyszczenie html"
     ]
   }
 }

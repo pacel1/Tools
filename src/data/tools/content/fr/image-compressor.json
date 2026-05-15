@@ -4,157 +4,90 @@
   "slug": "compresseur-d-images",
   "h1": "Compresseur d’images",
   "title": "Compresseur d’images",
-  "shortDescription": "Compressez des images en ligne et réduisez la taille du fichier sans envoyer de fichiers vers un serveur.",
-  "metaTitle": "Compresseur d’images en ligne | Réduisez le poids rapidement",
-  "metaDescription": "Compressez des images JPG, PNG et WebP en ligne dans le navigateur. Réduisez la taille du fichier, contrôlez la qualité et protégez vos fichiers.",
-  "intro": "Compressez des images dans votre navigateur et réduisez la taille des fichiers sans les envoyer vers un serveur. Ajustez la qualité, voyez immédiatement l’espace gagné et téléchargez l’image optimisée en quelques secondes.",
-  "overview": "Ce compresseur d’images en ligne vous aide à réduire le poids des fichiers image tout en gardant le contrôle sur la qualité. Il fonctionne côté client, donc vos images restent sur votre appareil. Utilisez-le pour accélérer les envois, économiser de l’espace et améliorer les performances web.",
+  "shortDescription": "Compressez des JPG, PNG et WebP dans le navigateur et réduisez le poids du fichier sans envoi vers un serveur.",
+  "metaTitle": "Compresseur d’images",
+  "metaDescription": "Compressez des images JPG, PNG et WebP dans le navigateur. Réduisez la taille du fichier, réglez la qualité et gardez vos fichiers sur votre appareil.",
+  "intro": "Compressez une image localement dans votre navigateur, réduisez son poids et téléchargez la version optimisée sans l’envoyer ailleurs.",
+  "overview": "Ce compresseur d’images sert à alléger des fichiers image tout en gardant la main sur le rendu final. Il fonctionne localement dans le navigateur, donc l’image reste sur votre appareil pendant que vous réglez la compression et vérifiez le résultat.\n\nIl est utile lorsqu’une photo, une capture, une bannière ou un visuel doit être plus léger pour un site web, un formulaire, une pièce jointe ou un document partagé. Vous pouvez comparer l’original et la sortie compressée, puis choisir le bon compromis entre taille réduite et détails visibles selon le fichier.\n\nIl prend en charge JPG, PNG et WebP, ce qui le rend adapté aux photos comme aux visuels d’interface. Si une image est déjà très optimisée, le gain peut être plus faible, mais vous pouvez encore ajuster la qualité pour éviter des artefacts trop visibles.",
   "howItWorks": [
-    "Importez ou collez un fichier image dans le compresseur.",
-    "Réglez le curseur de qualité pour équilibrer taille et netteté.",
-    "Prévisualisez le résultat compressé et vérifiez l’espace économisé.",
-    "Téléchargez l’image optimisée lorsque le résultat vous convient."
+    "Ajoutez un fichier JPG, PNG ou WebP depuis votre appareil.",
+    "Réglez la qualité jusqu’à obtenir le bon équilibre entre poids et rendu.",
+    "Vérifiez l’aperçu compressé et la taille gagnée.",
+    "Téléchargez l’image compressée comme nouveau fichier."
   ],
   "useCases": [
-    "Réduire le poids des fichiers JPG pour les sites web et les blogs.",
-    "Compresser des images PNG avant un envoi par e-mail ou chat.",
-    "Optimiser des photos produit pour accélérer le chargement des pages.",
-    "Réduire des pièces jointes image pour les formulaires et dépôts en ligne."
+    {
+      "title": "Alléger des photos produit pour une boutique",
+      "description": "Réduire les images de catalogue pour que les pages produit se chargent plus vite et utilisent moins de bande passante."
+    },
+    {
+      "title": "Préparer des captures pour un support technique",
+      "description": "Réduire le poids des captures d’écran avant de les joindre à un rapport de bug ou à une demande d’aide."
+    },
+    {
+      "title": "Respecter les limites d’envoi dans un formulaire",
+      "description": "Compresser des photos de documents, des images d’identité ou des fichiers de projet avant un envoi avec limite stricte."
+    },
+    {
+      "title": "Rendre les visuels d’email plus légers",
+      "description": "Compresser bannières et vignettes avant insertion dans une newsletter ou une campagne emailing."
+    }
   ],
   "examples": [
     {
-      "title": "Idéal pour le web",
-      "input": "Photo JPG haute résolution",
-      "output": "Fichier JPG plus léger avec détails préservés",
-      "description": "Parfait quand vous avez besoin d’une image plus légère pour publier ou partager."
+      "title": "Photo JPG de produit très détaillée",
+      "input": "JPG de 6,4 Mo, 4000 × 3000, prise en lumière du jour",
+      "output": "JPG de 1,1 Mo avec l’essentiel des détails conservé",
+      "description": "Utile quand la photo d’origine est trop lourde pour une fiche produit ou une publication."
     },
     {
-      "title": "Idéal pour une compression privée",
-      "input": "Fichier image local",
-      "output": "Fichier compressé créé dans le navigateur",
-      "description": "Aucun envoi vers un serveur distant, le traitement reste local."
+      "title": "Capture PNG d’interface",
+      "input": "PNG de 2,8 Mo, couleurs plates, zone transparente dans la barre d’outils",
+      "output": "PNG de 640 Ko après réduction",
+      "description": "Pratique pour les captures d’écran quand il faut garder la mise en page sans trop de poids."
+    },
+    {
+      "title": "Bannière WebP pour une landing page",
+      "input": "WebP de 1,9 Mo avec dégradés doux",
+      "output": "WebP de 780 Ko optimisé pour la diffusion",
+      "description": "Aide à alléger un visuel marketing sans changer le format du fichier."
     }
   ],
   "faq": [
     {
-      "question": "Ce compresseur envoie-t-il mes fichiers vers un serveur ?",
-      "answer": "Non. La compression s’effectue dans votre navigateur, donc vos fichiers ne sont pas envoyés vers un serveur."
+      "question": "La compression se fait-elle sur mon appareil ?",
+      "answer": "Oui. L’image est traitée dans votre navigateur, donc il n’est pas nécessaire de l’envoyer pour obtenir le résultat compressé."
     },
     {
-      "question": "Quels formats d’image sont pris en charge ?",
-      "answer": "Il fonctionne surtout avec les formats courants comme JPG, PNG et WebP."
+      "question": "Pourquoi l’aperçu peut-il être un peu différent de l’original ?",
+      "answer": "La compression peut modifier légèrement les textures fines, les dégradés et les bords nets. Si cela se voit, augmentez la qualité jusqu’à un résultat satisfaisant."
     },
     {
-      "question": "Comment choisir la meilleure qualité ?",
-      "answer": "Commencez avec une qualité élevée, puis baissez-la progressivement jusqu’à trouver le bon équilibre entre poids et netteté."
+      "question": "Quels fichiers fonctionnent le mieux ici ?",
+      "answer": "Les formats principaux sont JPG, PNG et WebP. Le JPG se compresse souvent bien pour les photos, tandis que le PNG convient mieux aux visuels plats ou transparents."
     },
     {
-      "question": "La compression réduit-elle la qualité de l’image ?",
-      "answer": "Oui, mais c’est vous qui choisissez à quel point. Une qualité plus faible produit des fichiers plus petits, tandis qu’une qualité plus élevée conserve davantage de détails."
+      "question": "La transparence d’un PNG est-elle conservée ?",
+      "answer": "Si l’image source comporte de la transparence et que le format de sortie la prend en charge, les zones transparentes devraient rester intactes. Une compression trop forte peut toutefois adoucir les contours."
+    },
+    {
+      "question": "Pourquoi le fichier n’est-il parfois pas beaucoup plus petit ?",
+      "answer": "Les images déjà optimisées, les très petits fichiers ou les photos très bruitées se compressent peu. Dans ce cas, baisser encore la qualité peut aider, mais avec davantage de perte de détails."
+    },
+    {
+      "question": "Quelle erreur revient le plus souvent sur les captures d’écran ?",
+      "answer": "Une qualité trop basse rend le texte et les lignes d’interface flous. Pour une capture, réduisez progressivement et arrêtez-vous dès que le texte reste net."
     }
   ],
-  "uiLabels": {
-    "copy": "Copier",
-    "copied": "Copié",
-    "input": "Entrée",
-    "output": "Sortie",
-    "placeholder": "Choisissez ou collez un fichier image",
-    "indent": "Retrait",
-    "removeComments": "Supprimer les commentaires",
-    "preview": "Aperçu",
-    "source": "Source",
-    "sanitizedHtml": "HTML nettoyé",
-    "plainText": "Texte brut",
-    "summary": "Résumé",
-    "total": "Total",
-    "links": "Liens",
-    "images": "Images",
-    "errors": "Erreurs",
-    "warnings": "Avertissements",
-    "valid": "Valide",
-    "invalid": "Invalide",
-    "href": "URL",
-    "text": "Texte",
-    "rel": "Rel",
-    "target": "Cible",
-    "alt": "Texte alternatif",
-    "width": "Largeur",
-    "height": "Hauteur",
-    "empty": "Vide",
-    "outputReady": "Résultat prêt",
-    "cleanedHtml": "HTML nettoyé",
-    "formattedHtml": "HTML formaté",
-    "minifiedHtml": "HTML minifié",
-    "markdown": "Markdown",
-    "extractedImages": "Images extraites",
-    "extractedLinks": "Liens extraits",
-    "validationSummary": "Résumé de validation",
-    "prettyHtml": "HTML lisible",
-    "encodedText": "Texte encodé",
-    "file": "Fichier",
-    "size": "Taille",
-    "format": "Format",
-    "quality": "Qualité",
-    "colorOne": "Couleur 1",
-    "colorTwo": "Couleur 2",
-    "background": "Arrière-plan",
-    "foreground": "Premier plan",
-    "angle": "Angle",
-    "margin": "Marge",
-    "level": "Niveau",
-    "gradientType": "Type de dégradé",
-    "linear": "Linéaire",
-    "radial": "Radial",
-    "blur": "Flou",
-    "spread": "Étendue",
-    "offsetX": "Décalage X",
-    "offsetY": "Décalage Y",
-    "opacity": "Opacité",
-    "inset": "Interne",
-    "cssCode": "Code CSS",
-    "snippet": "Extrait",
-    "download": "Télécharger",
-    "downloadSvg": "Télécharger SVG",
-    "downloadPng": "Télécharger PNG",
-    "downloadAll": "Tout télécharger",
-    "upload": "Importer",
-    "title": "Titre",
-    "description": "Description",
-    "canonicalUrl": "URL canonique",
-    "siteName": "Nom du site",
-    "ogImage": "Image OG",
-    "clear": "Effacer",
-    "generatedQr": "Apercu du code QR",
-    "placeholderImage": "Apercu de l image",
-    "faviconSet": "Jeu de favicons",
-    "keepAspectRatio": "Conserver les proportions",
-    "cropX": "Recadrage X",
-    "cropY": "Recadrage Y",
-    "cropWidth": "Largeur du recadrage",
-    "cropHeight": "Hauteur du recadrage",
-    "originalSize": "Taille originale",
-    "outputSize": "Taille de sortie",
-    "savedSize": "Taille gagnée",
-    "result": "Résultat",
-    "base64": "Base64",
-    "mimeType": "Type MIME",
-    "resizedImage": "Image redimensionnée",
-    "compressedImage": "Image compressée",
-    "croppedImage": "Image recadrée",
-    "convertedImage": "Image convertie",
-    "decodedImage": "Image décodée",
-    "imagePreview": "Aperçu de l’image"
-  },
   "seo": {
-    "title": "Compresseur d’images en ligne - Réduisez la taille du fichier",
-    "description": "Compressez des images en ligne avec un compresseur privé qui fonctionne dans le navigateur. Contrôlez la qualité, réduisez le poids et téléchargez des images optimisées rapidement.",
+    "title": "Compresseur d’images",
+    "description": "Compressez des images JPG, PNG et WebP dans le navigateur. Réduisez la taille du fichier, réglez la qualité et gardez vos fichiers sur votre appareil.",
     "keywords": [
       "compresseur d’images",
-      "compresser des images en ligne",
-      "réduire la taille d’une image",
       "compresser JPG",
       "compresser PNG",
       "compresser WebP",
+      "réduire le poids d’une image",
       "compression d’images dans le navigateur",
       "compresseur de photos"
     ]

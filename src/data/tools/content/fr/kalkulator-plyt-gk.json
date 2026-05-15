@@ -4,179 +4,87 @@
   "slug": "calculateur-de-plaques-de-placo",
   "h1": "Calculateur de plaques de placo",
   "title": "Calculateur de plaques de placo",
-  "shortDescription": "Estimez le nombre de plaques de placo, de vis et de mètres de profilés nécessaires pour une cloison ou un plafond.",
-  "metaTitle": "Calculateur de plaques de placo | Plaques, vis et profilés",
-  "metaDescription": "Calculez le nombre de plaques de placo, de vis et de mètres de profilés nécessaires selon la surface, le format des plaques et la marge de perte.",
-  "intro": "Ce calculateur de plaques de placo vous aide à estimer rapidement le nombre de plaques, de vis et de profilés nécessaires pour un mur ou un plafond.",
-  "overview": "Saisissez la surface à couvrir, les dimensions de la plaque, la marge de perte, le nombre de vis par plaque et les mètres de profilés par mètre carré. L’outil calcule une estimation pratique des plaques, vis et profilés nécessaires à votre chantier.",
+  "shortDescription": "Estimez plaques, vis et profilés pour une cloison ou un plafond en placo.",
+  "metaTitle": "Calculateur de plaques de placo",
+  "metaDescription": "Estimez les plaques de placo, les vis et les profilés nécessaires à partir de la surface, du format et de la marge de perte.",
+  "intro": "Renseignez la surface, le format des plaques et la marge de perte pour obtenir une estimation de plaques, vis et profilés.",
+  "overview": "Ce calculateur transforme la surface à couvrir en une estimation de matériaux pour les travaux de placo. À partir des dimensions de plaque saisies, il détermine une quantité de plaques puis ajoute la marge de perte pour les découpes, les chutes et les plaques abîmées.\n\nVous pouvez aussi définir le nombre de vis par plaque et les mètres de profilés par mètre carré. C’est pratique pour préparer un achat, comparer plusieurs formats de plaques ou vérifier si la commande couvre bien l’ensemble du chantier.\n\nLe résultat reste une estimation de préparation, pas un plan de coupe. Les ouvertures, la double peau, l’entraxe des montants et la structure choisie peuvent modifier la quantité finale.",
   "howItWorks": [
     "Indiquez la surface totale en mètres carrés.",
-    "Renseignez la largeur et la hauteur de la plaque en cm.",
-    "Définissez un pourcentage de perte pour les découpes et chutes.",
+    "Saisissez la largeur et la hauteur de la plaque en cm.",
+    "Définissez un pourcentage de perte pour les coupes et chutes.",
     "Ajoutez les vis par plaque et les mètres de profilés par m2.",
-    "Obtenez le nombre estimé de plaques, de vis et de profilés."
+    "Lisez le nombre estimé de plaques, de vis et de profilés."
   ],
   "useCases": [
-    "Préparer les matériaux pour une cloison en placo.",
-    "Estimer les fournitures pour un plafond suspendu.",
-    "Vérifier combien de plaques acheter avant une rénovation.",
-    "Calculer les vis et profilés pour des travaux d’aménagement intérieur."
+    {
+      "title": "Cloison intérieure",
+      "description": "Estimez les plaques et l’ossature nécessaires avant d’acheter les matériaux pour une cloison simple."
+    },
+    {
+      "title": "Plafond suspendu",
+      "description": "Calculez le besoin en plaques et profilés pour un faux plafond avec découpes en périphérie."
+    },
+    {
+      "title": "Choix du format de plaque",
+      "description": "Comparez plusieurs dimensions de plaques pour limiter les joints et optimiser la pose."
+    },
+    {
+      "title": "Préparation d’un devis",
+      "description": "Convertissez une surface en plaques, vis et profilés pour bâtir une estimation de chantier."
+    }
   ],
   "examples": [
     {
-      "title": "Combien de plaques de placo faut-il ?",
-      "input": "Surface 24 m2, plaque 120 × 250 cm, perte 10 %, 8 vis par plaque, 3,5 m de profilés par m2.",
-      "output": "Le calculateur estime les plaques, vis et mètres de profilés.",
-      "description": "Pratique pour dimensionner les matériaux avant achat."
+      "title": "Petite cloison de bureau",
+      "input": "Surface 21,6 m2, plaque 120 × 260 cm, perte 8 %, 9 vis par plaque, 3,2 m de profilés par m2.",
+      "output": "Résultat estimé : 8 plaques, 72 vis et 69,1 m de profilés.",
+      "description": "Montre comment passer d’une surface à une liste d’achat concrète."
     },
     {
-      "title": "Matériaux pour un plafond suspendu",
-      "input": "Surface 18 m2, plaque 120 × 260 cm, perte 12 %, 10 vis par plaque, 4 m de profilés par m2.",
-      "output": "Le résultat s’affiche immédiatement.",
-      "description": "Utile pour la planification d’un plafond suspendu."
+      "title": "Rénovation d’un plafond de cuisine",
+      "input": "Surface 13,5 m2, plaque 120 × 200 cm, perte 12 %, 10 vis par plaque, 4,1 m de profilés par m2.",
+      "output": "Résultat estimé : 7 plaques, 70 vis et 55,4 m de profilés.",
+      "description": "Utile avec des plaques plus courtes et une ossature plus dense."
+    },
+    {
+      "title": "Habillage de sous-sol avec grandes plaques",
+      "input": "Surface 32 m2, plaque 120 × 300 cm, perte 10 %, 8 vis par plaque, 2,8 m de profilés par m2.",
+      "output": "Résultat estimé : 10 plaques, 80 vis et 89,6 m de profilés.",
+      "description": "Pratique pour comparer les grands formats aux plaques standard."
     }
   ],
   "faq": [
     {
-      "question": "Que calcule cet outil ?",
-      "answer": "Il estime le nombre de plaques de placo, de vis et de mètres de profilés nécessaires pour une surface donnée."
+      "question": "La marge de perte est-elle prise en compte avant le calcul des plaques ?",
+      "answer": "Oui. La surface est d’abord augmentée du pourcentage de perte, puis convertie en plaques entières."
     },
     {
-      "question": "La perte est-elle prise en compte ?",
-      "answer": "Oui, vous pouvez ajouter un pourcentage pour les découpes, chutes et plaques endommagées."
+      "question": "Pourquoi le nombre de plaques peut-il sembler élevé ?",
+      "answer": "Parce que le calcul est toujours arrondi au nombre entier supérieur. Un reste de surface suffit à ajouter une plaque, et la perte augmente encore le total."
     },
     {
-      "question": "Peut-on l’utiliser pour les murs et les plafonds ?",
-      "answer": "Oui, il convient aux cloisons et aux plafonds suspendus."
+      "question": "Les vis sont-elles calculées par plaque ou par surface ?",
+      "answer": "Elles sont calculées à partir du nombre estimé de plaques. Si vous changez les vis par plaque, le total change aussitôt."
     },
     {
-      "question": "Comment les vis sont-elles calculées ?",
-      "answer": "L’outil multiplie le nombre estimé de plaques par le nombre de vis par plaque."
+      "question": "Peut-on l’utiliser pour une double peau ?",
+      "answer": "Oui, mais il faut calculer chaque couche séparément ou ajuster soi-même la surface et le besoin en vis."
     },
     {
       "question": "Les mètres de profilés sont-ils exacts ?",
-      "answer": "Non, il s’agit d’une estimation basée sur la consommation par m2. Le besoin réel peut varier selon le projet."
+      "answer": "Non. Ils dépendent de l’ossature, de l’entraxe, des rives et des ouvertures. La valeur sert à estimer le chantier."
     }
   ],
-  "uiLabels": {
-    "copy": "Copier",
-    "copied": "Copié",
-    "input": "Entrée",
-    "output": "Résultat",
-    "placeholder": "Saisissez une valeur",
-    "indent": "Retrait",
-    "removeComments": "Supprimer les commentaires",
-    "preview": "Aperçu",
-    "source": "Source",
-    "sanitizedHtml": "HTML nettoyé",
-    "plainText": "Texte brut",
-    "summary": "Résumé",
-    "total": "Total",
-    "links": "Liens",
-    "images": "Images",
-    "errors": "Erreurs",
-    "warnings": "Avertissements",
-    "valid": "Valide",
-    "invalid": "Invalide",
-    "href": "URL",
-    "text": "Texte",
-    "rel": "Rel",
-    "target": "Cible",
-    "alt": "Alt",
-    "width": "Largeur",
-    "height": "Hauteur",
-    "empty": "Vide",
-    "outputReady": "Résultats prêts",
-    "cleanedHtml": "HTML nettoyé",
-    "formattedHtml": "HTML formaté",
-    "minifiedHtml": "HTML minifié",
-    "markdown": "Markdown",
-    "extractedImages": "Images extraites",
-    "extractedLinks": "Liens extraits",
-    "validationSummary": "Résumé de validation",
-    "prettyHtml": "HTML lisible",
-    "encodedText": "Texte encodé",
-    "file": "Fichier",
-    "size": "Taille",
-    "format": "Format",
-    "quality": "Qualité",
-    "colorOne": "Couleur 1",
-    "colorTwo": "Couleur 2",
-    "background": "Arrière-plan",
-    "foreground": "Premier plan",
-    "angle": "Angle",
-    "margin": "Marge",
-    "level": "Niveau",
-    "gradientType": "Type de dégradé",
-    "linear": "Linéaire",
-    "radial": "Radial",
-    "blur": "Flou",
-    "spread": "Diffusion",
-    "offsetX": "Décalage X",
-    "offsetY": "Décalage Y",
-    "opacity": "Opacité",
-    "inset": "Interne",
-    "cssCode": "Code CSS",
-    "snippet": "Extrait",
-    "download": "Télécharger",
-    "downloadSvg": "Télécharger SVG",
-    "downloadPng": "Télécharger PNG",
-    "downloadAll": "Tout télécharger",
-    "upload": "Importer",
-    "title": "Titre",
-    "description": "Description",
-    "canonicalUrl": "URL canonique",
-    "siteName": "Nom du site",
-    "ogImage": "Image Open Graph",
-    "clear": "Effacer",
-    "generatedQr": "QR code généré",
-    "placeholderImage": "Image de remplacement",
-    "faviconSet": "Jeu de favicon",
-    "keepAspectRatio": "Conserver le ratio",
-    "cropX": "Recadrage X",
-    "cropY": "Recadrage Y",
-    "cropWidth": "Largeur du recadrage",
-    "cropHeight": "Hauteur du recadrage",
-    "originalSize": "Taille originale",
-    "outputSize": "Taille de sortie",
-    "savedSize": "Taille enregistrée",
-    "result": "Résultat",
-    "base64": "Base64",
-    "mimeType": "Type MIME",
-    "resizedImage": "Image redimensionnée",
-    "compressedImage": "Image compressée",
-    "croppedImage": "Image recadrée",
-    "convertedImage": "Image convertie",
-    "decodedImage": "Image décodée",
-    "imagePreview": "Aperçu de l’image",
-    "camera": "Appareil photo",
-    "lens": "Objectif",
-    "dateTaken": "Date de prise de vue",
-    "resolution": "Résolution",
-    "fileSize": "Taille du fichier",
-    "iso": "ISO",
-    "exposure": "Exposition",
-    "aperture": "Ouverture",
-    "focalLength": "Distance focale",
-    "flash": "Flash",
-    "orientation": "Orientation",
-    "latitude": "Latitude",
-    "longitude": "Longitude",
-    "openMap": "Ouvrir la carte",
-    "rawMetadata": "Métadonnées brutes",
-    "noMetadataFound": "Aucune métadonnée trouvée",
-    "gpsLocation": "Position GPS",
-    "metadataSummary": "Résumé des métadonnées"
-  },
   "seo": {
-    "title": "Calculateur de plaques de placo | Plaques, vis et profilés",
-    "description": "Calculez le nombre de plaques de placo, de vis et de mètres de profilés nécessaires pour des murs ou des plafonds.",
+    "title": "Calculateur de plaques de placo",
+    "description": "Calculez les plaques de placo, les vis et les profilés pour murs ou plafonds.",
     "keywords": [
       "calculateur placo",
       "plaques de placo",
       "vis placo",
       "profilés placo",
-      "calcul matériaux placo"
+      "calcul matériaux"
     ]
   }
 }

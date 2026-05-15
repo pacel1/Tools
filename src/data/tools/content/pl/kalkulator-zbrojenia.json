@@ -4,172 +4,87 @@
   "slug": "kalkulator-zbrojenia",
   "h1": "Kalkulator zbrojenia",
   "title": "Kalkulator zbrojenia",
-  "shortDescription": "Sprawdz ile pretow, jaka laczna dlugosc i masa stali beda potrzebne dla siatki jedno- lub dwukierunkowej.",
-  "metaTitle": "Kalkulator zbrojenia | Siatka jednokierunkowa i dwukierunkowa",
-  "metaDescription": "Policz liczbe pretow, laczna dlugosc stali, ilosc pretow handlowych i mase zbrojenia dla prostych siatek jedno- lub dwukierunkowych.",
-  "intro": "Kalkulator zbrojenia jest przydatny przy prostych plytach, stopach i elementach, gdzie chcesz szybko oszacowac ilosc stali bez wchodzenia w pelny model projektowy. Mozesz porownac siatke jednokierunkowa i dwukierunkowa.",
-  "overview": "Narzedzie uwzglednia rozstaw pretow, otuline, naddatek na zaklady, dlugosc handlowa preta i mase 1 mb. Dzieki temu wynik lepiej nadaje sie do wstepnej wyceny zakupu stali niz sam prosty metraz.",
+  "shortDescription": "Oblicz liczbe pretow, calkowita dlugosc i mase stali dla prostych ukladow prostokatnych.",
+  "metaTitle": "Kalkulator zbrojenia",
+  "metaDescription": "Oblicz liczbe pretow, calkowita dlugosc i mase stali dla prostych ukladow prostokatnych.",
+  "intro": "Podaj wymiary elementu, rozstaw pretow, dlugosc handlowa i mase 1 mb, a otrzymasz szacowana ilosc stali zbrojeniowej.",
+  "overview": "To narzedzie jest przeznaczone do prostych ukladow prostokatnych, takich jak plyty, stopy i niewielkie podklady. Z podanych wymiarow oraz rozstawu wylicza liczbe pretow, laczna dlugosc stali i przyblizona mase, co pomaga przygotowac zamowienie lub kosztorys.\n\nWynik traktuj jako wartosc planistyczna. Otulina, zaklady, haki, zgiecia i inny przebieg pretow moga zmienic faktyczne zapotrzebowanie, zwlaszcza gdy zbrojenie nie tworzy zwyklej siatki. Jesli masz kilka warstw albo dwa kierunki zbrojenia, policz kazdy zestaw osobno i zsumuj rezultat.\n\nZapas na odpady pozwala uwzglednic docinki, zaklady i straty na budowie. Jesli znasz dlugosc handlowa pretow od dostawcy, wprowadzaj ja konsekwentnie z wymiarami elementu, aby liczba pretow i laczna dlugosc odpowiadaly realnemu planowi zakupu.",
   "howItWorks": [
     "Wpisz dlugosc i szerokosc elementu w metrach.",
     "Podaj rozstaw pretow w centymetrach.",
-    "Okresl dlugosc jednego preta oraz mase 1 mb stali.",
-    "Dodaj zapas na ciecia, zaklady i odpady.",
-    "Odczytaj laczna dlugosc pretow, liczbe pretow i mase stali."
+    "Wprowadz dlugosc jednego preta handlowego oraz mase na metr.",
+    "Dodaj procent zapasu na docinki, zaklady i odpady.",
+    "Odczytaj liczbe pretow, laczna dlugosc i mase stali."
   ],
   "useCases": [
-    "Obliczanie zbrojenia plyt, law i fundamentow.",
-    "Sprawdzanie ilosci stali przed zlozeniem zamowienia.",
-    "Planowanie zbrojenia w malych projektach budowlanych.",
-    "Szybka kalkulacja masy stali zbrojeniowej do kosztorysu."
+    {
+      "title": "Zestawienie stali do plyty",
+      "description": "Oszacuj liczbe pretow i mase stali dla prostokatnej plyty przed przygotowaniem listy materialow."
+    },
+    {
+      "title": "Sprawdzenie zbrojenia stopy",
+      "description": "Policz potrzebna ilosc stali dla stopy lub podkladu, gdy uklad pretow jest prosty i regularny."
+    },
+    {
+      "title": "Kontrola zamowienia u dostawcy",
+      "description": "Porownaj wynik z dlugoscia handlowa pretow, aby nie zamowic za malo albo nie generowac zbyt duzego odpadu."
+    },
+    {
+      "title": "Koszt stali wedlug masy",
+      "description": "Wykorzystaj mase stali do kosztorysu, gdy cena zbrojenia jest liczona za kilogram."
+    }
   ],
   "examples": [
     {
-      "title": "Prosta wycena plyty",
-      "input": "Dlugosc 6 m, szerokosc 4 m, rozstaw 20 cm, dlugosc preta 6 m, masa 0,617 kg/m, zapas 10%",
-      "output": "Szacowana liczba pretow, laczna dlugosc i masa stali dla ukladu.",
-      "description": "Przyklad do szybkiego planowania zbrojenia standardowej plyty."
+      "title": "Plyta prostokatna z zapasem",
+      "input": "Dlugosc 7,2 m, szerokosc 4,8 m, rozstaw 18 cm, dlugosc handlowa preta 12 m, masa 0,888 kg/m, zapas 8%",
+      "output": "Około 41 pretow, 293,8 m lacznej dlugosci, 260,7 kg stali",
+      "description": "Przyklad realnego zestawienia dla plyty, pokazujacy wplyw rozstawu i zapasu na wynik."
     },
     {
-      "title": "Przygotowanie zamowienia",
-      "input": "Wykorzystaj wymiary projektu i rozstaw, aby oszacowac ilosc stali przed zakupem.",
-      "output": "Pokazuje praktyczna ilosc do zamowienia z uwzglednieniem zapasu.",
-      "description": "Pomaga uniknac zbyt malego zamowienia stali zbrojeniowej."
+      "title": "Zbrojenie lawy w jednym kierunku",
+      "input": "Dlugosc 10 m, szerokosc 0,6 m, rozstaw 15 cm, dlugosc handlowa preta 6 m, masa 0,395 kg/m, zapas 5%",
+      "output": "Około 68 pretow, 408,0 m lacznej dlugosci, 169,8 kg stali",
+      "description": "Przydatne przy dlugiej i waskiej lawe, gdzie pretow jest wiele, ale przekroj pozostaje prosty."
+    },
+    {
+      "title": "Niewielki podklad pod maszyny",
+      "input": "Dlugosc 2,4 m, szerokosc 2,4 m, rozstaw 20 cm, dlugosc handlowa preta 6 m, masa 0,617 kg/m, zapas 12%",
+      "output": "Około 14 pretow, 38,4 m lacznej dlugosci, 26,7 kg stali",
+      "description": "Pokazuje maly uklad zbrojenia, w ktorym znaczenie ma od razu zapas na ciecia i zaklady."
     }
   ],
   "faq": [
     {
-      "question": "Czy kalkulator uwzglednia zapas?",
-      "answer": "Tak. Wpisz procent zapasu, aby doliczyc material na ciecia, zaklady i odpady."
+      "question": "Czy kalkulator uwzglednia zaklady i zgiecia?",
+      "answer": "Nie. Liczy prosty uklad na podstawie wymiarow i rozstawu. Zaklady, haki, zgiecia i kotwienie trzeba doliczyc osobno, jesli wystepuja w detalu."
     },
     {
-      "question": "Czy moge go uzyc dla kazdego wymiaru plyty?",
-      "answer": "Tak. Dziala dla prostych ukladow prostokatnych, jesli znasz rozstaw i dlugosc preta."
+      "question": "Co zrobic, jesli zbrojenie ma dwa kierunki?",
+      "answer": "Policz kazdy kierunek osobno, wpisujac odpowiedni rozstaw i dlugosc preta, a nastepnie zsumuj wyniki. To daje bardziej czytelny rezultat niz mieszanie obu ukladow w jednym obliczeniu."
     },
     {
-      "question": "Co oznacza masa 1 mb?",
-      "answer": "To masa jednego metra preta zbrojeniowego, zwykle podawana w kg/m."
+      "question": "Jak dobrac mase 1 mb?",
+      "answer": "Wpisz mase odpowiadajaca rzeczywistej srednicy preta, ktora chcesz kupic. Bledna srednica nie musi mocno zmienic liczby pretow, ale wyraznie zmieni mase calkowita."
+    },
+    {
+      "question": "Dlaczego liczba pretow bywa wieksza, niz sie spodziewalem?",
+      "answer": "Rozstaw jest odkładany na calym wymiarze elementu, wiec maly krok moze dodac kolejny pret. To normalne i wynika z geometrii ukladu zbrojenia."
+    },
+    {
+      "question": "Czy ten wynik nadaje sie do ksztaltow nieregularnych?",
+      "answer": "Tylko orientacyjnie. Otwory, skosy, stopnie, zaokraglenia i lokalne pogrubienia zmieniaja zapotrzebowanie na stal, dlatego takie fragmenty trzeba liczyc osobno."
     }
   ],
-  "uiLabels": {
-    "copy": "Kopiuj",
-    "copied": "Skopiowano",
-    "input": "Wejscie",
-    "output": "Wyjscie",
-    "placeholder": "Wpisz wartosc",
-    "indent": "Wciecie",
-    "removeComments": "Usun komentarze",
-    "preview": "Podglad",
-    "source": "Zrodlo",
-    "sanitizedHtml": "Oczyszczony HTML",
-    "plainText": "Tekst prosty",
-    "summary": "Podsumowanie",
-    "total": "Razem",
-    "links": "Linki",
-    "images": "Obrazy",
-    "errors": "Bledy",
-    "warnings": "Ostrzezenia",
-    "valid": "Poprawne",
-    "invalid": "Niepoprawne",
-    "href": "Href",
-    "text": "Tekst",
-    "rel": "Rel",
-    "target": "Cel",
-    "alt": "Alt",
-    "width": "Szerokosc",
-    "height": "Wysokosc",
-    "empty": "Puste",
-    "outputReady": "Wynik gotowy",
-    "cleanedHtml": "Oczyszczony HTML",
-    "formattedHtml": "Sformatowany HTML",
-    "minifiedHtml": "Zminifikowany HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Wyodrebnione obrazy",
-    "extractedLinks": "Wyodrebnione linki",
-    "validationSummary": "Podsumowanie walidacji",
-    "prettyHtml": "Czytelny HTML",
-    "encodedText": "Tekst zakodowany",
-    "file": "Plik",
-    "size": "Rozmiar",
-    "format": "Format",
-    "quality": "Jakosc",
-    "colorOne": "Kolor 1",
-    "colorTwo": "Kolor 2",
-    "background": "Tlo",
-    "foreground": "Pierwszy plan",
-    "angle": "Kat",
-    "margin": "Margines",
-    "level": "Poziom",
-    "gradientType": "Typ gradientu",
-    "linear": "Liniowy",
-    "radial": "Promienisty",
-    "blur": "Rozmycie",
-    "spread": "Rozproszenie",
-    "offsetX": "Przesuniecie X",
-    "offsetY": "Przesuniecie Y",
-    "opacity": "Krycie",
-    "inset": "Wewnetrzny",
-    "cssCode": "Kod CSS",
-    "snippet": "Fragment",
-    "download": "Pobierz",
-    "downloadSvg": "Pobierz SVG",
-    "downloadPng": "Pobierz PNG",
-    "downloadAll": "Pobierz wszystko",
-    "upload": "Wczytaj",
-    "title": "Tytul",
-    "description": "Opis",
-    "canonicalUrl": "Adres kanoniczny",
-    "siteName": "Nazwa serwisu",
-    "ogImage": "Obraz OG",
-    "clear": "Wyczysc",
-    "generatedQr": "Wygenerowany QR",
-    "placeholderImage": "Obraz zastępczy",
-    "faviconSet": "Zestaw favicon",
-    "keepAspectRatio": "Zachowaj proporcje",
-    "cropX": "Przyciecie X",
-    "cropY": "Przyciecie Y",
-    "cropWidth": "Szerokosc przyciecia",
-    "cropHeight": "Wysokosc przyciecia",
-    "originalSize": "Oryginalny rozmiar",
-    "outputSize": "Rozmiar wyjsciowy",
-    "savedSize": "Zapisany rozmiar",
-    "result": "Wynik",
-    "base64": "Base64",
-    "mimeType": "Typ MIME",
-    "resizedImage": "Obraz po zmianie rozmiaru",
-    "compressedImage": "Obraz skompresowany",
-    "croppedImage": "Obraz przyciety",
-    "convertedImage": "Obraz skonwertowany",
-    "decodedImage": "Obraz zdekodowany",
-    "imagePreview": "Podglad obrazu",
-    "camera": "Kamera",
-    "lens": "Obiektyw",
-    "dateTaken": "Data wykonania",
-    "resolution": "Rozdzielczosc",
-    "fileSize": "Rozmiar pliku",
-    "iso": "ISO",
-    "exposure": "Ekspozycja",
-    "aperture": "Przyslona",
-    "focalLength": "Ogniskowa",
-    "flash": "Lampa blyskowa",
-    "orientation": "Orientacja",
-    "latitude": "Szerokosc geograficzna",
-    "longitude": "Dlugosc geograficzna",
-    "openMap": "Otworz mape",
-    "rawMetadata": "Surowe metadane",
-    "noMetadataFound": "Nie znaleziono metadanych",
-    "gpsLocation": "Lokalizacja GPS",
-    "metadataSummary": "Podsumowanie metadanych"
-  },
   "seo": {
-    "title": "Kalkulator zbrojenia online",
-    "description": "Oblicz liczbe pretow, laczna dlugosc i mase stali zbrojeniowej do plyt i prostych ukladow zbrojenia.",
+    "title": "Kalkulator zbrojenia",
+    "description": "Oblicz liczbe pretow, calkowita dlugosc i mase stali dla prostych ukladow prostokatnych.",
     "keywords": [
       "kalkulator zbrojenia",
-      "ilosc stali zbrojeniowej",
-      "kalkulator pretow",
-      "masa stali",
-      "zbrojenie plyty",
-      "kalkulator budowlany"
+      "obliczanie stali zbrojeniowej",
+      "masa stali zbrojeniowej",
+      "ilosc pretow",
+      "zbrojenie plyty"
     ]
   }
 }

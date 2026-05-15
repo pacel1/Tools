@@ -4,44 +4,80 @@
   "slug": "convertisseur-kg-en-livres",
   "h1": "Convertisseur kg en livres",
   "title": "Convertisseur kg en livres",
-  "shortDescription": "Convertissez instantanément les kilogrammes en livres avec un résultat clair et lisible pour le sport, l’expédition et l’usage quotidien.",
-  "overview": "Ce convertisseur transforme des valeurs en kilogrammes en livres à l’aide du facteur standard de 2,2046226218. L’interface garde le calculateur visible sans défilement pour permettre une conversion immédiate, tout en fournissant en dessous un contenu d’appui indexable pour les moteurs de recherche.",
+  "shortDescription": "Convertissez les kilogrammes en livres avec des décimales exactes et un résultat lisible pour les colis, le sport et les mesures.",
+  "metaTitle": "Convertisseur kg en livres",
+  "metaDescription": "Convertissez les kilogrammes en livres avec décimales exactes, résultat arrondi et valeurs claires pour colis, sport et mesures.",
+  "intro": "Saisissez une valeur en kilogrammes pour obtenir immédiatement son équivalent en livres.",
+  "overview": "Ce convertisseur transforme des kilogrammes en livres avec le facteur standard 2,2046226218. Il est utile dès qu’un poids doit être repris dans un document, une fiche d’entraînement, une étiquette de colis ou un relevé personnel en unités impériales.\n\nLes décimales sont acceptées, ce qui permet de convertir 0,75 kg, 3,25 kg ou 18,5 kg sans arrondir avant le calcul. Le résultat s’affiche à la fois sous une forme précise et sous une forme arrondie plus facile à lire, afin de pouvoir le réutiliser sans effort dans un formulaire ou un calcul suivant.",
   "howItWorks": [
-    "Saisissez une valeur en kilogrammes avec des décimales facultatives.",
-    "L’outil valide le nombre et le multiplie par le facteur de conversion.",
-    "Le résultat s’affiche sous forme de valeur numérique précise et d’une version arrondie facile à lire."
+    "Saisissez une valeur en kilogrammes, avec ou sans décimales.",
+    "L’outil vérifie le nombre puis le multiplie par le facteur de conversion.",
+    "Vous obtenez la valeur en livres sous forme précise et sous forme arrondie."
+  ],
+  "useCases": [
+    {
+      "title": "Suivi du poids du corps",
+      "description": "Reporter une mesure issue d’une balance métrique en livres pour un carnet ou un suivi médical."
+    },
+    {
+      "title": "Documents d’expédition",
+      "description": "Convertir le poids d’un colis en livres lorsqu’un transporteur demande des unités impériales."
+    },
+    {
+      "title": "Charges d’entraînement",
+      "description": "Vérifier le poids de barres, haltères ou machines lorsque le programme est écrit en kilos."
+    },
+    {
+      "title": "Lots de production",
+      "description": "Passer des quantités de matières premières en livres pour une cuisine ou un atelier."
+    }
   ],
   "examples": [
     {
-      "title": "Préparation sportive",
-      "input": "5 kg",
-      "output": "11.02 lb",
-      "description": "Utile pour lire des programmes d’entraînement qui mélangent des poids métriques et impériaux."
+      "title": "Pesée du matin",
+      "input": "72,4 kg",
+      "output": "159.61 lb",
+      "description": "Pratique pour noter un poids corporel en livres."
     },
     {
-      "title": "Estimation de colis",
-      "input": "18.5 kg",
-      "output": "40.79 lb",
-      "description": "Pratique pour les formulaires d’expédition et les limites des transporteurs en livres."
+      "title": "Petit colis",
+      "input": "3,25 kg",
+      "output": "7.17 lb",
+      "description": "Utile pour remplir une déclaration d’envoi."
+    },
+    {
+      "title": "Charge sur barre",
+      "input": "20 kg",
+      "output": "44.09 lb",
+      "description": "Permet de comparer une charge métrique à un programme en livres."
     }
   ],
   "faq": [
     {
-      "question": "Quelle formule est utilisée ?",
-      "answer": "Le convertisseur multiplie les kilogrammes par 2,2046226218, le facteur standard de conversion des kilogrammes en livres."
+      "question": "Quel facteur de conversion est utilisé ?",
+      "answer": "L’outil utilise 2,2046226218 livres par kilogramme, soit le facteur standard de conversion."
     },
     {
-      "question": "Puis-je convertir des valeurs décimales ?",
-      "answer": "Oui. Le champ accepte les nombres décimaux, ce qui le rend pratique pour le poids du corps, des colis ou des ingrédients."
+      "question": "Les décimales sont-elles acceptées ?",
+      "answer": "Oui. Des valeurs comme 0,5, 2,75 ou 18,5 sont converties directement."
+    },
+    {
+      "question": "Pourquoi la valeur affichée peut-elle différer du calcul exact ?",
+      "answer": "Le calcul conserve la précision complète, mais l’affichage est arrondi pour rester lisible et facile à reprendre."
+    },
+    {
+      "question": "Quelle erreur faut-il éviter ?",
+      "answer": "N’entrez pas déjà des livres dans le champ kilogrammes et n’arrondissez pas trop tôt si vous devez additionner plusieurs valeurs."
     }
   ],
   "seo": {
     "title": "Convertisseur kg en livres",
-    "description": "Convertisseur kg en livres gratuit en ligne avec résultats instantanés et exemples clairs.",
+    "description": "Convertissez les kilogrammes en livres avec décimales exactes, résultat arrondi et valeurs claires pour colis, sport et mesures.",
     "keywords": [
       "kg en livres",
       "kilogrammes en livres",
-      "convertisseur de poids"
+      "convertisseur de poids",
+      "kg en lb"
     ]
   }
 }

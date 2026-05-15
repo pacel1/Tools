@@ -4,172 +4,87 @@
   "slug": "reinforcement-calculator",
   "h1": "Reinforcement Calculator",
   "title": "Reinforcement Calculator",
-  "shortDescription": "Estimate how many rebar pieces and how much steel you need for a simple reinforcement layout.",
-  "metaTitle": "Reinforcement Calculator Online | Rebar Quantity and Steel Weight",
-  "metaDescription": "Calculate rebar quantity, total bar length, and steel weight for slabs and simple reinforcement layouts. Fast, free, and easy to use.",
-  "intro": "Use this reinforcement calculator to estimate rebar quantity, total length, and steel weight for a simple slab or structural layout. Enter the element dimensions, bar spacing, bar length, unit weight, and waste allowance to get quick results.",
-  "overview": "This tool helps you estimate the amount of reinforcement steel needed for a straightforward arrangement. It calculates the number of bars based on spacing, the total bar length, and the final steel weight including waste. It is useful for early material planning and quick site estimates.",
+  "shortDescription": "Estimate bar count, total length, and steel weight for simple rectangular reinforcement layouts.",
+  "metaTitle": "Reinforcement Calculator",
+  "metaDescription": "Estimate bar count, total length, and steel weight for simple rectangular reinforcement layouts.",
+  "intro": "Enter the element size, bar spacing, bar length, unit weight, and waste allowance to estimate how much reinforcement steel you need.",
+  "overview": "This calculator is meant for straightforward rectangular layouts such as slabs, footings, and small pads. It turns the spacing and dimensions you enter into a bar count, total steel length, and approximate mass, so you can size material before ordering or cutting.\n\nUse the result as a planning figure, not a substitute for structural design. Things like cover, lap lengths, anchorage, bends, and bar shape can change the real requirement, especially when the reinforcement is not a simple grid. If your detail includes multiple layers or different bar directions, calculate each set separately and add them together.\n\nThe waste allowance helps cover cut ends, overlaps, and site losses. If you already know the bar stock length from the supplier, keep that value consistent with the element dimensions so the bar count and total length reflect a realistic purchase plan.",
   "howItWorks": [
     "Enter the length and width of the element in meters.",
-    "Set the bar spacing in centimeters.",
-    "Provide the length of one bar and the unit weight per meter.",
-    "Add a waste percentage for overlaps, cuts, and offcuts.",
-    "Get the total bar length, number of bars, and steel weight."
+    "Set the spacing between bars in centimeters.",
+    "Provide the length of one stock bar and the mass per meter.",
+    "Add a waste percentage for cuts, overlaps, and offcuts.",
+    "Review the bar count, total length, and steel weight."
   ],
   "useCases": [
-    "Estimating reinforcement for slabs and footings.",
-    "Checking steel quantity before ordering materials.",
-    "Planning rebar for small construction projects.",
-    "Calculating steel weight for cost estimates."
+    {
+      "title": "Slab reinforcement takeoff",
+      "description": "Estimate the quantity of bars and total steel mass for a rectangular floor slab before you prepare a materials list."
+    },
+    {
+      "title": "Footing steel planning",
+      "description": "Check how much rebar is needed for a strip footing or isolated pad when the reinforcement pattern is simple."
+    },
+    {
+      "title": "Supplier order check",
+      "description": "Compare the calculated total length with stock bar lengths to avoid ordering too little or creating excess waste."
+    },
+    {
+      "title": "Cost estimate by weight",
+      "description": "Use the steel mass result to build a material cost estimate where rebar is priced by kilogram."
+    }
   ],
   "examples": [
     {
-      "title": "Simple slab estimate",
-      "input": "Length 6 m, width 4 m, spacing 20 cm, bar length 6 m, unit weight 0.617 kg/m, waste 10%",
-      "output": "Estimated bars, total length, and steel weight for the layout.",
-      "description": "A quick example for planning rebar on a standard slab."
+      "title": "Rectangular slab with waste",
+      "input": "Length 7.2 m, width 4.8 m, spacing 18 cm, stock bar length 12 m, unit weight 0.888 kg/m, waste 8%",
+      "output": "Approx. 41 bars, 293.8 m total length, 260.7 kg steel",
+      "description": "A realistic slab takeoff showing how spacing and waste affect the final quantity."
     },
     {
-      "title": "Material ordering",
-      "input": "Use project dimensions and spacing to estimate steel before purchase.",
-      "output": "Shows a practical ordering quantity with waste included.",
-      "description": "Helps avoid under-ordering reinforcement steel."
+      "title": "Footing mesh in one direction",
+      "input": "Length 10 m, width 0.6 m, spacing 15 cm, stock bar length 6 m, unit weight 0.395 kg/m, waste 5%",
+      "output": "Approx. 68 bars, 408.0 m total length, 169.8 kg steel",
+      "description": "Useful when a long narrow footing uses parallel bars at a fixed interval."
+    },
+    {
+      "title": "Small pad for a machine base",
+      "input": "Length 2.4 m, width 2.4 m, spacing 20 cm, stock bar length 6 m, unit weight 0.617 kg/m, waste 12%",
+      "output": "Approx. 14 bars, 38.4 m total length, 26.7 kg steel",
+      "description": "Shows a compact reinforcement layout where offcuts and overlaps matter more than the raw bar count."
     }
   ],
   "faq": [
     {
-      "question": "Does this calculator account for waste?",
-      "answer": "Yes. Enter the waste percentage to include extra material for cuts, overlaps, and offcuts."
+      "question": "Does the calculator include lap lengths and bends?",
+      "answer": "No. It estimates straight bar demand from the plan dimensions and spacing. Add lap lengths, hooks, bends, and anchorage separately if your detail requires them."
     },
     {
-      "question": "Can I use it for any slab size?",
-      "answer": "Yes. It works for simple rectangular layouts as long as you know the spacing and bar length."
+      "question": "What if my reinforcement has two directions?",
+      "answer": "Calculate each direction on its own, using the relevant spacing and bar length, then add the totals. That gives a clearer result than forcing both directions into one set of inputs."
     },
     {
-      "question": "What does unit weight mean?",
-      "answer": "Unit weight is the mass of one meter of rebar, usually given in kg/m."
+      "question": "How should I choose the unit weight value?",
+      "answer": "Use the mass per meter for the actual bar diameter you plan to buy. If you enter the wrong size, the bar count may stay similar but the weight will be off."
+    },
+    {
+      "question": "Why does the bar count sometimes look higher than expected?",
+      "answer": "The spacing is applied across the full element width or length, so a small change in spacing can add another bar. This is normal and reflects the way the bars are distributed across the bay."
+    },
+    {
+      "question": "Can I use the result for irregular shapes?",
+      "answer": "Only as a rough guide. Curved edges, openings, stepped edges, and local thickening usually change the required steel, so those areas should be calculated separately."
     }
   ],
-  "uiLabels": {
-    "copy": "Copy",
-    "copied": "Copied",
-    "input": "Input",
-    "output": "Output",
-    "placeholder": "Enter value",
-    "indent": "Indent",
-    "removeComments": "Remove comments",
-    "preview": "Preview",
-    "source": "Source",
-    "sanitizedHtml": "Sanitized HTML",
-    "plainText": "Plain text",
-    "summary": "Summary",
-    "total": "Total",
-    "links": "Links",
-    "images": "Images",
-    "errors": "Errors",
-    "warnings": "Warnings",
-    "valid": "Valid",
-    "invalid": "Invalid",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Width",
-    "height": "Height",
-    "empty": "Empty",
-    "outputReady": "Output ready",
-    "cleanedHtml": "Cleaned HTML",
-    "formattedHtml": "Formatted HTML",
-    "minifiedHtml": "Minified HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extracted images",
-    "extractedLinks": "Extracted links",
-    "validationSummary": "Validation summary",
-    "prettyHtml": "Pretty HTML",
-    "encodedText": "Encoded text",
-    "file": "File",
-    "size": "Size",
-    "format": "Format",
-    "quality": "Quality",
-    "colorOne": "Color 1",
-    "colorTwo": "Color 2",
-    "background": "Background",
-    "foreground": "Foreground",
-    "angle": "Angle",
-    "margin": "Margin",
-    "level": "Level",
-    "gradientType": "Gradient type",
-    "linear": "Linear",
-    "radial": "Radial",
-    "blur": "Blur",
-    "spread": "Spread",
-    "offsetX": "Offset X",
-    "offsetY": "Offset Y",
-    "opacity": "Opacity",
-    "inset": "Inset",
-    "cssCode": "CSS code",
-    "snippet": "Snippet",
-    "download": "Download",
-    "downloadSvg": "Download SVG",
-    "downloadPng": "Download PNG",
-    "downloadAll": "Download all",
-    "upload": "Upload",
-    "title": "Title",
-    "description": "Description",
-    "canonicalUrl": "Canonical URL",
-    "siteName": "Site name",
-    "ogImage": "OG image",
-    "clear": "Clear",
-    "generatedQr": "Generated QR",
-    "placeholderImage": "Placeholder image",
-    "faviconSet": "Favicon set",
-    "keepAspectRatio": "Keep aspect ratio",
-    "cropX": "Crop X",
-    "cropY": "Crop Y",
-    "cropWidth": "Crop width",
-    "cropHeight": "Crop height",
-    "originalSize": "Original size",
-    "outputSize": "Output size",
-    "savedSize": "Saved size",
-    "result": "Result",
-    "base64": "Base64",
-    "mimeType": "MIME type",
-    "resizedImage": "Resized image",
-    "compressedImage": "Compressed image",
-    "croppedImage": "Cropped image",
-    "convertedImage": "Converted image",
-    "decodedImage": "Decoded image",
-    "imagePreview": "Image preview",
-    "camera": "Camera",
-    "lens": "Lens",
-    "dateTaken": "Date taken",
-    "resolution": "Resolution",
-    "fileSize": "File size",
-    "iso": "ISO",
-    "exposure": "Exposure",
-    "aperture": "Aperture",
-    "focalLength": "Focal length",
-    "flash": "Flash",
-    "orientation": "Orientation",
-    "latitude": "Latitude",
-    "longitude": "Longitude",
-    "openMap": "Open map",
-    "rawMetadata": "Raw metadata",
-    "noMetadataFound": "No metadata found",
-    "gpsLocation": "GPS location",
-    "metadataSummary": "Metadata summary"
-  },
   "seo": {
-    "title": "Reinforcement Calculator Online",
-    "description": "Calculate rebar quantity, total length, and steel weight for slabs and simple reinforcement layouts.",
+    "title": "Reinforcement Calculator",
+    "description": "Estimate bar count, total length, and steel weight for simple rectangular reinforcement layouts.",
     "keywords": [
       "reinforcement calculator",
-      "rebar calculator",
-      "steel weight calculator",
-      "rebar quantity",
-      "construction calculator",
-      "slab reinforcement"
+      "rebar quantity calculator",
+      "steel weight from rebar",
+      "slab reinforcement",
+      "bar spacing calculator"
     ]
   }
 }

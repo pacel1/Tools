@@ -4,105 +4,87 @@
   "slug": "formateur-html",
   "h1": "Formateur HTML",
   "title": "Formateur HTML",
-  "shortDescription": "Mettez en forme un HTML brouillon avec des indentations lisibles et une structure propre.",
-  "metaTitle": "Formateur HTML en ligne | Nettoyez votre code HTML",
-  "metaDescription": "Mettez en forme un HTML brouillon en ligne avec des indentations claires, un meilleur emboîtement et une sortie HTML bien structurée.",
-  "intro": "Utilisez ce formateur HTML pour transformer un code brouillon en HTML propre et lisible. Il améliore l’indentation, l’imbrication et la structure pour faciliter la relecture, le débogage et la maintenance.",
-  "overview": "Ce formateur HTML aligne les balises, améliore les retraits et organise les éléments imbriqués sans modifier le sens de votre balisage. Il fonctionne dans le navigateur, donc votre HTML reste côté client. C’est idéal pour nettoyer du code collé, relire un modèle ou préparer un extrait avant partage.",
+  "shortDescription": "Transformez un HTML brouillon en code lisible avec une indentation propre.",
+  "metaTitle": "Formateur HTML | Code lisible",
+  "metaDescription": "Transformez un HTML brouillon en balisage lisible et bien indenté sans modifier la structure du document.",
+  "intro": "Collez votre HTML et obtenez un code propre, lisible et fidèle à la structure du document.",
+  "overview": "Ce formateur réorganise les balises, l’imbrication et les espaces pour rendre le balisage plus simple à relire et à modifier. L’ordre des éléments et le contenu sont conservés, mais la hiérarchie devient immédiatement plus claire.\n\nIl est utile lorsque le HTML provient d’un CMS, d’un résultat de build ou de plusieurs sources différentes. Comme l’outil fonctionne dans le navigateur, il est pratique pour relire des extraits, comparer des versions de modèles ou préparer des retouches manuelles.",
   "howItWorks": [
     "Collez votre HTML dans le champ de saisie.",
-    "Choisissez les options de formatage comme l’indentation ou la gestion des commentaires si elles sont disponibles.",
-    "Cliquez pour formater et générer un HTML propre.",
-    "Copiez le résultat formaté et utilisez-le dans votre projet."
+    "Ajustez l’indentation ou le traitement des commentaires si ces options existent.",
+    "Lancez le formateur pour générer un HTML bien structuré.",
+    "Copiez le résultat et utilisez-le dans votre éditeur, vos notes ou votre projet."
   ],
   "useCases": [
-    "Nettoyer un HTML minifié ou désordonné.",
-    "Relire des modèles avant mise en ligne.",
-    "Rendre un code collé plus facile à lire et à modifier.",
-    "Préparer des extraits HTML pour la documentation ou le travail en équipe.",
-    "Vérifier la structure de pages, d’e-mails ou de composants."
+    {
+      "title": "Relire une sortie de CMS",
+      "description": "Rendez lisible le HTML généré par un éditeur de contenu avant de chercher des conteneurs manquants ou une mauvaise imbrication."
+    },
+    {
+      "title": "Comparer deux versions de modèle",
+      "description": "Formatez les deux versions avant le diff pour repérer plus facilement les changements de structure."
+    },
+    {
+      "title": "Nettoyer du balisage d’e-mail",
+      "description": "Rendez plus clair un long fragment avec tableaux et éléments inline pour des corrections manuelles plus sûres."
+    },
+    {
+      "title": "Préparer des extraits pour la documentation",
+      "description": "Présentez le code à l’équipe sous une forme ordonnée pour mieux comprendre l’architecture du composant."
+    }
   ],
   "examples": [
     {
-      "title": "HTML brouillon",
-      "input": "<div><p>Hello</p><ul><li>One</li><li>Two</li></ul></div>",
-      "output": "<div>\n  <p>Hello</p>\n  <ul>\n    <li>One</li>\n    <li>Two</li>\n  </ul>\n</div>",
-      "description": "Transforme un balisage compact en HTML lisible et imbriqué."
+      "title": "Carte produit compacte",
+      "input": "<article><h3>Pro Plan</h3><p>Everything included</p><a href=\"/pricing\">View plans</a></article>",
+      "output": "<article>\n  <h3>Pro Plan</h3>\n  <p>Everything included</p>\n  <a href=\"/pricing\">View plans</a>\n</article>",
+      "description": "Convertit un composant sur une ligne en bloc lisible."
     },
     {
-      "title": "Modèle non formaté",
-      "input": "<section><h2>Title</h2><div><img src=\"a.jpg\" alt=\"A\"></div></section>",
-      "output": "<section>\n  <h2>Title</h2>\n  <div>\n    <img src=\"a.jpg\" alt=\"A\">\n  </div>\n</section>",
-      "description": "Améliore les indentations tout en conservant la structure d’origine."
+      "title": "Extrait de mise en page imbriquée",
+      "input": "<div class=\"wrap\"><header><nav><a href=\"/\">Home</a><a href=\"/docs\">Docs</a></nav></header><main><section><img src=\"hero.jpg\" alt=\"Hero\"></section></main></div>",
+      "output": "<div class=\"wrap\">\n  <header>\n    <nav>\n      <a href=\"/\">Home</a>\n      <a href=\"/docs\">Docs</a>\n    </nav>\n  </header>\n  <main>\n    <section>\n      <img src=\"hero.jpg\" alt=\"Hero\">\n    </section>\n  </main>\n</div>",
+      "description": "Découpe une structure dense en sections sémantiques claires."
+    },
+    {
+      "title": "Fragment de tableau d’e-mail",
+      "input": "<table><tr><td><strong>Order #4821</strong></td><td align=\"right\">Shipped</td></tr><tr><td colspan=\"2\"><a href=\"https://example.com\">Track package</a></td></tr></table>",
+      "output": "<table>\n  <tr>\n    <td><strong>Order #4821</strong></td>\n    <td align=\"right\">Shipped</td>\n  </tr>\n  <tr>\n    <td colspan=\"2\">\n      <a href=\"https://example.com\">Track package</a>\n    </td>\n  </tr>\n</table>",
+      "description": "Montre comment un HTML de tableau devient plus simple à inspecter et à modifier."
     }
   ],
   "faq": [
     {
-      "question": "Le formatage modifie-t-il mon HTML ?",
-      "answer": "Non. Il améliore seulement les espacements, les retraits et la lisibilité de la structure. Le sens du code reste identique."
+      "question": "Le formatage change-t-il l’ordre des attributs ou le contenu ?",
+      "answer": "Il ne devrait pas modifier le sens du HTML. L’objectif est d’améliorer l’indentation et la lisibilité, pas de réécrire le contenu."
     },
     {
-      "question": "Cet outil est-il sûr ?",
-      "answer": "Oui. Il est conçu pour un usage côté navigateur et n’a pas besoin d’envoyer votre code vers une API externe."
+      "question": "Pourquoi certains éléments inline restent-ils sur une seule ligne ?",
+      "answer": "Les structures inline courtes peuvent rester compactes si le formateur les conserve ainsi. C’est généralement normal et cela évite du bruit inutile."
     },
     {
-      "question": "Puis-je formater du HTML minifié ?",
-      "answer": "Oui. Il fonctionne très bien avec du HTML minifié, brouillon ou collé, et le rend lisible."
+      "question": "Que se passe-t-il avec du HTML mal formé ?",
+      "answer": "Un balisage très endommagé peut quand même être formaté, mais le résultat dépendra de l’interprétation du parseur. Corrigez d’abord les erreurs de balises si possible."
     },
     {
-      "question": "Les commentaires seront-ils supprimés ?",
-      "answer": "Cela dépend des options disponibles. Si la suppression des commentaires est activée, ils peuvent être retirés pendant le formatage."
+      "question": "Puis-je supprimer les commentaires pendant le formatage ?",
+      "answer": "Si la suppression des commentaires est activée, ils peuvent être retirés. Sinon, ils restent dans le code."
+    },
+    {
+      "question": "Pourquoi le résultat diffère-t-il de la vue prettify de mon éditeur ?",
+      "answer": "Chaque formateur applique ses propres règles pour les retours à la ligne, les espaces et les éléments vides. De légères différences sont normales."
     }
   ],
-  "uiLabels": {
-    "copy": "Copier",
-    "copied": "Copié",
-    "input": "HTML input",
-    "output": "HTML formaté",
-    "placeholder": "Collez le HTML ici...",
-    "indent": "Retrait",
-    "removeComments": "Supprimer les commentaires",
-    "preview": "Aperçu",
-    "source": "Source",
-    "sanitizedHtml": "HTML nettoyé",
-    "plainText": "Texte brut",
-    "summary": "Résumé",
-    "total": "Total",
-    "links": "Liens",
-    "images": "Images",
-    "errors": "Erreurs",
-    "warnings": "Avertissements",
-    "valid": "Valide",
-    "invalid": "Invalide",
-    "href": "Href",
-    "text": "Texte",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Largeur",
-    "height": "Hauteur",
-    "empty": "Vide",
-    "outputReady": "HTML formaté prêt",
-    "cleanedHtml": "HTML nettoyé",
-    "formattedHtml": "HTML formaté",
-    "minifiedHtml": "HTML minifié",
-    "markdown": "Markdown",
-    "extractedImages": "Images extraites",
-    "extractedLinks": "Liens extraits",
-    "validationSummary": "Résumé de validation",
-    "prettyHtml": "HTML mis en forme",
-    "encodedText": "Texte encodé"
-  },
   "seo": {
-    "title": "Formateur HTML en ligne | Nettoyez votre code HTML",
-    "description": "Mettez en forme un HTML brouillon en ligne avec des indentations claires, un meilleur emboîtement et une sortie HTML bien structurée.",
+    "title": "Formateur HTML | Code lisible",
+    "description": "Transformez un HTML brouillon en balisage lisible et bien indenté sans modifier la structure du document.",
     "keywords": [
       "formateur html",
-      "formatter html",
       "mettre en forme html",
       "html propre",
       "indentation html",
-      "outil html en ligne"
+      "balisage lisible",
+      "html beautifier"
     ]
   }
 }

@@ -4,106 +4,91 @@
   "slug": "validateur-html",
   "h1": "Validateur HTML",
   "title": "Validateur HTML",
-  "shortDescription": "Validez le HTML pour détecter le balisage dangereux, les identifiants dupliqués et les problèmes de qualité courants.",
-  "metaTitle": "Validateur HTML | Vérifiez le HTML dangereux, les identifiants dupliqués et les erreurs",
-  "metaDescription": "Validez le HTML en ligne pour détecter les balises dangereuses, les identifiants dupliqués, la structure incorrecte et les problèmes de qualité avec un validateur rapide côté navigateur.",
-  "intro": "Vérifiez le HTML pour détecter le balisage dangereux, les identifiants dupliqués, la structure incorrecte et d’autres problèmes pratiques avant publication.",
-  "overview": "Ce validateur HTML vous aide à repérer rapidement les problèmes de balisage les plus courants. Il est utile pour vérifier les éléments dangereux, les identifiants dupliqués, l’imbrication incorrecte, les attributs manquants et les défauts de qualité qui peuvent nuire à l’accessibilité, au SEO et au rendu. L’outil fonctionne côté navigateur, donc votre HTML reste sur votre appareil.",
+  "shortDescription": "Validez le HTML pour repérer le balisage dangereux, les ID dupliqués et les problèmes de structure.",
+  "metaTitle": "Validateur HTML pour balisage",
+  "metaDescription": "Vérifiez le HTML pour repérer les balises dangereuses, les ID dupliqués, l’imbrication invalide et les problèmes de balisage avant la publication.",
+  "intro": "Collez votre HTML et obtenez un rapport net sur les balises dangereuses, les ID dupliqués, l’imbrication invalide et les attributs manquants.",
+  "overview": "Ce validateur sert à examiner le balisage, pas la mise en page. Il analyse l’arborescence HTML pour détecter les éléments dangereux, les ID répétés, l’imbrication incorrecte, les liens vides, les alt absents et d’autres défauts structurels qui se glissent facilement dans les modèles et les contenus collés depuis des éditeurs.\n\nIl est utile quand vous devez savoir si un extrait peut être publié ou intégré sans casser des scripts, des ancres ou l’accessibilité. Le rapport distingue les erreurs des avertissements afin que vous corrigiez d’abord les problèmes qui ont un vrai impact sur le document.",
   "howItWorks": [
-    "Collez votre HTML dans le champ de saisie.",
-    "Lancez la validation pour analyser les balises, attributs, structure et identifiants.",
-    "Consultez les erreurs, avertissements et détails du résultat sécurisé.",
-    "Corrigez les problèmes puis relancez la validation jusqu’à obtenir un HTML propre."
+    "Collez le HTML dans le champ de saisie.",
+    "Lancez l’analyse des balises, attributs, imbrication et ID.",
+    "Consultez les erreurs et avertissements du rapport.",
+    "Corrigez le code puis relancez la validation."
   ],
   "useCases": [
-    "Valider des modèles de pages avant mise en production.",
-    "Contrôler le contenu CMS pour repérer un balisage dangereux ou désordonné.",
-    "Trouver des identifiants dupliqués pouvant casser scripts et accessibilité.",
-    "Inspecter du HTML copié depuis des éditeurs, e-mails ou constructeurs de pages.",
-    "Détecter les alt manquants, liens vides et autres problèmes de qualité."
+    {
+      "title": "Contrôle de modèles avant mise en ligne",
+      "description": "Vérifier les modèles de pages et d’articles pour repérer l’imbrication invalide, les attributs manquants et les ID répétés."
+    },
+    {
+      "title": "Audit de contenu CMS",
+      "description": "Inspecter du code copié depuis un éditeur ou un ancien système afin de trouver des balises dangereuses, des liens vides et du balisage confus."
+    },
+    {
+      "title": "Correction d’accessibilité",
+      "description": "Repérer les ID dupliqués, les ancres vides et les images sans alt utile qui gênent la lecture assistée."
+    },
+    {
+      "title": "Nettoyage d’HTML exporté",
+      "description": "Analyser un HTML généré par un constructeur de pages ou un éditeur d’e-mail, où apparaissent souvent des éléments non pris en charge."
+    },
+    {
+      "title": "Vérification d’un extrait à intégrer",
+      "description": "S’assurer qu’un snippet ou un widget n’inclut pas de balises ou d’attributs susceptibles de perturber la page hôte."
+    }
   ],
   "examples": [
     {
-      "title": "Validation simple",
-      "input": "<div id=\"hero\"><a href=\"#\">En savoir plus</a></div>",
-      "output": "Affiche les contrôles de structure et de qualité pour le HTML fourni.",
-      "description": "À utiliser pour un contrôle rapide d’un balisage simple."
+      "title": "ID dupliqué",
+      "input": "<section id=\"promo\"><a id=\"cta\" href=\"/start\">Démarrer</a><button id=\"cta\">Aller</button></section>",
+      "output": "Le rapport signale id=\"cta\" répété et les éléments concernés.",
+      "description": "Utile lorsqu’un même identifiant est réutilisé sur plusieurs éléments interactifs."
     },
     {
-      "title": "Analyse du balisage dangereux",
-      "input": "<script>alert('x')</script><p>Texte</p>",
-      "output": "Signale les éléments dangereux et les risques potentiels de sécurité.",
-      "description": "Aide à repérer le code qui ne doit pas être publié."
+      "title": "Détection d’une balise dangereuse",
+      "input": "<div class=\"note\">Bonjour</div><script>track()</script>",
+      "output": "La balise script est marquée comme balisage dangereux pour du contenu publié.",
+      "description": "Montre comment l’outil traite le code à retirer avant publication."
+    },
+    {
+      "title": "Imbrication et attributs",
+      "input": "<p><div>Rompue</div></p><img src=\"cover.jpg\">",
+      "output": "Le validateur remonte une imbrication invalide et l’absence de alt sur l’image.",
+      "description": "Aide à repérer des problèmes structurels faciles à manquer dans du HTML copié."
     }
   ],
   "faq": [
     {
-      "question": "Cet outil modifie-t-il mon HTML ?",
-      "answer": "Non. Il analyse seulement le HTML et affiche les erreurs, avertissements et détails de validation."
+      "question": "Le validateur modifie-t-il mon HTML ?",
+      "answer": "Non. Il analyse seulement l’entrée et renvoie les erreurs, les avertissements et les notes de structure."
     },
     {
-      "question": "Détecte-t-il le balisage dangereux ?",
-      "answer": "Oui. Il vérifie les balises et motifs à risque pouvant être dangereux dans du contenu publié."
+      "question": "Que considère-t-il comme balisage dangereux ?",
+      "answer": "Les balises et motifs risqués dans du contenu publié, comme les éléments de type script ou d’autres balises signalées par le validateur."
     },
     {
-      "question": "Trouve-t-il les identifiants dupliqués ?",
-      "answer": "Oui. Les identifiants dupliqués sont signalés car ils peuvent perturber les ancres, scripts et l’accessibilité."
+      "question": "Pourquoi un ID dupliqué pose-t-il problème ?",
+      "answer": "Les ID doivent être uniques. Si deux éléments partagent le même ID, les ancres, scripts et relations d’accessibilité peuvent viser le mauvais nœud."
     },
     {
-      "question": "La validation se fait-elle dans le navigateur ?",
-      "answer": "Oui. L’outil est conçu pour fonctionner côté client et ne nécessite pas d’API externe."
+      "question": "Les liens vides et les alt manquants comptent-ils ?",
+      "answer": "Oui. Ils sont signalés car ils affaiblissent la structure du document et compliquent l’usage correct du contenu."
+    },
+    {
+      "question": "Pourquoi un HTML apparemment correct reçoit-il des avertissements ?",
+      "answer": "Un fragment peut sembler valide tout en contenant des ID répétés, des attributs vides ou des éléments non pris en charge que le validateur détecte."
     }
   ],
-  "uiLabels": {
-    "copy": "Copier",
-    "copied": "Copié",
-    "input": "HTML input",
-    "output": "Validation summary",
-    "placeholder": "Collez le HTML ici",
-    "indent": "Retrait",
-    "removeComments": "Supprimer les commentaires",
-    "preview": "Aperçu",
-    "source": "Source",
-    "sanitizedHtml": "HTML nettoyé",
-    "plainText": "Texte brut",
-    "summary": "Résumé",
-    "total": "Total",
-    "links": "Liens",
-    "images": "Images",
-    "errors": "Erreurs",
-    "warnings": "Avertissements",
-    "valid": "Valide",
-    "invalid": "Invalide",
-    "href": "Href",
-    "text": "Texte",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Largeur",
-    "height": "Hauteur",
-    "empty": "Vide",
-    "outputReady": "Résultat prêt",
-    "cleanedHtml": "HTML nettoyé",
-    "formattedHtml": "HTML formaté",
-    "minifiedHtml": "HTML minifié",
-    "markdown": "Markdown",
-    "extractedImages": "Images extraites",
-    "extractedLinks": "Liens extraits",
-    "validationSummary": "Résumé de validation",
-    "prettyHtml": "HTML lisible",
-    "encodedText": "Texte encodé"
-  },
   "seo": {
-    "title": "Validateur HTML | Vérifiez le HTML dangereux, les identifiants dupliqués et les erreurs",
-    "description": "Validez le HTML en ligne pour détecter les balises dangereuses, les identifiants dupliqués, la structure incorrecte et les problèmes de qualité avec un validateur rapide côté navigateur.",
+    "title": "Validateur HTML pour balisage",
+    "description": "Vérifiez le HTML pour repérer les balises dangereuses, les ID dupliqués, l’imbrication invalide et les problèmes de balisage avant la publication.",
     "keywords": [
       "validateur html",
       "vérifier html",
-      "contrôler html",
-      "html checker",
-      "identifiants dupliqués",
+      "id dupliqués",
       "html dangereux",
-      "qualité html"
+      "contrôle html",
+      "structure html"
     ]
   }
 }

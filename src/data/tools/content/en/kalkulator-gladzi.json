@@ -4,175 +4,87 @@
   "slug": "skim-coat-calculator",
   "h1": "Skim Coat Calculator",
   "title": "Skim Coat Calculator",
-  "shortDescription": "Calculate how much skim coat you need for smooth walls and ceilings.",
-  "metaTitle": "Skim Coat Calculator Online",
-  "metaDescription": "Estimate skim coat quantity in kg and bags. Enter area, coverage, layer thickness, and waste to calculate how much skim coat you need.",
-  "intro": "Estimate skim coat consumption quickly for walls and ceilings. Enter the area, material consumption per 1 mm, layer thickness, waste allowance, and bag weight to get the total quantity and number of bags.",
-  "overview": "This skim coat calculator helps you plan material for finishing interior surfaces. It calculates base demand, total demand with waste, and the number of bags required, so you can buy the right amount and reduce shortages on site.",
+  "shortDescription": "Calculate the amount of skim coat needed for walls and ceilings based on area, thickness, and waste.",
+  "metaTitle": "Skim Coat Material Calculator",
+  "metaDescription": "Work out skim coat demand in kilograms and bags from surface area, layer thickness, coverage, and waste allowance.",
+  "intro": "Enter the wall or ceiling area, consumption per 1 mm, layer thickness, waste, and bag weight to get the total kilograms and number of bags.",
+  "overview": "Use this calculator to turn surface measurements into a material order for finishing work. It shows the base consumption from area and thickness, then adds a waste allowance so you can plan for mixing losses, surface variation, and small touch-ups.\n\nThe result is given in kilograms and in whole bags, which makes purchasing easier on site. It is suitable for single rooms, entire apartments, and larger interior finishing jobs where the bag count matters as much as the total weight.",
   "howItWorks": [
-    "Enter the surface area in square meters.",
-    "Provide the material consumption per 1 mm thickness.",
-    "Set the skim coat layer thickness in millimeters.",
-    "Add a waste percentage for losses and touch-ups.",
-    "Enter the bag weight to calculate how many bags to buy."
+    "Measure the surface area in square meters.",
+    "Enter the product consumption for 1 mm thickness.",
+    "Set the planned skim coat thickness in millimeters.",
+    "Add a waste percentage for losses and corrections.",
+    "Enter the bag weight to see how many bags are needed."
   ],
   "useCases": [
-    "Estimating skim coat for apartment renovations.",
-    "Planning materials for smooth walls before painting.",
-    "Calculating quantities for ceilings and large interior surfaces.",
-    "Checking how many bags of skim coat are needed for a job."
+    {
+      "title": "Bathroom wall finishing",
+      "description": "Estimate material for a tiled bathroom wall that needs a thin leveling coat before paint or coating."
+    },
+    {
+      "title": "Living room ceiling skim",
+      "description": "Plan the kilograms required for a ceiling job where the surface is wide and the layer must stay consistent."
+    },
+    {
+      "title": "Multi-room renovation order",
+      "description": "Combine several rooms into one calculation to decide whether to buy 20 kg or 25 kg bags."
+    },
+    {
+      "title": "Checking leftover stock",
+      "description": "Compare the calculated demand with stock already on site before placing an additional order."
+    }
   ],
   "examples": [
     {
-      "title": "Quick estimate",
-      "input": "Area: 50 m², consumption: 1.2 kg/m²/mm, thickness: 2 mm, waste: 10%, bag weight: 20 kg",
-      "output": "Base: 120 kg, total: 132 kg, bags: 7.",
-      "description": "A practical example for a small renovation project."
+      "title": "Small room with light correction",
+      "input": "Area: 32 m², consumption: 1.1 kg/m²/mm, thickness: 1.5 mm, waste: 12%, bag weight: 20 kg",
+      "output": "Base demand: 52.8 kg, total demand: 59.136 kg, bags: 3.",
+      "description": "Suitable for a bedroom wall set with a thin finishing layer."
     },
     {
-      "title": "Job planning",
-      "input": "Area: 120 m², consumption: 1.0 kg/m²/mm, thickness: 3 mm, waste: 8%, bag weight: 25 kg",
-      "output": "Base: 360 kg, total: 388.8 kg, bags: 16.",
-      "description": "Useful for larger finishing jobs and purchasing."
+      "title": "Large ceiling order",
+      "input": "Area: 96 m², consumption: 1.35 kg/m²/mm, thickness: 2 mm, waste: 8%, bag weight: 25 kg",
+      "output": "Base demand: 259.2 kg, total demand: 279.936 kg, bags: 12.",
+      "description": "Useful when ordering for a long ceiling run with minimal but real loss."
+    },
+    {
+      "title": "Thicker leveling pass",
+      "input": "Area: 58.5 m², consumption: 0.95 kg/m²/mm, thickness: 3 mm, waste: 15%, bag weight: 20 kg",
+      "output": "Base demand: 166.725 kg, total demand: 191.73375 kg, bags: 10.",
+      "description": "Shows how a thicker coat and higher allowance quickly increase the order size."
     }
   ],
   "faq": [
     {
-      "question": "How do I calculate skim coat consumption?",
-      "answer": "Multiply the area by the consumption per 1 mm and by the layer thickness, then add waste to get the total amount."
+      "question": "What does the consumption value mean in this calculator?",
+      "answer": "It is the product use rate for 1 mm of layer thickness, usually given by the manufacturer in kg per m². If your product states a different unit, convert it before entering the value."
     },
     {
-      "question": "Why should I add waste?",
-      "answer": "Waste covers mixing losses, uneven substrate absorption, and small corrections during application."
+      "question": "Should I enter the finished thickness or the maximum thickness?",
+      "answer": "Enter the planned average thickness of the applied layer. If the surface has uneven spots, use the thickness you expect across the whole area, not only the deepest patch."
     },
     {
-      "question": "How are bags calculated?",
-      "answer": "Divide the total required kilograms by the bag weight and round up to the next whole bag."
+      "question": "Why does the bag count round up?",
+      "answer": "The calculator rounds up because you cannot buy part of a bag. Even a small remainder still requires one full bag if the total exceeds the available stock."
     },
     {
-      "question": "Can I use this for walls and ceilings?",
-      "answer": "Yes, the calculator works for any surface where skim coat is applied."
+      "question": "Can I use the result for a product applied in two coats?",
+      "answer": "Yes, but only if the input consumption and thickness reflect the full combined build. If each coat has a separate specification, calculate them separately and add the totals."
+    },
+    {
+      "question": "What mistake leads to the biggest wrong result?",
+      "answer": "The most common error is mixing up kilograms per square meter with kilograms per square meter per millimeter. Another frequent mistake is entering the bag weight in the wrong unit."
     }
   ],
-  "uiLabels": {
-    "copy": "Copy",
-    "copied": "Copied",
-    "input": "Input",
-    "output": "Output",
-    "placeholder": "Enter value",
-    "indent": "Indent",
-    "removeComments": "Remove comments",
-    "preview": "Preview",
-    "source": "Source",
-    "sanitizedHtml": "Sanitized HTML",
-    "plainText": "Plain text",
-    "summary": "Summary",
-    "total": "Total",
-    "links": "Links",
-    "images": "Images",
-    "errors": "Errors",
-    "warnings": "Warnings",
-    "valid": "Valid",
-    "invalid": "Invalid",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Width",
-    "height": "Height",
-    "empty": "Empty",
-    "outputReady": "Output ready",
-    "cleanedHtml": "Cleaned HTML",
-    "formattedHtml": "Formatted HTML",
-    "minifiedHtml": "Minified HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extracted images",
-    "extractedLinks": "Extracted links",
-    "validationSummary": "Validation summary",
-    "prettyHtml": "Pretty HTML",
-    "encodedText": "Encoded text",
-    "file": "File",
-    "size": "Size",
-    "format": "Format",
-    "quality": "Quality",
-    "colorOne": "Color 1",
-    "colorTwo": "Color 2",
-    "background": "Background",
-    "foreground": "Foreground",
-    "angle": "Angle",
-    "margin": "Margin",
-    "level": "Level",
-    "gradientType": "Gradient type",
-    "linear": "Linear",
-    "radial": "Radial",
-    "blur": "Blur",
-    "spread": "Spread",
-    "offsetX": "Offset X",
-    "offsetY": "Offset Y",
-    "opacity": "Opacity",
-    "inset": "Inset",
-    "cssCode": "CSS code",
-    "snippet": "Snippet",
-    "download": "Download",
-    "downloadSvg": "Download SVG",
-    "downloadPng": "Download PNG",
-    "downloadAll": "Download all",
-    "upload": "Upload",
-    "title": "Title",
-    "description": "Description",
-    "canonicalUrl": "Canonical URL",
-    "siteName": "Site name",
-    "ogImage": "OG image",
-    "clear": "Clear",
-    "generatedQr": "Generated QR",
-    "placeholderImage": "Placeholder image",
-    "faviconSet": "Favicon set",
-    "keepAspectRatio": "Keep aspect ratio",
-    "cropX": "Crop X",
-    "cropY": "Crop Y",
-    "cropWidth": "Crop width",
-    "cropHeight": "Crop height",
-    "originalSize": "Original size",
-    "outputSize": "Output size",
-    "savedSize": "Saved size",
-    "result": "Result",
-    "base64": "Base64",
-    "mimeType": "MIME type",
-    "resizedImage": "Resized image",
-    "compressedImage": "Compressed image",
-    "croppedImage": "Cropped image",
-    "convertedImage": "Converted image",
-    "decodedImage": "Decoded image",
-    "imagePreview": "Image preview",
-    "camera": "Camera",
-    "lens": "Lens",
-    "dateTaken": "Date taken",
-    "resolution": "Resolution",
-    "fileSize": "File size",
-    "iso": "ISO",
-    "exposure": "Exposure",
-    "aperture": "Aperture",
-    "focalLength": "Focal length",
-    "flash": "Flash",
-    "orientation": "Orientation",
-    "latitude": "Latitude",
-    "longitude": "Longitude",
-    "openMap": "Open map",
-    "rawMetadata": "Raw metadata",
-    "noMetadataFound": "No metadata found",
-    "gpsLocation": "GPS location",
-    "metadataSummary": "Metadata summary"
-  },
   "seo": {
-    "title": "Skim Coat Calculator Online",
-    "description": "Estimate skim coat quantity in kg and bags. Enter area, coverage, layer thickness, and waste to calculate how much skim coat you need.",
+    "title": "Skim Coat Material Calculator",
+    "description": "Work out skim coat demand in kilograms and bags from surface area, layer thickness, coverage, and waste allowance.",
     "keywords": [
       "skim coat calculator",
-      "skim coat consumption calculator",
-      "how much skim coat do I need",
-      "wall skim coat calculator",
-      "ceiling skim coat calculator"
+      "skim coat consumption",
+      "skimming material calculator",
+      "kg skim coat estimate",
+      "bag count skim coat"
     ]
   }
 }

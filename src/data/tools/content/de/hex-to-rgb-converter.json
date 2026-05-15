@@ -4,13 +4,81 @@
   "slug": "hex-zu-rgb-umrechner",
   "h1": "HEX-zu-RGB-Umrechner",
   "title": "HEX-zu-RGB-Umrechner",
-  "shortDescription": "HEX-Farben online in RGB-Werte fuer CSS, Design und schnelle Farbpruefungen umrechnen.",
-  "metaTitle": "HEX-zu-RGB-Umrechner | Farbcodes online",
-  "metaDescription": "HEX online in RGB umrechnen. Praktisch fuer CSS, Design-Systeme und schnelle Farbcode-Pruefungen.",
-  "intro": "Der HEX-zu-RGB-Umrechner hilft, wenn du einen Farbwert aus Design, CSS oder Dokumentation schnell in einzelne RGB-Kanaele uebertragen willst. Das Tool liefert den normalisierten HEX-Code und den passenden RGB-String sofort im Browser.",
-  "overview": "Der Rechner ist fuer Frontend-Arbeit, Design-Handoffs, QA und Farb-Dokumentation gedacht. Mit einem Eingabefeld bekommst du direkt die benoetigten RGB-Werte fuer Stylesheets, Canvas oder Komponentenbibliotheken.",
-  "howItWorks": ["HEX-Farbe einfuegen oder per Picker waehlen.", "Das Tool liest die RGB-Kanaele aus und normalisiert den Code.", "RGB-Wert fuer CSS, Dokumentation oder Debugging uebernehmen."],
-  "examples": [{"title": "Markenfarbe", "input": "#FF7A18", "output": "rgb(255, 122, 24)", "description": "Nuetzlich beim Uebergang von Design zu Umsetzung."}, {"title": "Kurzer HEX-Code", "input": "#0AF", "output": "rgb(0, 170, 255)", "description": "Hilfreich zum schnellen Erweitern kuerzer Farbcodes."}],
-  "faq": [{"question": "Unterstuetzt der Rechner kurze HEX-Codes?", "answer": "Ja. Drei Zeichen lange HEX-Codes werden vor der Umrechnung erweitert."}, {"question": "Ist der Output fuer CSS geeignet?", "answer": "Ja. Die RGB-Ausgabe passt fuer CSS, Dokumentation und technische Farbpruefungen."}],
-  "seo": {"title": "HEX-zu-RGB-Umrechner | Farbcodes online", "description": "HEX online in RGB umrechnen. Praktisch fuer CSS, Design-Systeme und schnelle Farbcode-Pruefungen.", "keywords": ["hex zu rgb", "hex farbe umrechnen", "rgb farbcode", "css farben umrechner", "hex rgb converter"]}
+  "shortDescription": "HEX-Farbcodes in RGB-Werte fuer CSS, Spezifikationen und Farbpruefungen umrechnen.",
+  "metaTitle": "HEX-zu-RGB-Umrechner",
+  "metaDescription": "HEX-Farbcodes in RGB-Werte fuer CSS, Spezifikationen und Farbpruefungen umrechnen.",
+  "intro": "Füge einen HEX-Farbwert wie #FF7A18 oder #0AF ein, um sofort den passenden RGB-Wert zu erhalten.",
+  "overview": "Dieser Umrechner wandelt HEX-Farbnotation in RGB-Kanalwerte um, die du direkt in Stylesheets, Spezifikationen oder Komponenten-Notizen verwenden kannst. Dabei wird der HEX-Eingang normalisiert, sodass kurze Schreibweisen und Grossschreibung konsistent verarbeitet werden.\n\nDas ist hilfreich, wenn eine Farbe aus einem Designfile, Token oder Mockup in ein Format uebertragen werden muss, das mit Rot-, Gruen- und Blaukanälen arbeitet. Die Ausgabe ist klar und laesst sich bei Umsetzung oder Pruefung leicht mit anderen Farbangaben vergleichen.",
+  "howItWorks": [
+    "HEX-Farbe eingeben oder ueber den Picker auswaehlen.",
+    "Das Tool erweitert kurze HEX-Werte, prueft den Code und liest Rot, Gruen und Blau aus.",
+    "RGB-Ergebnis fuer CSS, Dokumentation oder Handoff-Notizen kopieren."
+  ],
+  "useCases": [
+    {
+      "title": "Frontend-Styles bauen",
+      "description": "Wandle Marken- und UI-Farben in rgb(...) um fuer CSS-Variablen, Komponentenstile und Theme-Dateien."
+    },
+    {
+      "title": "Design-Umsetzung pruefen",
+      "description": "Vergleiche Mockup-Farben mit den Codewerten, bevor ein Layout in die Produktion geht."
+    },
+    {
+      "title": "Farbtoken dokumentieren",
+      "description": "Halte einen Token gleichzeitig in HEX und RGB fest, damit Design und Entwicklung dieselbe Farbdefinition nutzen."
+    },
+    {
+      "title": "Kurze Codes erweitern",
+      "description": "Fuehre drei Zeichen lange HEX-Werte in die volle RGB-Schreibweise ueber, wenn du alte Styles oder kompakte Paletten liest."
+    }
+  ],
+  "examples": [
+    {
+      "title": "Warmer Akzentton",
+      "input": "#FF7A18",
+      "output": "rgb(255, 122, 24)",
+      "description": "Ein kraeftiges Orange fuer Buttons, Hervorhebungen oder Illustrationen."
+    },
+    {
+      "title": "Kurzer Blau-Cyan-Wert",
+      "input": "#0AF",
+      "output": "rgb(0, 170, 255)",
+      "description": "Kurze HEX-Werte werden vor der Umrechnung in RGB erweitert."
+    },
+    {
+      "title": "Dunkler Neutralton",
+      "input": "#1E293B",
+      "output": "rgb(30, 41, 59)",
+      "description": "Nuetzlich, um neutrale UI-Farben in Kanalwerte zu uebertragen."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Unterstuetzt der Umrechner dreistellige HEX-Werte?",
+      "answer": "Ja. Ein kurzer Wert wie #0AF wird vor der Umrechnung auf die volle Schreibweise erweitert, damit die RGB-Kanaele exakt berechnet werden."
+    },
+    {
+      "question": "Was passiert, wenn ich HEX ohne # eingebe?",
+      "answer": "Das Tool erwartet die Standard-HEX-Schreibweise. Ist das Format unvollstaendig oder enthaelt ungueltige Zeichen, entsteht kein verlaesslicher RGB-Wert, weil der Code erst korrekt formatiert sein muss."
+    },
+    {
+      "question": "Warum sieht RGB anders aus als HEX?",
+      "answer": "Beides ist dieselbe Farbe, nur in anderer Schreibweise. HEX nutzt das hexadezimale Zahlensystem, RGB gibt die gleichen Kanaele dezimal an, deshalb wirken die Zahlen unterschiedlich."
+    },
+    {
+      "question": "Kann ich damit Farben mit Transparenz umrechnen?",
+      "answer": "Dieser Umrechner ist fuer HEX-Werte ohne Alpha-Anteil gedacht. Wenn Transparenz enthalten ist, brauchst du ein anderes Format wie RGBA, weil RGB den Alpha-Wert nicht mittraegt."
+    }
+  ],
+  "seo": {
+    "title": "HEX-zu-RGB-Umrechner",
+    "description": "HEX-Farbcodes in RGB-Werte fuer CSS, Spezifikationen und Farbpruefungen umrechnen.",
+    "keywords": [
+      "hex zu rgb",
+      "hex in rgb umrechnen",
+      "farbcode umrechner",
+      "rgb wert",
+      "css farben"
+    ]
+  }
 }

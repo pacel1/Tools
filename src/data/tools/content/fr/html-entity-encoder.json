@@ -4,104 +4,85 @@
   "slug": "encodeur-dentites-html",
   "h1": "Encodeur d’entités HTML",
   "title": "Encodeur d’entités HTML",
-  "shortDescription": "Encode les caractères spéciaux et les symboles en entités HTML.",
-  "metaTitle": "Encodeur d’entités HTML | Convertir du texte en entités HTML",
-  "metaDescription": "Convertissez instantanément les caractères spéciaux, symboles et caractères à risque en entités HTML dans le navigateur.",
-  "intro": "Utilisez cet encodeur d’entités HTML pour transformer les caractères spéciaux en entités HTML sûres pour les pages web, les modèles et les extraits de code. Il fonctionne entièrement dans le navigateur et aide à empêcher l’interprétation du HTML lorsque vous devez afficher du texte brut.",
-  "overview": "L’encodeur d’entités HTML convertit des caractères comme <, >, &, les guillemets et d’autres symboles en leurs entités HTML correspondantes. C’est utile lorsque vous voulez afficher du texte tel quel dans du HTML sans qu’il soit analysé comme du balisage. L’outil est rapide, côté client uniquement, et conçu pour un traitement du texte sûr dans les workflows de développement.",
+  "shortDescription": "Convertit les caractères réservés en entités HTML pour un affichage sûr.",
+  "metaTitle": "Encodeur d’entités HTML",
+  "metaDescription": "Convertissez les caractères réservés, les guillemets et les symboles en entités HTML pour une sortie HTML sûre dans le navigateur ou l’éditeur.",
+  "intro": "Convertissez les caractères comme <, >, &, et les guillemets en entités HTML afin de les afficher comme du texte dans du HTML.",
+  "overview": "L’encodeur d’entités HTML transforme les caractères réservés et certains symboles en entités, ce qui permet d’insérer le résultat dans du HTML sans qu’il soit traité comme du balisage. C’est utile pour afficher du texte brut, préserver des extraits de code ou préparer du contenu susceptible de casser une page.\n\nIl est particulièrement pratique lorsque le texte provient de formulaires, de documentation, de modèles ou de champs CMS et doit apparaître exactement tel qu’il a été saisi. Le résultat encodé peut être copié dans du HTML, des extraits, des e-mails ou des exemples source où l’affichage littéral compte.",
   "howItWorks": [
-    "Collez ou saisissez le texte à encoder.",
-    "L’outil convertit les caractères réservés et les symboles en entités HTML.",
-    "Copiez le résultat et utilisez-le dans du HTML, des modèles, de la documentation ou des exemples de code."
+    "Saisissez ou collez le texte à encoder.",
+    "L’outil remplace les caractères réservés du HTML et les symboles pris en charge par des entités.",
+    "Copiez le résultat et utilisez-le dans du HTML, un modèle ou un exemple de code."
   ],
   "useCases": [
-    "Échapper du texte avant de l’insérer dans du contenu HTML.",
-    "Préparer des exemples de code pour la documentation.",
-    "Afficher des saisies utilisateur de manière sûre dans des aperçus ou des modèles.",
-    "Encoder des symboles spéciaux pour du contenu CMS ou des e-mails HTML.",
-    "Empêcher que le balisage soit interprété comme des balises."
+    {
+      "title": "Publier du texte littéral dans du balisage",
+      "description": "Encoder un texte contenant des chevrons ou une esperluette avant de le placer dans une page afin que le navigateur affiche les caractères tels quels."
+    },
+    {
+      "title": "Préparer des exemples de code pour la documentation",
+      "description": "Transformer des fragments HTML ou de modèles en entités pour que l’exemple reste visible au lieu d’être exécuté."
+    },
+    {
+      "title": "Afficher des saisies utilisateur dans des aperçus",
+      "description": "Présenter des noms, commentaires ou messages exactement comme saisis lorsqu’ils contiennent des caractères qui modifieraient le HTML."
+    },
+    {
+      "title": "Mettre en forme du contenu CMS avec des symboles",
+      "description": "Stocker ou coller du texte avec des monnaies, des flèches ou des signes mathématiques sans risque d’interprétation HTML."
+    }
   ],
   "examples": [
     {
-      "title": "Encodage de base",
-      "input": "5 < 10 & 7 > 3",
-      "output": "5 &lt; 10 &amp; 7 &gt; 3",
-      "description": "Les caractères HTML réservés sont convertis en entités."
+      "title": "Caractères réservés",
+      "input": "prix < 20 & stock > 0",
+      "output": "prix &lt; 20 &amp; stock &gt; 0",
+      "description": "Les chevrons et l’esperluette sont transformés en entités HTML."
     },
     {
-      "title": "Guillemets et symboles",
-      "input": "\"Bonjour\" & 'Monde'",
-      "output": "&quot;Bonjour&quot; &amp; &#39;Monde&#39;",
-      "description": "Les guillemets et l’esperluette sont encodés en toute sécurité."
+      "title": "Guillemets dans une phrase",
+      "input": "Il a dit : \"enregistre-le\" & continue",
+      "output": "Il a dit : &quot;enregistre-le&quot; &amp; continue",
+      "description": "Les guillemets et l’esperluette sont encodés pour un affichage littéral."
+    },
+    {
+      "title": "Symboles mélangés au texte",
+      "input": "Utilise <code> et 50% > 25%",
+      "output": "Utilise &lt;code&gt; et 50% &gt; 25%",
+      "description": "Le texte ressemblant à une balise est neutralisé, le reste reste lisible."
     }
   ],
   "faq": [
     {
-      "question": "Que fait l’encodage d’entités HTML ?",
-      "answer": "Il remplace les caractères spéciaux par des entités HTML afin que le navigateur les affiche comme du texte au lieu de les interpréter comme du HTML."
+      "question": "Quels caractères sont toujours encodés ?",
+      "answer": "Les caractères réservés du HTML comme <, > et & sont toujours encodés. Les guillemets peuvent aussi l’être selon le réglage de l’outil."
     },
     {
-      "question": "Cet outil est-il sûr dans le navigateur ?",
-      "answer": "Oui. Il utilise uniquement une logique côté client et n’envoie jamais votre texte vers un serveur ou une API externe."
+      "question": "Le résultat restera-t-il lisible ?",
+      "answer": "Oui. Le texte reste compréhensible, mais les caractères qui pourraient être interprétés comme du HTML apparaissent sous forme d’entités."
     },
     {
-      "question": "Encode-t-il tous les caractères ?",
-      "answer": "Il encode toujours les caractères HTML réservés et peut aussi encoder d’autres symboles selon l’implémentation."
+      "question": "Puis-je réencoder un texte déjà encodé ?",
+      "answer": "Oui, mais cela produit souvent des entités imbriquées comme &amp;amp;. C’est une erreur fréquente quand le texte a déjà été traité."
     },
     {
-      "question": "Quand faut-il utiliser l’encodage d’entités HTML ?",
-      "answer": "Quand vous devez afficher du texte brut, des saisies utilisateur ou du code de manière sûre dans un document HTML."
+      "question": "Pourquoi mon exemple affiche-t-il des balises au lieu du texte ?",
+      "answer": "Le contenu a généralement été inséré sans encodage. Passez-le dans l’encodeur avant de l’ajouter au HTML."
+    },
+    {
+      "question": "L’outil modifie-t-il aussi les symboles ordinaires ?",
+      "answer": "Seuls les symboles pris en charge sont convertis. Les lettres, les chiffres et la plupart des signes de ponctuation restent inchangés sauf s’ils perturbent l’analyse du HTML."
     }
   ],
-  "uiLabels": {
-    "copy": "Copier",
-    "copied": "Copié",
-    "input": "Texte d’entrée",
-    "output": "Sortie encodée",
-    "placeholder": "Collez le texte à encoder",
-    "indent": "Retrait",
-    "removeComments": "Supprimer les commentaires",
-    "preview": "Aperçu",
-    "source": "Source",
-    "sanitizedHtml": "HTML assaini",
-    "plainText": "Texte brut",
-    "summary": "Résumé",
-    "total": "Total",
-    "links": "Liens",
-    "images": "Images",
-    "errors": "Erreurs",
-    "warnings": "Avertissements",
-    "valid": "Valide",
-    "invalid": "Invalide",
-    "href": "href",
-    "text": "Texte",
-    "rel": "rel",
-    "target": "target",
-    "alt": "alt",
-    "width": "largeur",
-    "height": "hauteur",
-    "empty": "Vide",
-    "outputReady": "Résultat prêt",
-    "cleanedHtml": "HTML nettoyé",
-    "formattedHtml": "HTML formaté",
-    "minifiedHtml": "HTML minifié",
-    "markdown": "Markdown",
-    "extractedImages": "Images extraites",
-    "extractedLinks": "Liens extraits",
-    "validationSummary": "Résumé de validation",
-    "prettyHtml": "HTML lisible",
-    "encodedText": "Texte encodé"
-  },
   "seo": {
     "title": "Encodeur d’entités HTML",
-    "description": "Encodez instantanément des caractères spéciaux et des symboles en entités HTML dans le navigateur.",
+    "description": "Convertissez les caractères réservés, les guillemets et les symboles en entités HTML pour une sortie HTML sûre dans le navigateur ou l’éditeur.",
     "keywords": [
       "encodeur entites html",
       "encoder html",
       "echapper caracteres html",
       "entites html",
-      "texte vers entites html",
-      "outil html"
+      "texte vers entites html"
     ]
   }
 }

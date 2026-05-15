@@ -4,177 +4,93 @@
   "slug": "fundamentrechner",
   "h1": "Fundamentrechner",
   "title": "Fundamentrechner",
-  "shortDescription": "Berechne Betonmenge, Bewehrung und Dämmung für dein Fundament.",
-  "metaTitle": "Fundamentrechner | Betonvolumen, Säcke und Seitenfläche",
-  "metaDescription": "Berechne Betonvolumen für Fundamente, benötigte Säcke und Seitenfläche für Abdichtung oder Dämmung. Schneller und einfacher Fundamentrechner.",
-  "intro": "Mit diesem Fundamentrechner berechnest du schnell das Betonvolumen, die Anzahl der Säcke und die Seitenfläche für Abdichtung oder Dämmung. Gib einfach Länge, Breite, Höhe, Zuschlag und Sackleistung ein.",
-  "overview": "Dieses Werkzeug hilft dir bei der Planung eines Fundaments, indem es Grundmaße in praktische Materialwerte umrechnet. Es berechnet das Betonvolumen in Kubikmetern, schätzt die benötigte Sackzahl anhand der Ergiebigkeit und zeigt die Seitenfläche für Abdichtung oder Dämmung an.",
+  "shortDescription": "Berechne Betonmenge, Seitenfläche und Materialreserve für Streifenfundamente und Einzelfundamente.",
+  "metaTitle": "Fundamentrechner | Beton und Säcke",
+  "metaDescription": "Berechne Betonvolumen, Sackzahl und Seitenfläche für Abdichtung oder Dämmung bei Streifenfundamenten, Sockeln und Fundamentplatten.",
+  "intro": "Gib die Maße des Fundaments ein und erhalte Betonvolumen, Sackzahl und Seitenfläche in einem Ergebnis.",
+  "overview": "Der Rechner wandelt einfache Fundamentmaße in brauchbare Materialwerte um. Du trägst Länge, Breite und Höhe ein und erhältst das Volumen in Kubikmetern, die benötigte Sackzahl nach Ergiebigkeit und die Seitenfläche für Abdichtung oder Dämmung.\n\nAuf Wunsch lässt sich ein Zuschlag für Verschnitt, Unebenheiten im Aushub oder kleine Verluste hinzufügen. So kannst du die Materialmenge für ein Streifenfundament, ein Einzelfundament oder einen geraden Fundamentabschnitt besser einschätzen.",
   "howItWorks": [
-    "Gib die Fundamentlänge in Metern ein.",
-    "Trage die Fundamentbreite in Metern ein.",
-    "Gib die Fundamenthöhe in Zentimetern an.",
-    "Füge einen Prozentsatz für Verschnitt bzw. Reserve hinzu.",
-    "Prüfe Betonvolumen, Sackzahl und Seitenfläche."
+    "Fundamentlänge in Metern eingeben.",
+    "Breite in Metern eintragen.",
+    "Höhe in Zentimetern angeben.",
+    "Prozentsatz für Reserve oder Verluste setzen.",
+    "Sackergiebigkeit eingeben, wenn du Sackware kaufst.",
+    "Volumen, Sackzahl und Seitenfläche ablesen."
   ],
   "useCases": [
-    "Beton für Streifenfundamente und Sohlen berechnen.",
-    "Ermitteln, wie viele Sackmischung gekauft werden müssen.",
-    "Fläche für die Fundamentabdichtung bestimmen.",
-    "Dämmmaterial für die Fundamentseiten planen.",
-    "Schnelle Materialschätzung vor der Bestellung."
+    {
+      "title": "Streifenfundament für Anbau",
+      "description": "Betonmenge für ein langes, schmales Fundament vor der Bestellung abschätzen."
+    },
+    {
+      "title": "Einzelfundament für Pfosten",
+      "description": "Materialbedarf für einzelne Punktfundamente unter Stützen oder Zaunpfosten berechnen."
+    },
+    {
+      "title": "Abdichtung der Fundamentseiten",
+      "description": "Die vertikale Fläche ermitteln, die mit Bitumen, Bahn oder Beschichtung behandelt wird."
+    },
+    {
+      "title": "Sackware für Kleinmengen",
+      "description": "Das Kubikmeterergebnis in eine Sackzahl mit passender Ergiebigkeit umrechnen."
+    },
+    {
+      "title": "Perimeterdämmung planen",
+      "description": "Die Seitenflächen bestimmen, auf denen Dämmplatten oder Schutzschichten liegen sollen."
+    }
   ],
   "examples": [
     {
-      "title": "Beispiel",
-      "input": "Länge 10 m, Breite 0,5 m, Höhe 80 cm, Zuschlag 10 %, Sackleistung 0,02 m3",
-      "output": "Der Rechner ermittelt automatisch Betonvolumen, Sackzahl und Seitenfläche.",
-      "description": "Typische Planung für ein Streifenfundament."
+      "title": "Anbau mit Streifenfundament",
+      "input": "Länge 14 m, Breite 0,45 m, Höhe 70 cm, Zuschlag 8 %, Sackergiebigkeit 0,02 m3",
+      "output": "Betonvolumen: 4,75 m3. Mit Zuschlag: 5,13 m3. Säcke: 257. Seitenfläche: 19,60 m2.",
+      "description": "Typischer Fall für ein längliches Fundament bei einem Anbau."
     },
     {
-      "title": "Beispiel",
-      "input": "Länge 12 m, Breite 0,4 m, Höhe 60 cm, Zuschlag 5 %, Sackleistung 0,025 m3",
-      "output": "Das Tool schätzt Betonmenge und benötigte Säcke mit Reserve.",
-      "description": "Hilfreich zum Vergleichen von Materialoptionen vor dem Kauf."
+      "title": "Pfostenfundament",
+      "input": "Länge 2,4 m, Breite 0,8 m, Höhe 40 cm, Zuschlag 5 %, Sackergiebigkeit 0,025 m3",
+      "output": "Betonvolumen: 0,77 m3. Mit Zuschlag: 0,81 m3. Säcke: 33. Seitenfläche: 2,56 m2.",
+      "description": "Geeignet für ein kleines Einzelfundament mit klaren Abmessungen."
+    },
+    {
+      "title": "Fundament für Stützmauer",
+      "input": "Länge 9 m, Breite 0,6 m, Höhe 90 cm, Zuschlag 12 %, Sackergiebigkeit 0,03 m3",
+      "output": "Betonvolumen: 4,86 m3. Mit Zuschlag: 5,44 m3. Säcke: 182. Seitenfläche: 17,10 m2.",
+      "description": "Sinnvoll, wenn auf der Baustelle etwas mehr Reserve eingeplant werden soll."
     }
   ],
   "faq": [
     {
-      "question": "Was berechnet der Fundamentrechner?",
-      "answer": "Er berechnet das Betonvolumen, die benötigte Sackzahl und die Seitenfläche für Abdichtung oder Dämmung."
+      "question": "Wie gehe ich mit Fundamenten aus mehreren Abschnitten um?",
+      "answer": "Berechne jeden Abschnitt einzeln und addiere die Ergebnisse. Das ist genauer, wenn Breite oder Höhe wechseln."
     },
     {
-      "question": "Wie gebe ich die Höhe ein?",
-      "answer": "Die Höhe wird in Zentimetern eingegeben. Der Rechner wandelt sie intern in Meter um."
+      "question": "Umfasst die Seitenfläche auch die Fundamentsohle?",
+      "answer": "Nein. Gemeint sind nur die senkrechten Flächen. Für die Sohle ist ein anderer Ansatz nötig."
     },
     {
-      "question": "Ist ein Zuschlag enthalten?",
-      "answer": "Ja. Der angegebene Prozentsatz wird vor der Sackberechnung zum Volumen addiert."
+      "question": "Wird die Bewehrung berücksichtigt?",
+      "answer": "Nein. Der Rechner ermittelt nur Beton, Sackzahl und Seitenfläche. Die Bewehrung musst du separat planen."
     },
     {
-      "question": "Ist das Tool für Streifenfundamente geeignet?",
-      "answer": "Ja. Es eignet sich gut für Streifenfundamente, Einzelfundamente und ähnliche lineare Fundamentteile."
+      "question": "Sollte ich immer einen hohen Zuschlag wählen?",
+      "answer": "Nein. Ein zu hoher Zuschlag führt leicht zu einer übergroßen Bestellung. Wähle den Wert passend zur Ausführung und Genauigkeit der Arbeiten."
+    },
+    {
+      "question": "Kann ich die Sackzahl direkt bestellen?",
+      "answer": "Besser als Näherung verwenden. Der tatsächliche Verbrauch hängt von Verlusten, Verdichtung und Herstellerangaben zur Ergiebigkeit ab."
     }
   ],
-  "uiLabels": {
-    "copy": "Kopieren",
-    "copied": "Kopiert",
-    "input": "Eingabe",
-    "output": "Ausgabe",
-    "placeholder": "Wert eingeben",
-    "indent": "Einzug",
-    "removeComments": "Kommentare entfernen",
-    "preview": "Vorschau",
-    "source": "Quelle",
-    "sanitizedHtml": "Bereinigtes HTML",
-    "plainText": "Klartext",
-    "summary": "Zusammenfassung",
-    "total": "Gesamt",
-    "links": "Links",
-    "images": "Bilder",
-    "errors": "Fehler",
-    "warnings": "Warnungen",
-    "valid": "Gültig",
-    "invalid": "Ungültig",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Ziel",
-    "alt": "Alt",
-    "width": "Breite",
-    "height": "Höhe",
-    "empty": "Leer",
-    "outputReady": "Ergebnis bereit",
-    "cleanedHtml": "Bereinigtes HTML",
-    "formattedHtml": "Formatiertes HTML",
-    "minifiedHtml": "Minifiziertes HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extrahierte Bilder",
-    "extractedLinks": "Extrahierte Links",
-    "validationSummary": "Validierungsübersicht",
-    "prettyHtml": "Gut lesbares HTML",
-    "encodedText": "Kodierter Text",
-    "file": "Datei",
-    "size": "Größe",
-    "format": "Format",
-    "quality": "Qualität",
-    "colorOne": "Farbe 1",
-    "colorTwo": "Farbe 2",
-    "background": "Hintergrund",
-    "foreground": "Vordergrund",
-    "angle": "Winkel",
-    "margin": "Rand",
-    "level": "Stufe",
-    "gradientType": "Verlaufstyp",
-    "linear": "Linear",
-    "radial": "Radial",
-    "blur": "Unschärfe",
-    "spread": "Ausdehnung",
-    "offsetX": "X-Versatz",
-    "offsetY": "Y-Versatz",
-    "opacity": "Deckkraft",
-    "inset": "Innen",
-    "cssCode": "CSS-Code",
-    "snippet": "Snippet",
-    "download": "Herunterladen",
-    "downloadSvg": "SVG herunterladen",
-    "downloadPng": "PNG herunterladen",
-    "downloadAll": "Alle herunterladen",
-    "upload": "Hochladen",
-    "title": "Titel",
-    "description": "Beschreibung",
-    "canonicalUrl": "Kanonische URL",
-    "siteName": "Seitenname",
-    "ogImage": "OG-Bild",
-    "clear": "Löschen",
-    "generatedQr": "Generierter QR-Code",
-    "placeholderImage": "Platzhalterbild",
-    "faviconSet": "Favicon-Set",
-    "keepAspectRatio": "Seitenverhältnis beibehalten",
-    "cropX": "Zuschneiden X",
-    "cropY": "Zuschneiden Y",
-    "cropWidth": "Zuschneidebreite",
-    "cropHeight": "Zuschneidehöhe",
-    "originalSize": "Originalgröße",
-    "outputSize": "Ausgabegröße",
-    "savedSize": "Gespeicherte Größe",
-    "result": "Ergebnis",
-    "base64": "Base64",
-    "mimeType": "MIME-Typ",
-    "resizedImage": "Skaliertes Bild",
-    "compressedImage": "Komprimiertes Bild",
-    "croppedImage": "Zugeschnittenes Bild",
-    "convertedImage": "Konvertiertes Bild",
-    "decodedImage": "Decodiertes Bild",
-    "imagePreview": "Bildvorschau",
-    "camera": "Kamera",
-    "lens": "Objektiv",
-    "dateTaken": "Aufnahmedatum",
-    "resolution": "Auflösung",
-    "fileSize": "Dateigröße",
-    "iso": "ISO",
-    "exposure": "Belichtung",
-    "aperture": "Blende",
-    "focalLength": "Brennweite",
-    "flash": "Blitz",
-    "orientation": "Ausrichtung",
-    "latitude": "Breitengrad",
-    "longitude": "Längengrad",
-    "openMap": "Karte öffnen",
-    "rawMetadata": "Rohmetadaten",
-    "noMetadataFound": "Keine Metadaten gefunden",
-    "gpsLocation": "GPS-Standort",
-    "metadataSummary": "Metadatenübersicht"
-  },
   "seo": {
     "title": "Fundamentrechner",
-    "description": "Berechne Betonvolumen, benötigte Säcke und Seitenfläche für Abdichtung oder Dämmung mit diesem Fundamentrechner.",
+    "description": "Berechne Betonvolumen, Sackzahl und Seitenfläche für Abdichtung oder Dämmung bei Streifenfundamenten, Sockeln und Fundamentplatten.",
     "keywords": [
       "Fundamentrechner",
-      "Betonrechner",
-      "Sackrechner",
-      "Abdichtungsfläche",
-      "Dämmrechner",
-      "Materialbedarf Fundament"
+      "Betonvolumen",
+      "Sackzahl",
+      "Streifenfundament",
+      "Einzelfundament",
+      "Abdichtungsfläche"
     ]
   }
 }

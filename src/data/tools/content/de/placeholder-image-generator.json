@@ -4,159 +4,99 @@
   "slug": "platzhalterbild-generator",
   "h1": "Platzhalterbild-Generator",
   "title": "Platzhalterbild-Generator",
-  "shortDescription": "Erstelle Platzhalterbilder für UI-Mockups, Blog-Cover, OG-Entwürfe und Designsysteme.",
-  "metaTitle": "Platzhalterbild-Generator | Schnell Mockup-Bilder erstellen",
-  "metaDescription": "Erstelle Platzhalterbilder für UI-Mockups, Blog-Cover, Social Previews und Designsysteme direkt im Browser.",
-  "intro": "Erstelle sofort saubere Platzhalterbilder für Wireframes, Blog-Header, Social Previews und Designarbeit. Größe festlegen, Bild im Browser erzeugen und direkt herunterladen.",
-  "overview": "Dieser clientseitige Platzhalterbild-Generator nutzt Canvas, um einfache und schnelle Platzhaltergrafiken ohne Dateiupload zu erstellen. Er eignet sich für Mockups, Content-Entwürfe und Designsysteme, wenn du ein temporäres Bild in den richtigen Abmessungen brauchst.",
+  "shortDescription": "Erstelle Platzhalterbilder für Wireframes, Social Cards, Blog-Header und Designsysteme.",
+  "metaTitle": "Platzhalterbild-Generator",
+  "metaDescription": "Erstelle individuelle Platzhalterbilder für Mockups, Header, Social Cards und Designsysteme direkt im Browser.",
+  "intro": "Erzeuge ein Platzhalterbild in genau der gewünschten Größe und lade es anschließend als PNG oder SVG herunter.",
+  "overview": "Nutze dieses Tool, wenn du ein temporäres Bild mit exakten Abmessungen für Layouts, Content-Entwürfe oder Interface-Ideen brauchst. Das Bild wird lokal im Browser erzeugt, damit du ohne Wartezeit auf das finale Motiv weiterarbeiten kannst.\n\nEs eignet sich, um Bildflächen zu markieren, den Aufbau eines Hero-Bereichs zu prüfen oder einen Entwurf für eine Social-Share-Karte vorzubereiten. Das Ergebnis ist schlicht und vorhersehbar, sodass es später leicht durch das finale Asset ersetzt werden kann.\n\nDa das Bild aus der gewählten Größe und den Einstellungen entsteht, passt es für alles von kleinen Thumbnails bis zu breiten Bannern, die in eine feste Fläche eingepasst werden müssen.",
   "howItWorks": [
-    "Gib Breite und Höhe ein.",
-    "Wähle optional Stil- oder Texteinstellungen, falls verfügbar.",
-    "Erzeuge das Platzhalterbild im Browser.",
-    "Prüfe die Vorschau und lade das Ergebnis bei Bedarf herunter."
+    "Breite und Höhe eingeben.",
+    "Optional Text oder Darstellungsoptionen setzen, falls vorhanden.",
+    "Das Bild im Browser erzeugen.",
+    "Vorschau prüfen und die benötigte Datei herunterladen."
   ],
   "useCases": [
-    "UI- und App-Mockups",
-    "Blog-Cover-Entwürfe",
-    "Open-Graph-Vorschauen",
-    "Designsysteme für Landingpages",
-    "E-Mail- und Newsletter-Layouts",
-    "Prototyp-Assets für Präsentationen"
+    {
+      "title": "Hero-Banner-Entwurf",
+      "description": "Erstelle einen breiten Platzhalter für die Startseiten-Headline, bevor das finale Kampagnenmotiv vorliegt."
+    },
+    {
+      "title": "App-Screen-Mockup",
+      "description": "Fülle Bildbereiche in Dashboard- oder Mobile-Prototypen, damit der Aufbau bei Reviews klar erkennbar bleibt."
+    },
+    {
+      "title": "Layout für Social Card",
+      "description": "Reserviere den passenden Raum für ein Open-Graph-Bild oder eine Teilen-Vorschau vor der Veröffentlichung."
+    },
+    {
+      "title": "Redaktionelles Cover-Planning",
+      "description": "Plane Blog-Header und Artikelbilder, solange die endgültige Grafik noch fehlt."
+    },
+    {
+      "title": "Bausteine für das Designsystem",
+      "description": "Verwende konsistente Platzhaltergrößen für Cards, Kacheln und Medienblöcke."
+    },
+    {
+      "title": "Kundenpräsentationen",
+      "description": "Setze realistische Ersatzgrafiken in Slides ein, wenn das endgültige Produktbild noch nicht bereitsteht."
+    }
   ],
   "examples": [
     {
-      "title": "Blog-Header-Entwurf",
+      "title": "Breiter Artikel-Header",
       "input": "1200 × 630",
-      "output": "Bereitstehendes Platzhalterbild für Cover oder Social Preview.",
-      "description": "Praktisch, wenn ein Artikelbild noch nicht final vorliegt."
+      "output": "Ein horizontaler Platzhalter für Artikel-Header und Social-Preview-Karten.",
+      "description": "Passt zu einem gängigen Share-Format und erleichtert die Kompositionsplanung."
     },
     {
-      "title": "Produkt-Mockup",
-      "input": "800 × 600",
-      "output": "Einfaches Platzhaltergrafik für Interface-Layouts.",
-      "description": "Hilft, Abstände und Komposition im Design konstant zu halten."
+      "title": "Produktbild-Fläche",
+      "input": "960 × 720",
+      "output": "Ein mittelgroßes Rechteck als Platzhalter für Katalogkarten oder Feature-Teaser.",
+      "description": "Hilft zu prüfen, wie ein Raster wirkt, bevor die finalen Fotos verfügbar sind."
+    },
+    {
+      "title": "Newsletter-Banner",
+      "input": "600 × 300",
+      "output": "Ein kompakter Platzhalter für E-Mail-Kopfbereich oder Promo-Modul.",
+      "description": "Nützlich, um die Wirkung eines Banners in einer schmalen Mailvorlage zu testen."
     }
   ],
   "faq": [
     {
-      "question": "Wofür wird ein Platzhalterbild-Generator verwendet?",
-      "answer": "Er erstellt temporäre Bilder für Layouts, Entwürfe und Prototypen, wenn das finale Bild noch fehlt."
+      "question": "Kann ich eine eigene Größe statt eines Presets eingeben?",
+      "answer": "Ja. Gib einfach die exakte Breite und Höhe ein, auch wenn das Seitenverhältnis ungewöhnlich ist."
     },
     {
-      "question": "Kann ich ihn ohne Upload verwenden?",
-      "answer": "Ja. Das Bild wird lokal im Browser erzeugt, ein Upload ist nicht nötig."
+      "question": "Was passiert bei sehr großen Abmessungen?",
+      "answer": "Das Tool versucht das Bild zu erzeugen, aber sehr große Leinwände können langsamer rendern und mehr Dateigröße erzeugen."
     },
     {
-      "question": "Welche Größen kann ich erstellen?",
-      "answer": "Du kannst beliebige gängige Größen für Banner, Thumbnails, Karten und Social Previews erstellen."
+      "question": "Ist der Hintergrund transparent oder farbig?",
+      "answer": "Das hängt von den verfügbaren Einstellungen ab. Wenn keine Transparenz gewählt wird, nutzt das Bild den Standard-Hintergrund des Tools."
     },
     {
-      "question": "Wird das Bild automatisch heruntergeladen?",
-      "answer": "Nein. Du siehst zuerst die Vorschau und lädst es erst danach herunter."
+      "question": "Ist das Ergebnis als finales Produktionsbild geeignet?",
+      "answer": "Nein. Es ist als temporärer Platzhalter für Planung gedacht, nicht als fertige Marken- oder Endgrafik."
+    },
+    {
+      "question": "Warum sieht die Datei manchmal anders aus als die Vorschau?",
+      "answer": "Leichte Unterschiede sind möglich, weil die Vorschau für den Bildschirm skaliert wird, die Datei aber in der exakten Zielgröße erzeugt wird."
+    },
+    {
+      "question": "Welcher Fehler kommt bei der Nutzung am häufigsten vor?",
+      "answer": "Das falsche Seitenverhältnis. Wenn das Bild in einen bestimmten Container passen muss, nutze vor dem Erzeugen dessen echte Maße."
     }
   ],
-  "uiLabels": {
-    "copy": "Kopieren",
-    "copied": "Kopiert",
-    "input": "Eingabe",
-    "output": "Ausgabe",
-    "placeholder": "Vorschautext",
-    "indent": "Einzug",
-    "removeComments": "Kommentare entfernen",
-    "preview": "Vorschau",
-    "source": "Quelle",
-    "sanitizedHtml": "Bereinigtes HTML",
-    "plainText": "Klartext",
-    "summary": "Zusammenfassung",
-    "total": "Gesamt",
-    "links": "Links",
-    "images": "Bilder",
-    "errors": "Fehler",
-    "warnings": "Warnungen",
-    "valid": "Gültig",
-    "invalid": "Ungültig",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Ziel",
-    "alt": "Alt",
-    "width": "Breite",
-    "height": "Höhe",
-    "empty": "Leer",
-    "outputReady": "Ausgabe bereit",
-    "cleanedHtml": "Bereinigtes HTML",
-    "formattedHtml": "Formatiertes HTML",
-    "minifiedHtml": "Minifiziertes HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extrahierte Bilder",
-    "extractedLinks": "Extrahierte Links",
-    "validationSummary": "Validierungszusammenfassung",
-    "prettyHtml": "Gut lesbares HTML",
-    "encodedText": "Kodierter Text",
-    "file": "Datei",
-    "size": "Größe",
-    "format": "Format",
-    "quality": "Qualität",
-    "colorOne": "Farbe 1",
-    "colorTwo": "Farbe 2",
-    "background": "Hintergrund",
-    "foreground": "Vordergrund",
-    "angle": "Winkel",
-    "margin": "Rand",
-    "level": "Ebene",
-    "gradientType": "Verlaufstyp",
-    "linear": "Linear",
-    "radial": "Radial",
-    "blur": "Unschärfe",
-    "spread": "Ausbreitung",
-    "offsetX": "Versatz X",
-    "offsetY": "Versatz Y",
-    "opacity": "Deckkraft",
-    "inset": "Innen",
-    "cssCode": "CSS-Code",
-    "snippet": "Snippet",
-    "download": "Herunterladen",
-    "downloadSvg": "SVG herunterladen",
-    "downloadPng": "PNG herunterladen",
-    "downloadAll": "Alle herunterladen",
-    "upload": "Hochladen",
-    "title": "Titel",
-    "description": "Beschreibung",
-    "canonicalUrl": "Kanonische URL",
-    "siteName": "Website-Name",
-    "ogImage": "OG-Bild",
-    "clear": "Löschen",
-    "generatedQr": "QR-Code-Vorschau",
-    "placeholderImage": "Bildvorschau",
-    "faviconSet": "Favicon-Set",
-    "keepAspectRatio": "Seitenverhältnis beibehalten",
-    "cropX": "Zuschneiden X",
-    "cropY": "Zuschneiden Y",
-    "cropWidth": "Zuschneidebreite",
-    "cropHeight": "Zuschneidehöhe",
-    "originalSize": "Originalgröße",
-    "outputSize": "Ausgabegröße",
-    "savedSize": "Gespeicherte Größe",
-    "result": "Ergebnis",
-    "base64": "Base64",
-    "mimeType": "MIME-Typ",
-    "resizedImage": "Skaliertes Bild",
-    "compressedImage": "Komprimiertes Bild",
-    "croppedImage": "Zugeschnittenes Bild",
-    "convertedImage": "Konvertiertes Bild",
-    "decodedImage": "Dekodiertes Bild",
-    "imagePreview": "Bildvorschau"
-  },
   "seo": {
     "title": "Platzhalterbild-Generator",
-    "description": "Erstelle Platzhalterbilder für UI-Mockups, Blog-Cover, Social Previews und Designsysteme direkt im Browser.",
+    "description": "Erstelle individuelle Platzhalterbilder für Mockups, Header, Social Cards und Designsysteme direkt im Browser.",
     "keywords": [
       "platzhalterbild generator",
       "platzhalterbild",
-      "mockup bild generator",
-      "og bild platzhalter",
-      "designsystem bilder",
-      "canvas bild generator"
+      "bild für mockup",
+      "wireframe platzhalter",
+      "social card platzhalter",
+      "designsystem asset"
     ]
   }
 }

@@ -4,13 +4,81 @@
   "slug": "zollumrechner",
   "h1": "Zollumrechner",
   "title": "Zollumrechner",
-  "shortDescription": "Zoll, Zentimeter, Millimeter und Fuss online in einem flexiblen Rechner umrechnen.",
-  "metaTitle": "Zollumrechner | Zoll, cm, mm und Fuss",
-  "metaDescription": "Mit dem Zollumrechner wechselst du schnell zwischen Zoll, Zentimetern, Millimetern und Fuss. Ideal fuer allgemeine Zoll-Umrechnungen.",
-  "intro": "Der Zollumrechner ist fuer breite Suchanfragen wie Zollumrechner, Zoll in cm oder cm in Zoll gedacht. Statt mehrerer Einzelseiten bekommst du ein Tool, das die wichtigsten Richtungen direkt in einem Formular abdeckt.",
-  "overview": "Nutze den Rechner fuer Produktdaten, Druckformate, Werkstattmasse, Raumplanung und internationale Groessen. Du kannst Start- und Zieleinheit frei waehlen und so schnelle Antworten auf typische Zoll-Fragen bekommen.",
-  "howItWorks": ["Wert eingeben.", "Ausgangseinheit und Zieleinheit waehlen.", "Ergebnis sofort lesen und auf Wunsch die Richtung tauschen."],
-  "examples": [{"title": "Zoll zu Zentimeter", "input": "10 Zoll", "output": "25,4 Zentimeter", "description": "Hilfreich fuer Displays, Werkstoffe und technische Daten."}, {"title": "Fuss zu Zoll", "input": "6 Fuss", "output": "72 Zoll", "description": "Sinnvoll fuer Bau, Innenausbau und Raumplanung."}],
-  "faq": [{"question": "Welche Einheiten deckt der Rechner ab?", "answer": "Er unterstuetzt Zoll, Zentimeter, Millimeter und Fuss."}, {"question": "Funktioniert er auch fuer Rueckrechnungen?", "answer": "Ja. Du kannst die Richtung jederzeit direkt im selben Formular wechseln."}],
-  "seo": {"title": "Zollumrechner | Zoll, cm, mm und Fuss", "description": "Mit dem Zollumrechner wechselst du schnell zwischen Zoll, Zentimetern, Millimetern und Fuss.", "keywords": ["zollumrechner", "zoll in cm", "cm in zoll", "zoll rechner", "zoll millimeter"]}
+  "shortDescription": "Zoll, Zentimeter, Millimeter und Fuss in einem praezisen Umrechner.",
+  "metaTitle": "Zollumrechner: Zoll, cm, mm, Fuss",
+  "metaDescription": "Rechne zwischen Zoll, Zentimetern, Millimetern und Fuss in einem Rechner fuer Massen, Plaene, Verpackungen und technische Daten um.",
+  "intro": "Rechne Zoll, Zentimeter, Millimeter und Fuss an einem Ort um. Wert eingeben, Ausgangs- und Zieleinheit waehlen, Ergebnis sofort ablesen.",
+  "overview": "Dieses Tool ist fuer exakte Einheitenwechsel zwischen den vier gaengigen Laengenformaten rund um den Zoll gebaut. Beide Richtungen sind in derselben Oberflaeche moeglich, sodass du ohne Toolwechsel von imperial auf metrisch oder zurueck wechseln kannst.\n\nEs eignet sich fuer Produktdaten, Zuschnitte in der Werkstatt, Raumplanung, Zeichnungen, Bildschirmgroessen und Verpackungsmasse. Das Ergebnis ist klar lesbar, und die Einheit kann jederzeit angepasst werden, wenn sich der Bezugswert aendert.\n\nDa auch Fuss enthalten sind, passt der Rechner gut zu gemischten Spezifikationen mit unterschiedlichen Schreibweisen. So lassen sich Masse leichter vergleichen, ohne im Kopf oder auf Papier nachzurechnen.",
+  "howItWorks": [
+    "Laenge eingeben, die umgerechnet werden soll.",
+    "Ausgangseinheit und Zieleinheit auswaehlen.",
+    "Ergebnis lesen und bei Bedarf die Richtung umkehren."
+  ],
+  "useCases": [
+    {
+      "title": "Produktangaben",
+      "description": "Wandle Lieferantendaten von Zoll in Zentimeter oder Millimeter fuer Kataloge, Etiketten und Passpruefungen um."
+    },
+    {
+      "title": "Werkstatt und Zuschnitt",
+      "description": "Wechsle zwischen Fuss, Zoll und Millimetern beim Anzeichnen von Brettern, Leisten oder Maschineneinstellungen."
+    },
+    {
+      "title": "Moebel- und Raumplanung",
+      "description": "Vergleiche Groessen und Abstaende in unterschiedlichen Einheitensystemen vor Bestellung oder Montage."
+    },
+    {
+      "title": "Zeichnungen und technische Unterlagen",
+      "description": "Passe Masse beim Erstellen von Plaenen, Skizzen oder Arbeitsblaettern an."
+    }
+  ],
+  "examples": [
+    {
+      "title": "Monitor-Diagonale",
+      "input": "27 Zoll in cm",
+      "output": "68,58 Zentimeter",
+      "description": "Praktisch, wenn die Bildschirmgroesse in Zoll angegeben ist und das Dokument metrisch arbeitet."
+    },
+    {
+      "title": "Laenge eines Bauteils",
+      "input": "8,5 Fuss in Zoll",
+      "output": "102 Zoll",
+      "description": "Hilfreich beim Zuschneiden von Material nach einem in Fuss geschriebenen Plan."
+    },
+    {
+      "title": "Kleines Bauteil",
+      "input": "18 mm in Zoll",
+      "output": "0,7087 Zoll",
+      "description": "Geeignet fuer Ersatzteile oder Beschlaege in Millimeterangaben."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Kann ich direkt zwischen allen unterstuetzten Einheiten umrechnen?",
+      "answer": "Ja. Waehl einfach Ausgangs- und Zieleinheit aus Zoll, Zentimetern, Millimetern oder Fuss."
+    },
+    {
+      "question": "Warum werden manchmal mehrere Dezimalstellen angezeigt?",
+      "answer": "Weil manche Umrechnungen keine ganze Zahl ergeben und Dezimalstellen fuer die Genauigkeit erhalten bleiben."
+    },
+    {
+      "question": "Was pruefe ich, wenn das Ergebnis falsch wirkt?",
+      "answer": "Kontrolliere Wert und Umrechnungsrichtung. Ein haeufiger Fehler ist die richtige Zahl mit der falschen Ausgangseinheit."
+    },
+    {
+      "question": "Werden Fuss als Dezimalzahl oder als Fuss-und-Zoll-Format behandelt?",
+      "answer": "Es werden numerische Dezimalwerte umgerechnet. Ein gemischtes Format wie 5 Fuss 7 Zoll sollte vorher in Einzelteile zerlegt werden."
+    }
+  ],
+  "seo": {
+    "title": "Zollumrechner: Zoll, cm, mm, Fuss",
+    "description": "Rechne zwischen Zoll, Zentimetern, Millimetern und Fuss in einem Rechner fuer Massen, Plaene, Verpackungen und technische Daten um.",
+    "keywords": [
+      "zollumrechner",
+      "zoll in cm",
+      "cm in zoll",
+      "mm in zoll",
+      "fuss in zoll"
+    ]
+  }
 }

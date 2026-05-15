@@ -4,179 +4,87 @@
   "slug": "gipskartonplatten-rechner",
   "h1": "Gipskartonplatten-Rechner",
   "title": "Gipskartonplatten-Rechner",
-  "shortDescription": "Berechne, wie viele Gipskartonplatten, Schrauben und Profilmeter du für eine Wand oder Decke brauchst.",
-  "metaTitle": "Gipskartonplatten-Rechner | Platten, Schrauben & Profile",
-  "metaDescription": "Berechne die benötigte Menge an Gipskartonplatten, Schrauben und Profilen anhand von Fläche, Plattengröße und Verschnitt.",
-  "intro": "Mit diesem Gipskartonplatten-Rechner ermittelst du schnell, wie viele Platten, Schrauben und Profile du für Wand- oder Deckenarbeiten brauchst.",
-  "overview": "Gib die zu belegende Fläche, die Plattenmaße, den Verschnitt, Schrauben pro Platte und Profilmeter pro Quadratmeter ein. Das Tool berechnet eine praxisnahe Schätzung für Platten, Schrauben und laufende Meter Profile.",
+  "shortDescription": "Berechne Platten, Schrauben und Profilmeter für Trockenbauwände und Decken.",
+  "metaTitle": "Gipskartonplatten-Rechner",
+  "metaDescription": "Berechne Gipskartonplatten, Schrauben und Profile aus Fläche, Plattenmaß und Verschnitt.",
+  "intro": "Gib Fläche, Plattenmaß und Verschnitt ein, um eine Schätzung für Platten, Schrauben und Profile zu erhalten.",
+  "overview": "Dieser Rechner wandelt die zu belegende Fläche in eine praxisnahe Materialschätzung für Trockenbauarbeiten um. Auf Basis der Plattenmaße wird zunächst die benötigte Stückzahl bestimmt, anschließend wird der eingegebene Verschnitt für Zuschnitte, Reststücke und beschädigte Platten berücksichtigt.\n\nZusätzlich kannst du Schrauben pro Platte und Profilmeter pro Quadratmeter festlegen. So lässt sich eine Einkaufsliste vorbereiten, ein Plattenformat vergleichen oder prüfen, ob die Bestellung den gesamten Aufbau abdeckt.\n\nDas Ergebnis ist eine Planungsgröße und kein Zuschnittplan. Öffnungen, doppelte Beplankung, Ständerabstände und die konkrete Unterkonstruktion können den tatsächlichen Bedarf verändern.",
   "howItWorks": [
-    "Fläche in Quadratmetern eingeben.",
+    "Gesamtfläche in Quadratmetern eingeben.",
     "Breite und Höhe der Platte in cm angeben.",
     "Verschnitt für Zuschnitte und Reststücke festlegen.",
     "Schrauben pro Platte und Profilmeter pro m2 eintragen.",
-    "Anzahl der Platten, Schrauben und Profilmeter erhalten."
+    "Geschätzte Anzahl an Platten, Schrauben und Profilen ablesen."
   ],
   "useCases": [
-    "Materialplanung für eine Trockenbau-Trennwand.",
-    "Bedarfsermittlung für eine abgehängte Decke.",
-    "Prüfen, wie viele Gipskartonplatten vor der Renovierung nötig sind.",
-    "Kalkulation von Schrauben und Profilen für den Innenausbau."
+    {
+      "title": "Trennwand im Innenausbau",
+      "description": "Ermittle vor dem Einkauf, wie viele Platten und wie viel Unterkonstruktion für eine einfache Trockenbauwand nötig sind."
+    },
+    {
+      "title": "Abgehängte Decke",
+      "description": "Schätze Material für eine Deckenkonstruktion mit Randzuschnitten und Verschnitt ein."
+    },
+    {
+      "title": "Plattenformate vergleichen",
+      "description": "Teste unterschiedliche Plattengrößen, um zu sehen, welches Format die Zahl der Fugen reduziert."
+    },
+    {
+      "title": "Montagekalkulation",
+      "description": "Wandle eine Fläche in Platten, Schrauben und Profilmeter für eine grobe Projektplanung um."
+    }
   ],
   "examples": [
     {
-      "title": "Wie viele Gipskartonplatten brauche ich?",
-      "input": "Fläche 24 m2, Platte 120 × 250 cm, 10 % Verschnitt, 8 Schrauben pro Platte, 3,5 m Profile pro m2.",
-      "output": "Der Rechner schätzt Platten, Schrauben und Profilmeter.",
-      "description": "Hilfreich für die Materialplanung vor dem Kauf."
+      "title": "Kleine Bürotrennwand",
+      "input": "Fläche 21,6 m2, Platte 120 × 260 cm, 8 % Verschnitt, 9 Schrauben pro Platte, 3,2 m Profile pro m2.",
+      "output": "Geschätztes Ergebnis: 8 Platten, 72 Schrauben und 69,1 m Profile.",
+      "description": "Zeigt, wie aus der Fläche eine konkrete Einkaufsliste wird."
     },
     {
-      "title": "Material für eine abgehängte Decke",
-      "input": "Fläche 18 m2, Platte 120 × 260 cm, 12 % Verschnitt, 10 Schrauben pro Platte, 4 m Profile pro m2.",
-      "output": "Das Ergebnis erscheint sofort.",
-      "description": "Praktisch für die Planung von Deckenunterkonstruktionen."
+      "title": "Küchendecke renovieren",
+      "input": "Fläche 13,5 m2, Platte 120 × 200 cm, 12 % Verschnitt, 10 Schrauben pro Platte, 4,1 m Profile pro m2.",
+      "output": "Geschätztes Ergebnis: 7 Platten, 70 Schrauben und 55,4 m Profile.",
+      "description": "Nützlich bei kürzeren Platten und dichterer Unterkonstruktion."
+    },
+    {
+      "title": "Kellerverkleidung mit langen Platten",
+      "input": "Fläche 32 m2, Platte 120 × 300 cm, 10 % Verschnitt, 8 Schrauben pro Platte, 2,8 m Profile pro m2.",
+      "output": "Geschätztes Ergebnis: 10 Platten, 80 Schrauben und 89,6 m Profile.",
+      "description": "Hilfreich beim Vergleich langer Platten mit Standardformaten."
     }
   ],
   "faq": [
     {
-      "question": "Was berechnet dieser Rechner?",
-      "answer": "Er schätzt die Anzahl an Gipskartonplatten, Schrauben und Profilmetern für eine bestimmte Fläche und Plattengröße."
+      "question": "Wird der Verschnitt vor der Plattenberechnung berücksichtigt?",
+      "answer": "Ja. Die Fläche wird zuerst um den angegebenen Verschnitt erhöht und danach auf ganze Platten umgerechnet."
     },
     {
-      "question": "Ist Verschnitt enthalten?",
-      "answer": "Ja, du kannst einen Prozentsatz für Zuschnitte, Abfälle und beschädigte Platten hinzufügen."
+      "question": "Warum kann die Plattenzahl höher wirken als erwartet?",
+      "answer": "Weil immer auf volle Platten aufgerundet wird. Ein kleiner Rest reicht schon für eine zusätzliche Platte, und der Verschnitt erhöht die Menge weiter."
     },
     {
-      "question": "Kann ich ihn für Wände und Decken nutzen?",
-      "answer": "Ja, er eignet sich für Trockenbauwände und abgehängte Decken."
+      "question": "Werden Schrauben pro Platte oder pro Fläche berechnet?",
+      "answer": "Sie werden aus der geschätzten Plattenanzahl berechnet. Wenn du den Wert pro Platte änderst, ändert sich die Gesamtsumme direkt."
     },
     {
-      "question": "Wie werden die Schrauben berechnet?",
-      "answer": "Der Rechner multipliziert die geschätzte Plattenanzahl mit den Schrauben pro Platte."
+      "question": "Eignet sich das auch für doppelte Beplankung?",
+      "answer": "Ja, aber jede Lage sollte getrennt gerechnet werden oder du musst Fläche und Schraubenbedarf entsprechend selbst anpassen."
     },
     {
       "question": "Sind die Profilmeter exakt?",
-      "answer": "Nein, es ist ein Richtwert auf Basis des Verbrauchs pro m2. Das endgültige Gerüst kann abweichen."
+      "answer": "Nein. Sie hängen von Ständerabstand, Randanschlüssen, Öffnungen und dem Aufbau ab. Der Wert ist eine Schätzung für die Planung."
     }
   ],
-  "uiLabels": {
-    "copy": "Kopieren",
-    "copied": "Kopiert",
-    "input": "Eingabe",
-    "output": "Ausgabe",
-    "placeholder": "Wert eingeben",
-    "indent": "Einzug",
-    "removeComments": "Kommentare entfernen",
-    "preview": "Vorschau",
-    "source": "Quelle",
-    "sanitizedHtml": "Bereinigtes HTML",
-    "plainText": "Klartext",
-    "summary": "Zusammenfassung",
-    "total": "Gesamt",
-    "links": "Links",
-    "images": "Bilder",
-    "errors": "Fehler",
-    "warnings": "Warnungen",
-    "valid": "Gültig",
-    "invalid": "Ungültig",
-    "href": "URL",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Ziel",
-    "alt": "Alt",
-    "width": "Breite",
-    "height": "Höhe",
-    "empty": "Leer",
-    "outputReady": "Ergebnisse bereit",
-    "cleanedHtml": "Bereinigtes HTML",
-    "formattedHtml": "Formatiertes HTML",
-    "minifiedHtml": "Minifiziertes HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extrahierte Bilder",
-    "extractedLinks": "Extrahierte Links",
-    "validationSummary": "Validierungszusammenfassung",
-    "prettyHtml": "Lesbares HTML",
-    "encodedText": "Kodierter Text",
-    "file": "Datei",
-    "size": "Größe",
-    "format": "Format",
-    "quality": "Qualität",
-    "colorOne": "Farbe 1",
-    "colorTwo": "Farbe 2",
-    "background": "Hintergrund",
-    "foreground": "Vordergrund",
-    "angle": "Winkel",
-    "margin": "Rand",
-    "level": "Stufe",
-    "gradientType": "Verlaufstyp",
-    "linear": "Linear",
-    "radial": "Radial",
-    "blur": "Unschärfe",
-    "spread": "Ausbreitung",
-    "offsetX": "Versatz X",
-    "offsetY": "Versatz Y",
-    "opacity": "Deckkraft",
-    "inset": "Innen",
-    "cssCode": "CSS-Code",
-    "snippet": "Ausschnitt",
-    "download": "Herunterladen",
-    "downloadSvg": "SVG herunterladen",
-    "downloadPng": "PNG herunterladen",
-    "downloadAll": "Alles herunterladen",
-    "upload": "Hochladen",
-    "title": "Titel",
-    "description": "Beschreibung",
-    "canonicalUrl": "Kanonische URL",
-    "siteName": "Seitenname",
-    "ogImage": "Open-Graph-Bild",
-    "clear": "Löschen",
-    "generatedQr": "Generierter QR-Code",
-    "placeholderImage": "Platzhalterbild",
-    "faviconSet": "Favicon-Set",
-    "keepAspectRatio": "Seitenverhältnis beibehalten",
-    "cropX": "Zuschneiden X",
-    "cropY": "Zuschneiden Y",
-    "cropWidth": "Zuschneiderbreite",
-    "cropHeight": "Zuschneiderhöhe",
-    "originalSize": "Originalgröße",
-    "outputSize": "Ausgabegröße",
-    "savedSize": "Gespeicherte Größe",
-    "result": "Ergebnis",
-    "base64": "Base64",
-    "mimeType": "MIME-Typ",
-    "resizedImage": "Skaliertes Bild",
-    "compressedImage": "Komprimiertes Bild",
-    "croppedImage": "Zugeschnittenes Bild",
-    "convertedImage": "Konvertiertes Bild",
-    "decodedImage": "Dekodiertes Bild",
-    "imagePreview": "Bildvorschau",
-    "camera": "Kamera",
-    "lens": "Objektiv",
-    "dateTaken": "Aufnahmedatum",
-    "resolution": "Auflösung",
-    "fileSize": "Dateigröße",
-    "iso": "ISO",
-    "exposure": "Belichtung",
-    "aperture": "Blende",
-    "focalLength": "Brennweite",
-    "flash": "Blitz",
-    "orientation": "Ausrichtung",
-    "latitude": "Breitengrad",
-    "longitude": "Längengrad",
-    "openMap": "Karte öffnen",
-    "rawMetadata": "Rohmetadaten",
-    "noMetadataFound": "Keine Metadaten gefunden",
-    "gpsLocation": "GPS-Position",
-    "metadataSummary": "Metadaten-Zusammenfassung"
-  },
   "seo": {
-    "title": "Gipskartonplatten-Rechner | Platten, Schrauben & Profile",
-    "description": "Berechne die benötigte Menge an Gipskartonplatten, Schrauben und Profilen für Wände oder Decken.",
+    "title": "Gipskartonplatten-Rechner",
+    "description": "Berechne Gipskartonplatten, Schrauben und Profile für Wände oder Decken.",
     "keywords": [
       "gipskartonplatten rechner",
       "trockenbau rechner",
-      "platten rechner",
       "schrauben berechnen",
-      "profile berechnen"
+      "profile berechnen",
+      "plattenbedarf"
     ]
   }
 }

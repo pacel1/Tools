@@ -15,6 +15,8 @@
     "generate:tool-code": "tsx scripts/generate-tool-code.ts",
     "generate:tool-content": "tsx scripts/generate-tool-content.ts",
     "generate:localized-content": "tsx scripts/localize-existing-content.ts",
+    "regenerate:tool-content": "tsx scripts/regenerate-tool-content.ts",
+    "validate:content": "tsx scripts/validate-content.ts",
     "validate:registry": "tsx scripts/validate-registry.ts",
     "seed:top-tools": "tsx scripts/seed-top-tools.ts",
     "seed:html-tools": "tsx scripts/seed-html-tools.ts",

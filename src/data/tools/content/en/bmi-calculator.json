@@ -4,42 +4,80 @@
   "slug": "bmi-calculator",
   "h1": "BMI Calculator",
   "title": "BMI Calculator",
-  "shortDescription": "Calculate body mass index from height and weight with fast results, simple inputs and practical examples.",
-  "overview": "Calculate body mass index from height and weight. Use this tool to get a clear result quickly from simple input on the same page. It is useful for everyday checks, comparisons and small tasks when you need a fast online answer.",
+  "shortDescription": "Enter height and weight to get a BMI value with a clear decimal result and category.",
+  "metaTitle": "BMI Value Calculator",
+  "metaDescription": "Calculate BMI from height and weight with clear units, a decimal result, and a plain-language category.",
+  "intro": "Enter height and weight, and the calculator returns your BMI as a decimal value plus the matching category.",
+  "overview": "This BMI calculator uses the standard body mass index formula to turn height and weight into one comparable number. It is useful when you want to check a recorded figure, repeat a measurement later, or keep a consistent personal record.\n\nBMI is a screening measure, not a diagnosis. It does not separate muscle, fat, bone, or body water, so the number should be read together with body build and the situation in which the measurement was taken.\n\nFor a meaningful result, keep the unit system consistent and enter measured values rather than estimates. If the figure looks off, the most common reason is a unit mix-up, such as pounds entered where kilograms were expected or feet and inches used instead of centimeters.",
   "howItWorks": [
-    "Enter the required value or text into the form.",
-    "The conversion, calculation or transformation runs instantly in the browser.",
-    "Review the result and continue with related tools if you need another step."
+    "Choose the unit system that matches your measurements.",
+    "Enter height and weight in the same system.",
+    "Read the BMI value and the displayed category.",
+    "If the result looks wrong, check the units and enter the values again."
+  ],
+  "useCases": [
+    {
+      "title": "Log a weigh-in",
+      "description": "Attach BMI to a dated weighing from a checkup, training log, or personal record."
+    },
+    {
+      "title": "Compare two dates",
+      "description": "Calculate BMI on different dates to see how the value changed after diet, training, or time off."
+    },
+    {
+      "title": "Check a published figure",
+      "description": "Recompute BMI from stated height and weight to confirm a number in a profile or report."
+    }
   ],
   "examples": [
     {
-      "title": "Common use case",
-      "input": "70 kg and 175 cm",
-      "output": "22.86",
-      "description": "Shows a common use case with a clear input and result."
+      "title": "Metric adult example",
+      "input": "Height: 175 cm, Weight: 70 kg",
+      "output": "BMI = 22.9",
+      "description": "A straightforward metric calculation that lands in the middle range."
     },
     {
-      "title": "Another quick example",
-      "input": "70 kg and 175 cm",
-      "output": "22.86",
-      "description": "Useful for quick checks, comparisons or repeat tasks."
+      "title": "Same height, higher weight",
+      "input": "Height: 160 cm, Weight: 82 kg",
+      "output": "BMI = 32.0",
+      "description": "Shows how BMI rises when weight increases at the same height."
+    },
+    {
+      "title": "Tall and light frame",
+      "input": "Height: 182 cm, Weight: 66 kg",
+      "output": "BMI = 19.9",
+      "description": "A leaner build that produces a lower value from the same formula."
     }
   ],
   "faq": [
     {
-      "question": "How accurate is this tool?",
-      "answer": "The result is based on the input you provide and the calculation or transformation shown on the page."
+      "question": "Which units should I use for height and weight?",
+      "answer": "Use one system consistently: kilograms with centimeters, or pounds with inches. Mixing systems gives the wrong result."
     },
     {
-      "question": "Can I use this tool on mobile?",
-      "answer": "Yes. The page works on desktop and mobile screens with a simple input and result layout."
+      "question": "Why is the BMI shown with one decimal place?",
+      "answer": "One decimal place is enough for comparison and avoids implying more precision than the formula supports."
+    },
+    {
+      "question": "Can I enter height in feet and inches?",
+      "answer": "Only if the tool explicitly supports that format. Otherwise, convert the height to the expected unit before entering it."
+    },
+    {
+      "question": "Why can BMI be misleading for very muscular people?",
+      "answer": "BMI uses only height and weight, so it cannot tell whether the mass comes from muscle, fat, bone, or fluid."
+    },
+    {
+      "question": "What input mistake causes the biggest errors?",
+      "answer": "The biggest errors usually come from using the wrong unit in one field, such as pounds instead of kilograms or inches instead of centimeters."
     }
   ],
   "seo": {
-    "title": "BMI Calculator",
-    "description": "Calculate body mass index from height and weight. Free online bmi calculator with instant results.",
+    "title": "BMI Value Calculator",
+    "description": "Calculate BMI from height and weight with clear units, a decimal result, and a plain-language category.",
     "keywords": [
-      "bmi calculator"
+      "BMI calculator",
+      "body mass index",
+      "height and weight BMI"
     ]
   }
 }

@@ -4,44 +4,81 @@
   "slug": "formateur-json",
   "h1": "Formateur JSON",
   "title": "Formateur JSON",
-  "shortDescription": "Formatez et validez du JSON avec une indentation lisible et des erreurs immédiates.",
-  "overview": "Le formateur JSON analyse le JSON collé, affiche une version lisible et renvoie aussi une sortie minifiée. C’est un excellent choix pour les pages d’outils développeur, car l’expérience peut fonctionner sans backend tout en proposant un contenu SEO riche autour des exemples et du dépannage.",
+  "shortDescription": "Transformez du JSON brut en version lisible, détectez les erreurs de syntaxe et gardez la structure intacte.",
+  "metaTitle": "Formateur JSON et validateur",
+  "metaDescription": "Collez du JSON pour le mettre en forme avec une indentation claire, repérer les erreurs et obtenir une version compacte.",
+  "intro": "Collez du JSON, choisissez l’indentation et obtenez tout de suite une version lisible ou une erreur de syntaxe précise.",
+  "overview": "Ce formateur JSON analyse le contenu collé et l’affiche avec une indentation cohérente afin que les objets et tableaux imbriqués soient plus faciles à lire. Il génère aussi une version minifiée, pratique pour comparer des structures ou transmettre des données entre outils.\n\nSi l’entrée n’est pas du JSON valide, l’outil renvoie l’erreur d’analyse au lieu d’essayer de corriger à votre place. C’est utile pour vérifier des réponses d’API, nettoyer des extraits copiés depuis des journaux et préparer des fichiers de configuration avant intégration.\n\nLa structure des données reste la même ; seule la présentation change. Les objets restent des objets, les tableaux restent des tableaux, et les nombres, booléens, null et chaînes sont conservés tels quels.",
   "howItWorks": [
-    "Collez le JSON et choisissez la taille d’indentation.",
-    "Le parseur valide l’entrée et affiche une erreur si le JSON est invalide.",
-    "Lorsque le JSON est valide, l’outil renvoie la version formatée, la version minifiée et le nombre de lignes."
+    "Collez un document JSON dans la zone de saisie.",
+    "Choisissez la taille d’indentation pour l’affichage formaté.",
+    "Le parseur vérifie si le texte est un JSON valide et affiche une erreur si ce n’est pas le cas.",
+    "Lorsque l’entrée est valide, l’outil affiche la version formatée, la version minifiée et le nombre de lignes."
+  ],
+  "useCases": [
+    {
+      "title": "Examiner des réponses d’API",
+      "description": "Réorganisez des réponses imbriquées pour lire plus facilement les statuts, tableaux et métadonnées."
+    },
+    {
+      "title": "Nettoyer une configuration collée",
+      "description": "Transformez des blocs de paramètres compacts en JSON lisible avant comparaison ou dépôt dans un repository."
+    },
+    {
+      "title": "Partager des exemples de données",
+      "description": "Passez du format lisible au format compact lorsque vous transmettez un exemple à une équipe ou à une documentation."
+    }
   ],
   "examples": [
     {
-      "title": "Nettoyage d’un payload API",
-      "input": "{\"status\":\"ok\",\"items\":[1,2]}",
-      "output": "JSON formaté",
-      "description": "Rend les logs et les payloads plus faciles à examiner pendant le débogage."
+      "title": "Lire un webhook",
+      "input": "{\"event\":\"invoice.paid\",\"data\":{\"id\":4821,\"amount\":1299,\"currency\":\"USD\"}}",
+      "output": "{\n  \"event\": \"invoice.paid\",\n  \"data\": {\n    \"id\": 4821,\n    \"amount\": 1299,\n    \"currency\": \"USD\"\n  }\n}",
+      "description": "Déploie un payload imbriqué pour vérifier chaque champ plus facilement."
     },
     {
-      "title": "Partager une sortie compacte",
-      "input": "JSON formaté",
-      "output": "JSON minifié",
-      "description": "Utile quand vous avez besoin de la représentation la plus compacte possible."
+      "title": "Compacter un objet de réglages",
+      "input": "{\n  \"theme\": \"dark\",\n  \"layout\": {\n    \"sidebar\": true,\n    \"density\": \"comfortable\"\n  }\n}",
+      "output": "{\"theme\":\"dark\",\"layout\":{\"sidebar\":true,\"density\":\"comfortable\"}}",
+      "description": "Supprime les espaces superflus tout en conservant les mêmes données."
+    },
+    {
+      "title": "Repérer une virgule en trop",
+      "input": "{\"name\":\"Mira\", \"roles\":[\"admin\",], \"active\":true}",
+      "output": "Erreur : Unexpected token ] in JSON at position 36",
+      "description": "Indique précisément l’endroit du problème afin de retirer la virgule interdite."
     }
   ],
   "faq": [
     {
-      "question": "Est-ce que l’outil modifie l’ordre des clés ?",
-      "answer": "Non. Le formateur conserve l’ordre des clés de l’objet tel que JavaScript le renvoie après l’analyse."
+      "question": "La mise en forme modifie-t-elle les valeurs ?",
+      "answer": "Non. Seuls les espaces et les retours à la ligne changent. Les chaînes, nombres, booléens, null, tableaux et objets restent identiques."
+    },
+    {
+      "question": "L’ordre des clés est-il conservé ?",
+      "answer": "Oui, l’outil conserve l’ordre renvoyé par le parseur. Il ne trie pas les clés et ne réorganise pas l’objet."
     },
     {
       "question": "Peut-il réparer automatiquement un JSON cassé ?",
-      "answer": "Ce formateur d’exemple valide et met en forme le JSON valide. Une entrée invalide renvoie une erreur afin que l’utilisateur puisse corriger la source en toute sécurité."
+      "answer": "Non. Si l’entrée est invalide, l’outil renvoie une erreur d’analyse au lieu de deviner les guillemets, virgules ou crochets manquants."
+    },
+    {
+      "question": "Pourquoi une virgule finale provoque-t-elle une erreur ?",
+      "answer": "Dans le JSON standard, les virgules finales ne sont pas autorisées. Il faut supprimer la virgule après le dernier élément d’un tableau ou d’un objet."
+    },
+    {
+      "question": "Comment lire la version minifiée ?",
+      "answer": "C’est le même contenu sans espaces ni sauts de ligne. Pratique pour copier ou transmettre des données, mais beaucoup moins lisible."
     }
   ],
   "seo": {
-    "title": "Formateur JSON",
-    "description": "Formateur et validateur JSON en ligne avec sortie pretty print et minification.",
+    "title": "Formateur JSON et validateur",
+    "description": "Collez du JSON pour le mettre en forme avec une indentation claire, repérer les erreurs et obtenir une version compacte.",
     "keywords": [
       "formateur json",
       "validateur json",
-      "pretty print json"
+      "pretty print json",
+      "minifier json"
     ]
   }
 }

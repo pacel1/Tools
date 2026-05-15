@@ -4,13 +4,81 @@
   "slug": "farbpaletten-generator",
   "h1": "Farbpaletten-Generator",
   "title": "Farbpaletten-Generator",
-  "shortDescription": "Farbpaletten online aus einer Basisfarbe fuer UI, Branding und schnelle Konzepte erzeugen.",
-  "metaTitle": "Farbpaletten-Generator | Farbpaletten online",
-  "metaDescription": "Farbpaletten online aus einer Basisfarbe generieren. Praktisch fuer Branding, UI-Systeme, Moodboards und schnelle CSS-Themen.",
-  "intro": "Der Farbpaletten-Generator ist fuer Situationen gedacht, in denen eine Basisfarbe schnell zu mehreren passenden Toenen erweitert werden soll. Das ist hilfreich fuer UI-Systeme, Branding, Landing Pages und erste visuelle Konzepte.",
-  "overview": "Das Tool bietet schnelle Paletten-Entwuerfe ohne grosse Design-Software. Es passt gut zu Theme-Experimenten, Komponenten-Arbeit, Moodboards und fruehen Markenentwuerfen, bei denen du zuerst mehrere passende Farbstufen sehen willst.",
-  "howItWorks": ["Basisfarbe waehlen.", "Anzahl der Farbstufen festlegen.", "Die generierten Farben fuer Design oder Code uebernehmen."],
-  "examples": [{"title": "UI-Palette", "input": "Eine tuerkise Basisfarbe", "output": "Mehrere hellere und dunklere Abstufungen", "description": "Nuetzlich fuer Buttons, Flaechen, Highlights und States."}, {"title": "Branding-Idee", "input": "Eine einzelne Akzentfarbe", "output": "Eine breitere Palette fuer schnelle Konzepte", "description": "Hilfreich fuer Moodboards und fruehe Markenarbeit."}],
-  "faq": [{"question": "Wie viele Farben erzeugt das Tool?", "answer": "Es erstellt kompakte Paletten mit mehreren abgestuften Farben aus einer Basisfarbe."}, {"question": "Kann ich die Farben fuer CSS-Themes verwenden?", "answer": "Ja. Die erzeugten HEX-Werte eignen sich gut fuer CSS-Variablen, Tokens und schnelle Theme-Entwuerfe."}],
-  "seo": {"title": "Farbpaletten-Generator | Farbpaletten online", "description": "Farbpaletten online aus einer Basisfarbe generieren fuer Branding, UI-Systeme und schnelle CSS-Themen.", "keywords": ["farbpaletten generator", "color palette generator", "palette online", "farben fuer ui", "branding farbpalette"]}
+  "shortDescription": "Aus einer Basisfarbe koordinierte Farbsets fuer UI, Branding und Konzeptarbeit erstellen.",
+  "metaTitle": "Farbpaletten-Generator | Farben",
+  "metaDescription": "Koordinierte Farbsets aus einer Basisfarbe fuer Branding, Interfaces, Theme-Planung und visuelle Entwuerfe erstellen.",
+  "intro": "Aus einer Basisfarbe entsteht in wenigen Sekunden ein nutzbares Set verwandter Toene, Abstufungen und Akzente.",
+  "overview": "Dieses Tool hilft dir dabei, eine einzelne Startfarbe in ein strukturiertes Set verwandter Farben zu ueberfuehren. So lassen sich Interfaces mit konsistenten Flaechen, Zustandsfarben und Akzenten leichter aufbauen, ohne jeden Schritt von Hand zu schaetzen.\n\nEs eignet sich auch, wenn du eine fruehe visuelle Richtung fuer eine Marke, eine Landing Page oder ein Produktkonzept brauchst. Statt mit einer isolierten Farbe zu arbeiten, bekommst du eine kleine Farbfamilie fuer Headlines, Hintergruende, Highlights und Interaktionen.\n\nNutze die erzeugten Werte als Ausgangspunkt und passe sie im Designfile oder im Code an, wenn du mehr Kontrast, waermere Neutraltöne oder einen ruhigeren Gesamteindruck brauchst.",
+  "howItWorks": [
+    "Basisfarbe auswaehlen, die den Ausgangspunkt bildet.",
+    "Anzahl der verwandten Farben festlegen.",
+    "Die erzeugten Swatches pruefen und die Werte in Design oder Code uebernehmen."
+  ],
+  "useCases": [
+    {
+      "title": "UI-Farbskala",
+      "description": "Baue Toene fuer Buttons, Panels, Hover-Zustaende und dezente Hintergruende aus einer zentralen Markenfarbe auf."
+    },
+    {
+      "title": "Richtung fuer eine Landing Page",
+      "description": "Teste Hero-Bereich, Akzentfarbe und Untersektionen mit einer stimmigen Farbfamilie, bevor du das Layout finalisierst."
+    },
+    {
+      "title": "Entwurf fuer ein Designsystem",
+      "description": "Erstelle einen Startbereich fuer Tokens wie Primary, Secondary, Surface und Emphasis beim Definieren eines neuen Themes."
+    },
+    {
+      "title": "Marken-Konzeptboard",
+      "description": "Entwickle eine Signalfarbe zu einer Palette weiter, die fuer Praesentationen, Moodboards und Identity-Skizzen nutzbar ist."
+    }
+  ],
+  "examples": [
+    {
+      "title": "Palette fuer ein SaaS-Dashboard",
+      "input": "Basisfarbe: #1F7A8C, 7 Swatches",
+      "output": "Eine ausgewogene Mischung aus sehr hellen tuerkisen Hintergruenden, mittleren UI-Akzenten und einem dunklen Ankerwert",
+      "description": "Geeignet fuer Navigation, Diagramme und Statushinweise."
+    },
+    {
+      "title": "Editorial Landing Page",
+      "input": "Basisfarbe: warmes Korall, 5 Swatches",
+      "output": "Zarte Pfirsichtoene, ein sattes Korall in der Mitte und ein dunklerer Ton fuer Hervorhebungen",
+      "description": "Gut, wenn die Seite warm wirken soll, aber nicht aufdringlich."
+    },
+    {
+      "title": "Moodboard fuer einen Produkt-Launch",
+      "input": "Basisfarbe: tiefes Violett, 9 Swatches",
+      "output": "Mehrere Schritte von fast schwarzem Pflaumenton bis zu hellem Lavendel",
+      "description": "Bietet genug Bandbreite fuer Karten, Abschnittstrenner und Produkt-Callouts."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Bleibt die Stimmung der Palette immer nah an der Basisfarbe?",
+      "answer": "Die Palette bleibt an die Startfarbe gebunden, aber helle und dunkle Schritte koennen je nach Abstand neutraler oder intensiver wirken. Wenn du eine sehr genaue Stimmung brauchst, waehle nur die Toene, die am besten passen."
+    },
+    {
+      "question": "Kann ich die Werte direkt im Code verwenden?",
+      "answer": "Ja. Die erzeugten Werte sind fuer Styles, Tokens und Theme-Dateien gedacht. Wenn dein Projekt feste Benennungen braucht, kannst du sie vorher umbenennen."
+    },
+    {
+      "question": "Was mache ich, wenn ein Farbton zu hell fuer Text oder Buttons ist?",
+      "answer": "Dann eignet sich dieser Farbton eher fuer Flaechen oder Rahmen. Fuer Text und interaktive Elemente nimm einen dunkleren Ton aus derselben Palette."
+    },
+    {
+      "question": "Ist eine groessere Palette automatisch besser?",
+      "answer": "Nicht unbedingt. Viele Swatches bieten mehr Auswahl, machen die Anwendung aber oft unuebersichtlicher. Fuer Produktarbeit ist ein kleineres Set meist leichter konsistent zu halten."
+    }
+  ],
+  "seo": {
+    "title": "Farbpaletten-Generator | Farben",
+    "description": "Koordinierte Farbsets aus einer Basisfarbe fuer Branding, Interfaces, Theme-Planung und visuelle Entwuerfe erstellen.",
+    "keywords": [
+      "farbpaletten generator",
+      "farbpalette",
+      "farben generator",
+      "ui farben",
+      "branding farbpalette"
+    ]
+  }
 }

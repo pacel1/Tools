@@ -4,178 +4,97 @@
   "slug": "calculateur-de-paves",
   "h1": "Calculateur de pavés",
   "title": "Calculateur de pavés",
-  "shortDescription": "Calculez combien de pavés, de palettes et de bordures il vous faut pour une allée, une terrasse ou un chemin.",
-  "metaTitle": "Calculateur de pavés - estimer pavés, palettes et bordures",
-  "metaDescription": "Estimez en quelques secondes le nombre de pavés nécessaires pour une allée, un chemin ou une terrasse. Calculez aussi les palettes et les bordures.",
-  "intro": "Utilisez ce calculateur de pavés pour estimer rapidement la quantité de matériaux nécessaire pour une allée, un chemin ou une terrasse. Saisissez la surface, les dimensions du pavé, la marge de perte, la couverture par palette et le ratio de bordure pour obtenir un calcul pratique.",
-  "overview": "Cet outil répond à la question essentielle : combien de pavés faut-il ? Il convertit la surface et les dimensions du pavé en un nombre estimé de pièces, puis calcule le nombre de palettes ou de colis à commander ainsi que la longueur de bordure nécessaire.",
+  "shortDescription": "Calculez les pavés, palettes, colis et bordures pour une allée, une terrasse ou un chemin.",
+  "metaTitle": "Calculateur de pavés",
+  "metaDescription": "Calculez combien de pavés, palettes, colis et bordures vous faut pour une allée, un chemin ou une terrasse.",
+  "intro": "Saisissez la surface, les dimensions du pavé, la marge de perte et la couverture par colis pour obtenir une estimation de matériaux.",
+  "overview": "Ce calculateur sert à chiffrer la quantité réelle de matériaux pour une allée, un chemin de jardin, une terrasse ou un pourtour pavé. Il convertit la surface et les dimensions du pavé en nombre estimé de pièces, puis transforme ce résultat en colis ou en palettes selon la couverture indiquée.\n\nL’outil fournit aussi une estimation de la longueur de bordure, afin de préparer les finitions en même temps que la surface principale. C’est particulièrement utile quand il y a des coupes, des angles, des changements de largeur ou des bords contre une pelouse, un mur ou une marche.\n\nPour un calcul cohérent, saisissez uniquement la zone qui sera réellement pavée. Si le tracé comporte beaucoup de coupes ou de diagonales, augmentez la marge de perte pour éviter une commande trop juste.",
   "howItWorks": [
     "Saisissez la surface totale en mètres carrés.",
-    "Ajoutez la largeur et la longueur du pavé en centimetres.",
-    "Définissez le pourcentage de perte pour les coupes et ajustements.",
-    "Indiquez la couverture d’un colis ou d’une palette en m2.",
-    "Précisez la bordure nécessaire pour 1 m2 afin d’estimer la longueur.",
-    "Consultez le résultat : pavés, palettes ou colis, et bordures."
+    "Indiquez la largeur et la longueur du pavé en centimètres.",
+    "Définissez le pourcentage de perte pour les coupes et les cassures.",
+    "Entrez la couverture d’un colis ou d’une palette en m².",
+    "Ajoutez le ratio de bordure par 1 m² si vous voulez estimer la longueur.",
+    "Lisez le résultat : pavés, colis ou palettes, et mètres de bordure."
   ],
   "useCases": [
-    "Préparer un projet d’allée carrossable.",
-    "Calculer les matériaux pour un chemin de jardin.",
-    "Vérifier combien de palettes commander.",
-    "Estimer les bordures pour une terrasse.",
-    "Comparer les besoins en matériaux avant de demander un devis."
+    {
+      "title": "Préparer une allée de maison",
+      "description": "Évaluez la quantité nécessaire pour une allée de garage et convertissez le besoin en palettes entières en tenant compte des coupes au niveau de l’entrée."
+    },
+    {
+      "title": "Chemin de jardin étroit",
+      "description": "Calculez la matière d’un chemin dont la largeur varie, sans devoir arrondir au hasard le nombre de colis à acheter."
+    },
+    {
+      "title": "Terrasse avec bord visible",
+      "description": "Mesurez la longueur de bordure en même temps que la surface pour fermer correctement le périmètre de la terrasse."
+    },
+    {
+      "title": "Vérification d’une commande fournisseur",
+      "description": "Comparez votre besoin avec la couverture réelle d’un colis ou d’une palette et traduisez-le en unités de commande complètes."
+    },
+    {
+      "title": "Chiffrage d’un aménagement extérieur",
+      "description": "Estimez le matériau avant un devis pour que la ligne pavage reflète la surface et la marge de coupe."
+    }
   ],
   "examples": [
     {
-      "title": "Allée standard",
-      "input": "Surface 40 m2, pavé 20 x 10 cm, perte 8 %, couverture 6,5 m2 par colis, bordure 0,6 m par m2",
-      "output": "Estimation des pavés, colis et bordures pour une allée classique.",
-      "description": "Un moyen rapide de dimensionner un projet résidentiel courant."
+      "title": "Allée pour deux voitures",
+      "input": "Surface 48 m², pavé 20 x 10 cm, perte 9 %, couverture 6,4 m² par colis, bordure 0,7 m par m²",
+      "output": "Environ 26 400 pavés, 8 colis et 33,6 m de bordure.",
+      "description": "Adapté à une allée rectangulaire avec peu de coupes."
     },
     {
-      "title": "Contrôle de terrasse",
-      "input": "Surface 25 m2, pavé 20 x 20 cm, perte 10 %, couverture 5 m2 par palette, bordure 0,4 m par m2",
-      "output": "Quantités de matériaux pour une petite terrasse.",
-      "description": "Utile avant de passer commande chez un fournisseur."
+      "title": "Petite terrasse de jardin",
+      "input": "Surface 18,5 m², pavé 30 x 15 cm, perte 12 %, couverture 4,8 m² par palette, bordure 0,5 m par m²",
+      "output": "Environ 4 730 pavés, 4 palettes et 9,3 m de bordure.",
+      "description": "Utile lorsqu’il y a des angles et des finitions contre un mur."
+    },
+    {
+      "title": "Passage latéral étroit",
+      "input": "Surface 11,2 m², pavé 25 x 25 cm, perte 7 %, couverture 5,5 m² par colis, bordure 0,8 m par m²",
+      "output": "Environ 191 pavés, 3 colis et 9,0 m de bordure.",
+      "description": "Pratique pour un petit chemin avec bordures des deux côtés."
     }
   ],
   "faq": [
     {
-      "question": "Comment calculer combien de pavés il me faut ?",
-      "answer": "Multipliez la surface par 10 000, divisez par la surface d’un pavé en centimètres carrés, puis ajoutez le pourcentage de perte. Le calculateur le fait automatiquement."
+      "question": "Comment le calculateur convertit-il la surface en nombre de pavés ?",
+      "answer": "Il divise la surface par la surface d’un pavé, puis ajoute la marge de perte saisie. Si vous mettez 10 %, la quantité à commander augmente de 10 % par rapport à la couverture de base."
     },
     {
-      "question": "Pourquoi ajouter une marge de perte ?",
-      "answer": "La marge couvre les coupes, les cassures et les pertes de pose. En général, on compte 5 % à 10 %, davantage pour les motifs complexes."
+      "question": "Dois-je entrer tout le terrain ou seulement la zone pavée ?",
+      "answer": "Entrez uniquement la partie qui sera effectivement recouverte de pavés. Les zones plantées, les bandes vides et les espaces non pavés doivent être exclus."
     },
     {
-      "question": "Le calculateur indique-t-il le nombre de colis ou de palettes à acheter ?",
-      "answer": "Oui. Après calcul de la surface nécessaire, il divise par la couverture d’un colis ou d’une palette puis arrondit au supérieur."
+      "question": "Que signifie le résultat de bordure ?",
+      "answer": "Il s’agit d’une estimation en mètres linéaires pour les bordures, les rives ou les éléments de retenue. Ce n’est pas forcément le nombre de pièces si le fournisseur vend au mètre."
     },
     {
-      "question": "Puis-je l’utiliser pour une allée, un chemin ou une terrasse ?",
-      "answer": "Oui. Il convient à toute surface pavée, tant que vous connaissez la surface totale et les dimensions du pavé."
+      "question": "Pourquoi le nombre de colis ou de palettes peut-il changer d’une unité entière ?",
+      "answer": "Parce que l’outil arrondit toujours au supérieur vers des unités complètes. À la limite de couverture, une petite variation de surface peut ajouter une unité supplémentaire."
+    },
+    {
+      "question": "Que faire si les dimensions sont en millimètres ?",
+      "answer": "Convertissez-les d’abord en centimètres. Saisir 200 x 100 mm comme 200 x 100 cm faussera fortement le résultat."
+    },
+    {
+      "question": "Le calcul convient-il aux formes irrégulières ?",
+      "answer": "Oui, si vous connaissez la surface totale finie. Pour les tracés irréguliers, il vaut mieux prévoir une marge de perte plus élevée à cause des nombreuses coupes."
     }
   ],
-  "uiLabels": {
-    "copy": "Copier",
-    "copied": "Copié",
-    "input": "Entrée",
-    "output": "Sortie",
-    "placeholder": "Saisissez une valeur",
-    "indent": "Retrait",
-    "removeComments": "Supprimer les commentaires",
-    "preview": "Aperçu",
-    "source": "Source",
-    "sanitizedHtml": "HTML nettoyé",
-    "plainText": "Texte brut",
-    "summary": "Résumé",
-    "total": "Total",
-    "links": "Liens",
-    "images": "Images",
-    "errors": "Erreurs",
-    "warnings": "Avertissements",
-    "valid": "Valide",
-    "invalid": "Invalide",
-    "href": "Href",
-    "text": "Texte",
-    "rel": "Rel",
-    "target": "Cible",
-    "alt": "Alt",
-    "width": "Largeur",
-    "height": "Hauteur",
-    "empty": "Vide",
-    "outputReady": "Résultat prêt",
-    "cleanedHtml": "HTML nettoyé",
-    "formattedHtml": "HTML formaté",
-    "minifiedHtml": "HTML minifié",
-    "markdown": "Markdown",
-    "extractedImages": "Images extraites",
-    "extractedLinks": "Liens extraits",
-    "validationSummary": "Résumé de validation",
-    "prettyHtml": "HTML lisible",
-    "encodedText": "Texte encodé",
-    "file": "Fichier",
-    "size": "Taille",
-    "format": "Format",
-    "quality": "Qualité",
-    "colorOne": "Couleur 1",
-    "colorTwo": "Couleur 2",
-    "background": "Arrière-plan",
-    "foreground": "Premier plan",
-    "angle": "Angle",
-    "margin": "Marge",
-    "level": "Niveau",
-    "gradientType": "Type de dégradé",
-    "linear": "Linéaire",
-    "radial": "Radial",
-    "blur": "Flou",
-    "spread": "Étendue",
-    "offsetX": "Décalage X",
-    "offsetY": "Décalage Y",
-    "opacity": "Opacité",
-    "inset": "Intérieur",
-    "cssCode": "Code CSS",
-    "snippet": "Extrait",
-    "download": "Télécharger",
-    "downloadSvg": "Télécharger SVG",
-    "downloadPng": "Télécharger PNG",
-    "downloadAll": "Tout télécharger",
-    "upload": "Importer",
-    "title": "Titre",
-    "description": "Description",
-    "canonicalUrl": "URL canonique",
-    "siteName": "Nom du site",
-    "ogImage": "Image OG",
-    "clear": "Effacer",
-    "generatedQr": "QR généré",
-    "placeholderImage": "Image placeholder",
-    "faviconSet": "Jeu de favicon",
-    "keepAspectRatio": "Conserver le ratio",
-    "cropX": "Recadrage X",
-    "cropY": "Recadrage Y",
-    "cropWidth": "Largeur du recadrage",
-    "cropHeight": "Hauteur du recadrage",
-    "originalSize": "Taille originale",
-    "outputSize": "Taille de sortie",
-    "savedSize": "Taille enregistrée",
-    "result": "Résultat",
-    "base64": "Base64",
-    "mimeType": "Type MIME",
-    "resizedImage": "Image redimensionnée",
-    "compressedImage": "Image compressée",
-    "croppedImage": "Image recadrée",
-    "convertedImage": "Image convertie",
-    "decodedImage": "Image décodée",
-    "imagePreview": "Aperçu de l’image",
-    "camera": "Caméra",
-    "lens": "Objectif",
-    "dateTaken": "Date de prise de vue",
-    "resolution": "Résolution",
-    "fileSize": "Taille du fichier",
-    "iso": "ISO",
-    "exposure": "Exposition",
-    "aperture": "Ouverture",
-    "focalLength": "Distance focale",
-    "flash": "Flash",
-    "orientation": "Orientation",
-    "latitude": "Latitude",
-    "longitude": "Longitude",
-    "openMap": "Ouvrir la carte",
-    "rawMetadata": "Métadonnées brutes",
-    "noMetadataFound": "Aucune métadonnée trouvée",
-    "gpsLocation": "Position GPS",
-    "metadataSummary": "Résumé des métadonnées"
-  },
   "seo": {
     "title": "Calculateur de pavés",
-    "description": "Calculez combien de pavés, de palettes ou de colis et de bordures il vous faut pour une allée, un chemin ou une terrasse.",
+    "description": "Calculez combien de pavés, colis, palettes et bordures vous faut pour une allée, un chemin ou une terrasse.",
     "keywords": [
       "calculateur de pavés",
       "combien de pavés me faut-il",
-      "calcul pavés",
-      "estimateur de pavés",
+      "pavés calcul",
       "matériaux pavage",
-      "calculateur terrasse pavés"
+      "bordure pavés",
+      "palette pavés"
     ]
   }
 }

@@ -4,42 +4,76 @@
   "slug": "text-reverser",
   "h1": "Text Reverser",
   "title": "Text Reverser",
-  "shortDescription": "Reverse text instantly online with fast results, simple inputs and practical examples.",
-  "overview": "Reverse text instantly online. Use this tool to get a clear result quickly from simple input on the same page. It is useful for everyday checks, comparisons and small tasks when you need a fast online answer.",
+  "shortDescription": "Reverse text character by character and keep punctuation, spaces, and symbols in the new order.",
+  "metaTitle": "Text Reverser Tool",
+  "metaDescription": "Reverse any text character by character while preserving spaces, punctuation, and symbols in the output.",
+  "intro": "Paste text and get the characters reversed immediately.",
+  "overview": "This tool reverses the exact characters in your text from end to start. Letters, numbers, spaces, punctuation, and symbols are all moved into reverse order, so the output is useful when you need the text itself flipped rather than reworded.\n\nIt works well for short phrases, names, labels, codes, and test strings. If you are checking how a message looks backward or preparing reversed text for design, puzzles, or formatting tests, the result appears instantly on the page.\n\nBecause it reverses characters exactly as entered, the tool does not translate, correct, or reorganize your text. If you include line breaks, they are kept as part of the reversed output, which can change the visual layout in a predictable way.",
   "howItWorks": [
-    "Enter the required value or text into the form.",
-    "The conversion, calculation or transformation runs instantly in the browser.",
-    "Review the result and continue with related tools if you need another step."
+    "Enter or paste the text you want to reverse.",
+    "The tool flips the characters from the last one to the first.",
+    "Copy the reversed result and use it wherever you need it."
+  ],
+  "useCases": [
+    {
+      "title": "Backwards display text",
+      "description": "Turn a phrase into reversed characters for posters, puzzles, or stylized layouts."
+    },
+    {
+      "title": "Testing symbols and spacing",
+      "description": "Check how punctuation, emoji, and extra spaces appear when the character order is reversed."
+    },
+    {
+      "title": "Preparing mirrored labels",
+      "description": "Create reversed text for mockups, badges, or design previews that need a mirrored look."
+    }
   ],
   "examples": [
     {
-      "title": "Common use case",
-      "input": "utility tools",
-      "output": "sloot ytilitu",
-      "description": "Shows a common use case with a clear input and result."
+      "title": "Phrase reversal",
+      "input": "Open the door",
+      "output": "rood eht nepO",
+      "description": "Reverses every character while keeping the original spacing in reverse order."
     },
     {
-      "title": "Another quick example",
-      "input": "utility tools",
-      "output": "sloot ytilitu",
-      "description": "Useful for quick checks, comparisons or repeat tasks."
+      "title": "Mixed symbols",
+      "input": "A1! B2?",
+      "output": "?2B !1A",
+      "description": "Shows how letters, numbers, spaces, and punctuation are all reversed together."
+    },
+    {
+      "title": "Line break example",
+      "input": "first line\nsecond line",
+      "output": "enil dnoces\nenil tsrif",
+      "description": "Demonstrates that line breaks remain in the reversed text output."
     }
   ],
   "faq": [
     {
-      "question": "How accurate is this tool?",
-      "answer": "The result is based on the input you provide and the calculation or transformation shown on the page."
+      "question": "Does this tool reverse words or characters?",
+      "answer": "It reverses characters. If you type two words, the letters and the space switch order together, so the text reads backward at the character level."
     },
     {
-      "question": "Can I use this tool on mobile?",
-      "answer": "Yes. The page works on desktop and mobile screens with a simple input and result layout."
+      "question": "What happens to punctuation and numbers?",
+      "answer": "They are reversed with the rest of the text. A comma, dash, or digit keeps its exact character and moves to a new position in the output."
+    },
+    {
+      "question": "Why does the result look odd with line breaks?",
+      "answer": "Line breaks are treated as part of the text. When the full string is reversed, the lines can appear in a different visual order than you expect."
+    },
+    {
+      "question": "Can I reverse only part of a sentence?",
+      "answer": "Yes. Delete the parts you do not want to change, or reverse one selected fragment separately and paste it back into your text."
     }
   ],
   "seo": {
-    "title": "Text Reverser",
-    "description": "Reverse text instantly online. Free online text reverser with instant results.",
+    "title": "Text Reverser Tool",
+    "description": "Reverse any text character by character while preserving spaces, punctuation, and symbols in the output.",
     "keywords": [
-      "text reverser"
+      "text reverser",
+      "reverse text",
+      "backwards text",
+      "character reversal"
     ]
   }
 }

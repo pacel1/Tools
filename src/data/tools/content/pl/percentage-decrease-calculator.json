@@ -4,43 +4,81 @@
   "slug": "kalkulator-procentowego-spadku",
   "h1": "Kalkulator procentowego spadku",
   "title": "Kalkulator procentowego spadku",
-  "shortDescription": "Oblicz wartość po spadku o procent — szybko, prosto i z praktycznymi przykładami.",
-  "overview": "Oblicz wartość po spadku o określony procent. Ta strona zapewnia szybki wynik dzięki prostemu narzędziu online i przejrzystemu przebiegowi obliczeń. To rozwiązanie dla osób szukających darmowej odpowiedzi w przeglądarce, natychmiastowych wyników oraz praktycznych treści z długiego ogona wyszukiwań.",
+  "shortDescription": "Oblicz nową wartość po spadku o procent, podając wartość początkową i wielkość obniżki.",
+  "metaTitle": "Kalkulator procentowego spadku",
+  "metaDescription": "Oblicz nową wartość po spadku o procent, podając wartość początkową i wielkość obniżki.",
+  "intro": "Wpisz wartość początkową i procent spadku, aby od razu otrzymać nowy wynik.",
+  "overview": "Ten kalkulator pokazuje wartość końcową po obniżeniu o wskazany procent, dzięki czemu od razu widać, ile pozostaje po spadku. Sprawdza się przy cenach, budżetach, celach, ilościach i innych wielkościach, które trzeba zmniejszyć o określoną wartość procentową. Wynik opiera się na wartości wyjściowej i procencie obniżki, więc łatwiej uniknąć błędów przy liczeniu ręcznym.\n\nNarzędzie pomaga też porównać kilka wariantów spadku bez przepisywania wzorów. Możesz sprawdzić, jak zmieni się cena po rabacie, ile zostanie z budżetu po cięciu albo jaki będzie nowy cel po redukcji o ustalony procent.",
   "howItWorks": [
-    "Wpisz wymaganą wartość lub tekst w formularzu.",
-    "Konwersja, obliczenie lub transformacja uruchamia się natychmiast w przeglądarce.",
-    "Sprawdź wynik i przejdź do powiązanych narzędzi, jeśli potrzebujesz kolejnego kroku."
+    "Wpisz wartość początkową.",
+    "Podaj procent spadku.",
+    "Odczytaj wartość po obniżce i zmień dane, jeśli chcesz sprawdzić inny wariant."
+  ],
+  "useCases": [
+    {
+      "title": "Obniżki cen",
+      "description": "Sprawdź cenę po rabacie sezonowym, wyprzedaży lub przecenie pojedynczego produktu."
+    },
+    {
+      "title": "Cięcia budżetu",
+      "description": "Oblicz, ile zostaje z budżetu działu, projektu lub wydatków po redukcji."
+    },
+    {
+      "title": "Spadki wyników",
+      "description": "Wyznacz nową wartość po spadku przychodów, liczby zamówień, leadów lub innych danych."
+    },
+    {
+      "title": "Korekta celu",
+      "description": "Zmniejsz cel sprzedażowy, oszczędnościowy lub produkcyjny o wybrany procent i zobacz nowy poziom."
+    }
   ],
   "examples": [
     {
-      "title": "Przykład 1",
-      "input": "120 pomniejszone o 15%",
-      "output": "102",
-      "description": "Realistyczny przykład użycia kalkulatora procentowego spadku dla codziennego zapytania."
+      "title": "Rabat w sklepie",
+      "input": "Wartość początkowa: 84, spadek: 25%",
+      "output": "63",
+      "description": "Cena 84 po obniżce o 25% wynosi 63."
     },
     {
-      "title": "Przykład 2",
-      "input": "120 pomniejszone o 15%",
-      "output": "102",
-      "description": "Kolejny praktyczny przypadek użycia dla ruchu organicznego z długiego ogona."
+      "title": "Zmniejszenie czynszu",
+      "input": "Wartość początkowa: 1600, spadek: 7,5%",
+      "output": "1480",
+      "description": "Kwota 1600 po spadku o 7,5% daje 1480."
+    },
+    {
+      "title": "Spadek liczby leadów",
+      "input": "Wartość początkowa: 2400, spadek: 12%",
+      "output": "2112",
+      "description": "Liczba 2400 po obniżce o 12% wynosi 2112."
     }
   ],
   "faq": [
     {
-      "question": "Jak dokładne jest to narzędzie?",
-      "answer": "Wynik jest obliczany bezpośrednio na podstawie wzoru lub logiki po stronie przeglądarki używanej przez to narzędzie."
+      "question": "Jak odczytać wynik?",
+      "answer": "Wynik to wartość początkowa pomniejszona o wybrany procent tej wartości."
     },
     {
-      "question": "Czy mogę korzystać z tego narzędzia na telefonie?",
-      "answer": "Tak. Strona działa zarówno na komputerze, jak i na urządzeniach mobilnych, a układ formularza i wyniku jest prosty."
+      "question": "Czy mogę wpisać ułamek procenta?",
+      "answer": "Tak. Możesz podać na przykład 7,5% albo 12,25%, a kalkulator zastosuje taki spadek do wartości początkowej."
+    },
+    {
+      "question": "Dlaczego wynik bywa liczbą z przecinkiem?",
+      "answer": "Jeśli obniżka nie daje równej liczby, końcowa wartość może mieć część dziesiętną."
+    },
+    {
+      "question": "Jaki błąd pojawia się najczęściej?",
+      "answer": "Nie wpisuj już obniżonej wartości jako wartości początkowej, bo wtedy spadek zostanie zastosowany dwa razy."
     }
   ],
   "seo": {
     "title": "Kalkulator procentowego spadku",
-    "description": "Oblicz wartość po spadku o procent. Darmowy kalkulator procentowego spadku online z natychmiastowym wynikiem.",
+    "description": "Oblicz nową wartość po spadku o procent, podając wartość początkową i wielkość obniżki.",
     "keywords": [
       "kalkulator procentowego spadku",
-      "kalkulator spadku procentowego"
+      "kalkulator obniżki procentowej",
+      "spadek o procent",
+      "nowa wartość po obniżce",
+      "redukcja procentowa"
     ]
   }
 }

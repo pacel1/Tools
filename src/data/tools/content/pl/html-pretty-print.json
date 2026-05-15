@@ -4,105 +4,87 @@
   "slug": "pretty-print-html",
   "h1": "Formatowanie HTML",
   "title": "Formatowanie HTML",
-  "shortDescription": "Uporządkuj HTML z równym wcięciem do przeglądu, audytu i debugowania.",
-  "metaTitle": "Formatowanie HTML | Sformatuj HTML online",
-  "metaDescription": "Uporządkuj HTML z równym wcięciem do przeglądu, audytu i debugowania. Sformatuj kod w przeglądarce szybko i bez wysyłania danych na serwer.",
-  "intro": "Sformatuj chaotyczny kod HTML do czytelnej postaci z jednolitym wcięciem i odstępami. To narzędzie działa w przeglądarce i ułatwia analizę struktury, porównywanie zmian oraz debugowanie.",
-  "overview": "Formatowanie HTML zamienia skompresowany lub nieczytelny markup w przejrzysty kod HTML z wcięciami. Sprawdza się przy analizie zagnieżdżonych elementów, kontroli atrybutów i przygotowaniu kodu do przeglądu. Przetwarzanie odbywa się lokalnie w przeglądarce, więc praca jest szybka i wygodna.",
+  "shortDescription": "Nadaj chaotycznemu HTML czytelne wcięcia do przeglądu, debugowania i przekazania dalej.",
+  "metaTitle": "Formatowanie HTML online",
+  "metaDescription": "Nadaj chaotycznemu HTML czytelne wcięcia do przeglądu, debugowania i przekazania dalej w przeglądarce.",
+  "intro": "Wklej chaotyczny lub zminifikowany HTML, a narzędzie zwróci czytelną wersję z równym wcięciem.",
+  "overview": "Formatowanie HTML zamienia gęsty, trudny do czytania markup w przejrzysty kod o stałej strukturze. Dzięki temu łatwiej prześledzić zagnieżdżenie elementów, znaleźć błędne domknięcia i sprawdzić atrybuty bez zgadywania, gdzie kończy się dany blok.\n\nTo przydatny krok przy analizie szablonów, fragmentów z CMS-a, kodu kopiowanego z różnych źródeł albo minifikowanego HTML z produkcji. Czytelny układ ułatwia też przekazanie fragmentu do poprawki, opisanie problemu w zgłoszeniu i szybsze porównanie zmian.",
   "howItWorks": [
-    "Wklej kod HTML do pola wejściowego.",
-    "Wybierz opcje formatowania, takie jak wcięcie lub obsługa komentarzy, jeśli są dostępne.",
-    "Wygeneruj sformatowany wynik od razu w przeglądarce.",
-    "Skopiuj wynik i użyj go do przeglądu, debugowania lub dokumentacji."
+    "Wklej HTML do pola wejściowego.",
+    "Ustaw wcięcie, jeśli chcesz dopasować styl formatowania.",
+    "Uruchom formatowanie, aby otrzymać uporządkowany kod.",
+    "Skopiuj wynik do przeglądu, poprawki lub dokumentacji."
   ],
   "useCases": [
-    "Przegląd struktury HTML przed wdrożeniem.",
-    "Debugowanie zagnieżdżonego lub minifikowanego kodu.",
-    "Przygotowanie fragmentów kodu do code review i audytów.",
-    "Ułatwienie odczytu HTML w dokumentacji i zgłoszeniach."
+    {
+      "title": "Przegląd szablonów z CMS",
+      "description": "Rozbij rozbudowany markup generowany przez CMS na układ, który da się łatwo sprawdzić."
+    },
+    {
+      "title": "Analiza głębokiego zagnieżdżenia",
+      "description": "Uporządkuj sekcje z wieloma poziomami elementów, gdy trzeba znaleźć miejsce błędu."
+    },
+    {
+      "title": "Przygotowanie fragmentu do code review",
+      "description": "Sformatuj kod przed przekazaniem go do oceny, żeby inni widzieli realną strukturę HTML."
+    },
+    {
+      "title": "Odtwarzanie czytelnego widoku z minifikacji",
+      "description": "Rozwiń skompresowany HTML do postaci, którą można porównać i poprawić."
+    }
   ],
   "examples": [
     {
-      "title": "Zwięzły markup",
+      "title": "Krótki blok sekcji",
       "input": "<div><span>Hi</span><a href='/docs'>Docs</a></div>",
       "output": "<div>\n  <span>Hi</span>\n  <a href=\"/docs\">Docs</a>\n</div>",
-      "description": "Zamienia krótki HTML w czytelny układ blokowy."
+      "description": "Zamienia jednolinijkowy fragment na układ łatwy do przeczytania."
     },
     {
-      "title": "Zagnieżdżona treść",
-      "input": "<ul><li>One</li><li><strong>Two</strong></li></ul>",
-      "output": "<ul>\n  <li>One</li>\n  <li><strong>Two</strong></li>\n</ul>",
-      "description": "Ułatwia analizę zagnieżdżonych list."
+      "title": "Lista z podlistą",
+      "input": "<ul><li>Alpha</li><li><strong>Beta</strong><ul><li>Beta 1</li></ul></li></ul>",
+      "output": "<ul>\n  <li>Alpha</li>\n  <li>\n    <strong>Beta</strong>\n    <ul>\n      <li>Beta 1</li>\n    </ul>\n  </li>\n</ul>",
+      "description": "Pomaga sprawdzić wielopoziomową strukturę list."
+    },
+    {
+      "title": "Artykuł z odnośnikami",
+      "input": "<article><h2>Dokumentacja</h2><p>Przeczytaj <a href='/guide'>przewodnik</a> i <a href='/api'>API</a>.</p></article>",
+      "output": "<article>\n  <h2>Dokumentacja</h2>\n  <p>\n    Przeczytaj <a href=\"/guide\">przewodnik</a> i <a href=\"/api\">API</a>.\n  </p>\n</article>",
+      "description": "Pozwala zachować czytelność linków wewnątrz akapitu."
     }
   ],
   "faq": [
     {
-      "question": "Czy to narzędzie do formatowania HTML jest bezpieczne?",
-      "answer": "Tak. Zostało zaprojektowane do pracy po stronie klienta i powinno bezpiecznie przetwarzać HTML z uwzględnieniem XSS."
+      "question": "Czy formatowanie zmienia znaczenie HTML?",
+      "answer": "Narzędzie zmienia układ i wcięcia, a nie treść znaczników. Struktura i atrybuty pozostają zachowane, poza normalizacją odstępów."
     },
     {
-      "question": "Czy formatowanie zmienia treść?",
-      "answer": "Narzędzie skupia się na białych znakach i wcięciach. Powinno zachować znaczenie HTML, jednocześnie poprawiając czytelność."
+      "question": "Co się stanie z HTML, który już jest ładnie zapisany?",
+      "answer": "Najczęściej wynik będzie bardzo podobny. Narzędzie może jedynie wyrównać odstępy lub wcięcia, jeśli zauważy niespójność."
     },
     {
-      "question": "Czy można użyć go do HTML po minifikacji?",
-      "answer": "Tak. To idealne narzędzie do rozwijania skompresowanego markup przed przeglądem lub debugowaniem."
+      "question": "Czy poradzi sobie z długimi listami atrybutów?",
+      "answer": "Tak. Formatowanie rozwija zwarte znaczniki tak, by łatwo było odczytać atrybuty i ich wartości."
     },
     {
-      "question": "Czy działa tylko w przeglądarce?",
-      "answer": "Tak. Działa wyłącznie po stronie klienta i nie wymaga zewnętrznych API."
+      "question": "Dlaczego niektóre elementy inline wyglądają inaczej po formatowaniu?",
+      "answer": "Przerwy i łamanie linii mogą zostać dopasowane do czytelności. Treść i hierarchia HTML powinny pozostać zgodne z wejściem."
+    },
+    {
+      "question": "Czy usunięcie komentarzy wpływa na stronę?",
+      "answer": "Komentarze nie wpływają na renderowanie, ale mogą być ważne w szablonach i notatkach. Usuwaj je tylko wtedy, gdy naprawdę nie są potrzebne."
     }
   ],
-  "uiLabels": {
-    "copy": "Kopiuj",
-    "copied": "Skopiowano",
-    "input": "Wejście",
-    "output": "Wyjście",
-    "placeholder": "Wklej tutaj HTML",
-    "indent": "Wcięcie",
-    "removeComments": "Usuń komentarze",
-    "preview": "Podgląd",
-    "source": "Zrodlo",
-    "sanitizedHtml": "Zsanityzowany HTML",
-    "plainText": "Tekst plaski",
-    "summary": "Podsumowanie",
-    "total": "Razem",
-    "links": "Linki",
-    "images": "Obrazy",
-    "errors": "Bledy",
-    "warnings": "Ostrzezenia",
-    "valid": "Poprawny",
-    "invalid": "Niepoprawny",
-    "href": "Href",
-    "text": "Tekst",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Szerokosc",
-    "height": "Wysokosc",
-    "empty": "Puste",
-    "outputReady": "Wynik gotowy",
-    "cleanedHtml": "Oczyszczony HTML",
-    "formattedHtml": "Sformatowany HTML",
-    "minifiedHtml": "Zminifikowany HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Wyodrebnione obrazy",
-    "extractedLinks": "Wyodrebnione linki",
-    "validationSummary": "Podsumowanie walidacji",
-    "prettyHtml": "Czytelny HTML",
-    "encodedText": "Zakodowany tekst"
-  },
   "seo": {
-    "title": "Formatowanie HTML | Sformatuj HTML online",
-    "description": "Uporządkuj HTML z równym wcięciem do przeglądu, audytu i debugowania. Sformatuj kod w przeglądarce szybko i bez wysyłania danych na serwer.",
+    "title": "Formatowanie HTML online",
+    "description": "Nadaj chaotycznemu HTML czytelne wcięcia do przeglądu, debugowania i przekazania dalej w przeglądarce.",
     "keywords": [
       "formatowanie html",
-      "sformatuj html",
       "formatter html",
       "pretty print html",
-      "wciecie html",
-      "narzedzie html online",
-      "czytelny html"
+      "czytelny html",
+      "wciecia html",
+      "html online"
     ]
   }
 }

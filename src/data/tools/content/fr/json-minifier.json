@@ -4,43 +4,77 @@
   "slug": "minificateur-json",
   "h1": "Minificateur JSON",
   "title": "Minificateur JSON",
-  "shortDescription": "Minifiez le JSON en ligne instantanément avec des résultats rapides, une saisie simple et des exemples pratiques.",
-  "overview": "Minifiez le JSON en ligne instantanément. Cette page fournit une réponse rapide avec un outil pratique et un parcours de résultat simple. Elle s’adresse aux utilisateurs qui recherchent une solution gratuite en ligne, des résultats rapides dans le navigateur et un contenu utilitaire pratique à longue traîne.",
+  "shortDescription": "Supprimez les espaces inutiles d’un JSON tout en conservant une structure valide et compacte.",
+  "metaTitle": "Minificateur JSON",
+  "metaDescription": "Compressez le JSON en retirant les espaces et retours à la ligne sans modifier la structure ni les valeurs.",
+  "intro": "Collez votre JSON pour obtenir une version compacte, avec la même structure de données mais sans mise en forme inutile.",
+  "overview": "Un minificateur JSON transforme un JSON formaté en une chaîne compacte en supprimant les espaces, tabulations et retours à la ligne qui ne font pas partie des données. Le contenu reste identique, mais le résultat est plus court et plus simple à intégrer dans du code, une requête ou un journal.\n\nC’est utile pour les charges utiles d’API, les extraits de configuration, les données de test et les exports de débogage. Si le JSON est invalide, il ne faut pas le compacter aveuglément : corrigez d’abord les erreurs de syntaxe comme les virgules finales, les clés non entourées de guillemets ou les crochets non fermés.\n\nLe résultat est destiné aux traitements automatisés, pas à la lecture humaine. Si vous devez relire la structure, reformatez le JSON après la minification ou utilisez un outil de mise en forme.",
   "howItWorks": [
-    "Saisissez la valeur ou le texte requis dans le formulaire.",
-    "La conversion, le calcul ou la transformation s’exécute instantanément dans le navigateur.",
-    "Consultez le résultat et poursuivez avec des outils associés si vous avez besoin d’une autre étape."
+    "Collez un JSON valide dans le champ de saisie.",
+    "L’outil retire uniquement les espaces non essentiels et conserve les valeurs ainsi que l’imbrication.",
+    "Copiez le résultat compact pour le code, l’échange ou le stockage."
+  ],
+  "useCases": [
+    {
+      "title": "Réduire un corps de requête API",
+      "description": "Convertissez un JSON déjà formaté en une seule ligne pour des tests, des exemples ou un appel d’API."
+    },
+    {
+      "title": "Conserver des fixtures de test en version compacte",
+      "description": "Rangez des réponses d’exemple ou des données de test dans un format plus court et plus facile à intégrer."
+    },
+    {
+      "title": "Préparer un extrait de configuration pour un autre système",
+      "description": "Supprimez les sauts de ligne et l’indentation avant de coller le JSON dans une autre plateforme ou variable d’environnement."
+    }
   ],
   "examples": [
     {
-      "title": "Exemple 1",
-      "input": "{\"name\":\"tool\",\"value\":1}",
-      "output": "{\"name\":\"tool\",\"value\":1}",
-      "description": "Un exemple réaliste de minificateur JSON pour une recherche courante."
+      "title": "JSON lisible vers forme compacte",
+      "input": "{\n  \"utilisateur\": \"maya\",\n  \"roles\": [\n    \"admin\",\n    \"éditeur\"\n  ],\n  \"actif\": true\n}",
+      "output": "{\"utilisateur\":\"maya\",\"roles\":[\"admin\",\"éditeur\"],\"actif\":true}",
+      "description": "Les espaces et les retours à la ligne disparaissent, mais la structure de l’objet et du tableau reste identique."
     },
     {
-      "title": "Exemple 2",
-      "input": "{\"name\":\"tool\",\"value\":1}",
-      "output": "{\"name\":\"tool\",\"value\":1}",
-      "description": "Un autre cas d’usage pratique pour le trafic organique de longue traîne."
+      "title": "Objet imbriqué avec nombres",
+      "input": "{\n  \"commande\": {\n    \"id\": 1042,\n    \"articles\": [\n      { \"sku\": \"A1\", \"quantité\": 2 },\n      { \"sku\": \"B7\", \"quantité\": 1 }\n    ]\n  }\n}",
+      "output": "{\"commande\":{\"id\":1042,\"articles\":[{\"sku\":\"A1\",\"quantité\":2},{\"sku\":\"B7\",\"quantité\":1}]}}",
+      "description": "Les objets et tableaux imbriqués sont compressés sur une seule ligne sans changer les valeurs."
+    },
+    {
+      "title": "Texte avec virgules et espaces",
+      "input": "{\n  \"message\": \"Enregistre, puis réessaie.\",\n  \"note\": \"Les espaces à l’intérieur des chaînes restent inchangés.\"\n}",
+      "output": "{\"message\":\"Enregistre, puis réessaie.\",\"note\":\"Les espaces à l’intérieur des chaînes restent inchangés.\"}",
+      "description": "Les espaces entre guillemets font partie de la valeur et ne sont pas supprimés."
     }
   ],
   "faq": [
     {
-      "question": "Quelle est la précision de cet outil ?",
-      "answer": "Le résultat est calculé directement à partir de la formule ou de la logique côté navigateur utilisée par cet outil."
+      "question": "Le minificateur modifie-t-il les nombres, les booléens ou les chaînes ?",
+      "answer": "Non. Une minification correcte supprime seulement la mise en forme en dehors des chaînes JSON. Les valeurs doivent rester identiques."
     },
     {
-      "question": "Puis-je utiliser cet outil sur mobile ?",
-      "answer": "Oui. La page fonctionne sur ordinateur et sur mobile avec une interface simple de saisie et de résultat."
+      "question": "Que se passe-t-il si le JSON est invalide ?",
+      "answer": "Il ne faut pas produire de résultat compact sûr à partir d’une syntaxe cassée. Corrigez d’abord les virgules finales, les clés sans guillemets ou les accolades non fermées."
+    },
+    {
+      "question": "Les espaces à l’intérieur des chaînes sont-ils supprimés ?",
+      "answer": "Non. Les espaces entre guillemets font partie de la valeur et doivent rester inchangés. Seule la mise en forme extérieure est retirée."
+    },
+    {
+      "question": "Puis-je minifier du JSON avec des échappements ou de l’Unicode ?",
+      "answer": "Oui, tant que le JSON est valide. Les séquences comme \\n, \\t, \\\\ et les caractères Unicode restent conformes aux données saisies."
     }
   ],
   "seo": {
     "title": "Minificateur JSON",
-    "description": "Minifiez le JSON en ligne instantanément. Minificateur JSON gratuit avec résultats immédiats.",
+    "description": "Compressez le JSON en retirant les espaces et retours à la ligne sans modifier la structure ni les valeurs.",
     "keywords": [
       "minificateur json",
-      "outils developpeur"
+      "minifier json",
+      "json compact",
+      "supprimer espaces json",
+      "compresseur json"
     ]
   }
 }

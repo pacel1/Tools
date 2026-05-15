@@ -4,43 +4,80 @@
   "slug": "generateur-de-slugs",
   "h1": "Générateur de slugs",
   "title": "Générateur de slugs",
-  "shortDescription": "Convertissez du texte en slug d’URL optimisé pour le SEO avec des résultats rapides, une saisie simple et des exemples pratiques.",
-  "overview": "Convertissez du texte en slug d’URL optimisé pour le SEO. Cette page fournit une réponse rapide grâce à un outil pratique et à un flux de résultat simple. Elle vise les utilisateurs qui recherchent une solution gratuite en ligne, des résultats instantanés dans le navigateur et du contenu pratique de longue traîne.",
+  "shortDescription": "Transformez des titres et des phrases en slugs d’URL propres, en minuscules, avec des tirets et sans espaces superflus.",
+  "metaTitle": "Générateur de slugs pour URL propres",
+  "metaDescription": "Transformez des titres et des phrases en slugs d’URL propres, en minuscules, avec des tirets et sans espaces superflus.",
+  "intro": "Transformez un texte en slug d’URL propre, en minuscules et séparé par des tirets.",
+  "overview": "Cet outil transforme des titres, des en-têtes et des phrases courtes en slugs prêts à être utilisés dans une URL. Il aide à garder une structure cohérente quand vous avez besoin de chemins clairs pour des articles, des pages de catégorie ou des fiches produit.\n\nIl est aussi pratique lorsque le contenu provient de plusieurs sources et doit être harmonisé avant publication. Collez le texte, vérifiez le résultat, puis raccourcissez-le ou précisez-le si vous voulez un chemin plus adapté.\n\nPour l’organisation d’un site, c’est un bon moyen d’aligner les nouveaux intitulés sur une logique d’adresse uniforme.",
   "howItWorks": [
-    "Saisissez la valeur ou le texte demandé dans le formulaire.",
-    "La conversion, le calcul ou la transformation s’exécute instantanément dans le navigateur.",
-    "Consultez le résultat et poursuivez avec des outils associés si vous avez besoin d’une étape supplémentaire."
+    "Collez ou saisissez le titre, la phrase ou la courte expression à transformer.",
+    "L’outil convertit le texte en format slug avec des minuscules et des tirets.",
+    "Copiez le résultat et ajustez-le si vous souhaitez un chemin plus court ou plus précis."
+  ],
+  "useCases": [
+    {
+      "title": "Lien d’article à partir d’un titre",
+      "description": "Transformez un titre comme « Comment créer un petit potager » en chemin tel que comment-creer-un-petit-potager."
+    },
+    {
+      "title": "Slug de catégorie e-commerce",
+      "description": "Convertissez une catégorie comme « Chaussures de course pour l’hiver » en URL cohérente pour le catalogue."
+    },
+    {
+      "title": "Adresse de fiche produit",
+      "description": "Créez un slug lisible à partir d’un nom comme « Gourde en acier inoxydable 750 ml » pour une page produit."
+    },
+    {
+      "title": "Chemin de campagne ou d’événement",
+      "description": "Passez un titre comme « Webinaire de printemps pour designers » en slug propre pour une page d’atterrissage."
+    }
   ],
   "examples": [
     {
-      "title": "Exemple 1",
-      "input": "Meilleur titre de page pour le SEO",
-      "output": "meilleur-titre-de-page-pour-le-seo",
-      "description": "Un exemple réaliste de générateur de slugs pour une recherche courante."
+      "title": "Titre d’article",
+      "input": "Comment créer un petit potager",
+      "output": "comment-creer-un-petit-potager",
+      "description": "Les espaces deviennent des tirets et le texte passe dans un format adapté à l’URL."
     },
     {
-      "title": "Exemple 2",
-      "input": "Meilleur titre de page pour le SEO",
-      "output": "meilleur-titre-de-page-pour-le-seo",
-      "description": "Un autre cas pratique pour attirer du trafic organique de longue traîne."
+      "title": "Nom de produit avec chiffres",
+      "input": "Moniteur Ultra HD 27 pouces",
+      "output": "moniteur-ultra-hd-27-pouces",
+      "description": "Les chiffres sont conservés et le résultat reste lisible dans le chemin."
+    },
+    {
+      "title": "Texte avec ponctuation",
+      "input": "Repas frais, rapides et simples !",
+      "output": "repas-frais-rapides-et-simples",
+      "description": "La ponctuation est supprimée pour obtenir un slug net et propre."
     }
   ],
   "faq": [
     {
-      "question": "Quelle est la précision de cet outil ?",
-      "answer": "Le résultat est calculé directement à partir de la formule ou de la logique côté navigateur utilisée par cet outil."
+      "question": "Que devient la majuscule et la ponctuation ?",
+      "answer": "Les majuscules sont converties en minuscules, et les signes comme les virgules, les points d’exclamation ou le symbole & sont supprimés du slug final."
     },
     {
-      "question": "Puis-je utiliser cet outil sur mobile ?",
-      "answer": "Oui. La page fonctionne sur ordinateur et sur mobile avec une interface simple de saisie et de résultat."
+      "question": "Les accents et caractères spéciaux sont-ils conservés ?",
+      "answer": "Les caractères accentués peuvent être normalisés selon les règles appliquées par l’outil. Si une simplification est nécessaire, le résultat affichera une forme sûre pour l’URL."
+    },
+    {
+      "question": "Pourquoi mon résultat contient-il moins de mots que le texte d’origine ?",
+      "answer": "Les mots de liaison, symboles et certains caractères spéciaux peuvent être retirés pour garder un slug propre. Si vous devez préserver une structure précise, simplifiez le texte source avant la conversion."
+    },
+    {
+      "question": "Puis-je utiliser le résultat tel quel dans une URL ?",
+      "answer": "En général oui, mais vérifiez quand même si votre site applique d’autres règles, par exemple des préfixes de catégorie, des dates ou des chemins spécifiques à une langue."
     }
   ],
   "seo": {
-    "title": "Générateur de slugs",
-    "description": "Convertissez du texte en slug d’URL optimisé pour le SEO. Générateur de slugs gratuit en ligne avec résultats instantanés.",
+    "title": "Générateur de slugs pour URL propres",
+    "description": "Transformez des titres et des phrases en slugs d’URL propres, en minuscules, avec des tirets et sans espaces superflus.",
     "keywords": [
       "générateur de slugs",
-      "outil text-tools"
+      "slug d’URL",
+      "générateur de permaliens",
+      "texte en slug"
     ]
   }
 }

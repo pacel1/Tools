@@ -4,175 +4,87 @@
   "slug": "screed-calculator",
   "h1": "Screed Calculator",
   "title": "Screed Calculator",
-  "shortDescription": "Calculate the amount of material for cement, anhydrite, or self-leveling screed.",
-  "metaTitle": "Screed Calculator Online | Calculate Material, Volume and Bags",
-  "metaDescription": "Use the screed calculator to estimate screed volume, total mix weight, and the number of bags needed for cement, anhydrite, or self-leveling screed.",
-  "intro": "Estimate screed material quickly for floors, renovations, and underfloor heating jobs. Enter the area, thickness, waste allowance, and bag weight to get volume, total kilograms, and bag count.",
-  "overview": "This screed calculator helps you plan cement screed, anhydrite screed, and self-leveling screed. It converts floor area and thickness into volume, then estimates total material weight and the number of bags, including waste.",
+  "shortDescription": "Estimate screed volume, mix weight, and bag count for cement, anhydrite, or self-leveling screed.",
+  "metaTitle": "Screed Calculator | Volume and Bags",
+  "metaDescription": "Estimate screed volume, mix weight, and the number of bags for cement, anhydrite, or self-leveling screed.",
+  "intro": "Enter the floor area, screed thickness, material rate, waste allowance, and bag weight to get volume, total kilograms, and bag count.",
+  "overview": "Use this screed calculator to size cement screed, anhydrite screed, and self-leveling screed for real job conditions. It turns floor area and layer thickness into volume, then estimates the total mix weight and how many bags to order.\n\nThe result is useful when you need to coordinate delivery, mixing time, and installation height. If you already know the product’s consumption rate or density, enter that value directly; if not, use the material specification from the manufacturer and add a sensible waste allowance for trimming, spillage, and subfloor unevenness.",
   "howItWorks": [
     "Enter the floor area in square meters.",
     "Set the screed thickness in millimeters.",
-    "Provide material consumption or density.",
+    "Enter the product consumption or density.",
     "Add a waste percentage for practical overage.",
-    "Enter the bag weight to calculate bag count."
+    "Enter the bag weight to estimate the number of bags."
   ],
   "useCases": [
-    "Estimating screed for new floors and renovations.",
-    "Planning material for underfloor heating screed.",
-    "Checking bag quantities before ordering.",
-    "Comparing cement, anhydrite, and self-leveling screed needs."
+    {
+      "title": "Apartment renovation",
+      "description": "Work out how much screed is needed for a living room, hallway, and bedroom before placing a material order."
+    },
+    {
+      "title": "Underfloor heating layer",
+      "description": "Plan the screed quantity above heating pipes where thickness control and delivery volume matter."
+    },
+    {
+      "title": "Bag-based purchase planning",
+      "description": "Check whether a 20 kg or 25 kg pack size gives a cleaner order quantity for the job."
+    },
+    {
+      "title": "Product comparison on site",
+      "description": "Compare cement, anhydrite, and self-leveling products using their own consumption values."
+    }
   ],
   "examples": [
     {
-      "title": "Example calculation",
-      "input": "Area: 20 m2, thickness: 50 mm, consumption: 2.0 kg/m2/mm, waste: 5%, bag weight: 25 kg",
-      "output": "Volume: 1.00 m3, total mix: 2,100 kg, bags: 84.",
-      "description": "A practical estimate for a medium room."
+      "title": "Living room slab",
+      "input": "Area: 18 m2, thickness: 45 mm, consumption: 1.95 kg/m2/mm, waste: 6%, bag weight: 25 kg",
+      "output": "Volume: 0.81 m3, total mix: 1,577 kg, bags: 64",
+      "description": "Suitable for a standard room with a moderate screed layer."
     },
     {
-      "title": "Underfloor heating floor",
-      "input": "Area: 45 m2, thickness: 60 mm, consumption: 1.8 kg/m2/mm, waste: 7%, bag weight: 25 kg",
-      "output": "Volume: 2.70 m3, total mix: 5,106 kg, bags: 205.",
-      "description": "Useful for screeds over heating pipes."
+      "title": "Kitchen with underfloor heating",
+      "input": "Area: 12.5 m2, thickness: 55 mm, consumption: 2.10 kg/m2/mm, waste: 8%, bag weight: 20 kg",
+      "output": "Volume: 0.69 m3, total mix: 1,432 kg, bags: 72",
+      "description": "Useful where pipe cover and a larger waste margin are expected."
+    },
+    {
+      "title": "Large utility area",
+      "input": "Area: 38 m2, thickness: 40 mm, consumption: 1.75 kg/m2/mm, waste: 5%, bag weight: 25 kg",
+      "output": "Volume: 1.52 m3, total mix: 2,762 kg, bags: 111",
+      "description": "A realistic order estimate for a broader floor section."
     }
   ],
   "faq": [
     {
-      "question": "How is screed volume calculated?",
-      "answer": "Volume is calculated from area multiplied by thickness converted to meters."
+      "question": "What should I enter if the product uses density instead of consumption?",
+      "answer": "Use the density value from the technical sheet and the calculator will convert the area and thickness into total mass. Do not mix density and consumption at the same time unless the product instructions tell you to."
     },
     {
-      "question": "Can I use this for self-leveling compound?",
-      "answer": "Yes. Enter the product’s consumption or density to estimate the required amount."
+      "question": "Why do I get different results for the same room with different screed types?",
+      "answer": "Each product can have a different consumption rate and packing weight. The room volume stays the same, but the mass and bag count change with the material specification."
     },
     {
-      "question": "Why add waste?",
-      "answer": "Waste covers spills, uneven subfloors, and small job losses during mixing and application."
+      "question": "Does bag count round up automatically?",
+      "answer": "Yes. The calculator should be treated as an ordering estimate, so any partial bag is rounded up to a full bag."
     },
     {
-      "question": "Does the calculator work for bagged products?",
-      "answer": "Yes. Enter the bag weight and it will estimate how many bags you need."
+      "question": "How do I choose a sensible waste percentage?",
+      "answer": "Use a higher allowance when the base is uneven, the room has many edges, or the mix will be pumped over a longer distance. Use a smaller allowance for simple rectangular rooms with a well-prepared substrate."
+    },
+    {
+      "question": "Can I trust the calculated volume if the floor is not perfectly level?",
+      "answer": "The result assumes a uniform thickness across the whole area. If the floor varies a lot, measure the average thickness or calculate separate zones and add them together."
     }
   ],
-  "uiLabels": {
-    "copy": "Copy",
-    "copied": "Copied",
-    "input": "Input",
-    "output": "Output",
-    "placeholder": "Enter value",
-    "indent": "Indent",
-    "removeComments": "Remove comments",
-    "preview": "Preview",
-    "source": "Source",
-    "sanitizedHtml": "Sanitized HTML",
-    "plainText": "Plain text",
-    "summary": "Summary",
-    "total": "Total",
-    "links": "Links",
-    "images": "Images",
-    "errors": "Errors",
-    "warnings": "Warnings",
-    "valid": "Valid",
-    "invalid": "Invalid",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Width",
-    "height": "Height",
-    "empty": "Empty",
-    "outputReady": "Output ready",
-    "cleanedHtml": "Cleaned HTML",
-    "formattedHtml": "Formatted HTML",
-    "minifiedHtml": "Minified HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extracted images",
-    "extractedLinks": "Extracted links",
-    "validationSummary": "Validation summary",
-    "prettyHtml": "Pretty HTML",
-    "encodedText": "Encoded text",
-    "file": "File",
-    "size": "Size",
-    "format": "Format",
-    "quality": "Quality",
-    "colorOne": "Color 1",
-    "colorTwo": "Color 2",
-    "background": "Background",
-    "foreground": "Foreground",
-    "angle": "Angle",
-    "margin": "Margin",
-    "level": "Level",
-    "gradientType": "Gradient type",
-    "linear": "Linear",
-    "radial": "Radial",
-    "blur": "Blur",
-    "spread": "Spread",
-    "offsetX": "Offset X",
-    "offsetY": "Offset Y",
-    "opacity": "Opacity",
-    "inset": "Inset",
-    "cssCode": "CSS code",
-    "snippet": "Snippet",
-    "download": "Download",
-    "downloadSvg": "Download SVG",
-    "downloadPng": "Download PNG",
-    "downloadAll": "Download all",
-    "upload": "Upload",
-    "title": "Title",
-    "description": "Description",
-    "canonicalUrl": "Canonical URL",
-    "siteName": "Site name",
-    "ogImage": "OG image",
-    "clear": "Clear",
-    "generatedQr": "Generated QR",
-    "placeholderImage": "Placeholder image",
-    "faviconSet": "Favicon set",
-    "keepAspectRatio": "Keep aspect ratio",
-    "cropX": "Crop X",
-    "cropY": "Crop Y",
-    "cropWidth": "Crop width",
-    "cropHeight": "Crop height",
-    "originalSize": "Original size",
-    "outputSize": "Output size",
-    "savedSize": "Saved size",
-    "result": "Result",
-    "base64": "Base64",
-    "mimeType": "MIME type",
-    "resizedImage": "Resized image",
-    "compressedImage": "Compressed image",
-    "croppedImage": "Cropped image",
-    "convertedImage": "Converted image",
-    "decodedImage": "Decoded image",
-    "imagePreview": "Image preview",
-    "camera": "Camera",
-    "lens": "Lens",
-    "dateTaken": "Date taken",
-    "resolution": "Resolution",
-    "fileSize": "File size",
-    "iso": "ISO",
-    "exposure": "Exposure",
-    "aperture": "Aperture",
-    "focalLength": "Focal length",
-    "flash": "Flash",
-    "orientation": "Orientation",
-    "latitude": "Latitude",
-    "longitude": "Longitude",
-    "openMap": "Open map",
-    "rawMetadata": "Raw metadata",
-    "noMetadataFound": "No metadata found",
-    "gpsLocation": "GPS location",
-    "metadataSummary": "Metadata summary"
-  },
   "seo": {
-    "title": "Screed Calculator Online",
-    "description": "Estimate screed volume, material weight, and bag count for cement, anhydrite, and self-leveling screed.",
+    "title": "Screed Calculator | Volume and Bags",
+    "description": "Estimate screed volume, mix weight, and the number of bags for cement, anhydrite, or self-leveling screed.",
     "keywords": [
       "screed calculator",
-      "floor screed calculator",
-      "self leveling screed calculator",
+      "cement screed calculator",
       "anhydrite screed calculator",
-      "cement screed calculator"
+      "self leveling screed calculator",
+      "floor screed volume"
     ]
   }
 }

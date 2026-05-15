@@ -4,44 +4,85 @@
   "slug": "contador-de-palabras",
   "h1": "Contador de palabras",
   "title": "Contador de palabras",
-  "shortDescription": "Cuenta palabras, caracteres, párrafos y tiempo de lectura en una sola herramienta ligera de análisis de texto.",
-  "overview": "El contador de palabras analiza el texto localmente en el navegador y devuelve estadísticas rápidas para escritores, editores, profesionales del marketing y estudiantes. Está diseñado para ser económico a gran escala porque no necesita base de datos ni API externa para el cálculo en tiempo real.",
+  "shortDescription": "Cuenta palabras, caracteres, párrafos y tiempo de lectura estimado en un solo análisis.",
+  "metaTitle": "Contador de palabras",
+  "metaDescription": "Cuenta palabras, caracteres, párrafos y tiempo de lectura a partir del texto pegado.",
+  "intro": "Pega tu texto y obtén al instante el recuento de palabras, caracteres, párrafos y el tiempo de lectura estimado.",
+  "overview": "Este contador de palabras sirve para revisar la longitud de un texto antes de entregarlo, publicarlo o compartirlo. Funciona con borradores, notas, párrafos sueltos y textos estructurados sin alterar el contenido original.\n\nÚsalo para comparar versiones de un mismo bloque, comprobar un titular o confirmar si un texto entra en un límite concreto. El tiempo de lectura se calcula con una base de 200 palabras por minuto, así que ofrece una referencia práctica para artículos y notas largas.",
   "howItWorks": [
-    "Pega o escribe tu texto en el área de texto.",
-    "La herramienta limpia los espacios en blanco y cuenta palabras, caracteres y bloques de párrafo.",
-    "El tiempo de lectura se calcula con una referencia de 200 palabras por minuto."
+    "Pega o escribe el texto en el área de entrada.",
+    "La herramienta cuenta palabras, caracteres y bloques de párrafo del contenido que añades.",
+    "El tiempo de lectura se estima usando una velocidad de 200 palabras por minuto."
+  ],
+  "useCases": [
+    {
+      "title": "Titulares y subtítulos",
+      "description": "Revisa si un título o subtítulo encaja en la longitud que necesitas antes de cerrar el diseño."
+    },
+    {
+      "title": "Revisión de artículos",
+      "description": "Mide introducciones, secciones y párrafos para ajustar el texto a un briefing editorial."
+    },
+    {
+      "title": "Aprobación de textos para clientes",
+      "description": "Comprueba si el copy de una página, anuncio o ficha de producto cabe en el espacio acordado."
+    },
+    {
+      "title": "Límites de trabajos y apuntes",
+      "description": "Compara ensayos, resúmenes y notas de estudio con un límite de palabras o caracteres."
+    }
   ],
   "examples": [
     {
-      "title": "Borrador de meta descripción",
-      "input": "Un breve resumen SEO para una landing page.",
-      "output": "8 palabras",
-      "description": "Comprueba rápidamente que el texto sea conciso antes de publicar."
+      "title": "Introducción de landing page",
+      "input": "Precios claros, soporte rápido y sin costes ocultos generan confianza.",
+      "output": "10 palabras, 69 caracteres, 1 párrafo",
+      "description": "Útil cuando el bloque debe ser corto y directo."
     },
     {
-      "title": "Párrafo de blog",
-      "input": "Un fragmento de artículo de dos párrafos con saltos de línea.",
-      "output": "Palabras, caracteres y tiempo de lectura",
-      "description": "Muy útil para briefings de contenido y control editorial de calidad."
+      "title": "Borrador con dos párrafos",
+      "input": "Los sistemas de diseño aportan coherencia a los equipos de producto.\nTambién reducen retrabajos durante la revisión y la entrega.",
+      "output": "20 palabras, 128 caracteres, 2 párrafos",
+      "description": "Muestra cómo trata saltos de línea y bloques separados."
+    },
+    {
+      "title": "Apunte de reunión",
+      "input": "Confirma la sala, envía la agenda, recopila las diapositivas y comparte el resumen el viernes.",
+      "output": "14 palabras, 93 caracteres, 1 párrafo",
+      "description": "Práctico para notas breves donde también importa la longitud."
     }
   ],
   "faq": [
     {
-      "question": "¿El conteo se realiza en el lado del cliente?",
-      "answer": "Sí. El ejemplo inicial calcula todo directamente en el navegador para ofrecer velocidad y evitar costes de infraestructura."
+      "question": "¿Cómo cuenta las palabras esta herramienta?",
+      "answer": "Primero limpia los espacios repetidos y luego separa el texto en unidades de palabra. Los fragmentos separados por espacios se tratan como palabras normales."
     },
     {
-      "question": "¿Cómo se estima el tiempo de lectura?",
-      "answer": "La métrica de tiempo de lectura divide el número de palabras entre 200 y redondea el resultado a dos decimales."
+      "question": "¿Qué se considera párrafo?",
+      "answer": "Un párrafo es un bloque separado por una línea en blanco. Un salto de línea simple dentro del mismo bloque no crea otro párrafo."
+    },
+    {
+      "question": "¿Por qué el tiempo de lectura es aproximado?",
+      "answer": "La estimación usa una velocidad fija de 200 palabras por minuto. Los textos técnicos, las listas o los apuntes muy breves pueden leerse a otro ritmo."
+    },
+    {
+      "question": "¿La puntuación cambia el resultado?",
+      "answer": "La puntuación no añade palabras por sí sola. Aun así, espacios extra, listas o cortes de línea pueden influir en cómo se divide el texto."
+    },
+    {
+      "question": "¿Por qué puede diferir de un editor de texto?",
+      "answer": "Cada editor aplica reglas distintas para guiones, URL, emojis y títulos. Este contador sigue sus propias reglas de segmentación, así que puede haber pequeñas diferencias."
     }
   ],
   "seo": {
-    "title": "Contador de palabras online",
-    "description": "Contador de palabras online gratuito para palabras, caracteres, párrafos y tiempo de lectura.",
+    "title": "Contador de palabras",
+    "description": "Cuenta palabras, caracteres, párrafos y tiempo de lectura estimado con un contador de texto claro y preciso.",
     "keywords": [
       "contador de palabras",
       "contador de caracteres",
-      "calculadora de tiempo de lectura"
+      "tiempo de lectura",
+      "conteo de párrafos",
+      "análisis de texto"
     ]
   }
 }

@@ -4,13 +4,81 @@
   "slug": "przelicznik-cali",
   "h1": "Przelicznik cali",
   "title": "Przelicznik cali",
-  "shortDescription": "Przeliczaj cale, centymetry, milimetry i stopy online w jednym prostym narzedziu.",
-  "metaTitle": "Przelicznik cali | Cale, cm, mm i stopy",
-  "metaDescription": "Uzyj przelicznika cali, aby szybko zamieniac cale na cm, mm i stopy. Dziala online i obsluguje obie strony konwersji.",
-  "intro": "Ten przelicznik cali odpowiada na ogolne intencje typu przelicznik cali, cale na cm i cm na cale. Zamiast osobnych stron dla kazdego kierunku masz jedno narzedzie, ktore pozwala zmieniac jednostki i od razu widziec wynik.",
-  "overview": "Narzędzie sprawdza sie przy wymiarach produktow, druku, budowie, meblach i ekranach. Obsluguje najczesciej potrzebne jednostki zwiazane z calami i pozwala szybko odwracac przeliczenie bez dodatkowych klikniec.",
-  "howItWorks": ["Wpisz liczbe do przeliczenia.", "Wybierz jednostke poczatkowa i docelowa.", "Odczytaj wynik od razu i zamien kierunek, gdy potrzebujesz odwrotnej konwersji."],
-  "examples": [{"title": "Cale na cm", "input": "10 cali", "output": "25,4 cm", "description": "Przydatne przy wymiarach ekranow, opakowan i elementow technicznych."}, {"title": "Stopy na cale", "input": "6 stop", "output": "72 cale", "description": "Pomocne przy remontach, projektach DIY i pomiarach pomieszczen."}],
-  "faq": [{"question": "Jakie jednostki obsluguje narzedzie?", "answer": "Przelicznik obsluguje cale, centymetry, milimetry i stopy."}, {"question": "Czy moge przeliczac w obie strony?", "answer": "Tak. W jednej formie zmienisz kierunek i sprawdzisz odwrotna konwersje."}],
-  "seo": {"title": "Przelicznik cali | Cale, cm, mm i stopy", "description": "Uzyj przelicznika cali, aby szybko zamieniac cale na cm, mm i stopy. Dziala online i obsluguje obie strony konwersji.", "keywords": ["przelicznik cali", "cale na cm", "cm na cale", "kalkulator cali", "cale mm cm"]}
+  "shortDescription": "Przeliczaj cale, centymetry, milimetry i stopy w jednym dokladnym narzedziu.",
+  "metaTitle": "Przelicznik cali: cale, cm, mm, stopy",
+  "metaDescription": "Przeliczaj cale, centymetry, milimetry i stopy w jednym kalkulatorze do wymiarow, planow, opakowan i specyfikacji.",
+  "intro": "Przeliczaj cale, centymetry, milimetry i stopy w jednym miejscu. Wpisz wartosc, wybierz jednostke zrodlowa i docelowa, a wynik pojawi sie od razu.",
+  "overview": "To narzedzie sluzy do dokladnej zmiany jednostek miedzy czterema najczesciej uzywanymi formatami dlugosci zwiazanymi z calami. Obsluguje oba kierunki w tym samym interfejsie, wiec mozesz przechodzic z systemu imperialnego na metryczny i odwrotnie bez zmiany strony.\n\nSprawdza sie przy wymiarach produktow, cieciach warsztatowych, planowaniu pomieszczen, rysunkach, rozmiarach ekranow i opakowaniach. Wynik jest czytelny, a jednostke mozna zmienic zawsze wtedy, gdy zmienia sie punkt odniesienia.\n\nPoniewaz konwerter obejmuje rowniez stopy, dobrze radzi sobie z kartami danych, w ktorych pojawiaja sie mieszane systemy zapisu. Latwiej wtedy porownac rozmiary bez recznego liczenia.",
+  "howItWorks": [
+    "Wpisz wartosc, ktora chcesz przeliczyc.",
+    "Wybierz jednostke, ktora masz, oraz jednostke, ktorej potrzebujesz.",
+    "Odczytaj wynik i w razie potrzeby zamien kierunek na odwrotny."
+  ],
+  "useCases": [
+    {
+      "title": "Wymiary produktu",
+      "description": "Zamieniaj specyfikacje dostawcy z cali na centymetry lub milimetry do kart produktu, etykiet i kontroli dopasowania."
+    },
+    {
+      "title": "Ciecie w warsztacie",
+      "description": "Przeliczaj stopy, cale i milimetry przy znakowaniu desek, listew i ustawien maszyny."
+    },
+    {
+      "title": "Planowanie mebli i pomieszczen",
+      "description": "Porownuj rozmiary mebli i przejscia zapisane w roznych systemach przed zlozeniem zamowienia."
+    },
+    {
+      "title": "Rysunki i wymiary do druku",
+      "description": "Zmieniaj wymiar z imperialnego na metryczny przy tworzeniu layoutow, makiet i kart technicznych."
+    }
+  ],
+  "examples": [
+    {
+      "title": "Przekatna monitora",
+      "input": "27 cali na cm",
+      "output": "68,58 centymetra",
+      "description": "Przydatne, gdy rozmiar ekranu podano w calach, a dokument ma format metryczny."
+    },
+    {
+      "title": "Dlugosc listwy",
+      "input": "8,5 stopy na cale",
+      "output": "102 cale",
+      "description": "Pomaga przy docinaniu materialu wedlug projektu zapisanego w stopach."
+    },
+    {
+      "title": "Maly element",
+      "input": "18 mm na cale",
+      "output": "0,7087 cala",
+      "description": "Dobre dla czesci zamiennych i elementow technicznych mierzonych w milimetrach."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Czy moge przeliczac dowolna pare obslugiwanych jednostek?",
+      "answer": "Tak. Wybierasz jednostke poczatkowa i docelowa sposrod cali, centymetrow, milimetrow i stop."
+    },
+    {
+      "question": "Dlaczego czasem widze kilka miejsc po przecinku?",
+      "answer": "Niektore przeliczenia nie daja liczby calkowitej, wiec wynik zachowuje przecinki dla dokladnosci."
+    },
+    {
+      "question": "Co sprawdzic, gdy wynik wydaje sie zly?",
+      "answer": "Upewnij sie, ze poprawnie wpisano wartosc i kierunek przeliczenia. Czestym bledem jest dobra liczba przy zlej jednostce startowej."
+    },
+    {
+      "question": "Czy stopy sa liczone jako zapis dziesietny czy format stop i cali?",
+      "answer": "Narzedzie przelicza wartosci liczbowe dziesietne. Dla zapisu mieszanego, na przyklad 5 st 7 cali, najlepiej przeliczyc skladowe osobno."
+    }
+  ],
+  "seo": {
+    "title": "Przelicznik cali: cale, cm, mm, stopy",
+    "description": "Przeliczaj cale, centymetry, milimetry i stopy w jednym kalkulatorze do wymiarow, planow, opakowan i specyfikacji.",
+    "keywords": [
+      "przelicznik cali",
+      "cale na cm",
+      "cm na cale",
+      "mm na cale",
+      "stopy na cale"
+    ]
+  }
 }

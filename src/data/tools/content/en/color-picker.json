@@ -4,13 +4,77 @@
   "slug": "color-picker",
   "h1": "Color Picker",
   "title": "Color Picker",
-  "shortDescription": "Pick a color online and inspect the HEX, RGB and HSL values in one browser-based panel.",
-  "metaTitle": "Color Picker | HEX, RGB and HSL values",
-  "metaDescription": "Pick colors online and inspect HEX, RGB and HSL values instantly. Helpful for design systems, CSS work and quick color matching.",
-  "intro": "This color picker gives you a fast way to inspect one color in multiple formats without opening heavier design software. It is useful when you need a quick HEX, RGB and HSL snapshot for CSS, UI reviews or brand color checks.",
-  "overview": "Use the picker for front-end styling, design QA, quick palette reviews and handoff notes. One color input updates the matching HEX, RGB and HSL values immediately so you can copy the format that fits your workflow.",
-  "howItWorks": ["Pick a color or paste a HEX code.", "The tool reads the selected color and converts it to RGB and HSL.", "Use the values in CSS, design documentation or component work."],
-  "examples": [{"title": "UI accent color", "input": "#0EA5E9", "output": "HEX, RGB and HSL values", "description": "Useful when you need one source color expressed in multiple formats."}, {"title": "Brand review", "input": "#111827", "output": "Dark neutral values for documentation", "description": "Helpful during design QA or theme updates."}],
-  "faq": [{"question": "What formats does the color picker show?", "answer": "It shows HEX, RGB and HSL values for the selected color."}, {"question": "Can I paste my own HEX value?", "answer": "Yes. You can type or paste a HEX code and the other color formats update automatically."}],
-  "seo": {"title": "Color Picker | HEX, RGB and HSL values", "description": "Pick colors online and inspect HEX, RGB and HSL values instantly for CSS, design systems and quick color matching.", "keywords": ["color picker", "hex rgb hsl picker", "pick color online", "color value inspector", "css color picker"]}
+  "shortDescription": "Select a color and view its HEX, RGB and HSL values in one panel.",
+  "metaTitle": "Color Picker | HEX RGB HSL",
+  "metaDescription": "Select a color and see its HEX, RGB and HSL values in one panel for CSS, UI specs and brand work.",
+  "intro": "Select a color or paste a HEX code to see its HEX, RGB and HSL values right away.",
+  "overview": "This tool is built for cases where one color needs to be checked in several formats without switching tools. It shows the selected color as HEX, RGB and HSL so you can copy the representation that fits your stylesheet, component spec or design note.\n\nUse it when you are matching a brand color, preparing a UI handoff or verifying a theme token. The values update together, which makes it easier to compare shades and keep color references consistent across workstreams.",
+  "howItWorks": [
+    "Choose a color with the picker or enter a HEX value.",
+    "The tool converts the color into matching RGB and HSL values.",
+    "Copy the format you need for CSS, documentation or component styling."
+  ],
+  "useCases": [
+    {
+      "title": "Theme token review",
+      "description": "Check a token color in HEX, RGB and HSL before adding it to a design system or stylesheet."
+    },
+    {
+      "title": "Brand palette alignment",
+      "description": "Verify that a brand color stays consistent when it needs to be shared across web, docs and design files."
+    },
+    {
+      "title": "Component state styling",
+      "description": "Inspect a hover, active or focus color and capture the exact format used in the codebase."
+    }
+  ],
+  "examples": [
+    {
+      "title": "Primary button blue",
+      "input": "#2563EB",
+      "output": "HEX #2563EB, RGB 37, 99, 235, HSL 221, 83%, 53%",
+      "description": "A vivid interface blue that needs exact values for button styles and token documentation."
+    },
+    {
+      "title": "Neutral surface shade",
+      "input": "rgb(17, 24, 39)",
+      "output": "HEX #111827, RGB 17, 24, 39, HSL 220, 39%, 11%",
+      "description": "Useful for checking a dark neutral used in cards, overlays or text surfaces."
+    },
+    {
+      "title": "Soft success green",
+      "input": "hsl(142, 72%, 29%)",
+      "output": "HEX #14913E, RGB 20, 145, 62, HSL 142, 72%, 29%",
+      "description": "Handy when a design file stores the color in HSL but the stylesheet needs HEX or RGB."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Can I enter a color in a format other than HEX?",
+      "answer": "Yes. If the tool accepts the format you paste, it will display the equivalent HEX, RGB and HSL values."
+    },
+    {
+      "question": "Why do the values change when I move the picker slightly?",
+      "answer": "Each small movement selects a different shade, so the numeric values change immediately. That is normal and helps you capture the exact color point you need."
+    },
+    {
+      "question": "What is the difference between RGB and HSL here?",
+      "answer": "RGB describes the red, green and blue channel mix. HSL shows the same color as hue, saturation and lightness, which can be easier when comparing tints and shades."
+    },
+    {
+      "question": "Why do my copied values not look identical in another app?",
+      "answer": "Some apps round channels or interpret alpha and display settings differently. Always compare the actual numeric values, not the preview alone."
+    }
+  ],
+  "seo": {
+    "title": "Color Picker | HEX RGB HSL",
+    "description": "Select a color and see its HEX, RGB and HSL values in one panel for CSS, UI specs and brand work.",
+    "keywords": [
+      "color picker",
+      "HEX RGB HSL",
+      "color value inspector",
+      "CSS color values",
+      "brand color checker"
+    ]
+  }
 }

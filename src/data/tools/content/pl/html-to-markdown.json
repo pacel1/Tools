@@ -3,105 +3,90 @@
   "locale": "pl",
   "slug": "html-na-markdown",
   "h1": "HTML do Markdown",
-  "title": "HTML do Markdown",
-  "shortDescription": "Konwertuj HTML do Markdown na potrzeby dokumentacji, pracy w CMS i porządkowania treści.",
-  "metaTitle": "Konwerter HTML do Markdown",
-  "metaDescription": "Szybko konwertuj HTML do Markdown do dokumentacji, edycji CMS i porządkowania treści. Działanie po stronie przeglądarki, bezpieczne i proste w użyciu.",
-  "intro": "Konwertuj HTML do czystego Markdown na potrzeby dokumentacji, publikacji w CMS, migracji i porządkowania treści. To narzędzie działa po stronie przeglądarki i pomaga zamienić HTML na czytelny Markdown bez wysyłania danych do zewnętrznych API.",
-  "overview": "HTML do Markdown to praktyczny konwerter dla developerów, redaktorów i zespołów contentowych. Wklej HTML, sprawdź podgląd po oczyszczeniu i otrzymaj wynik w Markdown, który łatwiej przechowywać, edytować i wykorzystywać w dokumentacji lub workflow CMS. Narzędzie zostało zaprojektowane z myślą o bezpiecznym przetwarzaniu po stronie klienta i obsłudze uwzględniającej XSS.",
+  "title": "Konwerter HTML do Markdown",
+  "shortDescription": "Zamieniaj HTML na Markdown do dokumentacji, edycji CMS, migracji i porządkowania treści.",
+  "metaTitle": "HTML do Markdown",
+  "metaDescription": "Zamieniaj HTML na Markdown w przeglądarce do dokumentacji, CMS, migracji i porządkowania treści.",
+  "intro": "Wklej HTML i otrzymaj Markdown z zachowanymi nagłówkami, linkami, listami oraz wyróżnieniami.",
+  "overview": "HTML do Markdown zamienia rozbudowany HTML na prosty, edytowalny Markdown, który łatwo zapisać w dokumentacji, notatkach lub systemie treści. Przydaje się, gdy materiał został skopiowany z CMS-a, edytora wizualnego albo starszej strony i trzeba go przenieść do lżejszego formatu. Narzędzie działa w przeglądarce i nie wymaga zewnętrznego przetwarzania.\n\nWynik stara się zachować strukturę tam, gdzie ma to znaczenie: nagłówki stają się nagłówkami Markdown, akapity pozostają oddzielone, linki są czytelne, a listy łatwe do skanowania. Gdy źródło zawiera dużo układu i ozdobników, konwersja skupia się na treści czytelnej, żeby wynik był prostszy w utrzymaniu.",
   "howItWorks": [
-    "Wklej HTML do pola wejściowego.",
-    "Narzędzie analizuje i oczyszcza znacznik po stronie przeglądarki.",
-    "W razie potrzeby sprawdź oczyszczony HTML i wyodrębnione elementy.",
-    "Skopiuj wygenerowany Markdown do dokumentacji lub CMS."
+    "Wklej kod HTML do pola wejściowego.",
+    "Narzędzie analizuje znacznik w przeglądarce i usuwa niebezpieczne elementy.",
+    "Konwertuje elementy semantyczne, takie jak nagłówki, linki, listy, cytaty i wyróżnienia, do Markdown.",
+    "Sprawdź wynik i skopiuj Markdown do edytora, repozytorium lub CMS."
   ],
   "useCases": [
-    "Konwersja artykułów i treści pomocy z HTML do Markdown.",
-    "Porządkowanie treści wklejanych z CMS.",
-    "Migracja stron z systemów opartych na HTML do Markdown.",
-    "Wyodrębnianie czytelnej treści z eksportów rich text.",
-    "Przygotowanie dokumentacji do generatorów statycznych stron."
+    {
+      "title": "Przenoszenie archiwalnych artykułów pomocy do Markdown",
+      "description": "Zamień stare strony wsparcia z nagłówkami, wyróżnieniami i listami punktowanymi na wygodny format do nowej bazy wiedzy."
+    },
+    {
+      "title": "Czyszczenie eksportów z edytora CMS",
+      "description": "Usuń elementy techniczne dodane przez edytor i odzyskaj czytelny tekst do dalszej pracy."
+    },
+    {
+      "title": "Przygotowanie treści dla generatora strony statycznej",
+      "description": "Przekształć strony HTML do plików Markdown używanych w Hugo, Jekyllu, Astro i podobnych narzędziach."
+    },
+    {
+      "title": "Uproszczenie treści wklejonej z edytora WYSIWYG",
+      "description": "Zamień tekst z wizualnego edytora lub pakietu biurowego na uporządkowany Markdown bez zbędnych znaczników."
+    },
+    {
+      "title": "Wyciąganie treści artykułu z pełnej strony HTML",
+      "description": "Skup się na właściwej zawartości i zamień ją na format łatwy do porównywania, wersjonowania i poprawiania."
+    }
   ],
   "examples": [
     {
-      "title": "Prosta konwersja artykułu",
-      "input": "<h1>Tytuł</h1><p>To jest <strong>ważne</strong>.</p>",
-      "output": "# Tytuł\n\nTo jest **ważne**.",
-      "description": "Zamienia nagłówki i wyróżnienia na standardowy Markdown."
+      "title": "Artykuł z wyróżnieniem",
+      "input": "<h1>Informacje o wydaniu</h1><p>Wersja <strong>2.4</strong> jest już dostępna.</p>",
+      "output": "# Informacje o wydaniu\n\nWersja **2.4** jest już dostępna.",
+      "description": "Zamienia nagłówek i pogrubienie na standardowy Markdown."
     },
     {
-      "title": "Linki i listy",
-      "input": "<p>Zobacz <a href=\"/docs\">dokumentację</a>:</p><ul><li>Szybko</li><li>Bezpiecznie</li></ul>",
-      "output": "Zobacz [dokumentację](/docs):\n\n- Szybko\n- Bezpiecznie",
-      "description": "Zachowuje linki i strukturę list."
+      "title": "Cytat i link",
+      "input": "<blockquote><p>Zakres powinien być mały.</p></blockquote><p>Przeczytaj <a href=\"/guide\">przewodnik</a>.</p>",
+      "output": "> Zakres powinien być mały.\n\nPrzeczytaj [przewodnik](/guide).",
+      "description": "Zachowuje strukturę cytatu i zamienia link na składnię Markdown."
+    },
+    {
+      "title": "Lista elementów",
+      "input": "<p>Dołączone elementy:</p><ul><li>Dokumentacja API</li><li>Przykłady</li><li>Lista zmian</li></ul>",
+      "output": "Dołączone elementy:\n\n- Dokumentacja API\n- Przykłady\n- Lista zmian",
+      "description": "Zamienia listę punktowaną na czytelny Markdown."
     }
   ],
   "faq": [
     {
-      "question": "Czy to narzędzie działa tylko w przeglądarce?",
-      "answer": "Tak. Korzysta z logiki po stronie klienta i nie wymaga zewnętrznych API."
+      "question": "Co dzieje się ze стилami inline i tagami od układu strony?",
+      "answer": "Są pomijane podczas konwersji. Narzędzie zachowuje treść czytelną, taką jak nagłówki, tekst, linki i listy, zamiast wyglądu strony."
     },
     {
-      "question": "Czy usuwa niebezpieczny HTML?",
-      "answer": "Tak, narzędzie jest zaprojektowane z uwzględnieniem XSS i oczyszcza treść przed konwersją."
+      "question": "Czy zagnieżdżone formatowanie zostanie zachowane?",
+      "answer": "W większości przypadków tak, jeśli da się je sensownie odwzorować w Markdown. Na przykład pogrubienie wewnątrz linku zwykle zostanie utrzymane."
     },
     {
-      "question": "Czy nadaje się do migracji CMS?",
-      "answer": "Tak. Sprawdza się przy przenoszeniu treści z systemów opartych na HTML do workflow z Markdown."
+      "question": "Jak obsługiwane są obrazy?",
+      "answer": "Jeśli to możliwe, obrazy są zamieniane na składnię Markdown. Gdy brakuje alt lub atrybuty są nietypowe, wynik może zostać uproszczony."
     },
     {
-      "question": "Czy zachowuje linki i obrazy?",
-      "answer": "W miarę możliwości wyodrębnia linki i obrazy oraz zamienia je na składnię przyjazną dla Markdown."
+      "question": "Czy mogę wkleić całą stronę z menu i stopką?",
+      "answer": "Możesz, ale do wyniku przydatna będzie głównie właściwa treść. Nawigacja, stopka i powtarzające się elementy strony nie są celem konwersji."
+    },
+    {
+      "question": "Dlaczego część HTML nie zamienia się 1:1?",
+      "answer": "Markdown ma mniej możliwości niż HTML. Elementy bez prostego odpowiednika są upraszczane, aby wynik pozostał czytelny i praktyczny."
     }
   ],
-  "uiLabels": {
-    "copy": "Kopiuj",
-    "copied": "Skopiowano",
-    "input": "HTML input",
-    "output": "Markdown output",
-    "placeholder": "Wklej tutaj HTML...",
-    "indent": "Wcięcie",
-    "removeComments": "Usuń komentarze",
-    "preview": "Podgląd",
-    "source": "Źródło",
-    "sanitizedHtml": "Oczyszczony HTML",
-    "plainText": "Zwykły tekst",
-    "summary": "Podsumowanie",
-    "total": "Razem",
-    "links": "Linki",
-    "images": "Obrazy",
-    "errors": "Błędy",
-    "warnings": "Ostrzeżenia",
-    "valid": "Poprawne",
-    "invalid": "Niepoprawne",
-    "href": "Href",
-    "text": "Tekst",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Szerokość",
-    "height": "Wysokość",
-    "empty": "Puste",
-    "outputReady": "Markdown gotowy",
-    "cleanedHtml": "Oczyszczony HTML",
-    "formattedHtml": "Sformatowany HTML",
-    "minifiedHtml": "Zminifikowany HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Wyodrębnione obrazy",
-    "extractedLinks": "Wyodrębnione linki",
-    "validationSummary": "Podsumowanie walidacji",
-    "prettyHtml": "Czytelny HTML",
-    "encodedText": "Zakodowany tekst"
-  },
   "seo": {
-    "title": "Konwerter HTML do Markdown",
-    "description": "Szybko konwertuj HTML do Markdown do dokumentacji, edycji CMS i porządkowania treści. Działanie po stronie przeglądarki, bezpieczne i proste w użyciu.",
+    "title": "HTML do Markdown",
+    "description": "Zamieniaj HTML na Markdown w przeglądarce do dokumentacji, CMS, migracji i porządkowania treści.",
     "keywords": [
       "HTML do Markdown",
-      "konwerter HTML do Markdown",
-      "Markdown",
-      "porządkowanie HTML",
-      "narzędzie do CMS",
+      "konwerter Markdown",
+      "czyszczenie HTML",
+      "konwersja treści CMS",
       "dokumentacja"
     ]
   }

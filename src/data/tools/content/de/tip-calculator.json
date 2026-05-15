@@ -4,44 +4,81 @@
   "slug": "trinkgeldrechner",
   "h1": "Trinkgeldrechner",
   "title": "Trinkgeldrechner",
-  "shortDescription": "Berechnen Sie Trinkgeld und Gesamtrechnung sofort mit schnellen Ergebnissen, einfachen Eingaben und praktischen Beispielen.",
-  "overview": "Berechnen Sie Trinkgeld und Gesamtrechnung sofort. Diese Seite liefert eine schnelle Antwort mit einem praktischen Tool und einem einfachen Ergebnisablauf. Sie richtet sich an Nutzer, die eine kostenlose Online-Antwort, schnelle Browser-Ergebnisse und praktische Long-Tail-Inhalte suchen.",
+  "shortDescription": "Berechnen Sie Trinkgeld, Endbetrag und Anteil pro Person aus Rechnungsbetrag und Trinkgeldsatz.",
+  "metaTitle": "Trinkgeldrechner für Rechnungen",
+  "metaDescription": "Berechnen Sie Trinkgeld, Endbetrag und Anteil pro Person aus Rechnungsbetrag und gewünschtem Trinkgeldsatz.",
+  "intro": "Rechnungsbetrag eingeben, Trinkgeldsatz wählen und sofort Trinkgeld, Gesamtsumme sowie den Anteil pro Person sehen.",
+  "overview": "Mit diesem Rechner lassen sich Restaurantrechnungen, Taxifahrten, Friseurbesuche oder andere Dienstleistungen mit prozentualem Trinkgeld sauber berechnen. Auf Wunsch teilen Sie den Endbetrag außerdem auf mehrere Personen auf und sehen direkt, wie viel jede Person zahlt.\n\nDas Ergebnis zeigt Grundbetrag, Trinkgeld und Gesamtsumme, damit Sie den Betrag vor dem Bezahlen prüfen können. Beim Teilen wird der Anteil aus der vollständigen Summe inklusive Trinkgeld berechnet, was die Aufteilung in der Gruppe vereinfacht.",
   "howItWorks": [
-    "Geben Sie den erforderlichen Wert oder Text in das Formular ein.",
-    "Die Umrechnung, Berechnung oder Transformation läuft sofort im Browser.",
-    "Prüfen Sie das Ergebnis und nutzen Sie bei Bedarf verwandte Tools für den nächsten Schritt."
+    "Rechnungsbetrag eingeben.",
+    "Trinkgeldsatz auswählen oder eintragen.",
+    "Bei Bedarf die Anzahl der Personen für die Aufteilung angeben.",
+    "Trinkgeld, Gesamtsumme und Anteil pro Person prüfen."
+  ],
+  "useCases": [
+    {
+      "title": "Restaurantrechnung am Abend",
+      "description": "Addieren Sie 10 %, 15 % oder 20 % auf eine Rechnung und sehen Sie den Endbetrag."
+    },
+    {
+      "title": "Gemeinsame Rechnung aufteilen",
+      "description": "Teilen Sie den Gesamtbetrag nach Trinkgeld fair auf Freunde oder Kollegen auf."
+    },
+    {
+      "title": "Bezahlung einer Dienstleistung",
+      "description": "Berechnen Sie Trinkgeld für Haarschnitt, Massage oder andere Services ohne automatische Gratifikation."
+    },
+    {
+      "title": "Taxi- und Lieferkosten",
+      "description": "Ermitteln Sie den Endbetrag für Fahrt, Lieferung oder ähnliche Leistungen mit prozentualem Trinkgeld."
+    }
   ],
   "examples": [
     {
-      "title": "Beispiel 1",
-      "input": "86 mit 15 % Trinkgeld",
-      "output": "98.90",
-      "description": "Ein realistisches Beispiel für einen Trinkgeldrechner bei einer alltäglichen Suchanfrage."
+      "title": "Abendessen mit Standardtrinkgeld",
+      "input": "Rechnung: 86,00, Trinkgeld: 15%",
+      "output": "Trinkgeld: 12.90, Gesamt: 98.90",
+      "description": "Zeigt das hinzugefügte Trinkgeld und den Endbetrag für eine typische Rechnung."
     },
     {
-      "title": "Beispiel 2",
-      "input": "86 mit 15 % Trinkgeld",
-      "output": "98.90",
-      "description": "Ein weiterer praktischer Anwendungsfall für organischen Long-Tail-Traffic."
+      "title": "Aufteilung unter vier Personen",
+      "input": "Rechnung: 142,50, Trinkgeld: 18%, Personen: 4",
+      "output": "Trinkgeld: 25.65, Gesamt: 168.15, Pro Person: 42.04",
+      "description": "Hilfreich, wenn eine gemeinsame Rechnung mit Trinkgeld geteilt wird."
+    },
+    {
+      "title": "Runder Servicebetrag",
+      "input": "Rechnung: 50, Trinkgeld: 20%",
+      "output": "Trinkgeld: 10.00, Gesamt: 60.00",
+      "description": "Ein einfacher Fall für Servicezahlungen mit einem klaren Satz."
     }
   ],
   "faq": [
     {
-      "question": "Wie genau ist dieses Tool?",
-      "answer": "Das Ergebnis wird direkt aus der Formel oder der browserseitigen Logik dieses Tools berechnet."
+      "question": "Wird das Trinkgeld vor oder nach Steuern berechnet?",
+      "answer": "Der Rechner wendet den Prozentsatz auf den Betrag an, den Sie eingeben. Wenn Sie Trinkgeld auf den Bruttobetrag wollen, tragen Sie genau diesen Betrag ein."
     },
     {
-      "question": "Kann ich dieses Tool auf dem Smartphone nutzen?",
-      "answer": "Ja. Die Seite funktioniert auf Desktop- und Mobilgeräten mit einem einfachen Eingabe- und Ergebnislayout."
+      "question": "Wie funktioniert die Aufteilung pro Person?",
+      "answer": "Zuerst wird die Gesamtsumme inklusive Trinkgeld berechnet und anschließend durch die angegebene Personenzahl geteilt."
+    },
+    {
+      "question": "Kann ich Dezimalwerte beim Trinkgeldsatz eingeben?",
+      "answer": "Ja. Werte wie 12,5 % sind möglich, wenn Sie genauer rechnen möchten."
+    },
+    {
+      "question": "Warum weicht das Ergebnis manchmal vom Beleg ab?",
+      "answer": "Betriebe runden anders, rechnen Trinkgeld auf einer anderen Basis oder wenden eigene Regeln an. Nutzen Sie deshalb möglichst denselben Rechnungsbetrag wie auf dem Beleg."
     }
   ],
   "seo": {
-    "title": "Trinkgeldrechner",
-    "description": "Berechnen Sie Trinkgeld und Gesamtrechnung sofort. Kostenloser Trinkgeldrechner online mit sofortigen Ergebnissen.",
+    "title": "Trinkgeldrechner für Rechnungen",
+    "description": "Berechnen Sie Trinkgeld, Endbetrag und Anteil pro Person aus Rechnungsbetrag und gewünschtem Trinkgeldsatz.",
     "keywords": [
       "trinkgeldrechner",
-      "trinkgeld rechner",
-      "rechner tools"
+      "trinkgeld berechnen",
+      "rechnung teilen",
+      "prozent trinkgeld"
     ]
   }
 }

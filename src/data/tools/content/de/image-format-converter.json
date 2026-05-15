@@ -4,157 +4,82 @@
   "slug": "bildformat-konverter",
   "h1": "Bildformat-Konverter",
   "title": "Bildformat-Konverter",
-  "shortDescription": "PNG-, JPG- und WebP-Bilder online mit sofortigem Ergebnis im Browser konvertieren.",
-  "metaTitle": "Bildformat-Konverter online | PNG in JPG und WebP umwandeln",
-  "metaDescription": "PNG-, JPG- und WebP-Bilder online im Browser umwandeln. Schnelle Bildformat-Konvertierung ohne Upload auf einen Server.",
-  "intro": "Bildformate online in Sekunden umwandeln. Dieser browserbasierte Konverter ändert PNG-, JPG- und WebP-Dateien schnell und liefert das Ergebnis sofort, ohne Server-Upload.",
-  "overview": "Nutze diesen kostenlosen Bildkonverter, um zwischen gängigen Formaten wie PNG, JPG/JPEG und WebP zu wechseln. Die Verarbeitung erfolgt lokal im Browser und bietet damit Geschwindigkeit und mehr Privatsphäre.",
+  "shortDescription": "PNG-, JPG- und WebP-Dateien direkt im Browser umwandeln.",
+  "metaTitle": "Bildformat-Konverter",
+  "metaDescription": "PNG-, JPG- und WebP-Dateien im Browser umwandeln – mit sofortiger lokaler Verarbeitung und ohne Server-Upload.",
+  "intro": "Wandle PNG-, JPG- und WebP-Bilder direkt im Browser um und lade die neue Datei sofort herunter.",
+  "overview": "Dieses Werkzeug wandelt ein Bild von einem gängigen Format in ein anderes um, ohne die Datei an einen entfernten Server zu senden. Das ist praktisch, wenn du einen bestimmten Dateityp für Veröffentlichung, Weitergabe, Archivierung oder für Programme brauchst, die nur ausgewählte Formate öffnen.\n\nDu kannst zwischen PNG, JPG/JPEG und WebP wechseln, während die Verarbeitung vollständig lokal auf deinem Gerät läuft. Die Originaldatei bleibt in der Browser-Sitzung, und die konvertierte Datei steht bereit, sobald der Vorgang abgeschlossen ist.\n\nNutze es, wenn du eine brauchbare Datei zum Herunterladen, Hochladen oder für einen Design-Workflow ohne zusätzliche Zwischenschritte benötigst.",
   "howItWorks": [
-    "Bilddatei hochladen oder einfügen.",
-    "Gewünschtes Zielformat auswählen.",
-    "Vorschau des konvertierten Bildes und den Dateinamen prüfen.",
-    "Die konvertierte Datei sofort herunterladen."
+    "Bilddatei von deinem Gerät hinzufügen oder in das Tool einfügen.",
+    "Das gewünschte Zielformat auswählen.",
+    "Vorschau und Dateinamen des Ergebnisses prüfen.",
+    "Die konvertierte Bilddatei herunterladen."
   ],
   "useCases": [
-    "PNG in JPG umwandeln, um Fotos kleiner zu machen.",
-    "JPG in WebP umwandeln für bessere Web-Performance.",
-    "WebP in PNG umwandeln für ältere Programme und Systeme.",
-    "Bildformat vor dem Upload auf Website oder Marktplatz ändern."
+    {
+      "title": "Produktfoto in JPG für einen Shop umwandeln",
+      "description": "Wandle ein Kamerabild in JPG um, wenn eine Verkaufsplattform PNG oder WebP für Produktfotos nicht akzeptiert."
+    },
+    {
+      "title": "Icon mit Transparenz als PNG speichern",
+      "description": "Erhalte Transparenz beim Konvertieren eines Logos oder UI-Icons in PNG für die weitere Gestaltung."
+    },
+    {
+      "title": "WebP-Kopie für eine Website erstellen",
+      "description": "Erzeuge eine WebP-Version für Banner oder Hero-Bilder in einem Publishing-Workflow für Web-Medien."
+    },
+    {
+      "title": "WebP in älterer Desktop-Software öffnen",
+      "description": "Wandle WebP in PNG oder JPG um, wenn ein älteres Programm das Originalformat nicht lesen kann."
+    }
   ],
   "examples": [
     {
-      "title": "PNG in JPG",
-      "input": "Logo.png",
-      "output": "Logo.jpg",
-      "description": "Praktisch für Fotos und einfache Uploads."
+      "title": "Kamerabild zu JPG",
+      "input": "produktfoto.png",
+      "output": "produktfoto.jpg",
+      "description": "Nützlich für Angebote und Produktseiten."
     },
     {
-      "title": "JPG in WebP",
-      "input": "Banner.jpg",
-      "output": "Banner.webp",
-      "description": "Ideal für schnellere Ladezeiten im Web."
+      "title": "App-Icon zu PNG",
+      "input": "app-symbol.webp",
+      "output": "app-symbol.png",
+      "description": "Geeignet für die Weiterbearbeitung in älteren Tools."
+    },
+    {
+      "title": "Website-Banner zu WebP",
+      "input": "website-banner.jpg",
+      "output": "website-banner.webp",
+      "description": "Erstellt eine Version für moderne Veröffentlichungsabläufe."
     }
   ],
   "faq": [
     {
-      "question": "Welche Bildformate werden unterstützt?",
-      "answer": "Unterstützt werden gängige Formate wie PNG, JPG/JPEG und WebP für schnelle Konvertierung."
+      "question": "Bleibt Transparenz bei der Konvertierung erhalten?",
+      "answer": "Nur Formate mit Alphakanal können Transparenz behalten. PNG unterstützt sie, JPG nicht, daher geht sie dort verloren."
     },
     {
-      "question": "Wird meine Datei auf einen Server hochgeladen?",
-      "answer": "Nein. Die Konvertierung erfolgt lokal in deinem Browser für mehr Datenschutz und Geschwindigkeit."
+      "question": "Warum sieht eine JPG-Datei anders aus als das Original?",
+      "answer": "JPG ist verlustbehaftet, daher können feine Details, Kanten und einfarbige Flächen leicht verändert wirken. Das ist normal."
     },
     {
-      "question": "Kann ich PNG in JPG ohne Qualitätsverlust umwandeln?",
-      "answer": "JPG verwendet verlustbehaftete Komprimierung, daher ist ein leichter Qualitätsverlust normal. Bei Fotos ist das Ergebnis meist sehr gut."
+      "question": "Kann wirklich jedes Bild in jedes unterstützte Format umgewandelt werden?",
+      "answer": "Die meisten Standarddateien in PNG, JPG/JPEG und WebP lassen sich umwandeln, aber das Ergebnis hängt davon ab, ob der Browser die Quelldatei lesen kann."
     },
     {
-      "question": "Ist das Tool kostenlos?",
-      "answer": "Ja, dieser Online-Bildformat-Konverter ist für typische Konvertierungsaufgaben kostenlos nutzbar."
+      "question": "Was, wenn mir der Dateiname des Ergebnisses nicht gefällt?",
+      "answer": "Das Tool erzeugt einen Namen aus der Quelldatei und dem gewählten Format. Nach dem Download kannst du die Datei umbenennen."
     }
   ],
-  "uiLabels": {
-    "copy": "Kopieren",
-    "copied": "Kopiert",
-    "input": "Eingabe",
-    "output": "Ausgabe",
-    "placeholder": "Bilddatei einfügen oder hochladen",
-    "indent": "Einzug",
-    "removeComments": "Kommentare entfernen",
-    "preview": "Vorschau",
-    "source": "Quelle",
-    "sanitizedHtml": "Bereinigtes HTML",
-    "plainText": "Klartext",
-    "summary": "Zusammenfassung",
-    "total": "Gesamt",
-    "links": "Links",
-    "images": "Bilder",
-    "errors": "Fehler",
-    "warnings": "Warnungen",
-    "valid": "Gültig",
-    "invalid": "Ungültig",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Breite",
-    "height": "Höhe",
-    "empty": "Leer",
-    "outputReady": "Ausgabe bereit",
-    "cleanedHtml": "Bereinigtes HTML",
-    "formattedHtml": "Formatiertes HTML",
-    "minifiedHtml": "Minifiziertes HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extrahierte Bilder",
-    "extractedLinks": "Extrahierte Links",
-    "validationSummary": "Validierungsübersicht",
-    "prettyHtml": "Lesbares HTML",
-    "encodedText": "Kodierter Text",
-    "file": "Datei",
-    "size": "Größe",
-    "format": "Format",
-    "quality": "Qualität",
-    "colorOne": "Farbe 1",
-    "colorTwo": "Farbe 2",
-    "background": "Hintergrund",
-    "foreground": "Vordergrund",
-    "angle": "Winkel",
-    "margin": "Rand",
-    "level": "Stufe",
-    "gradientType": "Verlaufsart",
-    "linear": "Linear",
-    "radial": "Radial",
-    "blur": "Weichzeichnen",
-    "spread": "Ausdehnung",
-    "offsetX": "X-Versatz",
-    "offsetY": "Y-Versatz",
-    "opacity": "Deckkraft",
-    "inset": "Innen",
-    "cssCode": "CSS-Code",
-    "snippet": "Snippet",
-    "download": "Herunterladen",
-    "downloadSvg": "SVG herunterladen",
-    "downloadPng": "PNG herunterladen",
-    "downloadAll": "Alle herunterladen",
-    "upload": "Hochladen",
-    "title": "Titel",
-    "description": "Beschreibung",
-    "canonicalUrl": "Kanonische URL",
-    "siteName": "Seitename",
-    "ogImage": "OG-Bild",
-    "clear": "Leeren",
-    "generatedQr": "QR-Code-Vorschau",
-    "placeholderImage": "Bildvorschau",
-    "faviconSet": "Favicon-Set",
-    "keepAspectRatio": "Seitenverhältnis beibehalten",
-    "cropX": "Zuschneiden X",
-    "cropY": "Zuschneiden Y",
-    "cropWidth": "Zuschneidebreite",
-    "cropHeight": "Zuschneidehöhe",
-    "originalSize": "Originalgröße",
-    "outputSize": "Ausgabegröße",
-    "savedSize": "Gesparte Größe",
-    "result": "Ergebnis",
-    "base64": "Base64",
-    "mimeType": "MIME-Typ",
-    "resizedImage": "Skaliertes Bild",
-    "compressedImage": "Komprimiertes Bild",
-    "croppedImage": "Zugeschnittenes Bild",
-    "convertedImage": "Konvertiertes Bild",
-    "decodedImage": "Dekodiertes Bild",
-    "imagePreview": "Bildvorschau"
-  },
   "seo": {
-    "title": "Bildformat-Konverter online | PNG in JPG und WebP umwandeln",
-    "description": "PNG-, JPG- und WebP-Bilder online im Browser umwandeln. Schnelle Bildformat-Konvertierung ohne Upload auf einen Server.",
+    "title": "Bildformat-Konverter",
+    "description": "PNG-, JPG- und WebP-Dateien im Browser umwandeln – mit sofortiger lokaler Verarbeitung und ohne Server-Upload.",
     "keywords": [
       "bildformat-konverter",
       "png in jpg",
-      "png in webp",
       "jpg in webp",
       "webp in png",
-      "bildkonverter online"
+      "bildkonverter im browser"
     ]
   }
 }

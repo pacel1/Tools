@@ -4,175 +4,87 @@
   "slug": "calculateur-de-panneaux-de-sol",
   "h1": "Calculateur de panneaux de sol",
   "title": "Calculateur de panneaux de sol",
-  "shortDescription": "Calculez combien de panneaux et de paquets acheter pour votre sol, avec marge de découpe.",
-  "metaTitle": "Calculateur de panneaux de sol - panneaux et paquets",
-  "metaDescription": "Utilisez ce calculateur de panneaux de sol pour estimer le nombre de panneaux et de paquets nécessaires selon la surface, les dimensions et la marge de découpe.",
-  "intro": "Estimez rapidement combien de panneaux de sol acheter. Saisissez la surface de la pièce, les dimensions du panneau, la marge de découpe et la couverture par paquet pour obtenir une estimation pratique.",
-  "overview": "Ce calculateur de panneaux de sol vous aide à déterminer le nombre de panneaux et de paquets nécessaires pour un chantier. Il prend en compte la surface de la pièce, la largeur et la longueur du panneau, le pourcentage de perte et la couverture par paquet.",
+  "shortDescription": "Calculez combien de panneaux et de paquets acheter pour votre sol, avec marge de coupe.",
+  "metaTitle": "Calculateur de panneaux de sol",
+  "metaDescription": "Calculez le nombre de panneaux et de paquets nécessaires pour un sol selon la surface, les dimensions, la perte et la couverture du paquet.",
+  "intro": "Saisissez la surface, les dimensions du panneau, la marge de perte et la couverture du paquet pour obtenir la quantité à acheter.",
+  "overview": "Ce calculateur transforme les données de la pièce et du produit en quantité d’achat utile pour un chantier. Il tient compte de l’emprise réelle du panneau, de la couverture indiquée sur le paquet et du matériau supplémentaire nécessaire pour les découpes, les bords et les ajustements autour des portes ou des renfoncements.\n\nIl permet aussi de comparer des produits avec des paquets de rendements différents ou de vérifier si une surface doit être arrondie à des boîtes complètes. Lorsque la couverture par paquet figure sur l’emballage, c’est cette valeur qui doit guider l’achat, même si elle diffère légèrement de la surface géométrique d’un seul panneau.",
   "howItWorks": [
-    "Saisissez la surface de la pièce en mètres carrés.",
+    "Indiquez la surface de la pièce en mètres carrés.",
     "Ajoutez la largeur et la longueur du panneau en centimètres.",
-    "Définissez le pourcentage de perte pour les découpes et ajustements.",
-    "Indiquez la surface couverte par un paquet.",
-    "Obtenez le nombre de panneaux, de paquets et la surface totale avec perte."
+    "Définissez un pourcentage de perte pour les découpes et ajustements.",
+    "Saisissez la surface couverte par un paquet.",
+    "Lisez le nombre de panneaux, de paquets et la surface corrigée."
   ],
   "useCases": [
-    "Préparer l’achat de panneaux stratifiés ou vinyles.",
-    "Vérifier combien de paquets acheter avant de se rendre en magasin.",
-    "Ajouter une marge pour les découpes, les bords et les erreurs.",
-    "Comparer la couverture de différents produits de sol."
+    {
+      "title": "Commande pour un salon rectangulaire",
+      "description": "Estimez le nombre de boîtes pour une pièce simple avec peu de découpes."
+    },
+    {
+      "title": "Couloir avec portes et angles",
+      "description": "Ajoutez de la marge lorsque les coupes autour des huisseries et des angles sont nombreuses."
+    },
+    {
+      "title": "Comparer deux revêtements",
+      "description": "Vérifiez quel produit demande le moins de paquets selon sa couverture et sa perte."
+    },
+    {
+      "title": "Conserver du stock pour réparation",
+      "description": "Achetez quelques panneaux en plus si vous voulez garder des pièces de remplacement."
+    }
   ],
   "examples": [
     {
-      "title": "Exemple de calcul",
-      "input": "Surface : 20 m2, panneau : 19 cm x 138 cm, perte : 8 %, couverture du paquet : 2,2 m2",
-      "output": "Le calculateur estime les panneaux nécessaires, les paquets et la surface totale avec perte.",
-      "description": "Utile pour estimer l’achat avant commande."
+      "title": "Pièce standard",
+      "input": "Surface : 23,6 m2 ; panneau : 18,5 cm × 122 cm ; perte : 7 % ; couverture du paquet : 2,22 m2",
+      "output": "Surface corrigée : 25,25 m2. Résultat : 12 paquets, avec calcul du nombre de panneaux selon la marge.",
+      "description": "Convient à une pièce simple avec peu de découpes."
     },
     {
-      "title": "Acheter avec marge",
-      "input": "Surface : 35 m2, perte : 10 %, couverture du paquet : 2,4 m2",
-      "output": "Affiche la surface ajustée et le nombre de paquets à acheter.",
-      "description": "Permet d’éviter les ruptures pendant la pose."
+      "title": "Grande chambre",
+      "input": "Surface : 41,8 m2 ; panneau : 20,3 cm × 135,7 cm ; perte : 11 % ; couverture du paquet : 2,48 m2",
+      "output": "Surface corrigée : 46,36 m2. Résultat : 19 paquets, arrondis à des boîtes complètes.",
+      "description": "Utile lorsque plusieurs coupes sont nécessaires sur les bords."
+    },
+    {
+      "title": "Couverture indiquée sur l’emballage",
+      "input": "Surface : 12,4 m2 ; panneau : 17,8 cm × 89,4 cm ; perte : 9 % ; couverture du paquet : 1,79 m2",
+      "output": "Surface corrigée : 13,52 m2. Résultat : 8 paquets, basé sur la couverture du paquet.",
+      "description": "Pratique lorsque la valeur d’achat vient directement de l’emballage."
     }
   ],
   "faq": [
     {
-      "question": "Comment calculer le nombre de panneaux de sol nécessaires ?",
-      "answer": "Multipliez la surface de la pièce par la marge de perte, puis divisez par la surface d’un panneau. Le calculateur le fait automatiquement."
+      "question": "Dois-je me baser sur la taille du panneau ou sur la couverture du paquet ?",
+      "answer": "Pour l’achat, fiez-vous à la couverture du paquet indiquée sur la boîte. La taille du panneau sert à contrôler l’élément unitaire, mais le nombre de paquets dépend du rendement du paquet."
     },
     {
-      "question": "Pourquoi ajouter une marge de perte ?",
-      "answer": "La perte couvre les découpes, les ajustements en bordure et les éventuelles erreurs de pose."
+      "question": "Quelle marge de perte prévoir pour une pièce simple ?",
+      "answer": "Dans une pièce rectiligne avec peu de découpes, une marge modérée suffit souvent. Avec plusieurs portes, niches ou angles, il vaut mieux prévoir davantage."
     },
     {
-      "question": "Que faire si la couverture du paquet diffère des dimensions du panneau ?",
-      "answer": "Utilisez la valeur de couverture indiquée sur l’emballage. Elle tient compte du nombre de panneaux par paquet."
+      "question": "Pourquoi le résultat est-il arrondi au paquet supérieur ?",
+      "answer": "Parce que les panneaux se vendent en paquets complets. L’arrondi supérieur évite de manquer de matériau à la pose."
     },
     {
-      "question": "Puis-je l’utiliser pour des panneaux stratifiés et vinyles ?",
-      "answer": "Oui, à condition de connaître les dimensions du panneau et la couverture du paquet."
+      "question": "Puis-je l’utiliser pour une pose en chevron ou en motif ?",
+      "answer": "Seulement comme ordre de grandeur. Les motifs complexes génèrent plus de chutes et demandent souvent une marge plus élevée qu’une pose droite."
+    },
+    {
+      "question": "Que faire si je connais seulement la longueur et la largeur de la pièce ?",
+      "answer": "Multipliez longueur par largeur pour obtenir la surface, puis saisissez ce résultat. Pour une pièce irrégulière, découpez-la en surfaces simples et additionnez-les."
     }
   ],
-  "uiLabels": {
-    "copy": "Copier",
-    "copied": "Copié",
-    "input": "Entrée",
-    "output": "Sortie",
-    "placeholder": "Saisissez une valeur",
-    "indent": "Retrait",
-    "removeComments": "Supprimer les commentaires",
-    "preview": "Aperçu",
-    "source": "Source",
-    "sanitizedHtml": "HTML nettoyé",
-    "plainText": "Texte brut",
-    "summary": "Résumé",
-    "total": "Total",
-    "links": "Liens",
-    "images": "Images",
-    "errors": "Erreurs",
-    "warnings": "Avertissements",
-    "valid": "Valide",
-    "invalid": "Non valide",
-    "href": "Href",
-    "text": "Texte",
-    "rel": "Rel",
-    "target": "Cible",
-    "alt": "Alt",
-    "width": "Largeur",
-    "height": "Hauteur",
-    "empty": "Vide",
-    "outputReady": "Résultat prêt",
-    "cleanedHtml": "HTML nettoyé",
-    "formattedHtml": "HTML formaté",
-    "minifiedHtml": "HTML minifié",
-    "markdown": "Markdown",
-    "extractedImages": "Images extraites",
-    "extractedLinks": "Liens extraits",
-    "validationSummary": "Résumé de validation",
-    "prettyHtml": "HTML lisible",
-    "encodedText": "Texte encodé",
-    "file": "Fichier",
-    "size": "Taille",
-    "format": "Format",
-    "quality": "Qualité",
-    "colorOne": "Couleur 1",
-    "colorTwo": "Couleur 2",
-    "background": "Arrière-plan",
-    "foreground": "Premier plan",
-    "angle": "Angle",
-    "margin": "Marge",
-    "level": "Niveau",
-    "gradientType": "Type de dégradé",
-    "linear": "Linéaire",
-    "radial": "Radial",
-    "blur": "Flou",
-    "spread": "Extension",
-    "offsetX": "Décalage X",
-    "offsetY": "Décalage Y",
-    "opacity": "Opacité",
-    "inset": "Interne",
-    "cssCode": "Code CSS",
-    "snippet": "Extrait",
-    "download": "Télécharger",
-    "downloadSvg": "Télécharger SVG",
-    "downloadPng": "Télécharger PNG",
-    "downloadAll": "Tout télécharger",
-    "upload": "Importer",
-    "title": "Titre",
-    "description": "Description",
-    "canonicalUrl": "URL canonique",
-    "siteName": "Nom du site",
-    "ogImage": "Image OG",
-    "clear": "Effacer",
-    "generatedQr": "QR généré",
-    "placeholderImage": "Image de remplacement",
-    "faviconSet": "Jeu de favicon",
-    "keepAspectRatio": "Conserver les proportions",
-    "cropX": "Recadrage X",
-    "cropY": "Recadrage Y",
-    "cropWidth": "Largeur du recadrage",
-    "cropHeight": "Hauteur du recadrage",
-    "originalSize": "Taille originale",
-    "outputSize": "Taille de sortie",
-    "savedSize": "Taille économisée",
-    "result": "Résultat",
-    "base64": "Base64",
-    "mimeType": "Type MIME",
-    "resizedImage": "Image redimensionnée",
-    "compressedImage": "Image compressée",
-    "croppedImage": "Image recadrée",
-    "convertedImage": "Image convertie",
-    "decodedImage": "Image décodée",
-    "imagePreview": "Aperçu de l’image",
-    "camera": "Caméra",
-    "lens": "Objectif",
-    "dateTaken": "Date de prise de vue",
-    "resolution": "Résolution",
-    "fileSize": "Taille du fichier",
-    "iso": "ISO",
-    "exposure": "Exposition",
-    "aperture": "Ouverture",
-    "focalLength": "Distance focale",
-    "flash": "Flash",
-    "orientation": "Orientation",
-    "latitude": "Latitude",
-    "longitude": "Longitude",
-    "openMap": "Ouvrir la carte",
-    "rawMetadata": "Métadonnées brutes",
-    "noMetadataFound": "Aucune métadonnée trouvée",
-    "gpsLocation": "Position GPS",
-    "metadataSummary": "Résumé des métadonnées"
-  },
   "seo": {
-    "title": "Calculateur de panneaux de sol - panneaux et paquets",
-    "description": "Estimez combien de panneaux de sol et de paquets acheter avec la marge de découpe incluse.",
+    "title": "Calculateur de panneaux de sol",
+    "description": "Calculez le nombre de panneaux et de paquets nécessaires pour un sol selon la surface, les dimensions, la perte et la couverture du paquet.",
     "keywords": [
       "calculateur de panneaux de sol",
       "combien de panneaux acheter",
-      "calculateur parquet",
       "paquets de panneaux",
-      "marge de découpe"
+      "couverture du paquet",
+      "perte de coupe"
     ]
   }
 }

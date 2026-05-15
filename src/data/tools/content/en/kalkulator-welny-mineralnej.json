@@ -4,177 +4,91 @@
   "slug": "mineral-wool-calculator",
   "h1": "Mineral Wool Calculator",
   "title": "Mineral Wool Calculator",
-  "shortDescription": "Calculate how many rolls or packs of mineral wool you need for attic, wall, or ceiling insulation.",
-  "metaTitle": "Mineral Wool Calculator | Estimate Packs and Volume",
-  "metaDescription": "Calculate mineral wool volume, coverage with waste, and how many packs or rolls you need for attic, wall, or ceiling insulation.",
-  "intro": "Use this mineral wool calculator to estimate the amount of insulation needed for an attic, wall, or ceiling. Enter the area, insulation thickness, pack coverage, waste percentage, and pack volume to get a quick material estimate.",
-  "overview": "This tool helps you plan mineral wool insulation by converting surface area and thickness into the required insulation volume, then estimating the number of packs or rolls based on the coverage per package. It is useful for attic, wall, and ceiling projects where accurate material planning reduces waste and avoids shortages.",
+  "shortDescription": "Work out the mineral wool needed for an attic, wall, or ceiling, including packs or rolls.",
+  "metaTitle": "Mineral Wool Calculator",
+  "metaDescription": "Estimate mineral wool volume, waste allowance, and the number of packs or rolls for attic, wall, or ceiling insulation.",
+  "intro": "Enter the insulated area, thickness, waste allowance, and pack coverage to get the mineral wool volume and pack count.",
+  "overview": "Plan insulation with a result based on real dimensions rather than guesswork. The calculator converts area and thickness into the total wool volume, then uses the selected pack volume and coverage to estimate how many packs or rolls to buy.\n\nIt works well for pitched roofs, lofts, partition walls, and ceilings where the layer thickness matters. If you already know the product coverage from the supplier, enter it together with a sensible waste margin so the order matches the job on site.",
   "howItWorks": [
-    "Enter the insulation area in square meters.",
-    "Add the required insulation thickness in centimeters.",
-    "Specify how much area one pack covers.",
-    "Set the waste allowance percentage.",
-    "Provide the volume of one pack to calculate the total needed volume and package count."
+    "Enter the insulated area in square meters.",
+    "Add the insulation thickness in centimeters.",
+    "Enter the coverage or area covered by one pack or roll.",
+    "Set the waste percentage for cutting and fitting losses.",
+    "Provide the pack volume to calculate the total material volume and package count."
   ],
   "useCases": [
-    "Estimating mineral wool for attic insulation.",
-    "Planning wall insulation material quantities.",
-    "Calculating packs for ceiling or roof slope insulation.",
-    "Checking how much extra material to buy for cutting waste.",
-    "Comparing package coverage before ordering insulation."
+    {
+      "title": "Loft insulation order",
+      "description": "Estimate the number of mineral wool packs for a pitched loft after measuring each insulated section."
+    },
+    {
+      "title": "Wall cavity planning",
+      "description": "Match the wall area and insulation depth to the pack size before buying materials for internal lining."
+    },
+    {
+      "title": "Ceiling retrofit",
+      "description": "Work out how much wool is required for a suspended ceiling or flat ceiling layer with a defined thickness."
+    },
+    {
+      "title": "Allowance for offcuts",
+      "description": "Add a realistic margin for trimmings around rafters, joists, and edges."
+    },
+    {
+      "title": "Supplier pack comparison",
+      "description": "Compare products with different coverage and pack volumes to choose the more practical order size."
+    }
   ],
   "examples": [
     {
-      "title": "Example",
-      "input": "Area: 100 m², Thickness: 20 cm, Coverage per pack: 6 m², Waste: 10%, Pack volume: 1.2 m³",
-      "output": "Shows total insulation volume, area with waste, and number of packs needed.",
-      "description": "Helpful for estimating material before buying mineral wool."
+      "title": "Loft conversion example",
+      "input": "Area: 84 m², Thickness: 22 cm, Coverage per pack: 6.4 m², Waste: 12%, Pack volume: 1.15 m³",
+      "output": "Returns the total wool volume and a pack count rounded up for the full order.",
+      "description": "Useful when ordering insulation for a loft conversion with several slopes and corners."
     },
     {
-      "title": "Example",
-      "input": "Area: 45 m², Thickness: 15 cm, Coverage per pack: 4.5 m², Waste: 8%, Pack volume: 0.9 m³",
-      "output": "Returns the required volume and pack count for a small insulation job.",
-      "description": "Useful for wall or ceiling insulation planning."
+      "title": "Internal wall example",
+      "input": "Area: 31.5 m², Thickness: 12 cm, Coverage per pack: 4.8 m², Waste: 7%, Pack volume: 0.72 m³",
+      "output": "Shows the material volume, the adjusted coverage, and the minimum number of packs required.",
+      "description": "Helpful for a single room wall lining where the insulation depth is fixed."
+    },
+    {
+      "title": "Small ceiling job",
+      "input": "Area: 18 m², Thickness: 10 cm, Coverage per roll: 3.6 m², Waste: 5%, Pack volume: 0.36 m³",
+      "output": "Calculates the needed volume and indicates how many rolls should be purchased.",
+      "description": "Suitable for a compact ceiling section where one roll size is specified on the label."
     }
   ],
   "faq": [
     {
-      "question": "How do I calculate mineral wool needed?",
-      "answer": "Multiply the insulated area by the thickness converted to meters to get the insulation volume. Then divide by the volume per pack and add waste if needed."
+      "question": "What does the calculated volume mean?",
+      "answer": "It is the physical insulation volume needed for the measured area and thickness. Use it to compare against the volume listed on the product pack."
     },
     {
-      "question": "Does this calculator work for attic insulation?",
-      "answer": "Yes. It is suitable for attic, wall, and ceiling insulation projects."
+      "question": "Should I enter the finished thickness or the nominal product thickness?",
+      "answer": "Enter the thickness you want to achieve in the construction layer. If the product compresses or is installed in two layers, account for that in your planning."
     },
     {
-      "question": "Why should I add waste percentage?",
-      "answer": "Waste covers cutting, fitting, and small overlaps, helping you avoid running short during installation."
+      "question": "Why does the result round up the pack count?",
+      "answer": "You cannot buy part of a pack in practice, so the calculator rounds up to the next whole pack or roll."
     },
     {
-      "question": "Can I use it for rolls and packs?",
-      "answer": "Yes. The result shows the number of rolls or packs needed based on the package volume and coverage."
+      "question": "What if the pack coverage and pack volume do not match the same product data?",
+      "answer": "Use the figures from one product specification sheet. Mixing values from different products can produce an unrealistic order quantity."
+    },
+    {
+      "question": "Can I use the result for double-layer insulation?",
+      "answer": "Yes, but calculate each layer separately if the thickness or product type changes. That gives a more reliable total than combining different layers into one entry."
     }
   ],
-  "uiLabels": {
-    "copy": "Copy",
-    "copied": "Copied",
-    "input": "Input",
-    "output": "Output",
-    "placeholder": "Enter value",
-    "indent": "Indent",
-    "removeComments": "Remove comments",
-    "preview": "Preview",
-    "source": "Source",
-    "sanitizedHtml": "Sanitized HTML",
-    "plainText": "Plain text",
-    "summary": "Summary",
-    "total": "Total",
-    "links": "Links",
-    "images": "Images",
-    "errors": "Errors",
-    "warnings": "Warnings",
-    "valid": "Valid",
-    "invalid": "Invalid",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Width",
-    "height": "Height",
-    "empty": "Empty",
-    "outputReady": "Output ready",
-    "cleanedHtml": "Cleaned HTML",
-    "formattedHtml": "Formatted HTML",
-    "minifiedHtml": "Minified HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extracted images",
-    "extractedLinks": "Extracted links",
-    "validationSummary": "Validation summary",
-    "prettyHtml": "Pretty HTML",
-    "encodedText": "Encoded text",
-    "file": "File",
-    "size": "Size",
-    "format": "Format",
-    "quality": "Quality",
-    "colorOne": "Color 1",
-    "colorTwo": "Color 2",
-    "background": "Background",
-    "foreground": "Foreground",
-    "angle": "Angle",
-    "margin": "Margin",
-    "level": "Level",
-    "gradientType": "Gradient type",
-    "linear": "Linear",
-    "radial": "Radial",
-    "blur": "Blur",
-    "spread": "Spread",
-    "offsetX": "Offset X",
-    "offsetY": "Offset Y",
-    "opacity": "Opacity",
-    "inset": "Inset",
-    "cssCode": "CSS code",
-    "snippet": "Snippet",
-    "download": "Download",
-    "downloadSvg": "Download SVG",
-    "downloadPng": "Download PNG",
-    "downloadAll": "Download all",
-    "upload": "Upload",
-    "title": "Title",
-    "description": "Description",
-    "canonicalUrl": "Canonical URL",
-    "siteName": "Site name",
-    "ogImage": "OG image",
-    "clear": "Clear",
-    "generatedQr": "Generated QR",
-    "placeholderImage": "Placeholder image",
-    "faviconSet": "Favicon set",
-    "keepAspectRatio": "Keep aspect ratio",
-    "cropX": "Crop X",
-    "cropY": "Crop Y",
-    "cropWidth": "Crop width",
-    "cropHeight": "Crop height",
-    "originalSize": "Original size",
-    "outputSize": "Output size",
-    "savedSize": "Saved size",
-    "result": "Result",
-    "base64": "Base64",
-    "mimeType": "MIME type",
-    "resizedImage": "Resized image",
-    "compressedImage": "Compressed image",
-    "croppedImage": "Cropped image",
-    "convertedImage": "Converted image",
-    "decodedImage": "Decoded image",
-    "imagePreview": "Image preview",
-    "camera": "Camera",
-    "lens": "Lens",
-    "dateTaken": "Date taken",
-    "resolution": "Resolution",
-    "fileSize": "File size",
-    "iso": "ISO",
-    "exposure": "Exposure",
-    "aperture": "Aperture",
-    "focalLength": "Focal length",
-    "flash": "Flash",
-    "orientation": "Orientation",
-    "latitude": "Latitude",
-    "longitude": "Longitude",
-    "openMap": "Open map",
-    "rawMetadata": "Raw metadata",
-    "noMetadataFound": "No metadata found",
-    "gpsLocation": "GPS location",
-    "metadataSummary": "Metadata summary"
-  },
   "seo": {
     "title": "Mineral Wool Calculator",
-    "description": "Estimate how much mineral wool you need for attic, wall, or ceiling insulation and calculate the number of packs or rolls.",
+    "description": "Estimate mineral wool volume and pack count for loft, wall, or ceiling insulation using area, thickness, and waste allowance.",
     "keywords": [
       "mineral wool calculator",
-      "insulation calculator",
-      "attic insulation",
-      "wall insulation",
-      "ceiling insulation",
-      "calculate wool packs"
+      "insulation quantity calculator",
+      "loft insulation packs",
+      "wall insulation volume",
+      "ceiling insulation rolls"
     ]
   }
 }

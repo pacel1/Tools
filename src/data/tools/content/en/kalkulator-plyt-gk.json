@@ -4,179 +4,87 @@
   "slug": "drywall-board-calculator",
   "h1": "Drywall Board Calculator",
   "title": "Drywall Board Calculator",
-  "shortDescription": "Estimate how many drywall boards, screws, and profile meters you need for a wall or ceiling build.",
-  "metaTitle": "Drywall Board Calculator | Boards, Screws & Profiles",
-  "metaDescription": "Calculate how many drywall boards, screws, and profile meters you need based on area, board size, waste, and installation requirements.",
-  "intro": "Use this drywall board calculator to quickly estimate how many plasterboards, screws, and metal profiles you need for wall or ceiling construction.",
-  "overview": "Enter the covered area, board dimensions, waste allowance, screws per board, and profile usage per square meter. The calculator estimates the number of boards, screws, and linear meters of profiles needed for your drywall project.",
+  "shortDescription": "Estimate boards, screws, and profile lengths for drywall walls and ceilings.",
+  "metaTitle": "Drywall Board Calculator",
+  "metaDescription": "Estimate drywall boards, screws, and profile lengths from area, board size, waste, and fastening needs.",
+  "intro": "Enter the area, board size, and waste percentage to get an estimate of boards, screws, and profile meters.",
+  "overview": "This calculator turns your wall or ceiling area into a material estimate for plasterboard work. It uses the board dimensions you enter, then adds waste so you can plan for cuts, trimming, and damaged sheets.\n\nYou can also set how many screws you want per board and how many profile meters you need per square meter. The result is useful when preparing a quote, checking a shopping list, or comparing sheet formats before ordering.\n\nThe numbers are estimates, not a cutting plan. Openings, multi-layer cladding, stud spacing, and framing layout can all change the final amount of material.",
   "howItWorks": [
-    "Enter the total area in square meters.",
-    "Provide the board width and height in centimeters.",
-    "Set the waste percentage for cuts and offcuts.",
-    "Enter screws per board and profile meters per square meter.",
-    "Get the estimated board count, screw count, and profile length."
+    "Enter the total surface area in square meters.",
+    "Add the board width and height in centimeters.",
+    "Set a waste percentage for offcuts and trimming.",
+    "Specify screws per board and profile meters per square meter.",
+    "Read the estimated board count, screw count, and profile length."
   ],
   "useCases": [
-    "Planning materials for a drywall partition wall.",
-    "Estimating supplies for a suspended ceiling.",
-    "Checking how many plasterboards to buy before a renovation.",
-    "Budgeting screws and profiles for interior finishing work."
+    {
+      "title": "Partition wall material list",
+      "description": "Estimate boards and framing for a single-room drywall partition before you order supplies."
+    },
+    {
+      "title": "Suspended ceiling planning",
+      "description": "Work out how many sheets and profile meters a ceiling run will need with a chosen waste allowance."
+    },
+    {
+      "title": "Renovation purchasing check",
+      "description": "Compare board formats before buying so you can see which size reduces the number of joints."
+    },
+    {
+      "title": "Fastener and profile budgeting",
+      "description": "Convert a surface area into screws and linear profiles for a basic interior build-up."
+    }
   ],
   "examples": [
     {
-      "title": "How many drywall boards do I need?",
-      "input": "Area 24 m², board size 120 × 250 cm, waste 10%, 8 screws per board, 3.5 m profiles per m².",
-      "output": "The calculator estimates the boards, screws, and profile meters required.",
-      "description": "A practical way to size material quantities before buying."
+      "title": "Small office partition",
+      "input": "Area 21.6 m², board size 120 × 260 cm, waste 8%, 9 screws per board, 3.2 m profiles per m².",
+      "output": "Estimated result: 8 boards, 72 screws, and 69.1 m of profiles.",
+      "description": "Shows how a modest wall area becomes a practical purchase list."
     },
     {
-      "title": "Materials for ceiling framing",
-      "input": "Area 18 m², board size 120 × 260 cm, waste 12%, 10 screws per board, 4 m profiles per m².",
-      "output": "Estimated quantities are shown instantly.",
-      "description": "Helpful for suspended ceiling planning."
+      "title": "Kitchen ceiling repair",
+      "input": "Area 13.5 m², board size 120 × 200 cm, waste 12%, 10 screws per board, 4.1 m profiles per m².",
+      "output": "Estimated result: 7 boards, 70 screws, and 55.4 m of profiles.",
+      "description": "Useful when the ceiling uses shorter boards and more framing."
+    },
+    {
+      "title": "Basement lining with larger sheets",
+      "input": "Area 32 m², board size 120 × 300 cm, waste 10%, 8 screws per board, 2.8 m profiles per m².",
+      "output": "Estimated result: 10 boards, 80 screws, and 89.6 m of profiles.",
+      "description": "Helpful for comparing longer boards against standard sheet sizes."
     }
   ],
   "faq": [
     {
-      "question": "What does this drywall calculator estimate?",
-      "answer": "It estimates the number of drywall boards, screws, and profile meters needed for a given area and board size."
+      "question": "Does the board count include waste?",
+      "answer": "Yes. The waste percentage is added to the covered area before the board count is calculated, so the result already includes allowance for cuts and offcuts."
     },
     {
-      "question": "Does the calculator include waste?",
-      "answer": "Yes, you can add a waste percentage to account for cuts, trimming, and damaged sheets."
+      "question": "Why can the board count look higher than the area suggests?",
+      "answer": "Because the calculator rounds up to full sheets. Even a small remaining area still requires another board, and waste can push the total higher."
     },
     {
-      "question": "Can I use it for ceilings and walls?",
-      "answer": "Yes, it works for both wall cladding and ceiling construction."
+      "question": "Are screws calculated per sheet or per area?",
+      "answer": "They are calculated from the estimated board count. If you change the screws-per-board input, the total screw count changes directly."
     },
     {
-      "question": "How are screws calculated?",
-      "answer": "The calculator multiplies the estimated board count by the number of screws per board."
+      "question": "Can I use the result for double-layer cladding?",
+      "answer": "You can, but you need to treat each layer separately or adjust the area and screw assumptions yourself. A double layer usually needs more screws and may change framing needs."
     },
     {
-      "question": "Are profile meters exact?",
-      "answer": "No, they are an estimate based on the input value per square meter. Final framing needs may vary by design."
+      "question": "Why do profile meters stay approximate?",
+      "answer": "Profile length depends on the framing layout, stud spacing, perimeter details, and openings. The tool uses your per-square-meter value as a planning estimate, not a final cut list."
     }
   ],
-  "uiLabels": {
-    "copy": "Copy",
-    "copied": "Copied",
-    "input": "Input",
-    "output": "Output",
-    "placeholder": "Enter value",
-    "indent": "Indent",
-    "removeComments": "Remove comments",
-    "preview": "Preview",
-    "source": "Source",
-    "sanitizedHtml": "Sanitized HTML",
-    "plainText": "Plain text",
-    "summary": "Summary",
-    "total": "Total",
-    "links": "Links",
-    "images": "Images",
-    "errors": "Errors",
-    "warnings": "Warnings",
-    "valid": "Valid",
-    "invalid": "Invalid",
-    "href": "URL",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Width",
-    "height": "Height",
-    "empty": "Empty",
-    "outputReady": "Results ready",
-    "cleanedHtml": "Cleaned HTML",
-    "formattedHtml": "Formatted HTML",
-    "minifiedHtml": "Minified HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extracted images",
-    "extractedLinks": "Extracted links",
-    "validationSummary": "Validation summary",
-    "prettyHtml": "Pretty HTML",
-    "encodedText": "Encoded text",
-    "file": "File",
-    "size": "Size",
-    "format": "Format",
-    "quality": "Quality",
-    "colorOne": "Color 1",
-    "colorTwo": "Color 2",
-    "background": "Background",
-    "foreground": "Foreground",
-    "angle": "Angle",
-    "margin": "Margin",
-    "level": "Level",
-    "gradientType": "Gradient type",
-    "linear": "Linear",
-    "radial": "Radial",
-    "blur": "Blur",
-    "spread": "Spread",
-    "offsetX": "Offset X",
-    "offsetY": "Offset Y",
-    "opacity": "Opacity",
-    "inset": "Inset",
-    "cssCode": "CSS code",
-    "snippet": "Snippet",
-    "download": "Download",
-    "downloadSvg": "Download SVG",
-    "downloadPng": "Download PNG",
-    "downloadAll": "Download all",
-    "upload": "Upload",
-    "title": "Title",
-    "description": "Description",
-    "canonicalUrl": "Canonical URL",
-    "siteName": "Site name",
-    "ogImage": "Open Graph image",
-    "clear": "Clear",
-    "generatedQr": "Generated QR code",
-    "placeholderImage": "Placeholder image",
-    "faviconSet": "Favicon set",
-    "keepAspectRatio": "Keep aspect ratio",
-    "cropX": "Crop X",
-    "cropY": "Crop Y",
-    "cropWidth": "Crop width",
-    "cropHeight": "Crop height",
-    "originalSize": "Original size",
-    "outputSize": "Output size",
-    "savedSize": "Saved size",
-    "result": "Result",
-    "base64": "Base64",
-    "mimeType": "MIME type",
-    "resizedImage": "Resized image",
-    "compressedImage": "Compressed image",
-    "croppedImage": "Cropped image",
-    "convertedImage": "Converted image",
-    "decodedImage": "Decoded image",
-    "imagePreview": "Image preview",
-    "camera": "Camera",
-    "lens": "Lens",
-    "dateTaken": "Date taken",
-    "resolution": "Resolution",
-    "fileSize": "File size",
-    "iso": "ISO",
-    "exposure": "Exposure",
-    "aperture": "Aperture",
-    "focalLength": "Focal length",
-    "flash": "Flash",
-    "orientation": "Orientation",
-    "latitude": "Latitude",
-    "longitude": "Longitude",
-    "openMap": "Open map",
-    "rawMetadata": "Raw metadata",
-    "noMetadataFound": "No metadata found",
-    "gpsLocation": "GPS location",
-    "metadataSummary": "Metadata summary"
-  },
   "seo": {
     "title": "Drywall Board Calculator",
-    "description": "Estimate drywall boards, screws, and profile meters for walls or ceilings by area and board size.",
+    "description": "Estimate drywall boards, screws, and profile lengths for walls or ceilings.",
     "keywords": [
-      "drywall calculator",
+      "drywall board calculator",
       "plasterboard calculator",
-      "board calculator",
-      "screws calculator",
-      "profile calculator"
+      "drywall sheets",
+      "profile length estimate",
+      "screw count estimate"
     ]
   }
 }

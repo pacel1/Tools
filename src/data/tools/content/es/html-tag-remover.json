@@ -4,105 +4,87 @@
   "slug": "eliminador-de-etiquetas-html",
   "h1": "Eliminador de etiquetas HTML",
   "title": "Eliminador de etiquetas HTML",
-  "shortDescription": "Elimina las etiquetas HTML y conserva el texto legible del contenido original.",
-  "metaTitle": "Eliminador de etiquetas HTML | HTML a texto plano",
-  "metaDescription": "Elimina etiquetas HTML online y conserva el texto legible. Limpia fragmentos HTML de forma segura en tu navegador con una herramienta rápida y sin APIs externas.",
-  "intro": "Pega código HTML y obtén texto limpio y legible al instante. Esta herramienta funciona en el navegador, elimina las etiquetas y conserva el contenido visible sin usar APIs externas.",
-  "overview": "El Eliminador de etiquetas HTML es una utilidad client-side sencilla para convertir HTML en texto plano. Pega un fragmento, una página completa o contenido enriquecido copiado, y la herramienta elimina las etiquetas manteniendo las palabras legibles y, cuando es posible, los saltos de línea. Es útil para limpiar contenido, extraer texto para notas, preparar fragmentos para búsquedas o comparar información sin marcado. Todo se procesa localmente en tu navegador para ofrecer más rapidez y seguridad.",
+  "shortDescription": "Quita las etiquetas HTML y deja solo el texto legible del contenido pegado.",
+  "metaTitle": "Eliminador de etiquetas HTML",
+  "metaDescription": "Quita etiquetas HTML y conserva texto legible en el navegador, sin enviar el contenido a ningún servidor.",
+  "intro": "Pega HTML y obtén texto plano sin etiquetas al instante.",
+  "overview": "El Eliminador de etiquetas HTML convierte marcado HTML en texto legible sin alterar el archivo original. Pega un fragmento, una página completa o contenido enriquecido copiado, y la herramienta extrae el texto visible mientras descarta etiquetas, atributos y elementos anidados. Es útil cuando necesitas las palabras, no la estructura.\n\nEl resultado sirve para tomar notas, limpiar contenido copiado de páginas y extraer texto de plantillas o componentes. Los saltos de línea y los espacios se conservan cuando la estructura HTML lo permite, pero la separación de bloques puede variar según cómo esté escrito el código de entrada.",
   "howItWorks": [
     "Pega el HTML en el campo de entrada.",
-    "La herramienta analiza el marcado localmente en el navegador.",
-    "Se eliminan las etiquetas HTML y se extrae el texto legible.",
-    "Copia el resultado en texto plano para reutilizarlo donde quieras."
+    "El analizador procesa el marcado de forma local en tu navegador.",
+    "Las etiquetas y los atributos se eliminan del resultado visible.",
+    "Copia el texto plano para usarlo en otra aplicación."
   ],
   "useCases": [
-    "Convertir fragmentos HTML en texto plano.",
-    "Limpiar contenido copiado antes de pegarlo en correo o chat.",
-    "Extraer texto legible de plantillas o código.",
-    "Eliminar marcado para análisis de texto o preparación de indexación.",
-    "Ver rápidamente el texto oculto detrás de un bloque HTML."
+    {
+      "title": "Convertir marcado de artículos en notas",
+      "description": "Elimina títulos, enlaces y formato de un artículo en HTML para guardar solo el texto como notas."
+    },
+    {
+      "title": "Limpiar plantillas de correo pegadas",
+      "description": "Quita las etiquetas de envoltura de un newsletter o una plantilla antes de mover el texto a un borrador."
+    },
+    {
+      "title": "Extraer texto visible de fragmentos CMS",
+      "description": "Obtén el contenido legible de un componente HTML cuando solo necesitas el texto mostrado al lector."
+    },
+    {
+      "title": "Preparar texto para comparación manual",
+      "description": "Retira el marcado de dos fragmentos HTML para comparar solo las palabras, sin ruido de etiquetas."
+    }
   ],
   "examples": [
     {
-      "title": "Párrafo simple",
-      "input": "<p>Hola <strong>mundo</strong>!</p>",
-      "output": "Hola mundo!",
-      "description": "Texto básico con formato en línea eliminado."
+      "title": "Párrafo con énfasis",
+      "input": "<p>Bienvenido a la planificación de <strong>T4</strong>.</p>",
+      "output": "Bienvenido a la planificación de T4.",
+      "description": "El formato en línea desaparece y la frase se mantiene clara."
     },
     {
-      "title": "Enlaces y listas",
-      "input": "<div><a href=\"/docs\">Documentación</a><ul><li>Uno</li><li>Dos</li></ul></div>",
-      "output": "Documentación\nUno\nDos",
-      "description": "Se conserva el texto legible mientras se quitan las etiquetas."
+      "title": "Tarjeta con enlace y lista",
+      "input": "<section><a href=\"/precios\">Precios</a><ul><li>Inicio</li><li>Empresa</li></ul></section>",
+      "output": "Precios\nInicio\nEmpresa",
+      "description": "Los bloques quedan separados para que el texto siga siendo legible."
+    },
+    {
+      "title": "Marcado mixto y entidades",
+      "input": "<div>Usa &amp; para unir elementos o <span>separa</span> después.</div>",
+      "output": "Usa & para unir elementos o separa después.",
+      "description": "Las entidades HTML se convierten en caracteres normales en el resultado."
     }
   ],
   "faq": [
     {
-      "question": "¿Conserva el texto dentro de las etiquetas?",
-      "answer": "Sí. La herramienta elimina el marcado HTML y mantiene el texto legible dentro de los elementos."
+      "question": "¿Qué pasa con atributos como href, class y data-*?",
+      "answer": "Se eliminan junto con las etiquetas. Solo queda el contenido textual legible."
     },
     {
-      "question": "¿El procesamiento se realiza en el navegador?",
-      "answer": "Sí. Usa solo lógica del lado del cliente, así que tu HTML se procesa localmente sin APIs externas."
+      "question": "¿Aparecerán bloques script o style en el resultado?",
+      "answer": "No deberían aparecer en la salida legible. La herramienta está pensada para extraer texto visible, no código usado por la página internamente."
     },
     {
-      "question": "¿También elimina el contenido de script y style?",
-      "answer": "Se centra en extraer texto legible de forma segura, por lo que el contenido no visible puede ignorarse o eliminarse según el comportamiento del analizador."
+      "question": "¿Por qué mi resultado tiene líneas en blanco extra?",
+      "answer": "Los bloques HTML pueden convertirse en líneas separadas al pasar a texto plano. Con muchos contenedores o elementos vacíos, los espacios pueden verse irregulares."
     },
     {
-      "question": "¿Se conservan los saltos de línea y los espacios?",
-      "answer": "La herramienta intenta mantener la legibilidad, pero el formato exacto puede variar según la estructura del HTML."
+      "question": "¿Decodifica entidades HTML como &amp; y &nbsp;?",
+      "answer": "Sí, las entidades se interpretan como caracteres de texto cuando el analizador puede resolverlas. Los espacios no separables pueden mostrarse como espacios normales."
+    },
+    {
+      "question": "¿Puedo usarlo con HTML mal formado?",
+      "answer": "A menudo sí, pero un marcado roto puede cambiar la forma en que se agrupa el texto. Si faltan etiquetas o están mal anidadas, el resultado puede diferir del diseño original."
     }
   ],
-  "uiLabels": {
-    "copy": "Copiar",
-    "copied": "Copiado",
-    "input": "HTML input",
-    "output": "Text without tags",
-    "placeholder": "Pega el HTML aquí...",
-    "indent": "Sangría",
-    "removeComments": "Eliminar comentarios",
-    "preview": "Vista previa",
-    "source": "Fuente",
-    "sanitizedHtml": "HTML saneado",
-    "plainText": "Texto plano",
-    "summary": "Resumen",
-    "total": "Total",
-    "links": "Enlaces",
-    "images": "Imágenes",
-    "errors": "Errores",
-    "warnings": "Advertencias",
-    "valid": "Válido",
-    "invalid": "No válido",
-    "href": "Href",
-    "text": "Texto",
-    "rel": "Rel",
-    "target": "Destino",
-    "alt": "Alt",
-    "width": "Ancho",
-    "height": "Alto",
-    "empty": "Vacío",
-    "outputReady": "Resultado listo",
-    "cleanedHtml": "HTML limpiado",
-    "formattedHtml": "HTML formateado",
-    "minifiedHtml": "HTML minificado",
-    "markdown": "Markdown",
-    "extractedImages": "Imágenes extraídas",
-    "extractedLinks": "Enlaces extraídos",
-    "validationSummary": "Resumen de validación",
-    "prettyHtml": "HTML legible",
-    "encodedText": "Texto codificado"
-  },
   "seo": {
-    "title": "Eliminador de etiquetas HTML | HTML a texto plano",
-    "description": "Elimina etiquetas HTML online y conserva el texto legible. Limpia fragmentos HTML de forma segura en tu navegador con una herramienta rápida y sin APIs externas.",
+    "title": "Eliminador de etiquetas HTML",
+    "description": "Quita etiquetas HTML y conserva texto legible en el navegador, sin enviar el contenido a ningún servidor.",
     "keywords": [
       "eliminador de etiquetas html",
-      "html a texto plano",
+      "html a texto",
       "quitar etiquetas html",
-      "convertir html a texto",
-      "limpiar html",
-      "html a texto"
+      "html a texto plano",
+      "extraer texto de html",
+      "limpiar html"
     ]
   }
 }

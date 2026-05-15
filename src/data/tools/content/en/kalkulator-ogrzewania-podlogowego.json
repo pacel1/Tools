@@ -4,179 +4,91 @@
   "slug": "underfloor-heating-calculator",
   "h1": "Underfloor Heating Calculator",
   "title": "Underfloor Heating Calculator",
-  "shortDescription": "Estimate pipe length and loop count for water-based underfloor heating.",
-  "metaTitle": "Underfloor Heating Calculator | Pipe Length & Loop Count",
-  "metaDescription": "Estimate how much pipe you need for underfloor heating, how many loops are required, and the average loop length based on area, spacing, and waste.",
-  "intro": "Use this underfloor heating calculator to estimate pipe length, number of loops, and average loop length for a water-based system. It is a practical starting point for planning material takeoff and answering the question: how much pipe for underfloor heating?",
-  "overview": "Enter the heated area, pipe spacing, maximum loop length, extra connection length, and waste allowance to get a fast estimate of total pipe length and loop quantity.",
+  "shortDescription": "Estimate pipe length and heating loop count for water-based underfloor heating.",
+  "metaTitle": "Underfloor Heating Calculator",
+  "metaDescription": "Estimate pipe length, loop count, and average circuit length for water underfloor heating from area, spacing, and waste.",
+  "intro": "Get a practical estimate of pipe length, loop count, and average loop length for a water-based underfloor heating layout.",
+  "overview": "This calculator estimates the pipe demand for a hydronic underfloor heating system from the heated floor area, tube spacing, maximum loop length, extra connection runs, and waste allowance. It is useful when you need a first material estimate before choosing manifold size or ordering pipe rolls. The result helps you see whether the floor can be covered in one circuit or needs several shorter loops.",
   "howItWorks": [
     "Enter the heated floor area in square meters.",
     "Set the pipe spacing in centimeters.",
     "Specify the maximum allowed loop length.",
-    "Add the extra connection length for manifold runs.",
-    "Include a waste percentage for cutting and layout margins."
+    "Add the extra connection length for runs to and from the manifold.",
+    "Include a waste percentage for cuts, bends, and layout margin."
   ],
   "useCases": [
-    "Estimating how much pipe is needed for underfloor heating.",
-    "Planning the number of heating loops before installation.",
-    "Checking whether a floor area can be covered within loop length limits.",
-    "Preparing a quick material estimate for a renovation or new build."
+    {
+      "title": "Sizing pipe for a room or zone",
+      "description": "Estimate how many meters of pipe are needed for a single room, open-plan area, or heating zone before you place an order."
+    },
+    {
+      "title": "Checking manifold circuit count",
+      "description": "See how many loops are needed so each circuit stays below the maximum length you set for the manifold."
+    },
+    {
+      "title": "Comparing spacing options",
+      "description": "Test different tube spacing values to understand how a tighter layout increases pipe demand and circuit count."
+    },
+    {
+      "title": "Planning a renovation run",
+      "description": "Add connection lengths and waste to build a realistic takeoff for a retrofit where the manifold is not next to the heated area."
+    }
   ],
   "examples": [
     {
-      "title": "Calculation example",
-      "input": "100 m2 area, 15 cm spacing, 100 m max loop length, 5 m extra length, 10% waste",
-      "output": "Approximate pipe length, loop count, and average loop length are calculated from the entered values.",
-      "description": "Shows a typical planning scenario for a water underfloor heating system."
+      "title": "Living room layout",
+      "input": "Area: 34 m2, spacing: 15 cm, max loop: 95 m, extra connection: 8 m, waste: 7%",
+      "output": "Estimated pipe demand is about 265 m total, which splits into 3 loops with an average loop length around 88 m.",
+      "description": "Typical calculation for one medium-sized room served by a nearby manifold."
     },
     {
-      "title": "Material planning",
-      "input": "Use the result to compare with manifold capacity and pipe roll lengths",
-      "output": "Helps avoid underestimating the amount of pipe and number of circuits needed.",
-      "description": "Useful for early-stage project budgeting."
+      "title": "Open-plan ground floor",
+      "input": "Area: 82 m2, spacing: 10 cm, max loop: 100 m, extra connection: 12 m, waste: 10%",
+      "output": "Estimated pipe demand is about 922 m total, requiring 10 loops with an average loop length close to 92 m.",
+      "description": "Shows how tight spacing and a large area quickly increase the number of circuits."
+    },
+    {
+      "title": "Bathroom extension",
+      "input": "Area: 9.5 m2, spacing: 20 cm, max loop: 70 m, extra connection: 6 m, waste: 5%",
+      "output": "Estimated pipe demand is about 59 m total, so a single loop is sufficient and stays within the length limit.",
+      "description": "Useful for a small zone where one circuit can cover the floor comfortably."
     }
   ],
   "faq": [
     {
-      "question": "How accurate is this underfloor heating calculator?",
-      "answer": "It provides a practical estimate for planning. Final values can vary depending on room shape, edge zones, manifold layout, and installation method."
+      "question": "What does the pipe spacing change in the result?",
+      "answer": "Spacing determines how densely the pipe is laid. Narrow spacing increases total pipe length and usually raises the loop count, while wider spacing reduces both."
     },
     {
-      "question": "What does the pipe spacing affect?",
-      "answer": "Smaller spacing increases the total pipe length, while larger spacing reduces it. The calculator uses spacing to estimate pipe demand from the heated area."
+      "question": "Why does extra connection length matter?",
+      "answer": "It covers the route from the manifold to the heated area and back. If you skip it, the estimate will be too short, especially in larger houses or retrofit projects."
     },
     {
-      "question": "Why do I need extra connection length?",
-      "answer": "Extra connection length covers the runs from the manifold to the heated area and back. This helps make the estimate more realistic."
+      "question": "What if my room has an awkward shape?",
+      "answer": "The calculator assumes a simplified layout. Irregular rooms, cut-outs, columns, and edge zones can increase real pipe demand, so treat the result as a planning estimate."
     },
     {
-      "question": "What if the loop length exceeds the limit?",
-      "answer": "The calculator will indicate more loops are needed so each circuit stays within the maximum loop length you set."
+      "question": "How do I interpret the loop length result?",
+      "answer": "The average loop length shows how the total pipe may be distributed across circuits. If the average is close to your limit, plan for more loops or shorter runs."
     },
     {
-      "question": "Can I use this for electric floor heating?",
-      "answer": "This calculator is designed for water-based underfloor heating pipe planning, not electric heating mats or cables."
+      "question": "Can I enter one total area for several rooms?",
+      "answer": "Yes, but only if they belong to the same heating zone and use the same spacing and loop limit. If rooms need different settings, calculate them separately."
+    },
+    {
+      "question": "Why does the calculator ask for waste?",
+      "answer": "Waste accounts for offcuts, turns, and layout adjustments. Omitting it can leave you short of pipe when the floor is being installed."
     }
   ],
-  "uiLabels": {
-    "copy": "Copy",
-    "copied": "Copied",
-    "input": "Input",
-    "output": "Output",
-    "placeholder": "Enter value",
-    "indent": "Indent",
-    "removeComments": "Remove comments",
-    "preview": "Preview",
-    "source": "Source",
-    "sanitizedHtml": "Sanitized HTML",
-    "plainText": "Plain text",
-    "summary": "Summary",
-    "total": "Total",
-    "links": "Links",
-    "images": "Images",
-    "errors": "Errors",
-    "warnings": "Warnings",
-    "valid": "Valid",
-    "invalid": "Invalid",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Width",
-    "height": "Height",
-    "empty": "Empty",
-    "outputReady": "Output ready",
-    "cleanedHtml": "Cleaned HTML",
-    "formattedHtml": "Formatted HTML",
-    "minifiedHtml": "Minified HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extracted images",
-    "extractedLinks": "Extracted links",
-    "validationSummary": "Validation summary",
-    "prettyHtml": "Pretty HTML",
-    "encodedText": "Encoded text",
-    "file": "File",
-    "size": "Size",
-    "format": "Format",
-    "quality": "Quality",
-    "colorOne": "Color 1",
-    "colorTwo": "Color 2",
-    "background": "Background",
-    "foreground": "Foreground",
-    "angle": "Angle",
-    "margin": "Margin",
-    "level": "Level",
-    "gradientType": "Gradient type",
-    "linear": "Linear",
-    "radial": "Radial",
-    "blur": "Blur",
-    "spread": "Spread",
-    "offsetX": "Offset X",
-    "offsetY": "Offset Y",
-    "opacity": "Opacity",
-    "inset": "Inset",
-    "cssCode": "CSS code",
-    "snippet": "Snippet",
-    "download": "Download",
-    "downloadSvg": "Download SVG",
-    "downloadPng": "Download PNG",
-    "downloadAll": "Download all",
-    "upload": "Upload",
-    "title": "Title",
-    "description": "Description",
-    "canonicalUrl": "Canonical URL",
-    "siteName": "Site name",
-    "ogImage": "OG image",
-    "clear": "Clear",
-    "generatedQr": "Generated QR",
-    "placeholderImage": "Placeholder image",
-    "faviconSet": "Favicon set",
-    "keepAspectRatio": "Keep aspect ratio",
-    "cropX": "Crop X",
-    "cropY": "Crop Y",
-    "cropWidth": "Crop width",
-    "cropHeight": "Crop height",
-    "originalSize": "Original size",
-    "outputSize": "Output size",
-    "savedSize": "Saved size",
-    "result": "Result",
-    "base64": "Base64",
-    "mimeType": "MIME type",
-    "resizedImage": "Resized image",
-    "compressedImage": "Compressed image",
-    "croppedImage": "Cropped image",
-    "convertedImage": "Converted image",
-    "decodedImage": "Decoded image",
-    "imagePreview": "Image preview",
-    "camera": "Camera",
-    "lens": "Lens",
-    "dateTaken": "Date taken",
-    "resolution": "Resolution",
-    "fileSize": "File size",
-    "iso": "ISO",
-    "exposure": "Exposure",
-    "aperture": "Aperture",
-    "focalLength": "Focal length",
-    "flash": "Flash",
-    "orientation": "Orientation",
-    "latitude": "Latitude",
-    "longitude": "Longitude",
-    "openMap": "Open map",
-    "rawMetadata": "Raw metadata",
-    "noMetadataFound": "No metadata found",
-    "gpsLocation": "GPS location",
-    "metadataSummary": "Metadata summary"
-  },
   "seo": {
     "title": "Underfloor Heating Calculator",
-    "description": "Estimate pipe length, number of loops, and average loop length for water underfloor heating based on area, spacing, and waste.",
+    "description": "Estimate pipe length, loop count, and average circuit length for water underfloor heating from area, spacing, and waste.",
     "keywords": [
       "underfloor heating calculator",
       "pipe length calculator",
-      "how much pipe for underfloor heating",
       "heating loop calculator",
-      "water underfloor heating"
+      "water underfloor heating",
+      "manifold circuit estimate"
     ]
   }
 }

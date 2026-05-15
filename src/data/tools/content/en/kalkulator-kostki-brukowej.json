@@ -4,178 +4,97 @@
   "slug": "paving-block-calculator",
   "h1": "Paving Block Calculator",
   "title": "Paving Block Calculator",
-  "shortDescription": "Calculate how many paving blocks, edging and bedding material you need for a driveway, path or patio.",
-  "metaTitle": "Paving Block Calculator - Estimate Blocks, Packs and Edging",
-  "metaDescription": "Estimate how many paving blocks you need for your driveway, walkway or patio. Calculate blocks, packs or pallets, and edging meters in seconds.",
-  "intro": "Use this paving block calculator to quickly estimate how much paving you need for a driveway, path or patio. Enter the surface area, block size, waste allowance, pack coverage and edging ratio to get a practical material estimate.",
-  "overview": "This tool helps you answer the key question: how many paving blocks do I need? It converts your surface area and block dimensions into an estimated block count, then calculates how many packs or pallets to buy and how much edging is required.",
+  "shortDescription": "Estimate paving blocks, packs, pallets, and edging for driveways, paths, and patios.",
+  "metaTitle": "Paving Block Calculator",
+  "metaDescription": "Estimate blocks, packs, pallets, and edging for driveways, paths, and patios from area and block size.",
+  "intro": "Get a material estimate for your paving project by entering the area, block dimensions, waste allowance, and pack coverage.",
+  "overview": "Use this calculator when you need a realistic material count for a driveway, garden path, patio, or yard apron. It turns your project area and block size into an estimated number of paving blocks, then converts that into packs or pallets based on the coverage you enter.\n\nThe result also includes edging length, so you can plan borders together with the main surface. It is useful for buying the right quantity before work starts, especially when the layout includes cuts, corners, or mixed edge shapes.\n\nFor best results, measure the actual paved surface, not the whole plot. If you already know the supplier’s pack coverage, use that value directly; if the design has many cuts or diagonal lines, increase the waste allowance rather than trying to compensate later.",
   "howItWorks": [
-    "Enter the total area in square meters.",
-    "Add the paving block width and length in centimeters.",
-    "Set the waste percentage for cuts and fitting losses.",
-    "Enter the coverage of one pack or pallet in square meters.",
-    "Specify edging needed per 1 m² to estimate border length.",
-    "Review the calculated blocks, packs or pallets, and edging meters."
+    "Enter the total paved area in square metres.",
+    "Enter the block width and length in centimetres.",
+    "Set a waste allowance for cuts, trimming, and breakage.",
+    "Enter the coverage of one pack or pallet in square metres.",
+    "Add the edging rate per square metre if you want border length.",
+    "Read the estimated block count, pack or pallet count, and edging metres."
   ],
   "useCases": [
-    "Planning a driveway paving project.",
-    "Estimating materials for a garden path or sidewalk.",
-    "Checking how many pallets of blocks to order.",
-    "Budgeting edging for a patio renovation.",
-    "Comparing paving material needs before requesting quotes."
+    {
+      "title": "Driveway planning before ordering",
+      "description": "Estimate how many blocks and pallets are needed for a single-car or two-car driveway, including the extra material needed for cutting around kerbs and entrances."
+    },
+    {
+      "title": "Garden path with narrow sections",
+      "description": "Work out material needs for a path that changes width along the route, so you can buy enough blocks without overbuying whole pallets."
+    },
+    {
+      "title": "Patio border planning",
+      "description": "Calculate edging length alongside the paving surface to match a patio with exposed borders, steps, or lawn interfaces."
+    },
+    {
+      "title": "Supplier order check",
+      "description": "Compare your project estimate with the pack coverage shown by the supplier and convert the result into full packs or pallets to order."
+    },
+    {
+      "title": "Budgeting a resurfacing job",
+      "description": "Estimate the paving quantity before requesting a quote so the material line in the budget reflects the actual area and waste rate."
+    }
   ],
   "examples": [
     {
-      "title": "Typical driveway estimate",
-      "input": "Area 40 m², block 20 x 10 cm, waste 8%, coverage 6.5 m² per pack, edging 0.6 m per m²",
-      "output": "Estimated blocks, packs and edging for a standard driveway layout.",
-      "description": "A fast way to size a common residential paving project."
+      "title": "Two-car driveway",
+      "input": "Area 48 m², block 20 x 10 cm, waste 9%, pack coverage 6.4 m², edging 0.7 m per m²",
+      "output": "About 26,400 blocks, 8 packs, and 33.6 m of edging.",
+      "description": "Useful for a rectangular driveway with some trimming at the edges."
     },
     {
-      "title": "Patio material check",
-      "input": "Area 25 m², block 20 x 20 cm, waste 10%, coverage 5 m² per pallet, edging 0.4 m per m²",
-      "output": "Material quantities for a small patio.",
-      "description": "Useful before ordering from a supplier."
+      "title": "Small backyard patio",
+      "input": "Area 18.5 m², block 30 x 15 cm, waste 12%, pallet coverage 4.8 m², edging 0.5 m per m²",
+      "output": "About 4,730 blocks, 4 pallets, and 9.3 m of edging.",
+      "description": "A compact patio where cuts around corners increase the waste allowance."
+    },
+    {
+      "title": "Narrow side path",
+      "input": "Area 11.2 m², block 25 x 25 cm, waste 7%, pack coverage 5.5 m², edging 0.8 m per m²",
+      "output": "About 191 blocks, 3 packs, and 9.0 m of edging.",
+      "description": "Fits a short path with a clear border on both sides."
     }
   ],
   "faq": [
     {
-      "question": "How do I calculate how many paving blocks I need?",
-      "answer": "Multiply the area by 10,000 to get square centimeters, divide by the block area in square centimeters, then add the waste percentage. The calculator does this automatically for you."
+      "question": "How does the calculator turn area into block count?",
+      "answer": "It divides the paved area by the face area of one block, then adds the waste allowance you entered. That means a 10% waste setting increases the purchase quantity by 10% over the base coverage."
     },
     {
-      "question": "Why should I add waste?",
-      "answer": "Waste covers cuts, breakage and fitting losses. For most projects, 5% to 10% is common, but complex layouts may need more."
+      "question": "Should I use the full plot size or only the paved part?",
+      "answer": "Use only the surface that will actually be covered with blocks. Paths, borders, planting strips, and uncovered zones should be excluded, otherwise the result will be too high."
     },
     {
-      "question": "Does this calculator tell me how many packs or pallets to buy?",
-      "answer": "Yes. After calculating the required paving area, it divides the result by the coverage of one pack or pallet and rounds up."
+      "question": "What does the edging number represent?",
+      "answer": "The edging result is a length estimate for borders, kerbs, or edge restraints. It is not the count of individual border pieces unless your supplier sells them by metre."
     },
     {
-      "question": "Can I use it for a driveway, path or terrace?",
-      "answer": "Yes. It works for any rectangular or custom paving area as long as you know the total surface size and block dimensions."
+      "question": "Why can the pack or pallet result change even when the area barely changes?",
+      "answer": "The tool rounds up to full packs or pallets. If your total sits near a coverage threshold, a small area change can push the order to the next full unit."
+    },
+    {
+      "question": "What if my block size is listed in millimetres instead of centimetres?",
+      "answer": "Convert the dimensions before entering them. If you type 200 x 100 mm as 200 x 100 cm, the result will be wildly incorrect."
+    },
+    {
+      "question": "Can I rely on the result for irregular shapes?",
+      "answer": "Yes, as long as you enter the total finished area. For irregular layouts, the area matters more than the outline shape, but the waste allowance should usually be higher."
     }
   ],
-  "uiLabels": {
-    "copy": "Copy",
-    "copied": "Copied",
-    "input": "Input",
-    "output": "Output",
-    "placeholder": "Enter a value",
-    "indent": "Indent",
-    "removeComments": "Remove comments",
-    "preview": "Preview",
-    "source": "Source",
-    "sanitizedHtml": "Sanitized HTML",
-    "plainText": "Plain text",
-    "summary": "Summary",
-    "total": "Total",
-    "links": "Links",
-    "images": "Images",
-    "errors": "Errors",
-    "warnings": "Warnings",
-    "valid": "Valid",
-    "invalid": "Invalid",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Width",
-    "height": "Height",
-    "empty": "Empty",
-    "outputReady": "Output ready",
-    "cleanedHtml": "Cleaned HTML",
-    "formattedHtml": "Formatted HTML",
-    "minifiedHtml": "Minified HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extracted images",
-    "extractedLinks": "Extracted links",
-    "validationSummary": "Validation summary",
-    "prettyHtml": "Pretty HTML",
-    "encodedText": "Encoded text",
-    "file": "File",
-    "size": "Size",
-    "format": "Format",
-    "quality": "Quality",
-    "colorOne": "Color 1",
-    "colorTwo": "Color 2",
-    "background": "Background",
-    "foreground": "Foreground",
-    "angle": "Angle",
-    "margin": "Margin",
-    "level": "Level",
-    "gradientType": "Gradient type",
-    "linear": "Linear",
-    "radial": "Radial",
-    "blur": "Blur",
-    "spread": "Spread",
-    "offsetX": "Offset X",
-    "offsetY": "Offset Y",
-    "opacity": "Opacity",
-    "inset": "Inset",
-    "cssCode": "CSS code",
-    "snippet": "Snippet",
-    "download": "Download",
-    "downloadSvg": "Download SVG",
-    "downloadPng": "Download PNG",
-    "downloadAll": "Download all",
-    "upload": "Upload",
-    "title": "Title",
-    "description": "Description",
-    "canonicalUrl": "Canonical URL",
-    "siteName": "Site name",
-    "ogImage": "OG image",
-    "clear": "Clear",
-    "generatedQr": "Generated QR",
-    "placeholderImage": "Placeholder image",
-    "faviconSet": "Favicon set",
-    "keepAspectRatio": "Keep aspect ratio",
-    "cropX": "Crop X",
-    "cropY": "Crop Y",
-    "cropWidth": "Crop width",
-    "cropHeight": "Crop height",
-    "originalSize": "Original size",
-    "outputSize": "Output size",
-    "savedSize": "Saved size",
-    "result": "Result",
-    "base64": "Base64",
-    "mimeType": "MIME type",
-    "resizedImage": "Resized image",
-    "compressedImage": "Compressed image",
-    "croppedImage": "Cropped image",
-    "convertedImage": "Converted image",
-    "decodedImage": "Decoded image",
-    "imagePreview": "Image preview",
-    "camera": "Camera",
-    "lens": "Lens",
-    "dateTaken": "Date taken",
-    "resolution": "Resolution",
-    "fileSize": "File size",
-    "iso": "ISO",
-    "exposure": "Exposure",
-    "aperture": "Aperture",
-    "focalLength": "Focal length",
-    "flash": "Flash",
-    "orientation": "Orientation",
-    "latitude": "Latitude",
-    "longitude": "Longitude",
-    "openMap": "Open map",
-    "rawMetadata": "Raw metadata",
-    "noMetadataFound": "No metadata found",
-    "gpsLocation": "GPS location",
-    "metadataSummary": "Metadata summary"
-  },
   "seo": {
     "title": "Paving Block Calculator",
-    "description": "Calculate how many paving blocks, packs or pallets, and edging meters you need for a driveway, path or patio.",
+    "description": "Estimate blocks, packs, pallets, and edging for driveways, paths, and patios from your area and block size.",
     "keywords": [
       "paving block calculator",
-      "how many paving blocks do I need",
-      "block calculator",
-      "paving estimator",
-      "driveway materials calculator",
-      "patio paving calculator"
+      "block estimate",
+      "paving materials",
+      "driveway paving",
+      "patio blocks",
+      "edging calculator"
     ]
   }
 }

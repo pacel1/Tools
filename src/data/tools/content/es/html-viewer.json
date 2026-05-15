@@ -4,108 +4,86 @@
   "slug": "visor-html",
   "h1": "Visor HTML",
   "title": "Visor HTML",
-  "shortDescription": "Previsualiza HTML sanitizado de forma segura e inspecciona el código limpio.",
-  "metaTitle": "Visor HTML | Previsualiza HTML Sanitizado con Seguridad",
-  "metaDescription": "Previsualiza HTML en una vista segura y sanitizada, e inspecciona el código limpio, enlaces, imágenes y detalles de validación.",
-  "intro": "Previsualiza HTML con seguridad en el navegador, revisa el resultado sanitizado e inspecciona enlaces, imágenes y estructura sin riesgo de ejecutar scripts activos.",
-  "overview": "El Visor HTML te ayuda a revisar contenido HTML después de la sanitización. Está pensado para previsualizar rápidamente marcado confiable o no confiable en un flujo seguro del lado del cliente. Úsalo para comprobar el código limpio, detectar elementos eliminados y verificar enlaces y medios antes de publicar o compartir.",
+  "shortDescription": "Muestra HTML sanitizado y revisa el marcado limpio en una vista segura.",
+  "metaTitle": "Visor HTML seguro",
+  "metaDescription": "Previsualiza HTML sanitizado, revisa el código limpio y comprueba enlaces, imágenes y atributos en una sola vista segura.",
+  "intro": "Pega HTML para ver el resultado sanitizado, la vista renderizada y los enlaces o imágenes extraídos sin ejecutar scripts activos.",
+  "overview": "El Visor HTML sirve para revisar contenido después de la sanitización y comparar lo que se renderiza con el código limpio. Resulta útil cuando necesitas confirmar qué se conservó, qué se eliminó y si el marcado restante sigue siendo coherente a nivel visual y estructural.\n\nLa herramienta funciona en el navegador y está pensada para inspeccionar marcado pegado directamente. Puedes verificar enlaces, etiquetas de medios, atributos en línea y mensajes de validación antes de llevar el contenido a una página, un campo de CMS, una plantilla o un archivo exportado.",
   "howItWorks": [
-    "Pega tu HTML en el campo de entrada.",
-    "La herramienta sanitiza el marcado en el cliente.",
-    "Revisa la vista previa y el código HTML limpio.",
-    "Inspecciona enlaces, imágenes, atributos y mensajes de validación.",
-    "Copia el resultado sanitizado si todo es correcto."
+    "Pega el HTML en el área de entrada.",
+    "La herramienta sanitiza el marcado de forma local.",
+    "Revisa la vista previa y el código limpio.",
+    "Inspecciona enlaces, imágenes, atributos y notas de validación.",
+    "Copia el HTML limpio si cumple lo que necesitas."
   ],
   "useCases": [
-    "Previsualizar fragmentos HTML antes de publicar.",
-    "Comprobar contenido sanitizado enviado por usuarios.",
-    "Inspeccionar enlaces, imágenes y atributos en marcado generado.",
-    "Verificar HTML limpio tras una exportación o conversión.",
-    "Revisar HTML inseguro o mal formado de forma segura."
+    {
+      "title": "Revisión de fragmentos de CMS",
+      "description": "Comprueba un bloque copiado desde un campo de contenido antes de insertarlo en una plantilla o diseño."
+    },
+    {
+      "title": "Inspección de HTML importado",
+      "description": "Verifica qué elementos sobreviven después de sanitizar marcado procedente de otro sistema o exportación."
+    },
+    {
+      "title": "Validación de salida de editor",
+      "description": "Confirma destinos de enlaces, imágenes y formato generados por un editor antes de guardar."
+    },
+    {
+      "title": "Auditoría de envíos de usuarios",
+      "description": "Analiza marcado de comentarios, perfiles o publicaciones y revisa qué partes inseguras fueron retiradas."
+    }
   ],
   "examples": [
     {
-      "title": "Antes de publicar un fragmento de blog",
-      "input": "<p>Hola <script>alert(1)</script><a href='https://example.com'>enlace</a></p>",
-      "output": "<p>Hola <a href=\"https://example.com\">enlace</a></p>",
-      "description": "Los scripts se eliminan y el contenido seguro se conserva."
+      "title": "Eliminar un script en línea",
+      "input": "<p>Lee más <script>alert('x')</script><a href='https://example.com/post'>aquí</a></p>",
+      "output": "<p>Lee más <a href=\"https://example.com/post\">aquí</a></p>",
+      "description": "Se elimina el elemento script y se mantiene el párrafo y el enlace seguros."
     },
     {
-      "title": "Revisión de contenido de usuarios",
-      "input": "<img src='photo.jpg' onerror='alert(1)'><strong>Buen post</strong>",
-      "output": "<img src=\"photo.jpg\"><strong>Buen post</strong>",
-      "description": "Los controladores de eventos peligrosos se eliminan de los elementos."
+      "title": "Quitar un atributo peligroso",
+      "input": "<img src='avatar.png' onerror='alert(1)' alt='Avatar'><span>Perfil</span>",
+      "output": "<img src=\"avatar.png\" alt=\"Avatar\"><span>Perfil</span>",
+      "description": "Se eliminan los manejadores de eventos inseguros de la etiqueta de imagen."
+    },
+    {
+      "title": "Corregir marcado mal anidado",
+      "input": "<div><strong>Título<p>Cuerpo</strong></p></div>",
+      "output": "<div><strong>Título</strong><p>Cuerpo</p></div>",
+      "description": "La vista muestra una estructura limpia para detectar mejor el anidado incorrecto."
     }
   ],
   "faq": [
     {
-      "question": "¿Es seguro usar este Visor HTML?",
-      "answer": "Sí. Está pensado para previsualizar HTML sanitizado en el cliente y no debería ejecutar scripts activos en el área de salida."
+      "question": "¿Qué cambia en mi HTML al visualizarlo?",
+      "answer": "La herramienta elimina partes inseguras o no permitidas durante la sanitización y muestra el marcado limpio resultante, así que la vista puede no coincidir con el original."
     },
     {
-      "question": "¿Elimina scripts y atributos inseguros?",
-      "answer": "Sí. El sanitizador está diseñado para eliminar vectores XSS comunes como etiquetas script y manejadores de eventos."
+      "question": "¿Por qué desaparecen algunos atributos?",
+      "answer": "Se quitan atributos que pueden ejecutar scripts, introducir comportamiento o romper la salida permitida. Esto incluye manejadores de eventos y otros valores inseguros."
     },
     {
-      "question": "¿Puedo inspeccionar enlaces e imágenes por separado?",
-      "answer": "Sí. El visor ayuda a revisar enlaces, imágenes y atributos clave extraídos para validación."
+      "question": "¿Puedo confiar en la vista previa como resultado final?",
+      "answer": "Úsala como paso de verificación, no como sustituto de la validación de tu aplicación. Distintos entornos pueden permitir elementos o atributos diferentes."
     },
     {
-      "question": "¿Mi HTML se envía a un servidor?",
-      "answer": "No. La herramienta está diseñada para funcionar solo en el cliente y no usa APIs externas."
+      "question": "¿Por qué el HTML roto se ve distinto al pegarlo?",
+      "answer": "El navegador y el sanitizador normalizan el marcado inválido. Eso puede cambiar el orden de las etiquetas, cerrarlas automáticamente o reubicar texto."
     }
   ],
-  "uiLabels": {
-    "copy": "Copiar",
-    "copied": "Copiado",
-    "input": "Entrada HTML",
-    "output": "HTML sanitizado",
-    "placeholder": "Pega HTML aquí",
-    "indent": "Sangría",
-    "removeComments": "Eliminar comentarios",
-    "preview": "Vista previa",
-    "source": "Código fuente",
-    "sanitizedHtml": "HTML sanitizado",
-    "plainText": "Texto plano",
-    "summary": "Resumen",
-    "total": "Total",
-    "links": "Enlaces",
-    "images": "Imágenes",
-    "errors": "Errores",
-    "warnings": "Advertencias",
-    "valid": "Válido",
-    "invalid": "No válido",
-    "href": "Href",
-    "text": "Texto",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Ancho",
-    "height": "Alto",
-    "empty": "Vacío",
-    "outputReady": "Salida lista",
-    "cleanedHtml": "HTML limpio",
-    "formattedHtml": "HTML formateado",
-    "minifiedHtml": "HTML minimizado",
-    "markdown": "Markdown",
-    "extractedImages": "Imágenes extraídas",
-    "extractedLinks": "Enlaces extraídos",
-    "validationSummary": "Resumen de validación",
-    "prettyHtml": "HTML legible",
-    "encodedText": "Texto codificado"
-  },
   "seo": {
-    "title": "Visor HTML | Previsualiza HTML Sanitizado con Seguridad",
-    "description": "Previsualiza HTML en una vista segura y sanitizada, e inspecciona el código limpio, enlaces, imágenes y detalles de validación.",
+    "title": "Visor HTML seguro",
+    "description": "Previsualiza HTML sanitizado, revisa el código limpio y comprueba enlaces, imágenes y atributos en una sola vista segura.",
     "keywords": [
       "visor HTML",
       "HTML sanitizado",
-      "previsualizar HTML",
-      "vista previa HTML segura",
-      "sanitizador HTML",
+      "vista previa HTML",
       "inspeccionar HTML",
-      "código limpio",
-      "vista previa XSS segura"
+      "sanitizador HTML",
+      "marcado seguro",
+      "código limpio HTML",
+      "renderizar HTML"
     ]
   }
 }

@@ -4,44 +4,81 @@
   "slug": "json-formatierer",
   "h1": "JSON-Formatierer",
   "title": "JSON-Formatierer",
-  "shortDescription": "JSON mit lesbarer Einrückung formatieren und validieren – mit sofortiger Fehleranzeige.",
-  "overview": "Der JSON-Formatierer analysiert eingefügtes JSON, gibt eine übersichtlich formatierte Version aus und liefert zusätzlich eine minifizierte Ausgabe. Er eignet sich besonders gut für Entwickler-Tool-Seiten, da er komplett ohne Backend funktionieren kann und dennoch starke SEO-Inhalte mit Beispielen und Fehlerbehebung bietet.",
+  "shortDescription": "Rohes JSON lesbar darstellen, Syntaxfehler erkennen und die Struktur beibehalten.",
+  "metaTitle": "JSON-Formatierer und Validator",
+  "metaDescription": "JSON einfügen, mit sauberer Einrückung formatieren, Syntaxfehler erkennen und bei Bedarf kompakt ausgeben.",
+  "intro": "JSON einfügen, Einrückung wählen und sofort eine lesbare Ausgabe oder eine präzise Fehlermeldung erhalten.",
+  "overview": "Dieser JSON-Formatierer analysiert eingefügtes JSON und stellt es mit konsistenter Einrückung dar, damit verschachtelte Objekte und Arrays leichter zu lesen sind. Zusätzlich erzeugt er eine minifizierte Version, die sich gut zum Vergleichen oder Weitergeben von Daten eignet.\n\nWenn die Eingabe kein gültiges JSON ist, gibt das Tool den Parse-Fehler aus, statt etwas zu erraten. Das ist hilfreich beim Prüfen von API-Antworten, beim Bereinigen kopierter Log-Ausschnitte und beim Vorbereiten von Konfigurationsdateien vor dem Einchecken.\n\nDie Datenstruktur bleibt erhalten; nur die Darstellung wird geändert. Objekte bleiben Objekte, Arrays bleiben Arrays, und Zahlen, Booleans, null und Strings werden unverändert übernommen.",
   "howItWorks": [
-    "JSON einfügen und die Einrückungstiefe wählen.",
+    "JSON in das Eingabefeld einfügen.",
+    "Die gewünschte Einrückungstiefe für die formatierte Ansicht auswählen.",
     "Der Parser prüft die Eingabe und meldet einen Fehler, wenn das JSON ungültig ist.",
-    "Bei gültigen Daten liefert das Tool formatierte Ausgabe, minifizierte Ausgabe und die Zeilenanzahl."
+    "Bei gültigen Daten zeigt das Tool die formatierte Version, die minifizierte Version und die Zeilenanzahl an."
+  ],
+  "useCases": [
+    {
+      "title": "API-Antworten prüfen",
+      "description": "Verschachtelte Responses lesbar aufbereiten, um Statusfelder, Arrays und Metadaten schneller zu erfassen."
+    },
+    {
+      "title": "Konfigurationsdateien säubern",
+      "description": "Dicht geschriebene Einstellungsblöcke vor Vergleichen oder Repository-Änderungen in klare JSON-Struktur bringen."
+    },
+    {
+      "title": "Beispieldaten weitergeben",
+      "description": "Zwischen formatierter und kompakter Darstellung wechseln, wenn JSON an Kollegen, Tests oder Doku weitergegeben wird."
+    }
   ],
   "examples": [
     {
-      "title": "API-Payload bereinigen",
-      "input": "{\"status\":\"ok\",\"items\":[1,2]}",
-      "output": "Lesbar formatiertes JSON",
-      "description": "Erleichtert das Prüfen von Logs und Payloads beim Debugging."
+      "title": "Webhook lesen",
+      "input": "{\"event\":\"invoice.paid\",\"data\":{\"id\":4821,\"amount\":1299,\"currency\":\"USD\"}}",
+      "output": "{\n  \"event\": \"invoice.paid\",\n  \"data\": {\n    \"id\": 4821,\n    \"amount\": 1299,\n    \"currency\": \"USD\"\n  }\n}",
+      "description": "Macht ein verschachteltes Event-Payload Schritt für Schritt lesbar."
     },
     {
-      "title": "Kompakte Ausgabe teilen",
-      "input": "Formatiertes JSON",
-      "output": "Minifiziertes JSON",
-      "description": "Hilfreich, wenn die kleinste mögliche Darstellung benötigt wird."
+      "title": "Einstellungen komprimieren",
+      "input": "{\n  \"theme\": \"dark\",\n  \"layout\": {\n    \"sidebar\": true,\n    \"density\": \"comfortable\"\n  }\n}",
+      "output": "{\"theme\":\"dark\",\"layout\":{\"sidebar\":true,\"density\":\"comfortable\"}}",
+      "description": "Entfernt Leerraum und behält dieselben Daten in kompakter Form."
+    },
+    {
+      "title": "Überflüssiges Komma finden",
+      "input": "{\"name\":\"Mira\", \"roles\":[\"admin\",], \"active\":true}",
+      "output": "Fehler: Unexpected token ] in JSON at position 36",
+      "description": "Zeigt die Stelle des Syntaxproblems, damit das ungültige Komma entfernt werden kann."
     }
   ],
   "faq": [
     {
-      "question": "Ändert das Tool die Reihenfolge der Schlüssel?",
-      "answer": "Nein. Der Formatierer behält die Schlüsselreihenfolge des geparsten Objekts so bei, wie JavaScript sie zurückgibt."
+      "question": "Ändert die Formatierung Werte im JSON?",
+      "answer": "Nein. Nur Leerzeichen und Zeilenumbrüche werden angepasst. Strings, Zahlen, Booleans, null, Arrays und Objekte bleiben inhaltlich gleich."
     },
     {
-      "question": "Kann es fehlerhaftes JSON automatisch reparieren?",
-      "answer": "Dieser Beispiel-Formatierer validiert und formatiert gültiges JSON. Ungültige Eingaben liefern einen Fehler, damit der Nutzer die Quelle sicher korrigieren kann."
+      "question": "Bleibt die Reihenfolge der Schlüssel erhalten?",
+      "answer": "Ja, der Formatter übernimmt die Reihenfolge, die der Parser liefert. Er sortiert keine Schlüssel und baut das Objekt nicht um."
+    },
+    {
+      "question": "Kann das Tool kaputtes JSON automatisch reparieren?",
+      "answer": "Nein. Ungültige Eingaben erzeugen einen Parse-Fehler, statt fehlende Anführungszeichen, Klammern oder Kommas zu erraten."
+    },
+    {
+      "question": "Warum führt ein Komma am Ende zu einem Fehler?",
+      "answer": "Im Standard-JSON sind abschließende Kommas nicht erlaubt. Das letzte Komma in einem Array oder Objekt muss entfernt werden."
+    },
+    {
+      "question": "Wie lese ich die minifizierte Ausgabe?",
+      "answer": "Es sind dieselben Daten ohne überflüssige Leerzeichen und Umbrüche. Gut zum Kopieren oder Weitergeben, aber deutlich schwerer zu lesen."
     }
   ],
   "seo": {
-    "title": "JSON-Formatierer",
-    "description": "Online JSON-Formatierer und Validator mit Pretty-Print- und Minify-Ausgabe.",
+    "title": "JSON-Formatierer und Validator",
+    "description": "JSON einfügen, mit sauberer Einrückung formatieren, Syntaxfehler erkennen und bei Bedarf kompakt ausgeben.",
     "keywords": [
-      "json formatter",
+      "json formatierer",
       "json validator",
-      "pretty print json"
+      "pretty print json",
+      "json minifizieren"
     ]
   }
 }

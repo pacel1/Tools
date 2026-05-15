@@ -4,177 +4,86 @@
   "slug": "kalkulator-kleju-do-plytek",
   "h1": "Kalkulator kleju do plytek",
   "title": "Kalkulator kleju do plytek",
-  "shortDescription": "Oblicz, ile kilogramow i workow kleju do plytek potrzebujesz na dana powierzchnie i grubosc warstwy.",
-  "metaTitle": "Kalkulator kleju do plytek | kg i worki",
-  "metaDescription": "Sprawdz zuzycie kleju do plytek w kg i workach. Wpisz powierzchnie, zuzycie na 1 mm, grubosc warstwy, zapas i wage worka, aby szybko poznac wynik.",
-  "intro": "Skorzystaj z kalkulatora kleju do plytek, aby szybko sprawdzic, ile materialu potrzebujesz do ulozenia plytek. Narzedzie pokazuje ilosc bez zapasu, z zapasem oraz liczbe workow do zakupu.",
-  "overview": "Kalkulator opiera sie na prostym wzorze: powierzchnia, zuzycie kleju na 1 mm, grubosc warstwy, zapas procentowy i waga worka. Wynik jest latwy do sprawdzenia i przydatny przy planowaniu zakupow.",
+  "shortDescription": "Oszacuj kilogramy i worki kleju do plytek na podstawie powierzchni, zuzycia, grubosci i zapasu.",
+  "metaTitle": "Kalkulator kleju do plytek",
+  "metaDescription": "Oszacuj zuzycie kleju do plytek w kg i workach na podstawie powierzchni, zuzycia na mm, grubosci warstwy, zapasu i wagi worka.",
+  "intro": "Wpisz powierzchnie, zuzycie na 1 mm, grubosc warstwy, zapas i wage worka, aby sprawdzic, ile kilogramow kleju oraz ile workow musisz kupic.",
+  "overview": "To narzedzie przelicza planowany zakres ukladania plytek na konkretny zakup materialu. Najpierw liczy ilosc bazowa z powierzchni, zuzycia na 1 mm i grubosci warstwy, a potem dolicza wskazany zapas oraz zamienia wynik na liczbe workow.\n\nKalkulator przydaje sie, gdy podloze nie jest idealnie rowne, gdy planujesz plytki wielkoformatowe albo gdy chcesz porownac dwa kleje o roznym zuzyciu. Dostajesz wynik w kg i w workach, bez zgadywania i bez przekladania wszystkiego na oko.",
   "howItWorks": [
-    "Wpisz powierzchnie w metrach kwadratowych.",
-    "Podaj zuzycie kleju na 1 mm w kg/m2/mm.",
-    "Okresl grubosc warstwy kleju w milimetrach.",
-    "Dodaj zapas na straty, docinki i nierownosci podloza.",
-    "Wpisz wage worka, aby obliczyc liczbe potrzebnych workow."
+    "Zmierz powierzchnie w metrach kwadratowych.",
+    "Wpisz zuzycie produktu na 1 mm w kg/m²/mm.",
+    "Ustaw planowana grubosc warstwy kleju w milimetrach.",
+    "Dodaj zapas na docinki, nierownosci i straty przy mieszaniu.",
+    "Podaj wage worka, aby przeliczyc kilogramy na liczbe workow."
   ],
   "useCases": [
-    "Obliczanie kleju do lazienki, kuchni lub przedpokoju.",
-    "Planowanie zakupow materialu przed remontem.",
-    "Sprawdzanie, ile workow kleju potrzeba do konkretnego systemu plytek.",
-    "Porownanie zapotrzebowania przy roznej grubosci warstwy."
+    {
+      "title": "Lazienka z nierownym podlozem",
+      "description": "Policz klej do scian i podlogi, gdy podloze wymaga wiekszej grubosci warstwy w kilku miejscach."
+    },
+    {
+      "title": "Plytki wielkoformatowe",
+      "description": "Sprawdz, jak rosnace zuzycie przy grubszej warstwie wplywa na liczbe potrzebnych workow."
+    },
+    {
+      "title": "Lista zakupow przed remontem",
+      "description": "Przelicz projekt na kilogramy i worki, zanim pojedziesz po material do hurtowni."
+    },
+    {
+      "title": "Porownanie dwoch klejow",
+      "description": "Zobacz, czy drozszy klej o nizszym zuzyciu nie da w praktyce podobnego lub nizszego kosztu zakupu."
+    }
   ],
   "examples": [
     {
-      "title": "Prosty wzor",
-      "input": "Powierzchnia × zuzycie na 1 mm × grubosc warstwy",
-      "output": "Ilosc kleju bez zapasu w kg.",
-      "description": "To podstawowe zapotrzebowanie na klej dla danej powierzchni."
+      "title": "Przedpokoj w bloku",
+      "input": "Powierzchnia: 12 m²; zuzycie: 1,4 kg/m²/mm; grubosc: 4 mm; zapas: 8%; waga worka: 25 kg",
+      "output": "Baza: 67,2 kg; z zapasem: 72,6 kg; worki: 3",
+      "description": "Niewielka powierzchnia nadal daje potrzebę zakupu trzech pelnych workow."
     },
     {
-      "title": "Z zapasem",
-      "input": "Kg bazowe × (1 + zapas / 100)",
-      "output": "Laczna ilosc kleju w kg.",
-      "description": "Dodaje praktyczny margines na straty i nierownosci podloza."
+      "title": "Kuchnia z grubsza warstwa",
+      "input": "Powierzchnia: 18,5 m²; zuzycie: 1,6 kg/m²/mm; grubosc: 6 mm; zapas: 10%; waga worka: 20 kg",
+      "output": "Baza: 177,6 kg; z zapasem: 195,4 kg; worki: 10",
+      "description": "Przy wiekszej grubosci warstwy liczba workow rosnie bardzo szybko."
     },
     {
-      "title": "Liczba workow",
-      "input": "Kg lacznie ÷ waga worka, zaokraglenie w gore",
-      "output": "Liczba workow do zakupu.",
-      "description": "Wynik zawsze zaokraglaj w gore, aby nie zabraklo kleju na budowie."
+      "title": "Pomieszczenie gospodarcze",
+      "input": "Powierzchnia: 7,8 m²; zuzycie: 1,2 kg/m²/mm; grubosc: 3 mm; zapas: 5%; waga worka: 25 kg",
+      "output": "Baza: 28,1 kg; z zapasem: 29,5 kg; worki: 2",
+      "description": "Mala powierzchnia tez potrafi wymusic zakup dwoch workow po doliczeniu zapasu."
     }
   ],
   "faq": [
     {
-      "question": "Jak obliczyc, ile kleju do plytek potrzeba?",
-      "answer": "Pomnoz powierzchnie przez zuzycie na 1 mm i przez grubosc warstwy. Nastepnie dodaj zapas procentowy i podziel przez wage worka, aby otrzymac liczbe workow."
+      "question": "Dlaczego grubosc warstwy tak mocno zmienia wynik?",
+      "answer": "Kalkulator mnozy zuzycie na 1 mm przez planowana grubosc, wiec kazdy dodatkowy milimetr zwieksza ilosc kleju na calej powierzchni."
     },
     {
-      "question": "Dlaczego warto dodac zapas?",
-      "answer": "Zapas uwzglednia straty przy mieszaniu, nierownosci scian lub podlog oraz niewielkie roznice w aplikacji. Daje bezpieczniejszy wynik zakupowy."
+      "question": "Co jesli producent podaje zuzycie w kg/m² dla calej warstwy?",
+      "answer": "Wtedy trzeba wpisac wartosc zgodna z danym produktem i nie dublowac przeliczenia. Jesli zuzycie jest podane na 1 mm, uzyj pola grubosci zgodnie z planowana warstwa."
     },
     {
-      "question": "Czy worki trzeba zaokraglac w gore?",
-      "answer": "Tak. Worki nalezy zawsze zaokraglic do pelnej liczby, bo nie kupuje sie czesci worka."
+      "question": "Czy musze wpisac dokladna wage z worka?",
+      "answer": "Tak, najlepiej wpisac wage z opakowania. Inna waga worka zmienia wynik liczby sztuk i moze spowodowac brak materialu."
+    },
+    {
+      "question": "Dlaczego wynik w workach jest zaokraglany w gore?",
+      "answer": "Bo klej kupuje sie w calych workach. Zaokraglenie w dol moze zostawic Cie bez materialu na ostatni fragment powierzchni."
+    },
+    {
+      "question": "Jakie bledy najczesciej zaniżaja wynik?",
+      "answer": "Najczestsze to wpisanie zlej jednostki powierzchni, brak zapasu, pomylona grubosc warstwy albo uzycie zuzycia z innego rodzaju kleju."
     }
   ],
-  "uiLabels": {
-    "copy": "Kopiuj",
-    "copied": "Skopiowano",
-    "input": "Wejscie",
-    "output": "Wyjscie",
-    "placeholder": "Wpisz wartosc",
-    "indent": "Wciecie",
-    "removeComments": "Usun komentarze",
-    "preview": "Podglad",
-    "source": "Zrodlo",
-    "sanitizedHtml": "Oczyszczony HTML",
-    "plainText": "Zwykly tekst",
-    "summary": "Podsumowanie",
-    "total": "Razem",
-    "links": "Linki",
-    "images": "Obrazy",
-    "errors": "Bledy",
-    "warnings": "Ostrzezenia",
-    "valid": "Poprawne",
-    "invalid": "Niepoprawne",
-    "href": "Adres href",
-    "text": "Tekst",
-    "rel": "Rel",
-    "target": "Cel",
-    "alt": "Alt",
-    "width": "Szerokosc",
-    "height": "Wysokosc",
-    "empty": "Puste",
-    "outputReady": "Wynik gotowy",
-    "cleanedHtml": "Oczyszczony HTML",
-    "formattedHtml": "Sformatowany HTML",
-    "minifiedHtml": "Zminifikowany HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Wyodrebnione obrazy",
-    "extractedLinks": "Wyodrebnione linki",
-    "validationSummary": "Podsumowanie walidacji",
-    "prettyHtml": "Czytelny HTML",
-    "encodedText": "Tekst zakodowany",
-    "file": "Plik",
-    "size": "Rozmiar",
-    "format": "Format",
-    "quality": "Jakosc",
-    "colorOne": "Kolor 1",
-    "colorTwo": "Kolor 2",
-    "background": "Tlo",
-    "foreground": "Pierwszy plan",
-    "angle": "Kat",
-    "margin": "Margines",
-    "level": "Poziom",
-    "gradientType": "Typ gradientu",
-    "linear": "Liniowy",
-    "radial": "Radialny",
-    "blur": "Rozmycie",
-    "spread": "Rozszerzenie",
-    "offsetX": "Przesuniecie X",
-    "offsetY": "Przesuniecie Y",
-    "opacity": "Przezroczystosc",
-    "inset": "Wewnetrzny",
-    "cssCode": "Kod CSS",
-    "snippet": "Fragment",
-    "download": "Pobierz",
-    "downloadSvg": "Pobierz SVG",
-    "downloadPng": "Pobierz PNG",
-    "downloadAll": "Pobierz wszystko",
-    "upload": "Wgraj",
-    "title": "Tytul",
-    "description": "Opis",
-    "canonicalUrl": "Adres kanoniczny",
-    "siteName": "Nazwa strony",
-    "ogImage": "Obraz OG",
-    "clear": "Wyczysc",
-    "generatedQr": "Wygenerowany QR",
-    "placeholderImage": "Obraz zastępczy",
-    "faviconSet": "Zestaw favicon",
-    "keepAspectRatio": "Zachowaj proporcje",
-    "cropX": "Przyciecie X",
-    "cropY": "Przyciecie Y",
-    "cropWidth": "Szerokosc przyciecia",
-    "cropHeight": "Wysokosc przyciecia",
-    "originalSize": "Rozmiar oryginalny",
-    "outputSize": "Rozmiar wyjsciowy",
-    "savedSize": "Zapisany rozmiar",
-    "result": "Wynik",
-    "base64": "Base64",
-    "mimeType": "Typ MIME",
-    "resizedImage": "Obraz po zmianie rozmiaru",
-    "compressedImage": "Obraz skompresowany",
-    "croppedImage": "Obraz po przycieciu",
-    "convertedImage": "Obraz przekonwertowany",
-    "decodedImage": "Obraz zdekodowany",
-    "imagePreview": "Podglad obrazu",
-    "camera": "Kamera",
-    "lens": "Obiektyw",
-    "dateTaken": "Data wykonania",
-    "resolution": "Rozdzielczosc",
-    "fileSize": "Rozmiar pliku",
-    "iso": "ISO",
-    "exposure": "Ekspozycja",
-    "aperture": "Przyslona",
-    "focalLength": "Ogniskowa",
-    "flash": "Lampa blyskowa",
-    "orientation": "Orientacja",
-    "latitude": "Szerokosc geograficzna",
-    "longitude": "Dlugosc geograficzna",
-    "openMap": "Otworz mape",
-    "rawMetadata": "Surowe metadane",
-    "noMetadataFound": "Nie znaleziono metadanych",
-    "gpsLocation": "Lokalizacja GPS",
-    "metadataSummary": "Podsumowanie metadanych"
-  },
   "seo": {
     "title": "Kalkulator kleju do plytek",
-    "description": "Oblicz, ile kg i workow kleju do plytek potrzebujesz. Sprawdz wynik bez zapasu, z zapasem i liczbe workow na podstawie powierzchni, zuzycia, grubosci warstwy i wagi worka.",
+    "description": "Oszacuj zuzycie kleju do plytek w kg i workach na podstawie powierzchni, zuzycia na mm, grubosci warstwy, zapasu i wagi worka.",
     "keywords": [
       "kalkulator kleju do plytek",
-      "ile workow kleju",
       "ile kleju do plytek",
+      "ile workow kleju",
       "zuzycie kleju do plytek",
-      "kalkulator materialow do plytek",
       "kg kleju do plytek"
     ]
   }

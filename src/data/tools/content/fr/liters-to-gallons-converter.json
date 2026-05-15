@@ -4,43 +4,80 @@
   "slug": "convertisseur-litres-en-gallons",
   "h1": "Convertisseur de litres en gallons",
   "title": "Convertisseur de litres en gallons",
-  "shortDescription": "Convertissez les litres en gallons instantanément avec des résultats rapides, une saisie simple et des exemples pratiques.",
-  "overview": "Convertissez les litres en gallons instantanément. Cette page fournit une réponse rapide grâce à un outil pratique et un parcours de résultat simple. Elle s’adresse aux utilisateurs qui recherchent une réponse gratuite en ligne, des résultats rapides dans le navigateur et du contenu pratique à longue traîne.",
+  "shortDescription": "Convertissez les litres en gallons avec un facteur précis, un résultat décimal clair et des exemples concrets.",
+  "metaTitle": "Convertisseur litres en gallons",
+  "metaDescription": "Convertissez les litres en gallons pour recettes, carburant, cuves et volume de liquides avec des résultats décimaux clairs.",
+  "intro": "Saisissez une valeur en litres et obtenez aussitôt l’équivalent en gallons.",
+  "overview": "Ce convertisseur transforme les litres en gallons avec un facteur fixe, ce qui permet de comparer les volumes sans calculs manuels. Il est utile pour les recettes, le carburant, les contenants, les cuves et toute mesure exprimée en litres qui doit être lue en gallons.\n\nLe résultat s’affiche en décimal pour conserver la précision lorsqu’il ne s’agit pas d’un nombre rond. Que vous vérifiiez une capacité, adaptiez un mélange ou aligniez des spécifications entre systèmes d’unités, la conversion se fait en une seule étape.",
   "howItWorks": [
-    "Saisissez la valeur ou le texte requis dans le formulaire.",
-    "La conversion, le calcul ou la transformation s’exécute instantanément dans le navigateur.",
-    "Consultez le résultat et poursuivez avec des outils associés si vous avez besoin d’une autre étape."
+    "Saisissez le volume en litres.",
+    "L’outil applique le facteur de conversion litres vers gallons.",
+    "Lisez le résultat en gallons et, si besoin, convertissez une autre valeur pour comparer."
+  ],
+  "useCases": [
+    {
+      "title": "Adapter une recette",
+      "description": "Convertir des litres en gallons pour ajuster une sauce, un sirop ou une boisson."
+    },
+    {
+      "title": "Comparer un carburant",
+      "description": "Vérifier combien de gallons correspondent à un volume de carburant indiqué en litres."
+    },
+    {
+      "title": "Contrôler une cuve",
+      "description": "Passer la capacité d’un réservoir ou d’un bidon de litres en gallons pour comparer des fiches techniques."
+    },
+    {
+      "title": "Préparer une production",
+      "description": "Convertir des lots liquides pour le mélange, le remplissage ou l’expédition dans des documents en gallons."
+    }
   ],
   "examples": [
     {
-      "title": "Exemple 1",
-      "input": "10 litres",
-      "output": "2,6417 gallons",
-      "description": "Un exemple réaliste de conversion de litres en gallons pour une recherche courante."
+      "title": "Petite préparation",
+      "input": "3,5 litres",
+      "output": "0,9246 gallons",
+      "description": "Utile pour une petite quantité en cuisine ou pour une boisson."
     },
     {
-      "title": "Exemple 2",
-      "input": "10 litres",
-      "output": "2,6417 gallons",
-      "description": "Un autre cas pratique pour attirer du trafic organique longue traîne."
+      "title": "Carburant",
+      "input": "42 litres",
+      "output": "11,0972 gallons",
+      "description": "Pratique pour comparer des volumes de carburant entre systèmes d’unités."
+    },
+    {
+      "title": "Cuve d’eau",
+      "input": "120 litres",
+      "output": "31,7008 gallons",
+      "description": "Montre la capacité d’une cuve ou d’un fût en gallons."
     }
   ],
   "faq": [
     {
-      "question": "Quelle est la précision de cet outil ?",
-      "answer": "Le résultat est calculé directement à partir de la formule ou de la logique côté navigateur utilisée par cet outil."
+      "question": "Quel gallon utilise ce convertisseur ?",
+      "answer": "Il utilise les gallons américains, sauf indication contraire. Le gallon impérial a une autre valeur, donc le résultat changerait selon le système choisi."
     },
     {
-      "question": "Puis-je utiliser cet outil sur mobile ?",
-      "answer": "Oui. La page fonctionne sur ordinateur et sur mobile avec une mise en page simple pour la saisie et le résultat."
+      "question": "Puis-je saisir des décimales ?",
+      "answer": "Oui. Une valeur comme 2,75 litres est calculée telle quelle, sans arrondi préalable."
+    },
+    {
+      "question": "Pourquoi le résultat comporte-t-il plusieurs décimales ?",
+      "answer": "Parce que beaucoup de volumes ne donnent pas un nombre entier en gallons. L’affichage décimal conserve l’équivalence exacte."
+    },
+    {
+      "question": "Quelle erreur est la plus fréquente ?",
+      "answer": "Confondre gallons américains et gallons impériaux, ou saisir une valeur déjà exprimée en gallons au lieu de litres."
     }
   ],
   "seo": {
-    "title": "Convertisseur de litres en gallons",
-    "description": "Convertissez les litres en gallons instantanément. Convertisseur en ligne gratuit de litres en gallons avec résultats immédiats.",
+    "title": "Convertisseur litres en gallons",
+    "description": "Convertissez les litres en gallons pour recettes, carburant, cuves et volume de liquides avec des résultats décimaux clairs.",
     "keywords": [
-      "convertisseur de litres en gallons",
-      "outil de conversion"
+      "litres en gallons",
+      "convertisseur litres en gallons",
+      "gallons américains",
+      "conversion de volume"
     ]
   }
 }

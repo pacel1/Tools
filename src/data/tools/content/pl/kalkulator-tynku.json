@@ -4,183 +4,89 @@
   "slug": "kalkulator-tynku",
   "h1": "Kalkulator tynku",
   "title": "Kalkulator tynku",
-  "shortDescription": "Sprawdz ile tynku potrzeba na elewacje lub sciany wewnetrzne przy danej grubosci warstwy.",
-  "metaTitle": "Kalkulator tynku | Ile workow tynku potrzeba",
-  "metaDescription": "Oblicz zuzycie tynku w kg i liczbe workow dla elewacji lub scian wewnetrznych. Podaj powierzchnie, zuzycie, grubosc warstwy, zapas i wage worka.",
-  "intro": "Kalkulator tynku pomoze Ci szybko policzyc ile tynku potrzeba na elewacje albo sciany wewnetrzne. Wpisz powierzchnie, zuzycie na 1 mm, grubosc warstwy, zapas i wage worka, a narzedzie poda wynik w kilogramach i liczbie workow.",
-  "overview": "To praktyczne narzedzie do planowania zakupu tynku przy pracach wykonczeniowych i remontowych. Liczy zuzycie bazowe, dolicza zapas i przelicza wynik na worki. Sprawdzi sie przy tynkach elewacyjnych i wewnetrznych, gdy chcesz szybko odpowiedziec na pytanie: ile workow tynku potrzeba?",
+  "shortDescription": "Oblicz tynk na elewacje i sciany wewnetrzne z powierzchni, grubosci, zuzycia, zapasu i wagi worka.",
+  "metaTitle": "Kalkulator tynku | Worki i kg",
+  "metaDescription": "Oblicz zapotrzebowanie na tynk dla elewacji i scian wewnetrznych z powierzchni, grubosci, zapasu, zuzycia i wagi worka.",
+  "intro": "Wpisz powierzchnie, zuzycie na 1 mm, grubosc warstwy, zapas i wage worka, aby dostac wynik w kilogramach i liczbie workow.",
+  "overview": "To narzedzie sluzy do planowania zamowienia tynku przy elewacjach, scianach dzialowych, sufitach i remontach, gdy trzeba znac ilosc materialu przed zakupem. Mnozy powierzchnie przez deklarowane zuzycie na milimetr i przez planowana grubosc, a potem dodaje zapas oraz przelicza wynik na worki.\n\nPrzydaje sie, gdy masz dane producenta w kg/m2/mm i chcesz zamowic realna ilosc, a nie tylko wartosc teoretyczna. Gdy podloze jest chlonne, nierowne albo prace sa rozbite na kilka pomieszczen, pole zapasu pomaga uniknac zbyt malego zamowienia.",
   "howItWorks": [
     "Wpisz powierzchnie w metrach kwadratowych.",
-    "Podaj zuzycie na 1 mm w kg/m2/mm.",
-    "Okresl grubosc warstwy w milimetrach.",
-    "Dodaj procent zapasu na straty i nierownosci.",
+    "Podaj zuzycie w kg/m2/mm z karty produktu.",
+    "Okresl planowana grubosc warstwy w milimetrach.",
+    "Dodaj procent zapasu na straty, nierownosci i resztki.",
     "Wprowadz wage jednego worka w kilogramach.",
-    "Odczytaj tynk bez zapasu, tynk z zapasem i liczbe potrzebnych workow."
+    "Sprawdz tynk bazowy, tynk z zapasem i liczbe workow."
   ],
   "useCases": [
-    "Obliczanie ilosci tynku na elewacje przed zakupem materialu.",
-    "Planowanie tynku na sciany wewnetrzne i sufity.",
-    "Sprawdzanie ile workow tynku potrzeba na remont.",
-    "Doliczanie zapasu na straty przy nakladaniu i nierownym podlozu.",
-    "Porownanie zapotrzebowania dla roznej grubosci warstwy."
+    {
+      "title": "Zamowienie tynku na sciane elewacyjna",
+      "description": "Policz ilosc materialu przed zakupem, gdy producent podaje zuzycie dla konkretnej grubosci i chcesz uniknac brakow na budowie."
+    },
+    {
+      "title": "Remont salonu i korytarza",
+      "description": "Oblicz worki potrzebne na kilka pomieszczen naraz, uwzgledniajac zapas na narozniki, polaczenia i docinki."
+    },
+    {
+      "title": "Nierowne podloze po naprawach",
+      "description": "Dodaj rezerwe przy murach po ubytkach i poprawkach, bo chlonne i chropowate miejsca zuzywaja wiecej materialu."
+    },
+    {
+      "title": "Porownanie dwoch rodzajow tynku",
+      "description": "Zestaw dwa produkty o roznym zuzyciu i sprawdz, ktory da mniejsza liczbe workow przy tej samej powierzchni i grubosci."
+    }
   ],
   "examples": [
     {
-      "title": "Przykladowe obliczenie",
-      "input": "Powierzchnia: 100 m2, zuzycie: 1,6 kg/m2/mm, grubosc: 10 mm, zapas: 10%, waga worka: 25 kg",
-      "output": "Tynk bez zapasu: 1600 kg, tynk z zapasem: 1760 kg, liczba workow: 71,04 → 72 worki (zaokraglone w gore)",
-      "description": "Praktyczny przyklad planowania zakupu tynku na elewacje lub do wnetrz."
+      "title": "Typowa elewacja domu",
+      "input": "Powierzchnia: 120 m2, zuzycie: 1,7 kg/m2/mm, grubosc: 12 mm, zapas: 8%, waga worka: 25 kg",
+      "output": "Tynk bazowy: 2448 kg, tynk lacznie: 2643,84 kg, worki potrzebne: 105,75 → 106 workow",
+      "description": "Realistyczny wynik dla elewacji z umiarkowanym zapasem materialu."
     },
     {
-      "title": "Szybka kontrola zakupu",
-      "input": "Powierzchnia: 45 m2, zuzycie: 1,4 kg/m2/mm, grubosc: 8 mm, zapas: 5%, waga worka: 30 kg",
-      "output": "Tynk bez zapasu: 504 kg, tynk z zapasem: 529,2 kg, liczba workow: 17,64 → 18 workow (zaokraglone w gore)",
-      "description": "Pomaga zdecydowac, ile workow kupic przed rozpoczeciem prac."
+      "title": "Mieszkanie po remoncie",
+      "input": "Powierzchnia: 38 m2, zuzycie: 1,3 kg/m2/mm, grubosc: 9 mm, zapas: 6%, waga worka: 30 kg",
+      "output": "Tynk bazowy: 444,6 kg, tynk lacznie: 471,28 kg, worki potrzebne: 15,71 → 16 workow",
+      "description": "Pomaga zaplanowac zakup przy niewielkim remoncie w srodku budynku."
+    },
+    {
+      "title": "Grubsza warstwa naprawcza",
+      "input": "Powierzchnia: 22 m2, zuzycie: 2,0 kg/m2/mm, grubosc: 15 mm, zapas: 12%, waga worka: 20 kg",
+      "output": "Tynk bazowy: 660 kg, tynk lacznie: 739,2 kg, worki potrzebne: 36,96 → 37 workow",
+      "description": "Pokazuje, jak mocno rosnie zuzycie przy wiekszej grubosci na malej powierzchni."
     }
   ],
   "faq": [
     {
-      "question": "Jak obliczyc ile tynku potrzeba?",
-      "answer": "Pomnoz powierzchnie przez zuzycie na 1 mm i przez grubosc warstwy. Potem dolicz zapas i podziel wynik przez wage worka, aby poznac liczbe workow."
+      "question": "Jak jest liczona liczba workow?",
+      "answer": "Narzedzie mnozy powierzchnie przez zuzycie na 1 mm i przez grubosc warstwy, potem dodaje zapas. Wynik dzieli przez wage worka i pokazuje liczbe workow."
     },
     {
-      "question": "Czy kalkulator dziala dla tynku elewacyjnego i wewnetrznego?",
-      "answer": "Tak, nadaje sie do planowania tynku elewacyjnego i wewnetrznego, o ile znasz zuzycie materialu na 1 mm."
+      "question": "Czy wynik z przecinkiem trzeba zaokraglac?",
+      "answer": "Tak, bo w praktyce kupuje sie pelne worki. Wynik dziesietny pokazuje tylko dokladne obliczenie przed zaokragleniem w gore."
     },
     {
-      "question": "Po co dodawac zapas?",
-      "answer": "Zapas uwzglednia straty przy nakladaniu, nierownosci podloza, resztki w pojemniku i drobne roznice w obliczeniach."
+      "question": "Co zrobic, gdy producent podaje zuzycie na centymetr?",
+      "answer": "Najpierw przelicz wartosc na milimetr. Zuzycie podane na centymetr trzeba podzielic przez 10, inaczej wynik bedzie zawyzony dziesiec razy."
     },
     {
-      "question": "Czy liczba workow jest zaokraglana?",
-      "answer": "Tak, w praktyce nalezy zaokraglic w gore do pelnych workow, zeby nie zabraklo materialu na budowie."
+      "question": "Czy zapas oznacza tylko straty na budowie?",
+      "answer": "Nie. Uwzglednia tez resztki w wiadrze, nierownosci podloza, chlonne miejsca i drobne roznice przy nakladaniu."
     },
     {
-      "question": "Co jesli zuzycie mam podane na centymetr?",
-      "answer": "Przelicz je na milimetr przed uzyciem kalkulatora albo pomnoz wartosc na cm przez 10, aby otrzymac kg/m2/mm."
+      "question": "Czy moge liczyc rozne grubosci w jednym pomieszczeniu?",
+      "answer": "Tak, ale najlepiej policzyc kazdy fragment osobno i zsumowac wyniki. Srednia grubosc moze dac mylacy rezultat."
     }
   ],
-  "uiLabels": {
-    "copy": "Kopiuj",
-    "copied": "Skopiowano",
-    "input": "Dane wejsciowe",
-    "output": "Wynik",
-    "placeholder": "Wpisz wartosc",
-    "indent": "Wciecie",
-    "removeComments": "Usun komentarze",
-    "preview": "Podglad",
-    "source": "Zrodlo",
-    "sanitizedHtml": "Oczyszczony HTML",
-    "plainText": "Tekst zwykly",
-    "summary": "Podsumowanie",
-    "total": "Suma",
-    "links": "Linki",
-    "images": "Obrazy",
-    "errors": "Bledy",
-    "warnings": "Ostrzezenia",
-    "valid": "Poprawne",
-    "invalid": "Niepoprawne",
-    "href": "Href",
-    "text": "Tekst",
-    "rel": "Rel",
-    "target": "Cel",
-    "alt": "Alt",
-    "width": "Szerokosc",
-    "height": "Wysokosc",
-    "empty": "Puste",
-    "outputReady": "Wynik gotowy",
-    "cleanedHtml": "Oczyszczony HTML",
-    "formattedHtml": "Sformatowany HTML",
-    "minifiedHtml": "Zminifikowany HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Wyodrebnione obrazy",
-    "extractedLinks": "Wyodrebnione linki",
-    "validationSummary": "Podsumowanie walidacji",
-    "prettyHtml": "Czytelny HTML",
-    "encodedText": "Zakodowany tekst",
-    "file": "Plik",
-    "size": "Rozmiar",
-    "format": "Format",
-    "quality": "Jakosc",
-    "colorOne": "Kolor 1",
-    "colorTwo": "Kolor 2",
-    "background": "Tlo",
-    "foreground": "Pierwszy plan",
-    "angle": "Kat",
-    "margin": "Margines",
-    "level": "Poziom",
-    "gradientType": "Typ gradientu",
-    "linear": "Liniowy",
-    "radial": "Radialny",
-    "blur": "Rozmycie",
-    "spread": "Rozprzestrzenienie",
-    "offsetX": "Przesuniecie X",
-    "offsetY": "Przesuniecie Y",
-    "opacity": "Przezroczystosc",
-    "inset": "Wewnetrzny",
-    "cssCode": "Kod CSS",
-    "snippet": "Fragment kodu",
-    "download": "Pobierz",
-    "downloadSvg": "Pobierz SVG",
-    "downloadPng": "Pobierz PNG",
-    "downloadAll": "Pobierz wszystko",
-    "upload": "Wczytaj",
-    "title": "Tytul",
-    "description": "Opis",
-    "canonicalUrl": "Adres kanoniczny",
-    "siteName": "Nazwa serwisu",
-    "ogImage": "Obraz OG",
-    "clear": "Wyczysc",
-    "generatedQr": "Wygenerowany QR",
-    "placeholderImage": "Obraz zastępczy",
-    "faviconSet": "Zestaw favicon",
-    "keepAspectRatio": "Zachowaj proporcje",
-    "cropX": "Przyciecie X",
-    "cropY": "Przyciecie Y",
-    "cropWidth": "Szerokosc przyciecia",
-    "cropHeight": "Wysokosc przyciecia",
-    "originalSize": "Oryginalny rozmiar",
-    "outputSize": "Rozmiar wyjsciowy",
-    "savedSize": "Zaoszczedzony rozmiar",
-    "result": "Wynik",
-    "base64": "Base64",
-    "mimeType": "Typ MIME",
-    "resizedImage": "Przeskalowany obraz",
-    "compressedImage": "Skompresowany obraz",
-    "croppedImage": "Przycięty obraz",
-    "convertedImage": "Przekonwertowany obraz",
-    "decodedImage": "Zdekodowany obraz",
-    "imagePreview": "Podglad obrazu",
-    "camera": "Aparat",
-    "lens": "Obiektyw",
-    "dateTaken": "Data wykonania",
-    "resolution": "Rozdzielczosc",
-    "fileSize": "Rozmiar pliku",
-    "iso": "ISO",
-    "exposure": "Ekspozycja",
-    "aperture": "Przyslona",
-    "focalLength": "Ogniskowa",
-    "flash": "Lampa blyskowa",
-    "orientation": "Orientacja",
-    "latitude": "Szerokosc geograficzna",
-    "longitude": "Dlugosc geograficzna",
-    "openMap": "Otworz mape",
-    "rawMetadata": "Surowe metadane",
-    "noMetadataFound": "Nie znaleziono metadanych",
-    "gpsLocation": "Lokalizacja GPS",
-    "metadataSummary": "Podsumowanie metadanych"
-  },
   "seo": {
-    "title": "Kalkulator tynku - ile workow tynku potrzeba",
-    "description": "Darmowy kalkulator tynku do elewacji i scian wewnetrznych. Oblicz zuzycie w kg, tynk z zapasem i liczbe workow na podstawie powierzchni i grubosci warstwy.",
+    "title": "Kalkulator tynku | Worki i kg",
+    "description": "Oblicz zapotrzebowanie na tynk dla elewacji i scian wewnetrznych z powierzchni, grubosci, zapasu, zuzycia i wagi worka.",
     "keywords": [
       "kalkulator tynku",
-      "ile workow tynku potrzeba",
+      "ile workow tynku",
       "ile tynku potrzeba",
-      "tynk elewacyjny kalkulator",
-      "tynk wewnetrzny kalkulator",
-      "zuzycie tynku",
-      "kg na m2 mm"
+      "tynk elewacyjny",
+      "tynk wewnetrzny",
+      "zuzycie tynku"
     ]
   }
 }

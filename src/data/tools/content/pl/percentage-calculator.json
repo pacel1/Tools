@@ -4,44 +4,85 @@
   "slug": "kalkulator-procentowy",
   "h1": "Kalkulator Procentowy",
   "title": "Kalkulator Procentowy",
-  "shortDescription": "Oblicz, jaki procent jednej liczby stanowi druga liczba — szybko, prosto i z praktycznymi przykładami.",
-  "overview": "Oblicz, jaki procent jednej liczby stanowi druga. Ta strona zapewnia szybki wynik dzięki prostemu narzędziu online i przejrzystemu przebiegowi obliczeń. Jest przeznaczona dla osób, które szukają darmowej odpowiedzi w internecie, natychmiastowych wyników w przeglądarce oraz praktycznych treści z długiego ogona wyszukiwań.",
+  "shortDescription": "Oblicz procent, udział procentowy i zmianę procentową na podstawie znanych liczb.",
+  "metaTitle": "Kalkulator Procentowy",
+  "metaDescription": "Oblicz procent, udział procentowy i zmianę procentową dla cen, wyników, budżetów i sum z czytelnym rezultatem.",
+  "intro": "Wpisz dwie liczby, aby policzyć procent z wartości, udział w całości albo zmianę procentową między dwiema kwotami.",
+  "overview": "To narzędzie rozwiązuje trzy najczęstsze zadania procentowe: pokazanie części względem całości, obliczenie wartości z danego procentu oraz porównanie dwóch liczb jako zmiany. Wybierasz odpowiedni tryb, wpisujesz dane i od razu otrzymujesz wynik gotowy do użycia.\n\nPrzydaje się przy cenach, ocenach, korektach faktur, zmianach stanów magazynowych i porównaniach wyników, gdy ważniejsza jest skala różnicy niż sama liczba. Obsługuje ułamki dziesiętne i duże wartości, więc nadaje się zarówno do drobnych poprawek, jak i większych sum.\n\nJeśli wartość początkowa wynosi zero, zmiana procentowa nie ma zwykłej podstawy porównania. Narzędzie wyraźnie pokazuje to ograniczenie, żeby nie odczytać wyniku w sposób błędny.",
   "howItWorks": [
-    "Wpisz wymaganą wartość lub tekst w formularzu.",
-    "Obliczenie lub przekształcenie wykonuje się natychmiast w przeglądarce.",
-    "Sprawdź wynik i skorzystaj z powiązanych narzędzi, jeśli potrzebujesz kolejnego kroku."
+    "Wybierz typ obliczenia: część całości, procent z liczby albo zmiana procentowa.",
+    "Wpisz znane wartości dokładnie tak, jak je masz, także z miejscami po przecinku.",
+    "Odczytaj wynik i przy zmianie porównaj go z wartością wyjściową."
+  ],
+  "useCases": [
+    {
+      "title": "Rabat na paragonie",
+      "description": "Sprawdź, jaki procent ceny stanowi obniżka 18,50 zł przy zakupie za 74,00 zł."
+    },
+    {
+      "title": "Pokazanie wyniku z egzaminu",
+      "description": "Przelicz 42 punkty z 60 na procent do raportu z oceny."
+    },
+    {
+      "title": "Wzrost rachunku za media",
+      "description": "Porównaj wzrost z 96 do 114 i zapisz go jako procent do planu wydatków."
+    },
+    {
+      "title": "Raport z ruchu na stronie",
+      "description": "Zamień wzrost z 1250 do 1480 wejść na zmianę procentową w zestawieniu tygodniowym."
+    }
   ],
   "examples": [
     {
-      "title": "Przykład 1",
-      "input": "25 z 200",
-      "output": "12,5%",
-      "description": "Realistyczny przykład kalkulatora procentowego dla codziennego zapytania."
+      "title": "Część całości",
+      "input": "37 z 148",
+      "output": "25%",
+      "description": "Pokazuje, jak duża jest część względem całej wartości."
     },
     {
-      "title": "Przykład 2",
-      "input": "25 z 200",
-      "output": "12,5%",
-      "description": "Kolejny praktyczny przypadek użycia dla ruchu organicznego z długiego ogona."
+      "title": "Procent z liczby",
+      "input": "15% z 240",
+      "output": "36",
+      "description": "Oblicza liczbę odpowiadającą wskazanemu procentowi."
+    },
+    {
+      "title": "Zmiana względem starej wartości",
+      "input": "80 do 92",
+      "output": "15% wzrostu",
+      "description": "Porównuje nową kwotę z początkową i pokazuje zmianę."
     }
   ],
   "faq": [
     {
-      "question": "Jak dokładne jest to narzędzie?",
-      "answer": "Wynik jest obliczany bezpośrednio na podstawie wzoru lub logiki wykonywanej po stronie przeglądarki."
+      "question": "Jakie obliczenia mogę tu wykonać?",
+      "answer": "Możesz policzyć procent z liczby, udział jednej liczby w drugiej albo zmianę procentową między dwiema wartościami."
     },
     {
-      "question": "Czy mogę korzystać z tego narzędzia na telefonie?",
-      "answer": "Tak. Strona działa na komputerach i urządzeniach mobilnych, oferując prosty układ pola wejściowego i wyniku."
+      "question": "Dlaczego wynik bywa ujemny?",
+      "answer": "Ujemny wynik oznacza spadek względem wartości początkowej. To poprawny zapis w trybie zmiany procentowej."
+    },
+    {
+      "question": "Co się stanie, jeśli wartość początkowa wynosi zero?",
+      "answer": "Zmiana procentowa od zera nie ma poprawnej bazy porównania, więc nie da się jej zwykle zdefiniować."
+    },
+    {
+      "question": "Czy mogę wpisywać liczby dziesiętne i duże wartości?",
+      "answer": "Tak. Kalkulator obsługuje liczby dziesiętne i większe kwoty, stosując te same zasady obliczeń."
+    },
+    {
+      "question": "Dlaczego podobne dane dają różne odpowiedzi?",
+      "answer": "Bo udział w całości, procent z liczby i zmiana procentowa korzystają z różnych wzorów. Trzeba wybrać tryb zgodny z pytaniem."
     }
   ],
   "seo": {
     "title": "Kalkulator Procentowy",
-    "description": "Oblicz, jaki procent jednej liczby stanowi druga. Darmowy kalkulator procentowy online z natychmiastowym wynikiem.",
+    "description": "Oblicz procent, udział procentowy i zmianę procentową dla cen, wyników, budżetów i sum z czytelnym rezultatem.",
     "keywords": [
       "kalkulator procentowy",
-      "procenty kalkulator",
-      "narzedzie kalkulatory"
+      "procent z liczby",
+      "zmiana procentowa",
+      "oblicz procent",
+      "udział procentowy"
     ]
   }
 }

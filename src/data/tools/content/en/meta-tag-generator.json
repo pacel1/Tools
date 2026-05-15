@@ -4,157 +4,85 @@
   "slug": "meta-tag-generator",
   "h1": "Meta Tag Generator",
   "title": "Meta Tag Generator",
-  "shortDescription": "Generate HTML meta tags for title, description, canonical and Open Graph fields.",
-  "metaTitle": "Meta Tag Generator | Create SEO Meta Tags Instantly",
-  "metaDescription": "Create title, description, canonical and Open Graph meta tags in seconds with a simple online meta tag generator.",
-  "intro": "Generate clean SEO meta tags for webpages, blog posts and landing pages. Build title, description, canonical and Open Graph tags quickly and copy a ready-to-use HTML snippet.",
-  "overview": "This meta tag generator helps you create search-friendly HTML metadata without manual coding. Enter your page details, preview the output, and copy optimized tags for SEO, social sharing and browser snippets.",
+  "shortDescription": "Build HTML meta tags for page title, description, canonical URL, and Open Graph fields.",
+  "metaTitle": "Meta Tag Generator | Build Tags",
+  "metaDescription": "Create ready-to-paste HTML meta tags for title, description, canonical URL, and Open Graph data in one place.",
+  "intro": "Create the HTML meta tags your page needs: title, description, canonical URL, and Open Graph fields.",
+  "overview": "Use this tool to assemble the head metadata for a page without writing each tag by hand. It produces a structured snippet you can place in your document head, which is useful when you need consistent titles, a clear description, a canonical URL, and social preview data on the same page.\n\nThe generator is best when you are preparing a new page, updating an existing article, or standardizing metadata across a site. Enter the page details once, review the generated tags, and copy only the parts you want to use. This helps keep page metadata aligned with the content and avoids missing fields or broken attribute values.",
   "howItWorks": [
-    "Enter your page title and other metadata.",
-    "Generate a complete HTML meta tag snippet.",
-    "Review the output for SEO and social previews.",
-    "Copy the code and paste it into your page head."
+    "Enter the page title, description, canonical URL, site name, and optional Open Graph image.",
+    "Generate the meta tag snippet from the values you provided.",
+    "Review the output and check whether each field matches the page content.",
+    "Copy the snippet into the head section of your HTML document."
   ],
   "useCases": [
-    "SEO meta tags for landing pages",
-    "Open Graph tags for social sharing",
-    "Canonical tag generation",
-    "Quick metadata setup for blog articles",
-    "Testing page titles and descriptions"
+    {
+      "title": "Product page metadata",
+      "description": "Create title, description, canonical, and social preview tags for a product detail page with one consistent set of values."
+    },
+    {
+      "title": "Article header tags",
+      "description": "Prepare metadata for a news story, guide, or blog post so the page title and summary match the published content."
+    },
+    {
+      "title": "Duplicate page cleanup",
+      "description": "Add a canonical URL to a filtered, paginated, or tracked version of a page so the preferred address is explicit."
+    },
+    {
+      "title": "Campaign landing page setup",
+      "description": "Generate metadata for a launch page with a campaign title, a short benefit-focused description, and a branded preview image."
+    },
+    {
+      "title": "Social share preview control",
+      "description": "Define Open Graph title, description, site name, and image so shared links display the intended message."
+    }
   ],
   "examples": [
     {
-      "title": "Best Running Shoes 2026",
-      "input": "Title and description for a product page",
-      "output": "SEO-ready meta tag snippet with title, description and Open Graph fields.",
-      "description": "Create optimized metadata for product and category pages."
+      "title": "Compact running backpack",
+      "input": "Title: Compact running backpack\nDescription: Lightweight 8L pack with hydration sleeve and chest strap.\nCanonical URL: https://example.com/products/compact-running-backpack\nSite name: TrailForge\nOG image: https://example.com/images/backpack-og.jpg",
+      "output": "<title>Compact running backpack</title>\n<meta name=\"description\" content=\"Lightweight 8L pack with hydration sleeve and chest strap.\">\n<link rel=\"canonical\" href=\"https://example.com/products/compact-running-backpack\">\n<meta property=\"og:site_name\" content=\"TrailForge\">\n<meta property=\"og:title\" content=\"Compact running backpack\">\n<meta property=\"og:description\" content=\"Lightweight 8L pack with hydration sleeve and chest strap.\">\n<meta property=\"og:image\" content=\"https://example.com/images/backpack-og.jpg\">",
+      "description": "Useful for a product page with a single preferred URL and a branded preview image."
     },
     {
-      "title": "How to Start a Podcast",
-      "input": "Article title and summary",
-      "output": "Clean meta tags for search results and social previews.",
-      "description": "Useful for blog posts and guides."
+      "title": "City budget guide",
+      "input": "Title: 3-day budget guide for Lisbon\nDescription: A day-by-day trip plan with transit, food, and stay costs.\nCanonical URL: https://example.com/guides/lisbon-budget\nSite name: RouteNotes",
+      "output": "<title>3-day budget guide for Lisbon</title>\n<meta name=\"description\" content=\"A day-by-day trip plan with transit, food, and stay costs.\">\n<link rel=\"canonical\" href=\"https://example.com/guides/lisbon-budget\">\n<meta property=\"og:site_name\" content=\"RouteNotes\">\n<meta property=\"og:title\" content=\"3-day budget guide for Lisbon\">\n<meta property=\"og:description\" content=\"A day-by-day trip plan with transit, food, and stay costs.\">",
+      "description": "Handy for an editorial page where the summary needs to stay short and specific."
+    },
+    {
+      "title": "Webinar registration page",
+      "input": "Title: Design systems webinar\nDescription: Live session on tokens, components, and team workflows.\nCanonical URL: https://example.com/webinars/design-systems\nSite name: StudioLine\nOG image: https://cdn.example.com/webinars/design-system-share.png",
+      "output": "<title>Design systems webinar</title>\n<meta name=\"description\" content=\"Live session on tokens, components, and team workflows.\">\n<link rel=\"canonical\" href=\"https://example.com/webinars/design-systems\">\n<meta property=\"og:site_name\" content=\"StudioLine\">\n<meta property=\"og:title\" content=\"Design systems webinar\">\n<meta property=\"og:description\" content=\"Live session on tokens, components, and team workflows.\">\n<meta property=\"og:image\" content=\"https://cdn.example.com/webinars/design-system-share.png\">",
+      "description": "Ideal for an event page that needs a clear preview when shared."
     }
   ],
   "faq": [
     {
-      "question": "What does a meta tag generator do?",
-      "answer": "It creates HTML metadata such as title, description, canonical and Open Graph tags for web pages."
+      "question": "Which fields should I fill first if I only need the core tags?",
+      "answer": "Start with title, description, and canonical URL. Add site name and image only if you want the shared preview to include branding and artwork."
     },
     {
-      "question": "Are the generated tags SEO-friendly?",
-      "answer": "Yes. The tool is designed for practical SEO use and social sharing previews."
+      "question": "Does the tool replace my page title or description automatically?",
+      "answer": "No. It generates the HTML tags from the values you enter. If the content changes later, regenerate the snippet with the updated text."
     },
     {
-      "question": "Can I copy the code directly?",
-      "answer": "Yes. Generate the snippet and copy it into your page head section."
+      "question": "Why does the canonical URL matter in the output?",
+      "answer": "It tells browsers and crawlers which address should be treated as the main version of the page. Use the final preferred URL, not a tracking link or staging address."
     },
     {
-      "question": "Do I need coding knowledge?",
-      "answer": "No. You can generate meta tags without writing HTML manually."
+      "question": "What is the most common mistake when using the output?",
+      "answer": "People often paste the snippet in the wrong part of the document or reuse a description that is too long, vague, or unrelated to the actual page content."
     }
   ],
-  "uiLabels": {
-    "copy": "Copy",
-    "copied": "Copied",
-    "input": "Input",
-    "output": "Output",
-    "placeholder": "Enter page title",
-    "indent": "Indent",
-    "removeComments": "Remove comments",
-    "preview": "Preview",
-    "source": "Source",
-    "sanitizedHtml": "Sanitized HTML",
-    "plainText": "Plain text",
-    "summary": "Summary",
-    "total": "Total",
-    "links": "Links",
-    "images": "Images",
-    "errors": "Errors",
-    "warnings": "Warnings",
-    "valid": "Valid",
-    "invalid": "Invalid",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Width",
-    "height": "Height",
-    "empty": "Empty",
-    "outputReady": "Output ready",
-    "cleanedHtml": "Cleaned HTML",
-    "formattedHtml": "Formatted HTML",
-    "minifiedHtml": "Minified HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extracted images",
-    "extractedLinks": "Extracted links",
-    "validationSummary": "Validation summary",
-    "prettyHtml": "Pretty HTML",
-    "encodedText": "Encoded text",
-    "file": "File",
-    "size": "Size",
-    "format": "Format",
-    "quality": "Quality",
-    "colorOne": "Color 1",
-    "colorTwo": "Color 2",
-    "background": "Background",
-    "foreground": "Foreground",
-    "angle": "Angle",
-    "margin": "Margin",
-    "level": "Level",
-    "gradientType": "Gradient type",
-    "linear": "Linear",
-    "radial": "Radial",
-    "blur": "Blur",
-    "spread": "Spread",
-    "offsetX": "Offset X",
-    "offsetY": "Offset Y",
-    "opacity": "Opacity",
-    "inset": "Inset",
-    "cssCode": "CSS code",
-    "snippet": "Snippet",
-    "download": "Download",
-    "downloadSvg": "Download SVG",
-    "downloadPng": "Download PNG",
-    "downloadAll": "Download all",
-    "upload": "Upload",
-    "title": "Title",
-    "description": "Description",
-    "canonicalUrl": "Canonical URL",
-    "siteName": "Site name",
-    "ogImage": "OG image",
-    "clear": "Clear",
-    "generatedQr": "QR code preview",
-    "placeholderImage": "Preview image",
-    "faviconSet": "Favicon set",
-    "keepAspectRatio": "Keep aspect ratio",
-    "cropX": "Crop X",
-    "cropY": "Crop Y",
-    "cropWidth": "Crop width",
-    "cropHeight": "Crop height",
-    "originalSize": "Original size",
-    "outputSize": "Output size",
-    "savedSize": "Saved size",
-    "result": "Result",
-    "base64": "Base64",
-    "mimeType": "MIME type",
-    "resizedImage": "Resized image",
-    "compressedImage": "Compressed image",
-    "croppedImage": "Cropped image",
-    "convertedImage": "Converted image",
-    "decodedImage": "Decoded image",
-    "imagePreview": "Image preview"
-  },
   "seo": {
-    "title": "Meta Tag Generator | Create SEO Meta Tags Instantly",
-    "description": "Create title, description, canonical and Open Graph meta tags in seconds with a simple online meta tag generator.",
+    "title": "Meta Tag Generator | Build Tags",
+    "description": "Create ready-to-paste HTML meta tags for title, description, canonical URL, and Open Graph data in one place.",
     "keywords": [
       "meta tag generator",
-      "seo meta tags",
-      "open graph generator",
-      "canonical tag generator",
       "html meta tags",
+      "canonical url tag",
+      "open graph tags",
       "title tag generator",
       "description meta tag"
     ]

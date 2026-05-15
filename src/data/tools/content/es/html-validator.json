@@ -4,106 +4,91 @@
   "slug": "validador-html",
   "h1": "Validador HTML",
   "title": "Validador HTML",
-  "shortDescription": "Valida HTML para detectar marcado inseguro, IDs duplicados y problemas de calidad comunes.",
-  "metaTitle": "Validador HTML | Revisa HTML inseguro, IDs duplicados y errores",
-  "metaDescription": "Valida HTML en línea para detectar etiquetas inseguras, IDs duplicados, estructura incorrecta y problemas de calidad con un validador rápido en el navegador.",
-  "intro": "Revisa HTML para detectar marcado inseguro, IDs duplicados, estructura incorrecta y otros problemas prácticos antes de publicar.",
-  "overview": "Este validador HTML te ayuda a detectar rápidamente errores comunes de marcado. Es útil para revisar elementos inseguros, IDs duplicados, anidación incorrecta, atributos faltantes y problemas de calidad que pueden afectar la accesibilidad, el SEO y el renderizado. La herramienta funciona en el navegador, así que tu HTML no sale de tu dispositivo.",
+  "shortDescription": "Valida HTML para detectar marcado inseguro, IDs duplicados y problemas de estructura.",
+  "metaTitle": "Validador HTML de errores",
+  "metaDescription": "Comprueba HTML en busca de etiquetas inseguras, IDs duplicados, anidación incorrecta y problemas de marcado antes de publicar una página.",
+  "intro": "Pega tu HTML y obtén un informe directo sobre etiquetas inseguras, IDs duplicados, anidación inválida y atributos faltantes.",
+  "overview": "Este validador está pensado para revisar el marcado, no el diseño. Analiza el árbol HTML para encontrar elementos inseguros, IDs repetidos, anidación incorrecta, enlaces vacíos, alt faltantes y otros fallos estructurales que suelen colarse en plantillas y contenido pegado desde editores.\n\nResulta útil cuando necesitas saber si un fragmento puede publicarse o incrustarse sin romper scripts, anclas o accesibilidad. El informe separa errores de advertencias para que puedas corregir primero lo que realmente afecta al documento.",
   "howItWorks": [
-    "Pega tu HTML en el campo de entrada.",
-    "Ejecuta la validación para analizar etiquetas, atributos, estructura e IDs.",
-    "Revisa errores, advertencias y detalles del resultado seguro.",
-    "Corrige los problemas y valida de nuevo hasta que el HTML quede limpio."
+    "Pega el HTML en el campo de entrada.",
+    "Ejecuta el análisis de etiquetas, atributos, anidación e IDs.",
+    "Revisa los errores y advertencias del informe.",
+    "Corrige el código y vuelve a validarlo."
   ],
   "useCases": [
-    "Validar plantillas de páginas antes de desplegarlas.",
-    "Revisar contenido de CMS en busca de marcado inseguro o desordenado.",
-    "Encontrar IDs duplicados que pueden romper scripts y accesibilidad.",
-    "Analizar HTML copiado desde editores, correos o constructores visuales.",
-    "Detectar alt faltantes, enlaces vacíos y otros problemas de calidad."
+    {
+      "title": "Revisión de plantillas antes de lanzar",
+      "description": "Comprueba plantillas de páginas y artículos para detectar anidación inválida, atributos faltantes e IDs repetidos."
+    },
+    {
+      "title": "Auditoría de contenido de CMS",
+      "description": "Revisa código copiado desde un editor o sistema antiguo para encontrar etiquetas inseguras, enlaces vacíos y marcado desordenado."
+    },
+    {
+      "title": "Corrección de accesibilidad",
+      "description": "Detecta IDs duplicados, enlaces vacíos e imágenes sin alt útil que pueden perjudicar la lectura asistida."
+    },
+    {
+      "title": "Limpieza de HTML exportado",
+      "description": "Analiza HTML generado por constructores visuales o editores de correo, donde suelen aparecer elementos no admitidos."
+    },
+    {
+      "title": "Comprobación de fragmentos embebidos",
+      "description": "Verifica que un snippet o widget no incluya etiquetas o atributos que interfieran con la página anfitriona."
+    }
   ],
   "examples": [
     {
-      "title": "Validación básica",
-      "input": "<div id=\"hero\"><a href=\"#\">Leer más</a></div>",
-      "output": "Muestra controles de estructura y calidad para el HTML indicado.",
-      "description": "Úsalo para una revisión rápida de un marcado simple."
+      "title": "ID duplicado",
+      "input": "<section id=\"promo\"><a id=\"cta\" href=\"/start\">Empezar</a><button id=\"cta\">Ir</button></section>",
+      "output": "Señala el id=\"cta\" repetido y los elementos implicados.",
+      "description": "Útil cuando un mismo identificador se reutiliza en varios controles."
     },
     {
-      "title": "Análisis de marcado inseguro",
-      "input": "<script>alert('x')</script><p>Texto</p>",
-      "output": "Marca elementos inseguros y posibles riesgos de seguridad.",
-      "description": "Ayuda a detectar código que no debe publicarse."
+      "title": "Detección de etiqueta insegura",
+      "input": "<div class=\"note\">Hola</div><script>track()</script>",
+      "output": "Marca la etiqueta script como marcado inseguro para contenido publicado.",
+      "description": "Muestra cómo trata el validador el código que conviene eliminar antes de publicar."
+    },
+    {
+      "title": "Anidación y atributos",
+      "input": "<p><div>Roto</div></p><img src=\"cover.jpg\">",
+      "output": "Informa de anidación inválida y falta de alt en la imagen.",
+      "description": "Ayuda a encontrar problemas estructurales fáciles de pasar por alto en HTML copiado."
     }
   ],
   "faq": [
     {
-      "question": "¿Esta herramienta modifica mi HTML?",
-      "answer": "No. Solo analiza el HTML y muestra errores, advertencias y detalles de validación."
+      "question": "¿El validador modifica mi HTML?",
+      "answer": "No. Solo analiza la entrada y devuelve errores, advertencias y notas de estructura."
     },
     {
-      "question": "¿Detecta marcado inseguro?",
-      "answer": "Sí. Comprueba etiquetas y patrones de riesgo que pueden ser inseguros en contenido publicado."
+      "question": "¿Qué considera marcado inseguro?",
+      "answer": "Etiquetas y patrones de riesgo en contenido publicado, como elementos tipo script u otros marcados por el validador."
     },
     {
-      "question": "¿Encuentra IDs duplicados?",
-      "answer": "Sí. Los IDs duplicados se informan porque pueden afectar a anclas, scripts y accesibilidad."
+      "question": "¿Por qué es un problema un ID duplicado?",
+      "answer": "Los IDs deben ser únicos. Si dos elementos comparten ID, los enlaces internos, scripts y relaciones de accesibilidad pueden apuntar al nodo equivocado."
     },
     {
-      "question": "¿La validación se hace en el navegador?",
-      "answer": "Sí. La herramienta está pensada para uso local en el cliente y no necesita una API externa."
+      "question": "¿Importan los enlaces vacíos y los alt ausentes?",
+      "answer": "Sí. Se informan porque debilitan la estructura del documento y dificultan su uso correcto."
+    },
+    {
+      "question": "¿Por qué un HTML aparentemente correcto muestra avisos?",
+      "answer": "Un fragmento puede ser válido en apariencia y aun así contener IDs repetidos, atributos vacíos o elementos no admitidos que el validador detecta."
     }
   ],
-  "uiLabels": {
-    "copy": "Copiar",
-    "copied": "Copiado",
-    "input": "HTML input",
-    "output": "Validation summary",
-    "placeholder": "Pega HTML aquí",
-    "indent": "Sangría",
-    "removeComments": "Eliminar comentarios",
-    "preview": "Vista previa",
-    "source": "Fuente",
-    "sanitizedHtml": "HTML saneado",
-    "plainText": "Texto plano",
-    "summary": "Resumen",
-    "total": "Total",
-    "links": "Enlaces",
-    "images": "Imágenes",
-    "errors": "Errores",
-    "warnings": "Avisos",
-    "valid": "Válido",
-    "invalid": "No válido",
-    "href": "Href",
-    "text": "Texto",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Ancho",
-    "height": "Alto",
-    "empty": "Vacío",
-    "outputReady": "Resultado listo",
-    "cleanedHtml": "HTML limpio",
-    "formattedHtml": "HTML formateado",
-    "minifiedHtml": "HTML minificado",
-    "markdown": "Markdown",
-    "extractedImages": "Imágenes extraídas",
-    "extractedLinks": "Enlaces extraídos",
-    "validationSummary": "Resumen de validación",
-    "prettyHtml": "HTML legible",
-    "encodedText": "Texto codificado"
-  },
   "seo": {
-    "title": "Validador HTML | Revisa HTML inseguro, IDs duplicados y errores",
-    "description": "Valida HTML en línea para detectar etiquetas inseguras, IDs duplicados, estructura incorrecta y problemas de calidad con un validador rápido en el navegador.",
+    "title": "Validador HTML de errores",
+    "description": "Comprueba HTML en busca de etiquetas inseguras, IDs duplicados, anidación incorrecta y problemas de marcado antes de publicar una página.",
     "keywords": [
       "validador html",
-      "validar html",
-      "revisar html",
       "comprobar html",
-      "comprobador html",
       "ids duplicados",
-      "html inseguro"
+      "html inseguro",
+      "revisor de html",
+      "estructura html"
     ]
   }
 }

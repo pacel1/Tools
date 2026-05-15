@@ -4,44 +4,85 @@
   "slug": "wortzaehler",
   "h1": "Wortzähler",
   "title": "Wortzähler",
-  "shortDescription": "Zähle Wörter, Zeichen, Absätze und die Lesezeit in einem leichten Textanalyse-Tool.",
-  "overview": "Der Wortzähler analysiert Text lokal im Browser und liefert schnelle Statistiken für Autoren, Redakteure, Marketer und Studierende. Er ist für den kostengünstigen Betrieb in großem Maßstab ausgelegt, da für die Live-Berechnung weder Datenbank noch externe API erforderlich sind.",
+  "shortDescription": "Zähle Wörter, Zeichen, Absätze und die geschätzte Lesezeit in einem Tool.",
+  "metaTitle": "Wortzähler online",
+  "metaDescription": "Wörter, Zeichen, Absätze und Lesezeit aus eingefügtem Text präzise auswerten.",
+  "intro": "Text einfügen und sofort Wörter, Zeichen, Absätze sowie die geschätzte Lesezeit sehen.",
+  "overview": "Dieser Wortzähler ist für Texte gedacht, die vor Abgabe, Veröffentlichung oder Weitergabe noch einmal auf Länge geprüft werden müssen. Er verarbeitet eingefügte Entwürfe, Notizen, Abschnitte und längere Fließtexte, ohne den Inhalt zu verändern.\n\nNutze ihn, wenn du zwei Textfassungen vergleichen, eine Überschrift prüfen oder sicherstellen willst, dass ein Abschnitt innerhalb eines Limits bleibt. Die Lesezeit basiert auf 200 Wörtern pro Minute und liefert damit eine brauchbare Orientierung für Artikel und längere Notizen.",
   "howItWorks": [
-    "Füge deinen Text in das Textfeld ein oder tippe ihn direkt ein.",
-    "Das Tool entfernt überflüssige Leerzeichen und zählt Wörter, Zeichen und Absatzblöcke.",
-    "Die Lesezeit wird auf Basis von 200 Wörtern pro Minute geschätzt."
+    "Text in das Eingabefeld einfügen oder eintippen.",
+    "Das Tool zählt Wörter, Zeichen und Absatzblöcke im übergebenen Text.",
+    "Die Lesezeit wird mit einem Tempo von 200 Wörtern pro Minute geschätzt."
+  ],
+  "useCases": [
+    {
+      "title": "Überschriften und Unterzeilen",
+      "description": "Prüfe vor dem Feinschliff, ob eine Headline oder ein Subheading die gewünschte Länge hat."
+    },
+    {
+      "title": "Artikelprüfung",
+      "description": "Miss Einleitung, Absätze und Zwischentitel, um einen Entwurf an das Editorial-Briefing anzupassen."
+    },
+    {
+      "title": "Freigabe von Kundentexten",
+      "description": "Kontrolliere, ob Produkttext, Anzeige oder Landingpage-Abschnitt in den vereinbarten Rahmen passt."
+    },
+    {
+      "title": "Grenzen für Arbeiten und Notizen",
+      "description": "Vergleiche Aufsätze, Zusammenfassungen oder Lernnotizen mit einer vorgegebenen Wort- oder Zeichenbegrenzung."
+    }
   ],
   "examples": [
     {
-      "title": "Entwurf einer Meta-Beschreibung",
-      "input": "Eine kurze SEO-Zusammenfassung für eine Landingpage.",
-      "output": "8 Wörter",
-      "description": "Prüfe prägnante Texte schnell vor der Veröffentlichung."
+      "title": "Einleitung für eine Verkaufsseite",
+      "input": "Klare Preise, schneller Support und keine versteckten Kosten schaffen Vertrauen.",
+      "output": "10 Wörter, 80 Zeichen, 1 Absatz",
+      "description": "Hilft, eine knappe Kernbotschaft sauber zu halten."
     },
     {
-      "title": "Blog-Absatz",
-      "input": "Ein zweigeteilter Artikelabschnitt mit Zeilenumbrüchen.",
-      "output": "Wörter, Zeichen und Lesezeit",
-      "description": "Hilfreich für Content-Briefs und redaktionelle Qualitätskontrolle."
+      "title": "Entwurf mit zwei Absätzen",
+      "input": "Design-Systeme sorgen für mehr Konsistenz in Produktteams.\nSie verringern außerdem Nacharbeit bei Übergaben und Reviews.",
+      "output": "14 Wörter, 121 Zeichen, 2 Absätze",
+      "description": "Zeigt die Auswertung mit Zeilenumbrüchen und getrennten Blöcken."
+    },
+    {
+      "title": "Besprechungsnotiz",
+      "input": "Raum bestätigen, Agenda senden, Folien einsammeln und die Zusammenfassung bis Freitag verschicken.",
+      "output": "13 Wörter, 97 Zeichen, 1 Absatz",
+      "description": "Nützlich für kurze interne Notizen, bei denen die Länge trotzdem zählt."
     }
   ],
   "faq": [
     {
-      "question": "Erfolgt die Zählung clientseitig?",
-      "answer": "Ja. Das Starter-Beispiel führt die Berechnung direkt im Browser aus, um schnell zu sein und Infrastrukturkosten zu vermeiden."
+      "question": "Wie werden Wörter gezählt?",
+      "answer": "Der Text wird nach dem Entfernen überflüssiger Leerzeichen in Worteinheiten getrennt. Normale durch Abstände getrennte Bestandteile zählen als Wörter."
     },
     {
-      "question": "Wie wird die Lesezeit geschätzt?",
-      "answer": "Die Lesezeit wird berechnet, indem die Wortanzahl durch 200 geteilt und das Ergebnis auf zwei Dezimalstellen gerundet wird."
+      "question": "Was gilt als Absatz?",
+      "answer": "Absätze sind getrennte Blöcke mit einer Leerzeile dazwischen. Ein einzelner Zeilenumbruch innerhalb eines Blocks erzeugt keinen neuen Absatz."
+    },
+    {
+      "question": "Warum ist die Lesezeit nur geschätzt?",
+      "answer": "Die Berechnung verwendet pauschal 200 Wörter pro Minute. Technische Texte, Aufzählungen oder sehr kurze Notizen können anders gelesen werden."
+    },
+    {
+      "question": "Beeinflusst Zeichensetzung das Ergebnis?",
+      "answer": "Zeichensetzung zählt nicht als eigenes Wort. Ungewöhnliche Abstände, Listen oder Umbrüche können aber beeinflussen, wie der Text aufgeteilt wird."
+    },
+    {
+      "question": "Warum weicht das Ergebnis von einem Texteditor ab?",
+      "answer": "Verschiedene Programme behandeln Bindestriche, URLs, Emojis und Überschriften unterschiedlich. Dieses Tool nutzt eigene Regeln zur Textaufteilung."
     }
   ],
   "seo": {
     "title": "Wortzähler online",
-    "description": "Kostenloser Online-Wortzähler für Wörter, Zeichen, Absätze und Lesezeit.",
+    "description": "Wörter, Zeichen, Absätze und Lesezeit aus Text mit einem klaren Wortzähler ermitteln.",
     "keywords": [
       "Wortzähler",
       "Zeichenzähler",
-      "Lesezeit-Rechner"
+      "Lesezeit",
+      "Absatzzähler",
+      "Textanalyse"
     ]
   }
 }

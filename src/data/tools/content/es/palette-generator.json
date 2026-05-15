@@ -1,0 +1,84 @@
+{
+  "toolId": "palette-generator",
+  "locale": "es",
+  "slug": "palette-generator",
+  "h1": "Generador de paletas",
+  "title": "Generador de paletas",
+  "shortDescription": "Crea conjuntos de color coordinados a partir de un color base para interfaces, marca y conceptos.",
+  "metaTitle": "Generador de paletas | Colores",
+  "metaDescription": "Crea conjuntos de color coordinados a partir de un color base para marca, interfaces, planificación de temas y borradores visuales.",
+  "intro": "Convierte un color base en una serie de tonos, matices y acentos relacionados en segundos.",
+  "overview": "Esta herramienta te ayuda a transformar un color inicial en un conjunto estructurado de colores relacionados. Así es más fácil construir interfaces con superficies, estados y acentos coherentes sin tener que improvisar cada paso.\n\nTambién sirve cuando necesitas una dirección visual temprana para una marca, una landing page o un concepto de producto. En lugar de trabajar con un solo color aislado, obtienes una pequeña familia cromática que puede apoyar títulos, fondos, resaltados e ինտերacciones.\n\nUsa los valores generados como punto de partida y ajústalos después en tu archivo de diseño o en tu código si necesitas más contraste, tonos neutros más cálidos o un resultado más sobrio.",
+  "howItWorks": [
+    "Elige un color base que marque el punto de partida.",
+    "Define cuántos colores relacionados quieres en el conjunto.",
+    "Revisa las muestras y copia los valores que necesites para diseño o código."
+  ],
+  "useCases": [
+    {
+      "title": "Escala para interfaz",
+      "description": "Construye tonos para botones, paneles, estados hover y fondos suaves a partir de un color central de marca."
+    },
+    {
+      "title": "Dirección para una landing",
+      "description": "Prueba un hero, un color de acento y secciones de apoyo con una familia cromática coherente antes de cerrar el diseño."
+    },
+    {
+      "title": "Borrador de sistema visual",
+      "description": "Crea tokens iniciales para colores primary, secondary, surface y emphasis al definir un tema nuevo."
+    },
+    {
+      "title": "Tablero de marca",
+      "description": "Expande un color principal en una paleta útil para presentaciones, moodboards y bocetos de identidad."
+    }
+  ],
+  "examples": [
+    {
+      "title": "Paleta para dashboard SaaS",
+      "input": "Color base: #1F7A8C, 7 muestras",
+      "output": "Un conjunto equilibrado con fondos turquesa muy claros, acentos UI de tono medio y una base oscura",
+      "description": "Funciona bien para navegación, gráficos y estados destacados."
+    },
+    {
+      "title": "Landing editorial",
+      "input": "Color base: coral cálido, 5 muestras",
+      "output": "Tintes melocotón suaves, un coral central saturado y un tono más oscuro para énfasis",
+      "description": "Útil cuando la página necesita calidez sin verse demasiado intensa."
+    },
+    {
+      "title": "Moodboard de lanzamiento",
+      "input": "Color base: violeta intenso, 9 muestras",
+      "output": "Varios pasos desde ciruela casi negra hasta lavanda clara",
+      "description": "Da suficiente variedad para tarjetas, separadores y llamadas de producto."
+    }
+  ],
+  "faq": [
+    {
+      "question": "¿La paleta conserva siempre la misma sensación que el color base?",
+      "answer": "La serie sigue ligada al color inicial, pero los pasos más claros y más oscuros pueden sentirse más neutros o más intensos según la distancia respecto al origen. Si buscas un clima concreto, elige solo las muestras más cercanas a ese resultado."
+    },
+    {
+      "question": "¿Puedo usar los resultados directamente en código?",
+      "answer": "Sí. Los valores generados están pensados para copiarse en estilos, tokens o archivos de tema. Si tu proyecto necesita nombres propios, renómbralos antes de integrarlos."
+    },
+    {
+      "question": "¿Qué hago si una muestra queda demasiado clara para texto o botones?",
+      "answer": "Probablemente esa muestra funcione mejor como fondo o borde. Para texto y elementos interactivos, elige un tono más profundo dentro del mismo conjunto."
+    },
+    {
+      "question": "¿Una paleta más grande siempre es mejor?",
+      "answer": "No necesariamente. Más muestras ofrecen más opciones, pero también complican la coherencia. Para productos, suele funcionar mejor empezar con menos tonos y añadir solo los que realmente uses."
+    }
+  ],
+  "seo": {
+    "title": "Generador de paletas | Colores",
+    "description": "Crea conjuntos de color coordinados a partir de un color base para marca, interfaces, planificación de temas y borradores visuales.",
+    "keywords": [
+      "generador de paletas",
+      "paleta de colores",
+      "generador de colores",
+      "paleta ui",
+      "paleta de marca"
+    ]
+  }
+}

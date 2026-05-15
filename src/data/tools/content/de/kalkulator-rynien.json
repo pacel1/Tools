@@ -4,176 +4,88 @@
   "slug": "dachrinnen-rechner",
   "h1": "Dachrinnen-Rechner",
   "title": "Dachrinnen-Rechner",
-  "shortDescription": "Berechnen Sie benötigte Rinnen, Haken und Fallrohre für die Dachentwässerung.",
-  "metaTitle": "Dachrinnen-Rechner - Rinnen, Haken und Fallrohre berechnen",
-  "metaDescription": "Mit diesem Dachrinnen-Rechner ermitteln Sie Rinnenmeter, Hakenanzahl und Fallrohre anhand von Traufe, Dachkanten, Abstand und Verschnitt.",
-  "intro": "Berechnen Sie schnell die Materialien für ein Dachrinnensystem. Geben Sie Traufenlänge, Anzahl der Dachkanten, Abstand der Fallrohre, Hakenabstand und Verschnitt ein, um eine praxisnahe Materialschätzung zu erhalten.",
-  "overview": "Dieser Dachrinnen-Rechner hilft bei der Planung von Dachentwässerungsmaterialien vor Kauf oder Montage. Er schätzt die gesamte Rinnenlänge, die Anzahl der Haken und die benötigte Zahl der Fallrohre anhand von Dachmaßen und Abständen. Ein Zuschlag für Verschnitt berücksichtigt Zuschnitte, Verbindungen und Montageanpassungen.",
+  "shortDescription": "Berechnen Sie Rinnenlänge, Haken und Fallrohre für eine konkrete Dachentwässerung.",
+  "metaTitle": "Dachrinnen-Rechner für Dächer",
+  "metaDescription": "Berechnen Sie Rinnenmeter, Haken und Fallrohre anhand von Traufe, Dachkanten, Abstand und Verschnitt.",
+  "intro": "Geben Sie Traufenlänge, Anzahl der Dachkanten, Hakenabstand, Abstand der Fallrohre und Verschnitt ein, um den Materialbedarf für die Dachrinne abzuschätzen.",
+  "overview": "Dieser Dachrinnen-Rechner liefert eine praxisnahe Materialschätzung für die Dachentwässerung. Aus der von Ihnen eingegebenen Kantenlänge wird die gesamte Rinnenlänge ermittelt, anschließend werden Haken und Fallrohre anhand des gewählten Abstands berechnet.\n\nDas Tool eignet sich für Neubau, Teilersatz oder den Vergleich von Materialmengen vor der Bestellung. Der Verschnitt berücksichtigt Zuschnitte, Überlappungen, Verbindungen und kleine Anpassungen auf der Baustelle, damit die Schätzung näher am tatsächlichen Bedarf liegt.",
   "howItWorks": [
-    "Traufenlänge in Metern eingeben.",
-    "Anzahl der mit Rinnen auszustattenden Dachkanten angeben.",
+    "Traufen- oder Kantenlänge in Metern messen.",
+    "Angeben, wie viele Dachkanten mit Rinnen ausgestattet werden.",
+    "Hakenabstand in Zentimetern festlegen.",
     "Abstand der Fallrohre in Metern festlegen.",
-    "Hakenabstand in Zentimetern eingeben.",
-    "Verschnitt in Prozent als Reserve hinzufügen.",
+    "Einen Prozentsatz für Verschnitt hinzufügen.",
     "Ergebnis für Rinnenmeter, Haken und Fallrohre prüfen."
   ],
   "useCases": [
-    "Materialbedarf für eine neue Dachrinnenmontage schätzen.",
-    "Benötigte Haken für eine Reparatur ermitteln.",
-    "Fallrohrpositionen für Wohn- oder Gewerbebauten planen.",
-    "Rinnenteile mit ausreichender Reserve bestellen."
+    {
+      "title": "Neue Dachentwässerung planen",
+      "description": "Ermitteln Sie den Materialbedarf für eine komplette Rinnenanlage vor der Bestellung."
+    },
+    {
+      "title": "Teilweise Reparatur nach Schaden",
+      "description": "Schätzen Sie, wie viele Abschnitte, Haken und Fallrohre bei einem Teilaustausch nötig sind."
+    },
+    {
+      "title": "Mehrseitiges Dach auslegen",
+      "description": "Vergleichen Sie die Materialmengen für unterschiedlich lange Dachseiten und verschiedene Abläufe."
+    },
+    {
+      "title": "Angebot kontrollieren",
+      "description": "Prüfen Sie, ob ein Materialangebot zu den tatsächlich gemessenen Dachmaßen passt."
+    }
   ],
   "examples": [
     {
-      "title": "Beispielrechnung",
-      "input": "Traufenlänge: 12 m, Dachkanten: 2, Fallrohrabstand: 10 m, Hakenabstand: 60 cm, Verschnitt: 10%",
-      "output": "Geschätzte Rinnenlänge, Haken und Fallrohre für das Dach.",
-      "description": "Nutzen Sie das Ergebnis als schnelle Materialschätzung vor dem Einkauf."
+      "title": "Satteldach am Wohnhaus",
+      "input": "Traufenlänge: 12 m, Dachkanten: 2, Hakenabstand: 60 cm, Abstand der Fallrohre: 10 m, Verschnitt: 10%",
+      "output": "Geschätzte Rinnenlänge: 26,4 m. Haken: 44. Fallrohre: 3.",
+      "description": "Ein typischer Fall für ein Einfamilienhaus mit je einem Ablauf pro Dachseite."
     },
     {
-      "title": "Planung einer Entwässerungsmodernisierung",
-      "input": "Messen Sie jede Traufensektion getrennt und addieren Sie die Gesamtlänge vor der Berechnung.",
-      "output": "Eine genauere Schätzung für Rinnen und Halter.",
-      "description": "Hilfreich beim Austausch alter Rinnen oder beim Erweitern eines Systems."
+      "title": "Garage mit kurzem Dach",
+      "input": "Traufenlänge: 8,5 m, Dachkanten: 1, Hakenabstand: 50 cm, Abstand der Fallrohre: 7 m, Verschnitt: 5%",
+      "output": "Geschätzte Rinnenlänge: 8,9 m. Haken: 18. Fallrohre: 2.",
+      "description": "Hilfreich bei kleinen Dachflächen, bei denen die Befestigung trotzdem sauber ausgelegt werden muss."
+    },
+    {
+      "title": "Langer Werkstattbau",
+      "input": "Traufenlänge: 24 m, Dachkanten: 2, Hakenabstand: 70 cm, Abstand der Fallrohre: 12 m, Verschnitt: 8%",
+      "output": "Geschätzte Rinnenlänge: 51,8 m. Haken: 74. Fallrohre: 5.",
+      "description": "Praktisch für lange Gebäude mit mehreren Entwässerungspunkten."
     }
   ],
   "faq": [
     {
-      "question": "Wie berechne ich die Rinnenlänge?",
-      "answer": "Multiplizieren Sie die Traufenlänge mit der Anzahl der Dachkanten und addieren Sie den gewählten Verschnitt."
+      "question": "Sind Ecken und Endstücke im Ergebnis enthalten?",
+      "answer": "Nein. Ecken, Endstücke, Verbinder und Einläufe werden meist separat gezählt. Verwenden Sie die berechnete Rinnenlänge als Basis und ergänzen Sie die Formteile aus Ihrem Dachverlauf."
     },
     {
-      "question": "Wie werden die Haken geschätzt?",
-      "answer": "Teilen Sie die gesamte Rinnenlänge durch den Hakenabstand und runden Sie auf die nächste ganze Zahl auf."
+      "question": "Warum fällt die Hakenanzahl manchmal höher aus als erwartet?",
+      "answer": "Weil der Rechner den eingegebenen Abstand über die gesamte Rinnenlänge ansetzt. Je kleiner der Abstand, desto mehr Haken werden benötigt, und an Ecken oder Anschlüssen kommen oft Zusatzhalter dazu."
     },
     {
-      "question": "Wie werden die Fallrohre geschätzt?",
-      "answer": "Teilen Sie die gesamte Rinnenlänge durch den Abstand der Fallrohre und runden Sie auf."
+      "question": "Wie gehe ich mit unterschiedlich langen Dachseiten um?",
+      "answer": "Jede Seite einzeln berechnen und anschließend die Ergebnisse addieren. Ein Mittelwert ist ungeeignet, wenn die Längen oder Ablaufpunkte deutlich abweichen."
     },
     {
-      "question": "Warum sollte ich Verschnitt einplanen?",
-      "answer": "Verschnitt deckt Zuschnitte, Überlappungen, Ecken und Montageanpassungen ab."
+      "question": "Wofür ist der Verschnitt gedacht?",
+      "answer": "Er deckt Zuschnitte, Überlappungen, Montageanpassungen und kleine Fehler auf der Baustelle ab. Er ersetzt nicht die separate Stückzahl für Formteile und Sonderzubehör."
+    },
+    {
+      "question": "Ist die Zahl der Fallrohre die exakte Anzahl der Abläufe?",
+      "answer": "Nein. Es handelt sich um eine Schätzung auf Basis des gewählten Abstands, nicht um einen vollständigen Ablaufplan. Die endgültige Position hängt von Dachneigung, Wassermenge und dem sicheren Ableitpunkt ab."
     }
   ],
-  "uiLabels": {
-    "copy": "Kopieren",
-    "copied": "Kopiert",
-    "input": "Eingabe",
-    "output": "Ausgabe",
-    "placeholder": "Wert eingeben",
-    "indent": "Einzug",
-    "removeComments": "Kommentare entfernen",
-    "preview": "Vorschau",
-    "source": "Quelle",
-    "sanitizedHtml": "Bereinigtes HTML",
-    "plainText": "Klartext",
-    "summary": "Zusammenfassung",
-    "total": "Gesamt",
-    "links": "Links",
-    "images": "Bilder",
-    "errors": "Fehler",
-    "warnings": "Warnungen",
-    "valid": "Gültig",
-    "invalid": "Ungültig",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Ziel",
-    "alt": "Alt",
-    "width": "Breite",
-    "height": "Höhe",
-    "empty": "Leer",
-    "outputReady": "Ergebnis bereit",
-    "cleanedHtml": "Bereinigtes HTML",
-    "formattedHtml": "Formatiertes HTML",
-    "minifiedHtml": "Minifiziertes HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extrahierte Bilder",
-    "extractedLinks": "Extrahierte Links",
-    "validationSummary": "Validierungszusammenfassung",
-    "prettyHtml": "Lesbares HTML",
-    "encodedText": "Kodierter Text",
-    "file": "Datei",
-    "size": "Größe",
-    "format": "Format",
-    "quality": "Qualität",
-    "colorOne": "Farbe 1",
-    "colorTwo": "Farbe 2",
-    "background": "Hintergrund",
-    "foreground": "Vordergrund",
-    "angle": "Winkel",
-    "margin": "Rand",
-    "level": "Stufe",
-    "gradientType": "Verlaufstyp",
-    "linear": "Linear",
-    "radial": "Radial",
-    "blur": "Unschärfe",
-    "spread": "Ausbreitung",
-    "offsetX": "Versatz X",
-    "offsetY": "Versatz Y",
-    "opacity": "Deckkraft",
-    "inset": "Innen",
-    "cssCode": "CSS-Code",
-    "snippet": "Snippet",
-    "download": "Herunterladen",
-    "downloadSvg": "SVG herunterladen",
-    "downloadPng": "PNG herunterladen",
-    "downloadAll": "Alle herunterladen",
-    "upload": "Hochladen",
-    "title": "Titel",
-    "description": "Beschreibung",
-    "canonicalUrl": "Kanonische URL",
-    "siteName": "Websitename",
-    "ogImage": "OG-Bild",
-    "clear": "Leeren",
-    "generatedQr": "Generierter QR-Code",
-    "placeholderImage": "Platzhalterbild",
-    "faviconSet": "Favicon-Set",
-    "keepAspectRatio": "Seitenverhältnis beibehalten",
-    "cropX": "Zuschneiden X",
-    "cropY": "Zuschneiden Y",
-    "cropWidth": "Zuschneidebreite",
-    "cropHeight": "Zuschneidehöhe",
-    "originalSize": "Originalgröße",
-    "outputSize": "Ausgabegröße",
-    "savedSize": "Gesparte Größe",
-    "result": "Ergebnis",
-    "base64": "Base64",
-    "mimeType": "MIME-Typ",
-    "resizedImage": "Skaliertes Bild",
-    "compressedImage": "Komprimiertes Bild",
-    "croppedImage": "Zugeschnittenes Bild",
-    "convertedImage": "Konvertiertes Bild",
-    "decodedImage": "Dekodiertes Bild",
-    "imagePreview": "Bildvorschau",
-    "camera": "Kamera",
-    "lens": "Objektiv",
-    "dateTaken": "Aufnahmedatum",
-    "resolution": "Auflösung",
-    "fileSize": "Dateigröße",
-    "iso": "ISO",
-    "exposure": "Belichtung",
-    "aperture": "Blende",
-    "focalLength": "Brennweite",
-    "flash": "Blitz",
-    "orientation": "Ausrichtung",
-    "latitude": "Breitengrad",
-    "longitude": "Längengrad",
-    "openMap": "Karte öffnen",
-    "rawMetadata": "Rohe Metadaten",
-    "noMetadataFound": "Keine Metadaten gefunden",
-    "gpsLocation": "GPS-Position",
-    "metadataSummary": "Metadaten-Zusammenfassung"
-  },
   "seo": {
-    "title": "Dachrinnen-Rechner",
-    "description": "Berechnen Sie Rinnenmeter, Haken und Fallrohre für die Dachentwässerung mit einem einfachen Online-Rechner.",
+    "title": "Dachrinnen-Rechner für Dächer",
+    "description": "Berechnen Sie Rinnenmeter, Haken und Fallrohre anhand von Traufe, Dachkanten, Abstand und Verschnitt.",
     "keywords": [
       "Dachrinnen-Rechner",
-      "Dachentwässerung Rechner",
       "Rinnen berechnen",
       "Fallrohre berechnen",
-      "Haken berechnen"
+      "Hakenabstand",
+      "Dachentwässerung"
     ]
   }
 }

@@ -4,43 +4,81 @@
   "slug": "kalkulator-napiwku",
   "h1": "Kalkulator napiwku",
   "title": "Kalkulator napiwku",
-  "shortDescription": "Oblicz napiwek i łączny rachunek od razu — szybko, prosto i z praktycznymi przykładami.",
-  "overview": "Oblicz napiwek i łączny rachunek natychmiast. Ta strona zapewnia szybką odpowiedź dzięki praktycznemu narzędziu i prostemu przebiegowi wyniku. Strona jest skierowana do użytkowników szukających darmowej odpowiedzi online, szybkich wyników w przeglądarce oraz praktycznych treści do dłuższych zapytań.",
+  "shortDescription": "Oblicz napiwek, łączną kwotę i udział na osobę na podstawie rachunku oraz procentu napiwku.",
+  "metaTitle": "Kalkulator napiwku do rachunku",
+  "metaDescription": "Oblicz napiwek, kwotę końcową i podział na osoby na podstawie rachunku oraz wybranego procentu.",
+  "intro": "Wpisz kwotę rachunku, wybierz procent napiwku i od razu zobacz napiwek, sumę końcową oraz kwotę na osobę.",
+  "overview": "To narzędzie pomaga doliczyć napiwek do rachunku w restauracji, taksówce, salonie lub innej usłudze rozliczanej procentowo. Możesz też od razu podzielić łączną kwotę między kilka osób i sprawdzić, ile zapłaci każdy.\n\nWynik pokazuje kwotę bazową, sam napiwek i sumę końcową, dzięki czemu łatwo porównać obliczenie z rachunkiem. Jeśli dzielisz koszt, podział liczony jest od pełnej kwoty po doliczeniu napiwku, co upraszcza rozliczenie w grupie.",
   "howItWorks": [
-    "Wpisz wymagane dane do formularza.",
-    "Obliczenie, przeliczenie lub transformacja odbywa się natychmiast w przeglądarce.",
-    "Sprawdź wynik i przejdź do powiązanych narzędzi, jeśli potrzebujesz kolejnego kroku."
+    "Wpisz kwotę rachunku.",
+    "Wybierz lub wpisz procent napiwku.",
+    "Podaj liczbę osób do podziału, jeśli trzeba.",
+    "Sprawdź napiwek, sumę końcową i kwotę na osobę."
+  ],
+  "useCases": [
+    {
+      "title": "Rachunek po kolacji",
+      "description": "Dolicz 10%, 15% albo 20% do rachunku w lokalu i poznaj kwotę do zapłaty."
+    },
+    {
+      "title": "Podział rachunku w grupie",
+      "description": "Rozdziel końcową kwotę między znajomych razem z napiwkiem."
+    },
+    {
+      "title": "Płatność za usługę",
+      "description": "Oblicz napiwek za fryzjera, masaż lub inną usługę bez doliczonej gratyfikacji."
+    },
+    {
+      "title": "Rozliczenie przejazdu lub dostawy",
+      "description": "Ustal końcową kwotę za kurs, dostawę lub podobną usługę z napiwkiem procentowym."
+    }
   ],
   "examples": [
     {
-      "title": "Przykład 1",
-      "input": "86 z napiwkiem 15%",
-      "output": "98.90",
-      "description": "Realistyczny przykład kalkulatora napiwku dla codziennego wyszukiwania."
+      "title": "Kolacja z napiwkiem standardowym",
+      "input": "Rachunek: 86, Napiwek: 15%",
+      "output": "Napiwek: 12.90, Razem: 98.90",
+      "description": "Pokazuje doliczony napiwek i kwotę końcową dla typowego rachunku."
     },
     {
-      "title": "Przykład 2",
-      "input": "86 z napiwkiem 15%",
-      "output": "98.90",
-      "description": "Kolejny praktyczny przypadek użycia pod kątem organicznego ruchu z długiego ogona."
+      "title": "Podział na cztery osoby",
+      "input": "Rachunek: 142,50, Napiwek: 18%, Osoby: 4",
+      "output": "Napiwek: 25.65, Razem: 168.15, Na osobę: 42.04",
+      "description": "Przydatne, gdy jeden rachunek trzeba rozdzielić po doliczeniu napiwku."
+    },
+    {
+      "title": "Prosty rachunek za usługę",
+      "input": "Rachunek: 50, Napiwek: 20%",
+      "output": "Napiwek: 10.00, Razem: 60.00",
+      "description": "Czytelny przykład dla płatności za usługę z łatwym procentem."
     }
   ],
   "faq": [
     {
-      "question": "Jak dokładne jest to narzędzie?",
-      "answer": "Wynik jest obliczany bezpośrednio na podstawie wzoru lub logiki po stronie przeglądarki używanej przez to narzędzie."
+      "question": "Czy napiwek liczy się od kwoty przed czy po podatku?",
+      "answer": "Kalkulator stosuje procent do kwoty, którą wpiszesz. Jeśli chcesz liczyć od kwoty z podatkiem, wpisz właśnie tę kwotę jako bazę."
     },
     {
-      "question": "Czy mogę korzystać z tego narzędzia na telefonie?",
-      "answer": "Tak. Strona działa na komputerach i urządzeniach mobilnych, oferując prosty układ pól i wyniku."
+      "question": "Jak działa podział na osoby?",
+      "answer": "Najpierw obliczana jest pełna kwota z napiwkiem, a potem dzielona przez liczbę osób podaną w formularzu."
+    },
+    {
+      "question": "Czy mogę wpisać napiwek z ułamkiem dziesiętnym?",
+      "answer": "Tak. Możesz użyć na przykład 12,5%, jeśli chcesz dokładniejszy wynik."
+    },
+    {
+      "question": "Dlaczego wynik może różnić się od rachunku?",
+      "answer": "Miejsca rozliczeń mogą zaokrąglać kwoty, liczyć napiwek od innej podstawy albo stosować własne zasady. Najlepiej wpisać tę samą bazę, która widnieje na rachunku."
     }
   ],
   "seo": {
-    "title": "Kalkulator napiwku",
-    "description": "Oblicz napiwek i łączny rachunek od razu. Darmowy kalkulator napiwku online z natychmiastowym wynikiem.",
+    "title": "Kalkulator napiwku do rachunku",
+    "description": "Oblicz napiwek, kwotę końcową i podział na osoby na podstawie rachunku oraz wybranego procentu.",
     "keywords": [
       "kalkulator napiwku",
-      "napiwek calculator"
+      "oblicz napiwek",
+      "podział rachunku",
+      "napiwek procentowy"
     ]
   }
 }

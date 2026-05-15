@@ -4,177 +4,93 @@
   "slug": "lector-de-metadatos-de-imagenes",
   "h1": "Lector de metadatos de imágenes",
   "title": "Lector de metadatos de imágenes",
-  "shortDescription": "Lee metadatos EXIF de fotos online, incluyendo datos de la cámara, resolución, fecha y GPS cuando estén disponibles.",
-  "metaTitle": "Lector de metadatos de imágenes online | Ver EXIF de fotos",
-  "metaDescription": "Consulta metadatos EXIF y de fotos online. Revisa modelo de cámara, fecha de captura, resolución, ubicación GPS, tamaño del archivo y más al instante.",
-  "intro": "Lee metadatos de fotos online desde tu navegador. Este lector EXIF muestra datos de la cámara, hora de captura, resolución, coordenadas GPS y otra información incrustada en la imagen sin instalar nada.",
-  "overview": "Usa este lector de metadatos de imágenes para inspeccionar datos EXIF de forma rápida y privada. Sube una imagen y revisa el modelo de cámara, objetivo, ajustes de exposición, tamaño de la imagen, fecha de captura y datos de ubicación cuando existan. El procesamiento ocurre en el navegador, por lo que es ideal para fotógrafos, editores y cualquiera que necesite comprobar los detalles de una imagen antes de compartirla o archivarla.",
+  "shortDescription": "Revisa metadatos EXIF de una foto, como cámara, fecha de captura, resolución y GPS cuando estén guardados en el archivo.",
+  "metaTitle": "Lector de metadatos de imágenes",
+  "metaDescription": "Consulta metadatos EXIF de fotos: modelo de cámara, fecha, resolución, tamaño del archivo y coordenadas GPS directamente en el navegador.",
+  "intro": "Abre una imagen y lee al instante sus metadatos incrustados: cámara, objetivo, exposición, fecha de captura, resolución, orientación y GPS si el archivo los incluye.",
+  "overview": "Esta herramienta muestra la información guardada dentro del archivo de imagen para que puedas revisar no solo cómo se ve la foto, sino también cómo fue creada. Aquí puedes ver modelo de cámara y objetivo, ajustes de exposición, hora de captura, dimensiones, formato, orientación y, cuando existen, coordenadas de ubicación.\n\nResulta útil para comprobar el origen de un archivo, revisar parámetros de disparo después de una sesión o entender por qué una foto se gira de forma distinta en distintas aplicaciones. Si los metadatos fueron eliminados al exportar o compartir el archivo, la herramienta mostrará que ya no están presentes en lugar de rellenarlos con suposiciones.",
   "howItWorks": [
-    "Sube una foto desde tu dispositivo.",
-    "La herramienta analiza los EXIF y metadatos en el navegador.",
-    "Revisa cámara, fecha, resolución, orientación y GPS.",
-    "Copia la información o úsala para verificar el origen de la imagen."
+    "Sube una imagen desde tu dispositivo.",
+    "El lector analiza los metadatos incrustados en el navegador.",
+    "Revisa cámara, objetivo, exposición, fecha, resolución, orientación y GPS.",
+    "Copia los datos o úsalos para valorar el archivo antes de editarlo, publicarlo o archivarlo."
   ],
   "useCases": [
-    "Comprobar los ajustes de la cámara en una foto.",
-    "Saber cuándo y dónde se tomó una imagen.",
-    "Verificar la resolución antes de publicar.",
-    "Inspeccionar metadatos antes de eliminarlos por privacidad.",
-    "Revisar detalles del archivo para edición o archivo."
+    {
+      "title": "Revisar ajustes de captura",
+      "description": "Consulta velocidad, apertura, ISO y distancia focal después de una sesión para relacionar la imagen con los parámetros reales de disparo."
+    },
+    {
+      "title": "Comprobar ubicación en una foto",
+      "description": "Verifica si el archivo conserva latitud y longitud antes de compartir una imagen de viaje, trabajo de campo o evento."
+    },
+    {
+      "title": "Entender la orientación guardada",
+      "description": "Detecta si la foto depende de una etiqueta de orientación o si los píxeles ya fueron rotados al guardarse."
+    },
+    {
+      "title": "Preparar imágenes para archivo",
+      "description": "Confirma fecha, modelo de cámara y tamaño para clasificar correctamente cada imagen en una carpeta o proyecto."
+    },
+    {
+      "title": "Ver qué quedó tras una exportación",
+      "description": "Compara los datos que sobreviven después de guardar la imagen desde un editor, mensajería o conversor."
+    }
   ],
   "examples": [
     {
-      "title": "Comprobación de la cámara",
-      "input": "Sube un JPEG desde tu móvil",
-      "output": "Se muestran el modelo de cámara, exposición, apertura, ISO y distancia focal.",
-      "description": "Útil para revisar los ajustes de disparo."
+      "title": "Revisión de un retrato",
+      "input": "Sube un JPEG de 24 MP exportado desde una DSLR",
+      "output": "Se muestran modelo de cámara, objetivo, 1/200 s, f/2.8, ISO 400, distancia focal y dimensiones.",
+      "description": "Ayuda a relacionar el resultado con los ajustes de captura."
     },
     {
-      "title": "Consulta de ubicación",
-      "input": "Abre una foto con etiquetas GPS",
-      "output": "Aparecen la latitud y la longitud si están incrustadas en el archivo.",
-      "description": "Muy útil para fotos de viajes y eventos."
+      "title": "Foto del móvil con etiquetas de viaje",
+      "input": "Abre un HEIC guardado por un smartphone durante un viaje a otra ciudad",
+      "output": "Aparecen fecha de captura, modelo del dispositivo, orientación y coordenadas GPS si fueron almacenadas.",
+      "description": "Sirve para confirmar lugar y momento de la toma."
+    },
+    {
+      "title": "Archivo reenviado por una app de mensajería",
+      "input": "Carga un JPEG guardado de nuevo tras enviarlo por chat",
+      "output": "Puede quedar solo la información básica del archivo y los campos de cámara o GPS pueden aparecer vacíos.",
+      "description": "Muestra cómo la compresión o el reenvío pueden borrar metadatos."
     }
   ],
   "faq": [
     {
-      "question": "¿Qué metadatos puede leer esta herramienta?",
-      "answer": "Puede leer campos EXIF comunes como modelo de cámara, fecha de captura, resolución, orientación, ajustes de exposición, tamaño del archivo y datos GPS si están presentes."
+      "question": "¿Por qué veo menos campos que en el menú de mi cámara?",
+      "answer": "Solo se pueden leer los datos que realmente quedaron escritos en el archivo. Muchos ajustes de cámara no se incrustan nunca o se guardan de forma parcial."
     },
     {
-      "question": "¿Funciona en el navegador?",
-      "answer": "Sí. El lector procesa las imágenes localmente en tu navegador para ofrecer una inspección rápida y privada."
+      "question": "¿Qué pasa si la imagen tiene EXIF y otros bloques de metadatos?",
+      "answer": "La herramienta reúne los datos disponibles del archivo. Si un bloque está incompleto, otra información incrustada puede seguir mostrándose."
     },
     {
-      "question": "¿Por qué algunas fotos no muestran metadatos?",
-      "answer": "Es posible que la cámara, la app o la exportación hayan eliminado los metadatos, o que el formato del archivo no incluya datos EXIF."
+      "question": "¿La fecha mostrada siempre es la del momento real de la foto?",
+      "answer": "No necesariamente. El archivo puede contener hora de exportación, hora de edición o una hora incorrecta configurada en la cámara."
     },
     {
-      "question": "¿Puedo encontrar la ubicación GPS en cualquier imagen?",
-      "answer": "No. Los datos GPS solo aparecen si se guardaron en el archivo original y no se eliminaron después."
+      "question": "¿Por qué GPS sale vacío aunque hice la foto con un móvil?",
+      "answer": "La ubicación pudo estar desactivada, la app de cámara pudo no guardarla o los metadatos pudieron eliminarse al compartirla o exportarla."
+    },
+    {
+      "question": "¿La orientación cambia los píxeles de la imagen?",
+      "answer": "No siempre. Muchas fotos usan una etiqueta de orientación en vez de píxeles rotados, por eso algunas aplicaciones las muestran de manera distinta."
     }
   ],
-  "uiLabels": {
-    "copy": "Copiar",
-    "copied": "Copiado",
-    "input": "Entrada",
-    "output": "Salida",
-    "placeholder": "Suelta una imagen aquí o elige un archivo",
-    "indent": "Sangría",
-    "removeComments": "Eliminar comentarios",
-    "preview": "Vista previa",
-    "source": "Fuente",
-    "sanitizedHtml": "HTML saneado",
-    "plainText": "Texto plano",
-    "summary": "Resumen",
-    "total": "Total",
-    "links": "Enlaces",
-    "images": "Imágenes",
-    "errors": "Errores",
-    "warnings": "Advertencias",
-    "valid": "Válido",
-    "invalid": "No válido",
-    "href": "Href",
-    "text": "Texto",
-    "rel": "Rel",
-    "target": "Destino",
-    "alt": "Alt",
-    "width": "Ancho",
-    "height": "Alto",
-    "empty": "Vacío",
-    "outputReady": "Resultado listo",
-    "cleanedHtml": "HTML limpio",
-    "formattedHtml": "HTML formateado",
-    "minifiedHtml": "HTML minificado",
-    "markdown": "Markdown",
-    "extractedImages": "Imágenes extraídas",
-    "extractedLinks": "Enlaces extraídos",
-    "validationSummary": "Resumen de validación",
-    "prettyHtml": "HTML legible",
-    "encodedText": "Texto codificado",
-    "file": "Archivo",
-    "size": "Tamaño",
-    "format": "Formato",
-    "quality": "Calidad",
-    "colorOne": "Color 1",
-    "colorTwo": "Color 2",
-    "background": "Fondo",
-    "foreground": "Primer plano",
-    "angle": "Ángulo",
-    "margin": "Margen",
-    "level": "Nivel",
-    "gradientType": "Tipo de degradado",
-    "linear": "Lineal",
-    "radial": "Radial",
-    "blur": "Desenfoque",
-    "spread": "Difusión",
-    "offsetX": "Desplazamiento X",
-    "offsetY": "Desplazamiento Y",
-    "opacity": "Opacidad",
-    "inset": "Interior",
-    "cssCode": "Código CSS",
-    "snippet": "Fragmento",
-    "download": "Descargar",
-    "downloadSvg": "Descargar SVG",
-    "downloadPng": "Descargar PNG",
-    "downloadAll": "Descargar todo",
-    "upload": "Subir",
-    "title": "Título",
-    "description": "Descripción",
-    "canonicalUrl": "URL canónica",
-    "siteName": "Nombre del sitio",
-    "ogImage": "Imagen OG",
-    "clear": "Limpiar",
-    "generatedQr": "Vista previa del codigo QR",
-    "placeholderImage": "Vista previa de la imagen",
-    "faviconSet": "Conjunto de favicon",
-    "keepAspectRatio": "Mantener proporción",
-    "cropX": "Recorte X",
-    "cropY": "Recorte Y",
-    "cropWidth": "Ancho del recorte",
-    "cropHeight": "Alto del recorte",
-    "originalSize": "Tamaño original",
-    "outputSize": "Tamaño de salida",
-    "savedSize": "Tamaño ahorrado",
-    "result": "Resultado",
-    "base64": "Base64",
-    "mimeType": "Tipo MIME",
-    "resizedImage": "Imagen redimensionada",
-    "compressedImage": "Imagen comprimida",
-    "croppedImage": "Imagen recortada",
-    "convertedImage": "Imagen convertida",
-    "decodedImage": "Imagen decodificada",
-    "imagePreview": "Vista previa de imagen",
-    "camera": "Cámara",
-    "lens": "Objetivo",
-    "dateTaken": "Fecha de captura",
-    "resolution": "Resolución",
-    "fileSize": "Tamaño del archivo",
-    "iso": "ISO",
-    "exposure": "Exposición",
-    "aperture": "Apertura",
-    "focalLength": "Distancia focal",
-    "flash": "Flash",
-    "orientation": "Orientación",
-    "latitude": "Latitud",
-    "longitude": "Longitud",
-    "openMap": "Abrir mapa",
-    "rawMetadata": "Metadatos sin procesar",
-    "noMetadataFound": "No se encontraron metadatos",
-    "gpsLocation": "Ubicación GPS",
-    "metadataSummary": "Resumen de metadatos"
-  },
   "seo": {
-    "title": "Lector de metadatos de imágenes online | Ver EXIF de fotos",
-    "description": "Consulta metadatos EXIF y de fotos online. Revisa modelo de cámara, fecha de captura, resolución, ubicación GPS, tamaño del archivo y más al instante.",
+    "title": "Lector de metadatos de imágenes",
+    "description": "Consulta metadatos EXIF de fotos: modelo de cámara, fecha, resolución, tamaño del archivo y coordenadas GPS directamente en el navegador.",
     "keywords": [
       "lector de metadatos de imágenes",
       "lector EXIF",
       "metadatos de fotos",
-      "ver EXIF online",
-      "metadatos de cámara",
+      "datos de cámara",
       "datos GPS de fotos",
-      "detalles de imagen"
+      "detalles de imagen",
+      "ver metadatos",
+      "EXIF"
     ]
   }
 }

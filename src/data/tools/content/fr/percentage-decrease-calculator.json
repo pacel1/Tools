@@ -4,44 +4,80 @@
   "slug": "calculateur-de-baisse-en-pourcentage",
   "h1": "Calculateur de baisse en pourcentage",
   "title": "Calculateur de baisse en pourcentage",
-  "shortDescription": "Calculez une valeur après une baisse en pourcentage avec des résultats rapides, des saisies simples et des exemples pratiques.",
-  "overview": "Calculez une valeur après une baisse en pourcentage. Cette page fournit une réponse rapide grâce à un outil utilitaire en ligne et à un parcours de résultat simple. Elle s’adresse aux utilisateurs qui recherchent une réponse gratuite dans le navigateur, des résultats instantanés et un contenu pratique de longue traîne.",
+  "shortDescription": "Calculez la valeur finale après une baisse en pourcentage en saisissant la valeur de départ et le taux de diminution.",
+  "metaTitle": "Calculateur de baisse",
+  "metaDescription": "Calculez la valeur finale après une baisse en pourcentage en saisissant la valeur de départ et le taux de diminution.",
+  "intro": "Indiquez la valeur initiale et le pourcentage de baisse pour obtenir tout de suite la valeur réduite.",
+  "overview": "Ce calculateur affiche la valeur finale après une diminution en pourcentage afin de voir clairement ce qu’il reste après la baisse. Il est utile dès qu’un prix, un budget, un objectif, une quantité ou une mesure doit être réduit d’un pourcentage précis. Le calcul part de la valeur de départ et du taux de diminution, ce qui limite les erreurs quand on fait le calcul à la main.\n\nL’outil permet aussi de comparer plusieurs scénarios sans refaire les formules. Vous pouvez vérifier une remise sur un prix, une coupe budgétaire ou un objectif revu à la baisse et obtenir directement le chiffre corrigé.",
   "howItWorks": [
-    "Saisissez la valeur ou le texte demandé dans le formulaire.",
-    "La conversion, le calcul ou la transformation s’exécute instantanément dans le navigateur.",
-    "Consultez le résultat et poursuivez avec des outils associés si vous avez besoin d’une autre étape."
+    "Saisissez la valeur de départ.",
+    "Entrez le pourcentage de baisse.",
+    "Lisez la valeur finale puis modifiez les données si vous voulez tester un autre scénario."
+  ],
+  "useCases": [
+    {
+      "title": "Promotions en magasin",
+      "description": "Calculer le prix final après une remise saisonnière, une démarque ou une réduction."
+    },
+    {
+      "title": "Réductions de budget",
+      "description": "Savoir combien il reste d’un budget de service, de projet ou de dépenses après une coupe."
+    },
+    {
+      "title": "Baisse de résultats",
+      "description": "Obtenir le nouveau niveau après une baisse de revenus, de commandes, de leads ou d’autres indicateurs."
+    },
+    {
+      "title": "Ajustement d’objectif",
+      "description": "Réduire un objectif de ventes, d’épargne ou de production d’un pourcentage fixe et voir la nouvelle cible."
+    }
   ],
   "examples": [
     {
-      "title": "Exemple 1",
-      "input": "120 diminué de 15 %",
-      "output": "102",
-      "description": "Un exemple réaliste de calculateur de baisse en pourcentage pour une recherche du quotidien."
+      "title": "Prix remisé",
+      "input": "Valeur initiale : 84, baisse : 25 %",
+      "output": "63",
+      "description": "Un article à 84 passe à 63 après une réduction de 25 %."
     },
     {
-      "title": "Exemple 2",
-      "input": "120 diminué de 15 %",
-      "output": "102",
-      "description": "Un autre cas d’usage pratique pour le trafic organique de longue traîne."
+      "title": "Loyer réduit",
+      "input": "Valeur initiale : 1 600, baisse : 7,5 %",
+      "output": "1 480",
+      "description": "Une mensualité de 1 600 tombe à 1 480 après la baisse."
+    },
+    {
+      "title": "Moins de contacts",
+      "input": "Valeur initiale : 2 400, baisse : 12 %",
+      "output": "2 112",
+      "description": "Un total de 2 400 devient 2 112 après application de la baisse."
     }
   ],
   "faq": [
     {
-      "question": "Quelle est la précision de cet outil ?",
-      "answer": "Le résultat est calculé directement à partir de la formule ou de la logique côté navigateur utilisée par cet outil."
+      "question": "Comment interpréter le résultat ?",
+      "answer": "Le résultat correspond à la valeur initiale moins le pourcentage choisi de cette même valeur."
     },
     {
-      "question": "Puis-je utiliser cet outil sur mobile ?",
-      "answer": "Oui. La page fonctionne sur ordinateur et sur mobile avec une interface simple pour la saisie et le résultat."
+      "question": "Puis-je saisir des pourcentages décimaux ?",
+      "answer": "Oui. Vous pouvez entrer 7,5 % ou 12,25 % et le calculateur appliquera cette baisse à la valeur initiale."
+    },
+    {
+      "question": "Pourquoi le résultat est-il parfois décimal ?",
+      "answer": "Si la diminution ne tombe pas juste, la valeur finale peut comporter une partie décimale."
+    },
+    {
+      "question": "Quelle erreur faut-il éviter ?",
+      "answer": "N’utilisez pas comme valeur initiale un montant déjà réduit, sinon la baisse sera appliquée deux fois."
     }
   ],
   "seo": {
-    "title": "Calculateur de baisse en pourcentage",
-    "description": "Calculez une valeur après une baisse en pourcentage. Calculateur en ligne gratuit avec résultats instantanés.",
+    "title": "Calculateur de baisse",
+    "description": "Calculez la valeur finale après une baisse en pourcentage en saisissant la valeur de départ et le taux de diminution.",
     "keywords": [
       "calculateur de baisse en pourcentage",
       "calculateur de diminution en pourcentage",
-      "outil calculatrice"
+      "baisse en pourcentage",
+      "valeur finale après baisse"
     ]
   }
 }

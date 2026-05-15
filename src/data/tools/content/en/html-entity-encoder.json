@@ -4,97 +4,79 @@
   "slug": "html-entity-encoder",
   "h1": "HTML Entity Encoder",
   "title": "HTML Entity Encoder",
-  "shortDescription": "Encode special characters and symbols as HTML entities.",
-  "metaTitle": "HTML Entity Encoder | Encode Text as HTML Entities",
-  "metaDescription": "Convert special characters, symbols, and unsafe characters into HTML entities instantly in your browser.",
-  "intro": "Use this HTML entity encoder to turn special characters into safe HTML entities for web pages, templates, and snippets. It runs entirely in your browser and helps prevent HTML interpretation when you need to display raw text.",
-  "overview": "The HTML Entity Encoder converts characters such as <, >, &, quotes, and other symbols into their corresponding HTML entities. This is useful when you want to show text literally inside HTML without it being parsed as markup. The tool is client-side only, fast, and designed for safe text handling in developer workflows.",
+  "shortDescription": "Convert reserved characters into HTML entities for safe display.",
+  "metaTitle": "HTML Entity Encoder",
+  "metaDescription": "Convert reserved characters, quotes, and symbols into HTML entities for safe HTML output in your editor or browser.",
+  "intro": "Turn characters like <, >, &, and quotes into HTML entities so they can be displayed as text in HTML.",
+  "overview": "The HTML Entity Encoder converts reserved characters and selected symbols into their entity form, so the output can be placed inside HTML without being treated as markup. That makes it useful when you need to show raw text, preserve code samples, or store content that may otherwise break a page.\n\nIt is especially helpful when text comes from forms, documentation, templates, or CMS fields and must appear exactly as written. The encoded result can be copied into HTML, snippets, emails, or source examples where literal display matters.",
   "howItWorks": [
-    "Paste or type the text you want to encode.",
-    "The tool converts reserved characters and symbols into HTML entities.",
-    "Copy the encoded output and use it in HTML, templates, docs, or code examples."
+    "Enter or paste the text you want to encode.",
+    "The tool replaces reserved HTML characters and supported symbols with entities.",
+    "Copy the encoded result into your HTML, template, or code sample."
   ],
   "useCases": [
-    "Escaping text before inserting it into HTML content.",
-    "Preparing code samples or snippets for documentation.",
-    "Displaying user input safely in previews or templates.",
-    "Encoding special symbols for CMS content or email HTML.",
-    "Preventing markup from being interpreted as tags."
+    {
+      "title": "Publishing raw text inside markup",
+      "description": "Encode text that contains angle brackets or ampersands before placing it into a page so the browser shows the characters literally."
+    },
+    {
+      "title": "Preparing code samples for docs",
+      "description": "Convert sample HTML or template fragments into entities to keep examples visible instead of executable."
+    },
+    {
+      "title": "Protecting user-submitted content in previews",
+      "description": "Render names, comments, or messages exactly as entered when they include characters that would otherwise alter the layout."
+    },
+    {
+      "title": "Formatting CMS content with symbols",
+      "description": "Store or paste text with currency signs, arrows, or math symbols without them being interpreted as HTML."
+    }
   ],
   "examples": [
     {
-      "title": "Basic encoding",
-      "input": "5 < 10 & 7 > 3",
-      "output": "5 &lt; 10 &amp; 7 &gt; 3",
-      "description": "Reserved HTML characters are converted to entities."
+      "title": "Reserved characters",
+      "input": "price < 20 & stock > 0",
+      "output": "price &lt; 20 &amp; stock &gt; 0",
+      "description": "Angle brackets and ampersands become HTML entities."
     },
     {
-      "title": "Quotes and symbols",
-      "input": "\"Hello\" & 'World'",
-      "output": "&quot;Hello&quot; &amp; &#39;World&#39;",
-      "description": "Quotes and ampersands are safely encoded."
+      "title": "Quotes in an attribute-like string",
+      "input": "He said: \"save it\" & leave",
+      "output": "He said: &quot;save it&quot; &amp; leave",
+      "description": "Double quotes and the ampersand are encoded for literal display."
+    },
+    {
+      "title": "Mixed symbols and text",
+      "input": "Use <code> and 50% > 25%",
+      "output": "Use &lt;code&gt; and 50% &gt; 25%",
+      "description": "Tag-like text is neutralized while ordinary percent signs remain readable."
     }
   ],
   "faq": [
     {
-      "question": "What does HTML entity encoding do?",
-      "answer": "It replaces special characters with HTML entities so browsers display them as text instead of interpreting them as HTML."
+      "question": "Which characters are encoded first?",
+      "answer": "Reserved HTML characters such as <, >, and & are always encoded. Quotes may also be encoded, depending on how the encoder is configured."
     },
     {
-      "question": "Is this tool safe to use in the browser?",
-      "answer": "Yes. It uses client-side logic only and does not send your text to any server or external API."
+      "question": "Will the output still look readable?",
+      "answer": "Yes. The encoded text is still human-readable, but characters that could be treated as HTML are written in entity form."
     },
     {
-      "question": "Does it encode all characters?",
-      "answer": "It always encodes reserved HTML characters and may encode additional symbols depending on the selected implementation."
+      "question": "Can I encode already-encoded text twice?",
+      "answer": "You can, but it usually creates nested entities like &amp;amp;. That is a common mistake if the text has already been encoded once."
     },
     {
-      "question": "When should I use HTML entity encoding?",
-      "answer": "Use it when you need to show raw text, user input, or code safely inside an HTML document."
+      "question": "Why does my sample code show tags instead of text?",
+      "answer": "That usually means the text was inserted without encoding. Wrap it through the encoder before placing it into HTML output."
+    },
+    {
+      "question": "Does this tool change non-HTML symbols too?",
+      "answer": "Only symbols supported by the encoder are converted. Ordinary letters, numbers, and most punctuation remain unchanged unless they conflict with HTML parsing."
     }
   ],
-  "uiLabels": {
-    "copy": "Copy",
-    "copied": "Copied",
-    "input": "Text input",
-    "output": "Encoded output",
-    "placeholder": "Paste text to encode",
-    "indent": "Indent",
-    "removeComments": "Remove comments",
-    "preview": "Preview",
-    "source": "Source",
-    "sanitizedHtml": "Sanitized HTML",
-    "plainText": "Plain text",
-    "summary": "Summary",
-    "total": "Total",
-    "links": "Links",
-    "images": "Images",
-    "errors": "Errors",
-    "warnings": "Warnings",
-    "valid": "Valid",
-    "invalid": "Invalid",
-    "href": "href",
-    "text": "Text",
-    "rel": "rel",
-    "target": "target",
-    "alt": "alt",
-    "width": "width",
-    "height": "height",
-    "empty": "Empty",
-    "outputReady": "Output ready",
-    "cleanedHtml": "Cleaned HTML",
-    "formattedHtml": "Formatted HTML",
-    "minifiedHtml": "Minified HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extracted images",
-    "extractedLinks": "Extracted links",
-    "validationSummary": "Validation summary",
-    "prettyHtml": "Pretty HTML",
-    "encodedText": "Encoded text"
-  },
   "seo": {
     "title": "HTML Entity Encoder",
-    "description": "Encode special characters and symbols as HTML entities instantly in your browser.",
+    "description": "Convert reserved characters, quotes, and symbols into HTML entities for safe HTML output in your editor or browser.",
     "keywords": [
       "html entity encoder",
       "encode html entities",

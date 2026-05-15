@@ -4,11 +4,11 @@
   "slug": "calculateur-de-chape",
   "h1": "Calculateur de chape",
   "title": "Calculateur de chape",
-  "shortDescription": "Calculez la quantité de matériau pour une chape ciment, anhydrite ou autonivelante.",
-  "metaTitle": "Calculateur de chape en ligne | Volume, matériau et nombre de sacs",
-  "metaDescription": "Utilisez le calculateur de chape pour estimer le volume, le poids total du mélange et le nombre de sacs nécessaires pour une chape ciment, anhydrite ou autonivelante.",
-  "intro": "Estimez rapidement le matériau pour une chape dans une rénovation, une construction neuve ou un plancher chauffant. Saisissez la surface, l’épaisseur, la marge et le poids du sac pour obtenir le volume, les kilos totaux et le nombre de sacs.",
-  "overview": "Ce calculateur de chape aide à planifier une chape ciment, une chape anhydrite et une chape autonivelante. Il convertit la surface et l’épaisseur en volume, puis estime le poids total du matériau et le nombre de sacs, en tenant compte d’une marge.",
+  "shortDescription": "Estimez le volume, le poids du mélange et le nombre de sacs pour une chape ciment, anhydrite ou autonivelante.",
+  "metaTitle": "Calculateur de chape | Volume et sacs",
+  "metaDescription": "Estimez le volume de chape, le poids total du mélange et le nombre de sacs pour une chape ciment, anhydrite ou autonivelante.",
+  "intro": "Saisissez la surface, l’épaisseur, la consommation, la marge et le poids du sac pour obtenir le volume, les kilos totaux et le nombre de sacs.",
+  "overview": "Ce calculateur permet de préparer une chape ciment, une chape anhydrite ou une chape autonivelante avec des données de chantier concrètes. Il transforme la surface et l’épaisseur en volume, puis estime le poids total du mélange et le nombre de sacs à prévoir.\n\nC’est pratique pour organiser l’approvisionnement, coordonner la livraison et vérifier que l’épaisseur prévue correspond bien au projet. Si la fiche produit donne une consommation en kg/m2/mm, utilisez cette valeur directement. Si elle donne une densité, saisissez-la et ajoutez une marge raisonnable pour les pertes, les découpes et les petites irrégularités du support.",
   "howItWorks": [
     "Saisissez la surface en mètres carrés.",
     "Définissez l’épaisseur de la chape en millimètres.",
@@ -17,156 +17,68 @@
     "Entrez le poids d’un sac pour calculer le nombre nécessaire."
   ],
   "useCases": [
-    "Estimer le matériau pour un sol neuf ou une rénovation.",
-    "Préparer une chape pour plancher chauffant.",
-    "Vérifier le nombre de sacs avant l’achat.",
-    "Comparer les besoins selon le type de chape."
-  ],
-  "examples": [
     {
-      "title": "Exemple de calcul",
-      "input": "Surface : 20 m2, épaisseur : 50 mm, consommation : 2,0 kg/m2/mm, marge : 5 %, poids du sac : 25 kg",
-      "output": "Volume : 1,00 m3, mélange total : 2100 kg, sacs : 84.",
-      "description": "Une estimation pratique pour une pièce moyenne."
+      "title": "Rénovation d’appartement",
+      "description": "Estimez le matériau pour un salon, un couloir et une chambre avant la commande."
     },
     {
       "title": "Plancher chauffant",
-      "input": "Surface : 45 m2, épaisseur : 60 mm, consommation : 1,8 kg/m2/mm, marge : 7 %, poids du sac : 25 kg",
-      "output": "Volume : 2,70 m3, mélange total : 5106 kg, sacs : 205.",
-      "description": "Utile pour les chapes au-dessus des tuyaux de chauffage."
+      "description": "Préparez la quantité de chape à couler au-dessus des tuyaux de chauffage."
+    },
+    {
+      "title": "Commande en sacs",
+      "description": "Vérifiez si des sacs de 20 kg ou 25 kg conviennent mieux au chantier."
+    },
+    {
+      "title": "Comparaison des produits",
+      "description": "Comparez les besoins d’une chape ciment, anhydrite ou autonivelante à partir de leurs données techniques."
+    }
+  ],
+  "examples": [
+    {
+      "title": "Salon standard",
+      "input": "Surface : 18 m2, épaisseur : 45 mm, consommation : 1,95 kg/m2/mm, marge : 6 %, poids du sac : 25 kg",
+      "output": "Volume : 0,81 m3, mélange total : 1577 kg, sacs : 64",
+      "description": "Estimation adaptée à une pièce classique."
+    },
+    {
+      "title": "Cuisine avec chauffage au sol",
+      "input": "Surface : 12,5 m2, épaisseur : 55 mm, consommation : 2,10 kg/m2/mm, marge : 8 %, poids du sac : 20 kg",
+      "output": "Volume : 0,69 m3, mélange total : 1432 kg, sacs : 72",
+      "description": "Utile pour une chape posée sur un réseau de chauffage."
+    },
+    {
+      "title": "Local technique",
+      "input": "Surface : 38 m2, épaisseur : 40 mm, consommation : 1,75 kg/m2/mm, marge : 5 %, poids du sac : 25 kg",
+      "output": "Volume : 1,52 m3, mélange total : 2762 kg, sacs : 111",
+      "description": "Pratique pour une surface plus importante à traiter en une fois."
     }
   ],
   "faq": [
     {
-      "question": "Comment le volume de chape est-il calculé ?",
-      "answer": "Le volume est calculé en multipliant la surface par l’épaisseur convertie en mètres."
+      "question": "Que saisir si le fabricant indique une densité plutôt qu’une consommation ?",
+      "answer": "Utilisez la densité indiquée dans la fiche technique. N’additionnez pas consommation et densité en même temps, sauf consigne explicite du fabricant."
     },
     {
-      "question": "Puis-je l’utiliser pour un ragréage autonivelant ?",
-      "answer": "Oui. Saisissez la consommation ou la densité du produit pour estimer la quantité nécessaire."
+      "question": "Pourquoi le résultat change-t-il selon le type de chape ?",
+      "answer": "La géométrie de la pièce reste la même, mais les caractéristiques du produit et le poids par sac changent. Le volume est identique, mais pas la masse ni le nombre de sacs."
     },
     {
-      "question": "Pourquoi ajouter une marge ?",
-      "answer": "La marge couvre les pertes pendant le mélange, la mise en œuvre et les petites irrégularités du support."
+      "question": "Le calcul du nombre de sacs est-il arrondi au supérieur ?",
+      "answer": "Oui. Une fraction de sac doit être considérée comme un sac entier lors de la commande."
     },
     {
-      "question": "Le calculateur estime-t-il aussi le nombre de sacs ?",
-      "answer": "Oui. Indiquez simplement le poids d’un sac et le calculateur calculera la quantité requise."
+      "question": "Quelle marge faut-il prévoir ?",
+      "answer": "Une marge plus élevée est utile en présence d’un support irrégulier, de nombreuses découpes ou d’un transport plus long du mélange. Sur une pièce simple et bien préparée, une marge plus faible suffit."
+    },
+    {
+      "question": "Le volume reste-t-il valable si le sol n’est pas parfaitement plat ?",
+      "answer": "Le calcul suppose une épaisseur uniforme. En cas de fortes différences de niveau, calculez une épaisseur moyenne ou découpez la surface en plusieurs zones."
     }
   ],
-  "uiLabels": {
-    "copy": "Copier",
-    "copied": "Copié",
-    "input": "Entrée",
-    "output": "Résultat",
-    "placeholder": "Saisissez une valeur",
-    "indent": "Retrait",
-    "removeComments": "Supprimer les commentaires",
-    "preview": "Aperçu",
-    "source": "Source",
-    "sanitizedHtml": "HTML nettoyé",
-    "plainText": "Texte brut",
-    "summary": "Résumé",
-    "total": "Total",
-    "links": "Liens",
-    "images": "Images",
-    "errors": "Erreurs",
-    "warnings": "Avertissements",
-    "valid": "Valide",
-    "invalid": "Invalide",
-    "href": "Href",
-    "text": "Texte",
-    "rel": "Rel",
-    "target": "Cible",
-    "alt": "Alt",
-    "width": "Largeur",
-    "height": "Hauteur",
-    "empty": "Vide",
-    "outputReady": "Résultat prêt",
-    "cleanedHtml": "HTML nettoyé",
-    "formattedHtml": "HTML formaté",
-    "minifiedHtml": "HTML minifié",
-    "markdown": "Markdown",
-    "extractedImages": "Images extraites",
-    "extractedLinks": "Liens extraits",
-    "validationSummary": "Résumé de validation",
-    "prettyHtml": "HTML lisible",
-    "encodedText": "Texte encodé",
-    "file": "Fichier",
-    "size": "Taille",
-    "format": "Format",
-    "quality": "Qualité",
-    "colorOne": "Couleur 1",
-    "colorTwo": "Couleur 2",
-    "background": "Arrière-plan",
-    "foreground": "Premier plan",
-    "angle": "Angle",
-    "margin": "Marge",
-    "level": "Niveau",
-    "gradientType": "Type de dégradé",
-    "linear": "Linéaire",
-    "radial": "Radial",
-    "blur": "Flou",
-    "spread": "Étendue",
-    "offsetX": "Décalage X",
-    "offsetY": "Décalage Y",
-    "opacity": "Opacité",
-    "inset": "Interne",
-    "cssCode": "Code CSS",
-    "snippet": "Extrait",
-    "download": "Télécharger",
-    "downloadSvg": "Télécharger SVG",
-    "downloadPng": "Télécharger PNG",
-    "downloadAll": "Tout télécharger",
-    "upload": "Importer",
-    "title": "Titre",
-    "description": "Description",
-    "canonicalUrl": "URL canonique",
-    "siteName": "Nom du site",
-    "ogImage": "Image OG",
-    "clear": "Effacer",
-    "generatedQr": "QR généré",
-    "placeholderImage": "Image de remplacement",
-    "faviconSet": "Jeu de favicon",
-    "keepAspectRatio": "Conserver le ratio",
-    "cropX": "Recadrage X",
-    "cropY": "Recadrage Y",
-    "cropWidth": "Largeur du recadrage",
-    "cropHeight": "Hauteur du recadrage",
-    "originalSize": "Taille d’origine",
-    "outputSize": "Taille de sortie",
-    "savedSize": "Taille économisée",
-    "result": "Résultat",
-    "base64": "Base64",
-    "mimeType": "Type MIME",
-    "resizedImage": "Image redimensionnée",
-    "compressedImage": "Image compressée",
-    "croppedImage": "Image recadrée",
-    "convertedImage": "Image convertie",
-    "decodedImage": "Image décodée",
-    "imagePreview": "Aperçu de l’image",
-    "camera": "Caméra",
-    "lens": "Objectif",
-    "dateTaken": "Date de prise de vue",
-    "resolution": "Résolution",
-    "fileSize": "Taille du fichier",
-    "iso": "ISO",
-    "exposure": "Exposition",
-    "aperture": "Ouverture",
-    "focalLength": "Distance focale",
-    "flash": "Flash",
-    "orientation": "Orientation",
-    "latitude": "Latitude",
-    "longitude": "Longitude",
-    "openMap": "Ouvrir la carte",
-    "rawMetadata": "Métadonnées brutes",
-    "noMetadataFound": "Aucune métadonnée trouvée",
-    "gpsLocation": "Position GPS",
-    "metadataSummary": "Résumé des métadonnées"
-  },
   "seo": {
-    "title": "Calculateur de chape en ligne",
-    "description": "Estimez le volume de chape, le poids du mélange et le nombre de sacs pour une chape ciment, anhydrite ou autonivelante.",
+    "title": "Calculateur de chape | Volume et sacs",
+    "description": "Estimez le volume de chape, le poids total du mélange et le nombre de sacs pour une chape ciment, anhydrite ou autonivelante.",
     "keywords": [
       "calculateur de chape",
       "calculateur chape",

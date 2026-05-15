@@ -4,44 +4,84 @@
   "slug": "url-encoder",
   "h1": "URL-Kodierer",
   "title": "URL-Kodierer",
-  "shortDescription": "Text sicher für URLs kodieren – mit schnellen Ergebnissen, einfacher Eingabe und praktischen Beispielen.",
-  "overview": "Text sicher für die Verwendung in URLs kodieren. Diese Seite liefert eine schnelle Antwort mit einem praktischen Tool und einem einfachen Ergebnisablauf. Die Seite richtet sich an Nutzer, die eine kostenlose Online-Antwort, schnelle browserbasierte Ergebnisse und praktische Long-Tail-Tool-Inhalte suchen.",
+  "shortDescription": "Text in eine sichere URL-Form für Parameter, Pfade und Formularwerte umwandeln.",
+  "metaTitle": "URL-Kodierer für Text",
+  "metaDescription": "Text in eine sichere URL-Form für Parameter, Pfade und Formularwerte umwandeln – mit präziser Prozentkodierung.",
+  "intro": "Text einfügen und die Tool-Ausgabe liefert eine URL-kodierte Version mit Prozentzeichen für reservierte Zeichen und Leerzeichen.",
+  "overview": "Nutzen Sie dieses Tool, wenn normaler Text sicher in eine URL eingebettet werden muss. Es wandelt Leerzeichen, Fragezeichen, Kaufmannsund, Schrägstriche und nicht-ASCII-Zeichen in percent-escapete Form um.\n\nDas ist praktisch für Query-Parameter, Pfadsegmente und für Inhalte, die in API-Aufrufen oder Weiterleitungs-URLs transportiert werden sollen. Die Ausgabe behält den Inhalt bei, macht ihn aber für die Verwendung in Adressen und Parametern korrekt lesbar.",
   "howItWorks": [
-    "Geben Sie den benötigten Wert oder Text in das Formular ein.",
-    "Die Umwandlung, Berechnung oder Transformation läuft sofort im Browser.",
-    "Prüfen Sie das Ergebnis und nutzen Sie bei Bedarf verwandte Tools für den nächsten Schritt."
+    "Geben Sie den zu kodierenden Text ein.",
+    "Das Tool ersetzt reservierte Zeichen sofort durch Prozentsequenzen.",
+    "Kopieren Sie das Ergebnis in eine URL, einen Parameter oder eine Anfragezeichenfolge."
+  ],
+  "useCases": [
+    {
+      "title": "Suchbegriff als Parameter",
+      "description": "Kodieren Sie eine Suche wie Kaffee & Tee, bevor sie als Wert in einer Ergebnis- oder API-URL landet."
+    },
+    {
+      "title": "Ziel-URL in Weiterleitungen",
+      "description": "Kodieren Sie eine komplette Adresse, wenn sie als Wert in einem anderen Link übergeben werden muss."
+    },
+    {
+      "title": "Datei- oder Pfadnamen",
+      "description": "Machen Sie Segmente wie Sommerfotos 2024 URL-tauglich, indem Sie Leerzeichen und Satzzeichen kodieren."
+    },
+    {
+      "title": "Formulartext für einen Endpoint",
+      "description": "Kodieren Sie Notizen, Tags oder Bezeichnungen vor dem Senden per GET-Anfrage oder Callback-URL."
+    }
   ],
   "examples": [
     {
-      "title": "Beispiel 1",
-      "input": "hello world?x=1&y=2",
-      "output": "hello%20world%3Fx%3D1%26y%3D2",
-      "description": "Ein realistisches URL-Kodierbeispiel für eine alltägliche Suchanfrage."
+      "title": "Suchbegriff mit Sonderzeichen",
+      "input": "laptop stand?brand=acme & co",
+      "output": "laptop%20stand%3Fbrand%3Dacme%20%26%20co",
+      "description": "Leerzeichen und reservierte Zeichen werden so kodiert, dass sie sicher in einer URL verwendet werden können."
     },
     {
-      "title": "Beispiel 2",
-      "input": "hello world?x=1&y=2",
-      "output": "hello%20world%3Fx%3D1%26y%3D2",
-      "description": "Ein weiterer praktischer Anwendungsfall für organischen Long-Tail-Traffic."
+      "title": "Text mit Umlauten",
+      "input": "füße & größe",
+      "output": "f%C3%BC%C3%9Fe%20%26%20gr%C3%B6%C3%9Fe",
+      "description": "Nicht-ASCII-Zeichen werden als UTF-8-Bytes umgesetzt und anschließend prozentkodiert."
+    },
+    {
+      "title": "Pfadsegment mit Schrägstrich",
+      "input": "berichte/2024 Q3",
+      "output": "berichte%2F2024%20Q3",
+      "description": "Ein Schrägstrich innerhalb eines Segments wird kodiert, damit er nicht als Trenner wirkt."
     }
   ],
   "faq": [
     {
-      "question": "Wie genau ist dieses Tool?",
-      "answer": "Das Ergebnis wird direkt aus der Formel oder der browserseitigen Logik berechnet, die dieses Tool verwendet."
+      "question": "Welche Zeichen werden kodiert?",
+      "answer": "Kodiert werden reservierte URL-Zeichen wie Leerzeichen, ?, &, =, #, / sowie Zeichen außerhalb von ASCII, damit die Eingabe sicher transportiert werden kann."
     },
     {
-      "question": "Kann ich dieses Tool auf dem Handy nutzen?",
-      "answer": "Ja. Die Seite funktioniert auf Desktop- und Mobilgeräten mit einem einfachen Eingabe- und Ergebnislayout."
+      "question": "Warum wird ein Leerzeichen zu %20 und nicht zu +?",
+      "answer": "%20 ist die Standardform der Prozentkodierung für Leerzeichen. Ein Pluszeichen gehört vor allem zu Formularen im Format application/x-www-form-urlencoded."
+    },
+    {
+      "question": "Kann ich eine komplette URL kodieren?",
+      "answer": "Ja, aber nur wenn das gewollt ist: Dann werden auch Trennzeichen wie : und / kodiert. Das ist sinnvoll, wenn die ganze Adresse als Parameterwert eingebettet wird."
+    },
+    {
+      "question": "Warum ist das Ergebnis länger?",
+      "answer": "Zeichen außerhalb des sicheren Satzes werden in mehrere Prozent-Bytes zerlegt. Darum ist der kodierte Text oft länger als der ursprüngliche."
+    },
+    {
+      "question": "Was ist der häufigste Fehler?",
+      "answer": "Oft wird die komplette Adresse kodiert, obwohl nur ein einzelner Wert nötig war. Bei normalen Links sollte nur der Teil kodiert werden, der in die URL eingesetzt wird."
     }
   ],
   "seo": {
     "title": "URL-Kodierer",
-    "description": "Text sicher für URLs kodieren. Kostenloser URL-Kodierer online mit sofortigen Ergebnissen.",
+    "description": "Text in eine sichere URL-Form für Parameter, Pfade und Formularwerte umwandeln – mit präziser Prozentkodierung.",
     "keywords": [
-      "url-kodierer",
       "url kodierer",
-      "entwickler-tools"
+      "url kodierung",
+      "prozentkodierung",
+      "text für url"
     ]
   }
 }

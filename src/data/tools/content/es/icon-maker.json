@@ -1,0 +1,88 @@
+{
+  "toolId": "icon-maker",
+  "locale": "es",
+  "slug": "icon-maker",
+  "h1": "Icon Maker",
+  "title": "Icon Maker",
+  "shortDescription": "Convierte una imagen en iconos de app o iconos cuadrados de marca con control de tamaño, margen y fondo.",
+  "metaTitle": "Icon Maker | Iconos de app",
+  "metaDescription": "Convierte una imagen en iconos de app, iconos de launcher o recursos cuadrados de marca con exportación en el navegador.",
+  "intro": "Crea un icono pulido a partir de una sola imagen ajustando tamaño, margen, fondo y formato, y descárgalo directamente desde el navegador.",
+  "overview": "Esta herramienta está pensada para un flujo concreto: obtener un único icono cuadrado, limpio y listo para usar, en lugar de un paquete completo. Funciona bien para prototipos de app, tiles de launcher, recursos PWA, demos de producto y avatares de marca que necesitan un encuadre consistente.\n\nPuedes partir de un logo, un símbolo o un monograma y regular el espacio interior para que el motivo quede bien equilibrado dentro del lienzo. Si quieres un aspecto más contundente, usa un fondo sólido; si prefieres versatilidad, mantén la transparencia para colocarlo sobre distintas superficies.\n\nEl resultado es un archivo útil de trabajo, no solo una previsualización. Eso lo hace apropiado para entregar a desarrollo, probar interfaces tempranas, preparar vistas de tienda y reutilizar un icono cuadrado con proporciones predecibles.",
+  "howItWorks": [
+    "Sube la imagen que quieras convertir en icono.",
+    "Elige el tamaño del lienzo, el margen, el color de fondo y el formato.",
+    "Revisa la vista previa y descarga el archivo final."
+  ],
+  "useCases": [
+    {
+      "title": "Icono de lanzamiento",
+      "description": "Convierte un logo en un icono cuadrado para una vista previa de app, una build interna o una maqueta de tienda."
+    },
+    {
+      "title": "Asset para pantalla de inicio",
+      "description": "Genera un símbolo limpio con el margen justo para que se vea bien en un launcher o en la pantalla principal del móvil."
+    },
+    {
+      "title": "Avatar de producto",
+      "description": "Pasa un signo de marca a un recurso cuadrado para paneles, dashboards o listados de proveedores."
+    },
+    {
+      "title": "Insignia de marca",
+      "description": "Coloca un símbolo sencillo sobre un fondo sólido para crear un icono compacto para presentaciones y propuestas."
+    }
+  ],
+  "examples": [
+    {
+      "title": "Logo transparente a icono de app",
+      "input": "Un logo SVG transparente sin el texto largo",
+      "output": "Un icono PNG de 512×512 con el símbolo centrado y 18% de margen",
+      "description": "Útil para pruebas de app cuando hace falta un recurso cuadrado claro y legible."
+    },
+    {
+      "title": "Monograma sobre fondo oscuro",
+      "input": "Un monograma de dos letras con fondo transparente",
+      "output": "Un icono de 1024×1024 con fondo azul marino y marca blanca",
+      "description": "Funciona bien como avatar o tile de launcher con contraste fuerte."
+    },
+    {
+      "title": "Símbolo de producto para marketplace",
+      "input": "Un pequeño glyph exportado desde un archivo de diseño",
+      "output": "Un icono WebP de 256×256 con más margen y fondo transparente",
+      "description": "Ayuda cuando el símbolo debe verse bien en superficies distintas sin marco fijo."
+    }
+  ],
+  "faq": [
+    {
+      "question": "¿Qué tipo de imagen conviene subir?",
+      "answer": "Lo ideal es un logo, símbolo o monograma con bordes definidos y espacio suficiente alrededor. Las ilustraciones muy cargadas pierden claridad al reducirse."
+    },
+    {
+      "question": "¿Por qué importa tanto el margen?",
+      "answer": "El margen determina cuánto aire queda dentro del cuadrado. Si es demasiado pequeño, el icono se ve apretado; si es demasiado grande, el motivo queda débil."
+    },
+    {
+      "question": "¿Puedo conservar el fondo transparente?",
+      "answer": "Sí. Es la mejor opción cuando el icono se va a colocar sobre distintos colores o dentro de varios sistemas visuales."
+    },
+    {
+      "question": "¿Qué pasa si la imagen original es rectangular?",
+      "answer": "La herramienta la adapta a un lienzo cuadrado. Si el motivo es muy ancho, puede hacer falta reducir el margen o usar una versión más preparada para el recorte."
+    },
+    {
+      "question": "¿Qué formato debería escoger?",
+      "answer": "PNG suele ser la opción más segura para bordes nítidos y transparencia. WebP pesa menos, y un fondo sólido encaja mejor en iconos tipo insignia."
+    }
+  ],
+  "seo": {
+    "title": "Icon Maker | Iconos de app",
+    "description": "Convierte una imagen en iconos de app, iconos de launcher o recursos cuadrados de marca con exportación en el navegador.",
+    "keywords": [
+      "icon maker",
+      "generador de iconos",
+      "iconos de app",
+      "icono cuadrado",
+      "iconos de launcher"
+    ]
+  }
+}

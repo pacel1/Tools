@@ -4,105 +4,87 @@
   "slug": "html-tag-remover",
   "h1": "HTML Tag Remover",
   "title": "HTML Tag Remover",
-  "shortDescription": "Remove HTML tags and extract readable plain text from any HTML snippet.",
-  "metaTitle": "HTML Tag Remover | Convert HTML to Plain Text",
-  "metaDescription": "Remove HTML tags online and keep readable text. Clean HTML snippets safely in your browser with a fast client-side HTML tag remover.",
-  "intro": "Strip HTML tags from code or pasted content and get clean, readable plain text instantly. This browser-based HTML tag remover keeps the visible text while removing markup, with no external API calls.",
-  "overview": "HTML Tag Remover is a simple client-side utility for turning HTML into plain text. Paste a fragment, full page content, or copied rich text, and the tool removes tags while preserving readable words and line breaks as much as possible. It is useful for cleaning content, extracting text for notes, preparing snippets for search, or comparing text without markup. Processing happens locally in your browser for a safer, faster workflow.",
+  "shortDescription": "Strip HTML tags and keep the readable text from pasted markup.",
+  "metaTitle": "HTML Tag Remover for Text",
+  "metaDescription": "Remove HTML tags and keep readable text from pasted markup in your browser, without sending content anywhere.",
+  "intro": "Paste HTML and get plain text with the tags removed immediately.",
+  "overview": "HTML Tag Remover turns HTML markup into readable plain text without changing the source file. Paste a fragment, a full document, or copied rich content, and the tool extracts the visible text while dropping elements, attributes, and nested tags. It is useful when you need the words, not the structure.\n\nThe result is best for editing notes, checking copied content, or isolating text from templates and snippets. Line breaks and spacing are preserved where the HTML structure allows it, but block-level formatting can vary depending on how the input is written.",
   "howItWorks": [
     "Paste HTML into the input field.",
-    "The tool parses the markup locally in your browser.",
-    "HTML tags are removed and readable text is extracted.",
-    "Copy the plain-text result for reuse in docs, notes, or apps."
+    "The parser reads the markup locally in your browser.",
+    "Tags and attributes are removed from the visible output.",
+    "Copy the plain-text result for reuse in another app."
   ],
   "useCases": [
-    "Convert HTML snippets into plain text.",
-    "Clean copied web content before pasting into email or chat.",
-    "Extract readable content from template code.",
-    "Remove markup for text analysis or search indexing prep.",
-    "Quickly preview the text behind a block of HTML."
+    {
+      "title": "Turn article markup into notes",
+      "description": "Remove headings, links, and formatting from pasted article HTML so you can save the wording as plain notes."
+    },
+    {
+      "title": "Clean pasted email templates",
+      "description": "Strip wrapper tags from newsletter or email layout code before moving the text into a draft or document."
+    },
+    {
+      "title": "Extract visible text from CMS snippets",
+      "description": "Pull the readable content out of component HTML when you only need the text shown to readers."
+    },
+    {
+      "title": "Prepare text for manual comparison",
+      "description": "Remove markup from two HTML snippets so the wording can be compared without tag noise."
+    }
   ],
   "examples": [
     {
-      "title": "Simple paragraph",
-      "input": "<p>Hello <strong>world</strong>!</p>",
-      "output": "Hello world!",
-      "description": "Basic text with inline formatting removed."
+      "title": "Paragraph with emphasis",
+      "input": "<p>Welcome to <strong>Q4</strong> planning.</p>",
+      "output": "Welcome to Q4 planning.",
+      "description": "Inline formatting disappears while the sentence stays intact."
     },
     {
-      "title": "Links and lists",
-      "input": "<div><a href=\"/docs\">Docs</a><ul><li>One</li><li>Two</li></ul></div>",
-      "output": "Docs\nOne\nTwo",
-      "description": "Readable text is kept while tags are stripped."
+      "title": "Card with link and list",
+      "input": "<section><a href=\"/pricing\">Pricing</a><ul><li>Starter</li><li>Business</li></ul></section>",
+      "output": "Pricing\nStarter\nBusiness",
+      "description": "Blocks are separated so the text remains readable after tag removal."
+    },
+    {
+      "title": "Mixed markup and entities",
+      "input": "<div>Use &amp; to join items, or <span>split</span> them later.</div>",
+      "output": "Use & to join items, or split them later.",
+      "description": "Entities are decoded into normal characters in the extracted text."
     }
   ],
   "faq": [
     {
-      "question": "Does it keep the text content inside tags?",
-      "answer": "Yes. The tool removes HTML markup and keeps the readable text inside the elements."
+      "question": "What happens to attributes like href, class, and data-*?",
+      "answer": "They are removed with the tags. Only the readable text content is kept in the output."
     },
     {
-      "question": "Is the processing done in the browser?",
-      "answer": "Yes. It uses client-side logic only, so your HTML is handled locally without external APIs."
+      "question": "Will script or style blocks appear in the result?",
+      "answer": "They should not be part of the readable output. The tool is meant to extract visible text, not code that the page uses behind the scenes."
     },
     {
-      "question": "Can it remove script and style content too?",
-      "answer": "It focuses on extracting readable text safely, so non-visible content may be ignored or removed depending on the parser behavior."
+      "question": "Why does my output have extra blank lines?",
+      "answer": "HTML blocks can map to separate lines when converted to plain text. If the source uses many nested containers or empty elements, spacing can look uneven."
     },
     {
-      "question": "Will line breaks and spacing be preserved?",
-      "answer": "The tool tries to keep text readable, but exact formatting can vary depending on the HTML structure."
+      "question": "Does it decode HTML entities such as &amp; and &nbsp;?",
+      "answer": "Yes, entities are interpreted as text characters where the parser can resolve them. Non-breaking spaces may appear as regular spaces in the plain-text result."
+    },
+    {
+      "question": "Can I use it on malformed HTML?",
+      "answer": "Often yes, but broken markup can change how text is grouped. If tags are missing or nested incorrectly, the extracted text may not match the original layout exactly."
     }
   ],
-  "uiLabels": {
-    "copy": "Copy",
-    "copied": "Copied",
-    "input": "HTML input",
-    "output": "Text without tags",
-    "placeholder": "Paste HTML here...",
-    "indent": "Indent",
-    "removeComments": "Remove comments",
-    "preview": "Preview",
-    "source": "Source",
-    "sanitizedHtml": "Sanitized HTML",
-    "plainText": "Plain text",
-    "summary": "Summary",
-    "total": "Total",
-    "links": "Links",
-    "images": "Images",
-    "errors": "Errors",
-    "warnings": "Warnings",
-    "valid": "Valid",
-    "invalid": "Invalid",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Width",
-    "height": "Height",
-    "empty": "Empty",
-    "outputReady": "Output ready",
-    "cleanedHtml": "Cleaned HTML",
-    "formattedHtml": "Formatted HTML",
-    "minifiedHtml": "Minified HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extracted images",
-    "extractedLinks": "Extracted links",
-    "validationSummary": "Validation summary",
-    "prettyHtml": "Pretty HTML",
-    "encodedText": "Encoded text"
-  },
   "seo": {
-    "title": "HTML Tag Remover | Convert HTML to Plain Text",
-    "description": "Remove HTML tags online and keep readable text. Clean HTML snippets safely in your browser with a fast client-side HTML tag remover.",
+    "title": "HTML Tag Remover for Text",
+    "description": "Remove HTML tags and keep readable text from pasted markup in your browser, without sending content anywhere.",
     "keywords": [
       "html tag remover",
       "remove html tags",
       "html to text",
-      "html to plain text",
       "strip html tags",
-      "clean html text"
+      "html plain text",
+      "extract text from html"
     ]
   }
 }

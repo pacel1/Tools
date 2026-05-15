@@ -4,43 +4,75 @@
   "slug": "przelicznik-galonow-na-litry",
   "h1": "Przelicznik galonów na litry",
   "title": "Przelicznik galonów na litry",
-  "shortDescription": "Przeliczaj galony na litry natychmiast dzięki szybkim wynikom, prostym danym wejściowym i praktycznym przykładom.",
-  "overview": "Przeliczaj galony na litry natychmiast. Ta strona zapewnia szybki wynik dzięki praktycznemu narzędziu i prostemu procesowi wyświetlania rezultatu. Strona jest przeznaczona dla osób szukających bezpłatnej odpowiedzi online, szybkich wyników w przeglądarce oraz praktycznych treści narzędziowych dla zapytań long-tail.",
+  "shortDescription": "Przelicz galony amerykańskie na litry z dokładnym wynikiem dziesiętnym.",
+  "metaTitle": "Przelicznik galonów na litry",
+  "metaDescription": "Przelicz galony amerykańskie na litry z dokładnym wynikiem dla kuchni, paliwa i pojemników.",
+  "intro": "Wpisz liczbę galonów, aby otrzymać równowartość w litrach według standardu US gallon.",
+  "overview": "Ten przelicznik zamienia galony amerykańskie na litry według stałego współczynnika, więc nie musisz liczyć ręcznie. Sprawdza się przy porównywaniu pojemności zbiorników, receptur, opisów produktów i danych o paliwie, gdy trzeba przejść z jednostek anglosaskich na metryczne.\n\nWynik jest podany w litrach jako liczba dziesiętna, dzięki czemu nadaje się do dokładnych obliczeń. Jeśli pracujesz z galonem imperialnym, pamiętaj, że to inna jednostka i da inny rezultat niż galon amerykański.",
   "howItWorks": [
-    "Wpisz wymaganą wartość lub tekst w formularzu.",
-    "Przeliczenie, obliczenie lub transformacja uruchamia się natychmiast w przeglądarce.",
-    "Sprawdź wynik i skorzystaj z podobnych narzędzi, jeśli potrzebujesz kolejnego kroku."
+    "Wpisz liczbę galonów amerykańskich.",
+    "Narzędzie mnoży wartość przez 3,785411784, aby otrzymać litry.",
+    "Odczytaj wynik i zaokrąglij go do potrzebnej dokładności."
+  ],
+  "useCases": [
+    {
+      "title": "Dane z etykiet produktów",
+      "description": "Przelicz pojemność podaną w galonach na litry, aby łatwiej porównać opakowania i zbiorniki."
+    },
+    {
+      "title": "Obliczenia w kuchni",
+      "description": "Zamień większe ilości płynów z galonów na litry przed podziałem przepisu na mniejsze porcje."
+    },
+    {
+      "title": "Paliwo i magazynowanie",
+      "description": "Sprawdź pojemność paliwa lub zbiornika w litrach, gdy dokumentacja podaje galony."
+    }
   ],
   "examples": [
     {
-      "title": "Przykład 1",
-      "input": "3 galony",
-      "output": "11,3562 litra",
-      "description": "Realistyczny przykład przelicznika galonów na litry dla codziennego zapytania."
+      "title": "Mały pojemnik domowy",
+      "input": "2,5 galona US",
+      "output": "9,46352946 litra",
+      "description": "Praktyczne przeliczenie dla średniej wielkości pojemnika na płyn."
     },
     {
-      "title": "Przykład 2",
-      "input": "3 galony",
-      "output": "11,3562 litra",
-      "description": "Kolejny praktyczny przypadek użycia zoptymalizowany pod ruch long-tail."
+      "title": "Ilość paliwa",
+      "input": "12 galonów US",
+      "output": "45,424941408 litra",
+      "description": "Pomocne przy zamianie pojemności zbiornika lub paliwa na litry."
+    },
+    {
+      "title": "Duży zbiornik",
+      "input": "100 galonów US",
+      "output": "378,5411784 litra",
+      "description": "Pokazuje, jak większe wartości galonów przekładają się na litry."
     }
   ],
   "faq": [
     {
-      "question": "Jak dokładne jest to narzędzie?",
-      "answer": "Wynik jest obliczany bezpośrednio na podstawie wzoru lub logiki po stronie przeglądarki używanej przez to narzędzie."
+      "question": "Czy to są galony amerykańskie czy imperialne?",
+      "answer": "To przelicznik galonów amerykańskich. Jeden US gallon to 3,785411784 litra, a galon imperialny ma inną wartość."
     },
     {
-      "question": "Czy mogę używać tego narzędzia na telefonie?",
-      "answer": "Tak. Strona działa na komputerach i urządzeniach mobilnych, oferując prosty układ z polem wejściowym i wynikiem."
+      "question": "Dlaczego wynik ma tyle miejsc po przecinku?",
+      "answer": "Ponieważ przeliczenie jest dokładne, wynik może mieć wiele cyfr po przecinku. Możesz go później zaokrąglić."
+    },
+    {
+      "question": "Czy mogę przyjąć, że 1 galon to 4 litry?",
+      "answer": "Tylko orientacyjnie. Do dokładnych obliczeń lepiej użyć wyniku z przelicznika, bo 1 US gallon jest nieco mniejszy niż 4 litry."
+    },
+    {
+      "question": "Jaki błąd zdarza się najczęściej?",
+      "answer": "Najczęściej mylone są galony amerykańskie z imperialnymi. Drugim częstym błędem jest zbyt wczesne zaokrąglanie wyniku."
     }
   ],
   "seo": {
     "title": "Przelicznik galonów na litry",
-    "description": "Przeliczaj galony na litry natychmiast. Darmowy internetowy przelicznik galonów na litry z natychmiastowymi wynikami.",
+    "description": "Przelicz galony amerykańskie na litry z dokładnym wynikiem dziesiętnym do kuchni, paliwa i pojemności zbiorników.",
     "keywords": [
       "przelicznik galonow na litry",
-      "narzedzie do przeliczania"
+      "galony na litry",
+      "przeliczanie galonow"
     ]
   }
 }

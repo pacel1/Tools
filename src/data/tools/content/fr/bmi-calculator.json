@@ -4,44 +4,80 @@
   "slug": "calculateur-bmi",
   "h1": "Calculateur d’IMC",
   "title": "Calculateur d’IMC",
-  "shortDescription": "Calculez l’indice de masse corporelle à partir de la taille et du poids avec des résultats rapides, des saisies simples et des exemples pratiques.",
-  "overview": "Calculez l’indice de masse corporelle à partir de la taille et du poids. Cette page fournit une réponse rapide grâce à un outil pratique et à un parcours de résultat simple. Elle s’adresse aux utilisateurs qui recherchent une réponse gratuite en ligne, des résultats instantanés dans le navigateur et un contenu pratique de longue traîne.",
+  "shortDescription": "Saisissez taille et poids pour obtenir un IMC clair avec valeur décimale et catégorie.",
+  "metaTitle": "Calculateur IMC simple",
+  "metaDescription": "Calculez l’IMC à partir de la taille et du poids avec des unités claires, un résultat décimal et une catégorie lisible.",
+  "intro": "Saisissez votre taille et votre poids, et l’outil affiche immédiatement votre IMC en décimal avec sa catégorie.",
+  "overview": "Ce calculateur d’IMC applique la formule standard de l’indice de masse corporelle à la taille et au poids saisis, puis fournit une valeur unique à comparer. Il sert à vérifier une mesure notée, à refaire un calcul plus tard ou à suivre une évolution de manière cohérente.\n\nL’IMC est un indicateur général, pas un diagnostic médical. Il ne distingue pas la masse musculaire, la graisse, la structure osseuse ni la rétention d’eau, donc il doit être lu avec le contexte de la mesure et le gabarit de la personne.\n\nPour obtenir un résultat cohérent, gardez le même système d’unités et saisissez des mesures réelles plutôt que des estimations. Si le chiffre paraît incohérent, la cause la plus fréquente est un mélange d’unités, par exemple des livres au lieu de kilogrammes ou des pieds et pouces là où des centimètres sont attendus.",
   "howItWorks": [
-    "Saisissez la valeur ou le texte requis dans le formulaire.",
-    "La conversion, le calcul ou la transformation s’exécute instantanément dans le navigateur.",
-    "Consultez le résultat puis poursuivez avec des outils associés si vous avez besoin d’une autre étape."
+    "Choisissez le système d’unités correspondant à vos mesures.",
+    "Saisissez la taille et le poids dans ce même système.",
+    "Lisez la valeur d’IMC et la catégorie affichée.",
+    "Si le résultat semble étrange, vérifiez les unités et ressaisissez les données."
+  ],
+  "useCases": [
+    {
+      "title": "Conserver une mesure datée",
+      "description": "Ajoutez l’IMC à une pesée datée après un contrôle médical, sportif ou personnel."
+    },
+    {
+      "title": "Comparer deux mesures",
+      "description": "Calculez l’IMC sur deux dates différentes pour suivre l’évolution dans le temps."
+    },
+    {
+      "title": "Vérifier une valeur publiée",
+      "description": "Recalculez l’IMC à partir de la taille et du poids indiqués pour contrôler une donnée dans un document ou un profil."
+    }
   ],
   "examples": [
     {
-      "title": "Exemple 1",
-      "input": "70 kg et 175 cm",
-      "output": "22,86",
-      "description": "Un exemple réaliste de calculateur d’IMC pour une recherche courante."
+      "title": "Mesure adulte en métrique",
+      "input": "Taille : 175 cm, Poids : 70 kg",
+      "output": "IMC = 22,9",
+      "description": "Un calcul classique en unités métriques avec une valeur intermédiaire."
     },
     {
-      "title": "Exemple 2",
-      "input": "70 kg et 175 cm",
-      "output": "22,86",
-      "description": "Un autre cas pratique pour capter du trafic organique de longue traîne."
+      "title": "Même taille, poids plus élevé",
+      "input": "Taille : 160 cm, Poids : 82 kg",
+      "output": "IMC = 32,0",
+      "description": "Montre la hausse de l’indice quand le poids augmente à taille égale."
+    },
+    {
+      "title": "Gabarit grand et léger",
+      "input": "Taille : 182 cm, Poids : 66 kg",
+      "output": "IMC = 19,9",
+      "description": "Exemple d’une valeur plus basse pour une taille plus grande et un poids plus léger."
     }
   ],
   "faq": [
     {
-      "question": "Quelle est la précision de cet outil ?",
-      "answer": "Le résultat est calculé directement à partir de la formule ou de la logique côté navigateur utilisée par cet outil."
+      "question": "Quelles unités dois-je utiliser ?",
+      "answer": "Utilisez un seul système de façon cohérente : kilogrammes avec centimètres, ou livres avec pouces. Mélanger les unités donne un résultat faux."
     },
     {
-      "question": "Puis-je utiliser cet outil sur mobile ?",
-      "answer": "Oui. La page fonctionne sur ordinateur et sur mobile avec une interface simple de saisie et de résultat."
+      "question": "Pourquoi le résultat s’affiche-t-il avec une décimale ?",
+      "answer": "Une décimale suffit pour comparer les valeurs sans laisser croire à une précision excessive."
+    },
+    {
+      "question": "Puis-je saisir la taille en pieds et pouces ?",
+      "answer": "Seulement si l’outil le prévoit explicitement. Sinon, la taille doit être convertie correctement avant la saisie."
+    },
+    {
+      "question": "Pourquoi l’IMC peut-il être trompeur chez les personnes très musclées ?",
+      "answer": "Parce qu’il se base uniquement sur la taille et le poids. Il ne sait pas si la masse supplémentaire vient des muscles, de la graisse, des os ou de l’eau."
+    },
+    {
+      "question": "Quelle erreur de saisie est la plus fréquente ?",
+      "answer": "L’erreur la plus courante est d’utiliser la mauvaise unité dans un champ, par exemple des livres au lieu de kilogrammes ou des pouces au lieu de centimètres."
     }
   ],
   "seo": {
-    "title": "Calculateur d’IMC",
-    "description": "Calculez l’indice de masse corporelle à partir de la taille et du poids. Calculateur d’IMC gratuit en ligne avec résultats instantanés.",
+    "title": "Calculateur IMC simple",
+    "description": "Calculez l’IMC à partir de la taille et du poids avec des unités claires, un résultat décimal et une catégorie lisible.",
     "keywords": [
       "calculateur imc",
-      "bmi calculator",
-      "outil calculatrices"
+      "indice de masse corporelle",
+      "taille et poids imc"
     ]
   }
 }

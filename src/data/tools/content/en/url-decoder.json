@@ -4,42 +4,76 @@
   "slug": "url-decoder",
   "h1": "URL Decoder",
   "title": "URL Decoder",
-  "shortDescription": "Decode URL encoded text instantly with fast results, simple inputs and practical examples.",
-  "overview": "Decode URL encoded text instantly. Use this tool to get a clear result quickly from simple input on the same page. It is useful for everyday checks, comparisons and small tasks when you need a fast online answer.",
+  "shortDescription": "Decode percent-encoded URLs and query strings into readable text.",
+  "metaTitle": "URL Decoder Tool",
+  "metaDescription": "Decode percent-encoded URLs, query strings, and path segments into plain readable text in your browser.",
+  "intro": "Paste an encoded URL or query string to see the decoded text immediately.",
+  "overview": "Use this tool to turn percent-encoded text such as %20, %3F, and %26 back into readable characters. It is helpful when inspecting links, request parameters, redirect targets, or copied strings that include encoded punctuation.\n\nThe decoder treats the input as text and converts valid escape sequences into their matching characters. If the text contains malformed sequences, those parts may remain unchanged or produce an error depending on the characters entered. That makes it useful for checking exactly how a URL fragment will be interpreted before you share, store, or debug it.",
   "howItWorks": [
-    "Enter the required value or text into the form.",
-    "The conversion, calculation or transformation runs instantly in the browser.",
-    "Review the result and continue with related tools if you need another step."
+    "Paste the encoded URL, path, or query string into the input.",
+    "The tool decodes percent-escapes and returns readable text immediately.",
+    "Review the result and compare it with the original string if you need to spot encoding issues."
+  ],
+  "useCases": [
+    {
+      "title": "Inspect a copied link",
+      "description": "Decode a link copied from chat, email, or logs to read the real path and parameters without the percent signs."
+    },
+    {
+      "title": "Check query parameters",
+      "description": "Reveal parameter names and values such as redirect targets, search terms, or filters hidden inside an encoded query string."
+    },
+    {
+      "title": "Review redirect destinations",
+      "description": "Decode callback or redirect URLs before using them in code, tests, or security reviews."
+    }
   ],
   "examples": [
     {
-      "title": "Common use case",
-      "input": "hello%20world%3Fx%3D1%26y%3D2",
-      "output": "hello world?x=1&y=2",
-      "description": "Shows a common use case with a clear input and result."
+      "title": "Decode a query string",
+      "input": "search%3Fq%3Dcoffee%20beans%26page%3D2",
+      "output": "search?q=coffee beans&page=2",
+      "description": "Shows how encoded punctuation and spaces become normal readable text."
     },
     {
-      "title": "Another quick example",
-      "input": "hello%20world%3Fx%3D1%26y%3D2",
-      "output": "hello world?x=1&y=2",
-      "description": "Useful for quick checks, comparisons or repeat tasks."
+      "title": "Decode a path with reserved characters",
+      "input": "docs%2Fapi%2Fv1%2Fusers%3Factive%3Dtrue",
+      "output": "docs/api/v1/users?active=true",
+      "description": "Useful when a URL path and its parameters are stored as one encoded string."
+    },
+    {
+      "title": "Decode a return URL",
+      "input": "https%3A%2F%2Fexample.com%2Fcheckout%3Fref%3Demail%2520promo",
+      "output": "https://example.com/checkout?ref=email%20promo",
+      "description": "Shows that double-encoded pieces remain partially encoded after a single decode."
     }
   ],
   "faq": [
     {
-      "question": "How accurate is this tool?",
-      "answer": "The result is based on the input you provide and the calculation or transformation shown on the page."
+      "question": "Does this tool decode plus signs as spaces?",
+      "answer": "Only percent-escapes are decoded. A literal plus sign stays as + unless the input already represents a space that way in its source context."
     },
     {
-      "question": "Can I use this tool on mobile?",
-      "answer": "Yes. The page works on desktop and mobile screens with a simple input and result layout."
+      "question": "Why does part of my string stay encoded after decoding?",
+      "answer": "Some inputs are encoded more than once. A single pass turns %2520 into %20, but a second pass would be needed to get an actual space."
+    },
+    {
+      "question": "Can I decode a full URL, not just a query string?",
+      "answer": "Yes. You can paste a complete URL, but the tool will only change valid encoded sequences and leave the rest of the URL structure intact."
+    },
+    {
+      "question": "What happens with invalid percent sequences?",
+      "answer": "Characters that are not valid escapes may be left unchanged or may cause the decoder to reject the input, depending on the sequence and browser behavior."
     }
   ],
   "seo": {
-    "title": "URL Decoder",
-    "description": "Decode URL encoded text instantly. Free online url decoder with instant results.",
+    "title": "URL Decoder Tool",
+    "description": "Decode percent-encoded URLs, query strings, and path segments into plain readable text in your browser.",
     "keywords": [
-      "url decoder"
+      "url decoder",
+      "percent decode",
+      "decode url encoding",
+      "query string decoder"
     ]
   }
 }

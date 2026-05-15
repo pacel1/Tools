@@ -4,43 +4,80 @@
   "slug": "generator-slug",
   "h1": "Generator slugów",
   "title": "Generator slugów",
-  "shortDescription": "Zamień tekst na przyjazny SEO slug do URL, korzystając z szybkich wyników, prostego formularza i praktycznych przykładów.",
-  "overview": "Zamień tekst na przyjazny SEO slug do URL. Ta strona daje szybkie rozwiązanie dzięki prostemu narzędziu i czytelnemu wynikowi. Kierujemy ją do osób szukających darmowej odpowiedzi online, natychmiastowych rezultatów w przeglądarce oraz praktycznych treści narzędziowych o długim ogonie.",
+  "shortDescription": "Zamień nagłówki i frazy na czyste slugi URL z małymi literami, myślnikami i bez zbędnych spacji.",
+  "metaTitle": "Generator slugów do czystych URL",
+  "metaDescription": "Zamień nagłówki i frazy na czyste slugi URL z małymi literami, myślnikami i bez zbędnych spacji.",
+  "intro": "Zamień tekst na czytelny slug URL z małymi literami i myślnikami zamiast spacji.",
+  "overview": "To narzędzie zamienia tytuły, nagłówki i krótkie frazy w slug gotowy do użycia w adresie URL. Pomaga utrzymać jeden sposób zapisu, gdy chcesz tworzyć spójne ścieżki dla wpisów, podstron kategorii albo kart produktów.\n\nSprawdza się też wtedy, gdy tekst pochodzi z różnych źródeł i trzeba go ujednolicić. Wklej treść, zobacz wynik i w razie potrzeby skróć go lub doprecyzuj przed publikacją.\n\nPrzydaje się przy porządkowaniu serwisu, tworzeniu nowych adresów oraz przepisywaniu nazw na format wygodny dla struktury strony.",
   "howItWorks": [
-    "Wpisz wymagane dane lub tekst w formularzu.",
-    "Konwersja, obliczenie lub przekształcenie uruchamia się natychmiast w przeglądarce.",
-    "Sprawdź wynik i skorzystaj z powiązanych narzędzi, jeśli potrzebujesz kolejnego kroku."
+    "Wklej lub wpisz tytuł, frazę albo zdanie do przekształcenia.",
+    "Narzędzie zamieni tekst na format sluga z małymi literami i myślnikami.",
+    "Skopiuj wynik i popraw go, jeśli chcesz krótszą lub bardziej precyzyjną ścieżkę."
+  ],
+  "useCases": [
+    {
+      "title": "Adres wpisu blogowego",
+      "description": "Zamień nagłówek taki jak „Jak założyć mały ogród” na ścieżkę w stylu jak-zalozyc-maly-ogrod."
+    },
+    {
+      "title": "Slug dla kategorii sklepu",
+      "description": "Przekształć nazwę kategorii „Buty do biegania na zimę” w spójny adres, na przykład buty-do-biegania-na-zime."
+    },
+    {
+      "title": "Adres produktu",
+      "description": "Utwórz czytelny slug z nazwy produktu, np. „Butelka stalowa 750 ml”, aby zachować porządek w katalogu."
+    },
+    {
+      "title": "Ścieżka dla kampanii lub wydarzenia",
+      "description": "Zmień tytuł typu „Webinar wiosenny dla projektantów” na schludny slug dla strony docelowej."
+    }
   ],
   "examples": [
     {
-      "title": "Przykład 1",
-      "input": "Najlepszy tytuł strony narzędzia SEO",
-      "output": "najlepszy-tytul-strony-narzedzia-seo",
-      "description": "Realistyczny przykład generatora slugów dla codziennego zapytania."
+      "title": "Tytuł artykułu",
+      "input": "Jak zacząć mały ogród",
+      "output": "jak-zaczac-maly-ogrod",
+      "description": "Spacje zamieniają się w myślniki, a tekst trafia do formatu przyjaznego adresowi."
     },
     {
-      "title": "Przykład 2",
-      "input": "Najlepszy tytuł strony narzędzia SEO",
-      "output": "najlepszy-tytul-strony-narzedzia-seo",
-      "description": "Kolejny praktyczny przypadek użycia dla organicznego ruchu z długiego ogona."
+      "title": "Nazwa produktu z liczbami",
+      "input": "Monitor Ultra HD 27 cali",
+      "output": "monitor-ultra-hd-27-cali",
+      "description": "Liczby pozostają na miejscu, a wynik jest czytelny w adresie URL."
+    },
+    {
+      "title": "Tekst z interpunkcją",
+      "input": "Świeże, szybkie i proste posiłki!",
+      "output": "swieze-szybkie-i-proste-posilki",
+      "description": "Znaki interpunkcyjne znikają, a wynik pozostaje czysty i uporządkowany."
     }
   ],
   "faq": [
     {
-      "question": "Jak dokładne jest to narzędzie?",
-      "answer": "Wynik jest obliczany bezpośrednio na podstawie formuły lub logiki po stronie przeglądarki użytej w tym narzędziu."
+      "question": "Co dzieje się z wielkimi literami i znakami interpunkcyjnymi?",
+      "answer": "Wielkie litery są zamieniane na małe, a znaki takie jak przecinki, wykrzykniki czy ampersand są usuwane z końcowego sluga."
     },
     {
-      "question": "Czy mogę używać tego narzędzia na telefonie?",
-      "answer": "Tak. Strona działa na komputerach i urządzeniach mobilnych, oferując prosty układ pola wejściowego i wyniku."
+      "question": "Czy polskie znaki zostaną zachowane?",
+      "answer": "Znaki diakrytyczne mogą zostać uproszczone do wersji bezpiecznej dla adresu. Jeśli litera wymaga normalizacji, zobaczysz standardowy zapis nadający się do URL."
+    },
+    {
+      "question": "Dlaczego wynik jest krótszy niż mój oryginalny tekst?",
+      "answer": "Słowa łączące, symbole i niektóre znaki specjalne mogą zostać pominięte, aby slug był czysty. Jeśli chcesz zachować konkretną strukturę, skróć źródłowy tekst przed zamianą."
+    },
+    {
+      "question": "Czy mogę wkleić wynik bezpośrednio do adresu strony?",
+      "answer": "Najczęściej tak, ale warto sprawdzić dodatkowe zasady w swoim serwisie, na przykład prefiksy kategorii, daty albo własne reguły dla języka."
     }
   ],
   "seo": {
-    "title": "Generator slugów",
-    "description": "Zamień tekst na przyjazny SEO slug do URL. Darmowy generator slugów online z natychmiastowymi wynikami.",
+    "title": "Generator slugów do czystych URL",
+    "description": "Zamień nagłówki i frazy na czyste slugi URL z małymi literami, myślnikami i bez zbędnych spacji.",
     "keywords": [
       "generator slugów",
-      "narzędzie text-tools"
+      "slug URL",
+      "generator permalinków",
+      "tekst na slug"
     ]
   }
 }

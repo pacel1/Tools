@@ -63,7 +63,13 @@ export type GeneratedLocaleContent = {
   intro?: string;
   overview: string;
   howItWorks: string[];
-  useCases?: string[];
+  useCases?: Array<
+    | string
+    | {
+        title: string;
+        description: string;
+      }
+  >;
   examples: Array<{
     title: string;
     input: string;

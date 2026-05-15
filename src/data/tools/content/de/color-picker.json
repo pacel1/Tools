@@ -4,13 +4,77 @@
   "slug": "farbwaehler",
   "h1": "Farbwaehler",
   "title": "Farbwaehler",
-  "shortDescription": "Farben online waehlen und HEX-, RGB- sowie HSL-Werte sofort in einem Panel sehen.",
-  "metaTitle": "Farbwaehler | HEX, RGB und HSL online",
-  "metaDescription": "Farben online waehlen und HEX-, RGB- und HSL-Werte direkt auslesen. Praktisch fuer CSS, Design-Systeme und schnelle Farbchecks.",
-  "intro": "Der Farbwähler ist fuer schnelle Farbpruefungen gedacht, wenn du keinen schweren Editor oeffnen willst. Er zeigt dir einen Farbwert direkt als HEX, RGB und HSL und passt gut zu CSS-, UI- und Design-Workflows.",
-  "overview": "Das Tool hilft bei Frontend-Styling, Design-QA, Komponenten-Dokumentation und Markenfarben. Eine Farbe reicht aus, um sofort die wichtigsten Darstellungen fuer Implementierung und Abstimmung zu sehen.",
-  "howItWorks": ["Farbe waehlen oder HEX-Code einfuegen.", "Das Tool berechnet die passenden RGB- und HSL-Werte.", "Die Formate fuer CSS, Dokumentation oder weitere Farbarbeit verwenden."],
-  "examples": [{"title": "UI-Akzentfarbe", "input": "#0EA5E9", "output": "HEX-, RGB- und HSL-Werte", "description": "Hilfreich, wenn eine Farbe in mehreren Formaten gebraucht wird."}, {"title": "Markenfarbe pruefen", "input": "#111827", "output": "Dokumentationswerte fuer ein dunkles Neutral", "description": "Sinnvoll bei Theme-Updates und Design-Abgleichen."}],
-  "faq": [{"question": "Welche Formate zeigt der Farbwähler?", "answer": "Er zeigt HEX-, RGB- und HSL-Werte fuer die gewaehlte Farbe."}, {"question": "Kann ich einen eigenen HEX-Code einfuegen?", "answer": "Ja. Nach Eingabe eines HEX-Codes werden die anderen Formate automatisch aktualisiert."}],
-  "seo": {"title": "Farbwaehler | HEX, RGB und HSL online", "description": "Farben online waehlen und HEX-, RGB- und HSL-Werte direkt auslesen. Praktisch fuer CSS, Design-Systeme und schnelle Farbchecks.", "keywords": ["farbwaehler", "color picker", "hex rgb hsl", "farbe waehlen", "farbwerte online"]}
+  "shortDescription": "Farben waehlen und HEX-, RGB- sowie HSL-Werte in einem Panel anzeigen.",
+  "metaTitle": "Farbwaehler | HEX RGB HSL",
+  "metaDescription": "Farben waehlen und HEX-, RGB- sowie HSL-Werte in einem Panel fuer CSS, UI-Spezifikationen und Markenarbeit anzeigen.",
+  "intro": "Waehle eine Farbe oder fuege einen HEX-Code ein, um sofort die HEX-, RGB- und HSL-Werte zu sehen.",
+  "overview": "Das Tool ist sinnvoll, wenn du eine Farbe in mehreren Formaten pruefen willst, ohne zwischen Programmen zu wechseln. Es zeigt denselben Farbton als HEX, RGB und HSL, damit du das Format kopieren kannst, das zu CSS, Komponenten-Spezifikation oder Designdokument passt.\n\nBesonders praktisch ist es bei Markenfarben, bei der Abstimmung mit Entwicklung und beim Pruefen von Theme-Tokens. Die Werte aktualisieren sich gemeinsam, sodass du Abstufungen leichter vergleichen und Farbreferenzen sauber uebernehmen kannst.",
+  "howItWorks": [
+    "Farbe mit dem Waehler auswaehlen oder HEX-Wert eingeben.",
+    "Das Tool berechnet die passenden RGB- und HSL-Werte.",
+    "Das benoetigte Format fuer CSS, Dokumentation oder Komponentenstil kopieren."
+  ],
+  "useCases": [
+    {
+      "title": "Theme-Token pruefen",
+      "description": "Einen Token-Farbwert als HEX, RGB und HSL kontrollieren, bevor er in ein Designsystem oder Stylesheet wandert."
+    },
+    {
+      "title": "Markenfarbe abgleichen",
+      "description": "Sicherstellen, dass eine Markenfarbe in Designdateien, Dokumentation und Webauftritt identisch bleibt."
+    },
+    {
+      "title": "Zustandsfarben fuer Komponenten",
+      "description": "Hover-, Active- oder Focus-Farben untersuchen und das exakte Format aus dem Code festhalten."
+    }
+  ],
+  "examples": [
+    {
+      "title": "Blau fuer Primärbutton",
+      "input": "#2563EB",
+      "output": "HEX #2563EB, RGB 37, 99, 235, HSL 221, 83%, 53%",
+      "description": "Geeignet fuer eine starke UI-Farbe, die in Styles und Spezifikationen exakt dokumentiert werden muss."
+    },
+    {
+      "title": "Dunkler Neutralton",
+      "input": "rgb(17, 24, 39)",
+      "output": "HEX #111827, RGB 17, 24, 39, HSL 220, 39%, 11%",
+      "description": "Hilfreich zum Pruefen eines dunklen Neutraltons fuer Karten, Flaechen oder Text."
+    },
+    {
+      "title": "Sanftes Gruen fuer Erfolg",
+      "input": "hsl(142, 72%, 29%)",
+      "output": "HEX #14913E, RGB 20, 145, 62, HSL 142, 72%, 29%",
+      "description": "Praktisch, wenn ein Design den Farbwert als HSL speichert und CSS HEX oder RGB braucht."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Kann ich auch ein anderes Farbformat als HEX eingeben?",
+      "answer": "Ja. Wenn das eingefuegte Format unterstuetzt wird, zeigt das Tool die passenden HEX-, RGB- und HSL-Werte an."
+    },
+    {
+      "question": "Warum aendern sich die Werte bei kleinen Bewegungen des Waehler?",
+      "answer": "Jede kleine Bewegung waehlt einen anderen Farbton, deshalb aktualisieren sich die Zahlen sofort. Das ist normal und hilft beim genauen Festlegen des Farbpunktes."
+    },
+    {
+      "question": "Worin liegt hier der Unterschied zwischen RGB und HSL?",
+      "answer": "RGB beschreibt den Anteil von Rot, Gruen und Blau. HSL stellt die Farbe als Farbton, Saettigung und Helligkeit dar und ist oft angenehmer zum Vergleichen von Abstufungen."
+    },
+    {
+      "question": "Warum sehen kopierte Werte in einer anderen App manchmal anders aus?",
+      "answer": "Manche Apps runden Kanaele oder stellen Alpha und Anzeige anders dar. Vergleiche daher vor allem die Zahlenwerte, nicht nur die Vorschau."
+    }
+  ],
+  "seo": {
+    "title": "Farbwaehler | HEX RGB HSL",
+    "description": "Farben waehlen und HEX-, RGB- sowie HSL-Werte in einem Panel fuer CSS, UI-Spezifikationen und Markenarbeit anzeigen.",
+    "keywords": [
+      "farbwaehler",
+      "HEX RGB HSL",
+      "Farbwerte",
+      "CSS Farben",
+      "Farbe pruefen"
+    ]
+  }
 }

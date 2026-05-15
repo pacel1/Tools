@@ -4,105 +4,87 @@
   "slug": "html-tags-entferner",
   "h1": "HTML-Tag-Entferner",
   "title": "HTML-Tag-Entferner",
-  "shortDescription": "Entferne HTML-Tags und behalte den lesbaren Text aus dem Originalinhalt.",
-  "metaTitle": "HTML-Tag-Entferner | HTML in Klartext umwandeln",
-  "metaDescription": "HTML-Tags online entfernen und lesbaren Text behalten. HTML-Snippets sicher im Browser mit einem schnellen Client-Side-Tool bereinigen.",
-  "intro": "Füge HTML ein und erhalte sofort sauberen, lesbaren Klartext. Dieses browserbasierte Tool entfernt Tags und behält den sichtbaren Inhalt, ohne externe APIs zu verwenden.",
-  "overview": "Der HTML-Tag-Entferner ist ein einfaches Client-side-Tool zum Umwandeln von HTML in Klartext. Füge einen Ausschnitt, eine ganze Seite oder kopierten Rich-Text ein, und das Tool entfernt die Markups, während lesbare Wörter und möglichst auch Zeilenumbrüche erhalten bleiben. Das ist praktisch zum Bereinigen von Inhalten, Extrahieren von Text für Notizen, Vorbereiten von Snippets für die Suche oder Vergleichen von Text ohne Markup. Die Verarbeitung läuft lokal im Browser und ist dadurch schnell und sicher.",
+  "shortDescription": "Entferne HTML-Tags und behalte nur den lesbaren Text aus dem eingefügten Markup.",
+  "metaTitle": "HTML-Tag-Entferner",
+  "metaDescription": "HTML-Tags im Browser entfernen und lesbaren Text behalten, ohne Inhalte an einen Server zu senden.",
+  "intro": "HTML einfügen und sofort Klartext ohne Tags erhalten.",
+  "overview": "Der HTML-Tag-Entferner wandelt HTML-Markup in lesbaren Klartext um, ohne die Quelle zu verändern. Füge einen Ausschnitt, ein ganzes Dokument oder kopierten Rich-Text ein, und das Tool extrahiert den sichtbaren Text, während Tags, Attribute und verschachtelte Elemente entfernt werden. Das ist praktisch, wenn du den Inhalt brauchst, nicht die Struktur.\n\nDas Ergebnis eignet sich für Notizen, für bereinigte Textauszüge aus Vorlagen und für Vergleiche ohne Markup. Zeilenumbrüche und Abstände bleiben erhalten, wenn die HTML-Struktur es zulässt, aber die genaue Trennung kann je nach Eingabe variieren.",
   "howItWorks": [
     "HTML in das Eingabefeld einfügen.",
-    "Das Tool analysiert das Markup lokal im Browser.",
-    "HTML-Tags werden entfernt und lesbarer Text extrahiert.",
-    "Den Klartext für Dokumente, Notizen oder Apps kopieren."
+    "Der Parser verarbeitet das Markup lokal im Browser.",
+    "Tags und Attribute werden aus der sichtbaren Ausgabe entfernt.",
+    "Den Klartext für ein anderes Programm kopieren."
   ],
   "useCases": [
-    "HTML-Snippets in Klartext umwandeln.",
-    "Aus dem Web kopierte Inhalte vor dem Einfügen in Mail oder Chat bereinigen.",
-    "Lesbaren Text aus Vorlagen-Code extrahieren.",
-    "Markup für Textanalyse oder Suchindex-Vorbereitung entfernen.",
-    "Den Text hinter HTML-Blöcken schnell anzeigen."
+    {
+      "title": "Artikel-Markup in Notizen umwandeln",
+      "description": "Überschriften, Links und Formatierungen aus eingefügtem Artikel-HTML entfernen, um nur den Text zu speichern."
+    },
+    {
+      "title": "E-Mail-Vorlagen bereinigen",
+      "description": "Umgebende Tags aus Newsletter- oder Mail-Layouts entfernen, bevor der Text in ein Dokument übernommen wird."
+    },
+    {
+      "title": "Sichtbaren Text aus CMS-Snippets extrahieren",
+      "description": "Lesbaren Inhalt aus Komponenten-HTML holen, wenn nur der für Leser sichtbare Text benötigt wird."
+    },
+    {
+      "title": "Text für manuelle Vergleiche vorbereiten",
+      "description": "Zwei HTML-Ausschnitte auf Klartext reduzieren, damit nur die Formulierungen verglichen werden."
+    }
   ],
   "examples": [
     {
-      "title": "Einfacher Absatz",
-      "input": "<p>Hallo <strong>Welt</strong>!</p>",
-      "output": "Hallo Welt!",
-      "description": "Grundtext ohne Inline-Formatierung."
+      "title": "Absatz mit Hervorhebung",
+      "input": "<p>Willkommen zur <strong>Q4</strong>-Planung.</p>",
+      "output": "Willkommen zur Q4-Planung.",
+      "description": "Inline-Formatierung verschwindet, der Satz bleibt lesbar."
     },
     {
-      "title": "Links und Listen",
-      "input": "<div><a href=\"/docs\">Dokumentation</a><ul><li>Eins</li><li>Zwei</li></ul></div>",
-      "output": "Dokumentation\nEins\nZwei",
-      "description": "Lesbarer Text bleibt erhalten, Tags werden entfernt."
+      "title": "Karte mit Link und Liste",
+      "input": "<section><a href=\"/preise\">Preise</a><ul><li>Starter</li><li>Business</li></ul></section>",
+      "output": "Preise\nStarter\nBusiness",
+      "description": "Blockelemente werden getrennt ausgegeben, damit der Text lesbar bleibt."
+    },
+    {
+      "title": "Gemischtes Markup und Entities",
+      "input": "<div>Nutze &amp; zum Verknüpfen von Elementen oder <span>trenne</span> sie später.</div>",
+      "output": "Nutze & zum Verknüpfen von Elementen oder trenne sie später.",
+      "description": "HTML-Entities werden im Ergebnis als normale Zeichen ausgegeben."
     }
   ],
   "faq": [
     {
-      "question": "Bleibt der Text innerhalb der Tags erhalten?",
-      "answer": "Ja. Das Tool entfernt HTML-Markup und behält den lesbaren Text in den Elementen."
+      "question": "Was passiert mit Attributen wie href, class und data-*?",
+      "answer": "Sie werden zusammen mit den Tags entfernt. Übrig bleibt nur der lesbare Textinhalt."
     },
     {
-      "question": "Wird die Verarbeitung im Browser ausgeführt?",
-      "answer": "Ja. Es verwendet nur Client-side-Logik, sodass dein HTML lokal und ohne externe APIs verarbeitet wird."
+      "question": "Erscheinen script- oder style-Blöcke im Ergebnis?",
+      "answer": "Sie sollten nicht im lesbaren Ergebnis erscheinen. Das Tool ist für sichtbaren Text gedacht, nicht für Hintergrundcode der Seite."
     },
     {
-      "question": "Werden auch script- und style-Inhalte entfernt?",
-      "answer": "Das Tool konzentriert sich auf die sichere Extraktion lesbaren Textes, daher können nicht sichtbare Inhalte je nach Parser-Verhalten ignoriert oder entfernt werden."
+      "question": "Warum enthält mein Ergebnis zusätzliche Leerzeilen?",
+      "answer": "HTML-Blöcke können beim Umwandeln in Klartext auf eigene Zeilen abgebildet werden. Bei vielen Containern oder leeren Elementen kann der Abstand unruhig wirken."
     },
     {
-      "question": "Bleiben Zeilenumbrüche und Leerzeichen erhalten?",
-      "answer": "Das Tool versucht, die Lesbarkeit zu bewahren, aber die genaue Formatierung kann von der HTML-Struktur abhängen."
+      "question": "Werden HTML-Entities wie &amp; und &nbsp; dekodiert?",
+      "answer": "Ja, soweit der Parser sie auflösen kann, werden Entities als Textzeichen interpretiert. Geschützte Leerzeichen können im Klartext wie normale Leerzeichen erscheinen."
+    },
+    {
+      "question": "Kann ich fehlerhaftes HTML verwenden?",
+      "answer": "Oft ja, aber kaputtes Markup kann die Textgruppierung verändern. Wenn Tags fehlen oder falsch verschachtelt sind, kann das Ergebnis vom ursprünglichen Layout abweichen."
     }
   ],
-  "uiLabels": {
-    "copy": "Kopieren",
-    "copied": "Kopiert",
-    "input": "HTML input",
-    "output": "Text without tags",
-    "placeholder": "HTML hier einfügen...",
-    "indent": "Einzug",
-    "removeComments": "Kommentare entfernen",
-    "preview": "Vorschau",
-    "source": "Quelle",
-    "sanitizedHtml": "Bereinigtes HTML",
-    "plainText": "Klartext",
-    "summary": "Zusammenfassung",
-    "total": "Gesamt",
-    "links": "Links",
-    "images": "Bilder",
-    "errors": "Fehler",
-    "warnings": "Warnungen",
-    "valid": "Gültig",
-    "invalid": "Ungültig",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Ziel",
-    "alt": "Alt",
-    "width": "Breite",
-    "height": "Höhe",
-    "empty": "Leer",
-    "outputReady": "Ausgabe bereit",
-    "cleanedHtml": "Bereinigtes HTML",
-    "formattedHtml": "Formatiertes HTML",
-    "minifiedHtml": "Minifiziertes HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extrahierte Bilder",
-    "extractedLinks": "Extrahierte Links",
-    "validationSummary": "Validierungsübersicht",
-    "prettyHtml": "Lesbares HTML",
-    "encodedText": "Kodierter Text"
-  },
   "seo": {
-    "title": "HTML-Tag-Entferner | HTML in Klartext umwandeln",
-    "description": "HTML-Tags online entfernen und lesbaren Text behalten. HTML-Snippets sicher im Browser mit einem schnellen Client-Side-Tool bereinigen.",
+    "title": "HTML-Tag-Entferner",
+    "description": "HTML-Tags im Browser entfernen und lesbaren Text behalten, ohne Inhalte an einen Server zu senden.",
     "keywords": [
       "html tag entferner",
-      "html in klartext",
-      "html tags entfernen",
       "html zu text",
-      "html bereinigen",
-      "html zu klartext"
+      "html tags entfernen",
+      "html in klartext",
+      "text aus html extrahieren",
+      "html bereinigen"
     ]
   }
 }

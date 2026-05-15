@@ -4,156 +4,85 @@
   "slug": "decoupeur-d-images",
   "h1": "Découpeur d’images",
   "title": "Découpeur d’images",
-  "shortDescription": "Recadrez des images en ligne avec des coordonnées personnalisées et un aperçu instantané dans le navigateur.",
-  "metaTitle": "Découpeur d’images en ligne | Recadrez vos photos dans le navigateur",
-  "metaDescription": "Recadrez des images en ligne avec des coordonnées précises et un aperçu instantané. Outil rapide et privé, sans envoi de fichier.",
-  "intro": "Recadrez des images en ligne avec des coordonnées exactes et voyez le résultat immédiatement dans votre navigateur. Ce découpeur d’images gratuit est rapide, privé et simple à utiliser.",
-  "overview": "Utilisez ce découpeur d’images en ligne pour ajuster des photos, captures d’écran, bannières et visuels avec des valeurs personnalisées. Tout s’exécute dans votre navigateur pour une édition rapide et plus de confidentialité.",
+  "shortDescription": "Recadrez une image avec des coordonnées exactes et vérifiez le résultat avant de le télécharger.",
+  "metaTitle": "Découpeur d’images en ligne",
+  "metaDescription": "Recadrez des images avec des coordonnées exactes, vérifiez le résultat immédiatement et téléchargez un extrait net depuis votre navigateur.",
+  "intro": "Recadrez une image en indiquant les valeurs exactes de X, Y, largeur et hauteur, puis vérifiez le rendu avant de le télécharger.",
+  "overview": "Ce découpeur d’images est conçu pour les recadrages précis. Saisissez des coordonnées pour améliorer une photo produit, isoler une zone de graphique ou enlever des bords inutiles d’une bannière sans deviner la zone.\n\nL’outil fonctionne directement dans le navigateur, ce qui permet d’ajuster le cadre et de voir la modification immédiatement. Il est utile quand l’image finale doit entrer dans une maquette, une documentation ou une zone de mise en page très définie.\n\nQue vous prépariez un avatar carré, un bandeau large ou un extrait serré de capture d’écran, vous gardez le contrôle sur la zone visible et sur la composition finale.",
   "howItWorks": [
-    "Importez ou collez un fichier image dans l’outil.",
-    "Définissez les coordonnées et les dimensions du recadrage.",
-    "Prévisualisez le résultat instantanément.",
-    "Téléchargez l’image finale quand elle vous convient."
+    "Importez une image depuis votre appareil ou collez-la dans l’outil.",
+    "Définissez crop X, crop Y, crop width et crop height.",
+    "Vérifiez l’aperçu pour contrôler la zone visible et les bords.",
+    "Téléchargez l’image découpée lorsque le cadre est correct."
   ],
   "useCases": [
-    "Recadrer une photo de profil à une taille précise.",
-    "Rogner une capture d’écran pour garder la zone utile.",
-    "Préparer des images produit pour les boutiques en ligne.",
-    "Supprimer les marges vides des bannières et visuels."
+    {
+      "title": "Nettoyer une photo produit pour une fiche article",
+      "description": "Retirez l’excédent de fond autour d’un produit pour le faire mieux ressortir dans un catalogue."
+    },
+    {
+      "title": "Extraire un passage de capture d’écran pour un guide",
+      "description": "Ne gardez que la fenêtre, le tableau ou le bloc de code utile dans une documentation ou une note interne."
+    },
+    {
+      "title": "Adapter une bannière à une zone hero",
+      "description": "Coupez un visuel large pour qu’il corresponde exactement à l’espace prévu dans une maquette web ou e-mail."
+    },
+    {
+      "title": "Recadrer un portrait pour une photo de profil",
+      "description": "Sélectionnez le visage et les épaules afin d’obtenir un avatar sans vide autour du sujet."
+    }
   ],
   "examples": [
     {
-      "title": "Recadrer une photo pour les réseaux sociaux",
-      "input": "Définissez une zone carrée autour du sujet.",
-      "output": "Une image carrée centrée prête à être publiée.",
-      "description": "Idéal pour les avatars, publications et vignettes."
+      "title": "Recadrer une photo produit en carré",
+      "input": "cropX=120, cropY=80, cropWidth=900, cropHeight=900 sur une photo produit horizontale",
+      "output": "Une image carrée centrée sur le produit, avec les marges latérales supprimées.",
+      "description": "Pratique lorsqu’une boutique ou une carte sociale impose un format carré."
     },
     {
-      "title": "Recadrer une capture d’écran",
-      "input": "Saisissez des coordonnées exactes pour la zone visible.",
-      "output": "Une capture propre avec uniquement le contenu nécessaire.",
-      "description": "Parfait pour les tutoriels, rapports et supports."
+      "title": "Isoler un panneau d’un tableau de bord",
+      "input": "cropX=40, cropY=210, cropWidth=1280, cropHeight=620 sur une capture complète",
+      "output": "Seule la zone du graphique est conservée, sans navigation ni pied de page.",
+      "description": "Idéal pour isoler un bloc visuel dans une interface plus large."
+    },
+    {
+      "title": "Recadrer une bannière large en bande hero",
+      "input": "cropX=0, cropY=140, cropWidth=1920, cropHeight=520 sur une bannière conçue",
+      "output": "Une bannière plus étroite qui garde le titre principal et la composition.",
+      "description": "Utile quand le visuel doit être ajusté à une page web ou à un e-mail."
     }
   ],
   "faq": [
     {
-      "question": "Le découpeur d’images est-il gratuit ?",
-      "answer": "Oui, vous pouvez recadrer des images en ligne gratuitement."
+      "question": "Que signifient crop X et crop Y ?",
+      "answer": "Ils définissent le point de départ du rectangle de recadrage, mesuré depuis le coin supérieur gauche de l’image. X agit horizontalement, Y verticalement."
     },
     {
-      "question": "L’image quitte-t-elle mon navigateur ?",
-      "answer": "Non, le recadrage se fait localement dans le navigateur pour plus de confidentialité."
+      "question": "Que se passe-t-il si la zone de recadrage dépasse l’image ?",
+      "answer": "Un recadrage ne peut pas contenir des pixels inexistants. La largeur et la hauteur doivent rester dans les limites de l’image, sinon le résultat peut être tronqué ou refusé."
     },
     {
-      "question": "Puis-je recadrer avec des coordonnées exactes ?",
-      "answer": "Oui, vous pouvez saisir des valeurs personnalisées pour un recadrage précis."
+      "question": "Pourquoi mon recadrage diffère-t-il de l’aperçu ?",
+      "answer": "Cela arrive souvent avec une image tournée, une échelle inattendue ou des coordonnées reprises depuis un fichier de taille différente. Vérifiez les dimensions d’origine avant de réutiliser les valeurs."
     },
     {
-      "question": "Quels formats d’image sont pris en charge ?",
-      "answer": "Vous pouvez utiliser les formats courants pris en charge par le navigateur."
+      "question": "Peut-on conserver les proportions pendant le recadrage ?",
+      "answer": "Le recadrage crée un nouveau cadre, donc le format final dépend de la largeur et de la hauteur choisies. Pour un ratio fixe, ajustez les coordonnées en conséquence."
+    },
+    {
+      "question": "Pourquoi une capture d’écran nécessite-t-elle d’autres coordonnées qu’une photo ?",
+      "answer": "Les captures ont des bords nets, des éléments d’interface et une structure au pixel près ; les valeurs exactes comptent donc davantage que pour une photo classique."
     }
   ],
-  "uiLabels": {
-    "copy": "Copier",
-    "copied": "Copié",
-    "input": "Entrée",
-    "output": "Sortie",
-    "placeholder": "Collez ou importez une image",
-    "indent": "Retrait",
-    "removeComments": "Supprimer les commentaires",
-    "preview": "Aperçu",
-    "source": "Source",
-    "sanitizedHtml": "HTML nettoyé",
-    "plainText": "Texte brut",
-    "summary": "Résumé",
-    "total": "Total",
-    "links": "Liens",
-    "images": "Images",
-    "errors": "Erreurs",
-    "warnings": "Avertissements",
-    "valid": "Valide",
-    "invalid": "Non valide",
-    "href": "Href",
-    "text": "Texte",
-    "rel": "Rel",
-    "target": "Cible",
-    "alt": "Alt",
-    "width": "Largeur",
-    "height": "Hauteur",
-    "empty": "Vide",
-    "outputReady": "Résultat prêt",
-    "cleanedHtml": "HTML nettoyé",
-    "formattedHtml": "HTML formaté",
-    "minifiedHtml": "HTML minifié",
-    "markdown": "Markdown",
-    "extractedImages": "Images extraites",
-    "extractedLinks": "Liens extraits",
-    "validationSummary": "Résumé de validation",
-    "prettyHtml": "HTML lisible",
-    "encodedText": "Texte encodé",
-    "file": "Fichier",
-    "size": "Taille",
-    "format": "Format",
-    "quality": "Qualité",
-    "colorOne": "Couleur 1",
-    "colorTwo": "Couleur 2",
-    "background": "Arrière-plan",
-    "foreground": "Premier plan",
-    "angle": "Angle",
-    "margin": "Marge",
-    "level": "Niveau",
-    "gradientType": "Type de dégradé",
-    "linear": "Linéaire",
-    "radial": "Radial",
-    "blur": "Flou",
-    "spread": "Diffusion",
-    "offsetX": "Décalage X",
-    "offsetY": "Décalage Y",
-    "opacity": "Opacité",
-    "inset": "Interne",
-    "cssCode": "Code CSS",
-    "snippet": "Extrait",
-    "download": "Télécharger",
-    "downloadSvg": "Télécharger SVG",
-    "downloadPng": "Télécharger PNG",
-    "downloadAll": "Tout télécharger",
-    "upload": "Importer",
-    "title": "Titre",
-    "description": "Description",
-    "canonicalUrl": "URL canonique",
-    "siteName": "Nom du site",
-    "ogImage": "Image OG",
-    "clear": "Effacer",
-    "generatedQr": "Apercu du code QR",
-    "placeholderImage": "Apercu de l image",
-    "faviconSet": "Jeu de favicon",
-    "keepAspectRatio": "Conserver les proportions",
-    "cropX": "Recadrage X",
-    "cropY": "Recadrage Y",
-    "cropWidth": "Largeur du recadrage",
-    "cropHeight": "Hauteur du recadrage",
-    "originalSize": "Taille d’origine",
-    "outputSize": "Taille de sortie",
-    "savedSize": "Taille économisée",
-    "result": "Résultat",
-    "base64": "Base64",
-    "mimeType": "Type MIME",
-    "resizedImage": "Image redimensionnée",
-    "compressedImage": "Image compressée",
-    "croppedImage": "Image recadrée",
-    "convertedImage": "Image convertie",
-    "decodedImage": "Image décodée",
-    "imagePreview": "Aperçu de l’image"
-  },
   "seo": {
-    "title": "Découpeur d’images en ligne | Recadrez vos photos dans le navigateur",
-    "description": "Recadrez des images en ligne avec des coordonnées précises et un aperçu instantané. Outil rapide et privé, sans envoi de fichier.",
+    "title": "Découpeur d’images en ligne",
+    "description": "Recadrez des images avec des coordonnées exactes, vérifiez le résultat immédiatement et téléchargez un extrait net depuis votre navigateur.",
     "keywords": [
       "decoupeur d images",
-      "recadrer une image en ligne",
-      "recadrer une photo",
-      "rogner une capture d ecran",
-      "recadrage d image",
+      "recadrer image",
+      "recadrage par coordonnees",
+      "recadrer capture ecran",
       "outil de recadrage"
     ]
   }

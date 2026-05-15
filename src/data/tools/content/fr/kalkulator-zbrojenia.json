@@ -4,171 +4,86 @@
   "slug": "calculateur-darmature",
   "h1": "Calculateur d’armature",
   "title": "Calculateur d’armature",
-  "shortDescription": "Estimez le nombre de barres d’armature et la masse d’acier nécessaires pour un schéma simple d’armature.",
-  "metaTitle": "Calculateur d’armature en ligne | Quantité d’acier et poids",
-  "metaDescription": "Calculez le nombre de barres, la longueur totale et le poids de l’acier pour les dalles et les armatures simples. Rapide, gratuit et facile.",
-  "intro": "Utilisez ce calculateur d’armature pour estimer la quantité de barres, la longueur totale et le poids de l’acier pour une dalle ou une structure simple. Saisissez les dimensions, l’espacement, la longueur d’une barre, le poids unitaire et la marge de perte pour obtenir un résultat rapide.",
-  "overview": "Cet outil vous aide à estimer l’acier de renforcement nécessaire pour une disposition simple. Il calcule le nombre de barres selon l’espacement, la longueur totale et le poids final avec les pertes incluses. Idéal pour la planification des matériaux et les estimations rapides.",
+  "shortDescription": "Calculez le nombre de barres, la longueur totale et la masse d’acier pour une armature rectangulaire simple.",
+  "metaTitle": "Calculateur d’armature",
+  "metaDescription": "Calculez le nombre de barres, la longueur totale et la masse d’acier pour une armature rectangulaire simple.",
+  "intro": "Indiquez les dimensions de l’élément, l’espacement, la longueur commerciale, le poids par mètre et la marge de perte pour estimer l’acier nécessaire.",
+  "overview": "Ce calculateur est conçu pour les schémas rectangulaires simples, comme les dalles, les semelles et les petites bases. À partir des dimensions et de l’espacement saisis, il détermine le nombre de barres, la longueur totale d’acier et la masse approximative, ce qui facilite la préparation des achats ou des devis.\n\nLe résultat doit être utilisé comme une valeur de planification. L’enrobage, les recouvrements, les crochets, les pliages et la forme réelle des barres peuvent modifier le besoin final, surtout lorsque l’armature ne forme pas un simple treillis. S’il y a plusieurs nappes ou deux directions d’armature, il vaut mieux calculer chaque ensemble séparément puis additionner les valeurs.\n\nLe pourcentage de perte sert à intégrer les coupes, les recouvrements et les chutes de chantier. Si vous connaissez déjà la longueur commerciale proposée par votre fournisseur, utilisez cette valeur de manière cohérente avec les dimensions de l’élément afin que le nombre de barres et la longueur totale reflètent une commande réaliste.",
   "howItWorks": [
     "Saisissez la longueur et la largeur de l’élément en mètres.",
     "Définissez l’espacement des barres en centimètres.",
-    "Indiquez la longueur d’une barre et le poids unitaire par mètre.",
+    "Indiquez la longueur d’une barre commerciale et le poids au mètre.",
     "Ajoutez un pourcentage de perte pour les coupes et les recouvrements.",
-    "Obtenez la longueur totale, le nombre de barres et le poids de l’acier."
+    "Consultez le nombre de barres, la longueur totale et le poids de l’acier."
   ],
   "useCases": [
-    "Estimer l’armature pour les dalles et les fondations.",
-    "Vérifier la quantité d’acier avant d’acheter.",
-    "Planifier les barres pour de petits chantiers.",
-    "Calculer le poids de l’acier pour un devis."
+    {
+      "title": "Quantifier une dalle",
+      "description": "Estimez le nombre de barres et la masse d’acier d’une dalle rectangulaire avant d’établir la liste de matériaux."
+    },
+    {
+      "title": "Vérifier une semelle",
+      "description": "Calculez l’acier nécessaire pour une semelle filante ou isolée lorsque le schéma de barres reste régulier."
+    },
+    {
+      "title": "Contrôler une commande fournisseur",
+      "description": "Comparez la longueur totale calculée à la longueur commerciale pour éviter les manques ou les excédents importants."
+    },
+    {
+      "title": "Chiffrer par la masse",
+      "description": "Utilisez la masse d’acier comme base de devis lorsque l’armature est tarifée au kilo."
+    }
   ],
   "examples": [
     {
-      "title": "Estimation simple de dalle",
-      "input": "Longueur 6 m, largeur 4 m, espacement 20 cm, longueur d’une barre 6 m, poids unitaire 0,617 kg/m, perte 10%",
-      "output": "Nombre estimé de barres, longueur totale et poids de l’acier.",
-      "description": "Exemple rapide pour planifier l’armature d’une dalle standard."
+      "title": "Dalle rectangulaire avec pertes",
+      "input": "Longueur 7,2 m, largeur 4,8 m, espacement 18 cm, longueur commerciale 12 m, poids au mètre 0,888 kg/m, perte 8%",
+      "output": "Environ 41 barres, 293,8 m de longueur totale, 260,7 kg d’acier",
+      "description": "Exemple concret montrant l’impact de l’espacement et des pertes sur la quantité finale."
     },
     {
-      "title": "Commande de matériaux",
-      "input": "Utilisez les dimensions du projet et l’espacement pour estimer l’acier avant l’achat.",
-      "output": "Affiche une quantité de commande pratique avec pertes incluses.",
-      "description": "Aide à éviter de commander trop peu d’acier d’armature."
+      "title": "Semelle dans une seule direction",
+      "input": "Longueur 10 m, largeur 0,6 m, espacement 15 cm, longueur commerciale 6 m, poids au mètre 0,395 kg/m, perte 5%",
+      "output": "Environ 68 barres, 408,0 m de longueur totale, 169,8 kg d’acier",
+      "description": "Adapté aux éléments longs et étroits avec des barres parallèles à intervalle fixe."
+    },
+    {
+      "title": "Petite base de machine",
+      "input": "Longueur 2,4 m, largeur 2,4 m, espacement 20 cm, longueur commerciale 6 m, poids au mètre 0,617 kg/m, perte 12%",
+      "output": "Environ 14 barres, 38,4 m de longueur totale, 26,7 kg d’acier",
+      "description": "Montre une base compacte où les coupes et les chutes pèsent davantage dans le calcul."
     }
   ],
   "faq": [
     {
-      "question": "Le calculateur prend-il en compte les pertes ?",
-      "answer": "Oui. Saisissez le pourcentage de perte pour ajouter du matériau pour les coupes, les recouvrements et les chutes."
+      "question": "Le calculateur prend-il en compte les recouvrements et les pliages ?",
+      "answer": "Non. Il calcule une disposition droite à partir des dimensions et de l’espacement saisis. Les recouvrements, crochets, pliages et ancrages doivent être ajoutés à part."
     },
     {
-      "question": "Puis-je l’utiliser pour n’importe quelle dalle ?",
-      "answer": "Oui. Il fonctionne pour des schémas rectangulaires simples si vous connaissez l’espacement et la longueur des barres."
+      "question": "Que faire si mon armature est dans deux directions ?",
+      "answer": "Calculez chaque direction séparément avec son espacement et sa longueur de barre, puis additionnez les résultats. Vous obtiendrez ainsi une estimation plus lisible."
     },
     {
-      "question": "Que signifie poids unitaire ?",
-      "answer": "C’est la masse d’un mètre de barre d’armature, généralement exprimée en kg/m."
+      "question": "Comment choisir le poids au mètre ?",
+      "answer": "Utilisez le poids correspondant au diamètre réel de la barre que vous allez acheter. Si le diamètre est incorrect, la longueur restera proche mais la masse finale sera faussée."
+    },
+    {
+      "question": "Pourquoi le nombre de barres paraît-il parfois élevé ?",
+      "answer": "L’espacement est réparti sur toute la largeur ou la longueur de l’élément. Une petite variation peut ajouter une barre supplémentaire, ce qui est normal d’un point de vue géométrique."
+    },
+    {
+      "question": "Convient-il aux formes irrégulières ?",
+      "answer": "Seulement comme ordre de grandeur. Les ouvertures, bords courbes, décrochements et épaississements locaux modifient la consommation d’acier et doivent être calculés séparément."
     }
   ],
-  "uiLabels": {
-    "copy": "Copier",
-    "copied": "Copié",
-    "input": "Entrée",
-    "output": "Sortie",
-    "placeholder": "Saisir une valeur",
-    "indent": "Retrait",
-    "removeComments": "Supprimer les commentaires",
-    "preview": "Aperçu",
-    "source": "Source",
-    "sanitizedHtml": "HTML nettoyé",
-    "plainText": "Texte brut",
-    "summary": "Résumé",
-    "total": "Total",
-    "links": "Liens",
-    "images": "Images",
-    "errors": "Erreurs",
-    "warnings": "Avertissements",
-    "valid": "Valide",
-    "invalid": "Invalide",
-    "href": "Href",
-    "text": "Texte",
-    "rel": "Rel",
-    "target": "Cible",
-    "alt": "Alt",
-    "width": "Largeur",
-    "height": "Hauteur",
-    "empty": "Vide",
-    "outputReady": "Résultat prêt",
-    "cleanedHtml": "HTML nettoyé",
-    "formattedHtml": "HTML formaté",
-    "minifiedHtml": "HTML minifié",
-    "markdown": "Markdown",
-    "extractedImages": "Images extraites",
-    "extractedLinks": "Liens extraits",
-    "validationSummary": "Résumé de validation",
-    "prettyHtml": "HTML lisible",
-    "encodedText": "Texte encodé",
-    "file": "Fichier",
-    "size": "Taille",
-    "format": "Format",
-    "quality": "Qualité",
-    "colorOne": "Couleur 1",
-    "colorTwo": "Couleur 2",
-    "background": "Arrière-plan",
-    "foreground": "Premier plan",
-    "angle": "Angle",
-    "margin": "Marge",
-    "level": "Niveau",
-    "gradientType": "Type de dégradé",
-    "linear": "Linéaire",
-    "radial": "Radial",
-    "blur": "Flou",
-    "spread": "Propagation",
-    "offsetX": "Décalage X",
-    "offsetY": "Décalage Y",
-    "opacity": "Opacité",
-    "inset": "Intérieur",
-    "cssCode": "Code CSS",
-    "snippet": "Extrait",
-    "download": "Télécharger",
-    "downloadSvg": "Télécharger SVG",
-    "downloadPng": "Télécharger PNG",
-    "downloadAll": "Tout télécharger",
-    "upload": "Importer",
-    "title": "Titre",
-    "description": "Description",
-    "canonicalUrl": "URL canonique",
-    "siteName": "Nom du site",
-    "ogImage": "Image OG",
-    "clear": "Effacer",
-    "generatedQr": "QR généré",
-    "placeholderImage": "Image de remplacement",
-    "faviconSet": "Jeu de favicons",
-    "keepAspectRatio": "Conserver le ratio",
-    "cropX": "Recadrage X",
-    "cropY": "Recadrage Y",
-    "cropWidth": "Largeur du recadrage",
-    "cropHeight": "Hauteur du recadrage",
-    "originalSize": "Taille d’origine",
-    "outputSize": "Taille de sortie",
-    "savedSize": "Taille enregistrée",
-    "result": "Résultat",
-    "base64": "Base64",
-    "mimeType": "Type MIME",
-    "resizedImage": "Image redimensionnée",
-    "compressedImage": "Image compressée",
-    "croppedImage": "Image recadrée",
-    "convertedImage": "Image convertie",
-    "decodedImage": "Image décodée",
-    "imagePreview": "Aperçu de l’image",
-    "camera": "Caméra",
-    "lens": "Objectif",
-    "dateTaken": "Date de prise de vue",
-    "resolution": "Résolution",
-    "fileSize": "Taille du fichier",
-    "iso": "ISO",
-    "exposure": "Exposition",
-    "aperture": "Ouverture",
-    "focalLength": "Distance focale",
-    "flash": "Flash",
-    "orientation": "Orientation",
-    "latitude": "Latitude",
-    "longitude": "Longitude",
-    "openMap": "Ouvrir la carte",
-    "rawMetadata": "Métadonnées brutes",
-    "noMetadataFound": "Aucune métadonnée trouvée",
-    "gpsLocation": "Position GPS",
-    "metadataSummary": "Résumé des métadonnées"
-  },
   "seo": {
-    "title": "Calculateur d’armature en ligne",
-    "description": "Calculez le nombre de barres, la longueur totale et le poids de l’acier pour les dalles et les armatures simples.",
+    "title": "Calculateur d’armature",
+    "description": "Calculez le nombre de barres, la longueur totale et la masse d’acier pour une armature rectangulaire simple.",
     "keywords": [
       "calculateur d’armature",
-      "calcul d’acier",
+      "quantité de barres",
       "poids de l’acier",
-      "nombre de barres",
-      "calculateur bâtiment",
+      "acier d’armature",
       "armature dalle"
     ]
   }

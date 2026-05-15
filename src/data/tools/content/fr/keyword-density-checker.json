@@ -4,44 +4,85 @@
   "slug": "verificateur-de-densite-de-mots-cles",
   "h1": "Vérificateur de densité de mots-clés",
   "title": "Vérificateur de densité de mots-clés",
-  "shortDescription": "Vérifiez la densité de mots-clés dans un texte avec des résultats rapides, une saisie simple et des exemples pratiques.",
-  "overview": "Vérifiez la densité de mots-clés dans un bloc de texte. Cette page fournit une réponse rapide avec un outil pratique et un parcours de résultat simple. Elle s’adresse aux utilisateurs qui recherchent une réponse gratuite en ligne, des résultats instantanés dans le navigateur et un contenu utile optimisé pour les requêtes longue traîne.",
+  "shortDescription": "Mesurez la fréquence d’un mot-clé dans un texte et voyez sa part dans l’ensemble.",
+  "metaTitle": "Vérificateur de densité",
+  "metaDescription": "Analysez les occurrences, le nombre total de mots et la densité d’un mot-clé dans un texte.",
+  "intro": "Collez votre texte et indiquez le mot ou l’expression cible pour voir les occurrences, le total de mots et la densité immédiatement.",
+  "overview": "Cet outil sert à vérifier combien de fois un mot-clé précis apparaît dans un article, une page d’atterrissage, une fiche produit ou un brouillon. Il affiche les occurrences avec le total de mots afin de déterminer si le terme est discret, bien réparti ou trop répété.\n\nIl aide aussi à comparer différentes parties d’un même texte avant publication, à repérer les formulations forcées et à voir si le mot-clé se concentre surtout dans l’introduction ou un paragraphe précis. C’est pratique pour éditer avec méthode au lieu de se fier à une impression générale.",
   "howItWorks": [
-    "Saisissez le mot, l’expression ou le texte requis dans le formulaire.",
-    "Le calcul ou l’analyse s’exécute instantanément dans le navigateur.",
-    "Consultez le résultat et poursuivez avec des outils connexes si vous avez besoin d’une autre étape."
+    "Collez ou saisissez le texte à examiner.",
+    "Entrez le mot ou l’expression à compter.",
+    "Consultez les occurrences, le total de mots et la densité obtenue."
+  ],
+  "useCases": [
+    {
+      "title": "Relire un brouillon d’article",
+      "description": "Vérifiez combien de fois l’idée principale revient dans un texte avant de l’envoyer en relecture."
+    },
+    {
+      "title": "Équilibrer une page commerciale",
+      "description": "Mesurez l’usage de l’expression cible pour garder un message clair sans répétitions gênantes."
+    },
+    {
+      "title": "Contrôler une fiche produit",
+      "description": "Repérez si la description répète trop souvent le même terme ou si elle reste trop vague."
+    },
+    {
+      "title": "Analyser une section précise",
+      "description": "Testez l’introduction, le corps et la conclusion séparément pour voir où l’expression se concentre."
+    }
   ],
   "examples": [
     {
-      "title": "Exemple 1",
-      "input": "Article SEO + mot-clé cible",
-      "output": "Pourcentage de densité du mot-clé",
-      "description": "Un exemple réaliste de vérification de densité de mots-clés pour une requête courante."
+      "title": "Relève d’article",
+      "input": "Texte : \"La densité de mots-clés aide à éviter les répétitions excessives. Un vérificateur de densité montre si la densité est équilibrée.\"\nMot-clé : \"densité de mots-clés\"",
+      "output": "Occurrences : 2\nMots totaux : 18\nDensité : 11,11%",
+      "description": "Montre le comptage d’une expression répétée dans un court passage."
     },
     {
-      "title": "Exemple 2",
-      "input": "Article SEO + mot-clé cible",
-      "output": "Pourcentage de densité du mot-clé",
-      "description": "Un autre cas d’usage pratique pour le trafic organique longue traîne."
+      "title": "Fiche produit",
+      "input": "Texte : \"Chaussures de course pour le quotidien. Ces chaussures de course sont légères, confortables et résistantes, et les chaussures de course conviennent aux longues distances.\"\nMot-clé : \"chaussures de course\"",
+      "output": "Occurrences : 3\nMots totaux : 22\nDensité : 13,64%",
+      "description": "Utile pour repérer les répétitions dans un texte commercial."
+    },
+    {
+      "title": "Expression avec ponctuation",
+      "input": "Texte : \"Email marketing, email marketing pour vendre et meilleurs résultats en email marketing comptent.\"\nMot-clé : \"email marketing\"",
+      "output": "Occurrences : 3\nMots totaux : 12\nDensité : 25%",
+      "description": "Illustre la prise en compte d’une expression même avec des virgules et des mots voisins."
     }
   ],
   "faq": [
     {
-      "question": "Quelle est la précision de cet outil ?",
-      "answer": "Le résultat est calculé directement à partir de la formule ou de la logique côté navigateur utilisée par cet outil."
+      "question": "L’outil compte-t-il les correspondances exactes seulement ?",
+      "answer": "Il compte le mot ou l’expression telle que vous la saisissez. Si vous voulez comparer le singulier et le pluriel, faites deux analyses séparées."
     },
     {
-      "question": "Puis-je utiliser cet outil sur mobile ?",
-      "answer": "Oui. La page fonctionne sur ordinateur et sur mobile avec une interface simple de saisie et de résultat."
+      "question": "Pourquoi la densité augmente-t-elle quand le texte est plus court ?",
+      "answer": "Parce qu’elle dépend à la fois des occurrences et du nombre total de mots. Si le texte diminue et que le mot-clé reste présent, le pourcentage monte."
+    },
+    {
+      "question": "Comment interpréter une densité très élevée ?",
+      "answer": "Cela signifie généralement que l’expression revient souvent dans un texte court. Dans une note courte, c’est parfois normal, mais dans un texte rédigé, cela peut paraître répétitif."
+    },
+    {
+      "question": "Quelle erreur revient le plus souvent ?",
+      "answer": "Entrer un seul mot alors que la cible réelle est une expression de deux ou trois mots. Le résultat ne reflète alors pas le bon terme."
+    },
+    {
+      "question": "Puis-je vérifier seulement un passage du texte ?",
+      "answer": "Oui. Tester un seul bloc permet de voir où l’expression se concentre sans mélanger tout le contenu."
     }
   ],
   "seo": {
-    "title": "Vérificateur de densité de mots-clés",
-    "description": "Vérifiez la densité de mots-clés dans un texte. Vérificateur de densité de mots-clés en ligne gratuit avec résultats instantanés.",
+    "title": "Vérificateur de densité",
+    "description": "Analysez les occurrences, le nombre total de mots et la densité d’un mot-clé dans un texte.",
     "keywords": [
-      "vérificateur de densité de mots-clés",
+      "vérificateur de densité",
       "densité de mots-clés",
-      "outil de texte"
+      "analyse de texte",
+      "compteur de mots",
+      "occurrences de mots-clés"
     ]
   }
 }

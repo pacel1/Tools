@@ -4,176 +4,88 @@
   "slug": "calculateur-de-gouttieres",
   "h1": "Calculateur de gouttières",
   "title": "Calculateur de gouttières",
-  "shortDescription": "Calculez la longueur de gouttières, les crochets et les descentes nécessaires pour l’évacuation du toit.",
-  "metaTitle": "Calculateur de gouttières - estimer gouttières, crochets et descentes",
-  "metaDescription": "Utilisez ce calculateur de gouttières pour estimer les mètres de gouttière, le nombre de crochets et de descentes selon l’égout, les rives, l’espacement et la marge de perte.",
-  "intro": "Estimez rapidement les matériaux pour un système de gouttières. Indiquez la longueur de l’égout, le nombre de rives de toiture, l’espacement des descentes, l’espacement des crochets et le pourcentage de perte pour obtenir une estimation pratique.",
-  "overview": "Ce calculateur de gouttières vous aide à planifier les matériaux d’évacuation de toiture avant l’achat ou la pose. Il estime la longueur totale de gouttières, le nombre de crochets et le nombre de descentes selon les dimensions du toit et les espacements saisis. Ajoutez une marge de perte pour les coupes, les jonctions et les ajustements sur chantier.",
+  "shortDescription": "Estimez la longueur de gouttières, les crochets et les descentes pour un toit donné.",
+  "metaTitle": "Calculateur de gouttières pour toiture",
+  "metaDescription": "Estimez les mètres de gouttière, les crochets et les descentes à partir de l’égout, des rives, de l’espacement et de la perte.",
+  "intro": "Saisissez la longueur de l’égout, le nombre de rives, l’espacement des crochets, l’espacement des descentes et la perte pour estimer les matériaux nécessaires.",
+  "overview": "Ce calculateur de gouttières fournit une estimation pratique des matériaux pour l’évacuation d’une toiture. Il transforme la longueur des rives saisie en longueur totale de gouttière, puis calcule les crochets et les descentes selon l’espacement choisi.\n\nIl est utile pour préparer une pose neuve, remplacer une partie endommagée ou comparer les quantités avant commande. La perte permet d’anticiper les coupes, les recouvrements, les jonctions et les ajustements sur chantier afin d’obtenir une estimation plus proche du besoin réel.",
   "howItWorks": [
-    "Saisissez la longueur de l’égout en mètres.",
-    "Indiquez le nombre de rives de toiture à équiper.",
-    "Définissez l’espacement des descentes en mètres.",
-    "Entrez l’espacement des crochets en centimètres.",
-    "Ajoutez un pourcentage de perte pour prévoir du surplus.",
-    "Consultez les mètres de gouttières, les crochets et les descentes estimés."
+    "Mesurez la longueur de l’égout ou de la rive en mètres.",
+    "Indiquez le nombre de rives à équiper de gouttières.",
+    "Définissez l’espacement des crochets en centimètres.",
+    "Définissez l’écartement prévu entre les descentes en mètres.",
+    "Ajoutez un pourcentage de perte pour les coupes et raccords.",
+    "Consultez la longueur estimée de gouttière, les crochets et les descentes."
   ],
   "useCases": [
-    "Estimer les matériaux pour une nouvelle pose de gouttières.",
-    "Vérifier le nombre de crochets nécessaires pour une réparation.",
-    "Planifier l’emplacement des descentes pour une maison ou un local.",
-    "Commander les éléments de gouttière avec une marge adaptée."
+    {
+      "title": "Pose neuve sur une maison",
+      "description": "Calculez les quantités nécessaires pour installer un système complet avant de commander les éléments."
+    },
+    {
+      "title": "Remplacement après un dégât",
+      "description": "Estimez les tronçons, crochets et descentes à remplacer lors d’une réparation partielle."
+    },
+    {
+      "title": "Toiture à plusieurs pans",
+      "description": "Comparez les besoins de chaque rive lorsque les longueurs ou les points d’évacuation diffèrent."
+    },
+    {
+      "title": "Vérification d’un devis",
+      "description": "Contrôlez si la liste de matériel proposée correspond aux mesures réellement relevées."
+    }
   ],
   "examples": [
     {
-      "title": "Exemple de calcul",
-      "input": "Longueur de l’égout : 12 m, rives : 2, espacement des descentes : 10 m, espacement des crochets : 60 cm, perte : 10%",
-      "output": "Longueur estimée de gouttières, crochets et descentes pour le toit.",
-      "description": "Utilisez le résultat comme estimation rapide avant l’achat des composants."
+      "title": "Toiture de maison à deux pans",
+      "input": "Longueur de l’égout : 12 m, rives : 2, espacement des crochets : 60 cm, espacement des descentes : 10 m, perte : 10%",
+      "output": "Longueur estimée de gouttière : 26,4 m. Crochets : 44. Descentes : 3.",
+      "description": "Un cas courant pour une maison individuelle avec une évacuation de chaque côté."
     },
     {
-      "title": "Planification d’une mise à niveau du drainage",
-      "input": "Mesurez chaque section d’égout séparément et additionnez la longueur totale avant le calcul.",
-      "output": "Une estimation plus précise des gouttières et des supports.",
-      "description": "Utile pour remplacer des gouttières anciennes ou étendre un système existant."
+      "title": "Petit toit de garage",
+      "input": "Longueur de l’égout : 8,5 m, rives : 1, espacement des crochets : 50 cm, espacement des descentes : 7 m, perte : 5%",
+      "output": "Longueur estimée de gouttière : 8,9 m. Crochets : 18. Descentes : 2.",
+      "description": "Pratique pour une petite couverture où le nombre de fixations doit rester cohérent."
+    },
+    {
+      "title": "Bâtiment d’atelier long",
+      "input": "Longueur de l’égout : 24 m, rives : 2, espacement des crochets : 70 cm, espacement des descentes : 12 m, perte : 8%",
+      "output": "Longueur estimée de gouttière : 51,8 m. Crochets : 74. Descentes : 5.",
+      "description": "Aide à répartir plusieurs points d’évacuation sur un bâtiment allongé."
     }
   ],
   "faq": [
     {
-      "question": "Comment calculer la longueur de gouttières ?",
-      "answer": "Multipliez la longueur de l’égout par le nombre de rives de toiture, puis ajoutez le pourcentage de perte choisi."
+      "question": "Les angles et les bouchons sont-ils inclus automatiquement ?",
+      "answer": "Non. Les angles, bouchons, raccords et entonnoirs sont généralement comptés à part. Utilisez la longueur calculée comme base, puis ajoutez les accessoires selon le tracé réel."
     },
     {
-      "question": "Comment estimer le nombre de crochets ?",
-      "answer": "Divisez la longueur totale de gouttière par l’espacement des crochets et arrondissez au supérieur."
+      "question": "Pourquoi le nombre de crochets peut-il être plus élevé que prévu ?",
+      "answer": "Parce que le calcul applique l’espacement saisi sur toute la longueur. Plus l’espacement est faible, plus il faut de crochets, et des fixations supplémentaires sont souvent ajoutées aux angles ou aux jonctions."
     },
     {
-      "question": "Comment estimer le nombre de descentes ?",
-      "answer": "Divisez la longueur totale de gouttière par l’espacement des descentes et arrondissez au supérieur."
+      "question": "Comment traiter une toiture avec des rives de longueurs différentes ?",
+      "answer": "Calculez chaque rive séparément puis additionnez les résultats. Un simple moyenne n’est pas adaptée si les côtés ou les points de descente sont très différents."
     },
     {
-      "question": "Pourquoi ajouter une marge de perte ?",
-      "answer": "La marge couvre les coupes, les recouvrements, les angles et les ajustements de pose."
+      "question": "À quoi sert le pourcentage de perte ?",
+      "answer": "Il couvre les coupes, les recouvrements, les ajustements de pose et les petites reprises de chantier. Il ne remplace pas le comptage séparé des pièces spéciales."
+    },
+    {
+      "question": "Le nombre de descentes correspond-il au nombre exact de sorties d’eau ?",
+      "answer": "Non. Il s’agit d’une estimation fondée sur l’espacement choisi, pas d’un plan définitif des évacuations. L’implantation finale dépend de la pente, du débit et du point de rejet possible."
     }
   ],
-  "uiLabels": {
-    "copy": "Copier",
-    "copied": "Copié",
-    "input": "Entrée",
-    "output": "Sortie",
-    "placeholder": "Saisissez une valeur",
-    "indent": "Retrait",
-    "removeComments": "Supprimer les commentaires",
-    "preview": "Aperçu",
-    "source": "Source",
-    "sanitizedHtml": "HTML nettoyé",
-    "plainText": "Texte brut",
-    "summary": "Résumé",
-    "total": "Total",
-    "links": "Liens",
-    "images": "Images",
-    "errors": "Erreurs",
-    "warnings": "Avertissements",
-    "valid": "Valide",
-    "invalid": "Invalide",
-    "href": "Href",
-    "text": "Texte",
-    "rel": "Rel",
-    "target": "Cible",
-    "alt": "Alt",
-    "width": "Largeur",
-    "height": "Hauteur",
-    "empty": "Vide",
-    "outputReady": "Résultat prêt",
-    "cleanedHtml": "HTML nettoyé",
-    "formattedHtml": "HTML formaté",
-    "minifiedHtml": "HTML minifié",
-    "markdown": "Markdown",
-    "extractedImages": "Images extraites",
-    "extractedLinks": "Liens extraits",
-    "validationSummary": "Résumé de validation",
-    "prettyHtml": "HTML lisible",
-    "encodedText": "Texte encodé",
-    "file": "Fichier",
-    "size": "Taille",
-    "format": "Format",
-    "quality": "Qualité",
-    "colorOne": "Couleur 1",
-    "colorTwo": "Couleur 2",
-    "background": "Arrière-plan",
-    "foreground": "Premier plan",
-    "angle": "Angle",
-    "margin": "Marge",
-    "level": "Niveau",
-    "gradientType": "Type de dégradé",
-    "linear": "Linéaire",
-    "radial": "Radial",
-    "blur": "Flou",
-    "spread": "Diffusion",
-    "offsetX": "Décalage X",
-    "offsetY": "Décalage Y",
-    "opacity": "Opacité",
-    "inset": "Interne",
-    "cssCode": "Code CSS",
-    "snippet": "Extrait",
-    "download": "Télécharger",
-    "downloadSvg": "Télécharger SVG",
-    "downloadPng": "Télécharger PNG",
-    "downloadAll": "Tout télécharger",
-    "upload": "Importer",
-    "title": "Titre",
-    "description": "Description",
-    "canonicalUrl": "URL canonique",
-    "siteName": "Nom du site",
-    "ogImage": "Image OG",
-    "clear": "Effacer",
-    "generatedQr": "QR généré",
-    "placeholderImage": "Image de remplacement",
-    "faviconSet": "Pack de favicon",
-    "keepAspectRatio": "Conserver le ratio",
-    "cropX": "Recadrage X",
-    "cropY": "Recadrage Y",
-    "cropWidth": "Largeur du recadrage",
-    "cropHeight": "Hauteur du recadrage",
-    "originalSize": "Taille originale",
-    "outputSize": "Taille de sortie",
-    "savedSize": "Taille économisée",
-    "result": "Résultat",
-    "base64": "Base64",
-    "mimeType": "Type MIME",
-    "resizedImage": "Image redimensionnée",
-    "compressedImage": "Image compressée",
-    "croppedImage": "Image recadrée",
-    "convertedImage": "Image convertie",
-    "decodedImage": "Image décodée",
-    "imagePreview": "Aperçu de l’image",
-    "camera": "Appareil photo",
-    "lens": "Objectif",
-    "dateTaken": "Date de prise de vue",
-    "resolution": "Résolution",
-    "fileSize": "Taille du fichier",
-    "iso": "ISO",
-    "exposure": "Exposition",
-    "aperture": "Ouverture",
-    "focalLength": "Distance focale",
-    "flash": "Flash",
-    "orientation": "Orientation",
-    "latitude": "Latitude",
-    "longitude": "Longitude",
-    "openMap": "Ouvrir la carte",
-    "rawMetadata": "Métadonnées brutes",
-    "noMetadataFound": "Aucune métadonnée trouvée",
-    "gpsLocation": "Position GPS",
-    "metadataSummary": "Résumé des métadonnées"
-  },
   "seo": {
-    "title": "Calculateur de gouttières",
-    "description": "Estimez les mètres de gouttière, les crochets et les descentes pour l’évacuation du toit avec un calculateur en ligne simple.",
+    "title": "Calculateur de gouttières pour toiture",
+    "description": "Estimez les mètres de gouttière, les crochets et les descentes à partir de l’égout, des rives, de l’espacement et de la perte.",
     "keywords": [
       "calculateur de gouttières",
-      "calculateur évacuation toiture",
       "calculer gouttières",
-      "calculateur descentes",
-      "calculateur crochets"
+      "descente de gouttière",
+      "crochets de gouttière",
+      "évacuation toiture"
     ]
   }
 }

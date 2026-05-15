@@ -4,13 +4,81 @@
   "slug": "generator-palety-kolorow",
   "h1": "Generator palety kolorow",
   "title": "Generator palety kolorow",
-  "shortDescription": "Generuj palety kolorow online z jednego koloru bazowego do UI, brandingu i szybkich koncepcji.",
-  "metaTitle": "Generator palety kolorow | Palety online",
-  "metaDescription": "Generuj palety kolorow online z jednego koloru bazowego. Przydatne do brandingu, interfejsow, moodboardow i szybkiej pracy z CSS.",
-  "intro": "Generator palety kolorow pomaga wtedy, gdy jeden kolor bazowy trzeba szybko rozwinac o kilka dopasowanych probek. To wygodne rozwiazanie do interfejsow, brandingu, motywow stron i prostych eksperymentow wizualnych.",
-  "overview": "Narzedzie jest lekkie i szybkie, wiec dobrze nadaje sie do wstepnego budowania palet bez otwierania rozbudowanego edytora. Sprawdza sie przy landing pageach, design systemach, projektach komponentow i robieniu pierwszych wersji motywu.",
-  "howItWorks": ["Wybierz kolor bazowy.", "Ustaw ile probek ma zawierac paleta.", "Skorzystaj z wygenerowanych kolorow w projekcie albo kodzie."],
-  "examples": [{"title": "Paleta dla UI", "input": "Jeden kolor turkusowy", "output": "Zestaw jasniejszych i ciemniejszych probek", "description": "Przydatne do przyciskow, tla, akcentow i stanow."}, {"title": "Szybki branding", "input": "Jeden kolor akcentu", "output": "Szersza paleta do moodboardu", "description": "Pomocne przy pierwszych wersjach identyfikacji wizualnej."}],
-  "faq": [{"question": "Ile kolorow moge wygenerowac?", "answer": "Narzedzie tworzy kompaktowe palety z kilkoma probkami opartymi na jednym kolorze bazowym."}, {"question": "Czy to przyda sie do CSS?", "answer": "Tak. Wygenerowane kody HEX dobrze nadaja sie do zmiennych CSS, tokenow i prostych motywow."}],
-  "seo": {"title": "Generator palety kolorow | Palety online", "description": "Generuj palety kolorow online z jednego koloru bazowego do UI, brandingu i szybkiej pracy z CSS.", "keywords": ["generator palety kolorow", "paleta kolorow online", "generator kolorow", "palette generator", "paleta do ui"]}
+  "shortDescription": "Tworz spójne zestawy kolorow z jednej barwy bazowej do interfejsow, brandingu i koncepcji.",
+  "metaTitle": "Generator palety kolorow | Kolory",
+  "metaDescription": "Tworz spójne zestawy kolorow z jednej barwy bazowej do brandingu, interfejsow, planowania motywow i szkicow projektu.",
+  "intro": "Z jednej barwy bazowej utworzysz w kilka sekund zestaw dopasowanych odcieni, tonow i akcentow.",
+  "overview": "To narzedzie pomaga zamienic jeden punkt startowy w uporzadkowany zestaw kolorow. Dzieki temu latwiej zbudowac interfejs z konsekwentnymi tla, stanami i akcentami bez recznego zgadywania kolejnych krokow.\n\nSprawdza sie tez wtedy, gdy potrzebujesz wczesnego kierunku wizualnego dla marki, strony promocyjnej albo konceptu produktu. Zamiast pracowac na pojedynczym kolorze, dostajesz mala rodzine barw, ktora moze wspierac naglowki, tlo, podswietlenia i interakcje.\n\nWygenerowane wartosci potraktuj jako punkt wyjscia, a potem dopasuj je w projekcie lub kodzie, jesli potrzebujesz lepszego kontrastu, cieplejszych neutralnych tonow albo bardziej stonowanego efektu.",
+  "howItWorks": [
+    "Wybierz kolor bazowy, ktory ma wyznaczac kierunek palety.",
+    "Okresl liczbe powiazanych kolorow, ktore chcesz otrzymac.",
+    "Sprawdz probki i skopiuj wartosci do projektu albo kodu."
+  ],
+  "useCases": [
+    {
+      "title": "Skala kolorow do UI",
+      "description": "Zbuduj zestaw tonow do przyciskow, paneli, stanow hover i delikatnych tla z jednej glownej barwy marki."
+    },
+    {
+      "title": "Kierunek dla landing page",
+      "description": "Przetestuj hero, kolor akcentu i sekcje wspierajace z jedna spojna rodzina kolorow przed dopracowaniem ukladu."
+    },
+    {
+      "title": "Szkic systemu projektowego",
+      "description": "Utworz startowy zakres tokenow dla kolorow primary, secondary, surface i emphasis przy definiowaniu nowego motywu."
+    },
+    {
+      "title": "Tablica koncepcji marki",
+      "description": "Rozwin jeden znak rozpoznawczy w palete do slajdow, moodboardow i szkicow identyfikacji wizualnej."
+    }
+  ],
+  "examples": [
+    {
+      "title": "Paleta dla dashboardu SaaS",
+      "input": "Kolor bazowy: #1F7A8C, 7 probek",
+      "output": "Zbalansowany zestaw z jasnymi tlaami turkusowymi, srednimi akcentami UI i ciemnym kolorem kotwicznym",
+      "description": "Dobrze sprawdza sie w nawigacji, wykresach i wyróżnieniach statusow."
+    },
+    {
+      "title": "Strona promocyjna w stylu editorial",
+      "input": "Kolor bazowy: cieply koral, 5 probek",
+      "output": "Jasne brzoskwiniowe tony, nasycony srodek koralu i ciemniejszy kolor do podkreslen",
+      "description": "Przydatne, gdy strona ma byc ciepla, ale nie krzykliwa."
+    },
+    {
+      "title": "Moodboard dla premiery produktu",
+      "input": "Kolor bazowy: gleboki fiolet, 9 probek",
+      "output": "Kilka krokow od prawie czarnego plum do jasnej lawendy",
+      "description": "Daje wystarczajaco duza rozpiętość do kart okładkowych, podzialu sekcji i wyróżnien funkcji."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Czy kazda paleta zachowa ten sam charakter co kolor bazowy?",
+      "answer": "Paleta pozostaje powiazana z kolorem startowym, ale jasniejsze i ciemniejsze kroki moga wydawac sie bardziej neutralne albo bardziej nasycone. Jesli zalezy Ci na konkretnym klimacie, wybierz tylko te probki, ktore najblizej go trzymaja."
+    },
+    {
+      "question": "Czy wyniki mozna od razu wkleic do kodu?",
+      "answer": "Tak. Otrzymane wartosci nadaja sie do stylow, tokenow i plikow motywow. Jesli w projekcie potrzebujesz wlasnych nazw, zmien je przed dodaniem do kodu."
+    },
+    {
+      "question": "Co zrobic, gdy jedna probka jest zbyt jasna do tekstu albo przycisku?",
+      "answer": "Wtedy ta probka lepiej nadaje sie na tlo albo obramowanie. Do tekstu i elementow interaktywnych wybierz ciemniejszy odcień z tego samego zestawu."
+    },
+    {
+      "question": "Czy wieksza paleta zawsze jest lepsza?",
+      "answer": "Nie. Duza liczba probek daje wiecej mozliwosci, ale trudniej utrzymac spojnosc. W pracy nad produktem zwykle lepiej zaczac od mniejszego zestawu i dodawac tylko to, co faktycznie wykorzystasz."
+    }
+  ],
+  "seo": {
+    "title": "Generator palety kolorow | Kolory",
+    "description": "Tworz spójne zestawy kolorow z jednej barwy bazowej do brandingu, interfejsow, planowania motywow i szkicow projektu.",
+    "keywords": [
+      "generator palety kolorow",
+      "paleta kolorow",
+      "generator kolorow",
+      "paleta do ui",
+      "kolory do brandingu"
+    ]
+  }
 }

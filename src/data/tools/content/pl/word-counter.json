@@ -4,44 +4,85 @@
   "slug": "licznik-slow",
   "h1": "Licznik słów",
   "title": "Licznik słów",
-  "shortDescription": "Zliczaj słowa, znaki, akapity i czas czytania w jednym lekkim narzędziu do analizy tekstu.",
-  "overview": "Licznik słów analizuje tekst lokalnie w przeglądarce i zwraca szybkie statystyki dla autorów, redaktorów, marketerów i studentów. Został zaprojektowany tak, aby działał tanio na dużą skalę, ponieważ do obliczeń na żywo nie wymaga bazy danych ani zewnętrznego API.",
+  "shortDescription": "Policz słowa, znaki, akapity i szacowany czas czytania w jednym narzędziu.",
+  "metaTitle": "Licznik słów online",
+  "metaDescription": "Policz słowa, znaki, akapity i szacowany czas czytania z wklejonego tekstu.",
+  "intro": "Wklej tekst i od razu sprawdź liczbę słów, znaków, akapitów oraz szacowany czas czytania.",
+  "overview": "Ten licznik słów przydaje się wtedy, gdy tekst trzeba sprawdzić przed oddaniem, publikacją albo wysyłką do klienta. Obsługuje wklejone treści, notatki, szkice i dłuższe akapity bez zmiany ich treści.\n\nMożesz porównać dwie wersje wstępu, sprawdzić nagłówek albo upewnić się, że fragment mieści się w limicie. Szacowany czas czytania opiera się na tempie 200 słów na minutę, więc daje praktyczną orientację dla artykułów i notatek.",
   "howItWorks": [
-    "Wklej lub wpisz tekst w polu tekstowym.",
-    "Narzędzie usuwa nadmiarowe białe znaki i zlicza słowa, znaki oraz bloki akapitów.",
-    "Szacowany czas czytania jest obliczany na podstawie tempa 200 słów na minutę."
+    "Wklej lub wpisz tekst w polu.",
+    "Narzędzie liczy słowa, znaki i bloki akapitów w podanej treści.",
+    "Czas czytania jest szacowany na podstawie tempa 200 słów na minutę."
+  ],
+  "useCases": [
+    {
+      "title": "Tytuły i śródtytuły",
+      "description": "Sprawdź, czy nagłówek lub podtytuł mieści się w założonym zakresie długości przed publikacją."
+    },
+    {
+      "title": "Korekta tekstu artykułu",
+      "description": "Zmierz wstęp, lead i kolejne akapity, aby dopasować je do briefu redakcyjnego."
+    },
+    {
+      "title": "Akceptacja treści dla klienta",
+      "description": "Zweryfikuj, czy opis produktu, tekst reklamy lub sekcja landing page mieści się w ustalonym limicie."
+    },
+    {
+      "title": "Limity prac i notatek",
+      "description": "Porównaj wypracowanie, streszczenie albo notatki ze wskazanym limitem słów lub znaków."
+    }
   ],
   "examples": [
     {
-      "title": "Szkic meta opisu",
-      "input": "Krótki opis SEO dla strony docelowej.",
-      "output": "8 słów",
-      "description": "Szybko sprawdź zwięzłość tekstu przed publikacją."
+      "title": "Wstęp strony sprzedażowej",
+      "input": "Jasne ceny, szybkie wsparcie i brak ukrytych kosztów budują zaufanie.",
+      "output": "10 słów, 69 znaków, 1 akapit",
+      "description": "Pomaga pilnować zwartego, konkretnego komunikatu."
     },
     {
-      "title": "Akapit blogowy",
-      "input": "Fragment artykułu podzielony na dwa akapity z podziałami wierszy.",
-      "output": "Słowa, znaki i czas czytania",
-      "description": "Przydatne przy briefach contentowych i kontroli jakości treści."
+      "title": "Szkic dwóch akapitów",
+      "input": "Systemy projektowe zwiększają spójność w zespołach produktowych.\nZmniejszają też liczbę poprawek podczas przekazywania pracy.",
+      "output": "13 słów, 124 znaki, 2 akapity",
+      "description": "Dobrze pokazuje działanie przy tekstach z podziałem na akapity."
+    },
+    {
+      "title": "Notatka ze spotkania",
+      "input": "Potwierdź salę, wyślij agendę, zbierz prezentacje i rozeslij podsumowanie do piątku.",
+      "output": "11 słów, 84 znaki, 1 akapit",
+      "description": "Przydatne przy krótkich zapisach, gdzie też liczy się objętość."
     }
   ],
   "faq": [
     {
-      "question": "Czy zliczanie odbywa się po stronie klienta?",
-      "answer": "Tak. Przykładowa wersja wykonuje obliczenia bezpośrednio w przeglądarce, aby działać szybko i ograniczać koszty infrastruktury."
+      "question": "Jak liczone są słowa?",
+      "answer": "Tekst jest dzielony na jednostki słowne po usunięciu nadmiarowych spacji. Licznik traktuje zwykłe ciągi znaków rozdzielone odstępami jako słowa."
     },
     {
-      "question": "Jak jest szacowany czas czytania?",
-      "answer": "Wskaźnik czasu czytania dzieli liczbę słów przez 200 i zaokrągla wynik do dwóch miejsc po przecinku."
+      "question": "Co jest uznawane za akapit?",
+      "answer": "Akapity są rozpoznawane jako osobne bloki oddzielone pustą linią. Sam pojedynczy enter wewnątrz bloku nie tworzy nowego akapitu."
+    },
+    {
+      "question": "Dlaczego czas czytania jest orientacyjny?",
+      "answer": "Wyliczenie zakłada tempo 200 słów na minutę. Teksty techniczne, listy punktowane lub bardzo zwięzłe notatki mogą być czytane inaczej."
+    },
+    {
+      "question": "Czy interpunkcja wpływa na wynik?",
+      "answer": "Znaki interpunkcyjne same nie zwiększają liczby słów. Nietypowe odstępy, listy lub łamanie linii mogą jednak zmienić sposób podziału tekstu."
+    },
+    {
+      "question": "Skąd różnice względem edytora tekstu?",
+      "answer": "Różne programy stosują inne zasady dla łączników, adresów URL, emotikonów i nagłówków. Ten licznik korzysta z własnych reguł podziału tekstu."
     }
   ],
   "seo": {
     "title": "Licznik słów online",
-    "description": "Darmowy licznik słów online do zliczania słów, znaków, akapitów i czasu czytania.",
+    "description": "Policz słowa, znaki, akapity i czas czytania w przejrzystym liczniku tekstu.",
     "keywords": [
       "licznik słów",
       "licznik znaków",
-      "kalkulator czasu czytania"
+      "czas czytania",
+      "liczba akapitów",
+      "analiza tekstu"
     ]
   }
 }

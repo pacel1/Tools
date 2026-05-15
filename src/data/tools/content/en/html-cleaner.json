@@ -4,106 +4,91 @@
   "slug": "html-cleaner",
   "h1": "HTML Cleaner",
   "title": "HTML Cleaner",
-  "shortDescription": "Clean unsafe or noisy markup by removing scripts, comments and risky attributes.",
-  "metaTitle": "HTML Cleaner | Remove Scripts, Comments & Unsafe HTML",
-  "metaDescription": "Clean HTML online by removing scripts, comments, event handlers and risky attributes. Safe, fast, client-side HTML sanitizer for messy markup.",
-  "intro": "Use this HTML cleaner to sanitize messy markup in your browser. It removes scripts, comments and risky attributes so you can turn unsafe or noisy HTML into cleaner output without sending data to a server.",
-  "overview": "HTML Cleaner is a client-side utility for sanitizing HTML before publishing, previewing or reusing it. It helps remove common XSS vectors, excess comments and unwanted attributes while keeping the structure you need. Ideal for developers, editors and anyone working with pasted or generated markup.",
+  "shortDescription": "Remove scripts, comments, and risky attributes from HTML before reuse or publishing.",
+  "metaTitle": "HTML Cleaner | Strip Unsafe HTML",
+  "metaDescription": "Remove scripts, comments, event handlers, and risky attributes from HTML in your browser before copying or publishing.",
+  "intro": "Paste HTML here to remove scripts, comments, and risky attributes while keeping the structure you need.",
+  "overview": "HTML Cleaner helps you sanitize pasted or generated markup before you reuse it in a page, email, preview, or documentation snippet. It focuses on removing dangerous elements such as scripts and inline event handlers, plus clutter like comments and unwanted attributes.\n\nThe tool is useful when HTML comes from a CMS, a rich-text editor, user submissions, or copied content from another source. You get cleaned markup in the browser, so you can review the result and decide what to keep before pasting it elsewhere.",
   "howItWorks": [
-    "Paste or load your HTML into the input field.",
-    "The tool scans the markup for unsafe tags, comments and risky attributes.",
-    "It removes scripts, event handlers and other unwanted parts.",
-    "Review the cleaned HTML in the output panel and copy it when ready."
+    "Paste or load HTML into the input field.",
+    "The tool checks tags, comments, and attributes for unsafe or unwanted markup.",
+    "It removes scripts, event handlers, and other risky content according to its cleaning rules.",
+    "Review the cleaned HTML in the output panel and copy it when it looks right."
   ],
   "useCases": [
-    "Remove scripts and inline event handlers from user-generated HTML.",
-    "Clean copied HTML from CMS editors, email clients or word processors.",
-    "Prepare safe snippets for previews, documentation or demos.",
-    "Strip comments and noisy attributes before further formatting or minifying.",
-    "Inspect and sanitize pasted markup before reusing it in a project."
+    {
+      "title": "Sanitize user-submitted article snippets",
+      "description": "Remove inline handlers and embedded scripts from content that came from a form, comment box, or editor submission before it is reused."
+    },
+    {
+      "title": "Prepare CMS exports for another system",
+      "description": "Clean markup copied from a content platform so it is easier to move into a website builder, email template, or documentation page."
+    },
+    {
+      "title": "Remove editor clutter from pasted content",
+      "description": "Strip comments, tracking attributes, and other noise left behind by word processors or rich-text editors."
+    },
+    {
+      "title": "Clean code for previews and demos",
+      "description": "Reduce risky markup in sample HTML before using it in an internal preview, sandbox, or presentation."
+    },
+    {
+      "title": "Review copied markup before integration",
+      "description": "Inspect HTML pasted from a third party and remove unsafe pieces before inserting it into a project."
+    }
   ],
   "examples": [
     {
-      "title": "Remove scripts from pasted HTML",
-      "input": "<div onclick=\"alert(1)\"><script>alert('x')</script>Hello<!-- note --></div>",
-      "output": "<div>Hello</div>",
-      "description": "Keeps the element content while removing scripts, comments and unsafe handlers."
+      "title": "Remove an inline handler and script",
+      "input": "<section onclick=\"track()\"><script>bad()</script><h2>Update</h2><!-- draft --></section>",
+      "output": "<section><h2>Update</h2></section>",
+      "description": "The script, comment, and event handler are removed while the section content stays intact."
     },
     {
-      "title": "Clean noisy attributes",
-      "input": "<p style=\"color:red\" data-id=\"1\" onmouseover=\"doBad()\">Text</p>",
-      "output": "<p style=\"color:red\" data-id=\"1\">Text</p>",
-      "description": "Removes event handlers and leaves non-risky attributes intact when allowed."
+      "title": "Keep content, drop unsafe link behavior",
+      "input": "<p>Read <a href=\"/docs\" onmouseover=\"steal()\">the guide</a> now.</p>",
+      "output": "<p>Read <a href=\"/docs\">the guide</a> now.</p>",
+      "description": "The link text and destination remain, but the risky event attribute is removed."
+    },
+    {
+      "title": "Clean copied markup with noise",
+      "input": "<div class=\"box\" data-id=\"42\" onclick=\"alert(1)\"><img src=\"banner.png\" alt=\"Banner\" width=\"800\" height=\"300\"></div>",
+      "output": "<div class=\"box\" data-id=\"42\"><img src=\"banner.png\" alt=\"Banner\" width=\"800\" height=\"300\"></div>",
+      "description": "Useful layout and image attributes stay in place while the unsafe click handler is stripped."
     }
   ],
   "faq": [
     {
-      "question": "What does the HTML cleaner remove?",
-      "answer": "It removes scripts, comments and risky attributes such as inline event handlers. The exact result depends on the sanitization rules used by the tool."
+      "question": "What kinds of elements are removed?",
+      "answer": "The cleaner targets scripts, comments, and attributes that can execute code or add unwanted behavior, such as inline event handlers. What remains depends on the cleaning rules applied to the input."
     },
     {
-      "question": "Is the HTML processed on the server?",
-      "answer": "No. This tool is designed for client-side-only processing, so your HTML can be cleaned locally in the browser."
+      "question": "Will it change valid tags like div, p, or img?",
+      "answer": "Ordinary structural tags are usually preserved. The tool focuses on unsafe or noisy parts rather than rewriting your whole document."
     },
     {
-      "question": "Can it fix invalid HTML?",
-      "answer": "It can clean and normalize markup, but it is not a full HTML repair tool. For structural fixes, use it together with an HTML formatter or validator."
+      "question": "Why did some attributes stay while others disappeared?",
+      "answer": "Attributes that are considered harmless may be kept, while risky ones are removed. That is why a data attribute might remain even when an event handler is stripped."
     },
     {
-      "question": "Does it remove all attributes?",
-      "answer": "No. It targets unsafe or noisy attributes and keeps useful markup where possible."
+      "question": "Can it fix broken nesting or missing closing tags?",
+      "answer": "No. It can clean the markup, but it is not a full HTML repair tool. If the structure is broken, format or validate the HTML after cleaning."
+    },
+    {
+      "question": "Why does the result sometimes look shorter than expected?",
+      "answer": "Comments, scripts, and unsafe attributes are removed by design. If your original HTML relied on those parts, the output will be shorter and may behave differently."
     }
   ],
-  "uiLabels": {
-    "copy": "Copy",
-    "copied": "Copied",
-    "input": "Input",
-    "output": "Output",
-    "placeholder": "Paste HTML here...",
-    "indent": "Indent",
-    "removeComments": "Remove comments",
-    "preview": "Preview",
-    "source": "Source",
-    "sanitizedHtml": "Sanitized HTML",
-    "plainText": "Plain text",
-    "summary": "Summary",
-    "total": "Total",
-    "links": "Links",
-    "images": "Images",
-    "errors": "Errors",
-    "warnings": "Warnings",
-    "valid": "Valid",
-    "invalid": "Invalid",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Width",
-    "height": "Height",
-    "empty": "Empty",
-    "outputReady": "Output ready",
-    "cleanedHtml": "Cleaned HTML",
-    "formattedHtml": "Formatted HTML",
-    "minifiedHtml": "Minified HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extracted images",
-    "extractedLinks": "Extracted links",
-    "validationSummary": "Validation summary",
-    "prettyHtml": "Pretty HTML",
-    "encodedText": "Encoded text"
-  },
   "seo": {
-    "title": "HTML Cleaner Online | Remove Unsafe Tags and Attributes",
-    "description": "Clean HTML online by removing scripts, comments and risky attributes. Fast client-side HTML cleaner for safer markup and tidy snippets.",
+    "title": "HTML Cleaner | Strip Unsafe HTML",
+    "description": "Remove scripts, comments, event handlers, and risky attributes from HTML in your browser before copying or publishing.",
     "keywords": [
       "html cleaner",
       "sanitize html",
       "remove scripts from html",
       "strip html comments",
       "remove unsafe attributes",
-      "online html sanitizer",
-      "clean html online"
+      "html sanitizer"
     ]
   }
 }

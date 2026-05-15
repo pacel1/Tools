@@ -4,43 +4,81 @@
   "slug": "contador-de-caracteres",
   "h1": "Contador de caracteres",
   "title": "Contador de caracteres",
-  "shortDescription": "Cuenta caracteres en texto al instante con resultados rápidos, entradas sencillas y ejemplos prácticos.",
-  "overview": "Cuenta caracteres en texto al instante. Esta página ofrece una respuesta rápida con una herramienta práctica y un flujo de resultados sencillo. Está orientada a usuarios que buscan una respuesta gratuita en línea, resultados rápidos en el navegador y contenido útil de larga cola.",
+  "shortDescription": "Cuenta todos los caracteres de tu texto, incluidos espacios y signos, con un resultado inmediato.",
+  "metaTitle": "Contador de caracteres",
+  "metaDescription": "Cuenta caracteres en un texto, incluidos espacios y puntuación, y obtén el total al instante.",
+  "intro": "Pega o escribe tu texto para ver el total exacto de caracteres, incluidos espacios y signos de puntuación.",
+  "overview": "Esta herramienta sirve para conocer la longitud exacta de un titular, un mensaje, una descripción o una línea breve. Muestra un único total para todo el texto que introduzcas, así puedes comparar versiones o comprobar si cabe en un límite.\n\nEl recuento incluye todos los caracteres del contenido enviado. Si cambias una letra, un espacio o un signo de puntuación, el total también cambia. Por eso resulta útil al ajustar borradores donde cada símbolo cuenta.\n\nPara leer el resultado con claridad, pega solo el texto que quieras medir. Si comparas variantes, pruébalas una por una para que los totales sean fáciles de interpretar.",
   "howItWorks": [
-    "Introduce el texto requerido en el formulario.",
-    "La conversión, el cálculo o la transformación se ejecuta al instante en el navegador.",
-    "Revisa el resultado y continúa con herramientas relacionadas si necesitas otro paso."
+    "Escribe el texto que quieres medir.",
+    "La herramienta cuenta los caracteres del texto que has introducido.",
+    "Consulta el total y compáralo con otras versiones si lo necesitas."
+  ],
+  "useCases": [
+    {
+      "title": "Revisión de titulares",
+      "description": "Mide un titular antes de publicarlo para ajustarlo al espacio disponible."
+    },
+    {
+      "title": "Descripción de producto",
+      "description": "Comprueba la longitud de una ficha o descripción y afina el texto según el límite requerido."
+    },
+    {
+      "title": "Validación de formularios",
+      "description": "Verifica que un nombre, título o campo no supere el máximo permitido de caracteres."
+    },
+    {
+      "title": "Comparar versiones",
+      "description": "Analiza dos borradores del mismo mensaje y observa cómo pequeños cambios alteran la longitud."
+    }
   ],
   "examples": [
     {
-      "title": "Ejemplo 1",
-      "input": "Texto de descripción de producto",
-      "output": "Total de caracteres",
-      "description": "Un ejemplo realista de contador de caracteres para una búsqueda cotidiana."
+      "title": "Título corto de producto",
+      "input": "Guantes de running para invierno",
+      "output": "32 caracteres",
+      "description": "Un título breve donde los espacios forman parte del total."
     },
     {
-      "title": "Ejemplo 2",
-      "input": "Texto de descripción de producto",
-      "output": "Total de caracteres",
-      "description": "Otro caso de uso práctico para tráfico orgánico de larga cola."
+      "title": "Mensaje de soporte",
+      "input": "Por favor, reinicia mi contraseña hoy.",
+      "output": "37 caracteres",
+      "description": "Útil para revisar un mensaje antes de enviarlo o pegarlo en un campo."
+    },
+    {
+      "title": "Título con puntuación",
+      "input": "Oferta: ¡quedan 3 unidades!",
+      "output": "27 caracteres",
+      "description": "Muestra que la puntuación y los espacios cuentan en el resultado final."
     }
   ],
   "faq": [
     {
-      "question": "¿Qué precisión tiene esta herramienta?",
-      "answer": "El resultado se calcula directamente a partir de la fórmula o de la lógica del navegador que utiliza esta herramienta."
+      "question": "¿Los espacios cuentan en el total?",
+      "answer": "Sí. Los espacios se cuentan como caracteres, así que añadir o quitar uno cambia el resultado."
     },
     {
-      "question": "¿Puedo usar esta herramienta en el móvil?",
-      "answer": "Sí. La página funciona en pantallas de escritorio y móviles con un diseño sencillo de entrada y resultado."
+      "question": "¿La puntuación también cuenta?",
+      "answer": "Sí. Comas, puntos, apóstrofos, símbolos y emojis afectan al total."
+    },
+    {
+      "question": "¿Por qué mi resultado puede diferir del de otro editor?",
+      "answer": "Algunas herramientas tratan de forma distinta los saltos de línea, los caracteres invisibles o el formato pegado. Conviene comparar texto plano."
+    },
+    {
+      "question": "¿Cómo compruebo mejor un límite de caracteres?",
+      "answer": "Pega la versión final del texto y compárala con el límite que necesitas cumplir."
     }
   ],
   "seo": {
     "title": "Contador de caracteres",
-    "description": "Cuenta caracteres en texto al instante. Contador de caracteres online gratis con resultados instantáneos.",
+    "description": "Cuenta caracteres en un texto, incluidos espacios y puntuación, y obtén el total al instante.",
     "keywords": [
       "contador de caracteres",
-      "herramienta de texto"
+      "contar caracteres",
+      "longitud de texto",
+      "herramienta de texto",
+      "límite de caracteres"
     ]
   }
 }

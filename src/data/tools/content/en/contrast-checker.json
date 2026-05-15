@@ -4,13 +4,81 @@
   "slug": "contrast-checker",
   "h1": "Contrast Checker",
   "title": "Contrast Checker",
-  "shortDescription": "Check color contrast online and see WCAG-style pass or fail guidance for text combinations.",
-  "metaTitle": "Contrast Checker | WCAG color contrast online",
-  "metaDescription": "Check color contrast online and review the ratio for text and background combinations. Useful for accessibility, UI audits and design QA.",
-  "intro": "Use this contrast checker to test text and background colors before shipping UI changes. It gives you the ratio instantly and tells you whether the combination is strong enough for common accessibility targets like normal text and large text.",
-  "overview": "The checker is made for accessibility reviews, design handoff and quick QA on component themes. Instead of guessing whether two colors work together, you get a ratio and a clear summary you can use during implementation.",
-  "howItWorks": ["Pick the text color and background color.", "The tool calculates the contrast ratio between the two colors.", "Review whether the pair passes common accessibility thresholds for normal or large text."],
-  "examples": [{"title": "Dark text on white", "input": "#111827 on #FFFFFF", "output": "High contrast ratio", "description": "A common pairing for readable interfaces and documentation."}, {"title": "Accent color audit", "input": "Brand color on a light panel", "output": "Pass or fail summary", "description": "Helpful when checking UI accents and button states."}],
-  "faq": [{"question": "What does the contrast ratio mean?", "answer": "The ratio shows how different the text color and background color are in perceived brightness."}, {"question": "Is this useful for accessibility checks?", "answer": "Yes. The tool highlights whether the color pair is strong enough for common WCAG-style text targets."}],
-  "seo": {"title": "Contrast Checker | WCAG color contrast online", "description": "Check color contrast online and review the ratio for text and background combinations for accessibility and UI audits.", "keywords": ["contrast checker", "wcag contrast checker", "color contrast", "accessibility color checker", "text background contrast"]}
+  "shortDescription": "Compare text and background colors to see the contrast ratio and whether the pairing supports readable UI.",
+  "metaTitle": "Contrast Checker | Color Contrast",
+  "metaDescription": "Compare text and background colors, read the contrast ratio, and judge whether the pair works for normal text, large text, or UI elements.",
+  "intro": "Enter a text color and a background color to get the contrast ratio and a clear read on whether the pair is suitable for your interface.",
+  "overview": "This tool is built for designers, developers, and reviewers who need to judge color pairs without guessing. It shows the contrast ratio for two colors and helps you understand how that pairing behaves in real interface text, labels, buttons, and panels.\n\nUse it when refining themes, reviewing brand colors, or checking a component before it goes live. It is especially useful when a color works visually but becomes hard to read in smaller text, disabled states, or on tinted surfaces.",
+  "howItWorks": [
+    "Choose the text color and the background color.",
+    "The tool calculates the contrast ratio between both colors.",
+    "Review the result for normal text, larger text, and UI surfaces where readability matters."
+  ],
+  "useCases": [
+    {
+      "title": "Body text on a light surface",
+      "description": "Check whether a paragraph color stays readable against white, off-white, or very pale cards."
+    },
+    {
+      "title": "Button label on brand fill",
+      "description": "Test if a white, dark, or tinted label remains legible on a solid brand button background."
+    },
+    {
+      "title": "Muted text in dashboards",
+      "description": "Verify whether secondary labels, metadata, and timestamps still stand out on dense data screens."
+    },
+    {
+      "title": "Dark mode theme review",
+      "description": "Assess text on charcoal panels, cards, and overlays before shipping a dark interface."
+    }
+  ],
+  "examples": [
+    {
+      "title": "Editorial text on white",
+      "input": "Text #1F2937 / Background #FFFFFF",
+      "output": "High contrast ratio; suitable for standard reading text.",
+      "description": "A typical neutral pairing for articles, forms, and documentation pages."
+    },
+    {
+      "title": "Brand blue button label",
+      "input": "Text #FFFFFF / Background #2563EB",
+      "output": "Readable for a solid action button; check sizing for small labels.",
+      "description": "Useful when confirming whether a primary CTA can keep white text."
+    },
+    {
+      "title": "Soft gray caption on a card",
+      "input": "Text #6B7280 / Background #F3F4F6",
+      "output": "Lower contrast; may fit only when the text is secondary and larger.",
+      "description": "Shows why subtle grays can fail on pale surfaces even if they look polished."
+    }
+  ],
+  "faq": [
+    {
+      "question": "What does the contrast ratio actually tell me?",
+      "answer": "It compares how differently two colors are perceived in brightness. A higher value means the text usually stands out more clearly from the background."
+    },
+    {
+      "question": "Why can a color pair look fine but still feel weak in the result?",
+      "answer": "Saturated colors can seem vivid while still sitting too close in luminance. The ratio is based on brightness difference, not colorfulness."
+    },
+    {
+      "question": "Does text size change how I should read the result?",
+      "answer": "Yes. Smaller text needs a stronger pairing than large headings. A combination that works for a title may be too weak for body copy or form labels."
+    },
+    {
+      "question": "What is a common mistake when checking buttons and badges?",
+      "answer": "People often test only the filled state and forget hover, disabled, or outlined versions. Those variants can reduce contrast and break readability."
+    }
+  ],
+  "seo": {
+    "title": "Contrast Checker | Color Contrast",
+    "description": "Compare text and background colors, read the contrast ratio, and judge whether the pair works for normal text, large text, or UI elements.",
+    "keywords": [
+      "contrast checker",
+      "color contrast",
+      "text background contrast",
+      "accessibility color tool",
+      "wcag contrast"
+    ]
+  }
 }

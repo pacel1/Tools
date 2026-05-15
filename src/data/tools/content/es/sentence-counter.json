@@ -4,42 +4,78 @@
   "slug": "contador-de-oraciones",
   "h1": "Contador de oraciones",
   "title": "Contador de oraciones",
-  "shortDescription": "Cuenta oraciones en un texto al instante con resultados rápidos, entradas sencillas y ejemplos prácticos.",
-  "overview": "Cuenta oraciones en un texto al instante. Esta página ofrece una respuesta rápida con una herramienta útil y un flujo de resultados sencillo. Está pensada para usuarios que buscan una respuesta gratis en línea, resultados inmediatos desde el navegador y contenido práctico de utilidad para búsquedas de cola larga.",
+  "shortDescription": "Cuenta las oraciones de un texto y obtén un total claro sin pasos extra.",
+  "metaTitle": "Contador de oraciones",
+  "metaDescription": "Cuenta las oraciones de tu texto y obtén un total claro para párrafos, borradores, notas o contenido pegado.",
+  "intro": "Pega tu texto en el campo y verás el total de oraciones al instante.",
+  "overview": "Esta herramienta cuenta oraciones en un texto pegado y devuelve un total sencillo de interpretar. Sirve para revisar un párrafo, comparar dos versiones o comprobar si un fragmento tiene la estructura que buscas.\n\nLos límites de una oración pueden verse afectados por abreviaturas, iniciales, números decimales y signos de puntuación poco habituales. Si tu texto incluye esos elementos, conviene interpretar el resultado con contexto, sobre todo en textos técnicos, diálogos o material copiado.\n\nFunciona mejor con pasajes completos que con fragmentos sueltos. Para una lectura más fiable, mantén la puntuación uniforme y no tomes los saltos de línea como si fueran finales de oración.",
   "howItWorks": [
-    "Introduce el texto requerido en el formulario.",
-    "El conteo se realiza al instante en el navegador.",
-    "Revisa el resultado y continúa con herramientas relacionadas si necesitas otro paso."
+    "Pega o escribe el texto en el campo de entrada.",
+    "La herramienta identifica los finales de oración según la puntuación del texto.",
+    "Lee el total de oraciones y compara secciones si lo necesitas."
+  ],
+  "useCases": [
+    {
+      "title": "Revisión de un borrador",
+      "description": "Comprueba si un texto tiene el ritmo de oraciones que quieres antes de enviarlo o publicarlo."
+    },
+    {
+      "title": "Comparar una traducción",
+      "description": "Contrasta el número de oraciones entre el original y la traducción para detectar omisiones o uniones."
+    },
+    {
+      "title": "Notas de reunión",
+      "description": "Mide cuántas frases completas hay en notas copiadas desde una transcripción o resumen."
+    },
+    {
+      "title": "Mensaje breve de empresa",
+      "description": "Verifica que un aviso tenga el número adecuado de oraciones legibles antes de compartirlo."
+    }
   ],
   "examples": [
     {
-      "title": "Ejemplo 1",
-      "input": "Un párrafo con varias oraciones.",
-      "output": "Total de oraciones",
-      "description": "Un ejemplo realista de contador de oraciones para una búsqueda habitual."
+      "title": "Tres frases cortas",
+      "input": "Llegamos temprano. La sala estaba tranquila. Todos se sentaron.",
+      "output": "3 oraciones",
+      "description": "Cada punto marca una oración distinta, así que el total es tres."
     },
     {
-      "title": "Ejemplo 2",
-      "input": "Un párrafo con varias oraciones.",
-      "output": "Total de oraciones",
-      "description": "Otro caso práctico para tráfico orgánico de cola larga."
+      "title": "Puntuación mezclada",
+      "input": "¿Terminaste el informe? ¡Yo ya envié el mío! Revisa las cifras.",
+      "output": "3 oraciones",
+      "description": "Los signos de interrogación y exclamación también cuentan como cierre de oración."
+    },
+    {
+      "title": "Abreviatura en medio",
+      "input": "La Dra. López revisó el archivo. Luego dejó comentarios.",
+      "output": "2 oraciones",
+      "description": "Un punto dentro de una abreviatura no debe tomarse como un cierre de oración independiente."
     }
   ],
   "faq": [
     {
-      "question": "¿Qué tan precisa es esta herramienta?",
-      "answer": "El resultado se calcula directamente a partir de la lógica usada por esta herramienta en el navegador."
+      "question": "¿Cómo decide los límites de cada oración?",
+      "answer": "Cuenta los cierres marcados por puntuación, sobre todo puntos, signos de interrogación y signos de exclamación."
     },
     {
-      "question": "¿Puedo usar esta herramienta en el móvil?",
-      "answer": "Sí. La página funciona en pantallas de escritorio y móviles con una interfaz simple de entrada y resultado."
+      "question": "¿Por qué una abreviatura puede cambiar el resultado?",
+      "answer": "Las abreviaturas y las iniciales incluyen puntos que pueden parecer finales de oración. Si aparecen muchas, conviene revisar el total manualmente."
+    },
+    {
+      "question": "¿Los saltos de línea cuentan como oraciones?",
+      "answer": "No. Un salto de línea solo es formato, salvo que vaya acompañado de puntuación final."
+    },
+    {
+      "question": "¿Qué pasa si el texto no tiene puntuación final?",
+      "answer": "Si no hay signos de cierre, el resultado puede ser cero o menor de lo esperado según la estructura del contenido."
     }
   ],
   "seo": {
     "title": "Contador de oraciones",
-    "description": "Cuenta oraciones en un texto al instante. Contador de oraciones gratis en línea con resultados inmediatos.",
+    "description": "Cuenta las oraciones de tu texto y obtén un total claro para párrafos, borradores, notas o contenido pegado.",
     "keywords": [
       "contador de oraciones",
+      "conteo de oraciones",
       "herramienta de texto"
     ]
   }

@@ -4,157 +4,86 @@
   "slug": "recortador-de-imagenes",
   "h1": "Recortador de imágenes",
   "title": "Recortador de imágenes",
-  "shortDescription": "Recorta imágenes en línea con coordenadas personalizadas y vista previa instantánea en el navegador.",
-  "metaTitle": "Recortador de imágenes online | Recorta fotos en el navegador",
-  "metaDescription": "Recorta imágenes en línea con coordenadas precisas y vista previa instantánea. Herramienta rápida y privada que funciona en el navegador, sin subir archivos.",
-  "intro": "Recorta imágenes en línea con coordenadas exactas y ve el resultado al instante en tu navegador. Este recortador de imágenes gratis es rápido, privado y fácil de usar.",
-  "overview": "Usa este recortador de imágenes online para ajustar fotos, capturas de pantalla, banners y gráficos con valores personalizados. Todo se procesa en tu navegador para una edición rápida y con más privacidad.",
+  "shortDescription": "Recorta una imagen con coordenadas exactas y revisa el resultado antes de descargarlo.",
+  "metaTitle": "Recortador de imágenes online",
+  "metaDescription": "Recorta imágenes con coordenadas exactas, revisa el resultado al instante y descarga un recorte limpio desde tu navegador.",
+  "intro": "Recorta una imagen indicando los valores exactos de X, Y, ancho y alto, y comprueba el resultado antes de descargarlo.",
+  "overview": "Este recortador de imágenes está pensado para encuadres precisos. Introduce coordenadas para ajustar una foto de producto, aislar una parte de un gráfico o eliminar bordes sobrantes de un banner sin adivinar la zona.\n\nLa herramienta funciona directamente en el navegador, así que puedes modificar el recorte y ver el cambio de inmediato. Es útil cuando la imagen final debe encajar en una plantilla, en una documentación o en un área concreta de diseño.\n\nSi necesitas un avatar cuadrado, un encabezado panorámico o un recorte limpio de una captura, tienes control total sobre la zona visible y la composición final.",
   "howItWorks": [
-    "Sube o pega un archivo de imagen en la herramienta.",
-    "Define las coordenadas y dimensiones del recorte.",
-    "Previsualiza el resultado al instante.",
-    "Descarga la imagen final cuando esté lista."
+    "Carga una imagen desde tu dispositivo o pégala en la herramienta.",
+    "Define crop X, crop Y, crop width y crop height.",
+    "Revisa la vista previa para confirmar la zona visible y los bordes.",
+    "Descarga la imagen recortada cuando el encuadre sea correcto."
   ],
   "useCases": [
-    "Recortar fotos de perfil a un tamaño concreto.",
-    "Eliminar zonas innecesarias de capturas de pantalla.",
-    "Preparar imágenes de producto para tiendas y marketplaces.",
-    "Quitar bordes vacíos de banners y gráficos."
+    {
+      "title": "Ajuste de foto de producto para catálogo",
+      "description": "Recorta el exceso de fondo alrededor del producto para que el objeto ocupe mejor el encuadre."
+    },
+    {
+      "title": "Recorte de una captura para documentación",
+      "description": "Conserva solo la ventana, la tabla o el bloque de código que necesitas para una guía o nota interna."
+    },
+    {
+      "title": "Alineación de un banner para cabecera",
+      "description": "Corta un gráfico ancho al espacio exacto reservado en una sección hero o en un email."
+    },
+    {
+      "title": "Encuadre de un retrato para avatar",
+      "description": "Selecciona cara y hombros para una imagen de perfil sin espacios vacíos alrededor."
+    }
   ],
   "examples": [
     {
-      "title": "Recortar una foto para redes sociales",
-      "input": "Define un área cuadrada alrededor del sujeto.",
-      "output": "Una imagen cuadrada centrada lista para publicar.",
-      "description": "Ideal para avatares, publicaciones y miniaturas."
+      "title": "Recortar una foto de producto a cuadrado",
+      "input": "cropX=120, cropY=80, cropWidth=900, cropHeight=900 sobre una imagen horizontal de producto",
+      "output": "Una imagen cuadrada centrada en el producto con los laterales eliminados.",
+      "description": "Útil cuando un catálogo o una tarjeta social necesita formato cuadrado."
     },
     {
-      "title": "Recortar una captura de pantalla",
-      "input": "Introduce coordenadas exactas para la zona visible.",
-      "output": "Una captura limpia con solo el contenido necesario.",
-      "description": "Perfecto para tutoriales, informes y soporte."
+      "title": "Extraer un panel de un panel de control",
+      "input": "cropX=40, cropY=210, cropWidth=1280, cropHeight=620 sobre una captura completa",
+      "output": "Solo queda la sección del gráfico, sin navegación ni pie de página.",
+      "description": "Sirve para aislar un bloque visual dentro de una interfaz más grande."
+    },
+    {
+      "title": "Recortar un banner ancho a franja hero",
+      "input": "cropX=0, cropY=140, cropWidth=1920, cropHeight=520 sobre el diseño del banner",
+      "output": "Un banner más estrecho que conserva el titular principal y la composición.",
+      "description": "Conveniente cuando el diseño debe adaptarse a una web o un correo."
     }
   ],
   "faq": [
     {
-      "question": "¿El recortador de imágenes es gratis?",
-      "answer": "Sí, puedes recortar imágenes online gratis."
+      "question": "¿Qué representan crop X y crop Y?",
+      "answer": "Son el punto de inicio del rectángulo de recorte medido desde la esquina superior izquierda de la imagen. X mueve el marco en horizontal y Y en vertical."
     },
     {
-      "question": "¿La imagen sale de mi navegador?",
-      "answer": "No, el recorte se hace en el navegador para ofrecer más privacidad."
+      "question": "¿Qué pasa si el área de recorte supera la imagen?",
+      "answer": "El recorte no puede incluir píxeles que no existen. El ancho y el alto deben quedar dentro de los límites de la imagen; de lo contrario, el resultado puede recortarse o no aceptarse."
     },
     {
-      "question": "¿Puedo recortar con coordenadas exactas?",
-      "answer": "Sí, puedes introducir valores personalizados para un recorte preciso."
+      "question": "¿Por qué mi recorte no coincide con la vista previa?",
+      "answer": "Suele ocurrir cuando la imagen está girada, se usa una escala distinta a la esperada o las coordenadas proceden de otro archivo con tamaño diferente. Comprueba las dimensiones originales antes de reutilizar los números."
     },
     {
-      "question": "¿Qué tipos de imagen se admiten?",
-      "answer": "Puedes usar formatos habituales compatibles con el navegador."
+      "question": "¿Se puede mantener la proporción al recortar?",
+      "answer": "El recorte genera un nuevo encuadre, así que la proporción final depende del ancho y el alto que definas. Si necesitas un formato fijo, ajusta las coordenadas para esa relación."
+    },
+    {
+      "question": "¿Por qué una captura de pantalla necesita coordenadas distintas a una foto?",
+      "answer": "Las capturas tienen bordes nítidos, elementos de interfaz y una disposición basada en píxeles, por eso los valores exactos importan más que en una foto natural."
     }
   ],
-  "uiLabels": {
-    "copy": "Copiar",
-    "copied": "Copiado",
-    "input": "Entrada",
-    "output": "Salida",
-    "placeholder": "Pega o sube una imagen",
-    "indent": "Sangría",
-    "removeComments": "Eliminar comentarios",
-    "preview": "Vista previa",
-    "source": "Fuente",
-    "sanitizedHtml": "HTML limpio",
-    "plainText": "Texto plano",
-    "summary": "Resumen",
-    "total": "Total",
-    "links": "Enlaces",
-    "images": "Imágenes",
-    "errors": "Errores",
-    "warnings": "Avisos",
-    "valid": "Válido",
-    "invalid": "Inválido",
-    "href": "Href",
-    "text": "Texto",
-    "rel": "Rel",
-    "target": "Destino",
-    "alt": "Alt",
-    "width": "Ancho",
-    "height": "Alto",
-    "empty": "Vacío",
-    "outputReady": "Resultado listo",
-    "cleanedHtml": "HTML limpiado",
-    "formattedHtml": "HTML formateado",
-    "minifiedHtml": "HTML minificado",
-    "markdown": "Markdown",
-    "extractedImages": "Imágenes extraídas",
-    "extractedLinks": "Enlaces extraídos",
-    "validationSummary": "Resumen de validación",
-    "prettyHtml": "HTML legible",
-    "encodedText": "Texto codificado",
-    "file": "Archivo",
-    "size": "Tamaño",
-    "format": "Formato",
-    "quality": "Calidad",
-    "colorOne": "Color 1",
-    "colorTwo": "Color 2",
-    "background": "Fondo",
-    "foreground": "Primer plano",
-    "angle": "Ángulo",
-    "margin": "Margen",
-    "level": "Nivel",
-    "gradientType": "Tipo de degradado",
-    "linear": "Lineal",
-    "radial": "Radial",
-    "blur": "Desenfoque",
-    "spread": "Extensión",
-    "offsetX": "Desplazamiento X",
-    "offsetY": "Desplazamiento Y",
-    "opacity": "Opacidad",
-    "inset": "Inset",
-    "cssCode": "Código CSS",
-    "snippet": "Fragmento",
-    "download": "Descargar",
-    "downloadSvg": "Descargar SVG",
-    "downloadPng": "Descargar PNG",
-    "downloadAll": "Descargar todo",
-    "upload": "Subir",
-    "title": "Título",
-    "description": "Descripción",
-    "canonicalUrl": "URL canónica",
-    "siteName": "Nombre del sitio",
-    "ogImage": "Imagen OG",
-    "clear": "Limpiar",
-    "generatedQr": "Vista previa del codigo QR",
-    "placeholderImage": "Vista previa de la imagen",
-    "faviconSet": "Conjunto de favicon",
-    "keepAspectRatio": "Mantener proporción",
-    "cropX": "Recorte X",
-    "cropY": "Recorte Y",
-    "cropWidth": "Ancho del recorte",
-    "cropHeight": "Alto del recorte",
-    "originalSize": "Tamaño original",
-    "outputSize": "Tamaño de salida",
-    "savedSize": "Tamaño ahorrado",
-    "result": "Resultado",
-    "base64": "Base64",
-    "mimeType": "Tipo MIME",
-    "resizedImage": "Imagen redimensionada",
-    "compressedImage": "Imagen comprimida",
-    "croppedImage": "Imagen recortada",
-    "convertedImage": "Imagen convertida",
-    "decodedImage": "Imagen decodificada",
-    "imagePreview": "Vista previa de la imagen"
-  },
   "seo": {
-    "title": "Recortador de imágenes online | Recorta fotos en el navegador",
-    "description": "Recorta imágenes en línea con coordenadas precisas y vista previa instantánea. Herramienta rápida y privada que funciona en el navegador, sin subir archivos.",
+    "title": "Recortador de imágenes online",
+    "description": "Recorta imágenes con coordenadas exactas, revisa el resultado al instante y descarga un recorte limpio desde tu navegador.",
     "keywords": [
       "recortador de imagenes",
-      "recortar imagen online",
-      "recortador de fotos",
-      "recortar captura de pantalla",
-      "recorte de imagen",
-      "recortar imagen"
+      "recortar imagen",
+      "recorte por coordenadas",
+      "recortar captura",
+      "herramienta de recorte"
     ]
   }
 }

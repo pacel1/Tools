@@ -4,44 +4,81 @@
   "slug": "calculadora-de-propina",
   "h1": "Calculadora de propina",
   "title": "Calculadora de propina",
-  "shortDescription": "Calcula la propina y el total de la cuenta al instante con resultados rápidos, entradas sencillas y ejemplos prácticos.",
-  "overview": "Calcula la propina y el total de la cuenta al instante. Esta página ofrece una respuesta rápida con una herramienta práctica y un flujo de resultados sencillo. Está pensada para usuarios que buscan una respuesta gratis en línea, resultados rápidos en el navegador y contenido útil de cola larga.",
+  "shortDescription": "Calcula la propina, el total final y la parte por persona a partir del importe y el porcentaje elegido.",
+  "metaTitle": "Calculadora de propina básica",
+  "metaDescription": "Calcula propina, total final y reparto por persona a partir del importe de la cuenta y el porcentaje elegido.",
+  "intro": "Escribe el importe de la cuenta, elige el porcentaje de propina y obtén al instante la propina, el total y el reparto por persona.",
+  "overview": "Esta herramienta sirve para añadir propina a una cuenta de restaurante, un viaje en taxi, una visita al salón o cualquier servicio que se pague como porcentaje del importe base. También permite dividir el total entre varias personas y ver cuánto corresponde a cada una.\n\nEl resultado muestra el importe base, la propina y el total final para que puedas revisar la cifra antes de pagar. Si repartes la cuenta, el cálculo se hace sobre el total con propina, lo que facilita cerrar el importe entre varias personas.",
   "howItWorks": [
-    "Introduce el valor o texto requerido en el formulario.",
-    "La conversión, el cálculo o la transformación se ejecuta al instante en el navegador.",
-    "Revisa el resultado y continúa con herramientas relacionadas si necesitas otro paso."
+    "Introduce el importe de la cuenta.",
+    "Selecciona o escribe el porcentaje de propina.",
+    "Indica cuántas personas van a dividir el total, si hace falta.",
+    "Comprueba la propina, el total final y la parte por persona."
+  ],
+  "useCases": [
+    {
+      "title": "Cuenta de restaurante",
+      "description": "Añade 10%, 15% o 20% a una comida y consulta cuánto pagar en total."
+    },
+    {
+      "title": "Dividir una cena en grupo",
+      "description": "Reparte la cuenta final entre amigos incluyendo la propina para cada persona."
+    },
+    {
+      "title": "Pago por servicio",
+      "description": "Calcula la propina de un corte de pelo, masaje u otro servicio sin gratuidad incluida."
+    },
+    {
+      "title": "Viajes y trayectos urbanos",
+      "description": "Estima el pago final de un taxi, entrega o servicio similar con propina porcentual."
+    }
   ],
   "examples": [
     {
-      "title": "Ejemplo 1",
-      "input": "86 con 15% de propina",
-      "output": "98.90",
-      "description": "Un ejemplo realista de calculadora de propina para una búsqueda cotidiana."
+      "title": "Cena con propina habitual",
+      "input": "Cuenta: 86.00, Propina: 15%",
+      "output": "Propina: 12.90, Total: 98.90",
+      "description": "Muestra la propina añadida y el total final de una cuenta típica."
     },
     {
-      "title": "Ejemplo 2",
-      "input": "86 con 15% de propina",
-      "output": "98.90",
-      "description": "Otro caso práctico orientado al tráfico orgánico de cola larga."
+      "title": "Reparto entre cuatro",
+      "input": "Cuenta: 142.50, Propina: 18%, Personas: 4",
+      "output": "Propina: 25.65, Total: 168.15, Cada uno: 42.04",
+      "description": "Útil cuando una cuenta se divide por igual después de añadir la propina."
+    },
+    {
+      "title": "Servicio con importe redondo",
+      "input": "Cuenta: 50, Propina: 20%",
+      "output": "Propina: 10.00, Total: 60.00",
+      "description": "Caso sencillo para pagos de servicios con un porcentaje claro."
     }
   ],
   "faq": [
     {
-      "question": "¿Qué precisión tiene esta herramienta?",
-      "answer": "El resultado se calcula directamente a partir de la fórmula o la lógica en el navegador que usa esta herramienta."
+      "question": "¿La propina se calcula antes o después de impuestos?",
+      "answer": "La herramienta aplica el porcentaje al importe que introduzcas. Si quieres calcularla sobre el total con impuestos, usa ese importe como base."
     },
     {
-      "question": "¿Puedo usar esta herramienta en el móvil?",
-      "answer": "Sí. La página funciona en escritorio y en pantallas móviles con un diseño sencillo de entrada y resultado."
+      "question": "¿Cómo se calcula el reparto por persona?",
+      "answer": "Primero se obtiene el total final con propina y después se divide entre el número de personas que indiques."
+    },
+    {
+      "question": "¿Puedo usar un porcentaje con decimales?",
+      "answer": "Sí. Puedes escribir valores como 12,5% cuando necesites más precisión."
+    },
+    {
+      "question": "¿Por qué el resultado puede no coincidir con un recibo?",
+      "answer": "Algunos establecimientos redondean, aplican la propina de otra forma o usan una base distinta. Conviene introducir la misma cifra que figura en la cuenta."
     }
   ],
   "seo": {
-    "title": "Calculadora de propina",
-    "description": "Calcula la propina y el total de la cuenta al instante. Calculadora de propina gratis en línea con resultados inmediatos.",
+    "title": "Calculadora de propina básica",
+    "description": "Calcula propina, total final y reparto por persona a partir del importe de la cuenta y el porcentaje elegido.",
     "keywords": [
       "calculadora de propina",
-      "propina calculadora",
-      "herramientas calculadora"
+      "calcular propina",
+      "reparto de cuenta",
+      "propina porcentaje"
     ]
   }
 }

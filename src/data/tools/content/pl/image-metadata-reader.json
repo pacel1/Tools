@@ -4,177 +4,93 @@
   "slug": "czytnik-metadanych-obrazow",
   "h1": "Czytnik metadanych obrazu",
   "title": "Czytnik metadanych obrazu",
-  "shortDescription": "Odczytaj metadane EXIF zdjęcia online, w tym dane aparatu, rozdzielczość, datę wykonania i GPS, gdy są dostępne.",
-  "metaTitle": "Czytnik metadanych obrazu online | Odczyt EXIF zdjęć",
-  "metaDescription": "Sprawdź metadane EXIF i zdjęć online. Odczytaj model aparatu, datę wykonania, rozdzielczość, lokalizację GPS, rozmiar pliku i inne dane obrazu.",
-  "intro": "Odczytaj metadane zdjęcia online w przeglądarce. Ten czytnik EXIF pokazuje dane aparatu, czas wykonania, rozdzielczość, współrzędne GPS i inne informacje zapisane w pliku bez instalowania programu.",
-  "overview": "Użyj tego internetowego czytnika metadanych obrazu, aby szybko i prywatnie sprawdzić dane EXIF ze zdjęć. Wczytaj obraz i zobacz model aparatu, obiektyw, parametry ekspozycji, rozmiar zdjęcia, datę wykonania oraz lokalizację, jeśli została zapisana. Przetwarzanie odbywa się po stronie przeglądarki, więc narzędzie jest wygodne dla fotografów, redaktorów i każdego, kto chce sprawdzić szczegóły pliku przed udostępnieniem lub archiwizacją.",
+  "shortDescription": "Sprawdź metadane EXIF zdjęcia, takie jak aparat, data wykonania, rozdzielczość i GPS, jeśli są zapisane w pliku.",
+  "metaTitle": "Czytnik metadanych obrazu",
+  "metaDescription": "Odczytaj metadane EXIF zdjęcia: model aparatu, datę wykonania, rozdzielczość, rozmiar pliku i dane GPS bez opuszczania przeglądarki.",
+  "intro": "Otwórz obraz i od razu zobacz zapisane w nim metadane: aparat, obiektyw, ekspozycję, datę wykonania, rozdzielczość, orientację i GPS, jeśli plik je zawiera.",
+  "overview": "To narzędzie pokazuje informacje zapisane wewnątrz pliku obrazu, dzięki czemu możesz sprawdzić nie tylko sam wygląd zdjęcia, ale też jego techniczne właściwości. Widać tu model aparatu i obiektywu, parametry ekspozycji, czas wykonania, wymiary, format pliku, orientację oraz — jeśli zostały zapisane — współrzędne lokalizacji.\n\nPrzydaje się wtedy, gdy chcesz potwierdzić pochodzenie pliku, sprawdzić ustawienia po sesji albo wyjaśnić, czemu zdjęcie obraca się inaczej w różnych aplikacjach. Jeśli metadane zostały usunięte podczas eksportu lub wysyłki, narzędzie pokaże brak danych zamiast zgadywać.",
   "howItWorks": [
-    "Wgraj zdjęcie z urządzenia.",
-    "Narzędzie odczyta osadzone EXIF i metadane w przeglądarce.",
-    "Sprawdź aparat, datę, rozdzielczość, orientację i GPS.",
-    "Skopiuj dane lub użyj ich do weryfikacji pochodzenia zdjęcia."
+    "Wgraj obraz z urządzenia.",
+    "Czytnik odczyta osadzone metadane w przeglądarce.",
+    "Sprawdź aparat, obiektyw, ekspozycję, datę, rozdzielczość, orientację i GPS.",
+    "Skopiuj wynik albo wykorzystaj go do oceny pliku przed edycją, publikacją lub archiwizacją."
   ],
   "useCases": [
-    "Sprawdzenie ustawień aparatu na zdjęciu.",
-    "Ustalenie kiedy i gdzie wykonano fotografię.",
-    "Weryfikacja rozdzielczości przed publikacją.",
-    "Usunięcie metadanych dla większej prywatności.",
-    "Sprawdzenie szczegółów pliku do edycji lub archiwizacji."
+    {
+      "title": "Kontrola ustawień po sesji",
+      "description": "Sprawdź czas migawki, przysłonę, ISO i ogniskową po zdjęciach z aparatu, aby połączyć plik z konkretnymi ustawieniami."
+    },
+    {
+      "title": "Weryfikacja lokalizacji zdjęcia",
+      "description": "Zobacz, czy w pliku zapisano szerokość i długość geograficzną przed udostępnieniem zdjęcia z podróży lub wydarzenia."
+    },
+    {
+      "title": "Analiza orientacji obrazu",
+      "description": "Ustal, czy zdjęcie jest zapisane pionowo lub poziomo jako tag orientacji, czy rzeczywiście ma obrócony zapis pikseli."
+    },
+    {
+      "title": "Sprawdzenie pliku do archiwum",
+      "description": "Zweryfikuj datę, model aparatu i rozmiar, aby poprawnie przypisać obraz do projektu lub folderu."
+    },
+    {
+      "title": "Ocena danych po eksporcie",
+      "description": "Porównaj, jakie informacje zostały w pliku po zapisaniu z edytora, komunikatora lub konwertera."
+    }
   ],
   "examples": [
     {
-      "title": "Sprawdzenie informacji o aparacie",
-      "input": "Wgraj plik JPEG z telefonu",
-      "output": "Wyświetlony zostaje model aparatu, ekspozycja, przysłona, ISO i ogniskowa.",
-      "description": "Przydatne do analizy ustawień wykonania zdjęcia."
+      "title": "Podgląd parametrów portretu",
+      "input": "Wgraj plik JPEG 24 Mpix z aparatu po sesji",
+      "output": "Pojawiają się model aparatu, nazwa obiektywu, 1/200 s, f/2.8, ISO 400, ogniskowa i wymiary obrazu.",
+      "description": "Pomaga połączyć efekt zdjęcia z ustawieniami wykonania."
     },
     {
-      "title": "Odczyt lokalizacji",
-      "input": "Otwórz zdjęcie z tagami GPS",
-      "output": "Jeśli dane są zapisane, pojawią się szerokość i długość geograficzna.",
-      "description": "Pomocne przy zdjęciach z podróży i wydarzeń."
+      "title": "Zdjęcie z telefonu w podróży",
+      "input": "Otwórz plik HEIC zapisany przez smartfon podczas wyjazdu do miasta",
+      "output": "Wyświetlają się data wykonania, model urządzenia, orientacja i współrzędne GPS, jeśli zostały zapisane.",
+      "description": "Przydatne do sprawdzenia miejsca i czasu wykonania."
+    },
+    {
+      "title": "Plik po wysłaniu przez komunikator",
+      "input": "Wczytaj JPEG zapisany ponownie po wysłaniu na czacie",
+      "output": "Może zostać tylko podstawowy opis pliku, a pola aparatu i GPS będą puste.",
+      "description": "Pokazuje, jak wysyłka i kompresja potrafią usunąć osadzone informacje."
     }
   ],
   "faq": [
     {
-      "question": "Jakie metadane odczytuje to narzędzie?",
-      "answer": "Odczytuje typowe pola EXIF, takie jak model aparatu, data wykonania, rozdzielczość, orientacja, ustawienia ekspozycji, rozmiar pliku i dane GPS, jeśli są zapisane."
+      "question": "Dlaczego widzę mniej pól niż w menu aparatu?",
+      "answer": "Da się odczytać tylko to, co zostało faktycznie zapisane w pliku. Wiele ustawień aparatu nigdy nie trafia do metadanych albo jest zapisywanych tylko częściowo."
     },
     {
-      "question": "Czy działa w przeglądarce?",
-      "answer": "Tak. Czytnik przetwarza obrazy lokalnie w przeglądarce, co zapewnia szybkość i prywatność."
+      "question": "Co jeśli zdjęcie ma EXIF i inne bloki metadanych?",
+      "answer": "Narzędzie pokazuje dostępne dane z pliku jako całość. Jeśli jeden blok jest niepełny, inne osadzone informacje nadal mogą się pojawić."
     },
     {
-      "question": "Dlaczego niektóre zdjęcia nie mają metadanych?",
-      "answer": "Metadane mogły zostać usunięte przez aparat, aplikację lub ustawienia eksportu, albo format pliku nie zawiera danych EXIF."
+      "question": "Czy data zdjęcia zawsze oznacza faktyczny moment zrobienia fotografii?",
+      "answer": "Nie zawsze. W pliku może być zapisany czas eksportu, czas edycji albo błędna godzina ustawiona w aparacie."
     },
     {
-      "question": "Czy w każdym obrazie da się znaleźć lokalizację GPS?",
-      "answer": "Nie. Dane GPS pojawią się tylko wtedy, gdy zostały zapisane w oryginalnym pliku i nie zostały później usunięte."
+      "question": "Dlaczego GPS jest pusty, skoro zdjęcie zrobiłem telefonem?",
+      "answer": "Lokalizacja mogła być wyłączona, aplikacja aparatu mogła jej nie zapisać albo metadane zostały usunięte podczas wysyłki lub eksportu."
+    },
+    {
+      "question": "Czy orientacja zmienia piksele w pliku?",
+      "answer": "Niekoniecznie. Często obraz korzysta z tagu orientacji zamiast fizycznie obróconych pikseli, dlatego różne programy mogą go wyświetlać inaczej."
     }
   ],
-  "uiLabels": {
-    "copy": "Kopiuj",
-    "copied": "Skopiowano",
-    "input": "Dane wejściowe",
-    "output": "Dane wyjściowe",
-    "placeholder": "Upuść obraz tutaj lub wybierz plik",
-    "indent": "Wcięcie",
-    "removeComments": "Usuń komentarze",
-    "preview": "Podgląd",
-    "source": "Źródło",
-    "sanitizedHtml": "Oczyszczony HTML",
-    "plainText": "Zwykły tekst",
-    "summary": "Podsumowanie",
-    "total": "Razem",
-    "links": "Linki",
-    "images": "Obrazy",
-    "errors": "Błędy",
-    "warnings": "Ostrzeżenia",
-    "valid": "Poprawne",
-    "invalid": "Niepoprawne",
-    "href": "Href",
-    "text": "Tekst",
-    "rel": "Rel",
-    "target": "Cel",
-    "alt": "Alt",
-    "width": "Szerokość",
-    "height": "Wysokość",
-    "empty": "Puste",
-    "outputReady": "Wynik gotowy",
-    "cleanedHtml": "Oczyszczony HTML",
-    "formattedHtml": "Sformatowany HTML",
-    "minifiedHtml": "Zminifikowany HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Wyodrębnione obrazy",
-    "extractedLinks": "Wyodrębnione linki",
-    "validationSummary": "Podsumowanie walidacji",
-    "prettyHtml": "Czytelny HTML",
-    "encodedText": "Zakodowany tekst",
-    "file": "Plik",
-    "size": "Rozmiar",
-    "format": "Format",
-    "quality": "Jakość",
-    "colorOne": "Kolor 1",
-    "colorTwo": "Kolor 2",
-    "background": "Tło",
-    "foreground": "Pierwszy plan",
-    "angle": "Kąt",
-    "margin": "Margines",
-    "level": "Poziom",
-    "gradientType": "Typ gradientu",
-    "linear": "Liniowy",
-    "radial": "Promieniowy",
-    "blur": "Rozmycie",
-    "spread": "Rozpiętość",
-    "offsetX": "Przesunięcie X",
-    "offsetY": "Przesunięcie Y",
-    "opacity": "Przezroczystość",
-    "inset": "Wewnętrzny",
-    "cssCode": "Kod CSS",
-    "snippet": "Fragment",
-    "download": "Pobierz",
-    "downloadSvg": "Pobierz SVG",
-    "downloadPng": "Pobierz PNG",
-    "downloadAll": "Pobierz wszystko",
-    "upload": "Wgraj",
-    "title": "Tytuł",
-    "description": "Opis",
-    "canonicalUrl": "Adres kanoniczny",
-    "siteName": "Nazwa witryny",
-    "ogImage": "Obraz OG",
-    "clear": "Wyczyść",
-    "generatedQr": "Podglad kodu QR",
-    "placeholderImage": "Podglad obrazu",
-    "faviconSet": "Zestaw favicon",
-    "keepAspectRatio": "Zachowaj proporcje",
-    "cropX": "Przycięcie X",
-    "cropY": "Przycięcie Y",
-    "cropWidth": "Szerokość kadru",
-    "cropHeight": "Wysokość kadru",
-    "originalSize": "Rozmiar oryginalny",
-    "outputSize": "Rozmiar wyjściowy",
-    "savedSize": "Zapisany rozmiar",
-    "result": "Wynik",
-    "base64": "Base64",
-    "mimeType": "Typ MIME",
-    "resizedImage": "Obraz po zmianie rozmiaru",
-    "compressedImage": "Obraz skompresowany",
-    "croppedImage": "Obraz przycięty",
-    "convertedImage": "Obraz przekonwertowany",
-    "decodedImage": "Obraz zdekodowany",
-    "imagePreview": "Podgląd obrazu",
-    "camera": "Aparat",
-    "lens": "Obiektyw",
-    "dateTaken": "Data wykonania",
-    "resolution": "Rozdzielczość",
-    "fileSize": "Rozmiar pliku",
-    "iso": "ISO",
-    "exposure": "Ekspozycja",
-    "aperture": "Przysłona",
-    "focalLength": "Ogniskowa",
-    "flash": "Lampa błyskowa",
-    "orientation": "Orientacja",
-    "latitude": "Szerokość geograficzna",
-    "longitude": "Długość geograficzna",
-    "openMap": "Otwórz mapę",
-    "rawMetadata": "Surowe metadane",
-    "noMetadataFound": "Nie znaleziono metadanych",
-    "gpsLocation": "Lokalizacja GPS",
-    "metadataSummary": "Podsumowanie metadanych"
-  },
   "seo": {
-    "title": "Czytnik metadanych obrazu online | Odczyt EXIF zdjęć",
-    "description": "Sprawdź metadane EXIF i zdjęć online. Odczytaj model aparatu, datę wykonania, rozdzielczość, lokalizację GPS, rozmiar pliku i inne dane obrazu.",
+    "title": "Czytnik metadanych obrazu",
+    "description": "Odczytaj metadane EXIF zdjęcia: model aparatu, datę wykonania, rozdzielczość, rozmiar pliku i dane GPS bez opuszczania przeglądarki.",
     "keywords": [
       "czytnik metadanych obrazu",
       "czytnik EXIF",
       "metadane zdjęcia",
-      "odczyt EXIF online",
-      "metadane aparatu",
+      "dane aparatu",
       "dane GPS zdjęcia",
-      "szczegóły obrazu"
+      "szczegóły obrazu",
+      "podgląd metadanych",
+      "odczyt EXIF"
     ]
   }
 }

@@ -4,42 +4,79 @@
   "slug": "sentence-counter",
   "h1": "Sentence Counter",
   "title": "Sentence Counter",
-  "shortDescription": "Count sentences in text instantly with fast results, simple inputs and practical examples.",
-  "overview": "Count sentences in text instantly. Use this tool to get a clear result quickly from simple input on the same page. It is useful for everyday checks, comparisons and small tasks when you need a fast online answer.",
+  "shortDescription": "Count the sentences in any text block with a clear total and no extra steps.",
+  "metaTitle": "Sentence Counter Tool",
+  "metaDescription": "Count the sentences in your text and get a clear total for paragraphs, drafts, notes, or pasted content.",
+  "intro": "Get the total number of sentences in your text by pasting it into the box and reading the count right away.",
+  "overview": "This tool counts sentences in pasted text and returns a straightforward total. It is useful when you need to review a paragraph, compare two drafts, or check whether a section has the structure you expect.\n\nSentence boundaries can be affected by abbreviations, initials, decimals, and unusual punctuation. If your text includes those patterns, review the result with that in mind, especially for technical writing, dialogue, or copied material.\n\nThe counter is best used on complete passages rather than isolated fragments. For more precise interpretation, keep punctuation consistent and avoid mixing sentence-ending marks with line breaks that are only meant for formatting.",
   "howItWorks": [
-    "Enter the required value or text into the form.",
-    "The conversion, calculation or transformation runs instantly in the browser.",
-    "Review the result and continue with related tools if you need another step."
+    "Paste or type your text into the input field.",
+    "The tool identifies sentence endings from the punctuation in your text.",
+    "Read the sentence total and compare sections if needed."
+  ],
+  "useCases": [
+    {
+      "title": "Editing a blog draft",
+      "description": "Check whether a draft has the sentence flow you want before you publish or send it for review."
+    },
+    {
+      "title": "Reviewing a translated paragraph",
+      "description": "Compare the sentence count between source and translated text to spot missing or merged sentences."
+    },
+    {
+      "title": "Checking meeting notes",
+      "description": "See how many complete statements are in notes copied from a transcript or summary."
+    },
+    {
+      "title": "Preparing a short announcement",
+      "description": "Confirm that a message is split into the right number of readable sentences."
+    }
   ],
   "examples": [
     {
-      "title": "Common use case",
-      "input": "A paragraph with several sentences.",
-      "output": "Sentence total",
-      "description": "Shows a common use case with a clear input and result."
+      "title": "Three short statements",
+      "input": "We arrived early. The room was quiet. Everyone took a seat.",
+      "output": "3 sentences",
+      "description": "Each period marks a separate sentence, so the total is three."
     },
     {
-      "title": "Another quick example",
-      "input": "A paragraph with several sentences.",
-      "output": "Sentence total",
-      "description": "Useful for quick checks, comparisons or repeat tasks."
+      "title": "Mixed punctuation",
+      "input": "Did you finish the report? I sent mine already! Please check the figures.",
+      "output": "3 sentences",
+      "description": "Question marks and exclamation marks are counted as sentence endings too."
+    },
+    {
+      "title": "Abbreviation in the middle",
+      "input": "Dr. Perez reviewed the file. She left comments afterward.",
+      "output": "2 sentences",
+      "description": "A period inside an abbreviation should not be treated as a full sentence break on its own."
     }
   ],
   "faq": [
     {
-      "question": "How accurate is this tool?",
-      "answer": "The result is based on the input you provide and the calculation or transformation shown on the page."
+      "question": "How are sentence boundaries decided?",
+      "answer": "The tool counts sentence-ending punctuation such as periods, question marks, and exclamation marks, then totals the complete sentences it finds."
     },
     {
-      "question": "Can I use this tool on mobile?",
-      "answer": "Yes. The page works on desktop and mobile screens with a simple input and result layout."
+      "question": "Why does an abbreviation sometimes change the result?",
+      "answer": "Abbreviations and initials can contain periods that look like sentence breaks. If your text has many of them, the count may need manual review."
+    },
+    {
+      "question": "Do line breaks count as sentences?",
+      "answer": "No. A line break is only formatting unless it is paired with sentence-ending punctuation in the text."
+    },
+    {
+      "question": "What happens with text that has no punctuation?",
+      "answer": "If the passage does not include sentence-ending marks, the tool may return zero or a very small count depending on the content structure."
     }
   ],
   "seo": {
-    "title": "Sentence Counter",
-    "description": "Count sentences in text instantly. Free online sentence counter with instant results.",
+    "title": "Sentence Counter Tool",
+    "description": "Count the sentences in your text and get a clear total for paragraphs, drafts, notes, or pasted content.",
     "keywords": [
-      "sentence counter"
+      "sentence counter",
+      "sentence count",
+      "text sentence counter"
     ]
   }
 }

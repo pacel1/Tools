@@ -1,46 +1,82 @@
 {
   "toolId": "sales-tax-calculator",
   "locale": "fr",
-  "slug": "calculateur-de-taxe-de-vente",
+  "slug": "calculateur-taxe-vente",
   "h1": "Calculateur de taxe de vente",
   "title": "Calculateur de taxe de vente",
-  "shortDescription": "Calculez le prix total après ajout de la taxe de vente avec des résultats rapides, des saisies simples et des exemples pratiques.",
-  "overview": "Calculez le prix total après ajout de la taxe de vente. Cette page fournit une réponse rapide grâce à un outil pratique et un processus de résultat simple. Elle cible les utilisateurs qui recherchent une réponse gratuite en ligne, des résultats rapides dans le navigateur et un contenu pratique optimisé pour les recherches de longue traîne.",
+  "shortDescription": "Indiquez un montant hors taxe et un taux pour obtenir la taxe et le total final.",
+  "metaTitle": "Calculateur de taxe de vente",
+  "metaDescription": "Ajoutez la taxe de vente à un montant hors taxe et voyez la taxe ajoutée ainsi que le total final pour achats, reçus et devis.",
+  "intro": "Saisissez le montant hors taxe et le taux pour obtenir immédiatement la taxe ajoutée et le total final.",
+  "overview": "Le prix affiché dans une boutique, un panier ou un devis ne correspond pas toujours au montant réellement payé. Ce calculateur applique le taux de taxe de vente au montant de départ et affiche à la fois la taxe ajoutée et le total final, ce qui permet de vérifier une dépense avant validation.\n\nIl est utile pour comparer des prix, estimer un panier en ligne, contrôler un reçu ou préparer une première estimation pour un client. Le résultat reste une aide au calcul; les factures, déclarations et règles de taxation dépendent de la juridiction concernée.",
   "howItWorks": [
-    "Saisissez la valeur ou le texte requis dans le formulaire.",
-    "La conversion, le calcul ou la transformation s’exécute instantanément dans le navigateur.",
-    "Consultez le résultat et poursuivez avec des outils associés si vous avez besoin d’une autre étape."
+    "Indiquez le montant avant taxe, par exemple un prix d’article, un sous-total de panier ou une ligne de devis.",
+    "Saisissez le taux de taxe en pourcentage, par exemple 6, 7.5 ou 8.25.",
+    "Consultez le montant de taxe calculé et le prix final taxe incluse."
+  ],
+  "useCases": [
+    {
+      "title": "Achat avant paiement",
+      "description": "Estimez le total débité lorsque le site affiche un prix hors taxe."
+    },
+    {
+      "title": "Sous-total de panier",
+      "description": "Comparez le sous-total avec le montant après application d’une taxe locale ou liée à la plateforme."
+    },
+    {
+      "title": "Contrôle de reçu",
+      "description": "Vérifiez si la ligne de taxe correspond au sous-total et au taux attendu."
+    }
   ],
   "examples": [
     {
-      "title": "Exemple 1",
-      "input": "100 avec 8 % de taxe",
-      "output": "108",
-      "description": "Un exemple réaliste de calculateur de taxe de vente pour une recherche du quotidien."
+      "title": "Article à 49,99 avec 8,25%",
+      "input": "49,99 avec 8,25%",
+      "output": "Taxe : 4,12 ; Total : 54,11",
+      "description": "Un prix affiché augmente quand la taxe est ajoutée au moment du paiement."
     },
     {
-      "title": "Exemple 2",
-      "input": "100 avec 8 % de taxe",
-      "output": "108",
-      "description": "Un autre cas pratique pensé pour le trafic organique de longue traîne."
+      "title": "Service à 19,00 avec 6%",
+      "input": "19,00 avec 6%",
+      "output": "Taxe : 1,14 ; Total : 20,14",
+      "description": "Pratique pour un abonnement ou un service en ligne dont la taxe dépend de la localisation."
+    },
+    {
+      "title": "Devis à 250,00 avec 7,5%",
+      "input": "250,00 avec 7,5%",
+      "output": "Taxe : 18,75 ; Total : 268,75",
+      "description": "Aide à préparer une estimation avant l’émission de la facture finale."
     }
   ],
   "faq": [
     {
-      "question": "Quelle est la précision de cet outil ?",
-      "answer": "Le résultat est calculé directement à partir de la formule ou de la logique côté navigateur utilisée par cet outil."
+      "question": "Le calculateur ajoute-t-il la taxe au montant saisi ?",
+      "answer": "Oui. Vous entrez le sous-total hors taxe et le taux, puis l’outil affiche la taxe ajoutée et le total final."
     },
     {
-      "question": "Puis-je utiliser cet outil sur mobile ?",
-      "answer": "Oui. La page fonctionne sur ordinateur et sur mobile avec une interface simple pour la saisie et le résultat."
+      "question": "Puis-je tester plusieurs taux de taxe ?",
+      "answer": "Oui. Relancez le calcul avec un autre pourcentage pour comparer des lieux, des boutiques ou des scénarios de devis."
+    },
+    {
+      "question": "Dois-je inclure la livraison, les frais ou les remises ?",
+      "answer": "Seulement s’ils font partie de la base taxable dans votre cas. Cela dépend du produit, du frais et de la juridiction."
+    },
+    {
+      "question": "Pourquoi le résultat peut-il différer d’un reçu ?",
+      "answer": "Certains systèmes arrondissent différemment ou calculent la taxe sur une base plus large, par exemple après remise ou avec livraison."
+    },
+    {
+      "question": "Peut-on l’utiliser pour une déclaration fiscale ?",
+      "answer": "Non. C’est une aide pour les estimations et les vérifications; les documents officiels doivent suivre la réglementation applicable."
     }
   ],
   "seo": {
     "title": "Calculateur de taxe de vente",
-    "description": "Calculez le prix total après ajout de la taxe de vente. Calculateur de taxe de vente gratuit en ligne avec résultats instantanés.",
+    "description": "Ajoutez la taxe de vente à un montant hors taxe et voyez la taxe ajoutée ainsi que le total final pour achats, reçus et devis.",
     "keywords": [
-      "calculateur de taxe de vente",
-      "outil calculatrices"
+      "calculateur taxe vente",
+      "taxe de vente",
+      "total avec taxe"
     ]
   }
 }

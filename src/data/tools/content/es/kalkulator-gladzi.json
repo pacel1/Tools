@@ -4,175 +4,87 @@
   "slug": "calculadora-de-emplaste",
   "h1": "Calculadora de emplaste",
   "title": "Calculadora de emplaste",
-  "shortDescription": "Calcula cuánta pasta de emplaste necesitas para paredes y techos lisos.",
-  "metaTitle": "Calculadora de emplaste online",
-  "metaDescription": "Calcula la cantidad de emplaste en kg y sacos. Introduce el área, el consumo, el grosor de la capa y el desperdicio para saber cuánto necesitas.",
-  "intro": "Calcula rápido el consumo de emplaste para paredes y techos. Introduce el área, el consumo por 1 mm, el grosor de la capa, el desperdicio y el peso del saco para obtener la cantidad total y el número de sacos.",
-  "overview": "Esta calculadora de emplaste te ayuda a planificar material para acabados interiores. Calcula el consumo base, el consumo total con desperdicio y el número de sacos necesarios para comprar la cantidad correcta y evitar faltantes en obra.",
+  "shortDescription": "Calcula la cantidad de emplaste necesaria para paredes y techos a partir del área, el espesor y la pérdida.",
+  "metaTitle": "Calculadora de emplaste",
+  "metaDescription": "Calcula el consumo de emplaste en kilos y sacos según la superficie, el espesor de la capa, el rendimiento y la pérdida.",
+  "intro": "Introduce el área, el consumo por 1 mm, el espesor de la capa, la pérdida y el peso del saco para obtener los kilos totales y el número de sacos.",
+  "overview": "Esta calculadora convierte una superficie en una compra concreta de material para acabado interior. Primero calcula la demanda base a partir del área y del espesor previsto, y después añade una pérdida para cubrir mezclas, retoques y pequeñas irregularidades del soporte.\n\nEl resultado se expresa en kilos y en sacos completos, así que resulta práctico para pedir material sin quedarse corto ni cargar con excedente innecesario. Funciona tanto en estancias pequeñas como en reformas completas y en techos amplios donde el formato del envase importa mucho.",
   "howItWorks": [
-    "Introduce la superficie en metros cuadrados.",
-    "Indica el consumo del material por 1 mm de espesor.",
-    "Define el grosor de la capa de emplaste en milímetros.",
-    "Añade un porcentaje de desperdicio para pérdidas y retoques.",
-    "Escribe el peso del saco para calcular cuántos necesitas."
+    "Indica la superficie en metros cuadrados.",
+    "Escribe el consumo del producto para 1 mm de espesor.",
+    "Define el espesor previsto de la capa en milímetros.",
+    "Añade un porcentaje de pérdida para sobrantes y retoques.",
+    "Introduce el peso del saco para ver cuántos necesitas."
   ],
   "useCases": [
-    "Calcular emplaste para reformas de viviendas.",
-    "Planificar material para paredes lisas antes de pintar.",
-    "Estimar cantidades para techos y grandes superficies.",
-    "Comprobar cuántos sacos de emplaste comprar para un trabajo."
+    {
+      "title": "Acabado de una pared de baño",
+      "description": "Calcular el material para una pared que necesita una capa fina antes de pintar o revestir."
+    },
+    {
+      "title": "Techo de salón",
+      "description": "Estimar los kilos necesarios para una superficie amplia con aplicación uniforme."
+    },
+    {
+      "title": "Compra para varias habitaciones",
+      "description": "Sumar distintas estancias y decidir cuántos sacos pedir de una vez."
+    },
+    {
+      "title": "Revisión de stock en obra",
+      "description": "Comparar el resultado con el material que ya tienes antes de hacer un nuevo pedido."
+    }
   ],
   "examples": [
     {
-      "title": "Cálculo rápido",
-      "input": "Área: 50 m², consumo: 1,2 kg/m²/mm, grosor: 2 mm, desperdicio: 10%, peso del saco: 20 kg",
-      "output": "Base: 120 kg, total: 132 kg, sacos: 7.",
-      "description": "Un ejemplo práctico para una reforma pequeña."
+      "title": "Habitación pequeña",
+      "input": "Área: 32 m², consumo: 1,1 kg/m²/mm, espesor: 1,5 mm, pérdida: 12%, peso del saco: 20 kg",
+      "output": "Demanda base: 52,8 kg, total: 59,136 kg, sacos: 3.",
+      "description": "Útil para una habitación con corrección ligera."
     },
     {
-      "title": "Planificación de obra",
-      "input": "Área: 120 m², consumo: 1,0 kg/m²/mm, grosor: 3 mm, desperdicio: 8%, peso del saco: 25 kg",
-      "output": "Base: 360 kg, total: 388,8 kg, sacos: 16.",
-      "description": "Útil para trabajos de acabado más grandes."
+      "title": "Techo amplio",
+      "input": "Área: 96 m², consumo: 1,35 kg/m²/mm, espesor: 2 mm, pérdida: 8%, peso del saco: 25 kg",
+      "output": "Demanda base: 259,2 kg, total: 279,936 kg, sacos: 12.",
+      "description": "Sirve para pedidos de techos largos con una pérdida moderada."
+    },
+    {
+      "title": "Capa más gruesa",
+      "input": "Área: 58,5 m², consumo: 0,95 kg/m²/mm, espesor: 3 mm, pérdida: 15%, peso del saco: 20 kg",
+      "output": "Demanda base: 166,725 kg, total: 191,73375 kg, sacos: 10.",
+      "description": "Muestra cómo sube el pedido cuando aumenta el espesor y la pérdida."
     }
   ],
   "faq": [
     {
-      "question": "¿Cómo se calcula el consumo de emplaste?",
-      "answer": "Multiplica el área por el consumo por 1 mm y por el grosor de la capa, y luego añade el desperdicio para obtener el total."
+      "question": "¿Qué significa el consumo que pide la calculadora?",
+      "answer": "Es la cantidad de material necesaria para 1 mm de espesor, normalmente indicada por el fabricante en kg por m². Si tu ficha técnica usa otra unidad, conviértela antes de introducirla."
     },
     {
-      "question": "¿Por qué conviene añadir desperdicio?",
-      "answer": "El desperdicio cubre pérdidas al mezclar, la absorción irregular del soporte y pequeñas correcciones durante la aplicación."
+      "question": "¿Debo poner el espesor acabado o el espesor máximo?",
+      "answer": "Introduce el espesor medio previsto para toda la superficie. Si hay zonas muy irregulares, usa un valor realista para el conjunto, no solo el punto más profundo."
     },
     {
-      "question": "¿Cómo se calculan los sacos?",
-      "answer": "Divide los kilogramos necesarios entre el peso del saco y redondea hacia arriba al siguiente saco entero."
+      "question": "¿Por qué el número de sacos se redondea hacia arriba?",
+      "answer": "Porque no se pueden comprar sacos parciales. Si el cálculo supera lo que tienes disponible, hace falta un saco entero adicional."
     },
     {
-      "question": "¿Sirve para paredes y techos?",
-      "answer": "Sí, la calculadora funciona para cualquier superficie donde se aplique emplaste."
+      "question": "¿Puedo usarlo para dos manos de producto?",
+      "answer": "Sí, siempre que el consumo y el espesor representen el sistema completo. Si cada mano tiene especificaciones distintas, calcula cada una por separado y suma los resultados."
+    },
+    {
+      "question": "¿Cuál es el error más frecuente al usar este cálculo?",
+      "answer": "El fallo más común es confundir kg/m² con kg/m²/mm o escribir mal el peso del saco. Eso cambia mucho el resultado final."
     }
   ],
-  "uiLabels": {
-    "copy": "Copiar",
-    "copied": "Copiado",
-    "input": "Entrada",
-    "output": "Salida",
-    "placeholder": "Introduce un valor",
-    "indent": "Sangría",
-    "removeComments": "Eliminar comentarios",
-    "preview": "Vista previa",
-    "source": "Fuente",
-    "sanitizedHtml": "HTML saneado",
-    "plainText": "Texto plano",
-    "summary": "Resumen",
-    "total": "Total",
-    "links": "Enlaces",
-    "images": "Imágenes",
-    "errors": "Errores",
-    "warnings": "Avisos",
-    "valid": "Válido",
-    "invalid": "No válido",
-    "href": "Href",
-    "text": "Texto",
-    "rel": "Rel",
-    "target": "Destino",
-    "alt": "Alt",
-    "width": "Anchura",
-    "height": "Altura",
-    "empty": "Vacío",
-    "outputReady": "Resultado listo",
-    "cleanedHtml": "HTML limpiado",
-    "formattedHtml": "HTML formateado",
-    "minifiedHtml": "HTML minificado",
-    "markdown": "Markdown",
-    "extractedImages": "Imágenes extraídas",
-    "extractedLinks": "Enlaces extraídos",
-    "validationSummary": "Resumen de validación",
-    "prettyHtml": "HTML legible",
-    "encodedText": "Texto codificado",
-    "file": "Archivo",
-    "size": "Tamaño",
-    "format": "Formato",
-    "quality": "Calidad",
-    "colorOne": "Color 1",
-    "colorTwo": "Color 2",
-    "background": "Fondo",
-    "foreground": "Primer plano",
-    "angle": "Ángulo",
-    "margin": "Margen",
-    "level": "Nivel",
-    "gradientType": "Tipo de degradado",
-    "linear": "Lineal",
-    "radial": "Radial",
-    "blur": "Desenfoque",
-    "spread": "Extensión",
-    "offsetX": "Desplazamiento X",
-    "offsetY": "Desplazamiento Y",
-    "opacity": "Opacidad",
-    "inset": "Inset",
-    "cssCode": "Código CSS",
-    "snippet": "Fragmento",
-    "download": "Descargar",
-    "downloadSvg": "Descargar SVG",
-    "downloadPng": "Descargar PNG",
-    "downloadAll": "Descargar todo",
-    "upload": "Subir",
-    "title": "Título",
-    "description": "Descripción",
-    "canonicalUrl": "URL canónica",
-    "siteName": "Nombre del sitio",
-    "ogImage": "Imagen OG",
-    "clear": "Limpiar",
-    "generatedQr": "QR generado",
-    "placeholderImage": "Imagen de marcador",
-    "faviconSet": "Juego de favicon",
-    "keepAspectRatio": "Mantener proporción",
-    "cropX": "Recorte X",
-    "cropY": "Recorte Y",
-    "cropWidth": "Ancho del recorte",
-    "cropHeight": "Alto del recorte",
-    "originalSize": "Tamaño original",
-    "outputSize": "Tamaño de salida",
-    "savedSize": "Tamaño ahorrado",
-    "result": "Resultado",
-    "base64": "Base64",
-    "mimeType": "Tipo MIME",
-    "resizedImage": "Imagen redimensionada",
-    "compressedImage": "Imagen comprimida",
-    "croppedImage": "Imagen recortada",
-    "convertedImage": "Imagen convertida",
-    "decodedImage": "Imagen decodificada",
-    "imagePreview": "Vista previa de la imagen",
-    "camera": "Cámara",
-    "lens": "Lente",
-    "dateTaken": "Fecha de captura",
-    "resolution": "Resolución",
-    "fileSize": "Tamaño del archivo",
-    "iso": "ISO",
-    "exposure": "Exposición",
-    "aperture": "Apertura",
-    "focalLength": "Distancia focal",
-    "flash": "Flash",
-    "orientation": "Orientación",
-    "latitude": "Latitud",
-    "longitude": "Longitud",
-    "openMap": "Abrir mapa",
-    "rawMetadata": "Metadatos sin procesar",
-    "noMetadataFound": "No se encontraron metadatos",
-    "gpsLocation": "Ubicación GPS",
-    "metadataSummary": "Resumen de metadatos"
-  },
   "seo": {
-    "title": "Calculadora de emplaste online",
-    "description": "Calcula la cantidad de emplaste en kg y sacos. Introduce el área, el consumo, el grosor de la capa y el desperdicio para saber cuánto necesitas.",
+    "title": "Calculadora de emplaste",
+    "description": "Calcula el consumo de emplaste en kilos y sacos según la superficie, el espesor de la capa, el rendimiento y la pérdida.",
     "keywords": [
       "calculadora de emplaste",
       "cuánto emplaste necesito",
       "consumo de emplaste",
-      "calculadora de emplaste por m2",
-      "emplaste paredes y techos"
+      "emplaste por m2",
+      "sacos de emplaste"
     ]
   }
 }

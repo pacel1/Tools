@@ -4,13 +4,81 @@
   "slug": "konwerter-hex-na-rgb",
   "h1": "Konwerter HEX na RGB",
   "title": "Konwerter HEX na RGB",
-  "shortDescription": "Konwertuj kolory HEX na RGB online do CSS, projektow i szybkiego sprawdzania kodow kolorow.",
-  "metaTitle": "Konwerter HEX na RGB | Kody kolorow online",
-  "metaDescription": "Konwertuj HEX na RGB online z natychmiastowym wynikiem. Przydatne w CSS, design systemach i pracy z kolorami.",
-  "intro": "Konwerter HEX na RGB przydaje sie, gdy chcesz szybko zamienic kolor z projektu, design systemu albo fragmentu CSS na wartosci kanalow RGB. W jednym miejscu dostajesz poprawiony kod HEX i gotowy zapis RGB.",
-  "overview": "Narzędzie jest pomocne przy wdrazaniu designu, dokumentacji, debugowaniu interfejsow i porzadkowaniu palet kolorow. Jedno pole wystarcza, zeby od razu zobaczyc czerwony, zielony i niebieski kanal wybranego koloru.",
-  "howItWorks": ["Wklej albo wybierz kolor HEX.", "Narzedzie normalizuje kod i odczytuje kanaly RGB.", "Skopiuj wynik do CSS, dokumentacji albo projektu."],
-  "examples": [{"title": "Kolor marki", "input": "#FF7A18", "output": "rgb(255, 122, 24)", "description": "Przydatne przy przejsciu z projektu do implementacji."}, {"title": "Skrocony HEX", "input": "#0AF", "output": "rgb(0, 170, 255)", "description": "Pomocne przy rozszerzaniu skroconych zapisow kolorow."}],
-  "faq": [{"question": "Czy narzedzie obsluguje skrocone kody HEX?", "answer": "Tak. Trzyznakowe kody sa rozszerzane przed konwersja."}, {"question": "Czy wynik nadaje sie do CSS?", "answer": "Tak. Konwerter zwraca wynik RGB dobry do stylow, dokumentacji i pracy developerskiej."}],
-  "seo": {"title": "Konwerter HEX na RGB | Kody kolorow online", "description": "Konwertuj HEX na RGB online z natychmiastowym wynikiem. Przydatne w CSS, design systemach i pracy z kolorami.", "keywords": ["hex na rgb", "konwerter hex na rgb", "kody kolorow", "konwersja kolorow css", "rgb z hex"]}
+  "shortDescription": "Zamieniaj kody HEX na wartosci RGB do CSS, specyfikacji i pracy z kolorami.",
+  "metaTitle": "Konwerter HEX na RGB",
+  "metaDescription": "Zamieniaj kody HEX na wartosci RGB do CSS, specyfikacji i pracy z kolorami.",
+  "intro": "Wklej kod HEX, na przykład #FF7A18 albo #0AF, aby od razu otrzymac jego zapis RGB.",
+  "overview": "To narzedzie zamienia zapis HEX na wartosci kanalow RGB, ktore mozna wykorzystac w CSS, dokumentacji i opisach komponentow. Dodatkowo normalizuje kolor, wiec skrocone i wielkie zapisy sa interpretowane w ten sam sposob.\n\nPrzydaje sie wtedy, gdy kolor z projektu, tokenu albo makiety trzeba zapisac w formacie opartym o czerwony, zielony i niebieski kanal. Wynik jest czytelny i latwy do porownania z innymi definicjami koloru podczas wdrazania lub kontroli.",
+  "howItWorks": [
+    "Wpisz wartosc HEX albo wybierz kolor z selektora.",
+    "Narzedzie rozszerza skrocony HEX, sprawdza poprawnosc i odczytuje kanaly czerwony, zielony oraz niebieski.",
+    "Skopiuj wynik RGB do CSS, dokumentacji lub notatek z wdrozenia."
+  ],
+  "useCases": [
+    {
+      "title": "Praca nad stylami frontendu",
+      "description": "Przeksztalc kolory marki i interfejsu w zapis rgb(...) dla zmiennych CSS, styli komponentow i plikow theme."
+    },
+    {
+      "title": "Kontrola przekazania projektu",
+      "description": "Sprawdz, czy kolor z makiety zgadza sie z wartoscia uzyta w kodzie przed wdrozeniem."
+    },
+    {
+      "title": "Dokumentacja tokenow",
+      "description": "Zapisz kolor tokenu jednoczesnie w HEX i RGB, aby projektanci i programisci korzystali z jednej definicji."
+    },
+    {
+      "title": "Rozszerzanie skroconych zapisow",
+      "description": "Zamien trzyznakowy HEX na pelny zapis RGB podczas pracy ze starszym kodem lub skroconymi paletami."
+    }
+  ],
+  "examples": [
+    {
+      "title": "Cieply kolor akcentu",
+      "input": "#FF7A18",
+      "output": "rgb(255, 122, 24)",
+      "description": "Mocny pomarancz do przyciskow, wyróżnien i ilustracji."
+    },
+    {
+      "title": "Skrocony niebiesko-turkusowy zapis",
+      "input": "#0AF",
+      "output": "rgb(0, 170, 255)",
+      "description": "Narzędzie rozszerza skrocony HEX przed konwersja do RGB."
+    },
+    {
+      "title": "Ciemny neutralny odcien",
+      "input": "#1E293B",
+      "output": "rgb(30, 41, 59)",
+      "description": "Przydatny przy zamianie neutralnych kolorow UI na wartosci kanalow."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Czy konwerter obsluguje trzyznakowe kody HEX?",
+      "answer": "Tak. Skrocony zapis, na przykład #0AF, jest najpierw rozwijany do pelnej postaci, a dopiero potem przeliczany na RGB, wiec wynik odpowiada rzeczywistym kanalom koloru."
+    },
+    {
+      "question": "Co sie stanie, jesli wpisze HEX bez znaku #?",
+      "answer": "To narzedzie oczekuje standardowego zapisu HEX. Jesli format jest niepelny albo zawiera niedozwolone znaki, nie otrzymasz wiarygodnego wyniku RGB, bo kod trzeba najpierw podac w poprawnej postaci."
+    },
+    {
+      "question": "Dlaczego RGB wyglada inaczej niz HEX?",
+      "answer": "To ten sam kolor zapisany w innej notacji. HEX pokazuje wartosc w systemie szesnastkowym, a RGB podaje te same kanaly w zapisie dziesietnym, dlatego liczby wygladaja inaczej, chociaz kolor pozostaje identyczny."
+    },
+    {
+      "question": "Czy tym narzedziem da sie przeliczyc kolory z przezroczystoscia?",
+      "answer": "Ten konwerter sluzy do kolorow HEX bez informacji alpha. Jesli kolor zawiera przezroczystosc, potrzebny jest inny zapis, na przyklad RGBA, bo sam RGB nie przenosi wartosci alfa."
+    }
+  ],
+  "seo": {
+    "title": "Konwerter HEX na RGB",
+    "description": "Zamieniaj kody HEX na wartosci RGB do CSS, specyfikacji i pracy z kolorami.",
+    "keywords": [
+      "hex na rgb",
+      "konwerter kolorow",
+      "hex do rgb",
+      "wartosci rgb",
+      "kod koloru"
+    ]
+  }
 }

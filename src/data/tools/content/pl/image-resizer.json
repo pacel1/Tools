@@ -4,160 +4,93 @@
   "slug": "zmien-rozmiar-obrazow",
   "h1": "Zmiana rozmiaru obrazów",
   "title": "Zmiana rozmiaru obrazów",
-  "shortDescription": "Zmieniaj rozmiar obrazów online w przeglądarce, ustawiając własne wymiary i proporcje.",
-  "metaTitle": "Zmiana rozmiaru obrazów online | Dopasuj wymiary w przeglądarce",
-  "metaDescription": "Zmieniaj rozmiar obrazów online za darmo, z własnymi wymiarami, blokadą proporcji, podglądem i natychmiastowym pobieraniem.",
-  "intro": "Zmieniaj rozmiar obrazów online bez instalowania programu. Wgraj plik, ustaw szerokość i wysokość, zachowaj proporcje, jeśli chcesz, obejrzyj podgląd i pobierz gotowy obraz.",
-  "overview": "Ten internetowy edytor do zmiany rozmiaru obrazów pozwala szybko i precyzyjnie dopasować szerokość oraz wysokość. Sprawdza się przy zdjęciach do stron internetowych, mediów społecznościowych, e-maili i dokumentów, a wszystko działa lokalnie w przeglądarce.",
+  "shortDescription": "Ustaw dokładne wymiary obrazu dla zdjęć, zrzutów ekranu, logo i banerów.",
+  "metaTitle": "Zmiana rozmiaru obrazów",
+  "metaDescription": "Zmieniaj rozmiar obrazów do dokładnej szerokości i wysokości, zachowaj proporcje, sprawdź podgląd i pobierz gotowy plik.",
+  "intro": "Zmień rozmiar obrazu do dokładnej szerokości i wysokości albo zablokuj proporcje, żeby nie powstało zniekształcenie.",
+  "overview": "To narzędzie sprawdza się wtedy, gdy obraz ma trafić do konkretnego pola w dokumencie, ofercie, slajdzie, nagłówku maila albo układzie strony. Możesz wpisać docelowe wymiary ręcznie albo zachować oryginalne proporcje i przeskalować plik bez zmiany kształtu.\n\nPodgląd pozwala od razu ocenić, czy tekst pozostaje czytelny, twarz jest dobrze wycentrowana, a krawędzie nadal wyglądają czysto przed zapisaniem pliku. Dzięki temu łatwo dopasujesz zdjęcia, zrzuty ekranu, banery, miniatury, logo i zdjęcia produktów do konkretnego miejsca.\n\nJeśli przygotowujesz pliki do wgrywania albo układasz grafikę w projekcie, najpierw możesz je dopasować, a dopiero potem użyć dalej bez dodatkowych poprawek w edytorze.",
   "howItWorks": [
-    "Wgraj plik graficzny z urządzenia.",
-    "Podaj żądaną szerokość i wysokość.",
-    "Zablokuj proporcje, aby uniknąć zniekształceń.",
-    "Sprawdź podgląd obrazu w przeglądarce.",
-    "Pobierz plik wyjściowy, gdy będzie gotowy."
+    "Wgraj obraz z urządzenia.",
+    "Wpisz docelową szerokość i wysokość.",
+    "Zablokuj proporcje, aby uniknąć rozciągnięcia.",
+    "Sprawdź podgląd przed pobraniem.",
+    "Zapisz gotowy plik na urządzeniu."
   ],
   "useCases": [
-    "Dopasowanie zdjęć do stron internetowych i blogów.",
-    "Zmniejszanie obrazów do wysyłki e-mailem.",
-    "Przygotowanie grafik do mediów społecznościowych.",
-    "Zmiana rozmiaru zdjęć produktowych do sklepów online.",
-    "Tworzenie lżejszych obrazów do dokumentów i prezentacji."
+    {
+      "title": "Dopasowanie zdjęcia produktu do oferty",
+      "description": "Przeskaluj obraz towaru tak, aby pasował do dokładnego pola w katalogu lub na stronie sprzedaży."
+    },
+    {
+      "title": "Logo do nagłówka lub stopki",
+      "description": "Zmniejsz logo albo grafikę podpisu do stałej szerokości używanej w raporcie, szablonie lub stopce e-maila."
+    },
+    {
+      "title": "Zrzut ekranu do prezentacji",
+      "description": "Zmniejsz długi screenshot tak, aby wygodnie mieścił się w slajdzie, PDF-ie lub raporcie wewnętrznym."
+    },
+    {
+      "title": "Kwadratowy obraz profilowy",
+      "description": "Zamień portret lub grafikę marki w format kwadratowy do profilu, karty autora albo strony zespołu."
+    },
+    {
+      "title": "Baner do sekcji strony",
+      "description": "Ustaw grafikę główną lub miniaturę pod wymiary kontenera, żeby weszła do projektu bez dalszej obróbki."
+    }
   ],
   "examples": [
     {
-      "title": "Zmiana rozmiaru zdjęcia profilowego",
-      "input": "1200 × 1200 px",
-      "output": "400 × 400 px",
-      "description": "Zmniejsz obraz kwadratowy do avatara lub zdjęcia profilowego."
+      "title": "Kwadratowy avatar z portretu",
+      "input": "Oryginał: 1600 × 2000 px",
+      "output": "Po zmianie: 640 × 640 px",
+      "description": "Po ewentualnym przycięciu zmniejsz obszar użytkowy do czystego kwadratu pod profil."
     },
     {
-      "title": "Przygotowanie banera WWW",
-      "input": "2400 × 1200 px",
-      "output": "1200 × 600 px",
-      "description": "Utwórz mniejszą wersję, aby szybciej ładowała się na stronie."
+      "title": "Baner do newslettera",
+      "input": "Oryginał: 2400 × 900 px",
+      "output": "Po zmianie: 1200 × 450 px",
+      "description": "Zmniejsz szeroki baner, aby łatwiej zmieścił się w układzie wiadomości."
+    },
+    {
+      "title": "Zdjęcie produktu do katalogu",
+      "input": "Oryginał: 3000 × 3000 px",
+      "output": "Po zmianie: 1500 × 1500 px",
+      "description": "Zachowaj wyśrodkowany kadr produktu, ale sprowadź plik do praktyczniejszego rozmiaru."
     }
   ],
   "faq": [
     {
-      "question": "Czy zmiana rozmiaru odbywa się w przeglądarce?",
-      "answer": "Tak. Przetwarzanie odbywa się po stronie klienta w przeglądarce, szybko i prywatnie."
+      "question": "Czy można zmienić rozmiar bez zniekształcania obrazu?",
+      "answer": "Tak. Przed zmianą włącz blokadę proporcji. Dzięki temu obraz nie będzie rozciągnięty ani spłaszczony."
     },
     {
-      "question": "Czy mogę zachować oryginalne proporcje?",
-      "answer": "Tak. Użyj blokady proporcji, aby zmniejszać lub powiększać obraz bez rozciągania."
+      "question": "Co się stanie, jeśli podam tylko jeden wymiar?",
+      "answer": "Przy zablokowanych proporcjach brakujący wymiar zostanie wyliczony automatycznie. Bez blokady najlepiej wpisać oba parametry, aby wynik miał oczekiwany kształt."
     },
     {
-      "question": "Czy jakość obrazu zostanie obniżona?",
-      "answer": "Obraz jest przeskalowywany z zachowaniem jakości w możliwie najlepszy sposób, zależnie od pliku źródłowego i rozmiaru wyjściowego."
+      "question": "Czy pobrany plik zachowa ten sam format?",
+      "answer": "Zwykle tak, o ile format źródłowy da się poprawnie przetworzyć. Przed użyciem sprawdź rozszerzenie pobranego pliku."
     },
     {
-      "question": "Czy trzeba coś instalować?",
-      "answer": "Nie. Narzędzie działa online i nie wymaga instalacji."
+      "question": "Dlaczego mniejszy obraz bywa mniej ostry?",
+      "answer": "Podczas zmniejszania usuwa się część pikseli, więc drobne detale mogą zniknąć. Najlepiej zaczynać od najlepszego dostępnego pliku źródłowego."
+    },
+    {
+      "question": "Jaki błąd pojawia się najczęściej?",
+      "answer": "Wpisanie szerokości i wysokości bez sprawdzenia proporcji. To często kończy się rozciągniętymi zdjęciami lub zdeformowanym logo."
     }
   ],
-  "uiLabels": {
-    "copy": "Kopiuj",
-    "copied": "Skopiowano",
-    "input": "Wejście",
-    "output": "Wyjście",
-    "placeholder": "Wybierz plik obrazu lub wklej dane obrazu",
-    "indent": "Wcięcie",
-    "removeComments": "Usuń komentarze",
-    "preview": "Podgląd",
-    "source": "Źródło",
-    "sanitizedHtml": "Oczyszczony HTML",
-    "plainText": "Zwykły tekst",
-    "summary": "Podsumowanie",
-    "total": "Łącznie",
-    "links": "Linki",
-    "images": "Obrazy",
-    "errors": "Błędy",
-    "warnings": "Ostrzeżenia",
-    "valid": "Poprawne",
-    "invalid": "Niepoprawne",
-    "href": "Href",
-    "text": "Tekst",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Szerokość",
-    "height": "Wysokość",
-    "empty": "Puste",
-    "outputReady": "Wynik gotowy",
-    "cleanedHtml": "Oczyszczony HTML",
-    "formattedHtml": "Sformatowany HTML",
-    "minifiedHtml": "Zminifikowany HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Wyodrębnione obrazy",
-    "extractedLinks": "Wyodrębnione linki",
-    "validationSummary": "Podsumowanie walidacji",
-    "prettyHtml": "Czytelny HTML",
-    "encodedText": "Tekst zakodowany",
-    "file": "Plik",
-    "size": "Rozmiar",
-    "format": "Format",
-    "quality": "Jakość",
-    "colorOne": "Kolor 1",
-    "colorTwo": "Kolor 2",
-    "background": "Tło",
-    "foreground": "Pierwszy plan",
-    "angle": "Kąt",
-    "margin": "Margines",
-    "level": "Poziom",
-    "gradientType": "Typ gradientu",
-    "linear": "Liniowy",
-    "radial": "Promienisty",
-    "blur": "Rozmycie",
-    "spread": "Rozpiętość",
-    "offsetX": "Przesunięcie X",
-    "offsetY": "Przesunięcie Y",
-    "opacity": "Krycie",
-    "inset": "Wewnętrzny",
-    "cssCode": "Kod CSS",
-    "snippet": "Fragment kodu",
-    "download": "Pobierz",
-    "downloadSvg": "Pobierz SVG",
-    "downloadPng": "Pobierz PNG",
-    "downloadAll": "Pobierz wszystko",
-    "upload": "Wgraj",
-    "title": "Tytuł",
-    "description": "Opis",
-    "canonicalUrl": "Kanoniczny URL",
-    "siteName": "Nazwa witryny",
-    "ogImage": "Obraz OG",
-    "clear": "Wyczyść",
-    "generatedQr": "Podglad kodu QR",
-    "placeholderImage": "Podglad obrazu",
-    "faviconSet": "Zestaw favicon",
-    "keepAspectRatio": "Zachowaj proporcje",
-    "cropX": "Przycięcie X",
-    "cropY": "Przycięcie Y",
-    "cropWidth": "Szerokość przycięcia",
-    "cropHeight": "Wysokość przycięcia",
-    "originalSize": "Rozmiar oryginalny",
-    "outputSize": "Rozmiar wyjściowy",
-    "savedSize": "Zapisany rozmiar",
-    "result": "Wynik",
-    "base64": "Base64",
-    "mimeType": "Typ MIME",
-    "resizedImage": "Obraz po zmianie rozmiaru",
-    "compressedImage": "Obraz skompresowany",
-    "croppedImage": "Obraz przycięty",
-    "convertedImage": "Obraz przekonwertowany",
-    "decodedImage": "Obraz zdekodowany",
-    "imagePreview": "Podgląd obrazu"
-  },
   "seo": {
-    "title": "Zmiana rozmiaru obrazów online | Dopasuj wymiary w przeglądarce",
-    "description": "Zmieniaj rozmiar obrazów online za darmo, z własnymi wymiarami, blokadą proporcji, podglądem i natychmiastowym pobieraniem.",
+    "title": "Zmiana rozmiaru obrazów",
+    "description": "Zmieniaj rozmiar obrazów do dokładnej szerokości i wysokości, zachowaj proporcje, sprawdź podgląd i pobierz gotowy plik.",
     "keywords": [
       "zmiana rozmiaru obrazów",
       "zmiana rozmiaru zdjęcia",
-      "przeskalowanie obrazu",
-      "edytor obrazów online",
-      "zmień rozmiar zdjęcia",
-      "dopasuj obraz",
-      "proporcje obrazu"
+      "dopasowanie obrazu",
+      "proporcje obrazu",
+      "skalowanie zdjęcia",
+      "narzędzie do obrazów",
+      "wymiary obrazu"
     ]
   }
 }

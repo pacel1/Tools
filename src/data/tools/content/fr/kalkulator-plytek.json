@@ -4,176 +4,91 @@
   "slug": "calculateur-de-carrelage",
   "h1": "Calculateur de carrelage",
   "title": "Calculateur de carrelage pour sol et mur",
-  "shortDescription": "Calculez le nombre de carreaux et de cartons nécessaires pour un sol ou un mur, avec les découpes et la marge de perte.",
-  "metaTitle": "Calculateur de carrelage - Combien de carreaux faut-il ?",
-  "metaDescription": "Estimez le nombre de carreaux, de cartons nécessaires et la surface avec marge pour vos travaux de sol ou de mur.",
-  "intro": "Utilisez ce calculateur de carrelage pour préparer votre achat en quelques secondes. Indiquez la surface totale, la taille du carreau, le pourcentage de perte et le nombre de carreaux par carton.",
-  "overview": "Ce calculateur de carrelage estime la quantité de carreaux nécessaire pour un sol ou un mur. Il convertit les dimensions du carreau en mètres carrés, ajoute la marge pour les coupes et les casses, puis arrondit le résultat aux carreaux et cartons entiers. Vous savez ainsi exactement combien de carreaux acheter.",
+  "shortDescription": "Estimez le nombre de carreaux et de cartons nécessaires pour un sol ou un mur, avec coupes et marge de réserve.",
+  "metaTitle": "Calculateur de carrelage chantier",
+  "metaDescription": "Estimez le nombre de carreaux, de cartons et la réserve nécessaire avant d’acheter pour un sol ou un mur.",
+  "intro": "Saisissez la surface, le format du carreau, la marge de réserve et le nombre de carreaux par carton pour obtenir une quantité d’achat précise.",
+  "overview": "Ce calculateur de carrelage convertit le format du carreau en surface, ajoute la réserve que vous choisissez pour les coupes, les bords et la casse, puis arrondit le résultat aux carreaux et cartons entiers. Il est utile pour une salle de bains, une cuisine, une terrasse ou un mur avec des angles, des niches et des découpes difficiles.\n\nLe résultat indique la quantité à acheter, pas seulement la surface visible. Vous pouvez ainsi comparer facilement la demande avec le conditionnement du magasin et éviter de manquer d’un carton au moment de la pose.",
   "howItWorks": [
     "Saisissez la surface totale en mètres carrés.",
-    "Ajoutez la largeur et la hauteur du carreau en centimètres.",
-    "Définissez le pourcentage de perte pour les découpes et la réserve.",
-    "Indiquez le nombre de carreaux par carton.",
-    "Obtenez le nombre total de carreaux, de cartons et la surface avec marge."
+    "Indiquez la largeur et la hauteur du carreau en centimètres.",
+    "Définissez le pourcentage de réserve pour coupes et casse.",
+    "Ajoutez le nombre de carreaux par carton.",
+    "Lisez le total de carreaux, de cartons et la surface d’achat."
   ],
   "useCases": [
-    "Calculer les carreaux pour une salle de bains.",
-    "Planifier l’achat de carrelage pour une cuisine, un couloir ou une terrasse.",
-    "Estimer les quantités avant des travaux de rénovation.",
-    "Comparer le nombre de cartons disponibles en magasin.",
-    "Prévoir une marge pour une pose en diagonale ou des coupes complexes."
+    {
+      "title": "Salle de bains avec découpes",
+      "description": "Calculez les carreaux pour la douche, le meuble vasque et les habillages de tuyaux, où les coupes sont nombreuses."
+    },
+    {
+      "title": "Cuisine avec renfoncement",
+      "description": "Anticipez l’achat quand le sol comporte une niche, un passage de porte ou des zones fixes à contourner."
+    },
+    {
+      "title": "Terrasse extérieure",
+      "description": "Prévoyez une marge supplémentaire pour les bords, les angles et les carreaux susceptibles d’être abîmés."
+    },
+    {
+      "title": "Contrôle des cartons",
+      "description": "Vérifiez le nombre de cartons nécessaires avant commande ou passage en magasin."
+    },
+    {
+      "title": "Pose en diagonale",
+      "description": "Augmentez la réserve si le calepinage crée davantage de chutes et de petites pièces."
+    }
   ],
   "examples": [
     {
-      "title": "Exemple de calcul",
-      "input": "Surface : 12 m², carreau : 30 x 60 cm, perte : 10 %, carreaux par carton : 8",
-      "output": "Surface avec marge : 13,2 m². Le nombre de carreaux et de cartons est arrondi à l’unité supérieure.",
-      "description": "Pratique pour estimer rapidement les achats."
+      "title": "Estimation pour mur de salle de bains",
+      "input": "Surface : 18 m², carreau : 25 x 40 cm, perte : 12 %, carreaux par carton : 10",
+      "output": "Surface avec marge : 20,16 m². Résultat arrondi : 202 carreaux et 21 cartons.",
+      "description": "Adapté à un mur avec plusieurs coupes."
     },
     {
-      "title": "Formule",
-      "input": "Surface du carreau = largeur × hauteur / 10 000. Surface avec marge = surface × (1 + perte/100). Carreaux = ceil(surface avec marge / surface du carreau). Cartons = ceil(carreaux / carreaux par carton).",
-      "output": "Tous les résultats finaux sont arrondis à l’unité supérieure.",
-      "description": "Logique de calcul claire pour préparer l’achat."
+      "title": "Sol de cuisine en grand format",
+      "input": "Surface : 9,5 m², carreau : 60 x 60 cm, perte : 8 %, carreaux par carton : 4",
+      "output": "Surface avec marge : 10,26 m². Résultat arrondi : 29 carreaux et 8 cartons.",
+      "description": "Montre l’effet du grand format sur le nombre de cartons."
+    },
+    {
+      "title": "Terrasse avec petits carreaux",
+      "input": "Surface : 27,4 m², carreau : 20 x 20 cm, perte : 15 %, carreaux par carton : 25",
+      "output": "Surface avec marge : 31,51 m². Résultat arrondi : 788 carreaux et 32 cartons.",
+      "description": "Illustre l’impact d’une réserve plus élevée."
     }
   ],
   "faq": [
     {
-      "question": "Comment calculer combien de carreaux il me faut ?",
-      "answer": "Mesurez la surface en m², convertissez la taille du carreau en m², ajoutez la perte, puis divisez par la surface d’un carreau et arrondissez au supérieur."
+      "question": "Dois-je saisir toute la pièce ou seulement la partie carrelée ?",
+      "answer": "Saisissez uniquement la surface réellement carrelée. Les zones non couvertes n’ont pas à être ajoutées."
     },
     {
-      "question": "Pourquoi faut-il ajouter une marge de perte ?",
-      "answer": "La marge couvre les découpes, la casse, les ajustements de motif et d’éventuelles erreurs de pose."
+      "question": "Pourquoi le nombre de cartons peut-il sembler élevé ?",
+      "answer": "Parce que le résultat est toujours arrondi aux cartons entiers. Dès qu’un carton manque, il faut acheter l’unité complète."
     },
     {
-      "question": "Ce calculateur fonctionne-t-il pour les murs et les sols ?",
-      "answer": "Oui. Il convient à toute surface carrelée, à condition de connaître la surface totale et la taille du carreau."
+      "question": "Puis-je entrer les dimensions en millimètres ?",
+      "answer": "Oui, mais seulement si vous convertissez tout dans la même unité avant de calculer. Mélanger mm et cm fausse la surface d’un carreau."
     },
     {
-      "question": "Faut-il arrondir le nombre de carreaux ?",
-      "answer": "Oui. Arrondissez toujours aux carreaux et cartons entiers pour éviter toute rupture de stock."
+      "question": "Quelle réserve prévoir pour une pose simple ?",
+      "answer": "Pour une pose droite, une réserve modérée suffit souvent. En diagonale ou avec beaucoup de découpes, il vaut mieux l’augmenter."
+    },
+    {
+      "question": "Le résultat reste-t-il utile si le carrelage est vendu au mètre carré ?",
+      "answer": "Oui. La surface avec réserve reste la donnée la plus pratique pour comparer avec l’indication de couverture du paquet ou du vendeur."
     }
   ],
-  "uiLabels": {
-    "copy": "Copier",
-    "copied": "Copié",
-    "input": "Entrée",
-    "output": "Sortie",
-    "placeholder": "Saisissez une valeur",
-    "indent": "Retrait",
-    "removeComments": "Supprimer les commentaires",
-    "preview": "Aperçu",
-    "source": "Source",
-    "sanitizedHtml": "HTML nettoyé",
-    "plainText": "Texte brut",
-    "summary": "Résumé",
-    "total": "Total",
-    "links": "Liens",
-    "images": "Images",
-    "errors": "Erreurs",
-    "warnings": "Avertissements",
-    "valid": "Valide",
-    "invalid": "Invalide",
-    "href": "Href",
-    "text": "Texte",
-    "rel": "Rel",
-    "target": "Cible",
-    "alt": "Alt",
-    "width": "Largeur",
-    "height": "Hauteur",
-    "empty": "Vide",
-    "outputReady": "Résultat prêt",
-    "cleanedHtml": "HTML nettoyé",
-    "formattedHtml": "HTML formaté",
-    "minifiedHtml": "HTML minifié",
-    "markdown": "Markdown",
-    "extractedImages": "Images extraites",
-    "extractedLinks": "Liens extraits",
-    "validationSummary": "Résumé de validation",
-    "prettyHtml": "HTML lisible",
-    "encodedText": "Texte encodé",
-    "file": "Fichier",
-    "size": "Taille",
-    "format": "Format",
-    "quality": "Qualité",
-    "colorOne": "Couleur 1",
-    "colorTwo": "Couleur 2",
-    "background": "Arrière-plan",
-    "foreground": "Premier plan",
-    "angle": "Angle",
-    "margin": "Marge",
-    "level": "Niveau",
-    "gradientType": "Type de dégradé",
-    "linear": "Linéaire",
-    "radial": "Radial",
-    "blur": "Flou",
-    "spread": "Diffusion",
-    "offsetX": "Décalage X",
-    "offsetY": "Décalage Y",
-    "opacity": "Opacité",
-    "inset": "Interne",
-    "cssCode": "Code CSS",
-    "snippet": "Extrait",
-    "download": "Télécharger",
-    "downloadSvg": "Télécharger SVG",
-    "downloadPng": "Télécharger PNG",
-    "downloadAll": "Tout télécharger",
-    "upload": "Importer",
-    "title": "Titre",
-    "description": "Description",
-    "canonicalUrl": "URL canonique",
-    "siteName": "Nom du site",
-    "ogImage": "Image OG",
-    "clear": "Effacer",
-    "generatedQr": "QR généré",
-    "placeholderImage": "Image de remplacement",
-    "faviconSet": "Jeu de favicon",
-    "keepAspectRatio": "Conserver le ratio",
-    "cropX": "Recadrage X",
-    "cropY": "Recadrage Y",
-    "cropWidth": "Largeur du recadrage",
-    "cropHeight": "Hauteur du recadrage",
-    "originalSize": "Taille d'origine",
-    "outputSize": "Taille de sortie",
-    "savedSize": "Taille économisée",
-    "result": "Résultat",
-    "base64": "Base64",
-    "mimeType": "Type MIME",
-    "resizedImage": "Image redimensionnée",
-    "compressedImage": "Image compressée",
-    "croppedImage": "Image recadrée",
-    "convertedImage": "Image convertie",
-    "decodedImage": "Image décodée",
-    "imagePreview": "Aperçu de l'image",
-    "camera": "Caméra",
-    "lens": "Objectif",
-    "dateTaken": "Date de prise de vue",
-    "resolution": "Résolution",
-    "fileSize": "Taille du fichier",
-    "iso": "ISO",
-    "exposure": "Exposition",
-    "aperture": "Ouverture",
-    "focalLength": "Distance focale",
-    "flash": "Flash",
-    "orientation": "Orientation",
-    "latitude": "Latitude",
-    "longitude": "Longitude",
-    "openMap": "Ouvrir la carte",
-    "rawMetadata": "Métadonnées brutes",
-    "noMetadataFound": "Aucune métadonnée trouvée",
-    "gpsLocation": "Position GPS",
-    "metadataSummary": "Résumé des métadonnées"
-  },
   "seo": {
-    "title": "Calculateur de carrelage - Combien de carreaux faut-il ?",
-    "description": "Calculez le nombre de carreaux et de cartons à acheter pour un sol ou un mur, avec marge pour les coupes et les pertes.",
+    "title": "Calculateur de carrelage chantier",
+    "description": "Estimez le nombre de carreaux, de cartons et la réserve nécessaire avant d’acheter pour un sol ou un mur.",
     "keywords": [
       "calculateur de carrelage",
-      "combien de carreaux faut-il",
       "carreaux par carton",
-      "calculateur carrelage sol",
-      "calculateur carrelage mur",
+      "combien de carreaux faut-il",
+      "carrelage sol",
+      "carrelage mur",
       "marge carrelage"
     ]
   }

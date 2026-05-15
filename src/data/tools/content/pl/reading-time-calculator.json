@@ -4,43 +4,80 @@
   "slug": "kalkulator-czasu-czytania",
   "h1": "Kalkulator czasu czytania",
   "title": "Kalkulator czasu czytania",
-  "shortDescription": "Osządź czas potrzebny na przeczytanie tekstu na podstawie liczby słów — natychmiast, z szybkim wynikiem, prostym interfejsem i praktycznymi przykładami.",
-  "overview": "Osządź czas czytania na podstawie liczby słów od razu. Ta strona daje szybką odpowiedź dzięki praktycznemu narzędziu i prostemu procesowi wyświetlania wyniku. To rozwiązanie dla osób szukających darmowej odpowiedzi online, błyskawicznych wyników w przeglądarce i praktycznych treści long-tail związanych z narzędziami tekstowymi.",
+  "shortDescription": "Sprawdź, ile zajmie przeczytanie tekstu na podstawie liczby słów.",
+  "metaTitle": "Kalkulator czasu czytania",
+  "metaDescription": "Sprawdź czas czytania tekstu na podstawie liczby słów i poznaj przybliżoną liczbę minut.",
+  "intro": "Wklej tekst albo podaj liczbę słów, a narzędzie poda szacowany czas czytania w minutach i sekundach.",
+  "overview": "Ten kalkulator pomaga szybko oszacować, ile czasu zajmie przeczytanie tekstu przed publikacją, wysłaniem lub korektą. Zamienia liczbę słów na czytelny wynik czasowy, dzięki czemu łatwiej ocenisz, czy treść jest zwięzła, rozbudowana czy po prostu dopasowana do celu.\n\nWynik opiera się na przeciętnym tempie czytania, więc daje praktyczne przybliżenie, a nie pomiar co do sekundy. Sprawdza się przy planowaniu artykułów, newsletterów, materiałów szkoleniowych i dokumentów, w których długość czytania ma znaczenie.",
   "howItWorks": [
-    "Wpisz wymagane dane lub tekst w formularzu.",
-    "Obliczenie, konwersja lub przekształcenie odbywa się natychmiast w przeglądarce.",
-    "Sprawdź wynik i skorzystaj z powiązanych narzędzi, jeśli potrzebujesz kolejnego kroku."
+    "Wklej tekst lub wpisz liczbę słów.",
+    "Narzędzie oblicza czas czytania według standardowego tempa.",
+    "Odczytaj wynik w minutach i sekundach i porównaj go z docelową długością."
+  ],
+  "useCases": [
+    {
+      "title": "Planowanie artykułu",
+      "description": "Sprawdź, czy szkic ma tempo krótkiego wpisu, średniego artykułu czy dłuższego tekstu przed publikacją."
+    },
+    {
+      "title": "Newsletter firmowy",
+      "description": "Oszacuj, ile czasu odbiorca potrzebuje na przeczytanie wiadomości i skróć treść, jeśli jest zbyt gęsta."
+    },
+    {
+      "title": "Notatki do zajęć",
+      "description": "Ustal, czy materiał dla uczniów lub uczestników da się przeczytać szybko, czy wymaga skrócenia."
+    },
+    {
+      "title": "Oferty i raporty",
+      "description": "Z góry pokaż orientacyjny czas lektury dokumentu, aby łatwiej ustawić oczekiwania odbiorcy."
+    }
   ],
   "examples": [
     {
-      "title": "Przykład 1",
-      "input": "Szkic wpisu na bloga",
-      "output": "Szacowany czas czytania",
-      "description": "Realistyczny przykład kalkulatora czasu czytania dla codziennego zapytania."
+      "title": "Krótki tekst",
+      "input": "420 słów",
+      "output": "Około 2 minuty",
+      "description": "Zwięzły tekst, wiadomość lub notatka do szybkiego przeczytania."
     },
     {
-      "title": "Przykład 2",
-      "input": "Szkic wpisu na bloga",
-      "output": "Szacowany czas czytania",
-      "description": "Kolejny praktyczny przypadek użycia dla organicznego ruchu z długiego ogona."
+      "title": "Średni szkic wpisu",
+      "input": "1150 słów",
+      "output": "Około 5 minut",
+      "description": "Typowa długość artykułu czytanego w kilka minut."
+    },
+    {
+      "title": "Długi materiał",
+      "input": "2700 słów",
+      "output": "Około 12 minut",
+      "description": "Rozbudowany tekst wymagający więcej czasu i skupienia."
     }
   ],
   "faq": [
     {
-      "question": "Jak dokładne jest to narzędzie?",
-      "answer": "Wynik jest obliczany bezpośrednio na podstawie wzoru lub logiki po stronie przeglądarki używanej przez to narzędzie."
+      "question": "Jakie tempo czytania przyjmuje kalkulator?",
+      "answer": "Narzędzie korzysta ze standardowego przeciętnego tempa czytania. Rzeczywisty czas może się różnić zależnie od trudności tekstu."
     },
     {
-      "question": "Czy mogę używać tego narzędzia na telefonie?",
-      "answer": "Tak. Strona działa na komputerach i urządzeniach mobilnych, oferując prosty układ pola wejściowego i wyniku."
+      "question": "Czy taki sam wynik oznacza taki sam czas czytania dla każdego tekstu?",
+      "answer": "Nie. Nagłówki, długie zdania, specjalistyczne terminy, listy i fragmenty kodu mogą wydłużyć lekturę mimo tej samej liczby słów."
+    },
+    {
+      "question": "Czy mam liczyć nagłówki, podpisy i listy punktowane?",
+      "answer": "Jeśli są częścią treści, warto je uwzględnić. Pominięcie ich zaniża szacowany czas czytania."
+    },
+    {
+      "question": "Czy to to samo co czas mówienia?",
+      "answer": "Nie. Czytanie zwykle trwa inaczej niż prezentacja ustna, bo tempo lektury i mówienia nie jest takie samo."
     }
   ],
   "seo": {
     "title": "Kalkulator czasu czytania",
-    "description": "Osządź czas czytania na podstawie liczby słów od razu. Darmowy kalkulator czasu czytania online z natychmiastowym wynikiem.",
+    "description": "Sprawdź czas czytania tekstu na podstawie liczby słów i poznaj przybliżoną liczbę minut.",
     "keywords": [
       "kalkulator czasu czytania",
-      "narzedzie text-tools"
+      "czas czytania tekstu",
+      "szacowanie czasu czytania",
+      "liczba słów a czas czytania"
     ]
   }
 }

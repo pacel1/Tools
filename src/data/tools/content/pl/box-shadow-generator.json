@@ -4,157 +4,87 @@
   "slug": "generator-cienia-box-shadow",
   "h1": "Generator cienia Box Shadow",
   "title": "Generator cienia Box Shadow",
-  "shortDescription": "Twórz cienie CSS z przesunięciem, rozmyciem, rozciągnięciem, przezroczystością i gotowym kodem do skopiowania.",
+  "shortDescription": "Twórz cienie CSS z dokładnym przesunięciem, rozmyciem, rozciągnięciem, przezroczystością, inset i gotowym kodem.",
   "metaTitle": "Generator cienia Box Shadow",
-  "metaDescription": "Generuj własne cienie CSS z podglądem na żywo, rozmyciem, rozciągnięciem, przezroczystością i gotowym kodem.",
-  "intro": "Szybko twórz czysty, profesjonalny cień box-shadow w CSS. Ustaw przesunięcie, rozmycie, rozciągnięcie, kolor i przezroczystość, a potem skopiuj wynik do strony lub aplikacji.",
-  "overview": "Ten generator cienia box-shadow pomaga tworzyć precyzyjne cienie CSS z podglądem na żywo i natychmiastowym kodem. Sprawdza się przy przyciskach, kartach, oknach dialogowych, obrazach i innych elementach interfejsu, które wymagają głębi i wyraźnego oddzielenia.",
+  "metaDescription": "Twórz cienie CSS z podglądem, rozmyciem, rozciągnięciem, przezroczystością, inset i kodem do skopiowania.",
+  "intro": "Wygeneruj wartość CSS box-shadow, ustaw przesunięcie, rozmycie, rozciągnięcie, kolor i przezroczystość, a potem skopiuj gotową regułę.",
+  "overview": "To narzędzie tworzy wartości box-shadow, które można wkleić do CSS bez ręcznego składania wszystkich parametrów. Masz pełną kontrolę nad przesunięciem poziomym i pionowym, promieniem rozmycia, rozciągnięciem, kolorem cienia, przezroczystością oraz trybem inset, dzięki czemu efekt pasuje do konkretnego elementu.\n\nSprawdza się wtedy, gdy cień ma wyglądać świadomie, a nie przypadkowo. Wynik możesz zastosować na kartach, menu, oknach dialogowych, przypiętych belkach, polach formularzy i kontenerach obrazów, a podgląd ułatwia porównanie subtelnych i mocniejszych wersji przed wdrożeniem.",
   "howItWorks": [
-    "Ustaw poziome i pionowe przesunięcie cienia.",
-    "Dopasuj rozmycie, rozciągnięcie i przezroczystość do efektu, jaki chcesz uzyskać.",
-    "Wybierz kolor cienia i opcjonalnie tryb inset.",
-    "Obserwuj podgląd na żywo podczas edycji.",
-    "Skopiuj wygenerowany kod CSS i wklej go do arkusza stylów."
+    "Ustaw poziome i pionowe przesunięcie, aby umieścić cień we właściwym miejscu.",
+    "Dopasuj rozmycie i rozciągnięcie, by nadać cieniowi miękkość i zasięg.",
+    "Wybierz kolor cienia oraz przezroczystość zgodną z tłem i powierzchnią.",
+    "Włącz inset, jeśli potrzebujesz cienia wewnątrz elementu.",
+    "Skopiuj wygenerowany kod CSS i zastosuj go w wybranym selektorze."
   ],
   "useCases": [
-    "Projektowanie cieni dla kart, przycisków i modali.",
-    "Tworzenie delikatnego efektu uniesienia w dashboardach i landing page.",
-    "Generowanie cieni inset dla pól formularzy i paneli.",
-    "Szybkie testowanie różnych stylów cienia bez ręcznego poprawiania CSS."
+    {
+      "title": "Głębia kart produktowych",
+      "description": "Utwórz miękki cień dla kart katalogu, aby każdy kafel wyraźnie oddzielał się od tła."
+    },
+    {
+      "title": "Stan wciśnięcia przycisku",
+      "description": "Wygeneruj ciaśniejszy cień z mniejszym rozmyciem i ujemnym rozciągnięciem, aby przycisk wyglądał na naciskany."
+    },
+    {
+      "title": "Wewnętrzne cienie dla pól formularza",
+      "description": "Zbuduj inset dla inputów, wyszukiwarek i paneli, gdy potrzebny jest wklęsły efekt."
+    },
+    {
+      "title": "Unoszony panel dla dropdownów",
+      "description": "Dopasuj większe rozmycie i umiarkowane przesunięcie dla podpowiedzi, list i pływających menu."
+    }
   ],
   "examples": [
     {
-      "title": "Miękki cień karty",
-      "input": "0 8px 24px 0 rgba(0,0,0,0.12)",
-      "output": "box-shadow: 0 8px 24px 0 rgba(0,0,0,0.12);",
-      "description": "Delikatny cień do kart i bloków treści."
+      "title": "Miękki cień neutralny",
+      "input": "x: 0, y: 10px, blur: 30px, spread: -8px, color: rgba(15, 23, 42, 0.14)",
+      "output": "box-shadow: 0 10px 30px -8px rgba(15, 23, 42, 0.14);",
+      "description": "Delikatny cień do jasnych kart na lekkim tle."
     },
     {
-      "title": "Mocniejszy cień przycisku",
-      "input": "0 4px 12px -2px rgba(0,0,0,0.25)",
-      "output": "box-shadow: 0 4px 12px -2px rgba(0,0,0,0.25);",
-      "description": "Bardziej wyrazisty cień dla elementów interaktywnych."
+      "title": "Inset dla zagłębionego pola",
+      "input": "x: 0, y: 2px, blur: 6px, spread: 0, color: rgba(0, 0, 0, 0.18), inset: true",
+      "output": "box-shadow: inset 0 2px 6px 0 rgba(0, 0, 0, 0.18);",
+      "description": "Efekt wgłębienia dla pola tekstowego lub sekcji."
+    },
+    {
+      "title": "Kompaktowy cień hover",
+      "input": "x: 0, y: 6px, blur: 16px, spread: -4px, color: rgba(37, 99, 235, 0.22)",
+      "output": "box-shadow: 0 6px 16px -4px rgba(37, 99, 235, 0.22);",
+      "description": "Barwiony cień do kafelków akcji po najechaniu."
     }
   ],
   "faq": [
     {
-      "question": "Jaką właściwość CSS generuje to narzędzie?",
-      "answer": "Generuje wartości box-shadow, które możesz od razu użyć w CSS."
+      "question": "Co zmienia wartość spread w cieniu?",
+      "answer": "Spread zmienia rozmiar cienia przed dodaniem rozmycia. Wartości ujemne go zmniejszają, dodatnie zwiększają zasięg."
     },
     {
-      "question": "Czy mogę tworzyć cienie inset?",
-      "answer": "Tak. Włącz tryb inset, aby uzyskać cień wewnętrzny."
+      "question": "Dlaczego cień na ciemnym tle wygląda zbyt ostro?",
+      "answer": "Najczęściej kolor ma zbyt wysoką przezroczystość lub rozmycie jest za małe. Zmniejsz krycie i zwiększ blur, żeby krawędź była łagodniejsza."
     },
     {
-      "question": "Czy wynik jest gotowy do skopiowania?",
-      "answer": "Tak. Wygenerowany kod CSS jest przygotowany do szybkiego kopiowania i wklejania."
+      "question": "Kiedy używać inset zamiast zwykłego cienia?",
+      "answer": "Inset wybierz wtedy, gdy powierzchnia ma wyglądać na wciśniętą, na przykład w polach formularzy, zagłębionych panelach lub sekcjach pomocniczych."
     },
     {
-      "question": "Czy obsługuje kilka cieni naraz?",
-      "answer": "Tak, wartości możesz też połączyć ręcznie, jeśli potrzebujesz wielu warstw cienia."
+      "question": "Czy można tu zbudować kilka warstw cienia?",
+      "answer": "To narzędzie generuje jedną regułę naraz. Jeśli potrzebujesz kilku warstw, połącz osobne wartości box-shadow ręcznie w CSS."
+    },
+    {
+      "question": "Dlaczego przy dużym ujemnym spread cień znika?",
+      "answer": "Duże ujemne rozciągnięcie może zbyt mocno skurczyć cień, zwłaszcza przy małym blur. Zmniejsz wartość ujemną albo zwiększ rozmycie."
     }
   ],
-  "uiLabels": {
-    "copy": "Kopiuj",
-    "copied": "Skopiowano",
-    "input": "Wejście",
-    "output": "Wyjście",
-    "placeholder": "Wpisz wartości",
-    "indent": "Wcięcie",
-    "removeComments": "Usuń komentarze",
-    "preview": "Podgląd",
-    "source": "Źródło",
-    "sanitizedHtml": "Oczyszczony HTML",
-    "plainText": "Zwykły tekst",
-    "summary": "Podsumowanie",
-    "total": "Razem",
-    "links": "Linki",
-    "images": "Obrazy",
-    "errors": "Błędy",
-    "warnings": "Ostrzeżenia",
-    "valid": "Poprawne",
-    "invalid": "Niepoprawne",
-    "href": "Href",
-    "text": "Tekst",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Szerokość",
-    "height": "Wysokość",
-    "empty": "Puste",
-    "outputReady": "Wynik gotowy",
-    "cleanedHtml": "Oczyszczony HTML",
-    "formattedHtml": "Sformatowany HTML",
-    "minifiedHtml": "Zminifikowany HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Wyodrębnione obrazy",
-    "extractedLinks": "Wyodrębnione linki",
-    "validationSummary": "Podsumowanie walidacji",
-    "prettyHtml": "Czytelny HTML",
-    "encodedText": "Tekst zakodowany",
-    "file": "Plik",
-    "size": "Rozmiar",
-    "format": "Format",
-    "quality": "Jakość",
-    "colorOne": "Kolor cienia",
-    "colorTwo": "Drugi kolor",
-    "background": "Tło",
-    "foreground": "Pierwszy plan",
-    "angle": "Kąt",
-    "margin": "Margines",
-    "level": "Poziom",
-    "gradientType": "Typ gradientu",
-    "linear": "Liniowy",
-    "radial": "Radialny",
-    "blur": "Rozmycie",
-    "spread": "Rozciągnięcie",
-    "offsetX": "Przesunięcie X",
-    "offsetY": "Przesunięcie Y",
-    "opacity": "Przezroczystość",
-    "inset": "Inset",
-    "cssCode": "Kod CSS",
-    "snippet": "Fragment kodu",
-    "download": "Pobierz",
-    "downloadSvg": "Pobierz SVG",
-    "downloadPng": "Pobierz PNG",
-    "downloadAll": "Pobierz wszystko",
-    "upload": "Prześlij",
-    "title": "Tytuł",
-    "description": "Opis",
-    "canonicalUrl": "Adres kanoniczny",
-    "siteName": "Nazwa witryny",
-    "ogImage": "Obraz OG",
-    "clear": "Wyczyść",
-    "generatedQr": "Podglad kodu QR",
-    "placeholderImage": "Podglad obrazu",
-    "faviconSet": "Zestaw favicon",
-    "keepAspectRatio": "Zachowaj proporcje",
-    "cropX": "Kadrowanie X",
-    "cropY": "Kadrowanie Y",
-    "cropWidth": "Szerokość kadru",
-    "cropHeight": "Wysokość kadru",
-    "originalSize": "Rozmiar oryginału",
-    "outputSize": "Rozmiar wyjściowy",
-    "savedSize": "Zaoszczędzony rozmiar",
-    "result": "Wynik",
-    "base64": "Base64",
-    "mimeType": "Typ MIME",
-    "resizedImage": "Obraz po zmianie rozmiaru",
-    "compressedImage": "Obraz skompresowany",
-    "croppedImage": "Obraz wykadrowany",
-    "convertedImage": "Obraz przekonwertowany",
-    "decodedImage": "Obraz zdekodowany",
-    "imagePreview": "Podgląd obrazu"
-  },
   "seo": {
     "title": "Generator cienia Box Shadow",
-    "description": "Generuj własne cienie CSS z podglądem na żywo, rozmyciem, rozciągnięciem, przezroczystością i gotowym kodem.",
+    "description": "Twórz cienie CSS z podglądem, rozmyciem, rozciągnięciem, przezroczystością, inset i kodem do skopiowania.",
     "keywords": [
       "generator cienia box shadow",
-      "cien css",
-      "generator cieni",
       "box-shadow css",
-      "generator css"
+      "generator cieni css",
+      "cień inset css",
+      "box shadow"
     ]
   }
 }

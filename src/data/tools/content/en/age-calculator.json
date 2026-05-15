@@ -4,42 +4,84 @@
   "slug": "age-calculator",
   "h1": "Age Calculator",
   "title": "Age Calculator",
-  "shortDescription": "Calculate exact age from date of birth with fast results, simple inputs and practical examples.",
-  "overview": "Calculate exact age from date of birth. Use this tool to get a clear result quickly from simple input on the same page. It is useful for everyday checks, comparisons and small tasks when you need a fast online answer.",
+  "shortDescription": "Calculate age from a birth date in years, months, and days.",
+  "metaTitle": "Precise Age Calculator",
+  "metaDescription": "Enter a birth date and reference date to get age split into years, months, and days.",
+  "intro": "Get a precise age result from a birth date and a chosen reference date in years, months, and days.",
+  "overview": "Use this tool when you need an age tied to a specific date, not just a rough year count. It works by comparing the birth date with a reference date and returning the completed years first, then the remaining months and days.\n\nThat makes it useful for age thresholds, application deadlines, enrollment cutoffs, eligibility dates, and checking whether an event date falls before or after a birthday. It also helps when records use a calendar-based age rather than a simple difference in years.\n\nIf you compare two dates instead of a birth date and a reference date, the result shows the exact calendar interval between them in the same years, months, and days format. That is helpful for timelines, case notes, and date validation.",
   "howItWorks": [
-    "Enter the required value or text into the form.",
-    "The conversion, calculation or transformation runs instantly in the browser.",
-    "Review the result and continue with related tools if you need another step."
+    "Enter the birth date.",
+    "Select the reference date you want to measure against.",
+    "Read the result as completed years plus the remaining months and days."
+  ],
+  "useCases": [
+    {
+      "title": "Eligibility threshold check",
+      "description": "Confirm whether a person has already reached a required age on a specific date such as 13, 16, 18, or 21."
+    },
+    {
+      "title": "Birthday planning",
+      "description": "See the exact age someone will be on a future celebration, trip, or registration date."
+    },
+    {
+      "title": "Timeline gap measurement",
+      "description": "Measure the calendar interval between two dated events in years, months, and days."
+    },
+    {
+      "title": "Record review",
+      "description": "Compare an entered age with a stored birth date to spot mismatches in forms, files, or intake records."
+    }
   ],
   "examples": [
     {
-      "title": "Common use case",
-      "input": "1990-05-15",
-      "output": "Age in years",
-      "description": "Shows a common use case with a clear input and result."
+      "title": "Age on a future date",
+      "input": "Birth date: 1989-11-04; reference date: 2027-02-18",
+      "output": "37 years, 3 months, 14 days",
+      "description": "Shows the exact age on the selected future date."
     },
     {
-      "title": "Another quick example",
-      "input": "1990-05-15",
-      "output": "Age in years",
-      "description": "Useful for quick checks, comparisons or repeat tasks."
+      "title": "Age on an anniversary date",
+      "input": "Birth date: 2008-06-30; reference date: 2026-06-30",
+      "output": "18 years, 0 months, 0 days",
+      "description": "Useful when the result must land exactly on a birthday."
+    },
+    {
+      "title": "Interval between two dates",
+      "input": "Date A: 2012-09-15; Date B: 2019-01-03",
+      "output": "6 years, 3 months, 19 days",
+      "description": "Returns the elapsed calendar time between two dates."
     }
   ],
   "faq": [
     {
-      "question": "How accurate is this tool?",
-      "answer": "The result is based on the input you provide and the calculation or transformation shown on the page."
+      "question": "Why can the year count change when the reference date changes by one day?",
+      "answer": "Because the result depends on whether the birthday has already occurred. Crossing that boundary changes the number of completed years."
     },
     {
-      "question": "Can I use this tool on mobile?",
-      "answer": "Yes. The page works on desktop and mobile screens with a simple input and result layout."
+      "question": "How is a February 29 birthday handled?",
+      "answer": "The tool follows calendar rules for the chosen reference year. In non-leap years, the completed-age result can differ from informal celebration dates."
+    },
+    {
+      "question": "Can I use two dates that are not a birth date and a reference date?",
+      "answer": "Yes. When you provide two dates, the tool treats them as a start and end point and shows the interval between them."
+    },
+    {
+      "question": "What does the months and days part mean?",
+      "answer": "It is the remaining calendar time after the completed years are counted. It does not mean a fixed number of days per month."
+    },
+    {
+      "question": "What is the most common mistake when checking age for a deadline?",
+      "answer": "People often look only at the year difference and ignore whether the birthday has passed on the exact deadline date. That can shift the result by one full year."
     }
   ],
   "seo": {
-    "title": "Age Calculator",
-    "description": "Calculate exact age from date of birth. Free online age calculator with instant results.",
+    "title": "Precise Age Calculator",
+    "description": "Enter a birth date and reference date to get age split into years, months, and days.",
     "keywords": [
-      "age calculator"
+      "age calculator",
+      "birth date age",
+      "years months days",
+      "calendar age"
     ]
   }
 }

@@ -4,44 +4,80 @@
   "slug": "bmi-rechner",
   "h1": "BMI-Rechner",
   "title": "BMI-Rechner",
-  "shortDescription": "Berechne den Body-Mass-Index aus Körpergröße und Gewicht mit schnellen Ergebnissen, einfachen Eingaben und praktischen Beispielen.",
-  "overview": "Berechne den Body-Mass-Index aus Körpergröße und Gewicht. Diese Seite liefert mit einem praktischen Online-Tool und einem einfachen Ergebnisablauf schnell eine Antwort. Sie richtet sich an Nutzer, die eine kostenlose Online-Antwort, sofortige Ergebnisse im Browser und praxisnahe Long-Tail-Inhalte suchen.",
+  "shortDescription": "Größe und Gewicht eingeben, BMI sofort sehen und den Wert mit Kategorie lesen.",
+  "metaTitle": "BMI-Rechner für Werte",
+  "metaDescription": "BMI aus Größe und Gewicht berechnen mit klaren Einheiten, Dezimalwert und verständlicher Kategorie.",
+  "intro": "Gib Größe und Gewicht ein, und der BMI erscheint sofort als Dezimalwert plus Kategorie.",
+  "overview": "Dieser BMI-Rechner verwendet die Standardformel für den Body-Mass-Index und macht aus Größe und Gewicht einen einzelnen Vergleichswert. Er ist hilfreich, wenn du Messungen über einen Zeitraum vergleichen oder einen angegebenen BMI nachrechnen möchtest.\n\nBMI ist ein Orientierungswert, keine Diagnose. Er unterscheidet nicht zwischen Muskelmasse, Fett, Knochenbau oder Wasser im Körper. Deshalb sollte das Ergebnis immer zusammen mit Körperbau und Messkontext betrachtet werden.\n\nFür ein brauchbares Ergebnis musst du dieselben Einheiten verwenden und echte Messwerte eingeben, keine Schätzungen. Wirkt der Wert unplausibel, liegt das meist an verwech­selten Einheiten, etwa Pfund statt Kilogramm oder Fuß und Zoll statt Zentimetern.",
   "howItWorks": [
-    "Gib den erforderlichen Wert oder Text in das Formular ein.",
-    "Die Umrechnung, Berechnung oder Transformation läuft sofort im Browser.",
-    "Prüfe das Ergebnis und nutze bei Bedarf verwandte Tools für den nächsten Schritt."
+    "Wähle das Einheitensystem, das zu deinen Angaben passt.",
+    "Trage Größe und Gewicht in demselben System ein.",
+    "Lies den BMI-Wert und die angezeigte Kategorie ab.",
+    "Wenn das Ergebnis seltsam wirkt, prüfe die Einheiten und gib die Werte erneut ein."
+  ],
+  "useCases": [
+    {
+      "title": "Messung nach dem Wiegen festhalten",
+      "description": "Speichere den BMI zusammen mit einem datierten Gewicht aus Untersuchung, Training oder persönlicher Aufzeichnung."
+    },
+    {
+      "title": "Zwei Messzeitpunkte vergleichen",
+      "description": "Berechne den BMI für zwei Termine, um Veränderungen nach Ernährung, Training oder Pause zu sehen."
+    },
+    {
+      "title": "Einen angegebenen Wert prüfen",
+      "description": "Rechne BMI aus veröffentlichter Größe und Gewicht nach, um eine Zahl in Bericht oder Profil zu kontrollieren."
+    }
   ],
   "examples": [
     {
-      "title": "Beispiel 1",
-      "input": "70 kg und 175 cm",
-      "output": "22,86",
-      "description": "Ein realistisches BMI-Rechner-Beispiel für eine alltägliche Suchanfrage."
+      "title": "Metrischer Erwachseneneintrag",
+      "input": "Größe: 175 cm, Gewicht: 70 kg",
+      "output": "BMI = 22,9",
+      "description": "Ein typischer metrischer Fall mit einem Wert im mittleren Bereich."
     },
     {
-      "title": "Beispiel 2",
-      "input": "70 kg und 175 cm",
-      "output": "22,86",
-      "description": "Ein weiteres praktisches Anwendungsbeispiel für organischen Long-Tail-Traffic."
+      "title": "Gleiche Größe, höheres Gewicht",
+      "input": "Größe: 160 cm, Gewicht: 82 kg",
+      "output": "BMI = 32,0",
+      "description": "Zeigt den Anstieg des BMI bei mehr Gewicht und gleicher Körpergröße."
+    },
+    {
+      "title": "Groß und schlank",
+      "input": "Größe: 182 cm, Gewicht: 66 kg",
+      "output": "BMI = 19,9",
+      "description": "Ein Beispiel für einen niedrigeren Wert bei größerer Körpergröße und geringerem Gewicht."
     }
   ],
   "faq": [
     {
-      "question": "Wie genau ist dieses Tool?",
-      "answer": "Das Ergebnis wird direkt anhand der Formel oder der browserseitigen Logik dieses Tools berechnet."
+      "question": "Welche Einheiten soll ich verwenden?",
+      "answer": "Verwende konsequent ein System: Kilogramm mit Zentimetern oder Pfund mit Zoll. Gemischte Einheiten liefern ein falsches Ergebnis."
     },
     {
-      "question": "Kann ich dieses Tool auf dem Smartphone verwenden?",
-      "answer": "Ja. Die Seite funktioniert auf Desktop- und Mobilgeräten mit einem einfachen Eingabe- und Ergebnislayout."
+      "question": "Warum wird nur eine Dezimalstelle angezeigt?",
+      "answer": "Eine Dezimalstelle reicht für Vergleiche aus und suggeriert keine übertriebene Genauigkeit."
+    },
+    {
+      "question": "Kann ich Größe in Fuß und Zoll eingeben?",
+      "answer": "Nur wenn das Werkzeug dieses Format ausdrücklich unterstützt. Andernfalls muss die Größe vorher korrekt umgerechnet werden."
+    },
+    {
+      "question": "Warum ist BMI bei sehr muskulösen Menschen manchmal irreführend?",
+      "answer": "Weil BMI nur Größe und Gewicht nutzt. Er erkennt nicht, ob zusätzliche Masse aus Muskeln, Fett, Knochen oder Wasser stammt."
+    },
+    {
+      "question": "Was ist der häufigste Eingabefehler?",
+      "answer": "Am häufigsten wird in einem Feld die falsche Einheit verwendet, etwa Pfund statt Kilogramm oder Zoll statt Zentimeter."
     }
   ],
   "seo": {
-    "title": "BMI-Rechner",
-    "description": "Berechne den Body-Mass-Index aus Körpergröße und Gewicht. Kostenloser BMI-Rechner online mit sofortigem Ergebnis.",
+    "title": "BMI-Rechner für Werte",
+    "description": "BMI aus Größe und Gewicht berechnen mit klaren Einheiten, Dezimalwert und verständlicher Kategorie.",
     "keywords": [
       "bmi rechner",
-      "bmi calculator",
-      "rechner tools"
+      "body mass index",
+      "größe und gewicht bmi"
     ]
   }
 }

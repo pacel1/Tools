@@ -4,43 +4,87 @@
   "slug": "conversor-de-mayusculas-y-minusculas",
   "h1": "Conversor de mayúsculas y minúsculas",
   "title": "Conversor de mayúsculas y minúsculas",
-  "shortDescription": "Convierte texto a mayúsculas, minúsculas, formato título y formato oración con resultados rápidos, entrada sencilla y ejemplos prácticos.",
-  "overview": "Convierte texto a mayúsculas, minúsculas, formato título y formato oración. Esta página ofrece una respuesta rápida con una herramienta útil y un flujo de resultados sencillo. Está pensada para usuarios que buscan una solución gratuita online, resultados instantáneos en el navegador y contenido práctico para búsquedas de cola larga.",
+  "shortDescription": "Pasa texto a mayúsculas, minúsculas, formato título o formato oración con una salida clara para texto pegado o escrito a mano.",
+  "metaTitle": "Conversor de mayúsculas",
+  "metaDescription": "Cambia texto a mayúsculas, minúsculas, formato título o formato oración con una herramienta sencilla en el navegador.",
+  "intro": "Pega o escribe tu texto y conviértelo enseguida a mayúsculas, minúsculas, formato título o formato oración.",
+  "overview": "Esta herramienta reescribe tu texto con el formato de mayúsculas que elijas. Es útil cuando un título necesita una capitalización uniforme, un borrador requiere coherencia o un texto copiado debe adaptarse a un estilo concreto.\n\nPuedes probar frases cortas, oraciones completas, encabezados y párrafos largos. El resultado se basa en el texto exacto que introduces, así que la puntuación, los espacios y los saltos de línea se conservan salvo que el modo elegido los trate de otra forma.\n\nÚsala antes de publicar, pegar en un documento o compartir texto cuando quieras una presentación más limpia y consistente.",
   "howItWorks": [
-    "Introduce el texto requerido en el formulario.",
-    "La conversión, cálculo o transformación se ejecuta al instante en el navegador.",
-    "Revisa el resultado y continúa con herramientas relacionadas si necesitas otro paso."
+    "Escribe o pega el texto que quieres cambiar.",
+    "Elige el formato de destino entre las opciones disponibles.",
+    "Copia el resultado convertido y úsalo donde lo necesites."
+  ],
+  "useCases": [
+    {
+      "title": "Títulos de artículos",
+      "description": "Convierte encabezados de borrador a formato título o formato oración antes de llevarlos a un CMS o documento."
+    },
+    {
+      "title": "Notas pegadas desde chats",
+      "description": "Unifica texto copiado desde mensajes, correos o notas en un mismo estilo de escritura."
+    },
+    {
+      "title": "Etiquetas de interfaz",
+      "description": "Da formato a botones, menús y rótulos cortos para mantener una misma convención visual."
+    },
+    {
+      "title": "Listas y catálogos",
+      "description": "Normaliza nombres de elementos o viñetas para que tablas y listas se vean más ordenadas."
+    }
   ],
   "examples": [
     {
-      "title": "Ejemplo 1",
-      "input": "Titular de ejemplo para un artículo",
-      "output": "MAYÚSCULAS / minúsculas / Título / Oración",
-      "description": "Muestra un uso típico de la herramienta con un texto sencillo."
+      "title": "Nombre de producto en mayúsculas",
+      "input": "auriculares inalámbricos con cancelación de ruido",
+      "output": "AURICULARES INALÁMBRICOS CON CANCELACIÓN DE RUIDO",
+      "description": "Sirve cuando un nombre necesita destacar más en un encabezado o etiqueta."
     },
     {
-      "title": "Ejemplo 2",
-      "input": "Titular de ejemplo para un artículo",
-      "output": "MAYÚSCULAS / minúsculas / Título / Oración",
-      "description": "Es útil para editar títulos, encabezados y borradores rápidamente."
+      "title": "Oración desde notas copiadas",
+      "input": "la reunión empieza mañana a las 9.",
+      "output": "La reunión empieza mañana a las 9.",
+      "description": "Muestra el formato oración con la primera letra en mayúscula."
+    },
+    {
+      "title": "Encabezado en formato título",
+      "input": "cómo escribir mejores asuntos de correo",
+      "output": "Cómo Escribir Mejores Asuntos De Correo",
+      "description": "Convierte un texto simple en un título listo para usar en un borrador."
+    },
+    {
+      "title": "Etiqueta breve en minúsculas",
+      "input": "Atención Al Cliente",
+      "output": "atención al cliente",
+      "description": "Útil cuando un sistema o diseño pide texto en minúsculas."
     }
   ],
   "faq": [
     {
-      "question": "¿Qué precisión tiene esta herramienta?",
-      "answer": "El resultado se calcula directamente a partir de la fórmula o la lógica en el navegador utilizada por esta herramienta."
+      "question": "¿La herramienta cambia solo letras?",
+      "answer": "Sí. Los números y símbolos se mantienen tal como están; solo cambia el formato de las letras."
     },
     {
-      "question": "¿Puedo usar esta herramienta en móvil?",
-      "answer": "Sí. La página funciona en pantallas de escritorio y móviles con un diseño sencillo de entrada y resultado."
+      "question": "¿El formato título capitaliza todas las palabras igual?",
+      "answer": "Aplica sus propias reglas de capitalización. En nombres propios, siglas o términos técnicos conviene revisar el resultado final."
+    },
+    {
+      "question": "¿Qué pasa con los espacios y saltos de línea?",
+      "answer": "Se conserva la estructura del texto tal como la introduces, aunque los espacios sobrantes pueden afectar la apariencia final."
+    },
+    {
+      "question": "¿Por qué cambió una marca o una sigla?",
+      "answer": "Porque la herramienta aplica el estilo elegido a todo el texto. Si alguna parte debe quedar exacta, ajústala manualmente después."
     }
   ],
   "seo": {
-    "title": "Conversor de mayúsculas y minúsculas",
-    "description": "Convierte texto a mayúsculas, minúsculas, formato título y formato oración. Conversor online gratuito con resultados instantáneos.",
+    "title": "Conversor de mayúsculas",
+    "description": "Cambia texto a mayúsculas, minúsculas, formato título o formato oración con una herramienta sencilla en el navegador.",
     "keywords": [
       "conversor de mayúsculas y minúsculas",
-      "case converter"
+      "mayúsculas",
+      "minúsculas",
+      "formato título",
+      "formato oración"
     ]
   }
 }

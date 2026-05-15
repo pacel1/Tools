@@ -2,17 +2,89 @@
   "toolId": "favicon-generator",
   "locale": "pl",
   "slug": "generator-favicon",
-  "h1": "Generator ikon i favicon",
-  "title": "Generator ikon i favicon",
-  "shortDescription": "Tworz favicony i proste ikony online z jednego obrazu bez wysylania pliku na serwer.",
-  "metaTitle": "Generator ikon online | Favicon i ikony z obrazu",
-  "metaDescription": "Tworz favicony i ikony online z jednego pliku obrazu. Dobre rozwiazanie na tworzenie ikon online, favicon i zestawow ikon strony.",
-  "intro": "Ta strona odpowiada nie tylko na intencje generator favicon, ale tez szerzej na tworzenie ikon online. Wgrywasz jeden obraz, a narzedzie generuje kilka praktycznych rozmiarow favicon i ikon bez wysylania pliku poza przegladarke.",
-  "overview": "Generator sprawdza sie przy uruchamianiu nowych stron, odswiezaniu brandingu, testach PWA i szybkim przygotowaniu ikon dla zakladek, kart oraz prostych ekranow aplikacji. To wygodny punkt startowy, gdy chcesz z jednego logo zrobic kilka gotowych plikow ikon.",
-  "howItWorks": ["Przeslij obraz zrodlowy.", "Narzędzie tworzy zestaw najczesciej potrzebnych rozmiarow favicon i ikon.", "Podejrzyj wynik i pobierz wygenerowane pliki od razu."],
-  "useCases": ["Tworzenie favicon dla nowej strony.", "Szybkie tworzenie ikon online z jednego logo.", "Przygotowanie prostych ikon dla aplikacji i PWA.", "Zmiana logotypu w zestaw plikow gotowych do wdrozenia."],
-  "examples": [{"title": "Favicon dla strony", "input": "Kwadratowe logo", "output": "Kilka rozmiarow favicon gotowych do pobrania", "description": "Przydatne przy starcie nowej witryny i porzadkowaniu brand assets."}, {"title": "Tworzenie ikon online", "input": "Jeden plik obrazu", "output": "Zestaw ikon bez wysylania pliku na serwer", "description": "Dobre do szybkiego przygotowania ikon marki i prostych app assets."}],
-  "faq": [{"question": "Czy to narzedzie sluzy tylko do favicon?", "answer": "Nie. Oprocz favicon dobrze sprawdza sie tez jako prosty generator ikon online z jednego obrazu."}, {"question": "Czy plik obrazu jest wysylany na serwer?", "answer": "Nie. Tworzenie favicon i ikon odbywa sie lokalnie w przegladarce."}],
-  "uiLabels": {"copy": "Kopiuj", "copied": "Skopiowano", "input": "Plik obrazu", "output": "Wygenerowane rozmiary favicon", "placeholder": "Wybierz plik obrazu", "indent": "Wciecie", "removeComments": "Usun komentarze", "preview": "Podglad", "source": "Zrodlo", "sanitizedHtml": "Oczyszczony HTML", "plainText": "Zwykly tekst", "summary": "Podsumowanie", "total": "Razem", "links": "Linki", "images": "Obrazy", "errors": "Bledy", "warnings": "Ostrzezenia", "valid": "Poprawny", "invalid": "Niepoprawny", "href": "Href", "text": "Tekst", "rel": "Rel", "target": "Cel", "alt": "Alt", "width": "Szerokosc", "height": "Wysokosc", "empty": "Puste", "outputReady": "Wynik gotowy", "cleanedHtml": "Oczyszczony HTML", "formattedHtml": "Sformatowany HTML", "minifiedHtml": "Zminifikowany HTML", "markdown": "Markdown", "extractedImages": "Wyodrebnione obrazy", "extractedLinks": "Wyodrebnione linki", "validationSummary": "Podsumowanie walidacji", "prettyHtml": "Czytelny HTML", "encodedText": "Zakodowany tekst", "file": "Plik", "size": "Rozmiar", "format": "Format", "quality": "Jakosc", "colorOne": "Kolor 1", "colorTwo": "Kolor 2", "background": "Tlo", "foreground": "Pierwszy plan", "angle": "Kat", "margin": "Margines", "level": "Poziom", "gradientType": "Typ gradientu", "linear": "Liniowy", "radial": "Promienisty", "blur": "Rozmycie", "spread": "Rozszerzenie", "offsetX": "Przesuniecie X", "offsetY": "Przesuniecie Y", "opacity": "Krycie", "inset": "Wewnetrzny", "cssCode": "Kod CSS", "snippet": "Fragment", "download": "Pobierz", "downloadSvg": "Pobierz SVG", "downloadPng": "Pobierz PNG", "downloadAll": "Pobierz wszystko", "upload": "Przeslij", "title": "Tytul", "description": "Opis", "canonicalUrl": "Adres kanoniczny", "siteName": "Nazwa witryny", "ogImage": "Obraz OG", "clear": "Wyczysc", "generatedQr": "Podglad kodu QR", "placeholderImage": "Podglad obrazu", "faviconSet": "Zestaw favicon", "keepAspectRatio": "Zachowaj proporcje", "cropX": "Przyciecie X", "cropY": "Przyciecie Y", "cropWidth": "Szerokosc przyciecia", "cropHeight": "Wysokosc przyciecia", "originalSize": "Oryginalny rozmiar", "outputSize": "Rozmiar wyjsciowy", "savedSize": "Zapisany rozmiar", "result": "Wynik", "base64": "Base64", "mimeType": "Typ MIME", "resizedImage": "Obraz po zmianie rozmiaru", "compressedImage": "Obraz skompresowany", "croppedImage": "Obraz przyciety", "convertedImage": "Obraz przekonwertowany", "decodedImage": "Obraz zdekodowany", "imagePreview": "Podglad obrazu"},
-  "seo": {"title": "Generator ikon online | Favicon i ikony z obrazu", "description": "Tworz favicony i ikony online z jednego pliku obrazu. Dobre rozwiazanie na tworzenie ikon online, favicon i zestawow ikon strony.", "keywords": ["generator ikon", "tworzenie ikon online", "generator favicon", "favicon online", "ikony strony"]}
+  "h1": "Generator favicon",
+  "title": "Generator favicon",
+  "shortDescription": "Z jednego obrazu przygotujesz pliki favicon i rozmiary ikon w przegladarce, bez wysylania pliku na serwer.",
+  "metaTitle": "Generator favicon dla stron",
+  "metaDescription": "Utworz pliki favicon z jednego obrazu w przegladarce i pobierz potrzebne rozmiary ikon dla strony internetowej.",
+  "intro": "Wgraj jeden obraz i zamien go na pliki favicon oraz rozmiary ikon dla swojej strony w przegladarce.",
+  "overview": "To narzedzie pozwala przygotowac zestaw favicon z jednego obrazu zrodlowego bez instalowania programu graficznego. Dziala w przegladarce, wiec plik jest przetwarzany lokalnie na Twoim urzadzeniu, a Ty tworzysz potrzebne ikony dla kart, zakladek i instalowanych aplikacji.\n\nNajlepiej sprawdza sie, gdy masz juz logo i potrzebujesz z niego praktycznych wyjsc w kilku rozmiarach. Mozesz zaczac od kwadratowego znaku, pelnego logotypu albo innej grafiki i od razu pobrac pliki do folderu zasobow strony lub do buildu aplikacji.",
+  "howItWorks": [
+    "Wybierz obraz z urzadzenia.",
+    "Generator tworzy z niego zestaw favicon i ikon.",
+    "Sprawdz wynik w podgladzie przed zapisem.",
+    "Pobierz pliki, ktore chcesz wykorzystac na stronie lub w aplikacji."
+  ],
+  "useCases": [
+    {
+      "title": "Start nowej strony",
+      "description": "Przygotuj favicon przed publikacja witryny, aby ikona karty i zakladki byla zgodna z identyfikacja marki."
+    },
+    {
+      "title": "Logo jako zestaw ikon",
+      "description": "Zamien logo marki w kompaktowy zestaw favicon do naglowka, kart przegladarki i aplikacji webowej."
+    },
+    {
+      "title": "Przygotowanie PWA",
+      "description": "Wygeneruj rozmiary ikon potrzebne przy aplikacji instalowanej z przegladarki, zamiast tworzyc kazdy plik recznie."
+    },
+    {
+      "title": "Zmiana identyfikacji wizualnej",
+      "description": "Podmien stara ikone serwisu na nowy zestaw i pobierz aktualne pliki jednym krokiem."
+    }
+  ],
+  "examples": [
+    {
+      "title": "Kwadratowe logo do zestawu favicon",
+      "input": "Wejscie: plik PNG 1024×1024 z prostym bialym symbolem na ciemnym tle.",
+      "output": "Wyjscie: zestaw favicon w typowych rozmiarach dla przegladarki i aplikacji, gotowy do pobrania.",
+      "description": "Kwadratowy, czytelny plik zrodlowy daje najbardziej spójny efekt w malych rozmiarach."
+    },
+    {
+      "title": "Znak produktu z przezroczystym tlem",
+      "input": "Wejscie: przezroczysty plik PNG 512×512 z czerwonym wordmarkiem.",
+      "output": "Wyjscie: ostre pliki ikon, ktore zachowuja przezroczystosc tam, gdzie jest wspierana.",
+      "description": "Dobre rozwiazanie, gdy znak ma pasowac do roznych motywow strony."
+    },
+    {
+      "title": "Ilustracja jako ikona serwisu",
+      "input": "Wejscie: JPG 1200×800 z ilustracja z kampanii landing page.",
+      "output": "Wyjscie: przyciete lub dopasowane rozmiary favicon do uzycia w przegladarce.",
+      "description": "Przydatne, gdy obraz nie jest logo, ale ma zostac uzyty jako ikona strony."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Co jesli moj obraz nie jest kwadratowy?",
+      "answer": "Generator nadal utworzy pliki favicon, ale efekt moze wymagac przyciecia albo stracic szczegoly w bardzo malych rozmiarach. Kwadratowy obraz zrodlowy zwykle daje najczystszy wynik."
+    },
+    {
+      "question": "Czy moge uzyc plikow SVG, PNG i JPG?",
+      "answer": "Tak, o ile dany format jest obslugiwany przez przegladarke i przez sposob importu w narzedziu. Najlepiej sprawdza sie prosty, kontrastowy obraz."
+    },
+    {
+      "question": "Dlaczego male favicony wygladaja prosciej niz oryginal?",
+      "answer": "Favicon ma bardzo malo miejsca, wiec cienkie linie, drobny tekst i zlozone gradienty moga znikac. Jesli wynik jest zbyt zlozony, uprosc grafike zrodlowa i wygeneruj ponownie."
+    },
+    {
+      "question": "Czy narzedzie tworzy kazdy format ikon dla kazdej platformy?",
+      "answer": "Tworzy najczesciej uzywane rozmiary favicon i ikon serwisu, ale zestawy specyficzne dla platformy moga nadal wymagac dodatkowych plikow. Warto sprawdzic liste ikon wymagana przez Twoj stack."
+    },
+    {
+      "question": "Dlaczego jedno z wyjsciowych rozmiarow wyglada na rozmyte?",
+      "answer": "Bardzo male wersje sa bardziej wrazliwe na szczegoly obrazu. Jesli ktorys rozmiar wyglada miekko, uzyj wiekszego i ostrzejszego pliku zrodlowego albo uprosc projekt."
+    }
+  ],
+  "seo": {
+    "title": "Generator favicon dla stron",
+    "description": "Utworz pliki favicon z jednego obrazu w przegladarce i pobierz potrzebne rozmiary ikon dla strony internetowej.",
+    "keywords": [
+      "generator favicon",
+      "favicon dla strony",
+      "pliki favicon",
+      "generator ikon strony",
+      "favicon w przegladarce",
+      "rozmiary ikon aplikacji"
+    ]
+  }
 }

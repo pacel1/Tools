@@ -40,7 +40,15 @@ const localizedContentSchema = {
         },
         useCases: {
           type: "array",
-          items: { type: "string" },
+          items: {
+            type: "object",
+            additionalProperties: false,
+            properties: {
+              title: { type: "string" },
+              description: { type: "string" }
+            },
+            required: ["title", "description"]
+          },
           minItems: 3
         },
         examples: {
@@ -56,7 +64,7 @@ const localizedContentSchema = {
             },
             required: ["title", "input", "output", "description"]
           },
-          minItems: 2
+          minItems: 3
         },
         faq: {
           type: "array",
@@ -69,7 +77,7 @@ const localizedContentSchema = {
             },
             required: ["question", "answer"]
           },
-          minItems: 2
+          minItems: 4
         },
         uiLabels: {
           type: "object",
@@ -203,7 +211,7 @@ async function localizeToolContent({
     name: "localized_tool_content_bundle",
     schema: localizedContentSchema,
     system:
-      "You localize SEO-first utility-tool page content for end users. Return JSON only. Translate all visible copy into pl, es, de and fr. Localize title, h1, shortDescription, metaTitle, metaDescription, intro, overview, useCases, examples, faq, seo.title and seo.description. For non-English locales, translate the tool name naturally whenever a clear local equivalent exists, for example 'Age Calculator' should become a natural localized name. Generate localized ASCII-only slugs in kebab-case. Keep toolId unchanged and set locale correctly for each object. Keep the content practical, native-sounding and optimized for organic search intent. Preserve or add uiLabels when useful for form fields and result labels.",
+      "You create native localized utility-tool page content for end users. Return JSON only. Use the English content and definition as context, but write pl, es, de and fr directly for local readers rather than translating word-for-word. Localize title, h1, shortDescription, metaTitle, metaDescription, intro, overview, useCases, examples, faq, seo.title and seo.description. metaTitle must be 12-50 characters and must not end with weak words like and, for, with, de, con, do, z, i. metaDescription must be 70-155 characters. For non-English locales, translate the tool name naturally whenever a clear local equivalent exists. Generate localized ASCII-only slugs in kebab-case. Keep toolId unchanged and set locale correctly for each object. Avoid template SEO language such as long-tail, organic traffic, free online answer, quick checks, common use case, and generic mobile/accuracy FAQ. intro must give a concrete quick answer. overview must be 2-3 practical paragraphs in one string. useCases must be specific title/description cards. examples must use varied realistic inputs and outputs. faq must answer tool-specific doubts, limits and interpretation details. Preserve or add uiLabels when useful for form fields and result labels.",
     prompt: JSON.stringify(
       {
         toolId,

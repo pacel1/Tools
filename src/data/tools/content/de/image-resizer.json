@@ -2,17 +2,95 @@
   "toolId": "image-resizer",
   "locale": "de",
   "slug": "bildgroessen-aendern",
-  "h1": "Bildgroesse aendern online",
-  "title": "Bildgroesse aendern online",
-  "shortDescription": "Bildgroesse online aendern, Bilder verkleinern und exakte Masse direkt im Browser setzen.",
-  "metaTitle": "Bildgroesse aendern online | Bilder im Browser anpassen",
-  "metaDescription": "Bildgroesse online aendern mit Vorschau, festen Massen und Seitenverhaeltnis. Ideal fuer Suchanfragen wie bildgroesse aendern und bilder online verkleinern.",
-  "intro": "Diese Seite ist auf die Intention hinter bildgroesse aendern, Bildgroessen aendern online und Bilder online verkleinern ausgerichtet. Du laedst ein Bild hoch, setzt Breite und Hoehe und bekommst die neue Datei direkt im Browser.",
-  "overview": "Der Resizer eignet sich fuer Websites, Social Media, Dokumente, Marktplatzbilder und Produktfotos, wenn genaue Zielmasse wichtig sind. Er passt gut in den Workflow aus Bildgroesse aendern, Komprimieren und Konvertieren, ohne dass du die Seite verlassen musst.",
-  "howItWorks": ["Bild hochladen oder in das Tool ziehen.", "Zielbreite und Zielhoehe eingeben oder das Seitenverhaeltnis beibehalten.", "Vorschau pruefen und die neue Datei herunterladen."],
-  "useCases": ["Bildgroesse aendern fuer Webseiten und Landing Pages.", "Bilder online verkleinern fuer E-Mail und Uploads.", "Exakte Social-Media-Masse setzen.", "Produktbilder fuer Shops vorbereiten.", "Fotos fuer Formulare oder Marktplatz-Uploads anpassen."],
-  "examples": [{"title": "Profilbild", "input": "1200 x 1200 px", "output": "400 x 400 px", "description": "Sinnvoll fuer Avatare und Profilfotos."}, {"title": "Banner fuer Web", "input": "2400 x 1200 px", "output": "1200 x 600 px", "description": "Hilfreich fuer schnellere Ladezeiten und passende Layouts."}],
-  "faq": [{"question": "Kann ich mit dem Tool die Bildgroesse online aendern?", "answer": "Ja. Du kannst Breite und Hoehe direkt im Browser einstellen und das Ergebnis sofort herunterladen."}, {"question": "Ist das Tool auch gut, um Bilder online zu verkleinern?", "answer": "Ja. Es ist genau fuer das schnelle Verkleinern und Anpassen von Bildern online gedacht."}, {"question": "Bleibt das Seitenverhaeltnis erhalten?", "answer": "Ja. Wenn du die entsprechende Option aktivierst, bleibt das Bild proportional skaliert und verzieht sich nicht."}],
-  "uiLabels": {"copy": "Kopieren", "copied": "Kopiert", "input": "Eingabe", "output": "Ausgabe", "placeholder": "Bilddatei auswaehlen oder Bilddaten einfuegen", "indent": "Einzug", "removeComments": "Kommentare entfernen", "preview": "Vorschau", "source": "Quelle", "sanitizedHtml": "Bereinigtes HTML", "plainText": "Klartext", "summary": "Zusammenfassung", "total": "Gesamt", "links": "Links", "images": "Bilder", "errors": "Fehler", "warnings": "Warnungen", "valid": "Gueltig", "invalid": "Ungueltig", "href": "Href", "text": "Text", "rel": "Rel", "target": "Ziel", "alt": "Alt", "width": "Breite", "height": "Hoehe", "empty": "Leer", "outputReady": "Ausgabe bereit", "cleanedHtml": "Bereinigtes HTML", "formattedHtml": "Formatiertes HTML", "minifiedHtml": "Minifiziertes HTML", "markdown": "Markdown", "extractedImages": "Extrahierte Bilder", "extractedLinks": "Extrahierte Links", "validationSummary": "Validierungsuebersicht", "prettyHtml": "Lesbares HTML", "encodedText": "Kodierter Text", "file": "Datei", "size": "Groesse", "format": "Format", "quality": "Qualitaet", "colorOne": "Farbe 1", "colorTwo": "Farbe 2", "background": "Hintergrund", "foreground": "Vordergrund", "angle": "Winkel", "margin": "Rand", "level": "Ebene", "gradientType": "Verlaufstyp", "linear": "Linear", "radial": "Radial", "blur": "Unschaerfe", "spread": "Ausbreitung", "offsetX": "Offset X", "offsetY": "Offset Y", "opacity": "Deckkraft", "inset": "Innen", "cssCode": "CSS-Code", "snippet": "Snippet", "download": "Herunterladen", "downloadSvg": "SVG herunterladen", "downloadPng": "PNG herunterladen", "downloadAll": "Alle herunterladen", "upload": "Hochladen", "title": "Titel", "description": "Beschreibung", "canonicalUrl": "Kanonische URL", "siteName": "Seitenname", "ogImage": "OG-Bild", "clear": "Leeren", "generatedQr": "QR-Code-Vorschau", "placeholderImage": "Bildvorschau", "faviconSet": "Favicon-Set", "keepAspectRatio": "Seitenverhaeltnis beibehalten", "cropX": "Zuschneiden X", "cropY": "Zuschneiden Y", "cropWidth": "Zuschneidebreite", "cropHeight": "Zuschneidehoehe", "originalSize": "Originalgroesse", "outputSize": "Ausgabegroesse", "savedSize": "Gesparte Groesse", "result": "Ergebnis", "base64": "Base64", "mimeType": "MIME-Typ", "resizedImage": "Groessenangepasstes Bild", "compressedImage": "Komprimiertes Bild", "croppedImage": "Zugeschnittenes Bild", "convertedImage": "Konvertiertes Bild", "decodedImage": "Dekodiertes Bild", "imagePreview": "Bildvorschau"},
-  "seo": {"title": "Bildgroesse aendern online | Bilder im Browser anpassen", "description": "Bildgroesse online aendern mit Vorschau, festen Massen und Seitenverhaeltnis. Ideal fuer bildgroesse aendern und bilder online verkleinern.", "keywords": ["bildgroesse aendern", "bildgroessen aendern", "bilder online verkleinern", "bild resizer", "foto verkleinern", "bildgroesse online aendern"]}
+  "h1": "Bildgröße ändern",
+  "title": "Bildgröße ändern",
+  "shortDescription": "Bilder im Browser mit exakter Breite, Höhe und Seitenverhältnis anpassen.",
+  "metaTitle": "Bildgröße ändern",
+  "metaDescription": "Bilder mit exakter Breite und Höhe anpassen, Seitenverhältnis sperren, Vorschau prüfen und die fertige Datei herunterladen.",
+  "intro": "Gib die exakte Breite und Höhe ein oder sperre das Seitenverhältnis, damit das Bild beim Skalieren nicht verzerrt wird.",
+  "overview": "Dieses Tool ist nützlich, wenn ein Bild in ein festes Feld, Formular, Dokument, eine Folie, einen Mailkopf oder ein Layout passen muss. Du kannst die Zielmaße direkt eingeben oder das ursprüngliche Seitenverhältnis beibehalten und das Bild ohne Formverlust skalieren.\n\nDie Vorschau hilft dir, vor dem Speichern zu prüfen, ob Text lesbar bleibt, Gesichter gut sitzen und Ränder sauber wirken. Darum eignet es sich für Fotos, Screenshots, Banner, Vorschaubilder, Logos und Produktbilder.\n\nWenn du Dateien für Uploads vorbereitest oder Grafiken in ein Design einsetzt, ersparst du dir mit dem vorherigen Anpassen spätere Korrekturen und erhältst direkt eine Datei, die sich leichter weiterverwenden lässt.",
+  "howItWorks": [
+    "Bild von deinem Gerät hochladen.",
+    "Gewünschte Breite und Höhe eingeben.",
+    "Seitenverhältnis sperren, um Verzerrungen zu vermeiden.",
+    "Vorschau vor dem Download prüfen.",
+    "Die angepasste Datei auf dem Gerät speichern."
+  ],
+  "useCases": [
+    {
+      "title": "Produktfoto an eine Angebotskachel anpassen",
+      "description": "Skaliere ein Produktbild so, dass es exakt in den vorgesehenen Bereich eines Shops oder Marktplatzes passt."
+    },
+    {
+      "title": "Logo für Kopf- und Fußzeilen skalieren",
+      "description": "Bringe ein Logo oder eine Signaturgrafik auf eine feste Breite für Berichte, Vorlagen oder E-Mail-Signaturen."
+    },
+    {
+      "title": "Screenshot für eine Präsentation verkleinern",
+      "description": "Reduziere einen langen oder breiten Screenshot so, dass er sauber in eine Folie oder ein internes Dokument passt."
+    },
+    {
+      "title": "Porträt in ein quadratisches Format bringen",
+      "description": "Wandle ein Hochformatfoto in ein Quadrat für Profilbilder, Teamseiten oder Autorenkarten um."
+    },
+    {
+      "title": "Hero-Bild an eine Layoutspalte anpassen",
+      "description": "Setze ein Hauptbild oder Thumbnail auf die Maße des Zielcontainers, damit es ohne Nacharbeit passt."
+    }
+  ],
+  "examples": [
+    {
+      "title": "Quadratisches Profilbild aus einem Porträt",
+      "input": "Original: 1600 × 2000 px",
+      "output": "Angepasst: 640 × 640 px",
+      "description": "Nach Bedarf zuschneiden und dann die nutzbare Fläche auf ein sauberes Quadrat bringen."
+    },
+    {
+      "title": "Newsletter-Banner",
+      "input": "Original: 2400 × 900 px",
+      "output": "Angepasst: 1200 × 450 px",
+      "description": "Ein breites Banner verkleinern, damit es im E-Mail-Layout leichter Platz findet."
+    },
+    {
+      "title": "Produktfoto für einen Katalog",
+      "input": "Original: 3000 × 3000 px",
+      "output": "Angepasst: 1500 × 1500 px",
+      "description": "Den Bildausschnitt des Produkts beibehalten und das File auf eine praktikablere Größe reduzieren."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Kann ich die Bildgröße ändern, ohne das Motiv zu verzerren?",
+      "answer": "Ja. Sperre das Seitenverhältnis vor der Änderung. So bleibt die Form des Bildes beim Skalieren erhalten."
+    },
+    {
+      "question": "Was passiert, wenn ich nur eine Seite angebe?",
+      "answer": "Ist das Seitenverhältnis gesperrt, berechnet das Tool die fehlende Seite automatisch. Ohne Sperre solltest du beide Werte eingeben."
+    },
+    {
+      "question": "Bleibt das Ausgabeformat gleich?",
+      "answer": "Meistens ja, sofern das Ausgangsformat korrekt verarbeitet werden kann. Prüfe vor der Verwendung die Dateiendung des Downloads."
+    },
+    {
+      "question": "Warum wirkt ein verkleinertes Bild weniger scharf?",
+      "answer": "Beim Verkleinern gehen Pixel und feine Details verloren. Starte am besten mit der bestmöglichen Quelldatei und gehe nur so weit herunter wie nötig."
+    },
+    {
+      "question": "Was ist der häufigste Fehler?",
+      "answer": "Breite und Höhe einzugeben, ohne auf das Seitenverhältnis zu achten. Das führt schnell zu gestreckten Fotos oder verzerrten Logos."
+    }
+  ],
+  "seo": {
+    "title": "Bildgröße ändern",
+    "description": "Bilder mit exakter Breite und Höhe anpassen, Seitenverhältnis sperren, Vorschau prüfen und die fertige Datei herunterladen.",
+    "keywords": [
+      "bildgröße ändern",
+      "bildgrößen ändern",
+      "bilder online verkleinern",
+      "bild anpassen",
+      "seitenverhältnis",
+      "foto skalieren",
+      "bild tool"
+    ]
+  }
 }

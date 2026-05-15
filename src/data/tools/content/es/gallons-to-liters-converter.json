@@ -4,43 +4,75 @@
   "slug": "convertidor-de-galones-a-litros",
   "h1": "Convertidor de galones a litros",
   "title": "Convertidor de galones a litros",
-  "shortDescription": "Convierte galones a litros al instante con resultados rápidos, entradas sencillas y ejemplos prácticos.",
-  "overview": "Convierte galones a litros al instante. Esta página ofrece una respuesta rápida con una herramienta útil y un flujo de resultado sencillo. Está pensada para quienes buscan una respuesta gratuita en línea, resultados rápidos en el navegador y contenido práctico optimizado para búsquedas de cola larga.",
+  "shortDescription": "Convierte galones estadounidenses a litros con un resultado decimal preciso.",
+  "metaTitle": "Convertidor de galones a litros",
+  "metaDescription": "Convierte galones estadounidenses a litros con resultados decimales precisos para cocina, combustible y depósitos.",
+  "intro": "Escribe la cantidad de galones y obtén su equivalente en litros con el factor estándar de galón estadounidense.",
+  "overview": "Este convertidor transforma galones estadounidenses en litros con una relación fija, así que no tienes que hacer el cálculo manualmente. Es útil para comparar capacidades de depósitos, recetas, envases y datos de combustible cuando una medida está en sistema anglosajón y la otra en sistema métrico.\n\nEl resultado aparece en litros con decimales, lo que permite trabajar con medidas precisas. Si en tu caso usas galones imperiales, cuidado: no equivalen a los galones estadounidenses y el resultado será distinto.",
   "howItWorks": [
-    "Introduce el valor o texto requerido en el formulario.",
-    "La conversión, cálculo o transformación se ejecuta al instante en el navegador.",
-    "Revisa el resultado y continúa con herramientas relacionadas si necesitas otro paso."
+    "Introduce la cantidad de galones estadounidenses.",
+    "La herramienta multiplica el valor por 3,785411784 para obtener litros.",
+    "Lee el resultado decimal y redondéalo según lo que necesites."
+  ],
+  "useCases": [
+    {
+      "title": "Etiquetas de envases",
+      "description": "Convierte capacidades indicadas en galones para comparar botellas, bidones o depósitos en litros."
+    },
+    {
+      "title": "Recetas y preparación de alimentos",
+      "description": "Pasa volúmenes grandes de galones a litros antes de ajustar cantidades o escalar una receta."
+    },
+    {
+      "title": "Combustible y almacenamiento",
+      "description": "Traduce datos de combustible o capacidad de un depósito a litros cuando la documentación usa galones."
+    }
   ],
   "examples": [
     {
-      "title": "Ejemplo 1",
-      "input": "3 galones",
-      "output": "11,3562 litros",
-      "description": "Un ejemplo realista de convertidor de galones a litros para una búsqueda habitual."
+      "title": "Bidón mediano",
+      "input": "2,5 galones estadounidenses",
+      "output": "9,46352946 litros",
+      "description": "Una conversión útil para un recipiente de tamaño medio."
     },
     {
-      "title": "Ejemplo 2",
-      "input": "3 galones",
-      "output": "11,3562 litros",
-      "description": "Otro caso práctico de uso para atraer tráfico orgánico de cola larga."
+      "title": "Capacidad de combustible",
+      "input": "12 galones estadounidenses",
+      "output": "45,424941408 litros",
+      "description": "Sirve para convertir una capacidad de vehículo o equipo."
+    },
+    {
+      "title": "Depósito grande",
+      "input": "100 galones estadounidenses",
+      "output": "378,5411784 litros",
+      "description": "Muestra cómo escalan los volúmenes mayores al pasarlos a litros."
     }
   ],
   "faq": [
     {
-      "question": "¿Qué precisión tiene esta herramienta?",
-      "answer": "El resultado se calcula directamente a partir de la fórmula o la lógica en el navegador que usa esta herramienta."
+      "question": "¿Usa galones estadounidenses o imperiales?",
+      "answer": "Usa galones estadounidenses. Un US gallon equivale a 3,785411784 litros; el galón imperial es diferente."
     },
     {
-      "question": "¿Puedo usar esta herramienta en el móvil?",
-      "answer": "Sí. La página funciona en escritorio y en dispositivos móviles con un diseño simple de entrada y resultado."
+      "question": "¿Por qué el resultado tiene tantos decimales?",
+      "answer": "Porque la conversión se calcula con precisión. Después puedes redondearla al nivel que necesites."
+    },
+    {
+      "question": "¿Puedo tomar 1 galón como 4 litros?",
+      "answer": "Solo como estimación rápida. Para un valor exacto, conviene usar el resultado del convertidor porque 1 US gallon es algo menor que 4 litros."
+    },
+    {
+      "question": "¿Cuál es el error más habitual?",
+      "answer": "Confundir galones estadounidenses con imperiales. Otro error común es redondear demasiado pronto y perder precisión."
     }
   ],
   "seo": {
     "title": "Convertidor de galones a litros",
-    "description": "Convierte galones a litros al instante. Convertidor online gratis de galones a litros con resultados inmediatos.",
+    "description": "Convierte galones estadounidenses a litros con resultados decimales precisos para cocina, combustible, depósitos y medidas.",
     "keywords": [
       "convertidor de galones a litros",
-      "herramienta de conversion"
+      "galones a litros",
+      "conversion de galones"
     ]
   }
 }

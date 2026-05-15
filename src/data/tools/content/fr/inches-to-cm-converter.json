@@ -4,44 +4,85 @@
   "slug": "convertisseur-pouces-en-centimetres",
   "h1": "Convertisseur de pouces en centimètres",
   "title": "Convertisseur de pouces en centimètres",
-  "shortDescription": "Convertissez des pouces en centimètres instantanément avec des résultats rapides, une saisie simple et des exemples pratiques.",
-  "overview": "Convertissez des pouces en centimètres instantanément. Cette page fournit une réponse rapide grâce à un outil en ligne pratique et un affichage de résultat simple. Elle cible les utilisateurs qui cherchent une réponse gratuite en ligne, des résultats rapides dans le navigateur et un contenu utile pour les requêtes de longue traîne.",
+  "shortDescription": "Convertissez les pouces en centimètres avec la formule exacte 1 pouce = 2,54 cm.",
+  "metaTitle": "Convertisseur pouces en cm",
+  "metaDescription": "Convertissez les pouces en centimètres avec le facteur exact 2,54 pour les dimensions, écrans, vêtements et plans techniques.",
+  "intro": "Saisissez une valeur en pouces pour obtenir son équivalent en centimètres avec la conversion exacte 1 pouce = 2,54 cm.",
+  "overview": "Cet outil convertit les mesures en pouces vers les centimètres à l’aide du facteur standard fixe, sans calcul manuel. Il convient aux valeurs simples, aux décimales et aux données techniques qui doivent être lues directement en système métrique.\n\nUtilisez-le lorsqu’une fiche produit, un plan, un tableau de tailles ou une note de dimension est rédigé en pouces et que vous avez besoin de la valeur en centimètres. Le résultat suit la conversion mathématique exacte, ce qui facilite les comparaisons, la planification et la documentation.",
   "howItWorks": [
-    "Saisissez la valeur ou le texte requis dans le formulaire.",
-    "La conversion, le calcul ou la transformation s’effectue instantanément dans le navigateur.",
-    "Consultez le résultat puis poursuivez avec des outils connexes si vous avez besoin d’une autre étape."
+    "Saisissez la valeur en pouces.",
+    "L’outil la multiplie par 2,54.",
+    "Lisez le résultat en centimètres puis convertissez d’autres valeurs si nécessaire."
+  ],
+  "useCases": [
+    {
+      "title": "Dimensions de mobilier",
+      "description": "Convertir la largeur, la profondeur ou la hauteur d’un meuble avant de vérifier l’espace disponible."
+    },
+    {
+      "title": "Écrans et téléviseurs",
+      "description": "Passer la diagonale d’un écran en centimètres pour comparer taille et emplacement."
+    },
+    {
+      "title": "Couture et patronage",
+      "description": "Traduire des mesures de patron, de manches ou d’ourlets du pouce vers le système métrique."
+    },
+    {
+      "title": "Dossiers techniques",
+      "description": "Reporter des cotes en pouces dans des plans, fiches techniques ou documents de production."
+    }
   ],
   "examples": [
     {
-      "title": "Exemple 1",
-      "input": "10 pouces",
-      "output": "25,4 centimètres",
-      "description": "Un exemple réaliste de conversion de pouces en cm pour une recherche du quotidien."
+      "title": "Convertir 12 pouces",
+      "input": "12 in",
+      "output": "30,48 cm",
+      "description": "Une conversion nette pour une règle ou une pièce de longueur fixe."
     },
     {
-      "title": "Exemple 2",
-      "input": "10 pouces",
-      "output": "25,4 centimètres",
-      "description": "Un autre cas d’usage pratique pour le trafic organique de longue traîne."
+      "title": "Convertir 5,5 pouces",
+      "input": "5,5 in",
+      "output": "13,97 cm",
+      "description": "Utile quand la mesure comporte des décimales, comme la largeur d’un appareil."
+    },
+    {
+      "title": "Convertir 27 pouces",
+      "input": "27 in",
+      "output": "68,58 cm",
+      "description": "Pertinent pour des dimensions plus grandes de mobilier ou d’affichage."
     }
   ],
   "faq": [
     {
-      "question": "Quelle est la précision de cet outil ?",
-      "answer": "Le résultat est calculé directement à partir de la formule ou de la logique côté navigateur utilisée par cet outil."
+      "question": "Quelle formule utilise cet outil ?",
+      "answer": "Il applique 1 pouce = 2,54 centimètres et multiplie la valeur saisie par 2,54."
     },
     {
-      "question": "Puis-je utiliser cet outil sur mobile ?",
-      "answer": "Oui. La page fonctionne sur ordinateur et sur mobile avec une interface simple de saisie et de résultat."
+      "question": "Les décimales sont-elles acceptées ?",
+      "answer": "Oui. Une valeur comme 5,5 est convertie directement et donne 13,97 cm."
+    },
+    {
+      "question": "Pourquoi le résultat peut-il changer après arrondi ?",
+      "answer": "Si l’on affiche moins de décimales, la valeur visible change, mais la conversion de base reste la même."
+    },
+    {
+      "question": "Peut-on convertir pieds et pouces en même temps ?",
+      "answer": "Non. L’outil convertit uniquement les pouces. Il faut d’abord transformer les pieds en pouces."
+    },
+    {
+      "question": "Quelle erreur revient le plus souvent ?",
+      "answer": "On saisit souvent une mesure déjà arrondie en attendant de retrouver la valeur d’origine exacte. Le résultat est correct pour la valeur entrée."
     }
   ],
   "seo": {
-    "title": "Convertisseur de pouces en centimètres",
-    "description": "Convertissez des pouces en centimètres instantanément. Convertisseur en ligne gratuit de pouces en cm avec résultats immédiats.",
+    "title": "Convertisseur pouces en cm",
+    "description": "Convertissez les pouces en centimètres avec le facteur exact 2,54 pour les dimensions, écrans, vêtements et plans techniques.",
     "keywords": [
-      "convertisseur pouces en cm",
+      "pouces en cm",
       "convertisseur pouces en centimètres",
-      "outil de conversion"
+      "convertir pouces en cm",
+      "1 pouce en cm",
+      "cm depuis pouces"
     ]
   }
 }

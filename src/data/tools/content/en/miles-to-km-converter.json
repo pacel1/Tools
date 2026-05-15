@@ -2,44 +2,77 @@
   "toolId": "miles-to-km-converter",
   "locale": "en",
   "slug": "miles-to-km-converter",
-  "h1": "Miles to KM Converter",
-  "title": "Miles to KM Converter",
-  "shortDescription": "Convert miles to kilometers instantly with fast results, simple inputs and practical examples.",
-  "overview": "Convert miles to kilometers instantly. Use this tool to get a clear result quickly from simple input on the same page. It is useful for everyday checks, comparisons and small tasks when you need a fast online answer.",
+  "h1": "Miles to Kilometers Converter",
+  "title": "Miles to Kilometers Converter",
+  "shortDescription": "Convert miles to kilometers with exact decimal results and clear examples.",
+  "metaTitle": "Miles to Kilometers Converter",
+  "metaDescription": "Convert miles to kilometers using a precise factor, with decimal results, worked examples, and clear unit interpretation.",
+  "intro": "Enter miles and get the equivalent distance in kilometers immediately.",
+  "overview": "Miles and kilometers measure the same kind of distance, but they belong to different unit systems. This converter uses the standard factor so you can turn a road distance, running distance, or map measurement into kilometers without doing the math by hand.\n\nThe result is shown as a decimal value, which is useful when you need a precise distance for planning, logging, or comparison. If your input includes a fractional mile, the tool preserves that precision in the converted result.",
   "howItWorks": [
-    "Enter the required value or text into the form.",
-    "The conversion, calculation or transformation runs instantly in the browser.",
-    "Review the result and continue with related tools if you need another step."
+    "Type the distance in miles.",
+    "The tool multiplies the value by the standard mile-to-kilometer factor.",
+    "Read the kilometer result, including decimals when needed."
+  ],
+  "useCases": [
+    {
+      "title": "Road trip planning",
+      "description": "Convert a highway distance in miles to kilometers when comparing route lengths across countries."
+    },
+    {
+      "title": "Running and cycling logs",
+      "description": "Translate workout distances from miles into kilometers for training records and pace charts."
+    },
+    {
+      "title": "Map and route comparison",
+      "description": "Check how far a place is in kilometers when a map or app gives the distance in miles."
+    }
   ],
   "examples": [
     {
-      "title": "Common use case",
+      "title": "Whole-number distance",
       "input": "10 miles",
-      "output": "16.0934 kilometers",
-      "description": "Shows a common use case with a clear input and result."
+      "output": "16.0934 km",
+      "description": "Ten miles converts to 16.0934 kilometers."
     },
     {
-      "title": "Another quick example",
-      "input": "10 miles",
-      "output": "16.0934 kilometers",
-      "description": "Useful for quick checks, comparisons or repeat tasks."
+      "title": "Fractional mileage",
+      "input": "2.5 miles",
+      "output": "4.02335 km",
+      "description": "Fractional miles are converted with full decimal precision."
+    },
+    {
+      "title": "Large distance",
+      "input": "120 miles",
+      "output": "193.12128 km",
+      "description": "Useful for long road distances and route comparisons."
     }
   ],
   "faq": [
     {
-      "question": "How accurate is this tool?",
-      "answer": "The result is based on the input you provide and the calculation or transformation shown on the page."
+      "question": "What factor does this converter use?",
+      "answer": "It uses the standard relationship: 1 mile = 1.609344 kilometers."
     },
     {
-      "question": "Can I use this tool on mobile?",
-      "answer": "Yes. The page works on desktop and mobile screens with a simple input and result layout."
+      "question": "Why does the result include decimals?",
+      "answer": "Decimal output keeps the converted distance precise, especially for fractional miles and longer routes."
+    },
+    {
+      "question": "How should I read a very small input?",
+      "answer": "Small mile values will convert to small kilometer values with more decimal detail, so check the full number before rounding."
+    },
+    {
+      "question": "What is the most common mistake when using this tool?",
+      "answer": "People sometimes enter kilometers by mistake or expect the result to round automatically. Make sure the input is in miles and round only if your use case needs it."
     }
   ],
   "seo": {
-    "title": "Miles to KM Converter",
-    "description": "Convert miles to kilometers instantly. Free online miles to km converter with instant results.",
+    "title": "Miles to Kilometers Converter",
+    "description": "Convert miles to kilometers using a precise factor, with decimal results, worked examples, and clear unit interpretation.",
     "keywords": [
-      "miles to km converter"
+      "miles to kilometers",
+      "mile to km",
+      "distance converter"
     ]
   }
 }

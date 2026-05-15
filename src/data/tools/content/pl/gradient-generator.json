@@ -4,158 +4,87 @@
   "slug": "generator-gradientow-css",
   "h1": "Generator gradientów CSS",
   "title": "Generator gradientów CSS",
-  "shortDescription": "Twórz czyste gradienty CSS z podglądem na żywo, ustawieniem kąta i gotowym kodem do skopiowania.",
-  "metaTitle": "Generator gradientów CSS – twórz gradienty liniowe i radialne",
-  "metaDescription": "Generuj gradienty CSS online z podglądem na żywo, kontrolą kąta, presetami kolorów i gotowym do skopiowania kodem CSS.",
-  "intro": "Twórz nowoczesne gradienty CSS w kilka sekund. Ustaw kolory, kąt i typ gradientu, podejrzyj efekt na żywo, a potem skopiuj czysty kod CSS do swojej strony lub interfejsu.",
-  "overview": "Ten generator gradientów CSS pozwala szybko tworzyć gradienty liniowe i radialne bez ręcznego pisania kodu. Sprawdza się przy tłach, przyciskach, sekcjach hero, kartach i elementach UI. Wybierz kolory, dopasuj kierunek i od razu pobierz gotowy kod CSS.",
+  "shortDescription": "Twórz precyzyjne gradienty CSS z podglądem na żywo, kontrolą kąta i gotowym kodem.",
+  "metaTitle": "Generator gradientów CSS",
+  "metaDescription": "Twórz liniowe i radialne gradienty CSS z podglądem na żywo, kontrolą kąta i kodem gotowym do skopiowania.",
+  "intro": "Wygeneruj gradient CSS w kilka sekund, sprawdź efekt na żywo i skopiuj dokładny kod.",
+  "overview": "To narzędzie zamienia dobór kolorów w gotowy gradient CSS bez ręcznego zgadywania wartości. Przełączaj tryb liniowy i radialny, reguluj kąt albo punkt skupienia i od razu widzisz, jak zmienia się kompozycja.\n\nPrzydaje się wszędzie tam, gdzie tło ma wspierać układ: w sekcjach hero, na przyciskach, kartach, overlayach, badge’ach i panelach. Wynik to czysty CSS, który łatwo wkleisz do arkusza stylów, komponentu albo tokenów projektu.",
   "howItWorks": [
-    "Wybierz jeden lub więcej kolorów gradientu.",
-    "Określ tryb liniowy lub radialny.",
-    "W razie potrzeby ustaw kąt, pozycję lub rozkład.",
-    "Obserwuj podgląd gradientu na żywo.",
-    "Skopiuj wygenerowany kod CSS i wklej go do projektu."
+    "Wybierz kolory gradientu.",
+    "Ustaw tryb liniowy lub radialny.",
+    "Dopasuj kąt, pozycję albo rozpiętość.",
+    "Sprawdź podgląd na żywo.",
+    "Skopiuj kod CSS do projektu."
   ],
   "useCases": [
-    "Tworzenie tłach strony z płynnymi przejściami kolorów.",
-    "Generowanie gradientów do przycisków, banerów i sekcji hero.",
-    "Testowanie zestawień kolorów przed wdrożeniem do systemu UI.",
-    "Przygotowanie szybkich fragmentów CSS do makiet i prototypów.",
-    "Tworzenie efektów świetlnych radialnych dla kart, paneli i badge’y."
+    {
+      "title": "Tło sekcji hero",
+      "description": "Stwórz mocny gradient na górę strony, który podkreśla nagłówek i kolory marki."
+    },
+    {
+      "title": "Styl przycisku CTA",
+      "description": "Wygeneruj dwukolorowy gradient dla przycisków akcji i elementów interaktywnych."
+    },
+    {
+      "title": "Poświata pod kartą",
+      "description": "Dodaj miękki radialny blask pod kartą z ceną, kafelkiem funkcji lub panelem produktu."
+    },
+    {
+      "title": "Porównanie palety marki",
+      "description": "Sprawdź kilka zestawień kolorów przed dodaniem ich do systemu UI lub arkusza stylów."
+    },
+    {
+      "title": "Overlay na zdjęcie",
+      "description": "Zbuduj nakładkę gradientową, która poprawia czytelność tekstu na banerach i grafikach."
+    }
   ],
   "examples": [
     {
-      "title": "Tło liniowe",
-      "input": "#ff7a18 do #af002d",
-      "output": "background: linear-gradient(135deg, #ff7a18, #af002d);",
-      "description": "Prosty ukośny gradient do nowoczesnych sekcji strony."
+      "title": "Ukosny gradient marki",
+      "input": "#0f172a → #2563eb przy 135°",
+      "output": "background: linear-gradient(135deg, #0f172a, #2563eb);",
+      "description": "Wyrazisty gradient przechodzący z ciemnego w jasny ton."
     },
     {
-      "title": "Radialny reflektor",
-      "input": "#ffffff do #dbeafe",
-      "output": "background: radial-gradient(circle, #ffffff 0%, #dbeafe 100%);",
-      "description": "Miękki gradient radialny do jasnych akcentów UI."
+      "title": "Miękka poświata radialna",
+      "input": "#fff7ed → #fdba74 na środku",
+      "output": "background: radial-gradient(circle at center, #fff7ed 0%, #fdba74 100%);",
+      "description": "Ciepłe rozświetlenie do kart i paneli."
+    },
+    {
+      "title": "Nagłówek z trzema kolorami",
+      "input": "#111827 → #4f46e5 → #c084fc",
+      "output": "background: linear-gradient(120deg, #111827 0%, #4f46e5 52%, #c084fc 100%);",
+      "description": "Bogatszy układ kolorów do sekcji otwierających stronę."
     }
   ],
   "faq": [
     {
-      "question": "Czym jest generator gradientów CSS?",
-      "answer": "To narzędzie, które tworzy kod gradientu CSS na podstawie wybranych kolorów i ustawień, aby można go było od razu użyć w projekcie."
+      "question": "Czy mogę ustawić miejsce początku gradientu?",
+      "answer": "Tak. W gradiencie liniowym ustawiasz kąt, a w radialnym także punkt środka i obszar rozchodzenia się światła."
     },
     {
-      "question": "Czy mogę tworzyć gradienty liniowe i radialne?",
-      "answer": "Tak. Możesz generować zarówno gradienty liniowe, jak i radialne oraz od razu kopiować kod CSS."
+      "question": "Dlaczego podgląd może wyglądać inaczej niż w projekcie?",
+      "answer": "Na odbiór wpływa wielkość elementu, kolor tła pod spodem i sposób renderowania gradientu przez przeglądarkę."
     },
     {
-      "question": "Czy narzędzie pokazuje podgląd na żywo?",
-      "answer": "Tak. Podgląd aktualizuje się przy zmianie kolorów, kąta i typu gradientu."
+      "question": "Ile punktów koloru warto użyć?",
+      "answer": "Dwa punkty wystarczą do prostych sekcji, a trzy lub więcej dadzą bogatsze przejścia. Zbyt wiele stopni może jednak wprowadzić chaos."
     },
     {
-      "question": "Czy wygenerowany kod nadaje się do użycia w projekcie?",
-      "answer": "Tak. Narzędzie generuje czysty kod CSS, który możesz wkleić do arkusza stylów lub komponentu."
+      "question": "Czy mogę wkleić wynik do zwykłego CSS i stylów komponentu?",
+      "answer": "Tak. Otrzymany zapis można wkleić do arkusza stylów, bloku style albo definicji komponentu."
     }
   ],
-  "uiLabels": {
-    "copy": "Kopiuj",
-    "copied": "Skopiowano",
-    "input": "Wejście",
-    "output": "Wyjście",
-    "placeholder": "Wpisz kolor lub wybierz preset",
-    "indent": "Wcięcie",
-    "removeComments": "Usuń komentarze",
-    "preview": "Podgląd",
-    "source": "Źródło",
-    "sanitizedHtml": "Oczyszczony HTML",
-    "plainText": "Tekst zwykły",
-    "summary": "Podsumowanie",
-    "total": "Razem",
-    "links": "Linki",
-    "images": "Obrazy",
-    "errors": "Błędy",
-    "warnings": "Ostrzeżenia",
-    "valid": "Poprawne",
-    "invalid": "Niepoprawne",
-    "href": "Href",
-    "text": "Tekst",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Szerokość",
-    "height": "Wysokość",
-    "empty": "Puste",
-    "outputReady": "Wynik gotowy",
-    "cleanedHtml": "Oczyszczony HTML",
-    "formattedHtml": "Sformatowany HTML",
-    "minifiedHtml": "Zminifikowany HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Wyodrębnione obrazy",
-    "extractedLinks": "Wyodrębnione linki",
-    "validationSummary": "Podsumowanie walidacji",
-    "prettyHtml": "Czytelny HTML",
-    "encodedText": "Zakodowany tekst",
-    "file": "Plik",
-    "size": "Rozmiar",
-    "format": "Format",
-    "quality": "Jakość",
-    "colorOne": "Kolor pierwszy",
-    "colorTwo": "Kolor drugi",
-    "background": "Tło",
-    "foreground": "Pierwszy plan",
-    "angle": "Kąt",
-    "margin": "Margines",
-    "level": "Poziom",
-    "gradientType": "Typ gradientu",
-    "linear": "Liniowy",
-    "radial": "Radialny",
-    "blur": "Rozmycie",
-    "spread": "Rozpiętość",
-    "offsetX": "Przesunięcie X",
-    "offsetY": "Przesunięcie Y",
-    "opacity": "Krycie",
-    "inset": "Wewnętrzny",
-    "cssCode": "Kod CSS",
-    "snippet": "Fragment",
-    "download": "Pobierz",
-    "downloadSvg": "Pobierz SVG",
-    "downloadPng": "Pobierz PNG",
-    "downloadAll": "Pobierz wszystko",
-    "upload": "Prześlij",
-    "title": "Tytuł",
-    "description": "Opis",
-    "canonicalUrl": "Kanoniczny URL",
-    "siteName": "Nazwa serwisu",
-    "ogImage": "Obraz OG",
-    "clear": "Wyczyść",
-    "generatedQr": "Podglad kodu QR",
-    "placeholderImage": "Podglad obrazu",
-    "faviconSet": "Zestaw favicon",
-    "keepAspectRatio": "Zachowaj proporcje",
-    "cropX": "Kadrowanie X",
-    "cropY": "Kadrowanie Y",
-    "cropWidth": "Szerokość kadru",
-    "cropHeight": "Wysokość kadru",
-    "originalSize": "Rozmiar oryginału",
-    "outputSize": "Rozmiar wyjściowy",
-    "savedSize": "Oszczędzony rozmiar",
-    "result": "Wynik",
-    "base64": "Base64",
-    "mimeType": "Typ MIME",
-    "resizedImage": "Obraz po zmianie rozmiaru",
-    "compressedImage": "Obraz skompresowany",
-    "croppedImage": "Obraz przycięty",
-    "convertedImage": "Obraz przekonwertowany",
-    "decodedImage": "Obraz zdekodowany",
-    "imagePreview": "Podgląd obrazu"
-  },
   "seo": {
-    "title": "Generator gradientów CSS – twórz gradienty liniowe i radialne",
-    "description": "Generuj gradienty CSS online z podglądem na żywo, kontrolą kąta, presetami kolorów i gotowym do skopiowania kodem CSS.",
+    "title": "Generator gradientów CSS",
+    "description": "Twórz liniowe i radialne gradienty CSS z podglądem na żywo, kontrolą kąta i kodem gotowym do skopiowania.",
     "keywords": [
       "generator gradientów css",
-      "generator gradientu liniowego",
-      "generator gradientu radialnego",
-      "gradient css",
-      "kod css gradientu"
+      "gradient liniowy css",
+      "gradient radialny css",
+      "tło gradientowe css",
+      "kod gradientu css"
     ]
   }
 }

@@ -4,176 +4,88 @@
   "slug": "kalkulator-dachu",
   "h1": "Kalkulator dachu",
   "title": "Kalkulator dachu",
-  "shortDescription": "Policz powierzchnie dachu dwuspadowego albo jednospadowego, dolicz zapas i oszacuj pokrycie, membrane oraz kalenice.",
-  "metaTitle": "Kalkulator dachu | Dach dwuspadowy, jednospadowy i pokrycie",
-  "metaDescription": "Oblicz powierzchnie dachu dwuspadowego lub jednospadowego. Kalkulator pokazuje zapas, membrane, kalenice i liczbe paczek albo arkuszy pokrycia.",
-  "intro": "Kalkulator dachu pomaga oszacowac ile pokrycia potrzeba na prosty dach dwuspadowy albo jednospadowy. Poza sama powierzchnia widzisz tez wynik z zapasem, membrane oraz dlugosc kalenicy.",
-  "overview": "Wpisz dlugosc i szerokosc budynku, kat nachylenia, wielkosc okapu oraz realne pokrycie paczki lub arkusza. Narzedzie liczy dlugosc polaci, powierzchnie dachu, powierzchnie z zapasem i liczbe jednostek zakupowych dla wybranego rodzaju pokrycia.",
+  "shortDescription": "Oblicz powierzchnię dachu, dolicz zapas i przelicz ją na liczbę paczek, arkuszy lub rolek.",
+  "metaTitle": "Powierzchnia dachu i materiały",
+  "metaDescription": "Oblicz powierzchnię dachu spadzistego, dolicz zapas i policz dachówki, arkusze lub rolki potrzebne do zakupu.",
+  "intro": "Dla prostego dachu spadzistego to narzędzie wylicza rzeczywistą powierzchnię połaci, dolicza zapas i przelicza ją na paczki, arkusze albo rolki do zakupu.",
+  "overview": "Podaj długość i szerokość budynku, kąt nachylenia dachu, procent zapasu oraz pokrycie jednej paczki, arkusza albo rolki. Kalkulator na tej podstawie szacuje rzeczywistą powierzchnię połaci i potrzebną ilość materiału.\n\nNajlepiej sprawdza się przy prostych dachach, gdy wydajność produktu jest jasno podana przez producenta. Dzięki temu łatwo porównać dachówkę, blachę lub membranę na tej samej powierzchni i z tym samym uwzględnieniem docinek.\n\nJeśli dach ma kosze, naroża, lukarny, uskoki albo kilka połaci, potraktuj wynik jako wartość bazową i dopasuj go do rzeczywistego projektu, elementów wykończeniowych oraz sposobu pakowania produktu.",
   "howItWorks": [
-    "Podaj dlugosc i szerokosc budynku w metrach.",
-    "Wpisz kat nachylenia dachu w stopniach.",
-    "Ustal procent zapasu na docinki i zaklady.",
-    "Podaj pokrycie jednej paczki lub arkusza w m2.",
-    "Otrzymaj powierzchnie dachu, wynik z zapasem i potrzebna ilosc."
+    "Wpisz długość i szerokość budynku w metrach.",
+    "Ustaw kąt nachylenia dachu w stopniach.",
+    "Dodaj procent zapasu na docinki, zakłady i straty montażowe.",
+    "Podaj pokrycie jednej paczki, arkusza lub rolki w m².",
+    "Odczytaj powierzchnię dachu, wynik z zapasem i wymaganą liczbę jednostek."
   ],
   "useCases": [
-    "Sprawdzenie, ile dachowki potrzeba na dach dwuspadowy.",
-    "Szybka wycena materialu przed zakupem.",
-    "Planowanie zamowienia membrany, blachy lub dachowki.",
-    "Wstepne oszacowanie kosztow pokrycia dachu."
+    {
+      "title": "Zamówienie dachówki",
+      "description": "Przelicz metraż dachu na liczbę paczek dachówki przed złożeniem zamówienia u dostawcy."
+    },
+    {
+      "title": "Planowanie blachy",
+      "description": "Oszacuj liczbę arkuszy lub paneli, gdy znasz wydajność jednego elementu."
+    },
+    {
+      "title": "Dobór membrany",
+      "description": "Sprawdź, czy jedna czy kilka rolek wystarczy na całą połać z wybranym zapasem."
+    },
+    {
+      "title": "Wstępny koszt materiału",
+      "description": "Przygotuj bazę ilościową przed rozmową z wykonawcą, hurtownią albo składem."
+    }
   ],
   "examples": [
     {
-      "title": "Przykladowe obliczenie",
-      "input": "Dlugosc 10 m, szerokosc 8 m, kat 30°, zapas 10%, pokrycie 1,2 m2 na paczke",
-      "output": "Narzędzie zwraca powierzchnie dachu, wynik z zapasem i liczbe paczek.",
-      "description": "Przydatne przy szybkim planowaniu zakupu."
+      "title": "Dom jednorodzinny",
+      "input": "Długość 10 m, szerokość 8 m, kąt 30°, zapas 10%, pokrycie 1,2 m² na paczkę",
+      "output": "Powierzchnia dachu: 92,4 m². Z zapasem: 101,6 m². Potrzeba: 85 paczek.",
+      "description": "Przydatne przy typowym domu, gdy wiadomo, ile metrów pokrywa jedna paczka."
     },
     {
-      "title": "Ile dachowki potrzeba",
-      "input": "Dowolny prosty dach dwuspadowy z podanym pokryciem jednej paczki",
-      "output": "Sprawdz orientacyjna liczbe dachowki, paczek lub arkuszy.",
-      "description": "Dobre do wyszukiwania frazy ile dachowki potrzeba."
+      "title": "Blacha na garaż",
+      "input": "Długość 14 m, szerokość 6,5 m, kąt 22°, zapas 7%, pokrycie 0,85 m² na arkusz",
+      "output": "Powierzchnia dachu: 72,8 m². Z zapasem: 77,9 m². Potrzeba: 92 arkusze.",
+      "description": "Dobre dla garażu lub niewielkiego budynku krytego blachą profilowaną."
+    },
+    {
+      "title": "Sprawdzenie rolek membrany",
+      "input": "Długość 12 m, szerokość 9 m, kąt 35°, zapas 12%, pokrycie 50 m² na rolkę",
+      "output": "Powierzchnia dachu: 132,5 m². Z zapasem: 148,4 m². Potrzeba: 3 rolki.",
+      "description": "Pomaga ocenić, czy dwie rolki wystarczą, czy przez zakłady potrzebna będzie trzecia."
     }
   ],
   "faq": [
     {
-      "question": "Czy kalkulator obsluguje skomplikowane dachy?",
-      "answer": "Nie, w tej wersji zaklada prosty dach dwuspadowy. Dla dachow kopertowych, lukarn i nieregularnych polaci wynik jest tylko orientacyjny."
+      "question": "Jaki dach zakłada ten kalkulator?",
+      "answer": "Zakłada prosty dach spadzisty z jedną regularną kalenicą. Przy dachach złożonych wynik trzeba skorygować ręcznie."
     },
     {
-      "question": "Czy moge policzyc dachowke?",
-      "answer": "Tak. Wystarczy wpisac pokrycie jednej paczki lub arkusza, aby oszacowac ilosc dachowki, blachy lub innego pokrycia."
+      "question": "Dlaczego kąt nachylenia i zapas zmieniają wynik?",
+      "answer": "Kąt zwiększa rzeczywistą powierzchnię względem rzutu budynku, a zapas uwzględnia docinki, zakłady i straty podczas montażu."
     },
     {
-      "question": "Co oznacza procent zapasu?",
-      "answer": "To dodatkowa ilosc materialu na docinki, zaklady i typowe straty montazowe."
+      "question": "Jak wpisać pokrycie jednej paczki lub arkusza?",
+      "answer": "Wpisz wartość podaną przez producenta dla jednej jednostki. Najlepiej działa pokrycie netto w m² na paczkę, arkusz lub rolkę."
     },
     {
-      "question": "Czy wynik jest dokladny?",
-      "answer": "To szacunek. Przed zakupem warto sprawdzic dane u producenta i wykonawcy."
+      "question": "Dlaczego liczba jednostek może wyjść wysoka?",
+      "answer": "Małe pokrycie jednostkowe, stromy dach albo duży zapas szybko podnoszą wynik. Sprawdź też, czy wpisano m² na sztukę, a nie na całe opakowanie zbiorcze."
+    },
+    {
+      "question": "Czy mogę zamówić dokładnie tyle, ile pokazuje wynik?",
+      "answer": "Lepiej traktować wynik jako bazę i osobno doliczyć gąsiory, pasy startowe, obróbki oraz sposób pakowania konkretnego produktu."
     }
   ],
-  "uiLabels": {
-    "copy": "Kopiuj",
-    "copied": "Skopiowano",
-    "input": "Dane wejsciowe",
-    "output": "Wynik",
-    "placeholder": "Wpisz wartosc",
-    "indent": "Wciecie",
-    "removeComments": "Usun komentarze",
-    "preview": "Podglad",
-    "source": "Zrodlo",
-    "sanitizedHtml": "Oczyszczony HTML",
-    "plainText": "Tekst zwykly",
-    "summary": "Podsumowanie",
-    "total": "Lacznie",
-    "links": "Linki",
-    "images": "Obrazy",
-    "errors": "Bledy",
-    "warnings": "Ostrzezenia",
-    "valid": "Poprawne",
-    "invalid": "Niepoprawne",
-    "href": "Href",
-    "text": "Tekst",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Szerokosc",
-    "height": "Wysokosc",
-    "empty": "Puste",
-    "outputReady": "Wynik gotowy",
-    "cleanedHtml": "Oczyszczony HTML",
-    "formattedHtml": "Sformatowany HTML",
-    "minifiedHtml": "Zminifikowany HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Wyodrebnione obrazy",
-    "extractedLinks": "Wyodrebnione linki",
-    "validationSummary": "Podsumowanie walidacji",
-    "prettyHtml": "Czytelny HTML",
-    "encodedText": "Zakodowany tekst",
-    "file": "Plik",
-    "size": "Rozmiar",
-    "format": "Format",
-    "quality": "Jakosc",
-    "colorOne": "Kolor 1",
-    "colorTwo": "Kolor 2",
-    "background": "Tlo",
-    "foreground": "Pierwszy plan",
-    "angle": "Kat",
-    "margin": "Margines",
-    "level": "Poziom",
-    "gradientType": "Typ gradientu",
-    "linear": "Liniowy",
-    "radial": "Promienisty",
-    "blur": "Rozmycie",
-    "spread": "Rozpietosc",
-    "offsetX": "Przesuniecie X",
-    "offsetY": "Przesuniecie Y",
-    "opacity": "Nieprzezroczystosc",
-    "inset": "Wewnetrzny",
-    "cssCode": "Kod CSS",
-    "snippet": "Fragment",
-    "download": "Pobierz",
-    "downloadSvg": "Pobierz SVG",
-    "downloadPng": "Pobierz PNG",
-    "downloadAll": "Pobierz wszystko",
-    "upload": "Przeslij",
-    "title": "Tytul",
-    "description": "Opis",
-    "canonicalUrl": "Adres kanoniczny",
-    "siteName": "Nazwa serwisu",
-    "ogImage": "Obraz OG",
-    "clear": "Wyczysc",
-    "generatedQr": "Wygenerowany QR",
-    "placeholderImage": "Obraz zastpczy",
-    "faviconSet": "Zestaw favicon",
-    "keepAspectRatio": "Zachowaj proporcje",
-    "cropX": "Przyciecie X",
-    "cropY": "Przyciecie Y",
-    "cropWidth": "Szerokosc przyciecia",
-    "cropHeight": "Wysokosc przyciecia",
-    "originalSize": "Oryginalny rozmiar",
-    "outputSize": "Rozmiar wyjsciowy",
-    "savedSize": "Zaoszczedzony rozmiar",
-    "result": "Wynik",
-    "base64": "Base64",
-    "mimeType": "Typ MIME",
-    "resizedImage": "Obraz po zmianie rozmiaru",
-    "compressedImage": "Obraz skompresowany",
-    "croppedImage": "Obraz przyciety",
-    "convertedImage": "Obraz przekonwertowany",
-    "decodedImage": "Obraz zdekodowany",
-    "imagePreview": "Podglad obrazu",
-    "camera": "Aparat",
-    "lens": "Obiektyw",
-    "dateTaken": "Data wykonania",
-    "resolution": "Rozdzielczosc",
-    "fileSize": "Rozmiar pliku",
-    "iso": "ISO",
-    "exposure": "Czas naświetlania",
-    "aperture": "Przysłona",
-    "focalLength": "Ogniskowa",
-    "flash": "Lampa błyskowa",
-    "orientation": "Orientacja",
-    "latitude": "Szerokosc geograficzna",
-    "longitude": "Dlugosc geograficzna",
-    "openMap": "Otworz mape",
-    "rawMetadata": "Surowe metadane",
-    "noMetadataFound": "Nie znaleziono metadanych",
-    "gpsLocation": "Lokalizacja GPS",
-    "metadataSummary": "Podsumowanie metadanych"
-  },
   "seo": {
-    "title": "Kalkulator dachu - Oblicz powierzchnie i ilosc dachowki",
-    "description": "Sprawdz powierzchnie dachu, powierzchnie z zapasem i ile dachowki potrzeba do prostego dachu dwuspadowego.",
+    "title": "Powierzchnia dachu i materiały",
+    "description": "Oblicz powierzchnię dachu spadzistego, dolicz zapas i policz dachówki, arkusze lub rolki potrzebne do zakupu.",
     "keywords": [
       "kalkulator dachu",
-      "ile dachowki potrzeba",
-      "obliczanie powierzchni dachu",
-      "kalkulator dachowki",
-      "dach dwuspadowy",
-      "kalkulator pokrycia dachu"
+      "powierzchnia dachu",
+      "ile dachówek potrzeba",
+      "kalkulator dachówki",
+      "dach spadzisty",
+      "materiały na dach"
     ]
   }
 }

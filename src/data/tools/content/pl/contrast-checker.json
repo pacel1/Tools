@@ -4,13 +4,81 @@
   "slug": "sprawdzanie-kontrastu",
   "h1": "Sprawdzanie kontrastu",
   "title": "Sprawdzanie kontrastu",
-  "shortDescription": "Sprawdzaj kontrast kolorow online i oceniaj czy polaczenie tekstu oraz tla jest czytelne.",
-  "metaTitle": "Sprawdzanie kontrastu | Kontrast kolorow online",
-  "metaDescription": "Sprawdzaj kontrast kolorow online i odczytuj wspolczynnik dla tekstu oraz tla. Przydatne do dostepnosci, QA i pracy nad interfejsem.",
-  "intro": "To narzedzie pomaga szybko sprawdzic, czy kolor tekstu i kolor tla sa wystarczajaco czytelne przed wdrozeniem zmian w interfejsie. Dostajesz wspolczynnik kontrastu od razu oraz prosty komunikat, czy para kolorow wypada dobrze dla typowych scenariuszy tekstowych.",
-  "overview": "Sprawdzanie kontrastu jest przydatne przy audytach dostepnosci, testach designu i pracy z motywami. Zamiast zgadywac, czy dwa kolory beda czytelne, mozesz od razu zobaczyc wynik i podjac decyzje projektowa.",
-  "howItWorks": ["Wybierz kolor tekstu i kolor tla.", "Narzedzie obliczy wspolczynnik kontrastu pomiedzy tymi kolorami.", "Sprawdz czy para przechodzi podstawowe progi czytelnosci dla tekstu zwyklego lub wiekszego."],
-  "examples": [{"title": "Ciemny tekst na bialym tle", "input": "#111827 na #FFFFFF", "output": "Wysoki kontrast", "description": "Dobry punkt odniesienia dla czytelnych interfejsow i dokumentacji."}, {"title": "Kontrola koloru akcentu", "input": "Kolor marki na jasnym panelu", "output": "Ocena pass/fail", "description": "Pomocne przy sprawdzaniu przyciskow, linkow i stanów UI."}],
-  "faq": [{"question": "Co oznacza wspolczynnik kontrastu?", "answer": "Pokazuje, jak bardzo roznia sie jasnoscia kolor tekstu i kolor tla."}, {"question": "Czy to narzedzie pomaga w dostepnosci?", "answer": "Tak. Narzedzie wskazuje, czy polaczenie kolorow jest wystarczajaco mocne dla typowych progow czytelnosci."}],
-  "seo": {"title": "Sprawdzanie kontrastu | Kontrast kolorow online", "description": "Sprawdzaj kontrast kolorow online i odczytuj wspolczynnik dla tekstu oraz tla. Przydatne do dostepnosci, QA i pracy nad interfejsem.", "keywords": ["sprawdzanie kontrastu", "kontrast kolorow", "wcag kontrast", "czytelnosc tekstu", "contrast checker"]}
+  "shortDescription": "Porownaj kolor tekstu i tla, aby odczytac wspolczynnik kontrastu i ocenic czy para nadaje sie do czytelnego interfejsu.",
+  "metaTitle": "Sprawdzanie kontrastu | Kolory",
+  "metaDescription": "Porownaj kolor tekstu i tla, odczytaj wspolczynnik kontrastu i oceń, czy para nadaje sie do zwyklego tekstu, duzego tekstu i UI.",
+  "intro": "Wpisz kolor tekstu i kolor tla, aby od razu zobaczyc wspolczynnik kontrastu oraz prosty sygnal, czy para nadaje sie do interfejsu.",
+  "overview": "To narzedzie jest dla projektantow, programistow i osob sprawdzajacych UI, ktore musza ocenic pare kolorow bez zgadywania. Pokazuje wspolczynnik kontrastu dla dwoch kolorow i pomaga zrozumiec, jak taka kombinacja zachowa sie w prawdziwych elementach interfejsu, takich jak tekst, etykiety, przyciski czy panele.\n\nPrzydaje sie przy dopracowywaniu motywow, kontroli kolorow marki i przegladzie komponentu przed wdrozeniem. Jest szczegolnie uzyteczne tam, gdzie kolor wyglada dobrze wizualnie, ale traci czytelnosc w mniejszych napisach, stanach nieaktywnych lub na barwionych tlach.",
+  "howItWorks": [
+    "Wybierz kolor tekstu i kolor tla.",
+    "Narzedzie obliczy wspolczynnik kontrastu miedzy obiema barwami.",
+    "Oceń wynik dla zwyklego tekstu, wiekszych naglowkow i powierzchni interfejsu, gdzie liczy sie czytelnosc."
+  ],
+  "useCases": [
+    {
+      "title": "Tekst akapitowy na jasnym tle",
+      "description": "Sprawdz, czy kolor dluzszego tekstu pozostaje czytelny na bieli, kremie lub bardzo jasnych kartach."
+    },
+    {
+      "title": "Etykieta przycisku na kolorze marki",
+      "description": "Przetestuj, czy bialy, ciemny albo przygaszony napis dobrze wypada na pelnym tle przycisku."
+    },
+    {
+      "title": "Szary tekst pomocniczy w panelu danych",
+      "description": "Zweryfikuj, czy metadane, znaczniki czasu i opisy nadal odcinaja sie od gestych widokow tabel."
+    },
+    {
+      "title": "Przeglad motywu dark mode",
+      "description": "Oceń tekst na grafitowych panelach, kartach i warstwach nakladanych przed publikacja ciemnego interfejsu."
+    }
+  ],
+  "examples": [
+    {
+      "title": "Tekst artykulu na bieli",
+      "input": "Tekst #1F2937 / Tlo #FFFFFF",
+      "output": "Wysoki kontrast; odpowiedni dla tekstu podstawowego.",
+      "description": "Typowe zestawienie dla artykulow, formularzy i dokumentacji."
+    },
+    {
+      "title": "Biala etykieta na niebieskim przycisku",
+      "input": "Tekst #FFFFFF / Tlo #2563EB",
+      "output": "Czytelne dla przycisku akcji; sprawdz jeszcze rozmiar napisu.",
+      "description": "Pomaga ocenic, czy glowny przycisk moze zostac z bialym tekstem."
+    },
+    {
+      "title": "Jasnoszary podpis na karcie",
+      "input": "Tekst #6B7280 / Tlo #F3F4F6",
+      "output": "Nizszy kontrast; moze pasowac tylko do tekstu pobocznego i wiekszego.",
+      "description": "Pokazuje, ze subtelne szarosci moga byc za slabe na bardzo jasnym tle."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Co dokladnie oznacza wspolczynnik kontrastu?",
+      "answer": "Pokazuje, jak bardzo dwa kolory roznia sie w postrzeganej jasnosci. Im wyzsza wartosc, tym zwykle lepsze oddzielenie tekstu od tla."
+    },
+    {
+      "question": "Dlaczego para kolorow moze wygladac dobrze, a wynik i tak jest slaby?",
+      "answer": "Nasycone kolory moga wydawac sie mocne, ale miec zbyt zblizona jasnosc. Wspolczynnik opiera sie na roznicy luminancji, a nie na intensywnosci barwy."
+    },
+    {
+      "question": "Czy rozmiar tekstu ma znaczenie przy odczycie wyniku?",
+      "answer": "Tak. Male litery potrzebuja mocniejszego zestawienia niz duze naglowki. To, co wystarcza dla tytulu, moze byc za slabe dla tresci lub etykiet formularza."
+    },
+    {
+      "question": "Jaki blad najczesciej pojawia sie przy sprawdzaniu przyciskow i plakietek?",
+      "answer": "Czesto testuje sie tylko stan podstawowy, a pomija hover, disabled albo outline. Te wersje moga obnizyc kontrast i pogorszyc czytelnosc."
+    }
+  ],
+  "seo": {
+    "title": "Sprawdzanie kontrastu | Kolory",
+    "description": "Porownaj kolor tekstu i tla, odczytaj wspolczynnik kontrastu i oceń, czy para nadaje sie do zwyklego tekstu, duzego tekstu i UI.",
+    "keywords": [
+      "sprawdzanie kontrastu",
+      "kontrast kolorow",
+      "kolor tekstu i tla",
+      "dostepnosc kolorow",
+      "wcag kontrast"
+    ]
+  }
 }

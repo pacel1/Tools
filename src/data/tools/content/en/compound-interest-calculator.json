@@ -4,42 +4,80 @@
   "slug": "compound-interest-calculator",
   "h1": "Compound Interest Calculator",
   "title": "Compound Interest Calculator",
-  "shortDescription": "Calculate compound interest growth over time with fast results, simple inputs and practical examples.",
-  "overview": "Calculate compound interest growth over time. Use this tool to get a clear result quickly from simple input on the same page. It is useful for everyday checks, comparisons and small tasks when you need a fast online answer.",
+  "shortDescription": "See how an initial amount grows with compound interest over time, including rate, term, and compounding frequency.",
+  "metaTitle": "Compound Interest Calculator",
+  "metaDescription": "Calculate future value, total interest, and growth over time using your principal, rate, term, and compounding frequency.",
+  "intro": "Enter your principal, annual rate, term, and compounding frequency to see the future value and total interest.",
+  "overview": "This calculator shows how money grows when interest is added to the balance and then earns interest again. It is useful for savings plans, deposits, and any situation where the compounding schedule affects the final amount. You can compare different rates, terms, and compounding intervals to see how much the result changes.\n\nThe result includes the final balance and the interest earned, so you can separate your own contributions from the growth produced by compounding. If you add regular deposits, make sure they are entered exactly as required by the tool, because a change in frequency or timing can alter the outcome. For loan-style scenarios, a separate payment calculator is usually the better fit.",
   "howItWorks": [
-    "Enter the required value or text into the form.",
-    "The conversion, calculation or transformation runs instantly in the browser.",
-    "Review the result and continue with related tools if you need another step."
+    "Enter the starting principal, annual interest rate, time period, and compounding frequency.",
+    "The calculator applies compound-interest math to estimate the final balance and total interest.",
+    "Review the result, then adjust the inputs to compare different savings scenarios."
+  ],
+  "useCases": [
+    {
+      "title": "Savings plan comparison",
+      "description": "Compare two deposit options with the same starting amount but different rates or compounding schedules."
+    },
+    {
+      "title": "Certificate of deposit estimate",
+      "description": "Estimate how a fixed deposit may grow over a set term when interest is credited monthly, quarterly, or yearly."
+    },
+    {
+      "title": "Goal planning for future balance",
+      "description": "Check how much time is needed for a starting balance to reach a target value at a chosen rate."
+    }
   ],
   "examples": [
     {
-      "title": "Common use case",
-      "input": "5000, 5%, 10 years",
-      "output": "Growth over time",
-      "description": "Shows a common use case with a clear input and result."
+      "title": "Yearly compounding on a deposit",
+      "input": "Principal: 8,000; Rate: 4.5%; Time: 6 years; Compounding: yearly",
+      "output": "Future value: 10,411.07; Interest earned: 2,411.07",
+      "description": "Shows how a fixed deposit grows when interest is added once per year."
     },
     {
-      "title": "Another quick example",
-      "input": "5000, 5%, 10 years",
-      "output": "Growth over time",
-      "description": "Useful for quick checks, comparisons or repeat tasks."
+      "title": "Monthly compounding on a savings balance",
+      "input": "Principal: 2,500; Rate: 6.2%; Time: 3 years; Compounding: monthly",
+      "output": "Future value: 3,007.39; Interest earned: 507.39",
+      "description": "Useful when comparing monthly crediting against a nominal annual rate."
+    },
+    {
+      "title": "High-rate short term scenario",
+      "input": "Principal: 1,200; Rate: 9%; Time: 18 months; Compounding: quarterly",
+      "output": "Future value: 1,341.68; Interest earned: 141.68",
+      "description": "Helpful for checking shorter terms where compounding frequency still matters."
     }
   ],
   "faq": [
     {
-      "question": "How accurate is this tool?",
-      "answer": "The result is based on the input you provide and the calculation or transformation shown on the page."
+      "question": "What inputs matter most in this calculator?",
+      "answer": "The starting principal, annual rate, time period, and compounding frequency have the biggest impact on the final value. Even small changes in rate or compounding interval can noticeably change the result."
     },
     {
-      "question": "Can I use this tool on mobile?",
-      "answer": "Yes. The page works on desktop and mobile screens with a simple input and result layout."
+      "question": "Why does monthly compounding give a different result than yearly compounding?",
+      "answer": "With more frequent compounding, interest is added to the balance more often, so future calculations are based on a slightly larger amount. That creates a higher final value when the nominal rate stays the same."
+    },
+    {
+      "question": "Does this calculator include taxes, fees, or inflation?",
+      "answer": "No. It calculates compound growth from the inputs you provide. Taxes, account fees, inflation, and additional deposits or withdrawals need to be considered separately."
+    },
+    {
+      "question": "How should I read the final amount and interest earned?",
+      "answer": "The final amount is the total balance at the end of the term. Interest earned is the difference between that balance and your starting principal."
+    },
+    {
+      "question": "Why do very small balances sometimes show rounded values?",
+      "answer": "The result is rounded for display, so tiny decimal differences may not appear. If you need exact accounting values, use the underlying formula with full precision."
     }
   ],
   "seo": {
     "title": "Compound Interest Calculator",
-    "description": "Calculate compound interest growth over time. Free online compound interest calculator with instant results.",
+    "description": "Calculate future value, total interest, and growth over time using your principal, rate, term, and compounding frequency.",
     "keywords": [
-      "compound interest calculator"
+      "compound interest calculator",
+      "future value calculator",
+      "interest growth calculator",
+      "savings calculator"
     ]
   }
 }

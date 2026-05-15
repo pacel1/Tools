@@ -4,44 +4,85 @@
   "slug": "compteur-de-mots",
   "h1": "Compteur de mots",
   "title": "Compteur de mots",
-  "shortDescription": "Comptez les mots, les caractères, les paragraphes et le temps de lecture dans un seul outil léger d’analyse de texte.",
-  "overview": "Le compteur de mots analyse le texte localement dans le navigateur et fournit des statistiques rapides pour les rédacteurs, éditeurs, marketeurs et étudiants. Il est conçu pour être peu coûteux à grande échelle, car aucune base de données ni API externe n’est nécessaire pour le calcul en direct.",
+  "shortDescription": "Comptez les mots, les caractères, les paragraphes et le temps de lecture estimé dans un seul outil.",
+  "metaTitle": "Compteur de mots",
+  "metaDescription": "Comptez les mots, les caractères, les paragraphes et le temps de lecture à partir d’un texte collé.",
+  "intro": "Collez votre texte pour obtenir immédiatement le nombre de mots, de caractères, de paragraphes et le temps de lecture estimé.",
+  "overview": "Ce compteur de mots sert à vérifier la longueur d’un texte avant remise, publication ou envoi. Il traite les brouillons, notes, paragraphes isolés et textes structurés sans modifier le contenu.\n\nUtilisez-le pour comparer deux versions d’un passage, contrôler un titre ou vérifier qu’un bloc reste dans une limite donnée. Le temps de lecture repose sur une cadence de 200 mots par minute, ce qui fournit un repère utile pour les articles et les notes longues.",
   "howItWorks": [
-    "Collez ou saisissez votre texte dans la zone de texte.",
-    "L’outil nettoie les espaces et compte les mots, les caractères et les blocs de paragraphes.",
+    "Collez ou saisissez le texte dans la zone prévue.",
+    "L’outil compte les mots, les caractères et les blocs de paragraphes de votre contenu.",
     "Le temps de lecture est estimé sur une base de 200 mots par minute."
+  ],
+  "useCases": [
+    {
+      "title": "Titres et sous-titres",
+      "description": "Vérifiez qu’un titre ou un intertitre respecte la longueur attendue avant la mise en page."
+    },
+    {
+      "title": "Relecture d’article",
+      "description": "Mesurez l’introduction, les sections et les paragraphes pour ajuster le texte à un brief éditorial."
+    },
+    {
+      "title": "Validation de textes client",
+      "description": "Contrôlez qu’un texte de page, une annonce ou une fiche produit tient dans l’espace convenu."
+    },
+    {
+      "title": "Limites de devoirs et de notes",
+      "description": "Comparez dissertations, résumés et notes d’étude à une limite de mots ou de caractères."
+    }
   ],
   "examples": [
     {
-      "title": "Brouillon de méta-description",
-      "input": "Un court résumé SEO pour une page d’accueil.",
-      "output": "8 mots",
-      "description": "Vérifiez rapidement la concision du texte avant publication."
+      "title": "Introduction de page de vente",
+      "input": "Des prix clairs, un support rapide et aucun coût caché créent la confiance.",
+      "output": "12 mots, 76 caractères, 1 paragraphe",
+      "description": "Pratique quand le bloc doit rester court et précis."
     },
     {
-      "title": "Paragraphe de blog",
-      "input": "Un extrait d’article en deux paragraphes avec des retours à la ligne.",
-      "output": "Mots, caractères et temps de lecture",
-      "description": "Utile pour les briefs de contenu et le contrôle qualité éditorial."
+      "title": "Brouillon en deux paragraphes",
+      "input": "Les systèmes de design renforcent la cohérence entre les équipes produit.\nIls réduisent aussi les reprises pendant la validation et le transfert.",
+      "output": "17 mots, 144 caractères, 2 paragraphes",
+      "description": "Montre le traitement des retours à la ligne et des blocs séparés."
+    },
+    {
+      "title": "Note de réunion",
+      "input": "Confirmez la salle, envoyez l’ordre du jour, récupérez les slides et partagez le compte rendu vendredi.",
+      "output": "15 mots, 102 caractères, 1 paragraphe",
+      "description": "Utile pour les notes courtes où la longueur compte aussi."
     }
   ],
   "faq": [
     {
-      "question": "Le comptage est-il effectué côté client ?",
-      "answer": "Oui. L’exemple de démarrage exécute le calcul directement dans le navigateur pour plus de rapidité et pour éviter les coûts d’infrastructure."
+      "question": "Comment les mots sont-ils comptés ?",
+      "answer": "Le texte est d’abord nettoyé des espaces superflus, puis découpé en unités de mots. Les segments séparés par des espaces ordinaires sont comptés comme des mots."
     },
     {
-      "question": "Comment le temps de lecture est-il estimé ?",
-      "answer": "L’indicateur de temps de lecture divise le nombre de mots par 200 et arrondit le résultat à deux décimales."
+      "question": "Qu’est-ce qu’un paragraphe dans cet outil ?",
+      "answer": "Un paragraphe correspond à un bloc séparé par une ligne vide. Un simple retour à la ligne à l’intérieur d’un bloc ne crée pas un nouveau paragraphe."
+    },
+    {
+      "question": "Pourquoi le temps de lecture est-il approximatif ?",
+      "answer": "L’estimation utilise une cadence fixe de 200 mots par minute. Les textes techniques, les listes ou les notes très courtes peuvent se lire différemment."
+    },
+    {
+      "question": "La ponctuation change-t-elle le résultat ?",
+      "answer": "La ponctuation ne crée pas de mot supplémentaire. En revanche, des espaces inhabituels, des listes ou des sauts de ligne peuvent modifier la manière dont le texte est découpé."
+    },
+    {
+      "question": "Pourquoi le résultat peut-il différer d’un éditeur ?",
+      "answer": "Chaque outil applique ses propres règles pour les traits d’union, les URL, les emojis et les titres. Ce compteur suit sa logique de découpage, donc de petits écarts sont possibles."
     }
   ],
   "seo": {
-    "title": "Compteur de mots en ligne",
-    "description": "Compteur de mots en ligne gratuit pour les mots, caractères, paragraphes et le temps de lecture.",
+    "title": "Compteur de mots",
+    "description": "Comptez les mots, les caractères, les paragraphes et le temps de lecture avec un compteur de texte clair.",
     "keywords": [
       "compteur de mots",
       "compteur de caractères",
-      "calculateur de temps de lecture"
+      "temps de lecture",
+      "compte de paragraphes",
+      "analyse de texte"
     ]
   }
 }

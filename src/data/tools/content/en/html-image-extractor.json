@@ -5,104 +5,90 @@
   "h1": "HTML Image Extractor",
   "title": "HTML Image Extractor",
   "shortDescription": "Extract image sources, alt text, and dimensions from HTML.",
-  "metaTitle": "HTML Image Extractor | Extract Image URLs, Alt Text and Dimensions",
-  "metaDescription": "Extract image sources, alt text, width and height from HTML instantly in your browser. Safe, client-side and easy to use.",
-  "intro": "Use this HTML image extractor to quickly pull image URLs, alt text, and dimensions from any HTML code. It runs in your browser, works client-side only, and helps you review image tags without external APIs.",
-  "overview": "Paste HTML and extract all image tags into a clean, readable list. The tool can show src, alt, width, height, and other useful attributes so you can audit content, check accessibility, and reuse image data faster. Because processing happens locally, it is a safe option for working with sensitive markup.",
+  "metaTitle": "HTML Image Extractor",
+  "metaDescription": "Extract image sources, alt text, width, and height from HTML directly in your browser.",
+  "intro": "Paste HTML to extract every img tag with its source, alt text, and dimensions in a structured list.",
+  "overview": "This tool reads HTML and pulls out image elements into a clean result you can inspect or copy. Each entry can include the image source, alt text, width, height, and any extra attributes present in the tag, which makes it useful when you need to review image markup precisely.\n\nIt is especially helpful when image data is buried inside exported templates, CMS output, or long snippets with mixed content. Because parsing happens locally in the browser, you can work with private markup without sending it elsewhere.",
   "howItWorks": [
     "Paste your HTML into the input field.",
-    "The tool scans the markup for img elements.",
-    "It extracts image source URLs and common attributes such as alt, width, and height.",
-    "Review the structured output and copy the results if needed."
+    "The parser scans the markup for img elements.",
+    "It extracts src, alt, width, height, and related attributes when present.",
+    "Review the list and copy the extracted image data if needed."
   ],
   "useCases": [
-    "Audit image accessibility by checking alt text coverage.",
-    "Collect image URLs from exported HTML.",
-    "Review width and height values before publishing.",
-    "Extract image references from CMS or email templates.",
-    "Speed up QA for pages with many image tags."
+    {
+      "title": "Review missing alt text",
+      "description": "Check a page export for image tags that do not include useful alt values before content goes live."
+    },
+    {
+      "title": "Collect image URLs from templates",
+      "description": "Pull every image source from a newsletter or CMS fragment into a simple list for reuse or validation."
+    },
+    {
+      "title": "Verify declared dimensions",
+      "description": "Inspect width and height values to spot images that may be stretched, swapped, or incorrectly sized."
+    },
+    {
+      "title": "Inspect lazy-loaded markup",
+      "description": "Find image references stored in attributes such as data-src or similar template patterns."
+    },
+    {
+      "title": "Extract images from mixed HTML",
+      "description": "Separate image data from long snippets that also contain links, text, and layout markup."
+    }
   ],
   "examples": [
     {
-      "title": "Basic image tag",
-      "input": "<img src=\"/images/banner.jpg\" alt=\"Homepage banner\" width=\"1200\" height=\"400\">",
-      "output": "src: /images/banner.jpg | alt: Homepage banner | width: 1200 | height: 400",
-      "description": "A single image tag is parsed into structured fields."
+      "title": "Single image tag",
+      "input": "<img src=\"/assets/hero.jpg\" alt=\"City skyline at dusk\" width=\"1440\" height=\"900\">",
+      "output": "1) src: /assets/hero.jpg | alt: City skyline at dusk | width: 1440 | height: 900",
+      "description": "A standard img element is parsed into separate fields."
     },
     {
-      "title": "Lazy-loaded image",
-      "input": "<img data-src=\"photo.jpg\" alt=\"Product photo\">",
-      "output": "src: photo.jpg | alt: Product photo",
-      "description": "Useful for checking alternate image source attributes in templates."
+      "title": "Image without explicit width",
+      "input": "<figure><img src=\"product.png\" alt=\"Product front view\"></figure>",
+      "output": "1) src: product.png | alt: Product front view",
+      "description": "Only the attributes that exist in the tag are returned."
+    },
+    {
+      "title": "Template image with data attribute",
+      "input": "<img data-src=\"/img/gallery-03.jpg\" alt=\"Gallery item 3\" loading=\"lazy\">",
+      "output": "1) data-src: /img/gallery-03.jpg | alt: Gallery item 3 | loading: lazy",
+      "description": "Useful for markup that stores the image path in a data attribute."
     }
   ],
   "faq": [
     {
-      "question": "Does this tool upload my HTML?",
-      "answer": "No. It works entirely in your browser, so your HTML is not sent to a server."
+      "question": "Does this extractor read only img tags?",
+      "answer": "Yes. It focuses on HTML img elements and does not inspect CSS background images or images loaded through scripts."
     },
     {
-      "question": "Which image attributes are extracted?",
-      "answer": "The tool focuses on src, alt, width, and height, and may also surface other relevant image attributes when available."
+      "question": "What happens if an image tag is incomplete?",
+      "answer": "The tool returns the attributes it can find, so a tag with only src and alt will produce a shorter result than a full tag."
     },
     {
-      "question": "Can it extract images from unsafe HTML?",
-      "answer": "Yes, it can parse HTML safely on the client side, but you should still review any untrusted markup carefully."
+      "question": "Can I use it on a fragment with many repeated images?",
+      "answer": "Yes. Every matching img element is extracted separately, even if several tags use the same source."
     },
     {
-      "question": "Does it detect CSS background images?",
-      "answer": "No. It extracts image tags from HTML, not background images from CSS."
+      "question": "Why do I sometimes see data-src instead of src?",
+      "answer": "Some templates store the real image path in data-src, data-original, or a similar attribute. The extractor can surface those values when they appear in the markup."
+    },
+    {
+      "question": "Does it change or fix the HTML?",
+      "answer": "No. It only reads the markup and reports image-related attributes. It does not rewrite tags or guess missing values."
     }
   ],
-  "uiLabels": {
-    "copy": "Copy",
-    "copied": "Copied",
-    "input": "HTML input",
-    "output": "Extracted images",
-    "placeholder": "Paste your HTML here",
-    "indent": "Indent",
-    "removeComments": "Remove comments",
-    "preview": "Preview",
-    "source": "Source",
-    "sanitizedHtml": "Sanitized HTML",
-    "plainText": "Plain text",
-    "summary": "Summary",
-    "total": "Total",
-    "links": "Links",
-    "images": "Images",
-    "errors": "Errors",
-    "warnings": "Warnings",
-    "valid": "Valid",
-    "invalid": "Invalid",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Width",
-    "height": "Height",
-    "empty": "No images found",
-    "outputReady": "Output ready",
-    "cleanedHtml": "Cleaned HTML",
-    "formattedHtml": "Formatted HTML",
-    "minifiedHtml": "Minified HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extracted images",
-    "extractedLinks": "Extracted links",
-    "validationSummary": "Validation summary",
-    "prettyHtml": "Pretty HTML",
-    "encodedText": "Encoded text"
-  },
   "seo": {
     "title": "HTML Image Extractor",
-    "description": "Extract image sources, alt text, width and height from HTML with a safe client-side tool.",
+    "description": "Extract image sources, alt text, width, and height from HTML directly in your browser.",
     "keywords": [
-      "HTML image extractor",
-      "extract image src from HTML",
-      "extract alt text",
-      "extract image dimensions",
-      "parse img tags",
-      "HTML tools"
+      "html image extractor",
+      "extract img tags",
+      "image src from html",
+      "alt text extractor",
+      "image dimensions from html",
+      "html tools"
     ]
   }
 }

@@ -4,157 +4,85 @@
   "slug": "generateur-de-balises-meta",
   "h1": "Générateur de balises meta",
   "title": "Générateur de balises meta",
-  "shortDescription": "Générez des balises meta HTML pour le titre, la description, l’URL canonique et Open Graph.",
-  "metaTitle": "Générateur de balises Meta | Créez des balises SEO en quelques secondes",
-  "metaDescription": "Créez en quelques secondes des balises meta pour le titre, la description, l’URL canonique et Open Graph avec un générateur en ligne simple.",
-  "intro": "Générez des balises meta SEO propres pour vos pages web, articles de blog et landing pages. Créez rapidement les balises title, description, canonical et Open Graph, puis copiez un extrait HTML prêt à l’emploi.",
-  "overview": "Ce générateur de balises meta vous aide à créer des métadonnées HTML adaptées au référencement sans coder manuellement. Saisissez les informations de votre page, vérifiez l’aperçu et copiez un snippet optimisé pour le SEO, le partage social et les extraits de navigateur.",
+  "shortDescription": "Créez des balises meta HTML pour le titre, la description, l’URL canonique et Open Graph.",
+  "metaTitle": "Générateur de balises Meta | Créez des tags",
+  "metaDescription": "Générez des balises meta HTML prêtes à coller pour le titre, la description, l’URL canonique et les données Open Graph au même endroit.",
+  "intro": "Créez les balises meta HTML nécessaires à votre page : title, description, URL canonique et champs Open Graph.",
+  "overview": "Cet outil vous aide à préparer les métadonnées de la section head sans écrire chaque balise à la main. Il produit un bloc clair que vous pouvez coller dans votre HTML, pratique quand le titre, le résumé, l’URL canonique et les données de partage doivent rester cohérents.\n\nLe générateur est utile lors de la création d’une nouvelle page, de la mise à jour d’un article ou de l’uniformisation des métadonnées d’un site. Vous saisissez les informations une fois, vérifiez le résultat, puis copiez seulement ce dont vous avez besoin. Les balises restent ainsi alignées avec le contenu, avec moins de risques d’oubli ou d’attributs incorrects.",
   "howItWorks": [
-    "Saisissez le titre de la page et les autres métadonnées.",
-    "Générez un extrait complet de balises meta HTML.",
-    "Vérifiez le résultat pour le SEO et l’aperçu social.",
-    "Copiez le code et collez-le dans la section head."
+    "Saisissez le titre de la page, la description, l’URL canonique, le nom du site et, si besoin, une image Open Graph.",
+    "Générez l’extrait de balises meta à partir des valeurs fournies.",
+    "Vérifiez le résultat et comparez-le au contenu de la page.",
+    "Copiez le code dans la section head du document HTML."
   ],
   "useCases": [
-    "Balises meta SEO pour landing pages",
-    "Balises Open Graph pour le partage social",
-    "Génération de balise canonical",
-    "Mise en place rapide des métadonnées pour les articles de blog",
-    "Test des titres et descriptions de pages"
+    {
+      "title": "Métadonnées de page produit",
+      "description": "Préparer le titre, la description, la canonical et les balises d’aperçu social pour une fiche produit."
+    },
+    {
+      "title": "En-tête d’article",
+      "description": "Définir les métadonnées d’un guide, d’une actualité ou d’un billet de blog pour que le titre et le résumé reflètent le contenu."
+    },
+    {
+      "title": "Nettoyage des URL dupliquées",
+      "description": "Ajouter une canonical à une version filtrée, paginée ou paramétrée afin d’indiquer l’adresse principale."
+    },
+    {
+      "title": "Landing de campagne",
+      "description": "Générer des métadonnées pour une page promotionnelle avec titre de campagne, description courte et visuel de marque."
+    },
+    {
+      "title": "Contrôle de l’aperçu de partage",
+      "description": "Fixer le titre, la description, le nom du site et l’image Open Graph pour maîtriser l’affichage du lien partagé."
+    }
   ],
   "examples": [
     {
-      "title": "Meilleures chaussures de course 2026",
-      "input": "Titre et description pour une page produit",
-      "output": "Extrait de balises meta prêt pour le SEO avec title, description et Open Graph.",
-      "description": "Idéal pour les pages produits et catégories."
+      "title": "Sac de running compact",
+      "input": "Titre : Sac de running compact\nDescription : Modèle léger de 8 L avec poche d’hydratation et sangle poitrine.\nURL canonique : https://example.com/produits/sac-running-compact\nNom du site : TrailForge\nImage OG : https://example.com/images/sac-og.jpg",
+      "output": "<title>Sac de running compact</title>\n<meta name=\"description\" content=\"Modèle léger de 8 L avec poche d’hydratation et sangle poitrine.\">\n<link rel=\"canonical\" href=\"https://example.com/produits/sac-running-compact\">\n<meta property=\"og:site_name\" content=\"TrailForge\">\n<meta property=\"og:title\" content=\"Sac de running compact\">\n<meta property=\"og:description\" content=\"Modèle léger de 8 L avec poche d’hydratation et sangle poitrine.\">\n<meta property=\"og:image\" content=\"https://example.com/images/sac-og.jpg\">",
+      "description": "Adapté à une fiche produit avec une URL préférée et une image d’aperçu."
     },
     {
-      "title": "Comment lancer un podcast",
-      "input": "Titre d’article et résumé court",
-      "output": "Balises meta propres pour les résultats de recherche et l’aperçu social.",
-      "description": "Parfait pour les guides et les articles."
+      "title": "Guide de Lisbonne en 3 jours",
+      "input": "Titre : Guide budget Lisbonne\nDescription : Itinéraire jour par jour avec les coûts transport, repas et hébergement.\nURL canonique : https://example.com/guides/lisbonne-budget\nNom du site : RouteNotes",
+      "output": "<title>Guide budget Lisbonne</title>\n<meta name=\"description\" content=\"Itinéraire jour par jour avec les coûts transport, repas et hébergement.\">\n<link rel=\"canonical\" href=\"https://example.com/guides/lisbonne-budget\">\n<meta property=\"og:site_name\" content=\"RouteNotes\">\n<meta property=\"og:title\" content=\"Guide budget Lisbonne\">\n<meta property=\"og:description\" content=\"Itinéraire jour par jour avec les coûts transport, repas et hébergement.\">",
+      "description": "Convient à un contenu éditorial avec un résumé court et précis."
+    },
+    {
+      "title": "Page d’inscription webinar",
+      "input": "Titre : Webinar sur les design systems\nDescription : Session en direct sur les tokens, les composants et l’organisation d’équipe.\nURL canonique : https://example.com/webinars/design-systems\nNom du site : StudioLine\nImage OG : https://cdn.example.com/webinars/design-systems.png",
+      "output": "<title>Webinar sur les design systems</title>\n<meta name=\"description\" content=\"Session en direct sur les tokens, les composants et l’organisation d’équipe.\">\n<link rel=\"canonical\" href=\"https://example.com/webinars/design-systems\">\n<meta property=\"og:site_name\" content=\"StudioLine\">\n<meta property=\"og:title\" content=\"Webinar sur les design systems\">\n<meta property=\"og:description\" content=\"Session en direct sur les tokens, les composants et l’organisation d’équipe.\">\n<meta property=\"og:image\" content=\"https://cdn.example.com/webinars/design-systems.png\">",
+      "description": "Utile pour une page d’événement qui doit s’afficher proprement lors du partage."
     }
   ],
   "faq": [
     {
-      "question": "Que fait un générateur de balises meta ?",
-      "answer": "Il crée des métadonnées HTML comme title, description, canonical et les balises Open Graph pour les pages web."
+      "question": "Quels champs faut-il remplir en premier si je veux seulement les balises de base ?",
+      "answer": "Commencez par le titre, la description et l’URL canonique. Ajoutez le nom du site et l’image si vous voulez enrichir l’aperçu lors du partage."
     },
     {
-      "question": "Les balises générées sont-elles adaptées au SEO ?",
-      "answer": "Oui. L’outil est conçu pour un usage SEO pratique et les aperçus sur les réseaux sociaux."
+      "question": "L’outil modifie-t-il automatiquement le titre ou la description de ma page ?",
+      "answer": "Non. Il génère le code HTML à partir des données saisies. Si le contenu change, il faut régénérer l’extrait."
     },
     {
-      "question": "Puis-je copier le code directement ?",
-      "answer": "Oui. Générez l’extrait puis copiez-le dans la section head de votre page."
+      "question": "À quoi sert l’URL canonique dans le résultat ?",
+      "answer": "Elle indique l’adresse principale de la page. Utilisez l’URL finale préférée, pas un lien de suivi ni une version de test."
     },
     {
-      "question": "Ai-je besoin de compétences en code ?",
-      "answer": "Non. Vous pouvez générer des balises meta sans écrire le HTML à la main."
+      "question": "Quelle erreur revient le plus souvent lors de l’utilisation du résultat ?",
+      "answer": "Le code est souvent collé au mauvais endroit dans le document, ou la description est trop longue, trop vague, ou ne correspond pas à la page."
     }
   ],
-  "uiLabels": {
-    "copy": "Copier",
-    "copied": "Copié",
-    "input": "Entrée",
-    "output": "Sortie",
-    "placeholder": "Saisissez le titre de la page",
-    "indent": "Retrait",
-    "removeComments": "Supprimer les commentaires",
-    "preview": "Aperçu",
-    "source": "Source",
-    "sanitizedHtml": "HTML nettoyé",
-    "plainText": "Texte brut",
-    "summary": "Résumé",
-    "total": "Total",
-    "links": "Liens",
-    "images": "Images",
-    "errors": "Erreurs",
-    "warnings": "Avertissements",
-    "valid": "Valide",
-    "invalid": "Invalide",
-    "href": "Href",
-    "text": "Texte",
-    "rel": "Rel",
-    "target": "Cible",
-    "alt": "Alt",
-    "width": "Largeur",
-    "height": "Hauteur",
-    "empty": "Vide",
-    "outputReady": "Sortie prête",
-    "cleanedHtml": "HTML nettoyé",
-    "formattedHtml": "HTML formaté",
-    "minifiedHtml": "HTML minifié",
-    "markdown": "Markdown",
-    "extractedImages": "Images extraites",
-    "extractedLinks": "Liens extraits",
-    "validationSummary": "Résumé de validation",
-    "prettyHtml": "HTML lisible",
-    "encodedText": "Texte encodé",
-    "file": "Fichier",
-    "size": "Taille",
-    "format": "Format",
-    "quality": "Qualité",
-    "colorOne": "Couleur 1",
-    "colorTwo": "Couleur 2",
-    "background": "Arrière-plan",
-    "foreground": "Premier plan",
-    "angle": "Angle",
-    "margin": "Marge",
-    "level": "Niveau",
-    "gradientType": "Type de dégradé",
-    "linear": "Linéaire",
-    "radial": "Radial",
-    "blur": "Flou",
-    "spread": "Étendue",
-    "offsetX": "Décalage X",
-    "offsetY": "Décalage Y",
-    "opacity": "Opacité",
-    "inset": "Intérieur",
-    "cssCode": "Code CSS",
-    "snippet": "Extrait",
-    "download": "Télécharger",
-    "downloadSvg": "Télécharger SVG",
-    "downloadPng": "Télécharger PNG",
-    "downloadAll": "Télécharger tout",
-    "upload": "Importer",
-    "title": "Titre",
-    "description": "Description",
-    "canonicalUrl": "URL canonique",
-    "siteName": "Nom du site",
-    "ogImage": "Image OG",
-    "clear": "Effacer",
-    "generatedQr": "Apercu du code QR",
-    "placeholderImage": "Apercu de l image",
-    "faviconSet": "Jeu de favicon",
-    "keepAspectRatio": "Conserver le ratio",
-    "cropX": "Recadrage X",
-    "cropY": "Recadrage Y",
-    "cropWidth": "Largeur du recadrage",
-    "cropHeight": "Hauteur du recadrage",
-    "originalSize": "Taille originale",
-    "outputSize": "Taille de sortie",
-    "savedSize": "Taille économisée",
-    "result": "Résultat",
-    "base64": "Base64",
-    "mimeType": "Type MIME",
-    "resizedImage": "Image redimensionnée",
-    "compressedImage": "Image compressée",
-    "croppedImage": "Image recadrée",
-    "convertedImage": "Image convertie",
-    "decodedImage": "Image décodée",
-    "imagePreview": "Aperçu de l’image"
-  },
   "seo": {
-    "title": "Générateur de balises Meta | Créez des balises SEO en quelques secondes",
-    "description": "Créez en quelques secondes des balises meta pour le titre, la description, l’URL canonique et Open Graph avec un générateur en ligne simple.",
+    "title": "Générateur de balises Meta | Créez des tags",
+    "description": "Générez des balises meta HTML prêtes à coller pour le titre, la description, l’URL canonique et les données Open Graph au même endroit.",
     "keywords": [
       "générateur de balises meta",
-      "balises meta seo",
-      "générateur open graph",
-      "générateur de balise canonical",
       "balises meta html",
+      "url canonique",
+      "balises open graph",
       "générateur title tag",
       "balise meta description"
     ]

@@ -4,175 +4,87 @@
   "slug": "calculadora-de-paneles-de-suelo",
   "h1": "Calculadora de paneles de suelo",
   "title": "Calculadora de paneles de suelo",
-  "shortDescription": "Calcula cuántos paneles y paquetes necesitas para el suelo, con margen de desperdicio.",
-  "metaTitle": "Calculadora de paneles de suelo - calcula paneles y paquetes",
-  "metaDescription": "Calcula cuántos paneles de suelo y paquetes necesitas según el área de la habitación, el tamaño del panel, el desperdicio y la cobertura del paquete.",
-  "intro": "Calcula cuántos paneles comprar para tu suelo sin complicaciones. Introduce el área, las medidas del panel, el margen de desperdicio y la cobertura del paquete para obtener una estimación práctica.",
-  "overview": "Esta calculadora de paneles de suelo te ayuda a saber cuántos paneles y paquetes necesitas para un proyecto de instalación. Tiene en cuenta el área de la habitación, el ancho y largo del panel, el porcentaje de desperdicio y la cobertura por paquete.",
+  "shortDescription": "Calcula cuántos paneles y paquetes comprar para el suelo, con margen de corte.",
+  "metaTitle": "Calculadora de paneles de suelo",
+  "metaDescription": "Calcula cuántos paneles y paquetes necesitas para un suelo según el área, las medidas del panel, el desperdicio y la cobertura del paquete.",
+  "intro": "Introduce el área, las medidas del panel, el margen de desperdicio y la cobertura del paquete para saber cuántos paneles comprar.",
+  "overview": "Esta calculadora convierte los datos de la estancia y del producto en una cantidad de compra útil para la obra. Tiene en cuenta la huella real del panel, la cobertura indicada en el paquete y el material extra necesario para cortes, remates y ajustes junto a paredes o huecos.\n\nTambién sirve para comparar productos con cajas de distinto rendimiento o para comprobar si una habitación exige redondear a cajas completas. Si el fabricante da una cobertura por paquete, esa cifra es la que debe guiar la compra aunque no coincida exactamente con el área geométrica del panel.",
   "howItWorks": [
     "Introduce el área de la habitación en metros cuadrados.",
     "Añade el ancho y el largo del panel en centímetros.",
-    "Define el porcentaje de desperdicio para cortes y ajustes.",
+    "Define un porcentaje de desperdicio para cortes y ajustes.",
     "Indica cuántos m2 cubre un paquete.",
-    "Obtén el número de paneles, paquetes y el área total con desperdicio."
+    "Consulta los paneles estimados, los paquetes y el área ajustada."
   ],
   "useCases": [
-    "Planificar la compra de paneles laminados o vinílicos.",
-    "Comprobar cuántos paquetes comprar antes de ir a la tienda.",
-    "Añadir material extra para cortes, remates y errores.",
-    "Comparar la cobertura de diferentes productos de suelo."
+    {
+      "title": "Pedido para un salón rectangular",
+      "description": "Calcula cuántas cajas necesitas cuando la habitación tiene pocos recortes y una forma simple."
+    },
+    {
+      "title": "Pasillo con puertas y esquinas",
+      "description": "Añade margen extra para los cortes alrededor de marcos, esquinas y encuentros de suelo."
+    },
+    {
+      "title": "Comparar dos productos de suelo",
+      "description": "Valora si compensa más un paquete con mayor cobertura o uno con menos piezas por caja."
+    },
+    {
+      "title": "Reservar material para reparaciones",
+      "description": "Compra algún panel adicional si quieres conservar piezas para sustituciones futuras."
+    }
   ],
   "examples": [
     {
-      "title": "Ejemplo de cálculo",
-      "input": "Área: 20 m2, panel: 19 cm x 138 cm, desperdicio: 8%, cobertura del paquete: 2,2 m2",
-      "output": "La calculadora estima los paneles necesarios, los paquetes y el área total con desperdicio.",
-      "description": "Útil para calcular la compra antes de pedir el suelo."
+      "title": "Habitación estándar",
+      "input": "Área: 23,6 m2; panel: 18,5 cm × 122 cm; desperdicio: 7%; cobertura del paquete: 2,22 m2",
+      "output": "Área ajustada: 25,25 m2. Resultado: 12 paquetes, con los paneles calculados a partir de la medida y el margen.",
+      "description": "Adecuado para una habitación sencilla con pocos cortes."
     },
     {
-      "title": "Comprar suelo con margen",
-      "input": "Área: 35 m2, desperdicio: 10%, cobertura del paquete: 2,4 m2",
-      "output": "Muestra el área ajustada y el número de paquetes a comprar.",
-      "description": "Ayuda a evitar quedarse corto durante la instalación."
+      "title": "Dormitorio grande",
+      "input": "Área: 41,8 m2; panel: 20,3 cm × 135,7 cm; desperdicio: 11%; cobertura del paquete: 2,48 m2",
+      "output": "Área ajustada: 46,36 m2. Resultado: 19 paquetes, redondeado a cajas completas.",
+      "description": "Útil cuando hay más recortes en bordes y remates."
+    },
+    {
+      "title": "Cobertura indicada por el fabricante",
+      "input": "Área: 12,4 m2; panel: 17,8 cm × 89,4 cm; desperdicio: 9%; cobertura del paquete: 1,79 m2",
+      "output": "Área ajustada: 13,52 m2. Resultado: 8 paquetes, usando la cobertura del paquete como referencia.",
+      "description": "Práctico cuando la caja especifica el rendimiento real de compra."
     }
   ],
   "faq": [
     {
-      "question": "¿Cómo calculo cuántos paneles necesito?",
-      "answer": "Multiplica el área de la habitación por el margen de desperdicio y divide entre el área de un panel. La calculadora lo hace automáticamente."
+      "question": "¿Debo calcular con el tamaño del panel o con la cobertura del paquete?",
+      "answer": "Para comprar, usa la cobertura del paquete que figura en la caja. El tamaño del panel sirve para revisar la pieza individual, pero el número de paquetes depende de la cobertura declarada."
     },
     {
-      "question": "¿Por qué debo añadir desperdicio?",
-      "answer": "El desperdicio cubre cortes, ajustes en bordes y posibles errores durante la instalación."
+      "question": "¿Qué margen de desperdicio conviene en una habitación simple?",
+      "answer": "En una estancia recta con pocos cortes suele bastar un margen moderado. Si hay puertas, huecos, columnas o diagonales, conviene subirlo."
     },
     {
-      "question": "¿Y si la cobertura del paquete no coincide con las medidas del panel?",
-      "answer": "Usa el valor de cobertura indicado en el paquete. Incluye el número de paneles por paquete."
+      "question": "¿Por qué el resultado siempre redondea hacia arriba?",
+      "answer": "Porque los paneles se venden en paquetes completos. Redondear hacia arriba evita que falte material al terminar la instalación."
     },
     {
-      "question": "¿Puedo usarla para paneles laminados y vinílicos?",
-      "answer": "Sí, siempre que conozcas las medidas del panel y la cobertura del paquete."
+      "question": "¿Sirve para suelos en espiga o patrones complejos?",
+      "answer": "Solo como referencia básica. Los dibujos complejos generan más recortes y suelen requerir un margen mayor que una instalación recta."
+    },
+    {
+      "question": "¿Qué hago si solo conozco largo y ancho de la estancia?",
+      "answer": "Multiplica largo por ancho para obtener el área y luego introduce ese resultado. Si la habitación es irregular, divide en partes simples y suma las superficies."
     }
   ],
-  "uiLabels": {
-    "copy": "Copiar",
-    "copied": "Copiado",
-    "input": "Entrada",
-    "output": "Salida",
-    "placeholder": "Introduce un valor",
-    "indent": "Sangría",
-    "removeComments": "Eliminar comentarios",
-    "preview": "Vista previa",
-    "source": "Fuente",
-    "sanitizedHtml": "HTML saneado",
-    "plainText": "Texto plano",
-    "summary": "Resumen",
-    "total": "Total",
-    "links": "Enlaces",
-    "images": "Imágenes",
-    "errors": "Errores",
-    "warnings": "Avisos",
-    "valid": "Válido",
-    "invalid": "Inválido",
-    "href": "Href",
-    "text": "Texto",
-    "rel": "Rel",
-    "target": "Destino",
-    "alt": "Alt",
-    "width": "Ancho",
-    "height": "Alto",
-    "empty": "Vacío",
-    "outputReady": "Resultado listo",
-    "cleanedHtml": "HTML limpio",
-    "formattedHtml": "HTML formateado",
-    "minifiedHtml": "HTML minificado",
-    "markdown": "Markdown",
-    "extractedImages": "Imágenes extraídas",
-    "extractedLinks": "Enlaces extraídos",
-    "validationSummary": "Resumen de validación",
-    "prettyHtml": "HTML legible",
-    "encodedText": "Texto codificado",
-    "file": "Archivo",
-    "size": "Tamaño",
-    "format": "Formato",
-    "quality": "Calidad",
-    "colorOne": "Color 1",
-    "colorTwo": "Color 2",
-    "background": "Fondo",
-    "foreground": "Primer plano",
-    "angle": "Ángulo",
-    "margin": "Margen",
-    "level": "Nivel",
-    "gradientType": "Tipo de gradiente",
-    "linear": "Lineal",
-    "radial": "Radial",
-    "blur": "Desenfoque",
-    "spread": "Extensión",
-    "offsetX": "Desplazamiento X",
-    "offsetY": "Desplazamiento Y",
-    "opacity": "Opacidad",
-    "inset": "Inset",
-    "cssCode": "Código CSS",
-    "snippet": "Fragmento",
-    "download": "Descargar",
-    "downloadSvg": "Descargar SVG",
-    "downloadPng": "Descargar PNG",
-    "downloadAll": "Descargar todo",
-    "upload": "Subir",
-    "title": "Título",
-    "description": "Descripción",
-    "canonicalUrl": "URL canónica",
-    "siteName": "Nombre del sitio",
-    "ogImage": "Imagen OG",
-    "clear": "Limpiar",
-    "generatedQr": "QR generado",
-    "placeholderImage": "Imagen de marcador",
-    "faviconSet": "Conjunto de favicon",
-    "keepAspectRatio": "Mantener proporción",
-    "cropX": "Recorte X",
-    "cropY": "Recorte Y",
-    "cropWidth": "Ancho del recorte",
-    "cropHeight": "Alto del recorte",
-    "originalSize": "Tamaño original",
-    "outputSize": "Tamaño de salida",
-    "savedSize": "Tamaño ahorrado",
-    "result": "Resultado",
-    "base64": "Base64",
-    "mimeType": "Tipo MIME",
-    "resizedImage": "Imagen redimensionada",
-    "compressedImage": "Imagen comprimida",
-    "croppedImage": "Imagen recortada",
-    "convertedImage": "Imagen convertida",
-    "decodedImage": "Imagen decodificada",
-    "imagePreview": "Vista previa de la imagen",
-    "camera": "Cámara",
-    "lens": "Lente",
-    "dateTaken": "Fecha tomada",
-    "resolution": "Resolución",
-    "fileSize": "Tamaño del archivo",
-    "iso": "ISO",
-    "exposure": "Exposición",
-    "aperture": "Apertura",
-    "focalLength": "Distancia focal",
-    "flash": "Flash",
-    "orientation": "Orientación",
-    "latitude": "Latitud",
-    "longitude": "Longitud",
-    "openMap": "Abrir mapa",
-    "rawMetadata": "Metadatos sin procesar",
-    "noMetadataFound": "No se encontraron metadatos",
-    "gpsLocation": "Ubicación GPS",
-    "metadataSummary": "Resumen de metadatos"
-  },
   "seo": {
-    "title": "Calculadora de paneles de suelo - calcula paneles y paquetes",
-    "description": "Calcula cuántos paneles de suelo y paquetes necesitas con desperdicio incluido.",
+    "title": "Calculadora de paneles de suelo",
+    "description": "Calcula cuántos paneles y paquetes necesitas para un suelo según el área, las medidas del panel, el desperdicio y la cobertura del paquete.",
     "keywords": [
       "calculadora de paneles de suelo",
       "cuántos paneles comprar",
-      "calculadora de suelo",
-      "paneles laminados",
-      "paquetes de paneles"
+      "paquetes de paneles",
+      "cobertura del paquete",
+      "desperdicio de corte"
     ]
   }
 }

@@ -4,43 +4,79 @@
   "slug": "satzzaehler",
   "h1": "Satzzähler",
   "title": "Satzzähler",
-  "shortDescription": "Sätze in Texten sofort zählen – mit schnellen Ergebnissen, einfacher Eingabe und praktischen Beispielen.",
-  "overview": "Sätze in Texten sofort zählen. Diese Seite liefert eine schnelle Antwort mit einem praktischen Tool und einem einfachen Ergebnisablauf. Sie richtet sich an Nutzer, die eine kostenlose Online-Antwort, sofortige Ergebnisse im Browser und praxisnahe Inhalte für Long-Tail-Suchen suchen.",
+  "shortDescription": "Sätze in einem Text zählen und eine klare Gesamtzahl ohne Umwege erhalten.",
+  "metaTitle": "Satzzähler online",
+  "metaDescription": "Zählen Sie die Sätze in Ihrem Text und erhalten Sie eine klare Gesamtzahl für Absätze, Entwürfe, Notizen oder eingefügten Inhalt.",
+  "intro": "Fügen Sie Ihren Text in das Feld ein und lesen Sie die Satzzahl sofort ab.",
+  "overview": "Dieses Tool zählt Sätze in eingefügtem Text und gibt eine klare, leicht verständliche Gesamtzahl aus. Es eignet sich, wenn Sie einen Absatz prüfen, zwei Textfassungen vergleichen oder sehen möchten, ob ein Abschnitt die gewünschte Struktur hat.\n\nDie Satzgrenze kann durch Abkürzungen, Initialen, Dezimalzahlen und ungewohnte Zeichensetzung beeinflusst werden. Enthält Ihr Text solche Stellen, sollten Sie das Ergebnis im Kontext lesen, vor allem bei technischen Texten, Dialogen oder kopierten Inhalten.\n\nAm zuverlässigsten ist die Zählung bei vollständigen Passagen statt bei einzelnen Textfetzen. Für eine bessere Einordnung sollten Sie eine einheitliche Zeichensetzung verwenden und Zeilenumbrüche nicht als Satzende missverstehen.",
   "howItWorks": [
-    "Geben Sie den benötigten Text in das Formular ein.",
-    "Die Zählung erfolgt sofort im Browser.",
-    "Prüfen Sie das Ergebnis und nutzen Sie bei Bedarf verwandte Tools für den nächsten Schritt."
+    "Fügen Sie den Text in das Eingabefeld ein oder tippen Sie ihn hinein.",
+    "Das Tool erkennt Satzenden anhand der Zeichensetzung im Text.",
+    "Lesen Sie die Satzzahl ab und vergleichen Sie bei Bedarf einzelne Abschnitte."
+  ],
+  "useCases": [
+    {
+      "title": "Überarbeitung eines Entwurfs",
+      "description": "Prüfen Sie vor dem Versand, ob ein Absatz die gewünschte Satzstruktur hat."
+    },
+    {
+      "title": "Übersetzung vergleichen",
+      "description": "Vergleichen Sie die Satzzahl von Ausgangstext und Übersetzung, um fehlende oder zusammengezogene Sätze zu erkennen."
+    },
+    {
+      "title": "Besprechungsnotizen auswerten",
+      "description": "Ermitteln Sie, wie viele vollständige Aussagen in transkribierten Notizen stehen."
+    },
+    {
+      "title": "Kurze Mitteilung prüfen",
+      "description": "Kontrollieren Sie, ob eine Nachricht in die gewünschte Zahl lesbarer Sätze aufgeteilt ist."
+    }
   ],
   "examples": [
     {
-      "title": "Beispiel 1",
-      "input": "Ein Absatz mit mehreren Sätzen.",
-      "output": "Gesamtzahl der Sätze",
-      "description": "Ein realistisches Beispiel für die Satzzählung bei einer alltäglichen Suchanfrage."
+      "title": "Drei kurze Sätze",
+      "input": "Wir kamen früh an. Der Raum war ruhig. Alle setzten sich.",
+      "output": "3 Sätze",
+      "description": "Jeder Punkt markiert einen eigenen Satz, daher beträgt das Ergebnis drei."
     },
     {
-      "title": "Beispiel 2",
-      "input": "Ein Absatz mit mehreren Sätzen.",
-      "output": "Gesamtzahl der Sätze",
-      "description": "Ein weiterer praktischer Anwendungsfall für organischen Long-Tail-Traffic."
+      "title": "Gemischte Zeichensetzung",
+      "input": "Hast du den Bericht fertig? Meinen habe ich schon geschickt! Bitte prüfe die Zahlen.",
+      "output": "3 Sätze",
+      "description": "Frage- und Ausrufezeichen werden ebenfalls als Satzende gezählt."
+    },
+    {
+      "title": "Abkürzung im Text",
+      "input": "Dr. Müller prüfte die Datei. Danach fügte er Anmerkungen hinzu.",
+      "output": "2 Sätze",
+      "description": "Ein Punkt in einer Abkürzung darf nicht als eigenes Satzende gewertet werden."
     }
   ],
   "faq": [
     {
-      "question": "Wie genau ist dieses Tool?",
-      "answer": "Das Ergebnis wird direkt anhand der in diesem Tool oder im Browser verwendeten Logik berechnet."
+      "question": "Wie werden Satzgrenzen erkannt?",
+      "answer": "Gezählt werden Satzenden mit Zeichensetzung, vor allem Punkte, Fragezeichen und Ausrufezeichen."
     },
     {
-      "question": "Kann ich dieses Tool auf dem Handy nutzen?",
-      "answer": "Ja. Die Seite funktioniert auf Desktop- und Mobilgeräten mit einem einfachen Eingabe- und Ergebnislayout."
+      "question": "Warum können Abkürzungen das Ergebnis verändern?",
+      "answer": "Abkürzungen und Initialen enthalten Punkte, die wie Satzenden aussehen. Bei vielen solcher Stellen lohnt sich eine manuelle Kontrolle."
+    },
+    {
+      "question": "Zählen Zeilenumbrüche als Sätze?",
+      "answer": "Nein. Ein Zeilenumbruch ist nur Formatierung, außer er steht zusammen mit einem Satzzeichen am Ende."
+    },
+    {
+      "question": "Was passiert ohne Satzzeichen am Ende?",
+      "answer": "Fehlen Satzendzeichen, kann das Ergebnis je nach Aufbau des Textes null oder niedriger als erwartet sein."
     }
   ],
   "seo": {
-    "title": "Satzzähler",
-    "description": "Sätze in Texten sofort zählen. Kostenloser Online-Satzzähler mit sofortigem Ergebnis.",
+    "title": "Satzzähler online",
+    "description": "Zählen Sie die Sätze in Ihrem Text und erhalten Sie eine klare Gesamtzahl für Absätze, Entwürfe, Notizen oder eingefügten Inhalt.",
     "keywords": [
       "Satzzähler",
-      "Text-Tool"
+      "Sätze zählen",
+      "Textwerkzeug"
     ]
   }
 }

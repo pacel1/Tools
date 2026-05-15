@@ -4,157 +4,86 @@
   "slug": "image-cropper",
   "h1": "Image Cropper",
   "title": "Image Cropper",
-  "shortDescription": "Crop images online with custom coordinates and instant browser-side preview.",
-  "metaTitle": "Image Cropper Online | Crop Images in Browser",
-  "metaDescription": "Crop images online with precise coordinates and instant preview. Fast, private, browser-based image cropper with no upload required.",
-  "intro": "Crop images online with exact coordinates and see the result instantly in your browser. This free image cropper is fast, private, and easy to use.",
-  "overview": "Use this online image cropper to trim photos, screenshots, banners, and graphics by setting custom crop values. Everything runs in your browser for quick editing and better privacy.",
+  "shortDescription": "Crop an image by exact coordinates and preview the result before downloading.",
+  "metaTitle": "Image Cropper Online",
+  "metaDescription": "Crop images by exact coordinates, preview the result instantly, and download a clean cutout from your browser.",
+  "intro": "Crop an image by setting exact X, Y, width, and height values, then review the cutout before you download it.",
+  "overview": "This image cropper is built for precise framing. Enter crop coordinates to trim a product shot, isolate a chart section, or remove unwanted edges from a banner without guessing the cut area.\n\nThe tool works directly in the browser, so you can adjust the crop and see the updated frame immediately. It is useful when the final image must match a fixed layout, a document requirement, or a specific focal point.\n\nIf you need a square avatar, a wide header, or a tight screenshot extract, the cropper gives you control over the visible area and the final composition.",
   "howItWorks": [
-    "Upload or paste an image file into the tool.",
-    "Set the crop coordinates and dimensions.",
-    "Preview the cropped image instantly.",
-    "Download the final image when it looks right."
+    "Load an image from your device or paste one into the tool.",
+    "Set crop X, crop Y, crop width, and crop height.",
+    "Use the preview to confirm the visible area and edges.",
+    "Download the cropped image when the frame is correct."
   ],
   "useCases": [
-    "Crop profile photos to a specific size.",
-    "Trim screenshots to focus on the important area.",
-    "Prepare product images for websites and marketplaces.",
-    "Remove empty borders from banners and graphics."
+    {
+      "title": "Marketplace product frame cleanup",
+      "description": "Trim extra background around a product photo so the subject fills the frame more cleanly on catalog pages."
+    },
+    {
+      "title": "Screenshot excerpt for documentation",
+      "description": "Keep only the dialog, table, or code block you need for a help article or internal note."
+    },
+    {
+      "title": "Header banner alignment",
+      "description": "Cut a wide graphic to the exact space reserved in a website hero or email header."
+    },
+    {
+      "title": "Avatar framing from a portrait",
+      "description": "Select the face and shoulders for a profile image without leaving empty space around the subject."
+    }
   ],
   "examples": [
     {
-      "title": "Crop a photo for social media",
-      "input": "Set a square crop area around the subject.",
-      "output": "A centered square image ready for posting.",
-      "description": "Useful for avatars, posts, and thumbnails."
+      "title": "Crop a product photo to a square",
+      "input": "cropX=120, cropY=80, cropWidth=900, cropHeight=900 on a landscape product image",
+      "output": "A square image centered on the product with the side margins removed.",
+      "description": "Useful when a catalog or social card expects a square frame."
     },
     {
-      "title": "Crop a screenshot",
-      "input": "Enter exact crop coordinates for the visible section.",
-      "output": "A clean screenshot with only the needed content.",
-      "description": "Great for tutorials, reports, and support docs."
+      "title": "Extract one panel from a dashboard screenshot",
+      "input": "cropX=40, cropY=210, cropWidth=1280, cropHeight=620 on a full-page screenshot",
+      "output": "Only the chart section is kept, with the navigation and footer removed.",
+      "description": "Helps isolate one visual block from a larger interface capture."
+    },
+    {
+      "title": "Trim a wide banner to a hero strip",
+      "input": "cropX=0, cropY=140, cropWidth=1920, cropHeight=520 on a banner design",
+      "output": "A narrower hero banner that keeps the main headline and subject in view.",
+      "description": "Useful when the design needs a tighter crop for a webpage or email."
     }
   ],
   "faq": [
     {
-      "question": "Is the image cropper free to use?",
-      "answer": "Yes, you can crop images online for free."
+      "question": "What do the crop X and crop Y values measure?",
+      "answer": "They mark the starting point of the crop rectangle from the top-left corner of the image. X moves horizontally, Y moves vertically."
     },
     {
-      "question": "Does the image leave my browser?",
-      "answer": "No, the crop happens client-side in your browser for better privacy."
+      "question": "What happens if the crop area goes outside the image?",
+      "answer": "The crop cannot include pixels that do not exist. Keep width and height within the image bounds, otherwise the result may be clipped or rejected by the tool."
     },
     {
-      "question": "Can I crop with exact coordinates?",
-      "answer": "Yes, you can enter custom values for precise cropping."
+      "question": "Why does my crop look shifted from the preview?",
+      "answer": "This usually happens when the source image is rotated, scaled differently than expected, or the entered coordinates were copied from another size. Check the original dimensions before reusing numbers."
     },
     {
-      "question": "What image types are supported?",
-      "answer": "Common browser-supported image formats can be used."
+      "question": "Can I keep the original aspect ratio while cropping?",
+      "answer": "Cropping defines a new frame, so the output ratio depends on the width and height you set. If you need a fixed ratio, choose coordinates that match that shape."
+    },
+    {
+      "question": "Why do screenshots sometimes need different coordinates than photos?",
+      "answer": "Screenshots often have sharp edges, interface chrome, and fixed pixel layouts, so precise coordinate input matters more than with natural photos."
     }
   ],
-  "uiLabels": {
-    "copy": "Copy",
-    "copied": "Copied",
-    "input": "Input",
-    "output": "Output",
-    "placeholder": "Paste or upload an image",
-    "indent": "Indent",
-    "removeComments": "Remove comments",
-    "preview": "Preview",
-    "source": "Source",
-    "sanitizedHtml": "Sanitized HTML",
-    "plainText": "Plain text",
-    "summary": "Summary",
-    "total": "Total",
-    "links": "Links",
-    "images": "Images",
-    "errors": "Errors",
-    "warnings": "Warnings",
-    "valid": "Valid",
-    "invalid": "Invalid",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Width",
-    "height": "Height",
-    "empty": "Empty",
-    "outputReady": "Output ready",
-    "cleanedHtml": "Cleaned HTML",
-    "formattedHtml": "Formatted HTML",
-    "minifiedHtml": "Minified HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extracted images",
-    "extractedLinks": "Extracted links",
-    "validationSummary": "Validation summary",
-    "prettyHtml": "Pretty HTML",
-    "encodedText": "Encoded text",
-    "file": "File",
-    "size": "Size",
-    "format": "Format",
-    "quality": "Quality",
-    "colorOne": "Color 1",
-    "colorTwo": "Color 2",
-    "background": "Background",
-    "foreground": "Foreground",
-    "angle": "Angle",
-    "margin": "Margin",
-    "level": "Level",
-    "gradientType": "Gradient type",
-    "linear": "Linear",
-    "radial": "Radial",
-    "blur": "Blur",
-    "spread": "Spread",
-    "offsetX": "Offset X",
-    "offsetY": "Offset Y",
-    "opacity": "Opacity",
-    "inset": "Inset",
-    "cssCode": "CSS code",
-    "snippet": "Snippet",
-    "download": "Download",
-    "downloadSvg": "Download SVG",
-    "downloadPng": "Download PNG",
-    "downloadAll": "Download all",
-    "upload": "Upload",
-    "title": "Title",
-    "description": "Description",
-    "canonicalUrl": "Canonical URL",
-    "siteName": "Site name",
-    "ogImage": "OG image",
-    "clear": "Clear",
-    "generatedQr": "QR code preview",
-    "placeholderImage": "Preview image",
-    "faviconSet": "Favicon set",
-    "keepAspectRatio": "Keep aspect ratio",
-    "cropX": "Crop X",
-    "cropY": "Crop Y",
-    "cropWidth": "Crop width",
-    "cropHeight": "Crop height",
-    "originalSize": "Original size",
-    "outputSize": "Output size",
-    "savedSize": "Saved size",
-    "result": "Result",
-    "base64": "Base64",
-    "mimeType": "MIME type",
-    "resizedImage": "Resized image",
-    "compressedImage": "Compressed image",
-    "croppedImage": "Cropped image",
-    "convertedImage": "Converted image",
-    "decodedImage": "Decoded image",
-    "imagePreview": "Image preview"
-  },
   "seo": {
-    "title": "Image Cropper Online | Crop Images in Browser",
-    "description": "Crop images online with precise coordinates and instant preview. Fast, private, browser-based image cropper with no upload required.",
+    "title": "Image Cropper Online",
+    "description": "Crop images by exact coordinates, preview the result instantly, and download a clean cutout from your browser.",
     "keywords": [
       "image cropper",
-      "crop image online",
-      "online photo cropper",
-      "browser image cropper",
-      "crop screenshots",
-      "custom crop coordinates"
+      "crop image",
+      "crop by coordinates",
+      "screenshot cropper",
+      "photo crop tool"
     ]
   }
 }

@@ -4,156 +4,86 @@
   "slug": "qr-code-generator",
   "h1": "QR-Code-Generator",
   "title": "QR-Code-Generator",
-  "shortDescription": "Erstelle QR-Codes online aus Text, Links, WLAN-Zugangsdaten und kurzen Kontaktdaten.",
-  "metaTitle": "QR-Code-Generator online | QR-Codes aus Text, Links und WLAN erstellen",
-  "metaDescription": "QR-Codes online sofort aus Text, URLs, WLAN-Daten und Kontakten erstellen. Live-Vorschau sowie Download als SVG oder PNG.",
-  "intro": "Erstelle QR-Codes online in Sekunden. Füge Text, einen Link, WLAN-Daten oder Kontaktdaten ein und sieh dir sofort die Vorschau an und lade die saubere SVG- oder PNG-Version herunter.",
-  "overview": "Dieser Online-QR-Code-Generator ist ein schnelles, browserseitiges Tool, mit dem sich normaler Text, URLs, WLAN-Zugangsdaten und einfache Kontaktdaten in scannbare QR-Codes umwandeln lassen. Die Vorschau aktualisiert sich sofort beim Tippen, und du kannst das Ergebnis als SVG oder PNG herunterladen. Ohne Registrierung und ohne Server-Upload ist das Tool ideal für schnelles Teilen, Offline-Einsatz und druckfertige Grafiken.",
+  "shortDescription": "Wandle Text, Links, WLAN-Daten und kurze Kontaktdaten in scannbare QR-Codes um.",
+  "metaTitle": "QR-Code-Generator online",
+  "metaDescription": "QR-Codes aus Text, URLs, WLAN-Daten und Kontakten erstellen. SVG oder PNG für Druck und Weitergabe herunterladen.",
+  "intro": "Füge Text, einen Link, WLAN-Daten oder Kontaktdaten ein und lade den QR-Code als SVG oder PNG herunter.",
+  "overview": "Mit diesem Tool verwandelst du eine Webadresse, Netzwerkdaten, eine Telefonnummer oder einen kurzen Hinweis in einen scannbaren QR-Code. Du gibst den Inhalt ein, prüfst die Vorschau und exportierst eine Datei für Drucksachen, Karten, Verpackungen oder digitale Nutzung.\n\nSVG ist die beste Wahl, wenn der Code beim Vergrößern scharf bleiben oder später bearbeitet werden soll. PNG eignet sich als normales Bild für Dokumente, Präsentationen oder Nachrichten. Je länger der Inhalt, desto dichter wird der Code; deshalb ist eine kurze, klare Formulierung oft besser scannbar.",
   "howItWorks": [
-    "Gib den Text oder die Daten ein, die du codieren möchtest.",
-    "Beobachte, wie sich die QR-Code-Vorschau sofort aktualisiert.",
-    "Lade das Ergebnis als SVG oder PNG zum Teilen oder Drucken herunter."
+    "Gib die Daten ein, die im QR-Code landen sollen.",
+    "Prüfe die Vorschau und passe den Inhalt bei Bedarf an.",
+    "Lade das Ergebnis als SVG oder PNG herunter."
   ],
   "useCases": [
-    "Webseiten-Links mit einem scannbaren QR-Code teilen.",
-    "WLAN-QR-Codes für Gäste und Besucher erstellen.",
-    "Kontakt- oder Event-QR-Codes für Flyer und Visitenkarten erzeugen.",
-    "QR-Grafiken für Verpackungen, Poster und Speisekarten druckfertig vorbereiten."
+    {
+      "title": "Speisekarte per Tischaufsteller",
+      "description": "Erstelle einen QR-Code, der Gäste direkt zur digitalen Speisekarte, Weinkarte oder Reservierungsseite führt."
+    },
+    {
+      "title": "WLAN für Gäste",
+      "description": "Kodieren Sie SSID, Sicherheitstyp und Passwort, damit Besucher das Netz ohne Abtippen nutzen können."
+    },
+    {
+      "title": "Kontakt auf der Visitenkarte",
+      "description": "Hinterlege eine Telefonnummer, E-Mail-Adresse oder einen Kontaktdatensatz auf gedruckten Karten."
+    },
+    {
+      "title": "Produktbeileger und Verpackung",
+      "description": "Verlinke auf Anleitungen, Garantie-Registrierung, Support oder ein Einrichtungsvideo."
+    }
   ],
   "examples": [
     {
-      "title": "Website-Link",
+      "title": "Startseite",
       "input": "https://example.com",
-      "output": "Scannbarer QR-Code für eine Webseite.",
-      "description": "Geeignet für Poster, Social Media und Produkteinlagen."
+      "output": "QR-Code, der die Startseite öffnet.",
+      "description": "Gut für Poster, Flyer und Verpackungen."
     },
     {
-      "title": "WLAN-Zugang",
-      "input": "WIFI:T:WPA;S:MyNetwork;P:password123;;",
-      "output": "QR-Code für schnellen Netzwerkzugang.",
-      "description": "Praktisch für Zuhause, Cafés und Büros."
+      "title": "Büro-WLAN",
+      "input": "WIFI:T:WPA;S:StudioGuest;P:Seaside2025!;;",
+      "output": "QR-Code für den Gastzugang zum Netzwerk.",
+      "description": "Praktisch an der Rezeption und im Besprechungsraum."
+    },
+    {
+      "title": "E-Mail mit Betreff",
+      "input": "mailto:hello@example.com?subject=Projektangebot",
+      "output": "QR-Code, der eine E-Mail mit Betreff öffnet.",
+      "description": "Geeignet für Angebote, Supportkarten und Messestände."
     }
   ],
   "faq": [
     {
-      "question": "Was kann ich in einen QR-Code codieren?",
-      "answer": "Du kannst einfachen Text, URLs, WLAN-Zugangsdaten, Kontaktdaten und andere kurze Inhalte codieren, die in einen QR-Code passen."
+      "question": "Welche Inhalte eignen sich besonders für einen QR-Code?",
+      "answer": "Kurze URLs, WLAN-Zugangsdaten, Kontakte, Telefonnummern, E-Mail-Links und knappe Texte eignen sich gut. Mit wachsender Datenmenge wird der Code dichter."
     },
     {
-      "question": "Kann ich den QR-Code als SVG oder PNG herunterladen?",
-      "answer": "Ja. Du kannst ein Vektor-SVG zum Bearbeiten und Drucken oder ein PNG zum einfachen Teilen herunterladen."
+      "question": "Warum wirkt ein langer Text so voll?",
+      "answer": "Ein QR-Code speichert Daten in einem kompakten Raster. Mehr Inhalt bedeutet mehr Module, dadurch braucht der Code mehr Platz zum sicheren Scannen."
     },
     {
-      "question": "Funktioniert der Generator im Browser?",
-      "answer": "Ja. Er läuft clientseitig, sodass deine Eingaben lokal im Browser verarbeitet werden und die Vorschau sowie der Export schnell erfolgen."
+      "question": "Kann ich damit WLAN teilen?",
+      "answer": "Ja. Verwende das Standardformat mit Sicherheitstyp, Netzwerkname und Passwort. Ein Fehler in einem Feld kann dazu führen, dass der Scan zwar öffnet, die Verbindung aber fehlschlägt."
     },
     {
-      "question": "Ist der QR-Code für den Druck geeignet?",
-      "answer": "Ja. SVG eignet sich besonders gut für den Druck, da es ohne Qualitätsverlust skaliert."
+      "question": "Welches Format ist für den Druck besser?",
+      "answer": "SVG ist ideal für den Druck, weil es ohne Qualitätsverlust skaliert. PNG ist praktisch, wenn du nur eine normale Bilddatei brauchst."
+    },
+    {
+      "question": "Was ist der häufigste Fehler beim Erstellen?",
+      "answer": "Oft wird zu viel Text eingefügt, es bleiben Leerzeichen drin oder das WLAN-Format ist falsch. Prüfe die Angaben genau und halte den Inhalt knapp."
     }
   ],
-  "uiLabels": {
-    "copy": "Kopieren",
-    "copied": "Kopiert",
-    "input": "Eingabe",
-    "output": "Ausgabe",
-    "placeholder": "Text, Link, WLAN-Daten oder Kontaktdaten eingeben",
-    "indent": "Einzug",
-    "removeComments": "Kommentare entfernen",
-    "preview": "Vorschau",
-    "source": "Quelle",
-    "sanitizedHtml": "Bereinigtes HTML",
-    "plainText": "Klartext",
-    "summary": "Zusammenfassung",
-    "total": "Gesamt",
-    "links": "Links",
-    "images": "Bilder",
-    "errors": "Fehler",
-    "warnings": "Warnungen",
-    "valid": "Gültig",
-    "invalid": "Ungültig",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Ziel",
-    "alt": "Alt",
-    "width": "Breite",
-    "height": "Höhe",
-    "empty": "Leer",
-    "outputReady": "Ergebnis bereit",
-    "cleanedHtml": "Bereinigtes HTML",
-    "formattedHtml": "Formatiertes HTML",
-    "minifiedHtml": "Minifiziertes HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extrahierte Bilder",
-    "extractedLinks": "Extrahierte Links",
-    "validationSummary": "Validierungsübersicht",
-    "prettyHtml": "Lesbares HTML",
-    "encodedText": "Kodierter Text",
-    "file": "Datei",
-    "size": "Größe",
-    "format": "Format",
-    "quality": "Qualität",
-    "colorOne": "Farbe 1",
-    "colorTwo": "Farbe 2",
-    "background": "Hintergrund",
-    "foreground": "Vordergrund",
-    "angle": "Winkel",
-    "margin": "Rand",
-    "level": "Fehlerkorrektur",
-    "gradientType": "Verlaufsart",
-    "linear": "Linear",
-    "radial": "Radial",
-    "blur": "Weichzeichnung",
-    "spread": "Ausdehnung",
-    "offsetX": "Versatz X",
-    "offsetY": "Versatz Y",
-    "opacity": "Deckkraft",
-    "inset": "Innen",
-    "cssCode": "CSS-Code",
-    "snippet": "Ausschnitt",
-    "download": "Herunterladen",
-    "downloadSvg": "SVG herunterladen",
-    "downloadPng": "PNG herunterladen",
-    "downloadAll": "Alles herunterladen",
-    "upload": "Hochladen",
-    "title": "Titel",
-    "description": "Beschreibung",
-    "canonicalUrl": "Kanonische URL",
-    "siteName": "Website-Name",
-    "ogImage": "OG-Bild",
-    "clear": "Leeren",
-    "generatedQr": "QR-Code-Vorschau",
-    "placeholderImage": "Bildvorschau",
-    "faviconSet": "Favicon-Set",
-    "keepAspectRatio": "Seitenverhältnis beibehalten",
-    "cropX": "Zuschneiden X",
-    "cropY": "Zuschneiden Y",
-    "cropWidth": "Zuschneidebreite",
-    "cropHeight": "Zuschneidehöhe",
-    "originalSize": "Originalgröße",
-    "outputSize": "Ausgabegröße",
-    "savedSize": "Gespeicherte Größe",
-    "result": "Ergebnis",
-    "base64": "Base64",
-    "mimeType": "MIME-Typ",
-    "resizedImage": "Skaliertes Bild",
-    "compressedImage": "Komprimiertes Bild",
-    "croppedImage": "Zugeschnittenes Bild",
-    "convertedImage": "Konvertiertes Bild",
-    "decodedImage": "Dekodiertes Bild",
-    "imagePreview": "Bildvorschau"
-  },
   "seo": {
     "title": "QR-Code-Generator online",
-    "description": "Schneller Online-QR-Code-Generator mit Sofortvorschau sowie Download als SVG oder PNG.",
+    "description": "QR-Codes aus Text, URLs, WLAN-Daten und Kontakten erstellen. SVG oder PNG für Druck und Weitergabe herunterladen.",
     "keywords": [
       "qr-code-generator",
-      "qr code online erstellen",
-      "svg qr download",
-      "png qr download",
-      "wlan qr generator",
-      "text in qr code"
+      "wlan qr code",
+      "svg qr herunterladen",
+      "png qr herunterladen",
+      "kontakt qr code",
+      "text zu qr code"
     ]
   }
 }

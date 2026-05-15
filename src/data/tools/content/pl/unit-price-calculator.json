@@ -2,15 +2,78 @@
   "toolId": "unit-price-calculator",
   "locale": "pl",
   "slug": "kalkulator-ceny-za-jednostke",
-  "h1": "Kalkulator cen jednostkowych",
-  "title": "Kalkulator cen jednostkowych",
-  "shortDescription": "Porownuj cene za kg, litr, sztuke lub opakowanie i szybko sprawdzaj, co faktycznie jest tansze.",
-  "metaTitle": "Kalkulator cen jednostkowych | Cena za kg, l i szt.",
-  "metaDescription": "Oblicz cene jednostkowa online. Porownuj cene za kg, litr, sztuke i inne ilosci w prostym kalkulatorze cen jednostkowych.",
-  "intro": "Ten kalkulator cen jednostkowych pomaga szybko policzyc, ile realnie kosztuje kilogram, litr, sztuka albo dowolna inna jednostka. To wygodne narzedzie do zakupow, porownywania ofert i decyzji, czy wieksze opakowanie rzeczywiscie wychodzi taniej.",
-  "overview": "Strona odpowiada na intencje kalkulator cen jednostkowych i cena za jednostke online. Przydaje sie podczas porownywania produktow spozywczych, chemii domowej, materialow budowlanych i pakietow sprzedawanych w roznych gramaturach lub wielkosciach.",
-  "howItWorks": ["Wpisz cene laczna i ilosc produktu.", "Narzędzie dzieli wartosc przez ilosc, aby pokazac cene za jedna jednostke.", "Porownaj wynik dla kilku ofert i wybierz wariant, ktory ma najlepsza cene jednostkowa."],
-  "examples": [{"title": "Cena za kilogram", "input": "18 zl za 1,5 kg", "output": "12 zl za kg", "description": "Przydatne przy zakupach spozywczych i porownaniu roznych opakowan."}, {"title": "Cena za litr", "input": "9 zl za 750 ml", "output": "12 zl za litr", "description": "Pomaga sprawdzic czy mniejsze opakowanie nie wychodzi drozej."}],
-  "faq": [{"question": "Czy moge liczyc cene za kg, litr i sztuke?", "answer": "Tak. Wystarczy wpisac cene laczna i ilosc w jednostce, ktora chcesz porownac."}, {"question": "Do czego przydaje sie kalkulator cen jednostkowych?", "answer": "Najczesciej do zakupow, analizy ofert i szybkiego sprawdzania, ktory produkt jest faktycznie tanszy po przeliczeniu na jednostke."}],
-  "seo": {"title": "Kalkulator cen jednostkowych | Cena za kg, l i szt.", "description": "Oblicz cene jednostkowa online. Porownuj cene za kg, litr, sztuke i inne ilosci w prostym kalkulatorze cen jednostkowych.", "keywords": ["kalkulator cen jednostkowych", "cena za jednostke", "kalkulator ceny za kg", "cena za litr", "porownanie ceny jednostkowej"]}
+  "h1": "Kalkulator ceny jednostkowej",
+  "title": "Kalkulator ceny jednostkowej",
+  "shortDescription": "Oblicz cenę za kg, litr, sztukę lub inna jednostkę i porównuj oferty bez zgadywania.",
+  "metaTitle": "Kalkulator ceny jednostkowej",
+  "metaDescription": "Oblicz cenę za kg, litr lub sztukę i porównuj oferty na wspólnej podstawie.",
+  "intro": "Wpisz cenę całkowitą i ilość, a kalkulator pokaże koszt jednej jednostki do szybkiego porównania ofert.",
+  "overview": "To narzędzie przelicza cenę całkowitą na cenę jednostkową, dzięki czemu łatwiej porównać różne opakowania, wagi, pojemności i ilości sztuk. Sprawdza się przy zakupach spożywczych, chemii domowej, materiałach warsztatowych oraz wszędzie tam, gdzie sprzedawca podaje tylko cenę za opakowanie.\n\nWynik pokazuje koszt jednej wybranej jednostki, więc możesz zestawić ze sobą kilka produktów i od razu zobaczyć, który wariant ma lepszą wartość. Najlepiej działa, gdy oba produkty przeliczasz na tę samą miarę, na przykład na kilogram, litr albo sztukę.",
+  "howItWorks": [
+    "Podaj cenę całkowitą produktu.",
+    "Wpisz ilość w tej samej lub porównywalnej jednostce.",
+    "Porównaj cenę jednostkową z innymi ofertami i wybierz korzystniejszą."
+  ],
+  "useCases": [
+    {
+      "title": "Zakupy spożywcze",
+      "description": "Porównaj cenę ryżu, kawy, sera czy napojów sprzedawanych w różnych gramaturach i pojemnościach."
+    },
+    {
+      "title": "Chemia i środki czystości",
+      "description": "Sprawdź, czy większa butelka płynu do prania albo sprayu naprawdę wychodzi taniej na litr."
+    },
+    {
+      "title": "Materiały i akcesoria",
+      "description": "Oceń ceny śrub, wkrętów, papieru, folii lub innych produktów sprzedawanych na sztuki albo w paczkach."
+    }
+  ],
+  "examples": [
+    {
+      "title": "Cena za kilogram",
+      "input": "18 zł, 1,5 kg",
+      "output": "12 zł/kg",
+      "description": "Przydatne, gdy porównujesz dwa opakowania o różnej masie."
+    },
+    {
+      "title": "Cena za litr",
+      "input": "9,99 zł, 750 ml",
+      "output": "13,32 zł/l",
+      "description": "Pomaga sprawdzić, czy mniejsze opakowanie nie jest droższe w przeliczeniu na litr."
+    },
+    {
+      "title": "Cena za sztukę",
+      "input": "24 zł, 8 sztuk",
+      "output": "3 zł/szt.",
+      "description": "Dobre do multipaków i produktów sprzedawanych na sztuki."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Czy mogę liczyć cenę za kilogram, litr i sztukę?",
+      "answer": "Tak. Wpisz cenę całkowitą oraz ilość w jednostce, którą chcesz przeliczyć."
+    },
+    {
+      "question": "Czy muszę samodzielnie zamieniać jednostki?",
+      "answer": "Tak, jeśli porównywane oferty używają różnych miar. Najpierw sprowadź je do tej samej jednostki, a potem porównaj wynik."
+    },
+    {
+      "question": "Dlaczego wynik może być mylący?",
+      "answer": "Najczęstszy błąd to wpisanie ilości w złej jednostce, na przykład 750 zamiast 0,75 przy obliczaniu ceny za litr."
+    },
+    {
+      "question": "Czy cena jednostkowa zawsze mówi, co jest lepszym wyborem?",
+      "answer": "Nie zawsze. Liczy się też skład, jakość, wydajność albo zawartość netto, więc wynik warto odczytywać razem z etykietą produktu."
+    }
+  ],
+  "seo": {
+    "title": "Kalkulator ceny jednostkowej",
+    "description": "Oblicz cenę za kg, litr lub sztukę i porównuj oferty na wspólnej podstawie.",
+    "keywords": [
+      "kalkulator ceny jednostkowej",
+      "cena za kg",
+      "cena za litr",
+      "cena za sztukę"
+    ]
+  }
 }

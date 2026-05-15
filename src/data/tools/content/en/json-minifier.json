@@ -4,42 +4,77 @@
   "slug": "json-minifier",
   "h1": "JSON Minifier",
   "title": "JSON Minifier",
-  "shortDescription": "Minify JSON instantly online with fast results, simple inputs and practical examples.",
-  "overview": "Minify JSON instantly online. Use this tool to get a clear result quickly from simple input on the same page. It is useful for everyday checks, comparisons and small tasks when you need a fast online answer.",
+  "shortDescription": "Remove whitespace from JSON text and keep valid structure for compact sharing, storage, and transport.",
+  "metaTitle": "JSON Minifier",
+  "metaDescription": "Compress JSON text by removing spaces and line breaks while preserving valid structure and readable key order.",
+  "intro": "Paste JSON, then get a compact version with whitespace removed while preserving the same data structure.",
+  "overview": "A JSON minifier turns formatted JSON into a compact string by stripping unnecessary spaces, tabs, and line breaks. The data stays the same, but the payload becomes smaller and easier to embed in code, send in requests, or store in logs.\n\nUse it when you need a condensed representation for APIs, configuration snippets, fixtures, or debugging exports. If the input is not valid JSON, the tool cannot safely minify it, so fix syntax issues such as trailing commas, missing quotes, or unmatched brackets first.\n\nThe output is meant to be machine-friendly, not easy to read. If you need a human-readable layout again, use a JSON formatter after minifying or whenever you want to inspect the structure.",
   "howItWorks": [
-    "Enter the required value or text into the form.",
-    "The conversion, calculation or transformation runs instantly in the browser.",
-    "Review the result and continue with related tools if you need another step."
+    "Paste valid JSON into the input field.",
+    "The tool removes non-essential whitespace while preserving values and nesting.",
+    "Copy the compact result for code, transfer, or storage."
+  ],
+  "useCases": [
+    {
+      "title": "Trim API payloads before sending",
+      "description": "Condense a request body that was formatted for review so it can be embedded in tests or shared as a single-line payload."
+    },
+    {
+      "title": "Store sample fixtures in a compact form",
+      "description": "Keep example responses or test data small when you want them committed in a compact representation."
+    },
+    {
+      "title": "Prepare config snippets for transport",
+      "description": "Reduce line breaks and indentation before pasting JSON into another system or environment variable."
+    }
   ],
   "examples": [
     {
-      "title": "Common use case",
-      "input": "{\"name\":\"tool\",\"value\":1}",
-      "output": "{\"name\":\"tool\",\"value\":1}",
-      "description": "Shows a common use case with a clear input and result."
+      "title": "Pretty JSON to compact string",
+      "input": "{\n  \"user\": \"alex\",\n  \"roles\": [\n    \"admin\",\n    \"editor\"\n  ],\n  \"active\": true\n}",
+      "output": "{\"user\":\"alex\",\"roles\":[\"admin\",\"editor\"],\"active\":true}",
+      "description": "Whitespace is removed, but arrays, booleans, and object structure remain unchanged."
     },
     {
-      "title": "Another quick example",
-      "input": "{\"name\":\"tool\",\"value\":1}",
-      "output": "{\"name\":\"tool\",\"value\":1}",
-      "description": "Useful for quick checks, comparisons or repeat tasks."
+      "title": "Nested object with numbers",
+      "input": "{\n  \"order\": {\n    \"id\": 1042,\n    \"items\": [\n      { \"sku\": \"A1\", \"qty\": 2 },\n      { \"sku\": \"B7\", \"qty\": 1 }\n    ]\n  }\n}",
+      "output": "{\"order\":{\"id\":1042,\"items\":[{\"sku\":\"A1\",\"qty\":2},{\"sku\":\"B7\",\"qty\":1}]}}",
+      "description": "Nested objects and arrays are compressed into a single line without changing values."
+    },
+    {
+      "title": "String values containing punctuation",
+      "input": "{\n  \"message\": \"Save, then retry.\",\n  \"note\": \"Spacing inside strings stays as typed.\"\n}",
+      "output": "{\"message\":\"Save, then retry.\",\"note\":\"Spacing inside strings stays as typed.\"}",
+      "description": "Spaces inside quoted strings are preserved because they are part of the data, not formatting."
     }
   ],
   "faq": [
     {
-      "question": "How accurate is this tool?",
-      "answer": "The result is based on the input you provide and the calculation or transformation shown on the page."
+      "question": "Will the minifier change numbers, booleans, or string values?",
+      "answer": "No. A correct minifier removes only formatting whitespace outside JSON strings. The values themselves should stay exactly the same."
     },
     {
-      "question": "Can I use this tool on mobile?",
-      "answer": "Yes. The page works on desktop and mobile screens with a simple input and result layout."
+      "question": "What happens if the input is not valid JSON?",
+      "answer": "The tool should not produce a safe compact result from broken syntax. Fix issues such as trailing commas, missing quotes around keys, or unmatched braces first."
+    },
+    {
+      "question": "Are spaces inside quoted text removed?",
+      "answer": "No. Spaces inside strings are part of the JSON value and must remain unchanged. Only formatting spaces outside strings are removed."
+    },
+    {
+      "question": "Can I minify JSON that contains escaped characters or Unicode?",
+      "answer": "Yes, as long as the JSON is valid. Escapes such as \\n, \\t, \\\\, and Unicode characters remain encoded according to the input data."
     }
   ],
   "seo": {
     "title": "JSON Minifier",
-    "description": "Minify JSON instantly online. Free online json minifier with instant results.",
+    "description": "Compress JSON text by removing spaces and line breaks while preserving valid structure and readable key order.",
     "keywords": [
-      "json minifier"
+      "json minifier",
+      "minify json",
+      "compact json",
+      "remove whitespace from json",
+      "json compressor"
     ]
   }
 }

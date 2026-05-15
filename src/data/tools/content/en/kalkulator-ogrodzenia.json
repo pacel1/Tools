@@ -3,176 +3,88 @@
   "locale": "en",
   "slug": "fence-calculator",
   "h1": "Fence Calculator",
-  "title": "Fence Calculator for Panels, Posts and Length",
-  "shortDescription": "Calculate how many fence panels, posts and infill length you need for a panel fence.",
-  "metaTitle": "Fence Calculator - Panels, Posts and Fence Length",
-  "metaDescription": "Quickly calculate how many fence panels and posts you need. Estimate total infill length and add waste percentage for a panel fence.",
-  "intro": "Use this fence calculator to estimate how many panel fence sections and posts you need based on the total fence length, gate and wicket openings, panel width and waste allowance.",
-  "overview": "This calculator is designed for panel fencing. Enter the fence length, panel width, gate width, wicket width and waste percentage to get a practical materials estimate. The tool subtracts openings from the total length, calculates the number of panels needed, and estimates posts based on the panel layout.",
+  "title": "Fence Calculator for Panels",
+  "shortDescription": "Work out panels, posts and usable fence length for a straight panel fence.",
+  "metaTitle": "Panel Fence Calculator",
+  "metaDescription": "Work out panel count, post count and usable fence length. Include gate openings, a wicket and waste in one estimate.",
+  "intro": "Enter the full fence run, opening widths and panel size to get the number of panels, posts and the remaining fill length.",
+  "overview": "This calculator is built for straight panel fencing. It subtracts gate and wicket openings from the total run, then uses the panel width to estimate how many fence sections fit and how many posts the layout needs.\n\nAdd a waste allowance when your fence line needs trimming, matching to slopes or small installation adjustments. The result is a planning figure for ordering, not a substitute for site marking or checking manufacturer panel sizes.",
   "howItWorks": [
-    "Enter the total fence length in meters.",
-    "Add the panel width, gate width and wicket width.",
-    "Set the waste percentage to account for cuts and installation reserve.",
-    "The calculator determines the fillable fence length.",
-    "It then estimates the number of panels and posts required."
+    "Enter the full fence length in metres.",
+    "Add the width of each opening, such as a gate or wicket.",
+    "Set the panel width you plan to install.",
+    "Choose a waste allowance for cuts and fitting.",
+    "The calculator returns usable fence length, panel count and post count."
   ],
   "useCases": [
-    "Planning a panel fence for a house or garden.",
-    "Estimating materials before ordering panels and posts.",
-    "Checking how many fence panels are needed after subtracting a gate and wicket.",
-    "Adding a safety margin for waste and installation adjustments."
+    {
+      "title": "Ordering materials for a garden boundary",
+      "description": "Estimate how many panels and posts to buy before you place an order for a new straight boundary fence."
+    },
+    {
+      "title": "Checking a layout with a gate and side access",
+      "description": "See how much line remains after subtracting a driveway gate and a pedestrian wicket from the total fence run."
+    },
+    {
+      "title": "Comparing panel sizes before purchase",
+      "description": "Test 2.0 m, 2.5 m or other panel widths to see which layout gives the fewest cuts and the cleanest post positions."
+    },
+    {
+      "title": "Adding fitting reserve for sloping ground",
+      "description": "Build in a waste percentage when the ground falls away, the ends need trimming or you expect small on-site adjustments."
+    }
   ],
   "examples": [
     {
-      "title": "How many fence panels do I need?",
-      "input": "For 24 m fence length, 2.5 m panel width, 4 m gate, 1 m wicket and 5% waste.",
-      "output": "The calculator estimates the number of panels, posts and usable infill length.",
-      "description": "A quick planning example for a standard panel fence."
+      "title": "Driveway fence with a side wicket",
+      "input": "Total length: 31.5 m; gate opening: 4.0 m; wicket opening: 1.0 m; panel width: 2.5 m; waste: 6%.",
+      "output": "Usable fence length is reduced by the openings, then the calculator estimates the panel count and the posts needed along the run.",
+      "description": "Useful for a front boundary with both vehicle and pedestrian access."
     },
     {
-      "title": "Fence length with openings",
-      "input": "Use the tool to subtract gate and wicket widths from the total fence line.",
-      "output": "You get the remaining length available for fence panels.",
-      "description": "Useful when the fence includes several entrances."
+      "title": "Long straight rear fence",
+      "input": "Total length: 18 m; gate opening: 0 m; wicket opening: 0 m; panel width: 2.0 m; waste: 3%.",
+      "output": "The result shows the full fillable length and the number of standard panels needed for a simple straight section.",
+      "description": "A clean example when there are no breaks in the fence line."
+    },
+    {
+      "title": "Fence with a wide entrance",
+      "input": "Total length: 27.8 m; gate opening: 3.6 m; wicket opening: 0.9 m; panel width: 2.5 m; waste: 8%.",
+      "output": "The calculator gives the remaining panel length after openings and adds a reserve for cuts and fitting.",
+      "description": "Helpful when the entrance widths must be counted precisely before ordering."
     }
   ],
   "faq": [
     {
-      "question": "What does the fence calculator calculate?",
-      "answer": "It estimates the number of fence panels, posts and the total fillable length for a panel fence."
+      "question": "Does the calculator count end posts and corner posts separately?",
+      "answer": "It estimates the posts required along the panel layout, but special posts for corners, ends, gate sides or changes in direction may need to be added separately."
     },
     {
-      "question": "Can I include a gate and wicket?",
-      "answer": "Yes. Enter their widths and the calculator subtracts them from the total fence length."
+      "question": "Should opening widths be included in the total fence length?",
+      "answer": "Yes. Enter the full run from end to end, then list the widths of the gate and wicket so the openings can be removed from the panel section."
     },
     {
-      "question": "Why add waste percentage?",
-      "answer": "Waste covers cuts, adjustments and a small installation reserve, so your material estimate is more realistic."
+      "question": "Why can the panel count differ from the simple remaining length divided by panel width?",
+      "answer": "The tool rounds the layout to a practical panel arrangement, so the result may shift when the remaining length does not match the exact module width."
     },
     {
-      "question": "Is this calculator only for panel fencing?",
-      "answer": "It is optimized for panel fences, but the same logic is useful for other straight fence layouts."
+      "question": "What if my fence uses mixed panel widths?",
+      "answer": "Use the width of the main repeating section first. If your layout combines different modules, check each span separately rather than relying on one total."
+    },
+    {
+      "question": "Can I use this for a fence with slopes or uneven ground?",
+      "answer": "Yes, but treat the output as a starting estimate. Slopes often require trimming or stepped placement, which can change the final material list."
     }
   ],
-  "uiLabels": {
-    "copy": "Copy",
-    "copied": "Copied",
-    "input": "Input",
-    "output": "Output",
-    "placeholder": "Enter value",
-    "indent": "Indent",
-    "removeComments": "Remove comments",
-    "preview": "Preview",
-    "source": "Source",
-    "sanitizedHtml": "Sanitized HTML",
-    "plainText": "Plain text",
-    "summary": "Summary",
-    "total": "Total",
-    "links": "Links",
-    "images": "Images",
-    "errors": "Errors",
-    "warnings": "Warnings",
-    "valid": "Valid",
-    "invalid": "Invalid",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Width",
-    "height": "Height",
-    "empty": "Empty",
-    "outputReady": "Output ready",
-    "cleanedHtml": "Cleaned HTML",
-    "formattedHtml": "Formatted HTML",
-    "minifiedHtml": "Minified HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extracted images",
-    "extractedLinks": "Extracted links",
-    "validationSummary": "Validation summary",
-    "prettyHtml": "Pretty HTML",
-    "encodedText": "Encoded text",
-    "file": "File",
-    "size": "Size",
-    "format": "Format",
-    "quality": "Quality",
-    "colorOne": "Color 1",
-    "colorTwo": "Color 2",
-    "background": "Background",
-    "foreground": "Foreground",
-    "angle": "Angle",
-    "margin": "Margin",
-    "level": "Level",
-    "gradientType": "Gradient type",
-    "linear": "Linear",
-    "radial": "Radial",
-    "blur": "Blur",
-    "spread": "Spread",
-    "offsetX": "Offset X",
-    "offsetY": "Offset Y",
-    "opacity": "Opacity",
-    "inset": "Inset",
-    "cssCode": "CSS code",
-    "snippet": "Snippet",
-    "download": "Download",
-    "downloadSvg": "Download SVG",
-    "downloadPng": "Download PNG",
-    "downloadAll": "Download all",
-    "upload": "Upload",
-    "title": "Title",
-    "description": "Description",
-    "canonicalUrl": "Canonical URL",
-    "siteName": "Site name",
-    "ogImage": "OG image",
-    "clear": "Clear",
-    "generatedQr": "Generated QR",
-    "placeholderImage": "Placeholder image",
-    "faviconSet": "Favicon set",
-    "keepAspectRatio": "Keep aspect ratio",
-    "cropX": "Crop X",
-    "cropY": "Crop Y",
-    "cropWidth": "Crop width",
-    "cropHeight": "Crop height",
-    "originalSize": "Original size",
-    "outputSize": "Output size",
-    "savedSize": "Saved size",
-    "result": "Result",
-    "base64": "Base64",
-    "mimeType": "MIME type",
-    "resizedImage": "Resized image",
-    "compressedImage": "Compressed image",
-    "croppedImage": "Cropped image",
-    "convertedImage": "Converted image",
-    "decodedImage": "Decoded image",
-    "imagePreview": "Image preview",
-    "camera": "Camera",
-    "lens": "Lens",
-    "dateTaken": "Date taken",
-    "resolution": "Resolution",
-    "fileSize": "File size",
-    "iso": "ISO",
-    "exposure": "Exposure",
-    "aperture": "Aperture",
-    "focalLength": "Focal length",
-    "flash": "Flash",
-    "orientation": "Orientation",
-    "latitude": "Latitude",
-    "longitude": "Longitude",
-    "openMap": "Open map",
-    "rawMetadata": "Raw metadata",
-    "noMetadataFound": "No metadata found",
-    "gpsLocation": "GPS location",
-    "metadataSummary": "Metadata summary"
-  },
   "seo": {
-    "title": "Fence Calculator for Panel Fencing",
-    "description": "Calculate fence panels, posts and fillable length for a panel fence. Enter fence length, openings and waste to estimate materials fast.",
+    "title": "Panel Fence Calculator",
+    "description": "Work out panel count, post count and usable fence length. Include gate openings, a wicket and waste in one estimate.",
     "keywords": [
       "fence calculator",
       "panel fence calculator",
-      "how many fence panels",
-      "fence posts calculator",
-      "fence length calculator"
+      "fence panel count",
+      "fence post estimate",
+      "usable fence length"
     ]
   }
 }

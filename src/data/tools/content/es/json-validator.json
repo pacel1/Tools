@@ -4,42 +4,84 @@
   "slug": "validador-json",
   "h1": "Validador JSON",
   "title": "Validador JSON",
-  "shortDescription": "Valida JSON y detecta errores al instante con resultados rápidos, entradas simples y ejemplos prácticos.",
-  "overview": "Valida JSON y detecta errores al instante. Esta página ofrece una respuesta rápida con una herramienta útil y un flujo de resultados sencillo. Está pensada para usuarios que buscan una respuesta gratis en línea, resultados rápidos en el navegador y contenido práctico de herramientas para búsquedas long-tail.",
+  "shortDescription": "Comprueba si el JSON es válido y localiza el primer error de sintaxis con un mensaje claro y útil.",
+  "metaTitle": "Validador JSON de sintaxis",
+  "metaDescription": "Comprueba la sintaxis JSON, detecta el primer error de análisis y localiza comas, comillas o corchetes faltantes.",
+  "intro": "Pega tu JSON para comprobar si se analiza correctamente y ver enseguida dónde empieza el primer error.",
+  "overview": "Esta herramienta verifica la estructura JSON según las reglas que usan los analizadores modernos. Es útil cuando necesitas confirmar que objetos, arrays, cadenas, números, booleanos y null están escritos en formato JSON correcto.\n\nSi el contenido es inválido, el resultado señala el primer fallo para que puedas corregir el carácter o la línea exacta que rompe el análisis. Así resulta más fácil detectar comas ausentes, comillas sin escapar, comas finales y desajustes de corchetes antes de enviar datos a una API, un archivo de configuración o un script.\n\nÚsala como comprobación directa al copiar cargas útiles, editar cuerpos de petición o revisar exportaciones de datos. Ayuda a distinguir el JSON real del texto que solo se parece a él.",
   "howItWorks": [
-    "Introduce el valor o texto requerido en el formulario.",
-    "La conversión, cálculo o transformación se ejecuta al instante en el navegador.",
-    "Revisa el resultado y continúa con herramientas relacionadas si necesitas otro paso."
+    "Pega el JSON en el campo de entrada.",
+    "El analizador revisa el texto e indica si es válido.",
+    "Si hay un error, corrige la zona marcada y vuelve a comprobarlo."
+  ],
+  "useCases": [
+    {
+      "title": "Revisión de cuerpo para API",
+      "description": "Confirma que una carga POST es válida antes de enviarla, especialmente si incluye objetos y arrays anidados."
+    },
+    {
+      "title": "Verificación de archivos de configuración",
+      "description": "Comprueba ajustes de apps, flags de funciones o configuración exportada como JSON para evitar fallos al iniciar."
+    },
+    {
+      "title": "Inspección de payloads de webhook",
+      "description": "Valida datos de prueba copiados desde logs o eventos antes de mapear campos en otro sistema."
+    },
+    {
+      "title": "Limpieza de exportaciones de datos",
+      "description": "Detecta exportaciones rotas de paneles o scripts donde apareció una coma, comilla o corchete de más."
+    }
   ],
   "examples": [
     {
-      "title": "Ejemplo 1",
-      "input": "{\"items\":[1,2,3]}",
+      "title": "Objeto anidado válido",
+      "input": "{\"user\":{\"id\":42,\"roles\":[\"admin\",\"editor\"],\"active\":true}}",
       "output": "JSON válido",
-      "description": "Un ejemplo realista de validador JSON para una consulta de búsqueda habitual."
+      "description": "Un objeto completo con tipos anidados, booleanos y un array."
     },
     {
-      "title": "Ejemplo 2",
-      "input": "{\"items\":[1,2,3]}",
-      "output": "JSON válido",
-      "description": "Otro caso práctico de uso para atraer tráfico orgánico long-tail."
+      "title": "Falta una coma entre campos",
+      "input": "{\"name\":\"Mina\" \"age\":29}",
+      "output": "JSON inválido: se esperaba una coma después de \"Mina\"",
+      "description": "Muestra cómo un pequeño error de puntuación rompe el análisis."
+    },
+    {
+      "title": "Coma final en un array",
+      "input": "{\"items\":[\"a\",\"b\",]}",
+      "output": "JSON inválido: la coma final no está permitida",
+      "description": "Ilustra un fallo habitual al editar arrays a mano."
     }
   ],
   "faq": [
     {
-      "question": "¿Qué precisión tiene esta herramienta?",
-      "answer": "El resultado se calcula directamente a partir de la fórmula o de la lógica en el navegador que utiliza esta herramienta."
+      "question": "¿Qué comprueba primero este validador?",
+      "answer": "Comprueba si el texto es JSON válido. Si el análisis falla, informa del primer punto donde se rompe la estructura, como una coma ausente, un corchete sin cerrar o una cadena abierta."
     },
     {
-      "question": "¿Puedo usar esta herramienta en el móvil?",
-      "answer": "Sí. La página funciona en pantallas de escritorio y móviles con un diseño sencillo de entrada y resultados."
+      "question": "¿Por qué falla un texto con comillas simples?",
+      "answer": "JSON exige comillas dobles para cadenas y nombres de propiedades. Las comillas simples funcionan en objetos de JavaScript, pero no en JSON puro."
+    },
+    {
+      "question": "¿La coma final cuenta como válida?",
+      "answer": "No. JSON no permite comas finales en arrays ni objetos, aunque algunos lenguajes sí las acepten en su propia sintaxis."
+    },
+    {
+      "question": "¿Cómo interpreto la posición del error?",
+      "answer": "Empieza por la línea o el carácter indicado y revisa la puntuación, las comillas y los corchetes cercanos. El problema real suele estar justo antes del punto marcado."
+    },
+    {
+      "question": "¿Puede fallar un texto que parece correcto?",
+      "answer": "Sí. Puede verse bien y aun así contener una comilla sin escapar, un dos puntos ausente, un carácter de control o un número escrito en un formato no admitido."
     }
   ],
   "seo": {
-    "title": "Validador JSON",
-    "description": "Valida JSON y detecta errores al instante. Validador JSON online gratis con resultados inmediatos.",
+    "title": "Validador JSON de sintaxis",
+    "description": "Comprueba la sintaxis JSON, detecta el primer error de análisis y localiza comas, comillas o corchetes faltantes.",
     "keywords": [
-      "validador json"
+      "validador json",
+      "comprobar json",
+      "error json",
+      "analizador json"
     ]
   }
 }

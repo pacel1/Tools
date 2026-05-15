@@ -4,178 +4,87 @@
   "slug": "calculateur-de-colle-a-carrelage",
   "h1": "Calculateur de colle à carrelage",
   "title": "Calculateur de colle à carrelage",
-  "shortDescription": "Calculez combien de kilos et de sacs de colle à carrelage il vous faut pour une surface et une epaisseur donnees.",
-  "metaTitle": "Calculateur de colle à carrelage | kg et sacs",
-  "metaDescription": "Estimez la consommation de colle à carrelage en kg et en sacs. Saisissez la surface, la consommation par mm, l’epaisseur, la perte et le poids du sac pour un resultat clair.",
-  "intro": "Utilisez ce calculateur de colle à carrelage pour estimer rapidement la quantite de materiau necessaire. Il affiche la consommation sans perte, avec perte et le nombre de sacs à acheter.",
-  "overview": "Le calculateur s’appuie sur une formule simple: surface, consommation par 1 mm, epaisseur de couche, marge de perte et poids du sac. Le resultat est facile à verifier et utile pour preparer les achats.",
+  "shortDescription": "Estimez les kilos et les sacs de colle à carrelage à partir de la surface, de la consommation et de l’epaisseur.",
+  "metaTitle": "Calculateur de colle à carrelage",
+  "metaDescription": "Estimez la colle à carrelage en kg et en sacs avec la surface, la consommation par mm, l’epaisseur de couche, la perte et le poids du sac.",
+  "intro": "Indiquez la surface, la consommation par 1 mm, l’epaisseur de couche, la perte et le poids du sac pour connaître la quantité nécessaire en kilos et en sacs.",
+  "overview": "Ce calculateur transforme les données de votre chantier en quantité d’achat précise. Il calcule d’abord le besoin de base à partir de la surface, de la consommation par millimètre et de l’epaisseur de couche, puis ajoute la marge que vous indiquez avant de convertir le total en sacs.\n\nIl est pratique quand le support est irrégulier, quand vous posez des carreaux grand format ou quand vous comparez deux colles avec des consommations différentes. Vous obtenez ainsi une quantité claire plutôt qu’une estimation approximative.",
   "howItWorks": [
-    "Saisissez la surface en metres carres.",
-    "Indiquez la consommation de colle par 1 mm en kg/m2/mm.",
-    "Definissez l’epaisseur de la couche en millimetres.",
-    "Ajoutez un pourcentage de perte pour les decoupes, les irregularites et les pertes d’application.",
-    "Entrez le poids du sac pour calculer le nombre de sacs nécessaires."
+    "Mesurez la surface en mètres carrés.",
+    "Saisissez la consommation du produit par 1 mm en kg/m²/mm.",
+    "Définissez l’epaisseur prévue de la couche en millimètres.",
+    "Ajoutez un pourcentage de perte pour les découpes, les irrégularités et les pertes de mise en œuvre.",
+    "Entrez le poids du sac pour convertir les kilos en nombre de sacs."
   ],
   "useCases": [
-    "Calculer la colle pour une salle de bain, une cuisine ou un couloir.",
-    "Planifier l’achat de materiaux avant une renovation.",
-    "Verifier combien de sacs sont necessaires pour un systeme de carrelage donne.",
-    "Comparer le besoin selon differentes epaisseurs de couche."
+    {
+      "title": "Salle de bain avec support irrégulier",
+      "description": "Calculez une quantité adaptée quand le mur et le sol n’ont pas la même épaisseur de colle à prévoir."
+    },
+    {
+      "title": "Carrelage grand format",
+      "description": "Vérifiez l’impact d’une couche plus épaisse sur la quantité totale nécessaire."
+    },
+    {
+      "title": "Achat avant travaux",
+      "description": "Convertissez le métrage prévu en kilos et en sacs avant de commander le matériau."
+    },
+    {
+      "title": "Comparaison de deux colles",
+      "description": "Mesurez l’effet d’une consommation différente sur le volume d’achat final."
+    }
   ],
   "examples": [
     {
-      "title": "Formule simple",
-      "input": "Surface × consommation par mm × epaisseur",
-      "output": "Quantite de colle de base en kg avant perte.",
-      "description": "Cela donne le besoin net pour la surface à couvrir."
+      "title": "Petit couloir",
+      "input": "Surface : 12 m² ; consommation : 1,4 kg/m²/mm ; epaisseur : 4 mm ; perte : 8 % ; poids du sac : 25 kg",
+      "output": "Base : 67,2 kg ; avec perte : 72,6 kg ; sacs : 3",
+      "description": "Même une petite surface peut nécessiter trois sacs complets une fois la marge ajoutée."
     },
     {
-      "title": "Avec perte",
-      "input": "Kg de base × (1 + perte / 100)",
-      "output": "Quantite totale de colle en kg.",
-      "description": "Ajoute une marge pratique pour les pertes et les irregularites du support."
+      "title": "Cuisine avec couche plus épaisse",
+      "input": "Surface : 18,5 m² ; consommation : 1,6 kg/m²/mm ; epaisseur : 6 mm ; perte : 10 % ; poids du sac : 20 kg",
+      "output": "Base : 177,6 kg ; avec perte : 195,4 kg ; sacs : 10",
+      "description": "Une couche plus épaisse augmente rapidement le besoin total."
     },
     {
-      "title": "Sacs nécessaires",
-      "input": "Kg total ÷ poids du sac, arrondi au supérieur",
-      "output": "Nombre de sacs à acheter.",
-      "description": "Arrondissez toujours au supérieur pour ne pas manquer de materiau sur le chantier."
+      "title": "Local technique",
+      "input": "Surface : 7,8 m² ; consommation : 1,2 kg/m²/mm ; epaisseur : 3 mm ; perte : 5 % ; poids du sac : 25 kg",
+      "output": "Base : 28,1 kg ; avec perte : 29,5 kg ; sacs : 2",
+      "description": "Un espace réduit peut quand même passer à deux sacs avec une petite marge."
     }
   ],
   "faq": [
     {
-      "question": "Comment calculer la colle à carrelage nécessaire ?",
-      "answer": "Multipliez la surface par la consommation par 1 mm et par l’epaisseur de la couche. Ajoutez ensuite la perte et divisez par le poids du sac pour obtenir le nombre de sacs."
+      "question": "Pourquoi l’epaisseur modifie-t-elle autant le résultat ?",
+      "answer": "Parce que le calcul multiplie la consommation par millimètre par l’epaisseur prévue. Chaque millimètre supplémentaire s’applique à toute la surface."
     },
     {
-      "question": "Pourquoi ajouter une marge de perte ?",
-      "answer": "La marge couvre les pertes au mélange, les petites irregularites du sol ou du mur et les differences d’application. Elle evite d’acheter trop peu."
+      "question": "Que faire si la fiche produit donne une consommation au m² et non par mm ?",
+      "answer": "Utilisez la valeur du fabricant telle qu’elle est fournie si elle correspond déjà à l’épaisseur prévue. Si elle est donnée par millimètre, gardez l’epaisseur comme couche réelle à poser."
     },
     {
-      "question": "Faut-il arrondir les sacs au supérieur ?",
-      "answer": "Oui. Les sacs doivent toujours être arrondis à l’entier supérieur, car on n’achète pas de demi-sac."
+      "question": "Dois-je saisir le poids exact du sac ?",
+      "answer": "Oui. Un sac de 20 kg et un sac de 25 kg ne donnent pas le même nombre d’unités, donc le poids réel doit être utilisé."
+    },
+    {
+      "question": "Pourquoi le nombre de sacs est-il arrondi au supérieur ?",
+      "answer": "Parce que la colle se vend en sacs entiers. Arrondir à la baisse peut laisser un manque en fin de chantier."
+    },
+    {
+      "question": "Quelles erreurs font sous-estimer le besoin ?",
+      "answer": "Les plus courantes sont une mauvaise unité de surface, l’oubli de la perte, une épaisseur trop faible ou la prise d’une consommation issue d’un autre produit."
     }
   ],
-  "uiLabels": {
-    "copy": "Copier",
-    "copied": "Copié",
-    "input": "Saisie",
-    "output": "Résultat",
-    "placeholder": "Entrez une valeur",
-    "indent": "Retrait",
-    "removeComments": "Supprimer les commentaires",
-    "preview": "Aperçu",
-    "source": "Source",
-    "sanitizedHtml": "HTML nettoyé",
-    "plainText": "Texte brut",
-    "summary": "Résumé",
-    "total": "Total",
-    "links": "Liens",
-    "images": "Images",
-    "errors": "Erreurs",
-    "warnings": "Avertissements",
-    "valid": "Valide",
-    "invalid": "Invalide",
-    "href": "Href",
-    "text": "Texte",
-    "rel": "Rel",
-    "target": "Cible",
-    "alt": "Alt",
-    "width": "Largeur",
-    "height": "Hauteur",
-    "empty": "Vide",
-    "outputReady": "Résultat prêt",
-    "cleanedHtml": "HTML nettoyé",
-    "formattedHtml": "HTML formaté",
-    "minifiedHtml": "HTML minifié",
-    "markdown": "Markdown",
-    "extractedImages": "Images extraites",
-    "extractedLinks": "Liens extraits",
-    "validationSummary": "Résumé de validation",
-    "prettyHtml": "HTML lisible",
-    "encodedText": "Texte encodé",
-    "file": "Fichier",
-    "size": "Taille",
-    "format": "Format",
-    "quality": "Qualité",
-    "colorOne": "Couleur 1",
-    "colorTwo": "Couleur 2",
-    "background": "Arrière-plan",
-    "foreground": "Premier plan",
-    "angle": "Angle",
-    "margin": "Marge",
-    "level": "Niveau",
-    "gradientType": "Type de dégradé",
-    "linear": "Linéaire",
-    "radial": "Radial",
-    "blur": "Flou",
-    "spread": "Extension",
-    "offsetX": "Décalage X",
-    "offsetY": "Décalage Y",
-    "opacity": "Opacité",
-    "inset": "Interne",
-    "cssCode": "Code CSS",
-    "snippet": "Extrait",
-    "download": "Télécharger",
-    "downloadSvg": "Télécharger SVG",
-    "downloadPng": "Télécharger PNG",
-    "downloadAll": "Tout télécharger",
-    "upload": "Importer",
-    "title": "Titre",
-    "description": "Description",
-    "canonicalUrl": "URL canonique",
-    "siteName": "Nom du site",
-    "ogImage": "Image OG",
-    "clear": "Effacer",
-    "generatedQr": "QR généré",
-    "placeholderImage": "Image fictive",
-    "faviconSet": "Jeu de favicon",
-    "keepAspectRatio": "Conserver le ratio",
-    "cropX": "Recadrage X",
-    "cropY": "Recadrage Y",
-    "cropWidth": "Largeur du recadrage",
-    "cropHeight": "Hauteur du recadrage",
-    "originalSize": "Taille originale",
-    "outputSize": "Taille de sortie",
-    "savedSize": "Taille economisée",
-    "result": "Résultat",
-    "base64": "Base64",
-    "mimeType": "Type MIME",
-    "resizedImage": "Image redimensionnée",
-    "compressedImage": "Image compressée",
-    "croppedImage": "Image recadrée",
-    "convertedImage": "Image convertie",
-    "decodedImage": "Image décodée",
-    "imagePreview": "Aperçu de l’image",
-    "camera": "Caméra",
-    "lens": "Objectif",
-    "dateTaken": "Date de prise de vue",
-    "resolution": "Résolution",
-    "fileSize": "Taille du fichier",
-    "iso": "ISO",
-    "exposure": "Exposition",
-    "aperture": "Ouverture",
-    "focalLength": "Distance focale",
-    "flash": "Flash",
-    "orientation": "Orientation",
-    "latitude": "Latitude",
-    "longitude": "Longitude",
-    "openMap": "Ouvrir la carte",
-    "rawMetadata": "Métadonnées brutes",
-    "noMetadataFound": "Aucune métadonnée trouvée",
-    "gpsLocation": "Position GPS",
-    "metadataSummary": "Résumé des métadonnées"
-  },
   "seo": {
     "title": "Calculateur de colle à carrelage",
-    "description": "Calculez combien de kg et de sacs de colle à carrelage vous faut. Obtenez le résultat sans perte, avec perte et le nombre de sacs à partir de la surface, de la consommation, de l’epaisseur et du poids du sac.",
+    "description": "Estimez la colle à carrelage en kg et en sacs avec la surface, la consommation par mm, l’epaisseur de couche, la perte et le poids du sac.",
     "keywords": [
       "calculateur de colle à carrelage",
-      "calcul de colle à carrelage",
-      "kg colle à carrelage",
+      "colle à carrelage kg",
       "sacs de colle",
       "consommation colle carrelage",
-      "calculateur materiaux carrelage"
+      "calcul matériaux carrelage"
     ]
   }
 }

@@ -1,0 +1,88 @@
+{
+  "toolId": "storage-converter",
+  "locale": "fr",
+  "slug": "storage-converter",
+  "h1": "Convertisseur de stockage",
+  "title": "Convertisseur de stockage",
+  "shortDescription": "Convertissez KB, MB, GB et TB avec l’échelle 1024.",
+  "metaTitle": "Convertisseur stockage KB MB GB TB",
+  "metaDescription": "Convertissez des unités de stockage avec une base 1024 pour KB, MB, GB et TB. Comparez fichiers, disques et sauvegardes.",
+  "intro": "Convertissez KB, MB, GB et TB avec l’échelle binaire 1024 lorsque vous devez exprimer une taille dans une autre unité.",
+  "overview": "Ce convertisseur est conçu pour les unités binaires de stockage, afin que les valeurs obtenues correspondent à la manière dont beaucoup de systèmes décrivent les fichiers, la mémoire et l’espace disque. Vous saisissez une valeur, vous choisissez l’unité de départ et l’unité d’arrivée, puis le calcul applique 1024 à chaque étape.\n\nC’est utile pour comparer un installateur avec l’espace libre, vérifier la taille d’une archive avant de la copier ou estimer l’espace nécessaire à une sauvegarde complète. Depuis le même formulaire, vous pouvez passer de GB à MB, de TB à GB ou de KB à MB sans ressaisir la valeur.\n\nL’outil aide aussi lorsque l’étiquette, le rapport ou le gestionnaire de fichiers affiche une taille dans une autre unité que celle dont vous avez besoin pour planifier. Au lieu d’estimer à l’œil, vous pouvez convertir la quantité exacte et garder une comparaison cohérente.",
+  "howItWorks": [
+    "Saisissez le nombre à convertir.",
+    "Choisissez l’unité source et l’unité cible parmi KB, MB, GB ou TB.",
+    "Lisez le résultat puis inversez le sens si vous avez besoin du calcul opposé."
+  ],
+  "useCases": [
+    {
+      "title": "Vérifier la place d’un installateur",
+      "description": "Convertissez un fichier d’installation de 3,7 GB en MB avant de le comparer à une partition presque pleine ou à une clé USB."
+    },
+    {
+      "title": "Prévoir l’espace pour une sauvegarde",
+      "description": "Transformez une archive de 4,2 TB en GB pour estimer le nombre de disques ou de ressources cloud nécessaires."
+    },
+    {
+      "title": "Organiser une médiathèque",
+      "description": "Convertissez un dossier de clips de 812 MB en GB lors de la préparation d’un envoi ou d’un déplacement de fichiers."
+    },
+    {
+      "title": "Comparer des indications de capacité",
+      "description": "Alignez les valeurs affichées par le système, le gestionnaire de fichiers et la fiche produit lorsque les unités diffèrent."
+    }
+  ],
+  "examples": [
+    {
+      "title": "De GB vers MB",
+      "input": "2 GB",
+      "output": "2048 MB",
+      "description": "Utile quand une taille de téléchargement est plus lisible en mégaoctets."
+    },
+    {
+      "title": "De TB vers GB",
+      "input": "3,25 TB",
+      "output": "3328 GB",
+      "description": "Pratique pour découper un grand plan de sauvegarde en blocs gérables."
+    },
+    {
+      "title": "De MB vers KB",
+      "input": "750 MB",
+      "output": "768000 KB",
+      "description": "Adapté lorsqu’une limite ou un transfert est indiqué en kilooctets."
+    }
+  ],
+  "faq": [
+    {
+      "question": "L’outil utilise-t-il 1000 ou 1024 ?",
+      "answer": "Il utilise l’échelle binaire 1024, donc 1 GB vaut 1024 MB et 1 TB vaut 1024 GB."
+    },
+    {
+      "question": "Pourquoi mon système d’exploitation peut-il afficher une autre taille ?",
+      "answer": "Certains systèmes et fabricants utilisent des conventions décimales pour la capacité, tandis que ce convertisseur suit des unités binaires. Avec des conventions différentes, les chiffres ne coïncident pas exactement."
+    },
+    {
+      "question": "Puis-je convertir des petites vers les grandes unités ?",
+      "answer": "Oui. Vous pouvez passer de KB à MB, de MB à GB ou de GB à TB, puis revenir dans l’autre sens."
+    },
+    {
+      "question": "Que se passe-t-il avec des valeurs décimales comme 1,5 TB ?",
+      "answer": "Les valeurs décimales sont acceptées, et le résultat est calculé directement à partir de ce nombre avec l’échelle 1024."
+    },
+    {
+      "question": "Quelle erreur revient le plus souvent à la lecture du résultat ?",
+      "answer": "Beaucoup s’attendent à 1 GB = 1000 MB. Si l’on lit le résultat avec cette hypothèse, il semblera trop grand, car ici 1024 est appliqué."
+    }
+  ],
+  "seo": {
+    "title": "Convertisseur stockage KB MB GB TB",
+    "description": "Convertissez des unités de stockage avec une base 1024 pour KB, MB, GB et TB. Comparez fichiers, disques et sauvegardes.",
+    "keywords": [
+      "convertisseur de stockage",
+      "kb vers mb",
+      "mb vers gb",
+      "gb vers tb",
+      "unités binaires"
+    ]
+  }
+}

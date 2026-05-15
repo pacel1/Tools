@@ -4,43 +4,79 @@
   "slug": "calculatrice-de-remboursement-de-pret",
   "h1": "Calculatrice de remboursement de prêt",
   "title": "Calculatrice de remboursement de prêt",
-  "shortDescription": "Estimez la mensualité d’un prêt à partir du montant, du taux et de la durée avec des résultats rapides, des saisies simples et des exemples pratiques.",
-  "overview": "Estimez la mensualité d’un prêt à partir du montant, du taux et de la durée. Cette page fournit une réponse rapide grâce à un outil pratique et un parcours de résultat simple. Elle s’adresse aux utilisateurs qui recherchent une réponse gratuite en ligne, des résultats instantanés dans le navigateur et un contenu utile pour les requêtes de longue traîne.",
+  "shortDescription": "Estimez la mensualité d’un prêt à partir du montant, du taux et de la durée.",
+  "metaTitle": "Calculatrice de prêt",
+  "metaDescription": "Estimez la mensualité d’un prêt à partir du montant, du taux et de la durée.",
+  "intro": "Saisissez le montant emprunté, le taux annuel et la durée pour voir tout de suite la mensualité estimée.",
+  "overview": "Cette calculatrice donne une estimation de la mensualité en fonction du capital, du taux annuel et de la durée de remboursement. Elle permet de comparer plusieurs offres, de tester différentes durées et de mesurer l’effet d’un taux plus bas ou d’un terme plus long sur le paiement mensuel.\n\nLe résultat est indicatif. Il n’inclut pas les frais, l’assurance emprunteur, les coûts de dossier ni les autres charges du contrat, sauf si vous les intégrez dans les données saisies. Pour un prêt avec échéances particulières, comme une dernière échéance majorée, la mensualité affichée doit être utilisée comme repère et non comme montant contractuel final.",
   "howItWorks": [
-    "Saisissez la valeur ou le texte requis dans le formulaire.",
-    "La conversion, le calcul ou la transformation s’exécute instantanément dans le navigateur.",
-    "Consultez le résultat et poursuivez avec des outils associés si vous avez besoin d’une autre étape."
+    "Saisissez le montant du prêt, le taux annuel et la durée.",
+    "L’outil applique la formule standard d’un prêt amortissable.",
+    "Consultez la mensualité estimée puis modifiez les paramètres pour comparer plusieurs scénarios."
+  ],
+  "useCases": [
+    {
+      "title": "Comparer un crédit auto",
+      "description": "Vérifiez si un taux plus faible ou une durée plus longue réduit davantage la mensualité pour le même achat."
+    },
+    {
+      "title": "Préparer un prêt personnel",
+      "description": "Évaluez si la mensualité reste compatible avec votre budget avant de déposer une demande."
+    },
+    {
+      "title": "Simuler un rachat de crédit",
+      "description": "Comparez le capital restant dû avec une nouvelle proposition pour voir l’impact sur la mensualité."
+    }
   ],
   "examples": [
     {
-      "title": "Exemple 1",
-      "input": "25000, 6 %, 60 mois",
-      "output": "Mensualité",
-      "description": "Un exemple réaliste de calculatrice de remboursement de prêt pour une recherche courante."
+      "title": "Prêt amortissable classique",
+      "input": "Montant : 25000 | Taux : 6 % | Durée : 60 mois",
+      "output": "Mensualité estimée : 483,32",
+      "description": "Exemple typique d’un prêt sur cinq ans à taux annuel fixe."
     },
     {
-      "title": "Exemple 2",
-      "input": "25000, 6 %, 60 mois",
-      "output": "Mensualité",
-      "description": "Un autre cas d’usage pratique pour capter du trafic organique de longue traîne."
+      "title": "Durée plus courte",
+      "input": "Montant : 18000 | Taux : 4,9 % | Durée : 36 mois",
+      "output": "Mensualité estimée : 537,62",
+      "description": "Montre comment une durée plus courte augmente la mensualité tout en réduisant le temps de remboursement."
+    },
+    {
+      "title": "Durée plus longue",
+      "input": "Montant : 42000 | Taux : 7,25 % | Durée : 84 mois",
+      "output": "Mensualité estimée : 633,37",
+      "description": "Permet de comparer une mensualité plus faible sur une période plus longue."
     }
   ],
   "faq": [
     {
-      "question": "Quelle est la précision de cet outil ?",
-      "answer": "Le résultat est calculé directement à partir de la formule ou de la logique côté navigateur utilisée par cet outil."
+      "question": "Les frais et l’assurance sont-ils inclus ?",
+      "answer": "Non. Le calcul repose sur le montant, le taux et la durée saisis. Les coûts additionnels doivent être ajoutés à part."
     },
     {
-      "question": "Puis-je utiliser cet outil sur mobile ?",
-      "answer": "Oui. La page fonctionne sur ordinateur et sur mobile avec une présentation simple des champs et du résultat."
+      "question": "Pourquoi la mensualité diffère-t-elle de celle de ma banque ?",
+      "answer": "La banque peut appliquer des arrondis, des frais de dossier ou un autre calendrier de paiement. Des produits associés peuvent aussi modifier le montant."
+    },
+    {
+      "question": "Dois-je saisir la durée en années ou en mois ?",
+      "answer": "Saisissez la durée en mois. Par exemple, 5 ans correspondent à 60 mois."
+    },
+    {
+      "question": "Que signifie un prêt à 0 % ?",
+      "answer": "L’outil répartit uniquement le capital sur la durée choisie. C’est utile pour des offres promotionnelles ou des comparaisons."
+    },
+    {
+      "question": "Convient-il aux prêts in fine ?",
+      "answer": "Non. Les prêts in fine suivent une structure de remboursement différente, donc cette estimation ne correspond pas à ce type de contrat."
     }
   ],
   "seo": {
-    "title": "Calculatrice de remboursement de prêt",
-    "description": "Estimez la mensualité d’un prêt à partir du montant, du taux et de la durée. Calculatrice de remboursement de prêt gratuite en ligne avec résultats instantanés.",
+    "title": "Calculatrice de prêt",
+    "description": "Estimez la mensualité d’un prêt à partir du montant, du taux et de la durée.",
     "keywords": [
       "calculatrice de remboursement de pret",
-      "outil calculatrices"
+      "mensualite pret",
+      "calculer mensualite pret"
     ]
   }
 }

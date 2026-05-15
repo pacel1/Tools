@@ -4,177 +4,91 @@
   "slug": "kalkulator-welny-mineralnej",
   "h1": "Kalkulator wełny mineralnej",
   "title": "Kalkulator wełny mineralnej",
-  "shortDescription": "Policz ile rolek lub paczek wełny mineralnej potrzeba do ocieplenia poddasza, ścian albo stropu.",
-  "metaTitle": "Kalkulator wełny mineralnej | Ile wełny potrzeba",
-  "metaDescription": "Oblicz objętość wełny mineralnej, powierzchnię z zapasem i liczbę paczek lub rolek do ocieplenia poddasza, ścian albo stropu.",
-  "intro": "Skorzystaj z kalkulatora wełny mineralnej, aby szybko policzyć ilość izolacji potrzebnej do ocieplenia poddasza, ściany lub stropu. Wpisz powierzchnię, grubość, wydajność paczki, zapas i objętość paczki, a otrzymasz prosty wynik materiałowy.",
-  "overview": "To praktyczne narzędzie pomaga obliczyć, ile wełny mineralnej potrzeba do ocieplenia poddasza, ścian lub sufitu. Kalkulator przelicza powierzchnię i grubość na objętość izolacji, a następnie wyznacza liczbę paczek lub rolek na podstawie pokrycia i objętości opakowania.",
+  "shortDescription": "Oblicz ilość wełny mineralnej do poddasza, ściany lub stropu, razem z liczbą paczek albo rolek.",
+  "metaTitle": "Kalkulator wełny mineralnej",
+  "metaDescription": "Oblicz objętość wełny mineralnej, zapas na docinki oraz liczbę paczek lub rolek do ocieplenia poddasza, ścian lub stropu.",
+  "intro": "Podaj powierzchnię, grubość izolacji, zapas i wydajność paczki, aby od razu dostać potrzebną ilość wełny mineralnej i liczbę opakowań.",
+  "overview": "To narzędzie pomaga zaplanować zakup wełny mineralnej na podstawie rzeczywistych wymiarów, a nie szacunku „na oko”. Po wpisaniu powierzchni i grubości kalkulator wylicza potrzebną objętość izolacji, a następnie przelicza ją na paczki lub rolki według podanej wydajności i objętości opakowania.\n\nSprawdza się przy ocieplaniu poddasza, ścian działowych, sufitów i stropów, gdzie znaczenie ma zarówno grubość warstwy, jak i liczba docinek. Jeśli znasz dane z karty produktu, wpisz je bezpośrednio, a do zakupu dodaj rozsądny zapas na dopasowanie przy krokwi, belkach i narożnikach.",
   "howItWorks": [
-    "Podaj powierzchnię ocieplenia w metrach kwadratowych.",
-    "Wpisz grubość izolacji w centymetrach.",
-    "Określ, jaką powierzchnię pokrywa jedna paczka.",
-    "Dodaj procent zapasu na docinki i odpady.",
-    "Podaj objętość jednej paczki, aby obliczyć potrzebną ilość materiału i liczbę opakowań."
+    "Wpisz powierzchnię ocieplenia w metrach kwadratowych.",
+    "Podaj grubość warstwy izolacji w centymetrach.",
+    "Wpisz, jaką powierzchnię pokrywa jedna paczka lub rolka.",
+    "Ustal procent zapasu na docinki i straty montażowe.",
+    "Dodaj objętość opakowania, aby wyliczyć całkowitą ilość materiału i liczbę paczek."
   ],
   "useCases": [
-    "Obliczanie ilości wełny mineralnej na poddasze.",
-    "Planowanie materiału do ocieplenia ścian.",
-    "Wyliczanie paczek do izolacji sufitu lub stropu.",
-    "Sprawdzanie, ile zapasu kupić na docinki.",
-    "Porównywanie wydajności paczek przed zakupem."
+    {
+      "title": "Ocieplenie poddasza po remoncie",
+      "description": "Policz paczki wełny mineralnej do skosów, jętek i fragmentów o nieregularnym kształcie."
+    },
+    {
+      "title": "Ściana w zabudowie lekkiej",
+      "description": "Dobierz ilość materiału do ściany działowej lub zabudowy w systemie suchym."
+    },
+    {
+      "title": "Strop nad piętrem",
+      "description": "Wylicz wełnę potrzebną na warstwę izolacji w stropie lub suficie podwieszanym."
+    },
+    {
+      "title": "Kupno z zapasem na docinki",
+      "description": "Uwzględnij odpad przy cięciu przy murłacie, wokół przewodów i przy krawędziach."
+    },
+    {
+      "title": "Wybór między różnymi opakowaniami",
+      "description": "Porównaj pakiety o innej wydajności, żeby wybrać wygodniejszą liczbę paczek do zamówienia."
+    }
   ],
   "examples": [
     {
-      "title": "Przykład",
-      "input": "Powierzchnia: 100 m², Grubość: 20 cm, Pokrycie paczki: 6 m², Zapas: 10%, Objętość paczki: 1,2 m³",
-      "output": "Pokazuje całkowitą objętość izolacji, powierzchnię z zapasem i liczbę potrzebnych paczek.",
-      "description": "Pomaga oszacować materiał przed zakupem wełny mineralnej."
+      "title": "Poddasze użytkowe",
+      "input": "Powierzchnia: 84 m², Grubość: 22 cm, Pokrycie paczki: 6,4 m², Zapas: 12%, Objętość paczki: 1,15 m³",
+      "output": "Zwraca potrzebną objętość izolacji oraz liczbę paczek zaokrągloną w górę do pełnych opakowań.",
+      "description": "Przydatne przy zamówieniu wełny na poddasze z wieloma skosami i połączeniami."
     },
     {
-      "title": "Przykład",
-      "input": "Powierzchnia: 45 m², Grubość: 15 cm, Pokrycie paczki: 4,5 m², Zapas: 8%, Objętość paczki: 0,9 m³",
-      "output": "Zwraca potrzebną objętość i liczbę paczek dla małej izolacji.",
-      "description": "Przydatne przy planowaniu ocieplenia ścian lub sufitu."
+      "title": "Ściana wewnętrzna",
+      "input": "Powierzchnia: 31,5 m², Grubość: 12 cm, Pokrycie paczki: 4,8 m², Zapas: 7%, Objętość paczki: 0,72 m³",
+      "output": "Pokazuje objętość materiału, powierzchnię po doliczeniu zapasu i minimalną liczbę paczek.",
+      "description": "Dobre rozwiązanie przy ocieplaniu jednej ściany w pomieszczeniu."
+    },
+    {
+      "title": "Niewielki sufit",
+      "input": "Powierzchnia: 18 m², Grubość: 10 cm, Pokrycie rolki: 3,6 m², Zapas: 5%, Objętość paczki: 0,36 m³",
+      "output": "Oblicza wymaganą objętość i liczbę rolek potrzebnych do zakupu.",
+      "description": "Pomaga przy małym suficie, gdzie na etykiecie podana jest wydajność rolki."
     }
   ],
   "faq": [
     {
-      "question": "Jak obliczyć, ile wełny mineralnej potrzeba?",
-      "answer": "Wystarczy pomnożyć powierzchnię przez grubość przeliczoną na metry, aby uzyskać objętość izolacji. Następnie dzielisz wynik przez objętość paczki i dodajesz zapas."
+      "question": "Co oznacza wynik w m³?",
+      "answer": "To rzeczywista objętość wełny potrzebna do wypełnienia podanej powierzchni na wskazaną grubość. Porównaj ją z objętością podaną na opakowaniu."
     },
     {
-      "question": "Czy kalkulator działa dla poddasza?",
-      "answer": "Tak. Nadaje się do ocieplenia poddasza, ścian i stropów."
+      "question": "Czy mam wpisywać grubość docelową czy grubość produktu?",
+      "answer": "Wpisz grubość warstwy, którą chcesz uzyskać w przegrodzie. Jeśli materiał ma być układany w dwóch warstwach albo jest ściskany, uwzględnij to w planie."
     },
     {
-      "question": "Po co wpisywać zapas?",
-      "answer": "Zapas uwzględnia docinki, dopasowanie i niewielkie straty, dzięki czemu nie zabraknie materiału w trakcie pracy."
+      "question": "Dlaczego wynik zaokrągla liczbę paczek?",
+      "answer": "Bo w praktyce kupuje się pełne paczki lub rolki. Kalkulator podaje więc liczbę całkowitą, nie część opakowania."
     },
     {
-      "question": "Czy mogę liczyć rolki i paczki?",
-      "answer": "Tak. Wynik pokazuje liczbę rolek lub paczek na podstawie objętości i pokrycia opakowania."
+      "question": "Co zrobić, jeśli pokrycie paczki nie zgadza się z objętością opakowania?",
+      "answer": "Najbezpieczniej korzystać z danych z jednej karty produktu. Mieszanie parametrów z różnych wyrobów może dać błędny wynik zakupu."
+    },
+    {
+      "question": "Czy mogę liczyć kilka warstw izolacji?",
+      "answer": "Tak, ale najlepiej policzyć każdą warstwę osobno, jeśli różni się grubość albo rodzaj wełny. Wtedy wynik jest bardziej wiarygodny."
     }
   ],
-  "uiLabels": {
-    "copy": "Kopiuj",
-    "copied": "Skopiowano",
-    "input": "Wejście",
-    "output": "Wyjście",
-    "placeholder": "Wpisz wartość",
-    "indent": "Wcięcie",
-    "removeComments": "Usuń komentarze",
-    "preview": "Podgląd",
-    "source": "Źródło",
-    "sanitizedHtml": "Oczyszczony HTML",
-    "plainText": "Czysty tekst",
-    "summary": "Podsumowanie",
-    "total": "Razem",
-    "links": "Linki",
-    "images": "Obrazy",
-    "errors": "Błędy",
-    "warnings": "Ostrzeżenia",
-    "valid": "Poprawne",
-    "invalid": "Nieprawidłowe",
-    "href": "Href",
-    "text": "Tekst",
-    "rel": "Rel",
-    "target": "Cel",
-    "alt": "Alt",
-    "width": "Szerokość",
-    "height": "Wysokość",
-    "empty": "Puste",
-    "outputReady": "Wynik gotowy",
-    "cleanedHtml": "Oczyszczony HTML",
-    "formattedHtml": "Sformatowany HTML",
-    "minifiedHtml": "Zminifikowany HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Wyodrębnione obrazy",
-    "extractedLinks": "Wyodrębnione linki",
-    "validationSummary": "Podsumowanie walidacji",
-    "prettyHtml": "Czytelny HTML",
-    "encodedText": "Tekst zakodowany",
-    "file": "Plik",
-    "size": "Rozmiar",
-    "format": "Format",
-    "quality": "Jakość",
-    "colorOne": "Kolor 1",
-    "colorTwo": "Kolor 2",
-    "background": "Tło",
-    "foreground": "Pierwszy plan",
-    "angle": "Kąt",
-    "margin": "Margines",
-    "level": "Poziom",
-    "gradientType": "Typ gradientu",
-    "linear": "Liniowy",
-    "radial": "Radialny",
-    "blur": "Rozmycie",
-    "spread": "Rozprzestrzenienie",
-    "offsetX": "Przesunięcie X",
-    "offsetY": "Przesunięcie Y",
-    "opacity": "Krycie",
-    "inset": "Wewnętrzny",
-    "cssCode": "Kod CSS",
-    "snippet": "Fragment",
-    "download": "Pobierz",
-    "downloadSvg": "Pobierz SVG",
-    "downloadPng": "Pobierz PNG",
-    "downloadAll": "Pobierz wszystko",
-    "upload": "Prześlij",
-    "title": "Tytuł",
-    "description": "Opis",
-    "canonicalUrl": "Adres kanoniczny",
-    "siteName": "Nazwa serwisu",
-    "ogImage": "Obraz OG",
-    "clear": "Wyczyść",
-    "generatedQr": "Wygenerowany QR",
-    "placeholderImage": "Obraz zastępczy",
-    "faviconSet": "Zestaw favicon",
-    "keepAspectRatio": "Zachowaj proporcje",
-    "cropX": "Kadrowanie X",
-    "cropY": "Kadrowanie Y",
-    "cropWidth": "Szerokość kadru",
-    "cropHeight": "Wysokość kadru",
-    "originalSize": "Rozmiar oryginału",
-    "outputSize": "Rozmiar wyjściowy",
-    "savedSize": "Oszczędzony rozmiar",
-    "result": "Wynik",
-    "base64": "Base64",
-    "mimeType": "Typ MIME",
-    "resizedImage": "Obraz po zmianie rozmiaru",
-    "compressedImage": "Obraz skompresowany",
-    "croppedImage": "Obraz przycięty",
-    "convertedImage": "Obraz przekonwertowany",
-    "decodedImage": "Obraz zdekodowany",
-    "imagePreview": "Podgląd obrazu",
-    "camera": "Aparat",
-    "lens": "Obiektyw",
-    "dateTaken": "Data wykonania",
-    "resolution": "Rozdzielczość",
-    "fileSize": "Rozmiar pliku",
-    "iso": "ISO",
-    "exposure": "Czas naświetlania",
-    "aperture": "Przysłona",
-    "focalLength": "Ogniskowa",
-    "flash": "Lampa błyskowa",
-    "orientation": "Orientacja",
-    "latitude": "Szerokość geograficzna",
-    "longitude": "Długość geograficzna",
-    "openMap": "Otwórz mapę",
-    "rawMetadata": "Surowe metadane",
-    "noMetadataFound": "Nie znaleziono metadanych",
-    "gpsLocation": "Lokalizacja GPS",
-    "metadataSummary": "Podsumowanie metadanych"
-  },
   "seo": {
     "title": "Kalkulator wełny mineralnej",
-    "description": "Oblicz, ile wełny mineralnej potrzeba na poddasze, ściany lub strop oraz ile paczek lub rolek kupić.",
+    "description": "Oblicz objętość wełny mineralnej i liczbę paczek lub rolek do ocieplenia poddasza, ścian albo stropu.",
     "keywords": [
       "kalkulator wełny mineralnej",
-      "ile wełny potrzeba",
-      "wełna mineralna kalkulator",
+      "ile wełny mineralnej potrzeba",
       "ocieplenie poddasza",
-      "ocieplenie ścian",
-      "ocieplenie stropu"
+      "wełna mineralna m3",
+      "paczki wełny mineralnej"
     ]
   }
 }

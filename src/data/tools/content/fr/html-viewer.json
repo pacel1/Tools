@@ -4,108 +4,86 @@
   "slug": "visionneuse-html",
   "h1": "Visionneuse HTML",
   "title": "Visionneuse HTML",
-  "shortDescription": "Prévisualisez du HTML nettoyé en toute sécurité et inspectez le code source nettoyé.",
-  "metaTitle": "Visionneuse HTML | Prévisualiser du HTML nettoyé en sécurité",
-  "metaDescription": "Prévisualisez du HTML dans un affichage sécurisé et nettoyé, puis inspectez le code source, les liens, les images et les détails de validation.",
-  "intro": "Prévisualisez du HTML en toute sécurité dans le navigateur, examinez la sortie nettoyée et contrôlez les liens, les images et la structure sans risque d’exécution de scripts actifs.",
-  "overview": "La Visionneuse HTML vous aide à examiner du contenu HTML après nettoyage. Elle est conçue pour prévisualiser rapidement du balisage fiable ou non fiable dans un flux client sécurisé. Utilisez-la pour vérifier le code nettoyé, repérer les éléments supprimés et contrôler les liens et médias avant publication ou partage.",
+  "shortDescription": "Affichez du HTML nettoyé et examinez le balisage propre dans un affichage sécurisé.",
+  "metaTitle": "Visionneuse HTML sécurisée",
+  "metaDescription": "Prévisualisez du HTML nettoyé, vérifiez le code source propre et contrôlez liens, images et attributs dans un affichage sécurisé.",
+  "intro": "Collez du HTML pour voir le résultat nettoyé, l’aperçu rendu et les liens ou images extraits sans exécuter de scripts actifs.",
+  "overview": "La Visionneuse HTML sert à relire du contenu après nettoyage et à comparer ce qui est rendu avec le code source nettoyé. Elle est utile pour vérifier ce qui a été conservé, ce qui a été supprimé et si le balisage restant garde une cohérence visuelle et structurelle.\n\nL’outil fonctionne dans le navigateur et permet d’inspecter du balisage collé directement. Vous pouvez contrôler les liens, les balises média, les attributs en ligne et les messages de validation avant d’intégrer le contenu dans une page, un champ CMS, un modèle ou un fichier exporté.",
   "howItWorks": [
-    "Collez votre HTML dans le champ de saisie.",
-    "L’outil nettoie le balisage côté client.",
-    "Consultez l’aperçu et le code HTML nettoyé.",
-    "Vérifiez les liens, les images, les attributs et les messages de validation.",
-    "Copiez le résultat nettoyé si tout est correct."
+    "Collez le HTML dans la zone de saisie.",
+    "L’outil nettoie le balisage localement.",
+    "Vérifiez l’aperçu et le code propre.",
+    "Inspectez les liens, les images, les attributs et les notes de validation.",
+    "Copiez le HTML nettoyé s’il répond à vos besoins."
   ],
   "useCases": [
-    "Prévisualiser des extraits HTML avant publication.",
-    "Vérifier du contenu nettoyé envoyé par des utilisateurs.",
-    "Inspecter les liens, les images et les attributs d’un balisage généré.",
-    "Contrôler un HTML nettoyé après export ou conversion.",
-    "Relire en toute sécurité du HTML mal formé ou potentiellement dangereux."
+    {
+      "title": "Relire des fragments CMS",
+      "description": "Contrôlez un bloc copié depuis un champ de contenu avant de l’insérer dans une mise en page ou un modèle."
+    },
+    {
+      "title": "Inspecter du HTML importé",
+      "description": "Vérifiez quels éléments subsistent après nettoyage d’un balisage provenant d’un autre système ou d’un export."
+    },
+    {
+      "title": "Valider une sortie d’éditeur",
+      "description": "Confirmez les destinations de liens, les images et la mise en forme générées par un éditeur avant enregistrement."
+    },
+    {
+      "title": "Auditer des contributions utilisateur",
+      "description": "Analysez le balisage de commentaires, profils ou publications et repérez les parties dangereuses retirées."
+    }
   ],
   "examples": [
     {
-      "title": "Avant de publier un extrait de blog",
-      "input": "<p>Bonjour <script>alert(1)</script><a href='https://example.com'>lien</a></p>",
-      "output": "<p>Bonjour <a href=\"https://example.com\">lien</a></p>",
-      "description": "Les scripts sont supprimés et le contenu sûr est conservé."
+      "title": "Supprimer un script en ligne",
+      "input": "<p>Lire la suite <script>alert('x')</script><a href='https://example.com/post'>ici</a></p>",
+      "output": "<p>Lire la suite <a href=\"https://example.com/post\">ici</a></p>",
+      "description": "L’élément script est retiré tandis que le paragraphe et le lien sûrs restent visibles."
     },
     {
-      "title": "Vérification de contenu utilisateur",
-      "input": "<img src='photo.jpg' onerror='alert(1)'><strong>Bon article</strong>",
-      "output": "<img src=\"photo.jpg\"><strong>Bon article</strong>",
-      "description": "Les gestionnaires d’événements dangereux sont retirés des éléments."
+      "title": "Retirer un attribut dangereux",
+      "input": "<img src='avatar.png' onerror='alert(1)' alt='Avatar'><span>Profil</span>",
+      "output": "<img src=\"avatar.png\" alt=\"Avatar\"><span>Profil</span>",
+      "description": "Les gestionnaires d’événements non sûrs sont supprimés de la balise image."
+    },
+    {
+      "title": "Corriger un balisage mal imbriqué",
+      "input": "<div><strong>Titre<p>Contenu</strong></p></div>",
+      "output": "<div><strong>Titre</strong><p>Contenu</p></div>",
+      "description": "L’aperçu affiche une structure nettoyée afin de repérer plus facilement les imbrications incorrectes."
     }
   ],
   "faq": [
     {
-      "question": "Cette Visionneuse HTML est-elle sûre ?",
-      "answer": "Oui. Elle est conçue pour prévisualiser du HTML nettoyé côté client et ne doit pas exécuter de scripts actifs dans la zone de sortie."
+      "question": "Que modifie l’outil dans mon HTML ?",
+      "answer": "Il supprime les parties dangereuses ou non autorisées pendant le nettoyage et affiche le balisage nettoyé obtenu, qui peut donc différer de l’original."
     },
     {
-      "question": "Supprime-t-elle les scripts et les attributs dangereux ?",
-      "answer": "Oui. Le nettoyeur est destiné à supprimer les vecteurs XSS courants comme les balises script et les gestionnaires d’événements."
+      "question": "Pourquoi certains attributs disparaissent-ils ?",
+      "answer": "Les attributs susceptibles d’exécuter des scripts, d’ajouter un comportement ou de casser la sortie autorisée sont retirés, y compris les gestionnaires d’événements."
     },
     {
-      "question": "Puis-je inspecter séparément les liens et les images ?",
-      "answer": "Oui. La visionneuse aide à contrôler les liens, les images et les attributs clés extraits pour la validation."
+      "question": "Puis-je considérer l’aperçu comme le résultat final ?",
+      "answer": "Utilisez-le comme étape de vérification, pas comme remplacement de la validation côté application. Les environnements peuvent autoriser des éléments ou attributs différents."
     },
     {
-      "question": "Mon HTML est-il envoyé à un serveur ?",
-      "answer": "Non. L’outil est conçu pour fonctionner uniquement côté client et n’utilise aucune API externe."
+      "question": "Pourquoi le HTML cassé change-t-il d’apparence au collage ?",
+      "answer": "Le navigateur et le nettoyeur normalisent le balisage invalide. Cela peut modifier l’ordre des balises, les fermer automatiquement ou déplacer du texte."
     }
   ],
-  "uiLabels": {
-    "copy": "Copier",
-    "copied": "Copié",
-    "input": "Entrée HTML",
-    "output": "HTML nettoyé",
-    "placeholder": "Collez le HTML ici",
-    "indent": "Retrait",
-    "removeComments": "Supprimer les commentaires",
-    "preview": "Aperçu",
-    "source": "Source",
-    "sanitizedHtml": "HTML nettoyé",
-    "plainText": "Texte brut",
-    "summary": "Résumé",
-    "total": "Total",
-    "links": "Liens",
-    "images": "Images",
-    "errors": "Erreurs",
-    "warnings": "Avertissements",
-    "valid": "Valide",
-    "invalid": "Invalide",
-    "href": "Href",
-    "text": "Texte",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Largeur",
-    "height": "Hauteur",
-    "empty": "Vide",
-    "outputReady": "Sortie prête",
-    "cleanedHtml": "HTML nettoyé",
-    "formattedHtml": "HTML formaté",
-    "minifiedHtml": "HTML minifié",
-    "markdown": "Markdown",
-    "extractedImages": "Images extraites",
-    "extractedLinks": "Liens extraits",
-    "validationSummary": "Résumé de validation",
-    "prettyHtml": "HTML lisible",
-    "encodedText": "Texte encodé"
-  },
   "seo": {
-    "title": "Visionneuse HTML | Prévisualiser du HTML nettoyé en sécurité",
-    "description": "Prévisualisez du HTML dans un affichage sécurisé et nettoyé, puis inspectez le code source, les liens, les images et les détails de validation.",
+    "title": "Visionneuse HTML sécurisée",
+    "description": "Prévisualisez du HTML nettoyé, vérifiez le code source propre et contrôlez liens, images et attributs dans un affichage sécurisé.",
     "keywords": [
       "visionneuse HTML",
       "HTML nettoyé",
-      "prévisualiser HTML",
-      "aperçu HTML sécurisé",
-      "nettoyeur HTML",
+      "aperçu HTML",
       "inspecter HTML",
-      "code source nettoyé",
-      "aperçu XSS sûr"
+      "nettoyeur HTML",
+      "balisage sécurisé",
+      "code source propre",
+      "rendu HTML"
     ]
   }
 }

@@ -4,44 +4,82 @@
   "slug": "prozentsatz-erhoehung-rechner",
   "h1": "Prozentsatz-Erhöhung Rechner",
   "title": "Prozentsatz-Erhöhung Rechner",
-  "shortDescription": "Berechne einen Wert nach einer prozentualen Erhöhung mit schnellen Ergebnissen, einfachen Eingaben und praktischen Beispielen.",
-  "overview": "Berechne einen Wert nach einer prozentualen Erhöhung. Diese Seite liefert dir mit einem praktischen Online-Tool schnell eine Antwort und einen klaren Ergebnisablauf. Sie richtet sich an Nutzer, die eine kostenlose Online-Antwort, sofortige Ergebnisse im Browser und praxisnahe Long-Tail-Inhalte suchen.",
+  "shortDescription": "Berechne den Endwert nach einer prozentualen Erhöhung mit klarem Ergebnis und realistischen Beispielen.",
+  "metaTitle": "Prozentsatz-Erhöhung Rechner",
+  "metaDescription": "Berechne den Endwert nach einer prozentualen Erhöhung für Preise, Gehälter, Budgets oder Prognosen mit klarer Ausgabe.",
+  "intro": "Gib den Ausgangswert und den prozentualen Anstieg ein, um den neuen Wert sofort zu erhalten.",
+  "overview": "Mit diesem Rechner wandelst du einen Basiswert direkt in seinen erhöhten Endwert um. Das ist praktisch bei Preisanpassungen, Gehaltserhöhungen, Zuschlägen, Budgetänderungen oder jeder anderen Situation, in der ein Wert prozentual steigt.\n\nDas Ergebnis zeigt dir den neuen Gesamtwert und erleichtert den Vergleich zwischen altem und neuem Stand. Außerdem eignet sich das Tool gut, um eigene Rechnungen zu prüfen oder verschiedene Wachstumsszenarien vorab durchzuspielen.",
   "howItWorks": [
-    "Gib den benötigten Wert oder Text in das Formular ein.",
-    "Die Umrechnung, Berechnung oder Transformation läuft sofort im Browser.",
-    "Prüfe das Ergebnis und nutze bei Bedarf passende weitere Tools."
+    "Gib den Ausgangswert ein.",
+    "Trage den prozentualen Anstieg ein.",
+    "Lies den neuen Endwert ab.",
+    "Vergleiche bei Bedarf weitere Szenarien mit anderen Prozenten."
+  ],
+  "useCases": [
+    {
+      "title": "Preisänderung im Handel",
+      "description": "Berechne einen neuen Produktpreis nach Aufschlag, Kostenanstieg oder Anpassung des Verkaufspreises."
+    },
+    {
+      "title": "Gehalt oder Honorar",
+      "description": "Ermittle den neuen Betrag nach einer Gehaltserhöhung, einer Honorarerhöhung oder einer Gebührenanpassung."
+    },
+    {
+      "title": "Unternehmensprognose",
+      "description": "Schätze Umsatz, Besucherzahlen oder Kundenzahlen mit einem geplanten Wachstumssatz."
+    },
+    {
+      "title": "Budgetanpassung",
+      "description": "Bestimme das neue Ausgabenlimit nach einer prozentualen Erhöhung des vorhandenen Budgets."
+    }
   ],
   "examples": [
     {
-      "title": "Beispiel 1",
-      "input": "120 erhöht um 15%",
-      "output": "138",
-      "description": "Ein realistisches Beispiel für den Prozentsatz-Erhöhung-Rechner bei einer alltäglichen Suchanfrage."
+      "title": "Preisaufschlag im Laden",
+      "input": "80 erhöht um 12%",
+      "output": "89,6",
+      "description": "Ein Artikel mit 80 steigt nach 12% Aufschlag auf 89,6."
     },
     {
-      "title": "Beispiel 2",
-      "input": "120 erhöht um 15%",
-      "output": "138",
-      "description": "Ein weiteres praktisches Anwendungsbeispiel für organischen Long-Tail-Traffic."
+      "title": "Jährliche Gehaltserhöhung",
+      "input": "42.000 erhöht um 7%",
+      "output": "44.940",
+      "description": "Aus 42.000 werden nach 7% Erhöhung 44.940."
+    },
+    {
+      "title": "Traffic-Prognose",
+      "input": "18.500 erhöht um 5%",
+      "output": "19.425",
+      "description": "Ein Monatswert von 18.500 steigt mit 5% auf 19.425."
     }
   ],
   "faq": [
     {
-      "question": "Wie genau ist dieses Tool?",
-      "answer": "Das Ergebnis wird direkt aus der Formel oder der browserseitigen Logik dieses Tools berechnet."
+      "question": "Was zeigt der Rechner genau an?",
+      "answer": "Er zeigt den neuen Gesamtwert nach Addition des angegebenen Prozentsatzes."
     },
     {
-      "question": "Kann ich dieses Tool auf dem Handy verwenden?",
-      "answer": "Ja. Die Seite funktioniert auf Desktop- und Mobilgeräten mit einem einfachen Eingabe- und Ergebnislayout."
+      "question": "Wie lese ich das Ergebnis richtig?",
+      "answer": "Das Ergebnis ist der Endwert. Wenn du die reine Steigerung brauchst, ziehe den Ausgangswert vom Ergebnis ab."
+    },
+    {
+      "question": "Kann ich Dezimalzahlen eingeben?",
+      "answer": "Ja. Dezimal- und große Werte sind möglich, solange die Zahl korrekt eingegeben wird."
+    },
+    {
+      "question": "Welcher Fehler passiert besonders oft?",
+      "answer": "Oft wird ein Betrag statt eines Prozentsatzes eingegeben. 15 bedeutet 15%, nicht 15 Einheiten."
     }
   ],
   "seo": {
     "title": "Prozentsatz-Erhöhung Rechner",
-    "description": "Berechne einen Wert nach einer prozentualen Erhöhung. Kostenloser Online-Prozentsatz-Erhöhung Rechner mit Sofortergebnis.",
+    "description": "Berechne den Endwert nach einer prozentualen Erhöhung für Preise, Gehälter, Budgets oder Prognosen mit klarer Ausgabe.",
     "keywords": [
       "prozentsatz erhöhung rechner",
-      "prozentuale erhöhung rechner",
-      "rechner tools"
+      "prozentuale erhöhung",
+      "endwert rechner",
+      "rechner für erhöhung",
+      "wachstumsrechner"
     ]
   }
 }

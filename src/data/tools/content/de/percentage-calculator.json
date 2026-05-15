@@ -4,43 +4,85 @@
   "slug": "prozentsatz-rechner",
   "h1": "Prozentsatz-Rechner",
   "title": "Prozentsatz-Rechner",
-  "shortDescription": "Berechnen Sie, wie viel Prozent eine Zahl von einer anderen ist – mit schnellen Ergebnissen, einfachen Eingaben und praktischen Beispielen.",
-  "overview": "Berechnen Sie, wie viel Prozent eine Zahl von einer anderen ist. Diese Seite liefert mit einem praktischen Online-Tool und einem einfachen Ergebnisablauf eine schnelle Antwort. Sie richtet sich an Nutzer, die eine kostenlose Online-Antwort, sofortige Ergebnisse im Browser und praxisnahe Long-Tail-Inhalte suchen.",
+  "shortDescription": "Berechnen Sie Prozentsätze, Anteile und prozentuale Veränderungen aus bekannten Zahlen.",
+  "metaTitle": "Prozentsatz-Rechner",
+  "metaDescription": "Berechnen Sie Prozentsätze, Anteile und prozentuale Veränderungen für Preise, Noten, Budgets und Summen mit klaren Ergebnissen.",
+  "intro": "Geben Sie zwei Zahlen ein, um einen Prozentwert, einen Anteil am Ganzen oder die prozentuale Veränderung zwischen zwei Werten zu berechnen.",
+  "overview": "Dieser Rechner deckt drei typische Prozentaufgaben ab: einen Teil als Prozentsatz des Ganzen darstellen, einen Prozentwert in eine Menge umrechnen und zwei Werte als Veränderung vergleichen. Wählen Sie den passenden Modus, tragen Sie die bekannten Zahlen ein und lesen Sie das Ergebnis direkt ab.\n\nEr eignet sich für Preise, Noten, Rechnungsänderungen, Bestandsbewegungen und Leistungswerte, wenn die relative Größe wichtiger ist als der absolute Betrag. Dezimalzahlen und große Werte werden unterstützt, sodass Sie sowohl kleine Anpassungen als auch größere Summen sauber berechnen können.\n\nIst der Ausgangswert null, lässt sich eine prozentuale Veränderung nicht sinnvoll angeben, weil die Vergleichsbasis fehlt. Das Tool zeigt diese Grenze deutlich an, damit das Ergebnis nicht falsch verstanden wird.",
   "howItWorks": [
-    "Geben Sie den erforderlichen Wert oder Text in das Formular ein.",
-    "Die Umrechnung, Berechnung oder Transformation erfolgt sofort im Browser.",
-    "Prüfen Sie das Ergebnis und nutzen Sie bei Bedarf passende Folge-Tools."
+    "Wählen Sie die Berechnungsart: Anteil am Ganzen, Prozent von einem Wert oder prozentuale Veränderung.",
+    "Geben Sie die bekannten Werte genau so ein, wie sie vorliegen, bei Bedarf mit Dezimalstellen.",
+    "Prüfen Sie das Ergebnis und vergleichen Sie bei einer Veränderung den neuen mit dem alten Wert."
+  ],
+  "useCases": [
+    {
+      "title": "Rabatt auf einer Rechnung",
+      "description": "Prüfen Sie, welchen Prozentsatz ein Nachlass von 18,50 € auf einen Einkauf über 74,00 € hat."
+    },
+    {
+      "title": "Ergebnis einer Prüfung",
+      "description": "Wandeln Sie 42 von 60 Punkten in einen Prozentwert für eine Notenübersicht um."
+    },
+    {
+      "title": "Anstieg einer Monatsrechnung",
+      "description": "Berechnen Sie den Sprung von 96 auf 114 und zeigen Sie ihn als Prozentwert für die Planung."
+    },
+    {
+      "title": "Besucherzuwachs im Bericht",
+      "description": "Verwandeln Sie den Anstieg von 1.250 auf 1.480 Besuchen in eine prozentuale Veränderung."
+    }
   ],
   "examples": [
     {
-      "title": "Beispiel 1",
-      "input": "25 von 200",
-      "output": "12,5 %",
-      "description": "Ein realistisches Beispiel für den Prozentsatz-Rechner bei einer alltäglichen Suchanfrage."
+      "title": "Anteil am Ganzen",
+      "input": "37 von 148",
+      "output": "25 %",
+      "description": "Zeigt, wie groß ein Teil im Verhältnis zum Ganzen ist."
     },
     {
-      "title": "Beispiel 2",
-      "input": "25 von 200",
-      "output": "12,5 %",
-      "description": "Ein weiterer praktischer Anwendungsfall für organischen Long-Tail-Traffic."
+      "title": "Prozent von einem Wert",
+      "input": "15 % von 240",
+      "output": "36",
+      "description": "Berechnet die Menge, die einem Prozentwert entspricht."
+    },
+    {
+      "title": "Veränderung gegenüber dem Ausgangswert",
+      "input": "80 auf 92",
+      "output": "15 % Anstieg",
+      "description": "Vergleicht den neuen Wert mit dem ursprünglichen und zeigt die Veränderung."
     }
   ],
   "faq": [
     {
-      "question": "Wie genau ist dieses Tool?",
-      "answer": "Das Ergebnis wird direkt aus der Formel oder der browserseitigen Logik dieses Tools berechnet."
+      "question": "Welche Aufgaben kann ich hier berechnen?",
+      "answer": "Sie können einen Prozentwert bestimmen, einen Anteil am Ganzen berechnen oder die prozentuale Veränderung zwischen zwei Werten ermitteln."
     },
     {
-      "question": "Kann ich dieses Tool auf dem Handy verwenden?",
-      "answer": "Ja. Die Seite funktioniert auf Desktop- und Mobilgeräten mit einem einfachen Eingabe- und Ergebnislayout."
+      "question": "Warum ist das Ergebnis manchmal negativ?",
+      "answer": "Ein negatives Ergebnis bedeutet, dass der neue Wert kleiner als der Ausgangswert ist. So wird ein Rückgang korrekt dargestellt."
+    },
+    {
+      "question": "Was passiert, wenn der Ausgangswert null ist?",
+      "answer": "Eine prozentuale Veränderung von null aus hat keine gültige Vergleichsbasis und ist daher nicht normal definierbar."
+    },
+    {
+      "question": "Kann ich Dezimalzahlen und große Werte eingeben?",
+      "answer": "Ja. Der Rechner unterstützt Dezimalzahlen und größere Beträge und wendet dieselben Prozentregeln an."
+    },
+    {
+      "question": "Warum liefern ähnliche Eingaben unterschiedliche Ergebnisse?",
+      "answer": "Weil Anteil, Prozent von einem Wert und prozentuale Veränderung unterschiedliche Formeln verwenden. Der Modus muss zur Frage passen."
     }
   ],
   "seo": {
     "title": "Prozentsatz-Rechner",
-    "description": "Berechnen Sie, wie viel Prozent eine Zahl von einer anderen ist. Kostenloser Online-Prozentsatz-Rechner mit sofortigen Ergebnissen.",
+    "description": "Berechnen Sie Prozentsätze, Anteile und prozentuale Veränderungen für Preise, Noten, Budgets und Summen mit klaren Ergebnissen.",
     "keywords": [
       "prozentsatz rechner",
-      "prozentrechner"
+      "prozentrechner",
+      "prozentuale veränderung",
+      "prozent von zahl",
+      "prozent berechnen"
     ]
   }
 }

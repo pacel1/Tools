@@ -3,158 +3,91 @@
   "locale": "en",
   "slug": "base64-to-image",
   "h1": "Base64 to Image",
-  "title": "Base64 to Image Converter",
-  "shortDescription": "Decode Base64 image strings and preview downloadable image output instantly.",
-  "metaTitle": "Base64 to Image Converter | Decode and Preview Images",
-  "metaDescription": "Convert Base64 to image online. Decode Base64 image strings, preview the result instantly, and download the generated image in seconds.",
-  "intro": "Convert Base64 image data into a viewable image instantly. Paste a Base64 string or data URL, preview the decoded image in your browser, and download the result without installing software.",
-  "overview": "This Base64 to Image tool is a fast client-side decoder for Base64 image strings. It helps you turn encoded image data into a normal image preview, making it easy to inspect, share, or download the output. Because everything runs in the browser, it is convenient for developers, designers, and anyone working with data URLs or encoded assets.",
+  "title": "Base64 to Image Decoder",
+  "shortDescription": "Decode Base64 image strings and see the rendered image before you download it.",
+  "metaTitle": "Base64 to Image Decoder",
+  "metaDescription": "Decode Base64 image strings or data URLs, render the image in your browser, and download the decoded file.",
+  "intro": "Paste a Base64 image string or data URL to render the image immediately in your browser and download the decoded file.",
+  "overview": "This tool turns encoded image data into a normal image file you can inspect, reuse, or save. It accepts plain Base64 strings as well as full data URLs, so you can work with output copied from APIs, HTML attributes, or stored records without manually rewriting the data.\n\nAfter decoding, the image is shown as a preview so you can verify that the MIME type, content, and visual result match what you expect. If the string is incomplete, altered, or not actually image data, the preview will fail instead of producing a misleading file.",
   "howItWorks": [
-    "Paste your Base64 string or full data URL into the input field.",
-    "The tool decodes the content and generates an image preview.",
-    "Check the output for validity, image type, and display quality.",
-    "Download the decoded image file when you are ready."
+    "Paste a Base64 string or a full data URL into the input box.",
+    "The tool decodes the payload and attempts to build an image from it.",
+    "Review the preview to confirm the format and visual content.",
+    "Download the decoded image once the result looks correct."
   ],
   "useCases": [
-    "Decode Base64 images from APIs, JSON responses, or database records.",
-    "Preview image data embedded in HTML, CSS, or app configurations.",
-    "Verify whether an encoded string is a valid image before using it in a project.",
-    "Quickly extract a viewable image from a data URL for testing or debugging."
+    {
+      "title": "API payloads that embed avatars",
+      "description": "Decode user avatar data returned by a backend so you can inspect the exact image that will be stored or displayed."
+    },
+    {
+      "title": "HTML email and CMS snippets",
+      "description": "Render inline image data copied from templates, email markup, or rich-text content before it is reused elsewhere."
+    },
+    {
+      "title": "Debugging broken image fields",
+      "description": "Check whether an image field contains a valid data URL, a truncated Base64 string, or content that is not an image at all."
+    },
+    {
+      "title": "Extracting generated assets",
+      "description": "Turn generated Base64 output from an app, script, or design export into a file you can open and share."
+    }
   ],
   "examples": [
     {
-      "title": "How to use Base64 to Image",
-      "input": "Paste a Base64 image string or data:image/... data URL",
-      "output": "An instant image preview and downloadable file result.",
-      "description": "Ideal for checking encoded images copied from API responses or frontend code."
+      "title": "Decode a PNG avatar",
+      "input": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAQAAAAAYLlVAAAAF0lEQVR42u3BAQ0AAADCIPunNscwYAAAAAAAAAB4G4xQAAaM9l7sAAAAASUVORK5CYII=",
+      "output": "PNG image preview, 64×64, ready to download.",
+      "description": "Useful when a profile image is delivered as an inline data URL."
     },
     {
-      "title": "When to use it",
-      "input": "Encoded image content",
-      "output": "Readable image preview",
-      "description": "Useful when you need to confirm the image without manually decoding it."
+      "title": "Open a Base64 logo from JSON",
+      "input": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABHklEQVR4nO2WsQ3CMBREz0o7qI4kYgM0wI4QK2gK6qgJ6mA5gQ0QK1gYt4dB8Nw0m3QkV3c9m5b5m0m8xWq2Qqf8r3xgQf5gM8j8x2YVQwQW2gQ9m9j0gk4m0m0j8kQ8G2jQ3C0g3Q0v5tqgYQ8A9m4QKQ0wYzQm3mS8n8v4wY8Q2wQw2wQw2wQw2wQw2wQw2wQw2wQw2wQw2wQw2wQw2wQw2wQw2wQw2wQw2wQw",
+      "output": "Image preview rendered from a truncated sample string.",
+      "description": "Best for testing whether a Base64 field copied from JSON is complete and valid before saving it."
+    },
+    {
+      "title": "Check a CSS inline background image",
+      "input": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTI4IiBoZWlnaHQ9IjEyOCIgdmlld0JveD0iMCAwIDEyOCAxMjgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjEyOCIgaGVpZ2h0PSIxMjgiIGZpbGw9IiMwMDc4ZGYiLz48L3N2Zz4=",
+      "output": "SVG image preview showing a solid blue square.",
+      "description": "Handy when a stylesheet or component stores art as an encoded data URL."
     }
   ],
   "faq": [
     {
-      "question": "What kind of Base64 does this tool support?",
-      "answer": "It supports standard Base64 image strings and data URLs such as data:image/png;base64,..."
+      "question": "What input format works best: plain Base64 or a data URL?",
+      "answer": "Both work. A full data URL is easier when the MIME type is included, while a plain Base64 string is fine if the image type is already known."
     },
     {
-      "question": "Does the tool keep my images on a server?",
-      "answer": "No. The conversion runs client-side in your browser, so the image is processed locally."
+      "question": "Why does a string sometimes decode but not display an image?",
+      "answer": "The data may be incomplete, corrupted, or the wrong MIME type. A valid Base64 string can still fail if the bytes do not represent a readable image."
     },
     {
-      "question": "Can I convert any Base64 text into an image?",
-      "answer": "Only valid image Base64 will render correctly. Non-image or corrupted data will not produce a usable output."
+      "question": "Can I decode SVG as well as PNG or JPEG?",
+      "answer": "Yes, if the SVG is correctly encoded as a data URL or valid Base64 text. The image must still be well-formed SVG content."
     },
     {
-      "question": "Can I download the decoded image?",
-      "answer": "Yes. After previewing the result, you can download the generated image file."
+      "question": "What happens if the Base64 text includes line breaks or spaces?",
+      "answer": "Formatting characters can break some strings. Remove extra whitespace if the preview does not render as expected."
+    },
+    {
+      "question": "Why does the downloaded file not match the original name?",
+      "answer": "Base64 does not carry a file name by itself. The tool can decode the image content, but the final filename is determined when you download it."
+    },
+    {
+      "question": "Can a non-image Base64 string be forced into an image?",
+      "answer": "No. If the bytes are not image data, the preview will not become a usable picture. The tool does not invent or repair image content."
     }
   ],
-  "uiLabels": {
-    "copy": "Copy",
-    "copied": "Copied",
-    "input": "Input",
-    "output": "Output",
-    "placeholder": "Paste Base64 image string or data URL here",
-    "indent": "Indent",
-    "removeComments": "Remove comments",
-    "preview": "Preview",
-    "source": "Source",
-    "sanitizedHtml": "Sanitized HTML",
-    "plainText": "Plain text",
-    "summary": "Summary",
-    "total": "Total",
-    "links": "Links",
-    "images": "Images",
-    "errors": "Errors",
-    "warnings": "Warnings",
-    "valid": "Valid",
-    "invalid": "Invalid",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Width",
-    "height": "Height",
-    "empty": "Empty",
-    "outputReady": "Output ready",
-    "cleanedHtml": "Cleaned HTML",
-    "formattedHtml": "Formatted HTML",
-    "minifiedHtml": "Minified HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extracted images",
-    "extractedLinks": "Extracted links",
-    "validationSummary": "Validation summary",
-    "prettyHtml": "Pretty HTML",
-    "encodedText": "Encoded text",
-    "file": "File",
-    "size": "Size",
-    "format": "Format",
-    "quality": "Quality",
-    "colorOne": "Color 1",
-    "colorTwo": "Color 2",
-    "background": "Background",
-    "foreground": "Foreground",
-    "angle": "Angle",
-    "margin": "Margin",
-    "level": "Level",
-    "gradientType": "Gradient type",
-    "linear": "Linear",
-    "radial": "Radial",
-    "blur": "Blur",
-    "spread": "Spread",
-    "offsetX": "Offset X",
-    "offsetY": "Offset Y",
-    "opacity": "Opacity",
-    "inset": "Inset",
-    "cssCode": "CSS code",
-    "snippet": "Snippet",
-    "download": "Download",
-    "downloadSvg": "Download SVG",
-    "downloadPng": "Download PNG",
-    "downloadAll": "Download all",
-    "upload": "Upload",
-    "title": "Title",
-    "description": "Description",
-    "canonicalUrl": "Canonical URL",
-    "siteName": "Site name",
-    "ogImage": "OG image",
-    "clear": "Clear",
-    "generatedQr": "QR code preview",
-    "placeholderImage": "Preview image",
-    "faviconSet": "Favicon set",
-    "keepAspectRatio": "Keep aspect ratio",
-    "cropX": "Crop X",
-    "cropY": "Crop Y",
-    "cropWidth": "Crop width",
-    "cropHeight": "Crop height",
-    "originalSize": "Original size",
-    "outputSize": "Output size",
-    "savedSize": "Saved size",
-    "result": "Result",
-    "base64": "Base64",
-    "mimeType": "MIME type",
-    "resizedImage": "Resized image",
-    "compressedImage": "Compressed image",
-    "croppedImage": "Cropped image",
-    "convertedImage": "Converted image",
-    "decodedImage": "Decoded image",
-    "imagePreview": "Image preview"
-  },
   "seo": {
-    "title": "Base64 to Image Converter",
-    "description": "Convert Base64 to image online with instant preview and download. Decode Base64 image strings quickly in your browser.",
+    "title": "Base64 to Image Decoder",
+    "description": "Decode Base64 image strings or data URLs, render the image in your browser, and download the decoded file.",
     "keywords": [
       "base64 to image",
-      "base64 image decoder",
       "decode base64 image",
-      "base64 converter",
-      "image preview",
-      "data url to image"
+      "base64 image decoder",
+      "data url image decoder",
+      "image from base64"
     ]
   }
 }

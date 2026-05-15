@@ -14,6 +14,7 @@ import {
   getToolComponent,
   getToolPageModel
 } from "@/lib/tools/registry";
+import type { ToolUseCase } from "@/lib/tools/types";
 
 const toolPageLabels = {
   en: {
@@ -91,6 +92,17 @@ const toolPageStrongIntro = {
   fr: "Ideal pour"
 } as const;
 
+function normalizeUseCase(item: string | ToolUseCase): ToolUseCase {
+  if (typeof item === "string") {
+    return {
+      title: item,
+      description: item
+    };
+  }
+
+  return item;
+}
+
 export function generateStaticParams() {
   return getAllToolPaths();
 }
@@ -140,6 +152,7 @@ export default async function ToolPage({
     }));
   const intentHub = getIntentHubLink(locale, model.definition.id);
   const structuredData = buildToolStructuredData(locale, model);
+  const useCases = model.content.useCases?.map(normalizeUseCase) ?? [];
 
   return (
     <div className="mx-auto flex max-w-7xl flex-col gap-10 px-6 py-12 lg:px-8 lg:py-16">
@@ -180,7 +193,10 @@ export default async function ToolPage({
             <strong className="font-semibold text-white">
               {toolPageStrongIntro[locale]}:
             </strong>{" "}
-            {model.content.useCases?.slice(0, 2).join(", ") ||
+            {useCases
+              .slice(0, 2)
+              .map((item) => item.title)
+              .join(", ") ||
               model.content.shortDescription}
           </p>
           {model.content.intro ? (
@@ -225,16 +241,19 @@ export default async function ToolPage({
             <p className="text-base leading-8 text-white/72">{model.content.overview}</p>
           </section>
 
-          {model.content.useCases?.length ? (
+          {useCases.length ? (
             <section className="space-y-4">
               <h2 className="text-2xl font-semibold tracking-tight">{labels.useCases}</h2>
               <ul className="grid gap-3 md:grid-cols-3">
-                {model.content.useCases.map((item) => (
+                {useCases.map((item) => (
                   <li
-                    key={item}
+                    key={item.title}
                     className="rounded-[24px] border border-white/10 bg-white/5 p-5 text-sm leading-7 text-white/72"
                   >
-                    {item}
+                    <strong className="block text-base font-semibold text-white">
+                      {item.title}
+                    </strong>
+                    <span className="mt-2 block">{item.description}</span>
                   </li>
                 ))}
               </ul>

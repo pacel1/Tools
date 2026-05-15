@@ -4,177 +4,93 @@
   "slug": "calculateur-de-fondations",
   "h1": "Calculateur de fondations",
   "title": "Calculateur de fondations",
-  "shortDescription": "Estimez le volume de béton, le ferraillage et l’isolation nécessaires pour vos fondations.",
-  "metaTitle": "Calculateur de fondations | Volume de béton, sacs et surface latérale",
-  "metaDescription": "Calculez le volume de béton pour fondations, le nombre de sacs et la surface latérale pour l’étanchéité ou l’isolation. Calculateur de fondations rapide et simple.",
-  "intro": "Utilisez ce calculateur de fondations pour estimer rapidement le volume de béton, le nombre de sacs et la surface latérale à étancher ou isoler. Saisissez la longueur, la largeur, la hauteur, la marge de perte et le rendement d’un sac.",
-  "overview": "Cet outil vous aide à préparer un coulage de fondation en transformant des dimensions simples en estimations de matériaux utiles. Il calcule le volume de béton en mètres cubes, estime le nombre de sacs selon le rendement et affiche la surface latérale pour l’étanchéité ou l’isolation.",
+  "shortDescription": "Calculez le béton, la surface latérale et la marge de matériau pour semelles, plots et dalles.",
+  "metaTitle": "Calculateur de fondations | Béton et sacs",
+  "metaDescription": "Calculez le volume de béton, le nombre de sacs et la surface latérale pour l’étanchéité ou l’isolation des semelles, plots et dalles.",
+  "intro": "Saisissez les dimensions de la fondation et obtenez le volume de béton, le nombre de sacs et la surface latérale.",
+  "overview": "Cet outil transforme des dimensions simples en valeurs utiles pour commander les matériaux. Vous indiquez la longueur, la largeur et la hauteur, puis vous obtenez le volume en mètres cubes, le nombre de sacs selon leur rendement et la surface latérale à étancher ou à isoler.\n\nVous pouvez aussi ajouter une marge pour les pertes, les irrégularités de fouille ou les petits débordements lors du coulage. C’est pratique pour une semelle filante, une semelle isolée ou un tronçon rectangulaire de fondation.",
   "howItWorks": [
     "Saisissez la longueur de la fondation en mètres.",
-    "Indiquez la largeur de la fondation en mètres.",
-    "Renseignez la hauteur de la fondation en centimètres.",
-    "Ajoutez un pourcentage de perte pour prévoir une marge de sécurité.",
-    "Consultez le volume de béton, le nombre de sacs et la surface latérale."
+    "Indiquez la largeur en mètres.",
+    "Renseignez la hauteur en centimètres.",
+    "Ajoutez un pourcentage de pertes ou de réserve.",
+    "Précisez le rendement d’un sac si vous achetez du mélange en sacs.",
+    "Vérifiez le volume ajusté, le nombre de sacs et la surface latérale."
   ],
   "useCases": [
-    "Calculer le béton pour des semelles filantes et des fondations.",
-    "Savoir combien de sacs de mélange acheter.",
-    "Mesurer la surface à étanchéifier sur la fondation.",
-    "Planifier les matériaux d’isolation des côtés de fondation.",
-    "Faire une estimation rapide avant de commander les fournitures."
+    {
+      "title": "Semelle filante de maison",
+      "description": "Estimer le béton d’une fondation longue et étroite avant la commande."
+    },
+    {
+      "title": "Semelle isolée pour poteau",
+      "description": "Calculer le mélange nécessaire pour un appui ponctuel sous poteaux ou poteaux de clôture."
+    },
+    {
+      "title": "Étanchéité verticale",
+      "description": "Mesurer la surface latérale à traiter avec une membrane, un enduit ou un revêtement."
+    },
+    {
+      "title": "Achat de mélange en sacs",
+      "description": "Convertir le volume obtenu en un nombre de sacs adapté au rendement du produit."
+    },
+    {
+      "title": "Isolation périphérique",
+      "description": "Déterminer les faces latérales à recouvrir de panneaux ou de protection isolante."
+    }
   ],
   "examples": [
     {
-      "title": "Exemple",
-      "input": "Longueur 10 m, largeur 0,5 m, hauteur 80 cm, pertes 10 %, rendement par sac 0,02 m3",
-      "output": "Le calculateur détermine automatiquement le volume de béton, les sacs et la surface latérale.",
-      "description": "Un cas de planification courant pour une fondation linéaire."
+      "title": "Semelle pour extension",
+      "input": "Longueur 14 m, largeur 0,45 m, hauteur 70 cm, pertes 8 %, rendement par sac 0,02 m3",
+      "output": "Volume de béton : 4,75 m3. Avec pertes : 5,13 m3. Sacs : 257. Surface latérale : 19,60 m2.",
+      "description": "Cas courant d’une semelle allongée pour une extension."
     },
     {
-      "title": "Exemple",
-      "input": "Longueur 12 m, largeur 0,4 m, hauteur 60 cm, pertes 5 %, rendement par sac 0,025 m3",
-      "output": "L’outil estime le béton total et le nombre de sacs nécessaires avec réserve.",
-      "description": "Utile pour comparer les options de matériaux avant achat."
+      "title": "Semelle isolée pour poteaux",
+      "input": "Longueur 2,4 m, largeur 0,8 m, hauteur 40 cm, pertes 5 %, rendement par sac 0,025 m3",
+      "output": "Volume de béton : 0,77 m3. Avec pertes : 0,81 m3. Sacs : 33. Surface latérale : 2,56 m2.",
+      "description": "Utile pour un appui ponctuel aux dimensions simples."
+    },
+    {
+      "title": "Base de mur de soutènement",
+      "input": "Longueur 9 m, largeur 0,6 m, hauteur 90 cm, pertes 12 %, rendement par sac 0,03 m3",
+      "output": "Volume de béton : 4,86 m3. Avec pertes : 5,44 m3. Sacs : 182. Surface latérale : 17,10 m2.",
+      "description": "Adapté quand il faut prévoir une marge plus large sur le chantier."
     }
   ],
   "faq": [
     {
-      "question": "Que calcule le calculateur de fondations ?",
-      "answer": "Il calcule le volume de béton, le nombre de sacs nécessaires et la surface latérale pour l’étanchéité ou l’isolation."
+      "question": "Que faire si la fondation comporte plusieurs tronçons ?",
+      "answer": "Calculez chaque tronçon séparément puis additionnez les résultats. C’est plus fiable lorsque les dimensions changent."
     },
     {
-      "question": "Comment saisir la hauteur ?",
-      "answer": "Saisissez la hauteur en centimètres. Le calculateur la convertit automatiquement en mètres."
+      "question": "La surface latérale comprend-elle le fond de la fondation ?",
+      "answer": "Non. Elle correspond seulement aux faces verticales. Le fond et le dessus ne sont pas inclus."
     },
     {
-      "question": "Le résultat inclut-il une marge de perte ?",
-      "answer": "Oui. Le pourcentage de perte est ajouté au volume calculé avant l’estimation des sacs."
+      "question": "Le calcul prend-il en compte l’armature ?",
+      "answer": "Non. L’outil calcule seulement le béton, les sacs et la surface latérale. L’armature doit être définie à part."
     },
     {
-      "question": "Peut-on l’utiliser pour des semelles filantes ?",
-      "answer": "Oui. Il convient très bien aux semelles filantes, semelles isolées et autres éléments linéaires de fondation."
+      "question": "Faut-il toujours mettre une grande marge ?",
+      "answer": "Non. Une marge trop élevée peut gonfler inutilement la commande. Choisissez-la selon la précision du chantier et du coffrage."
+    },
+    {
+      "question": "Puis-je commander exactement le nombre de sacs affiché ?",
+      "answer": "Mieux vaut le considérer comme une estimation. Le rendement réel varie selon les pertes, la compaction et les indications du fabricant."
     }
   ],
-  "uiLabels": {
-    "copy": "Copier",
-    "copied": "Copié",
-    "input": "Entrée",
-    "output": "Sortie",
-    "placeholder": "Saisir une valeur",
-    "indent": "Retrait",
-    "removeComments": "Supprimer les commentaires",
-    "preview": "Aperçu",
-    "source": "Source",
-    "sanitizedHtml": "HTML nettoyé",
-    "plainText": "Texte brut",
-    "summary": "Résumé",
-    "total": "Total",
-    "links": "Liens",
-    "images": "Images",
-    "errors": "Erreurs",
-    "warnings": "Avertissements",
-    "valid": "Valide",
-    "invalid": "Invalide",
-    "href": "Href",
-    "text": "Texte",
-    "rel": "Rel",
-    "target": "Cible",
-    "alt": "Alt",
-    "width": "Largeur",
-    "height": "Hauteur",
-    "empty": "Vide",
-    "outputReady": "Résultat prêt",
-    "cleanedHtml": "HTML nettoyé",
-    "formattedHtml": "HTML formaté",
-    "minifiedHtml": "HTML minifié",
-    "markdown": "Markdown",
-    "extractedImages": "Images extraites",
-    "extractedLinks": "Liens extraits",
-    "validationSummary": "Résumé de validation",
-    "prettyHtml": "HTML lisible",
-    "encodedText": "Texte encodé",
-    "file": "Fichier",
-    "size": "Taille",
-    "format": "Format",
-    "quality": "Qualité",
-    "colorOne": "Couleur 1",
-    "colorTwo": "Couleur 2",
-    "background": "Fond",
-    "foreground": "Premier plan",
-    "angle": "Angle",
-    "margin": "Marge",
-    "level": "Niveau",
-    "gradientType": "Type de dégradé",
-    "linear": "Linéaire",
-    "radial": "Radial",
-    "blur": "Flou",
-    "spread": "Extension",
-    "offsetX": "Décalage X",
-    "offsetY": "Décalage Y",
-    "opacity": "Opacité",
-    "inset": "Interne",
-    "cssCode": "Code CSS",
-    "snippet": "Extrait",
-    "download": "Télécharger",
-    "downloadSvg": "Télécharger SVG",
-    "downloadPng": "Télécharger PNG",
-    "downloadAll": "Tout télécharger",
-    "upload": "Téléverser",
-    "title": "Titre",
-    "description": "Description",
-    "canonicalUrl": "URL canonique",
-    "siteName": "Nom du site",
-    "ogImage": "Image OG",
-    "clear": "Effacer",
-    "generatedQr": "QR généré",
-    "placeholderImage": "Image de remplacement",
-    "faviconSet": "Jeu de favicon",
-    "keepAspectRatio": "Conserver le ratio",
-    "cropX": "Recadrage X",
-    "cropY": "Recadrage Y",
-    "cropWidth": "Largeur du recadrage",
-    "cropHeight": "Hauteur du recadrage",
-    "originalSize": "Taille d’origine",
-    "outputSize": "Taille de sortie",
-    "savedSize": "Taille enregistrée",
-    "result": "Résultat",
-    "base64": "Base64",
-    "mimeType": "Type MIME",
-    "resizedImage": "Image redimensionnée",
-    "compressedImage": "Image compressée",
-    "croppedImage": "Image recadrée",
-    "convertedImage": "Image convertie",
-    "decodedImage": "Image décodée",
-    "imagePreview": "Aperçu de l’image",
-    "camera": "Caméra",
-    "lens": "Objectif",
-    "dateTaken": "Date de prise de vue",
-    "resolution": "Résolution",
-    "fileSize": "Taille du fichier",
-    "iso": "ISO",
-    "exposure": "Exposition",
-    "aperture": "Ouverture",
-    "focalLength": "Distance focale",
-    "flash": "Flash",
-    "orientation": "Orientation",
-    "latitude": "Latitude",
-    "longitude": "Longitude",
-    "openMap": "Ouvrir la carte",
-    "rawMetadata": "Métadonnées brutes",
-    "noMetadataFound": "Aucune métadonnée trouvée",
-    "gpsLocation": "Position GPS",
-    "metadataSummary": "Résumé des métadonnées"
-  },
   "seo": {
     "title": "Calculateur de fondations",
-    "description": "Calculez le volume de béton, le nombre de sacs et la surface latérale pour l’étanchéité ou l’isolation avec ce calculateur de fondations.",
+    "description": "Calculez le volume de béton, le nombre de sacs et la surface latérale pour l’étanchéité ou l’isolation des semelles, plots et dalles.",
     "keywords": [
       "calculateur de fondations",
-      "calculateur de béton",
-      "calculateur de sacs",
-      "surface d’étanchéité",
-      "calculateur d’isolation",
-      "estimation matériaux fondations"
+      "volume de béton",
+      "nombre de sacs",
+      "semelle filante",
+      "semelle isolée",
+      "surface d’étanchéité"
     ]
   }
 }

@@ -4,44 +4,80 @@
   "slug": "calculateur-jours-entre-deux-dates",
   "h1": "Calculateur de jours entre deux dates",
   "title": "Calculateur de jours entre deux dates",
-  "shortDescription": "Calculez rapidement le nombre de jours entre deux dates avec des résultats instantanés, des saisies simples et des exemples pratiques.",
-  "overview": "Calculez le nombre de jours entre deux dates. Cette page fournit une réponse rapide grâce à un outil pratique et un affichage simple du résultat. Elle s’adresse aux utilisateurs qui recherchent une réponse gratuite en ligne, des résultats rapides dans le navigateur et un contenu utile pour les requêtes de longue traîne.",
+  "shortDescription": "Calculez précisément le nombre de jours entre deux dates pour les délais, périodes et comparaisons de calendrier.",
+  "metaTitle": "Calculateur jours entre dates",
+  "metaDescription": "Calculez précisément le nombre de jours entre deux dates pour les délais, périodes et comparaisons de calendrier.",
+  "intro": "Saisissez deux dates et obtenez le nombre exact de jours entre elles.",
+  "overview": "Ce calculateur mesure l’écart exact entre une date de début et une date de fin. Il est utile pour vérifier un délai, comparer deux périodes ou éviter un comptage manuel source d’erreurs.\n\nIl convient aussi aux contrats, réservations, absences, plannings de voyage et périodes de facturation. Comme il prend en compte les changements de mois et d’année, il fonctionne aussi bien pour des intervalles courts que pour des durées plus longues.",
   "howItWorks": [
-    "Saisissez la valeur ou le texte requis dans le formulaire.",
-    "La conversion, le calcul ou la transformation s’exécute instantanément dans le navigateur.",
-    "Consultez le résultat et passez à des outils associés si vous avez besoin d’une étape supplémentaire."
+    "Choisissez la date de début et la date de fin.",
+    "L’outil calcule la différence complète en jours entre les deux dates.",
+    "Lisez le résultat puis modifiez les dates si vous souhaitez comparer un autre intervalle."
+  ],
+  "useCases": [
+    {
+      "title": "Échéance de projet",
+      "description": "Mesurez le nombre de jours entre le lancement d’une tâche et sa date de livraison."
+    },
+    {
+      "title": "Séjour ou réservation",
+      "description": "Calculez la durée d’un séjour, d’une location ou d’une réservation entre deux dates."
+    },
+    {
+      "title": "Suivi des absences",
+      "description": "Vérifiez le nombre de jours couverts par des congés, un arrêt maladie ou une absence."
+    },
+    {
+      "title": "Période de contrat ou de facture",
+      "description": "Déterminez la durée d’une facture, d’un abonnement ou d’un contrat."
+    }
   ],
   "examples": [
     {
-      "title": "Exemple 1",
-      "input": "2025-01-01 à 2025-01-31",
-      "output": "30 jours",
-      "description": "Un exemple réaliste de calculateur de jours entre deux dates pour une recherche courante."
+      "title": "Période de facturation",
+      "input": "Date de début : 2025-03-01 ; date de fin : 2025-03-29",
+      "output": "28 jours",
+      "description": "Utile pour vérifier une période mensuelle qui ne commence pas le premier jour du mois."
     },
     {
-      "title": "Exemple 2",
-      "input": "2025-01-01 à 2025-01-31",
-      "output": "30 jours",
-      "description": "Un autre cas pratique pour attirer du trafic organique de longue traîne."
+      "title": "Préparation de voyage",
+      "input": "Date de début : 2024-11-18 ; date de fin : 2025-01-05",
+      "output": "48 jours",
+      "description": "Montre un intervalle qui passe à l’année suivante."
+    },
+    {
+      "title": "Absence courte",
+      "input": "Date de début : 2025-07-14 ; date de fin : 2025-07-19",
+      "output": "5 jours",
+      "description": "Pratique pour contrôler une courte absence entre deux dates de travail."
     }
   ],
   "faq": [
     {
-      "question": "Quel est le niveau de précision de cet outil ?",
-      "answer": "Le résultat est calculé directement à partir de la formule ou de la logique côté navigateur utilisée par cet outil."
+      "question": "Le premier et le dernier jour sont-ils inclus ?",
+      "answer": "Non. Le résultat indique l’écart entre les deux dates. Si vous avez besoin d’un comptage inclusif, ajoutez un jour au résultat affiché."
     },
     {
-      "question": "Puis-je utiliser cet outil sur mobile ?",
-      "answer": "Oui. La page fonctionne sur ordinateur et sur mobile avec une interface simple de saisie et de résultat."
+      "question": "Que se passe-t-il si la date de fin est antérieure à la date de début ?",
+      "answer": "Les dates doivent être saisies dans le bon ordre pour obtenir un résultat positif. Si vous les inversez, l’intervalle est interprété dans l’autre sens ou ne correspond pas à la période attendue."
+    },
+    {
+      "question": "Pourquoi le résultat diffère-t-il d’un comptage manuel ?",
+      "answer": "Lors d’un comptage à la main, on inclut souvent par erreur le premier ou le dernier jour. Cet outil affiche l’écart réel entre les dates, ce qui peut différer d’un comptage inclusif."
+    },
+    {
+      "question": "L’outil fonctionne-t-il sur plusieurs mois ou années ?",
+      "answer": "Oui. Le calculateur fonctionne aussi lors des changements de mois et d’année, ce qui le rend adapté aux intervalles courts comme aux périodes longues."
     }
   ],
   "seo": {
-    "title": "Calculateur de jours entre deux dates",
-    "description": "Calculez le nombre de jours entre deux dates. Calculateur gratuit en ligne de jours entre deux dates avec résultats instantanés.",
+    "title": "Calculateur jours entre dates",
+    "description": "Calculez précisément le nombre de jours entre deux dates pour les délais, périodes et comparaisons de calendrier.",
     "keywords": [
-      "calculateur de jours entre deux dates",
-      "jours entre deux dates calculateur",
-      "outil calculatrice"
+      "jours entre deux dates",
+      "calcul différence dates",
+      "calculateur jours entre deux dates",
+      "écart entre dates"
     ]
   }
 }

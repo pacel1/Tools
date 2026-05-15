@@ -4,157 +4,87 @@
   "slug": "favicon-generator",
   "h1": "Favicon Generator",
   "title": "Favicon Generator",
-  "shortDescription": "Generate favicon sizes from one image file directly in your browser with instant downloads.",
-  "metaTitle": "Favicon Generator - Create Favicon Sizes Online",
-  "metaDescription": "Create favicon sizes from one image in your browser. Generate multiple favicon files instantly with fast downloads and no upload required.",
-  "intro": "Create favicons from a single image file in your browser. Quickly generate the common icon sizes you need for websites and download them instantly.",
-  "overview": "This favicon generator helps you prepare website icons from one source image without installing software. It runs locally in your browser, so your image stays on your device while you generate the sizes you need for tabs, bookmarks, and app icons.",
+  "shortDescription": "Turn one image into favicon files and app icon sizes in your browser, with no server upload.",
+  "metaTitle": "Favicon Generator for Websites",
+  "metaDescription": "Create favicon files from one image in your browser and download the common icon sizes you need for a website.",
+  "intro": "Upload one image and turn it into favicon files and icon sizes for your site in the browser.",
+  "overview": "Use this tool to prepare a favicon set from a single source image without installing design software. It runs in your browser, so the image is processed on your device while you create the icon files you need for tabs, bookmarks, and app installs.\n\nIt is especially useful when you already have a logo and need practical favicon outputs in multiple sizes. You can start from a square mark, a full logo, or another image and get files that are ready to place into a website asset folder or app build.",
   "howItWorks": [
-    "Upload or paste an image file as the source.",
-    "The tool creates a set of favicon sizes automatically.",
-    "Preview the generated results in your browser.",
-    "Download the favicon files instantly."
+    "Choose a source image from your device.",
+    "The generator builds the favicon and icon sizes from that image.",
+    "Preview the results before saving them.",
+    "Download the files you want for your site or app."
   ],
   "useCases": [
-    "Create a favicon for a new website.",
-    "Generate icon sizes for browser tabs and bookmarks.",
-    "Prepare app and PWA icon assets quickly.",
-    "Resize a logo into multiple favicon formats."
+    {
+      "title": "New site launch",
+      "description": "Create the favicon files needed before publishing a new website so the browser tab and bookmark icon match the brand."
+    },
+    {
+      "title": "Logo to icon set",
+      "description": "Convert a brand logo into a compact favicon set for use in headers, browser tabs, and installable web apps."
+    },
+    {
+      "title": "PWA asset prep",
+      "description": "Prepare the icon sizes often required for an installable web app, using one source image instead of rebuilding each file manually."
+    },
+    {
+      "title": "Rebrand rollout",
+      "description": "Replace an old site icon with a new branded set and download the updated files in one pass."
+    }
   ],
   "examples": [
     {
-      "title": "Single logo to favicon set",
-      "input": "Upload one square logo image.",
-      "output": "Get multiple favicon sizes ready to download.",
-      "description": "Best for turning a brand mark into consistent website icons."
+      "title": "Square logo to favicon set",
+      "input": "Input: 1024×1024 PNG logo with a simple white symbol on a dark background.",
+      "output": "Output: a favicon set in the usual browser and app sizes, ready to download.",
+      "description": "A clean square source gives the most consistent results across small icon sizes."
     },
     {
-      "title": "Fast client-side generation",
-      "input": "Choose an image from your device.",
-      "output": "Generate icons without sending files to a server.",
-      "description": "Useful when you want a quick, private workflow."
+      "title": "Product mark from a transparent PNG",
+      "input": "Input: transparent 512×512 PNG with a single red wordmark.",
+      "output": "Output: crisp icon files that keep the transparent background where supported.",
+      "description": "Works well when you want the mark to sit on different site themes."
+    },
+    {
+      "title": "Artwork used as a site icon",
+      "input": "Input: 1200×800 JPG illustration from a campaign landing page.",
+      "output": "Output: cropped or adapted favicon sizes suitable for browser use.",
+      "description": "Useful when the original image is not a logo but still needs to become a site icon."
     }
   ],
   "faq": [
     {
-      "question": "What image types can I use?",
-      "answer": "Use a standard image file such as PNG, JPG, or SVG if supported by your browser and the tool interface."
+      "question": "What happens if my image is not square?",
+      "answer": "The generator can still create favicon files, but the result may need cropping or may lose detail at very small sizes. A square source image usually produces the cleanest icon."
     },
     {
-      "question": "Are my files uploaded to a server?",
-      "answer": "No. The favicon generation runs in your browser, so the file is processed locally on your device."
+      "question": "Can I use SVG, PNG, or JPG files?",
+      "answer": "Yes, as long as the image format is supported by your browser and by the tool’s import flow. A solid, high-contrast image works best for tiny icon sizes."
     },
     {
-      "question": "How many favicon sizes are generated?",
-      "answer": "The tool creates the common favicon sizes needed for modern websites, depending on the source image and output settings."
+      "question": "Why do small favicon sizes sometimes look simpler than the original image?",
+      "answer": "A favicon has very little space, so thin lines, small text, and complex gradients can disappear. If the result looks too busy, simplify the source before generating again."
     },
     {
-      "question": "Can I use a non-square image?",
-      "answer": "Yes, but a square source image usually gives the cleanest favicon result."
+      "question": "Does the tool create every icon format for every platform?",
+      "answer": "It creates the common favicon and site-icon sizes, but platform-specific bundles may still need extra files depending on your stack. Check your target platform’s required icon list."
+    },
+    {
+      "question": "Why does my logo look blurry in one size but not another?",
+      "answer": "Very small outputs are more sensitive to source detail. If a size looks soft, start with a larger, sharper source image or reduce fine detail in the design."
     }
   ],
-  "uiLabels": {
-    "copy": "Copy",
-    "copied": "Copied",
-    "input": "Image file",
-    "output": "Generated favicon sizes",
-    "placeholder": "Choose an image file",
-    "indent": "Indent",
-    "removeComments": "Remove comments",
-    "preview": "Preview",
-    "source": "Source",
-    "sanitizedHtml": "Sanitized HTML",
-    "plainText": "Plain text",
-    "summary": "Summary",
-    "total": "Total",
-    "links": "Links",
-    "images": "Images",
-    "errors": "Errors",
-    "warnings": "Warnings",
-    "valid": "Valid",
-    "invalid": "Invalid",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Width",
-    "height": "Height",
-    "empty": "Empty",
-    "outputReady": "Output ready",
-    "cleanedHtml": "Cleaned HTML",
-    "formattedHtml": "Formatted HTML",
-    "minifiedHtml": "Minified HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extracted images",
-    "extractedLinks": "Extracted links",
-    "validationSummary": "Validation summary",
-    "prettyHtml": "Pretty HTML",
-    "encodedText": "Encoded text",
-    "file": "File",
-    "size": "Size",
-    "format": "Format",
-    "quality": "Quality",
-    "colorOne": "Color 1",
-    "colorTwo": "Color 2",
-    "background": "Background",
-    "foreground": "Foreground",
-    "angle": "Angle",
-    "margin": "Margin",
-    "level": "Level",
-    "gradientType": "Gradient type",
-    "linear": "Linear",
-    "radial": "Radial",
-    "blur": "Blur",
-    "spread": "Spread",
-    "offsetX": "Offset X",
-    "offsetY": "Offset Y",
-    "opacity": "Opacity",
-    "inset": "Inset",
-    "cssCode": "CSS code",
-    "snippet": "Snippet",
-    "download": "Download",
-    "downloadSvg": "Download SVG",
-    "downloadPng": "Download PNG",
-    "downloadAll": "Download all",
-    "upload": "Upload",
-    "title": "Title",
-    "description": "Description",
-    "canonicalUrl": "Canonical URL",
-    "siteName": "Site name",
-    "ogImage": "OG image",
-    "clear": "Clear",
-    "generatedQr": "QR code preview",
-    "placeholderImage": "Preview image",
-    "faviconSet": "Favicon set",
-    "keepAspectRatio": "Keep aspect ratio",
-    "cropX": "Crop X",
-    "cropY": "Crop Y",
-    "cropWidth": "Crop width",
-    "cropHeight": "Crop height",
-    "originalSize": "Original size",
-    "outputSize": "Output size",
-    "savedSize": "Saved size",
-    "result": "Result",
-    "base64": "Base64",
-    "mimeType": "MIME type",
-    "resizedImage": "Resized image",
-    "compressedImage": "Compressed image",
-    "croppedImage": "Cropped image",
-    "convertedImage": "Converted image",
-    "decodedImage": "Decoded image",
-    "imagePreview": "Image preview"
-  },
   "seo": {
-    "title": "Favicon Generator - Create Favicon Sizes Online",
-    "description": "Create favicon sizes from one image in your browser. Generate multiple favicon files instantly with fast downloads and no upload required.",
+    "title": "Favicon Generator for Websites",
+    "description": "Create favicon files from one image in your browser and download the common icon sizes you need for a website.",
     "keywords": [
       "favicon generator",
-      "create favicon",
-      "favicon sizes",
-      "website icon generator",
-      "online favicon maker",
-      "browser favicon generator"
+      "website favicon",
+      "favicon files",
+      "site icon generator",
+      "browser favicon tool",
+      "app icon sizes"
     ]
   }
 }

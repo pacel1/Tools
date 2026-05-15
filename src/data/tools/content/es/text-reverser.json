@@ -4,43 +4,76 @@
   "slug": "inversor-de-texto",
   "h1": "Inversor de texto",
   "title": "Inversor de texto",
-  "shortDescription": "Invierte texto al instante online con resultados rápidos, uso sencillo y ejemplos prácticos.",
-  "overview": "Invierte texto al instante online. Esta página ofrece una respuesta rápida con una herramienta útil y un flujo de resultado simple. Está pensada para usuarios que buscan una solución gratuita en línea, resultados rápidos en el navegador y contenido útil de tipo long-tail.",
+  "shortDescription": "Invierte el texto carácter por carácter y conserva signos, espacios y símbolos en el nuevo orden.",
+  "metaTitle": "Inversor de texto",
+  "metaDescription": "Invierte cualquier texto carácter por carácter, conservando espacios, signos de puntuación y símbolos en el resultado.",
+  "intro": "Pega el texto y obtén los caracteres invertidos al momento.",
+  "overview": "Esta herramienta invierte exactamente los caracteres de tu texto, del final al inicio. Letras, números, espacios, signos de puntuación y símbolos cambian de posición, así que el resultado sirve cuando necesitas dar la vuelta al texto, no reescribirlo.\n\nFunciona bien con frases cortas, nombres, etiquetas, códigos y cadenas de prueba. Si quieres ver un mensaje al revés o preparar un texto invertido para diseño, acertijos o pruebas de formato, el resultado aparece enseguida en la página.\n\nLa herramienta no traduce, no corrige y no reorganiza las palabras por significado. Si incluyes saltos de línea, también forman parte del resultado invertido, lo que puede cambiar el aspecto visual de forma predecible.",
   "howItWorks": [
-    "Escribe el texto requerido en el formulario.",
-    "La conversión, el cálculo o la transformación se ejecuta al instante en el navegador.",
-    "Revisa el resultado y continúa con herramientas relacionadas si necesitas otro paso."
+    "Escribe o pega el texto que quieres invertir.",
+    "La herramienta cambia el orden de los caracteres del último al primero.",
+    "Copia el resultado invertido y úsalo donde lo necesites."
+  ],
+  "useCases": [
+    {
+      "title": "Texto para mostrar al revés",
+      "description": "Convierte una frase en caracteres invertidos para carteles, acertijos o diseños especiales."
+    },
+    {
+      "title": "Pruebas de símbolos y espacios",
+      "description": "Comprueba cómo se ven la puntuación, los emoji y los espacios extra al invertir el texto."
+    },
+    {
+      "title": "Maquetas con efecto espejo",
+      "description": "Crea texto invertido para previsualizar etiquetas, insignias o composiciones visuales."
+    }
   ],
   "examples": [
     {
-      "title": "Ejemplo 1",
-      "input": "utility tools",
-      "output": "sloot ytilitu",
-      "description": "Un ejemplo realista de inversión de texto para una búsqueda cotidiana."
+      "title": "Inversión de una frase",
+      "input": "Open the door",
+      "output": "rood eht nepO",
+      "description": "Invierte cada carácter y mantiene el espacio dentro del orden invertido."
     },
     {
-      "title": "Ejemplo 2",
-      "input": "utility tools",
-      "output": "sloot ytilitu",
-      "description": "Otro caso práctico pensado para tráfico orgánico de cola larga."
+      "title": "Símbolos y números",
+      "input": "A1! B2?",
+      "output": "?2B !1A",
+      "description": "Muestra cómo letras, números, espacios y signos cambian de lugar juntos."
+    },
+    {
+      "title": "Ejemplo con salto de línea",
+      "input": "primera línea\nsegunda línea",
+      "output": "aeníl adgnes\naeníl aremirp",
+      "description": "Demuestra que los saltos de línea se conservan en el texto invertido."
     }
   ],
   "faq": [
     {
-      "question": "¿Qué tan precisa es esta herramienta?",
-      "answer": "El resultado se calcula directamente a partir de la fórmula o la lógica en el navegador que usa esta herramienta."
+      "question": "¿La herramienta invierte palabras o caracteres?",
+      "answer": "Invierte caracteres. Si escribes dos palabras, las letras y el espacio cambian de orden juntos, así que el texto queda al revés a nivel de caracteres."
     },
     {
-      "question": "¿Puedo usar esta herramienta en móvil?",
-      "answer": "Sí. La página funciona en escritorio y en pantallas móviles con un diseño simple de entrada y resultado."
+      "question": "¿Qué pasa con la puntuación y los números?",
+      "answer": "Se invierten junto con el resto del texto. Una coma, un guion o un dígito conserva su carácter, pero aparece en otra posición."
+    },
+    {
+      "question": "¿Por qué el resultado cambia con saltos de línea?",
+      "answer": "Los saltos de línea se tratan como parte del texto. Al invertir toda la cadena, el orden visual de las líneas puede verse distinto al original."
+    },
+    {
+      "question": "¿Puedo invertir solo una parte de una frase?",
+      "answer": "Sí. Borra lo que no quieras cambiar o invierte solo el fragmento seleccionado y vuelve a pegarlo en tu texto."
     }
   ],
   "seo": {
     "title": "Inversor de texto",
-    "description": "Invierte texto al instante online. Inversor de texto gratis con resultados inmediatos.",
+    "description": "Invierte cualquier texto carácter por carácter, conservando espacios, signos de puntuación y símbolos en el resultado.",
     "keywords": [
       "inversor de texto",
-      "herramienta text-tools"
+      "texto invertido",
+      "dar la vuelta al texto",
+      "invertir caracteres"
     ]
   }
 }

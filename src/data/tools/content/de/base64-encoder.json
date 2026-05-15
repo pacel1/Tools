@@ -1,47 +1,97 @@
 {
   "toolId": "base64-encoder",
   "locale": "de",
-  "slug": "base64-kodierer",
-  "h1": "Base64-Kodierer",
-  "title": "Base64-Kodierer",
-  "shortDescription": "Text sofort in Base64 kodieren – mit schnellen Ergebnissen, einfacher Eingabe und praktischen Beispielen.",
-  "overview": "Kodieren Sie Text sofort in Base64. Diese Seite liefert eine schnelle Antwort mit einem praktischen Online-Tool und einem einfachen Ergebnisablauf. Die Inhalte richten sich an Nutzer, die eine kostenlose Online-Lösung, schnelle Browser-Ergebnisse und praxisnahe Long-Tail-Inhalte suchen.",
+  "slug": "base64-encoder",
+  "h1": "Base64-Encoder",
+  "title": "Base64-Encoder",
+  "shortDescription": "Wandle Text in Base64 um für Header, API-Payloads, Tests und technische Notizen.",
+  "metaTitle": "Base64-Encoder für Text",
+  "metaDescription": "Kodiere Text im Browser in Base64 für Header, API-Payloads, Fixtures und technische Notizen.",
+  "intro": "Füge Text ein und kopiere die Base64-Zeichenkette in einen Header, Request-Body, ein Fixture oder ein Skript.",
+  "overview": "Base64 wandelt Bytes in ASCII-Zeichen um und ermöglicht so den Transport von Text durch Systeme, die Zeichenketten erwarten. Es wird häufig eingesetzt, wenn Authorization-Werte vorbereitet, kleine Request-Fragmente kodiert, Beispiele in Fixtures gespeichert oder Ausgaben verschiedener Tools verglichen werden sollen.\n\nDieses Tool ist für Text gedacht und eignet sich daher eher für kurze bis mittlere Zeichenfolgen als für Dateien oder Binärdaten. Die Ausgabe lässt sich wieder zurückwandeln; Base64 schützt keine Geheimnisse und sollte nicht als Sicherheitsgrenze verstanden werden.",
   "howItWorks": [
-    "Geben Sie den erforderlichen Text oder Wert in das Formular ein.",
-    "Die Umwandlung, Berechnung oder Transformation läuft sofort im Browser.",
-    "Prüfen Sie das Ergebnis und nutzen Sie bei Bedarf passende Folge-Tools."
+    "Gib den genauen Text ein, den du kodieren möchtest.",
+    "Der Browser wandelt die UTF-8-Bytes des Textes in eine Base64-Zeichenkette um.",
+    "Kopiere das Ergebnis in deinen API-Client, Header, die Dokumentation oder einen Testfall."
+  ],
+  "useCases": [
+    {
+      "title": "Authorization vorbereiten",
+      "description": "Kodiere ein user:password- oder client:secret-Paar, bevor du es in einen Basic-Authorization-Header einfügst."
+    },
+    {
+      "title": "Webhook-Beispiele",
+      "description": "Stelle kleine Textfragmente als Base64 dar, wenn das empfangende System kodierte Werte erwartet."
+    },
+    {
+      "title": "Werte für Tests und Mocks",
+      "description": "Erzeuge stabile kodierte Zeichenfolgen für Snapshots, Mocks, Beispielantworten und Integrations-Fixtures."
+    },
+    {
+      "title": "Interne Notizen und Tickets",
+      "description": "Füge ein reproduzierbares Beispiel eines kodierten Textes in technische Dokumentation oder ein Team-Ticket ein."
+    }
   ],
   "examples": [
     {
-      "title": "Beispiel 1",
+      "title": "Lesbarer Satz",
       "input": "hello world",
       "output": "aGVsbG8gd29ybGQ=",
-      "description": "Ein realistisches Base64-Kodierer-Beispiel für eine alltägliche Suchanfrage."
+      "description": "Ein einfaches Beispiel, mit dem sich die Kodierung schnell nachvollziehen lässt."
     },
     {
-      "title": "Beispiel 2",
-      "input": "hello world",
-      "output": "aGVsbG8gd29ybGQ=",
-      "description": "Ein weiteres praktisches Anwendungsbeispiel für organischen Long-Tail-Traffic."
+      "title": "Paar im Credential-Stil",
+      "input": "api:test-key",
+      "output": "YXBpOnRlc3Qta2V5",
+      "description": "Zeigt Base64 für einen durch Doppelpunkt getrennten Wert, wie er für Basic-Auth-Tests vorbereitet wird."
+    },
+    {
+      "title": "Kurzes JSON",
+      "input": "{\"user\":\"ana\",\"role\":\"admin\"}",
+      "output": "eyJ1c2VyIjoiYW5hIiwicm9sZSI6ImFkbWluIn0=",
+      "description": "Nützlich, wenn ein kleiner JSON-Ausschnitt als kodierter Text in einem Test oder einer Notiz erscheinen soll."
+    },
+    {
+      "title": "Text mit Umlauten",
+      "input": "Fünf große Bücher",
+      "output": "RsO8bmYgZ3LDtmZlIELDvGNoZXI=",
+      "description": "Zeigt, dass Zeichen mit Umlauten aus ihren UTF-8-Bytes kodiert werden und erhalten bleiben."
     }
   ],
   "faq": [
     {
-      "question": "Wie genau ist dieses Tool?",
-      "answer": "Das Ergebnis wird direkt aus der Formel oder der browserseitigen Logik dieses Tools berechnet."
+      "question": "Verbirgt Base64 den Inhalt meines Textes?",
+      "answer": "Nein. Base64 ist nur ein Kodierungsformat. Wer die Zeichenkette hat, kann sie sofort zurück in den ursprünglichen Text umwandeln."
     },
     {
-      "question": "Kann ich dieses Tool auf dem Smartphone nutzen?",
-      "answer": "Ja. Die Seite funktioniert auf Desktop- und Mobilgeräten mit einem einfachen Eingabe- und Ergebnislayout."
+      "question": "Kann ich Umlaute, Emojis oder andere Schriftsysteme kodieren?",
+      "answer": "Ja. Das Tool kodiert den Text als UTF-8-Bytes und unterstützt damit Unicode-Zeichen einschließlich Emojis und nicht-lateinischer Schriften."
+    },
+    {
+      "question": "Warum endet die Ausgabe manchmal mit =?",
+      "answer": "Das ist das Standard-Padding von Base64 für viele Eingaben. Es sorgt dafür, dass die Länge dem erwarteten Blockformat entspricht."
+    },
+    {
+      "question": "Kann ich das Ergebnis direkt in einen HTTP-Header schreiben?",
+      "answer": "Ja, wenn der Server Base64 erwartet. Bei Basic Auth steht der kodierte Wert normalerweise nach dem Prefix Basic."
+    },
+    {
+      "question": "Welche Fehler führen zu falschen Ergebnissen?",
+      "answer": "Häufige Ursachen sind zusätzliche Leerzeichen, veränderter Eingabetext oder das erneute Kodieren bereits kodierter Daten. Fehler entstehen auch, wenn das Zielsystem Binärdaten statt Text erwartet."
+    },
+    {
+      "question": "Ist das Tool für große Dateien geeignet?",
+      "answer": "Nein. Es ist für Textkonvertierung gebaut. Große Dateien und Binärdaten werden besser mit Dateitools verarbeitet."
     }
   ],
   "seo": {
-    "title": "Base64-Kodierer",
-    "description": "Text sofort in Base64 kodieren. Kostenloser Base64-Kodierer online mit sofortigen Ergebnissen.",
+    "title": "Base64-Encoder",
+    "description": "Kodiere Text in Base64 für Header, API-Payloads, Fixtures und technische Beispiele.",
     "keywords": [
-      "base64-kodierer",
-      "base64-kodierung",
-      "entwickler-tool"
+      "base64 encoder",
+      "text in base64 kodieren",
+      "basic auth base64",
+      "base64 für api"
     ]
   }
 }

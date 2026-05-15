@@ -1,47 +1,87 @@
 {
   "toolId": "km-to-miles-converter",
   "locale": "pl",
-  "slug": "kalkulator-km-na-mile",
-  "h1": "Kalkulator kilometrów na mile",
-  "title": "Kalkulator kilometrów na mile",
-  "shortDescription": "Przelicz kilometry na mile natychmiast — szybko, prosto i z praktycznymi przykładami.",
-  "overview": "Przelicz kilometry na mile natychmiast. Ta strona zapewnia szybki wynik dzięki prostemu narzędziu online i przejrzystemu przebiegowi obliczeń. To rozwiązanie dla osób szukających darmowej odpowiedzi w przeglądarce, szybkich wyników oraz praktycznej treści zoptymalizowanej pod długie frazy wyszukiwania.",
+  "slug": "km-to-miles-converter",
+  "h1": "Przelicznik km na mile",
+  "title": "Przelicznik km na mile",
+  "shortDescription": "Przelicz kilometry na mile według standardowego współczynnika i odczytaj wynik od razu.",
+  "metaTitle": "Przelicznik km na mile",
+  "metaDescription": "Przelicz kilometry na mile według wzoru 1 km = 0,621371 mili. Wygodne przy trasach, biegach i planowaniu odległości.",
+  "intro": "Wpisz liczbę kilometrów, a narzędzie poda jej odpowiednik w milach według przelicznika 1 km = 0,621371 mili.",
+  "overview": "Ten przelicznik zamienia kilometry na mile, aby łatwo odczytać odległość w potrzebnym systemie jednostek. Przydaje się, gdy trasa, wynik biegu, mapa albo opis przejazdu podane są w kilometrach, a potrzebujesz wersji w milach.\n\nNarzędzie korzysta ze standardowego współczynnika, więc dobrze działa także dla wartości dziesiętnych, większych dystansów i precyzyjnych porównań. Sprawdza się przy planowaniu podróży, notatkach treningowych i pracy z danymi, gdzie liczy się szybkie i czytelne przeliczenie.",
   "howItWorks": [
-    "Wpisz potrzebną wartość do formularza.",
-    "Przeliczenie wykonuje się od razu w przeglądarce.",
-    "Sprawdź wynik i przejdź do powiązanych narzędzi, jeśli potrzebujesz kolejnego kroku."
+    "Wpisz dystans w kilometrach.",
+    "Narzędzie mnoży wartość przez 0,621371.",
+    "Odczytaj wynik w milach i w razie potrzeby porównaj go z inną odległością."
+  ],
+  "useCases": [
+    {
+      "title": "Planowanie trasy",
+      "description": "Przelicz odcinki drogi podane w kilometrach na mile przy porównywaniu etapów podróży."
+    },
+    {
+      "title": "Bieganie i kolarstwo",
+      "description": "Zamień dystanse treningowe z km na mile do dziennika aktywności i planu tempa."
+    },
+    {
+      "title": "Odczyt map i oznaczeń",
+      "description": "Zrozum odległości na mapach, tablicach drogowych i znakach granicznych podanych w kilometrach."
+    },
+    {
+      "title": "Raporty i arkusze",
+      "description": "Przekształć wartości kilometrów na mile w zestawieniach, plikach i tabelach danych."
+    }
   ],
   "examples": [
     {
-      "title": "Przykład 1",
-      "input": "5 kilometrów",
+      "title": "Krótki dystans miejski",
+      "input": "5 km",
       "output": "3,1069 mili",
-      "description": "Realistyczny przykład przeliczenia km na mile dla codziennego zapytania."
+      "description": "Przeliczenie niewielkiej trasy miejskiej na mile."
     },
     {
-      "title": "Przykład 2",
-      "input": "5 kilometrów",
-      "output": "3,1069 mili",
-      "description": "Kolejny praktyczny przykład dla ruchu z długiego ogona w wyszukiwarce."
+      "title": "Półmaraton",
+      "input": "21,1 km",
+      "output": "13,1094 mili",
+      "description": "Pomocne przy porównywaniu dystansu biegu z jednostkami imperialnymi."
+    },
+    {
+      "title": "Długa podróż",
+      "input": "860 km",
+      "output": "534,2926 mili",
+      "description": "Pokazuje działanie narzędzia przy większych odległościach."
     }
   ],
   "faq": [
     {
-      "question": "Jak dokładne jest to narzędzie?",
-      "answer": "Wynik jest obliczany bezpośrednio na podstawie wzoru lub logiki po stronie przeglądarki użytej w tym narzędziu."
+      "question": "Jakiego wzoru używa to narzędzie?",
+      "answer": "Narzędzie stosuje standardowy współczynnik: 1 kilometr = 0,621371 mili."
     },
     {
-      "question": "Czy mogę korzystać z tego narzędzia na telefonie?",
-      "answer": "Tak. Strona działa na komputerach i urządzeniach mobilnych, oferując prosty układ pola wejściowego i wyniku."
+      "question": "Czy mogę wpisać wartość dziesiętną?",
+      "answer": "Tak. Wartości takie jak 2,5 km albo 42,195 km są przeliczane bezpośrednio."
+    },
+    {
+      "question": "Dlaczego wynik ma wiele miejsc po przecinku?",
+      "answer": "To pełniejsza wartość obliczona z dokładnego współczynnika. Możesz ją zaokrąglić do potrzebnego poziomu."
+    },
+    {
+      "question": "Jaki błąd pojawia się najczęściej przy takim przeliczaniu?",
+      "answer": "Częsty błąd to użycie mnożnika 1,6 zamiast 0,621371. Taki skrót daje wynik w złym kierunku."
+    },
+    {
+      "question": "Czy to narzędzie przelicza też mile na kilometry?",
+      "answer": "Nie. Ta strona służy wyłącznie do zamiany kilometrów na mile. Do odwrotnego działania potrzebny jest osobny przelicznik."
     }
   ],
   "seo": {
-    "title": "Kalkulator kilometrów na mile",
-    "description": "Przelicz kilometry na mile natychmiast. Darmowy kalkulator online km na mile z błyskawicznym wynikiem.",
+    "title": "Przelicznik km na mile",
+    "description": "Przelicz kilometry na mile według wzoru 1 km = 0,621371 mili. Wygodne przy trasach, biegach i planowaniu odległości.",
     "keywords": [
-      "kalkulator km na mile",
-      "przeliczanie km na mile",
-      "narzędzie konwerter"
+      "przelicznik km na mile",
+      "kilometry na mile",
+      "km na mile",
+      "przeliczanie odległości"
     ]
   }
 }

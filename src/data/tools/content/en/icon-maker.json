@@ -4,13 +4,85 @@
   "slug": "icon-maker",
   "h1": "Icon Maker",
   "title": "Icon Maker",
-  "shortDescription": "Create app icons and square brand icons online from one image with browser-side export.",
-  "metaTitle": "Icon Maker | App icon generator online",
-  "metaDescription": "Create icons online from one source image. Use this icon maker for app icons, launcher icons and simple brand icon exports without uploading files to a server.",
-  "intro": "Use the icon maker when favicon generation is too narrow and you need broader icon creation for apps, launchers or branded square assets. Upload one image, control padding and background, then export a ready-to-use icon directly in your browser.",
-  "overview": "The tool is built for quick icon generation workflows where you need a single polished export instead of a full favicon pack. It is useful for app prototypes, PWA assets, quick brand mockups and social profile graphics that need a square icon treatment.",
-  "howItWorks": ["Upload the source image you want to turn into an icon.", "Choose the output size, padding, background and format.", "Preview the icon and download the rendered file instantly."],
-  "examples": [{"title": "App launcher icon", "input": "One transparent logo file", "output": "A centered 512px app icon", "description": "Useful when you need a clean square export for app previews or stores."}, {"title": "Brand avatar icon", "input": "A simple mark on transparent background", "output": "A padded PNG icon with a custom background", "description": "Helpful for profile images and quick product mockups."}],
-  "faq": [{"question": "How is this different from a favicon generator?", "answer": "The icon maker focuses on one polished icon export, while a favicon generator usually creates a multi-size pack for websites."}, {"question": "Does the tool upload my image anywhere?", "answer": "No. The image is processed in your browser for a fast local workflow."}],
-  "seo": {"title": "Icon Maker | App icon generator online", "description": "Create icons online from one source image for apps, launchers and brand assets without server uploads.", "keywords": ["icon maker", "app icon generator", "create icons online", "square icon generator", "launcher icon maker"]}
+  "shortDescription": "Turn one image into app icons or square brand icons with size, padding, and background controls.",
+  "metaTitle": "Icon Maker | App icons online",
+  "metaDescription": "Turn one source image into app icons, launcher icons, or square brand assets with browser-side export.",
+  "intro": "Make a single polished icon from one image by choosing the output size, padding, background, and file format, then download it straight from your browser.",
+  "overview": "This tool is designed for a focused icon-export workflow when you need one clean square asset instead of a full icon set. It works well for app prototypes, launcher tiles, PWA assets, product demos, and profile graphics that need consistent framing.\n\nStart with a logo, symbol, or product mark, then adjust spacing so the subject sits correctly inside the canvas. You can use a solid background for a bold badge-style look or keep transparency when the icon needs to sit on different surfaces.\n\nThe result is a practical production file rather than a mockup. That makes it useful for design handoff, early app testing, marketplace previews, and any case where you want a reusable square icon with predictable proportions.",
+  "howItWorks": [
+    "Upload the image you want to convert into an icon.",
+    "Choose the canvas size, padding, background color, and output format.",
+    "Preview the result, then download the rendered icon file."
+  ],
+  "useCases": [
+    {
+      "title": "App launch tile",
+      "description": "Create a centered square icon from a logo file for a mobile app preview, internal build, or store mockup."
+    },
+    {
+      "title": "PWA home-screen asset",
+      "description": "Generate a clean mark with tuned padding so it reads well on a device home screen or launcher grid."
+    },
+    {
+      "title": "Product avatar icon",
+      "description": "Turn a brand symbol into a square profile asset for dashboards, admin panels, or vendor listings."
+    },
+    {
+      "title": "Badge-style brand mark",
+      "description": "Place a simple mark on a solid background to get a compact icon for presentations and pitch decks."
+    }
+  ],
+  "examples": [
+    {
+      "title": "Transparent logo to app icon",
+      "input": "A transparent SVG logo with a wide wordmark removed",
+      "output": "A 512×512 PNG icon with centered symbol and 18% padding",
+      "description": "Good for app testing when you need a simple square asset that keeps the logo readable."
+    },
+    {
+      "title": "Monogram to dark badge",
+      "input": "A two-letter monogram on transparent background",
+      "output": "A 1024×1024 icon with deep navy background and white mark",
+      "description": "Useful for a branded avatar or launcher tile that needs stronger contrast."
+    },
+    {
+      "title": "Product symbol to marketplace icon",
+      "input": "A small product glyph exported from a design file",
+      "output": "A 256×256 WebP icon with extra padding and transparent background",
+      "description": "Helps when the mark must sit cleanly on varying surfaces without a fixed frame."
+    }
+  ],
+  "faq": [
+    {
+      "question": "What should I upload for the cleanest result?",
+      "answer": "Use a logo, symbol, or monogram with clear edges and enough empty space around the subject. Very detailed illustrations can lose clarity when scaled down."
+    },
+    {
+      "question": "Why does padding matter so much?",
+      "answer": "Padding controls how much breathing room the subject has inside the square. Too little makes the icon feel cramped; too much makes it look small and weak."
+    },
+    {
+      "question": "Can I keep the background transparent?",
+      "answer": "Yes. Transparent output is best when the icon will be placed on different interface colors or inside another design system."
+    },
+    {
+      "question": "What happens if my source image is rectangular?",
+      "answer": "The tool fits it into a square canvas. If the subject is wide, you may need to reduce padding or use a simpler crop-ready version of the image."
+    },
+    {
+      "question": "Which format should I choose?",
+      "answer": "PNG is the safest choice for crisp edges and transparency. WebP can be smaller, while a solid background may be better for badge-style icons."
+    }
+  ],
+  "seo": {
+    "title": "Icon Maker | App icons online",
+    "description": "Turn one source image into app icons, launcher icons, or square brand assets with browser-side export.",
+    "keywords": [
+      "icon maker",
+      "app icon generator",
+      "square icon creator",
+      "launcher icon maker",
+      "brand icon generator"
+    ]
+  }
 }

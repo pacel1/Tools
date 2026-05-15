@@ -4,44 +4,80 @@
   "slug": "przelicznik-kg-na-lbs",
   "h1": "Przelicznik kg na lbs",
   "title": "Przelicznik kg na lbs",
-  "shortDescription": "Błyskawicznie przelicz kilogramy na funty dzięki przejrzystemu wynikowi do zastosowań fitness, wysyłki i codziennego użytku.",
-  "overview": "Ten przelicznik zamienia wartości kilogramów na funty, korzystając ze standardowego współczynnika 2,2046226218. Interfejs utrzymuje kalkulator nad zasięgiem przewijania, aby użytkownicy mogli od razu wykonać obliczenie, a jednocześnie zapewnia treść wspierającą, którą wyszukiwarki mogą zaindeksować poniżej.",
+  "shortDescription": "Przelicz kilogramy na funty z obsługą liczb dziesiętnych i czytelnym wynikiem do notatek, wysyłek oraz treningu.",
+  "metaTitle": "Przelicznik kg na lbs",
+  "metaDescription": "Przelicz kilogramy na funty z obsługą liczb dziesiętnych, czytelnym wynikiem i wygodnym zapisem do notatek lub wysyłek.",
+  "intro": "Wpisz wartość w kilogramach, a otrzymasz odpowiadającą jej liczbę funtów.",
+  "overview": "Ten przelicznik zamienia kilogramy na funty według standardowego współczynnika 2,2046226218. Sprawdza się wtedy, gdy wynik trzeba wpisać w formularzach, zestawieniach treningowych, opisach paczek albo w notatkach roboczych zapisanych w jednostkach imperialnych.\n\nMożesz podać także wartości dziesiętne, bez wcześniejszego zaokrąglania danych wejściowych. Wynik jest pokazany jako dokładna wartość obliczeniowa oraz jako zaokrąglony zapis do szybkiego odczytu, dzięki czemu łatwo go przenieść do dalszych obliczeń.",
   "howItWorks": [
-    "Wpisz wartość w kilogramach, opcjonalnie z miejscami po przecinku.",
+    "Wpisz masę w kilogramach, także z miejscami po przecinku.",
     "Narzędzie sprawdza poprawność liczby i mnoży ją przez współczynnik przeliczeniowy.",
-    "Wynik pojawia się jako precyzyjna wartość liczbowa oraz zaokrąglony zapis do odczytu."
+    "Otrzymujesz wynik w funtach jako wartość dokładną i wersję zaokrągloną."
+  ],
+  "useCases": [
+    {
+      "title": "Zapis masy ciała",
+      "description": "Zamień odczyt ze skali metrycznej na funty do dziennika postępów lub planu treningowego."
+    },
+    {
+      "title": "Dokumenty wysyłkowe",
+      "description": "Przelicz wagę przesyłki na funty, gdy formularz przewoźnika wymaga jednostek imperialnych."
+    },
+    {
+      "title": "Obciążenia na siłowni",
+      "description": "Sprawdź masę talerzy, hantli lub maszyn, gdy plan zapisano w kilogramach."
+    },
+    {
+      "title": "Porcjowanie składników",
+      "description": "Przelicz masę surowca dla kuchni lub produkcji, jeśli arkusz docelowy używa funtów."
+    }
   ],
   "examples": [
     {
-      "title": "Planowanie treningu",
-      "input": "5 kg",
-      "output": "11.02 lb",
-      "description": "Przydatne przy czytaniu planów treningowych łączących jednostki metryczne i imperialne."
+      "title": "Pomiar poranny",
+      "input": "72,4 kg",
+      "output": "159.61 lb",
+      "description": "Przydatne przy zapisie masy ciała w funtach."
     },
     {
-      "title": "Szacowanie paczki",
-      "input": "18.5 kg",
-      "output": "40.79 lb",
-      "description": "Pomocne w formularzach wysyłkowych i przy limitach przewoźników podawanych w funtach."
+      "title": "Mała paczka",
+      "input": "3,25 kg",
+      "output": "7.17 lb",
+      "description": "Dobry przykład dla formularza nadania przesyłki."
+    },
+    {
+      "title": "Dwie strony sztangi",
+      "input": "20 kg",
+      "output": "44.09 lb",
+      "description": "Pomaga porównać obciążenie metryczne z planem zapisanym w funtach."
     }
   ],
   "faq": [
     {
-      "question": "Jakiego wzoru używa to narzędzie?",
-      "answer": "Przelicznik mnoży kilogramy przez 2,2046226218, czyli standardowy współczynnik zamiany kilogramów na funty."
+      "question": "Jaki współczynnik stosuje to narzędzie?",
+      "answer": "Przelicznik używa współczynnika 2,2046226218 funta na kilogram, czyli standardowej wartości zamiany."
     },
     {
-      "question": "Czy mogę przeliczać wartości dziesiętne?",
-      "answer": "Tak. Pole przyjmuje liczby dziesiętne, co sprawdza się przy masie ciała, wadze przesyłek i ilościach składników."
+      "question": "Czy mogę wpisać liczby dziesiętne?",
+      "answer": "Tak. Pole przyjmuje wartości takie jak 0,5, 2,75 czy 18,5 i przelicza je bez dodatkowych działań."
+    },
+    {
+      "question": "Dlaczego widoczny wynik może się różnić od wartości dokładnej?",
+      "answer": "Obliczenie zachowuje pełną precyzję, a na ekranie pokazana jest także wersja zaokrąglona, łatwiejsza do odczytu i wpisania dalej."
+    },
+    {
+      "question": "Jakich błędów unikać przy korzystaniu z wyniku?",
+      "answer": "Nie wpisuj funtów w pole kilogramów i nie zaokrąglaj danych wejściowych zbyt wcześnie, jeśli potrzebujesz sumowania lub dokładnego zestawienia."
     }
   ],
   "seo": {
     "title": "Przelicznik kg na lbs",
-    "description": "Darmowy przelicznik kg na lbs online z natychmiastowym wynikiem i czytelnymi przykładami.",
+    "description": "Przelicz kilogramy na funty z obsługą liczb dziesiętnych, czytelnym wynikiem i wygodnym zapisem do notatek lub wysyłek.",
     "keywords": [
       "kg na lbs",
       "kilogramy na funty",
-      "przelicznik wagi"
+      "przelicznik wagi",
+      "kg na lb"
     ]
   }
 }

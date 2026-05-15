@@ -4,159 +4,99 @@
   "slug": "generateur-d-image-placeholder",
   "h1": "Générateur d’image placeholder",
   "title": "Générateur d’image placeholder",
-  "shortDescription": "Créez des images placeholder pour maquettes UI, couvertures de blog, brouillons d’images OG et systèmes de design.",
-  "metaTitle": "Générateur d’image placeholder | Créez des maquettes rapides",
-  "metaDescription": "Générez des images placeholder pour maquettes UI, couvertures de blog, aperçus sociaux et systèmes de design directement dans votre navigateur.",
-  "intro": "Créez instantanément des images placeholder propres pour wireframes, en-têtes de blog, aperçus sociaux et travaux de design. Définissez la taille, générez l’image dans le navigateur et téléchargez-la tout de suite.",
-  "overview": "Ce générateur d’image placeholder côté navigateur utilise canvas pour créer des visuels simples et rapides sans importer de fichier. Il est utile pour les maquettes, les brouillons de contenu et les systèmes de design quand vous avez besoin d’une image temporaire aux bonnes dimensions.",
+  "shortDescription": "Créez des images placeholder pour wireframes, cartes sociales, en-têtes de blog et systèmes de design.",
+  "metaTitle": "Générateur d’image placeholder",
+  "metaDescription": "Créez des images placeholder sur mesure pour maquettes, en-têtes, cartes sociales et systèmes de design dans le navigateur.",
+  "intro": "Générez une image placeholder aux dimensions exactes dont vous avez besoin, puis prévisualisez-la et téléchargez-la en PNG ou SVG.",
+  "overview": "Utilisez cet outil lorsque vous avez besoin d’une image temporaire aux dimensions précises pour une mise en page, un brouillon de contenu ou une idée d’interface. L’image est créée localement dans le navigateur, ce qui vous permet d’avancer sans attendre le visuel final.\n\nIl est pratique pour matérialiser un emplacement d’image, vérifier l’équilibre d’une section hero ou préparer une maquette de carte de partage. Le rendu reste simple et prévisible, ce qui facilite le remplacement ultérieur par l’asset définitif.\n\nComme l’image est générée à partir de la taille et des réglages choisis, elle convient aussi bien aux miniatures qu’aux grandes bannières qui doivent s’intégrer dans un conteneur précis.",
   "howItWorks": [
-    "Saisissez la largeur et la hauteur souhaitées.",
-    "Choisissez éventuellement des styles ou du texte si disponibles.",
-    "Générez l’image placeholder dans votre navigateur.",
-    "Prévisualisez le résultat et téléchargez-le quand vous le souhaitez."
+    "Saisissez la largeur et la hauteur visées.",
+    "Ajoutez éventuellement du texte ou des réglages visuels si disponibles.",
+    "Générez l’image dans le navigateur.",
+    "Contrôlez l’aperçu puis téléchargez le fichier nécessaire."
   ],
   "useCases": [
-    "Maquettes UI et applications",
-    "Brouillons de couvertures de blog",
-    "Aperçus d’images Open Graph",
-    "Systèmes de design pour landing pages",
-    "Mises en page d’e-mails et newsletters",
-    "Ressources de prototype pour présentations"
+    {
+      "title": "Brouillon de bannière hero",
+      "description": "Créez un placeholder large pour l’en-tête d’une landing page avant l’arrivée du visuel de campagne final."
+    },
+    {
+      "title": "Maquette d’écran d’application",
+      "description": "Remplissez les zones d’image dans un prototype dashboard ou mobile pour mieux lire la structure."
+    },
+    {
+      "title": "Mise en page de carte sociale",
+      "description": "Réservez l’espace exact pour une image Open Graph ou un aperçu de partage avant publication."
+    },
+    {
+      "title": "Préparation d’une couverture éditoriale",
+      "description": "Maquettez les en-têtes d’articles et les couvertures de blog pendant que l’image finale manque encore."
+    },
+    {
+      "title": "Éléments de système de design",
+      "description": "Conservez des tailles cohérentes pour les cartes, vignettes et blocs média avec des placeholders réutilisables."
+    },
+    {
+      "title": "Présentations client",
+      "description": "Insérez un visuel de remplacement réaliste dans les slides tant que l’image produit finale n’est pas prête."
+    }
   ],
   "examples": [
     {
-      "title": "Brouillon d’en-tête de blog",
+      "title": "En-tête d’article large",
       "input": "1200 × 630",
-      "output": "Image placeholder prête pour une couverture ou un aperçu social.",
-      "description": "Pratique pour visualiser un article avant l’image finale."
+      "output": "Un placeholder horizontal prêt pour les en-têtes d’article et les cartes d’aperçu social.",
+      "description": "Convient à un format très utilisé pour le partage et aide à préparer la composition."
     },
     {
-      "title": "Maquette produit",
-      "input": "800 × 600",
-      "output": "Visuel placeholder simple pour une mise en page d’interface.",
-      "description": "Aide à conserver des espacements et une composition cohérents."
+      "title": "Emplacement d’image produit",
+      "input": "960 × 720",
+      "output": "Un rectangle de taille moyenne pour des cartes catalogue ou des blocs de mise en avant.",
+      "description": "Utile pour vérifier une grille tant que les photos finales ne sont pas disponibles."
+    },
+    {
+      "title": "Bannière de newsletter",
+      "input": "600 × 300",
+      "output": "Un placeholder compact pour l’en-tête d’un email ou un module promotionnel.",
+      "description": "Permet de voir comment une bannière s’insère dans un modèle de mail étroit."
     }
   ],
   "faq": [
     {
-      "question": "À quoi sert un générateur d’image placeholder ?",
-      "answer": "Il crée des images temporaires pour les mises en page, brouillons et prototypes lorsque l’image finale n’est pas encore prête."
+      "question": "Puis-je définir une taille personnalisée au lieu d’un préréglage ?",
+      "answer": "Oui. Saisissez exactement la largeur et la hauteur voulues, même pour un format inhabituel."
     },
     {
-      "question": "Puis-je l’utiliser sans importer de fichier ?",
-      "answer": "Oui. L’image est générée localement dans votre navigateur, sans import nécessaire."
+      "question": "Que se passe-t-il si je choisis une très grande dimension ?",
+      "answer": "L’outil tentera de générer l’image, mais un canevas très grand peut être plus lent à rendre et plus lourd à télécharger."
     },
     {
-      "question": "Quelles tailles puis-je créer ?",
-      "answer": "Vous pouvez créer toutes les tailles courantes pour bannières, miniatures, cartes et aperçus sociaux."
+      "question": "Le fond est-il transparent ou coloré ?",
+      "answer": "Cela dépend des réglages disponibles. Si la transparence n’est pas activée, l’image utilise le fond par défaut de l’outil."
     },
     {
-      "question": "L’image est-elle téléchargée automatiquement ?",
-      "answer": "Non. Vous la prévisualisez d’abord, puis vous la téléchargez quand vous êtes prêt."
+      "question": "Le résultat peut-il servir d’image finale en production ?",
+      "answer": "Non. Il s’agit d’un visuel temporaire pour la préparation, pas d’une image finale de marque ou de livraison."
+    },
+    {
+      "question": "Pourquoi le fichier téléchargé diffère-t-il parfois de l’aperçu ?",
+      "answer": "De petits écarts peuvent apparaître, car l’aperçu est redimensionné pour l’écran alors que le fichier utilise la taille exacte générée."
+    },
+    {
+      "question": "Quelle erreur revient le plus souvent avec cet outil ?",
+      "answer": "Se tromper de proportions. Si l’image doit entrer dans un conteneur précis, utilisez ses dimensions réelles avant de générer."
     }
   ],
-  "uiLabels": {
-    "copy": "Copier",
-    "copied": "Copié",
-    "input": "Entrée",
-    "output": "Sortie",
-    "placeholder": "Texte d apercu",
-    "indent": "Retrait",
-    "removeComments": "Supprimer les commentaires",
-    "preview": "Aperçu",
-    "source": "Source",
-    "sanitizedHtml": "HTML nettoyé",
-    "plainText": "Texte brut",
-    "summary": "Résumé",
-    "total": "Total",
-    "links": "Liens",
-    "images": "Images",
-    "errors": "Erreurs",
-    "warnings": "Avertissements",
-    "valid": "Valide",
-    "invalid": "Invalide",
-    "href": "Href",
-    "text": "Texte",
-    "rel": "Rel",
-    "target": "Cible",
-    "alt": "Alt",
-    "width": "Largeur",
-    "height": "Hauteur",
-    "empty": "Vide",
-    "outputReady": "Sortie prête",
-    "cleanedHtml": "HTML nettoyé",
-    "formattedHtml": "HTML formaté",
-    "minifiedHtml": "HTML minifié",
-    "markdown": "Markdown",
-    "extractedImages": "Images extraites",
-    "extractedLinks": "Liens extraits",
-    "validationSummary": "Résumé de validation",
-    "prettyHtml": "HTML lisible",
-    "encodedText": "Texte encodé",
-    "file": "Fichier",
-    "size": "Taille",
-    "format": "Format",
-    "quality": "Qualité",
-    "colorOne": "Couleur 1",
-    "colorTwo": "Couleur 2",
-    "background": "Arrière-plan",
-    "foreground": "Premier plan",
-    "angle": "Angle",
-    "margin": "Marge",
-    "level": "Niveau",
-    "gradientType": "Type de dégradé",
-    "linear": "Linéaire",
-    "radial": "Radial",
-    "blur": "Flou",
-    "spread": "Extension",
-    "offsetX": "Décalage X",
-    "offsetY": "Décalage Y",
-    "opacity": "Opacité",
-    "inset": "Intérieur",
-    "cssCode": "Code CSS",
-    "snippet": "Extrait",
-    "download": "Télécharger",
-    "downloadSvg": "Télécharger SVG",
-    "downloadPng": "Télécharger PNG",
-    "downloadAll": "Tout télécharger",
-    "upload": "Importer",
-    "title": "Titre",
-    "description": "Description",
-    "canonicalUrl": "URL canonique",
-    "siteName": "Nom du site",
-    "ogImage": "Image OG",
-    "clear": "Effacer",
-    "generatedQr": "Apercu du code QR",
-    "placeholderImage": "Apercu de l image",
-    "faviconSet": "Jeu de favicon",
-    "keepAspectRatio": "Conserver les proportions",
-    "cropX": "Recadrage X",
-    "cropY": "Recadrage Y",
-    "cropWidth": "Largeur du recadrage",
-    "cropHeight": "Hauteur du recadrage",
-    "originalSize": "Taille originale",
-    "outputSize": "Taille de sortie",
-    "savedSize": "Taille enregistrée",
-    "result": "Résultat",
-    "base64": "Base64",
-    "mimeType": "Type MIME",
-    "resizedImage": "Image redimensionnée",
-    "compressedImage": "Image compressée",
-    "croppedImage": "Image recadrée",
-    "convertedImage": "Image convertie",
-    "decodedImage": "Image décodée",
-    "imagePreview": "Aperçu de l’image"
-  },
   "seo": {
     "title": "Générateur d’image placeholder",
-    "description": "Générez des images placeholder pour maquettes UI, couvertures de blog, aperçus sociaux et systèmes de design directement dans votre navigateur.",
+    "description": "Créez des images placeholder sur mesure pour maquettes, en-têtes, cartes sociales et systèmes de design dans le navigateur.",
     "keywords": [
       "generateur image placeholder",
       "image placeholder",
-      "generateur de maquette image",
-      "image og placeholder",
-      "images systeme de design",
-      "generateur image canvas"
+      "image pour maquette",
+      "placeholder wireframe",
+      "placeholder carte sociale",
+      "asset systeme de design"
     ]
   }
 }

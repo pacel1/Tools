@@ -4,174 +4,86 @@
   "slug": "abdichtungsrechner",
   "h1": "Abdichtungsrechner",
   "title": "Abdichtungsrechner",
-  "shortDescription": "Berechnen Sie, wie viel Abdichtungsmaterial Sie für Bad, Balkon, Terrasse oder Fundament benötigen.",
-  "metaTitle": "Abdichtungsrechner - Material für Flüssigabdichtung berechnen",
-  "metaDescription": "Berechnen Sie die Menge an Abdichtungsmaterial für Bäder, Balkone, Terrassen und Fundamente. Fläche, Anstriche, Ergiebigkeit, Reserve und Gebindegröße eingeben.",
-  "intro": "Nutzen Sie diesen Abdichtungsrechner, um schnell zu ermitteln, wie viel Flüssigabdichtung, Dichtmasse oder anderes Abdichtungsmaterial Sie für Ihr Projekt brauchen.",
-  "overview": "Geben Sie Fläche, Anzahl der Schichten, Ergiebigkeit, Zuschlag und Gebindegröße ein. Das Tool berechnet die Menge ohne Reserve, die Gesamtmenge mit Reserve und die benötigte Anzahl an Gebinden.",
+  "shortDescription": "Berechnen Sie Flüssigabdichtung, Dichtmasse und Materialbedarf für Bad, Balkon, Terrasse oder Fundament.",
+  "metaTitle": "Abdichtungsrechner",
+  "metaDescription": "Berechnen Sie die Abdichtungsmenge für Bad, Balkon, Terrasse und Fundament. Flächen, Schichten, Ergiebigkeit, Reserve und Gebindegröße eintragen.",
+  "intro": "Tragen Sie Fläche, Schichten, Ergiebigkeit, Reserve und Gebindegröße ein, um die benötigte Abdichtungsmenge zu ermitteln.",
+  "overview": "Dieses Tool schätzt Flüssigabdichtung, Dichtmasse oder ähnliche Produkte für ebene Flächen und feuchtebelastete Bauteile. Es berücksichtigt Schichtanzahl, reale Ergiebigkeit, Reserve für Verluste und die Gebindegröße, damit Sie sowohl die Materialmenge als auch die Anzahl der zu kaufenden Eimer oder Kanister sehen.\n\nEs ist hilfreich bei Fliesenarbeiten im Bad, bei Balkonen, Terrassen und bei erdberührten Fundamentflächen. Das Ergebnis ist eine Materialschätzung und ersetzt nicht das technische Datenblatt oder die objektspezifische Planung; Ecken, Fugen und Rohrdurchführungen sollten zusätzlich berücksichtigt werden, wenn sie nicht schon in der Fläche enthalten sind.",
   "howItWorks": [
-    "Fläche mit der Anzahl der Schichten multiplizieren.",
-    "Durch die Ergiebigkeit teilen, um die Grundmenge zu erhalten.",
-    "Einen Zuschlag für Verschnitt und Sicherheit hinzufügen.",
-    "Durch die Gebindegröße teilen und aufrunden."
+    "Fläche eingeben.",
+    "Anzahl der erforderlichen Schichten festlegen.",
+    "Ergiebigkeit des Produkts eintragen.",
+    "Reserve hinzufügen und das Ergebnis auf volle Gebinde aufrunden."
   ],
   "useCases": [
-    "Abdichtungsmenge für ein Badezimmer vor dem Fliesenlegen berechnen.",
-    "Flüssigabdichtung für Balkon oder Terrasse planen.",
-    "Materialbedarf für Fundamente und Feuchtbereiche schätzen.",
-    "Schnell prüfen, wie viel Dichtmasse gekauft werden sollte."
+    {
+      "title": "Dusche vor dem Fliesenlegen",
+      "description": "Den Bedarf für Boden und Wandanschlüsse in einem Duschbereich berechnen."
+    },
+    {
+      "title": "Balkon mit Randanschlüssen",
+      "description": "Den Verbrauch für Kanten, Ablauf und Türanschluss realistisch planen."
+    },
+    {
+      "title": "Fundamentwand außen",
+      "description": "Den Materialbedarf für eine vertikale Abdichtung vor dem Verfüllen schätzen."
+    },
+    {
+      "title": "Rohrdurchdringungen abdichten",
+      "description": "Die Menge für eine lokale Reparatur rund um Durchführungen und Ecken bestimmen."
+    }
   ],
   "examples": [
     {
-      "title": "Badezimmerboden",
-      "input": "10 m², 2 Schichten, 1 m²/kg, 10 % Reserve, 5-kg-Gebinde",
-      "output": "20 kg Basis, 22 kg gesamt, 5 Gebinde.",
-      "description": "Praktische Schätzung für ein kleines Bad."
+      "title": "Kleines Bad",
+      "input": "8,5 m², 2 Schichten, 1,2 m²/kg Ergiebigkeit, 12 % Reserve, 5-kg-Gebinde",
+      "output": "Basis: 14,2 kg; gesamt: 15,9 kg; 4 Gebinde.",
+      "description": "Eine realistische Schätzung für ein kompaktes Badezimmer."
     },
     {
-      "title": "Terrasse",
-      "input": "25 m², 2 Schichten, 0.8 m²/l, 15 % Reserve, 10-l-Gebinde",
-      "output": "62.5 l Basis, 71.9 l gesamt, 8 Gebinde.",
-      "description": "Hilfreich bei der Planung von Außenabdichtung."
+      "title": "Außenterrasse",
+      "input": "31 m², 3 Schichten, 0,75 m²/l Ergiebigkeit, 10 % Reserve, 10-l-Gebinde",
+      "output": "Basis: 124,0 l; gesamt: 136,4 l; 14 Gebinde.",
+      "description": "Sinnvoll für eine Terrasse mit stärkerem Abdichtungssystem."
+    },
+    {
+      "title": "Fundamentabschnitt",
+      "input": "18 m², 2 Schichten, 1,5 m²/kg Ergiebigkeit, 8 % Reserve, 20-kg-Gebinde",
+      "output": "Basis: 24,0 kg; gesamt: 25,9 kg; 2 Gebinde.",
+      "description": "Geeignet für eine lineare Fundamentwand mit moderaten Verlusten."
     }
   ],
   "faq": [
     {
-      "question": "Was kann ich mit diesem Tool berechnen?",
-      "answer": "Sie können die benötigte Menge an Abdichtungsmaterial für Bäder, Balkone, Terrassen und Fundamente schätzen."
+      "question": "Sind Ecken, Überlappungen und Rohrmanschetten enthalten?",
+      "answer": "Nur wenn Sie sie in der Fläche mit einrechnen oder die Reserve erhöhen. Details verbrauchen meist mehr Material als eine glatte Fläche."
     },
     {
-      "question": "Ist ein Verschnitt enthalten?",
-      "answer": "Ja. Geben Sie einfach einen Prozentsatz für die Reserve ein, um ein realistischeres Ergebnis zu erhalten."
+      "question": "Welche Ergiebigkeit soll ich verwenden?",
+      "answer": "Nehmen Sie den Wert aus dem technischen Datenblatt des konkreten Produkts und der vorgesehenen Verarbeitung. Rolle, Bürste und Kelle können unterschiedlich sein."
     },
     {
-      "question": "Sollte ich die Gebinde aufrunden?",
-      "answer": "Ja. Immer aufrunden, damit genug Material für die gesamte Fläche vorhanden ist."
+      "question": "Warum ist die Gebindezahl so hoch?",
+      "answer": "Das Tool rundet immer auf volle Gebinde auf. Ein kleiner Rest kann dadurch ein zusätzliches Gebinde auslösen."
     },
     {
-      "question": "Ist das Tool für Flüssigabdichtung geeignet?",
-      "answer": "Ja. Es eignet sich gut für Flüssigabdichtung und ähnliche Abdichtungsprodukte."
+      "question": "Kann ich Liter und Kilogramm einfach tauschen?",
+      "answer": "Nur wenn das Produkt eine passende Dichte oder Umrechnung erlaubt. Das Tool rechnet in der von Ihnen eingegebenen Einheit."
+    },
+    {
+      "question": "Welcher Eingabefehler führt am ehesten zu einem zu kleinen Ergebnis?",
+      "answer": "Vergessene Randbereiche, Türanschlüsse, Abläufe und Rohrdurchführungen. Wenn sie nicht zur Fläche gehören, müssen sie separat ergänzt werden."
     }
   ],
-  "uiLabels": {
-    "copy": "Kopieren",
-    "copied": "Kopiert",
-    "input": "Eingabe",
-    "output": "Ausgabe",
-    "placeholder": "Wert eingeben",
-    "indent": "Einzug",
-    "removeComments": "Kommentare entfernen",
-    "preview": "Vorschau",
-    "source": "Quelle",
-    "sanitizedHtml": "Bereinigtes HTML",
-    "plainText": "Nur-Text",
-    "summary": "Zusammenfassung",
-    "total": "Gesamt",
-    "links": "Links",
-    "images": "Bilder",
-    "errors": "Fehler",
-    "warnings": "Warnungen",
-    "valid": "Gültig",
-    "invalid": "Ungültig",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Ziel",
-    "alt": "Alt",
-    "width": "Breite",
-    "height": "Höhe",
-    "empty": "Leer",
-    "outputReady": "Ergebnis bereit",
-    "cleanedHtml": "Bereinigtes HTML",
-    "formattedHtml": "Formatiertes HTML",
-    "minifiedHtml": "Minifiziertes HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extrahierte Bilder",
-    "extractedLinks": "Extrahierte Links",
-    "validationSummary": "Validierungszusammenfassung",
-    "prettyHtml": "Gut lesbares HTML",
-    "encodedText": "Kodierter Text",
-    "file": "Datei",
-    "size": "Größe",
-    "format": "Format",
-    "quality": "Qualität",
-    "colorOne": "Farbe 1",
-    "colorTwo": "Farbe 2",
-    "background": "Hintergrund",
-    "foreground": "Vordergrund",
-    "angle": "Winkel",
-    "margin": "Rand",
-    "level": "Stufe",
-    "gradientType": "Verlaufstyp",
-    "linear": "Linear",
-    "radial": "Radial",
-    "blur": "Unschärfe",
-    "spread": "Ausbreitung",
-    "offsetX": "Versatz X",
-    "offsetY": "Versatz Y",
-    "opacity": "Deckkraft",
-    "inset": "Innen",
-    "cssCode": "CSS-Code",
-    "snippet": "Snippet",
-    "download": "Herunterladen",
-    "downloadSvg": "SVG herunterladen",
-    "downloadPng": "PNG herunterladen",
-    "downloadAll": "Alle herunterladen",
-    "upload": "Hochladen",
-    "title": "Titel",
-    "description": "Beschreibung",
-    "canonicalUrl": "Kanonische URL",
-    "siteName": "Website-Name",
-    "ogImage": "OG-Bild",
-    "clear": "Löschen",
-    "generatedQr": "Generierter QR-Code",
-    "placeholderImage": "Platzhalterbild",
-    "faviconSet": "Favicon-Set",
-    "keepAspectRatio": "Seitenverhältnis beibehalten",
-    "cropX": "Zuschnitt X",
-    "cropY": "Zuschnitt Y",
-    "cropWidth": "Zuschnittsbreite",
-    "cropHeight": "Zuschnittshöhe",
-    "originalSize": "Originalgröße",
-    "outputSize": "Ausgabegröße",
-    "savedSize": "Gesparte Größe",
-    "result": "Ergebnis",
-    "base64": "Base64",
-    "mimeType": "MIME-Typ",
-    "resizedImage": "Skaliertes Bild",
-    "compressedImage": "Komprimiertes Bild",
-    "croppedImage": "Zugeschnittenes Bild",
-    "convertedImage": "Konvertiertes Bild",
-    "decodedImage": "Dekodiertes Bild",
-    "imagePreview": "Bildvorschau",
-    "camera": "Kamera",
-    "lens": "Objektiv",
-    "dateTaken": "Aufnahmedatum",
-    "resolution": "Auflösung",
-    "fileSize": "Dateigröße",
-    "iso": "ISO",
-    "exposure": "Belichtung",
-    "aperture": "Blende",
-    "focalLength": "Brennweite",
-    "flash": "Blitz",
-    "orientation": "Ausrichtung",
-    "latitude": "Breitengrad",
-    "longitude": "Längengrad",
-    "openMap": "Karte öffnen",
-    "rawMetadata": "Rohe Metadaten",
-    "noMetadataFound": "Keine Metadaten gefunden",
-    "gpsLocation": "GPS-Position",
-    "metadataSummary": "Metadatenübersicht"
-  },
   "seo": {
-    "title": "Abdichtungsrechner für Flüssigabdichtung und Dichtmasse",
-    "description": "Berechnen Sie schnell die benötigte Abdichtungsmenge für Bad, Balkon, Terrasse oder Fundament. Grundmenge, Gesamtmenge mit Reserve und Gebindeanzahl ermitteln.",
+    "title": "Abdichtungsrechner",
+    "description": "Berechnen Sie die Abdichtungsmenge für Bad, Balkon, Terrasse und Fundament. Flächen, Schichten, Ergiebigkeit, Reserve und Gebindegröße eintragen.",
     "keywords": [
       "Abdichtungsrechner",
       "Flüssigabdichtung berechnen",
-      "Abdichtungsmaterial berechnen",
-      "wie viel Abdichtung brauche ich",
-      "Dichtmasse Rechner"
+      "Abdichtungsmenge",
+      "Dichtmasse berechnen",
+      "Fundament abdichten"
     ]
   }
 }

@@ -4,177 +4,91 @@
   "slug": "calculatrice-de-laine-minerale",
   "h1": "Calculatrice de laine minérale",
   "title": "Calculatrice de laine minérale",
-  "shortDescription": "Calculez combien de rouleaux ou de colis de laine minérale sont nécessaires pour isoler des combles, des murs ou un plafond.",
-  "metaTitle": "Calculatrice de laine minérale | Calculer les colis et le volume",
-  "metaDescription": "Calculez le volume de laine minérale, la surface avec marge et le nombre de colis ou rouleaux nécessaires pour isoler des combles, des murs ou un plafond.",
-  "intro": "Utilisez cette calculatrice de laine minérale pour estimer rapidement la quantité d’isolant nécessaire pour des combles, un mur ou un plafond. Saisissez la surface, l’épaisseur, la couverture d’un colis, la marge de perte et le volume d’un colis pour obtenir une estimation simple.",
-  "overview": "Cet outil vous aide à planifier l’isolation en laine minérale en convertissant la surface et l’épaisseur en volume d’isolant requis, puis en estimant le nombre de colis ou de rouleaux selon la couverture par emballage. Il est pratique pour les projets de combles, murs et plafonds.",
+  "shortDescription": "Estimez la laine minérale nécessaire pour des combles, un mur ou un plafond, avec le nombre de rouleaux ou colis.",
+  "metaTitle": "Calculatrice de laine minérale",
+  "metaDescription": "Calculez le volume de laine minérale, la marge de découpe et le nombre de colis ou rouleaux pour combles, murs ou plafond.",
+  "intro": "Saisissez la surface, l’épaisseur, la marge de perte et la couverture d’un colis pour obtenir la quantité de laine minérale et le nombre d’emballages.",
+  "overview": "Cette calculatrice permet d’acheter la bonne quantité d’isolant à partir de mesures concrètes. Elle convertit la surface et l’épaisseur en volume de laine minérale, puis estime le nombre de colis ou de rouleaux en fonction de la couverture et du volume indiqués.\n\nElle est particulièrement utile pour les combles, les cloisons, les plafonds et les rampants, où l’épaisseur de la couche compte autant que la surface. Si vous avez la fiche produit, reprenez ses valeurs exactes et prévoyez une marge raisonnable pour les découpes, les jonctions et les zones de finition.",
   "howItWorks": [
     "Indiquez la surface à isoler en mètres carrés.",
-    "Ajoutez l’épaisseur d’isolant en centimètres.",
-    "Précisez la surface couverte par un colis.",
-    "Définissez le pourcentage de marge ou de perte.",
-    "Renseignez le volume d’un colis pour calculer le volume total et le nombre de colis."
+    "Ajoutez l’épaisseur de l’isolant en centimètres.",
+    "Précisez la surface couverte par un colis ou un rouleau.",
+    "Définissez le pourcentage de perte pour les découpes et ajustements.",
+    "Renseignez le volume d’un colis pour calculer le volume total et le nombre d’emballages."
   ],
   "useCases": [
-    "Estimer la laine minérale pour des combles.",
-    "Prévoir la quantité de matériau pour des murs.",
-    "Calculer les colis pour un plafond ou une pente de toit.",
-    "Ajouter une marge pour les découpes et pertes.",
-    "Comparer la couverture des différents colis avant achat."
+    {
+      "title": "Isolation de combles aménagés",
+      "description": "Calculez les colis nécessaires pour des combles avec rampants, jonctions et zones irrégulières."
+    },
+    {
+      "title": "Cloison intérieure",
+      "description": "Déterminez la quantité de laine minérale pour une cloison légère ou un doublage intérieur."
+    },
+    {
+      "title": "Plafond ou plancher haut",
+      "description": "Estimez le matériau nécessaire pour une couche d’isolation homogène sur une surface plane."
+    },
+    {
+      "title": "Commande avec marge de coupe",
+      "description": "Ajoutez un surplus pour les découpes autour des poutres, gaines et bords de chantier."
+    },
+    {
+      "title": "Comparaison de formats",
+      "description": "Comparez plusieurs produits selon leur couverture et leur volume avant de passer commande."
+    }
   ],
   "examples": [
     {
-      "title": "Exemple",
-      "input": "Surface : 100 m², Épaisseur : 20 cm, Couverture par colis : 6 m², Marge : 10 %, Volume du colis : 1,2 m³",
-      "output": "Affiche le volume total, la surface avec marge et le nombre de colis nécessaires.",
-      "description": "Utile pour estimer le matériau avant l’achat de laine minérale."
+      "title": "Combles aménagés",
+      "input": "Surface : 84 m², Épaisseur : 22 cm, Couverture par colis : 6,4 m², Perte : 12 %, Volume du colis : 1,15 m³",
+      "output": "Affiche le volume total nécessaire et le nombre de colis arrondi au supérieur.",
+      "description": "Utile pour commander de la laine minérale pour des combles avec plusieurs pentes."
     },
     {
-      "title": "Exemple",
-      "input": "Surface : 45 m², Épaisseur : 15 cm, Couverture par colis : 4,5 m², Marge : 8 %, Volume du colis : 0,9 m³",
-      "output": "Indique le volume requis et le nombre de colis pour un petit chantier.",
-      "description": "Pratique pour l’isolation de murs ou de plafonds."
+      "title": "Cloison intérieure",
+      "input": "Surface : 31,5 m², Épaisseur : 12 cm, Couverture par colis : 4,8 m², Perte : 7 %, Volume du colis : 0,72 m³",
+      "output": "Montre le volume requis, la surface ajustée et le nombre minimal de colis.",
+      "description": "Pratique pour un doublage intérieur sur une seule paroi."
+    },
+    {
+      "title": "Petit plafond",
+      "input": "Surface : 18 m², Épaisseur : 10 cm, Couverture par rouleau : 3,6 m², Perte : 5 %, Volume du colis : 0,36 m³",
+      "output": "Calcule le volume nécessaire et le nombre de rouleaux à acheter.",
+      "description": "Adapté à une petite surface de plafond avec indication en rouleaux."
     }
   ],
   "faq": [
     {
-      "question": "Comment calculer la quantité de laine minérale nécessaire ?",
-      "answer": "Multipliez la surface par l’épaisseur convertie en mètres pour obtenir le volume d’isolant. Puis divisez par le volume par colis et ajoutez une marge si nécessaire."
+      "question": "Que représente le résultat en m³ ?",
+      "answer": "Il s’agit du volume réel de laine minérale nécessaire pour couvrir la surface à l’épaisseur indiquée. Comparez-le au volume affiché sur l’emballage."
     },
     {
-      "question": "Cet outil convient-il aux combles ?",
-      "answer": "Oui. Il convient aux combles, murs et plafonds."
+      "question": "Dois-je saisir l’épaisseur finale ou celle du produit ?",
+      "answer": "Saisissez l’épaisseur que vous voulez obtenir dans l’ouvrage. Si l’isolant est posé en deux couches ou compressé, tenez-en compte dans votre calcul."
     },
     {
-      "question": "Pourquoi ajouter une marge ?",
-      "answer": "La marge couvre les découpes, ajustements et petites pertes pendant la pose."
+      "question": "Pourquoi le nombre de colis est-il arrondi ?",
+      "answer": "Parce qu’on n’achète pas une fraction de colis ou de rouleau. Le calcul est donc arrondi à l’unité supérieure."
     },
     {
-      "question": "Puis-je l’utiliser pour des rouleaux et des colis ?",
-      "answer": "Oui. Le résultat indique le nombre de rouleaux ou de colis selon le volume et la couverture de l’emballage."
+      "question": "Que faire si la couverture et le volume ne proviennent pas de la même fiche produit ?",
+      "answer": "Utilisez les données d’un seul produit. Mélanger des valeurs provenant de produits différents peut fausser la quantité à commander."
+    },
+    {
+      "question": "Puis-je calculer plusieurs couches d’isolant ?",
+      "answer": "Oui, mais il vaut mieux calculer chaque couche séparément si l’épaisseur ou le type de laine change. Le résultat sera plus fiable."
     }
   ],
-  "uiLabels": {
-    "copy": "Copier",
-    "copied": "Copié",
-    "input": "Entrée",
-    "output": "Sortie",
-    "placeholder": "Saisir une valeur",
-    "indent": "Retrait",
-    "removeComments": "Supprimer les commentaires",
-    "preview": "Aperçu",
-    "source": "Source",
-    "sanitizedHtml": "HTML nettoyé",
-    "plainText": "Texte brut",
-    "summary": "Résumé",
-    "total": "Total",
-    "links": "Liens",
-    "images": "Images",
-    "errors": "Erreurs",
-    "warnings": "Avertissements",
-    "valid": "Valide",
-    "invalid": "Non valide",
-    "href": "Href",
-    "text": "Texte",
-    "rel": "Rel",
-    "target": "Cible",
-    "alt": "Alt",
-    "width": "Largeur",
-    "height": "Hauteur",
-    "empty": "Vide",
-    "outputReady": "Résultat prêt",
-    "cleanedHtml": "HTML nettoyé",
-    "formattedHtml": "HTML formaté",
-    "minifiedHtml": "HTML minifié",
-    "markdown": "Markdown",
-    "extractedImages": "Images extraites",
-    "extractedLinks": "Liens extraits",
-    "validationSummary": "Résumé de validation",
-    "prettyHtml": "HTML lisible",
-    "encodedText": "Texte encodé",
-    "file": "Fichier",
-    "size": "Taille",
-    "format": "Format",
-    "quality": "Qualité",
-    "colorOne": "Couleur 1",
-    "colorTwo": "Couleur 2",
-    "background": "Arrière-plan",
-    "foreground": "Premier plan",
-    "angle": "Angle",
-    "margin": "Marge",
-    "level": "Niveau",
-    "gradientType": "Type de dégradé",
-    "linear": "Linéaire",
-    "radial": "Radial",
-    "blur": "Flou",
-    "spread": "Étendue",
-    "offsetX": "Décalage X",
-    "offsetY": "Décalage Y",
-    "opacity": "Opacité",
-    "inset": "Intérieur",
-    "cssCode": "Code CSS",
-    "snippet": "Extrait",
-    "download": "Télécharger",
-    "downloadSvg": "Télécharger SVG",
-    "downloadPng": "Télécharger PNG",
-    "downloadAll": "Tout télécharger",
-    "upload": "Importer",
-    "title": "Titre",
-    "description": "Description",
-    "canonicalUrl": "URL canonique",
-    "siteName": "Nom du site",
-    "ogImage": "Image OG",
-    "clear": "Effacer",
-    "generatedQr": "QR généré",
-    "placeholderImage": "Image de remplacement",
-    "faviconSet": "Jeu de favicons",
-    "keepAspectRatio": "Conserver le ratio",
-    "cropX": "Recadrage X",
-    "cropY": "Recadrage Y",
-    "cropWidth": "Largeur du recadrage",
-    "cropHeight": "Hauteur du recadrage",
-    "originalSize": "Taille originale",
-    "outputSize": "Taille de sortie",
-    "savedSize": "Taille économisée",
-    "result": "Résultat",
-    "base64": "Base64",
-    "mimeType": "Type MIME",
-    "resizedImage": "Image redimensionnée",
-    "compressedImage": "Image compressée",
-    "croppedImage": "Image recadrée",
-    "convertedImage": "Image convertie",
-    "decodedImage": "Image décodée",
-    "imagePreview": "Aperçu de l’image",
-    "camera": "Appareil photo",
-    "lens": "Objectif",
-    "dateTaken": "Date de prise de vue",
-    "resolution": "Résolution",
-    "fileSize": "Taille du fichier",
-    "iso": "ISO",
-    "exposure": "Exposition",
-    "aperture": "Ouverture",
-    "focalLength": "Distance focale",
-    "flash": "Flash",
-    "orientation": "Orientation",
-    "latitude": "Latitude",
-    "longitude": "Longitude",
-    "openMap": "Ouvrir la carte",
-    "rawMetadata": "Métadonnées brutes",
-    "noMetadataFound": "Aucune métadonnée trouvée",
-    "gpsLocation": "Position GPS",
-    "metadataSummary": "Résumé des métadonnées"
-  },
   "seo": {
     "title": "Calculatrice de laine minérale",
-    "description": "Estimez la quantité de laine minérale nécessaire pour des combles, des murs ou un plafond, ainsi que le nombre de colis ou rouleaux à acheter.",
+    "description": "Calculez le volume de laine minérale et le nombre de colis ou rouleaux à acheter pour combles, murs ou plafond.",
     "keywords": [
-      "calculatrice laine minérale",
-      "combien de laine minérale faut-il",
+      "calculatrice de laine minérale",
+      "laine minérale m3",
       "isolation combles",
       "isolation murs",
-      "isolation plafond",
-      "calcul laine minérale"
+      "rouleaux laine minérale"
     ]
   }
 }

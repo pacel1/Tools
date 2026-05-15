@@ -4,176 +4,88 @@
   "slug": "roof-calculator",
   "h1": "Roof Calculator",
   "title": "Roof Calculator",
-  "shortDescription": "Estimate roof area, roofing material coverage, membrane needs, and the number of packs or sheets required.",
-  "metaTitle": "Roof Calculator - Estimate Roof Area and Materials",
-  "metaDescription": "Calculate roof area, roof area with waste, and how many packs or sheets you need for a simple gable roof.",
-  "intro": "Use this roof calculator to estimate the roof surface area for a simple gable roof and determine how many packs or sheets of roofing material you need, including waste.",
-  "overview": "Enter the building length, width, roof pitch, waste percentage, and coverage per pack or sheet. The calculator estimates the roof area, adds the selected waste allowance, and converts the result into the number of packs or sheets needed.",
+  "shortDescription": "Calculate sloped roof area, add waste, and convert coverage into the number of packs, sheets, or rolls to buy.",
+  "metaTitle": "Roof area and materials",
+  "metaDescription": "Work out sloped roof area, add waste, and estimate tiles, sheets, or membrane rolls for a straightforward roof layout.",
+  "intro": "For a simple pitched roof, this tool estimates the true roof area, adds waste, and converts coverage into packs, sheets, or rolls.",
+  "overview": "Enter the building length and width, roof pitch, waste percentage, and the coverage per pack, sheet, or roll. The calculator then estimates the actual roof surface and the purchase quantity from that unit coverage.\n\nIt is most useful when the roof is regular and the product’s coverage is stated clearly on the packaging or technical sheet. That lets you compare tiles, metal sheets, or underlayment using the same roof size and the same allowance for cuts and overlaps.\n\nIf the roof includes valleys, hips, dormers, offsets, or multiple planes, use the result as a base figure and adjust it for the real layout, trim pieces, and the product’s pack size rules.",
   "howItWorks": [
-    "Enter the building length and width in meters.",
+    "Enter the building length and width in metres.",
     "Set the roof pitch in degrees.",
-    "Choose the waste percentage for cuts and overlaps.",
-    "Provide the coverage per pack or sheet in square meters.",
-    "Get the roof area, total area with waste, and required quantity."
+    "Choose a waste percentage for cuts, overlaps, and fitting losses.",
+    "Enter the coverage per pack, sheet, or roll in square metres.",
+    "Review the roof area, area with waste, and the required quantity."
   ],
   "useCases": [
-    "Estimating how much roof tile you need.",
-    "Planning roofing material orders for a gable roof.",
-    "Checking whether a membrane or sheet quantity is sufficient.",
-    "Getting a quick material estimate before requesting a quote."
+    {
+      "title": "Ordering tiles for a house",
+      "description": "Turn the roof size into the number of tile packs needed before confirming a supplier order."
+    },
+    {
+      "title": "Sizing metal sheets",
+      "description": "Estimate how many profiled sheets or panels are needed when each unit has a known coverage area."
+    },
+    {
+      "title": "Checking membrane rolls",
+      "description": "See whether one roll or several rolls of underlayment will cover the roof with your chosen waste allowance."
+    },
+    {
+      "title": "Setting a material budget",
+      "description": "Build a quantity baseline before requesting a quote from a roofer, merchant, or yard."
+    }
   ],
   "examples": [
     {
-      "title": "Example calculation",
-      "input": "Length 10 m, width 8 m, pitch 30°, waste 10%, coverage 1.2 m2 per pack",
-      "output": "The tool returns the roof area, roof area with waste, and packs needed.",
-      "description": "Helpful for a fast pre-order estimate."
+      "title": "Family home roof",
+      "input": "Length 10 m, width 8 m, pitch 30°, waste 10%, coverage 1.2 m² per pack",
+      "output": "Roof area: 92.4 m². With waste: 101.6 m². Packs needed: 85.",
+      "description": "Useful when tile coverage per pack is known for a regular home roof."
     },
     {
-      "title": "Tiles needed estimate",
-      "input": "Any simple gable roof with known pitch and coverage per tile pack",
-      "output": "See how many roof tiles or bundles to buy.",
-      "description": "Useful when searching for how many roof tiles you need."
+      "title": "Workshop sheet order",
+      "input": "Length 14 m, width 6.5 m, pitch 22°, waste 7%, coverage 0.85 m² per sheet",
+      "output": "Roof area: 72.8 m². With waste: 77.9 m². Sheets needed: 92.",
+      "description": "Fits a small workshop or garage roof where sheets are bought by stated coverage."
+    },
+    {
+      "title": "Membrane roll check",
+      "input": "Length 12 m, width 9 m, pitch 35°, waste 12%, coverage 50 m² per roll",
+      "output": "Roof area: 132.5 m². With waste: 148.4 m². Rolls needed: 3.",
+      "description": "Helps confirm whether two rolls are enough or a third is needed for the full roof."
     }
   ],
   "faq": [
     {
-      "question": "Does this calculator work for complex roofs?",
-      "answer": "It is based on a simple gable roof assumption. For hips, valleys, dormers, or irregular shapes, use it only as a rough estimate."
+      "question": "What roof shape does this calculator assume?",
+      "answer": "It assumes one regular pitched roof setup, such as a straightforward gable roof. Complex intersections need manual adjustment."
     },
     {
-      "question": "Can I use it to estimate roof tiles?",
-      "answer": "Yes. Enter the coverage per pack or sheet to estimate how many roof tiles, sheets, or bundles you need."
+      "question": "Why do pitch and waste both change the result?",
+      "answer": "Pitch increases the true surface compared with the building footprint, while waste adds material for trimming, overlaps, and installation losses."
     },
     {
-      "question": "What does the waste percentage mean?",
-      "answer": "It accounts for cuts, overlaps, and typical installation losses."
+      "question": "How should I enter the coverage value?",
+      "answer": "Use the manufacturer’s coverage for one pack, sheet, or roll. A net m²-per-unit value gives the most meaningful result."
     },
     {
-      "question": "Is the result exact?",
-      "answer": "No, it is an estimate. Always verify with the material manufacturer and your roofer."
+      "question": "Why can the quantity seem larger than expected?",
+      "answer": "A steep roof, small unit coverage, or a high waste allowance can increase the total quickly. Check whether the product is sold per piece, bundle, or full carton."
+    },
+    {
+      "question": "Can I place an order using only this result?",
+      "answer": "Use it as a material estimate, then confirm ridge parts, starters, flashings, and the exact packaging format before ordering."
     }
   ],
-  "uiLabels": {
-    "copy": "Copy",
-    "copied": "Copied",
-    "input": "Input",
-    "output": "Output",
-    "placeholder": "Enter value",
-    "indent": "Indent",
-    "removeComments": "Remove comments",
-    "preview": "Preview",
-    "source": "Source",
-    "sanitizedHtml": "Sanitized HTML",
-    "plainText": "Plain text",
-    "summary": "Summary",
-    "total": "Total",
-    "links": "Links",
-    "images": "Images",
-    "errors": "Errors",
-    "warnings": "Warnings",
-    "valid": "Valid",
-    "invalid": "Invalid",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Width",
-    "height": "Height",
-    "empty": "Empty",
-    "outputReady": "Output ready",
-    "cleanedHtml": "Cleaned HTML",
-    "formattedHtml": "Formatted HTML",
-    "minifiedHtml": "Minified HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extracted images",
-    "extractedLinks": "Extracted links",
-    "validationSummary": "Validation summary",
-    "prettyHtml": "Pretty HTML",
-    "encodedText": "Encoded text",
-    "file": "File",
-    "size": "Size",
-    "format": "Format",
-    "quality": "Quality",
-    "colorOne": "Color 1",
-    "colorTwo": "Color 2",
-    "background": "Background",
-    "foreground": "Foreground",
-    "angle": "Angle",
-    "margin": "Margin",
-    "level": "Level",
-    "gradientType": "Gradient type",
-    "linear": "Linear",
-    "radial": "Radial",
-    "blur": "Blur",
-    "spread": "Spread",
-    "offsetX": "Offset X",
-    "offsetY": "Offset Y",
-    "opacity": "Opacity",
-    "inset": "Inset",
-    "cssCode": "CSS code",
-    "snippet": "Snippet",
-    "download": "Download",
-    "downloadSvg": "Download SVG",
-    "downloadPng": "Download PNG",
-    "downloadAll": "Download all",
-    "upload": "Upload",
-    "title": "Title",
-    "description": "Description",
-    "canonicalUrl": "Canonical URL",
-    "siteName": "Site name",
-    "ogImage": "OG image",
-    "clear": "Clear",
-    "generatedQr": "Generated QR",
-    "placeholderImage": "Placeholder image",
-    "faviconSet": "Favicon set",
-    "keepAspectRatio": "Keep aspect ratio",
-    "cropX": "Crop X",
-    "cropY": "Crop Y",
-    "cropWidth": "Crop width",
-    "cropHeight": "Crop height",
-    "originalSize": "Original size",
-    "outputSize": "Output size",
-    "savedSize": "Saved size",
-    "result": "Result",
-    "base64": "Base64",
-    "mimeType": "MIME type",
-    "resizedImage": "Resized image",
-    "compressedImage": "Compressed image",
-    "croppedImage": "Cropped image",
-    "convertedImage": "Converted image",
-    "decodedImage": "Decoded image",
-    "imagePreview": "Image preview",
-    "camera": "Camera",
-    "lens": "Lens",
-    "dateTaken": "Date taken",
-    "resolution": "Resolution",
-    "fileSize": "File size",
-    "iso": "ISO",
-    "exposure": "Exposure",
-    "aperture": "Aperture",
-    "focalLength": "Focal length",
-    "flash": "Flash",
-    "orientation": "Orientation",
-    "latitude": "Latitude",
-    "longitude": "Longitude",
-    "openMap": "Open map",
-    "rawMetadata": "Raw metadata",
-    "noMetadataFound": "No metadata found",
-    "gpsLocation": "GPS location",
-    "metadataSummary": "Metadata summary"
-  },
   "seo": {
-    "title": "Roof Calculator - Estimate Roof Area and Materials",
-    "description": "Calculate roof area, roof area with waste, and how many packs or sheets you need for a simple gable roof.",
+    "title": "Roof area and materials",
+    "description": "Work out sloped roof area, add waste, and estimate tiles, sheets, or membrane rolls for a straightforward roof layout.",
     "keywords": [
       "roof calculator",
-      "roof area calculator",
-      "how many roof tiles",
-      "roofing material calculator",
-      "gable roof calculator",
-      "membrane calculator"
+      "roof area estimate",
+      "roof tiles needed",
+      "sheet roofing calculator",
+      "pitched roof materials",
+      "roof coverage calculator"
     ]
   }
 }

@@ -3,158 +3,91 @@
   "locale": "es",
   "slug": "base64-a-imagen",
   "h1": "Base64 a imagen",
-  "title": "Convertidor de Base64 a imagen",
-  "shortDescription": "Decodifica cadenas Base64 de imágenes y previsualiza al instante el resultado descargable.",
-  "metaTitle": "Convertidor de Base64 a imagen | Decodifica y previsualiza imágenes",
-  "metaDescription": "Convierte Base64 a imagen online. Decodifica cadenas Base64, previsualiza el resultado al instante y descarga la imagen generada en segundos.",
-  "intro": "Convierte datos de imagen en Base64 en una imagen visible al instante. Pega una cadena Base64 o una URL de datos, revisa la vista previa en tu navegador y descarga el resultado sin instalar nada.",
-  "overview": "Esta herramienta de Base64 a imagen funciona en el navegador y decodifica rápidamente datos de imagen codificados. Es útil para previsualizar, comprobar y descargar gráficos guardados como Base64, tanto para desarrolladores como para pruebas y trabajo con data URLs.",
+  "title": "Decodificador Base64 a imagen",
+  "shortDescription": "Decodifica Base64 de imágenes y ve el resultado renderizado antes de descargarlo.",
+  "metaTitle": "Decodificador Base64 a imagen",
+  "metaDescription": "Decodifica cadenas Base64 de imágenes o data URLs, visualiza el resultado en el navegador y descarga el archivo generado.",
+  "intro": "Pega una cadena Base64 de imagen o una data URL para ver la imagen al instante en tu navegador y descargar el archivo decodificado.",
+  "overview": "Esta herramienta convierte datos de imagen codificados en un archivo visual normal que puedes revisar, reutilizar o guardar. Acepta tanto Base64 plano como data URLs completas, así que funciona bien con contenido copiado desde APIs, atributos HTML o registros almacenados.\n\nTras la decodificación, la imagen se muestra como vista previa para comprobar que el MIME, el contenido y el resultado visual coinciden con lo esperado. Si la cadena está incompleta, alterada o no contiene datos de imagen reales, la vista previa no aparecerá y evitará que descargues un archivo engañoso.",
   "howItWorks": [
-    "Pega tu cadena Base64 o una data URL completa en el campo de entrada.",
-    "La herramienta decodifica el contenido y genera una vista previa de la imagen.",
-    "Comprueba la validez, el tipo de archivo y la calidad visual.",
-    "Descarga el archivo de imagen generado cuando lo necesites."
+    "Pega una cadena Base64 o una data URL completa en el campo de entrada.",
+    "La herramienta decodifica la carga e intenta construir una imagen.",
+    "Revisa la vista previa para confirmar formato y contenido visual.",
+    "Descarga la imagen decodificada cuando el resultado sea correcto."
   ],
   "useCases": [
-    "Decodificar imágenes Base64 desde APIs, JSON o bases de datos.",
-    "Previsualizar imágenes incrustadas en HTML, CSS o configuraciones de apps.",
-    "Verificar si una cadena codificada es una imagen válida antes de usarla.",
-    "Extraer rápidamente una imagen visible desde una data URL para pruebas o depuración."
+    {
+      "title": "Avatares devueltos por una API",
+      "description": "Decodifica los datos de usuario que envía el backend para inspeccionar exactamente la imagen que se guardará o mostrará."
+    },
+    {
+      "title": "Fragmentos de correo HTML y CMS",
+      "description": "Renderiza imágenes incrustadas copiadas de plantillas, correos o contenido enriquecido antes de reutilizarlas."
+    },
+    {
+      "title": "Diagnóstico de campos de imagen rotos",
+      "description": "Comprueba si un campo contiene una data URL válida, una cadena Base64 recortada o datos que no son una imagen."
+    },
+    {
+      "title": "Extraer activos generados",
+      "description": "Convierte un Base64 generado por una app, un script o una exportación de diseño en un archivo que puedas abrir y compartir."
+    }
   ],
   "examples": [
     {
-      "title": "Cómo usar Base64 a imagen",
-      "input": "Pega una cadena Base64 de imagen o una URL data:image/...",
-      "output": "Una vista previa inmediata y un archivo listo para descargar.",
-      "description": "Ideal para revisar imágenes copiadas desde respuestas de API o código frontend."
+      "title": "Decodificar un avatar PNG",
+      "input": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAQAAAAAYLlVAAAAF0lEQVR42u3BAQ0AAADCIPunNscwYAAAAAAAAAB4G4xQAAaM9l7sAAAAASUVORK5CYII=",
+      "output": "Vista previa de PNG 64×64 lista para descargar.",
+      "description": "Útil cuando la imagen de perfil llega como una data URL incrustada."
     },
     {
-      "title": "Cuándo usarlo",
-      "input": "Contenido de imagen codificado",
-      "output": "Vista previa legible de la imagen",
-      "description": "Muy útil cuando necesitas confirmar la imagen sin decodificarla manualmente."
+      "title": "Abrir un logo Base64 desde JSON",
+      "input": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABHklEQVR4nO2WsQ3CMBREz0o7qI4kYgM0wI4QK2gK6qgJ6mA5gQ0QK1gYt4dB8Nw0m3QkV3c9m5b5m0m8xWq2Qqf8r3xgQf5gM8j8x2YVQwQW2gQ9m9j0gk4m0m0j8kQ8G2jQ3C0g3Q0v5tqgYQ8A9m4QKQ0wYzQm3mS8n8v4wY8Q2wQw2wQw2wQw2wQw2wQw2wQw2wQw2wQw2wQw2wQw2wQw2wQw2wQw2wQw2wQw",
+      "output": "Vista previa de imagen generada a partir de una cadena de muestra recortada.",
+      "description": "Sirve para verificar si un campo Base64 copiado desde JSON está completo y es válido."
+    },
+    {
+      "title": "Comprobar una imagen SVG en CSS",
+      "input": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTI4IiBoZWlnaHQ9IjEyOCIgdmlld0JveD0iMCAwIDEyOCAxMjgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjEyOCIgaGVpZ2h0PSIxMjgiIGZpbGw9IiMwMDc4ZGYiLz48L3N2Zz4=",
+      "output": "Vista previa SVG con un cuadrado azul uniforme.",
+      "description": "Práctico cuando una hoja de estilos o un componente guarda gráficos como data URLs codificadas."
     }
   ],
   "faq": [
     {
-      "question": "¿Qué tipo de Base64 admite esta herramienta?",
-      "answer": "Admite cadenas Base64 estándar de imágenes y URLs de datos como data:image/png;base64,..."
+      "question": "¿Qué es mejor pegar: Base64 puro o una data URL?",
+      "answer": "Ambos funcionan. La data URL es más práctica cuando quieres conservar el tipo MIME, y el Base64 puro basta si ya conoces el formato."
     },
     {
-      "question": "¿Las imágenes se guardan en un servidor?",
-      "answer": "No. La conversión se realiza en tu navegador, así que el procesamiento es local."
+      "question": "¿Por qué a veces una cadena decodifica pero no muestra imagen?",
+      "answer": "Puede estar incompleta, dañada o tener un tipo MIME incorrecto. Un Base64 válido puede seguir fallando si los bytes no corresponden a una imagen legible."
     },
     {
-      "question": "¿Puedo convertir cualquier texto Base64 en una imagen?",
-      "answer": "Solo el Base64 de imagen válido se mostrará correctamente. Los datos corruptos o que no sean imágenes no producirán un resultado útil."
+      "question": "¿Se pueden decodificar SVG, PNG y JPEG?",
+      "answer": "Sí, siempre que el SVG esté codificado correctamente como data URL o Base64. El contenido también debe ser un SVG bien formado."
     },
     {
-      "question": "¿Puedo descargar la imagen decodificada?",
-      "answer": "Sí. Después de ver la vista previa, puedes descargar el archivo de imagen generado."
+      "question": "¿Qué hago si el Base64 contiene saltos de línea o espacios?",
+      "answer": "Los espacios extra pueden romper la decodificación. Elimina el formato sobrante si la vista previa no aparece."
+    },
+    {
+      "question": "¿Por qué el archivo descargado no conserva el nombre original?",
+      "answer": "Base64 no incluye el nombre del archivo. La herramienta decodifica el contenido, pero el nombre final se asigna al descargarlo."
+    },
+    {
+      "question": "¿Se puede forzar una imagen si el Base64 no contiene gráficos?",
+      "answer": "No. Si los bytes no son datos de imagen, no se generará un archivo visual útil."
     }
   ],
-  "uiLabels": {
-    "copy": "Copiar",
-    "copied": "Copiado",
-    "input": "Entrada",
-    "output": "Salida",
-    "placeholder": "Pega aquí una cadena Base64 de imagen o una URL de datos",
-    "indent": "Indentación",
-    "removeComments": "Eliminar comentarios",
-    "preview": "Vista previa",
-    "source": "Fuente",
-    "sanitizedHtml": "HTML limpiado",
-    "plainText": "Texto plano",
-    "summary": "Resumen",
-    "total": "Total",
-    "links": "Enlaces",
-    "images": "Imágenes",
-    "errors": "Errores",
-    "warnings": "Advertencias",
-    "valid": "Válido",
-    "invalid": "No válido",
-    "href": "Href",
-    "text": "Texto",
-    "rel": "Rel",
-    "target": "Destino",
-    "alt": "Alt",
-    "width": "Ancho",
-    "height": "Alto",
-    "empty": "Vacío",
-    "outputReady": "Resultado listo",
-    "cleanedHtml": "HTML limpio",
-    "formattedHtml": "HTML formateado",
-    "minifiedHtml": "HTML minimizado",
-    "markdown": "Markdown",
-    "extractedImages": "Imágenes extraídas",
-    "extractedLinks": "Enlaces extraídos",
-    "validationSummary": "Resumen de validación",
-    "prettyHtml": "HTML legible",
-    "encodedText": "Texto codificado",
-    "file": "Archivo",
-    "size": "Tamaño",
-    "format": "Formato",
-    "quality": "Calidad",
-    "colorOne": "Color 1",
-    "colorTwo": "Color 2",
-    "background": "Fondo",
-    "foreground": "Primer plano",
-    "angle": "Ángulo",
-    "margin": "Margen",
-    "level": "Nivel",
-    "gradientType": "Tipo de degradado",
-    "linear": "Lineal",
-    "radial": "Radial",
-    "blur": "Desenfoque",
-    "spread": "Extensión",
-    "offsetX": "Desplazamiento X",
-    "offsetY": "Desplazamiento Y",
-    "opacity": "Opacidad",
-    "inset": "Inset",
-    "cssCode": "Código CSS",
-    "snippet": "Fragmento",
-    "download": "Descargar",
-    "downloadSvg": "Descargar SVG",
-    "downloadPng": "Descargar PNG",
-    "downloadAll": "Descargar todo",
-    "upload": "Subir",
-    "title": "Título",
-    "description": "Descripción",
-    "canonicalUrl": "URL canónica",
-    "siteName": "Nombre del sitio",
-    "ogImage": "Imagen OG",
-    "clear": "Limpiar",
-    "generatedQr": "Vista previa del codigo QR",
-    "placeholderImage": "Vista previa de la imagen",
-    "faviconSet": "Conjunto de favicon",
-    "keepAspectRatio": "Mantener la relación de aspecto",
-    "cropX": "Recorte X",
-    "cropY": "Recorte Y",
-    "cropWidth": "Ancho del recorte",
-    "cropHeight": "Alto del recorte",
-    "originalSize": "Tamaño original",
-    "outputSize": "Tamaño de salida",
-    "savedSize": "Tamaño ahorrado",
-    "result": "Resultado",
-    "base64": "Base64",
-    "mimeType": "Tipo MIME",
-    "resizedImage": "Imagen redimensionada",
-    "compressedImage": "Imagen comprimida",
-    "croppedImage": "Imagen recortada",
-    "convertedImage": "Imagen convertida",
-    "decodedImage": "Imagen decodificada",
-    "imagePreview": "Vista previa de la imagen"
-  },
   "seo": {
-    "title": "Convertidor de Base64 a imagen",
-    "description": "Convierte Base64 a imagen online con vista previa y descarga instantáneas. Decodifica cadenas Base64 de imágenes rápidamente en tu navegador.",
+    "title": "Decodificador Base64 a imagen",
+    "description": "Decodifica cadenas Base64 de imágenes o data URLs, visualiza el resultado en el navegador y descarga el archivo generado.",
     "keywords": [
       "base64 a imagen",
       "decodificador base64 imagen",
       "decodificar base64 imagen",
-      "convertidor base64",
-      "vista previa de imagen",
-      "data url a imagen"
+      "data url a imagen",
+      "imagen desde base64"
     ]
   }
 }

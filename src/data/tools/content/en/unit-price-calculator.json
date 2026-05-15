@@ -4,42 +4,75 @@
   "slug": "unit-price-calculator",
   "h1": "Unit Price Calculator",
   "title": "Unit Price Calculator",
-  "shortDescription": "Compare price per unit from total cost and quantity with fast results, simple inputs and practical examples.",
-  "overview": "Compare price per unit from total cost and quantity. Use this tool to get a clear result quickly from simple input on the same page. It is useful for everyday checks, comparisons and small tasks when you need a fast online answer.",
+  "shortDescription": "Find the price per unit from a total cost and quantity, then compare packs, sizes, and offers with clear results.",
+  "metaTitle": "Unit Price Calculator",
+  "metaDescription": "Find the price per unit from cost and quantity, then compare packs, sizes, and offers with clear results.",
+  "intro": "Calculate price per unit by dividing total cost by quantity, so you can compare offers on the same basis.",
+  "overview": "Use this calculator to turn a total price and a quantity into a clear unit price. It helps when products are sold in different pack sizes, weights, volumes, or counts and you want a like-for-like comparison.\n\nEnter the total cost and the number of units, and the tool returns the price for one unit. This makes it easier to spot whether a larger pack is truly cheaper or just looks cheaper at first glance.",
   "howItWorks": [
-    "Enter the required value or text into the form.",
-    "The conversion, calculation or transformation runs instantly in the browser.",
-    "Review the result and continue with related tools if you need another step."
+    "Enter the total cost and the quantity.",
+    "The calculator divides cost by quantity to get a unit price.",
+    "Compare the result against other offers or pack sizes."
+  ],
+  "useCases": [
+    {
+      "title": "Compare two grocery packs",
+      "description": "Check which cereal box, rice bag, or yogurt pack gives the lower cost per gram, litre, or item."
+    },
+    {
+      "title": "Review supplier quotes",
+      "description": "Compare bulk prices for screws, paper, cleaning supplies, or raw materials using the same unit basis."
+    },
+    {
+      "title": "Judge subscription bundles",
+      "description": "Work out the cost per seat, per month, or per feature when vendors sell different package sizes."
+    }
   ],
   "examples": [
     {
-      "title": "Common use case",
-      "input": "12 for 3 units",
-      "output": "4 per unit",
-      "description": "Shows a common use case with a clear input and result."
+      "title": "Price per kilogram",
+      "input": "18.00 total cost, 1.5 kg",
+      "output": "12.00 per kg",
+      "description": "Shows how to convert a pack price into a kilogram rate for easy comparison."
     },
     {
-      "title": "Another quick example",
-      "input": "12 for 3 units",
-      "output": "4 per unit",
-      "description": "Useful for quick checks, comparisons or repeat tasks."
+      "title": "Price per litre",
+      "input": "7.49 total cost, 750 ml",
+      "output": "9.99 per litre",
+      "description": "Useful when two bottles have different volumes but you want the same unit basis."
+    },
+    {
+      "title": "Price per item",
+      "input": "24.00 total cost, 8 items",
+      "output": "3.00 per item",
+      "description": "Helps compare multipacks, office supplies, or hardware sold by count."
     }
   ],
   "faq": [
     {
-      "question": "How accurate is this tool?",
-      "answer": "The result is based on the input you provide and the calculation or transformation shown on the page."
+      "question": "What if my quantity is in grams or millilitres?",
+      "answer": "Convert to the unit you want to compare first, or enter the quantity in that same unit so the result matches your comparison target."
     },
     {
-      "question": "Can I use this tool on mobile?",
-      "answer": "Yes. The page works on desktop and mobile screens with a simple input and result layout."
+      "question": "Can I compare packs with different sizes directly?",
+      "answer": "Yes, as long as both results are converted to the same unit. For example, compare both packs per kilogram or per litre."
+    },
+    {
+      "question": "Why does my result look smaller than the shelf label?",
+      "answer": "Some labels show the total pack price, not the unit price. This calculator shows the cost for one unit of the measure you entered."
+    },
+    {
+      "question": "What mistake causes the wrong result most often?",
+      "answer": "Using the wrong quantity unit, such as entering 750 when the comparison should be per litre instead of per millilitre, will change the result."
     }
   ],
   "seo": {
     "title": "Unit Price Calculator",
-    "description": "Compare price per unit from total cost and quantity. Free online unit price calculator with instant results.",
+    "description": "Find the price per unit from cost and quantity, then compare packs, sizes, and offers with clear results.",
     "keywords": [
-      "unit price calculator"
+      "unit price calculator",
+      "price per unit",
+      "unit cost"
     ]
   }
 }

@@ -4,106 +4,87 @@
   "slug": "miniificateur-html",
   "h1": "Minificateur HTML",
   "title": "Minificateur HTML",
-  "shortDescription": "Minifiez le HTML en ligne pour réduire la taille du fichier sans appeler d’API externes.",
-  "metaTitle": "Minificateur HTML en ligne | Compressez le HTML rapidement",
-  "metaDescription": "Minifiez le HTML dans votre navigateur pour réduire la taille du fichier, supprimer les espaces inutiles et optimiser le balisage sans API externes.",
-  "intro": "Minifiez le HTML dans votre navigateur pour réduire la taille du code, supprimer les espaces inutiles et préparer votre balisage pour la production. Cet outil fonctionne côté client et n’envoie pas votre code vers des services externes.",
-  "overview": "Utilisez ce minificateur HTML pour compresser rapidement et proprement votre balisage. Il supprime les espaces superflus, les sauts de ligne et les commentaires lorsque c’est pertinent, tout en conservant la structure du document. Comme il s’exécute côté client, c’est un choix pratique pour les développeurs qui veulent des pages plus rapides, un code source plus propre et aucune dépendance à une API.",
+  "shortDescription": "Minifiez le HTML dans le navigateur pour alléger le balisage sans envoyer le code vers un service externe.",
+  "metaTitle": "Minificateur HTML | Compresser le HTML",
+  "metaDescription": "Minifiez le HTML dans votre navigateur pour réduire la taille du fichier, supprimer les espaces superflus et préparer le balisage au déploiement.",
+  "intro": "Collez votre HTML et obtenez une version plus compacte avec les espaces inutiles, les retours à la ligne et les commentaires optionnels retirés.",
+  "overview": "Ce minificateur HTML compresse le balisage sans modifier sa structure essentielle. Il est utile pour les modèles, les pages statiques, les fragments de composants et le HTML exporté depuis des outils qui ajoutent beaucoup d'indentation ou de lignes vides.\n\nLe traitement s'exécute dans le navigateur, ce qui permet de garder votre code local pendant l'opération. Vous pouvez vérifier le résultat avant de le copier dans un build, un CMS ou un modèle, et décider facilement si les commentaires doivent rester ou disparaître.",
   "howItWorks": [
     "Collez votre HTML dans le champ de saisie.",
-    "Choisissez les options de nettoyage disponibles, par exemple la suppression des commentaires.",
+    "Choisissez si les commentaires doivent être supprimés.",
     "Lancez la minification pour compresser le balisage.",
     "Copiez le HTML minifié et utilisez-le dans votre projet."
   ],
   "useCases": [
-    "Préparer du HTML pour une mise en production.",
-    "Réduire la taille d’un modèle avant la publication d’un site.",
-    "Nettoyer du HTML exporté depuis un éditeur ou un générateur.",
-    "Optimiser des extraits pour des modèles d’e-mail ou des pages statiques.",
-    "Mesurer le gain obtenu en supprimant les espaces et les commentaires."
+    {
+      "title": "Sortie de build avant mise en ligne",
+      "description": "Réduire la taille du HTML final avant la publication pour obtenir un fichier plus compact dans la chaîne de livraison."
+    },
+    {
+      "title": "Nettoyage des exports d’outils",
+      "description": "Retirer l’indentation et les blocs de commentaires d’un HTML généré par un constructeur de site, un éditeur ou un générateur."
+    },
+    {
+      "title": "Publication de pages statiques",
+      "description": "Préparer un HTML rédigé à la main pour une page d’atterrissage quand on veut un fichier source plus court."
+    },
+    {
+      "title": "Ajustement de modèles d’e-mail",
+      "description": "Compresser des fragments HTML utilisés dans des e-mails transactionnels ou promotionnels, où les caractères inutiles doivent être limités."
+    },
+    {
+      "title": "Contrôle de l’impact du balisage",
+      "description": "Mesurer combien les espaces et les commentaires augmentent réellement la taille d’un document précis."
+    }
   ],
   "examples": [
     {
-      "title": "Minification de base",
-      "input": "<div>\n  <h1>Title</h1>\n  <p> Hello world </p>\n</div>",
-      "output": "<div><h1>Title</h1><p>Hello world</p></div>",
-      "description": "Supprime les sauts de ligne et les espaces en trop sans casser le balisage valide."
+      "title": "Aplatir les espaces imbriqués",
+      "input": "<main>\n  <article>\n    <h2>About</h2>\n    <p>   Built for release   </p>\n  </article>\n</main>",
+      "output": "<main><article><h2>About</h2><p>Built for release</p></article></main>",
+      "description": "Supprime les sauts de ligne et les espaces répétés sans modifier la structure des balises."
     },
     {
-      "title": "Suppression des commentaires",
-      "input": "<section>\n  <!-- note -->\n  <span>Text</span>\n</section>",
-      "output": "<section><span>Text</span></section>",
-      "description": "Retire les commentaires HTML lorsque l’option est activée."
+      "title": "Conserver le contenu, retirer les commentaires",
+      "input": "<div class=\"card\">\n  <!-- pricing block -->\n  <strong>$19</strong>\n  <span>per month</span>\n</div>",
+      "output": "<div class=\"card\"><strong>$19</strong><span>per month</span></div>",
+      "description": "Les commentaires HTML disparaissent lorsque l’option de suppression est activée."
+    },
+    {
+      "title": "Raccourcir une liste collée avec indentation",
+      "input": "<ul>\n        <li>One</li>\n        <li>Two</li>\n        <li>Three</li>\n</ul>",
+      "output": "<ul><li>One</li><li>Two</li><li>Three</li></ul>",
+      "description": "Pratique pour les fragments copiés depuis un éditeur avec une indentation importante."
     }
   ],
   "faq": [
     {
-      "question": "Ce minificateur HTML envoie-t-il mon code vers un serveur ?",
-      "answer": "Non. Il fonctionne dans votre navigateur avec une logique côté client uniquement."
+      "question": "Les balises et attributs restent-ils identiques ?",
+      "answer": "La structure HTML est conservée, mais les espaces autour des nœuds de texte peuvent être normalisés et les commentaires supprimés si vous activez cette option."
     },
     {
-      "question": "Peut-il casser mon HTML ?",
-      "answer": "Il est conçu pour conserver une structure valide tout en supprimant les espaces et commentaires inutiles. Vérifiez le résultat si votre balisage dépend d’espaces précis."
+      "question": "Dans quels cas vaut-il mieux éviter la minification ?",
+      "answer": "Évitez-la pour les contenus où les espaces exacts ont une valeur visuelle, par exemple les blocs préformatés ou le texte avec espacement intentionnel."
     },
     {
-      "question": "Puis-je l’utiliser pour du code de production ?",
-      "answer": "Oui. Il convient pour préparer le HTML avant le déploiement, mais il est conseillé de tester le résultat dans votre environnement."
+      "question": "Pourquoi le résultat paraît-il différent après minification ?",
+      "answer": "L’outil supprime les retours à la ligne et compresse les espaces répétés, donc le code source devient plus compact même si l’affichage devrait rester le même."
     },
     {
-      "question": "Supprime-t-il les commentaires ?",
-      "answer": "Oui, si l’option est activée. Vous pouvez aussi les conserver si nécessaire."
+      "question": "Puis-je conserver les commentaires dans le résultat ?",
+      "answer": "Oui. Si la suppression des commentaires est désactivée, ils restent dans le HTML généré."
     }
   ],
-  "uiLabels": {
-    "copy": "Copier",
-    "copied": "Copié",
-    "input": "Entrée",
-    "output": "Sortie",
-    "placeholder": "Collez le HTML ici",
-    "indent": "Retrait",
-    "removeComments": "Supprimer les commentaires",
-    "preview": "Aperçu",
-    "source": "Source",
-    "sanitizedHtml": "HTML nettoyé",
-    "plainText": "Texte brut",
-    "summary": "Résumé",
-    "total": "Total",
-    "links": "Liens",
-    "images": "Images",
-    "errors": "Erreurs",
-    "warnings": "Avertissements",
-    "valid": "Valide",
-    "invalid": "Invalide",
-    "href": "Href",
-    "text": "Texte",
-    "rel": "Rel",
-    "target": "Cible",
-    "alt": "Alt",
-    "width": "Largeur",
-    "height": "Hauteur",
-    "empty": "Vide",
-    "outputReady": "Résultat prêt",
-    "cleanedHtml": "HTML nettoyé",
-    "formattedHtml": "HTML formaté",
-    "minifiedHtml": "HTML minifié",
-    "markdown": "Markdown",
-    "extractedImages": "Images extraites",
-    "extractedLinks": "Liens extraits",
-    "validationSummary": "Résumé de validation",
-    "prettyHtml": "HTML lisible",
-    "encodedText": "Texte encodé"
-  },
   "seo": {
-    "title": "Minificateur HTML en ligne | Compressez le HTML rapidement",
-    "description": "Minifiez le HTML dans votre navigateur pour réduire la taille du fichier, supprimer les espaces inutiles et optimiser le balisage sans API externes.",
+    "title": "Minificateur HTML | Compresser le HTML",
+    "description": "Minifiez le HTML dans votre navigateur pour réduire la taille du fichier, supprimer les espaces superflus et préparer le balisage au déploiement.",
     "keywords": [
       "minificateur html",
       "minifier html",
       "compresser html",
-      "compresser html en ligne",
+      "compresseur html",
       "supprimer espaces html",
-      "nettoyer html",
-      "minificateur html client"
+      "nettoyer html"
     ]
   }
 }

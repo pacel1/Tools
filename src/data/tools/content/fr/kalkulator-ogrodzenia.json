@@ -4,175 +4,87 @@
   "slug": "calculateur-de-cloture",
   "h1": "Calculateur de clôture",
   "title": "Calculateur de clôture à panneaux",
-  "shortDescription": "Calculez le nombre de panneaux, de poteaux et la longueur utile nécessaires pour une clôture à panneaux.",
-  "metaTitle": "Calculateur de clôture - panneaux, poteaux et longueur",
-  "metaDescription": "Calculez rapidement le nombre de panneaux et de poteaux nécessaires. Estimez la longueur utile et ajoutez une marge de perte.",
-  "intro": "Utilisez ce calculateur de clôture pour estimer combien de panneaux et de poteaux vous devez prévoir selon la longueur totale, le portail, le portillon, la largeur du panneau et la marge de perte.",
-  "overview": "Ce calculateur est conçu pour les clôtures à panneaux. Saisissez la longueur de clôture, la largeur du panneau, la largeur du portail, la largeur du portillon et le pourcentage de perte pour obtenir une estimation pratique des matériaux. L’outil retire les ouvertures de la longueur totale, calcule le nombre de panneaux nécessaires et estime les poteaux selon la répartition.",
+  "shortDescription": "Calculez le nombre de panneaux, de poteaux et la longueur utile pour une clôture droite à panneaux.",
+  "metaTitle": "Calculateur de clôture à panneaux",
+  "metaDescription": "Calculez les panneaux, les poteaux et la longueur utile. Intégrez portail, portillon et marge de coupe dans le même chiffrage.",
+  "intro": "Saisissez la longueur totale de la clôture, les largeurs des ouvertures et la largeur du panneau pour obtenir le nombre de panneaux, de poteaux et la longueur restante utile.",
+  "overview": "Ce calculateur est conçu pour les clôtures droites à panneaux. Il retire les ouvertures du portail et du portillon de la longueur totale, puis estime, à partir de la largeur du panneau, combien de travées peuvent être posées et combien de poteaux sont nécessaires.\n\nAjoutez une marge lorsque le tracé exige des coupes, un ajustement sur terrain en pente ou de petits réglages de pose. Le résultat sert de base de commande et ne remplace pas le relevé sur chantier ni la vérification des dimensions du système choisi.",
   "howItWorks": [
     "Saisissez la longueur totale de la clôture en mètres.",
-    "Ajoutez la largeur du panneau, du portail et du portillon.",
-    "Définissez le pourcentage de perte pour les coupes et la réserve de pose.",
-    "Le calculateur détermine la longueur utile de la clôture.",
-    "Il estime ensuite le nombre de panneaux et de poteaux nécessaires."
+    "Ajoutez la largeur de chaque ouverture, comme un portail ou un portillon.",
+    "Indiquez la largeur du panneau à poser.",
+    "Choisissez une marge pour les coupes et l’ajustement de pose.",
+    "Le calculateur renvoie la longueur utile, le nombre de panneaux et le nombre de poteaux."
   ],
   "useCases": [
-    "Préparer une clôture à panneaux pour une maison ou un jardin.",
-    "Estimer les matériaux avant de commander panneaux et poteaux.",
-    "Vérifier combien de panneaux sont nécessaires après déduction du portail et du portillon.",
-    "Ajouter une marge de sécurité pour les coupes et ajustements."
+    {
+      "title": "Commander les matériaux d’un clôturage de jardin",
+      "description": "Estimez combien de panneaux et de poteaux prévoir avant de passer commande pour une nouvelle clôture droite."
+    },
+    {
+      "title": "Vérifier un devant de parcelle avec portail et portillon",
+      "description": "Mesurez la longueur restante après déduction du portail véhicule et de l’accès piéton sur la ligne totale."
+    },
+    {
+      "title": "Comparer plusieurs largeurs de panneaux",
+      "description": "Testez des panneaux de 2,0 m, 2,5 m ou d’autres modules pour trouver la répartition la plus cohérente et limiter les coupes."
+    },
+    {
+      "title": "Prévoir une réserve pour un terrain en pente",
+      "description": "Ajoutez un pourcentage de marge si le sol descend, si les extrémités doivent être ajustées ou si des reprises sont probables."
+    }
   ],
   "examples": [
     {
-      "title": "Combien de panneaux de clôture me faut-il ?",
-      "input": "Pour 24 m de clôture, des panneaux de 2,5 m, un portail de 4 m, un portillon de 1 m et 5 % de perte.",
-      "output": "Le calculateur estime les panneaux, les poteaux et la longueur utile.",
-      "description": "Exemple rapide pour une clôture à panneaux standard."
+      "title": "Façade avec portail et portillon",
+      "input": "Longueur totale : 31,5 m ; portail : 4,0 m ; portillon : 1,0 m ; largeur du panneau : 2,5 m ; marge : 6 %.",
+      "output": "La longueur utile est réduite des ouvertures, puis le calculateur estime les panneaux et les poteaux nécessaires.",
+      "description": "Adapté à un devant de propriété avec accès voiture et passage piéton."
     },
     {
-      "title": "Longueur de clôture avec ouvertures",
-      "input": "Utilisez l’outil pour soustraire la largeur du portail et du portillon de la ligne totale.",
-      "output": "Vous obtenez la longueur restante pour les panneaux.",
-      "description": "Utile lorsque la clôture comprend plusieurs accès."
+      "title": "Tronçon arrière rectiligne",
+      "input": "Longueur totale : 18 m ; portail : 0 m ; portillon : 0 m ; largeur du panneau : 2,0 m ; marge : 3 %.",
+      "output": "Le résultat affiche la longueur totale à couvrir et le nombre de panneaux standards pour ce tronçon droit.",
+      "description": "Utile quand un côté de la parcelle ne comporte aucune ouverture."
+    },
+    {
+      "title": "Clôture avec accès large",
+      "input": "Longueur totale : 27,8 m ; portail : 3,6 m ; portillon : 0,9 m ; largeur du panneau : 2,5 m ; marge : 8 %.",
+      "output": "L’outil calcule la longueur restante pour les panneaux et ajoute une réserve pour les coupes et la pose.",
+      "description": "Pratique lorsque les largeurs d’accès doivent être intégrées avec précision."
     }
   ],
   "faq": [
     {
-      "question": "Que calcule le calculateur de clôture ?",
-      "answer": "Il estime le nombre de panneaux, de poteaux et la longueur utile totale pour une clôture à panneaux."
+      "question": "Le calculateur compte-t-il les poteaux d’angle et de fin séparément ?",
+      "answer": "Il estime les poteaux du rythme des panneaux, mais les poteaux d’angle, de fin ou de portail doivent souvent être ajoutés à part selon le système."
     },
     {
-      "question": "Puis-je inclure un portail et un portillon ?",
-      "answer": "Oui. Saisissez leurs largeurs et le calculateur les déduira de la longueur totale de la clôture."
+      "question": "Faut-il inclure les ouvertures dans la longueur totale ?",
+      "answer": "Oui. Entrez la ligne complète d’un bout à l’autre, puis indiquez la largeur du portail et du portillon pour les soustraire du tronçon de panneaux."
     },
     {
-      "question": "Pourquoi ajouter un pourcentage de perte ?",
-      "answer": "La perte couvre les coupes, ajustements et une petite réserve de pose pour rendre l’estimation plus réaliste."
+      "question": "Pourquoi le nombre de panneaux peut-il différer d’une division simple ?",
+      "answer": "L’outil ajuste le résultat à une implantation réaliste et peut donc arrondir différemment lorsque la longueur restante ne tombe pas juste."
     },
     {
-      "question": "Ce calculateur est-il uniquement pour les clôtures à panneaux ?",
-      "answer": "Il est optimisé pour les clôtures à panneaux, mais la même logique convient aussi à d’autres tracés rectilignes."
+      "question": "Que faire si la clôture mélange plusieurs largeurs de panneaux ?",
+      "answer": "Il vaut mieux calculer chaque portion séparément. Avec des modules mixtes, une répartition par zones est plus fiable qu’un seul total."
+    },
+    {
+      "question": "Puis-je utiliser le résultat sur un terrain en pente ?",
+      "answer": "Oui, mais comme base seulement. Une pente implique souvent des coupes ou une pose en paliers, ce qui peut modifier la liste finale des matériaux."
     }
   ],
-  "uiLabels": {
-    "copy": "Copier",
-    "copied": "Copié",
-    "input": "Entrée",
-    "output": "Sortie",
-    "placeholder": "Saisissez une valeur",
-    "indent": "Retrait",
-    "removeComments": "Supprimer les commentaires",
-    "preview": "Aperçu",
-    "source": "Source",
-    "sanitizedHtml": "HTML nettoyé",
-    "plainText": "Texte brut",
-    "summary": "Résumé",
-    "total": "Total",
-    "links": "Liens",
-    "images": "Images",
-    "errors": "Erreurs",
-    "warnings": "Avertissements",
-    "valid": "Valide",
-    "invalid": "Non valide",
-    "href": "Href",
-    "text": "Texte",
-    "rel": "Rel",
-    "target": "Cible",
-    "alt": "Alt",
-    "width": "Largeur",
-    "height": "Hauteur",
-    "empty": "Vide",
-    "outputReady": "Résultat prêt",
-    "cleanedHtml": "HTML nettoyé",
-    "formattedHtml": "HTML formaté",
-    "minifiedHtml": "HTML minifié",
-    "markdown": "Markdown",
-    "extractedImages": "Images extraites",
-    "extractedLinks": "Liens extraits",
-    "validationSummary": "Résumé de validation",
-    "prettyHtml": "HTML lisible",
-    "encodedText": "Texte encodé",
-    "file": "Fichier",
-    "size": "Taille",
-    "format": "Format",
-    "quality": "Qualité",
-    "colorOne": "Couleur 1",
-    "colorTwo": "Couleur 2",
-    "background": "Arrière-plan",
-    "foreground": "Premier plan",
-    "angle": "Angle",
-    "margin": "Marge",
-    "level": "Niveau",
-    "gradientType": "Type de dégradé",
-    "linear": "Linéaire",
-    "radial": "Radial",
-    "blur": "Flou",
-    "spread": "Étendue",
-    "offsetX": "Décalage X",
-    "offsetY": "Décalage Y",
-    "opacity": "Opacité",
-    "inset": "Interne",
-    "cssCode": "Code CSS",
-    "snippet": "Extrait",
-    "download": "Télécharger",
-    "downloadSvg": "Télécharger SVG",
-    "downloadPng": "Télécharger PNG",
-    "downloadAll": "Tout télécharger",
-    "upload": "Importer",
-    "title": "Titre",
-    "description": "Description",
-    "canonicalUrl": "URL canonique",
-    "siteName": "Nom du site",
-    "ogImage": "Image OG",
-    "clear": "Effacer",
-    "generatedQr": "QR généré",
-    "placeholderImage": "Image de remplacement",
-    "faviconSet": "Ensemble de favicons",
-    "keepAspectRatio": "Conserver le ratio",
-    "cropX": "Rognage X",
-    "cropY": "Rognage Y",
-    "cropWidth": "Largeur du rognage",
-    "cropHeight": "Hauteur du rognage",
-    "originalSize": "Taille d’origine",
-    "outputSize": "Taille de sortie",
-    "savedSize": "Taille économisée",
-    "result": "Résultat",
-    "base64": "Base64",
-    "mimeType": "Type MIME",
-    "resizedImage": "Image redimensionnée",
-    "compressedImage": "Image compressée",
-    "croppedImage": "Image rognée",
-    "convertedImage": "Image convertie",
-    "decodedImage": "Image décodée",
-    "imagePreview": "Aperçu de l’image",
-    "camera": "Appareil photo",
-    "lens": "Objectif",
-    "dateTaken": "Date de prise de vue",
-    "resolution": "Résolution",
-    "fileSize": "Taille du fichier",
-    "iso": "ISO",
-    "exposure": "Exposition",
-    "aperture": "Ouverture",
-    "focalLength": "Distance focale",
-    "flash": "Flash",
-    "orientation": "Orientation",
-    "latitude": "Latitude",
-    "longitude": "Longitude",
-    "openMap": "Ouvrir la carte",
-    "rawMetadata": "Métadonnées brutes",
-    "noMetadataFound": "Aucune métadonnée trouvée",
-    "gpsLocation": "Position GPS",
-    "metadataSummary": "Résumé des métadonnées"
-  },
   "seo": {
     "title": "Calculateur de clôture à panneaux",
-    "description": "Calculez le nombre de panneaux, de poteaux et la longueur utile pour une clôture à panneaux. Incluez portail, portillon et marge de perte.",
+    "description": "Calculez les panneaux, les poteaux et la longueur utile. Intégrez portail, portillon et marge de coupe dans le même chiffrage.",
     "keywords": [
       "calculateur de clôture",
       "calculateur de clôture à panneaux",
-      "combien de panneaux",
+      "nombre de panneaux clôture",
       "calculateur de poteaux",
-      "calculateur longueur clôture"
+      "longueur utile clôture"
     ]
   }
 }

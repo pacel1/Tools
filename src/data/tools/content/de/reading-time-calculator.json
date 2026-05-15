@@ -4,42 +4,80 @@
   "slug": "lesezeit-rechner",
   "h1": "Lesezeit-Rechner",
   "title": "Lesezeit-Rechner",
-  "shortDescription": "Schätze die Lesezeit anhand der Wortanzahl sofort mit schnellen Ergebnissen, einfacher Eingabe und praktischen Beispielen.",
-  "overview": "Schätze die Lesezeit anhand der Wortanzahl sofort. Diese Seite liefert eine schnelle Antwort mit einem praktischen Hilfswerkzeug und einem einfachen Ergebnisablauf. Sie richtet sich an Nutzer, die eine kostenlose Online-Antwort, schnelle browserbasierte Ergebnisse und praktische Long-Tail-Inhalte für ein Text-Tool suchen.",
+  "shortDescription": "Berechne die Lesezeit eines Textes anhand der Wortanzahl.",
+  "metaTitle": "Lesezeit-Rechner",
+  "metaDescription": "Berechne die Lesezeit anhand der Wortanzahl und erhalte eine Schätzung in Minuten und Sekunden.",
+  "intro": "Füge deinen Text ein oder gib die Wortanzahl ein, um die geschätzte Lesezeit in Minuten und Sekunden zu erhalten.",
+  "overview": "Dieser Rechner zeigt dir, wie lange ein Text ungefähr zum Lesen braucht, bevor du ihn veröffentlichst, verschickst oder überprüfst. Aus der Wortanzahl wird eine klare Zeitangabe, damit du besser einschätzen kannst, ob ein Text kurz, ausführlich oder passend dimensioniert ist.\n\nDas Ergebnis basiert auf einem durchschnittlichen Lesetempo und ist deshalb eine hilfreiche Orientierung, aber kein exakter Zeitmesser. Besonders nützlich ist das für Artikel, Newsletter, Schulungsunterlagen und Dokumente, bei denen die Lesedauer eine Rolle spielt.",
   "howItWorks": [
-    "Gib den benötigten Wert oder Text in das Formular ein.",
-    "Die Umrechnung, Berechnung oder Umwandlung läuft sofort im Browser.",
-    "Prüfe das Ergebnis und nutze bei Bedarf passende Folge-Tools."
+    "Füge den Text ein oder trage die Wortanzahl ein.",
+    "Das Tool berechnet die Lesezeit mit einem üblichen Durchschnittstempo.",
+    "Prüfe das Ergebnis in Minuten und Sekunden und vergleiche es mit deiner Ziel-Länge."
+  ],
+  "useCases": [
+    {
+      "title": "Artikel planen",
+      "description": "Prüfe vor der Veröffentlichung, ob ein Entwurf eher kurz, mittel oder lang ausfällt."
+    },
+    {
+      "title": "Newsletter einschätzen",
+      "description": "Sieh, wie viel Zeit Leser ungefähr benötigen, und kürze bei Bedarf zu dichte Abschnitte."
+    },
+    {
+      "title": "Unterlagen für den Unterricht",
+      "description": "Bewerte, ob ein Handout schnell gelesen werden kann oder besser gestrafft werden sollte."
+    },
+    {
+      "title": "Berichte und Angebote",
+      "description": "Gib Dokumenten eine Lesedauer, damit Empfänger den Aufwand besser einschätzen können."
+    }
   ],
   "examples": [
     {
-      "title": "Beispiel 1",
-      "input": "Ein Blog-Entwurf",
-      "output": "Geschätzte Lesezeit",
-      "description": "Ein realistisches Beispiel für einen Lesezeit-Rechner bei einer alltäglichen Suchanfrage."
+      "title": "Kurzer Text",
+      "input": "420 Wörter",
+      "output": "Etwa 2 Minuten",
+      "description": "Ein kurzer Beitrag, eine Nachricht oder Notiz mit geringer Lesedauer."
     },
     {
-      "title": "Beispiel 2",
-      "input": "Ein Blog-Entwurf",
-      "output": "Geschätzte Lesezeit",
-      "description": "Ein weiterer praktischer Anwendungsfall für organischen Long-Tail-Traffic."
+      "title": "Mittlerer Blog-Entwurf",
+      "input": "1.150 Wörter",
+      "output": "Etwa 5 Minuten",
+      "description": "Eine typische Artikellänge für wenige Minuten Lesezeit."
+    },
+    {
+      "title": "Langer Fachtext",
+      "input": "2.700 Wörter",
+      "output": "Etwa 12 Minuten",
+      "description": "Ein ausführlicher Text, der mehr Zeit und Konzentration braucht."
     }
   ],
   "faq": [
     {
-      "question": "Wie genau ist dieses Tool?",
-      "answer": "Das Ergebnis wird direkt aus der Formel oder der browserseitigen Logik dieses Tools berechnet."
+      "question": "Welches Lesetempo verwendet der Rechner?",
+      "answer": "Der Rechner nutzt ein übliches Durchschnittstempo, um Wörter in eine geschätzte Lesezeit umzuwandeln. Je nach Text kann die reale Dauer abweichen."
     },
     {
-      "question": "Kann ich dieses Tool auf dem Handy nutzen?",
-      "answer": "Ja. Die Seite funktioniert auf Desktop- und Mobilgeräten mit einem einfachen Eingabe- und Ergebnislayout."
+      "question": "Warum können gleich lange Texte unterschiedlich lange dauern?",
+      "answer": "Überschriften, lange Sätze, Fachbegriffe, Aufzählungen und Code können das Lesen verlangsamen, auch wenn die Wortzahl gleich bleibt."
+    },
+    {
+      "question": "Soll ich Überschriften, Bildunterschriften und Listen mitzählen?",
+      "answer": "Wenn sie zum Inhalt gehören, solltest du sie einbeziehen. Andernfalls fällt die Schätzung oft zu kurz aus."
+    },
+    {
+      "question": "Ist das auch eine Sprechzeit?",
+      "answer": "Nein. Lesen und Sprechen laufen in unterschiedlichem Tempo ab, deshalb ist die geschätzte Lesezeit nicht mit der Vortragsdauer identisch."
     }
   ],
   "seo": {
     "title": "Lesezeit-Rechner",
-    "description": "Schätze die Lesezeit anhand der Wortanzahl sofort. Kostenloser Online-Lesezeit-Rechner mit sofortigen Ergebnissen.",
+    "description": "Berechne die Lesezeit anhand der Wortanzahl und erhalte eine Schätzung in Minuten und Sekunden.",
     "keywords": [
-      "lesezeit rechner"
+      "Lesezeit-Rechner",
+      "Lesezeit berechnen",
+      "Wortanzahl und Lesezeit",
+      "Textdauer"
     ]
   }
 }

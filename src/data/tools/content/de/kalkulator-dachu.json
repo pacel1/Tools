@@ -4,175 +4,87 @@
   "slug": "dachrechner",
   "h1": "Dachrechner",
   "title": "Dachrechner",
-  "shortDescription": "Berechne Dachflache, Materialbedarf, Membran und die ungefähre Anzahl an Paketen oder Platten.",
-  "metaTitle": "Dachrechner - Dachfläche und Material berechnen",
-  "metaDescription": "Berechne die Dachfläche, die Fläche mit Zuschlag und wie viele Dachziegel, Platten oder Pakete du für ein einfaches Satteldach brauchst.",
-  "intro": "Nutze diesen Dachrechner, um die Dachfläche eines einfachen Satteldachs zu schätzen und zu ermitteln, wie viele Dachziegel, Platten oder Pakete du einschließlich Verschnitt brauchst.",
-  "overview": "Gib die Gebäudelänge, die Breite, die Dachneigung, den Zuschlag in Prozent und die Deckfläche pro Paket oder Platte ein. Der Rechner ermittelt die Dachfläche, addiert den Zuschlag und berechnet die benötigte Menge.",
+  "shortDescription": "Berechne die Dachfläche, den Materialbedarf und die benötigte Anzahl an Paketen, Platten oder Rollen.",
+  "metaTitle": "Dachfläche und Material",
+  "metaDescription": "Berechne die Fläche eines Satteldachs, addiere Zuschlag und schätze Ziegel, Platten oder Rollen für die Bestellung.",
+  "intro": "Für ein einfaches Satteldach berechnet dieses Tool die tatsächliche Dachfläche, addiert einen Zuschlag und wandelt sie in die zu kaufende Menge um.",
+  "overview": "Gib Gebäudelänge, Breite, Dachneigung, Zuschlag in Prozent und die Deckfläche pro Paket, Platte oder Rolle ein. Das Tool berechnet daraus die tatsächliche Dachfläche und die benötigte Bestellmenge.\n\nEs ist für klare, regelmäßige Dächer gedacht, bei denen die Produktdeckung bekannt ist. So lassen sich Ziegel, Trapezblech oder Unterspannbahn auf derselben Dachgröße sinnvoll vergleichen.\n\nBei Walmdach, Kehlen, Gauben, Versprüngen oder mehreren Dachflächen solltest du das Ergebnis als Ausgangswert nehmen und es an die echte Geometrie, Zusatzteile und Verpackungsvorgaben des Herstellers anpassen.",
   "howItWorks": [
     "Gib Gebäude-Länge und -Breite in Metern ein.",
     "Trage die Dachneigung in Grad ein.",
-    "Lege den Zuschlag für Verschnitt und Überlappung fest.",
-    "Gib die Deckfläche pro Paket oder Platte in m2 an.",
+    "Wähle einen Zuschlag für Zuschnitt, Überlappungen und Montageverluste.",
+    "Gib die Deckfläche pro Paket, Platte oder Rolle in m² an.",
     "Erhalte Dachfläche, Fläche mit Zuschlag und benötigte Menge."
   ],
   "useCases": [
-    "Berechnen, wie viele Dachziegel du brauchst.",
-    "Materialbedarf für ein Satteldach planen.",
-    "Prüfen, ob Membran oder Platten ausreichen.",
-    "Schnelle Schätzung vor der Angebotsanfrage."
+    {
+      "title": "Dachziegel bestellen",
+      "description": "Ermittle, wie viele Pakete für ein reguläres Satteldach bestellt werden sollten."
+    },
+    {
+      "title": "Blechmenge planen",
+      "description": "Rechne die Dachfläche in die Anzahl benötigter Platten oder Profile um, wenn die Deckfläche bekannt ist."
+    },
+    {
+      "title": "Unterspannbahn abschätzen",
+      "description": "Prüfe, ob eine oder mehrere Rollen für die Fläche mit deinem Zuschlag ausreichen."
+    },
+    {
+      "title": "Materialvorabkalkulation",
+      "description": "Lege eine Materialbasis fest, bevor du ein Angebot vom Dachdecker oder Händler anfragst."
+    }
   ],
   "examples": [
     {
-      "title": "Beispielrechnung",
-      "input": "Länge 10 m, Breite 8 m, Neigung 30°, Zuschlag 10 %, Deckfläche 1,2 m2 pro Paket",
-      "output": "Das Tool zeigt Dachfläche, Fläche mit Zuschlag und benötigte Pakete an.",
-      "description": "Praktisch für eine schnelle Materialplanung."
+      "title": "Einfamilienhaus",
+      "input": "Länge 10 m, Breite 8 m, Neigung 30°, Zuschlag 10 %, Deckfläche 1,2 m² pro Paket",
+      "output": "Dachfläche: 92,4 m². Mit Zuschlag: 101,6 m². Benötigt: 85 Pakete.",
+      "description": "Passt zu einem typischen Haus, wenn die Deckfläche je Paket bekannt ist."
     },
     {
-      "title": "Wie viele Dachziegel brauche ich",
-      "input": "Einfaches Satteldach mit bekannter Deckfläche je Paket",
-      "output": "Ermittle die ungefähre Anzahl an Dachziegeln, Paketen oder Platten.",
-      "description": "Nützlich bei der Suche nach der benötigten Menge."
+      "title": "Blech fürs Gartenhaus",
+      "input": "Länge 14 m, Breite 6,5 m, Neigung 22°, Zuschlag 7 %, Deckfläche 0,85 m² pro Platte",
+      "output": "Dachfläche: 72,8 m². Mit Zuschlag: 77,9 m². Benötigt: 92 Platten.",
+      "description": "Hilft bei der Planung für ein kleines Gebäude mit Profilblech oder Trapezblech."
+    },
+    {
+      "title": "Unterspannbahn prüfen",
+      "input": "Länge 12 m, Breite 9 m, Neigung 35°, Zuschlag 12 %, Deckfläche 50 m² pro Rolle",
+      "output": "Dachfläche: 132,5 m². Mit Zuschlag: 148,4 m². Benötigt: 3 Rollen.",
+      "description": "Zeigt, ob zwei Rollen ausreichen oder ob wegen Überlappungen eine dritte benötigt wird."
     }
   ],
   "faq": [
     {
-      "question": "Funktioniert der Rechner auch für komplexe Dächer?",
-      "answer": "Er basiert auf einem einfachen Satteldach. Für Walmdächer, Gauben oder unregelmäßige Formen ist das Ergebnis nur ein Richtwert."
+      "question": "Für welche Dachform ist der Rechner gedacht?",
+      "answer": "Er basiert auf einem einfachen Satteldach. Bei Walmdächern, Gauben oder unregelmäßigen Flächen ist das Ergebnis nur eine Näherung."
     },
     {
-      "question": "Kann ich damit Dachziegel berechnen?",
-      "answer": "Ja. Gib einfach die Deckfläche pro Paket oder Platte ein, um die benötigte Menge zu schätzen."
+      "question": "Warum sind Dachneigung und Zuschlag wichtig?",
+      "answer": "Die Neigung verändert die reale Dachfläche gegenüber dem Grundriss, und der Zuschlag berücksichtigt Zuschnitt, Überlappung und Montageverluste."
     },
     {
-      "question": "Was bedeutet der Zuschlag?",
-      "answer": "Er berücksichtigt Zuschnitt, Überlappungen und typische Montageverluste."
+      "question": "Wie trage ich die Deckfläche ein?",
+      "answer": "Nutze die vom Hersteller angegebene Deckfläche pro Paket, Platte oder Rolle. Am besten ist ein Wert in m² pro Einheit."
     },
     {
-      "question": "Ist das Ergebnis exakt?",
-      "answer": "Nein, es ist eine Schätzung. Vor dem Kauf solltest du die Angaben vom Hersteller und Dachdecker prüfen."
+      "question": "Warum wirkt die Menge manchmal sehr hoch?",
+      "answer": "Eine kleine Deckfläche, eine steile Neigung oder ein hoher Zuschlag erhöhen die Stückzahl schnell. Prüfe, ob du pro Stück oder pro Verpackung gerechnet hast."
+    },
+    {
+      "question": "Kann ich die berechnete Menge direkt bestellen?",
+      "answer": "Nutze das Ergebnis als Grundlage und prüfe zusätzlich Firstteile, Startteile, Anschlüsse und die Verpackungseinheit des Produkts."
     }
   ],
-  "uiLabels": {
-    "copy": "Kopieren",
-    "copied": "Kopiert",
-    "input": "Eingabe",
-    "output": "Ausgabe",
-    "placeholder": "Wert eingeben",
-    "indent": "Einzug",
-    "removeComments": "Kommentare entfernen",
-    "preview": "Vorschau",
-    "source": "Quelle",
-    "sanitizedHtml": "Bereinigtes HTML",
-    "plainText": "Klartext",
-    "summary": "Zusammenfassung",
-    "total": "Gesamt",
-    "links": "Links",
-    "images": "Bilder",
-    "errors": "Fehler",
-    "warnings": "Warnungen",
-    "valid": "Gültig",
-    "invalid": "Ungültig",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Ziel",
-    "alt": "Alt",
-    "width": "Breite",
-    "height": "Höhe",
-    "empty": "Leer",
-    "outputReady": "Ausgabe bereit",
-    "cleanedHtml": "Bereinigtes HTML",
-    "formattedHtml": "Formatiertes HTML",
-    "minifiedHtml": "Minifiziertes HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extrahierte Bilder",
-    "extractedLinks": "Extrahierte Links",
-    "validationSummary": "Validierungszusammenfassung",
-    "prettyHtml": "Lesbares HTML",
-    "encodedText": "Kodierter Text",
-    "file": "Datei",
-    "size": "Größe",
-    "format": "Format",
-    "quality": "Qualität",
-    "colorOne": "Farbe 1",
-    "colorTwo": "Farbe 2",
-    "background": "Hintergrund",
-    "foreground": "Vordergrund",
-    "angle": "Winkel",
-    "margin": "Rand",
-    "level": "Ebene",
-    "gradientType": "Verlaufstyp",
-    "linear": "Linear",
-    "radial": "Radial",
-    "blur": "Unschärfe",
-    "spread": "Ausdehnung",
-    "offsetX": "X-Versatz",
-    "offsetY": "Y-Versatz",
-    "opacity": "Deckkraft",
-    "inset": "Innen",
-    "cssCode": "CSS-Code",
-    "snippet": "Snippet",
-    "download": "Herunterladen",
-    "downloadSvg": "SVG herunterladen",
-    "downloadPng": "PNG herunterladen",
-    "downloadAll": "Alle herunterladen",
-    "upload": "Hochladen",
-    "title": "Titel",
-    "description": "Beschreibung",
-    "canonicalUrl": "Kanonische URL",
-    "siteName": "Webseitenname",
-    "ogImage": "OG-Bild",
-    "clear": "Löschen",
-    "generatedQr": "Generierter QR-Code",
-    "placeholderImage": "Platzhalterbild",
-    "faviconSet": "Favicon-Set",
-    "keepAspectRatio": "Seitenverhältnis beibehalten",
-    "cropX": "X-Zuschnitt",
-    "cropY": "Y-Zuschnitt",
-    "cropWidth": "Zuschnittbreite",
-    "cropHeight": "Zuschnitthöhe",
-    "originalSize": "Originalgröße",
-    "outputSize": "Ausgabegröße",
-    "savedSize": "Gesparte Größe",
-    "result": "Ergebnis",
-    "base64": "Base64",
-    "mimeType": "MIME-Typ",
-    "resizedImage": "Skaliertes Bild",
-    "compressedImage": "Komprimiertes Bild",
-    "croppedImage": "Zugeschnittenes Bild",
-    "convertedImage": "Konvertiertes Bild",
-    "decodedImage": "Dekodiertes Bild",
-    "imagePreview": "Bildvorschau",
-    "camera": "Kamera",
-    "lens": "Objektiv",
-    "dateTaken": "Aufnahmedatum",
-    "resolution": "Auflösung",
-    "fileSize": "Dateigröße",
-    "iso": "ISO",
-    "exposure": "Belichtung",
-    "aperture": "Blende",
-    "focalLength": "Brennweite",
-    "flash": "Blitz",
-    "orientation": "Ausrichtung",
-    "latitude": "Breitengrad",
-    "longitude": "Längengrad",
-    "openMap": "Karte öffnen",
-    "rawMetadata": "Rohmetadaten",
-    "noMetadataFound": "Keine Metadaten gefunden",
-    "gpsLocation": "GPS-Standort",
-    "metadataSummary": "Metadatenzusammenfassung"
-  },
   "seo": {
-    "title": "Dachrechner - Dachfläche und Material berechnen",
-    "description": "Berechne die Dachfläche, die Fläche mit Zuschlag und wie viele Dachziegel, Platten oder Pakete du für ein einfaches Satteldach brauchst.",
+    "title": "Dachfläche und Material",
+    "description": "Berechne die Fläche eines Satteldachs, addiere Zuschlag und schätze Ziegel, Platten oder Rollen für die Bestellung.",
     "keywords": [
       "dachrechner",
       "dachfläche berechnen",
       "wie viele dachziegel brauche ich",
       "dachziegel rechner",
-      "satteldach rechner",
+      "satteldach",
       "dach material berechnen"
     ]
   }

@@ -42,7 +42,15 @@ const localizedContentSchema = {
         },
         useCases: {
           type: "array",
-          items: { type: "string" },
+          items: {
+            type: "object",
+            additionalProperties: false,
+            properties: {
+              title: { type: "string" },
+              description: { type: "string" }
+            },
+            required: ["title", "description"]
+          },
           minItems: 3
         },
         examples: {
@@ -58,7 +66,7 @@ const localizedContentSchema = {
             },
             required: ["title", "input", "output", "description"]
           },
-          minItems: 2
+          minItems: 3
         },
         faq: {
           type: "array",
@@ -71,7 +79,7 @@ const localizedContentSchema = {
             },
             required: ["question", "answer"]
           },
-          minItems: 2
+          minItems: 4
         },
         uiLabels: {
           type: "object",
@@ -343,7 +351,7 @@ async function createArtifacts(definition: AddToolDefinition): Promise<ToolConte
     name: "tool_content_bundle",
     schema: localizedContentSchema,
     system:
-      "You generate localized SEO content JSON for an online tools portal. Return JSON only, no markdown. Keep toolId stable. Localize title, h1 and seo.title naturally for each language. For non-English locales, translate the tool name fully whenever a natural end-user translation exists. Generate locale-specific ASCII-only slugs in kebab-case and do not leave English slugs in pl, es, de or fr unless the term is globally standard. Keep category path segments in English outside of this content. Make all visible copy sound native, practical, concise and SEO-friendly for utility-tool searches. Provide optional metaTitle, metaDescription, intro, useCases and uiLabels whenever useful.",
+      "You generate native, high-quality localized content JSON for an online tools portal. Return JSON only, no markdown. Keep toolId stable. Write each locale directly for its users instead of translating word-for-word from English. Localize title, h1 and seo.title naturally for each language. metaTitle must be 12-50 characters and must not end with weak words like and, for, with, de, con, do, z, i. metaDescription must be 70-155 characters. Generate locale-specific ASCII-only slugs in kebab-case and do not leave English slugs in pl, es, de or fr unless the term is globally standard. Keep category path segments in English outside of this content. Avoid template SEO language such as long-tail, organic traffic, free online answer, quick checks, common use case, and generic mobile/accuracy FAQ. intro must give a concrete quick answer. overview must be 2-3 practical paragraphs in one string. useCases must be specific title/description cards. examples must use varied realistic inputs and outputs. faq must answer tool-specific doubts, limits and interpretation details. Make all visible copy native-sounding, precise and useful before optimizing for search.",
     prompt: JSON.stringify({ definition }, null, 2)
   });
 }

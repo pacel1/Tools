@@ -4,44 +4,84 @@
   "slug": "convertisseur-km-en-miles",
   "h1": "Convertisseur de kilomètres en miles",
   "title": "Convertisseur de kilomètres en miles",
-  "shortDescription": "Convertissez des kilomètres en miles instantanément avec des résultats rapides, des saisies simples et des exemples pratiques.",
-  "overview": "Convertissez des kilomètres en miles instantanément. Cette page fournit une réponse rapide grâce à un outil en ligne pratique et un flux de résultat simple. Elle s’adresse aux utilisateurs qui recherchent une réponse gratuite en ligne, des résultats instantanés dans le navigateur et un contenu pratique optimisé pour les recherches de longue traîne.",
+  "shortDescription": "Convertissez des kilomètres en miles avec le facteur standard et lisez le résultat immédiatement.",
+  "metaTitle": "Convertisseur km en miles",
+  "metaDescription": "Convertissez des kilomètres en miles avec 1 km = 0.621371 mile. Pratique pour les trajets, le sport et les distances.",
+  "intro": "Saisissez une distance en kilomètres et obtenez son équivalent en miles avec le facteur standard 1 km = 0.621371 mile.",
+  "overview": "Ce convertisseur transforme des kilomètres en miles pour lire une distance dans l’unité qui vous convient. Il est utile lorsqu’un trajet, une course, une carte ou un déplacement est indiqué en kilomètres et que vous avez besoin de l’équivalent en miles.\n\nLe calcul suit la relation standard entre kilomètres et miles, ce qui convient aux valeurs décimales, aux grandes distances et aux comparaisons précises. Il est adapté aux voyages, aux entraînements et aux documents où une valeur claire et immédiatement lisible est nécessaire.",
   "howItWorks": [
-    "Saisissez la valeur requise dans le formulaire.",
-    "La conversion s’effectue instantanément dans le navigateur.",
-    "Consultez le résultat puis utilisez des outils associés si vous avez besoin d’une étape supplémentaire."
+    "Saisissez la distance en kilomètres.",
+    "L’outil multiplie la valeur par 0.621371.",
+    "Lisez le résultat en miles et comparez-le à une autre distance si besoin."
+  ],
+  "useCases": [
+    {
+      "title": "Préparer un itinéraire",
+      "description": "Convertissez des tronçons de route ou des distances de voyage indiqués en kilomètres en miles."
+    },
+    {
+      "title": "Suivi sportif",
+      "description": "Passez vos distances de course, de vélo ou de randonnée de km en miles pour vos notes d’entraînement."
+    },
+    {
+      "title": "Lire cartes et panneaux",
+      "description": "Comprenez les distances affichées sur les cartes, panneaux routiers et indications transfrontalières."
+    },
+    {
+      "title": "Documents et tableaux",
+      "description": "Transformez des valeurs en kilomètres en miles pour rapports, fichiers ou feuilles de calcul."
+    }
   ],
   "examples": [
     {
-      "title": "Exemple 1",
-      "input": "5 kilomètres",
-      "output": "3,1069 miles",
-      "description": "Un exemple réaliste de conversion km vers miles pour une requête du quotidien."
+      "title": "Trajet urbain court",
+      "input": "5 km",
+      "output": "3.1069 miles",
+      "description": "Une courte distance quotidienne convertie en miles."
     },
     {
-      "title": "Exemple 2",
-      "input": "5 kilomètres",
-      "output": "3,1069 miles",
-      "description": "Un autre cas pratique pour le trafic organique de longue traîne."
+      "title": "Semi-marathon",
+      "input": "21.1 km",
+      "output": "13.1094 miles",
+      "description": "Utile pour comparer une distance de course au système impérial."
+    },
+    {
+      "title": "Long trajet routier",
+      "input": "860 km",
+      "output": "534.2926 miles",
+      "description": "Montre le comportement de l’outil sur une grande distance."
     }
   ],
   "faq": [
     {
-      "question": "Quelle est la précision de cet outil ?",
-      "answer": "Le résultat est calculé directement à partir de la formule ou de la logique côté navigateur utilisée par cet outil."
+      "question": "Quelle formule utilise ce convertisseur ?",
+      "answer": "Il utilise le facteur standard : 1 kilomètre = 0.621371 mile."
     },
     {
-      "question": "Puis-je utiliser cet outil sur mobile ?",
-      "answer": "Oui. La page fonctionne sur ordinateur et sur mobile avec une interface simple de saisie et de résultat."
+      "question": "Puis-je saisir des décimales ?",
+      "answer": "Oui. Des valeurs comme 2.5 km ou 42.195 km sont converties directement."
+    },
+    {
+      "question": "Pourquoi le résultat comporte-t-il plusieurs décimales ?",
+      "answer": "L’outil affiche la valeur calculée avec précision. Vous pouvez ensuite l’arrondir selon votre besoin."
+    },
+    {
+      "question": "Quelle erreur revient souvent lors de cette conversion ?",
+      "answer": "L’erreur la plus fréquente consiste à multiplier par 1.6 au lieu de 0.621371, ce qui inverse le sens de conversion."
+    },
+    {
+      "question": "Peut-on aussi convertir des miles en kilomètres ?",
+      "answer": "Non. Cette page convertit uniquement les kilomètres en miles. Pour l’inverse, il faut l’outil dédié."
     }
   ],
   "seo": {
-    "title": "Convertisseur de kilomètres en miles",
-    "description": "Convertissez des kilomètres en miles instantanément. Convertisseur en ligne gratuit km vers miles avec résultats immédiats.",
+    "title": "Convertisseur km en miles",
+    "description": "Convertissez des kilomètres en miles avec 1 km = 0.621371 mile. Pratique pour les trajets, le sport et les distances.",
     "keywords": [
       "convertisseur km en miles",
-      "convertir km en miles",
-      "outil de conversion"
+      "km en miles",
+      "kilomètres en miles",
+      "convertir km en miles"
     ]
   }
 }

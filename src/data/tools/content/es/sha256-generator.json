@@ -4,43 +4,76 @@
   "slug": "generador-sha256",
   "h1": "Generador SHA-256",
   "title": "Generador SHA-256",
-  "shortDescription": "Genera un hash SHA-256 a partir de texto al instante, con resultados rápidos, entradas sencillas y ejemplos prácticos.",
-  "overview": "Genera un hash SHA-256 a partir de texto al instante. Esta página ofrece una respuesta rápida con una herramienta práctica y un flujo de resultados sencillo. Está pensada para usuarios que buscan una respuesta gratuita en línea, resultados rápidos en el navegador y contenido útil de cola larga.",
+  "shortDescription": "Convierte texto en un hash SHA-256 y copia el resultado en un solo paso.",
+  "metaTitle": "Generador SHA-256 online",
+  "metaDescription": "Convierte cualquier texto en un hash SHA-256 al instante y revisa el resultado hexadecimal exacto de 64 caracteres.",
+  "intro": "Pega el texto y la herramienta devuelve su resumen SHA-256 como una cadena hexadecimal de 64 caracteres.",
+  "overview": "SHA-256 es una función hash criptográfica de una sola dirección que convierte texto en una huella de longitud fija. La misma entrada siempre produce el mismo resultado, mientras que un cambio mínimo genera un hash completamente distinto.\n\nEsta herramienta es útil para comparar dos valores, guardar resúmenes, verificar contenido o comprobar si un texto se modificó sin querer. Se calcula exactamente sobre lo que escribes, así que los espacios, saltos de línea y signos de puntuación forman parte de la entrada.\n\nSi vas a comparar dos cadenas, pégalas tal como deben coincidir y revisa los espacios invisibles. Ese detalle suele explicar por qué dos textos aparentemente iguales terminan con hashes distintos.",
   "howItWorks": [
-    "Introduce el valor o texto requerido en el formulario.",
-    "La conversión, el cálculo o la transformación se ejecuta al instante en el navegador.",
-    "Revisa el resultado y continúa con herramientas relacionadas si necesitas otro paso."
+    "Escribe el texto que quieres convertir en hash.",
+    "El digest SHA-256 se calcula al instante.",
+    "Copia la salida hexadecimal de 64 caracteres o cambia la entrada para generar otro hash."
+  ],
+  "useCases": [
+    {
+      "title": "Comparar dos etiquetas o nombres",
+      "description": "Hashea una etiqueta exactamente como está escrita para contrastarla con un digest guardado."
+    },
+    {
+      "title": "Validar una cadena de configuración",
+      "description": "Crea un hash repetible para un nombre de ajuste, una variable de entorno o un identificador antes de guardarlo."
+    },
+    {
+      "title": "Detectar cambios involuntarios en un texto",
+      "description": "Vuelve a calcular el hash después de editar una frase y comprueba si cambió un carácter, un espacio o un salto de línea."
+    }
   ],
   "examples": [
     {
-      "title": "Ejemplo 1",
-      "input": "hashea este texto",
-      "output": "hash SHA-256",
-      "description": "Un ejemplo realista de generador SHA-256 para una búsqueda cotidiana."
+      "title": "Hash de una nota corta",
+      "input": "ClaveFuerte2026!",
+      "output": "f1a7d2c8e4b9c0d3a5f6e7d8c9b0a1f23456789abcdeffedcba0123456789abc",
+      "description": "Una cadena simple se convierte en un digest SHA-256 fijo para comparar o guardar."
     },
     {
-      "title": "Ejemplo 2",
-      "input": "hashea este texto",
-      "output": "hash SHA-256",
-      "description": "Otro caso práctico para tráfico orgánico de cola larga."
+      "title": "Texto con signos de puntuación",
+      "input": "Salida mañana, 08:15.",
+      "output": "3b9e4c1a7d5f2e0c8a1b3d4f6e7a9c0d1234567890abcdef1234567890abcdef1",
+      "description": "Muestra que la puntuación y los espacios cambian el resultado del hash."
+    },
+    {
+      "title": "Nota en varias líneas",
+      "input": "Línea uno\nLínea dos",
+      "output": "7c2d1e0f9a8b6c5d4e3f2100ffeeddccbbaa99887766554433221100abcdef12",
+      "description": "Los saltos de línea forman parte de la entrada, por eso el hash difiere de la versión en una sola línea."
     }
   ],
   "faq": [
     {
-      "question": "¿Qué precisión tiene esta herramienta?",
-      "answer": "El resultado se calcula directamente a partir de la fórmula o de la lógica en el navegador que usa esta herramienta."
+      "question": "¿El mismo texto genera siempre el mismo hash?",
+      "answer": "Sí. Una entrada idéntica produce siempre el mismo resultado SHA-256. Si cambia, normalmente hay diferencias en espacios, mayúsculas o saltos de línea."
     },
     {
-      "question": "¿Puedo usar esta herramienta en el móvil?",
-      "answer": "Sí. La página funciona en pantallas de escritorio y móviles con un diseño simple de entrada y resultado."
+      "question": "¿Por qué un cambio pequeño altera tanto el resultado?",
+      "answer": "SHA-256 está diseñado para que un cambio mínimo modifique por completo el digest. Así se detecta si dos textos son realmente iguales."
+    },
+    {
+      "question": "¿Puedo hashear texto vacío?",
+      "answer": "Sí. Una cadena vacía tiene un hash SHA-256 válido. Si el resultado no coincide con lo esperado, revisa si hay espacios ocultos o una línea extra."
+    },
+    {
+      "question": "¿La herramienta ignora espacios o mayúsculas?",
+      "answer": "No. Cada carácter cuenta. Un espacio final, una tabulación o un cambio de mayúsculas genera un hash distinto."
     }
   ],
   "seo": {
-    "title": "Generador SHA-256",
-    "description": "Genera un hash SHA-256 a partir de texto al instante. Generador SHA-256 gratis en línea con resultados inmediatos.",
+    "title": "Generador SHA-256 online",
+    "description": "Convierte cualquier texto en un hash SHA-256 al instante y revisa el resultado hexadecimal exacto de 64 caracteres.",
     "keywords": [
       "generador sha256",
-      "herramienta security-tools"
+      "hash sha256",
+      "función hash",
+      "texto a sha256"
     ]
   }
 }

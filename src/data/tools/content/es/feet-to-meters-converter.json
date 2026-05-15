@@ -4,59 +4,81 @@
   "slug": "conversor-de-pies-a-metros",
   "h1": "Conversor de pies a metros",
   "title": "Conversor de pies a metros",
-  "shortDescription": "Convierte pies a metros al instante con fórmula, ejemplos claros y resultados rápidos en el navegador.",
-  "metaTitle": "Conversor de pies a metros | Pies a metros online",
-  "metaDescription": "Convierte pies a metros online con fórmula, ejemplos y resultados inmediatos. Útil para altura, construcción, planos y medidas internacionales.",
-  "intro": "Este conversor de pies a metros responde a búsquedas como pies a metros, convertir pies a metros o cuánto es 6 pies en metros. Usa la equivalencia estándar 1 pie = 0,3048 metros y te da el resultado al instante.",
-  "overview": "La herramienta es útil para convertir estaturas, planos, medidas de obra, dimensiones de habitaciones y especificaciones técnicas que llegan en sistema imperial. En lugar de calcular manualmente, puedes pasar de pies a metros con una fórmula precisa y un resultado inmediato.",
+  "shortDescription": "Convierte pies a metros con el factor estándar exacto y obtén resultados claros en formato decimal.",
+  "metaTitle": "Conversor de pies a metros",
+  "metaDescription": "Convierte pies a metros con el factor exacto 0,3048. Obtén resultados precisos para alturas, planos y medidas técnicas.",
+  "intro": "Introduce una medida en pies y obtén su equivalente en metros al instante: 1 pie = 0,3048 metros.",
+  "overview": "Este conversor está pensado para medidas que llegan en pies y deben expresarse en metros sin hacer cuentas manuales. Resulta muy útil para alturas, dimensiones de habitaciones, medidas de mobiliario, notas de obra y fichas técnicas escritas en sistema imperial.\n\nEl cálculo usa el factor estándar exacto, así que 6 pies se convierten en 1,8288 metros. Si necesitas revisar varias medidas, puedes convertir cada una por separado y trabajar con un formato métrico más práctico para planos, presupuestos o documentación.",
   "howItWorks": [
-    "Introduce el valor en pies en el formulario.",
-    "La herramienta multiplica la cifra por 0,3048 para convertirla a metros.",
-    "Revisa el resultado y continúa con herramientas relacionadas si necesitas otra conversión."
+    "Escribe el número de pies en el campo de entrada.",
+    "La herramienta multiplica el valor por 0,3048 y lo convierte a metros.",
+    "Lee el resultado y, si hace falta, convierte otra medida del mismo modo."
   ],
   "useCases": [
-    "Convertir altura personal de pies a metros.",
-    "Interpretar planos o medidas de construcción.",
-    "Leer fichas técnicas con unidades imperiales.",
-    "Pasar medidas de habitaciones o muebles a sistema métrico."
+    {
+      "title": "Alturas personales",
+      "description": "Pasa una estatura en pies a metros para formularios, registros o comparativas."
+    },
+    {
+      "title": "Medidas de estancias y paredes",
+      "description": "Convierte largos de pared, alturas de techo o dimensiones de una habitación a unidades métricas."
+    },
+    {
+      "title": "Especificaciones de muebles y equipos",
+      "description": "Interpreta catálogos que muestran dimensiones en pies y guarda la cifra en metros."
+    },
+    {
+      "title": "Planos y notas técnicas",
+      "description": "Traduce medidas de proyectos a metros para dibujos, layouts y documentación."
+    }
   ],
   "examples": [
     {
-      "title": "6 pies a metros",
-      "input": "6 pies",
+      "title": "Convertir 6 pies",
+      "input": "6",
       "output": "1,8288 metros",
-      "description": "Práctico para convertir altura o medidas de interiorismo."
+      "description": "Ejemplo habitual para alturas o medidas de interior."
     },
     {
-      "title": "12 pies a metros",
-      "input": "12 pies",
-      "output": "3,6576 metros",
-      "description": "Útil para dimensiones de habitaciones, paredes o estructuras."
+      "title": "Convertir 12,5 pies",
+      "input": "12,5",
+      "output": "3,81 metros",
+      "description": "Muestra cómo se convierte un valor con decimales."
+    },
+    {
+      "title": "Convertir 0,5 pies",
+      "input": "0,5",
+      "output": "0,1524 metros",
+      "description": "Útil para pequeños tramos o holguras."
     }
   ],
   "faq": [
     {
-      "question": "¿Qué fórmula usa este conversor de pies a metros?",
-      "answer": "Usa la equivalencia estándar 1 pie = 0,3048 metros."
+      "question": "¿Qué factor usa este conversor?",
+      "answer": "Usa el factor exacto estándar: 1 pie = 0,3048 metros."
     },
     {
-      "question": "¿Sirve para convertir altura o medidas de construcción?",
-      "answer": "Sí. Es útil tanto para altura corporal como para planos, obra, muebles y dimensiones de espacios."
+      "question": "¿Debo introducir pies, pulgadas o ambos?",
+      "answer": "Este conversor trabaja con pies solamente. Si tu medida incluye pulgadas, conviértelas primero a pies o calcula la medida completa antes de usar la herramienta."
     },
     {
-      "question": "¿Puedo usar esta herramienta en el móvil?",
-      "answer": "Sí. La página funciona en escritorio y en móviles con un diseño simple de entrada y resultado."
+      "question": "¿Por qué a veces aparecen muchos decimales?",
+      "answer": "El resultado se entrega en decimal para mantener la conversión exacta. Después puedes redondearlo según lo que necesites."
+    },
+    {
+      "question": "¿Cuál es el error más frecuente al usarlo?",
+      "answer": "El fallo más común es escribir pulgadas como si fueran pies. Comprueba que el valor introducido sea solo la cantidad de pies."
     }
   ],
   "seo": {
-    "title": "Conversor de pies a metros | Pies a metros online",
-    "description": "Convierte pies a metros online con fórmula, ejemplos y resultados inmediatos. Útil para altura, construcción, planos y medidas internacionales.",
+    "title": "Conversor de pies a metros",
+    "description": "Convierte pies a metros con el factor exacto 0,3048. Obtén valores precisos para alturas, planos y medidas técnicas.",
     "keywords": [
       "conversor de pies a metros",
       "pies a metros",
       "convertir pies a metros",
-      "cuánto es un pie en metros",
-      "pies en metros"
+      "pie a metro",
+      "conversión de unidades"
     ]
   }
 }

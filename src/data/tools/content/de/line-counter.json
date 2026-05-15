@@ -4,42 +4,79 @@
   "slug": "zeilenzaehler",
   "h1": "Zeilenzähler",
   "title": "Zeilenzähler",
-  "shortDescription": "Zeilen in Text sofort zählen – schnell, einfach und mit praktischen Beispielen.",
-  "overview": "Zeilen in Text sofort zählen. Diese Seite liefert eine schnelle Antwort mit einem praktischen Online-Tool und einem einfachen Ergebnisablauf. Sie richtet sich an Nutzer, die eine kostenlose Online-Antwort, schnelle Ergebnisse im Browser und praxisnahe Long-Tail-Inhalte suchen.",
+  "shortDescription": "Zähle die Zeilen eines eingefügten Textes, einschließlich leerer Zeilen, wenn sie enthalten sind.",
+  "metaTitle": "Zeilenzähler",
+  "metaDescription": "Zähle Zeilen in eingefügtem Text, inklusive leerer Zeilen, und prüfe das Ergebnis klar und übersichtlich.",
+  "intro": "Füge deinen Text ein und erhalte sofort die Zeilenanzahl, einschließlich leerer Zeilen, wenn sie im Inhalt vorhanden sind.",
+  "overview": "Dieser Zeilenzähler ermittelt die genaue Anzahl der Zeilen in dem Text, den du in das Feld einfügst. Er eignet sich zum Prüfen von Entwürfen, zum Vergleichen von Textversionen und zum Kontrollieren von Listen, Notizen und Codeblöcken, bei denen Zeilenumbrüche wichtig sind.\n\nDas Ergebnis hängt von den tatsächlichen Zeilenumbrüchen im Eingabetext ab. Ein abschließender Zeilenumbruch kann die Zahl verändern, daher lohnt sich der Vergleich mit dem exakt kopierten Text. Bei längeren Inhalten hilft das Tool dabei, die Struktur schnell zu erfassen, ohne manuell zu zählen.",
   "howItWorks": [
-    "Gib den benötigten Wert oder Text in das Formular ein.",
-    "Die Umrechnung, Berechnung oder Transformation läuft sofort im Browser ab.",
-    "Prüfe das Ergebnis und nutze bei Bedarf passende Folge-Tools."
+    "Füge deinen Text in das Eingabefeld ein oder tippe ihn direkt ein.",
+    "Das Tool zählt die Zeilen anhand des exakten Textes, inklusive leerer Zeilen.",
+    "Lies die Gesamtzahl ab und vergleiche sie bei Bedarf mit der Quelle, um die Formatierung zu prüfen."
+  ],
+  "useCases": [
+    {
+      "title": "Entwurf vor dem Versenden prüfen",
+      "description": "Kontrolliere, wie viele Zeilen eine Nachricht, ein Bericht oder eine Notiz enthält."
+    },
+    {
+      "title": "Eingefügten Code prüfen",
+      "description": "Zähle die Zeilen eines Codeblocks, um die Struktur nach dem Kopieren zu überprüfen."
+    },
+    {
+      "title": "Zwei Textfassungen vergleichen",
+      "description": "Sieh nach, ob eine Bearbeitung Zeilenumbrüche hinzugefügt oder entfernt hat."
+    },
+    {
+      "title": "Strukturierte Inhalte verifizieren",
+      "description": "Geeignet für Listen, Gliederungen, Transkripte oder Liedtexte, bei denen Zeilen die Darstellung bestimmen."
+    }
   ],
   "examples": [
     {
-      "title": "Beispiel 1",
-      "input": "Drei Textzeilen",
-      "output": "Gesamtzahl der Zeilen",
-      "description": "Ein realistisches Beispiel für eine alltägliche Suche nach einem Zeilenzähler."
+      "title": "Kurze Notiz",
+      "input": "Erste Zeile\nZweite Zeile\nDritte Zeile",
+      "output": "3 Zeilen",
+      "description": "Drei sichtbare Zeilen ergeben insgesamt 3."
     },
     {
-      "title": "Beispiel 2",
-      "input": "Drei Textzeilen",
-      "output": "Gesamtzahl der Zeilen",
-      "description": "Ein weiteres praktisches Anwendungsbeispiel für organischen Long-Tail-Traffic."
+      "title": "Text mit Leerzeile",
+      "input": "Alpha\n\nGamma",
+      "output": "3 Zeilen",
+      "description": "Die leere mittlere Zeile wird mitgezählt, weil sie Teil des Textes ist."
+    },
+    {
+      "title": "Abschließender Zeilenumbruch",
+      "input": "Eins\nZwei\nDrei\n",
+      "output": "4 Zeilen",
+      "description": "Ein Zeilenumbruch am Ende kann eine zusätzliche Zeile erzeugen."
     }
   ],
   "faq": [
     {
-      "question": "Wie genau ist dieses Tool?",
-      "answer": "Das Ergebnis wird direkt aus der Formel oder der browserseitigen Logik dieses Tools berechnet."
+      "question": "Wird eine Leerzeile als Zeile gezählt?",
+      "answer": "Ja. Eine leere Zeile zwischen zwei Zeilenumbrüchen gehört zur Textstruktur und wird mitgezählt."
     },
     {
-      "question": "Kann ich das Tool auf dem Handy nutzen?",
-      "answer": "Ja. Die Seite funktioniert auf Desktop- und Mobilgeräten mit einem einfachen Eingabe- und Ergebnislayout."
+      "question": "Warum ist die Zahl nach einem Zeilenumbruch am Ende gestiegen?",
+      "answer": "Ein abschließender Zeilenumbruch kann eine zusätzliche Zeilengrenze erzeugen. Dadurch kann die Zahl höher sein als erwartet."
+    },
+    {
+      "question": "Wie bewerte ich Text aus Editor oder Chat?",
+      "answer": "Gezählt wird der exakt eingefügte Text. Versteckte Umbrüche, zusätzliche Absätze und kopierte Formatierungen beeinflussen das Ergebnis."
+    },
+    {
+      "question": "Welcher Fehler passiert am häufigsten?",
+      "answer": "Oft werden Leerzeilen und der letzte Zeilenumbruch am Ende des Textes übersehen."
     }
   ],
   "seo": {
     "title": "Zeilenzähler",
-    "description": "Zeilen in Text sofort zählen. Kostenloser Online-Zeilenzähler mit sofortigen Ergebnissen.",
+    "description": "Zähle Zeilen in eingefügtem Text, inklusive leerer Zeilen, und prüfe das Ergebnis klar und übersichtlich.",
     "keywords": [
       "Zeilenzähler",
+      "Zeilen zählen",
+      "Textzeilen",
       "Text-Tool"
     ]
   }

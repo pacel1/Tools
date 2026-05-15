@@ -4,176 +4,91 @@
   "slug": "paint-calculator",
   "h1": "Paint Calculator",
   "title": "Paint Calculator",
-  "shortDescription": "Estimate how much paint you need for walls and ceilings based on area, coverage, coats, waste and can size.",
-  "metaTitle": "Paint Calculator - Estimate Liters and Paint Cans",
-  "metaDescription": "Calculate how much paint you need for walls and ceilings. Enter area, coverage, number of coats, waste percentage and can size to estimate liters and cans.",
-  "intro": "Use this paint calculator to quickly estimate how many liters of paint you need for walls or ceilings. It is designed for simple renovation planning and helps you compare paint coverage, coats and can size before you buy.",
-  "overview": "Enter the painted area in square meters, the paint coverage in square meters per liter, the number of coats, a waste percentage and the can size. The tool calculates paint needed without waste, paint needed with waste and the estimated number of cans. Defaults reflect common renovation values: around 10-12 m2/l coverage, 2 coats and 10% waste.",
+  "shortDescription": "Work out paint needed for walls and ceilings from area, coverage, coats, waste, and can size.",
+  "metaTitle": "Paint Liters and Cans",
+  "metaDescription": "Calculate paint for walls and ceilings from area, coverage, coats, waste, and can size.",
+  "intro": "Enter the area, coverage, coats, waste, and can size to get liters needed and the number of cans to buy.",
+  "overview": "This calculator turns wall or ceiling measurements into a practical paint order. It uses the surface area, the paint’s stated coverage, the number of coats, a waste allowance, and the can size to estimate both the liquid volume and the container count.\n\nIt is useful when you are repainting a room, coating a ceiling, or dealing with surfaces that drink more paint than smooth plaster. The result shows the base amount and the adjusted amount after waste, so you can plan the purchase before you open the first can.\n\nFor the best estimate, use the exact coverage printed on the product label and not a generic average. Rough finishes, patch repairs, and strong color changes usually increase consumption, so the waste field helps you reflect the real job rather than the ideal one.",
   "howItWorks": [
-    "Multiply area by coats to get the total surface to cover.",
-    "Divide the total surface by paint coverage to get liters without waste.",
-    "Add the waste percentage to estimate a safer total.",
-    "Divide by can size to estimate how many cans to buy.",
-    "Round up the can count to avoid running short during painting."
+    "Enter the surface to be painted in square meters.",
+    "Use the coverage value from the paint label, in m2 per liter.",
+    "Select how many coats the finish requires.",
+    "Add waste for rollers, brushes, edges, touch-ups, and absorption.",
+    "Divide the final liters by can size and round up to whole cans."
   ],
   "useCases": [
-    "Planning a wall painting project at home.",
-    "Estimating ceiling paint before buying supplies.",
-    "Comparing different paint brands by their coverage.",
-    "Checking how many cans are needed for a renovation budget.",
-    "Avoiding underbuying when painting multiple coats."
+    {
+      "title": "Repainting a living room",
+      "description": "Estimate the liters needed before covering a large living room with two finish coats."
+    },
+    {
+      "title": "Sizing a ceiling order",
+      "description": "Check whether a ceiling fits into one 5 L can or needs a larger container."
+    },
+    {
+      "title": "Choosing between two paints",
+      "description": "Compare two products with different coverage values for the same room and coat count."
+    },
+    {
+      "title": "Planning a multi-room job",
+      "description": "Add the paint demand for several rooms and buy the right number of cans at once."
+    },
+    {
+      "title": "Accounting for rough walls",
+      "description": "Allow extra paint for textured plaster, repaired sections, and porous surfaces."
+    }
   ],
   "examples": [
     {
-      "title": "Simple room estimate",
-      "input": "Area: 40 m2, coverage: 11 m2/l, coats: 2, waste: 10%, can size: 5 l",
-      "output": "Liters without waste: 7.27 l, liters with waste: 8.00 l, cans: 2.",
-      "description": "A typical room often needs about one extra can once waste and rounding are included."
+      "title": "Medium bedroom with two coats",
+      "input": "Area: 32 m2, coverage: 11 m2/l, coats: 2, waste: 8%, can size: 2.5 l",
+      "output": "Paint without waste: 5.82 l, paint with waste: 6.28 l, cans: 3.",
+      "description": "A room of this size usually needs three small cans once waste is included."
     },
     {
-      "title": "Ceiling repaint",
-      "input": "Area: 25 m2, coverage: 10 m2/l, coats: 2, waste: 10%, can size: 10 l",
-      "output": "Liters without waste: 5.00 l, liters with waste: 5.50 l, cans: 1.",
-      "description": "Good for quick estimates when repainting a smaller ceiling."
+      "title": "Kitchen ceiling only",
+      "input": "Area: 18 m2, coverage: 9.5 m2/l, coats: 2, waste: 12%, can size: 10 l",
+      "output": "Paint without waste: 3.79 l, paint with waste: 4.24 l, cans: 1.",
+      "description": "A flat ceiling often fits in one large can, even with a modest waste allowance."
+    },
+    {
+      "title": "Textured hallway walls",
+      "input": "Area: 54 m2, coverage: 8.5 m2/l, coats: 2, waste: 15%, can size: 5 l",
+      "output": "Paint without waste: 12.71 l, paint with waste: 14.62 l, cans: 3.",
+      "description": "A rough hallway can move the purchase from two cans to three."
     }
   ],
   "faq": [
     {
-      "question": "How is paint amount calculated?",
-      "answer": "The calculator multiplies area by the number of coats and divides by paint coverage. Then it adds waste to estimate a practical buying amount."
+      "question": "Does the calculator count each coat separately?",
+      "answer": "Yes. The surface area is multiplied by the number of coats before coverage is applied, so two coats require twice the base amount."
     },
     {
-      "question": "Should I round up the result?",
-      "answer": "Yes. Paint should be rounded up to whole cans so you do not run short during the job."
+      "question": "Why can the result be higher than the label coverage suggests?",
+      "answer": "Because waste can include roller loss, tray residue, brush work, touch-ups, and extra absorption in the surface. With waste set to zero, you get the theoretical minimum."
     },
     {
-      "question": "What coverage should I use?",
-      "answer": "Use the value from the paint label. If you are unsure, 10-12 m2 per liter is a common practical range for many wall paints."
+      "question": "What should I enter for textured walls or patched areas?",
+      "answer": "Use a lower coverage value and a higher waste percentage. Those surfaces typically take more paint than smooth, sealed plaster."
     },
     {
-      "question": "Does the tool work for ceilings too?",
-      "answer": "Yes. Just enter the ceiling area in square meters and use the paint coverage provided by the manufacturer."
+      "question": "Should I enter the nominal can size or the actual paint volume?",
+      "answer": "Enter the actual volume of paint in the container. If the can holds 2.5 L, use 2.5 rather than the product line name."
+    },
+    {
+      "question": "How should I read a result like 2.1 cans?",
+      "answer": "Round up to 3 cans. Paint cannot be bought in fractions, and the extra amount leaves room for touch-ups and color matching."
     }
   ],
-  "uiLabels": {
-    "copy": "Copy",
-    "copied": "Copied",
-    "input": "Input",
-    "output": "Output",
-    "placeholder": "Enter value",
-    "indent": "Indent",
-    "removeComments": "Remove comments",
-    "preview": "Preview",
-    "source": "Source",
-    "sanitizedHtml": "Sanitized HTML",
-    "plainText": "Plain text",
-    "summary": "Summary",
-    "total": "Total",
-    "links": "Links",
-    "images": "Images",
-    "errors": "Errors",
-    "warnings": "Warnings",
-    "valid": "Valid",
-    "invalid": "Invalid",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Width",
-    "height": "Height",
-    "empty": "Empty",
-    "outputReady": "Output ready",
-    "cleanedHtml": "Cleaned HTML",
-    "formattedHtml": "Formatted HTML",
-    "minifiedHtml": "Minified HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extracted images",
-    "extractedLinks": "Extracted links",
-    "validationSummary": "Validation summary",
-    "prettyHtml": "Pretty HTML",
-    "encodedText": "Encoded text",
-    "file": "File",
-    "size": "Size",
-    "format": "Format",
-    "quality": "Quality",
-    "colorOne": "Color 1",
-    "colorTwo": "Color 2",
-    "background": "Background",
-    "foreground": "Foreground",
-    "angle": "Angle",
-    "margin": "Margin",
-    "level": "Level",
-    "gradientType": "Gradient type",
-    "linear": "Linear",
-    "radial": "Radial",
-    "blur": "Blur",
-    "spread": "Spread",
-    "offsetX": "Offset X",
-    "offsetY": "Offset Y",
-    "opacity": "Opacity",
-    "inset": "Inset",
-    "cssCode": "CSS code",
-    "snippet": "Snippet",
-    "download": "Download",
-    "downloadSvg": "Download SVG",
-    "downloadPng": "Download PNG",
-    "downloadAll": "Download all",
-    "upload": "Upload",
-    "title": "Title",
-    "description": "Description",
-    "canonicalUrl": "Canonical URL",
-    "siteName": "Site name",
-    "ogImage": "OG image",
-    "clear": "Clear",
-    "generatedQr": "Generated QR",
-    "placeholderImage": "Placeholder image",
-    "faviconSet": "Favicon set",
-    "keepAspectRatio": "Keep aspect ratio",
-    "cropX": "Crop X",
-    "cropY": "Crop Y",
-    "cropWidth": "Crop width",
-    "cropHeight": "Crop height",
-    "originalSize": "Original size",
-    "outputSize": "Output size",
-    "savedSize": "Saved size",
-    "result": "Result",
-    "base64": "Base64",
-    "mimeType": "MIME type",
-    "resizedImage": "Resized image",
-    "compressedImage": "Compressed image",
-    "croppedImage": "Cropped image",
-    "convertedImage": "Converted image",
-    "decodedImage": "Decoded image",
-    "imagePreview": "Image preview",
-    "camera": "Camera",
-    "lens": "Lens",
-    "dateTaken": "Date taken",
-    "resolution": "Resolution",
-    "fileSize": "File size",
-    "iso": "ISO",
-    "exposure": "Exposure",
-    "aperture": "Aperture",
-    "focalLength": "Focal length",
-    "flash": "Flash",
-    "orientation": "Orientation",
-    "latitude": "Latitude",
-    "longitude": "Longitude",
-    "openMap": "Open map",
-    "rawMetadata": "Raw metadata",
-    "noMetadataFound": "No metadata found",
-    "gpsLocation": "GPS location",
-    "metadataSummary": "Metadata summary"
-  },
   "seo": {
-    "title": "Paint Calculator - How Much Paint Do I Need?",
-    "description": "Free paint calculator for walls and ceilings. Estimate liters without waste, liters with waste and the number of cans using area, coverage, coats and can size.",
+    "title": "Paint Liters and Cans",
+    "description": "Calculate paint for walls and ceilings from area, coverage, coats, waste, and can size.",
     "keywords": [
       "paint calculator",
-      "how much paint do I need",
-      "wall paint calculator",
-      "ceiling paint calculator",
-      "paint liters estimator"
+      "wall paint estimate",
+      "ceiling paint estimate",
+      "paint cans needed",
+      "liters of paint"
     ]
   }
 }

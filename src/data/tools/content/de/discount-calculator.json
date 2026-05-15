@@ -4,43 +4,81 @@
   "slug": "rabatt-rechner",
   "h1": "Rabatt-Rechner",
   "title": "Rabatt-Rechner",
-  "shortDescription": "Berechne den Endpreis nach einem Rabatt in Prozent – schnell, einfach und mit praxisnahen Beispielen.",
-  "overview": "Berechne den Verkaufspreis nach einem prozentualen Rabatt. Diese Seite liefert mit einem praktischen Online-Tool und einem einfachen Ergebnisablauf eine schnelle Antwort. Sie richtet sich an Nutzer, die eine kostenlose Online-Antwort, sofortige Ergebnisse im Browser und praxisnahe Inhalte für Long-Tail-Suchanfragen suchen.",
+  "shortDescription": "Berechne Endpreis, Ersparnis und reduzierten Betrag nach einem prozentualen Rabatt.",
+  "metaTitle": "Rabatt-Rechner | Endpreis",
+  "metaDescription": "Gib Ursprungspreis und Rabatt in Prozent ein und sieh sofort Endpreis sowie Ersparnis.",
+  "intro": "Gib den ursprünglichen Preis und den Rabattprozentsatz ein, um sofort den Endpreis und die Ersparnis zu sehen.",
+  "overview": "Mit diesem Rabatt-Rechner ermittelst du den Preis nach einer prozentualen Reduzierung. Er zeigt den Endpreis und die Ersparnis, damit du Angebote vergleichen, reduzierte Preise prüfen oder vor dem Kauf den tatsächlichen Betrag kontrollieren kannst.\n\nDas Tool berechnet einen einzelnen Rabatt auf einen Ausgangspreis. Wenn ein Händler mehrere Preisnachlässe nacheinander anwendet, solltest du die Schritte getrennt rechnen, weil sich die Berechnungsgrundlage nach jeder Reduzierung ändert.\n\nIm Ergebnis siehst du sowohl den neuen Preis als auch die Differenz zum Originalpreis. So lässt sich besser einschätzen, ob ein Angebot wirklich günstiger ist oder nur optisch attraktiv wirkt.",
   "howItWorks": [
-    "Gib den erforderlichen Wert in das Formular ein.",
-    "Die Berechnung erfolgt sofort im Browser.",
-    "Prüfe das Ergebnis und nutze bei Bedarf weitere passende Tools."
+    "Gib den Originalpreis und den Rabattprozentsatz ein.",
+    "Der Rechner zieht den Rabatt vom Ausgangsbetrag ab.",
+    "Prüfe Endpreis und Ersparnis und vergleiche bei Bedarf ein weiteres Angebot."
+  ],
+  "useCases": [
+    {
+      "title": "Saisonale Preisnachlässe",
+      "description": "Prüfe den neuen Preis für Kleidung, Technik oder Haushaltswaren nach einer Reduzierung."
+    },
+    {
+      "title": "Angebote vergleichen",
+      "description": "Vergleiche zwei Rabatte mit unterschiedlichen Prozentwerten und wähle den niedrigeren Endpreis."
+    },
+    {
+      "title": "Budget prüfen",
+      "description": "Schätze, wie viel ein Artikel nach Abzug eines bekannten Rabatts noch kostet."
+    },
+    {
+      "title": "Bestellung kontrollieren",
+      "description": "Überprüfe den reduzierten Gesamtbetrag vor dem Kauf, besonders bei Gutschein- oder Aktionspreisen."
+    }
   ],
   "examples": [
     {
-      "title": "Beispiel 1",
-      "input": "100 mit 20 % Rabatt",
-      "output": "80",
-      "description": "Ein realistisches Beispiel für einen Rabatt-Rechner bei einer typischen Suchanfrage."
+      "title": "Einzelner Angebotsartikel",
+      "input": "Originalpreis: 120, Rabatt: 15 %",
+      "output": "Endpreis: 102; Ersparnis: 18",
+      "description": "Ein einfaches Beispiel für eine mittlere Preisreduktion."
     },
     {
-      "title": "Beispiel 2",
-      "input": "100 mit 20 % Rabatt",
-      "output": "80",
-      "description": "Ein weiteres praktisches Beispiel für organischen Long-Tail-Traffic."
+      "title": "Starke Reduzierung",
+      "input": "Originalpreis: 249,90, Rabatt: 35 %",
+      "output": "Endpreis: 162,44; Ersparnis: 87,46",
+      "description": "Hilfreich für größere Rabatte mit Centbeträgen."
+    },
+    {
+      "title": "Kleiner Rabatt auf ein Abo",
+      "input": "Originalpreis: 19,99, Rabatt: 5 %",
+      "output": "Endpreis: 18,99; Ersparnis: 1,00",
+      "description": "Zeigt die Wirkung eines kleinen Preisnachlasses bei einem niedrigen Betrag."
     }
   ],
   "faq": [
     {
-      "question": "Wie genau ist dieses Tool?",
-      "answer": "Das Ergebnis wird direkt anhand der Formel oder der browserseitigen Logik dieses Tools berechnet."
+      "question": "Zeigt der Rechner sowohl Endpreis als auch Ersparnis an?",
+      "answer": "Ja. Du erhältst den Preis nach dem Rabatt und die Differenz zum ursprünglichen Betrag."
     },
     {
-      "question": "Kann ich das Tool auf dem Smartphone nutzen?",
-      "answer": "Ja. Die Seite funktioniert auf Desktop- und Mobilgeräten mit einem einfachen Eingabe- und Ergebnislayout."
+      "question": "Wie ist ein Rabatt von 100 % zu verstehen?",
+      "answer": "Ein Rabatt von 100 % entfernt den gesamten Originalpreis, der Endpreis ist also 0 und die Ersparnis entspricht dem vollen Betrag."
+    },
+    {
+      "question": "Was bedeutet ein Rabatt über 100 %?",
+      "answer": "Das wäre eine Reduzierung über den Produktwert hinaus. Prüfe die Eingabe, bevor du das Ergebnis nutzt."
+    },
+    {
+      "question": "Kann ich mehrere Rabatte auf denselben Artikel berechnen?",
+      "answer": "Ja, aber am besten Schritt für Schritt. Jede weitere Reduzierung basiert dann auf dem bereits gesenkten Preis."
     }
   ],
   "seo": {
-    "title": "Rabatt-Rechner",
-    "description": "Berechne den Endpreis nach einem prozentualen Rabatt. Kostenloser Rabatt-Rechner online mit sofortigem Ergebnis.",
+    "title": "Rabatt-Rechner | Endpreis",
+    "description": "Gib Ursprungspreis und Rabatt in Prozent ein und sieh sofort Endpreis sowie Ersparnis.",
     "keywords": [
       "rabatt rechner",
-      "rechner tools"
+      "endpreis berechnen",
+      "preisnachlass",
+      "rabatt berechnen",
+      "ersparnis"
     ]
   }
 }

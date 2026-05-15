@@ -4,176 +4,88 @@
   "slug": "calculadora-de-techo",
   "h1": "Calculadora de techo",
   "title": "Calculadora de techo",
-  "shortDescription": "Calcula el area del techo, la cantidad de cobertura, la membrana y el numero aproximado de paquetes o planchas.",
-  "metaTitle": "Calculadora de techo - Calcula area y materiales",
-  "metaDescription": "Calcula el area del techo, el area con desperdicio y cuantas tejas, planchas o paquetes necesitas para un techo a dos aguas.",
-  "intro": "Usa esta calculadora de techo para estimar el area de un techo a dos aguas y saber cuantas tejas, planchas o paquetes necesitas, incluyendo desperdicio.",
-  "overview": "Introduce el largo y el ancho del edificio, la inclinacion del techo, el porcentaje de desperdicio y la cobertura por paquete o por plancha. La calculadora estima el area del techo, añade el margen indicado y convierte el resultado en la cantidad necesaria de material.",
+  "shortDescription": "Calcula el area de una cubierta inclinada, suma desperdicio y conviértelo en paquetes, planchas o rollos.",
+  "metaTitle": "Area de techo y materiales",
+  "metaDescription": "Calcula el area de una cubierta inclinada, suma desperdicio y estima tejas, planchas o rollos para una cubierta sencilla.",
+  "intro": "Para una cubierta inclinada simple, esta herramienta calcula el area real del techo, añade desperdicio y lo convierte en paquetes, planchas o rollos a comprar.",
+  "overview": "Introduce el largo y el ancho del edificio, la pendiente del techo, el porcentaje de desperdicio y la cobertura por paquete, plancha o rollo. Con esos datos, la herramienta calcula la superficie real y la cantidad final de material.\n\nFunciona mejor cuando el techo es regular y la cobertura del producto está definida con claridad por el fabricante. Así puedes comparar tejas, chapa o membrana usando la misma superficie y el mismo margen para cortes y solapes.\n\nSi la cubierta tiene limahoyas, limatesas, buhardillas, retranqueos o varios planos, toma el resultado como base y ajústalo al diseño real, a las piezas de remate y al formato de embalaje del producto.",
   "howItWorks": [
     "Introduce el largo y el ancho del edificio en metros.",
-    "Indica la inclinacion del techo en grados.",
-    "Define el porcentaje de desperdicio para cortes y solapes.",
-    "Escribe la cobertura por paquete o plancha en m2.",
-    "Obtén el area del techo, el total con desperdicio y la cantidad necesaria."
+    "Indica la pendiente del techo en grados.",
+    "Define un porcentaje de desperdicio para cortes, solapes y pérdidas de montaje.",
+    "Escribe la cobertura por paquete, plancha o rollo en m².",
+    "Consulta el area del techo, el total con desperdicio y la cantidad necesaria."
   ],
   "useCases": [
-    "Calcular cuantas tejas necesitas.",
-    "Planificar la compra de material para un techo a dos aguas.",
-    "Comprobar si la cantidad de membrana o planchas es suficiente.",
-    "Hacer una estimacion rapida antes de pedir presupuesto."
+    {
+      "title": "Pedido de tejas",
+      "description": "Convierte la superficie del techo en el número de paquetes necesarios antes de cerrar el pedido."
+    },
+    {
+      "title": "Plan de chapa",
+      "description": "Calcula cuántas planchas o paneles comprar cuando conoces la cobertura de cada unidad."
+    },
+    {
+      "title": "Membrana bajo cubierta",
+      "description": "Comprueba si uno o varios rollos cubren toda la superficie con el margen elegido."
+    },
+    {
+      "title": "Base para presupuesto",
+      "description": "Prepara una cantidad orientativa antes de pedir precio a un tejador o almacén."
+    }
   ],
   "examples": [
     {
-      "title": "Ejemplo de calculo",
-      "input": "Largo 10 m, ancho 8 m, inclinacion 30°, desperdicio 10%, cobertura 1,2 m2 por paquete",
-      "output": "La herramienta devuelve el area del techo, el area con desperdicio y los paquetes necesarios.",
-      "description": "Util para una estimacion rapida antes de comprar."
+      "title": "Vivienda familiar",
+      "input": "Largo 10 m, ancho 8 m, pendiente 30°, desperdicio 10%, cobertura 1,2 m² por paquete",
+      "output": "Area del techo: 92,4 m². Con desperdicio: 101,6 m². Paquetes necesarios: 85.",
+      "description": "Útil cuando la cobertura por paquete de teja ya está definida para una cubierta sencilla."
     },
     {
-      "title": "Cuantas tejas necesitas",
-      "input": "Cualquier techo a dos aguas simple con cobertura conocida por paquete",
-      "output": "Comprueba la cantidad aproximada de tejas, paquetes o planchas.",
-      "description": "Ideal para buscar cuantas tejas necesito."
+      "title": "Chapa para taller",
+      "input": "Largo 14 m, ancho 6,5 m, pendiente 22°, desperdicio 7%, cobertura 0,85 m² por plancha",
+      "output": "Area del techo: 72,8 m². Con desperdicio: 77,9 m². Planchas necesarias: 92.",
+      "description": "Encaja con un garaje o taller pequeño donde la chapa se compra por cobertura."
+    },
+    {
+      "title": "Comprobación de rollos de membrana",
+      "input": "Largo 12 m, ancho 9 m, pendiente 35°, desperdicio 12%, cobertura 50 m² por rollo",
+      "output": "Area del techo: 132,5 m². Con desperdicio: 148,4 m². Rollos necesarios: 3.",
+      "description": "Ayuda a ver si dos rollos bastan o si hace falta un tercero para cubrir toda la cubierta."
     }
   ],
   "faq": [
     {
-      "question": "¿Funciona para techos complejos?",
-      "answer": "Se basa en un techo a dos aguas simple. Para techos a cuatro aguas, con buhardillas o formas irregulares, el resultado es solo orientativo."
+      "question": "¿Qué tipo de techo asume esta calculadora?",
+      "answer": "Asume una cubierta inclinada sencilla con una cumbrera regular. En cubiertas complejas el resultado necesita corrección manual."
     },
     {
-      "question": "¿Puedo usarla para tejas?",
-      "answer": "Sí. Solo introduce la cobertura por paquete o plancha para estimar cuantas tejas, planchas o bultos necesitas."
+      "question": "¿Por qué cambian el resultado la pendiente y el desperdicio?",
+      "answer": "La pendiente modifica la superficie real frente a la planta del edificio, y el desperdicio añade material para cortes, solapes y pérdidas de instalación."
     },
     {
-      "question": "¿Que significa el porcentaje de desperdicio?",
-      "answer": "Es el material extra para cortes, solapes y perdidas normales de instalacion."
+      "question": "¿Cómo debo introducir la cobertura por paquete o plancha?",
+      "answer": "Usa la cobertura indicada por el fabricante para una unidad, un paquete o un rollo. Si está expresada como m² netos por unidad, el cálculo será más útil."
     },
     {
-      "question": "¿El resultado es exacto?",
-      "answer": "No, es una estimacion. Conviene verificarla con el fabricante y el instalador."
+      "question": "¿Por qué puede salir una cantidad tan alta?",
+      "answer": "Una cobertura pequeña, una pendiente fuerte o un desperdicio elevado aumentan el total con rapidez. Revisa si has introducido m² por unidad o por caja completa."
+    },
+    {
+      "question": "¿Puedo pedir exactamente la cantidad calculada?",
+      "answer": "Conviene usar el resultado como base y después revisar cumbreras, remates, perfiles de arranque y el formato de embalaje del producto."
     }
   ],
-  "uiLabels": {
-    "copy": "Copiar",
-    "copied": "Copiado",
-    "input": "Entrada",
-    "output": "Salida",
-    "placeholder": "Introduce un valor",
-    "indent": "Sangria",
-    "removeComments": "Eliminar comentarios",
-    "preview": "Vista previa",
-    "source": "Fuente",
-    "sanitizedHtml": "HTML saneado",
-    "plainText": "Texto plano",
-    "summary": "Resumen",
-    "total": "Total",
-    "links": "Enlaces",
-    "images": "Imagenes",
-    "errors": "Errores",
-    "warnings": "Avisos",
-    "valid": "Valido",
-    "invalid": "Invalido",
-    "href": "Href",
-    "text": "Texto",
-    "rel": "Rel",
-    "target": "Destino",
-    "alt": "Alt",
-    "width": "Ancho",
-    "height": "Alto",
-    "empty": "Vacio",
-    "outputReady": "Salida lista",
-    "cleanedHtml": "HTML limpiado",
-    "formattedHtml": "HTML formateado",
-    "minifiedHtml": "HTML minificado",
-    "markdown": "Markdown",
-    "extractedImages": "Imagenes extraidas",
-    "extractedLinks": "Enlaces extraidos",
-    "validationSummary": "Resumen de validacion",
-    "prettyHtml": "HTML legible",
-    "encodedText": "Texto codificado",
-    "file": "Archivo",
-    "size": "Tamano",
-    "format": "Formato",
-    "quality": "Calidad",
-    "colorOne": "Color 1",
-    "colorTwo": "Color 2",
-    "background": "Fondo",
-    "foreground": "Primer plano",
-    "angle": "Angulo",
-    "margin": "Margen",
-    "level": "Nivel",
-    "gradientType": "Tipo de degradado",
-    "linear": "Lineal",
-    "radial": "Radial",
-    "blur": "Desenfoque",
-    "spread": "Expansion",
-    "offsetX": "Desplazamiento X",
-    "offsetY": "Desplazamiento Y",
-    "opacity": "Opacidad",
-    "inset": "Inset",
-    "cssCode": "Codigo CSS",
-    "snippet": "Fragmento",
-    "download": "Descargar",
-    "downloadSvg": "Descargar SVG",
-    "downloadPng": "Descargar PNG",
-    "downloadAll": "Descargar todo",
-    "upload": "Subir",
-    "title": "Titulo",
-    "description": "Descripcion",
-    "canonicalUrl": "URL canonica",
-    "siteName": "Nombre del sitio",
-    "ogImage": "Imagen OG",
-    "clear": "Borrar",
-    "generatedQr": "QR generado",
-    "placeholderImage": "Imagen de marcador",
-    "faviconSet": "Conjunto de favicon",
-    "keepAspectRatio": "Mantener la proporcion",
-    "cropX": "Recorte X",
-    "cropY": "Recorte Y",
-    "cropWidth": "Ancho del recorte",
-    "cropHeight": "Alto del recorte",
-    "originalSize": "Tamano original",
-    "outputSize": "Tamano de salida",
-    "savedSize": "Tamano ahorrado",
-    "result": "Resultado",
-    "base64": "Base64",
-    "mimeType": "Tipo MIME",
-    "resizedImage": "Imagen redimensionada",
-    "compressedImage": "Imagen comprimida",
-    "croppedImage": "Imagen recortada",
-    "convertedImage": "Imagen convertida",
-    "decodedImage": "Imagen decodificada",
-    "imagePreview": "Vista previa de la imagen",
-    "camera": "Camara",
-    "lens": "Lente",
-    "dateTaken": "Fecha tomada",
-    "resolution": "Resolucion",
-    "fileSize": "Tamano del archivo",
-    "iso": "ISO",
-    "exposure": "Exposicion",
-    "aperture": "Apertura",
-    "focalLength": "Distancia focal",
-    "flash": "Flash",
-    "orientation": "Orientacion",
-    "latitude": "Latitud",
-    "longitude": "Longitud",
-    "openMap": "Abrir mapa",
-    "rawMetadata": "Metadatos sin procesar",
-    "noMetadataFound": "No se encontraron metadatos",
-    "gpsLocation": "Ubicacion GPS",
-    "metadataSummary": "Resumen de metadatos"
-  },
   "seo": {
-    "title": "Calculadora de techo - Calcula area y materiales",
-    "description": "Calcula el area del techo, el area con desperdicio y cuantas tejas, planchas o paquetes necesitas para un techo a dos aguas.",
+    "title": "Area de techo y materiales",
+    "description": "Calcula el area de una cubierta inclinada, suma desperdicio y estima tejas, planchas o rollos para una cubierta sencilla.",
     "keywords": [
       "calculadora de techo",
-      "calcular area del techo",
+      "area del techo",
       "cuantas tejas necesito",
       "calculadora de tejas",
-      "techo a dos aguas",
-      "material de techo"
+      "techo inclinado",
+      "materiales de techo"
     ]
   }
 }

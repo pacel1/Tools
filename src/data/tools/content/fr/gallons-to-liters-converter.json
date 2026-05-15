@@ -4,44 +4,75 @@
   "slug": "convertisseur-gallons-en-litres",
   "h1": "Convertisseur de gallons en litres",
   "title": "Convertisseur de gallons en litres",
-  "shortDescription": "Convertissez les gallons en litres instantanément avec des résultats rapides, des saisies simples et des exemples pratiques.",
-  "overview": "Convertissez les gallons en litres instantanément. Cette page fournit une réponse rapide grâce à un outil pratique et un affichage simple du résultat. Elle s’adresse aux utilisateurs qui recherchent une réponse gratuite en ligne, des résultats rapides dans le navigateur et un contenu utilitaire pratique optimisé pour les recherches longue traîne.",
+  "shortDescription": "Convertissez des gallons américains en litres avec un résultat décimal précis.",
+  "metaTitle": "Convertisseur gallons en litres",
+  "metaDescription": "Convertissez des gallons américains en litres avec des résultats décimaux précis pour cuisine, carburant et réservoirs.",
+  "intro": "Saisissez le nombre de gallons pour obtenir l’équivalent en litres selon la définition du gallon américain.",
+  "overview": "Ce convertisseur transforme les gallons américains en litres avec un facteur fixe, ce qui évite de faire le calcul à la main. Il est utile pour comparer des volumes de réservoirs, des recettes, des emballages ou des données de carburant lorsque les unités ne sont pas les mêmes.\n\nLe résultat est affiché en litres avec des décimales, afin de conserver un niveau de précision suffisant pour un usage pratique. Si vous travaillez avec le gallon impérial, attention : il ne correspond pas au gallon américain et donne une valeur différente.",
   "howItWorks": [
-    "Saisissez la valeur ou le texte requis dans le formulaire.",
-    "La conversion, le calcul ou la transformation s’effectue instantanément dans le navigateur.",
-    "Consultez le résultat et poursuivez avec des outils associés si vous avez besoin d’une autre étape."
+    "Saisissez le nombre de gallons américains.",
+    "L’outil multiplie la valeur par 3,785411784 pour obtenir les litres.",
+    "Lisez le résultat décimal et arrondissez-le selon votre besoin."
+  ],
+  "useCases": [
+    {
+      "title": "Lire des volumes sur des fiches techniques",
+      "description": "Convertissez des volumes indiqués en gallons pour les comparer facilement en litres."
+    },
+    {
+      "title": "Adapter des recettes liquides",
+      "description": "Passez de gallons à litres avant de recalculer des quantités ou de changer d’échelle."
+    },
+    {
+      "title": "Contrôler un réservoir ou un carburant",
+      "description": "Traduisez des données en gallons en litres lorsqu’une notice ou une étiquette utilise l’autre système."
+    }
   ],
   "examples": [
     {
-      "title": "Exemple 1",
-      "input": "3 gallons",
-      "output": "11,3562 litres",
-      "description": "Un exemple réaliste de convertisseur de gallons en litres pour une recherche courante."
+      "title": "Bidon moyen",
+      "input": "2,5 gallons américains",
+      "output": "9,46352946 litres",
+      "description": "Une conversion utile pour un contenant liquide de taille moyenne."
     },
     {
-      "title": "Exemple 2",
-      "input": "3 gallons",
-      "output": "11,3562 litres",
-      "description": "Un autre cas d’usage pratique pour attirer du trafic organique longue traîne."
+      "title": "Capacité carburant",
+      "input": "12 gallons américains",
+      "output": "45,424941408 litres",
+      "description": "Pratique pour convertir la capacité d’un véhicule ou d’un appareil."
+    },
+    {
+      "title": "Grand réservoir",
+      "input": "100 gallons américains",
+      "output": "378,5411784 litres",
+      "description": "Montre l’équivalence de volumes plus importants en litres."
     }
   ],
   "faq": [
     {
-      "question": "Quelle est la précision de cet outil ?",
-      "answer": "Le résultat est calculé directement à partir de la formule ou de la logique côté navigateur utilisée par cet outil."
+      "question": "Ce convertisseur utilise-t-il les gallons américains ou impériaux ?",
+      "answer": "Il utilise les gallons américains. Un US gallon vaut 3,785411784 litres, alors qu’un gallon impérial est différent."
     },
     {
-      "question": "Puis-je utiliser cet outil sur mobile ?",
-      "answer": "Oui. La page fonctionne sur ordinateur et sur mobile avec une interface simple de saisie et de résultat."
+      "question": "Pourquoi le résultat comporte-t-il autant de décimales ?",
+      "answer": "La conversion est calculée avec précision, donc la valeur peut avoir plusieurs chiffres après la virgule. Vous pouvez ensuite l’arrondir."
+    },
+    {
+      "question": "Puis-je considérer 1 gallon comme 4 litres ?",
+      "answer": "Seulement pour une estimation rapide. Pour une valeur exacte, utilisez le résultat du convertisseur, car 1 US gallon est légèrement inférieur à 4 litres."
+    },
+    {
+      "question": "Quelle erreur revient le plus souvent ?",
+      "answer": "La confusion entre gallon américain et gallon impérial. Une autre erreur fréquente consiste à arrondir trop tôt et à perdre de la précision."
     }
   ],
   "seo": {
-    "title": "Convertisseur de gallons en litres",
-    "description": "Convertissez les gallons en litres instantanément. Convertisseur en ligne gratuit de gallons en litres avec résultats immédiats.",
+    "title": "Convertisseur gallons en litres",
+    "description": "Convertissez des gallons américains en litres avec des résultats décimaux précis pour cuisine, carburant, réservoirs et volumes.",
     "keywords": [
-      "convertisseur de gallons en litres",
-      "convertisseur gallons litres",
-      "outil de conversion"
+      "convertisseur gallons en litres",
+      "gallons en litres",
+      "conversion gallons litres"
     ]
   }
 }

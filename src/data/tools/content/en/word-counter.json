@@ -4,44 +4,85 @@
   "slug": "word-counter",
   "h1": "Word counter",
   "title": "Word counter",
-  "shortDescription": "Count words, characters, paragraphs and reading time in one lightweight text analysis tool.",
-  "overview": "The word counter analyzes text and returns fast statistics for writers, editors, marketers and students. It is useful for checking length, readability and reading time before publishing, editing or sharing content.",
+  "shortDescription": "Count words, characters, paragraphs, and estimated reading time from any text.",
+  "metaTitle": "Word Counter Online",
+  "metaDescription": "Count words, characters, paragraphs, and estimated reading time from pasted text.",
+  "intro": "Paste text and get the word count, character count, paragraph count, and estimated reading time immediately.",
+  "overview": "This word counter is built for text that needs a precise length check before it is published, submitted, or shared. It handles pasted copy, drafts, notes, and structured paragraphs without changing your text.\n\nUse it when you need to compare versions of a paragraph, verify a headline draft, or confirm whether a block fits a limit. The reading-time estimate is based on a standard 200 words per minute, so it gives a practical approximation for articles and longer notes.",
   "howItWorks": [
-    "Paste or type your text into the textarea.",
-    "The tool trims whitespace and counts words, characters and paragraph blocks.",
-    "A reading-time estimate is calculated from a 200 words per minute baseline."
+    "Paste or type text into the input area.",
+    "The tool counts words, characters, and paragraph blocks from the text you provide.",
+    "Reading time is estimated from the total word count using a 200 words-per-minute rate."
+  ],
+  "useCases": [
+    {
+      "title": "Headline and subheading drafts",
+      "description": "Check whether a title, subtitle, or section header stays within a target length before you finalize the layout."
+    },
+    {
+      "title": "Article length review",
+      "description": "Measure draft articles, introductions, and body sections to keep each part aligned with an editorial brief."
+    },
+    {
+      "title": "Client copy approval",
+      "description": "Confirm that landing page copy, ad text, or product descriptions fits the space agreed with a client or designer."
+    },
+    {
+      "title": "Assignment and note limits",
+      "description": "Review essays, summaries, and study notes against required word or character limits before submission."
+    }
   ],
   "examples": [
     {
-      "title": "Meta description draft",
-      "input": "A short SEO summary for a landing page.",
-      "output": "8 words",
-      "description": "Quickly confirm concise copy before publishing."
+      "title": "Landing page intro",
+      "input": "Build trust with clear pricing, fast support, and no hidden fees.",
+      "output": "11 words, 65 characters, 1 paragraph",
+      "description": "Useful when a short block must stay tight and readable."
     },
     {
-      "title": "Blog paragraph",
-      "input": "A two paragraph article section with line breaks.",
-      "output": "Words, characters and reading time",
-      "description": "Useful for content briefs and editorial QA."
+      "title": "Two-paragraph blog draft",
+      "input": "Design systems improve consistency across product teams.\nThey also reduce rework during handoff and review.",
+      "output": "14 words, 105 characters, 2 paragraphs",
+      "description": "Shows how the tool handles line breaks and paragraph blocks."
+    },
+    {
+      "title": "Meeting note excerpt",
+      "input": "Confirm venue, send agenda, collect slides, and share the recap by Friday.",
+      "output": "11 words, 73 characters, 1 paragraph",
+      "description": "Handy for short internal notes where length still matters."
     }
   ],
   "faq": [
     {
-      "question": "Is the counting done on the client side?",
-      "answer": "Yes. The counting runs directly on the page, so you can paste text and get results instantly."
+      "question": "How are words counted in this tool?",
+      "answer": "Words are counted by separating text into readable word units after extra spaces are ignored. Numbers and mixed text are counted as tokens only when they are separated like normal words."
     },
     {
-      "question": "How is reading time estimated?",
-      "answer": "The reading-time metric divides the word count by 200 and rounds the result to two decimals."
+      "question": "What counts as a paragraph?",
+      "answer": "Paragraphs are counted as separate blocks divided by blank lines. A single line break inside the same block does not create a new paragraph."
+    },
+    {
+      "question": "Why does the reading time look approximate?",
+      "answer": "The estimate uses a fixed pace of 200 words per minute. Dense technical text, bullets, or short notes may feel different from normal prose."
+    },
+    {
+      "question": "Can punctuation change the result?",
+      "answer": "Punctuation does not add extra words by itself. However, unusual spacing, pasted lists, or line breaks can affect how the text is split into units."
+    },
+    {
+      "question": "Why might the count differ from a document editor?",
+      "answer": "Different editors use different counting rules for hyphenated terms, emojis, URLs, and headings. This tool follows its own text-splitting rules, so results can vary slightly."
     }
   ],
   "seo": {
-    "title": "Word Counter",
-    "description": "Free online word counter for words, characters, paragraphs and reading time.",
+    "title": "Word Counter Online",
+    "description": "Count words, characters, paragraphs, and reading time from text with a clean, focused word counter.",
     "keywords": [
       "word counter",
       "character counter",
-      "reading time calculator"
+      "reading time",
+      "paragraph count",
+      "text length checker"
     ]
   }
 }

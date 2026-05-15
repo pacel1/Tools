@@ -1,47 +1,78 @@
 {
   "toolId": "fahrenheit-to-celsius-converter",
   "locale": "pl",
-  "slug": "przelicznik-fahrenheita-na-celsjusze",
+  "slug": "fahrenheit-to-celsius-converter",
   "h1": "Przelicznik Fahrenheita na Celsjusze",
   "title": "Przelicznik Fahrenheita na Celsjusze",
-  "shortDescription": "Szybko przelicz Fahrenheit na Celsjusze dzięki błyskawicznym wynikom, prostemu formularzowi i praktycznym przykładom.",
-  "overview": "Przelicz Fahrenheit na Celsjusze natychmiast. Ta strona zapewnia szybki wynik dzięki prostemu narzędziu online i czytelnemu procesowi otrzymywania rezultatu. Jest skierowana do osób szukających darmowej odpowiedzi w internecie, szybkich obliczeń w przeglądarce oraz praktycznych treści do częstych zapytań.",
+  "shortDescription": "Przelicz Fahrenheit na Celsjusze według poprawnego wzoru i odczytaj wynik od razu.",
+  "metaTitle": "Przelicznik Fahrenheita na Celsjusze",
+  "metaDescription": "Przelicz wartości z Fahrenheita na Celsjusze według wzoru i odczytaj wynik w czytelnej formie.",
+  "intro": "Podaj temperaturę w Fahrenheitach, a od razu zobaczysz wynik w Celsjuszach.",
+  "overview": "To narzędzie przelicza temperaturę z Fahrenheita na Celsjusze według wzoru: odejmij 32, a następnie pomnóż przez 5/9. Przydaje się przy odczytach pogody, temperaturach w przepisach, ustawieniach urządzeń i porównywaniu zapisów z różnych źródeł.\n\nWynik jest podawany w Celsjuszach, więc łatwo użyjesz go w notatkach, tabelach lub dalszych obliczeniach. Jeśli wpiszesz wartość z częścią dziesiętną, narzędzie przeliczy ją poprawnie i pokaże odpowiedni wynik.",
   "howItWorks": [
-    "Wpisz wymagane значение lub tekst do formularza.",
-    "Przeliczenie, obliczenie lub transformacja wykonuje się natychmiast w przeglądarce.",
-    "Sprawdź wynik i skorzystaj z powiązanych narzędzi, jeśli potrzebujesz kolejnego kroku."
+    "Wpisz temperaturę w stopniach Fahrenheita.",
+    "Narzędzie automatycznie zastosuje wzór przeliczenia na Celsjusze.",
+    "Odczytaj wynik i wykorzystaj go w dalszych zapisach lub porównaniach."
+  ],
+  "useCases": [
+    {
+      "title": "Porównanie prognozy pogody",
+      "description": "Przelicz temperaturę z amerykańskiej prognozy, na przykład 86°F, na Celsjusze."
+    },
+    {
+      "title": "Sprawdzenie temperatury piekarnika",
+      "description": "Odczytaj temperaturę przepisu podaną w Fahrenheitach i porównaj ją z ustawieniami w °C."
+    },
+    {
+      "title": "Notatki techniczne i serwisowe",
+      "description": "Zamień odczyt z termostatu lub urządzenia na Celsjusze do dokumentacji albo raportu."
+    }
   ],
   "examples": [
     {
-      "title": "Przykład 1",
-      "input": "68 fahrenheit",
-      "output": "20 celsius",
-      "description": "Realistyczny przykład przeliczenia Fahrenheita na Celsjusze dla codziennego zapytania."
+      "title": "Łagodny dzień",
+      "input": "68 °F",
+      "output": "20 °C",
+      "description": "Typowy przykład przeliczenia umiarkowanej temperatury."
     },
     {
-      "title": "Przykład 2",
-      "input": "68 fahrenheit",
-      "output": "20 celsius",
-      "description": "Kolejny praktyczny przykład dla ruchu organicznego z dłuższych fraz."
+      "title": "Gorący letni dzień",
+      "input": "95 °F",
+      "output": "35 °C",
+      "description": "Pokazuje wynik dla wysokiej temperatury otoczenia."
+    },
+    {
+      "title": "Wartość dziesiętna",
+      "input": "72,5 °F",
+      "output": "22,5 °C",
+      "description": "Przykład dla liczby niecałkowitej z przecinkiem."
     }
   ],
   "faq": [
     {
-      "question": "Jak dokładne jest to narzędzie?",
-      "answer": "Wynik jest obliczany bezpośrednio na podstawie wzoru lub logiki po stronie przeglądarki używanej przez to narzędzie."
+      "question": "Jakiego wzoru używa to narzędzie?",
+      "answer": "Stosowany jest wzór: Celsjusz = (Fahrenheit - 32) × 5/9."
     },
     {
-      "question": "Czy mogę używać tego narzędzia na telefonie?",
-      "answer": "Tak. Strona działa na komputerach i urządzeniach mobilnych, oferując prosty układ pola wejściowego i wyniku."
+      "question": "Czy mogę wpisać wartość z przecinkiem?",
+      "answer": "Tak. Wartości dziesiętne są przeliczane poprawnie i dają wynik z częścią dziesiętną."
+    },
+    {
+      "question": "Dlaczego wynik czasem nie jest liczbą całkowitą?",
+      "answer": "Nie każda temperatura w Fahrenheitach odpowiada pełnym stopniom Celsjusza, więc ułamek jest poprawny matematycznie."
+    },
+    {
+      "question": "Na co uważać przy odczycie wyniku?",
+      "answer": "Sprawdź jednostkę. Wynik jest już w Celsjuszach, więc nie należy interpretować go jak wartości w °F."
     }
   ],
   "seo": {
     "title": "Przelicznik Fahrenheita na Celsjusze",
-    "description": "Przelicz Fahrenheit na Celsjusze natychmiast. Darmowy internetowy przelicznik Fahrenheita na Celsjusze z błyskawicznym wynikiem.",
+    "description": "Przelicz wartości z Fahrenheita na Celsjusze według wzoru i odczytaj wynik w czytelnej formie.",
     "keywords": [
       "przelicznik fahrenheita na celsjusze",
       "fahrenheit na celsjusze",
-      "narzedzie do przeliczania"
+      "przelicznik temperatury"
     ]
   }
 }

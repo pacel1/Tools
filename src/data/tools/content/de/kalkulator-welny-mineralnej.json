@@ -4,177 +4,91 @@
   "slug": "mineralwolle-rechner",
   "h1": "Mineralwolle-Rechner",
   "title": "Mineralwolle-Rechner",
-  "shortDescription": "Berechnen Sie, wie viele Rollen oder Pakete Mineralwolle Sie für Dachboden-, Wand- oder Deckendämmung benötigen.",
-  "metaTitle": "Mineralwolle-Rechner | Pakete und Volumen berechnen",
-  "metaDescription": "Berechnen Sie das Volumen der Mineralwolle, die Fläche mit Zuschlag und die Anzahl der Pakete oder Rollen für Dachboden-, Wand- oder Deckendämmung.",
-  "intro": "Nutzen Sie diesen Mineralwolle-Rechner, um den Bedarf für Dachboden, Wand oder Decke schnell zu schätzen. Geben Sie Fläche, Dämmstärke, Paketabdeckung, Verschnitt und Paketvolumen ein, um eine einfache Materialberechnung zu erhalten.",
-  "overview": "Dieses Tool hilft bei der Planung von Mineralwolldämmung, indem es Fläche und Dämmstärke in das benötigte Volumen umrechnet und anschließend die Anzahl der Pakete oder Rollen anhand der Abdeckung pro Paket schätzt. Es eignet sich für Dachboden-, Wand- und Deckenprojekte.",
+  "shortDescription": "Berechnen Sie den Bedarf an Mineralwolle für Dachboden, Wand oder Decke samt Rollen oder Paketen.",
+  "metaTitle": "Mineralwolle-Rechner",
+  "metaDescription": "Berechnen Sie Mineralwoll-Volumen, Verschnittzuschlag und die Anzahl der Pakete oder Rollen für Dachboden-, Wand- oder Deckendämmung.",
+  "intro": "Geben Sie Fläche, Dämmstärke, Verschnitt und Packabdeckung ein, um den Materialbedarf an Mineralwolle und die Anzahl der Pakete zu erhalten.",
+  "overview": "Mit diesem Rechner planen Sie den Einkauf von Mineralwolle anhand konkreter Maße statt Schätzwerte zu verwenden. Aus Fläche und Dämmstärke wird das benötigte Volumen berechnet, danach wird über die angegebene Abdeckung und das Packvolumen die passende Anzahl an Paketen oder Rollen ermittelt.\n\nBesonders nützlich ist das bei Dachboden-, Trennwand-, Decken- und Schrägdämmungen, bei denen die Schichtdicke entscheidend ist. Wenn Sie die Herstellerangaben kennen, können Sie diese direkt eingeben und einen sinnvollen Zuschlag für Zuschnitt, Anschlüsse und Randbereiche berücksichtigen.",
   "howItWorks": [
     "Geben Sie die zu dämmende Fläche in Quadratmetern ein.",
     "Tragen Sie die Dämmstärke in Zentimetern ein.",
-    "Nennen Sie die Fläche, die ein Paket abdeckt.",
-    "Legen Sie einen Prozentsatz für Verschnitt fest.",
-    "Geben Sie das Volumen eines Pakets an, um den Gesamtbedarf und die Paketanzahl zu berechnen."
+    "Nennen Sie die Fläche, die ein Paket oder eine Rolle abdeckt.",
+    "Legen Sie einen Prozentsatz für Verschnitt und Zuschnitte fest.",
+    "Geben Sie das Volumen pro Paket ein, um Gesamtbedarf und Packanzahl zu berechnen."
   ],
   "useCases": [
-    "Mineralwolle für die Dachbodendämmung berechnen.",
-    "Materialbedarf für Wanddämmung planen.",
-    "Pakete für Decken- oder Dachschrägendämmung kalkulieren.",
-    "Zuschlag für Zuschnitte und Verschnitt einrechnen.",
-    "Unterschiedliche Paketgrößen vor dem Kauf vergleichen."
+    {
+      "title": "Dachbodendämmung planen",
+      "description": "Ermitteln Sie die benötigte Menge für einen ausgebauten oder ungedämmten Dachboden mit mehreren Teilflächen."
+    },
+    {
+      "title": "Innenwand mit Ständerwerk",
+      "description": "Berechnen Sie den Mineralwollbedarf für eine Trockenbauwand oder eine leichte Trennwand."
+    },
+    {
+      "title": "Deckendämmung im Bestand",
+      "description": "Schätzen Sie Material für eine flächige Dämmung über einer Geschossdecke oder unter einer Decke."
+    },
+    {
+      "title": "Verschnitt bei Zuschnitten",
+      "description": "Rechnen Sie Zuschläge für Sparren, Balken, Installationen und Randstücke mit ein."
+    },
+    {
+      "title": "Packgrößen vergleichen",
+      "description": "Vergleichen Sie verschiedene Produkte anhand von Abdeckung und Volumen, bevor Sie bestellen."
+    }
   ],
   "examples": [
     {
-      "title": "Beispiel",
-      "input": "Fläche: 100 m², Stärke: 20 cm, Abdeckung pro Paket: 6 m², Verschnitt: 10%, Paketvolumen: 1,2 m³",
-      "output": "Zeigt das Gesamtvolumen, die Fläche mit Zuschlag und die benötigte Paketanzahl.",
-      "description": "Hilft bei der Materialschätzung vor dem Kauf von Mineralwolle."
+      "title": "Ausgebauter Dachboden",
+      "input": "Fläche: 84 m², Stärke: 22 cm, Abdeckung pro Paket: 6,4 m², Verschnitt: 12%, Packvolumen: 1,15 m³",
+      "output": "Zeigt das erforderliche Gesamtvolumen und die auf ganze Pakete aufgerundete Menge.",
+      "description": "Sinnvoll für eine Dachbodendämmung mit mehreren Schrägen und Übergängen."
     },
     {
-      "title": "Beispiel",
-      "input": "Fläche: 45 m², Stärke: 15 cm, Abdeckung pro Paket: 4,5 m², Verschnitt: 8%, Paketvolumen: 0,9 m³",
-      "output": "Liefert das benötigte Volumen und die Paketanzahl für ein kleines Dämmprojekt.",
-      "description": "Praktisch für Wand- oder Deckendämmung."
+      "title": "Innenwand",
+      "input": "Fläche: 31,5 m², Stärke: 12 cm, Abdeckung pro Paket: 4,8 m², Verschnitt: 7%, Packvolumen: 0,72 m³",
+      "output": "Gibt das benötigte Volumen, die angepasste Fläche und die Mindestanzahl der Pakete aus.",
+      "description": "Geeignet für eine einzelne Innenwand im Trockenbau."
+    },
+    {
+      "title": "Kleine Deckenfläche",
+      "input": "Fläche: 18 m², Stärke: 10 cm, Abdeckung pro Rolle: 3,6 m², Verschnitt: 5%, Packvolumen: 0,36 m³",
+      "output": "Berechnet das Volumen und die Anzahl der zu kaufenden Rollen.",
+      "description": "Praktisch für kleine Deckenflächen mit Rollenangabe auf der Verpackung."
     }
   ],
   "faq": [
     {
-      "question": "Wie berechne ich den Bedarf an Mineralwolle?",
-      "answer": "Multiplizieren Sie die Fläche mit der in Meter umgerechneten Dämmstärke, um das Volumen zu erhalten. Anschließend teilen Sie durch das Volumen pro Paket und addieren bei Bedarf Verschnitt."
+      "question": "Was bedeutet das Ergebnis in m³?",
+      "answer": "Es ist das tatsächliche Volumen der Mineralwolle, das für die angegebene Fläche und Stärke benötigt wird. Vergleichen Sie es mit dem auf dem Produkt angegebenen Packvolumen."
     },
     {
-      "question": "Ist der Rechner für den Dachboden geeignet?",
-      "answer": "Ja. Er eignet sich für Dachboden-, Wand- und Deckendämmung."
+      "question": "Soll ich die Endstärke oder die Produktstärke eingeben?",
+      "answer": "Tragen Sie die Schichtdicke ein, die im Bauteil erreicht werden soll. Wenn das Material in zwei Lagen verlegt oder zusammengedrückt wird, sollten Sie das in der Planung berücksichtigen."
     },
     {
-      "question": "Warum sollte ich einen Verschnitt einplanen?",
-      "answer": "Der Zuschlag deckt Zuschnitte, Anpassungen und kleine Verluste bei der Montage ab."
+      "question": "Warum wird die Packanzahl aufgerundet?",
+      "answer": "Weil Sie in der Praxis nur ganze Pakete oder Rollen kaufen können. Daher wird auf die nächste ganze Einheit aufgerundet."
     },
     {
-      "question": "Kann ich Rollen und Pakete berechnen?",
-      "answer": "Ja. Das Ergebnis zeigt die Anzahl der Rollen oder Pakete basierend auf Paketvolumen und Abdeckung."
+      "question": "Was ist, wenn Abdeckung und Packvolumen nicht zu denselben Produktdaten gehören?",
+      "answer": "Verwenden Sie Werte aus einem einzigen Datenblatt. Gemischte Angaben aus verschiedenen Produkten führen leicht zu falschen Bestellmengen."
+    },
+    {
+      "question": "Kann ich mehrere Dämmlagen berechnen?",
+      "answer": "Ja, aber rechnen Sie unterschiedliche Lagen am besten getrennt, wenn Stärke oder Material variieren. Das Ergebnis wird so zuverlässiger."
     }
   ],
-  "uiLabels": {
-    "copy": "Kopieren",
-    "copied": "Kopiert",
-    "input": "Eingabe",
-    "output": "Ausgabe",
-    "placeholder": "Wert eingeben",
-    "indent": "Einzug",
-    "removeComments": "Kommentare entfernen",
-    "preview": "Vorschau",
-    "source": "Quelle",
-    "sanitizedHtml": "Bereinigtes HTML",
-    "plainText": "Nur Text",
-    "summary": "Zusammenfassung",
-    "total": "Gesamt",
-    "links": "Links",
-    "images": "Bilder",
-    "errors": "Fehler",
-    "warnings": "Warnungen",
-    "valid": "Gültig",
-    "invalid": "Ungültig",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Ziel",
-    "alt": "Alt",
-    "width": "Breite",
-    "height": "Höhe",
-    "empty": "Leer",
-    "outputReady": "Ergebnis bereit",
-    "cleanedHtml": "Bereinigtes HTML",
-    "formattedHtml": "Formatiertes HTML",
-    "minifiedHtml": "Minifiziertes HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extrahierte Bilder",
-    "extractedLinks": "Extrahierte Links",
-    "validationSummary": "Validierungszusammenfassung",
-    "prettyHtml": "Lesbares HTML",
-    "encodedText": "Kodierter Text",
-    "file": "Datei",
-    "size": "Größe",
-    "format": "Format",
-    "quality": "Qualität",
-    "colorOne": "Farbe 1",
-    "colorTwo": "Farbe 2",
-    "background": "Hintergrund",
-    "foreground": "Vordergrund",
-    "angle": "Winkel",
-    "margin": "Rand",
-    "level": "Level",
-    "gradientType": "Verlaufsart",
-    "linear": "Linear",
-    "radial": "Radial",
-    "blur": "Unschärfe",
-    "spread": "Ausdehnung",
-    "offsetX": "Versatz X",
-    "offsetY": "Versatz Y",
-    "opacity": "Deckkraft",
-    "inset": "Innen",
-    "cssCode": "CSS-Code",
-    "snippet": "Ausschnitt",
-    "download": "Herunterladen",
-    "downloadSvg": "SVG herunterladen",
-    "downloadPng": "PNG herunterladen",
-    "downloadAll": "Alles herunterladen",
-    "upload": "Hochladen",
-    "title": "Titel",
-    "description": "Beschreibung",
-    "canonicalUrl": "Kanonische URL",
-    "siteName": "Website-Name",
-    "ogImage": "OG-Bild",
-    "clear": "Löschen",
-    "generatedQr": "Generierter QR-Code",
-    "placeholderImage": "Platzhalterbild",
-    "faviconSet": "Favicon-Set",
-    "keepAspectRatio": "Seitenverhältnis beibehalten",
-    "cropX": "Zuschneiden X",
-    "cropY": "Zuschneiden Y",
-    "cropWidth": "Zuschneidebreite",
-    "cropHeight": "Zuschneidehöhe",
-    "originalSize": "Originalgröße",
-    "outputSize": "Ausgabegröße",
-    "savedSize": "Gesparte Größe",
-    "result": "Ergebnis",
-    "base64": "Base64",
-    "mimeType": "MIME-Typ",
-    "resizedImage": "Skaliertes Bild",
-    "compressedImage": "Komprimiertes Bild",
-    "croppedImage": "Zugeschnittenes Bild",
-    "convertedImage": "Konvertiertes Bild",
-    "decodedImage": "Dekodiertes Bild",
-    "imagePreview": "Bildvorschau",
-    "camera": "Kamera",
-    "lens": "Objektiv",
-    "dateTaken": "Aufnahmedatum",
-    "resolution": "Auflösung",
-    "fileSize": "Dateigröße",
-    "iso": "ISO",
-    "exposure": "Belichtung",
-    "aperture": "Blende",
-    "focalLength": "Brennweite",
-    "flash": "Blitz",
-    "orientation": "Ausrichtung",
-    "latitude": "Breitengrad",
-    "longitude": "Längengrad",
-    "openMap": "Karte öffnen",
-    "rawMetadata": "Rohmetadaten",
-    "noMetadataFound": "Keine Metadaten gefunden",
-    "gpsLocation": "GPS-Position",
-    "metadataSummary": "Metadatenübersicht"
-  },
   "seo": {
     "title": "Mineralwolle-Rechner",
-    "description": "Berechnen Sie den Bedarf an Mineralwolle für Dachboden, Wand oder Decke sowie die Anzahl der zu kaufenden Pakete oder Rollen.",
+    "description": "Berechnen Sie das Mineralwoll-Volumen und die benötigte Pack- oder Rollenanzahl für Dachboden-, Wand- oder Deckendämmung.",
     "keywords": [
-      "Mineralwolle-Rechner",
-      "wie viel Mineralwolle brauche ich",
-      "Dachdämmung",
+      "Mineralwolle Rechner",
+      "Mineralwolle Bedarf",
+      "Dachbodendämmung",
       "Wanddämmung",
-      "Deckendämmung",
-      "Mineralwolle berechnen"
+      "Deckendämmung"
     ]
   }
 }

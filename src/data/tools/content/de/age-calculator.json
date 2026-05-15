@@ -4,43 +4,84 @@
   "slug": "altersrechner",
   "h1": "Altersrechner",
   "title": "Altersrechner",
-  "shortDescription": "Berechnen Sie das genaue Alter anhand des Geburtsdatums – mit schnellen Ergebnissen, einfacher Eingabe und praktischen Beispielen.",
-  "overview": "Berechnen Sie das genaue Alter anhand des Geburtsdatums. Diese Seite liefert mit einem praktischen Online-Tool und einem einfachen Ergebnisablauf schnell die passende Antwort. Die Seite richtet sich an Nutzer, die eine kostenlose Online-Antwort, schnelle browserbasierte Ergebnisse und praxisnahe Long-Tail-Inhalte für Hilfsrechnungen suchen.",
+  "shortDescription": "Berechnen Sie das Alter aus dem Geburtsdatum in Jahren, Monaten und Tagen.",
+  "metaTitle": "Exakter Altersrechner",
+  "metaDescription": "Geben Sie Geburtsdatum und Referenzdatum ein und sehen Sie das Alter in Jahren, Monaten und Tagen.",
+  "intro": "Ermitteln Sie das genaue Alter zu einem gewählten Referenzdatum in Jahren, Monaten und Tagen.",
+  "overview": "Dieser Rechner bestimmt das Alter kalendergenau und nicht nur als grobe Jahresdifferenz. Zuerst werden die vollendeten Jahre ausgegeben, danach die restlichen Monate und Tage, damit das Ergebnis sofort verständlich ist.\n\nDas ist sinnvoll, wenn ein Stichtag zählt: Altersgrenzen, Zulassung, Anmeldefristen, Schul- oder Sporttermine und die Prüfung, ob ein Datum bereits vor oder nach einem Geburtstag liegt. Auch bei Unterlagen mit exakter Datierung ist eine solche Darstellung oft hilfreicher als eine reine Jahreszahl.\n\nWenn Sie statt Geburtsdatum und Referenzdatum zwei beliebige Daten eingeben, zeigt das Tool den exakten Zeitraum dazwischen in Jahren, Monaten und Tagen. Das ist nützlich für Zeitachsen, Aktenprüfung und die Einordnung historischer Abstände.",
   "howItWorks": [
-    "Geben Sie den benötigten Wert oder Text in das Formular ein.",
-    "Die Umrechnung, Berechnung oder Umwandlung läuft sofort im Browser.",
-    "Prüfen Sie das Ergebnis und nutzen Sie bei Bedarf weitere passende Tools."
+    "Geben Sie das Geburtsdatum ein.",
+    "Wählen Sie das Referenzdatum aus.",
+    "Lesen Sie die vollendeten Jahre sowie die verbleibenden Monate und Tage ab."
+  ],
+  "useCases": [
+    {
+      "title": "Altersvorgabe prüfen",
+      "description": "Prüfen Sie, ob eine Person an einem bestimmten Stichtag ein Mindestalter wie 13, 16, 18 oder 21 erreicht hat."
+    },
+    {
+      "title": "Zukünftigen Termin planen",
+      "description": "Sehen Sie, wie alt jemand an einem Hochzeitstermin, Reisetermin oder Anmeldedatum sein wird."
+    },
+    {
+      "title": "Abstand zwischen Ereignissen",
+      "description": "Ermitteln Sie den Kalenderabstand zwischen zwei Daten in Jahren, Monaten und Tagen."
+    },
+    {
+      "title": "Datenabgleich",
+      "description": "Vergleichen Sie ein angegebenes Alter mit einem Geburtsdatum in Formularen, Listen oder internen Unterlagen."
+    }
   ],
   "examples": [
     {
-      "title": "Beispiel 1",
-      "input": "1990-05-15",
-      "output": "Alter in Jahren",
-      "description": "Ein realistisches Beispiel für einen Altersrechner bei einer alltäglichen Suchanfrage."
+      "title": "Alter an einem Zukunftstermin",
+      "input": "Geburtsdatum: 1989-11-04; Referenzdatum: 2027-02-18",
+      "output": "37 Jahre, 3 Monate, 14 Tage",
+      "description": "Zeigt das exakte Alter am gewählten Datum."
     },
     {
-      "title": "Beispiel 2",
-      "input": "1990-05-15",
-      "output": "Alter in Jahren",
-      "description": "Ein weiteres praktisches Einsatzszenario für organischen Long-Tail-Traffic."
+      "title": "Alter am Geburtstag",
+      "input": "Geburtsdatum: 2008-06-30; Referenzdatum: 2026-06-30",
+      "output": "18 Jahre, 0 Monate, 0 Tage",
+      "description": "Hilfreich, wenn das Ergebnis exakt am Geburtstag vorliegen soll."
+    },
+    {
+      "title": "Differenz zwischen zwei Daten",
+      "input": "Datum A: 2012-09-15; Datum B: 2019-01-03",
+      "output": "6 Jahre, 3 Monate, 19 Tage",
+      "description": "Gibt den exakten Kalenderabstand zwischen zwei Daten zurück."
     }
   ],
   "faq": [
     {
-      "question": "Wie genau ist dieses Tool?",
-      "answer": "Das Ergebnis wird direkt aus der Formel oder der Browser-Logik berechnet, die dieses Tool verwendet."
+      "question": "Warum ändert sich das Jahr manchmal schon durch einen Tag Unterschied?",
+      "answer": "Weil entscheidend ist, ob der Geburtstag bereits erreicht wurde. Sobald diese Grenze überschritten ist, zählt ein weiteres volles Jahr."
     },
     {
-      "question": "Kann ich dieses Tool auf dem Smartphone verwenden?",
-      "answer": "Ja. Die Seite funktioniert auf Desktop- und Mobilgeräten mit einer einfachen Eingabe- und Ergebnisansicht."
+      "question": "Wie wird der 29. Februar behandelt?",
+      "answer": "Das Ergebnis hängt vom Referenzjahr ab. In Nicht-Schaltjahren verwendet der Rechner Kalenderregeln, wodurch das Resultat von einer umgangssprachlichen Zählung abweichen kann."
+    },
+    {
+      "question": "Kann ich auch zwei beliebige Daten vergleichen?",
+      "answer": "Ja. Bei zwei Daten zeigt das Tool den Zeitraum zwischen Start- und Enddatum statt ein Geburtsalter."
+    },
+    {
+      "question": "Was bedeuten die Monate und Tage genau?",
+      "answer": "Sie sind der Rest nach den vollendeten Jahren im Kalenderformat. Es handelt sich nicht um eine pauschale Umrechnung in Tage."
+    },
+    {
+      "question": "Welcher Fehler passiert bei Altersgrenzen am häufigsten?",
+      "answer": "Oft wird übersehen, ob der Geburtstag am Stichtag schon vorbei ist. Genau das entscheidet aber über das vollendete Jahr."
     }
   ],
   "seo": {
-    "title": "Altersrechner online",
-    "description": "Berechnen Sie das genaue Alter anhand des Geburtsdatums. Kostenloser Online-Altersrechner mit sofortigem Ergebnis.",
+    "title": "Exakter Altersrechner",
+    "description": "Geben Sie Geburtsdatum und Referenzdatum ein und sehen Sie das Alter in Jahren, Monaten und Tagen.",
     "keywords": [
       "altersrechner",
-      "alter berechnen"
+      "alter berechnen",
+      "geburtsdatum",
+      "jahre monate tage"
     ]
   }
 }

@@ -4,174 +4,86 @@
   "slug": "waterproofing-calculator",
   "h1": "Waterproofing Calculator",
   "title": "Waterproofing Calculator",
-  "shortDescription": "Calculate how much waterproofing material you need for a bathroom, balcony, terrace, or foundation.",
-  "metaTitle": "Waterproofing Calculator - Estimate Liquid Membrane Material",
-  "metaDescription": "Calculate waterproofing quantity for floors, walls, balconies, terraces, and foundations. Enter area, coats, coverage, waste, and pack size to get packs needed.",
-  "intro": "Use this waterproofing calculator to estimate how much liquid membrane, waterproofing compound, or sealant you need for your project. It is useful for bathrooms, balconies, terraces, and foundations.",
-  "overview": "Enter the surface area, number of coats, coverage rate, waste allowance, and pack size. The calculator returns material needed without waste, total quantity with waste, and the number of packs to buy.",
+  "shortDescription": "Estimate liquid waterproofing, sealant, and membrane quantities for bathrooms, balconies, terraces, and foundations.",
+  "metaTitle": "Waterproofing Material Calculator",
+  "metaDescription": "Estimate the amount of waterproofing material for bathrooms, balconies, terraces, and foundations from area, coats, coverage, waste, and pack size.",
+  "intro": "Get the amount of waterproofing material you need by entering area, coats, coverage, waste, and pack size.",
+  "overview": "This calculator estimates liquid membrane, sealing compound, or similar waterproofing products for flat surfaces and damp-prone areas. It accounts for the number of coats, product coverage, waste allowance, and pack size so you can see both the required quantity and how many containers to buy.\n\nUse it when planning work around tiled wet rooms, exterior slabs, or below-grade concrete where stopping moisture matters. The result is a material estimate, not a substitute for the product data sheet or site-specific specification, so always compare it with the manufacturer’s stated consumption and the details of corners, joints, and penetrations.",
   "howItWorks": [
-    "Multiply area by the number of coats.",
-    "Divide by the coverage rate to get base material quantity.",
-    "Add the waste percentage for a safer estimate.",
-    "Divide by pack size and round up to get packs needed."
+    "Enter the surface area to be covered.",
+    "Select how many coats the system requires.",
+    "Use the product coverage to calculate base quantity.",
+    "Add waste, then convert the total into packs and round up."
   ],
   "useCases": [
-    "Bathroom waterproofing estimate before tiling.",
-    "Balcony and terrace liquid membrane planning.",
-    "Foundation damp-proofing material estimate.",
-    "Quick check for how much waterproofing compound to buy."
+    {
+      "title": "Bathroom under tile",
+      "description": "Estimate membrane for a shower room floor and the lower part of the walls before tiling."
+    },
+    {
+      "title": "Balcony edge protection",
+      "description": "Plan the amount needed for a small balcony with extra losses at the drain and perimeter edges."
+    },
+    {
+      "title": "Foundation damp proofing",
+      "description": "Check how much coating is required for vertical foundation walls before backfilling."
+    },
+    {
+      "title": "Repair zone around pipes",
+      "description": "Size material for a localized waterproofing repair around pipe penetrations and corners."
+    }
   ],
   "examples": [
     {
-      "title": "Bathroom floor",
-      "input": "10 m², 2 coats, 1 m²/kg coverage, 10% waste, 5 kg pack",
-      "output": "20 kg base, 22 kg total, 5 packs.",
-      "description": "A practical estimate for a small bathroom floor."
+      "title": "Small shower room floor",
+      "input": "8.5 m², 2 coats, 1.2 m²/kg coverage, 12% waste, 5 kg pack",
+      "output": "Base: 14.2 kg; total: 15.9 kg; packs: 4.",
+      "description": "A realistic estimate for a compact bathroom floor with two coats."
     },
     {
-      "title": "Terrace waterproofing",
-      "input": "25 m², 2 coats, 0.8 m²/l coverage, 15% waste, 10 l pack",
-      "output": "62.5 l base, 71.9 l total, 8 packs.",
-      "description": "Useful when planning outdoor waterproofing materials."
+      "title": "Roof terrace section",
+      "input": "31 m², 3 coats, 0.75 m²/l coverage, 10% waste, 10 l pack",
+      "output": "Base: 124.0 l; total: 136.4 l; packs: 14.",
+      "description": "Useful for a terrace section that needs a heavier waterproofing build-up."
+    },
+    {
+      "title": "Foundation wall run",
+      "input": "18 m², 2 coats, 1.5 m²/kg coverage, 8% waste, 20 kg pack",
+      "output": "Base: 24.0 kg; total: 25.9 kg; packs: 2.",
+      "description": "Good for a straight foundation wall area with modest losses."
     }
   ],
   "faq": [
     {
-      "question": "What can I calculate with this tool?",
-      "answer": "You can estimate the amount of waterproofing material needed for bathrooms, balconies, terraces, and foundations."
+      "question": "Does the result include corners, overlaps, and pipe collars?",
+      "answer": "Only if you include them in the area or add extra waste. Tight details often consume more material than flat fields."
     },
     {
-      "question": "Does the calculator include waste?",
-      "answer": "Yes. Enter a waste percentage to get a more realistic total quantity."
+      "question": "What coverage value should I use?",
+      "answer": "Use the manufacturer’s coverage for the exact product and application method. Brush, roller, and trowel applications can differ."
     },
     {
-      "question": "Should I round up the number of packs?",
-      "answer": "Yes. Always round up to ensure you have enough material for the whole job."
+      "question": "Why does the pack count seem high?",
+      "answer": "The calculator rounds up to full packs, so a small remainder can push the result to the next container."
     },
     {
-      "question": "Can I use it for liquid membrane?",
-      "answer": "Yes. It works well for liquid membrane and similar waterproofing products."
+      "question": "Can I use litres and kilograms interchangeably?",
+      "answer": "Only if the product density makes that acceptable. The tool follows the unit you enter, but the package label may use a different unit."
+    },
+    {
+      "question": "What is the most common mistake when entering the area?",
+      "answer": "Forgetting that walls, upstands, and edge strips are separate surfaces. If they are not part of the measured field, add them separately."
     }
   ],
-  "uiLabels": {
-    "copy": "Copy",
-    "copied": "Copied",
-    "input": "Input",
-    "output": "Output",
-    "placeholder": "Enter a value",
-    "indent": "Indent",
-    "removeComments": "Remove comments",
-    "preview": "Preview",
-    "source": "Source",
-    "sanitizedHtml": "Sanitized HTML",
-    "plainText": "Plain text",
-    "summary": "Summary",
-    "total": "Total",
-    "links": "Links",
-    "images": "Images",
-    "errors": "Errors",
-    "warnings": "Warnings",
-    "valid": "Valid",
-    "invalid": "Invalid",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Width",
-    "height": "Height",
-    "empty": "Empty",
-    "outputReady": "Output ready",
-    "cleanedHtml": "Cleaned HTML",
-    "formattedHtml": "Formatted HTML",
-    "minifiedHtml": "Minified HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extracted images",
-    "extractedLinks": "Extracted links",
-    "validationSummary": "Validation summary",
-    "prettyHtml": "Pretty HTML",
-    "encodedText": "Encoded text",
-    "file": "File",
-    "size": "Size",
-    "format": "Format",
-    "quality": "Quality",
-    "colorOne": "Color 1",
-    "colorTwo": "Color 2",
-    "background": "Background",
-    "foreground": "Foreground",
-    "angle": "Angle",
-    "margin": "Margin",
-    "level": "Level",
-    "gradientType": "Gradient type",
-    "linear": "Linear",
-    "radial": "Radial",
-    "blur": "Blur",
-    "spread": "Spread",
-    "offsetX": "Offset X",
-    "offsetY": "Offset Y",
-    "opacity": "Opacity",
-    "inset": "Inset",
-    "cssCode": "CSS code",
-    "snippet": "Snippet",
-    "download": "Download",
-    "downloadSvg": "Download SVG",
-    "downloadPng": "Download PNG",
-    "downloadAll": "Download all",
-    "upload": "Upload",
-    "title": "Title",
-    "description": "Description",
-    "canonicalUrl": "Canonical URL",
-    "siteName": "Site name",
-    "ogImage": "OG image",
-    "clear": "Clear",
-    "generatedQr": "Generated QR",
-    "placeholderImage": "Placeholder image",
-    "faviconSet": "Favicon set",
-    "keepAspectRatio": "Keep aspect ratio",
-    "cropX": "Crop X",
-    "cropY": "Crop Y",
-    "cropWidth": "Crop width",
-    "cropHeight": "Crop height",
-    "originalSize": "Original size",
-    "outputSize": "Output size",
-    "savedSize": "Saved size",
-    "result": "Result",
-    "base64": "Base64",
-    "mimeType": "MIME type",
-    "resizedImage": "Resized image",
-    "compressedImage": "Compressed image",
-    "croppedImage": "Cropped image",
-    "convertedImage": "Converted image",
-    "decodedImage": "Decoded image",
-    "imagePreview": "Image preview",
-    "camera": "Camera",
-    "lens": "Lens",
-    "dateTaken": "Date taken",
-    "resolution": "Resolution",
-    "fileSize": "File size",
-    "iso": "ISO",
-    "exposure": "Exposure",
-    "aperture": "Aperture",
-    "focalLength": "Focal length",
-    "flash": "Flash",
-    "orientation": "Orientation",
-    "latitude": "Latitude",
-    "longitude": "Longitude",
-    "openMap": "Open map",
-    "rawMetadata": "Raw metadata",
-    "noMetadataFound": "No metadata found",
-    "gpsLocation": "GPS location",
-    "metadataSummary": "Metadata summary"
-  },
   "seo": {
-    "title": "Waterproofing Calculator for Liquid Membrane and Sealant",
-    "description": "Estimate waterproofing material quickly for bathrooms, balconies, terraces, and foundations. Calculate base quantity, total quantity with waste, and packs needed.",
+    "title": "Waterproofing Material Calculator",
+    "description": "Estimate the amount of waterproofing material for bathrooms, balconies, terraces, and foundations from area, coats, coverage, waste, and pack size.",
     "keywords": [
-      "waterproofing calculator",
-      "liquid membrane calculator",
-      "waterproofing material estimate",
-      "how much waterproofing do I need",
-      "foundation waterproofing calculator"
+      "waterproofing material calculator",
+      "liquid membrane estimate",
+      "sealant quantity calculator",
+      "foundation waterproofing estimate",
+      "bathroom waterproofing material"
     ]
   }
 }

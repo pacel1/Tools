@@ -4,106 +4,91 @@
   "slug": "nettoyeur-html",
   "h1": "Nettoyeur HTML",
   "title": "Nettoyeur HTML",
-  "shortDescription": "Nettoyez un balisage dangereux ou encombré en supprimant les scripts, commentaires et attributs à risque.",
-  "metaTitle": "Nettoyeur HTML | Supprimer scripts, commentaires et HTML dangereux",
-  "metaDescription": "Nettoyez le HTML en ligne en supprimant scripts, commentaires, gestionnaires d’événements et attributs à risque. Nettoyage HTML rapide côté client.",
-  "intro": "Utilisez ce nettoyeur HTML pour assainir un balisage encombré directement dans le navigateur. Il supprime les scripts, commentaires et attributs à risque afin de transformer un HTML dangereux ou bruyant en sortie plus propre, sans envoyer les données à un serveur.",
-  "overview": "Le nettoyeur HTML est un utilitaire côté client pour assainir le HTML avant publication, prévisualisation ou réutilisation. Il aide à supprimer les vecteurs XSS courants, les commentaires inutiles et les attributs indésirables tout en conservant la structure nécessaire. Idéal pour les développeurs, les éditeurs et toute personne travaillant avec du HTML collé ou généré.",
+  "shortDescription": "Supprimez scripts, commentaires et attributs à risque d’un HTML avant de le réutiliser ou le publier.",
+  "metaTitle": "Nettoyeur HTML | Retirer le HTML dangereux",
+  "metaDescription": "Supprimez scripts, commentaires, gestionnaires d’événements et attributs à risque de votre HTML dans le navigateur avant de le copier ou publier.",
+  "intro": "Collez le HTML ici pour retirer scripts, commentaires et attributs à risque tout en conservant la structure utile.",
+  "overview": "Le nettoyeur HTML vous aide à assainir du balisage collé ou généré avant de le réutiliser dans une page, un e-mail, un aperçu ou un extrait de documentation. Il se concentre sur la suppression des éléments dangereux comme les scripts et les gestionnaires d’événements inline, ainsi que des commentaires et attributs inutiles.\n\nC’est pratique lorsque le HTML provient d’un CMS, d’un éditeur enrichi, d’une saisie utilisateur ou d’une autre source copiée. Le résultat est obtenu dans le navigateur, ce qui permet de vérifier ce qui a été retiré avant de le coller ailleurs.",
   "howItWorks": [
     "Collez ou chargez votre HTML dans le champ de saisie.",
-    "L’outil analyse le balisage à la recherche de balises dangereuses, de commentaires et d’attributs à risque.",
-    "Il supprime les scripts, les gestionnaires d’événements et les éléments non souhaités.",
-    "Vérifiez le HTML nettoyé dans le panneau de sortie puis copiez-le quand il est prêt."
+    "L’outil inspecte les balises, commentaires et attributs pour repérer le balisage dangereux ou superflu.",
+    "Il supprime les scripts, gestionnaires d’événements et autres éléments à risque selon ses règles de nettoyage.",
+    "Vérifiez le HTML nettoyé dans le panneau de sortie puis copiez-le quand il vous convient."
   ],
   "useCases": [
-    "Supprimer les scripts et gestionnaires d’événements inline d’un HTML généré par les utilisateurs.",
-    "Nettoyer du HTML copié depuis un CMS, un client mail ou un traitement de texte.",
-    "Préparer des extraits sûrs pour des aperçus, de la documentation ou des démonstrations.",
-    "Retirer les commentaires et attributs encombrants avant le formatage ou la minification.",
-    "Inspecter et assainir un balisage collé avant de le réutiliser dans un projet."
+    {
+      "title": "Assainir des extraits fournis par des utilisateurs",
+      "description": "Retirez les gestionnaires inline et les scripts intégrés des contenus issus d’un formulaire, d’un commentaire ou d’un éditeur avant réutilisation."
+    },
+    {
+      "title": "Préparer un export CMS pour un autre outil",
+      "description": "Nettoyez un balisage copié depuis une plateforme de contenu afin de le transférer vers un constructeur de site, un modèle d’e-mail ou une documentation."
+    },
+    {
+      "title": "Éliminer le bruit d’un contenu collé",
+      "description": "Supprimez les commentaires, attributs de suivi et autres traces laissées par un traitement de texte ou un éditeur visuel."
+    },
+    {
+      "title": "Nettoyer du code pour aperçus et démonstrations",
+      "description": "Réduisez le balisage risqué dans un HTML d’exemple avant de l’utiliser dans un aperçu, un sandbox ou une présentation."
+    },
+    {
+      "title": "Vérifier le balisage avant intégration",
+      "description": "Inspectez un HTML collé depuis une source externe et retirez les parties dangereuses avant de l’ajouter à un projet."
+    }
   ],
   "examples": [
     {
-      "title": "Supprimer les scripts d’un HTML collé",
-      "input": "<div onclick=\"alert(1)\"><script>alert('x')</script>Bonjour<!-- note --></div>",
-      "output": "<div>Bonjour</div>",
-      "description": "Conserve le contenu de l’élément tout en supprimant les scripts, commentaires et gestionnaires dangereux."
+      "title": "Retirer un gestionnaire et un script",
+      "input": "<section onclick=\"track()\"><script>bad()</script><h2>Mise à jour</h2><!-- brouillon --></section>",
+      "output": "<section><h2>Mise à jour</h2></section>",
+      "description": "Le script, le commentaire et le gestionnaire d’événements sont supprimés, mais le contenu de la section reste intact."
     },
     {
-      "title": "Nettoyer les attributs encombrants",
-      "input": "<p style=\"color:red\" data-id=\"1\" onmouseover=\"doBad()\">Texte</p>",
-      "output": "<p style=\"color:red\" data-id=\"1\">Texte</p>",
-      "description": "Supprime les gestionnaires d’événements et conserve les attributs non risqués lorsqu’ils sont autorisés."
+      "title": "Conserver le contenu du lien et supprimer le comportement à risque",
+      "input": "<p>Lisez <a href=\"/docs\" onmouseover=\"steal()\">le guide</a> maintenant.</p>",
+      "output": "<p>Lisez <a href=\"/docs\">le guide</a> maintenant.</p>",
+      "description": "Le texte et la destination du lien sont conservés, mais l’attribut d’événement dangereux est retiré."
+    },
+    {
+      "title": "Nettoyer un balisage collé avec attributs superflus",
+      "input": "<div class=\"box\" data-id=\"42\" onclick=\"alert(1)\"><img src=\"banner.png\" alt=\"Bannière\" width=\"800\" height=\"300\"></div>",
+      "output": "<div class=\"box\" data-id=\"42\"><img src=\"banner.png\" alt=\"Bannière\" width=\"800\" height=\"300\"></div>",
+      "description": "Les attributs utiles de mise en page et d’image sont conservés, tandis que le gestionnaire de clic est supprimé."
     }
   ],
   "faq": [
     {
-      "question": "Que supprime le nettoyeur HTML ?",
-      "answer": "Il supprime les scripts, les commentaires et les attributs à risque, comme les gestionnaires d’événements inline. Le résultat exact dépend des règles d’assainissement de l’outil."
+      "question": "Que supprime exactement cet outil ?",
+      "answer": "Il supprime les scripts, les commentaires et les attributs susceptibles d’exécuter du code ou d’ajouter un comportement indésirable, comme les gestionnaires d’événements inline. Le résultat final dépend des règles appliquées au contenu saisi."
     },
     {
-      "question": "Le HTML est-il traité sur le serveur ?",
-      "answer": "Non. Cet outil est conçu pour fonctionner uniquement côté client, afin que votre HTML puisse être nettoyé localement dans le navigateur."
+      "question": "Est-ce que les balises courantes comme div, p ou img sont modifiées ?",
+      "answer": "En général non. L’outil se concentre sur les parties dangereuses ou parasites, pas sur la réécriture complète du document."
     },
     {
-      "question": "Peut-il corriger du HTML invalide ?",
-      "answer": "Il peut nettoyer et normaliser le balisage, mais ce n’est pas un outil complet de réparation. Pour les corrections structurelles, utilisez-le avec un formateur ou un validateur HTML."
+      "question": "Pourquoi certains attributs restent-ils présents et d’autres non ?",
+      "answer": "Les attributs jugés sûrs peuvent être conservés, tandis que les attributs à risque sont retirés. C’est pourquoi un attribut de données peut rester alors qu’un gestionnaire d’événements disparaît."
     },
     {
-      "question": "Supprime-t-il tous les attributs ?",
-      "answer": "Non. Il cible les attributs dangereux ou inutiles et conserve le balisage utile lorsque c’est possible."
+      "question": "L’outil répare-t-il un HTML cassé ou mal imbriqué ?",
+      "answer": "Non. Il peut nettoyer le balisage, mais ce n’est pas un outil complet de réparation. Pour corriger la structure, ajoutez ensuite un formateur ou un validateur HTML."
+    },
+    {
+      "question": "Pourquoi la sortie est-elle parfois plus courte que l’entrée ?",
+      "answer": "Les commentaires, scripts et attributs dangereux sont supprimés volontairement. Si votre HTML dépendait de ces parties, la sortie sera plus courte et peut se comporter différemment."
     }
   ],
-  "uiLabels": {
-    "copy": "Copier",
-    "copied": "Copié",
-    "input": "Entrée",
-    "output": "Sortie",
-    "placeholder": "Collez le HTML ici...",
-    "indent": "Retrait",
-    "removeComments": "Supprimer les commentaires",
-    "preview": "Aperçu",
-    "source": "Source",
-    "sanitizedHtml": "HTML assaini",
-    "plainText": "Texte brut",
-    "summary": "Résumé",
-    "total": "Total",
-    "links": "Liens",
-    "images": "Images",
-    "errors": "Erreurs",
-    "warnings": "Avertissements",
-    "valid": "Valide",
-    "invalid": "Invalide",
-    "href": "Href",
-    "text": "Texte",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Largeur",
-    "height": "Hauteur",
-    "empty": "Vide",
-    "outputReady": "Sortie prête",
-    "cleanedHtml": "HTML nettoyé",
-    "formattedHtml": "HTML formaté",
-    "minifiedHtml": "HTML minifié",
-    "markdown": "Markdown",
-    "extractedImages": "Images extraites",
-    "extractedLinks": "Liens extraits",
-    "validationSummary": "Résumé de validation",
-    "prettyHtml": "HTML lisible",
-    "encodedText": "Texte encodé"
-  },
   "seo": {
-    "title": "Nettoyeur HTML en ligne | Supprimer balises et attributs dangereux",
-    "description": "Nettoyez le HTML en ligne en supprimant scripts, commentaires et attributs à risque. Nettoyeur HTML rapide côté client pour un balisage plus sûr.",
+    "title": "Nettoyeur HTML | Retirer le HTML dangereux",
+    "description": "Supprimez scripts, commentaires, gestionnaires d’événements et attributs à risque de votre HTML dans le navigateur avant de le copier ou publier.",
     "keywords": [
       "nettoyeur html",
       "assainir html",
       "supprimer scripts html",
       "retirer commentaires html",
-      "nettoyer html en ligne",
-      "sanitiseur html",
-      "html sécurisé"
+      "retirer attributs à risque",
+      "sanitiseur html"
     ]
   }
 }

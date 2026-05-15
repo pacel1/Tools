@@ -1,0 +1,88 @@
+{
+  "toolId": "icon-maker",
+  "locale": "fr",
+  "slug": "icon-maker",
+  "h1": "Icon Maker",
+  "title": "Icon Maker",
+  "shortDescription": "Transformez une image en icône d’application ou en icône carrée de marque avec réglage du format, du padding et du fond.",
+  "metaTitle": "Icon Maker | Icônes d’app",
+  "metaDescription": "Transformez une image source en icône d’application, icône de lanceur ou asset carré de marque avec export dans le navigateur.",
+  "intro": "Créez une icône nette à partir d’une seule image en réglant la taille, le padding, le fond et le format, puis téléchargez le fichier directement depuis votre navigateur.",
+  "overview": "Cet outil est pensé pour un flux de travail centré sur une seule icône carrée, propre et directement exploitable, plutôt que sur un pack complet. Il convient bien aux prototypes d’application, aux tuiles de lanceur, aux assets PWA, aux démos produit et aux avatars de marque qui exigent un cadrage régulier.\n\nVous pouvez partir d’un logo, d’un symbole ou d’un monogramme, puis ajuster l’espace interne pour que le sujet reste bien équilibré dans le carré. Un fond uni donne un rendu plus affirmé, tandis que la transparence reste pratique si l’icône doit vivre sur plusieurs surfaces.\n\nLe résultat est un fichier réellement utilisable, pas seulement un aperçu. C’est utile pour la transmission au développement, les tests précoces d’interface, les visuels de boutique et tous les cas où vous voulez une icône carrée réutilisable avec des proportions fiables.",
+  "howItWorks": [
+    "Importez l’image à convertir en icône.",
+    "Choisissez la taille du canvas, le padding, la couleur de fond et le format de sortie.",
+    "Vérifiez l’aperçu, puis téléchargez le fichier final."
+  ],
+  "useCases": [
+    {
+      "title": "Tuile d’application",
+      "description": "Convertissez un logo en icône carrée pour une prévisualisation d’app, une build interne ou une maquette de boutique."
+    },
+    {
+      "title": "Asset d’écran d’accueil",
+      "description": "Générez un symbole lisible avec le bon padding pour une place nette sur l’écran d’accueil ou dans une grille de lanceur."
+    },
+    {
+      "title": "Avatar produit",
+      "description": "Transformez un signe de marque en asset carré pour des tableaux de bord, des interfaces d’administration ou des listes de partenaires."
+    },
+    {
+      "title": "Badge de marque",
+      "description": "Posez un symbole simple sur un fond uni pour obtenir une icône compacte destinée aux présentations et aux pitchs."
+    }
+  ],
+  "examples": [
+    {
+      "title": "Logo transparent vers icône d’app",
+      "input": "Un logo SVG transparent sans le long texte",
+      "output": "Une icône PNG 512×512 avec symbole centré et padding de 18 %",
+      "description": "Pratique pour les tests d’application quand il faut un asset carré lisible."
+    },
+    {
+      "title": "Monogramme sur badge sombre",
+      "input": "Un monogramme à deux lettres sur fond transparent",
+      "output": "Une icône 1024×1024 avec fond bleu nuit et marque blanche",
+      "description": "Idéal pour un avatar de marque ou une tuile de lanceur à fort contraste."
+    },
+    {
+      "title": "Symbole produit pour marketplace",
+      "input": "Un petit glyph exporté depuis un fichier de design",
+      "output": "Une icône WebP 256×256 avec davantage de padding et fond transparent",
+      "description": "Utile quand le symbole doit rester propre sur des surfaces variées sans cadre imposé."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Quel type d’image faut-il importer pour un rendu net ?",
+      "answer": "Un logo, un symbole ou un monogramme avec des contours clairs et un espace suffisant autour du motif donne le meilleur résultat. Les visuels trop détaillés perdent vite en lisibilité une fois réduits."
+    },
+    {
+      "question": "Pourquoi le padding est-il si important ?",
+      "answer": "Le padding détermine l’air autour du motif dans le carré. Trop faible, l’icône paraît écrasée ; trop fort, elle semble trop petite."
+    },
+    {
+      "question": "Puis-je conserver un fond transparent ?",
+      "answer": "Oui. C’est la meilleure option si l’icône doit être placée sur plusieurs couleurs ou intégrée à différents systèmes visuels."
+    },
+    {
+      "question": "Que se passe-t-il si l’image d’origine est rectangulaire ?",
+      "answer": "L’outil l’adapte à un canvas carré. Si le sujet est très large, il peut être nécessaire de réduire le padding ou d’utiliser une version mieux préparée au cadrage."
+    },
+    {
+      "question": "Quel format choisir ?",
+      "answer": "PNG est le plus sûr pour des bords nets et la transparence. WebP peut être plus léger, tandis qu’un fond uni convient bien aux icônes type badge."
+    }
+  ],
+  "seo": {
+    "title": "Icon Maker | Icônes d’app",
+    "description": "Transformez une image source en icône d’application, icône de lanceur ou asset carré de marque avec export dans le navigateur.",
+    "keywords": [
+      "icon maker",
+      "générateur d’icônes",
+      "icône d’application",
+      "icône carrée",
+      "icône de lanceur"
+    ]
+  }
+}

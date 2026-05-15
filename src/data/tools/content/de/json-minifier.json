@@ -4,43 +4,77 @@
   "slug": "json-minimierer",
   "h1": "JSON-Minimierer",
   "title": "JSON-Minimierer",
-  "shortDescription": "JSON online sofort minimieren – mit schnellen Ergebnissen, einfacher Eingabe und praktischen Beispielen.",
-  "overview": "JSON online sofort minimieren. Diese Seite liefert eine schnelle Antwort mit einem praktischen Werkzeug und einem einfachen Ergebnisfluss. Sie richtet sich an Nutzer, die eine kostenlose Online-Lösung, schnelle browserbasierte Ergebnisse und praktische Long-Tail-Inhalte suchen.",
+  "shortDescription": "Entferne überflüssige Leerzeichen aus JSON und behalte die gültige Struktur in kompaktem Format.",
+  "metaTitle": "JSON-Minimierer",
+  "metaDescription": "JSON komprimieren, indem Leerzeichen und Zeilenumbrüche entfernt werden, ohne Struktur oder Werte zu verändern.",
+  "intro": "Fügen Sie JSON ein und erhalten Sie eine kompakte Version mit derselben Datenstruktur, aber ohne unnötige Leerzeichen.",
+  "overview": "Ein JSON-Minimierer wandelt formatiertes JSON in eine kompakte Zeichenfolge um, indem unnötige Leerzeichen, Tabs und Zeilenumbrüche entfernt werden. Die Daten bleiben gleich, aber die Ausgabe wird kleiner und lässt sich leichter in Code einbauen, in Anfragen senden oder in Logs speichern.\n\nDas ist nützlich für API-Payloads, Konfigurationsausschnitte, Testdaten und Debug-Exporte. Wenn der Eingabetext kein gültiges JSON ist, sollte nicht blind minifiziert werden. Korrigieren Sie zuerst Syntaxfehler wie abschließende Kommas, fehlende Anführungszeichen oder nicht geschlossene Klammern.\n\nDie Ausgabe ist für Maschinen gedacht, nicht für bequemes Lesen. Wenn Sie die Struktur wieder übersichtlich sehen möchten, formatieren Sie das JSON nach dem Minimieren erneut oder nutzen Sie dafür ein Formatierungswerkzeug.",
   "howItWorks": [
-    "Geben Sie den benötigten Wert oder Text in das Formular ein.",
-    "Die Konvertierung, Berechnung oder Umwandlung erfolgt sofort im Browser.",
-    "Prüfen Sie das Ergebnis und nutzen Sie bei Bedarf weitere passende Tools."
+    "Fügen Sie gültiges JSON in das Eingabefeld ein.",
+    "Das Tool entfernt nur nicht notwendige Leerzeichen und erhält Werte sowie Verschachtelung.",
+    "Kopieren Sie das kompakte Ergebnis für Code, Transport oder Speicherung."
+  ],
+  "useCases": [
+    {
+      "title": "API-Body vor dem Senden verdichten",
+      "description": "Ein formatiertes JSON kann für Tests, Demos oder Requests in eine kompakte Ein-Zeilen-Form gebracht werden."
+    },
+    {
+      "title": "Testdaten kompakt speichern",
+      "description": "Beispieldaten und Fixture-Objekte lassen sich in kleinerer, leichter einbettbarer Form ablegen."
+    },
+    {
+      "title": "Konfigurationsausschnitt für andere Systeme vorbereiten",
+      "description": "Zeilenumbrüche und Einrückungen entfernen, bevor JSON in ein anderes System oder in Umgebungsvariablen kommt."
+    }
   ],
   "examples": [
     {
-      "title": "Beispiel 1",
-      "input": "{\"name\":\"tool\",\"value\":1}",
-      "output": "{\"name\":\"tool\",\"value\":1}",
-      "description": "Ein realistisches Beispiel für einen JSON-Minimierer bei einer alltäglichen Suchanfrage."
+      "title": "Lesbares JSON in kompakte Form",
+      "input": "{\n  \"benutzer\": \"lara\",\n  \"rollen\": [\n    \"admin\",\n    \"editor\"\n  ],\n  \"aktiv\": true\n}",
+      "output": "{\"benutzer\":\"lara\",\"rollen\":[\"admin\",\"editor\"],\"aktiv\":true}",
+      "description": "Leerzeichen und Zeilenumbrüche werden entfernt, die Struktur bleibt erhalten."
     },
     {
-      "title": "Beispiel 2",
-      "input": "{\"name\":\"tool\",\"value\":1}",
-      "output": "{\"name\":\"tool\",\"value\":1}",
-      "description": "Ein weiterer praktischer Anwendungsfall für organischen Long-Tail-Traffic."
+      "title": "Verschachteltes Objekt mit Zahlen",
+      "input": "{\n  \"bestellung\": {\n    \"id\": 1042,\n    \"positionen\": [\n      { \"sku\": \"A1\", \"anzahl\": 2 },\n      { \"sku\": \"B7\", \"anzahl\": 1 }\n    ]\n  }\n}",
+      "output": "{\"bestellung\":{\"id\":1042,\"positionen\":[{\"sku\":\"A1\",\"anzahl\":2},{\"sku\":\"B7\",\"anzahl\":1}]}}",
+      "description": "Verschachtelte Objekte und Arrays werden zu einer einzigen Zeile verdichtet."
+    },
+    {
+      "title": "Text mit Kommas und Leerzeichen",
+      "input": "{\n  \"nachricht\": \"Speichern und erneut versuchen.\",\n  \"hinweis\": \"Leerzeichen innerhalb von Strings bleiben erhalten.\"\n}",
+      "output": "{\"nachricht\":\"Speichern und erneut versuchen.\",\"hinweis\":\"Leerzeichen innerhalb von Strings bleiben erhalten.\"}",
+      "description": "Leerzeichen in Anführungszeichen gehören zum Wert und dürfen nicht entfernt werden."
     }
   ],
   "faq": [
     {
-      "question": "Wie genau ist dieses Tool?",
-      "answer": "Das Ergebnis wird direkt aus der Formel oder der browserseitigen Logik dieses Tools berechnet."
+      "question": "Ändert der Minimierer Zahlen, Booleans oder Strings?",
+      "answer": "Nein. Eine korrekte Minimierung entfernt nur Formatierung außerhalb der JSON-Strings. Die Werte selbst bleiben unverändert."
     },
     {
-      "question": "Kann ich dieses Tool auf dem Handy nutzen?",
-      "answer": "Ja. Die Seite funktioniert auf Desktop- und Mobilgeräten mit einem einfachen Eingabe- und Ergebnislayout."
+      "question": "Was passiert bei ungültigem JSON?",
+      "answer": "Aus fehlerhafter Syntax darf kein sicherer Kompaktwert erzeugt werden. Beheben Sie zuerst abschließende Kommas, fehlende Anführungszeichen oder ungeschlossene Klammern."
+    },
+    {
+      "question": "Werden Leerzeichen in Strings entfernt?",
+      "answer": "Nein. Leerzeichen innerhalb von Anführungszeichen sind Teil des Werts und müssen erhalten bleiben. Entfernt wird nur Formatierung außerhalb der Strings."
+    },
+    {
+      "question": "Kann ich JSON mit Escape-Zeichen oder Unicode minimieren?",
+      "answer": "Ja, sofern das JSON gültig ist. Sequenzen wie \\n, \\t, \\\\ und Unicode-Zeichen bleiben entsprechend den Eingabedaten erhalten."
     }
   ],
   "seo": {
     "title": "JSON-Minimierer",
-    "description": "JSON online sofort minimieren. Kostenloser JSON-Minimierer mit sofortigen Ergebnissen.",
+    "description": "JSON komprimieren, indem Leerzeichen und Zeilenumbrüche entfernt werden, ohne Struktur oder Werte zu verändern.",
     "keywords": [
       "json minimierer",
-      "entwickler-tools"
+      "json minimieren",
+      "json komprimieren",
+      "leerzeichen aus json entfernen",
+      "json kompressor"
     ]
   }
 }

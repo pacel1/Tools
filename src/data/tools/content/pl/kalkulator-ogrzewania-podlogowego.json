@@ -4,173 +4,85 @@
   "slug": "kalkulator-ogrzewania-podlogowego",
   "h1": "Kalkulator ogrzewania podłogowego",
   "title": "Kalkulator ogrzewania podłogowego",
-  "shortDescription": "Oszacuj dlugosc rury, liczbe petli i liczbe obwodow rozdzielacza dla wodnego ogrzewania podlogowego.",
-  "metaTitle": "Kalkulator ogrzewania podlogowego | Rura, petle i rozdzielacz",
-  "metaDescription": "Policz ile rury potrzeba na ogrzewanie podlogowe, ile petli wyjdzie z zadanej powierzchni i ile obwodow trzeba przewidziec na rozdzielaczu.",
-  "intro": "Kalkulator ogrzewania podlogowego pomaga szybko sprawdzic, ile rury potrzeba do ukladu spiralnego albo meandrowego. Wynik pokazuje tez liczbe petli i srednia dlugosc pojedynczego obwodu.",
-  "overview": "Wpisz powierzchnie, rozstaw rur, maksymalna dlugosc petli, dodatkowa trase do rozdzielacza i zapas. Narzedzie liczy metraz rury w polu grzewczym, dolicza odcinki dojscia i przelicza liczbe obwodow potrzebnych na rozdzielaczu.",
+  "shortDescription": "Oszacuj długość rury i liczbę pętli dla wodnego ogrzewania podłogowego.",
+  "metaTitle": "Kalkulator ogrzewania podłogowego",
+  "metaDescription": "Oblicz długość rury, liczbę pętli i średnią długość obwodu dla wodnej podłogówki na podstawie powierzchni, rozstawu i zapasu.",
+  "intro": "Oszacuj szybko metraż rury, liczbę pętli i średnią długość jednego obwodu dla wodnej podłogówki.",
+  "overview": "Ten kalkulator liczy zapotrzebowanie na rurę w wodnym ogrzewaniu podłogowym na podstawie powierzchni grzewczej, rozstawu rur, maksymalnej długości pętli, dodatkowej trasy do rozdzielacza i zapasu na docinki. Przydaje się na etapie doboru materiałów, zanim zamówisz pętle, rozdzielacz lub zwoje rury. Wynik pokazuje też, czy dana strefa zmieści się w jednym obwodzie, czy trzeba ją podzielić na kilka krótszych pętli.",
   "howItWorks": [
     "Wpisz powierzchnię ogrzewanej podłogi w metrach kwadratowych.",
     "Ustaw rozstaw rur w centymetrach.",
     "Podaj maksymalną dopuszczalną długość pętli.",
-    "Dodaj dodatkową długość podłączenia do rozdzielacza.",
-    "Uwzględnij zapas procentowy na docinki i układanie."
+    "Dodaj długość dojścia do rozdzielacza i powrotu.",
+    "Uwzględnij procent zapasu na docinki, łuki i korekty układu."
   ],
   "useCases": [
-    "Oszacowanie, ile rury na podłogówkę będzie potrzebne.",
-    "Planowanie liczby pętli przed montażem.",
-    "Sprawdzenie, czy powierzchnia zmieści się w limicie długości pętli.",
-    "Szybka wycena materiału do remontu lub nowego domu."
+    {
+      "title": "Dobór rury do jednego pomieszczenia",
+      "description": "Sprawdź, ile metrów rury potrzeba na salon, sypialnię albo strefę dzienną przed zamówieniem materiału."
+    },
+    {
+      "title": "Kontrola liczby obwodów na rozdzielaczu",
+      "description": "Zobacz, ile pętli trzeba przewidzieć, aby żadna z nich nie przekroczyła ustawionego limitu długości."
+    },
+    {
+      "title": "Porównanie różnych rozstawów",
+      "description": "Przetestuj kilka wariantów rozstawu, żeby ocenić wpływ gęstszego układu na zużycie rury i liczbę obiegów."
+    },
+    {
+      "title": "Planowanie remontu z oddalonym rozdzielaczem",
+      "description": "Uwzględnij dodatkowe odcinki prowadzone do rozdzielacza, gdy instalacja nie startuje tuż przy ogrzewanej strefie."
+    }
   ],
   "examples": [
     {
-      "title": "Przykład obliczenia",
-      "input": "100 m2 powierzchni, rozstaw 15 cm, maks. 100 m pętli, 5 m dodatkowej długości, 10% zapasu",
-      "output": "Na podstawie danych wyliczana jest przybliżona długość rury, liczba pętli i średnia długość pętli.",
-      "description": "Pokazuje typowy scenariusz planowania wodnej podłogówki."
+      "title": "Salon z rozdzielaczem w korytarzu",
+      "input": "Powierzchnia: 34 m2, rozstaw: 15 cm, maks. pętla: 95 m, dodatkowa długość: 8 m, zapas: 7%",
+      "output": "Szacunkowe zużycie rury to około 265 m, co daje 3 pętle o średniej długości około 88 m.",
+      "description": "Typowy przykład dla jednego średniego pomieszczenia z bliskim rozdzielaczem."
     },
     {
-      "title": "Planowanie materiału",
-      "input": "Porównaj wynik z pojemnością rozdzielacza i długością zwoju rury",
-      "output": "Pomaga uniknąć zaniżenia ilości rury i liczby obiegów potrzebnych do instalacji.",
-      "description": "Przydatne na etapie wstępnego kosztorysu."
+      "title": "Parter w układzie otwartym",
+      "input": "Powierzchnia: 82 m2, rozstaw: 10 cm, maks. pętla: 100 m, dodatkowa długość: 12 m, zapas: 10%",
+      "output": "Szacunkowe zużycie rury to około 922 m, więc potrzebnych jest 10 pętli o średniej długości blisko 92 m.",
+      "description": "Pokazuje, jak gęsty rozstaw i duża powierzchnia zwiększają liczbę obiegów."
+    },
+    {
+      "title": "Mała łazienka przy ścianie zewnętrznej",
+      "input": "Powierzchnia: 9,5 m2, rozstaw: 20 cm, maks. pętla: 70 m, dodatkowa długość: 6 m, zapas: 5%",
+      "output": "Szacunkowe zużycie rury to około 59 m, więc wystarczy jedna pętla i mieści się ona w limicie.",
+      "description": "Przydatny przykład dla małej strefy, którą można obsłużyć jednym obwodem."
     }
   ],
   "faq": [
     {
-      "question": "Jak dokładny jest ten kalkulator ogrzewania podłogowego?",
-      "answer": "To praktyczne narzędzie do planowania. Wynik może się różnić w zależności od kształtu pomieszczenia, stref brzegowych, układu rozdzielacza i sposobu montażu."
+      "question": "Co zmienia rozstaw rur w wyniku?",
+      "answer": "Rozstaw decyduje o gęstości ułożenia. Mniejszy rozstaw zwiększa łączną długość rury i zwykle podnosi liczbę pętli, a większy ją zmniejsza."
     },
     {
-      "question": "Na co wpływa rozstaw rur?",
-      "answer": "Im mniejszy rozstaw, tym większe zużycie rury. Większy rozstaw zmniejsza długość instalacji. Kalkulator wykorzystuje rozstaw do oszacowania zapotrzebowania na rurę."
+      "question": "Dlaczego trzeba podać dodatkową długość dojścia?",
+      "answer": "To odcinki od rozdzielacza do ogrzewanej strefy i z powrotem. Bez nich wynik byłby zbyt krótki, szczególnie przy większych odległościach."
     },
     {
-      "question": "Po co podawać dodatkową długość podłączenia?",
-      "answer": "To długość przewodów od rozdzielacza do ogrzewanej strefy i z powrotem. Dzięki temu wynik jest bardziej realistyczny."
+      "question": "Czy ten kalkulator uwzględnia skomplikowany kształt pomieszczenia?",
+      "answer": "Uwzględnia tylko uproszczony układ. Nieregularne ściany, wnęki, słupy i strefy brzegowe mogą zwiększyć rzeczywiste zużycie rury."
     },
     {
-      "question": "Co jeśli długość pętli przekroczy limit?",
-      "answer": "Kalkulator pokaże, że trzeba zwiększyć liczbę pętli, aby każda z nich mieściła się w zadanej maksymalnej długości."
+      "question": "Jak czytać wynik długości pętli?",
+      "answer": "To średnia długość jednego obwodu przy zadanych parametrach. Jeśli jest blisko limitu, trzeba przewidzieć więcej pętli albo skorygować układ."
     },
     {
-      "question": "Czy mogę użyć tego do ogrzewania elektrycznego?",
-      "answer": "Nie. To narzędzie jest przeznaczone do planowania wodnego ogrzewania podłogowego, a nie mat lub kabli elektrycznych."
+      "question": "Czy mogę wprowadzić łączną powierzchnię kilku pomieszczeń?",
+      "answer": "Tak, ale tylko wtedy, gdy tworzą jedną strefę grzewczą i mają identyczny rozstaw oraz limit długości. W innych przypadkach licz je osobno."
+    },
+    {
+      "question": "Po co jest zapas procentowy?",
+      "answer": "Zapas uwzględnia docinki, nawroty i korekty prowadzenia rur. Bez niego łatwo zabraknie materiału podczas montażu."
     }
   ],
-  "uiLabels": {
-    "copy": "Kopiuj",
-    "copied": "Skopiowano",
-    "input": "Dane wejściowe",
-    "output": "Wynik",
-    "placeholder": "Wpisz wartość",
-    "indent": "Wcięcie",
-    "removeComments": "Usuń komentarze",
-    "preview": "Podgląd",
-    "source": "Źródło",
-    "sanitizedHtml": "Oczyszczony HTML",
-    "plainText": "Zwykły tekst",
-    "summary": "Podsumowanie",
-    "total": "Razem",
-    "links": "Linki",
-    "images": "Obrazy",
-    "errors": "Błędy",
-    "warnings": "Ostrzeżenia",
-    "valid": "Poprawny",
-    "invalid": "Niepoprawny",
-    "href": "Href",
-    "text": "Tekst",
-    "rel": "Rel",
-    "target": "Cel",
-    "alt": "Alt",
-    "width": "Szerokość",
-    "height": "Wysokość",
-    "empty": "Pusto",
-    "outputReady": "Wynik gotowy",
-    "cleanedHtml": "Wyczyszczony HTML",
-    "formattedHtml": "Sformatowany HTML",
-    "minifiedHtml": "Zminifikowany HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Wyodrębnione obrazy",
-    "extractedLinks": "Wyodrębnione linki",
-    "validationSummary": "Podsumowanie walidacji",
-    "prettyHtml": "Czytelny HTML",
-    "encodedText": "Zakodowany tekst",
-    "file": "Plik",
-    "size": "Rozmiar",
-    "format": "Format",
-    "quality": "Jakość",
-    "colorOne": "Kolor 1",
-    "colorTwo": "Kolor 2",
-    "background": "Tło",
-    "foreground": "Pierwszy plan",
-    "angle": "Kąt",
-    "margin": "Margines",
-    "level": "Poziom",
-    "gradientType": "Typ gradientu",
-    "linear": "Liniowy",
-    "radial": "Promienisty",
-    "blur": "Rozmycie",
-    "spread": "Rozprzestrzenienie",
-    "offsetX": "Przesunięcie X",
-    "offsetY": "Przesunięcie Y",
-    "opacity": "Przezroczystość",
-    "inset": "Wewnętrzny",
-    "cssCode": "Kod CSS",
-    "snippet": "Fragment",
-    "download": "Pobierz",
-    "downloadSvg": "Pobierz SVG",
-    "downloadPng": "Pobierz PNG",
-    "downloadAll": "Pobierz wszystko",
-    "upload": "Prześlij",
-    "title": "Tytuł",
-    "description": "Opis",
-    "canonicalUrl": "Adres kanoniczny",
-    "siteName": "Nazwa strony",
-    "ogImage": "Obraz OG",
-    "clear": "Wyczyść",
-    "generatedQr": "Wygenerowany kod QR",
-    "placeholderImage": "Obraz zastępczy",
-    "faviconSet": "Zestaw favicon",
-    "keepAspectRatio": "Zachowaj proporcje",
-    "cropX": "Przycięcie X",
-    "cropY": "Przycięcie Y",
-    "cropWidth": "Szerokość kadru",
-    "cropHeight": "Wysokość kadru",
-    "originalSize": "Rozmiar oryginalny",
-    "outputSize": "Rozmiar wyjściowy",
-    "savedSize": "Oszczędzony rozmiar",
-    "result": "Wynik",
-    "base64": "Base64",
-    "mimeType": "Typ MIME",
-    "resizedImage": "Obraz po zmianie rozmiaru",
-    "compressedImage": "Obraz skompresowany",
-    "croppedImage": "Obraz przycięty",
-    "convertedImage": "Obraz przekonwertowany",
-    "decodedImage": "Obraz zdekodowany",
-    "imagePreview": "Podgląd obrazu",
-    "camera": "Aparat",
-    "lens": "Obiektyw",
-    "dateTaken": "Data wykonania",
-    "resolution": "Rozdzielczość",
-    "fileSize": "Rozmiar pliku",
-    "iso": "ISO",
-    "exposure": "Czas naświetlania",
-    "aperture": "Przysłona",
-    "focalLength": "Ogniskowa",
-    "flash": "Lampa błyskowa",
-    "orientation": "Orientacja",
-    "latitude": "Szerokość geograficzna",
-    "longitude": "Długość geograficzna",
-    "openMap": "Otwórz mapę",
-    "rawMetadata": "Surowe metadane",
-    "noMetadataFound": "Nie znaleziono metadanych",
-    "gpsLocation": "Pozycja GPS",
-    "metadataSummary": "Podsumowanie metadanych"
-  },
   "seo": {
     "title": "Kalkulator ogrzewania podłogowego",
-    "description": "Oblicz długość rury, liczbę pętli i średnią długość pętli dla wodnej podłogówki na podstawie powierzchni, rozstawu i zapasu.",
+    "description": "Oblicz długość rury, liczbę pętli i średnią długość obwodu dla wodnej podłogówki na podstawie powierzchni, rozstawu i zapasu.",
     "keywords": [
       "kalkulator ogrzewania podłogowego",
       "ile rury na podłogówkę",

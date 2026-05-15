@@ -4,44 +4,76 @@
   "slug": "calculadora-de-precio-por-unidad",
   "h1": "Calculadora de precio por unidad",
   "title": "Calculadora de precio por unidad",
-  "shortDescription": "Compara el precio por unidad a partir del coste total y la cantidad con resultados rápidos, entradas sencillas y ejemplos prácticos.",
-  "overview": "Compara el precio por unidad a partir del coste total y la cantidad. Esta página ofrece una respuesta rápida con una herramienta práctica y un flujo de resultados sencillo. Está pensada para usuarios que buscan una respuesta gratuita en línea, resultados rápidos en el navegador y contenido útil de cola larga para SEO.",
+  "shortDescription": "Calcula el precio por unidad a partir del coste total y la cantidad para comparar formatos, tamaños y ofertas.",
+  "metaTitle": "Calculadora de precio por unidad",
+  "metaDescription": "Calcula el precio por unidad a partir del coste total y la cantidad para comparar formatos, tamaños y ofertas.",
+  "intro": "Introduce el coste total y la cantidad para obtener el precio por unidad y comparar productos sobre la misma base.",
+  "overview": "Esta calculadora convierte un precio total y una cantidad en un precio unitario claro. Resulta útil cuando los productos se venden en envases, pesos, volúmenes o unidades distintas y necesitas compararlos sin mezclar medidas.\n\nEl resultado muestra cuánto cuesta una sola unidad de la medida que has introducido. Así puedes ver con rapidez si un formato grande compensa de verdad o si solo parece más barato por el precio del envase.",
   "howItWorks": [
-    "Introduce el valor o texto requerido en el formulario.",
-    "La conversión, el cálculo o la transformación se ejecuta al instante en el navegador.",
-    "Revisa el resultado y continúa con herramientas relacionadas si necesitas otro paso."
+    "Introduce el coste total.",
+    "Añade la cantidad en la unidad que quieras comparar.",
+    "Usa el precio unitario para comparar con otras ofertas."
+  ],
+  "useCases": [
+    {
+      "title": "Comparar envases de supermercado",
+      "description": "Evalúa arroz, café, yogur o detergente con pesos y volúmenes distintos."
+    },
+    {
+      "title": "Revisar presupuestos de proveedor",
+      "description": "Compara tornillos, papel, material de limpieza o consumibles vendidos en paquetes diferentes."
+    },
+    {
+      "title": "Analizar tarifas por uso",
+      "description": "Calcula el coste por mes, por plaza o por servicio cuando un plan se vende en varios tamaños."
+    }
   ],
   "examples": [
     {
-      "title": "Ejemplo 1",
-      "input": "12 por 3 unidades",
-      "output": "4 por unidad",
-      "description": "Un ejemplo realista de calculadora de precio por unidad para una búsqueda habitual."
+      "title": "Precio por kilogramo",
+      "input": "18,00 € y 1,5 kg",
+      "output": "12,00 €/kg",
+      "description": "Convierte un precio de pack en una tarifa comparable por kilogramo."
     },
     {
-      "title": "Ejemplo 2",
-      "input": "12 por 3 unidades",
-      "output": "4 por unidad",
-      "description": "Otro caso práctico de uso para atraer tráfico orgánico de cola larga."
+      "title": "Precio por litro",
+      "input": "7,49 € y 750 ml",
+      "output": "9,99 €/l",
+      "description": "Sirve para comparar botellas con volúmenes distintos."
+    },
+    {
+      "title": "Precio por pieza",
+      "input": "24,00 € y 8 piezas",
+      "output": "3,00 €/pieza",
+      "description": "Útil para multipacks y artículos vendidos por unidad."
     }
   ],
   "faq": [
     {
-      "question": "¿Qué precisión tiene esta herramienta?",
-      "answer": "El resultado se calcula directamente a partir de la fórmula o de la lógica en el navegador que usa esta herramienta."
+      "question": "¿Puedo usar gramos, mililitros o piezas?",
+      "answer": "Sí. Solo asegúrate de usar la misma unidad en todas las ofertas que quieras comparar."
     },
     {
-      "question": "¿Puedo usar esta herramienta en móvil?",
-      "answer": "Sí. La página funciona en escritorio y en móviles con un diseño sencillo de entrada y resultado."
+      "question": "¿Debo convertir primero las unidades?",
+      "answer": "Si las ofertas no usan la misma medida, sí. Comparar 750 ml con 1,5 l requiere llevar ambas al mismo formato."
+    },
+    {
+      "question": "¿Qué error cambia más el resultado?",
+      "answer": "Escribir la cantidad con la unidad equivocada, por ejemplo poner 750 cuando querías calcular por litro y no por mililitro."
+    },
+    {
+      "question": "¿El precio por unidad siempre decide cuál comprar?",
+      "answer": "No siempre. También conviene mirar calidad, contenido neto, duración o rendimiento real del producto."
     }
   ],
   "seo": {
     "title": "Calculadora de precio por unidad",
-    "description": "Compara el precio por unidad a partir del coste total y la cantidad. Calculadora gratis de precio por unidad en línea con resultados instantáneos.",
+    "description": "Calcula el precio por unidad a partir del coste total y la cantidad para comparar formatos, tamaños y ofertas.",
     "keywords": [
       "calculadora de precio por unidad",
-      "calculadora de precio unitario",
-      "herramienta de calculadoras"
+      "precio unitario",
+      "precio por litro",
+      "precio por pieza"
     ]
   }
 }

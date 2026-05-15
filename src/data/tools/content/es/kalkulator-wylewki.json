@@ -4,169 +4,81 @@
   "slug": "calculadora-de-contrapiso",
   "h1": "Calculadora de contrapiso",
   "title": "Calculadora de contrapiso",
-  "shortDescription": "Calcula la cantidad de material para contrapiso de cemento, anhidrita o autonivelante.",
-  "metaTitle": "Calculadora de contrapiso online | Material, volumen y sacos",
-  "metaDescription": "Usa la calculadora de contrapiso para estimar volumen, peso total de mezcla y número de sacos para contrapiso de cemento, anhidrita o autonivelante.",
-  "intro": "Calcula rápidamente el material para contrapiso en reformas, obra nueva y suelo radiante. Introduce el área, el espesor, el desperdicio y el peso del saco para obtener volumen, kilos totales y sacos necesarios.",
-  "overview": "Esta calculadora de contrapiso ayuda a planificar contrapiso de cemento, de anhidrita y autonivelante. Convierte el área y el espesor en volumen y luego estima el peso total del material y el número de sacos, incluyendo desperdicio.",
+  "shortDescription": "Calcula el volumen, el peso de la mezcla y el número de sacos para contrapiso de cemento, anhidrita o autonivelante.",
+  "metaTitle": "Calculadora de contrapiso | Volumen y sacos",
+  "metaDescription": "Calcula el volumen del contrapiso, el peso total de la mezcla y el número de sacos para cemento, anhidrita o autonivelante.",
+  "intro": "Introduce el área, el espesor, el consumo del producto, el desperdicio y el peso del saco para obtener volumen, kilos totales y sacos.",
+  "overview": "Esta calculadora sirve para planificar contrapiso de cemento, anhidrita y autonivelante con datos reales de obra. Convierte el área y el espesor en volumen y después estima el peso total de la mezcla y la cantidad de sacos necesarios.\n\nEs útil cuando quieres coordinar compra, descarga y trabajo en una reforma, una vivienda nueva o un suelo radiante. Si el fabricante indica consumo en kg/m2/mm, introduce ese dato; si indica densidad, usa ese valor y añade un margen razonable para pérdidas, recortes y pequeñas irregularidades del soporte.",
   "howItWorks": [
     "Introduce el área en metros cuadrados.",
     "Define el espesor del contrapiso en milímetros.",
     "Indica el consumo o la densidad del material.",
     "Añade un porcentaje de desperdicio.",
-    "Introduce el peso del saco para calcular cuántos necesitas."
+    "Escribe el peso del saco para calcular cuántos necesitas."
   ],
   "useCases": [
-    "Calcular material para suelos nuevos y reformas.",
-    "Planificar contrapiso para suelo radiante.",
-    "Comprobar el número de sacos antes de comprar.",
-    "Comparar necesidades de distintos tipos de contrapiso."
+    {
+      "title": "Reforma de vivienda",
+      "description": "Calcula la cantidad de material para salón, pasillo y dormitorio antes de pedir el producto."
+    },
+    {
+      "title": "Suelo radiante",
+      "description": "Estima la mezcla necesaria para una capa colocada sobre tubos de calefacción."
+    },
+    {
+      "title": "Compra por sacos",
+      "description": "Compara el número de sacos cuando el producto se vende en formatos de 20 kg o 25 kg."
+    },
+    {
+      "title": "Comparación técnica",
+      "description": "Contrasta distintos contrapisos usando su consumo o densidad específica."
+    }
   ],
   "examples": [
     {
-      "title": "Cálculo de ejemplo",
-      "input": "Área: 20 m2, espesor: 50 mm, consumo: 2,0 kg/m2/mm, desperdicio: 5%, peso del saco: 25 kg",
-      "output": "Volumen: 1,00 m3, mezcla total: 2100 kg, sacos: 84.",
-      "description": "Una estimación práctica para una habitación media."
+      "title": "Sala de estar",
+      "input": "Área: 18 m2, espesor: 45 mm, consumo: 1,95 kg/m2/mm, desperdicio: 6%, peso del saco: 25 kg",
+      "output": "Volumen: 0,81 m3, mezcla total: 1577 kg, sacos: 64",
+      "description": "Estimación práctica para una habitación estándar."
     },
     {
-      "title": "Suelo con calefacción radiante",
-      "input": "Área: 45 m2, espesor: 60 mm, consumo: 1,8 kg/m2/mm, desperdicio: 7%, peso del saco: 25 kg",
-      "output": "Volumen: 2,70 m3, mezcla total: 5106 kg, sacos: 205.",
-      "description": "Útil para contrapisos sobre tubos de calefacción."
+      "title": "Cocina con calefacción radiante",
+      "input": "Área: 12,5 m2, espesor: 55 mm, consumo: 2,10 kg/m2/mm, desperdicio: 8%, peso del saco: 20 kg",
+      "output": "Volumen: 0,69 m3, mezcla total: 1432 kg, sacos: 72",
+      "description": "Adecuado para una capa sobre instalaciones de calefacción."
+    },
+    {
+      "title": "Zona de servicio",
+      "input": "Área: 38 m2, espesor: 40 mm, consumo: 1,75 kg/m2/mm, desperdicio: 5%, peso del saco: 25 kg",
+      "output": "Volumen: 1,52 m3, mezcla total: 2762 kg, sacos: 111",
+      "description": "Útil para superficies amplias con una sola compra."
     }
   ],
   "faq": [
     {
-      "question": "¿Cómo se calcula el volumen del contrapiso?",
-      "answer": "El volumen se obtiene multiplicando el área por el espesor convertido a metros."
+      "question": "¿Qué hago si el fabricante da densidad y no consumo?",
+      "answer": "Introduce la densidad indicada en la ficha técnica. No mezcles consumo y densidad a la vez, salvo que el producto lo especifique."
     },
     {
-      "question": "¿Puedo usarla para autonivelante?",
-      "answer": "Sí. Introduce el consumo o la densidad del producto para estimar la cantidad necesaria."
+      "question": "¿Por qué cambia el resultado entre tipos de contrapiso?",
+      "answer": "El volumen del espacio es el mismo, pero cada producto tiene distinto consumo y distinto peso por saco, así que cambian los kilos y los sacos."
     },
     {
-      "question": "¿Por qué añadir desperdicio?",
-      "answer": "El desperdicio cubre pérdidas durante la mezcla, el vertido y pequeñas irregularidades del soporte."
+      "question": "¿El número de sacos se redondea hacia arriba?",
+      "answer": "Sí. Cualquier fracción de saco debe considerarse un saco completo al comprar material."
     },
     {
-      "question": "¿Calcula el número de sacos?",
-      "answer": "Sí. Solo tienes que introducir el peso de cada saco y la calculadora lo estimará."
+      "question": "¿Qué porcentaje de desperdicio conviene usar?",
+      "answer": "Usa más margen si el soporte está irregular, hay muchos cortes o el material debe transportarse una distancia mayor. En una planta simple y bien preparada, basta menos margen."
+    },
+    {
+      "question": "¿Sirve el volumen calculado si el suelo no está nivelado?",
+      "answer": "El cálculo supone un espesor uniforme. Si hay desniveles, conviene calcular un espesor medio o dividir la superficie en varias zonas."
     }
   ],
-  "uiLabels": {
-    "copy": "Copiar",
-    "copied": "Copiado",
-    "input": "Entrada",
-    "output": "Salida",
-    "placeholder": "Introduce un valor",
-    "indent": "Sangría",
-    "removeComments": "Eliminar comentarios",
-    "preview": "Vista previa",
-    "source": "Fuente",
-    "sanitizedHtml": "HTML saneado",
-    "plainText": "Texto plano",
-    "summary": "Resumen",
-    "total": "Total",
-    "links": "Enlaces",
-    "images": "Imágenes",
-    "errors": "Errores",
-    "warnings": "Avisos",
-    "valid": "Válido",
-    "invalid": "No válido",
-    "href": "Href",
-    "text": "Texto",
-    "rel": "Rel",
-    "target": "Destino",
-    "alt": "Alt",
-    "width": "Ancho",
-    "height": "Alto",
-    "empty": "Vacío",
-    "outputReady": "Resultado listo",
-    "cleanedHtml": "HTML limpiado",
-    "formattedHtml": "HTML formateado",
-    "minifiedHtml": "HTML minificado",
-    "markdown": "Markdown",
-    "extractedImages": "Imágenes extraídas",
-    "extractedLinks": "Enlaces extraídos",
-    "validationSummary": "Resumen de validación",
-    "prettyHtml": "HTML legible",
-    "encodedText": "Texto codificado",
-    "file": "Archivo",
-    "size": "Tamaño",
-    "format": "Formato",
-    "quality": "Calidad",
-    "colorOne": "Color 1",
-    "colorTwo": "Color 2",
-    "background": "Fondo",
-    "foreground": "Primer plano",
-    "angle": "Ángulo",
-    "margin": "Margen",
-    "level": "Nivel",
-    "gradientType": "Tipo de degradado",
-    "linear": "Lineal",
-    "radial": "Radial",
-    "blur": "Desenfoque",
-    "spread": "Extensión",
-    "offsetX": "Desplazamiento X",
-    "offsetY": "Desplazamiento Y",
-    "opacity": "Opacidad",
-    "inset": "Interior",
-    "cssCode": "Código CSS",
-    "snippet": "Fragmento",
-    "download": "Descargar",
-    "downloadSvg": "Descargar SVG",
-    "downloadPng": "Descargar PNG",
-    "downloadAll": "Descargar todo",
-    "upload": "Subir",
-    "title": "Título",
-    "description": "Descripción",
-    "canonicalUrl": "URL canónica",
-    "siteName": "Nombre del sitio",
-    "ogImage": "Imagen OG",
-    "clear": "Limpiar",
-    "generatedQr": "QR generado",
-    "placeholderImage": "Imagen de marcador",
-    "faviconSet": "Conjunto de favicon",
-    "keepAspectRatio": "Mantener proporción",
-    "cropX": "Recorte X",
-    "cropY": "Recorte Y",
-    "cropWidth": "Ancho del recorte",
-    "cropHeight": "Alto del recorte",
-    "originalSize": "Tamaño original",
-    "outputSize": "Tamaño de salida",
-    "savedSize": "Tamaño ahorrado",
-    "result": "Resultado",
-    "base64": "Base64",
-    "mimeType": "Tipo MIME",
-    "resizedImage": "Imagen redimensionada",
-    "compressedImage": "Imagen comprimida",
-    "croppedImage": "Imagen recortada",
-    "convertedImage": "Imagen convertida",
-    "decodedImage": "Imagen decodificada",
-    "imagePreview": "Vista previa de imagen",
-    "camera": "Cámara",
-    "lens": "Lente",
-    "dateTaken": "Fecha de captura",
-    "resolution": "Resolución",
-    "fileSize": "Tamaño del archivo",
-    "iso": "ISO",
-    "exposure": "Exposición",
-    "aperture": "Apertura",
-    "focalLength": "Distancia focal",
-    "flash": "Flash",
-    "orientation": "Orientación",
-    "latitude": "Latitud",
-    "longitude": "Longitud",
-    "openMap": "Abrir mapa",
-    "rawMetadata": "Metadatos sin procesar",
-    "noMetadataFound": "No se encontraron metadatos",
-    "gpsLocation": "Ubicación GPS",
-    "metadataSummary": "Resumen de metadatos"
-  },
   "seo": {
-    "title": "Calculadora de contrapiso online",
-    "description": "Estima el volumen del contrapiso, el peso total de la mezcla y el número de sacos para contrapiso de cemento, anhidrita y autonivelante.",
+    "title": "Calculadora de contrapiso | Volumen y sacos",
+    "description": "Calcula el volumen del contrapiso, el peso total de la mezcla y el número de sacos para cemento, anhidrita o autonivelante.",
     "keywords": [
       "calculadora de contrapiso",
       "calculadora de piso",

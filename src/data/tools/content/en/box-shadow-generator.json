@@ -4,157 +4,87 @@
   "slug": "box-shadow-generator",
   "h1": "Box Shadow Generator",
   "title": "Box Shadow Generator",
-  "shortDescription": "Build CSS box shadows with offsets, blur, spread, opacity and copy-ready output.",
+  "shortDescription": "Generate CSS box shadows with precise offsets, blur, spread, opacity, inset, and copy-ready code.",
   "metaTitle": "Box Shadow Generator",
-  "metaDescription": "Create custom CSS box shadows with live preview, blur, spread, opacity and ready-to-copy code.",
-  "intro": "Create clean, professional CSS box-shadow values in seconds. Adjust offset, blur, spread, color and opacity, then copy the result for your site or app.",
-  "overview": "This box shadow generator helps you build accurate CSS shadows with a live preview and instant code output. It is useful for buttons, cards, dialogs, images and other UI elements that need depth and visual separation.",
+  "metaDescription": "Build custom CSS box shadows with live preview, blur, spread, opacity, inset, and copy-ready code.",
+  "intro": "Generate a CSS box-shadow value, tune the offsets, blur, spread, color, and opacity, then copy the finished rule.",
+  "overview": "This tool builds box-shadow values you can paste into CSS without hand-writing every number. It gives you control over horizontal and vertical offset, blur radius, spread radius, shadow color, opacity, and inset styling so the result matches the element you are designing.\n\nUse it when you need a shadow that feels intentional rather than guessed. The output can be used on cards, menus, dialogs, sticky bars, form fields, and image containers, and the live preview helps you compare subtle shadows against stronger ones before you commit to a style.",
   "howItWorks": [
-    "Set the horizontal and vertical offsets.",
-    "Adjust blur, spread and opacity to match the style you want.",
-    "Choose shadow color and optional inset mode.",
-    "Preview the shadow live as you edit.",
-    "Copy the generated CSS and paste it into your stylesheet."
+    "Set the horizontal and vertical offset to place the shadow where you want it.",
+    "Adjust blur and spread to shape the softness and size of the shadow edge.",
+    "Pick a shadow color and opacity that fits the surface and background.",
+    "Switch on inset if you need the shadow to sit inside the element.",
+    "Copy the generated CSS and apply it to the target selector."
   ],
   "useCases": [
-    "Design shadows for cards, buttons and modals.",
-    "Create subtle elevation effects for dashboards and landing pages.",
-    "Generate inset shadows for inputs and panels.",
-    "Test different shadow styles quickly without manual CSS tweaking."
+    {
+      "title": "Card depth for product grids",
+      "description": "Create a soft shadow for catalog cards so each item separates cleanly from the page background."
+    },
+    {
+      "title": "Pressed state for primary buttons",
+      "description": "Generate a tighter shadow with smaller blur and negative spread for a button that looks physically clickable."
+    },
+    {
+      "title": "Inner shadows for input groups",
+      "description": "Build inset shadows for text fields, search bars, or segmented panels that need an engraved look."
+    },
+    {
+      "title": "Floating panel for popovers",
+      "description": "Tune a wider blur and moderate offset for tooltips, dropdowns, and floating menus that sit above the page."
+    }
   ],
   "examples": [
     {
-      "title": "Soft card shadow",
-      "input": "0 8px 24px 0 rgba(0,0,0,0.12)",
-      "output": "box-shadow: 0 8px 24px 0 rgba(0,0,0,0.12);",
-      "description": "A soft shadow for cards and content blocks."
+      "title": "Soft neutral card",
+      "input": "x: 0, y: 10px, blur: 30px, spread: -8px, color: rgba(15, 23, 42, 0.14)",
+      "output": "box-shadow: 0 10px 30px -8px rgba(15, 23, 42, 0.14);",
+      "description": "A gentle shadow for white cards on light interfaces."
     },
     {
-      "title": "Strong button shadow",
-      "input": "0 4px 12px -2px rgba(0,0,0,0.25)",
-      "output": "box-shadow: 0 4px 12px -2px rgba(0,0,0,0.25);",
-      "description": "A more defined shadow for interactive elements."
+      "title": "Inset field well",
+      "input": "x: 0, y: 2px, blur: 6px, spread: 0, color: rgba(0, 0, 0, 0.18), inset: true",
+      "output": "box-shadow: inset 0 2px 6px 0 rgba(0, 0, 0, 0.18);",
+      "description": "A recessed effect for an input or content well."
+    },
+    {
+      "title": "Compact hover lift",
+      "input": "x: 0, y: 6px, blur: 16px, spread: -4px, color: rgba(37, 99, 235, 0.22)",
+      "output": "box-shadow: 0 6px 16px -4px rgba(37, 99, 235, 0.22);",
+      "description": "A colored shadow that works well on hovered action tiles."
     }
   ],
   "faq": [
     {
-      "question": "What CSS property does this generator create?",
-      "answer": "It creates box-shadow values that you can use directly in CSS."
+      "question": "What does the spread value change in the shadow?",
+      "answer": "Spread changes the size of the shadow before blur is applied. Negative values pull it inward; positive values make the shadow reach farther."
     },
     {
-      "question": "Can I make inset shadows?",
-      "answer": "Yes. Enable inset mode to generate an inner shadow effect."
+      "question": "Why does the shadow look too harsh on dark backgrounds?",
+      "answer": "Usually the color is too opaque or the blur is too small. Lower the opacity and increase blur so the edge falls off more naturally."
     },
     {
-      "question": "Is the output ready to copy?",
-      "answer": "Yes. The generated CSS is formatted for quick copy and paste."
+      "question": "When should I use inset instead of a normal shadow?",
+      "answer": "Use inset when the surface should look pressed in, such as inputs, recessed panels, or disabled-looking containers."
     },
     {
-      "question": "Does it work for multiple shadows?",
-      "answer": "You can combine values manually if you need more than one shadow layer."
+      "question": "Can I create more than one shadow layer here?",
+      "answer": "This generator produces one shadow rule at a time. If you want multiple layers, combine separate box-shadow values manually in your CSS."
+    },
+    {
+      "question": "Why does a negative spread sometimes make the shadow disappear?",
+      "answer": "A large negative spread can shrink the shadow too much, especially with a small blur. Reduce the negative spread or raise the blur radius."
     }
   ],
-  "uiLabels": {
-    "copy": "Copy",
-    "copied": "Copied",
-    "input": "Input",
-    "output": "Output",
-    "placeholder": "Enter values",
-    "indent": "Indent",
-    "removeComments": "Remove comments",
-    "preview": "Preview",
-    "source": "Source",
-    "sanitizedHtml": "Sanitized HTML",
-    "plainText": "Plain text",
-    "summary": "Summary",
-    "total": "Total",
-    "links": "Links",
-    "images": "Images",
-    "errors": "Errors",
-    "warnings": "Warnings",
-    "valid": "Valid",
-    "invalid": "Invalid",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Width",
-    "height": "Height",
-    "empty": "Empty",
-    "outputReady": "Output ready",
-    "cleanedHtml": "Cleaned HTML",
-    "formattedHtml": "Formatted HTML",
-    "minifiedHtml": "Minified HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extracted images",
-    "extractedLinks": "Extracted links",
-    "validationSummary": "Validation summary",
-    "prettyHtml": "Pretty HTML",
-    "encodedText": "Encoded text",
-    "file": "File",
-    "size": "Size",
-    "format": "Format",
-    "quality": "Quality",
-    "colorOne": "Shadow color",
-    "colorTwo": "Second color",
-    "background": "Background",
-    "foreground": "Foreground",
-    "angle": "Angle",
-    "margin": "Margin",
-    "level": "Level",
-    "gradientType": "Gradient type",
-    "linear": "Linear",
-    "radial": "Radial",
-    "blur": "Blur",
-    "spread": "Spread",
-    "offsetX": "Offset X",
-    "offsetY": "Offset Y",
-    "opacity": "Opacity",
-    "inset": "Inset",
-    "cssCode": "CSS code",
-    "snippet": "Snippet",
-    "download": "Download",
-    "downloadSvg": "Download SVG",
-    "downloadPng": "Download PNG",
-    "downloadAll": "Download all",
-    "upload": "Upload",
-    "title": "Title",
-    "description": "Description",
-    "canonicalUrl": "Canonical URL",
-    "siteName": "Site name",
-    "ogImage": "OG image",
-    "clear": "Clear",
-    "generatedQr": "QR code preview",
-    "placeholderImage": "Preview image",
-    "faviconSet": "Favicon set",
-    "keepAspectRatio": "Keep aspect ratio",
-    "cropX": "Crop X",
-    "cropY": "Crop Y",
-    "cropWidth": "Crop width",
-    "cropHeight": "Crop height",
-    "originalSize": "Original size",
-    "outputSize": "Output size",
-    "savedSize": "Saved size",
-    "result": "Result",
-    "base64": "Base64",
-    "mimeType": "MIME type",
-    "resizedImage": "Resized image",
-    "compressedImage": "Compressed image",
-    "croppedImage": "Cropped image",
-    "convertedImage": "Converted image",
-    "decodedImage": "Decoded image",
-    "imagePreview": "Image preview"
-  },
   "seo": {
     "title": "Box Shadow Generator",
-    "description": "Create custom CSS box shadows with live preview, blur, spread, opacity and ready-to-copy code.",
+    "description": "Build custom CSS box shadows with live preview, blur, spread, opacity, inset, and copy-ready code.",
     "keywords": [
       "box shadow generator",
-      "css box shadow",
-      "shadow generator",
-      "css generator",
-      "box-shadow css"
+      "css box-shadow",
+      "shadow builder",
+      "inset shadow css",
+      "box shadow css"
     ]
   }
 }

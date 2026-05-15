@@ -4,176 +4,91 @@
   "slug": "calculateur-de-peinture",
   "h1": "Calculateur de peinture",
   "title": "Calculateur de peinture",
-  "shortDescription": "Estimez la quantité de peinture nécessaire pour des murs et des plafonds selon la surface, le rendement, le nombre de couches et la marge de perte.",
-  "metaTitle": "Calculateur de peinture - litres et pots à acheter",
-  "metaDescription": "Calculez la quantité de peinture nécessaire pour des murs et des plafonds. Indiquez la surface, le rendement, le nombre de couches, la marge et la taille du pot pour estimer les litres et les pots.",
-  "intro": "Utilisez ce calculateur de peinture pour estimer rapidement combien de litres il vous faut pour peindre des murs ou des plafonds. C’est un outil pratique pour préparer un chantier de rénovation et acheter la bonne quantité avant de commencer.",
-  "overview": "Saisissez la surface en mètres carrés, le rendement de la peinture en m2/l, le nombre de couches, le pourcentage de marge et la taille du pot. L’outil calcule la peinture nécessaire sans marge, avec marge et le nombre estimé de pots. Les valeurs par défaut correspondent à des usages courants : environ 10-12 m2/l, 2 couches et 10% de marge.",
+  "shortDescription": "Calculez la quantité de peinture pour murs et plafonds selon la surface, le rendement, les couches, la marge et la taille du pot.",
+  "metaTitle": "Peinture : litres et pots",
+  "metaDescription": "Calculez la peinture nécessaire pour murs et plafonds en indiquant la surface, le rendement, les couches, la marge et la taille du pot.",
+  "intro": "Indiquez la surface, le rendement, le nombre de couches, la marge et la taille du pot pour obtenir le volume et le nombre de pots.",
+  "overview": "Ce calculateur transforme une surface de mur ou de plafond en quantité de peinture à acheter. Il prend en compte la surface, le rendement indiqué sur le pot, le nombre de couches, une marge pour les pertes et la taille du conditionnement afin de produire une estimation exploitable.\n\nIl est utile pour repeindre une pièce, couvrir un plafond ou gérer des supports qui absorbent plus que prévu. Le résultat affiche la quantité sans marge puis la quantité avec marge, ce qui permet de préparer l’achat avant d’ouvrir le premier pot.\n\nPour comparer plusieurs produits, appuyez-vous sur le rendement réel de la peinture. Les murs texturés, les reprises d’enduit et les changements de teinte marqués augmentent souvent la consommation, et la marge aide justement à coller à la réalité du chantier.",
   "howItWorks": [
-    "Multipliez la surface par le nombre de couches pour obtenir la surface totale à couvrir.",
-    "Divisez ce total par le rendement pour calculer les litres sans marge.",
-    "Ajoutez la marge pour obtenir une quantité plus sûre.",
-    "Divisez par la taille du pot pour estimer le nombre de pots à acheter.",
-    "Arrondissez au supérieur pour ne pas manquer de peinture pendant les travaux."
+    "Saisissez la surface à peindre en mètres carrés.",
+    "Utilisez le rendement indiqué sur l’étiquette, en m2/l.",
+    "Choisissez le nombre de couches à appliquer.",
+    "Ajoutez une marge pour le rouleau, le pinceau, les retouches et l’absorption du support.",
+    "Divisez les litres finaux par la taille du pot et arrondissez au supérieur."
   ],
   "useCases": [
-    "Préparer la peinture d’une pièce à la maison.",
-    "Calculer la peinture nécessaire pour un plafond.",
-    "Comparer des peintures selon leur rendement.",
-    "Estimer le nombre de pots pour un budget de rénovation.",
-    "Éviter de manquer de peinture lors de plusieurs couches."
+    {
+      "title": "Repeindre un séjour",
+      "description": "Évaluer les litres nécessaires pour un grand séjour avec deux couches de finition."
+    },
+    {
+      "title": "Dimensionner un plafond",
+      "description": "Vérifier si un plafond tient dans un pot de 5 L ou nécessite un format plus grand."
+    },
+    {
+      "title": "Comparer deux peintures",
+      "description": "Mettre face à face deux produits de rendement différent pour une même pièce."
+    },
+    {
+      "title": "Préparer plusieurs pièces",
+      "description": "Additionner les besoins pour un couloir, une chambre et un bureau dans un seul achat."
+    },
+    {
+      "title": "Support absorbant",
+      "description": "Prévoir plus de peinture pour un mur brut, réparé ou fortement texturé."
+    }
   ],
   "examples": [
     {
-      "title": "Estimation d’une pièce",
-      "input": "Surface : 40 m2, rendement : 11 m2/l, couches : 2, marge : 10%, pot : 5 l",
-      "output": "Litres sans marge : 7,27 l, litres avec marge : 8,00 l, pots : 2.",
-      "description": "Une pièce standard nécessite souvent un pot supplémentaire une fois la marge et l’arrondi pris en compte."
+      "title": "Chambre moyenne avec deux couches",
+      "input": "Surface : 32 m2, rendement : 11 m2/l, couches : 2, marge : 8%, pot : 2,5 l",
+      "output": "Peinture sans marge : 5,82 l, peinture avec marge : 6,28 l, pots : 3.",
+      "description": "Pour cette chambre, trois petits pots laissent une marge confortable pour les retouches."
     },
     {
-      "title": "Repeindre un plafond",
-      "input": "Surface : 25 m2, rendement : 10 m2/l, couches : 2, marge : 10%, pot : 10 l",
-      "output": "Litres sans marge : 5,00 l, litres avec marge : 5,50 l, pots : 1.",
-      "description": "Idéal pour une estimation rapide sur un petit plafond."
+      "title": "Plafond de cuisine",
+      "input": "Surface : 18 m2, rendement : 9,5 m2/l, couches : 2, marge : 12%, pot : 10 l",
+      "output": "Peinture sans marge : 3,79 l, peinture avec marge : 4,24 l, pots : 1.",
+      "description": "Un petit plafond tient souvent dans un grand pot, même avec une marge ajoutée."
+    },
+    {
+      "title": "Couloir à mur rugueux",
+      "input": "Surface : 54 m2, rendement : 8,5 m2/l, couches : 2, marge : 15%, pot : 5 l",
+      "output": "Peinture sans marge : 12,71 l, peinture avec marge : 14,62 l, pots : 3.",
+      "description": "Une surface rugueuse peut faire passer le besoin de deux pots à trois."
     }
   ],
   "faq": [
     {
-      "question": "Comment la quantité de peinture est-elle calculée ?",
-      "answer": "Le calculateur multiplie la surface par le nombre de couches puis divise par le rendement. Il ajoute ensuite la marge pour donner une quantité d’achat pratique."
+      "question": "Le calculateur compte-t-il chaque couche séparément ?",
+      "answer": "Oui. La surface est multipliée par le nombre de couches, donc deux couches doublent le besoin de base avant application du rendement."
     },
     {
-      "question": "Faut-il arrondir le résultat ?",
-      "answer": "Oui. Il vaut mieux acheter des pots entiers pour éviter toute rupture pendant le chantier."
+      "question": "Pourquoi le résultat peut-il dépasser l’indication du fabricant ?",
+      "answer": "Parce que la marge tient compte des pertes dues au rouleau, au bac, aux retouches et à l’absorption du support. Sans marge, vous obtenez le minimum théorique."
     },
     {
-      "question": "Quel rendement dois-je saisir ?",
-      "answer": "Utilisez la valeur indiquée sur le pot de peinture. Si vous ne la connaissez pas, 10-12 m2 par litre est une plage pratique courante pour de nombreuses peintures murales."
+      "question": "Que saisir pour un enduit texturé ou des reprises ?",
+      "answer": "Choisissez un rendement plus faible et une marge plus élevée. Ce type de support consomme souvent davantage de peinture qu’un mur lisse."
     },
     {
-      "question": "L’outil fonctionne-t-il aussi pour les plafonds ?",
-      "answer": "Oui. Il suffit d’entrer la surface du plafond en mètres carrés et le rendement fourni par le fabricant."
+      "question": "Faut-il saisir la capacité annoncée ou le volume réel ?",
+      "answer": "Saisissez le volume réel du pot. Si le pot contient 2,5 L, entrez 2,5."
+    },
+    {
+      "question": "Comment lire un résultat de 2,1 pots ?",
+      "answer": "Arrondissez au supérieur, donc à 3 pots. Vous gardez ainsi une réserve pour les retouches et les ajustements de teinte."
     }
   ],
-  "uiLabels": {
-    "copy": "Copier",
-    "copied": "Copié",
-    "input": "Entrée",
-    "output": "Résultat",
-    "placeholder": "Saisissez une valeur",
-    "indent": "Retrait",
-    "removeComments": "Supprimer les commentaires",
-    "preview": "Aperçu",
-    "source": "Source",
-    "sanitizedHtml": "HTML nettoyé",
-    "plainText": "Texte brut",
-    "summary": "Résumé",
-    "total": "Total",
-    "links": "Liens",
-    "images": "Images",
-    "errors": "Erreurs",
-    "warnings": "Avertissements",
-    "valid": "Valide",
-    "invalid": "Non valide",
-    "href": "Href",
-    "text": "Texte",
-    "rel": "Rel",
-    "target": "Cible",
-    "alt": "Alt",
-    "width": "Largeur",
-    "height": "Hauteur",
-    "empty": "Vide",
-    "outputReady": "Résultat prêt",
-    "cleanedHtml": "HTML nettoyé",
-    "formattedHtml": "HTML formaté",
-    "minifiedHtml": "HTML minifié",
-    "markdown": "Markdown",
-    "extractedImages": "Images extraites",
-    "extractedLinks": "Liens extraits",
-    "validationSummary": "Résumé de validation",
-    "prettyHtml": "HTML lisible",
-    "encodedText": "Texte encodé",
-    "file": "Fichier",
-    "size": "Taille",
-    "format": "Format",
-    "quality": "Qualité",
-    "colorOne": "Couleur 1",
-    "colorTwo": "Couleur 2",
-    "background": "Arrière-plan",
-    "foreground": "Premier plan",
-    "angle": "Angle",
-    "margin": "Marge",
-    "level": "Niveau",
-    "gradientType": "Type de dégradé",
-    "linear": "Linéaire",
-    "radial": "Radial",
-    "blur": "Flou",
-    "spread": "Extension",
-    "offsetX": "Décalage X",
-    "offsetY": "Décalage Y",
-    "opacity": "Opacité",
-    "inset": "Interne",
-    "cssCode": "Code CSS",
-    "snippet": "Extrait",
-    "download": "Télécharger",
-    "downloadSvg": "Télécharger SVG",
-    "downloadPng": "Télécharger PNG",
-    "downloadAll": "Tout télécharger",
-    "upload": "Téléverser",
-    "title": "Titre",
-    "description": "Description",
-    "canonicalUrl": "URL canonique",
-    "siteName": "Nom du site",
-    "ogImage": "Image OG",
-    "clear": "Effacer",
-    "generatedQr": "QR généré",
-    "placeholderImage": "Image de remplacement",
-    "faviconSet": "Jeu de favicon",
-    "keepAspectRatio": "Conserver les proportions",
-    "cropX": "Recadrage X",
-    "cropY": "Recadrage Y",
-    "cropWidth": "Largeur du recadrage",
-    "cropHeight": "Hauteur du recadrage",
-    "originalSize": "Taille originale",
-    "outputSize": "Taille de sortie",
-    "savedSize": "Taille économisée",
-    "result": "Résultat",
-    "base64": "Base64",
-    "mimeType": "Type MIME",
-    "resizedImage": "Image redimensionnée",
-    "compressedImage": "Image compressée",
-    "croppedImage": "Image recadrée",
-    "convertedImage": "Image convertie",
-    "decodedImage": "Image décodée",
-    "imagePreview": "Aperçu de l’image",
-    "camera": "Caméra",
-    "lens": "Objectif",
-    "dateTaken": "Date de prise de vue",
-    "resolution": "Résolution",
-    "fileSize": "Taille du fichier",
-    "iso": "ISO",
-    "exposure": "Exposition",
-    "aperture": "Ouverture",
-    "focalLength": "Distance focale",
-    "flash": "Flash",
-    "orientation": "Orientation",
-    "latitude": "Latitude",
-    "longitude": "Longitude",
-    "openMap": "Ouvrir la carte",
-    "rawMetadata": "Métadonnées brutes",
-    "noMetadataFound": "Aucune métadonnée trouvée",
-    "gpsLocation": "Position GPS",
-    "metadataSummary": "Résumé des métadonnées"
-  },
   "seo": {
-    "title": "Calculateur de peinture - combien de peinture faut-il ?",
-    "description": "Calculateur de peinture gratuit pour murs et plafonds. Estimez les litres sans marge, avec marge et le nombre de pots selon la surface, le rendement, les couches et la taille du pot.",
+    "title": "Peinture : litres et pots",
+    "description": "Calculez la peinture nécessaire pour murs et plafonds en indiquant la surface, le rendement, les couches, la marge et la taille du pot.",
     "keywords": [
       "calculateur de peinture",
-      "combien de peinture faut-il",
-      "calcul peinture mur",
-      "calcul peinture plafond",
-      "estimer peinture litres"
+      "combien de peinture",
+      "peinture mur",
+      "peinture plafond",
+      "litres de peinture"
     ]
   }
 }

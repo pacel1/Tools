@@ -4,183 +4,89 @@
   "slug": "calculadora-de-yeso",
   "h1": "Calculadora de yeso",
   "title": "Calculadora de yeso",
-  "shortDescription": "Calcula cuanto yeso necesitas para fachadas o paredes interiores segun el grosor de la capa.",
-  "metaTitle": "Calculadora de yeso | Kg y sacos necesarios",
-  "metaDescription": "Calcula el consumo de yeso en kg y cuantas sacas necesitas para fachada o interior. Introduce area, consumo, grosor, desperdicio y peso del saco.",
-  "intro": "Usa esta calculadora de yeso para estimar rapidamente la cantidad necesaria para fachadas y paredes interiores. Indica el area, el consumo por mm, el grosor de la capa, el porcentaje de desperdicio y el peso del saco para obtener kilos totales y sacos necesarios.",
-  "overview": "Esta herramienta te ayuda a planificar mejor la compra de yeso en reformas y trabajos de acabado. Calcula el consumo base, añade el margen de desperdicio y convierte el resultado en sacos. Es util tanto para yeso de fachada como para yeso interior cuando necesitas responder rapido a: cuanto yeso necesito.",
+  "shortDescription": "Calcula el yeso para fachadas y paredes interiores a partir de superficie, grosor, consumo, desperdicio y peso del saco.",
+  "metaTitle": "Calculadora de yeso | Sacos y kg",
+  "metaDescription": "Calcula la cantidad de yeso para fachadas y paredes interiores con superficie, grosor, desperdicio, consumo y peso del saco.",
+  "intro": "Introduce la superficie, el consumo por mm, el grosor de capa, el desperdicio y el peso del saco para obtener kilos totales y sacos necesarios.",
+  "overview": "Esta herramienta sirve para planificar pedidos de yeso en fachadas, tabiques, techos y reformas donde hace falta saber el material antes de comprarlo. Multiplica la superficie por el consumo declarado por milimetro y por el espesor previsto, luego añade el desperdicio y convierte el resultado en sacos.\n\nEs util cuando dispones de la ficha tecnica en kg/m²/mm y quieres una cantidad de compra realista, no solo el minimo teorico. Si el soporte es muy absorbente, irregular o el trabajo se reparte entre varias estancias, el campo de desperdicio te ayuda a no quedarte corto.",
   "howItWorks": [
     "Introduce la superficie en metros cuadrados.",
-    "Define el consumo por 1 mm en kg/m²/mm.",
+    "Define el consumo en kg/m²/mm segun la ficha tecnica.",
     "Indica el grosor previsto de la capa en milimetros.",
-    "Añade un porcentaje de desperdicio por perdidas o superficies irregulares.",
+    "Añade un porcentaje de desperdicio por perdidas y remates.",
     "Escribe el peso de cada saco en kilogramos.",
-    "Consulta los kilos base, los kilos totales con desperdicio y el numero de sacos."
+    "Consulta kilos base, kilos totales con desperdicio y sacos necesarios."
   ],
   "useCases": [
-    "Calcular yeso para fachada antes de comprar material.",
-    "Planificar yeso para paredes y techos interiores.",
-    "Saber cuantas sacas de yeso hacen falta para una reforma.",
-    "Añadir margen para perdidas al aplicar el material.",
-    "Comparar la demanda para distintos grosores de capa."
+    {
+      "title": "Pedido de yeso para una fachada",
+      "description": "Calcula el material antes de comprarlo cuando el fabricante da un consumo para un espesor concreto y necesitas cerrar la cantidad de sacos."
+    },
+    {
+      "title": "Reforma de un salon y un pasillo",
+      "description": "Suma varios espacios interiores y reserva material para esquinas, encuentros y pequeños retoques durante la aplicacion."
+    },
+    {
+      "title": "Soporte irregular o reparado",
+      "description": "Añade margen cuando el muro tiene parches, huecos o zonas muy absorbentes que elevan el consumo real."
+    },
+    {
+      "title": "Comparar dos tipos de yeso",
+      "description": "Contrasta dos productos con consumos distintos y comprueba cuantas sacas exige cada uno para la misma superficie."
+    }
   ],
   "examples": [
     {
-      "title": "Ejemplo de calculo",
-      "input": "Area: 100 m², consumo: 1,6 kg/m²/mm, grosor: 10 mm, desperdicio: 10%, peso del saco: 25 kg",
-      "output": "Yeso base: 1600 kg, yeso total: 1760 kg, sacos necesarios: 71,04 → 72 sacos (redondeado hacia arriba)",
-      "description": "Un ejemplo practico para planificar pedidos de yeso."
+      "title": "Estimacion de fachada",
+      "input": "Superficie: 120 m², consumo: 1,7 kg/m²/mm, grosor: 12 mm, desperdicio: 8%, peso del saco: 25 kg",
+      "output": "Yeso base: 2448 kg, yeso total: 2643,84 kg, sacos necesarios: 105,75 → 106 sacos",
+      "description": "Un calculo realista para una fachada con margen moderado."
     },
     {
-      "title": "Comprobacion rapida de compra",
-      "input": "Area: 45 m², consumo: 1,4 kg/m²/mm, grosor: 8 mm, desperdicio: 5%, peso del saco: 30 kg",
-      "output": "Yeso base: 504 kg, yeso total: 529,2 kg, sacos necesarios: 17,64 → 18 sacos (redondeado hacia arriba)",
-      "description": "Util para decidir cuantos sacos comprar antes de empezar."
+      "title": "Obra interior pequena",
+      "input": "Superficie: 38 m², consumo: 1,3 kg/m²/mm, grosor: 9 mm, desperdicio: 6%, peso del saco: 30 kg",
+      "output": "Yeso base: 444,6 kg, yeso total: 471,28 kg, sacos necesarios: 15,71 → 16 sacos",
+      "description": "Ayuda a cerrar la compra para una reforma interior sencilla."
+    },
+    {
+      "title": "Capa de reparacion gruesa",
+      "input": "Superficie: 22 m², consumo: 2,0 kg/m²/mm, grosor: 15 mm, desperdicio: 12%, peso del saco: 20 kg",
+      "output": "Yeso base: 660 kg, yeso total: 739,2 kg, sacos necesarios: 36,96 → 37 sacos",
+      "description": "Muestra como sube mucho el consumo en capas de mayor espesor."
     }
   ],
   "faq": [
     {
-      "question": "Como calculo cuanto yeso necesito?",
-      "answer": "Multiplica el area por el consumo por mm y por el grosor de la capa. Luego añade el desperdicio y divide por el peso del saco para obtener los sacos necesarios."
+      "question": "Como se calcula el numero de sacos?",
+      "answer": "Se multiplica la superficie por el consumo por mm y por el grosor. Luego se suma el desperdicio y se divide por el peso del saco para obtener los sacos."
     },
     {
-      "question": "Sirve para yeso de fachada e interior?",
-      "answer": "Si, funciona para planificar yeso de fachada y yeso interior siempre que conozcas el consumo por 1 mm."
+      "question": "Por que el resultado puede salir con decimales?",
+      "answer": "Los decimales muestran el calculo exacto. En la compra real hay que redondear hacia arriba porque no se compran sacos parciales."
     },
     {
-      "question": "Por que debo añadir desperdicio?",
-      "answer": "El desperdicio cubre perdidas de aplicacion, superficies irregulares, restos en recipientes y pequenas diferencias de calculo."
+      "question": "Que hago si el consumo esta expresado por centimetro?",
+      "answer": "Convierte ese valor a milimetro antes de usar la herramienta. Si no, el resultado saldra diez veces mas alto de lo correcto."
     },
     {
-      "question": "Los sacos se redondean?",
-      "answer": "Si, en la practica conviene redondear hacia arriba al siguiente saco entero para no quedarse corto en obra."
+      "question": "El desperdicio solo cuenta las perdidas al aplicar?",
+      "answer": "No. Incluye restos en el cubo, recortes, zonas irregulares y absorcion extra del soporte."
     },
     {
-      "question": "Y si el consumo esta en centimetros?",
-      "answer": "Convierte el valor a milimetros antes de usar la calculadora o multiplica el consumo por cm por 10 para obtener kg/m²/mm."
+      "question": "Puedo calcular zonas con distintos grosores?",
+      "answer": "Si, pero conviene hacerlo por tramos y sumar los resultados. Un grosor medio puede ocultar diferencias importantes en consumo."
     }
   ],
-  "uiLabels": {
-    "copy": "Copiar",
-    "copied": "Copiado",
-    "input": "Entrada",
-    "output": "Salida",
-    "placeholder": "Introduce un valor",
-    "indent": "Sangria",
-    "removeComments": "Eliminar comentarios",
-    "preview": "Vista previa",
-    "source": "Fuente",
-    "sanitizedHtml": "HTML saneado",
-    "plainText": "Texto plano",
-    "summary": "Resumen",
-    "total": "Total",
-    "links": "Enlaces",
-    "images": "Imagenes",
-    "errors": "Errores",
-    "warnings": "Advertencias",
-    "valid": "Valido",
-    "invalid": "No valido",
-    "href": "Href",
-    "text": "Texto",
-    "rel": "Rel",
-    "target": "Destino",
-    "alt": "Alt",
-    "width": "Ancho",
-    "height": "Alto",
-    "empty": "Vacío",
-    "outputReady": "Resultado listo",
-    "cleanedHtml": "HTML limpio",
-    "formattedHtml": "HTML formateado",
-    "minifiedHtml": "HTML minificado",
-    "markdown": "Markdown",
-    "extractedImages": "Imagenes extraidas",
-    "extractedLinks": "Enlaces extraidos",
-    "validationSummary": "Resumen de validacion",
-    "prettyHtml": "HTML legible",
-    "encodedText": "Texto codificado",
-    "file": "Archivo",
-    "size": "Tamano",
-    "format": "Formato",
-    "quality": "Calidad",
-    "colorOne": "Color 1",
-    "colorTwo": "Color 2",
-    "background": "Fondo",
-    "foreground": "Primer plano",
-    "angle": "Angulo",
-    "margin": "Margen",
-    "level": "Nivel",
-    "gradientType": "Tipo de degradado",
-    "linear": "Lineal",
-    "radial": "Radial",
-    "blur": "Desenfoque",
-    "spread": "Extension",
-    "offsetX": "Desplazamiento X",
-    "offsetY": "Desplazamiento Y",
-    "opacity": "Opacidad",
-    "inset": "Inset",
-    "cssCode": "Codigo CSS",
-    "snippet": "Fragmento",
-    "download": "Descargar",
-    "downloadSvg": "Descargar SVG",
-    "downloadPng": "Descargar PNG",
-    "downloadAll": "Descargar todo",
-    "upload": "Subir",
-    "title": "Titulo",
-    "description": "Descripcion",
-    "canonicalUrl": "URL canonica",
-    "siteName": "Nombre del sitio",
-    "ogImage": "Imagen OG",
-    "clear": "Limpiar",
-    "generatedQr": "QR generado",
-    "placeholderImage": "Imagen de ejemplo",
-    "faviconSet": "Conjunto de favicon",
-    "keepAspectRatio": "Mantener proporcion",
-    "cropX": "Recorte X",
-    "cropY": "Recorte Y",
-    "cropWidth": "Ancho del recorte",
-    "cropHeight": "Alto del recorte",
-    "originalSize": "Tamano original",
-    "outputSize": "Tamano de salida",
-    "savedSize": "Tamano ahorrado",
-    "result": "Resultado",
-    "base64": "Base64",
-    "mimeType": "Tipo MIME",
-    "resizedImage": "Imagen redimensionada",
-    "compressedImage": "Imagen comprimida",
-    "croppedImage": "Imagen recortada",
-    "convertedImage": "Imagen convertida",
-    "decodedImage": "Imagen decodificada",
-    "imagePreview": "Vista previa de imagen",
-    "camera": "Camara",
-    "lens": "Lente",
-    "dateTaken": "Fecha tomada",
-    "resolution": "Resolucion",
-    "fileSize": "Tamano del archivo",
-    "iso": "ISO",
-    "exposure": "Exposicion",
-    "aperture": "Apertura",
-    "focalLength": "Distancia focal",
-    "flash": "Flash",
-    "orientation": "Orientacion",
-    "latitude": "Latitud",
-    "longitude": "Longitud",
-    "openMap": "Abrir mapa",
-    "rawMetadata": "Metadatos sin procesar",
-    "noMetadataFound": "No se encontraron metadatos",
-    "gpsLocation": "Ubicacion GPS",
-    "metadataSummary": "Resumen de metadatos"
-  },
   "seo": {
-    "title": "Calculadora de yeso - calcula kg y sacos",
-    "description": "Calculadora gratis de yeso para fachadas y paredes interiores. Calcula consumo, kilos totales y numero de sacos segun area, grosor, desperdicio y peso del saco.",
+    "title": "Calculadora de yeso | Sacos y kg",
+    "description": "Calcula la cantidad de yeso para fachadas y paredes interiores con superficie, grosor, desperdicio, consumo y peso del saco.",
     "keywords": [
       "calculadora de yeso",
-      "cuanto yeso necesito",
       "sacos de yeso",
-      "calculadora yeso fachada",
-      "calculadora yeso interior",
-      "consumo de yeso",
-      "kg por m2 mm"
+      "yeso para fachada",
+      "yeso interior",
+      "kg por m2 mm",
+      "consumo de yeso"
     ]
   }
 }

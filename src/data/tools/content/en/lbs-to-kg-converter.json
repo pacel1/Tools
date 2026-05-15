@@ -2,44 +2,86 @@
   "toolId": "lbs-to-kg-converter",
   "locale": "en",
   "slug": "lbs-to-kg-converter",
-  "h1": "LBS to KG Converter",
-  "title": "LBS to KG Converter",
-  "shortDescription": "Convert pounds to kilograms instantly with fast results, simple inputs and practical examples.",
-  "overview": "Convert pounds to kilograms instantly. Use this tool to get a clear result quickly from simple input on the same page. It is useful for everyday checks, comparisons and small tasks when you need a fast online answer.",
+  "h1": "Pounds to Kilograms Converter",
+  "title": "Pounds to Kilograms Converter",
+  "shortDescription": "Convert pounds to kilograms with an exact factor, clear rounding, and practical sample values.",
+  "metaTitle": "Pounds to Kilograms Converter",
+  "metaDescription": "Convert pounds to kilograms using the exact 0.45359237 factor and see clear results for single values or decimal weights.",
+  "intro": "Enter a weight in pounds to get its kilogram equivalent immediately.",
+  "overview": "Use this converter when you need pounds expressed in kilograms without doing the arithmetic by hand. It applies the standard conversion factor of 1 lb = 0.45359237 kg, so the result is consistent for integers, decimals, and larger weights.\n\nThe tool is useful when you are comparing weights from different measurement systems, checking package weights, or converting a reading from labels, recipes, equipment specs, or body-weight records. You can enter decimal values such as 2.5 or 154.2 and read the converted value in kilograms right away.\n\nIf the number looks slightly different from another source, the difference is usually due to rounding. For precise work, keep more decimal places; for everyday use, round to the level that matches your task.",
   "howItWorks": [
-    "Enter the required value or text into the form.",
-    "The conversion, calculation or transformation runs instantly in the browser.",
-    "Review the result and continue with related tools if you need another step."
+    "Type the weight in pounds.",
+    "The converter applies the pounds-to-kilograms factor instantly.",
+    "Read the kilogram value and round it if needed for your task."
+  ],
+  "useCases": [
+    {
+      "title": "Body-weight records",
+      "description": "Convert a weight logged in pounds into kilograms for a medical note, training log, or personal record."
+    },
+    {
+      "title": "Shipping and parcel labels",
+      "description": "Check a parcel weight given in pounds against a kilogram requirement for dispatch or carrier forms."
+    },
+    {
+      "title": "Recipe scaling",
+      "description": "Translate ingredient or produce weights from pounds into kilograms when adapting a recipe format."
+    },
+    {
+      "title": "Equipment specifications",
+      "description": "Read product or machine weights in kilograms when the source sheet lists pounds only."
+    }
   ],
   "examples": [
     {
-      "title": "Common use case",
-      "input": "10 pounds",
-      "output": "4.5359 kilograms",
-      "description": "Shows a common use case with a clear input and result."
+      "title": "Small household item",
+      "input": "3.2 lb",
+      "output": "1.4515 kg",
+      "description": "A compact decimal value converted with standard rounding."
     },
     {
-      "title": "Another quick example",
-      "input": "10 pounds",
-      "output": "4.5359 kilograms",
-      "description": "Useful for quick checks, comparisons or repeat tasks."
+      "title": "Adult body weight",
+      "input": "154 lb",
+      "output": "69.8532 kg",
+      "description": "A typical real-world weight converted from pounds to kilograms."
+    },
+    {
+      "title": "Parcel weight",
+      "input": "18.75 lb",
+      "output": "8.5049 kg",
+      "description": "Shows how the tool handles fractional pounds for shipping or logistics."
     }
   ],
   "faq": [
     {
-      "question": "How accurate is this tool?",
-      "answer": "The result is based on the input you provide and the calculation or transformation shown on the page."
+      "question": "What conversion factor does this tool use?",
+      "answer": "It uses 1 pound = 0.45359237 kilograms, which is the standard exact relationship."
     },
     {
-      "question": "Can I use this tool on mobile?",
-      "answer": "Yes. The page works on desktop and mobile screens with a simple input and result layout."
+      "question": "Why do I sometimes see a slightly different kilogram value elsewhere?",
+      "answer": "Different pages may round at different stages. If another result uses fewer decimals, the final number can look a little different."
+    },
+    {
+      "question": "Can I enter decimal pounds?",
+      "answer": "Yes. Values like 0.5, 2.75, or 18.125 are valid and convert normally."
+    },
+    {
+      "question": "Should I type lb, lbs, or just the number?",
+      "answer": "The numeric value is what matters. If the field accepts text, the unit label is usually there for clarity, but the conversion is based on the number you enter."
+    },
+    {
+      "question": "How should I interpret a very small result?",
+      "answer": "Small pound values can produce decimal kilograms, which is normal. Keep enough decimal places if you need a precise figure."
     }
   ],
   "seo": {
-    "title": "LBS to KG Converter",
-    "description": "Convert pounds to kilograms instantly. Free online lbs to kg converter with instant results.",
+    "title": "Pounds to Kilograms Converter",
+    "description": "Convert pounds to kilograms using the exact factor and get clear results for decimal or whole-pound values.",
     "keywords": [
-      "lbs to kg converter"
+      "pounds to kilograms converter",
+      "lb to kg",
+      "lb to kilograms",
+      "weight conversion"
     ]
   }
 }

@@ -4,42 +4,79 @@
   "slug": "sales-tax-calculator",
   "h1": "Sales Tax Calculator",
   "title": "Sales Tax Calculator",
-  "shortDescription": "Calculate total price after adding sales tax with fast results, simple inputs and practical examples.",
-  "overview": "Calculate total price after adding sales tax. Use this tool to get a clear result quickly from simple input on the same page. It is useful for everyday checks, comparisons and small tasks when you need a fast online answer.",
+  "shortDescription": "Enter a subtotal and sales tax rate to get the tax amount and final total.",
+  "metaTitle": "Sales Tax Calculator",
+  "metaDescription": "Add sales tax to a subtotal and see the tax amount plus final total for purchases, receipts, and estimates.",
+  "intro": "Enter the amount before tax and the rate to get the tax added and the full total.",
+  "overview": "Sales tax can change the amount you actually pay from the price you first see. This calculator applies the tax rate to your pre-tax subtotal and shows both the tax amount and the final total, so you can check a purchase, receipt, or estimate before you commit.\n\nIt is useful when a store, cart, or invoice shows a price before tax, or when you need to compare totals across different locations or rate scenarios. The result is a calculation aid only; invoices, filings, and tax treatment still depend on the rules in the relevant jurisdiction.",
   "howItWorks": [
-    "Enter the required value or text into the form.",
-    "The conversion, calculation or transformation runs instantly in the browser.",
-    "Review the result and continue with related tools if you need another step."
+    "Enter the pre-tax amount, such as a product price, cart subtotal, or invoice line.",
+    "Enter the sales tax rate as a percentage, such as 6, 7.5, or 8.25.",
+    "Review the tax amount and the tax-inclusive final price."
+  ],
+  "useCases": [
+    {
+      "title": "Store checkout estimate",
+      "description": "Check the final amount on a shelf-priced item before paying at the register."
+    },
+    {
+      "title": "Cart total comparison",
+      "description": "Compare a pre-tax cart subtotal with the amount after a local or marketplace tax rate is applied."
+    },
+    {
+      "title": "Receipt line check",
+      "description": "See whether a tax line on a receipt matches the subtotal and the rate you expected."
+    }
   ],
   "examples": [
     {
-      "title": "Common use case",
-      "input": "100 with 8% tax",
-      "output": "108",
-      "description": "Shows a common use case with a clear input and result."
+      "title": "Retail item at 8.25%",
+      "input": "49.99 at 8.25%",
+      "output": "Tax: 4.12; Total: 54.11",
+      "description": "A shelf price becomes a higher checkout total once tax is added."
     },
     {
-      "title": "Another quick example",
-      "input": "100 with 8% tax",
-      "output": "108",
-      "description": "Useful for quick checks, comparisons or repeat tasks."
+      "title": "Service purchase at 6%",
+      "input": "19.00 at 6%",
+      "output": "Tax: 1.14; Total: 20.14",
+      "description": "Useful for software, media, or subscription checkouts that add tax after location is known."
+    },
+    {
+      "title": "Invoice line at 7.5%",
+      "input": "250.00 at 7.5%",
+      "output": "Tax: 18.75; Total: 268.75",
+      "description": "Helps prepare a customer estimate before issuing the final bill."
     }
   ],
   "faq": [
     {
-      "question": "How accurate is this tool?",
-      "answer": "The result is based on the input you provide and the calculation or transformation shown on the page."
+      "question": "Does this tool add tax to the amount I enter?",
+      "answer": "Yes. Enter the pre-tax subtotal and the rate, and it returns the added tax amount plus the final total."
     },
     {
-      "question": "Can I use this tool on mobile?",
-      "answer": "Yes. The page works on desktop and mobile screens with a simple input and result layout."
+      "question": "Can I use any sales tax rate?",
+      "answer": "Yes. You can calculate with any percentage rate your situation requires, including rates that vary by city, state, or marketplace."
+    },
+    {
+      "question": "Should shipping or fees be included in the subtotal?",
+      "answer": "Only if those charges are part of the taxable base in your case. Whether they are taxed depends on the product, fee type, and jurisdiction."
+    },
+    {
+      "question": "Why might the result differ from a receipt or invoice?",
+      "answer": "Receipts may round line items differently or apply tax to a broader base. Some systems also calculate tax after discounts, fees, or shipping."
+    },
+    {
+      "question": "Can I use this for filing taxes?",
+      "answer": "Use it for estimates and checks only. Official filings and invoices must follow the current rules that apply to the sale."
     }
   ],
   "seo": {
     "title": "Sales Tax Calculator",
-    "description": "Calculate total price after adding sales tax. Free online sales tax calculator with instant results.",
+    "description": "Add sales tax to a subtotal and see the tax amount plus final total for purchases, receipts, and estimates.",
     "keywords": [
-      "sales tax calculator"
+      "sales tax calculator",
+      "sales tax amount",
+      "final price with tax"
     ]
   }
 }

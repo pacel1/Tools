@@ -4,108 +4,86 @@
   "slug": "html-vorschau",
   "h1": "HTML-Vorschau",
   "title": "HTML-Vorschau",
-  "shortDescription": "Zeige bereinigtes HTML sicher an und prüfe den bereinigten Quellcode.",
-  "metaTitle": "HTML-Vorschau | Bereinigtes HTML sicher anzeigen",
-  "metaDescription": "Zeige HTML in einer sicheren, bereinigten Vorschau an und prüfe Quellcode, Links, Bilder und Validierungsdetails.",
-  "intro": "Zeige HTML sicher im Browser an, prüfe die bereinigte Ausgabe und analysiere Links, Bilder und Struktur ohne Risiko aktiver Skriptausführung.",
-  "overview": "Die HTML-Vorschau hilft dir, HTML-Inhalte nach der Bereinigung zu prüfen. Sie ist für die schnelle Anzeige von vertrauenswürdigem oder untrusted Markup in einem sicheren, clientseitigen Ablauf gedacht. Nutze sie, um den bereinigten Quellcode zu prüfen, entfernte Elemente zu erkennen und Links sowie Medien vor dem Veröffentlichen oder Teilen zu kontrollieren.",
+  "shortDescription": "Bereinigtes HTML anzeigen und das saubere Markup in einer sicheren Ansicht prüfen.",
+  "metaTitle": "HTML-Vorschau sicher prüfen",
+  "metaDescription": "Zeige bereinigtes HTML an, prüfe den sauberen Quellcode und kontrolliere Links, Bilder und Attribute in einer sicheren Ansicht.",
+  "intro": "Füge HTML ein, um das bereinigte Ergebnis, die gerenderte Vorschau und extrahierte Links oder Bilder ohne aktive Skriptausführung zu sehen.",
+  "overview": "Die HTML-Vorschau dient dazu, Inhalte nach der Bereinigung zu prüfen und die Darstellung mit dem bereinigten Quellcode zu vergleichen. Sie ist hilfreich, wenn du sehen möchtest, was erhalten blieb, was entfernt wurde und ob das verbleibende Markup visuell und strukturell noch schlüssig ist.\n\nDas Tool läuft im Browser und ist für die Prüfung von eingefügtem Markup gedacht. Du kannst Verlinkungen, Medientags, Inline-Attribute und Validierungshinweise kontrollieren, bevor der Inhalt in eine Seite, ein CMS-Feld, eine Vorlage oder eine Exportdatei übernommen wird.",
   "howItWorks": [
-    "Füge dein HTML in das Eingabefeld ein.",
-    "Das Tool bereinigt das Markup clientseitig.",
-    "Prüfe die Vorschau und den bereinigten HTML-Quellcode.",
-    "Kontrolliere Links, Bilder, Attribute und Validierungsmeldungen.",
-    "Kopiere das bereinigte Ergebnis, wenn alles passt."
+    "HTML in das Eingabefeld einfügen.",
+    "Das Tool bereinigt das Markup lokal.",
+    "Vorschau und bereinigten Quellcode prüfen.",
+    "Links, Bilder, Attribute und Validierungshinweise kontrollieren.",
+    "Das bereinigte HTML kopieren, wenn es passt."
   ],
   "useCases": [
-    "HTML-Snippets vor dem Veröffentlichen prüfen.",
-    "Bereinigte Inhalte aus Nutzerbeiträgen kontrollieren.",
-    "Links, Bilder und Attribute in generiertem Markup inspizieren.",
-    "Bereinigtes HTML nach Export oder Konvertierung verifizieren.",
-    "Unsicheres oder fehlerhaftes HTML sicher ansehen."
+    {
+      "title": "CMS-Fragmente prüfen",
+      "description": "Ein aus einem Inhaltsfeld kopierter Ausschnitt kann vor dem Einsetzen in Layouts oder Vorlagen kontrolliert werden."
+    },
+    {
+      "title": "Importiertes HTML inspizieren",
+      "description": "Erkennen, welche Elemente nach der Bereinigung von externem Markup oder Exporten übrig bleiben."
+    },
+    {
+      "title": "Editor-Ausgabe verifizieren",
+      "description": "Linkziele, Bilder und Formatierungen aus einem Editor vor dem Speichern prüfen."
+    },
+    {
+      "title": "Nutzerbeiträge auditieren",
+      "description": "Markup aus Kommentaren, Profilen oder Beiträgen analysieren und entfernte unsichere Teile nachvollziehen."
+    }
   ],
   "examples": [
     {
-      "title": "Vor dem Veröffentlichen eines Blog-Snippets",
-      "input": "<p>Hallo <script>alert(1)</script><a href='https://example.com'>Link</a></p>",
-      "output": "<p>Hallo <a href=\"https://example.com\">Link</a></p>",
-      "description": "Skripte werden entfernt, sichere Inhalte bleiben erhalten."
+      "title": "Inline-Skript entfernen",
+      "input": "<p>Mehr lesen <script>alert('x')</script><a href='https://example.com/post'>hier</a></p>",
+      "output": "<p>Mehr lesen <a href=\"https://example.com/post\">hier</a></p>",
+      "description": "Das script-Element wird entfernt, der sichere Absatz und Link bleiben erhalten."
     },
     {
-      "title": "Prüfung von Nutzerinhalten",
-      "input": "<img src='photo.jpg' onerror='alert(1)'><strong>Guter Beitrag</strong>",
-      "output": "<img src=\"photo.jpg\"><strong>Guter Beitrag</strong>",
-      "description": "Gefährliche Event-Handler werden aus Elementen entfernt."
+      "title": "Gefährliches Attribut entfernen",
+      "input": "<img src='avatar.png' onerror='alert(1)' alt='Avatar'><span>Profil</span>",
+      "output": "<img src=\"avatar.png\" alt=\"Avatar\"><span>Profil</span>",
+      "description": "Unsichere Event-Handler werden aus dem Bild-Tag entfernt."
+    },
+    {
+      "title": "Fehlerhaft verschachteltes Markup bereinigen",
+      "input": "<div><strong>Titel<p>Inhalt</strong></p></div>",
+      "output": "<div><strong>Titel</strong><p>Inhalt</p></div>",
+      "description": "Die Vorschau zeigt eine bereinigte Struktur, damit falsche Verschachtelungen leichter auffallen."
     }
   ],
   "faq": [
     {
-      "question": "Ist diese HTML-Vorschau sicher?",
-      "answer": "Ja. Sie ist für die clientseitige Anzeige bereinigten HTMLs gedacht und sollte im Ausgabebereich keine aktiven Skripte ausführen."
+      "question": "Was passiert mit meinem HTML in der Vorschau?",
+      "answer": "Das Tool entfernt unsichere oder nicht erlaubte Teile während der Bereinigung und zeigt das bereinigte Ergebnis. Daher kann die Vorschau vom Original abweichen."
     },
     {
-      "question": "Entfernt sie Skripte und unsichere Attribute?",
-      "answer": "Ja. Der Sanitizer soll gängige XSS-Vektoren wie script-Tags und Event-Handler entfernen."
+      "question": "Warum verschwinden manche Attribute?",
+      "answer": "Attribute, die Skripte auslösen, Verhalten einschleusen oder die erlaubte Ausgabe stören können, werden entfernt. Dazu gehören auch Event-Handler."
     },
     {
-      "question": "Kann ich Links und Bilder separat prüfen?",
-      "answer": "Ja. Die Vorschau hilft dir, extrahierte Links, Bilder und wichtige Attribute zur Validierung zu prüfen."
+      "question": "Ist die Vorschau als Endergebnis geeignet?",
+      "answer": "Nutze sie als Prüfschritt, nicht als Ersatz für die Validierung in deiner Anwendung. Verschiedene Umgebungen erlauben unterschiedliche Elemente oder Attribute."
     },
     {
-      "question": "Wird mein HTML an einen Server gesendet?",
-      "answer": "Nein. Das Tool ist ausschließlich für clientseitige Logik ausgelegt und nutzt keine externen APIs."
+      "question": "Warum sieht kaputtes HTML nach dem Einfügen anders aus?",
+      "answer": "Browser und Sanitizer normalisieren fehlerhaftes Markup. Dadurch können Tags anders angeordnet, automatisch geschlossen oder Texte verschoben werden."
     }
   ],
-  "uiLabels": {
-    "copy": "Kopieren",
-    "copied": "Kopiert",
-    "input": "HTML-Eingabe",
-    "output": "Bereinigtes HTML",
-    "placeholder": "HTML hier einfügen",
-    "indent": "Einrücken",
-    "removeComments": "Kommentare entfernen",
-    "preview": "Vorschau",
-    "source": "Quelle",
-    "sanitizedHtml": "Bereinigtes HTML",
-    "plainText": "Klartext",
-    "summary": "Zusammenfassung",
-    "total": "Gesamt",
-    "links": "Links",
-    "images": "Bilder",
-    "errors": "Fehler",
-    "warnings": "Warnungen",
-    "valid": "Gültig",
-    "invalid": "Ungültig",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Breite",
-    "height": "Höhe",
-    "empty": "Leer",
-    "outputReady": "Ausgabe bereit",
-    "cleanedHtml": "Bereinigtes HTML",
-    "formattedHtml": "Formatiertes HTML",
-    "minifiedHtml": "Minifiziertes HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extrahierte Bilder",
-    "extractedLinks": "Extrahierte Links",
-    "validationSummary": "Validierungsübersicht",
-    "prettyHtml": "Gut lesbares HTML",
-    "encodedText": "Kodierter Text"
-  },
   "seo": {
-    "title": "HTML-Vorschau | Bereinigtes HTML sicher anzeigen",
-    "description": "Zeige HTML in einer sicheren, bereinigten Vorschau an und prüfe Quellcode, Links, Bilder und Validierungsdetails.",
+    "title": "HTML-Vorschau sicher prüfen",
+    "description": "Zeige bereinigtes HTML an, prüfe den sauberen Quellcode und kontrolliere Links, Bilder und Attribute in einer sicheren Ansicht.",
     "keywords": [
       "HTML-Vorschau",
       "bereinigtes HTML",
-      "HTML anzeigen",
-      "sichere HTML-Vorschau",
-      "HTML-Sanitizer",
       "HTML prüfen",
-      "bereinigter Quellcode",
-      "XSS-sichere Vorschau"
+      "sicheres HTML ansehen",
+      "HTML bereinigen",
+      "Markup inspizieren",
+      "sauberer HTML-Quellcode",
+      "HTML rendern"
     ]
   }
 }

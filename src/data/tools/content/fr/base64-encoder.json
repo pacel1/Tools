@@ -4,44 +4,94 @@
   "slug": "encodeur-base64",
   "h1": "Encodeur Base64",
   "title": "Encodeur Base64",
-  "shortDescription": "Encodez du texte en Base64 instantanément avec des résultats rapides, une saisie simple et des exemples pratiques.",
-  "overview": "Encodez du texte en Base64 instantanément. Cette page fournit une réponse rapide avec un outil pratique et un déroulé de résultat simple. Elle s’adresse aux utilisateurs qui recherchent une solution gratuite en ligne, des résultats rapides dans le navigateur et un contenu utilitaire pratique pour des requêtes de longue traîne.",
+  "shortDescription": "Convertissez du texte en Base64 pour en-têtes, payloads API, tests et notes techniques.",
+  "metaTitle": "Encodeur Base64 de texte",
+  "metaDescription": "Encodez du texte en Base64 dans le navigateur pour des en-têtes, payloads API, fixtures et notes techniques.",
+  "intro": "Collez un texte et récupérez une chaîne Base64 à copier dans un en-tête, un body de requête, un fixture ou un script.",
+  "overview": "Base64 transforme des octets en caractères ASCII, ce qui facilite le passage de texte dans des systèmes qui attendent des données sous forme de caractères. On l’utilise souvent pour préparer des valeurs d’Authorization, coder de petits fragments de requêtes, stocker des exemples dans des fixtures ou comparer des sorties entre outils.\n\nCet outil est prévu pour du texte, donc il convient mieux aux chaînes courtes ou moyennes qu’aux fichiers ou données binaires. Le résultat est réversible : Base64 ne protège pas les secrets et ne doit pas être confondu avec une couche de sécurité.",
   "howItWorks": [
-    "Saisissez le texte ou la valeur requise dans le formulaire.",
-    "La conversion, le calcul ou la transformation s’exécute instantanément dans le navigateur.",
-    "Consultez le résultat puis poursuivez avec des outils associés si vous avez besoin d’une autre étape."
+    "Saisissez le texte exact à encoder.",
+    "Le navigateur convertit les octets UTF-8 du texte en chaîne Base64.",
+    "Copiez le résultat dans votre client API, votre en-tête, votre documentation ou votre test."
+  ],
+  "useCases": [
+    {
+      "title": "Préparer une valeur d’Authorization",
+      "description": "Encodez une paire user:password ou client:secret avant de l’insérer dans un en-tête Basic Authorization."
+    },
+    {
+      "title": "Exemples pour webhooks",
+      "description": "Représentez de petits fragments de texte en Base64 lorsque le système destinataire attend des valeurs encodées."
+    },
+    {
+      "title": "Valeurs pour tests et mocks",
+      "description": "Générez des chaînes encodées stables pour snapshots, mocks, réponses d’exemple et fixtures d’intégration."
+    },
+    {
+      "title": "Notes internes et tickets",
+      "description": "Ajoutez un exemple reproductible de texte encodé dans une documentation technique ou un ticket d’équipe."
+    }
   ],
   "examples": [
     {
-      "title": "Exemple 1",
+      "title": "Phrase lisible",
       "input": "hello world",
       "output": "aGVsbG8gd29ybGQ=",
-      "description": "Un exemple réaliste d’encodeur Base64 pour une recherche du quotidien."
+      "description": "Un exemple simple pour vérifier rapidement le comportement de l’encodage."
     },
     {
-      "title": "Exemple 2",
-      "input": "hello world",
-      "output": "aGVsbG8gd29ybGQ=",
-      "description": "Un autre cas d’usage pratique pour le trafic organique de longue traîne."
+      "title": "Paire au format identifiants",
+      "input": "api:test-key",
+      "output": "YXBpOnRlc3Qta2V5",
+      "description": "Montre le Base64 d’une valeur séparée par deux-points, souvent préparée pour des tests Basic Auth."
+    },
+    {
+      "title": "Petit JSON",
+      "input": "{\"user\":\"ana\",\"role\":\"admin\"}",
+      "output": "eyJ1c2VyIjoiYW5hIiwicm9sZSI6ImFkbWluIn0=",
+      "description": "Pratique lorsqu’un petit fragment JSON doit apparaître comme texte encodé dans un test ou une note."
+    },
+    {
+      "title": "Texte avec accents",
+      "input": "Café déjà vu",
+      "output": "Q2Fmw6kgZMOpasOgIHZ1",
+      "description": "Montre que les caractères accentués sont encodés à partir de leurs octets UTF-8 et non supprimés."
     }
   ],
   "faq": [
     {
-      "question": "Quelle est la précision de cet outil ?",
-      "answer": "Le résultat est calculé directement à partir de la formule ou de la logique côté navigateur utilisée par cet outil."
+      "question": "Base64 masque-t-il le contenu du texte ?",
+      "answer": "Non. Base64 est seulement un encodage. Toute personne disposant de la chaîne peut la décoder immédiatement."
     },
     {
-      "question": "Puis-je utiliser cet outil sur mobile ?",
-      "answer": "Oui. La page fonctionne sur ordinateur et sur mobile avec une interface simple de saisie et de résultat."
+      "question": "Puis-je encoder des accents, des emojis ou d’autres alphabets ?",
+      "answer": "Oui. L’outil encode le texte en octets UTF-8, ce qui prend en charge les caractères Unicode, y compris les emojis et les écritures non latines."
+    },
+    {
+      "question": "Pourquoi le résultat se termine parfois par = ?",
+      "answer": "Il s’agit du padding standard de Base64 pour de nombreuses entrées. Il permet d’aligner la longueur sur le bloc attendu."
+    },
+    {
+      "question": "Puis-je coller le résultat directement dans un en-tête HTTP ?",
+      "answer": "Oui, si le serveur attend du Base64. En Basic Auth, la valeur encodée est généralement placée après le préfixe Basic."
+    },
+    {
+      "question": "Quelles erreurs provoquent souvent un mauvais résultat ?",
+      "answer": "Les causes fréquentes sont les espaces ajoutés, un texte modifié ou un texte déjà encodé encodé une seconde fois. Une erreur survient aussi si le système attend des données binaires plutôt que du texte."
+    },
+    {
+      "question": "Cet outil convient-il aux gros fichiers ?",
+      "answer": "Non. Il est conçu pour l’encodage de texte. Les fichiers volumineux et les données binaires se traitent mieux avec des outils dédiés aux fichiers."
     }
   ],
   "seo": {
     "title": "Encodeur Base64",
-    "description": "Encodez du texte en Base64 instantanément. Encodeur Base64 en ligne gratuit avec résultats immédiats.",
+    "description": "Encodez du texte en Base64 pour des en-têtes, payloads API, fixtures et exemples techniques.",
     "keywords": [
       "encodeur base64",
-      "encodage base64",
-      "outil pour développeurs"
+      "encoder texte en base64",
+      "basic auth base64",
+      "base64 pour api"
     ]
   }
 }

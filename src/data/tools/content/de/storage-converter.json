@@ -4,13 +4,85 @@
   "slug": "speicher-umrechner",
   "h1": "Speicher-Umrechner",
   "title": "Speicher-Umrechner",
-  "shortDescription": "KB, MB, GB und TB online mit schnellen 1024-basierten Ergebnissen im Browser umrechnen.",
-  "metaTitle": "Speicher-Umrechner | KB, MB, GB und TB online",
-  "metaDescription": "Speichereinheiten online umrechnen. Der Rechner deckt KB, MB, GB und TB fuer Suchanfragen wie GB zu MB oder MB zu GB ab.",
-  "intro": "Nutze diesen Speicher-Umrechner fuer schnelle Antworten auf Dateigroessen, Speichereinheiten und das 1024-System. Er deckt typische Suchanfragen wie GB zu MB, MB zu GB und allgemeine Speicher-Umrechnungen in einem Tool ab.",
-  "overview": "Der Rechner ist fuer alltaegliche Fragen zu Dateigroessen, Uploads, Backups und Geraetespeicher gedacht. Du kannst Quelleinheit und Zieleinheit direkt wechseln, ohne zwischen mehreren Einzelseiten fuer Speicherwerte zu springen.",
-  "howItWorks": ["Wert eingeben.", "Quelleinheit und Zieleinheit zwischen KB, MB, GB und TB waehlen.", "Ergebnis sofort ablesen und bei Bedarf die Richtung tauschen."],
-  "examples": [{"title": "GB zu MB", "input": "2 GB", "output": "2048 MB", "description": "Sinnvoll fuer schnelle Speicher-Checks im 1024-System."}, {"title": "TB zu GB", "input": "1,5 TB", "output": "1536 GB", "description": "Hilfreich bei Speicherplanung, Archiven und Backups."}],
-  "faq": [{"question": "Nutzt der Rechner 1000 oder 1024?", "answer": "Er nutzt den binaeren 1024-Faktor, wie er bei vielen Speicher- und Dateigroessenfragen verwendet wird."}, {"question": "Kann ich in beide Richtungen umrechnen?", "answer": "Ja. Du kannst KB, MB, GB und TB frei als Start- und Zielwert kombinieren."}],
-  "seo": {"title": "Speicher-Umrechner | KB, MB, GB und TB online", "description": "Speichereinheiten online umrechnen. Der Rechner deckt KB, MB, GB und TB fuer Suchanfragen wie GB zu MB oder MB zu GB ab.", "keywords": ["speicher umrechner", "gb zu mb", "mb zu gb", "kb mb gb tb", "dateigroesse umrechnen"]}
+  "shortDescription": "KB, MB, GB und TB mit 1024-basierten Werten umrechnen.",
+  "metaTitle": "Speicher Umrechner KB MB GB TB",
+  "metaDescription": "Speichereinheiten mit 1024-Faktor umrechnen. Vergleiche Dateigrößen, Laufwerke und Backups für KB, MB, GB und TB.",
+  "intro": "Rechne KB, MB, GB und TB mit der binären 1024-Skala um, wenn du eine Speichergröße in eine andere Einheit übertragen willst.",
+  "overview": "Dieser Speicher-Umrechner ist für binäre Einheiten gedacht, damit die Ergebnisse zu vielen Darstellungen von Dateien, Arbeitsspeicher und Laufwerkskapazität passen. Du gibst einen Wert ein, wählst Start- und Zieleinheit, und das Ergebnis wird mit 1024 pro Umrechnungsschritt berechnet.\n\nDas ist praktisch beim Vergleich eines Installers mit dem freien Speicherplatz, beim Prüfen von Archivgrößen vor dem Kopieren oder beim Abschätzen, wie viel Platz ein vollständiges Backup braucht. Über dasselbe Formular kannst du von GB zu MB, von TB zu GB oder von KB zu MB wechseln, ohne den Wert neu einzugeben.\n\nAuch wenn ein Dateimanager, ein Bericht oder ein Datenblatt eine Größe in einer anderen Einheit zeigt, hilft dir der Umrechner beim sauberen Abgleich. Statt grob zu schätzen, kannst du den exakten Wert umrechnen und die Vergleichsbasis konsistent halten.",
+  "howItWorks": [
+    "Zahl eingeben, die umgerechnet werden soll.",
+    "Start- und Zieleinheit aus KB, MB, GB oder TB auswählen.",
+    "Ergebnis ablesen und bei Bedarf die Richtung umkehren."
+  ],
+  "useCases": [
+    {
+      "title": "Installer mit freiem Speicher abgleichen",
+      "description": "Wandle eine 3,7-GB-Setup-Datei in MB um, bevor du sie mit einer fast vollen Partition oder einem USB-Laufwerk vergleichst."
+    },
+    {
+      "title": "Backup-Bedarf planen",
+      "description": "Rechne ein 4,2-TB-Archiv in GB um, um abzuschätzen, wie viele Datenträger oder Cloud-Ressourcen für die Sicherung nötig sind."
+    },
+    {
+      "title": "Foto- und Videobestände ordnen",
+      "description": "Konvertiere einen 812-MB-Clip-Ordner in GB, wenn du Dateien für Upload oder Verschiebung vorbereitest."
+    },
+    {
+      "title": "Gerätespezifikationen vergleichen",
+      "description": "Gleiche Angaben aus System, Dateimanager und Produktdatenblatt an, wenn Kapazitäten in unterschiedlichen Einheiten angegeben sind."
+    }
+  ],
+  "examples": [
+    {
+      "title": "GB zu MB",
+      "input": "2 GB",
+      "output": "2048 MB",
+      "description": "Sinnvoll, wenn eine Downloadgröße in Megabyte leichter lesbar ist."
+    },
+    {
+      "title": "TB zu GB",
+      "input": "3,25 TB",
+      "output": "3328 GB",
+      "description": "Hilfreich, um einen großen Backup-Plan in handliche Blöcke zu teilen."
+    },
+    {
+      "title": "MB zu KB",
+      "input": "750 MB",
+      "output": "768000 KB",
+      "description": "Praktisch, wenn ein Limit oder eine Übertragung in Kilobyte angegeben ist."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Verwendet das Tool 1000 oder 1024?",
+      "answer": "Es verwendet den binären Faktor 1024, also gilt 1 GB = 1024 MB und 1 TB = 1024 GB."
+    },
+    {
+      "question": "Warum kann mein Betriebssystem eine andere Größe anzeigen?",
+      "answer": "Manche Systeme und Hersteller verwenden für Kapazitäten dezimale Angaben, während dieser Umrechner binäre Einheiten nutzt. Bei unterschiedlichen Konventionen stimmen die Werte nicht exakt überein."
+    },
+    {
+      "question": "Kann ich auch von kleinen zu großen Einheiten umrechnen?",
+      "answer": "Ja. KB zu MB, MB zu GB oder GB zu TB funktioniert ebenso wie die umgekehrte Richtung."
+    },
+    {
+      "question": "Was passiert bei Dezimalwerten wie 1,5 TB?",
+      "answer": "Dezimalwerte werden unterstützt, und das Ergebnis wird direkt aus dieser Zahl mit der 1024-Skala berechnet."
+    },
+    {
+      "question": "Was ist der häufigste Fehler beim Ablesen?",
+      "answer": "Viele erwarten 1 GB = 1000 MB. Wenn man das Ergebnis mit dieser Annahme liest, wirkt es zu groß, weil hier 1024 verwendet wird."
+    }
+  ],
+  "seo": {
+    "title": "Speicher Umrechner KB MB GB TB",
+    "description": "Speichereinheiten mit 1024-Faktor umrechnen. Vergleiche Dateigrößen, Laufwerke und Backups für KB, MB, GB und TB.",
+    "keywords": [
+      "speicher umrechner",
+      "kb zu mb",
+      "mb zu gb",
+      "gb zu tb",
+      "binäre einheiten"
+    ]
+  }
 }

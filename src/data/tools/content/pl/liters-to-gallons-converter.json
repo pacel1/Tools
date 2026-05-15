@@ -4,43 +4,80 @@
   "slug": "przelicznik-litrow-na-galony",
   "h1": "Przelicznik litrów na galony",
   "title": "Przelicznik litrów na galony",
-  "shortDescription": "Przelicz litry na galony natychmiast — szybkie wyniki, proste dane wejściowe i praktyczne przykłady.",
-  "overview": "Przeliczaj litry na galony natychmiast. Ta strona zapewnia szybkie odpowiedzi dzięki praktycznemu narzędziu i prostemu przebiegowi wyniku. Strona jest skierowana do użytkowników, którzy szukają darmowej odpowiedzi online, szybkich wyników w przeglądarce oraz praktycznych treści narzędziowych long-tail.",
+  "shortDescription": "Przelicz litry na galony z jasnym wynikiem dziesiętnym i przykładami z życia codziennego.",
+  "metaTitle": "Przelicznik litrów na galony",
+  "metaDescription": "Przelicz litry na galony w kuchni, przy paliwie, zbiornikach i planowaniu objętości płynów z wynikiem dziesiętnym.",
+  "intro": "Wpisz liczbę litrów, a od razu otrzymasz wartość w galonach.",
+  "overview": "Ten przelicznik zamienia litry na galony według stałego współczynnika, więc możesz szybko porównać objętości bez ręcznych obliczeń. Sprawdza się przy przepisach, paliwie, pojemnikach, zbiornikach i wszędzie tam, gdzie dane są podane w litrach, a potrzebny jest zapis w galonach.\n\nWynik pojawia się jako wartość dziesiętna, co ułatwia planowanie i zapisywanie dokładnych danych. Jeśli porównujesz pojemność zbiornika, liczysz ilość cieczy do rozlewu albo dopasowujesz jednostki do dokumentacji, otrzymujesz wynik w jednym kroku.",
   "howItWorks": [
-    "Wpisz wymaganą wartość lub tekst w formularzu.",
-    "Przeliczenie, obliczenie lub transformacja uruchamia się natychmiast w przeglądarce.",
-    "Sprawdź wynik i przejdź do powiązanych narzędzi, jeśli potrzebujesz kolejnego kroku."
+    "Wpisz objętość w litrach.",
+    "Narzędzie stosuje współczynnik przeliczenia litrów na galony.",
+    "Odczytaj wynik w galonach i w razie potrzeby przelicz kolejną wartość do porównania."
+  ],
+  "useCases": [
+    {
+      "title": "Dostosowanie przepisu",
+      "description": "Przelicz ilość składnika z litrów na galony podczas skalowania sosu, syropu lub napoju."
+    },
+    {
+      "title": "Porównanie paliwa",
+      "description": "Sprawdź, ile galonów odpowiada ilości paliwa podanej w litrach na stacji lub w specyfikacji pojazdu."
+    },
+    {
+      "title": "Dobór zbiornika",
+      "description": "Zamień pojemność zbiornika z litrów na galony, gdy porównujesz oznaczenia z różnych rynków."
+    },
+    {
+      "title": "Planowanie produkcji",
+      "description": "Przelicz wielkość partii płynu do mieszania, napełniania lub wysyłki w dokumentach używających galonów."
+    }
   ],
   "examples": [
     {
-      "title": "Przykład 1",
-      "input": "10 litrów",
-      "output": "2,6417 galona",
-      "description": "Realistyczny przykład przelicznika litrów na galony dla codziennego zapytania."
+      "title": "Partia do kuchni",
+      "input": "3,5 litra",
+      "output": "0,9246 galona",
+      "description": "Pomocne przy małej partii płynu w kuchni lub przy napojach."
     },
     {
-      "title": "Przykład 2",
-      "input": "10 litrów",
-      "output": "2,6417 galona",
-      "description": "Kolejny praktyczny przypadek użycia pod ruch organiczny long-tail."
+      "title": "Ilość paliwa",
+      "input": "42 litry",
+      "output": "11,0972 galona",
+      "description": "Przydatne przy porównaniu ilości paliwa w różnych systemach jednostek."
+    },
+    {
+      "title": "Pojemność zbiornika",
+      "input": "120 litrów",
+      "output": "31,7008 galona",
+      "description": "Pokazuje większą pojemność zbiornika lub beczki w galonach."
     }
   ],
   "faq": [
     {
-      "question": "Jak dokładne jest to narzędzie?",
-      "answer": "Wynik jest obliczany bezpośrednio na podstawie wzoru lub logiki po stronie przeglądarki używanej przez to narzędzie."
+      "question": "Jakie galony stosuje ten przelicznik?",
+      "answer": "Domyślnie są to galony amerykańskie. Galon imperialny ma inną wartość, więc wynik zmieniłby się po zmianie systemu jednostek."
     },
     {
-      "question": "Czy mogę używać tego narzędzia na telefonie?",
-      "answer": "Tak. Strona działa na komputerach i ekranach mobilnych, oferując prosty układ pola wejściowego i wyniku."
+      "question": "Czy mogę wpisać liczbę dziesiętną?",
+      "answer": "Tak. Możesz podać na przykład 2,75 litra, a wynik zostanie obliczony z dokładnie takiej wartości."
+    },
+    {
+      "question": "Dlaczego wynik ma wiele miejsc po przecinku?",
+      "answer": "Bo przeliczenie litrów na galony często nie daje pełnej liczby. Zapis dziesiętny pokazuje rzeczywistą wartość, zamiast zbyt wcześnie ją zaokrąglać."
+    },
+    {
+      "question": "Jaki błąd zdarza się najczęściej?",
+      "answer": "Najczęściej myli się galony amerykańskie z imperialnymi albo wpisuje wartość już podaną w galonach zamiast w litrach."
     }
   ],
   "seo": {
     "title": "Przelicznik litrów na galony",
-    "description": "Przelicz litry na galony natychmiast. Darmowy internetowy przelicznik litrów na galony z natychmiastowymi wynikami.",
+    "description": "Przelicz litry na galony do kuchni, paliwa, zbiorników i planowania objętości płynów z wynikiem dziesiętnym.",
     "keywords": [
+      "litry na galony",
       "przelicznik litrów na galony",
-      "narzędzie do przeliczania"
+      "galony amerykańskie",
+      "przeliczanie objętości"
     ]
   }
 }

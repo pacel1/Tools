@@ -4,179 +4,87 @@
   "slug": "betonrechner",
   "h1": "Betonrechner",
   "title": "Betonrechner",
-  "shortDescription": "Berechnen Sie Betonvolumen, Zuschlag für Verschnitt und Sackanzahl für Platten, Streifenfundamente oder Pfosten.",
-  "metaTitle": "Betonrechner | Volumen, Zuschlag und Säcke",
-  "metaDescription": "Berechnen Sie das Betonvolumen in m3, addieren Sie Verschnitt und schätzen Sie Sackanzahl oder Transportbeton für Platten, Fundamente und Pfosten.",
-  "intro": "Mit diesem Betonrechner können Sie schnell abschätzen, wie viel Beton Sie für eine Platte, ein Fundament oder ein Pfostenloch benötigen. Maße eingeben, Verschnitt hinzufügen und Volumen sowie Sackzahl berechnen lassen.",
-  "overview": "Der Rechner wandelt Länge, Breite und Dicke in Betonvolumen in Kubikmetern um. Zusätzlich berücksichtigt er einen Zuschlag für Verschnitt und schätzt die Anzahl der Säcke anhand der Ergiebigkeit pro Sack. Praktisch für Transportbeton und Sackbeton.",
+  "shortDescription": "Berechnen Sie Betonvolumen, Zuschlag und Sackzahl für Platten, Fundamente oder Pfostenlöcher.",
+  "metaTitle": "Betonrechner für m3",
+  "metaDescription": "Berechnen Sie das Betonvolumen, fügen Sie einen Zuschlag hinzu und wandeln Sie das Ergebnis in Sackzahl oder Bestellmenge um.",
+  "intro": "Geben Sie Ihre Maße ein und erhalten Sie Betonvolumen, Zuschlag und eine geschätzte Sackzahl für Ihr Vorhaben.",
+  "overview": "Der Rechner wandelt Länge, Breite und Dicke in Betonvolumen in Kubikmetern um. Anschließend berücksichtigt er den von Ihnen gewählten Zuschlag für Materialverlust, Verdichtung und kleine Unebenheiten im Untergrund.\n\nDamit können Sie Sackbeton mit Transportbeton besser vergleichen und die Bestellmenge sinnvoll planen. Bei unregelmäßigen Löchern oder schrägen Bereichen ist eine einfache Näherung meist die beste Lösung; bei rauem Aushub sollten Sie eher etwas großzügiger rechnen.",
   "howItWorks": [
     "Länge und Breite in Metern eingeben.",
-    "Dicke in Zentimetern eingeben.",
-    "Prozent für Verschnitt festlegen.",
+    "Dicke in Zentimetern eintragen.",
+    "Prozentualen Zuschlag festlegen.",
     "Ergiebigkeit eines Sacks in m3 angeben.",
-    "Betonvolumen, Volumen mit Zuschlag und Sackzahl ablesen."
+    "Basisvolumen, angepasstes Volumen und Sackzahl ablesen."
   ],
   "useCases": [
-    "Beton für Bodenplatten und Garagenböden berechnen.",
-    "Betonbedarf für Streifenfundamente planen.",
-    "Material für Pfostenlöcher und Stützenfüße abschätzen.",
-    "Sackbeton mit Transportbeton vergleichen."
+    {
+      "title": "Terrassen- und Garagenplatten",
+      "description": "Betonbedarf für ebene Flächen vor dem Einbau oder der Materialbestellung berechnen."
+    },
+    {
+      "title": "Streifenfundamente",
+      "description": "Mengen für schmale Fundamentstreifen ermitteln und Sackbeton mit Transportbeton vergleichen."
+    },
+    {
+      "title": "Pfostenlöcher",
+      "description": "Beton für einzelne Pfostenfundamente abschätzen, etwa für Zäune, Pergolen oder Schilder."
+    },
+    {
+      "title": "Stützenfüße und Punktfundamente",
+      "description": "Konkrete Mengen für kleine Lastabtragspunkte und Fundamentblöcke berechnen."
+    }
   ],
   "examples": [
     {
-      "title": "Beispiel Platte",
-      "input": "4 m x 3 m x 10 cm",
-      "output": "1,2 m3 Beton vor Verschnitt.",
-      "description": "Ein einfaches Beispiel für eine kleine Platte oder Terrassenbasis."
+      "title": "Kleine Platte",
+      "input": "3,6 m x 2,4 m x 12 cm, 7 % Zuschlag, 0,018 m3 pro Sack",
+      "output": "Basisvolumen: 1,0368 m3; mit Zuschlag: 1,1094 m3; Säcke: 62",
+      "description": "Praxisnahes Beispiel für eine Gartenplatte oder ein kleines Fundament."
     },
     {
-      "title": "Beispiel Fundament",
-      "input": "2 m x 0,5 m x 30 cm",
-      "output": "0,3 m3 Beton vor Verschnitt.",
-      "description": "Nützlich für Streifenfundamente oder Fundamentblöcke."
+      "title": "Fundamentstreifen",
+      "input": "8 m x 0,25 m x 20 cm, 10 % Zuschlag, 0,02 m3 pro Sack",
+      "output": "Basisvolumen: 0,4 m3; mit Zuschlag: 0,44 m3; Säcke: 22",
+      "description": "Passend für einen schmalen Streifen entlang eines Zauns."
+    },
+    {
+      "title": "Pfostenloch",
+      "input": "0,45 m x 0,45 m x 0,85 m, 12 % Zuschlag, 0,02 m3 pro Sack",
+      "output": "Basisvolumen: 0,1721 m3; mit Zuschlag: 0,1928 m3; Säcke: 10",
+      "description": "Geeignet für einen schweren Pfosten oder eine kleine Stütze."
     }
   ],
   "faq": [
     {
-      "question": "Wie berechne ich das Betonvolumen?",
-      "answer": "Länge mal Breite mal Dicke multiplizieren und die Dicke von Zentimetern in Meter umrechnen."
+      "question": "Wie gehe ich bei einem runden Loch vor?",
+      "answer": "Nehmen Sie eine einfache rechteckige Näherung oder eine vergleichbare Grundfläche. Bei unruhigen Wänden ist ein kleiner Aufschlag sinnvoll."
     },
     {
-      "question": "Warum sollte ich Verschnitt einplanen?",
-      "answer": "Verschnitt deckt Verluste, Unebenheiten und kleine Messfehler ab."
+      "question": "Wird der Zuschlag bei der Sackzahl berücksichtigt?",
+      "answer": "Ja. Die Sackzahl basiert auf dem Volumen mit Zuschlag, nicht auf dem reinen Basisvolumen."
     },
     {
-      "question": "Kann ich damit Transportbeton planen?",
-      "answer": "Ja. Das Volumen mit Zuschlag hilft bei der Bestellmenge."
+      "question": "Warum kommen bei kleinen Arbeiten viele Säcke heraus?",
+      "answer": "Oft liegt es an einer sehr kleinen Sackergiebigkeit oder an falsch eingegebenen Einheiten."
     },
     {
-      "question": "Wie berechne ich die Sackanzahl?",
-      "answer": "Volumen mit Zuschlag durch die Ergiebigkeit pro Sack teilen und aufrunden."
+      "question": "Kann ich damit eine geneigte Fläche berechnen?",
+      "answer": "Ja, am besten mit Durchschnittsdicke oder in Teilflächen. Eine einzige Dicke bleibt bei Neigungen nur eine Näherung."
     },
     {
-      "question": "Ist der Rechner für Pfosten geeignet?",
-      "answer": "Ja, wenn Sie die Grubenmaße eingeben oder eine einfache rechteckige Näherung verwenden."
+      "question": "Wie deute ich das Ergebnis für eine Betonbestellung?",
+      "answer": "Nutzen Sie es als Bestellrichtwert. Bei schwer zugänglicher Baustelle oder unregelmäßiger Schalung ist eine kleine Reserve sinnvoll."
     }
   ],
-  "uiLabels": {
-    "copy": "Kopieren",
-    "copied": "Kopiert",
-    "input": "Eingabe",
-    "output": "Ausgabe",
-    "placeholder": "Wert eingeben",
-    "indent": "Einzug",
-    "removeComments": "Kommentare entfernen",
-    "preview": "Vorschau",
-    "source": "Quelle",
-    "sanitizedHtml": "Bereinigtes HTML",
-    "plainText": "Klartext",
-    "summary": "Zusammenfassung",
-    "total": "Gesamt",
-    "links": "Links",
-    "images": "Bilder",
-    "errors": "Fehler",
-    "warnings": "Warnungen",
-    "valid": "Gültig",
-    "invalid": "Ungültig",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Ziel",
-    "alt": "Alt",
-    "width": "Breite",
-    "height": "Höhe",
-    "empty": "Leer",
-    "outputReady": "Ergebnis bereit",
-    "cleanedHtml": "Bereinigtes HTML",
-    "formattedHtml": "Formatiertes HTML",
-    "minifiedHtml": "Minifiziertes HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extrahierte Bilder",
-    "extractedLinks": "Extrahierte Links",
-    "validationSummary": "Validierungsübersicht",
-    "prettyHtml": "Lesbares HTML",
-    "encodedText": "Kodierter Text",
-    "file": "Datei",
-    "size": "Größe",
-    "format": "Format",
-    "quality": "Qualität",
-    "colorOne": "Farbe 1",
-    "colorTwo": "Farbe 2",
-    "background": "Hintergrund",
-    "foreground": "Vordergrund",
-    "angle": "Winkel",
-    "margin": "Rand",
-    "level": "Stufe",
-    "gradientType": "Verlaufstyp",
-    "linear": "Linear",
-    "radial": "Radial",
-    "blur": "Unschärfe",
-    "spread": "Ausbreitung",
-    "offsetX": "Versatz X",
-    "offsetY": "Versatz Y",
-    "opacity": "Deckkraft",
-    "inset": "Innen",
-    "cssCode": "CSS-Code",
-    "snippet": "Snippet",
-    "download": "Herunterladen",
-    "downloadSvg": "SVG herunterladen",
-    "downloadPng": "PNG herunterladen",
-    "downloadAll": "Alles herunterladen",
-    "upload": "Hochladen",
-    "title": "Titel",
-    "description": "Beschreibung",
-    "canonicalUrl": "Kanonische URL",
-    "siteName": "Seitenname",
-    "ogImage": "OG-Bild",
-    "clear": "Löschen",
-    "generatedQr": "Generierter QR-Code",
-    "placeholderImage": "Platzhalterbild",
-    "faviconSet": "Favicon-Set",
-    "keepAspectRatio": "Seitenverhältnis beibehalten",
-    "cropX": "Zuschneiden X",
-    "cropY": "Zuschneiden Y",
-    "cropWidth": "Zuschneidebreite",
-    "cropHeight": "Zuschneidehöhe",
-    "originalSize": "Originalgröße",
-    "outputSize": "Ausgabegröße",
-    "savedSize": "Gesparte Größe",
-    "result": "Ergebnis",
-    "base64": "Base64",
-    "mimeType": "MIME-Typ",
-    "resizedImage": "Skaliertes Bild",
-    "compressedImage": "Komprimiertes Bild",
-    "croppedImage": "Zugeschnittenes Bild",
-    "convertedImage": "Konvertiertes Bild",
-    "decodedImage": "Dekodiertes Bild",
-    "imagePreview": "Bildvorschau",
-    "camera": "Kamera",
-    "lens": "Objektiv",
-    "dateTaken": "Aufnahmedatum",
-    "resolution": "Auflösung",
-    "fileSize": "Dateigröße",
-    "iso": "ISO",
-    "exposure": "Belichtung",
-    "aperture": "Blende",
-    "focalLength": "Brennweite",
-    "flash": "Blitz",
-    "orientation": "Ausrichtung",
-    "latitude": "Breitengrad",
-    "longitude": "Längengrad",
-    "openMap": "Karte öffnen",
-    "rawMetadata": "Rohmetadaten",
-    "noMetadataFound": "Keine Metadaten gefunden",
-    "gpsLocation": "GPS-Position",
-    "metadataSummary": "Metadatenübersicht"
-  },
   "seo": {
-    "title": "Betonrechner | Volumen, Zuschlag und Säcke",
-    "description": "Berechnen Sie das Betonvolumen in m3, addieren Sie Verschnitt und schätzen Sie Sackanzahl oder Transportbeton für Platten, Fundamente und Pfosten.",
+    "title": "Betonrechner für m3",
+    "description": "Berechnen Sie das Betonvolumen, fügen Sie einen Zuschlag hinzu und wandeln Sie das Ergebnis in Sackzahl oder Bestellmenge um.",
     "keywords": [
       "betonrechner",
-      "betonvolumen berechnen",
-      "sackanzahl berechnen",
-      "transportbeton rechner",
-      "fundament rechner"
+      "betonvolumen",
+      "sackzahl berechnen",
+      "transportbeton",
+      "streifenfundament"
     ]
   }
 }

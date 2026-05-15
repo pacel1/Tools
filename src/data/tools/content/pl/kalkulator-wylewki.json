@@ -4,173 +4,85 @@
   "slug": "kalkulator-wylewki",
   "h1": "Kalkulator wylewki",
   "title": "Kalkulator wylewki",
-  "shortDescription": "Policz objetosc, mase i liczbe workow dla wylewki cementowej, anhydrytowej albo masy samopoziomujacej.",
-  "metaTitle": "Kalkulator wylewki | Objetosc, worki i czas schniecia",
-  "metaDescription": "Oblicz objetosc wylewki, mase materialu, liczbe workow i orientacyjny czas schniecia dla posadzki cementowej, anhydrytowej lub samopoziomujacej.",
-  "intro": "Kalkulator wylewki pozwala szybko porownac trzy najczestsze warianty: wylewke cementowa, anhydrytowa i mase samopoziomujaca. Wynik pokazuje nie tylko objetosc i worki, ale tez orientacyjny czas schniecia.",
-  "overview": "Podaj powierzchnie, grubosc warstwy, gestosc materialu, zapas i wage worka. Kalkulator przelicza objetosc na mase mieszanki i liczbe workow, co przyspiesza wycene zakupu oraz pomaga ocenic, czy wybrany wariant pasuje do planowanej grubosci i tempa prac.",
+  "shortDescription": "Oblicz objetosc wylewki, mase mieszanki i liczbe workow dla wylewki cementowej, anhydrytowej lub samopoziomujacej.",
+  "metaTitle": "Kalkulator wylewki | Objetosc i worki",
+  "metaDescription": "Oblicz objetosc wylewki, mase mieszanki i liczbe workow dla wylewki cementowej, anhydrytowej lub samopoziomujacej.",
+  "intro": "Podaj powierzchnie, grubosc warstwy, zuzycie materialu, zapas i wage worka, a dostaniesz objetosc, mase oraz liczbe workow.",
+  "overview": "Ten kalkulator pomaga policzyc wylewke cementowa, anhydrytowa i mase samopoziomujaca na podstawie powierzchni oraz grubosci warstwy. Przelicza m2 i mm na objetosc, a nastepnie na mase mieszanki oraz orientacyjna liczbe workow.\n\nTo wygodne przy zamawianiu materialu na remont, nowa podloge albo warstwe pod ogrzewanie podlogowe. Jezeli producent podaje zuzycie w kg/m2/mm, wpisz je bezposrednio. Jesli podaje gestosc, uzyj tej wartosci i dolicz rozsadzny zapas na straty, nierownosci podloza oraz pozostalosci w mieszadle.",
   "howItWorks": [
-    "Podaj powierzchnię w m2.",
-    "Wpisz grubość wylewki w mm.",
-    "Ustal zużycie materiału lub gęstość.",
-    "Dodaj zapas procentowy na straty.",
+    "Wpisz powierzchnię w m2.",
+    "Podaj grubość wylewki w mm.",
+    "Wprowadź zużycie materiału albo gęstość.",
+    "Dodaj procent zapasu na straty.",
     "Podaj wagę worka, aby policzyć liczbę worków."
   ],
   "useCases": [
-    "Obliczanie materiału na nowe podłogi i remonty.",
-    "Planowanie wylewki pod ogrzewanie podłogowe.",
-    "Sprawdzenie liczby worków przed zakupem.",
-    "Porównanie zapotrzebowania dla różnych rodzajów wylewki."
+    {
+      "title": "Remont mieszkania",
+      "description": "Policz potrzebę materiału dla salonu, korytarza i sypialni przed złożeniem zamówienia."
+    },
+    {
+      "title": "Wylewka na ogrzewanie podłogowe",
+      "description": "Oszacuj ilość mieszanki przy warstwie układanej nad rurami grzewczymi."
+    },
+    {
+      "title": "Dobór opakowań",
+      "description": "Sprawdź, czy korzystniej zamówić worki 20 kg czy 25 kg dla danej powierzchni."
+    },
+    {
+      "title": "Porównanie produktów",
+      "description": "Zestaw zapotrzebowanie dla wylewki cementowej, anhydrytowej i samopoziomującej według kart technicznych."
+    }
   ],
   "examples": [
     {
-      "title": "Przykładowe obliczenie",
-      "input": "Powierzchnia: 20 m2, grubość: 50 mm, zużycie: 2,0 kg/m2/mm, zapas: 5%, waga worka: 25 kg",
-      "output": "Objętość: 1,00 m3, masa mieszanki: 2100 kg, worki: 84.",
-      "description": "Praktyczny wynik dla średniego pomieszczenia."
+      "title": "Salon w mieszkaniu",
+      "input": "Powierzchnia: 18 m2, grubość: 45 mm, zużycie: 1,95 kg/m2/mm, zapas: 6%, waga worka: 25 kg",
+      "output": "Objętość: 0,81 m3, masa mieszanki: 1577 kg, worki: 64",
+      "description": "Przydatne dla standardowego pokoju z umiarkowaną warstwą."
     },
     {
-      "title": "Wylewka pod ogrzewanie podłogowe",
-      "input": "Powierzchnia: 45 m2, grubość: 60 mm, zużycie: 1,8 kg/m2/mm, zapas: 7%, waga worka: 25 kg",
-      "output": "Objętość: 2,70 m3, masa mieszanki: 5106 kg, worki: 205.",
-      "description": "Pomocne przy planowaniu wylewki nad rurkami grzewczymi."
+      "title": "Kuchnia z podlogowka",
+      "input": "Powierzchnia: 12,5 m2, grubość: 55 mm, zużycie: 2,10 kg/m2/mm, zapas: 8%, waga worka: 20 kg",
+      "output": "Objętość: 0,69 m3, masa mieszanki: 1432 kg, worki: 72",
+      "description": "Pomocne przy warstwie nad rurami i wiekszym zapasie na robote."
+    },
+    {
+      "title": "Pomieszczenie gospodarcze",
+      "input": "Powierzchnia: 38 m2, grubość: 40 mm, zużycie: 1,75 kg/m2/mm, zapas: 5%, waga worka: 25 kg",
+      "output": "Objętość: 1,52 m3, masa mieszanki: 2762 kg, worki: 111",
+      "description": "Realistyczna wycena dla wiekszej powierzchni."
     }
   ],
   "faq": [
     {
-      "question": "Jak obliczana jest objętość wylewki?",
-      "answer": "Objętość to powierzchnia pomnożona przez grubość przeliczoną na metry."
+      "question": "Co wpisac, gdy producent podaje gestosc zamiast zuzycia?",
+      "answer": "Wpisz wartosc gestosci z karty technicznej. Nie lacz jednoczesnie gestosci i zuzycia, chyba ze instrukcja produktu tego wymaga."
     },
     {
-      "question": "Czy kalkulator działa dla wylewki samopoziomującej?",
-      "answer": "Tak. Wpisz zużycie lub gęstość produktu, aby oszacować potrzebną ilość."
+      "question": "Dlaczego ten sam pokoj daje inny wynik dla roznych wylewek?",
+      "answer": "Różne produkty mają inne zużycie i mase worka. Objetość pomieszczenia pozostaje ta sama, ale zmienia się masa i liczba worków."
     },
     {
-      "question": "Po co podawać zapas?",
-      "answer": "Zapas uwzględnia straty podczas mieszania, rozlewania i ewentualne nierówności podłoża."
+      "question": "Czy liczba worków jest zaokraglana w gore?",
+      "answer": "Tak. Kazdy niepelny worek traktuj jako pelny, bo przy zamowieniu trzeba liczyc cale opakowania."
     },
     {
-      "question": "Czy można policzyć liczbę worków?",
-      "answer": "Tak. Wystarczy podać wagę jednego worka, a kalkulator obliczy ich liczbę."
+      "question": "Jaki zapas warto dodac?",
+      "answer": "Wiekszy zapas sprawdza sie przy nierownym podlozu, wielu docinkach i dluzszym transporcie mieszanki. Przy prostym pomieszczeniu wystarczy mniejszy procent."
+    },
+    {
+      "question": "Czy wynik objetosci jest dobry, jesli podloga nie jest równa?",
+      "answer": "Wynik zaklada rowna grubosc na calej powierzchni. Przy duzych roznicach lepiej policzyc srednia grubosc albo podzielic pomieszczenie na strefy."
     }
   ],
-  "uiLabels": {
-    "copy": "Kopiuj",
-    "copied": "Skopiowano",
-    "input": "Dane wejściowe",
-    "output": "Wynik",
-    "placeholder": "Wpisz wartość",
-    "indent": "Wcięcie",
-    "removeComments": "Usuń komentarze",
-    "preview": "Podgląd",
-    "source": "Źródło",
-    "sanitizedHtml": "Oczyszczony HTML",
-    "plainText": "Tekst jawny",
-    "summary": "Podsumowanie",
-    "total": "Suma",
-    "links": "Linki",
-    "images": "Obrazy",
-    "errors": "Błędy",
-    "warnings": "Ostrzeżenia",
-    "valid": "Prawidłowe",
-    "invalid": "Nieprawidłowe",
-    "href": "Adres URL",
-    "text": "Tekst",
-    "rel": "Rel",
-    "target": "Cel",
-    "alt": "Alt",
-    "width": "Szerokość",
-    "height": "Wysokość",
-    "empty": "Puste",
-    "outputReady": "Wynik gotowy",
-    "cleanedHtml": "Oczyszczony HTML",
-    "formattedHtml": "Sformatowany HTML",
-    "minifiedHtml": "Zminifikowany HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Wyodrębnione obrazy",
-    "extractedLinks": "Wyodrębnione linki",
-    "validationSummary": "Podsumowanie walidacji",
-    "prettyHtml": "Czytelny HTML",
-    "encodedText": "Tekst zakodowany",
-    "file": "Plik",
-    "size": "Rozmiar",
-    "format": "Format",
-    "quality": "Jakość",
-    "colorOne": "Kolor 1",
-    "colorTwo": "Kolor 2",
-    "background": "Tło",
-    "foreground": "Pierwszy plan",
-    "angle": "Kąt",
-    "margin": "Margines",
-    "level": "Poziom",
-    "gradientType": "Typ gradientu",
-    "linear": "Liniowy",
-    "radial": "Radialny",
-    "blur": "Rozmycie",
-    "spread": "Rozpiętość",
-    "offsetX": "Przesunięcie X",
-    "offsetY": "Przesunięcie Y",
-    "opacity": "Przezroczystość",
-    "inset": "Wewnętrzny",
-    "cssCode": "Kod CSS",
-    "snippet": "Fragment",
-    "download": "Pobierz",
-    "downloadSvg": "Pobierz SVG",
-    "downloadPng": "Pobierz PNG",
-    "downloadAll": "Pobierz wszystko",
-    "upload": "Prześlij",
-    "title": "Tytuł",
-    "description": "Opis",
-    "canonicalUrl": "Adres kanoniczny",
-    "siteName": "Nazwa serwisu",
-    "ogImage": "Obraz OG",
-    "clear": "Wyczyść",
-    "generatedQr": "Wygenerowany QR",
-    "placeholderImage": "Obraz zastępczy",
-    "faviconSet": "Zestaw favicon",
-    "keepAspectRatio": "Zachowaj proporcje",
-    "cropX": "Przycięcie X",
-    "cropY": "Przycięcie Y",
-    "cropWidth": "Szerokość kadru",
-    "cropHeight": "Wysokość kadru",
-    "originalSize": "Oryginalny rozmiar",
-    "outputSize": "Rozmiar wyjściowy",
-    "savedSize": "Oszczędzony rozmiar",
-    "result": "Wynik",
-    "base64": "Base64",
-    "mimeType": "Typ MIME",
-    "resizedImage": "Obraz po zmianie rozmiaru",
-    "compressedImage": "Obraz skompresowany",
-    "croppedImage": "Obraz przycięty",
-    "convertedImage": "Obraz przekonwertowany",
-    "decodedImage": "Obraz zdekodowany",
-    "imagePreview": "Podgląd obrazu",
-    "camera": "Kamera",
-    "lens": "Obiektyw",
-    "dateTaken": "Data wykonania",
-    "resolution": "Rozdzielczość",
-    "fileSize": "Rozmiar pliku",
-    "iso": "ISO",
-    "exposure": "Czas naświetlania",
-    "aperture": "Przysłona",
-    "focalLength": "Ogniskowa",
-    "flash": "Lampa błyskowa",
-    "orientation": "Orientacja",
-    "latitude": "Szerokość geograficzna",
-    "longitude": "Długość geograficzna",
-    "openMap": "Otwórz mapę",
-    "rawMetadata": "Surowe metadane",
-    "noMetadataFound": "Nie znaleziono metadanych",
-    "gpsLocation": "Lokalizacja GPS",
-    "metadataSummary": "Podsumowanie metadanych"
-  },
   "seo": {
-    "title": "Kalkulator wylewki online",
-    "description": "Oblicz objętość wylewki, masę mieszanki i liczbę worków dla wylewki cementowej, anhydrytowej i samopoziomującej.",
+    "title": "Kalkulator wylewki | Objetosc i worki",
+    "description": "Oblicz objetosc wylewki, mase mieszanki i liczbe workow dla wylewki cementowej, anhydrytowej lub samopoziomujacej.",
     "keywords": [
       "kalkulator wylewki",
-      "kalkulator posadzki",
       "wylewka kalkulator",
+      "kalkulator posadzki",
       "kalkulator wylewki cementowej",
       "kalkulator wylewki anhydrytowej"
     ]

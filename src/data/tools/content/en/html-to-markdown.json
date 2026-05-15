@@ -3,105 +3,91 @@
   "locale": "en",
   "slug": "html-to-markdown",
   "h1": "HTML to Markdown",
-  "title": "HTML to Markdown",
-  "shortDescription": "Convert HTML into Markdown for docs, CMS workflows and content cleanup.",
-  "metaTitle": "HTML to Markdown Converter",
-  "metaDescription": "Convert HTML to Markdown quickly for documentation, CMS edits, and content cleanup. Client-side, safe, and easy to use.",
-  "intro": "Convert HTML into clean Markdown for documentation, CMS publishing, migrations, and content cleanup. This client-side tool helps you turn HTML into readable Markdown without sending data to external APIs.",
-  "overview": "HTML to Markdown is a practical converter for developers, writers, and content teams. Paste HTML, review the sanitized preview, and get Markdown output that is easier to store, edit, and reuse in docs or CMS workflows. It is designed for safe, client-side processing with XSS-aware handling.",
+  "title": "HTML to Markdown Converter",
+  "shortDescription": "Turn HTML into Markdown for docs, CMS edits, migrations, and content cleanup.",
+  "metaTitle": "HTML to Markdown Tool",
+  "metaDescription": "Turn HTML into Markdown for docs, CMS edits, and content cleanup in the browser.",
+  "intro": "Paste HTML and get Markdown that keeps headings, links, lists, and emphasis in a readable format.",
+  "overview": "HTML to Markdown converts rich HTML fragments into plain, editable Markdown you can store in docs, notes, and content systems. It is useful when a page has been copied from a CMS, an email editor, or a legacy site and needs to be rewritten in a lighter format. The tool runs in the browser and keeps the conversion process self-contained.\n\nThe output is designed to preserve structure where it matters: headings become Markdown headings, paragraphs stay separated, links remain clickable, and lists remain easy to scan. If your source contains complex layout markup, the conversion focuses on the readable content rather than page styling, which makes the result easier to maintain.",
   "howItWorks": [
-    "Paste your HTML into the input field.",
-    "The tool sanitizes and analyzes the markup client-side.",
-    "Review the cleaned HTML and extracted elements if needed.",
-    "Copy the generated Markdown output for your docs or CMS."
+    "Paste the HTML source into the input field.",
+    "The tool parses the markup in the browser and removes unsafe elements.",
+    "It converts semantic elements such as headings, links, lists, quotes, and emphasis into Markdown.",
+    "Review the result and copy the Markdown for your editor, repository, or CMS."
   ],
   "useCases": [
-    "Convert blog or help-center HTML into Markdown.",
-    "Clean up pasted CMS content for easier editing.",
-    "Migrate pages from HTML-based systems to Markdown.",
-    "Extract readable content from rich text exports.",
-    "Prepare documentation content for static site generators."
+    {
+      "title": "Move legacy help articles into Markdown",
+      "description": "Convert old support pages with headings, callouts, and bullet lists into editable Markdown for a new documentation system."
+    },
+    {
+      "title": "Clean exports from a CMS editor",
+      "description": "Strip away editor-specific wrappers and recover the readable article text for reuse in a different publishing workflow."
+    },
+    {
+      "title": "Prepare content for a static site generator",
+      "description": "Transform HTML pages into Markdown files that fit Hugo, Jekyll, Astro, or similar content pipelines."
+    },
+    {
+      "title": "Rewrite pasted rich text into a simpler format",
+      "description": "Take content copied from Word processors or visual editors and turn it into structured Markdown with less clutter."
+    },
+    {
+      "title": "Extract article body from a full HTML page",
+      "description": "Focus on the main readable content and convert it into a format that is easier to version, diff, and review."
+    }
   ],
   "examples": [
     {
-      "title": "Basic article conversion",
-      "input": "<h1>Title</h1><p>This is <strong>important</strong>.</p>",
-      "output": "# Title\n\nThis is **important**.",
-      "description": "Turns headings and emphasis into standard Markdown."
+      "title": "Article with emphasis",
+      "input": "<h1>Release notes</h1><p>Version <strong>2.4</strong> is now live.</p>",
+      "output": "# Release notes\n\nVersion **2.4** is now live.",
+      "description": "Converts a heading and bold text into standard Markdown."
     },
     {
-      "title": "Links and lists",
-      "input": "<p>See <a href=\"/docs\">the docs</a>:</p><ul><li>Fast</li><li>Safe</li></ul>",
-      "output": "See [the docs](/docs):\n\n- Fast\n- Safe",
-      "description": "Preserves links and list structure."
+      "title": "Quoted text and a link",
+      "input": "<blockquote><p>Keep the scope small.</p></blockquote><p>Read <a href=\"/guide\">the guide</a>.</p>",
+      "output": "> Keep the scope small.\n\nRead [the guide](/guide).",
+      "description": "Preserves blockquote structure and converts links into Markdown syntax."
+    },
+    {
+      "title": "Mixed list content",
+      "input": "<p>Included items:</p><ul><li>API docs</li><li>Examples</li><li>Changelog</li></ul>",
+      "output": "Included items:\n\n- API docs\n- Examples\n- Changelog",
+      "description": "Turns an unordered list into readable Markdown bullets."
     }
   ],
   "faq": [
     {
-      "question": "Does this tool run in the browser only?",
-      "answer": "Yes. It uses client-side logic and does not require external APIs."
+      "question": "What happens to inline styles and layout-only tags?",
+      "answer": "They are ignored during conversion. The tool keeps readable content such as headings, text, links, and lists instead of page styling."
     },
     {
-      "question": "Will it remove unsafe HTML?",
-      "answer": "It is designed to be XSS-aware and sanitize content before conversion."
+      "question": "Will nested formatting be flattened?",
+      "answer": "No. Basic nesting like bold inside a link or emphasis inside a paragraph is usually preserved when it maps cleanly to Markdown."
     },
     {
-      "question": "Can I use it for CMS migrations?",
-      "answer": "Yes. It is useful for moving content from HTML-heavy systems into Markdown-based workflows."
+      "question": "How are images handled?",
+      "answer": "Images are converted when possible into Markdown image syntax. If an image is missing alt text or uses unusual attributes, the result may be simplified."
     },
     {
-      "question": "Does it keep links and images?",
-      "answer": "It extracts links and images where possible and converts them into Markdown-friendly syntax."
+      "question": "Can I paste full pages with nav bars and footers?",
+      "answer": "You can, but only the meaningful content is useful in the result. Decorative menus, footers, and repeated page chrome are not the target of the conversion."
+    },
+    {
+      "question": "Why does some HTML not become exact Markdown?",
+      "answer": "Markdown has fewer formatting options than HTML. Elements without a direct Markdown equivalent are simplified so the output stays readable and practical."
     }
   ],
-  "uiLabels": {
-    "copy": "Copy",
-    "copied": "Copied",
-    "input": "HTML input",
-    "output": "Markdown output",
-    "placeholder": "Paste HTML here...",
-    "indent": "Indent",
-    "removeComments": "Remove comments",
-    "preview": "Preview",
-    "source": "Source",
-    "sanitizedHtml": "Sanitized HTML",
-    "plainText": "Plain text",
-    "summary": "Summary",
-    "total": "Total",
-    "links": "Links",
-    "images": "Images",
-    "errors": "Errors",
-    "warnings": "Warnings",
-    "valid": "Valid",
-    "invalid": "Invalid",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Width",
-    "height": "Height",
-    "empty": "Empty",
-    "outputReady": "Markdown output ready",
-    "cleanedHtml": "Cleaned HTML",
-    "formattedHtml": "Formatted HTML",
-    "minifiedHtml": "Minified HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extracted images",
-    "extractedLinks": "Extracted links",
-    "validationSummary": "Validation summary",
-    "prettyHtml": "Pretty HTML",
-    "encodedText": "Encoded text"
-  },
   "seo": {
-    "title": "HTML to Markdown Converter",
-    "description": "Convert HTML to Markdown quickly for documentation, CMS edits, and content cleanup. Client-side, safe, and easy to use.",
+    "title": "HTML to Markdown Tool",
+    "description": "Turn HTML into Markdown for docs, CMS edits, migrations, and content cleanup in the browser.",
     "keywords": [
       "HTML to Markdown",
-      "convert HTML to Markdown",
       "Markdown converter",
       "HTML cleanup",
-      "CMS workflow"
+      "CMS content conversion",
+      "documentation workflow"
     ]
   }
 }

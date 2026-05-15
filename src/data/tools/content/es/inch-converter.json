@@ -1,0 +1,84 @@
+{
+  "toolId": "inch-converter",
+  "locale": "es",
+  "slug": "inch-converter",
+  "h1": "Conversor de pulgadas",
+  "title": "Conversor de pulgadas",
+  "shortDescription": "Convierte pulgadas, centímetros, milímetros y pies en una sola herramienta de medida.",
+  "metaTitle": "Conversor de pulgadas: in, cm, mm, pies",
+  "metaDescription": "Convierte entre pulgadas, centímetros, milímetros y pies en un solo calculador para medidas, planos, embalaje y fichas técnicas.",
+  "intro": "Convierte pulgadas, centímetros, milímetros y pies en un solo lugar. Escribe un valor, elige la unidad de origen y la de destino, y obtén el resultado al momento.",
+  "overview": "Esta herramienta sirve para cambiar medidas con precisión entre los cuatro formatos de longitud más usados alrededor de la pulgada. Permite trabajar en ambos sentidos desde la misma pantalla, así que puedes pasar de imperial a métrico o volver sin cambiar de calculadora.\n\nResulta útil para fichas de producto, cortes de taller, distribución de espacios, planos, tamaños de pantalla y dimensiones de embalaje. El resultado se muestra de forma clara y puedes cambiar la pareja de unidades cuando necesites otra referencia.\n\nComo también incluye pies, encaja bien en documentos con medidas mixtas donde conviven sistemas distintos. Así comparas dimensiones sin hacer cuentas manuales ni separar el cálculo en varias herramientas.",
+  "howItWorks": [
+    "Escribe la medida que quieres convertir.",
+    "Elige la unidad de origen y la unidad de destino.",
+    "Lee el resultado y cambia el sentido si necesitas la conversión inversa."
+  ],
+  "useCases": [
+    {
+      "title": "Especificaciones de producto",
+      "description": "Pasa datos de proveedor en pulgadas a centímetros o milímetros para catálogos, etiquetas y comprobaciones de ajuste."
+    },
+    {
+      "title": "Cortes de carpintería",
+      "description": "Alterna entre pies, pulgadas y milímetros al marcar tablas, molduras o ajustes de máquina."
+    },
+    {
+      "title": "Planificación de muebles y espacios",
+      "description": "Compara tamaños y holguras escritos en distintos sistemas antes de comprar o instalar."
+    },
+    {
+      "title": "Dibujos y documentación técnica",
+      "description": "Convierte medidas entre sistemas al preparar planos, bocetos o fichas de trabajo."
+    }
+  ],
+  "examples": [
+    {
+      "title": "Tamaño de monitor",
+      "input": "27 pulgadas a cm",
+      "output": "68,58 centímetros",
+      "description": "Útil cuando el tamaño de pantalla aparece en pulgadas y el documento usa métricas."
+    },
+    {
+      "title": "Longitud de una pieza",
+      "input": "8.5 pies a pulgadas",
+      "output": "102 pulgadas",
+      "description": "Práctico para cortar material según un plano expresado en pies."
+    },
+    {
+      "title": "Pieza pequeña",
+      "input": "18 mm a pulgadas",
+      "output": "0,7087 pulgadas",
+      "description": "Adecuado para herrajes o repuestos medidos en milímetros."
+    }
+  ],
+  "faq": [
+    {
+      "question": "¿Puedo convertir directamente entre cualquier par de unidades compatibles?",
+      "answer": "Sí. Solo selecciona la unidad de inicio y la unidad de destino entre pulgadas, centímetros, milímetros y pies."
+    },
+    {
+      "question": "¿Por qué a veces aparecen varios decimales?",
+      "answer": "Porque algunas conversiones no terminan en un número entero y se mantienen decimales para conservar precisión."
+    },
+    {
+      "question": "¿Qué reviso si el resultado no coincide?",
+      "answer": "Comprueba que el valor y la dirección de conversión sean correctos. Un error frecuente es poner la cifra bien pero elegir la unidad inicial equivocada."
+    },
+    {
+      "question": "¿Los pies se interpretan como número decimal o como formato pies y pulgadas?",
+      "answer": "Convierte valores numéricos decimales. Si tienes un formato mixto como 5 pies 7 pulgadas, conviene separar las partes antes."
+    }
+  ],
+  "seo": {
+    "title": "Conversor de pulgadas: in, cm, mm, pies",
+    "description": "Convierte entre pulgadas, centímetros, milímetros y pies en un solo calculador para medidas, planos, embalaje y fichas técnicas.",
+    "keywords": [
+      "conversor de pulgadas",
+      "pulgadas a cm",
+      "cm a pulgadas",
+      "mm a pulgadas",
+      "pies a pulgadas"
+    ]
+  }
+}

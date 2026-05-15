@@ -4,176 +4,97 @@
   "slug": "styrofoam-insulation-calculator",
   "h1": "Styrofoam Insulation Calculator",
   "title": "Styrofoam Insulation Calculator",
-  "shortDescription": "Estimate how many styrofoam packages you need for walls, floors, roofs or foundations.",
-  "metaTitle": "Styrofoam Insulation Calculator - Estimate Packages Needed",
-  "metaDescription": "Calculate styrofoam insulation volume, area with waste and number of packages for facade, floor, roof or foundation insulation.",
-  "intro": "Use this styrofoam insulation calculator to quickly estimate how many packages you need for a facade, floor, roof or foundation project. Enter the insulated area, thickness, package coverage, waste percentage and package volume to get practical results in seconds.",
-  "overview": "This calculator helps you plan insulation material more accurately. It converts area and thickness into insulation volume, adds your waste allowance and estimates the number of packages based on coverage and package volume. It is useful for EPS insulation planning on walls, floors, roofs and foundations.",
+  "shortDescription": "Estimate EPS packs for walls, floors, roofs, and foundations from area, thickness, and pack yield.",
+  "metaTitle": "EPS Pack Calculator",
+  "metaDescription": "Estimate EPS volume, trimming allowance, and pack count for façade, floor, roof, or foundation insulation.",
+  "intro": "Enter the insulated area, board thickness, pack coverage, waste rate, and pack volume to see how many EPS packs to buy.",
+  "overview": "Use this calculator when you already know the insulated area and need a buying quantity for EPS boards. It converts area and thickness into insulation volume, then adds an allowance for cuts, edge pieces, and fitting losses so the order is closer to what the job will actually consume.\n\nIt works for façades, floors, roofs, and foundations, where pack contents can differ from one brand to another. You can check both the claimed coverage and the pack volume so the result matches the exact product on the quote or delivery note.",
   "howItWorks": [
     "Enter the insulated area in square meters.",
-    "Set the insulation thickness in centimeters.",
-    "Provide the coverage per package and package volume.",
-    "Add the waste percentage for cutting and fitting losses.",
-    "Get the insulation volume, total area with waste and package count."
+    "Set the EPS thickness in centimeters.",
+    "Fill in the coverage per pack and the pack volume from the product label.",
+    "Add a waste percentage for cuts, trimming, and on-site losses.",
+    "Review the required insulation volume, adjusted area, and rounded pack count."
   ],
   "useCases": [
-    "Estimating styrofoam packages for facade insulation.",
-    "Planning EPS quantity for floor insulation.",
-    "Checking material needs for roof insulation.",
-    "Calculating packages for foundation insulation.",
-    "Comparing insulation requirements before purchasing material."
+    {
+      "title": "Façade board ordering",
+      "description": "Work out the number of EPS packs before sending a wall-insulation order to the supplier."
+    },
+    {
+      "title": "Floor build-up planning",
+      "description": "Estimate boards under screed or slab so the insulation layer fits the floor layout."
+    },
+    {
+      "title": "Roof insulation takeoff",
+      "description": "Check the material needed for pitched or flat roof insulation before the delivery is booked."
+    },
+    {
+      "title": "Foundation perimeter sizing",
+      "description": "Calculate packs for below-grade and perimeter insulation where many corners and cuts appear."
+    },
+    {
+      "title": "Quote comparison",
+      "description": "Compare pack counts across products that have different coverage or different pack volumes."
+    }
   ],
   "examples": [
     {
-      "title": "Facade insulation",
-      "input": "150 m2 area, 15 cm thickness, 5 m2 per package, 8% waste, 0.75 m3 package volume",
-      "output": "Shows the required insulation volume, adjusted area and estimated number of packages.",
-      "description": "Useful for ordering the right amount of EPS boards for external walls."
+      "title": "Detached house façade",
+      "input": "168 m2 area, 16 cm thickness, 5.0 m2 per pack, 9% waste, 0.80 m3 pack volume",
+      "output": "Shows the insulation volume, the waste-adjusted area, and the pack count rounded up.",
+      "description": "Useful for ordering EPS boards for an external wall system."
     },
     {
-      "title": "Floor insulation",
-      "input": "80 m2 area, 10 cm thickness, 4 m2 per package, 5% waste, 0.4 m3 package volume",
-      "output": "Displays material volume and package estimate for floor work.",
-      "description": "Helps avoid shortages when insulating under screed or slab."
+      "title": "Warehouse floor insulation",
+      "input": "240 m2 area, 12 cm thickness, 4.8 m2 per pack, 6% waste, 0.58 m3 pack volume",
+      "output": "Returns the total EPS volume and the estimated number of packs for the floor layer.",
+      "description": "Helpful when preparing material before the concrete or screed stage."
+    },
+    {
+      "title": "Foundation edge strip",
+      "input": "62 m2 area, 10 cm thickness, 3.6 m2 per pack, 12% waste, 0.36 m3 pack volume",
+      "output": "Displays the insulation volume and a higher pack count because of the extra cutting allowance.",
+      "description": "Fits jobs with many corners, returns, and narrow offcuts."
+    },
+    {
+      "title": "Flat roof refurbishment",
+      "input": "93 m2 area, 18 cm thickness, 4.2 m2 per pack, 8% waste, 0.76 m3 pack volume",
+      "output": "Calculates the volume and the pack total needed for the roof build-up.",
+      "description": "Good for checking material before a warm-roof delivery."
     }
   ],
   "faq": [
     {
-      "question": "What does the styrofoam insulation calculator calculate?",
-      "answer": "It calculates insulation volume in cubic meters, the area including waste and the estimated number of packages needed."
+      "question": "Why should I enter both pack coverage and pack volume?",
+      "answer": "Some products are sold by area coverage, others by cubic volume, and the two figures do not always line up perfectly. Entering both lets the calculator reflect the exact pack format from the product sheet."
     },
     {
-      "question": "Can I use it for walls, floors, roofs and foundations?",
-      "answer": "Yes. The calculator is general enough for all common EPS insulation applications."
+      "question": "What happens if my project has many corners or openings?",
+      "answer": "Add those losses into the waste percentage. The tool uses the area you enter, so openings, returns, and intricate edges should be covered by a larger allowance."
     },
     {
-      "question": "Why do I need to enter waste percentage?",
-      "answer": "Waste covers trimming, cuts, fitting losses and small installation adjustments."
+      "question": "Can I rely on the rounded pack count as the final order?",
+      "answer": "Use it as the base order quantity, then confirm the board dimensions, joint pattern, and any special details that may increase offcuts or require extra boards."
     },
     {
-      "question": "Does package coverage or package volume matter more?",
-      "answer": "Both are useful. Coverage helps estimate surface needs, while package volume helps verify the total insulation volume."
+      "question": "Which unit mistake causes the biggest error?",
+      "answer": "Thickness. The calculator expects centimeters, so 12 cm must be entered as 12. Do not enter millimeters or decimal meters."
+    },
+    {
+      "question": "What if the product label lists both board count and m3 per pack?",
+      "answer": "Use the values from the same exact product. If the label gives both, the pack count should be consistent with the pack volume and board size shown on that label."
     }
   ],
-  "uiLabels": {
-    "copy": "Copy",
-    "copied": "Copied",
-    "input": "Input",
-    "output": "Output",
-    "placeholder": "Enter a value",
-    "indent": "Indent",
-    "removeComments": "Remove comments",
-    "preview": "Preview",
-    "source": "Source",
-    "sanitizedHtml": "Sanitized HTML",
-    "plainText": "Plain text",
-    "summary": "Summary",
-    "total": "Total",
-    "links": "Links",
-    "images": "Images",
-    "errors": "Errors",
-    "warnings": "Warnings",
-    "valid": "Valid",
-    "invalid": "Invalid",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Width",
-    "height": "Height",
-    "empty": "Empty",
-    "outputReady": "Output ready",
-    "cleanedHtml": "Cleaned HTML",
-    "formattedHtml": "Formatted HTML",
-    "minifiedHtml": "Minified HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extracted images",
-    "extractedLinks": "Extracted links",
-    "validationSummary": "Validation summary",
-    "prettyHtml": "Pretty HTML",
-    "encodedText": "Encoded text",
-    "file": "File",
-    "size": "Size",
-    "format": "Format",
-    "quality": "Quality",
-    "colorOne": "Color 1",
-    "colorTwo": "Color 2",
-    "background": "Background",
-    "foreground": "Foreground",
-    "angle": "Angle",
-    "margin": "Margin",
-    "level": "Level",
-    "gradientType": "Gradient type",
-    "linear": "Linear",
-    "radial": "Radial",
-    "blur": "Blur",
-    "spread": "Spread",
-    "offsetX": "Offset X",
-    "offsetY": "Offset Y",
-    "opacity": "Opacity",
-    "inset": "Inset",
-    "cssCode": "CSS code",
-    "snippet": "Snippet",
-    "download": "Download",
-    "downloadSvg": "Download SVG",
-    "downloadPng": "Download PNG",
-    "downloadAll": "Download all",
-    "upload": "Upload",
-    "title": "Title",
-    "description": "Description",
-    "canonicalUrl": "Canonical URL",
-    "siteName": "Site name",
-    "ogImage": "OG image",
-    "clear": "Clear",
-    "generatedQr": "Generated QR",
-    "placeholderImage": "Placeholder image",
-    "faviconSet": "Favicon set",
-    "keepAspectRatio": "Keep aspect ratio",
-    "cropX": "Crop X",
-    "cropY": "Crop Y",
-    "cropWidth": "Crop width",
-    "cropHeight": "Crop height",
-    "originalSize": "Original size",
-    "outputSize": "Output size",
-    "savedSize": "Saved size",
-    "result": "Result",
-    "base64": "Base64",
-    "mimeType": "MIME type",
-    "resizedImage": "Resized image",
-    "compressedImage": "Compressed image",
-    "croppedImage": "Cropped image",
-    "convertedImage": "Converted image",
-    "decodedImage": "Decoded image",
-    "imagePreview": "Image preview",
-    "camera": "Camera",
-    "lens": "Lens",
-    "dateTaken": "Date taken",
-    "resolution": "Resolution",
-    "fileSize": "File size",
-    "iso": "ISO",
-    "exposure": "Exposure",
-    "aperture": "Aperture",
-    "focalLength": "Focal length",
-    "flash": "Flash",
-    "orientation": "Orientation",
-    "latitude": "Latitude",
-    "longitude": "Longitude",
-    "openMap": "Open map",
-    "rawMetadata": "Raw metadata",
-    "noMetadataFound": "No metadata found",
-    "gpsLocation": "GPS location",
-    "metadataSummary": "Metadata summary"
-  },
   "seo": {
-    "title": "Styrofoam Insulation Calculator",
-    "description": "Calculate styrofoam insulation volume, area with waste and how many packages you need for walls, floors, roofs or foundations.",
+    "title": "EPS Pack Calculator",
+    "description": "Estimate EPS volume, trimming allowance, and pack count for façade, floor, roof, or foundation insulation.",
     "keywords": [
-      "styrofoam insulation calculator",
-      "EPS calculator",
-      "insulation packages calculator",
-      "styrofoam packages needed",
-      "insulation volume calculator"
+      "EPS insulation calculator",
+      "EPS pack count",
+      "styrofoam board estimate",
+      "insulation pack volume",
+      "EPS material calculator"
     ]
   }
 }

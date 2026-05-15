@@ -4,42 +4,80 @@
   "slug": "line-counter",
   "h1": "Line Counter",
   "title": "Line Counter",
-  "shortDescription": "Count lines in text instantly with fast results, simple inputs and practical examples.",
-  "overview": "Count lines in text instantly. Use this tool to get a clear result quickly from simple input on the same page. It is useful for everyday checks, comparisons and small tasks when you need a fast online answer.",
+  "shortDescription": "Count the number of lines in pasted text, including blank lines when they are present.",
+  "metaTitle": "Line Counter Tool",
+  "metaDescription": "Count lines in pasted text, including blank lines, and review the total in a clear, simple format.",
+  "intro": "Paste your text and get the line count immediately, including empty lines if they are part of the input.",
+  "overview": "This line counter gives you the total number of lines in any text you paste into the box. It is useful when you need to verify a draft, compare versions of a file, or check whether copied content includes empty lines that matter.\n\nThe count is based on line breaks in the text you provide. If your content ends with a trailing newline, that can affect the total, so it is worth checking the result against the exact text you pasted. For long notes, code snippets, and structured text, the tool helps you see the line structure without manual counting.",
   "howItWorks": [
-    "Enter the required value or text into the form.",
-    "The conversion, calculation or transformation runs instantly in the browser.",
-    "Review the result and continue with related tools if you need another step."
+    "Paste or type your text into the input area.",
+    "The tool counts the lines from the exact text, including blank lines.",
+    "Read the total and compare it with your source if you need to confirm formatting."
+  ],
+  "useCases": [
+    {
+      "title": "Reviewing a draft before sending",
+      "description": "Check how many lines your email, report, or note contains before you share it."
+    },
+    {
+      "title": "Checking pasted code blocks",
+      "description": "Count the lines in code snippets to confirm structure after copying from an editor or chat app."
+    },
+    {
+      "title": "Comparing two versions of text",
+      "description": "See whether an edited paragraph or document changed in length after line breaks were added or removed."
+    },
+    {
+      "title": "Verifying structured content",
+      "description": "Use it for lists, outlines, lyrics, or transcripts where the number of lines affects layout or reading flow."
+    }
   ],
   "examples": [
     {
-      "title": "Common use case",
-      "input": "Three lines of text",
-      "output": "Line total",
-      "description": "Shows a common use case with a clear input and result."
+      "title": "Short note",
+      "input": "First line\nSecond line\nThird line",
+      "output": "3 lines",
+      "description": "Three visible lines produce a total of 3."
     },
     {
-      "title": "Another quick example",
-      "input": "Three lines of text",
-      "output": "Line total",
-      "description": "Useful for quick checks, comparisons or repeat tasks."
+      "title": "Text with a blank line",
+      "input": "Alpha\n\nGamma",
+      "output": "3 lines",
+      "description": "The empty middle line is counted as a line because it is part of the input."
+    },
+    {
+      "title": "Trailing newline",
+      "input": "One\nTwo\nThree\n",
+      "output": "4 lines",
+      "description": "A final line break can add an extra counted line, so the ending matters."
     }
   ],
   "faq": [
     {
-      "question": "How accurate is this tool?",
-      "answer": "The result is based on the input you provide and the calculation or transformation shown on the page."
+      "question": "Does a blank line count as a line?",
+      "answer": "Yes. If an empty line exists between two line breaks, it is counted as a line because it is part of the text structure."
     },
     {
-      "question": "Can I use this tool on mobile?",
-      "answer": "Yes. The page works on desktop and mobile screens with a simple input and result layout."
+      "question": "Why did the total increase after I added a line break at the end?",
+      "answer": "A trailing newline can create an additional line boundary. If your source ends with a final return, the count may be higher than the visible text suggests."
+    },
+    {
+      "question": "How should I interpret pasted text from editors or chat apps?",
+      "answer": "The result reflects the exact characters you paste, so copied formatting, hidden line breaks, and extra returns all affect the total."
+    },
+    {
+      "question": "What is the most common counting mistake?",
+      "answer": "People often count only visible text and forget blank lines or the final newline at the end of the content."
     }
   ],
   "seo": {
-    "title": "Line Counter",
-    "description": "Count lines in text instantly. Free online line counter with instant results.",
+    "title": "Line Counter Tool",
+    "description": "Count lines in pasted text, including blank lines, and review the total in a clear, simple format.",
     "keywords": [
-      "line counter"
+      "line counter",
+      "count lines in text",
+      "blank line counter",
+      "text line count"
     ]
   }
 }

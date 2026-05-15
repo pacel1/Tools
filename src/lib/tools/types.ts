@@ -35,6 +35,11 @@ export type ToolFaq = {
   answer: string;
 };
 
+export type ToolUseCase = {
+  title: string;
+  description: string;
+};
+
 export type ToolLocaleContent = {
   toolId: string;
   locale: Locale;
@@ -47,7 +52,7 @@ export type ToolLocaleContent = {
   intro?: string;
   overview: string;
   howItWorks: string[];
-  useCases?: string[];
+  useCases?: Array<string | ToolUseCase>;
   examples: ToolExample[];
   faq: ToolFaq[];
   uiLabels?: Record<string, string>;

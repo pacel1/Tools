@@ -4,43 +4,80 @@
   "slug": "zinseszinsrechner",
   "h1": "Zinseszinsrechner",
   "title": "Zinseszinsrechner",
-  "shortDescription": "Berechnen Sie das Wachstum von Zinseszinsen über die Zeit mit schnellen Ergebnissen, einfachen Eingaben und praktischen Beispielen.",
-  "overview": "Berechnen Sie das Wachstum von Zinseszinsen über die Zeit. Diese Seite liefert mit einem praktischen Tool und einem einfachen Ergebnisablauf schnell eine Antwort. Sie richtet sich an Nutzer, die eine kostenlose Online-Antwort, schnelle browserbasierte Ergebnisse und hilfreiche Long-Tail-Inhalte suchen.",
+  "shortDescription": "Berechnen Sie, wie ein Kapital durch Zinseszins über die Zeit wächst – abhängig von Zinssatz, Laufzeit und Zinsintervall.",
+  "metaTitle": "Zinseszinsrechner",
+  "metaDescription": "Berechnen Sie Endwert, Gesamtzinsen und Wachstum mit Anfangskapital, Zinssatz, Laufzeit und Zinsintervall.",
+  "intro": "Geben Sie Anfangskapital, Zinssatz, Laufzeit und Zinsintervall ein, um Endwert und erwirtschaftete Zinsen zu sehen.",
+  "overview": "Dieser Rechner zeigt, wie Geld wächst, wenn Zinsen dem Guthaben gutgeschrieben werden und danach selbst wieder Zinsen erzeugen. Er eignet sich für Sparpläne, Festgeld und alle Fälle, in denen das Zinsintervall das Endergebnis beeinflusst. Sie können verschiedene Zinssätze, Laufzeiten und Intervalle vergleichen, um zu sehen, wie stark sich das Ergebnis verändert.\n\nDas Ergebnis enthält den Endwert und die erwirtschafteten Zinsen, sodass Sie eigenes Kapital und Wachstum durch den Zinseszinseffekt getrennt sehen. Wenn Sie regelmäßige Einzahlungen berücksichtigen möchten, müssen diese exakt so eingegeben werden, wie es das Tool verlangt, denn Zeitpunkt und Häufigkeit können das Ergebnis ändern. Für Kreditrechnungen ist meist ein separater Ratenrechner die bessere Wahl.",
   "howItWorks": [
-    "Geben Sie den erforderlichen Wert oder Text in das Formular ein.",
-    "Die Umrechnung, Berechnung oder Umwandlung läuft sofort im Browser.",
-    "Prüfen Sie das Ergebnis und nutzen Sie bei Bedarf verwandte Tools für den nächsten Schritt."
+    "Geben Sie Anfangskapital, Jahreszins, Laufzeit und Zinsintervall ein.",
+    "Der Rechner verwendet die Zinseszins-Formel, um Endwert und Gesamtzinsen zu ermitteln.",
+    "Prüfen Sie das Ergebnis und passen Sie die Werte an, wenn Sie Szenarien vergleichen möchten."
+  ],
+  "useCases": [
+    {
+      "title": "Festgeld-Angebote vergleichen",
+      "description": "Vergleichen Sie zwei Anlagen mit gleichem Startkapital, aber unterschiedlichem Zinssatz oder Zinsintervall."
+    },
+    {
+      "title": "Entwicklung eines Sparguthabens schätzen",
+      "description": "Berechnen Sie, wie stark ein Guthaben bei monatlicher, quartalsweiser oder jährlicher Gutschrift anwächst."
+    },
+    {
+      "title": "Sparziel planen",
+      "description": "Ermitteln Sie, wie lange es dauert, bis ein Zielbetrag bei einem bestimmten Zinssatz erreicht wird."
+    }
   ],
   "examples": [
     {
-      "title": "Beispiel 1",
-      "input": "5000, 5 %, 10 Jahre",
-      "output": "Wachstum über die Zeit",
-      "description": "Ein realistisches Beispiel für den Zinseszinsrechner bei einer alltäglichen Suchanfrage."
+      "title": "Jährliche Verzinsung bei einer Geldanlage",
+      "input": "Anfangskapital: 8.000; Zinssatz: 4,5 %; Laufzeit: 6 Jahre; Intervall: jährlich",
+      "output": "Endwert: 10.411,07; Zinsen: 2.411,07",
+      "description": "Zeigt das Wachstum einer Anlage, bei der die Zinsen einmal pro Jahr gutgeschrieben werden."
     },
     {
-      "title": "Beispiel 2",
-      "input": "5000, 5 %, 10 Jahre",
-      "output": "Wachstum über die Zeit",
-      "description": "Ein weiterer praktischer Anwendungsfall für organischen Long-Tail-Traffic."
+      "title": "Monatliche Verzinsung auf einem Sparkonto",
+      "input": "Anfangskapital: 2.500; Zinssatz: 6,2 %; Laufzeit: 3 Jahre; Intervall: monatlich",
+      "output": "Endwert: 3.007,39; Zinsen: 507,39",
+      "description": "Hilfreich beim Vergleich monatlicher Gutschrift bei gleichem Nominalzins."
+    },
+    {
+      "title": "Kurze Laufzeit mit höherem Zinssatz",
+      "input": "Anfangskapital: 1.200; Zinssatz: 9 %; Laufzeit: 18 Monate; Intervall: vierteljährlich",
+      "output": "Endwert: 1.341,68; Zinsen: 141,68",
+      "description": "Nützlich, um kurze Zeiträume zu prüfen, bei denen das Zinsintervall dennoch wichtig bleibt."
     }
   ],
   "faq": [
     {
-      "question": "Wie genau ist dieses Tool?",
-      "answer": "Das Ergebnis wird direkt aus der Formel oder der browserseitigen Logik dieses Tools berechnet."
+      "question": "Welche Eingaben haben den größten Einfluss?",
+      "answer": "Anfangskapital, Jahreszins, Laufzeit und Zinsintervall beeinflussen das Ergebnis am stärksten. Schon kleine Änderungen beim Zinssatz oder beim Intervall können den Endwert spürbar verändern."
     },
     {
-      "question": "Kann ich dieses Tool auf dem Smartphone verwenden?",
-      "answer": "Ja. Die Seite funktioniert auf Desktop- und Mobilgeräten mit einem einfachen Eingabe- und Ergebnislayout."
+      "question": "Warum unterscheidet sich monatliche von jährlicher Verzinsung?",
+      "answer": "Bei häufigerer Verzinsung werden Zinsen öfter dem Guthaben hinzugefügt. Dadurch basiert die nächste Berechnung auf einem etwas höheren Betrag, was meist zu einem höheren Endwert führt."
+    },
+    {
+      "question": "Berücksichtigt der Rechner Steuern, Gebühren oder Inflation?",
+      "answer": "Nein. Der Rechner berechnet nur das Wachstum auf Basis der eingegebenen Werte. Steuern, Gebühren, Inflation sowie zusätzliche Ein- oder Auszahlungen müssen separat betrachtet werden."
+    },
+    {
+      "question": "Wie lese ich Endwert und Zinsen richtig ab?",
+      "answer": "Der Endwert ist das gesamte Guthaben am Ende der Laufzeit. Die Zinsen sind die Differenz zwischen Endwert und Anfangskapital."
+    },
+    {
+      "question": "Warum werden manche Ergebnisse gerundet angezeigt?",
+      "answer": "Zur besseren Darstellung werden Werte gerundet, deshalb können sehr kleine Dezimalabweichungen unsichtbar bleiben. Für exakte Abrechnungen sollten Sie mit voller Genauigkeit rechnen."
     }
   ],
   "seo": {
     "title": "Zinseszinsrechner",
-    "description": "Berechnen Sie das Wachstum von Zinseszinsen über die Zeit. Kostenloser Online-Zinseszinsrechner mit sofortigen Ergebnissen.",
+    "description": "Berechnen Sie Endwert, Gesamtzinsen und Wachstum mit Anfangskapital, Zinssatz, Laufzeit und Zinsintervall.",
     "keywords": [
       "Zinseszinsrechner",
-      "Rechner-Tool"
+      "Endwertrechner",
+      "Sparrechner",
+      "Zinsrechner"
     ]
   }
 }

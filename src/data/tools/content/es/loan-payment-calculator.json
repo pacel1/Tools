@@ -4,43 +4,79 @@
   "slug": "calculadora-de-cuota-del-prestamo",
   "h1": "Calculadora de cuota del préstamo",
   "title": "Calculadora de cuota del préstamo",
-  "shortDescription": "Calcula la cuota mensual del préstamo a partir del importe, la tasa y el plazo con resultados rápidos, entradas sencillas y ejemplos prácticos.",
-  "overview": "Calcula la cuota mensual del préstamo a partir del importe, la tasa y el plazo. Esta página ofrece una respuesta rápida con una herramienta útil y un flujo de resultados sencillo. Está pensada para usuarios que buscan una respuesta gratis en línea, resultados instantáneos en el navegador y contenido práctico para búsquedas de cola larga.",
+  "shortDescription": "Calcula la cuota mensual estimada de un préstamo a partir del importe, la tasa y el plazo.",
+  "metaTitle": "Calculadora de cuota",
+  "metaDescription": "Calcula la cuota mensual estimada de un préstamo a partir del importe, la tasa y el plazo.",
+  "intro": "Introduce el importe, el interés anual y el plazo para ver la cuota mensual estimada al momento.",
+  "overview": "Esta calculadora muestra una estimación de la cuota mensual según el capital, la tasa anual y el plazo de devolución. Sirve para comparar ofertas, probar distintos plazos y entender cómo cambia la cuota cuando varía el interés o el tiempo de pago.\n\nEl resultado es orientativo. No incorpora comisiones, seguros, gastos de apertura ni otros cargos del contrato salvo que formen parte de los datos que introduzcas. Si tu préstamo se paga con un calendario distinto, como cuotas semanales o quincenales, toma la cifra mensual como referencia y no como importe final del acuerdo.",
   "howItWorks": [
-    "Introduce el valor o texto necesario en el formulario.",
-    "La conversión, el cálculo o la transformación se ejecuta al instante en el navegador.",
-    "Revisa el resultado y continúa con herramientas relacionadas si necesitas otro paso."
+    "Introduce el importe del préstamo, el interés anual y el plazo.",
+    "La herramienta aplica la fórmula estándar de un préstamo amortizado.",
+    "Revisa la cuota estimada y modifica los datos para comparar escenarios."
+  ],
+  "useCases": [
+    {
+      "title": "Comparar financiación de coche",
+      "description": "Comprueba si una tasa menor o un plazo más largo te deja una cuota más cómoda para el mismo vehículo."
+    },
+    {
+      "title": "Planificar un préstamo personal",
+      "description": "Valora si la cuota entra en tu presupuesto antes de solicitar un préstamo sin garantía."
+    },
+    {
+      "title": "Revisar una refinanciación",
+      "description": "Calcula el saldo actual frente a una nueva propuesta para ver cómo cambia el pago mensual."
+    }
   ],
   "examples": [
     {
-      "title": "Ejemplo 1",
-      "input": "25000, 6%, 60 meses",
-      "output": "Cuota mensual",
-      "description": "Un ejemplo realista de calculadora de cuota de préstamo para una búsqueda cotidiana."
+      "title": "Préstamo amortizado estándar",
+      "input": "Importe: 25000 | Tasa: 6% | Plazo: 60 meses",
+      "output": "Cuota mensual estimada: 483.32",
+      "description": "Ejemplo típico de un préstamo a cinco años con tipo fijo anual."
     },
     {
-      "title": "Ejemplo 2",
-      "input": "25000, 6%, 60 meses",
-      "output": "Cuota mensual",
-      "description": "Otro caso práctico de uso para atraer tráfico orgánico de cola larga."
+      "title": "Plazo más corto",
+      "input": "Importe: 18000 | Tasa: 4.9% | Plazo: 36 meses",
+      "output": "Cuota mensual estimada: 537.62",
+      "description": "Muestra cómo un plazo menor eleva la cuota pero reduce el tiempo total de pago."
+    },
+    {
+      "title": "Plazo más largo",
+      "input": "Importe: 42000 | Tasa: 7.25% | Plazo: 84 meses",
+      "output": "Cuota mensual estimada: 633.37",
+      "description": "Ayuda a comparar una cuota mensual más baja frente a una duración mayor."
     }
   ],
   "faq": [
     {
-      "question": "¿Qué precisión tiene esta herramienta?",
-      "answer": "El resultado se calcula directamente a partir de la fórmula o la lógica en el navegador que usa esta herramienta."
+      "question": "¿La calculadora incluye comisiones y seguro?",
+      "answer": "No. La estimación se basa en el importe, la tasa y el plazo que introduzcas. Los costes extra deben añadirse aparte."
     },
     {
-      "question": "¿Puedo usar esta herramienta en el móvil?",
-      "answer": "Sí. La página funciona en escritorio y en dispositivos móviles con un diseño sencillo de entrada y resultado."
+      "question": "¿Por qué mi banco me da una cuota distinta?",
+      "answer": "El banco puede aplicar redondeos, comisiones de apertura o un calendario de pagos diferente. También influyen productos vinculados."
+    },
+    {
+      "question": "¿Debo poner el plazo en años o en meses?",
+      "answer": "Pon el plazo en meses. Si lo tienes en años, conviértelo antes; por ejemplo, 5 años son 60 meses."
+    },
+    {
+      "question": "¿Qué significa un préstamo al 0%?",
+      "answer": "La herramienta reparte solo el capital entre los meses elegidos. Es útil para promociones o para comparar ofertas."
+    },
+    {
+      "question": "¿Sirve para préstamos con cuota final?",
+      "answer": "No. Los préstamos con cuota final siguen otra estructura y esta estimación no coincide con ese tipo de contrato."
     }
   ],
   "seo": {
-    "title": "Calculadora de cuota del préstamo",
-    "description": "Calcula la cuota mensual del préstamo a partir del importe, la tasa y el plazo. Calculadora de cuota de préstamo gratis en línea con resultados instantáneos.",
+    "title": "Calculadora de cuota",
+    "description": "Calcula la cuota mensual estimada de un préstamo a partir del importe, la tasa y el plazo.",
     "keywords": [
-      "calculadora de cuota del préstamo",
-      "herramienta calculadoras"
+      "calculadora de cuota del prestamo",
+      "cuota mensual prestamo",
+      "calcular cuota prestamo"
     ]
   }
 }

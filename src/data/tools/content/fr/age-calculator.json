@@ -4,44 +4,84 @@
   "slug": "calculateur-d-age",
   "h1": "Calculateur d’âge",
   "title": "Calculateur d’âge",
-  "shortDescription": "Calculez l’âge exact à partir de la date de naissance avec des résultats rapides, une saisie simple et des exemples pratiques.",
-  "overview": "Calculez l’âge exact à partir de la date de naissance. Cette page fournit une réponse rapide grâce à un outil pratique et à un parcours de résultat simple. Elle s’adresse aux utilisateurs qui recherchent une réponse gratuite en ligne, des résultats instantanés dans le navigateur et un contenu pratique optimisé pour les requêtes de longue traîne.",
+  "shortDescription": "Calculez l’âge à partir d’une date de naissance en années, mois et jours.",
+  "metaTitle": "Calculateur d’âge précis",
+  "metaDescription": "Saisissez une date de naissance et une date de référence pour obtenir l’âge en années, mois et jours.",
+  "intro": "Obtenez l’âge exact à partir d’une date de naissance et d’une date de référence choisie.",
+  "overview": "Cet outil calcule l’âge selon le calendrier, et pas seulement par différence d’années. Il affiche d’abord les années complètes, puis les mois et jours restants, pour donner un résultat lisible dans un format naturel.\n\nIl est utile dès qu’une date précise compte: seuils d’âge, inscriptions, accès, échéances scolaires ou sportives, ou encore vérification d’une date par rapport à un anniversaire. Il aide aussi à contrôler si un événement est situé avant ou après une borne importante.\n\nSi vous saisissez deux dates au lieu d’une naissance et d’une référence, l’outil affiche l’intervalle exact entre elles en années, mois et jours. C’est pratique pour suivre une chronologie, comparer des dossiers ou situer la durée réelle entre deux étapes.",
   "howItWorks": [
-    "Saisissez la valeur ou le texte demandé dans le formulaire.",
-    "La conversion, le calcul ou la transformation s’effectue instantanément dans le navigateur.",
-    "Consultez le résultat et poursuivez avec des outils associés si vous avez besoin d’une autre étape."
+    "Saisissez la date de naissance.",
+    "Choisissez la date de référence.",
+    "Lisez les années complètes, puis les mois et les jours restants."
+  ],
+  "useCases": [
+    {
+      "title": "Vérification d’un seuil d’âge",
+      "description": "Contrôlez si une personne a atteint un âge requis à une date précise, par exemple 13, 16, 18 ou 21 ans."
+    },
+    {
+      "title": "Préparation d’une date future",
+      "description": "Calculez l’âge qu’aura quelqu’un à une cérémonie, un départ ou une inscription."
+    },
+    {
+      "title": "Mesure d’un intervalle de dates",
+      "description": "Déterminez l’écart exact entre deux dates en années, mois et jours."
+    },
+    {
+      "title": "Contrôle de cohérence",
+      "description": "Comparez un âge déclaré à une date de naissance pour repérer une incohérence dans un dossier ou un formulaire."
+    }
   ],
   "examples": [
     {
-      "title": "Exemple 1",
-      "input": "1990-05-15",
-      "output": "Âge en années",
-      "description": "Un exemple réaliste de calculateur d’âge pour une recherche courante."
+      "title": "Âge à une date future",
+      "input": "Date de naissance : 1989-11-04 ; date de référence : 2027-02-18",
+      "output": "37 ans, 3 mois, 14 jours",
+      "description": "Affiche l’âge exact à la date choisie."
     },
     {
-      "title": "Exemple 2",
-      "input": "1990-05-15",
-      "output": "Âge en années",
-      "description": "Un autre cas d’usage pratique pour générer du trafic organique de longue traîne."
+      "title": "Âge le jour de l’anniversaire",
+      "input": "Date de naissance : 2008-06-30 ; date de référence : 2026-06-30",
+      "output": "18 ans, 0 mois, 0 jours",
+      "description": "Utile lorsque le résultat doit tomber exactement le jour du anniversaire."
+    },
+    {
+      "title": "Écart entre deux dates",
+      "input": "Date A : 2012-09-15 ; Date B : 2019-01-03",
+      "output": "6 ans, 3 mois, 19 jours",
+      "description": "Retourne l’intervalle calendaire entre les deux dates."
     }
   ],
   "faq": [
     {
-      "question": "Quelle est la précision de cet outil ?",
-      "answer": "Le résultat est calculé directement à partir de la formule ou de la logique côté navigateur utilisée par cet outil."
+      "question": "Pourquoi le nombre d’années peut-il changer avec un seul jour d’écart ?",
+      "answer": "Parce que le calcul dépend du passage de l’anniversaire. Dès que cette borne est franchie, le nombre d’années complètes change."
     },
     {
-      "question": "Puis-je utiliser cet outil sur mobile ?",
-      "answer": "Oui. La page fonctionne sur ordinateur et sur mobile avec une interface simple de saisie et de résultat."
+      "question": "Comment est traité le 29 février ?",
+      "answer": "Le résultat dépend de l’année de référence. En année non bissextile, l’outil applique les règles du calendrier, ce qui peut différer d’un comptage informel."
+    },
+    {
+      "question": "Puis-je comparer deux dates quelconques ?",
+      "answer": "Oui. Avec deux dates, l’outil renvoie l’intervalle entre elles au lieu d’un âge de naissance."
+    },
+    {
+      "question": "Que représentent les mois et les jours affichés ?",
+      "answer": "Ils correspondent au reste après les années complètes, dans un format de calendrier. Ce n’est pas une conversion fixe en jours."
+    },
+    {
+      "question": "Quelle erreur revient le plus souvent lors d’un seuil d’âge ?",
+      "answer": "On oublie souvent de vérifier si l’anniversaire est déjà passé à la date concernée. Ce détail peut faire basculer le résultat d’une année."
     }
   ],
   "seo": {
-    "title": "Calculateur d’âge en ligne",
-    "description": "Calculez l’âge exact à partir de la date de naissance. Calculateur d’âge en ligne gratuit avec résultat instantané.",
+    "title": "Calculateur d’âge précis",
+    "description": "Saisissez une date de naissance et une date de référence pour obtenir l’âge en années, mois et jours.",
     "keywords": [
       "calculateur d’âge",
-      "calculer l’âge",
-      "outil calculatrice"
+      "âge exact",
+      "années mois jours",
+      "date de naissance"
     ]
   }
 }

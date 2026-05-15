@@ -4,44 +4,84 @@
   "slug": "codificador-url",
   "h1": "Codificador de URL",
   "title": "Codificador de URL",
-  "shortDescription": "Codifica texto para usarlo de forma segura en URLs con resultados rápidos, entradas simples y ejemplos prácticos.",
-  "overview": "Codifica texto para usarlo de forma segura en URLs. Esta página ofrece una respuesta rápida con una utilidad práctica y un flujo de resultado sencillo. Está pensada para usuarios que buscan una respuesta gratuita en línea, resultados rápidos en el navegador y contenido útil de larga cola.",
+  "shortDescription": "Convierte texto a formato seguro para URL en parámetros, rutas y valores de formularios.",
+  "metaTitle": "Codificador de URL de texto",
+  "metaDescription": "Convierte texto a formato seguro para URL en parámetros, rutas y formularios con codificación porcentual precisa.",
+  "intro": "Pega el texto y obtendrás una versión codificada para URL con los caracteres reservados y los espacios convertidos a escapes porcentuales.",
+  "overview": "Usa esta herramienta cuando necesites insertar texto normal en una URL sin romper su estructura. Convierte espacios, signos de interrogación, ampersands, barras y caracteres no ASCII a formato percent-encoded.\n\nEs útil para construir parámetros de consulta, preparar segmentos de ruta y enviar texto escrito por el usuario a una API. El resultado conserva el significado del texto y lo deja listo para transportarse dentro de una dirección o una petición.",
   "howItWorks": [
-    "Introduce el valor o texto requerido en el formulario.",
-    "La conversión, el cálculo o la transformación se ejecuta al instante en el navegador.",
-    "Revisa el resultado y sigue con herramientas relacionadas si necesitas otro paso."
+    "Escribe el texto que quieres codificar.",
+    "La herramienta transforma al instante los caracteres reservados en secuencias percent-encoded.",
+    "Copia el resultado para usarlo en una URL, en un parámetro o en una cadena de solicitud."
+  ],
+  "useCases": [
+    {
+      "title": "Consulta de búsqueda en un parámetro",
+      "description": "Convierte una búsqueda como café y té en un valor seguro para una página de resultados o una petición API."
+    },
+    {
+      "title": "Destino de redirección incrustado",
+      "description": "Codifica una URL completa antes de colocarla dentro de otra dirección para evitar que se rompan los parámetros anidados."
+    },
+    {
+      "title": "Nombre de ruta o archivo",
+      "description": "Pasa espacios y signos de puntuación de un segmento como fotos de verano 2024 a una forma válida para URL."
+    },
+    {
+      "title": "Texto de formulario hacia un endpoint",
+      "description": "Codifica notas, etiquetas o nombres antes de añadirlos a una petición GET o a una URL de devolución."
+    }
   ],
   "examples": [
     {
-      "title": "Ejemplo 1",
-      "input": "hello world?x=1&y=2",
-      "output": "hello%20world%3Fx%3D1%26y%3D2",
-      "description": "Un ejemplo realista de codificador de URL para una consulta cotidiana."
+      "title": "Consulta con símbolos",
+      "input": "laptop stand?brand=acme & co",
+      "output": "laptop%20stand%3Fbrand%3Dacme%20%26%20co",
+      "description": "Los espacios y signos reservados se escapan para poder insertarlos de forma segura en una URL."
     },
     {
-      "title": "Ejemplo 2",
-      "input": "hello world?x=1&y=2",
-      "output": "hello%20world%3Fx%3D1%26y%3D2",
-      "description": "Otro caso de uso práctico para tráfico orgánico de cola larga."
+      "title": "Nombre con acentos",
+      "input": "niño ñandú",
+      "output": "ni%C3%B1o%20%C3%B1and%C3%BA",
+      "description": "Los caracteres no ASCII se convierten primero a bytes UTF-8 y luego se escapan con porcentaje."
+    },
+    {
+      "title": "Segmento con barra",
+      "input": "informes/2024 Q3",
+      "output": "informes%2F2024%20Q3",
+      "description": "La barra dentro de un segmento se codifica para que no se interprete como separador de ruta."
     }
   ],
   "faq": [
     {
-      "question": "¿Qué precisión tiene esta herramienta?",
-      "answer": "El resultado se calcula directamente a partir de la fórmula o la lógica del navegador que utiliza esta herramienta."
+      "question": "¿Qué caracteres se codifican?",
+      "answer": "Se codifican los caracteres reservados de la URL, como espacios, ?, &, =, #, / y cualquier carácter no ASCII, para que puedan viajar de forma segura."
     },
     {
-      "question": "¿Puedo usar esta herramienta en el móvil?",
-      "answer": "Sí. La página funciona en pantallas de escritorio y móviles con un diseño simple de entrada y resultado."
+      "question": "¿Por qué el espacio se convierte en %20 y no en +?",
+      "answer": "%20 es la forma percent-encoded estándar para un espacio. El signo + se usa sobre todo en formularios application/x-www-form-urlencoded, no en cualquier URL."
+    },
+    {
+      "question": "¿Puedo codificar una URL completa aquí?",
+      "answer": "Sí, pero con cuidado: codificar toda la URL también escapa separadores como : y /. Solo conviene hacerlo cuando la URL completa debe ir como valor de otro parámetro."
+    },
+    {
+      "question": "¿Por qué el resultado sale más largo?",
+      "answer": "Los caracteres fuera del conjunto seguro se expanden en bytes con escape porcentual, así que el texto final suele ocupar más que el original."
+    },
+    {
+      "question": "¿Cuál es el error más habitual?",
+      "answer": "Codificar toda la dirección cuando solo hacía falta codificar un valor concreto. En enlaces normales, codifica únicamente la parte que se va a insertar en la URL."
     }
   ],
   "seo": {
     "title": "Codificador de URL",
-    "description": "Codifica texto para usarlo de forma segura en URLs. Codificador de URL online gratuito con resultados instantáneos.",
+    "description": "Convierte texto a formato seguro para URL en parámetros, rutas y formularios con codificación porcentual precisa.",
     "keywords": [
-      "codificador url",
       "codificador de url",
-      "herramientas para desarrolladores"
+      "url encode",
+      "percent encoding",
+      "texto para url"
     ]
   }
 }

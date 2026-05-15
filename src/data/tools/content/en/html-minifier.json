@@ -4,106 +4,87 @@
   "slug": "html-minifier",
   "h1": "HTML Minifier",
   "title": "HTML Minifier",
-  "shortDescription": "Minify HTML online to reduce file size without calling external APIs.",
-  "metaTitle": "HTML Minifier Online | Compress HTML Fast",
-  "metaDescription": "Minify HTML online in your browser to reduce file size, remove unnecessary whitespace, and optimize markup without external APIs.",
-  "intro": "Minify HTML in your browser to shrink code size, remove unnecessary whitespace, and keep markup ready for production. This client-side HTML minifier works locally and does not send your code to external services.",
-  "overview": "Use this HTML minifier to compress markup quickly and safely. It removes extra spaces, line breaks, and comments where appropriate while preserving the structure of your HTML. Because it runs client-side, it is a practical choice for developers who want faster page delivery, cleaner source output, and no API dependency.",
+  "shortDescription": "Minify HTML in the browser to shrink markup size without sending code anywhere.",
+  "metaTitle": "HTML Minifier | Compress HTML",
+  "metaDescription": "Minify HTML in your browser to reduce file size, strip unnecessary whitespace, and keep markup ready for deployment.",
+  "intro": "Paste HTML and get a smaller, deployment-ready version with extra whitespace, line breaks, and optional comments removed.",
+  "overview": "This HTML minifier compresses markup while keeping the document structure intact. It is useful when you need cleaner output for templates, static pages, snippets, or exported HTML that includes editor spacing.\n\nBecause it runs in the browser, your code stays local while it is processed. You can review the minified result before copying it into a build, a CMS, or a page template, which makes it easier to catch spacing-sensitive sections and confirm whether comments should stay or go.",
   "howItWorks": [
     "Paste your HTML into the input field.",
-    "Choose any available cleanup options, such as removing comments.",
+    "Choose whether comments should be removed.",
     "Run minification to compress the markup.",
     "Copy the minified HTML and use it in your project."
   ],
   "useCases": [
-    "Preparing HTML for production deployments.",
-    "Reducing template size before publishing a website.",
-    "Cleaning up exported HTML from editors or generators.",
-    "Optimizing snippets for email templates or static pages.",
-    "Checking how much whitespace and comment removal can reduce output size."
+    {
+      "title": "Deployment build output",
+      "description": "Shrink page markup before shipping a release so the final HTML is leaner and easier to transfer through build steps."
+    },
+    {
+      "title": "Exported template cleanup",
+      "description": "Remove editor spacing and comment blocks from HTML exported by design tools, site builders, or generators."
+    },
+    {
+      "title": "Static page publishing",
+      "description": "Prepare hand-written landing page HTML for upload when you want a tighter source file."
+    },
+    {
+      "title": "Email template cleanup",
+      "description": "Compress HTML fragments used in transactional or marketing email templates where every character matters."
+    },
+    {
+      "title": "Reviewing markup changes",
+      "description": "Compare how much whitespace and optional comments affect the size of a specific document or snippet."
+    }
   ],
   "examples": [
     {
-      "title": "Basic minification",
-      "input": "<div>\n  <h1>Title</h1>\n  <p> Hello world </p>\n</div>",
-      "output": "<div><h1>Title</h1><p>Hello world</p></div>",
-      "description": "Removes line breaks and extra spaces while keeping valid markup."
+      "title": "Collapse nested spacing",
+      "input": "<main>\n  <article>\n    <h2>About</h2>\n    <p>   Built for release   </p>\n  </article>\n</main>",
+      "output": "<main><article><h2>About</h2><p>Built for release</p></article></main>",
+      "description": "Removes line breaks and repeated spaces while keeping the tag structure unchanged."
     },
     {
-      "title": "Comment removal",
-      "input": "<section>\n  <!-- note -->\n  <span>Text</span>\n</section>",
-      "output": "<section><span>Text</span></section>",
-      "description": "Strips HTML comments when enabled."
+      "title": "Keep content, drop comments",
+      "input": "<div class=\"card\">\n  <!-- pricing block -->\n  <strong>$19</strong>\n  <span>per month</span>\n</div>",
+      "output": "<div class=\"card\"><strong>$19</strong><span>per month</span></div>",
+      "description": "Removes HTML comments when the comment option is enabled."
+    },
+    {
+      "title": "Trim repeated indentation in a list",
+      "input": "<ul>\n        <li>One</li>\n        <li>Two</li>\n        <li>Three</li>\n</ul>",
+      "output": "<ul><li>One</li><li>Two</li><li>Three</li></ul>",
+      "description": "Useful for copied snippets that contain heavy indentation from an editor or formatter."
     }
   ],
   "faq": [
     {
-      "question": "Does this HTML minifier send my code to a server?",
-      "answer": "No. It runs in your browser and uses client-side logic only."
+      "question": "Will this tool preserve my tags and attributes exactly?",
+      "answer": "It keeps the HTML structure intact, but it may normalize whitespace around text nodes and remove comments if you choose that option."
     },
     {
-      "question": "Will it break my HTML?",
-      "answer": "It is designed to preserve valid structure while removing unnecessary whitespace and comments. Always review the output if your markup depends on exact spacing."
+      "question": "When should I avoid minifying a fragment?",
+      "answer": "Avoid it for content that depends on literal spacing inside text nodes, preformatted blocks, or markup where whitespace is part of the visible output."
     },
     {
-      "question": "Can I use it for production code?",
-      "answer": "Yes. It is suitable for preparing HTML for deployment, but you should test the output in your environment first."
+      "question": "Why does the output look different after minification?",
+      "answer": "The tool removes line breaks and compresses repeated spaces, so the source becomes denser even when the rendered page should remain the same."
     },
     {
-      "question": "Does it remove comments?",
-      "answer": "Yes, if the option is enabled. You can keep comments when needed."
+      "question": "Can comments be kept in the result?",
+      "answer": "Yes. If comment removal is disabled, the tool leaves HTML comments in place."
     }
   ],
-  "uiLabels": {
-    "copy": "Copy",
-    "copied": "Copied",
-    "input": "Input",
-    "output": "Output",
-    "placeholder": "Paste HTML here",
-    "indent": "Indent",
-    "removeComments": "Remove comments",
-    "preview": "Preview",
-    "source": "Source",
-    "sanitizedHtml": "Sanitized HTML",
-    "plainText": "Plain text",
-    "summary": "Summary",
-    "total": "Total",
-    "links": "Links",
-    "images": "Images",
-    "errors": "Errors",
-    "warnings": "Warnings",
-    "valid": "Valid",
-    "invalid": "Invalid",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Width",
-    "height": "Height",
-    "empty": "Empty",
-    "outputReady": "Output ready",
-    "cleanedHtml": "Cleaned HTML",
-    "formattedHtml": "Formatted HTML",
-    "minifiedHtml": "Minified HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extracted images",
-    "extractedLinks": "Extracted links",
-    "validationSummary": "Validation summary",
-    "prettyHtml": "Pretty HTML",
-    "encodedText": "Encoded text"
-  },
   "seo": {
-    "title": "HTML Minifier Online | Compress HTML Fast",
-    "description": "Minify HTML online in your browser to reduce file size, remove unnecessary whitespace, and optimize markup without external APIs.",
+    "title": "HTML Minifier | Compress HTML",
+    "description": "Minify HTML in your browser to reduce file size, strip unnecessary whitespace, and keep markup ready for deployment.",
     "keywords": [
       "html minifier",
       "minify html",
+      "compress html",
       "html compressor",
-      "compress html online",
-      "remove whitespace html",
-      "html cleanup",
-      "client side html minifier"
+      "remove whitespace from html",
+      "html cleanup"
     ]
   }
 }

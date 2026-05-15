@@ -4,158 +4,87 @@
   "slug": "css-gradient-generator",
   "h1": "CSS Gradient Generator",
   "title": "CSS Gradient Generator",
-  "shortDescription": "Generate clean CSS gradients with live preview, angle controls and ready-to-copy code.",
-  "metaTitle": "CSS Gradient Generator - Create Linear and Radial Gradients",
-  "metaDescription": "Generate CSS gradients online with live preview, angle control, color presets and copy-ready CSS code for linear and radial gradients.",
-  "intro": "Create modern CSS gradients in seconds. Adjust colors, angle and type, preview the result live, then copy clean CSS for your website or UI.",
-  "overview": "This CSS gradient generator helps you build linear and radial gradients fast, without writing code by hand. It is useful for backgrounds, buttons, hero sections, cards and UI accents. Choose your colors, tweak the direction, and get production-ready CSS instantly.",
+  "shortDescription": "Build precise CSS gradients with live preview, angle control, and copy-ready code.",
+  "metaTitle": "CSS Gradient Generator",
+  "metaDescription": "Build linear and radial CSS gradients with live preview, angle control, and copy-ready code for backgrounds, buttons, and UI accents.",
+  "intro": "Create a CSS gradient in seconds, preview it live, and copy the exact code you need.",
+  "overview": "This tool turns color choices into usable CSS gradients without manual trial and error. Switch between linear and radial modes, adjust the angle or focal point, and see each change reflected in the preview immediately.\n\nUse it when you need a background that feels intentional: landing-page sections, buttons, cards, overlays, badges, and subtle interface highlights. The output is clean CSS that you can paste into a stylesheet, component, or design token workflow.",
   "howItWorks": [
-    "Pick one or more colors for your gradient.",
-    "Choose linear or radial gradient mode.",
-    "Adjust the angle, position or spread if needed.",
-    "Preview the gradient live in the tool.",
-    "Copy the generated CSS and paste it into your project."
+    "Choose the gradient colors.",
+    "Select linear or radial mode.",
+    "Set the angle, position, or spread.",
+    "Check the live preview.",
+    "Copy the CSS code into your project."
   ],
   "useCases": [
-    "Create website backgrounds with smooth color transitions.",
-    "Generate button, banner and hero section gradients.",
-    "Test color combinations before adding them to a design system.",
-    "Produce quick CSS snippets for UI mockups and prototypes.",
-    "Make radial highlight effects for cards, panels and badges."
+    {
+      "title": "Hero section background",
+      "description": "Create a strong top-of-page gradient that supports headline text and brand colors."
+    },
+    {
+      "title": "Primary button styling",
+      "description": "Generate a compact two-stop gradient for call-to-action buttons and interactive elements."
+    },
+    {
+      "title": "Card highlight layer",
+      "description": "Add a soft radial glow behind pricing cards, feature tiles, or product panels."
+    },
+    {
+      "title": "Brand palette testing",
+      "description": "Compare two or more color combinations before adding them to a UI kit or stylesheet."
+    },
+    {
+      "title": "Overlay for images",
+      "description": "Build a gradient overlay that improves text contrast on banners and featured images."
+    }
   ],
   "examples": [
     {
-      "title": "Linear background",
-      "input": "#ff7a18 to #af002d",
-      "output": "background: linear-gradient(135deg, #ff7a18, #af002d);",
-      "description": "A simple diagonal gradient for modern page sections."
+      "title": "Diagonal brand background",
+      "input": "#0f172a → #2563eb at 135°",
+      "output": "background: linear-gradient(135deg, #0f172a, #2563eb);",
+      "description": "A deep-to-bright diagonal gradient for section backgrounds."
     },
     {
-      "title": "Radial spotlight",
-      "input": "#ffffff to #dbeafe",
-      "output": "background: radial-gradient(circle, #ffffff 0%, #dbeafe 100%);",
-      "description": "A soft radial gradient for light UI highlights."
+      "title": "Soft radial glow",
+      "input": "#fff7ed → #fdba74 centered",
+      "output": "background: radial-gradient(circle at center, #fff7ed 0%, #fdba74 100%);",
+      "description": "A warm radial highlight for cards and panels."
+    },
+    {
+      "title": "Three-stop header wash",
+      "input": "#111827 → #4f46e5 → #c084fc",
+      "output": "background: linear-gradient(120deg, #111827 0%, #4f46e5 52%, #c084fc 100%);",
+      "description": "A layered gradient for richer page headers and hero blocks."
     }
   ],
   "faq": [
     {
-      "question": "What is a CSS gradient generator?",
-      "answer": "It is a tool that creates CSS gradient code from selected colors and settings, so you can use it directly in your project."
+      "question": "Can I control where the gradient starts and ends?",
+      "answer": "Yes. Linear gradients use an angle, while radial gradients let you place the center point and shape the highlight area."
     },
     {
-      "question": "Can I create linear and radial gradients?",
-      "answer": "Yes. You can generate both linear and radial gradients and copy the CSS instantly."
+      "question": "Why does the preview look different from my browser?",
+      "answer": "Rendering can shift slightly depending on the element size, background color, and the browser’s handling of the gradient shape."
     },
     {
-      "question": "Does the tool show a live preview?",
-      "answer": "Yes. The preview updates as you change colors, angle and gradient type."
+      "question": "How many color stops should I use?",
+      "answer": "Two stops work well for simple sections, while three or more stops create richer transitions. Too many stops can make the result look busy."
     },
     {
-      "question": "Is the generated code ready for production?",
-      "answer": "Yes. The tool outputs clean CSS that you can paste into your stylesheet or component."
+      "question": "Can I use the output in plain CSS and component styles?",
+      "answer": "Yes. The generated declaration can be pasted into a stylesheet, inline style block, or component style definition."
     }
   ],
-  "uiLabels": {
-    "copy": "Copy",
-    "copied": "Copied",
-    "input": "Input",
-    "output": "Output",
-    "placeholder": "Enter a color or choose a preset",
-    "indent": "Indent",
-    "removeComments": "Remove comments",
-    "preview": "Preview",
-    "source": "Source",
-    "sanitizedHtml": "Sanitized HTML",
-    "plainText": "Plain text",
-    "summary": "Summary",
-    "total": "Total",
-    "links": "Links",
-    "images": "Images",
-    "errors": "Errors",
-    "warnings": "Warnings",
-    "valid": "Valid",
-    "invalid": "Invalid",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Width",
-    "height": "Height",
-    "empty": "Empty",
-    "outputReady": "Output ready",
-    "cleanedHtml": "Cleaned HTML",
-    "formattedHtml": "Formatted HTML",
-    "minifiedHtml": "Minified HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extracted images",
-    "extractedLinks": "Extracted links",
-    "validationSummary": "Validation summary",
-    "prettyHtml": "Pretty HTML",
-    "encodedText": "Encoded text",
-    "file": "File",
-    "size": "Size",
-    "format": "Format",
-    "quality": "Quality",
-    "colorOne": "Color one",
-    "colorTwo": "Color two",
-    "background": "Background",
-    "foreground": "Foreground",
-    "angle": "Angle",
-    "margin": "Margin",
-    "level": "Level",
-    "gradientType": "Gradient type",
-    "linear": "Linear",
-    "radial": "Radial",
-    "blur": "Blur",
-    "spread": "Spread",
-    "offsetX": "Offset X",
-    "offsetY": "Offset Y",
-    "opacity": "Opacity",
-    "inset": "Inset",
-    "cssCode": "CSS code",
-    "snippet": "Snippet",
-    "download": "Download",
-    "downloadSvg": "Download SVG",
-    "downloadPng": "Download PNG",
-    "downloadAll": "Download all",
-    "upload": "Upload",
-    "title": "Title",
-    "description": "Description",
-    "canonicalUrl": "Canonical URL",
-    "siteName": "Site name",
-    "ogImage": "OG image",
-    "clear": "Clear",
-    "generatedQr": "QR code preview",
-    "placeholderImage": "Preview image",
-    "faviconSet": "Favicon set",
-    "keepAspectRatio": "Keep aspect ratio",
-    "cropX": "Crop X",
-    "cropY": "Crop Y",
-    "cropWidth": "Crop width",
-    "cropHeight": "Crop height",
-    "originalSize": "Original size",
-    "outputSize": "Output size",
-    "savedSize": "Saved size",
-    "result": "Result",
-    "base64": "Base64",
-    "mimeType": "MIME type",
-    "resizedImage": "Resized image",
-    "compressedImage": "Compressed image",
-    "croppedImage": "Cropped image",
-    "convertedImage": "Converted image",
-    "decodedImage": "Decoded image",
-    "imagePreview": "Image preview"
-  },
   "seo": {
-    "title": "CSS Gradient Generator - Create Linear and Radial Gradients",
-    "description": "Generate CSS gradients online with live preview, angle control, color presets and copy-ready CSS code for linear and radial gradients.",
+    "title": "CSS Gradient Generator",
+    "description": "Build linear and radial CSS gradients with live preview, angle control, and copy-ready code for backgrounds, buttons, and UI accents.",
     "keywords": [
       "css gradient generator",
-      "linear gradient generator",
-      "radial gradient generator",
-      "css background gradient",
-      "gradient css code"
+      "linear gradient css",
+      "radial gradient css",
+      "gradient background css",
+      "css gradient code"
     ]
   }
 }

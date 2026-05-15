@@ -4,105 +4,87 @@
   "slug": "markdown-to-html",
   "h1": "Markdown to HTML",
   "title": "Markdown to HTML Converter",
-  "shortDescription": "Convert Markdown into sanitized HTML instantly in your browser.",
-  "metaTitle": "Markdown to HTML Converter | Sanitize Markdown Online",
-  "metaDescription": "Convert Markdown to sanitized HTML in your browser with instant output, safe HTML handling, and no server upload.",
-  "intro": "Turn Markdown into clean, sanitized HTML directly in the browser. Paste your Markdown, preview the result instantly, and copy safe HTML for publishing or development work.",
-  "overview": "This Markdown to HTML tool helps you convert common Markdown syntax into browser-safe HTML without sending content to a server. It is useful for writers, developers, and content editors who need quick HTML output with basic sanitization to reduce XSS risks and keep formatting predictable.",
+  "shortDescription": "Turn Markdown into clean HTML in your browser.",
+  "metaTitle": "Markdown to HTML Converter",
+  "metaDescription": "Convert Markdown into clean HTML in your browser with local processing, safe output, and instant results.",
+  "intro": "Paste Markdown and get clean HTML immediately in your browser.",
+  "overview": "Convert headings, lists, links, emphasis, quotes, and code from Markdown into structured HTML without sending content elsewhere. The output is cleaned so you can inspect the markup and reuse it in documentation, content systems, or app interfaces with less manual editing.\n\nThis tool is useful when you need predictable HTML from Markdown written by hand or exported from another editor. It keeps the conversion process local to the browser and helps you avoid pasting raw Markdown into places that only accept HTML.\n\nUse the preview to confirm nesting, line breaks, and link attributes before copying the result. If your source contains raw HTML, unsupported constructs, or malformed Markdown, review the output carefully because the converter can only render what it can parse safely.",
   "howItWorks": [
-    "Paste or type Markdown into the input field.",
-    "The tool parses headings, lists, links, emphasis, code, and other common Markdown elements.",
-    "Unsafe or unsupported HTML is sanitized for safer output.",
-    "Review the generated HTML in the preview or output panel.",
-    "Copy the sanitized HTML and use it in your website, CMS, or app."
+    "Enter or paste Markdown into the input box.",
+    "The parser converts common Markdown blocks and inline formatting into HTML tags.",
+    "Any unsafe markup is removed or normalized during output generation.",
+    "Review the HTML preview or source view to verify structure and links.",
+    "Copy the final HTML and paste it into your CMS, editor, or codebase."
   ],
   "useCases": [
-    "Convert README content into HTML for a documentation site.",
-    "Prepare blog or knowledge-base content for a CMS that accepts HTML.",
-    "Quickly preview how Markdown will render before publishing.",
-    "Sanitize user-submitted Markdown in a client-side workflow.",
-    "Transform notes, drafts, or snippets into reusable HTML."
+    {
+      "title": "Publish a technical README as HTML",
+      "description": "Turn a repository README into HTML for a docs page, knowledge base, or product help center without rewriting the content by hand."
+    },
+    {
+      "title": "Prepare editor content for an HTML-only CMS",
+      "description": "Convert a Markdown draft into HTML when the target system accepts rich text or raw markup instead of Markdown."
+    },
+    {
+      "title": "Check rendered structure before release",
+      "description": "Verify whether headings, nested lists, quotes, and inline code appear in the intended order before publishing."
+    },
+    {
+      "title": "Clean user-authored Markdown for storage",
+      "description": "Process submitted Markdown into sanitized HTML before saving it for later display in a web app or admin panel."
+    },
+    {
+      "title": "Reuse notes in another interface",
+      "description": "Transform meeting notes, task lists, or launch plans into reusable HTML snippets for internal tools or dashboards."
+    }
   ],
   "examples": [
     {
-      "title": "Basic Markdown",
-      "input": "# Hello\\n\\nThis is **bold** and this is a [link](https://example.com).",
-      "output": "<h1>Hello</h1><p>This is <strong>bold</strong> and this is a <a href=\"https://example.com\">link</a>.</p>",
-      "description": "A simple heading, paragraph, emphasis, and link example."
+      "title": "Heading, paragraph, and link",
+      "input": "# Project Update\n\nWe shipped the fix for **login** and documented it in [release notes](https://example.com/releases).",
+      "output": "<h1>Project Update</h1><p>We shipped the fix for <strong>login</strong> and documented it in <a href=\"https://example.com/releases\">release notes</a>.</p>",
+      "description": "Shows a title, bold text, and a standard link in one block."
     },
     {
-      "title": "List and code",
-      "input": "- Item one\\n- Item two\\n\\n`npm install`",
-      "output": "<ul><li>Item one</li><li>Item two</li></ul><p><code>npm install</code></p>",
-      "description": "Common list and inline code conversion."
+      "title": "Quoted note with code",
+      "input": "> Review the config first.\n\n`npm run build`",
+      "output": "<blockquote><p>Review the config first.</p></blockquote><p><code>npm run build</code></p>",
+      "description": "A quote and inline code snippet converted into HTML elements."
+    },
+    {
+      "title": "Nested list and emphasis",
+      "input": "- Draft\n  - Outline\n  - Sources\n- Final review\n\nRemember to **verify dates**.",
+      "output": "<ul><li>Draft<ul><li>Outline</li><li>Sources</li></ul></li><li>Final review</li></ul><p>Remember to <strong>verify dates</strong>.</p>",
+      "description": "Demonstrates nesting and inline emphasis that must remain structured."
     }
   ],
   "faq": [
     {
-      "question": "Is the conversion done in the browser?",
-      "answer": "Yes. The tool is designed for client-side use, so Markdown is converted locally in your browser."
+      "question": "What happens if my Markdown includes raw HTML?",
+      "answer": "The converter may keep only safe, supported markup and remove or normalize risky fragments. If your source relies on custom HTML, check the result closely before reuse."
     },
     {
-      "question": "Is the output sanitized?",
-      "answer": "Yes. The generated HTML is sanitized to help reduce unsafe markup and XSS risks."
+      "question": "Why do my line breaks not match the source exactly?",
+      "answer": "Markdown treats some line breaks as soft wraps and others as paragraph boundaries. If you need a visible break, use the Markdown syntax for a hard line break."
     },
     {
-      "question": "Does it support all Markdown features?",
-      "answer": "It supports common Markdown syntax. Exact support depends on the renderer used in the browser."
+      "question": "Does the tool preserve link targets and attributes?",
+      "answer": "It preserves standard link URLs, but unsupported or unsafe attributes are stripped. Check any links you expect to open in a new tab after conversion."
     },
     {
-      "question": "Can I copy the HTML result?",
-      "answer": "Yes. You can copy the sanitized HTML output and paste it into your project or CMS."
+      "question": "Can I paste Markdown that contains tables or task lists?",
+      "answer": "If those constructs are supported by the parser, they will render; otherwise they may fall back to plain text or simpler HTML. Test the output when structure matters."
     }
   ],
-  "uiLabels": {
-    "copy": "Copy",
-    "copied": "Copied",
-    "input": "Input",
-    "output": "Output",
-    "placeholder": "Paste Markdown here...",
-    "indent": "Indent",
-    "removeComments": "Remove comments",
-    "preview": "Preview",
-    "source": "Source",
-    "sanitizedHtml": "Sanitized HTML",
-    "plainText": "Plain text",
-    "summary": "Summary",
-    "total": "Total",
-    "links": "Links",
-    "images": "Images",
-    "errors": "Errors",
-    "warnings": "Warnings",
-    "valid": "Valid",
-    "invalid": "Invalid",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Width",
-    "height": "Height",
-    "empty": "Empty",
-    "outputReady": "Output ready",
-    "cleanedHtml": "Cleaned HTML",
-    "formattedHtml": "Formatted HTML",
-    "minifiedHtml": "Minified HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extracted images",
-    "extractedLinks": "Extracted links",
-    "validationSummary": "Validation summary",
-    "prettyHtml": "Pretty HTML",
-    "encodedText": "Encoded text"
-  },
   "seo": {
     "title": "Markdown to HTML Converter",
-    "description": "Convert Markdown to sanitized HTML in your browser with instant output and safe client-side processing.",
+    "description": "Convert Markdown into clean HTML in your browser with local processing, safe output, and instant results.",
     "keywords": [
       "markdown to html",
       "markdown converter",
-      "sanitize html",
-      "markdown to html online",
-      "browser markdown to html"
+      "convert markdown to html",
+      "browser markdown",
+      "sanitize markdown html"
     ]
   }
 }

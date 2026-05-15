@@ -5,172 +5,84 @@
   "h1": "Calculadora de calefacción por suelo radiante",
   "title": "Calculadora de calefacción por suelo radiante",
   "shortDescription": "Estima la longitud de tubo y el número de circuitos para suelo radiante hidráulico.",
-  "metaTitle": "Calculadora de calefacción por suelo radiante | Longitud de tubo y circuitos",
-  "metaDescription": "Calcula cuántos metros de tubo necesitas para suelo radiante, cuántos circuitos hacen falta y la longitud media de cada circuito según el área, la separación y el desperdicio.",
-  "intro": "Usa esta calculadora de calefacción por suelo radiante para estimar la longitud de tubo, el número de circuitos y la longitud media de cada circuito en una instalación hidráulica. Es una base práctica para planificar materiales y saber cuánto tubo necesitas.",
-  "overview": "Introduce la superficie calefactada, la separación entre tubos, la longitud máxima del circuito, la longitud extra de conexión y el porcentaje de desperdicio para obtener una estimación rápida.",
+  "metaTitle": "Calculadora de suelo radiante",
+  "metaDescription": "Calcula la longitud de tubo, el número de circuitos y la longitud media de cada circuito según la superficie, la separación y el desperdicio.",
+  "intro": "Obtén una estimación práctica de tubo, número de circuitos y longitud media por circuito para un suelo radiante hidráulico.",
+  "overview": "Esta calculadora estima la necesidad de tubo en un sistema de suelo radiante hidráulico a partir de la superficie calefactada, la separación entre tubos, la longitud máxima por circuito, las conexiones hasta el colector y el desperdicio. Sirve como base para decidir cuántos circuitos harán falta y si el reparto cabe dentro del límite de longitud que has fijado. También ayuda a comparar variantes de diseño antes de pedir material.",
   "howItWorks": [
-    "Introduce la superficie del suelo calefactado en metros cuadrados.",
+    "Introduce la superficie calefactada en metros cuadrados.",
     "Define la separación entre tubos en centímetros.",
     "Indica la longitud máxima permitida por circuito.",
-    "Añade la longitud extra de conexión hasta el colector.",
-    "Incluye un porcentaje de desperdicio para cortes y montaje."
+    "Añade la longitud extra de conexión hacia el colector.",
+    "Incluye un porcentaje de desperdicio para cortes y ajustes de trazado."
   ],
   "useCases": [
-    "Calcular cuánto tubo hace falta para suelo radiante.",
-    "Planificar el número de circuitos antes de la instalación.",
-    "Comprobar si una estancia cabe dentro del límite de longitud por circuito.",
-    "Preparar una estimación rápida para reforma o obra nueva."
+    {
+      "title": "Dimensionar el tubo de una estancia",
+      "description": "Calcula cuántos metros necesitas para una sala, una habitación o una zona abierta antes de comprar la bobina."
+    },
+    {
+      "title": "Comprobar la cantidad de circuitos",
+      "description": "Verifica si el área requiere una sola vuelta o varios circuitos para respetar el límite de longitud por lazo."
+    },
+    {
+      "title": "Comparar separaciones de instalación",
+      "description": "Evalúa cómo cambia el consumo de tubo si pasas de una malla más cerrada a una más abierta."
+    },
+    {
+      "title": "Preparar una reforma con colector alejado",
+      "description": "Suma los recorridos de ida y vuelta hasta el colector para obtener una estimación más realista en rehabilitación."
+    }
   ],
   "examples": [
     {
-      "title": "Ejemplo de cálculo",
-      "input": "100 m2 de superficie, separación de 15 cm, 100 m de circuito máximo, 5 m de conexión extra y 10% de desperdicio",
-      "output": "Se calcula una estimación aproximada de tubo, circuitos y longitud media del circuito.",
-      "description": "Ejemplo típico de planificación de un sistema hidráulico."
+      "title": "Salón con colector cercano",
+      "input": "Superficie: 34 m2, separación: 15 cm, circuito máx.: 95 m, conexión extra: 8 m, desperdicio: 7%",
+      "output": "La necesidad estimada es de unos 265 m de tubo, repartidos en 3 circuitos con una media de 88 m por circuito.",
+      "description": "Caso habitual de una estancia de tamaño medio con colector próximo."
     },
     {
-      "title": "Planificación de materiales",
-      "input": "Compara el resultado con la capacidad del colector y el largo de la bobina de tubo",
-      "output": "Ayuda a no quedarse corto de tubo ni de circuitos.",
-      "description": "Útil para presupuestos iniciales."
+      "title": "Planta baja abierta",
+      "input": "Superficie: 82 m2, separación: 10 cm, circuito máx.: 100 m, conexión extra: 12 m, desperdicio: 10%",
+      "output": "La necesidad estimada sube a unos 922 m de tubo, por lo que hacen falta 10 circuitos con unos 92 m de media.",
+      "description": "Muestra cómo una separación más cerrada multiplica el consumo de tubo."
+    },
+    {
+      "title": "Baño pequeño",
+      "input": "Superficie: 9,5 m2, separación: 20 cm, circuito máx.: 70 m, conexión extra: 6 m, desperdicio: 5%",
+      "output": "La necesidad estimada ronda los 59 m de tubo, así que basta un solo circuito dentro del límite.",
+      "description": "Útil para una zona pequeña que puede resolverse con un único lazo."
     }
   ],
   "faq": [
     {
-      "question": "¿Qué precisión tiene esta calculadora?",
-      "answer": "Ofrece una estimación práctica para la planificación. El resultado final puede variar según la forma de la habitación, las zonas de borde, la distribución del colector y el método de instalación."
+      "question": "¿Qué cambia al variar la separación entre tubos?",
+      "answer": "Una separación menor acerca más los tramos y aumenta la longitud total de tubo. Si la separación es mayor, el recorrido baja y también suele bajar el número de circuitos."
     },
     {
-      "question": "¿Qué influye la separación entre tubos?",
-      "answer": "Una separación menor aumenta la longitud total de tubo, mientras que una mayor la reduce. La calculadora usa esta medida para estimar la demanda de tubo."
+      "question": "¿Por qué añadir longitud extra de conexión?",
+      "answer": "Porque el tubo no empieza en la zona calefactada: debe ir hasta el colector y volver. Si no la sumas, el cálculo se queda corto."
     },
     {
-      "question": "¿Por qué debo añadir longitud extra de conexión?",
-      "answer": "Esa longitud cubre el recorrido desde el colector hasta la zona calefactada y de vuelta. Así la estimación es más realista."
+      "question": "¿Sirve para estancias de forma irregular?",
+      "answer": "Sí como referencia, pero el resultado es aproximado. Entrantes, pilares, perímetros fríos y recortes pueden hacer que la instalación real requiera más tubo."
     },
     {
-      "question": "¿Qué pasa si el circuito supera el límite?",
-      "answer": "La calculadora indicará que hacen falta más circuitos para que cada uno se mantenga dentro de la longitud máxima definida."
+      "question": "¿Cómo interpreto la longitud media de circuito?",
+      "answer": "Es una media orientativa del reparto total. Si se acerca demasiado al máximo que has fijado, conviene dividir en más circuitos o replantear el trazado."
     },
     {
-      "question": "¿Sirve para calefacción por suelo radiante eléctrica?",
-      "answer": "No. Esta herramienta está pensada para la planificación de tuberías de suelo radiante hidráulico, no para mantas o cables eléctricos."
+      "question": "¿Puedo sumar varias habitaciones en una sola entrada?",
+      "answer": "Solo si forman la misma zona de calefacción y comparten separación y límite de longitud. Si cada estancia necesita una configuración distinta, calcúlalas por separado."
+    },
+    {
+      "question": "¿Para qué sirve el desperdicio?",
+      "answer": "Añade margen para cortes, giros y correcciones durante la instalación. Sin ese margen, el pedido puede quedarse corto."
     }
   ],
-  "uiLabels": {
-    "copy": "Copiar",
-    "copied": "Copiado",
-    "input": "Entrada",
-    "output": "Salida",
-    "placeholder": "Introduce un valor",
-    "indent": "Sangría",
-    "removeComments": "Eliminar comentarios",
-    "preview": "Vista previa",
-    "source": "Fuente",
-    "sanitizedHtml": "HTML saneado",
-    "plainText": "Texto plano",
-    "summary": "Resumen",
-    "total": "Total",
-    "links": "Enlaces",
-    "images": "Imágenes",
-    "errors": "Errores",
-    "warnings": "Avisos",
-    "valid": "Válido",
-    "invalid": "No válido",
-    "href": "Href",
-    "text": "Texto",
-    "rel": "Rel",
-    "target": "Destino",
-    "alt": "Alt",
-    "width": "Ancho",
-    "height": "Alto",
-    "empty": "Vacío",
-    "outputReady": "Resultado listo",
-    "cleanedHtml": "HTML limpiado",
-    "formattedHtml": "HTML formateado",
-    "minifiedHtml": "HTML minimizado",
-    "markdown": "Markdown",
-    "extractedImages": "Imágenes extraídas",
-    "extractedLinks": "Enlaces extraídos",
-    "validationSummary": "Resumen de validación",
-    "prettyHtml": "HTML legible",
-    "encodedText": "Texto codificado",
-    "file": "Archivo",
-    "size": "Tamaño",
-    "format": "Formato",
-    "quality": "Calidad",
-    "colorOne": "Color 1",
-    "colorTwo": "Color 2",
-    "background": "Fondo",
-    "foreground": "Primer plano",
-    "angle": "Ángulo",
-    "margin": "Margen",
-    "level": "Nivel",
-    "gradientType": "Tipo de degradado",
-    "linear": "Lineal",
-    "radial": "Radial",
-    "blur": "Desenfoque",
-    "spread": "Extensión",
-    "offsetX": "Desplazamiento X",
-    "offsetY": "Desplazamiento Y",
-    "opacity": "Opacidad",
-    "inset": "Interior",
-    "cssCode": "Código CSS",
-    "snippet": "Fragmento",
-    "download": "Descargar",
-    "downloadSvg": "Descargar SVG",
-    "downloadPng": "Descargar PNG",
-    "downloadAll": "Descargar todo",
-    "upload": "Subir",
-    "title": "Título",
-    "description": "Descripción",
-    "canonicalUrl": "URL canónica",
-    "siteName": "Nombre del sitio",
-    "ogImage": "Imagen OG",
-    "clear": "Limpiar",
-    "generatedQr": "QR generado",
-    "placeholderImage": "Imagen de marcador",
-    "faviconSet": "Conjunto de favicon",
-    "keepAspectRatio": "Mantener proporción",
-    "cropX": "Recorte X",
-    "cropY": "Recorte Y",
-    "cropWidth": "Ancho del recorte",
-    "cropHeight": "Alto del recorte",
-    "originalSize": "Tamaño original",
-    "outputSize": "Tamaño de salida",
-    "savedSize": "Tamaño ahorrado",
-    "result": "Resultado",
-    "base64": "Base64",
-    "mimeType": "Tipo MIME",
-    "resizedImage": "Imagen redimensionada",
-    "compressedImage": "Imagen comprimida",
-    "croppedImage": "Imagen recortada",
-    "convertedImage": "Imagen convertida",
-    "decodedImage": "Imagen decodificada",
-    "imagePreview": "Vista previa de imagen",
-    "camera": "Cámara",
-    "lens": "Lente",
-    "dateTaken": "Fecha tomada",
-    "resolution": "Resolución",
-    "fileSize": "Tamaño de archivo",
-    "iso": "ISO",
-    "exposure": "Exposición",
-    "aperture": "Apertura",
-    "focalLength": "Distancia focal",
-    "flash": "Flash",
-    "orientation": "Orientación",
-    "latitude": "Latitud",
-    "longitude": "Longitud",
-    "openMap": "Abrir mapa",
-    "rawMetadata": "Metadatos sin procesar",
-    "noMetadataFound": "No se encontraron metadatos",
-    "gpsLocation": "Ubicación GPS",
-    "metadataSummary": "Resumen de metadatos"
-  },
   "seo": {
-    "title": "Calculadora de calefacción por suelo radiante",
-    "description": "Calcula la longitud de tubo, el número de circuitos y la longitud media de cada circuito para suelo radiante hidráulico según el área, la separación y el desperdicio.",
+    "title": "Calculadora de suelo radiante",
+    "description": "Calcula la longitud de tubo, el número de circuitos y la longitud media de cada circuito según la superficie, la separación y el desperdicio.",
     "keywords": [
       "calculadora suelo radiante",
       "longitud de tubo suelo radiante",

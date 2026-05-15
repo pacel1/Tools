@@ -4,44 +4,84 @@
   "slug": "conversor-de-libras-a-kilogramos",
   "h1": "Conversor de libras a kilogramos",
   "title": "Conversor de libras a kilogramos",
-  "shortDescription": "Convierte libras a kilogramos al instante con resultados rápidos, entradas sencillas y ejemplos prácticos.",
-  "overview": "Convierte libras a kilogramos al instante. Esta página ofrece una respuesta rápida con una herramienta práctica y un flujo de resultados sencillo. Está pensada para quienes buscan una respuesta gratuita en línea, resultados rápidos en el navegador y contenido útil de cola larga sobre conversión de libras a kilogramos.",
+  "shortDescription": "Convierte libras a kilogramos con el factor exacto, redondeo claro y valores de ejemplo realistas.",
+  "metaTitle": "Conversor de libras a kilogramos",
+  "metaDescription": "Convierte libras a kilogramos con el factor exacto 0,45359237 y revisa resultados para valores enteros o decimales.",
+  "intro": "Escribe un peso en libras para ver su equivalente en kilogramos al instante.",
+  "overview": "Usa este conversor cuando necesites pasar de libras a kilogramos sin hacer la cuenta a mano. Aplica el factor estándar de 1 lb = 0,45359237 kg, así que el resultado es coherente tanto para cifras enteras como para decimales y pesos mayores.\n\nLa herramienta resulta útil para comparar medidas entre sistemas distintos, revisar el peso de un paquete, interpretar etiquetas, fichas técnicas o registros de entrenamiento. Puedes introducir valores decimales como 2,5 o 154,2 y leer el resultado en kilogramos de inmediato.\n\nSi ves una pequeña diferencia respecto a otra fuente, normalmente se debe al redondeo. Para trabajos precisos conviene conservar más decimales; para uso diario, basta con redondear al nivel que necesites.",
   "howItWorks": [
-    "Introduce el valor requerido en el formulario.",
-    "La conversión, el cálculo o la transformación se ejecuta al instante en el navegador.",
-    "Revisa el resultado y sigue con herramientas relacionadas si necesitas otro paso."
+    "Introduce el peso en libras.",
+    "El conversor aplica al instante el factor de libras a kilogramos.",
+    "Lee el valor en kilogramos y redondéalo si lo necesitas."
+  ],
+  "useCases": [
+    {
+      "title": "Registro corporal",
+      "description": "Pasa un peso anotado en libras a kilogramos para una nota médica, una rutina de entrenamiento o un registro personal."
+    },
+    {
+      "title": "Envíos y paquetería",
+      "description": "Comprueba si el peso de un paquete en libras encaja con un requisito de transporte o con un formulario de envío."
+    },
+    {
+      "title": "Ajuste de recetas",
+      "description": "Convierte ingredientes o productos desde libras a kilogramos al adaptar una receta a otro formato."
+    },
+    {
+      "title": "Fichas de equipos",
+      "description": "Lee el peso de un producto o máquina en kilogramos cuando la documentación original está en libras."
+    }
   ],
   "examples": [
     {
-      "title": "Ejemplo 1",
-      "input": "10 libras",
-      "output": "4,5359 kilogramos",
-      "description": "Un ejemplo realista de conversión de libras a kilogramos para una búsqueda cotidiana."
+      "title": "Objeto doméstico pequeño",
+      "input": "3,2 lb",
+      "output": "1,4515 kg",
+      "description": "Un valor decimal convertido con redondeo estándar."
     },
     {
-      "title": "Ejemplo 2",
-      "input": "10 libras",
-      "output": "4,5359 kilogramos",
-      "description": "Otro caso práctico para captar tráfico orgánico de cola larga."
+      "title": "Peso corporal adulto",
+      "input": "154 lb",
+      "output": "69,8532 kg",
+      "description": "Una conversión habitual de libras a kilogramos."
+    },
+    {
+      "title": "Peso de un paquete",
+      "input": "18,75 lb",
+      "output": "8,5049 kg",
+      "description": "Muestra cómo maneja el conversor valores fraccionarios para logística."
     }
   ],
   "faq": [
     {
-      "question": "¿Qué precisión tiene esta herramienta?",
-      "answer": "El resultado se calcula directamente a partir de la fórmula o de la lógica en el navegador utilizada por esta herramienta."
+      "question": "¿Qué factor de conversión usa esta herramienta?",
+      "answer": "Usa la relación exacta 1 libra = 0,45359237 kilogramos."
     },
     {
-      "question": "¿Puedo usar esta herramienta en el móvil?",
-      "answer": "Sí. La página funciona en ordenadores y móviles con un diseño sencillo de entrada y resultado."
+      "question": "¿Por qué otro sitio me da un resultado un poco distinto?",
+      "answer": "La diferencia suele venir del redondeo. Si otro cálculo corta decimales antes, el valor final puede variar ligeramente."
+    },
+    {
+      "question": "¿Puedo introducir libras decimales?",
+      "answer": "Sí. Valores como 0,5, 2,75 o 18,125 funcionan correctamente."
+    },
+    {
+      "question": "¿Hace falta escribir lb o lbs?",
+      "answer": "El número es lo importante. La unidad sirve para identificar la medida, pero la conversión depende del valor introducido."
+    },
+    {
+      "question": "¿Cómo interpreto un resultado muy pequeño?",
+      "answer": "Es normal que una cantidad pequeña en libras produzca un valor decimal en kilogramos. Si necesitas precisión, conserva más decimales."
     }
   ],
   "seo": {
     "title": "Conversor de libras a kilogramos",
-    "description": "Convierte libras a kilogramos al instante. Conversor online gratuito de libras a kilogramos con resultados inmediatos.",
+    "description": "Convierte libras a kilogramos con el factor exacto y obtiene resultados claros para valores enteros o decimales.",
     "keywords": [
       "conversor de libras a kilogramos",
       "libras a kilogramos",
-      "herramienta de conversión"
+      "lb a kg",
+      "conversión de peso"
     ]
   }
 }

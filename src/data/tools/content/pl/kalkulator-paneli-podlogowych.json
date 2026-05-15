@@ -4,174 +4,86 @@
   "slug": "kalkulator-paneli-podlogowych",
   "h1": "Kalkulator paneli podlogowych",
   "title": "Kalkulator paneli podlogowych",
-  "shortDescription": "Oblicz ile paneli i paczek potrzeba na podloge z zapasem na docinki.",
-  "metaTitle": "Kalkulator paneli podlogowych - ile paneli kupic",
-  "metaDescription": "Sprawdz, ile paneli podlogowych i paczek kupic. Uwzglednij powierzchnie, wymiary panelu, procent zapasu i pokrycie paczki.",
-  "intro": "Oblicz, ile paneli kupic na podloge bez zgadywania. Wpisz powierzchnie, wymiary panelu, zapas na docinki i pokrycie paczki, aby szybko poznac potrzebna ilosc.",
-  "overview": "Ten kalkulator paneli podlogowych pomaga sprawdzic, ile paneli i paczek trzeba kupic do ukladania podlogi. Uwzglednia powierzchnie pomieszczenia, wymiary panelu, procent zapasu oraz metraz pokrywany przez paczke, dzieki czemu latwiej zaplanowac zakupy.",
+  "shortDescription": "Oblicz, ile paneli i paczek kupic, uwzgledniajac zapas na docinki.",
+  "metaTitle": "Kalkulator paneli podlogowych",
+  "metaDescription": "Sprawdz, ile paneli i paczek potrzeba do podlogi, biorac pod uwage powierzchnie, wymiary panela, zapas i metraz paczki.",
+  "intro": "Wpisz powierzchnie, wymiary panela, zapas na docinki i pokrycie paczki, a dostaniesz liczbe paneli do kupienia.",
+  "overview": "Ten kalkulator przelicza powierzchnie pomieszczenia i dane produktu na realna ilosc paneli potrzebnych do zakupu. Uwzglednia nie tylko metraz podlogi, ale tez zapas na ciecia przy scianach, progach i dopasowaniach przy trudniejszych fragmentach.\n\nWynik pomaga porownac produkty z rozna wydajnoscia paczki i uniknac sytuacji, w ktorej brakuje jednego lub dwoch paneli do zakonczenia montazu. Jesli na opakowaniu podano pokrycie paczki, to ta wartosc ma pierwszenstwo przed samym obliczeniem z wymiarow jednego panela.",
   "howItWorks": [
-    "Wpisz powierzchnie podlogi w metrach kwadratowych.",
-    "Podaj szerokosc i dlugosc panela w centymetrach.",
-    "Ustaw procent zapasu na docinki i dopasowanie.",
-    "Wpisz, ile m2 pokrywa jedna paczka.",
-    "Otrzymaj liczbe paneli, liczbę paczek i powierzchnie z zapasem."
+    "Podaj powierzchnie pomieszczenia w metrach kwadratowych.",
+    "Wpisz szerokosc i dlugosc panela w centymetrach.",
+    "Ustal procent zapasu na docinki, brzegi i dopasowanie.",
+    "Dodaj metraz pokrywany przez jedna paczke.",
+    "Odczytaj liczbe paneli, liczbę paczek i powierzchnie skorygowana o zapas."
   ],
   "useCases": [
-    "Planowanie zakupu paneli do salonu, sypialni lub korytarza.",
-    "Sprawdzenie, ile paczek paneli kupic przed wyjazdem do sklepu.",
-    "Doliczenie zapasu na ciecia, skosy i poprawki.",
-    "Porownanie, ktory produkt ma lepsze pokrycie paczki."
+    {
+      "title": "Zakup paneli do salonu",
+      "description": "Policz paczki potrzebne do prostokątnego salonu z jednym dłuższym bokiem do docinania."
+    },
+    {
+      "title": "Remont korytarza z progami",
+      "description": "Uwzglednij wiecej odpadu przy ukladaniu wokol oscieznic i przejsc miedzy pomieszczeniami."
+    },
+    {
+      "title": "Porownanie dwoch produktow",
+      "description": "Sprawdz, czy bardziej oplaca sie paczka o wiekszym metrazu czy mniejszej liczbie paneli."
+    },
+    {
+      "title": "Zapas na przyszle poprawki",
+      "description": "Dobierz dodatkowa ilosc materialu, jesli chcesz zostawic kilka sztuk do ewentualnej wymiany."
+    }
   ],
   "examples": [
     {
-      "title": "Przykladowe obliczenie",
-      "input": "Powierzchnia: 20 m2, panel: 19 cm x 138 cm, zapas: 8%, pokrycie paczki: 2,2 m2",
-      "output": "Kalkulator pokazuje potrzebna liczbe paneli, paczek i powierzchnie z zapasem.",
-      "description": "Pomaga oszacowac zakup przed zamowieniem paneli."
+      "title": "Standardowy pokoj",
+      "input": "Powierzchnia: 23,6 m2; panel: 18,5 cm × 122 cm; zapas: 7%; pokrycie paczki: 2,22 m2",
+      "output": "Powierzchnia po zapasie: 25,25 m2. Wynik: 12 paczek, z wyliczeniem liczby paneli na podstawie wymiaru i zapasu.",
+      "description": "Dobry przyklad dla prostego pokoju z niewielka liczba docinek."
     },
     {
-      "title": "Zakup paneli z zapasem",
-      "input": "Powierzchnia: 35 m2, zapas: 10%, pokrycie paczki: 2,4 m2",
-      "output": "Pokazuje skorygowana powierzchnie i liczbe paczek do kupienia.",
-      "description": "Ułatwia unikniecie braków podczas montazu."
+      "title": "Wieksza sypialnia",
+      "input": "Powierzchnia: 41,8 m2; panel: 20,3 cm × 135,7 cm; zapas: 11%; pokrycie paczki: 2,48 m2",
+      "output": "Powierzchnia po zapasie: 46,36 m2. Wynik: 19 paczek, zaokraglone do pelnych opakowan.",
+      "description": "Pomocne, gdy pomieszczenie wymaga wiecej ciecia przy krawedziach."
+    },
+    {
+      "title": "Pokrycie z etykiety paczki",
+      "input": "Powierzchnia: 12,4 m2; panel: 17,8 cm × 89,4 cm; zapas: 9%; pokrycie paczki: 1,79 m2",
+      "output": "Powierzchnia po zapasie: 13,52 m2. Wynik: 8 paczek, liczony wedlug metrazu z opakowania.",
+      "description": "Przydatne, gdy producent podaje metraz paczki nieco inaczej niz wynika z samego panelu."
     }
   ],
   "faq": [
     {
-      "question": "Jak obliczyc, ile paneli podlogowych potrzebuje?",
-      "answer": "Pomnoz powierzchnie podlogi przez zapas, a potem podziel przez powierzchnie jednego panela. Ten kalkulator zrobi to automatycznie."
+      "question": "Czy lepiej liczyc z wymiaru panela czy z pokrycia paczki?",
+      "answer": "Do zakupu zawsze kieruj sie pokryciem paczki z opakowania. Wymiary panela sluza do kontroli pojedynczego elementu, ale o liczbie paczek decyduje metraz paczki."
     },
     {
-      "question": "Dlaczego warto dodac zapas?",
-      "answer": "Zapas pokrywa docinki, dopasowanie przy krawedziach oraz ewentualne bledy przy montazu."
+      "question": "Jaki zapas przyjac do prostego pokoju?",
+      "answer": "Dla prostego ukladu zwykle wystarcza niewielki zapas. Jesli sa skosy, wiele drzwi albo wnęki, warto przyjac wiecej, bo odpad przy docinkach rosnie."
     },
     {
-      "question": "Co jesli pokrycie paczki jest inne niz wynika z wymiaru panela?",
-      "answer": "Uzyj wartosci pokrycia podanej na opakowaniu. Uwzglednia ona liczbe paneli w paczce."
+      "question": "Dlaczego wynik jest zaokraglany w gore?",
+      "answer": "Panele sprzedaje sie w calych paczkach, wiec nie da sie kupic czesci kartonu. Zaokraglenie w gore zapewnia, ze materialu nie zabraknie."
     },
     {
-      "question": "Czy to dziala dla paneli laminowanych i winylowych?",
-      "answer": "Tak, wystarczy znac wymiary panelu oraz pokrycie paczki."
+      "question": "Czy da sie tego uzyc do jodelki lub innych wzorow?",
+      "answer": "Tylko orientacyjnie. Uklady wzorzyste generuja wiekszy odpad, dlatego standardowy zapas moze byc za maly."
+    },
+    {
+      "question": "Co zrobic, jesli znam tylko dlugosc i szerokosc pokoju?",
+      "answer": "Pomnoz dlugosc przez szerokosc, aby uzyskac powierzchnie, a potem wpisz wynik. Przy nieregularnym pomieszczeniu podziel je na prostsze czesci i zsumuj pole."
     }
   ],
-  "uiLabels": {
-    "copy": "Kopiuj",
-    "copied": "Skopiowano",
-    "input": "Wejscie",
-    "output": "Wyjscie",
-    "placeholder": "Wpisz wartosc",
-    "indent": "Wciecie",
-    "removeComments": "Usun komentarze",
-    "preview": "Podglad",
-    "source": "Zrodlo",
-    "sanitizedHtml": "Oczyszczony HTML",
-    "plainText": "Czysty tekst",
-    "summary": "Podsumowanie",
-    "total": "Razem",
-    "links": "Linki",
-    "images": "Obrazy",
-    "errors": "Bledy",
-    "warnings": "Ostrzezenia",
-    "valid": "Poprawne",
-    "invalid": "Niepoprawne",
-    "href": "Href",
-    "text": "Tekst",
-    "rel": "Rel",
-    "target": "Cel",
-    "alt": "Alt",
-    "width": "Szerokosc",
-    "height": "Wysokosc",
-    "empty": "Puste",
-    "outputReady": "Wynik gotowy",
-    "cleanedHtml": "Oczyszczony HTML",
-    "formattedHtml": "Sformatowany HTML",
-    "minifiedHtml": "Zminifikowany HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Wyodrebnione obrazy",
-    "extractedLinks": "Wyodrebnione linki",
-    "validationSummary": "Podsumowanie walidacji",
-    "prettyHtml": "Czytelny HTML",
-    "encodedText": "Tekst zakodowany",
-    "file": "Plik",
-    "size": "Rozmiar",
-    "format": "Format",
-    "quality": "Jakosc",
-    "colorOne": "Kolor 1",
-    "colorTwo": "Kolor 2",
-    "background": "Tlo",
-    "foreground": "Pierwszy plan",
-    "angle": "Kat",
-    "margin": "Margines",
-    "level": "Poziom",
-    "gradientType": "Typ gradientu",
-    "linear": "Liniowy",
-    "radial": "Radialny",
-    "blur": "Rozmycie",
-    "spread": "Rozpowszechnienie",
-    "offsetX": "Przesuniecie X",
-    "offsetY": "Przesuniecie Y",
-    "opacity": "Krycie",
-    "inset": "Wewnetrzny",
-    "cssCode": "Kod CSS",
-    "snippet": "Fragment",
-    "download": "Pobierz",
-    "downloadSvg": "Pobierz SVG",
-    "downloadPng": "Pobierz PNG",
-    "downloadAll": "Pobierz wszystko",
-    "upload": "Wgraj",
-    "title": "Tytul",
-    "description": "Opis",
-    "canonicalUrl": "Adres kanoniczny",
-    "siteName": "Nazwa strony",
-    "ogImage": "Obraz OG",
-    "clear": "Wyczysc",
-    "generatedQr": "Wygenerowany QR",
-    "placeholderImage": "Obraz zastępczy",
-    "faviconSet": "Zestaw favicon",
-    "keepAspectRatio": "Zachowaj proporcje",
-    "cropX": "Przyciecie X",
-    "cropY": "Przyciecie Y",
-    "cropWidth": "Szerokosc przyciecia",
-    "cropHeight": "Wysokosc przyciecia",
-    "originalSize": "Oryginalny rozmiar",
-    "outputSize": "Rozmiar wyjsciowy",
-    "savedSize": "Zaoszczedzony rozmiar",
-    "result": "Wynik",
-    "base64": "Base64",
-    "mimeType": "Typ MIME",
-    "resizedImage": "Obraz po zmianie rozmiaru",
-    "compressedImage": "Obraz skompresowany",
-    "croppedImage": "Obraz przyciety",
-    "convertedImage": "Obraz przekonwertowany",
-    "decodedImage": "Obraz zdekodowany",
-    "imagePreview": "Podglad obrazu",
-    "camera": "Aparat",
-    "lens": "Obiektyw",
-    "dateTaken": "Data wykonania",
-    "resolution": "Rozdzielczosc",
-    "fileSize": "Rozmiar pliku",
-    "iso": "ISO",
-    "exposure": "Czas naświetlania",
-    "aperture": "Przyslona",
-    "focalLength": "Ogniskowa",
-    "flash": "Lampa blyskowa",
-    "orientation": "Orientacja",
-    "latitude": "Szerokosc geograficzna",
-    "longitude": "Dlugosc geograficzna",
-    "openMap": "Otworz mape",
-    "rawMetadata": "Surowe metadane",
-    "noMetadataFound": "Nie znaleziono metadanych",
-    "gpsLocation": "Lokalizacja GPS",
-    "metadataSummary": "Podsumowanie metadanych"
-  },
   "seo": {
-    "title": "Kalkulator paneli podlogowych - ile paneli kupic",
-    "description": "Oblicz, ile paneli podlogowych i paczek kupic z uwzglednieniem zapasu na docinki.",
+    "title": "Kalkulator paneli podlogowych",
+    "description": "Sprawdz, ile paneli i paczek potrzeba do podlogi, biorac pod uwage powierzchnie, wymiary panela, zapas i metraz paczki.",
     "keywords": [
       "kalkulator paneli podlogowych",
       "ile paneli kupic",
       "ile paczek paneli",
-      "kalkulator podlogi",
+      "metraz paczki",
       "zapas na docinki"
     ]
   }

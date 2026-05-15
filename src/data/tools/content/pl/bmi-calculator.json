@@ -4,43 +4,80 @@
   "slug": "kalkulator-bmi",
   "h1": "Kalkulator BMI",
   "title": "Kalkulator BMI",
-  "shortDescription": "Oblicz wskaźnik masy ciała na podstawie wzrostu i wagi. Szybkie wyniki, proste dane wejściowe i praktyczne przykłady.",
-  "overview": "Oblicz wskaźnik masy ciała na podstawie wzrostu i wagi. Ta strona zapewnia szybki wynik dzięki prostemu narzędziu online i wygodnemu przebiegowi obliczeń. Treść jest skierowana do osób, które szukają darmowej odpowiedzi w internecie, natychmiastowych wyników w przeglądarce oraz praktycznych materiałów long-tail.",
+  "shortDescription": "Wpisz wzrost i wagę, aby otrzymać BMI z czytelnym wynikiem dziesiętnym i kategorią.",
+  "metaTitle": "Kalkulator BMI wagi",
+  "metaDescription": "Oblicz BMI ze wzrostu i wagi z jasnymi jednostkami, wynikiem dziesiętnym i prostą kategorią.",
+  "intro": "Wpisz wzrost i wagę, a kalkulator od razu pokaże BMI jako liczbę dziesiętną oraz kategorię.",
+  "overview": "Ten kalkulator BMI stosuje standardowy wzór wskaźnika masy ciała do wzrostu i wagi, a wynik podaje jako jedną liczbę do porównań. Przydaje się, gdy chcesz sprawdzić zapisany pomiar, powtórzyć obliczenie później albo prowadzić własny, spójny zapis wyników.\n\nBMI jest wskaźnikiem przesiewowym, a nie diagnozą medyczną. Nie rozróżnia mięśni, tłuszczu, kości ani wody w organizmie, więc warto odczytywać go razem z budową ciała i okolicznościami pomiaru.\n\nDla sensownego wyniku używaj jednego systemu jednostek i wpisuj rzeczywiste pomiary, a nie szacunki. Jeśli wartość wygląda nietypowo, najczęściej winne jest pomieszanie jednostek, na przykład funtów z kilogramami albo stóp i cali z centymetrami.",
   "howItWorks": [
-    "Wpisz wymagane dane do formularza.",
-    "Obliczenie lub przeliczenie wykonuje się natychmiast w przeglądarce.",
-    "Sprawdź wynik i przejdź do powiązanych narzędzi, jeśli potrzebujesz kolejnego kroku."
+    "Wybierz system jednostek zgodny z pomiarem.",
+    "Wpisz wzrost i wagę w tym samym systemie.",
+    "Odczytaj wartość BMI i widoczną kategorię.",
+    "Jeśli wynik wygląda dziwnie, sprawdź jednostki i wpisz dane ponownie."
+  ],
+  "useCases": [
+    {
+      "title": "Zapisz ważenie",
+      "description": "Dodaj BMI do wpisu z datą po badaniu, treningu lub własnym pomiarze."
+    },
+    {
+      "title": "Porównaj dwa terminy",
+      "description": "Oblicz BMI z dwóch dat, aby zobaczyć zmianę po diecie, treningu albo przerwie."
+    },
+    {
+      "title": "Sprawdź podaną wartość",
+      "description": "Przelicz BMI z podanego wzrostu i wagi, aby potwierdzić wynik z raportu lub profilu."
+    }
   ],
   "examples": [
     {
-      "title": "Przykład 1",
-      "input": "70 kg i 175 cm",
-      "output": "22,86",
-      "description": "Przykład kalkulatora BMI odpowiadający codziennemu zapytaniu w wyszukiwarce."
+      "title": "Przykład metryczny dla osoby dorosłej",
+      "input": "Wzrost: 175 cm, Waga: 70 kg",
+      "output": "BMI = 22,9",
+      "description": "Klasyczne obliczenie w układzie metrycznym z wynikiem pośrodku skali."
     },
     {
-      "title": "Przykład 2",
-      "input": "70 kg i 175 cm",
-      "output": "22,86",
-      "description": "Kolejny praktyczny scenariusz dla ruchu organicznego z długiego ogona."
+      "title": "Ta sama wysokość, większa masa",
+      "input": "Wzrost: 160 cm, Waga: 82 kg",
+      "output": "BMI = 32,0",
+      "description": "Pokazuje wzrost wartości przy większej wadze i tym samym wzroście."
+    },
+    {
+      "title": "Wysoka i szczupła sylwetka",
+      "input": "Wzrost: 182 cm, Waga: 66 kg",
+      "output": "BMI = 19,9",
+      "description": "Przykład niższego wyniku przy większym wzroście i lżejszej masie."
     }
   ],
   "faq": [
     {
-      "question": "Jak dokładne jest to narzędzie?",
-      "answer": "Wynik jest obliczany bezpośrednio na podstawie wzoru lub logiki po stronie przeglądarki użytej w tym narzędziu."
+      "question": "Jakie jednostki mam wpisać?",
+      "answer": "Korzystaj konsekwentnie z jednego systemu: kilogramów z centymetrami albo funtów z calami. Mieszanie jednostek da błędny wynik."
     },
     {
-      "question": "Czy mogę korzystać z tego narzędzia na telefonie?",
-      "answer": "Tak. Strona działa zarówno na komputerach, jak i na urządzeniach mobilnych, oferując prosty układ pola i wyniku."
+      "question": "Dlaczego wynik ma jedną cyfrę po przecinku?",
+      "answer": "Jedna cyfra po przecinku wystarcza do porównywania wartości i nie sugeruje większej dokładności niż pozwala wzór."
+    },
+    {
+      "question": "Czy mogę wpisać wzrost w stopach i calach?",
+      "answer": "Tylko jeśli narzędzie wyraźnie to obsługuje. W przeciwnym razie wzrost trzeba najpierw poprawnie przeliczyć."
+    },
+    {
+      "question": "Dlaczego BMI bywa mylące u bardzo umięśnionych osób?",
+      "answer": "Bo bierze pod uwagę wyłącznie wzrost i wagę. Nie wie, czy masa pochodzi z mięśni, tłuszczu, kości czy wody."
+    },
+    {
+      "question": "Jaki błąd wpisu najczęściej psuje wynik?",
+      "answer": "Najczęstszy problem to użycie złej jednostki w jednym polu, na przykład kilogramów zamiast funtów albo centymetrów zamiast cali."
     }
   ],
   "seo": {
-    "title": "Kalkulator BMI",
-    "description": "Oblicz wskaźnik masy ciała na podstawie wzrostu i wagi. Darmowy kalkulator BMI online z natychmiastowym wynikiem.",
+    "title": "Kalkulator BMI wagi",
+    "description": "Oblicz BMI ze wzrostu i wagi z jasnymi jednostkami, wynikiem dziesiętnym i prostą kategorią.",
     "keywords": [
       "kalkulator bmi",
-      "bmi calculator"
+      "wskaźnik masy ciała",
+      "bmi wzrost i waga"
     ]
   }
 }

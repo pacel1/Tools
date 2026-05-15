@@ -4,178 +4,87 @@
   "slug": "tile-adhesive-calculator",
   "h1": "Tile Adhesive Calculator",
   "title": "Tile Adhesive Calculator",
-  "shortDescription": "Calculate how many kilograms and bags of tile adhesive you need for a given area and layer thickness.",
-  "metaTitle": "Tile Adhesive Calculator | kg and bags needed",
-  "metaDescription": "Estimate tile adhesive consumption in kg and bags. Enter area, consumption rate, layer thickness, waste percentage, and bag weight for a clear, easy-to-check result.",
-  "intro": "Use this tile adhesive calculator to quickly estimate how much adhesive you need for tiling. It shows the amount without waste, with waste included, and how many bags to buy.",
-  "overview": "The calculator uses a simple formula based on area, adhesive consumption per 1 mm, layer thickness, waste allowance, and bag weight. It is designed to be easy to audit for renovation, finishing, and tiling projects.",
+  "shortDescription": "Estimate kilograms and bags of tile adhesive from area, consumption, thickness, and waste.",
+  "metaTitle": "Tile Adhesive Calculator",
+  "metaDescription": "Estimate tile adhesive in kg and bags from area, consumption rate, layer thickness, waste, and bag weight.",
+  "intro": "Enter the area, adhesive consumption per 1 mm, layer thickness, waste, and bag weight to see how many kilograms and bags you need.",
+  "overview": "This calculator turns the dimensions of your tiling job into a material estimate you can use for buying and planning. It calculates the base adhesive amount from surface area, consumption per millimeter, and layer thickness, then adds the reserve you specify and converts the total into bags.\n\nIt is useful when the substrate is uneven, when the tile format requires a thicker bed, or when you want to compare two adhesive systems with different consumption rates. The result helps you avoid under-ordering and gives you a clear purchase quantity instead of a rough guess.",
   "howItWorks": [
-    "Enter the tile area in square meters.",
-    "Set the adhesive consumption per 1 mm in kg/m²/mm.",
-    "Provide the adhesive layer thickness in millimeters.",
-    "Add a waste percentage for cuts, unevenness, and application losses.",
-    "Enter the bag weight to calculate how many bags you need."
+    "Measure the tiled area in square meters.",
+    "Enter the product’s consumption per 1 mm in kg/m²/mm.",
+    "Set the planned adhesive layer thickness in millimeters.",
+    "Add a reserve percentage for cuts, unevenness, and mixing losses.",
+    "Enter the bag weight to convert kilograms into the number of bags."
   ],
   "useCases": [
-    "Estimating adhesive for bathroom, kitchen, or hallway tiling.",
-    "Planning material purchases before a renovation starts.",
-    "Checking how many bags of adhesive are needed for a specific tile system.",
-    "Comparing adhesive demand for different layer thicknesses."
+    {
+      "title": "Bathroom wall and floor estimate",
+      "description": "Work out adhesive for a bathroom where walls and floor use different thicknesses and the substrate is not perfectly even."
+    },
+    {
+      "title": "Large-format porcelain tiles",
+      "description": "Check the higher material demand caused by thicker bedding and compare it with a standard wall-tile installation."
+    },
+    {
+      "title": "Purchase list before a renovation",
+      "description": "Translate the planned tiled area into kilograms and bag count before visiting the supplier."
+    },
+    {
+      "title": "Comparing two adhesive products",
+      "description": "See how a change in consumption rate affects the total amount when you are choosing between two brands or classes."
+    }
   ],
   "examples": [
     {
-      "title": "Simple formula",
-      "input": "Area × consumption per mm × layer thickness",
-      "output": "Base adhesive amount in kg before waste.",
-      "description": "This gives the net adhesive requirement for the surface you plan to cover."
+      "title": "Small hallway",
+      "input": "Area: 12 m²; consumption: 1.4 kg/m²/mm; thickness: 4 mm; waste: 8%; bag weight: 25 kg",
+      "output": "Base: 67.2 kg; with waste: 72.6 kg; bags: 3",
+      "description": "A compact job with a modest reserve still requires three full bags."
     },
     {
-      "title": "With waste",
-      "input": "Base kg × (1 + waste percent / 100)",
-      "output": "Total adhesive amount in kg.",
-      "description": "Adds a practical reserve for losses and uneven substrate."
+      "title": "Kitchen floor with thicker bed",
+      "input": "Area: 18.5 m²; consumption: 1.6 kg/m²/mm; thickness: 6 mm; waste: 10%; bag weight: 20 kg",
+      "output": "Base: 177.6 kg; with waste: 195.4 kg; bags: 10",
+      "description": "A thicker layer increases demand fast, so the rounded bag count matters."
     },
     {
-      "title": "Bags needed",
-      "input": "Total kg ÷ bag weight, rounded up",
-      "output": "Number of bags to buy.",
-      "description": "Always round up so you do not run short on site."
+      "title": "Utility room on a tight budget",
+      "input": "Area: 7.8 m²; consumption: 1.2 kg/m²/mm; thickness: 3 mm; waste: 5%; bag weight: 25 kg",
+      "output": "Base: 28.1 kg; with waste: 29.5 kg; bags: 2",
+      "description": "Even a small room can still require two bags once the reserve is included."
     }
   ],
   "faq": [
     {
-      "question": "How do I calculate tile adhesive needed?",
-      "answer": "Multiply the area by the adhesive consumption per 1 mm and by the layer thickness. Then add the waste percentage and divide by the bag weight to get the number of bags."
+      "question": "Why does thickness change the result so much?",
+      "answer": "The calculator multiplies consumption per millimeter by the planned layer thickness, so every extra millimeter adds another full portion of adhesive across the whole area."
     },
     {
-      "question": "Why should I add waste?",
-      "answer": "Waste covers mixing losses, uneven floors or walls, and small application differences. A small reserve helps avoid buying too little."
+      "question": "What if my product label gives consumption per square meter without the per-mm value?",
+      "answer": "Use the product’s stated coverage directly only if it already includes the intended layer thickness. If it is listed per millimeter, keep the thickness field as your planned bed size."
     },
     {
-      "question": "Should I round bags up?",
-      "answer": "Yes. Bags should always be rounded up to the next whole number because you cannot buy part of a bag."
+      "question": "Should I use the exact bag weight from the package?",
+      "answer": "Yes. A 20 kg bag and a 25 kg bag produce different counts, and using the wrong weight can leave you short or overbuying."
+    },
+    {
+      "question": "Why is the bag count rounded up?",
+      "answer": "Because adhesive is sold in whole bags. Rounding down can leave you without enough material for the final rows or for repair of uneven spots."
+    },
+    {
+      "question": "What mistakes make the estimate too low?",
+      "answer": "Common errors are entering square feet instead of square meters, forgetting to include reserve, using the wrong thickness, or choosing a consumption rate for a different product class."
     }
   ],
-  "uiLabels": {
-    "copy": "Copy",
-    "copied": "Copied",
-    "input": "Input",
-    "output": "Output",
-    "placeholder": "Enter a value",
-    "indent": "Indent",
-    "removeComments": "Remove comments",
-    "preview": "Preview",
-    "source": "Source",
-    "sanitizedHtml": "Sanitized HTML",
-    "plainText": "Plain text",
-    "summary": "Summary",
-    "total": "Total",
-    "links": "Links",
-    "images": "Images",
-    "errors": "Errors",
-    "warnings": "Warnings",
-    "valid": "Valid",
-    "invalid": "Invalid",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Width",
-    "height": "Height",
-    "empty": "Empty",
-    "outputReady": "Output ready",
-    "cleanedHtml": "Cleaned HTML",
-    "formattedHtml": "Formatted HTML",
-    "minifiedHtml": "Minified HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extracted images",
-    "extractedLinks": "Extracted links",
-    "validationSummary": "Validation summary",
-    "prettyHtml": "Pretty HTML",
-    "encodedText": "Encoded text",
-    "file": "File",
-    "size": "Size",
-    "format": "Format",
-    "quality": "Quality",
-    "colorOne": "Color 1",
-    "colorTwo": "Color 2",
-    "background": "Background",
-    "foreground": "Foreground",
-    "angle": "Angle",
-    "margin": "Margin",
-    "level": "Level",
-    "gradientType": "Gradient type",
-    "linear": "Linear",
-    "radial": "Radial",
-    "blur": "Blur",
-    "spread": "Spread",
-    "offsetX": "X offset",
-    "offsetY": "Y offset",
-    "opacity": "Opacity",
-    "inset": "Inset",
-    "cssCode": "CSS code",
-    "snippet": "Snippet",
-    "download": "Download",
-    "downloadSvg": "Download SVG",
-    "downloadPng": "Download PNG",
-    "downloadAll": "Download all",
-    "upload": "Upload",
-    "title": "Title",
-    "description": "Description",
-    "canonicalUrl": "Canonical URL",
-    "siteName": "Site name",
-    "ogImage": "OG image",
-    "clear": "Clear",
-    "generatedQr": "Generated QR",
-    "placeholderImage": "Placeholder image",
-    "faviconSet": "Favicon set",
-    "keepAspectRatio": "Keep aspect ratio",
-    "cropX": "Crop X",
-    "cropY": "Crop Y",
-    "cropWidth": "Crop width",
-    "cropHeight": "Crop height",
-    "originalSize": "Original size",
-    "outputSize": "Output size",
-    "savedSize": "Saved size",
-    "result": "Result",
-    "base64": "Base64",
-    "mimeType": "MIME type",
-    "resizedImage": "Resized image",
-    "compressedImage": "Compressed image",
-    "croppedImage": "Cropped image",
-    "convertedImage": "Converted image",
-    "decodedImage": "Decoded image",
-    "imagePreview": "Image preview",
-    "camera": "Camera",
-    "lens": "Lens",
-    "dateTaken": "Date taken",
-    "resolution": "Resolution",
-    "fileSize": "File size",
-    "iso": "ISO",
-    "exposure": "Exposure",
-    "aperture": "Aperture",
-    "focalLength": "Focal length",
-    "flash": "Flash",
-    "orientation": "Orientation",
-    "latitude": "Latitude",
-    "longitude": "Longitude",
-    "openMap": "Open map",
-    "rawMetadata": "Raw metadata",
-    "noMetadataFound": "No metadata found",
-    "gpsLocation": "GPS location",
-    "metadataSummary": "Metadata summary"
-  },
   "seo": {
     "title": "Tile Adhesive Calculator",
-    "description": "Estimate how many kg and bags of tile adhesive you need. Calculate adhesive without waste, with waste, and the number of bags from area, consumption rate, layer thickness, and bag weight.",
+    "description": "Estimate tile adhesive in kg and bags from area, consumption rate, layer thickness, waste, and bag weight.",
     "keywords": [
       "tile adhesive calculator",
-      "adhesive calculator",
       "tile glue calculator",
-      "kg of tile adhesive",
-      "bags of tile adhesive",
-      "tiling material calculator"
+      "adhesive bags calculator",
+      "kg tile adhesive",
+      "tiling material estimate"
     ]
   }
 }

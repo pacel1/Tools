@@ -4,169 +4,81 @@
   "slug": "estrich-rechner",
   "h1": "Estrich-Rechner",
   "title": "Estrich-Rechner",
-  "shortDescription": "Berechnen Sie die Materialmenge für Zementestrich, Anhydritestrich oder Fließestrich.",
-  "metaTitle": "Estrich-Rechner online | Materialmenge, Volumen und Sackanzahl berechnen",
-  "metaDescription": "Mit dem Estrich-Rechner ermitteln Sie Volumen, Gesamtgewicht der Mischung und die benötigte Sackanzahl für Zementestrich, Anhydritestrich und Fließestrich.",
-  "intro": "Berechnen Sie schnell Material für Estricharbeiten, Renovierungen und Fußbodenheizung. Geben Sie Fläche, Stärke, Verschnitt und Sackgewicht ein, um Volumen, Kilogramm und Sackanzahl zu erhalten.",
-  "overview": "Dieser Estrich-Rechner hilft bei der Planung von Zementestrich, Anhydritestrich und Fließestrich. Aus Fläche und Stärke berechnet er das Volumen und schätzt anschließend das Materialgewicht sowie die benötigte Sackanzahl inklusive Zuschlag.",
+  "shortDescription": "Berechnen Sie Volumen, Mischgewicht und Sackanzahl für Zementestrich, Anhydritestrich oder Fließestrich.",
+  "metaTitle": "Estrich-Rechner | Volumen und Säcke",
+  "metaDescription": "Berechnen Sie das Estrichvolumen, das Gesamtgewicht der Mischung und die Sackanzahl für Zementestrich, Anhydritestrich oder Fließestrich.",
+  "intro": "Geben Sie Fläche, Estrichdicke, Verbrauch, Zuschlag und Sackgewicht ein, um Volumen, Kilogramm und Sackanzahl zu erhalten.",
+  "overview": "Mit diesem Rechner planen Sie Zementestrich, Anhydritestrich und Fließestrich für echte Baustellenbedingungen. Aus Fläche und Schichtdicke wird das Volumen berechnet, danach schätzt das Tool das Gesamtgewicht der Mischung und die benötigte Sackanzahl.\n\nDas hilft bei der Materialbestellung, bei der Abstimmung von Liefermenge und Einbauzeit sowie bei der Kontrolle der vorgesehenen Aufbauhöhe. Wenn der Hersteller den Verbrauch in kg/m2/mm angibt, können Sie diesen Wert direkt nutzen. Gibt das Datenblatt eine Dichte an, verwenden Sie diese und ergänzen Sie einen sinnvollen Zuschlag für Verschnitt, Randverluste und kleine Unebenheiten des Untergrunds.",
   "howItWorks": [
     "Fläche in Quadratmetern eingeben.",
     "Estrichstärke in Millimetern festlegen.",
-    "Materialverbrauch oder Dichte angeben.",
-    "Verschnitt in Prozent hinzufügen.",
-    "Sackgewicht eingeben, um die Sackanzahl zu berechnen."
+    "Materialverbrauch oder Dichte eintragen.",
+    "Prozentualen Zuschlag für Verluste hinzufügen.",
+    "Sackgewicht angeben, um die Anzahl zu berechnen."
   ],
   "useCases": [
-    "Materialbedarf für Neubau und Sanierung berechnen.",
-    "Estrich für Fußbodenheizung planen.",
-    "Sackzahl vor der Bestellung prüfen.",
-    "Bedarf für verschiedene Estricharten vergleichen."
-  ],
-  "examples": [
     {
-      "title": "Beispielrechnung",
-      "input": "Fläche: 20 m2, Stärke: 50 mm, Verbrauch: 2,0 kg/m2/mm, Verschnitt: 5 %, Sackgewicht: 25 kg",
-      "output": "Volumen: 1,00 m3, Mischung gesamt: 2100 kg, Säcke: 84.",
-      "description": "Eine praxisnahe Schätzung für einen mittelgroßen Raum."
+      "title": "Wohnungsrenovierung",
+      "description": "Materialbedarf für Wohnzimmer, Flur und Schlafzimmer vor der Bestellung ermitteln."
     },
     {
       "title": "Fußbodenheizung",
-      "input": "Fläche: 45 m2, Stärke: 60 mm, Verbrauch: 1,8 kg/m2/mm, Verschnitt: 7 %, Sackgewicht: 25 kg",
-      "output": "Volumen: 2,70 m3, Mischung gesamt: 5106 kg, Säcke: 205.",
-      "description": "Hilfreich für Estrich über Heizrohren."
+      "description": "Menge für Estrich über Heizrohren planen, wenn Schichtdicke und Lieferung genau passen müssen."
+    },
+    {
+      "title": "Sackplanung",
+      "description": "Prüfen, ob 20-kg- oder 25-kg-Säcke für die Baustelle sinnvoller sind."
+    },
+    {
+      "title": "Produktvergleich",
+      "description": "Zement-, Anhydrit- und Fließestrich anhand ihrer jeweiligen Kennwerte gegenüberstellen."
+    }
+  ],
+  "examples": [
+    {
+      "title": "Wohnzimmerfläche",
+      "input": "Fläche: 18 m2, Stärke: 45 mm, Verbrauch: 1,95 kg/m2/mm, Zuschlag: 6 %, Sackgewicht: 25 kg",
+      "output": "Volumen: 0,81 m3, Gesamtmischung: 1577 kg, Säcke: 64",
+      "description": "Praktische Schätzung für einen normalen Raum."
+    },
+    {
+      "title": "Küche mit Fußbodenheizung",
+      "input": "Fläche: 12,5 m2, Stärke: 55 mm, Verbrauch: 2,10 kg/m2/mm, Zuschlag: 8 %, Sackgewicht: 20 kg",
+      "output": "Volumen: 0,69 m3, Gesamtmischung: 1432 kg, Säcke: 72",
+      "description": "Passend für einen Aufbau über Heizungsrohren."
+    },
+    {
+      "title": "Hauswirtschaftsraum",
+      "input": "Fläche: 38 m2, Stärke: 40 mm, Verbrauch: 1,75 kg/m2/mm, Zuschlag: 5 %, Sackgewicht: 25 kg",
+      "output": "Volumen: 1,52 m3, Gesamtmischung: 2762 kg, Säcke: 111",
+      "description": "Hilfreich für größere zusammenhängende Flächen."
     }
   ],
   "faq": [
     {
-      "question": "Wie wird das Estrichvolumen berechnet?",
-      "answer": "Das Volumen ergibt sich aus Fläche mal Stärke, wobei die Stärke in Meter umgerechnet wird."
+      "question": "Was trage ich ein, wenn das Produkt eine Dichte statt eines Verbrauchs nennt?",
+      "answer": "Dann verwenden Sie den Dichtewert aus dem technischen Datenblatt. Verbrauch und Dichte sollten nicht gleichzeitig verwendet werden, außer der Hersteller verlangt es ausdrücklich."
     },
     {
-      "question": "Kann ich den Rechner für Fließestrich verwenden?",
-      "answer": "Ja. Geben Sie einfach den Verbrauch oder die Dichte des Produkts ein, um die Menge zu schätzen."
+      "question": "Warum unterscheiden sich die Ergebnisse je nach Estrichart?",
+      "answer": "Die Raumgeometrie bleibt gleich, aber die Materialkennwerte und das Sackgewicht unterscheiden sich. Dadurch ändern sich Gesamtmasse und Sackzahl."
     },
     {
-      "question": "Warum sollte ich Verschnitt angeben?",
-      "answer": "Verschnitt deckt Verluste beim Mischen, Einbauen und kleine Unebenheiten des Untergrunds ab."
+      "question": "Wird bei der Sackzahl aufgerundet?",
+      "answer": "Ja. Teilmengen werden beim Einkauf als ganzer Sack gerechnet, damit die Bestellung realistisch bleibt."
     },
     {
-      "question": "Berechnet der Rechner auch Säcke?",
-      "answer": "Ja. Tragen Sie das Gewicht eines Sacks ein und der Rechner ermittelt die benötigte Anzahl."
+      "question": "Welchen Zuschlag sollte ich wählen?",
+      "answer": "Mehr Zuschlag ist sinnvoll bei unebenem Untergrund, vielen Anschlüssen oder längeren Misch- und Transportwegen. Bei einfachen Flächen genügt ein kleinerer Wert."
+    },
+    {
+      "question": "Ist das Volumen bei unebenem Boden noch brauchbar?",
+      "answer": "Das Ergebnis setzt eine gleichmäßige Dicke voraus. Bei starken Höhenunterschieden sollten Sie die mittlere Dicke ansetzen oder die Fläche in Teilbereiche aufteilen."
     }
   ],
-  "uiLabels": {
-    "copy": "Kopieren",
-    "copied": "Kopiert",
-    "input": "Eingabe",
-    "output": "Ergebnis",
-    "placeholder": "Wert eingeben",
-    "indent": "Einzug",
-    "removeComments": "Kommentare entfernen",
-    "preview": "Vorschau",
-    "source": "Quelle",
-    "sanitizedHtml": "Bereinigtes HTML",
-    "plainText": "Klartext",
-    "summary": "Zusammenfassung",
-    "total": "Gesamt",
-    "links": "Links",
-    "images": "Bilder",
-    "errors": "Fehler",
-    "warnings": "Warnungen",
-    "valid": "Gültig",
-    "invalid": "Ungültig",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Ziel",
-    "alt": "Alt",
-    "width": "Breite",
-    "height": "Höhe",
-    "empty": "Leer",
-    "outputReady": "Ergebnis bereit",
-    "cleanedHtml": "Bereinigtes HTML",
-    "formattedHtml": "Formatiertes HTML",
-    "minifiedHtml": "Minifiziertes HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extrahierte Bilder",
-    "extractedLinks": "Extrahierte Links",
-    "validationSummary": "Validierungszusammenfassung",
-    "prettyHtml": "Lesbares HTML",
-    "encodedText": "Kodierter Text",
-    "file": "Datei",
-    "size": "Größe",
-    "format": "Format",
-    "quality": "Qualität",
-    "colorOne": "Farbe 1",
-    "colorTwo": "Farbe 2",
-    "background": "Hintergrund",
-    "foreground": "Vordergrund",
-    "angle": "Winkel",
-    "margin": "Rand",
-    "level": "Stufe",
-    "gradientType": "Verlaufstyp",
-    "linear": "Linear",
-    "radial": "Radial",
-    "blur": "Unschärfe",
-    "spread": "Ausbreitung",
-    "offsetX": "Offset X",
-    "offsetY": "Offset Y",
-    "opacity": "Deckkraft",
-    "inset": "Innen",
-    "cssCode": "CSS-Code",
-    "snippet": "Snippet",
-    "download": "Herunterladen",
-    "downloadSvg": "SVG herunterladen",
-    "downloadPng": "PNG herunterladen",
-    "downloadAll": "Alle herunterladen",
-    "upload": "Hochladen",
-    "title": "Titel",
-    "description": "Beschreibung",
-    "canonicalUrl": "Kanonische URL",
-    "siteName": "Seitenname",
-    "ogImage": "OG-Bild",
-    "clear": "Löschen",
-    "generatedQr": "Generierter QR-Code",
-    "placeholderImage": "Platzhalterbild",
-    "faviconSet": "Favicon-Set",
-    "keepAspectRatio": "Seitenverhältnis beibehalten",
-    "cropX": "Zuschneiden X",
-    "cropY": "Zuschneiden Y",
-    "cropWidth": "Zuschneidebreite",
-    "cropHeight": "Zuschneidehöhe",
-    "originalSize": "Originalgröße",
-    "outputSize": "Ausgabegröße",
-    "savedSize": "Gesparte Größe",
-    "result": "Ergebnis",
-    "base64": "Base64",
-    "mimeType": "MIME-Typ",
-    "resizedImage": "Skaliertes Bild",
-    "compressedImage": "Komprimiertes Bild",
-    "croppedImage": "Zugeschnittenes Bild",
-    "convertedImage": "Konvertiertes Bild",
-    "decodedImage": "Dekodiertes Bild",
-    "imagePreview": "Bildvorschau",
-    "camera": "Kamera",
-    "lens": "Objektiv",
-    "dateTaken": "Aufnahmedatum",
-    "resolution": "Auflösung",
-    "fileSize": "Dateigröße",
-    "iso": "ISO",
-    "exposure": "Belichtung",
-    "aperture": "Blende",
-    "focalLength": "Brennweite",
-    "flash": "Blitz",
-    "orientation": "Ausrichtung",
-    "latitude": "Breitengrad",
-    "longitude": "Längengrad",
-    "openMap": "Karte öffnen",
-    "rawMetadata": "Rohmetadaten",
-    "noMetadataFound": "Keine Metadaten gefunden",
-    "gpsLocation": "GPS-Position",
-    "metadataSummary": "Metadatenübersicht"
-  },
   "seo": {
-    "title": "Estrich-Rechner online",
-    "description": "Berechnen Sie Estrichvolumen, Materialgewicht und Sackanzahl für Zementestrich, Anhydritestrich und Fließestrich.",
+    "title": "Estrich-Rechner | Volumen und Säcke",
+    "description": "Berechnen Sie das Estrichvolumen, das Gesamtgewicht der Mischung und die Sackanzahl für Zementestrich, Anhydritestrich oder Fließestrich.",
     "keywords": [
       "Estrich-Rechner",
       "Estrich berechnen",

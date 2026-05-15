@@ -4,44 +4,85 @@
   "slug": "convertidor-de-pulgadas-a-centimetros",
   "h1": "Convertidor de pulgadas a centímetros",
   "title": "Convertidor de pulgadas a centímetros",
-  "shortDescription": "Convierte pulgadas a centímetros al instante con resultados rápidos, entradas sencillas y ejemplos prácticos.",
-  "overview": "Convierte pulgadas a centímetros al instante. Esta página ofrece una respuesta rápida con una herramienta útil en línea y un flujo de resultados sencillo. Está pensada para quienes buscan una respuesta gratuita en línea, resultados rápidos desde el navegador y contenido práctico para búsquedas de cola larga.",
+  "shortDescription": "Convierte pulgadas a centímetros con exactitud usando la relación 1 pulgada = 2,54 cm.",
+  "metaTitle": "Convertidor pulgadas a cm",
+  "metaDescription": "Convierte pulgadas a centímetros con el factor exacto 2,54 para medidas, pantallas, ropa y planos técnicos.",
+  "intro": "Introduce un valor en pulgadas y obtén su equivalente en centímetros usando la conversión exacta 1 pulgada = 2,54 cm.",
+  "overview": "Este convertidor transforma medidas en pulgadas a centímetros con el factor estándar fijo, sin necesidad de hacer cuentas manuales. Resulta útil para valores únicos, fracciones de pulgada y especificaciones que deben leerse directamente en sistema métrico.\n\nÚsalo cuando una ficha técnica, etiqueta, plano o tabla de tallas esté expresada en pulgadas y necesites el dato en centímetros para comparar o planificar. El resultado corresponde a la conversión matemática exacta, así que sirve para dimensiones que deben mantenerse coherentes en documentos o catálogos.",
   "howItWorks": [
-    "Introduce el valor o texto requerido en el formulario.",
-    "La conversión, el cálculo o la transformación se realiza al instante en el navegador.",
-    "Revisa el resultado y continúa con herramientas relacionadas si necesitas otro paso."
+    "Escribe el valor en pulgadas.",
+    "La herramienta lo multiplica por 2,54.",
+    "Consulta el resultado en centímetros y sigue con otros valores si hace falta."
+  ],
+  "useCases": [
+    {
+      "title": "Medidas de muebles",
+      "description": "Convierte ancho, fondo o alto de sofás, estantes o mesas antes de comprobar el espacio disponible."
+    },
+    {
+      "title": "Tallas de pantallas",
+      "description": "Pasa la diagonal de televisores o monitores a centímetros para comparar tamaño y ubicación."
+    },
+    {
+      "title": "Costura y confección",
+      "description": "Traduce medidas de patrones, largos de manga o bajos de pantalón al sistema métrico."
+    },
+    {
+      "title": "Planos y fichas técnicas",
+      "description": "Lleva notas de diseño en pulgadas a centímetros para informes, esquemas y documentación."
+    }
   ],
   "examples": [
     {
-      "title": "Ejemplo 1",
-      "input": "10 pulgadas",
-      "output": "25,4 centímetros",
-      "description": "Un ejemplo realista de conversión de pulgadas a cm para una búsqueda cotidiana."
+      "title": "Convertir 12 pulgadas",
+      "input": "12 in",
+      "output": "30,48 cm",
+      "description": "Una conversión directa para una regla o una pieza de longitud fija."
     },
     {
-      "title": "Ejemplo 2",
-      "input": "10 pulgadas",
-      "output": "25,4 centímetros",
-      "description": "Otro caso de uso práctico para tráfico orgánico de cola larga."
+      "title": "Convertir 5,5 pulgadas",
+      "input": "5,5 in",
+      "output": "13,97 cm",
+      "description": "Útil cuando la medida incluye decimales, como el ancho de un dispositivo."
+    },
+    {
+      "title": "Convertir 27 pulgadas",
+      "input": "27 in",
+      "output": "68,58 cm",
+      "description": "Adecuado para dimensiones grandes de hogar o pantallas."
     }
   ],
   "faq": [
     {
-      "question": "¿Qué precisión tiene esta herramienta?",
-      "answer": "El resultado se calcula directamente a partir de la fórmula o de la lógica en el navegador utilizada por esta herramienta."
+      "question": "¿Qué fórmula usa este convertidor?",
+      "answer": "Usa 1 pulgada = 2,54 centímetros y multiplica el valor introducido por 2,54."
     },
     {
-      "question": "¿Puedo usar esta herramienta en el móvil?",
-      "answer": "Sí. La página funciona en escritorio y en pantallas móviles con un diseño sencillo de entrada y resultado."
+      "question": "¿Acepta valores decimales?",
+      "answer": "Sí. Medidas como 5,5 se convierten directamente y dan 13,97 cm."
+    },
+    {
+      "question": "¿Por qué el resultado puede cambiar al redondear?",
+      "answer": "Si muestras menos decimales, el valor visible cambia, aunque la conversión base siga siendo la misma."
+    },
+    {
+      "question": "¿Convierte pies y pulgadas al mismo tiempo?",
+      "answer": "No. Solo convierte pulgadas. Si tienes pies y pulgadas, primero pasa los pies a pulgadas y luego suma el resto."
+    },
+    {
+      "question": "¿Cuál es el error más habitual al usarlo?",
+      "answer": "Copiar una medida ya redondeada y esperar recuperar el valor original exacto. La conversión es correcta para el número que se introduce."
     }
   ],
   "seo": {
-    "title": "Convertidor de pulgadas a centímetros",
-    "description": "Convierte pulgadas a centímetros al instante. Convertidor gratis online de pulgadas a cm con resultados inmediatos.",
+    "title": "Convertidor pulgadas a cm",
+    "description": "Convierte pulgadas a centímetros con el factor exacto 2,54 para medidas, pantallas, ropa y planos técnicos.",
     "keywords": [
-      "convertidor de pulgadas a cm",
+      "pulgadas a cm",
       "convertidor de pulgadas a centímetros",
-      "herramienta de conversion"
+      "convertir pulgadas a cm",
+      "1 pulgada en cm",
+      "cm desde pulgadas"
     ]
   }
 }

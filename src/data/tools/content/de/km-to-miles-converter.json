@@ -4,43 +4,84 @@
   "slug": "km-in-meilen-umrechner",
   "h1": "Kilometer-in-Meilen-Umrechner",
   "title": "Kilometer-in-Meilen-Umrechner",
-  "shortDescription": "Kilometer sofort in Meilen umrechnen – mit schnellen Ergebnissen, einfacher Eingabe und praktischen Beispielen.",
-  "overview": "Wandeln Sie Kilometer sofort in Meilen um. Diese Seite liefert eine schnelle Antwort mit einem praktischen Online-Tool und einem einfachen Ergebnisablauf. Sie richtet sich an Nutzer, die eine kostenlose Antwort im Browser, schnelle Ergebnisse und praxisnahe Inhalte für Long-Tail-Suchanfragen suchen.",
+  "shortDescription": "Kilometer mit dem Standardfaktor in Meilen umrechnen und das Ergebnis sofort ablesen.",
+  "metaTitle": "Km in Meilen umrechnen",
+  "metaDescription": "Kilometer mit 1 km = 0,621371 Meilen umrechnen. Nützlich für Reisen, Laufstrecken und Distanzvergleiche.",
+  "intro": "Geben Sie eine Strecke in Kilometern ein und erhalten Sie den Wert in Meilen mit dem Standardfaktor 1 km = 0,621371 Meilen.",
+  "overview": "Dieser Umrechner wandelt Kilometer in Meilen um, damit Sie Entfernungen in der passenden Einheit lesen können. Das ist hilfreich, wenn eine Route, ein Lauf, eine Karte oder eine Fahrt in Kilometern angegeben ist und Sie die Angabe in Meilen brauchen.\n\nDie Berechnung folgt dem üblichen Umrechnungsverhältnis zwischen Kilometer und Meile. Dadurch eignet sich das Tool auch für Dezimalwerte, längere Strecken und saubere Vergleiche in Reiseplänen, Trainingsprotokollen oder Tabellen.",
   "howItWorks": [
-    "Geben Sie den benötigten Wert in das Formular ein.",
-    "Die Umrechnung erfolgt sofort im Browser.",
-    "Prüfen Sie das Ergebnis und nutzen Sie bei Bedarf verwandte Tools für den nächsten Schritt."
+    "Geben Sie die Entfernung in Kilometern ein.",
+    "Das Tool multipliziert den Wert mit 0,621371.",
+    "Lesen Sie das Ergebnis in Meilen ab und vergleichen Sie es bei Bedarf mit einer weiteren Strecke."
+  ],
+  "useCases": [
+    {
+      "title": "Routen vergleichen",
+      "description": "Wandeln Sie Straßenabschnitte oder Reisestrecken von Kilometern in Meilen um."
+    },
+    {
+      "title": "Trainingseinheiten",
+      "description": "Übertragen Sie Lauf-, Rad- oder Wanderdistanzen von km in Meilen für Trainingsnotizen."
+    },
+    {
+      "title": "Karten und Beschilderung lesen",
+      "description": "Verstehen Sie Entfernungsangaben auf Karten, Wegweisern und Grenzschildern."
+    },
+    {
+      "title": "Berichte und Tabellen",
+      "description": "Rechnen Sie Kilometerwerte für Auswertungen, Dokumente oder Datensätze in Meilen um."
+    }
   ],
   "examples": [
     {
-      "title": "Beispiel 1",
-      "input": "5 Kilometer",
+      "title": "Kurze Stadtstrecke",
+      "input": "5 km",
       "output": "3,1069 Meilen",
-      "description": "Ein realistisches Beispiel für die Umrechnung von km in Meilen für eine alltägliche Suchanfrage."
+      "description": "Eine kleine Alltagsstrecke wird in Meilen dargestellt."
     },
     {
-      "title": "Beispiel 2",
-      "input": "5 Kilometer",
-      "output": "3,1069 Meilen",
-      "description": "Ein weiteres praktisches Einsatzbeispiel für organischen Long-Tail-Traffic."
+      "title": "Halbmarathon",
+      "input": "21,1 km",
+      "output": "13,1094 Meilen",
+      "description": "Hilfreich für den Vergleich von Laufdistanzen zwischen Einheitssystemen."
+    },
+    {
+      "title": "Lange Autofahrt",
+      "input": "860 km",
+      "output": "534,2926 Meilen",
+      "description": "Zeigt die Umrechnung auch bei größeren Entfernungen."
     }
   ],
   "faq": [
     {
-      "question": "Wie genau ist dieses Tool?",
-      "answer": "Das Ergebnis wird direkt aus der Formel oder der browserseitigen Logik dieses Tools berechnet."
+      "question": "Welche Formel verwendet der Umrechner?",
+      "answer": "Er nutzt den Standardfaktor: 1 Kilometer = 0,621371 Meilen."
     },
     {
-      "question": "Kann ich dieses Tool auf dem Smartphone verwenden?",
-      "answer": "Ja. Die Seite funktioniert auf Desktop- und Mobilgeräten mit einem einfachen Eingabe- und Ergebnislayout."
+      "question": "Kann ich Dezimalwerte eingeben?",
+      "answer": "Ja. Werte wie 2,5 km oder 42,195 km werden direkt umgerechnet."
+    },
+    {
+      "question": "Warum hat das Ergebnis so viele Nachkommastellen?",
+      "answer": "Das Tool zeigt den berechneten Wert in voller Genauigkeit an. Bei Bedarf können Sie ihn selbst runden."
+    },
+    {
+      "question": "Welcher Fehler passiert beim Umrechnen am häufigsten?",
+      "answer": "Oft wird mit 1,6 statt mit 0,621371 multipliziert. Das führt zur falschen Richtung der Umrechnung."
+    },
+    {
+      "question": "Kann ich damit auch Meilen in Kilometer umrechnen?",
+      "answer": "Nein. Diese Seite ist nur für Kilometer in Meilen gedacht. Für die Gegenrichtung brauchen Sie den passenden Umrechner."
     }
   ],
   "seo": {
-    "title": "Kilometer-in-Meilen-Umrechner",
-    "description": "Kilometer sofort in Meilen umrechnen. Kostenloser Online-Kilometer-zu-Meilen-Umrechner mit sofortigen Ergebnissen.",
+    "title": "Km in Meilen umrechnen",
+    "description": "Kilometer mit 1 km = 0,621371 Meilen umrechnen. Nützlich für Reisen, Laufstrecken und Distanzvergleiche.",
     "keywords": [
-      "kilometer in meilen umrechnen",
-      "km in meilen umrechner"
+      "km in meilen umrechnen",
+      "kilometer in meilen",
+      "meilen rechner",
+      "distanz umrechnen"
     ]
   }
 }

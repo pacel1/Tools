@@ -4,43 +4,76 @@
   "slug": "odwracanie-tekstu",
   "h1": "Odwracanie tekstu",
   "title": "Odwracanie tekstu",
-  "shortDescription": "Odwróć tekst online natychmiast — szybko, prosto i z praktycznymi przykładami.",
-  "overview": "Odwróć tekst online natychmiast. Ta strona zapewnia szybki wynik dzięki prostemu narzędziu i przejrzystemu procesowi. Jest skierowana do osób szukających darmowej odpowiedzi online, szybkich rezultatów w przeglądarce oraz praktycznych treści long-tail związanych z narzędziami tekstowymi.",
+  "shortDescription": "Odwróć tekst znak po znaku, zachowując interpunkcję, spacje i symbole w nowej kolejności.",
+  "metaTitle": "Odwracanie tekstu",
+  "metaDescription": "Odwróć dowolny tekst znak po znaku, zachowując spacje, interpunkcję i symbole w wyniku.",
+  "intro": "Wklej tekst, a znaki zostaną odwrócone od razu.",
+  "overview": "To narzędzie odwraca dokładnie wszystkie znaki w podanym tekście od końca do początku. Litery, cyfry, spacje, interpunkcja i symbole zmieniają kolejność, więc wynik przydaje się wtedy, gdy chcesz odwrócić sam zapis, a nie sens zdania.\n\nDobrze sprawdza się przy krótkich frazach, nazwach, etykietach, kodach i tekstach testowych. Jeśli chcesz sprawdzić zapis „na wspak” albo przygotować odwrócony tekst do projektu, łamigłówki lub testu formatowania, wynik pojawia się natychmiast na stronie.\n\nNarzędzie nie tłumaczy, nie poprawia i nie przestawia słów według znaczenia. Jeśli w tekście znajdują się podziały wierszy, zostaną one uwzględnione w odwróconym wyniku, co może zmienić układ wizualny w przewidywalny sposób.",
   "howItWorks": [
-    "Wpisz wymagany tekst do formularza.",
-    "Konwersja, obliczenie lub transformacja odbywa się natychmiast w przeglądarce.",
-    "Sprawdź wynik i skorzystaj z powiązanych narzędzi, jeśli potrzebujesz kolejnego kroku."
+    "Wpisz lub wklej tekst, który chcesz odwrócić.",
+    "Narzędzie zamienia kolejność znaków od ostatniego do pierwszego.",
+    "Skopiuj odwrócony wynik i użyj go tam, gdzie potrzebujesz."
+  ],
+  "useCases": [
+    {
+      "title": "Napisy od tyłu",
+      "description": "Przygotuj odwrócony napis do plakatu, zagadki albo nietypowego układu graficznego."
+    },
+    {
+      "title": "Sprawdzenie znaków specjalnych",
+      "description": "Zobacz, jak po odwróceniu wyglądają interpunkcja, emoji i dodatkowe odstępy."
+    },
+    {
+      "title": "Projektowe makiety",
+      "description": "Utwórz odwrócony tekst do podglądu etykiet, odznak lub prostych wizualizacji."
+    }
   ],
   "examples": [
     {
-      "title": "Przykład 1",
-      "input": "utility tools",
-      "output": "sloot ytilitu",
-      "description": "Realistyczny przykład odwracania tekstu dla codziennego zapytania."
+      "title": "Odwrócenie zdania",
+      "input": "Open the door",
+      "output": "rood eht nepO",
+      "description": "Każdy znak zmienia miejsce, a spacja pozostaje częścią odwróconego układu."
     },
     {
-      "title": "Przykład 2",
-      "input": "utility tools",
-      "output": "sloot ytilitu",
-      "description": "Kolejny praktyczny przypadek użycia pod kątem ruchu organicznego long-tail."
+      "title": "Znaki i cyfry",
+      "input": "A1! B2?",
+      "output": "?2B !1A",
+      "description": "Pokazuje wspólne odwrócenie liter, cyfr, spacji i interpunkcji."
+    },
+    {
+      "title": "Przykład z nową linią",
+      "input": "pierwsza linia\ndruga linia",
+      "output": "ainil agurd\na inil azsrewip",
+      "description": "Pokazuje, że podziały wierszy są zachowane w odwróconym tekście."
     }
   ],
   "faq": [
     {
-      "question": "Jak dokładne jest to narzędzie?",
-      "answer": "Wynik jest obliczany bezpośrednio na podstawie formuły lub logiki po stronie przeglądarki używanej przez to narzędzie."
+      "question": "Czy to narzędzie odwraca słowa czy znaki?",
+      "answer": "Odwraca znaki. Jeśli wpiszesz dwa słowa, litery i spacja zmienią kolejność razem, więc tekst będzie zapisany wspak na poziomie znaków."
     },
     {
-      "question": "Czy mogę używać tego narzędzia na telefonie?",
-      "answer": "Tak. Strona działa na komputerach i urządzeniach mobilnych, oferując prosty układ pola tekstowego i wyniku."
+      "question": "Co dzieje się z interpunkcją i cyframi?",
+      "answer": "Są odwracane razem z resztą tekstu. Przecinek, myślnik albo cyfra zachowuje swój znak, ale trafia na inne miejsce w wyniku."
+    },
+    {
+      "question": "Dlaczego wynik z nowymi liniami wygląda inaczej?",
+      "answer": "Podziały wierszy są traktowane jak część tekstu. Po pełnym odwróceniu kolejność linii może wyglądać inaczej niż w oryginale."
+    },
+    {
+      "question": "Czy mogę odwrócić tylko fragment zdania?",
+      "answer": "Tak. Usuń zbędne części albo odwróć osobno wybrany fragment i wklej go z powrotem do tekstu."
     }
   ],
   "seo": {
     "title": "Odwracanie tekstu",
-    "description": "Odwróć tekst online natychmiast. Darmowe narzędzie do odwracania tekstu z natychmiastowym wynikiem.",
+    "description": "Odwróć dowolny tekst znak po znaku, zachowując spacje, interpunkcję i symbole w wyniku.",
     "keywords": [
       "odwracanie tekstu",
-      "narzędzie text-tools"
+      "tekst od tyłu",
+      "odwróć tekst",
+      "zmiana kolejności znaków"
     ]
   }
 }

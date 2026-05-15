@@ -4,175 +4,87 @@
   "slug": "calculateur-denduit-de-lissage",
   "h1": "Calculateur d’enduit de lissage",
   "title": "Calculateur d’enduit de lissage",
-  "shortDescription": "Calculez la quantité d’enduit de lissage nécessaire pour des murs et plafonds lisses.",
-  "metaTitle": "Calculateur d’enduit de lissage en ligne",
-  "metaDescription": "Estimez la quantité d’enduit de lissage en kg et en sacs. Saisissez la surface, la consommation, l’épaisseur et la marge de perte pour calculer le besoin.",
-  "intro": "Estimez rapidement la consommation d’enduit de lissage pour les murs et les plafonds. Indiquez la surface, la consommation pour 1 mm, l’épaisseur de la couche, la marge de perte et le poids du sac pour obtenir la quantité totale et le nombre de sacs.",
-  "overview": "Ce calculateur d’enduit de lissage vous aide à planifier les matériaux pour les travaux de finition intérieure. Il calcule le besoin de base, le besoin total avec pertes et le nombre de sacs nécessaires afin d’acheter la bonne quantité.",
+  "shortDescription": "Calculez la quantité d’enduit de lissage nécessaire pour des murs et plafonds selon la surface, l’épaisseur et les pertes.",
+  "metaTitle": "Calculateur d’enduit",
+  "metaDescription": "Estimez l’enduit de lissage en kg et en sacs selon la surface, l’épaisseur de couche, la consommation et la marge de perte.",
+  "intro": "Saisissez la surface, la consommation pour 1 mm, l’épaisseur de la couche, la marge de perte et le poids du sac pour obtenir la quantité totale et le nombre de sacs.",
+  "overview": "Ce calculateur sert à transformer une surface à enduire en quantité de produit à commander. Il calcule d’abord le besoin de base à partir de la surface et de l’épaisseur prévue, puis ajoute une marge pour les pertes, les reprises et les petites irrégularités du support.\n\nLe résultat est affiché en kilogrammes et en sacs entiers, ce qui facilite la commande sur chantier. Il convient aussi bien à une seule pièce qu’à une rénovation complète ou à de grandes surfaces de plafond où le conditionnement joue un rôle important.",
   "howItWorks": [
-    "Saisissez la surface en mètres carrés.",
-    "Indiquez la consommation du matériau pour 1 mm d’épaisseur.",
-    "Définissez l’épaisseur de la couche d’enduit en millimètres.",
+    "Indiquez la surface en mètres carrés.",
+    "Renseignez la consommation du produit pour 1 mm d’épaisseur.",
+    "Définissez l’épaisseur prévue de la couche en millimètres.",
     "Ajoutez un pourcentage de pertes pour les gâchis et retouches.",
-    "Entrez le poids du sac pour calculer le nombre d’unités nécessaires."
+    "Entrez le poids du sac pour connaître le nombre d’unités nécessaires."
   ],
   "useCases": [
-    "Calculer l’enduit de lissage pour une rénovation d’appartement.",
-    "Prévoir la quantité de matériau pour des murs lisses avant peinture.",
-    "Estimer les besoins pour des plafonds et grandes surfaces.",
-    "Vérifier combien de sacs acheter pour un chantier."
+    {
+      "title": "Mur de salle de bains",
+      "description": "Prévoir la quantité d’enduit pour une paroi qui doit être lissée avant peinture ou revêtement."
+    },
+    {
+      "title": "Plafond de séjour",
+      "description": "Estimer les kilos nécessaires pour une grande surface horizontale avec application régulière."
+    },
+    {
+      "title": "Commande pour plusieurs pièces",
+      "description": "Additionner plusieurs espaces et choisir le nombre de sacs à commander en une fois."
+    },
+    {
+      "title": "Contrôle du stock sur chantier",
+      "description": "Comparer le besoin calculé au matériel déjà disponible avant de refaire une commande."
+    }
   ],
   "examples": [
     {
-      "title": "Estimation rapide",
-      "input": "Surface : 50 m², consommation : 1,2 kg/m²/mm, épaisseur : 2 mm, pertes : 10 %, poids du sac : 20 kg",
-      "output": "Base : 120 kg, total : 132 kg, sacs : 7.",
-      "description": "Un exemple pratique pour un petit chantier de rénovation."
+      "title": "Petite pièce",
+      "input": "Surface : 32 m², consommation : 1,1 kg/m²/mm, épaisseur : 1,5 mm, pertes : 12 %, poids du sac : 20 kg",
+      "output": "Besoin de base : 52,8 kg, total : 59,136 kg, sacs : 3.",
+      "description": "Adapté à une pièce avec une fine couche de correction."
     },
     {
-      "title": "Préparation du chantier",
-      "input": "Surface : 120 m², consommation : 1,0 kg/m²/mm, épaisseur : 3 mm, pertes : 8 %, poids du sac : 25 kg",
-      "output": "Base : 360 kg, total : 388,8 kg, sacs : 16.",
-      "description": "Utile pour des travaux de finition plus importants."
+      "title": "Grand plafond",
+      "input": "Surface : 96 m², consommation : 1,35 kg/m²/mm, épaisseur : 2 mm, pertes : 8 %, poids du sac : 25 kg",
+      "output": "Besoin de base : 259,2 kg, total : 279,936 kg, sacs : 12.",
+      "description": "Utile pour un long plafond avec une marge de pertes normale."
+    },
+    {
+      "title": "Couche plus épaisse",
+      "input": "Surface : 58,5 m², consommation : 0,95 kg/m²/mm, épaisseur : 3 mm, pertes : 15 %, poids du sac : 20 kg",
+      "output": "Besoin de base : 166,725 kg, total : 191,73375 kg, sacs : 10.",
+      "description": "Montre l’impact d’une couche plus épaisse et d’une marge plus élevée."
     }
   ],
   "faq": [
     {
-      "question": "Comment calculer la consommation d’enduit de lissage ?",
-      "answer": "Multipliez la surface par la consommation pour 1 mm et par l’épaisseur de la couche, puis ajoutez les pertes pour obtenir le total."
+      "question": "Que signifie la consommation demandée par le calculateur ?",
+      "answer": "Il s’agit de la quantité de produit pour 1 mm d’épaisseur, généralement indiquée par le fabricant en kg par m². Si votre fiche technique utilise une autre unité, convertissez-la avant de saisir la valeur."
     },
     {
-      "question": "Pourquoi ajouter une marge de perte ?",
-      "answer": "La marge couvre les pertes de mélange, l’absorption irrégulière du support et les petites reprises pendant l’application."
+      "question": "Dois-je entrer l’épaisseur finie ou l’épaisseur maximale ?",
+      "answer": "Entrez l’épaisseur moyenne prévue pour toute la surface. Si le support est irrégulier, prenez une valeur réaliste pour l’ensemble et non le point le plus profond."
     },
     {
-      "question": "Comment calcule-t-on les sacs ?",
-      "answer": "Divisez la quantité totale en kilogrammes par le poids du sac, puis arrondissez au sac entier supérieur."
+      "question": "Pourquoi le nombre de sacs est-il arrondi au supérieur ?",
+      "answer": "Parce qu’on n’achète pas un demi-sac. Dès que la quantité calculée dépasse le stock disponible, il faut compter un sac complet de plus."
     },
     {
-      "question": "Peut-on utiliser ce calculateur pour les murs et les plafonds ?",
-      "answer": "Oui, il convient à toute surface sur laquelle on applique un enduit de lissage."
+      "question": "Puis-je utiliser le calcul pour deux couches ?",
+      "answer": "Oui, si la consommation et l’épaisseur représentent bien le système complet. Si chaque couche a des caractéristiques différentes, calculez-les séparément puis additionnez les résultats."
+    },
+    {
+      "question": "Quelle erreur fausse le plus souvent le résultat ?",
+      "answer": "L’erreur la plus fréquente est de confondre kg/m² et kg/m²/mm, ou de saisir le mauvais poids du sac. Cela change fortement la quantité finale."
     }
   ],
-  "uiLabels": {
-    "copy": "Copier",
-    "copied": "Copié",
-    "input": "Entrée",
-    "output": "Sortie",
-    "placeholder": "Saisissez une valeur",
-    "indent": "Retrait",
-    "removeComments": "Supprimer les commentaires",
-    "preview": "Aperçu",
-    "source": "Source",
-    "sanitizedHtml": "HTML nettoyé",
-    "plainText": "Texte brut",
-    "summary": "Résumé",
-    "total": "Total",
-    "links": "Liens",
-    "images": "Images",
-    "errors": "Erreurs",
-    "warnings": "Avertissements",
-    "valid": "Valide",
-    "invalid": "Non valide",
-    "href": "Href",
-    "text": "Texte",
-    "rel": "Rel",
-    "target": "Cible",
-    "alt": "Alt",
-    "width": "Largeur",
-    "height": "Hauteur",
-    "empty": "Vide",
-    "outputReady": "Résultat prêt",
-    "cleanedHtml": "HTML nettoyé",
-    "formattedHtml": "HTML formaté",
-    "minifiedHtml": "HTML minifié",
-    "markdown": "Markdown",
-    "extractedImages": "Images extraites",
-    "extractedLinks": "Liens extraits",
-    "validationSummary": "Résumé de validation",
-    "prettyHtml": "HTML lisible",
-    "encodedText": "Texte encodé",
-    "file": "Fichier",
-    "size": "Taille",
-    "format": "Format",
-    "quality": "Qualité",
-    "colorOne": "Couleur 1",
-    "colorTwo": "Couleur 2",
-    "background": "Arrière-plan",
-    "foreground": "Premier plan",
-    "angle": "Angle",
-    "margin": "Marge",
-    "level": "Niveau",
-    "gradientType": "Type de dégradé",
-    "linear": "Linéaire",
-    "radial": "Radial",
-    "blur": "Flou",
-    "spread": "Étendue",
-    "offsetX": "Décalage X",
-    "offsetY": "Décalage Y",
-    "opacity": "Opacité",
-    "inset": "Interne",
-    "cssCode": "Code CSS",
-    "snippet": "Extrait",
-    "download": "Télécharger",
-    "downloadSvg": "Télécharger SVG",
-    "downloadPng": "Télécharger PNG",
-    "downloadAll": "Tout télécharger",
-    "upload": "Importer",
-    "title": "Titre",
-    "description": "Description",
-    "canonicalUrl": "URL canonique",
-    "siteName": "Nom du site",
-    "ogImage": "Image OG",
-    "clear": "Effacer",
-    "generatedQr": "QR généré",
-    "placeholderImage": "Image de remplacement",
-    "faviconSet": "Jeu de favicon",
-    "keepAspectRatio": "Conserver les proportions",
-    "cropX": "Recadrage X",
-    "cropY": "Recadrage Y",
-    "cropWidth": "Largeur du recadrage",
-    "cropHeight": "Hauteur du recadrage",
-    "originalSize": "Taille d’origine",
-    "outputSize": "Taille de sortie",
-    "savedSize": "Taille économisée",
-    "result": "Résultat",
-    "base64": "Base64",
-    "mimeType": "Type MIME",
-    "resizedImage": "Image redimensionnée",
-    "compressedImage": "Image compressée",
-    "croppedImage": "Image recadrée",
-    "convertedImage": "Image convertie",
-    "decodedImage": "Image décodée",
-    "imagePreview": "Aperçu de l’image",
-    "camera": "Appareil photo",
-    "lens": "Objectif",
-    "dateTaken": "Date de prise de vue",
-    "resolution": "Résolution",
-    "fileSize": "Taille du fichier",
-    "iso": "ISO",
-    "exposure": "Exposition",
-    "aperture": "Ouverture",
-    "focalLength": "Distance focale",
-    "flash": "Flash",
-    "orientation": "Orientation",
-    "latitude": "Latitude",
-    "longitude": "Longitude",
-    "openMap": "Ouvrir la carte",
-    "rawMetadata": "Métadonnées brutes",
-    "noMetadataFound": "Aucune métadonnée trouvée",
-    "gpsLocation": "Position GPS",
-    "metadataSummary": "Résumé des métadonnées"
-  },
   "seo": {
-    "title": "Calculateur d’enduit de lissage en ligne",
-    "description": "Estimez la quantité d’enduit de lissage en kg et en sacs. Saisissez la surface, la consommation, l’épaisseur et la marge de perte pour calculer le besoin.",
+    "title": "Calculateur d’enduit",
+    "description": "Estimez l’enduit de lissage en kg et en sacs selon la surface, l’épaisseur de couche, la consommation et la marge de perte.",
     "keywords": [
       "calculateur enduit de lissage",
-      "combien d’enduit de lissage faut-il",
+      "combien d’enduit de lissage",
       "consommation enduit de lissage",
-      "calcul enduit de lissage par m2",
-      "enduit murs et plafonds"
+      "enduit par m2",
+      "sacs enduit"
     ]
   }
 }

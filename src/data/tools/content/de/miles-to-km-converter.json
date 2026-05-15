@@ -2,45 +2,77 @@
   "toolId": "miles-to-km-converter",
   "locale": "de",
   "slug": "meilen-in-kilometer-umrechner",
-  "h1": "Meilen-in-Kilometer-Umrechner",
-  "title": "Meilen-in-Kilometer-Umrechner",
-  "shortDescription": "Wandle Meilen sofort in Kilometer um – mit schnellen Ergebnissen, einfacher Eingabe und praktischen Beispielen.",
-  "overview": "Wandle Meilen sofort in Kilometer um. Diese Seite liefert eine schnelle Antwort mit einem praktischen Hilfswerkzeug und einem einfachen Ablauf bis zum Ergebnis. Sie richtet sich an Nutzer, die eine kostenlose Online-Antwort, schnelle Ergebnisse im Browser und praxisnahe Long-Tail-Inhalte zu einem nützlichen Umrechner suchen.",
+  "h1": "Meilen in Kilometer umrechnen",
+  "title": "Meilen in Kilometer umrechnen",
+  "shortDescription": "Wandle Meilen in Kilometer um, mit präzisem Dezimalergebnis und klaren Beispielen.",
+  "metaTitle": "Meilen in Kilometer Umrechner",
+  "metaDescription": "Wandle Meilen in Kilometer mit exaktem Faktor, Dezimalergebnis, Beispielen und klarer Einordnung der Einheiten um.",
+  "intro": "Gib die Strecke in Meilen ein und erhalte sofort den entsprechenden Wert in Kilometern.",
+  "overview": "Meilen und Kilometer messen dieselbe Art von Entfernung, gehören aber zu unterschiedlichen Einheitensystemen. Dieser Umrechner nutzt den Standardfaktor, damit du Strecken aus Karten, Laufprotokollen oder Reiseangaben ohne Kopfrechnen in Kilometer umwandeln kannst.\n\nDas Ergebnis erscheint als Dezimalwert, damit du Entfernungen sauber planen, dokumentieren oder vergleichen kannst. Bei Bruchteilen von Meilen bleibt die Genauigkeit in der Umrechnung erhalten.",
   "howItWorks": [
-    "Gib den gewünschten Wert oder Text in das Formular ein.",
-    "Die Umrechnung, Berechnung oder Transformation läuft sofort im Browser.",
-    "Prüfe das Ergebnis und nutze bei Bedarf passende verwandte Tools für den nächsten Schritt."
+    "Gib die Entfernung in Meilen ein.",
+    "Das Tool multipliziert mit dem standardisierten Meilen-zu-Kilometer-Faktor.",
+    "Lies das Ergebnis in Kilometern ab, bei Bedarf mit Dezimalstellen."
+  ],
+  "useCases": [
+    {
+      "title": "Routen für Autofahrten vergleichen",
+      "description": "Wandle Streckenangaben in Meilen in Kilometer um, wenn du Länder oder Navigationsdaten vergleichst."
+    },
+    {
+      "title": "Lauf- und Radtraining",
+      "description": "Übertrage Trainingsdistanzen von Meilen in Kilometer für dein Protokoll oder deine Auswertung."
+    },
+    {
+      "title": "Kartendistanzen prüfen",
+      "description": "Berechne, wie viele Kilometer eine App-Angabe in Meilen entspricht."
+    }
   ],
   "examples": [
     {
-      "title": "Beispiel 1",
+      "title": "Ganze Zahl",
       "input": "10 Meilen",
-      "output": "16,0934 Kilometer",
-      "description": "Ein realistisches Beispiel für die Umrechnung von Meilen in Kilometer für eine alltägliche Suche."
+      "output": "16,0934 km",
+      "description": "Zehn Meilen entsprechen 16,0934 Kilometern."
     },
     {
-      "title": "Beispiel 2",
-      "input": "10 Meilen",
-      "output": "16,0934 Kilometer",
-      "description": "Ein weiteres praktisches Anwendungsbeispiel für organischen Long-Tail-Traffic."
+      "title": "Bruchwert",
+      "input": "2,5 Meilen",
+      "output": "4,02335 km",
+      "description": "Bruchteile werden mit voller Dezimalgenauigkeit umgerechnet."
+    },
+    {
+      "title": "Lange Strecke",
+      "input": "120 Meilen",
+      "output": "193,12128 km",
+      "description": "Nützlich für längere Fahrten und Streckenvergleiche."
     }
   ],
   "faq": [
     {
-      "question": "Wie genau ist dieses Tool?",
-      "answer": "Das Ergebnis wird direkt aus der Formel oder der im Browser ausgeführten Logik dieses Tools berechnet."
+      "question": "Welchen Faktor verwendet der Umrechner?",
+      "answer": "Es gilt die Standardumrechnung: 1 Meile = 1,609344 Kilometer."
     },
     {
-      "question": "Kann ich dieses Tool auf dem Smartphone nutzen?",
-      "answer": "Ja. Die Seite funktioniert auf Desktop- und Mobilgeräten mit einem einfachen Eingabe- und Ergebnislayout."
+      "question": "Warum hat das Ergebnis Dezimalstellen?",
+      "answer": "Dezimalstellen sichern die Genauigkeit, besonders bei Bruchteilen und langen Strecken."
+    },
+    {
+      "question": "Wie lese ich sehr kleine Eingaben?",
+      "answer": "Kleine Meilenwerte ergeben kleine Kilometerwerte, oft mit mehreren Dezimalstellen. Prüfe die volle Zahl vor dem Runden."
+    },
+    {
+      "question": "Was ist der häufigste Fehler?",
+      "answer": "Häufig wird die falsche Einheit eingegeben oder ein automatisches Runden erwartet. Achte darauf, dass wirklich Meilen eingegeben werden, und runde nur bei Bedarf."
     }
   ],
   "seo": {
-    "title": "Meilen-in-Kilometer-Umrechner",
-    "description": "Wandle Meilen sofort in Kilometer um. Kostenloser Online-Meilen-zu-Kilometer-Umrechner mit sofortigen Ergebnissen.",
+    "title": "Meilen in Kilometer Umrechner",
+    "description": "Wandle Meilen in Kilometer mit exaktem Faktor, Dezimalergebnis, Beispielen und klarer Einordnung der Einheiten um.",
     "keywords": [
-      "meilen in kilometer umrechner",
-      "meilen zu kilometer"
+      "meilen in kilometer",
+      "meilen zu km",
+      "umrechner meilen kilometer"
     ]
   }
 }

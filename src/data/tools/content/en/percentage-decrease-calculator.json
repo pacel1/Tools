@@ -4,59 +4,81 @@
   "slug": "percentage-decrease-calculator",
   "h1": "Percentage Decrease Calculator",
   "title": "Percentage Decrease Calculator",
-  "shortDescription": "Calculate the final value after a percentage decrease with instant results, formula guidance and worked examples.",
-  "metaTitle": "Percentage Decrease Calculator | Find the New Value Fast",
-  "metaDescription": "Calculate a percentage decrease online and find the final value fast. Useful for discounts, price drops, budget cuts and quick percentage math.",
-  "intro": "Use this percentage decrease calculator when you need the final value after a reduction. It works well for discounts, markdowns, budget changes and any situation where you want to subtract a percentage from a starting number.",
-  "overview": "This calculator is designed for searches like percentage decrease calculator, decrease by 15 percent and percentage reduction formula. It quickly shows the new value after a decrease and helps you avoid manual mistakes when comparing prices, costs, traffic or performance changes.",
+  "shortDescription": "Find the new value after a percentage decrease by entering the starting amount and the decrease rate.",
+  "metaTitle": "Percentage Decrease Calculator",
+  "metaDescription": "Find the new value after a percentage decrease by entering the starting amount and the decrease rate.",
+  "intro": "Enter the original amount and the percentage decrease to get the reduced value immediately.",
+  "overview": "This calculator gives the final value after a percentage reduction, so you can see the exact amount left after a drop. It is useful whenever a price, budget, target, quantity, or measurement needs to be reduced by a known percentage. The result is calculated from the starting value and the decrease rate, which helps avoid mistakes when doing the math by hand.\n\nIf you are comparing two numbers, planning a markdown, checking a funding cut, or working out a smaller target after a reduction, the tool gives you the revised figure directly. It also makes it easy to test different decrease rates and see how much remains after each change.",
   "howItWorks": [
-    "Enter the original value and the percentage decrease.",
-    "The calculator subtracts the percentage from the starting number.",
-    "Review the new value and reuse the tool for additional what-if checks."
+    "Enter the original value.",
+    "Enter the percentage decrease.",
+    "Get the reduced final value and adjust the inputs if you want to compare another scenario."
   ],
   "useCases": [
-    "Calculate a sale price after a discount.",
-    "Measure a drop in revenue, traffic or conversion rate.",
-    "Check reduced budgets or forecast scenarios.",
-    "Verify spreadsheet or invoice calculations."
+    {
+      "title": "Retail markdowns",
+      "description": "Work out the new shelf price after a seasonal discount or clearance reduction."
+    },
+    {
+      "title": "Budget revisions",
+      "description": "Calculate how much remains after a department budget or project allowance is cut."
+    },
+    {
+      "title": "Performance drops",
+      "description": "Measure the new level after a decline in revenue, sign-ups, output, or other tracked figures."
+    },
+    {
+      "title": "Target adjustment",
+      "description": "Reduce a sales, savings, or production target by a fixed percentage and see the new goal."
+    }
   ],
   "examples": [
     {
-      "title": "Price reduced by 15%",
-      "input": "120 decreased by 15%",
-      "output": "102",
-      "description": "Helpful for sale pricing, quotes or promotion planning."
+      "title": "Store discount",
+      "input": "Original value: 84, decrease: 25%",
+      "output": "63",
+      "description": "A product priced at 84 becomes 63 after a 25% reduction."
     },
     {
-      "title": "Budget cut by 8%",
-      "input": "2500 decreased by 8%",
-      "output": "2300",
-      "description": "Useful for planning after reductions in budget, inventory or targets."
+      "title": "Rent reduction",
+      "input": "Original value: 1,600, decrease: 7.5%",
+      "output": "1,480",
+      "description": "A monthly amount of 1,600 falls to 1,480 after the decrease."
+    },
+    {
+      "title": "Lead count drop",
+      "input": "Original value: 2,400, decrease: 12%",
+      "output": "2,112",
+      "description": "A count of 2,400 is reduced to 2,112 when the decrease is applied."
     }
   ],
   "faq": [
     {
-      "question": "What does a percentage decrease calculator show?",
-      "answer": "It shows the final value after subtracting a percentage from the original number."
+      "question": "How do I read the result?",
+      "answer": "The result is the original value minus the chosen percentage of that original value."
     },
     {
-      "question": "Can I use it for discounts and sale prices?",
-      "answer": "Yes. It is useful for discounts, markdowns, price drops and any situation where a value goes down by a percentage."
+      "question": "Can this tool handle decimal percentages?",
+      "answer": "Yes. You can enter decimal rates such as 7.5% or 12.25% and the calculator will apply them to the starting value."
     },
     {
-      "question": "Can I use this tool on mobile?",
-      "answer": "Yes. The page works on desktop and mobile screens with a simple input and result layout."
+      "question": "Why is the result sometimes a decimal number?",
+      "answer": "If the decrease does not divide evenly into the original value, the final amount may include decimals."
+    },
+    {
+      "question": "What mistake should I avoid when using it?",
+      "answer": "Do not enter the already reduced value as the starting amount, or the result will be reduced twice."
     }
   ],
   "seo": {
-    "title": "Percentage Decrease Calculator | Find the New Value Fast",
-    "description": "Calculate a percentage decrease online and find the final value fast. Useful for discounts, price drops, budget cuts and quick percentage math.",
+    "title": "Percentage Decrease Calculator",
+    "description": "Find the new value after a percentage decrease by entering the starting amount and the decrease rate.",
     "keywords": [
       "percentage decrease calculator",
       "percentage reduction calculator",
       "decrease by percentage",
-      "calculate percentage decrease",
-      "discount percentage calculator"
+      "new value after decrease",
+      "percent reduction"
     ]
   }
 }

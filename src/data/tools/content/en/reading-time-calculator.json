@@ -4,42 +4,80 @@
   "slug": "reading-time-calculator",
   "h1": "Reading Time Calculator",
   "title": "Reading Time Calculator",
-  "shortDescription": "Estimate reading time from word count instantly with fast results, simple inputs and practical examples.",
-  "overview": "Estimate reading time from word count instantly. Use this tool to get a clear result quickly from simple input on the same page. It is useful for everyday checks, comparisons and small tasks when you need a fast online answer.",
+  "shortDescription": "Estimate how long any text will take to read based on word count.",
+  "metaTitle": "Reading Time Calculator",
+  "metaDescription": "Estimate reading time from word count and see how many minutes a text will take to finish.",
+  "intro": "Enter your text or word count to get an estimated reading time in minutes and seconds.",
+  "overview": "Use this calculator to estimate how long a text will take to read before you publish, send, or review it. It turns word count into a clear time estimate so you can judge whether a post feels too short, too long, or just right.\n\nThe result is based on an average reading pace, so it gives a practical estimate rather than an exact stopwatch value. That makes it useful for article planning, newsletter drafting, lesson prep, and checking whether a document fits a target reading length.",
   "howItWorks": [
-    "Enter the required value or text into the form.",
-    "The conversion, calculation or transformation runs instantly in the browser.",
-    "Review the result and continue with related tools if you need another step."
+    "Paste your text or enter the word count.",
+    "The tool calculates reading time using a standard reading pace.",
+    "Review the minutes and seconds, then compare against your target length."
+  ],
+  "useCases": [
+    {
+      "title": "Blog post planning",
+      "description": "Check whether a draft reads like a 3-minute post, a 5-minute article, or something longer before you publish."
+    },
+    {
+      "title": "Newsletter length check",
+      "description": "Estimate how much time subscribers will spend on a weekly update and adjust the copy if it feels too dense."
+    },
+    {
+      "title": "Course lesson notes",
+      "description": "Work out whether a lesson handout is short enough for a quick read or needs trimming for classroom use."
+    },
+    {
+      "title": "Client review documents",
+      "description": "Set expectations for reports, proposals, or summaries by showing the approximate reading time up front."
+    }
   ],
   "examples": [
     {
-      "title": "Common use case",
-      "input": "A blog draft",
-      "output": "Estimated reading time",
-      "description": "Shows a common use case with a clear input and result."
+      "title": "Short article",
+      "input": "420 words",
+      "output": "About 2 minutes",
+      "description": "A concise post, email, or note with light reading time."
     },
     {
-      "title": "Another quick example",
-      "input": "A blog draft",
-      "output": "Estimated reading time",
-      "description": "Useful for quick checks, comparisons or repeat tasks."
+      "title": "Medium blog draft",
+      "input": "1,150 words",
+      "output": "About 5 minutes",
+      "description": "A typical article length that reads in a few minutes."
+    },
+    {
+      "title": "Long feature draft",
+      "input": "2,700 words",
+      "output": "About 12 minutes",
+      "description": "A detailed piece that requires more time and attention."
     }
   ],
   "faq": [
     {
-      "question": "How accurate is this tool?",
-      "answer": "The result is based on the input you provide and the calculation or transformation shown on the page."
+      "question": "What reading speed does the calculator use?",
+      "answer": "It uses a standard average reading pace to convert words into an estimated time. The exact value can vary depending on how dense or technical the text is."
     },
     {
-      "question": "Can I use this tool on mobile?",
-      "answer": "Yes. The page works on desktop and mobile screens with a simple input and result layout."
+      "question": "Why might two texts with the same word count take different times to read?",
+      "answer": "Headings, long sentences, technical terms, lists, and code can slow reading down even when the word count is the same."
+    },
+    {
+      "question": "Should I count titles, captions, and bullet points?",
+      "answer": "If they are part of the reading experience, include them. Leaving them out can make the estimate shorter than the real reading time."
+    },
+    {
+      "question": "Is this the same as speaking time?",
+      "answer": "No. Reading time is usually different from presentation or narration time because reading pace is not the same as speaking pace."
     }
   ],
   "seo": {
     "title": "Reading Time Calculator",
-    "description": "Estimate reading time from word count instantly. Free online reading time calculator with instant results.",
+    "description": "Estimate reading time from word count and see how many minutes a text will take to finish.",
     "keywords": [
-      "reading time calculator"
+      "reading time calculator",
+      "word count reading time",
+      "estimate reading time",
+      "text reading duration"
     ]
   }
 }

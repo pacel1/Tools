@@ -4,42 +4,76 @@
   "slug": "simple-interest-calculator",
   "h1": "Simple Interest Calculator",
   "title": "Simple Interest Calculator",
-  "shortDescription": "Calculate simple interest from principal, rate and time with fast results, simple inputs and practical examples.",
-  "overview": "Calculate simple interest from principal, rate and time. Use this tool to get a clear result quickly from simple input on the same page. It is useful for everyday checks, comparisons and small tasks when you need a fast online answer.",
+  "shortDescription": "Work out simple interest, total interest, and maturity amount from principal, rate, and time.",
+  "metaTitle": "Simple Interest Calculator",
+  "metaDescription": "Work out simple interest, total interest, and maturity amount from principal, rate, and time.",
+  "intro": "Enter the principal, annual rate, and time period to see the simple interest and final amount.",
+  "overview": "Simple interest is calculated only on the original principal, not on accumulated interest. This calculator helps you see the interest earned or paid over a fixed period using a straightforward formula, so you can compare deposit offers, short-term lending terms, or classroom examples without manual arithmetic.\n\nIf you already know any two of the three inputs, the result still makes sense only when the time period matches the rate convention you are using. Annual rates are usually expressed per year; if your period is in months or days, convert it consistently before interpreting the result. The calculator returns the interest amount and the total amount at maturity, making it easier to review the full outcome in one place.",
   "howItWorks": [
-    "Enter the required value or text into the form.",
-    "The conversion, calculation or transformation runs instantly in the browser.",
-    "Review the result and continue with related tools if you need another step."
+    "Enter the principal amount, annual rate, and time period.",
+    "The calculator applies the simple interest formula: Interest = Principal × Rate × Time.",
+    "Review the interest and total amount, then adjust the inputs if you want to compare another scenario."
+  ],
+  "useCases": [
+    {
+      "title": "Fixed-term savings estimate",
+      "description": "Estimate how much interest a small deposit earns over a known number of years at a fixed annual rate."
+    },
+    {
+      "title": "Short-term private loan terms",
+      "description": "Check the interest charged on a simple, fixed-rate loan where no compounding is applied."
+    },
+    {
+      "title": "Classroom finance exercises",
+      "description": "Use the formula to verify homework problems or demonstrate how principal, rate, and time affect the result."
+    }
   ],
   "examples": [
     {
-      "title": "Common use case",
-      "input": "5000, 4%, 3 years",
-      "output": "600",
-      "description": "Shows a common use case with a clear input and result."
+      "title": "Deposit growth over 3 years",
+      "input": "Principal: 5,000; Rate: 4%; Time: 3 years",
+      "output": "Interest: 600; Total amount: 5,600",
+      "description": "A deposit held for three years at a fixed annual rate."
     },
     {
-      "title": "Another quick example",
-      "input": "5000, 4%, 3 years",
-      "output": "600",
-      "description": "Useful for quick checks, comparisons or repeat tasks."
+      "title": "One-year borrowing cost",
+      "input": "Principal: 12,000; Rate: 7.5%; Time: 1 year",
+      "output": "Interest: 900; Total amount: 12,900",
+      "description": "Shows the cost of a short-term loan without compounding."
+    },
+    {
+      "title": "Six-month period",
+      "input": "Principal: 8,000; Rate: 6%; Time: 0.5 years",
+      "output": "Interest: 240; Total amount: 8,240",
+      "description": "A half-year example where the time value is entered in years."
     }
   ],
   "faq": [
     {
-      "question": "How accurate is this tool?",
-      "answer": "The result is based on the input you provide and the calculation or transformation shown on the page."
+      "question": "Does this calculator include compound interest?",
+      "answer": "No. It calculates only simple interest, which uses the original principal for the entire period. If interest is added to the balance and then earns interest again, you need a compound interest calculator instead."
     },
     {
-      "question": "Can I use this tool on mobile?",
-      "answer": "Yes. The page works on desktop and mobile screens with a simple input and result layout."
+      "question": "What should I enter for time if the period is not a full year?",
+      "answer": "Use a time value consistent with the rate. For an annual rate, months can be converted into fractions of a year, such as 6 months = 0.5 years."
+    },
+    {
+      "question": "Why do I get a different result from a bank statement?",
+      "answer": "Banks may round differently, use day-count conventions, or apply compound interest. If the product you are checking uses those rules, this calculator will not match it exactly."
+    },
+    {
+      "question": "Can I use monthly or daily rates?",
+      "answer": "Yes, but the rate and time must use the same basis. For example, a monthly rate should be paired with months, and a daily rate with days."
     }
   ],
   "seo": {
     "title": "Simple Interest Calculator",
-    "description": "Calculate simple interest from principal, rate and time. Free online simple interest calculator with instant results.",
+    "description": "Calculate simple interest, total interest, and maturity amount from principal, rate, and time with a clear formula.",
     "keywords": [
-      "simple interest calculator"
+      "simple interest calculator",
+      "interest calculator",
+      "principal rate time",
+      "simple interest formula"
     ]
   }
 }

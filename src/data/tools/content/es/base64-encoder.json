@@ -4,44 +4,94 @@
   "slug": "codificador-base64",
   "h1": "Codificador Base64",
   "title": "Codificador Base64",
-  "shortDescription": "Convierte texto a Base64 al instante con resultados rápidos, entradas simples y ejemplos prácticos.",
-  "overview": "Convierte texto a Base64 al instante. Esta página ofrece una respuesta rápida con una herramienta útil y un flujo de resultado sencillo. Está pensada para usuarios que buscan una solución gratuita en línea, resultados rápidos en el navegador y contenido práctico de utilidad para búsquedas de cola larga.",
+  "shortDescription": "Convierte texto a Base64 para cabeceras, payloads de API, pruebas y notas técnicas.",
+  "metaTitle": "Codificador Base64 de texto",
+  "metaDescription": "Codifica texto a Base64 en el navegador para cabeceras, payloads de API, fixtures y notas técnicas.",
+  "intro": "Pega un texto y copia la cadena Base64 en una cabecera, un body de petición, un fixture o un script.",
+  "overview": "Base64 convierte bytes en caracteres ASCII, lo que permite mover texto por sistemas que esperan datos representados como caracteres. Se usa mucho al preparar valores de Authorization, codificar fragmentos pequeños de peticiones, guardar ejemplos en fixtures o comparar salidas entre herramientas.\n\nEsta herramienta está pensada para texto, así que encaja mejor con cadenas cortas o medianas que con archivos o binarios. El resultado se puede revertir al texto original; por eso Base64 no sirve para proteger secretos ni debe considerarse una capa de seguridad.",
   "howItWorks": [
-    "Introduce el texto o valor requerido en el formulario.",
-    "La conversión, cálculo o transformación se ejecuta al instante en el navegador.",
-    "Revisa el resultado y continúa con herramientas relacionadas si necesitas otro paso."
+    "Escribe el texto exacto que quieres codificar.",
+    "El navegador convierte los bytes UTF-8 de ese texto en una cadena Base64.",
+    "Copia el resultado en tu cliente API, cabecera, documentación o caso de prueba."
+  ],
+  "useCases": [
+    {
+      "title": "Preparar Authorization",
+      "description": "Codifica un par user:password o client:secret antes de usarlo en una cabecera Basic Authorization."
+    },
+    {
+      "title": "Ejemplos para webhooks",
+      "description": "Representa pequeños fragmentos de texto en Base64 cuando el sistema receptor espera valores codificados."
+    },
+    {
+      "title": "Valores para pruebas y mocks",
+      "description": "Genera cadenas codificadas estables para snapshots, mocks, respuestas de ejemplo y fixtures de integración."
+    },
+    {
+      "title": "Notas internas y tickets",
+      "description": "Incluye un ejemplo reproducible de texto codificado en documentación técnica o en un ticket del equipo."
+    }
   ],
   "examples": [
     {
-      "title": "Ejemplo 1",
+      "title": "Frase legible",
       "input": "hello world",
       "output": "aGVsbG8gd29ybGQ=",
-      "description": "Un ejemplo realista de codificador Base64 para una búsqueda cotidiana."
+      "description": "Un ejemplo simple para comprobar si la codificación funciona como se espera."
     },
     {
-      "title": "Ejemplo 2",
-      "input": "hello world",
-      "output": "aGVsbG8gd29ybGQ=",
-      "description": "Otro caso de uso práctico para tráfico orgánico de cola larga."
+      "title": "Par con estilo de credenciales",
+      "input": "api:test-key",
+      "output": "YXBpOnRlc3Qta2V5",
+      "description": "Muestra Base64 de un valor separado por dos puntos, típico al preparar pruebas de Basic Auth."
+    },
+    {
+      "title": "JSON breve",
+      "input": "{\"user\":\"ana\",\"role\":\"admin\"}",
+      "output": "eyJ1c2VyIjoiYW5hIiwicm9sZSI6ImFkbWluIn0=",
+      "description": "Útil cuando un fragmento JSON pequeño debe mostrarse como texto codificado en una prueba o nota."
+    },
+    {
+      "title": "Texto con acentos",
+      "input": "Canción número uno",
+      "output": "Q2Fuw7Nuw61hIG7Dum1lcm8gb25l",
+      "description": "Demuestra que los caracteres acentuados se codifican desde sus bytes UTF-8 sin perderse."
     }
   ],
   "faq": [
     {
-      "question": "¿Qué precisión tiene esta herramienta?",
-      "answer": "El resultado se calcula directamente a partir de la fórmula o la lógica en el navegador que usa esta herramienta."
+      "question": "¿Base64 oculta el contenido del texto?",
+      "answer": "No. Base64 solo es una codificación. Cualquiera que tenga la cadena puede decodificarla y recuperar el texto original."
     },
     {
-      "question": "¿Puedo usar esta herramienta en el móvil?",
-      "answer": "Sí. La página funciona en pantallas de escritorio y móviles con un diseño sencillo de entrada y resultado."
+      "question": "¿Puedo codificar acentos, emojis y otros alfabetos?",
+      "answer": "Sí. La herramienta codifica el texto como bytes UTF-8, así que admite caracteres Unicode, incluidos emojis y letras no latinas."
+    },
+    {
+      "question": "¿Por qué el resultado termina a veces en =?",
+      "answer": "Es el relleno estándar de Base64 para muchos valores de entrada. Sirve para ajustar la longitud al bloque esperado."
+    },
+    {
+      "question": "¿Puedo pegar el resultado directamente en una cabecera HTTP?",
+      "answer": "Sí, si el servidor espera Base64. En Basic Auth, el valor codificado suele ir después del prefijo Basic."
+    },
+    {
+      "question": "¿Qué errores suelen generar un resultado incorrecto?",
+      "answer": "Los fallos más comunes son añadir espacios, cambiar el texto original o codificar dos veces una cadena ya codificada. También falla si el sistema esperaba binario y no texto."
+    },
+    {
+      "question": "¿Sirve para archivos grandes?",
+      "answer": "No. Está pensado para texto. Los archivos grandes y datos binarios se gestionan mejor con herramientas diseñadas para trabajar con archivos."
     }
   ],
   "seo": {
     "title": "Codificador Base64",
-    "description": "Convierte texto a Base64 al instante. Codificador Base64 online gratis con resultados inmediatos.",
+    "description": "Codifica texto a Base64 para cabeceras, payloads de API, fixtures y ejemplos técnicos.",
     "keywords": [
       "codificador base64",
-      "codificación base64",
-      "herramienta para desarrolladores"
+      "codificar texto a base64",
+      "basic auth base64",
+      "base64 para api"
     ]
   }
 }

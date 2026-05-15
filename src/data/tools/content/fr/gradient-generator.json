@@ -4,157 +4,86 @@
   "slug": "generateur-de-degrades-css",
   "h1": "Générateur de dégradés CSS",
   "title": "Générateur de dégradés CSS",
-  "shortDescription": "Créez des dégradés CSS propres avec aperçu en direct, réglage de l’angle et code prêt à copier.",
-  "metaTitle": "Générateur de dégradés CSS - Créer des dégradés linéaires et radiaux",
-  "metaDescription": "Générez des dégradés CSS en ligne avec aperçu en direct, contrôle de l’angle, palettes de couleurs et code CSS prêt à copier.",
-  "intro": "Créez des dégradés CSS modernes en quelques secondes. Ajustez les couleurs, l’angle et le type, visualisez le résultat en direct, puis copiez un code CSS propre pour votre site ou interface.",
-  "overview": "Ce générateur de dégradés CSS vous aide à créer rapidement des dégradés linéaires et radiaux, sans écrire le code à la main. Il est utile pour les arrière-plans, boutons, sections hero, cartes et accents d’interface. Choisissez vos couleurs, ajustez la direction et obtenez instantanément un CSS prêt à l’emploi.",
+  "shortDescription": "Créez des dégradés CSS précis avec aperçu en direct, réglage de l’angle et code prêt à copier.",
+  "metaTitle": "Générateur de dégradés CSS",
+  "metaDescription": "Créez des dégradés CSS linéaires et radiaux avec aperçu en direct, réglage de l’angle et code prêt à copier.",
+  "intro": "Générez un dégradé CSS en quelques secondes, visualisez-le en direct et copiez le code exact.",
+  "overview": "Cet outil transforme un choix de couleurs en dégradé CSS exploitable sans tâtonner à la main. Passez du mode linéaire au mode radial, ajustez l’angle ou le point focal, et voyez chaque modification apparaître immédiatement dans l’aperçu.\n\nIl est utile dès qu’un fond doit avoir une vraie intention visuelle : sections hero, boutons, cartes, superpositions, badges et accents d’interface. Le résultat est un CSS propre, prêt à coller dans une feuille de style, un composant ou un système de variables.",
   "howItWorks": [
-    "Choisissez une ou plusieurs couleurs pour le dégradé.",
+    "Choisissez les couleurs du dégradé.",
     "Sélectionnez le mode linéaire ou radial.",
-    "Ajustez l’angle, la position ou l’étendue si nécessaire.",
-    "Suivez l’aperçu en direct pendant vos réglages.",
-    "Copiez le CSS généré et collez-le dans votre projet."
+    "Réglez l’angle, la position ou l’étendue.",
+    "Vérifiez l’aperçu en direct.",
+    "Copiez le code CSS dans votre projet."
   ],
   "useCases": [
-    "Créer des arrière-plans de site avec des transitions de couleurs fluides.",
-    "Générer des dégradés pour boutons, bannières et sections hero.",
-    "Tester des combinaisons de couleurs avant de les intégrer à un design system.",
-    "Produire rapidement des extraits CSS pour maquettes et prototypes.",
-    "Créer des effets lumineux radiaux pour cartes, panneaux et badges."
+    {
+      "title": "Fond de hero",
+      "description": "Créez un dégradé fort pour la partie haute de la page, au service du titre et de la marque."
+    },
+    {
+      "title": "Bouton principal",
+      "description": "Générez un dégradé à deux couleurs pour les appels à l’action et les éléments interactifs."
+    },
+    {
+      "title": "Halo de carte",
+      "description": "Ajoutez une lueur radiale douce derrière des cartes tarifaires, des blocs fonctionnalités ou des panneaux."
+    },
+    {
+      "title": "Test de palette",
+      "description": "Comparez plusieurs combinaisons avant de les intégrer à une charte ou à un design system."
+    },
+    {
+      "title": "Superposition sur image",
+      "description": "Construisez une couche de dégradé qui renforce le contraste du texte sur bannières et visuels."
+    }
   ],
   "examples": [
     {
-      "title": "Arrière-plan linéaire",
-      "input": "#ff7a18 à #af002d",
-      "output": "background: linear-gradient(135deg, #ff7a18, #af002d);",
-      "description": "Un dégradé diagonal simple pour des sections modernes."
+      "title": "Fond diagonal de marque",
+      "input": "#0f172a → #2563eb à 135°",
+      "output": "background: linear-gradient(135deg, #0f172a, #2563eb);",
+      "description": "Un dégradé diagonal du sombre vers le lumineux pour les sections principales."
     },
     {
-      "title": "Spotlight radial",
-      "input": "#ffffff à #dbeafe",
-      "output": "background: radial-gradient(circle, #ffffff 0%, #dbeafe 100%);",
-      "description": "Un dégradé radial doux pour des mises en valeur claires."
+      "title": "Lueur radiale douce",
+      "input": "#fff7ed → #fdba74 centré",
+      "output": "background: radial-gradient(circle at center, #fff7ed 0%, #fdba74 100%);",
+      "description": "Une mise en lumière chaude pour cartes et panneaux."
+    },
+    {
+      "title": "En-tête à trois stops",
+      "input": "#111827 → #4f46e5 → #c084fc",
+      "output": "background: linear-gradient(120deg, #111827 0%, #4f46e5 52%, #c084fc 100%);",
+      "description": "Une transition plus riche pour les en-têtes et les blocs hero."
     }
   ],
   "faq": [
     {
-      "question": "Qu’est-ce qu’un générateur de dégradés CSS ?",
-      "answer": "C’est un outil qui crée du code CSS de dégradé à partir de couleurs et de réglages choisis, afin de l’utiliser directement dans votre projet."
+      "question": "Puis-je contrôler l’endroit où commence le dégradé ?",
+      "answer": "Oui. En mode linéaire, vous définissez l’angle ; en mode radial, vous pouvez aussi déplacer le centre et la zone de diffusion."
     },
     {
-      "question": "Puis-je créer des dégradés linéaires et radiaux ?",
-      "answer": "Oui. Vous pouvez générer des dégradés linéaires et radiaux, puis copier le CSS immédiatement."
+      "question": "Pourquoi l’aperçu peut-il différer dans mon projet ?",
+      "answer": "La taille de l’élément, la couleur de fond derrière lui et le rendu du navigateur peuvent légèrement modifier le résultat perçu."
     },
     {
-      "question": "L’outil affiche-t-il un aperçu en direct ?",
-      "answer": "Oui. L’aperçu se met à jour lorsque vous modifiez les couleurs, l’angle et le type de dégradé."
+      "question": "Combien de points de couleur faut-il utiliser ?",
+      "answer": "Deux suffisent pour un fond simple ; trois ou plus donnent des transitions plus riches. Trop de stops peuvent toutefois alourdir le rendu."
     },
     {
-      "question": "Le code généré est-il prêt pour la production ?",
-      "answer": "Oui. L’outil produit un CSS propre que vous pouvez coller dans votre feuille de style ou composant."
+      "question": "Puis-je coller le résultat dans du CSS classique et des styles de composants ?",
+      "answer": "Oui. La déclaration générée peut être utilisée dans une feuille de style, un bloc inline ou la définition d’un composant."
     }
   ],
-  "uiLabels": {
-    "copy": "Copier",
-    "copied": "Copié",
-    "input": "Entrée",
-    "output": "Sortie",
-    "placeholder": "Saisissez une couleur ou choisissez un préréglage",
-    "indent": "Retrait",
-    "removeComments": "Supprimer les commentaires",
-    "preview": "Aperçu",
-    "source": "Source",
-    "sanitizedHtml": "HTML nettoyé",
-    "plainText": "Texte brut",
-    "summary": "Résumé",
-    "total": "Total",
-    "links": "Liens",
-    "images": "Images",
-    "errors": "Erreurs",
-    "warnings": "Avertissements",
-    "valid": "Valide",
-    "invalid": "Invalide",
-    "href": "Href",
-    "text": "Texte",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Largeur",
-    "height": "Hauteur",
-    "empty": "Vide",
-    "outputReady": "Résultat prêt",
-    "cleanedHtml": "HTML nettoyé",
-    "formattedHtml": "HTML formaté",
-    "minifiedHtml": "HTML minifié",
-    "markdown": "Markdown",
-    "extractedImages": "Images extraites",
-    "extractedLinks": "Liens extraits",
-    "validationSummary": "Résumé de validation",
-    "prettyHtml": "HTML lisible",
-    "encodedText": "Texte encodé",
-    "file": "Fichier",
-    "size": "Taille",
-    "format": "Format",
-    "quality": "Qualité",
-    "colorOne": "Couleur 1",
-    "colorTwo": "Couleur 2",
-    "background": "Arrière-plan",
-    "foreground": "Premier plan",
-    "angle": "Angle",
-    "margin": "Marge",
-    "level": "Niveau",
-    "gradientType": "Type de dégradé",
-    "linear": "Linéaire",
-    "radial": "Radial",
-    "blur": "Flou",
-    "spread": "Étendue",
-    "offsetX": "Décalage X",
-    "offsetY": "Décalage Y",
-    "opacity": "Opacité",
-    "inset": "Intérieur",
-    "cssCode": "Code CSS",
-    "snippet": "Extrait",
-    "download": "Télécharger",
-    "downloadSvg": "Télécharger SVG",
-    "downloadPng": "Télécharger PNG",
-    "downloadAll": "Tout télécharger",
-    "upload": "Importer",
-    "title": "Titre",
-    "description": "Description",
-    "canonicalUrl": "URL canonique",
-    "siteName": "Nom du site",
-    "ogImage": "Image OG",
-    "clear": "Effacer",
-    "generatedQr": "Apercu du code QR",
-    "placeholderImage": "Apercu de l image",
-    "faviconSet": "Jeu de favicons",
-    "keepAspectRatio": "Conserver le ratio",
-    "cropX": "Recadrage X",
-    "cropY": "Recadrage Y",
-    "cropWidth": "Largeur du recadrage",
-    "cropHeight": "Hauteur du recadrage",
-    "originalSize": "Taille d’origine",
-    "outputSize": "Taille de sortie",
-    "savedSize": "Taille économisée",
-    "result": "Résultat",
-    "base64": "Base64",
-    "mimeType": "Type MIME",
-    "resizedImage": "Image redimensionnée",
-    "compressedImage": "Image compressée",
-    "croppedImage": "Image recadrée",
-    "convertedImage": "Image convertie",
-    "decodedImage": "Image décodée",
-    "imagePreview": "Aperçu de l’image"
-  },
   "seo": {
-    "title": "Générateur de dégradés CSS - Créer des dégradés linéaires et radiaux",
-    "description": "Générez des dégradés CSS en ligne avec aperçu en direct, contrôle de l’angle, palettes de couleurs et code CSS prêt à copier.",
+    "title": "Générateur de dégradés CSS",
+    "description": "Créez des dégradés CSS linéaires et radiaux avec aperçu en direct, réglage de l’angle et code prêt à copier.",
     "keywords": [
       "générateur de dégradés css",
-      "générateur de dégradé linéaire",
-      "générateur de dégradé radial",
-      "dégradé css",
+      "dégradé linéaire css",
+      "dégradé radial css",
+      "fond dégradé css",
       "code css dégradé"
     ]
   }

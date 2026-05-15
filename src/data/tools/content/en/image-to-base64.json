@@ -4,157 +4,86 @@
   "slug": "image-to-base64",
   "h1": "Image to Base64",
   "title": "Image to Base64 Converter",
-  "shortDescription": "Convert image files to Base64 and data URLs instantly in your browser.",
-  "metaTitle": "Image to Base64 Converter | Free Browser Tool",
-  "metaDescription": "Convert images to Base64 or data URLs instantly in your browser. Fast, private, and easy to copy for code, email, and web use.",
-  "intro": "Turn an image into Base64 or a data URL directly in your browser. No upload to a server, no waiting, and no extra setup.",
-  "overview": "This tool encodes image data into a Base64 string for quick copy-paste use in HTML, CSS, JSON, and other development workflows. It is useful when you need a data URL for embedding small images, sharing assets, or testing image delivery without a separate file.",
+  "shortDescription": "Convert an image file into Base64 text or a data URL in your browser.",
+  "metaTitle": "Image to Base64 Converter",
+  "metaDescription": "Convert image files into Base64 text or data URLs directly in your browser for code snippets, emails, and embedded assets.",
+  "intro": "Paste or upload an image, and this tool returns Base64 text or a full data URL right in your browser.",
+  "overview": "This tool turns image binary data into a Base64 string so you can paste it into HTML, CSS, JSON, emails, or testing fixtures without handling a separate file. It is especially useful when an image must travel as plain text, for example inside a config, a template, or a database field.\n\nYou can work with common image formats as long as the browser can read the source. The output is plain Base64, and in many cases you can also keep the MIME type prefix to form a usable data URL such as data:image/png;base64,... .",
   "howItWorks": [
-    "Paste or load the image data URL.",
-    "The tool reads the image content locally in your browser.",
-    "It converts the image to Base64 output instantly.",
-    "Copy the result and use it in your project."
+    "Upload an image or paste an image data URL.",
+    "The browser reads the file locally.",
+    "The image bytes are encoded into Base64.",
+    "Copy the Base64 string or the data URL and place it where needed."
   ],
   "useCases": [
-    "Embed small images inline in HTML or CSS.",
-    "Generate data URLs for email templates.",
-    "Prepare image strings for JSON or API payloads.",
-    "Test Base64 image handling in frontend apps.",
-    "Avoid extra file requests for tiny assets."
+    {
+      "title": "Inline logo in an email header",
+      "description": "Convert a small SVG or PNG logo into text so it can live inside a newsletter template without external hosting."
+    },
+    {
+      "title": "Store an image inside JSON",
+      "description": "Prepare a JSON payload that includes a tiny icon or thumbnail as a Base64 string for an API test or local fixture."
+    },
+    {
+      "title": "Embed a favicon in a demo page",
+      "description": "Turn a compact favicon into a data URL for a standalone prototype where separate asset files are inconvenient."
+    },
+    {
+      "title": "Send a preview image through a text-only channel",
+      "description": "Copy the encoded image into a message, note, or ticket when the receiver needs the exact image data in text form."
+    }
   ],
   "examples": [
     {
-      "title": "Embed in HTML",
-      "input": "data:image/png;base64,...",
-      "output": "iVBORw0KGgoAAA...",
-      "description": "Use the Base64 string inside an img src or CSS background."
+      "title": "PNG logo for HTML",
+      "input": "image: 48×48 PNG, dark logo on transparent background",
+      "output": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABX...",
+      "description": "Use the full data URL in an img tag or CSS background-image."
     },
     {
-      "title": "Email template asset",
-      "input": "data:image/jpeg;base64,...",
-      "output": "/9j/4AAQSkZJRgABAQ...",
-      "description": "Store a compact image as text for templated emails."
+      "title": "JPEG product thumbnail",
+      "input": "image: 320×240 JPEG, outdoor product shot",
+      "output": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUTEhIVFhUXFxgYGBgYGBcYFxgXFxgYGBgYFxgYHSggGBolGxgXITEhJSkrLi4uGB8zODMtNygtLisBCgoKDg0OGhAQGy0lHyUtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLv/AABEIAJ8BPgMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAEBQADBgcBAv/EADsQAAIBAgQDBgQEBgIDAAAAAAECAwQRAAUSITFBBhMiUWEUMnGBkaGxwdHwFCNS8RQjYnKC0eEV/8QAGgEBAAMBAQEAAAAAAAAAAAAAAAECAwQFBv/EACIRAQEAAgICAQUAAAAAAAAAAAABAhEDIRIxBEFRImETcf/aAAwDAQACEQMRAD8A9z2...",
+      "description": "Keep the result as a raw Base64 string when the calling system adds its own MIME prefix."
+    },
+    {
+      "title": "Small SVG icon for a prototype",
+      "input": "image: 24×24 SVG icon exported as image data URL",
+      "output": "PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+...",
+      "description": "Useful when you need a text-safe version of a tiny monochrome icon."
     }
   ],
   "faq": [
     {
-      "question": "Is my image uploaded to a server?",
-      "answer": "No. Conversion happens locally in your browser for faster and more private processing."
+      "question": "Do I need to keep the MIME type prefix?",
+      "answer": "Only if you want a complete data URL. If you just need the encoded bytes, copy the Base64 part by itself."
     },
     {
-      "question": "What format does the tool output?",
-      "answer": "It outputs Base64 text that can be used as part of a data URL or embedded in code."
+      "question": "Why does the output look longer than the original file name?",
+      "answer": "Base64 expands binary data into text, so the string is usually larger than the source image file."
     },
     {
-      "question": "Can I convert any image type?",
-      "answer": "Most common image formats are supported as long as the browser can read the source data URL."
+      "question": "Can I paste any image data URL into the input?",
+      "answer": "Yes, as long as it is a valid image data URL and your browser can decode the embedded image data."
     },
     {
-      "question": "Why use Base64 for images?",
-      "answer": "Base64 is convenient for inline embedding, small assets, and situations where a plain text image representation is needed."
+      "question": "What happens if the image is very large?",
+      "answer": "The tool still encodes it, but the resulting text can become unwieldy and hard to embed in code or messages."
+    },
+    {
+      "question": "Why does my output not start with data:image/... ?",
+      "answer": "That usually means you copied only the Base64 body. Add the MIME prefix yourself if the target expects a full data URL."
     }
   ],
-  "uiLabels": {
-    "copy": "Copy",
-    "copied": "Copied",
-    "input": "Input",
-    "output": "Output",
-    "placeholder": "Paste an image data URL here",
-    "indent": "Indent",
-    "removeComments": "Remove comments",
-    "preview": "Preview",
-    "source": "Source",
-    "sanitizedHtml": "Sanitized HTML",
-    "plainText": "Plain text",
-    "summary": "Summary",
-    "total": "Total",
-    "links": "Links",
-    "images": "Images",
-    "errors": "Errors",
-    "warnings": "Warnings",
-    "valid": "Valid",
-    "invalid": "Invalid",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Width",
-    "height": "Height",
-    "empty": "Empty",
-    "outputReady": "Output ready",
-    "cleanedHtml": "Cleaned HTML",
-    "formattedHtml": "Formatted HTML",
-    "minifiedHtml": "Minified HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extracted images",
-    "extractedLinks": "Extracted links",
-    "validationSummary": "Validation summary",
-    "prettyHtml": "Pretty HTML",
-    "encodedText": "Encoded text",
-    "file": "File",
-    "size": "Size",
-    "format": "Format",
-    "quality": "Quality",
-    "colorOne": "Color 1",
-    "colorTwo": "Color 2",
-    "background": "Background",
-    "foreground": "Foreground",
-    "angle": "Angle",
-    "margin": "Margin",
-    "level": "Level",
-    "gradientType": "Gradient type",
-    "linear": "Linear",
-    "radial": "Radial",
-    "blur": "Blur",
-    "spread": "Spread",
-    "offsetX": "Offset X",
-    "offsetY": "Offset Y",
-    "opacity": "Opacity",
-    "inset": "Inset",
-    "cssCode": "CSS code",
-    "snippet": "Snippet",
-    "download": "Download",
-    "downloadSvg": "Download SVG",
-    "downloadPng": "Download PNG",
-    "downloadAll": "Download all",
-    "upload": "Upload",
-    "title": "Title",
-    "description": "Description",
-    "canonicalUrl": "Canonical URL",
-    "siteName": "Site name",
-    "ogImage": "OG image",
-    "clear": "Clear",
-    "generatedQr": "QR code preview",
-    "placeholderImage": "Preview image",
-    "faviconSet": "Favicon set",
-    "keepAspectRatio": "Keep aspect ratio",
-    "cropX": "Crop X",
-    "cropY": "Crop Y",
-    "cropWidth": "Crop width",
-    "cropHeight": "Crop height",
-    "originalSize": "Original size",
-    "outputSize": "Output size",
-    "savedSize": "Saved size",
-    "result": "Result",
-    "base64": "Base64",
-    "mimeType": "MIME type",
-    "resizedImage": "Resized image",
-    "compressedImage": "Compressed image",
-    "croppedImage": "Cropped image",
-    "convertedImage": "Converted image",
-    "decodedImage": "Decoded image",
-    "imagePreview": "Image preview"
-  },
   "seo": {
     "title": "Image to Base64 Converter",
-    "description": "Convert images to Base64 or data URLs instantly in your browser. Private, fast, and easy to copy for development and sharing.",
+    "description": "Convert image files into Base64 text or data URLs directly in your browser for code snippets, emails, and embedded assets.",
     "keywords": [
       "image to base64",
       "base64 image converter",
-      "data url converter",
-      "convert image to base64",
-      "online base64 encoder"
+      "data url image",
+      "encode image to base64",
+      "image data url"
     ]
   }
 }

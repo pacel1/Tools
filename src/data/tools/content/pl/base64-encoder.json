@@ -4,44 +4,94 @@
   "slug": "enkoder-base64",
   "h1": "Enkoder Base64",
   "title": "Enkoder Base64",
-  "shortDescription": "Zakoduj tekst do Base64 natychmiast — szybko, wygodnie i z praktycznymi przykładami.",
-  "overview": "Zakoduj tekst do Base64 natychmiast. Ta strona zapewnia szybki wynik dzięki prostemu narzędziu online i przejrzystemu przepływowi działania. Treść jest przygotowana dla osób szukających darmowego rozwiązania online, szybkich rezultatów w przeglądarce oraz praktycznych informacji dopasowanych do dłuższych zapytań.",
+  "shortDescription": "Zamień tekst na Base64 do nagłówków, payloadów API, testów i notatek technicznych.",
+  "metaTitle": "Enkoder Base64 do tekstu",
+  "metaDescription": "Zakoduj tekst do Base64 w przeglądarce do nagłówków, payloadów API, fixture i notatek technicznych.",
+  "intro": "Wklej tekst i skopiuj wynik Base64 do nagłówka, body żądania, fixture albo skryptu.",
+  "overview": "Base64 zamienia bajty na znaki ASCII, dzięki czemu tekst może przejść przez systemy oczekujące danych zapisanych znakami. Używa się go przy przygotowaniu wartości Authorization, kodowaniu małych fragmentów żądań, zapisywaniu przykładów w fixture oraz porównywaniu wyników między narzędziami.\n\nTo narzędzie jest przeznaczone do tekstu, więc najlepiej sprawdza się przy krótkich i średnich ciągach, a nie przy plikach czy danych binarnych. Wynik można odtworzyć do postaci wejściowej, dlatego Base64 nie służy do ochrony sekretów i nie powinno się go traktować jak warstwy zabezpieczeń.",
   "howItWorks": [
-    "Wpisz wymagany tekst lub wartość do formularza.",
-    "Konwersja, obliczenie lub transformacja odbywa się natychmiast w przeglądarce.",
-    "Sprawdź wynik i przejdź do powiązanych narzędzi, jeśli potrzebujesz kolejnego kroku."
+    "Wpisz dokładny tekst, który chcesz zakodować.",
+    "Przeglądarka zamienia bajty UTF-8 tego tekstu na ciąg Base64.",
+    "Skopiuj wynik do klienta API, nagłówka, dokumentacji lub testu."
+  ],
+  "useCases": [
+    {
+      "title": "Przygotowanie Authorization",
+      "description": "Zakoduj parę user:password albo client:secret przed użyciem jej w nagłówku Basic Authorization."
+    },
+    {
+      "title": "Przykłady danych webhook",
+      "description": "Przedstaw małe fragmenty tekstu w Base64, gdy system odbierający oczekuje wartości zakodowanych."
+    },
+    {
+      "title": "Wartości do testów i mocków",
+      "description": "Utwórz stałe zakodowane ciągi do snapshotów, mocków, odpowiedzi przykładowych i fixture integracyjnych."
+    },
+    {
+      "title": "Notatki wewnętrzne i zgłoszenia",
+      "description": "Dodaj odtwarzalny przykład zakodowanego tekstu w dokumentacji technicznej lub w zgłoszeniu do zespołu."
+    }
   ],
   "examples": [
     {
-      "title": "Przykład 1",
+      "title": "Czytelna fraza",
       "input": "hello world",
       "output": "aGVsbG8gd29ybGQ=",
-      "description": "Realistyczny przykład enkodera Base64 dla codziennego zapytania."
+      "description": "Prosty przykład, który ułatwia sprawdzenie, czy kodowanie działa zgodnie z oczekiwaniem."
     },
     {
-      "title": "Przykład 2",
-      "input": "hello world",
-      "output": "aGVsbG8gd29ybGQ=",
-      "description": "Kolejny praktyczny przypadek użycia pod ruch organiczny z długiego ogona."
+      "title": "Para w stylu danych logowania",
+      "input": "api:test-key",
+      "output": "YXBpOnRlc3Qta2V5",
+      "description": "Pokazuje Base64 dla wartości rozdzielonej dwukropkiem, często przygotowywanej do testów Basic Auth."
+    },
+    {
+      "title": "Krótki JSON",
+      "input": "{\"user\":\"ana\",\"role\":\"admin\"}",
+      "output": "eyJ1c2VyIjoiYW5hIiwicm9sZSI6ImFkbWluIn0=",
+      "description": "Przydatne, gdy mały fragment JSON trzeba pokazać jako zakodowany tekst w teście albo w notatce."
+    },
+    {
+      "title": "Tekst z polskimi znakami",
+      "input": "Zażółć gęślą jaźń",
+      "output": "WmHDv8WCxIvEiCBnxJlxbMOaIGphxJpYwQ==",
+      "description": "Pokazuje, że znaki diakrytyczne są kodowane z bajtów UTF-8, a nie usuwane."
     }
   ],
   "faq": [
     {
-      "question": "Jak dokładne jest to narzędzie?",
-      "answer": "Wynik jest obliczany bezpośrednio na podstawie wzoru lub logiki po stronie przeglądarki używanej przez to narzędzie."
+      "question": "Czy Base64 ukrywa treść tekstu?",
+      "answer": "Nie. To tylko format kodowania. Każdy, kto ma wynik, może go łatwo odkodować do oryginalnego tekstu."
     },
     {
-      "question": "Czy mogę używać tego narzędzia na telefonie?",
-      "answer": "Tak. Strona działa na ekranach komputerów i urządzeń mobilnych, oferując prosty układ wejścia i wyniku."
+      "question": "Czy można kodować znaki specjalne, emoji i różne alfabety?",
+      "answer": "Tak. Narzędzie koduje tekst jako bajty UTF-8, więc obsługuje znaki Unicode, w tym emoji i litery spoza alfabetu łacińskiego."
+    },
+    {
+      "question": "Dlaczego wynik czasem kończy się znakiem =?",
+      "answer": "To znak wypełnienia wymagany przez standard Base64 dla wielu danych wejściowych. Pomaga wyrównać długość wyjścia."
+    },
+    {
+      "question": "Czy wynik mogę wkleić do nagłówka HTTP?",
+      "answer": "Tak, jeśli serwer oczekuje Base64. W Basic Auth zakodowana wartość zwykle występuje po prefiksie Basic."
+    },
+    {
+      "question": "Jakie błędy najczęściej psują wynik?",
+      "answer": "Najczęściej problemem są dodatkowe spacje, zmieniony tekst wejściowy albo ponowne kodowanie już zakodowanego ciągu. Błąd pojawi się też wtedy, gdy system oczekuje danych binarnych, a nie tekstu."
+    },
+    {
+      "question": "Czy to narzędzie nadaje się do dużych plików?",
+      "answer": "Nie. Jest przeznaczone do kodowania tekstu. Duże pliki i dane binarne lepiej obsługiwać narzędziami do pracy z plikami."
     }
   ],
   "seo": {
     "title": "Enkoder Base64",
-    "description": "Koduj tekst do Base64 natychmiast. Darmowy enkoder Base64 online z natychmiastowym wynikiem.",
+    "description": "Zakoduj tekst do Base64 do nagłówków, payloadów API, fixture i przykładów technicznych.",
     "keywords": [
       "enkoder base64",
-      "kodowanie base64",
-      "narzędzie dla deweloperów"
+      "kodowanie tekstu do base64",
+      "basic auth base64",
+      "base64 do api"
     ]
   }
 }

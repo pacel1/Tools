@@ -4,44 +4,85 @@
   "slug": "calculateur-de-pourcentage",
   "h1": "Calculateur de Pourcentage",
   "title": "Calculateur de Pourcentage",
-  "shortDescription": "Calculez quel pourcentage un nombre représente d’un autre avec des résultats rapides, des saisies simples et des exemples pratiques.",
-  "overview": "Calculez quel pourcentage un nombre représente d’un autre. Cette page fournit une réponse rapide grâce à un outil pratique et à un parcours de résultat simple. Elle s’adresse aux utilisateurs qui recherchent une réponse gratuite en ligne, des résultats instantanés dans le navigateur et un contenu pratique de longue traîne.",
+  "shortDescription": "Calculez des pourcentages, des parts et des variations à partir de nombres connus.",
+  "metaTitle": "Calculateur de Pourcentage",
+  "metaDescription": "Calculez des pourcentages, des parts et des variations pour les prix, notes, budgets et totaux avec des résultats clairs.",
+  "intro": "Saisissez deux nombres pour trouver un pourcentage d’une valeur, une part du total ou la variation en pourcentage entre deux montants.",
+  "overview": "Ce calculateur couvre trois opérations courantes : exprimer une partie en pourcentage du total, calculer la valeur correspondant à un pourcentage et comparer deux nombres comme une variation. Choisissez le mode adapté, saisissez les données connues et obtenez le résultat immédiatement.\n\nIl est utile pour les prix, les notes, les ajustements de facture, les mouvements de stock et les indicateurs de performance, quand la taille relative compte plus que le chiffre brut. Les décimales et les grands nombres sont pris en charge, ce qui permet de traiter aussi bien de petites corrections que des totaux plus importants.\n\nSi la valeur de départ est nulle, la variation en pourcentage ne peut pas être exprimée normalement, car il manque une base de comparaison valide. L’outil affiche clairement cette limite pour éviter une mauvaise lecture du résultat.",
   "howItWorks": [
-    "Saisissez la valeur ou le texte requis dans le formulaire.",
-    "La conversion, le calcul ou la transformation s’exécute instantanément dans le navigateur.",
-    "Consultez le résultat et poursuivez avec des outils associés si vous avez besoin d’une étape supplémentaire."
+    "Choisissez le type de calcul : part d’un total, pourcentage d’une valeur ou variation en pourcentage.",
+    "Saisissez les nombres tels qu’ils sont connus, avec des décimales si nécessaire.",
+    "Lisez le résultat et, pour une variation, comparez-le à la valeur initiale."
+  ],
+  "useCases": [
+    {
+      "title": "Remise sur un achat",
+      "description": "Vérifiez quel pourcentage représente une remise de 18,50 € sur un achat de 74,00 €."
+    },
+    {
+      "title": "Résultat d’examen",
+      "description": "Convertissez 42 points sur 60 en pourcentage pour un relevé de notes."
+    },
+    {
+      "title": "Hausse d’une facture",
+      "description": "Mesurez le passage de 96 à 114 et exprimez la hausse en pourcentage pour le budget."
+    },
+    {
+      "title": "Rapport de visites",
+      "description": "Transformez la progression de 1 250 à 1 480 visites en variation en pourcentage pour un suivi hebdomadaire."
+    }
   ],
   "examples": [
     {
-      "title": "Exemple 1",
-      "input": "25 sur 200",
-      "output": "12,5 %",
-      "description": "Un exemple réaliste de calculateur de pourcentage pour une recherche courante."
+      "title": "Part d’un total",
+      "input": "37 sur 148",
+      "output": "25 %",
+      "description": "Montre quelle part représente une valeur par rapport au total."
     },
     {
-      "title": "Exemple 2",
-      "input": "25 sur 200",
-      "output": "12,5 %",
-      "description": "Un autre cas d’usage pratique pour le trafic organique de longue traîne."
+      "title": "Pourcentage d’une valeur",
+      "input": "15 % de 240",
+      "output": "36",
+      "description": "Calcule la quantité correspondant à ce pourcentage."
+    },
+    {
+      "title": "Variation depuis une valeur initiale",
+      "input": "80 à 92",
+      "output": "15 % de hausse",
+      "description": "Compare la nouvelle valeur à l’ancienne et montre l’évolution."
     }
   ],
   "faq": [
     {
-      "question": "Quelle est la précision de cet outil ?",
-      "answer": "Le résultat est calculé directement à partir de la formule ou de la logique côté navigateur utilisée par cet outil."
+      "question": "Que puis-je calculer exactement ici ?",
+      "answer": "Vous pouvez calculer un pourcentage d’une valeur, une part du total ou la variation en pourcentage entre deux nombres."
     },
     {
-      "question": "Puis-je utiliser cet outil sur mobile ?",
-      "answer": "Oui. La page fonctionne sur ordinateur et sur mobile avec une interface simple de saisie et de résultat."
+      "question": "Pourquoi le résultat peut-il être négatif ?",
+      "answer": "Un résultat négatif indique que la deuxième valeur est inférieure à la première. C’est la bonne façon d’exprimer une baisse."
+    },
+    {
+      "question": "Que se passe-t-il si la valeur initiale est zéro ?",
+      "answer": "Une variation en pourcentage à partir de zéro n’a pas de base de comparaison valide et ne se définit pas normalement."
+    },
+    {
+      "question": "Puis-je utiliser des décimales et de grands nombres ?",
+      "answer": "Oui. Le calculateur accepte les décimales et les grands montants, avec la même règle de calcul."
+    },
+    {
+      "question": "Pourquoi des entrées proches donnent-elles des réponses différentes ?",
+      "answer": "Parce que la part d’un total, le pourcentage d’une valeur et la variation en pourcentage utilisent des formules différentes. Il faut choisir le mode qui correspond à la question."
     }
   ],
   "seo": {
     "title": "Calculateur de Pourcentage",
-    "description": "Calculez quel pourcentage un nombre représente d’un autre. Calculateur de pourcentage en ligne gratuit avec résultats instantanés.",
+    "description": "Calculez des pourcentages, des parts et des variations pour les prix, notes, budgets et totaux avec des résultats clairs.",
     "keywords": [
       "calculateur de pourcentage",
       "calcul pourcentage",
-      "outil calculateur"
+      "variation en pourcentage",
+      "pourcentage d'une valeur",
+      "calculer pourcentage"
     ]
   }
 }

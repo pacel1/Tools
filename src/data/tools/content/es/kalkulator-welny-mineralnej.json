@@ -4,177 +4,91 @@
   "slug": "calculadora-de-lana-mineral",
   "h1": "Calculadora de lana mineral",
   "title": "Calculadora de lana mineral",
-  "shortDescription": "Calcula cuántos rollos o paquetes de lana mineral necesitas para aislar el ático, las paredes o el techo.",
-  "metaTitle": "Calculadora de lana mineral | Calcula paquetes y volumen",
-  "metaDescription": "Calcula el volumen de lana mineral, la superficie con margen y cuántos paquetes o rollos necesitas para aislar áticos, paredes o techos.",
-  "intro": "Usa esta calculadora de lana mineral para estimar la cantidad de aislamiento necesaria en un ático, pared o techo. Introduce la superficie, el grosor, la cobertura del paquete, el porcentaje de desperdicio y el volumen del paquete para obtener un cálculo rápido.",
-  "overview": "Esta herramienta te ayuda a planificar el aislamiento con lana mineral convirtiendo la superficie y el grosor en el volumen necesario, y después estimando el número de paquetes o rollos según la cobertura de cada paquete. Es útil para áticos, paredes y techos.",
+  "shortDescription": "Calcula la lana mineral necesaria para un ático, pared o techo, con el número de rollos o paquetes.",
+  "metaTitle": "Calculadora de lana mineral",
+  "metaDescription": "Calcula el volumen de lana mineral, el margen de corte y cuántos paquetes o rollos necesitas para áticos, paredes o techos.",
+  "intro": "Introduce la superficie, el grosor, el margen de desperdicio y la cobertura del paquete para obtener la cantidad de lana mineral y el número de bultos.",
+  "overview": "Esta calculadora te ayuda a comprar la cantidad correcta de aislamiento a partir de medidas reales. Convierte la superficie y el grosor en volumen de lana mineral y luego estima cuántos paquetes o rollos hacen falta según la cobertura y el volumen de cada envase.\n\nResulta útil en áticos, tabiques, techos y falsos techos, donde el espesor de la capa importa tanto como la superficie. Si tienes la ficha técnica del producto, usa sus datos exactos y añade un margen razonable para recortes, encuentros con vigas y piezas de remate.",
   "howItWorks": [
     "Introduce la superficie a aislar en metros cuadrados.",
     "Añade el grosor del aislamiento en centímetros.",
-    "Indica cuánta superficie cubre un paquete.",
-    "Define el porcentaje de desperdicio o margen.",
-    "Escribe el volumen de un paquete para calcular el volumen total y el número de paquetes."
+    "Indica la superficie que cubre un paquete o rollo.",
+    "Define el porcentaje de desperdicio para cortes y ajustes.",
+    "Escribe el volumen del paquete para calcular el total de material y el número de envases."
   ],
   "useCases": [
-    "Calcular lana mineral para aislar el ático.",
-    "Planificar materiales para paredes.",
-    "Calcular paquetes para techos o falsos techos.",
-    "Añadir margen para cortes y ajustes.",
-    "Comparar la cobertura de distintos paquetes antes de comprar."
+    {
+      "title": "Aislamiento de ático habitable",
+      "description": "Calcula los paquetes necesarios para una buhardilla con pendientes, juntas y zonas de difícil encaje."
+    },
+    {
+      "title": "Tabique interior",
+      "description": "Determina la cantidad de lana mineral para una pared interior de estructura ligera."
+    },
+    {
+      "title": "Techo suspendido",
+      "description": "Estima el material para una capa homogénea sobre un techo plano o falso techo."
+    },
+    {
+      "title": "Pedido con margen de corte",
+      "description": "Añade material extra para recortes alrededor de conductos, vigas y bordes."
+    },
+    {
+      "title": "Comparación de formatos",
+      "description": "Compara distintas coberturas y volúmenes de envase antes de hacer el pedido."
+    }
   ],
   "examples": [
     {
-      "title": "Ejemplo",
-      "input": "Superficie: 100 m², Grosor: 20 cm, Cobertura por paquete: 6 m², Desperdicio: 10%, Volumen del paquete: 1,2 m³",
-      "output": "Muestra el volumen total, la superficie con margen y los paquetes necesarios.",
-      "description": "Útil para estimar materiales antes de comprar lana mineral."
+      "title": "Ático reformado",
+      "input": "Superficie: 84 m², Grosor: 22 cm, Cobertura por paquete: 6,4 m², Desperdicio: 12%, Volumen del paquete: 1,15 m³",
+      "output": "Devuelve el volumen total necesario y el número de paquetes redondeado al alza.",
+      "description": "Útil para pedir material para un ático con varios planos inclinados."
     },
     {
-      "title": "Ejemplo",
-      "input": "Superficie: 45 m², Grosor: 15 cm, Cobertura por paquete: 4,5 m², Desperdicio: 8%, Volumen del paquete: 0,9 m³",
-      "output": "Devuelve el volumen necesario y el número de paquetes para un trabajo pequeño.",
-      "description": "Práctico para aislamiento de paredes o techos."
+      "title": "Pared interior",
+      "input": "Superficie: 31,5 m², Grosor: 12 cm, Cobertura por paquete: 4,8 m², Desperdicio: 7%, Volumen del paquete: 0,72 m³",
+      "output": "Muestra el volumen requerido, la superficie ajustada y el mínimo de paquetes necesarios.",
+      "description": "Práctico para revestir una pared interior de una estancia."
+    },
+    {
+      "title": "Techo pequeño",
+      "input": "Superficie: 18 m², Grosor: 10 cm, Cobertura por rollo: 3,6 m², Desperdicio: 5%, Volumen del paquete: 0,36 m³",
+      "output": "Calcula el volumen y el número de rollos que conviene comprar.",
+      "description": "Adecuado para una zona pequeña con rollos indicados en la etiqueta."
     }
   ],
   "faq": [
     {
-      "question": "¿Cómo calculo la lana mineral necesaria?",
-      "answer": "Multiplica la superficie por el grosor convertido a metros para obtener el volumen de aislamiento. Después divide por el volumen del paquete y añade el margen si lo necesitas."
+      "question": "¿Qué significa el resultado en m³?",
+      "answer": "Es el volumen real de lana mineral necesario para cubrir la superficie indicada al grosor elegido. Compáralo con el volumen declarado en el envase."
     },
     {
-      "question": "¿Sirve para aislar áticos?",
-      "answer": "Sí. Es adecuado para áticos, paredes y techos."
+      "question": "¿Debo poner el grosor final o el grosor del producto?",
+      "answer": "Introduce el grosor que quieres conseguir en la obra. Si el producto se instala en varias capas o se comprime, tenlo en cuenta al planificar."
     },
     {
-      "question": "¿Por qué añadir un porcentaje de desperdicio?",
-      "answer": "El margen cubre cortes, ajustes y pequeñas pérdidas durante la instalación."
+      "question": "¿Por qué la calculadora redondea el número de paquetes?",
+      "answer": "Porque no se compran fracciones de paquete. El resultado se redondea al siguiente envase completo."
     },
     {
-      "question": "¿Puedo usarlo para rollos y paquetes?",
-      "answer": "Sí. El resultado muestra cuántos rollos o paquetes necesitas según la cobertura y el volumen del envase."
+      "question": "¿Qué pasa si la cobertura y el volumen no coinciden con la misma ficha técnica?",
+      "answer": "Usa siempre los datos de un solo producto. Mezclar valores de varios modelos puede dar una compra equivocada."
+    },
+    {
+      "question": "¿Puedo calcular varias capas de aislamiento?",
+      "answer": "Sí, pero conviene calcular cada capa por separado si cambian el grosor o el tipo de lana. Así el resultado es más fiable."
     }
   ],
-  "uiLabels": {
-    "copy": "Copiar",
-    "copied": "Copiado",
-    "input": "Entrada",
-    "output": "Salida",
-    "placeholder": "Introduce un valor",
-    "indent": "Sangría",
-    "removeComments": "Eliminar comentarios",
-    "preview": "Vista previa",
-    "source": "Fuente",
-    "sanitizedHtml": "HTML saneado",
-    "plainText": "Texto plano",
-    "summary": "Resumen",
-    "total": "Total",
-    "links": "Enlaces",
-    "images": "Imágenes",
-    "errors": "Errores",
-    "warnings": "Avisos",
-    "valid": "Válido",
-    "invalid": "No válido",
-    "href": "Href",
-    "text": "Texto",
-    "rel": "Rel",
-    "target": "Destino",
-    "alt": "Alt",
-    "width": "Ancho",
-    "height": "Alto",
-    "empty": "Vacío",
-    "outputReady": "Resultado listo",
-    "cleanedHtml": "HTML limpio",
-    "formattedHtml": "HTML formateado",
-    "minifiedHtml": "HTML minificado",
-    "markdown": "Markdown",
-    "extractedImages": "Imágenes extraídas",
-    "extractedLinks": "Enlaces extraídos",
-    "validationSummary": "Resumen de validación",
-    "prettyHtml": "HTML legible",
-    "encodedText": "Texto codificado",
-    "file": "Archivo",
-    "size": "Tamaño",
-    "format": "Formato",
-    "quality": "Calidad",
-    "colorOne": "Color 1",
-    "colorTwo": "Color 2",
-    "background": "Fondo",
-    "foreground": "Primer plano",
-    "angle": "Ángulo",
-    "margin": "Margen",
-    "level": "Nivel",
-    "gradientType": "Tipo de degradado",
-    "linear": "Lineal",
-    "radial": "Radial",
-    "blur": "Desenfoque",
-    "spread": "Extensión",
-    "offsetX": "Desplazamiento X",
-    "offsetY": "Desplazamiento Y",
-    "opacity": "Opacidad",
-    "inset": "Inset",
-    "cssCode": "Código CSS",
-    "snippet": "Fragmento",
-    "download": "Descargar",
-    "downloadSvg": "Descargar SVG",
-    "downloadPng": "Descargar PNG",
-    "downloadAll": "Descargar todo",
-    "upload": "Subir",
-    "title": "Título",
-    "description": "Descripción",
-    "canonicalUrl": "URL canónica",
-    "siteName": "Nombre del sitio",
-    "ogImage": "Imagen OG",
-    "clear": "Limpiar",
-    "generatedQr": "QR generado",
-    "placeholderImage": "Imagen de marcador",
-    "faviconSet": "Conjunto de favicon",
-    "keepAspectRatio": "Mantener proporción",
-    "cropX": "Recorte X",
-    "cropY": "Recorte Y",
-    "cropWidth": "Ancho del recorte",
-    "cropHeight": "Alto del recorte",
-    "originalSize": "Tamaño original",
-    "outputSize": "Tamaño de salida",
-    "savedSize": "Tamaño ahorrado",
-    "result": "Resultado",
-    "base64": "Base64",
-    "mimeType": "Tipo MIME",
-    "resizedImage": "Imagen redimensionada",
-    "compressedImage": "Imagen comprimida",
-    "croppedImage": "Imagen recortada",
-    "convertedImage": "Imagen convertida",
-    "decodedImage": "Imagen decodificada",
-    "imagePreview": "Vista previa de la imagen",
-    "camera": "Cámara",
-    "lens": "Lente",
-    "dateTaken": "Fecha de captura",
-    "resolution": "Resolución",
-    "fileSize": "Tamaño del archivo",
-    "iso": "ISO",
-    "exposure": "Exposición",
-    "aperture": "Apertura",
-    "focalLength": "Distancia focal",
-    "flash": "Flash",
-    "orientation": "Orientación",
-    "latitude": "Latitud",
-    "longitude": "Longitud",
-    "openMap": "Abrir mapa",
-    "rawMetadata": "Metadatos sin procesar",
-    "noMetadataFound": "No se encontraron metadatos",
-    "gpsLocation": "Ubicación GPS",
-    "metadataSummary": "Resumen de metadatos"
-  },
   "seo": {
     "title": "Calculadora de lana mineral",
-    "description": "Calcula cuánta lana mineral necesitas para áticos, paredes o techos y cuántos paquetes o rollos comprar.",
+    "description": "Calcula el volumen de lana mineral y cuántos paquetes o rollos comprar para áticos, paredes o techos.",
     "keywords": [
       "calculadora de lana mineral",
-      "cuánta lana mineral necesito",
+      "lana mineral m3",
       "aislamiento de ático",
       "aislamiento de paredes",
-      "aislamiento de techo",
-      "cálculo de paquetes de lana"
+      "rollos de lana mineral"
     ]
   }
 }

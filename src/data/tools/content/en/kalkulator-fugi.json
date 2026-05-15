@@ -4,175 +4,87 @@
   "slug": "grout-calculator",
   "h1": "Grout Calculator",
   "title": "Grout Calculator",
-  "shortDescription": "Estimate how much grout you need for tiles based on tile size, joint width, depth, and area.",
-  "metaTitle": "Grout Calculator - Estimate Tile Grout Needed",
-  "metaDescription": "Calculate grout consumption for tiles. Enter area, tile size, joint width, joint depth, grout density, waste percentage, and bag weight to estimate kilograms and bags.",
-  "intro": "Use this grout calculator to estimate how much grout you need for your tile project. It gives a practical planning result based on tile dimensions, joint size, surface area, waste allowance, and bag size.",
-  "overview": "This tool helps you answer how much grout is needed for tiles. Enter the tiled area, tile width and height, joint width and depth, grout density, waste percentage, and bag weight. The calculator returns estimated grout usage in kilograms and the number of bags to buy. It is designed as a planning estimate for shopping and material preparation.",
+  "shortDescription": "Calculate how much grout your tile job needs from tile size, joint width, depth, area, and bag size.",
+  "metaTitle": "Grout Calculator for Tile Jobs",
+  "metaDescription": "Estimate grout in kilograms and bags from tile area, size, joint width, joint depth, waste, and pack weight.",
+  "intro": "Enter your tile area, tile size, joint width and depth, waste allowance, and bag weight to estimate grout needed in kilograms and bags.",
+  "overview": "This calculator gives a planning estimate for grout quantity on tiled floors and walls. It uses the tiled area, tile dimensions, joint width, joint depth, grout density, waste allowance, and the pack weight you plan to buy.\n\nThe result helps you decide how many kilograms to prepare and how many bags to purchase before work starts. It is useful when tile formats change, joints are wider than usual, or you want to avoid stopping mid-job because the material ran out.\n\nFor the best reading, enter values that match the actual tile and joint you will install. Very uneven substrates, large bevels, and decorative spacers can increase real consumption beyond the estimate.",
   "howItWorks": [
     "Enter the total tiled area in square meters.",
-    "Add the tile width and height in centimeters.",
+    "Add tile width and height in centimeters.",
     "Set the joint width and joint depth in millimeters.",
     "Choose grout density, waste percentage, and bag weight.",
-    "Get the estimated grout amount in kilograms and bags needed."
+    "Read the estimated grout amount in kilograms and bags."
   ],
   "useCases": [
-    "Planning grout purchase for a bathroom, kitchen, or hallway.",
-    "Estimating material quantities before ordering tiles and accessories.",
-    "Checking how much grout to buy for a renovation or repair.",
-    "Comparing grout usage for different tile sizes and joint widths."
+    {
+      "title": "Bathroom floor shopping list",
+      "description": "Work out the grout quantity for a compact bathroom floor with porcelain tiles and narrow joints."
+    },
+    {
+      "title": "Large-format wall cladding",
+      "description": "Estimate how much grout is needed for oversized wall tiles where joint fill is shallow but surface area is high."
+    },
+    {
+      "title": "Renovation top-up order",
+      "description": "Check the amount needed when you are finishing a small repair and want to buy the right pack size."
+    },
+    {
+      "title": "Comparing joint layouts",
+      "description": "See how changing joint width or tile size affects total grout consumption before finalizing the layout."
+    }
   ],
   "examples": [
     {
-      "title": "Quick planning for a bathroom floor",
+      "title": "Bathroom floor with standard joints",
       "input": "Area 12 m2, tile 30x60 cm, joint 2 mm, depth 8 mm, waste 10%, bag 5 kg",
-      "output": "Estimated grout in kg and bags needed for purchase planning.",
-      "description": "A common use case for anyone asking ile fugi potrzeba before shopping."
+      "output": "Estimated grout requirement in kg plus the number of 5 kg bags to buy.",
+      "description": "A realistic floor layout for a small bathroom using mid-size porcelain tiles."
     },
     {
-      "title": "Renovation estimate for wall tiles",
-      "input": "Area 18 m2, tile 20x20 cm, joint 3 mm, depth 10 mm, waste 12%, bag 2 kg",
-      "output": "A practical estimate to avoid buying too little or too much grout.",
-      "description": "Useful for small-format wall tiles with wider joints."
+      "title": "Kitchen backsplash with small tiles",
+      "input": "Area 7.5 m2, tile 10x10 cm, joint 3 mm, depth 6 mm, waste 8%, bag 2 kg",
+      "output": "Estimated grout usage and rounded bag count for a backsplash order.",
+      "description": "Small-format tiles create more joint volume, so the result is higher per square meter."
+    },
+    {
+      "title": "Hallway repair with wider joints",
+      "input": "Area 4.2 m2, tile 20x20 cm, joint 4 mm, depth 10 mm, waste 12%, bag 1 kg",
+      "output": "Estimated kilograms of grout and the number of 1 kg packs required.",
+      "description": "Useful when replacing a section of floor and buying only the amount needed for the repair."
     }
   ],
   "faq": [
     {
-      "question": "Is this grout calculator exact?",
-      "answer": "It provides a simplified planning estimate, not a laboratory-accurate consumption result. Actual usage can vary with tile profile, layout, and workmanship."
+      "question": "Why do tile size and joint width change the result so much?",
+      "answer": "Smaller tiles and wider joints create more joint length and more space to fill, so the required grout rises quickly."
     },
     {
-      "question": "Why do I need joint depth?",
-      "answer": "Joint depth affects how much grout fills the space between tiles, so deeper joints usually require more grout."
+      "question": "What does joint depth mean in this calculator?",
+      "answer": "It is the filled depth of the joint below the tile surface. Deeper joints need more grout because the cavity is larger."
     },
     {
-      "question": "Does the calculator include waste?",
-      "answer": "Yes. You can enter a waste percentage to account for mixing losses, spills, and uneven surfaces."
+      "question": "Should I enter the room size or only the tiled area?",
+      "answer": "Enter only the area that will actually be tiled. Excluding uncut edges, openings, and non-tiled sections gives a more useful estimate."
     },
     {
-      "question": "How many bags should I buy?",
-      "answer": "The calculator converts the total required grout into bag counts based on the bag weight you enter, then rounds up for purchasing."
+      "question": "Why does the bag count round up?",
+      "answer": "The tool rounds up because you cannot buy a fraction of a bag. If the result is close to the next bag, keep a small reserve for cuts and losses."
+    },
+    {
+      "question": "Can decorative or uneven tiles affect the estimate?",
+      "answer": "Yes. Ribbed backs, bevels, and uneven edges can change how much grout is pushed into the joints, so the real use may be higher."
     }
   ],
-  "uiLabels": {
-    "copy": "Copy",
-    "copied": "Copied",
-    "input": "Input",
-    "output": "Output",
-    "placeholder": "Enter value",
-    "indent": "Indent",
-    "removeComments": "Remove comments",
-    "preview": "Preview",
-    "source": "Source",
-    "sanitizedHtml": "Sanitized HTML",
-    "plainText": "Plain text",
-    "summary": "Summary",
-    "total": "Total",
-    "links": "Links",
-    "images": "Images",
-    "errors": "Errors",
-    "warnings": "Warnings",
-    "valid": "Valid",
-    "invalid": "Invalid",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Width",
-    "height": "Height",
-    "empty": "Empty",
-    "outputReady": "Output ready",
-    "cleanedHtml": "Cleaned HTML",
-    "formattedHtml": "Formatted HTML",
-    "minifiedHtml": "Minified HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extracted images",
-    "extractedLinks": "Extracted links",
-    "validationSummary": "Validation summary",
-    "prettyHtml": "Pretty HTML",
-    "encodedText": "Encoded text",
-    "file": "File",
-    "size": "Size",
-    "format": "Format",
-    "quality": "Quality",
-    "colorOne": "Color 1",
-    "colorTwo": "Color 2",
-    "background": "Background",
-    "foreground": "Foreground",
-    "angle": "Angle",
-    "margin": "Margin",
-    "level": "Level",
-    "gradientType": "Gradient type",
-    "linear": "Linear",
-    "radial": "Radial",
-    "blur": "Blur",
-    "spread": "Spread",
-    "offsetX": "Offset X",
-    "offsetY": "Offset Y",
-    "opacity": "Opacity",
-    "inset": "Inset",
-    "cssCode": "CSS code",
-    "snippet": "Snippet",
-    "download": "Download",
-    "downloadSvg": "Download SVG",
-    "downloadPng": "Download PNG",
-    "downloadAll": "Download all",
-    "upload": "Upload",
-    "title": "Title",
-    "description": "Description",
-    "canonicalUrl": "Canonical URL",
-    "siteName": "Site name",
-    "ogImage": "OG image",
-    "clear": "Clear",
-    "generatedQr": "Generated QR",
-    "placeholderImage": "Placeholder image",
-    "faviconSet": "Favicon set",
-    "keepAspectRatio": "Keep aspect ratio",
-    "cropX": "Crop X",
-    "cropY": "Crop Y",
-    "cropWidth": "Crop width",
-    "cropHeight": "Crop height",
-    "originalSize": "Original size",
-    "outputSize": "Output size",
-    "savedSize": "Saved size",
-    "result": "Result",
-    "base64": "Base64",
-    "mimeType": "MIME type",
-    "resizedImage": "Resized image",
-    "compressedImage": "Compressed image",
-    "croppedImage": "Cropped image",
-    "convertedImage": "Converted image",
-    "decodedImage": "Decoded image",
-    "imagePreview": "Image preview",
-    "camera": "Camera",
-    "lens": "Lens",
-    "dateTaken": "Date taken",
-    "resolution": "Resolution",
-    "fileSize": "File size",
-    "iso": "ISO",
-    "exposure": "Exposure",
-    "aperture": "Aperture",
-    "focalLength": "Focal length",
-    "flash": "Flash",
-    "orientation": "Orientation",
-    "latitude": "Latitude",
-    "longitude": "Longitude",
-    "openMap": "Open map",
-    "rawMetadata": "Raw metadata",
-    "noMetadataFound": "No metadata found",
-    "gpsLocation": "GPS location",
-    "metadataSummary": "Metadata summary"
-  },
   "seo": {
     "title": "Grout Calculator",
-    "description": "Estimate tile grout needs in kilograms and bags from area, tile size, joint width, joint depth, waste percentage, and bag weight.",
+    "description": "Estimate grout in kilograms and bags from tile area, size, joint width, joint depth, waste, and pack weight.",
     "keywords": [
       "grout calculator",
-      "tile grout calculator",
-      "how much grout do I need",
-      "grout estimate",
-      "tile calculator"
+      "tile grout estimate",
+      "joint fill calculator",
+      "grout bags",
+      "tile joint calculation"
     ]
   }
 }

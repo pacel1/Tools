@@ -4,172 +4,87 @@
   "slug": "calculadora-de-armaduras",
   "h1": "Calculadora de armaduras",
   "title": "Calculadora de armaduras",
-  "shortDescription": "Calcula cuántas barras corrugadas y cuánta masa de acero necesitas para un esquema sencillo de armadura.",
-  "metaTitle": "Calculadora de armaduras online | Cantidad de acero y peso",
-  "metaDescription": "Calcula el número de barras, la longitud total y el peso del acero para losas y armaduras sencillas. Rápido, gratis y fácil.",
-  "intro": "Usa esta calculadora de armaduras para estimar la cantidad de barras, la longitud total y el peso del acero en una losa o estructura simple. Introduce las dimensiones, la separación, la longitud de la barra, el peso unitario y el desperdicio para obtener un resultado rápido.",
-  "overview": "Esta herramienta te ayuda a estimar el acero de refuerzo necesario para una disposición sencilla. Calcula el número de barras según la separación, la longitud total y el peso final con desperdicio incluido. Es útil para planificar materiales y hacer cálculos rápidos.",
+  "shortDescription": "Calcula cuántas barras, qué longitud total y qué masa de acero necesitas para una disposición rectangular simple.",
+  "metaTitle": "Calculadora de armaduras",
+  "metaDescription": "Calcula cuántas barras, qué longitud total y qué masa de acero necesitas para una disposición rectangular simple.",
+  "intro": "Introduce las dimensiones del elemento, la separación entre barras, la longitud comercial y el peso por metro para estimar el acero necesario.",
+  "overview": "Esta herramienta está pensada para disposiciones rectangulares sencillas, como losas, zapatas y pequeñas bases. A partir de las medidas y la separación, calcula el número de barras, la longitud total de acero y la masa aproximada, lo que te sirve para preparar compras o presupuestos.\n\nToma el resultado como una referencia de planificación. El recubrimiento, los solapes, los ganchos, los dobleces y la forma real de las barras pueden cambiar la necesidad final, sobre todo si la armadura no es una malla simple. Si hay varias capas o dos direcciones de armado, conviene calcular cada conjunto por separado y sumar los valores.\n\nEl porcentaje de desperdicio permite incluir cortes, empalmes y pérdidas de obra. Si ya conoces la longitud comercial que ofrece tu proveedor, usa ese dato de forma coherente con el tamaño del elemento para que el número de barras y la longitud total reflejen una compra realista.",
   "howItWorks": [
     "Introduce la longitud y la anchura del elemento en metros.",
-    "Define la separación de las barras en centímetros.",
-    "Indica la longitud de una barra y el peso unitario por metro.",
+    "Define la separación entre barras en centímetros.",
+    "Indica la longitud de una barra comercial y el peso por metro.",
     "Añade un porcentaje de desperdicio para cortes y solapes.",
-    "Obtén la longitud total, el número de barras y el peso del acero."
+    "Consulta el número de barras, la longitud total y el peso del acero."
   ],
   "useCases": [
-    "Estimación de armaduras para losas y cimentaciones.",
-    "Comprobación de cantidad de acero antes de comprar.",
-    "Planificación de barras para obras pequeñas.",
-    "Cálculo del peso del acero para presupuestos."
+    {
+      "title": "Despiece de una losa",
+      "description": "Estima cuántas barras y cuánta masa de acero necesitas para una losa rectangular antes de cerrar la lista de materiales."
+    },
+    {
+      "title": "Cálculo de una zapata",
+      "description": "Comprueba el acero necesario para una zapata corrida o aislada cuando el patrón de barras es regular."
+    },
+    {
+      "title": "Revisión de pedido al proveedor",
+      "description": "Compara la longitud total calculada con la longitud comercial para evitar pedidos insuficientes o sobrantes excesivos."
+    },
+    {
+      "title": "Presupuesto por peso",
+      "description": "Convierte la masa del acero en una base útil para presupuestar el refuerzo cuando el precio se calcula por kilo."
+    }
   ],
   "examples": [
     {
-      "title": "Estimación de losa simple",
-      "input": "Longitud 6 m, anchura 4 m, separación 20 cm, longitud de barra 6 m, peso unitario 0,617 kg/m, desperdicio 10%",
-      "output": "Barras estimadas, longitud total y peso del acero para la disposición.",
-      "description": "Ejemplo rápido para planificar la armadura de una losa estándar."
+      "title": "Losa rectangular con desperdicio",
+      "input": "Longitud 7,2 m, anchura 4,8 m, separación 18 cm, longitud comercial 12 m, peso por metro 0,888 kg/m, desperdicio 8%",
+      "output": "Aprox. 41 barras, 293,8 m de longitud total, 260,7 kg de acero",
+      "description": "Ejemplo realista para ver cómo la separación y el desperdicio modifican el resultado final."
     },
     {
-      "title": "Pedido de material",
-      "input": "Usa las dimensiones del proyecto y la separación para estimar el acero antes de comprar.",
-      "output": "Muestra una cantidad práctica de pedido con desperdicio incluido.",
-      "description": "Ayuda a evitar pedir menos acero de refuerzo del necesario."
+      "title": "Zapata en una sola dirección",
+      "input": "Longitud 10 m, anchura 0,6 m, separación 15 cm, longitud comercial 6 m, peso por metro 0,395 kg/m, desperdicio 5%",
+      "output": "Aprox. 68 barras, 408,0 m de longitud total, 169,8 kg de acero",
+      "description": "Útil en elementos largos y estrechos con barras paralelas y separación fija."
+    },
+    {
+      "title": "Base pequeña para maquinaria",
+      "input": "Longitud 2,4 m, anchura 2,4 m, separación 20 cm, longitud comercial 6 m, peso por metro 0,617 kg/m, desperdicio 12%",
+      "output": "Aprox. 14 barras, 38,4 m de longitud total, 26,7 kg de acero",
+      "description": "Muestra una base compacta donde los cortes y solapes influyen más que la cantidad bruta de barras."
     }
   ],
   "faq": [
     {
-      "question": "¿La calculadora incluye desperdicio?",
-      "answer": "Sí. Introduce el porcentaje de desperdicio para sumar material por cortes, solapes y recortes."
+      "question": "¿La calculadora incluye longitudes de solape y dobleces?",
+      "answer": "No. Calcula una disposición recta con las dimensiones y la separación introducidas. Si tu detalle necesita solapes, ganchos, dobleces o anclajes, añádelos aparte."
     },
     {
-      "question": "¿Puedo usarla para cualquier tamaño de losa?",
-      "answer": "Sí. Funciona para esquemas rectangulares sencillos si conoces la separación y la longitud de la barra."
+      "question": "¿Qué hago si mi armadura va en dos direcciones?",
+      "answer": "Calcula cada dirección por separado con su separación y su longitud de barra, y después suma los resultados. Así obtendrás una cifra más clara que mezclando ambos sentidos."
     },
     {
-      "question": "¿Qué significa peso unitario?",
-      "answer": "Es la masa de un metro de barra corrugada, normalmente expresada en kg/m."
+      "question": "¿Cómo elijo el peso por metro?",
+      "answer": "Usa el peso correspondiente al diámetro real de la barra que vas a comprar. Si el diámetro no coincide, la longitud puede mantenerse parecida, pero la masa final cambiará bastante."
+    },
+    {
+      "question": "¿Por qué el número de barras puede parecer alto?",
+      "answer": "La separación se reparte sobre todo el ancho o largo del elemento, por lo que un pequeño ajuste puede añadir una barra más. Es normal y depende de la geometría del reparto."
+    },
+    {
+      "question": "¿Sirve para formas irregulares?",
+      "answer": "Solo como referencia. Huecos, bordes curvos, escalones y engrosamientos locales alteran el consumo de acero, así que esas zonas deben calcularse aparte."
     }
   ],
-  "uiLabels": {
-    "copy": "Copiar",
-    "copied": "Copiado",
-    "input": "Entrada",
-    "output": "Salida",
-    "placeholder": "Introduce un valor",
-    "indent": "Sangría",
-    "removeComments": "Eliminar comentarios",
-    "preview": "Vista previa",
-    "source": "Fuente",
-    "sanitizedHtml": "HTML saneado",
-    "plainText": "Texto plano",
-    "summary": "Resumen",
-    "total": "Total",
-    "links": "Enlaces",
-    "images": "Imágenes",
-    "errors": "Errores",
-    "warnings": "Advertencias",
-    "valid": "Válido",
-    "invalid": "No válido",
-    "href": "Href",
-    "text": "Texto",
-    "rel": "Rel",
-    "target": "Destino",
-    "alt": "Alt",
-    "width": "Ancho",
-    "height": "Alto",
-    "empty": "Vacío",
-    "outputReady": "Resultado listo",
-    "cleanedHtml": "HTML limpio",
-    "formattedHtml": "HTML formateado",
-    "minifiedHtml": "HTML minificado",
-    "markdown": "Markdown",
-    "extractedImages": "Imágenes extraídas",
-    "extractedLinks": "Enlaces extraídos",
-    "validationSummary": "Resumen de validación",
-    "prettyHtml": "HTML legible",
-    "encodedText": "Texto codificado",
-    "file": "Archivo",
-    "size": "Tamaño",
-    "format": "Formato",
-    "quality": "Calidad",
-    "colorOne": "Color 1",
-    "colorTwo": "Color 2",
-    "background": "Fondo",
-    "foreground": "Primer plano",
-    "angle": "Ángulo",
-    "margin": "Margen",
-    "level": "Nivel",
-    "gradientType": "Tipo de degradado",
-    "linear": "Lineal",
-    "radial": "Radial",
-    "blur": "Desenfoque",
-    "spread": "Extensión",
-    "offsetX": "Desplazamiento X",
-    "offsetY": "Desplazamiento Y",
-    "opacity": "Opacidad",
-    "inset": "Inseto",
-    "cssCode": "Código CSS",
-    "snippet": "Fragmento",
-    "download": "Descargar",
-    "downloadSvg": "Descargar SVG",
-    "downloadPng": "Descargar PNG",
-    "downloadAll": "Descargar todo",
-    "upload": "Subir",
-    "title": "Título",
-    "description": "Descripción",
-    "canonicalUrl": "URL canónica",
-    "siteName": "Nombre del sitio",
-    "ogImage": "Imagen OG",
-    "clear": "Borrar",
-    "generatedQr": "QR generado",
-    "placeholderImage": "Imagen de marcador",
-    "faviconSet": "Conjunto de favicon",
-    "keepAspectRatio": "Mantener proporción",
-    "cropX": "Recorte X",
-    "cropY": "Recorte Y",
-    "cropWidth": "Ancho del recorte",
-    "cropHeight": "Alto del recorte",
-    "originalSize": "Tamaño original",
-    "outputSize": "Tamaño de salida",
-    "savedSize": "Tamaño guardado",
-    "result": "Resultado",
-    "base64": "Base64",
-    "mimeType": "Tipo MIME",
-    "resizedImage": "Imagen redimensionada",
-    "compressedImage": "Imagen comprimida",
-    "croppedImage": "Imagen recortada",
-    "convertedImage": "Imagen convertida",
-    "decodedImage": "Imagen decodificada",
-    "imagePreview": "Vista previa de imagen",
-    "camera": "Cámara",
-    "lens": "Lente",
-    "dateTaken": "Fecha de captura",
-    "resolution": "Resolución",
-    "fileSize": "Tamaño del archivo",
-    "iso": "ISO",
-    "exposure": "Exposición",
-    "aperture": "Apertura",
-    "focalLength": "Distancia focal",
-    "flash": "Flash",
-    "orientation": "Orientación",
-    "latitude": "Latitud",
-    "longitude": "Longitud",
-    "openMap": "Abrir mapa",
-    "rawMetadata": "Metadatos sin procesar",
-    "noMetadataFound": "No se encontraron metadatos",
-    "gpsLocation": "Ubicación GPS",
-    "metadataSummary": "Resumen de metadatos"
-  },
   "seo": {
-    "title": "Calculadora de armaduras online",
-    "description": "Calcula el número de barras, la longitud total y el peso del acero para losas y armaduras sencillas.",
+    "title": "Calculadora de armaduras",
+    "description": "Calcula cuántas barras, qué longitud total y qué masa de acero necesitas para una disposición rectangular simple.",
     "keywords": [
       "calculadora de armaduras",
-      "calculadora de acero",
-      "cantidad de acero",
+      "cantidad de barras corrugadas",
       "peso del acero",
-      "barras corrugadas",
-      "calculadora de construcción"
+      "acero de refuerzo",
+      "armadura de losa"
     ]
   }
 }

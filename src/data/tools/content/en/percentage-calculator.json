@@ -4,42 +4,85 @@
   "slug": "percentage-calculator",
   "h1": "Percentage Calculator",
   "title": "Percentage Calculator",
-  "shortDescription": "Calculate what percentage one number is of another with fast results, simple inputs and practical examples.",
-  "overview": "Calculate what percentage one number is of another. Use this tool to get a clear result quickly from simple input on the same page. It is useful for everyday checks, comparisons and small tasks when you need a fast online answer.",
+  "shortDescription": "Work out percentages, percentage shares, and percentage change from the numbers you already have.",
+  "metaTitle": "Percentage Calculator Tool",
+  "metaDescription": "Work out percentages, percentage shares, and percentage change for prices, scores, budgets, and totals with clear results.",
+  "intro": "Use this tool to find a percent of a value, a value’s share of a total, or the percentage change between two amounts.",
+  "overview": "This calculator handles three everyday percentage tasks: finding a part of a whole, finding a percent of a number, and comparing two values as a change. Pick the mode that matches your question, enter the numbers, and get a result you can use immediately.\n\nIt is useful for prices, marks, invoice adjustments, stock movements, and performance comparisons where the size of the difference matters. Decimals and large numbers are supported, so you can work with small adjustments or bigger totals without changing the approach.\n\nIf the starting value is zero, percentage change cannot be stated in the usual way because there is no valid baseline. The tool makes that limitation obvious so you can avoid misreading the result.",
   "howItWorks": [
-    "Enter the required value or text into the form.",
-    "The conversion, calculation or transformation runs instantly in the browser.",
-    "Review the result and continue with related tools if you need another step."
+    "Choose the calculation type: part of a total, percent of a value, or percentage change.",
+    "Enter the known numbers exactly as given, including decimals when needed.",
+    "Review the result and, for change calculations, compare it with the original value."
+  ],
+  "useCases": [
+    {
+      "title": "Price markdown on a receipt",
+      "description": "Check what percentage a $18.50 discount represents on a $74.00 purchase before comparing offers."
+    },
+    {
+      "title": "Exam score display",
+      "description": "Convert 42 points out of 60 into a percentage for a grade report."
+    },
+    {
+      "title": "Utility bill increase",
+      "description": "Measure the rise from 96 to 114 and show the increase as a percentage for budgeting."
+    },
+    {
+      "title": "Website visits report",
+      "description": "Turn growth from 1,250 visits to 1,480 visits into percentage change for a weekly summary."
+    }
   ],
   "examples": [
     {
-      "title": "Common use case",
-      "input": "25 of 200",
-      "output": "12.5%",
-      "description": "Shows a common use case with a clear input and result."
+      "title": "Part of a total",
+      "input": "37 out of 148",
+      "output": "25%",
+      "description": "Shows how large one part is compared with the full amount."
     },
     {
-      "title": "Another quick example",
-      "input": "25 of 200",
-      "output": "12.5%",
-      "description": "Useful for quick checks, comparisons or repeat tasks."
+      "title": "Percent of a value",
+      "input": "15% of 240",
+      "output": "36",
+      "description": "Calculates the number represented by a percentage."
+    },
+    {
+      "title": "Decrease from an old value",
+      "input": "80 to 92",
+      "output": "15% increase",
+      "description": "Compares the new amount with the original and shows the change."
     }
   ],
   "faq": [
     {
-      "question": "How accurate is this tool?",
-      "answer": "The result is based on the input you provide and the calculation or transformation shown on the page."
+      "question": "What kinds of percentage problems can I solve here?",
+      "answer": "You can find a percent of a value, express a part as a share of a total, or measure the percentage change between two numbers."
     },
     {
-      "question": "Can I use this tool on mobile?",
-      "answer": "Yes. The page works on desktop and mobile screens with a simple input and result layout."
+      "question": "Why can the result be negative in change mode?",
+      "answer": "A negative result means the second value is lower than the first. That is the correct way to show a decrease."
+    },
+    {
+      "question": "What happens if I enter zero as the starting value?",
+      "answer": "Percentage change from zero has no usable baseline, so the result is not defined in the usual sense."
+    },
+    {
+      "question": "Can I use decimal values or large amounts?",
+      "answer": "Yes. The calculator accepts decimals and large numbers and applies the same percentage rules to them."
+    },
+    {
+      "question": "Why do similar inputs sometimes give different answers?",
+      "answer": "Because the three modes use different formulas. Make sure the selected mode matches the question you want answered."
     }
   ],
   "seo": {
-    "title": "Percentage Calculator",
-    "description": "Calculate what percentage one number is of another. Free online percentage calculator with instant results.",
+    "title": "Percentage Calculator Tool",
+    "description": "Work out percentages, percentage shares, and percentage change for prices, scores, budgets, and totals with clear results.",
     "keywords": [
-      "percentage calculator"
+      "percentage calculator",
+      "percent calculator",
+      "percentage change calculator",
+      "find percentage",
+      "percent of a number"
     ]
   }
 }

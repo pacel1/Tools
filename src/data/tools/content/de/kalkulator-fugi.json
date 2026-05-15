@@ -4,173 +4,85 @@
   "slug": "fugenmassen-rechner",
   "h1": "Fugenmassen-Rechner",
   "title": "Fugenmassen-Rechner",
-  "shortDescription": "Berechnen Sie, wie viel Fugenmasse Sie für Fliesen anhand von Fliesengröße, Fugenbreite und Fläche benötigen.",
-  "metaTitle": "Fugenmassen-Rechner - Fugenmasse für Fliesen berechnen",
-  "metaDescription": "Berechnen Sie den Fugenmassenverbrauch für Fliesen. Geben Sie Fläche, Fliesengröße, Fugenbreite, Fugentiefe, Dichte, Verschnitt und Sackgewicht ein.",
-  "intro": "Nutzen Sie diesen Fugenmassen-Rechner, um schnell zu schätzen, wie viel Fugenmasse Sie für Ihr Fliesenprojekt brauchen. Das Tool liefert eine praxisnahe Planungszahl auf Basis von Fliesenmaßen, Fugenbreite, Fläche und Zuschlag für Verschnitt.",
-  "overview": "Dieses Tool hilft Ihnen bei der Frage, wie viel Fugenmasse benötigt wird. Geben Sie die Fläche in m2, Fliesenbreite und -höhe in cm, Fugenbreite und -tiefe in mm, die Dichte der Fugenmasse, den Verschnitt in Prozent und das Sackgewicht ein. Der Rechner gibt den geschätzten Verbrauch in Kilogramm und die Anzahl der benötigten Säcke aus. Er ist als Planungshilfe für Einkauf und Materialvorbereitung gedacht.",
+  "shortDescription": "Berechnen Sie die benötigte Fugenmasse aus Fläche, Fliesengröße, Fugenbreite, Tiefe und Sackgewicht.",
+  "metaTitle": "Fugenmassen-Rechner für Fliesen",
+  "metaDescription": "Berechnen Sie Fugenmasse in kg und Säcken aus Fläche, Fliesengröße, Fugenbreite, Fugentiefe, Verschnitt und Packungsgewicht.",
+  "intro": "Geben Sie Fläche, Fliesengröße, Fugenbreite, Fugentiefe, Verschnitt und Sackgewicht ein, um die benötigte Fugenmasse in kg und Säcken zu schätzen.",
+  "overview": "Dieser Rechner dient der Planung der Fugenmasse bei Fliesenarbeiten. Berücksichtigt werden die zu fliesende Fläche, Fliesenbreite und -höhe, Fugenbreite, Fugentiefe, Dichte der Fugenmasse, ein Zuschlag für Verschnitt und das Gewicht der Verpackung.\n\nDas Ergebnis hilft dabei, die Materialmenge vor Beginn der Arbeiten realistisch einzuordnen und die passende Sackzahl zu kaufen. Besonders nützlich ist das bei wechselnden Fliesenformaten, breiteren Fugen oder wenn der Verbrauch im Vorfeld genau eingegrenzt werden soll.\n\nFür eine brauchbare Schätzung sollten die tatsächlichen Projektmaße eingegeben werden. Bei gefasten Kanten, unebenen Untergründen oder stark profilierten Fliesen kann der reale Verbrauch über der Berechnung liegen.",
   "howItWorks": [
-    "Geben Sie die gesamte zu fliesende Fläche in m2 ein.",
-    "Tragen Sie Fliesenbreite und Fliesenhöhe in cm ein.",
+    "Geben Sie die gesamte Fliesenfläche in m2 ein.",
+    "Tragen Sie Fliesenbreite und -höhe in cm ein.",
     "Setzen Sie Fugenbreite und Fugentiefe in mm.",
-    "Wählen Sie Dichte, Verschnitt in Prozent und Sackgewicht.",
-    "Erhalten Sie den geschätzten Verbrauch in kg und die benötigte Sackanzahl."
+    "Wählen Sie Dichte, Verschnitt und Sackgewicht.",
+    "Lesen Sie die geschätzte Menge in kg und Säcken ab."
   ],
   "useCases": [
-    "Fugenmasse für Bad, Küche oder Flur planen.",
-    "Materialmengen vor der Bestellung von Fliesen und Zubehör abschätzen.",
-    "Prüfen, wie viel Fugenmasse bei Renovierung oder Ausbesserung nötig ist.",
-    "Den Verbrauch bei unterschiedlichen Fliesengrößen und Fugenbreiten vergleichen."
+    {
+      "title": "Bad mit Feinsteinzeug planen",
+      "description": "Die benötigte Fugenmasse für ein kleines Bad mit mittleren Fliesen und schmalen Fugen abschätzen."
+    },
+    {
+      "title": "Küchenrückwand berechnen",
+      "description": "Die Fugenmenge für eine Spritzschutzfläche oder ganze Wandabschnitte ermitteln."
+    },
+    {
+      "title": "Teilfläche im Boden reparieren",
+      "description": "Für eine kleine Ausbesserung die richtige Menge ohne unnötigen Überschuss bestimmen."
+    },
+    {
+      "title": "Fliesenformate vergleichen",
+      "description": "Prüfen, wie sich 60x60, 30x60 oder 20x20 cm auf den Verbrauch auswirken."
+    }
   ],
   "examples": [
     {
-      "title": "Schnelle Planung für einen Badezimmerboden",
+      "title": "Badezimmerboden mit Standardfugen",
       "input": "Fläche 12 m2, Fliese 30x60 cm, Fuge 2 mm, Tiefe 8 mm, Verschnitt 10%, Sack 5 kg",
-      "output": "Geschätzte Fugenmasse in kg und benötigte Säcke für die Bestellung.",
-      "description": "Ein typischer Fall für alle, die vor dem Einkauf wissen wollen, wie viel Fugenmasse benötigt wird."
+      "output": "Geschätzte Fugenmasse in kg und benötigte 5-kg-Säcke.",
+      "description": "Ein typisches Beispiel für einen kleinen Badezimmerboden mit mittlerem Fliesenformat."
     },
     {
-      "title": "Schätzung für Wandfliesen",
-      "input": "Fläche 18 m2, Fliese 20x20 cm, Fuge 3 mm, Tiefe 10 mm, Verschnitt 12%, Sack 2 kg",
-      "output": "Eine praktische Schätzung, damit nicht zu wenig oder zu viel Fugenmasse gekauft wird.",
-      "description": "Nützlich bei kleinformatigen Fliesen mit breiteren Fugen."
+      "title": "Küchenwand mit kleinen Fliesen",
+      "input": "Fläche 7,5 m2, Fliese 10x10 cm, Fuge 3 mm, Tiefe 6 mm, Verschnitt 8%, Sack 2 kg",
+      "output": "Geschätzter Verbrauch und aufgerundete Sackzahl für den Einkauf.",
+      "description": "Kleine Fliesen erzeugen mehr Fugenlänge je Fläche und damit höheren Verbrauch."
+    },
+    {
+      "title": "Ausbesserung eines Bodenabschnitts",
+      "input": "Fläche 4,2 m2, Fliese 20x20 cm, Fuge 4 mm, Tiefe 10 mm, Verschnitt 12%, Sack 1 kg",
+      "output": "Berechnete Fugenmenge und die nötige Zahl kleiner Gebinde.",
+      "description": "Praktisch für Reparaturen, bei denen nur eine kleine Menge gebraucht wird."
     }
   ],
   "faq": [
     {
-      "question": "Ist dieser Fugenmassen-Rechner exakt?",
-      "answer": "Er liefert eine vereinfachte Planungs-Schätzung, kein laborexaktes Verbrauchsergebnis. Der tatsächliche Verbrauch kann je nach Fliesenprofil, Verlegung und Verarbeitung abweichen."
+      "question": "Berücksichtigt der Rechner jede Fliesenart gleich?",
+      "answer": "Er arbeitet mit Maßen und Fugenwerten, unterscheidet aber nicht jede Oberflächenstruktur. Gefaste, profilierte oder unregelmäßige Fliesen können den tatsächlichen Verbrauch erhöhen."
     },
     {
-      "question": "Warum wird die Fugentiefe benötigt?",
-      "answer": "Die Fugentiefe beeinflusst das zu füllende Volumen, daher benötigen tiefere Fugen meist mehr Fugenmasse."
+      "question": "Was bedeutet die Fugentiefe?",
+      "answer": "Sie beschreibt die Tiefe des zu füllenden Fugenraums unter der Fliesenoberfläche. Je tiefer die Fuge, desto mehr Material wird benötigt."
     },
     {
-      "question": "Ist Verschnitt berücksichtigt?",
-      "answer": "Ja. Sie können einen Prozentsatz für Verschnitt angeben, um Mischverluste, Spritzer und unebene Untergründe zu berücksichtigen."
+      "question": "Soll ich die Raumgröße oder nur die Fliesenfläche eingeben?",
+      "answer": "Nur die tatsächlich zu fliesende Fläche. Öffnungen, nicht belegte Zonen und Unterbrechungen sollten herausgerechnet werden."
     },
     {
-      "question": "Wie viele Säcke soll ich kaufen?",
-      "answer": "Der Rechner wandelt die benötigte Gesamtmenge anhand des eingegebenen Sackgewichts in Säcke um und rundet für den Einkauf auf."
+      "question": "Warum wird die Sackzahl aufgerundet?",
+      "answer": "Weil nur ganze Gebinde gekauft werden. Wenn das Ergebnis knapp unter dem nächsten Sack liegt, ist ein kleiner Vorrat sinnvoll."
+    },
+    {
+      "question": "Machen breite Fugen einen großen Unterschied?",
+      "answer": "Ja. Mit wachsender Fugenbreite steigt das Volumen deutlich. Bei kleinen Fliesen wirkt sich das besonders stark aus."
     }
   ],
-  "uiLabels": {
-    "copy": "Kopieren",
-    "copied": "Kopiert",
-    "input": "Eingabe",
-    "output": "Ergebnis",
-    "placeholder": "Wert eingeben",
-    "indent": "Einzug",
-    "removeComments": "Kommentare entfernen",
-    "preview": "Vorschau",
-    "source": "Quelle",
-    "sanitizedHtml": "Bereinigtes HTML",
-    "plainText": "Klartext",
-    "summary": "Zusammenfassung",
-    "total": "Gesamt",
-    "links": "Links",
-    "images": "Bilder",
-    "errors": "Fehler",
-    "warnings": "Warnungen",
-    "valid": "Gültig",
-    "invalid": "Ungültig",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Ziel",
-    "alt": "Alt",
-    "width": "Breite",
-    "height": "Höhe",
-    "empty": "Leer",
-    "outputReady": "Ergebnis bereit",
-    "cleanedHtml": "Bereinigtes HTML",
-    "formattedHtml": "Formatiertes HTML",
-    "minifiedHtml": "Minifiziertes HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extrahierte Bilder",
-    "extractedLinks": "Extrahierte Links",
-    "validationSummary": "Validierungszusammenfassung",
-    "prettyHtml": "Lesbares HTML",
-    "encodedText": "Kodierter Text",
-    "file": "Datei",
-    "size": "Größe",
-    "format": "Format",
-    "quality": "Qualität",
-    "colorOne": "Farbe 1",
-    "colorTwo": "Farbe 2",
-    "background": "Hintergrund",
-    "foreground": "Vordergrund",
-    "angle": "Winkel",
-    "margin": "Rand",
-    "level": "Stufe",
-    "gradientType": "Verlaufstyp",
-    "linear": "Linear",
-    "radial": "Radial",
-    "blur": "Weichzeichnung",
-    "spread": "Ausbreitung",
-    "offsetX": "X-Versatz",
-    "offsetY": "Y-Versatz",
-    "opacity": "Deckkraft",
-    "inset": "Innen",
-    "cssCode": "CSS-Code",
-    "snippet": "Snippet",
-    "download": "Herunterladen",
-    "downloadSvg": "SVG herunterladen",
-    "downloadPng": "PNG herunterladen",
-    "downloadAll": "Alle herunterladen",
-    "upload": "Hochladen",
-    "title": "Titel",
-    "description": "Beschreibung",
-    "canonicalUrl": "Kanonische URL",
-    "siteName": "Seitenname",
-    "ogImage": "OG-Bild",
-    "clear": "Löschen",
-    "generatedQr": "Generierter QR-Code",
-    "placeholderImage": "Platzhalterbild",
-    "faviconSet": "Favicon-Set",
-    "keepAspectRatio": "Seitenverhältnis beibehalten",
-    "cropX": "Zuschneiden X",
-    "cropY": "Zuschneiden Y",
-    "cropWidth": "Zuschneidebreite",
-    "cropHeight": "Zuschneidehöhe",
-    "originalSize": "Originalgröße",
-    "outputSize": "Ausgabegröße",
-    "savedSize": "Gespeicherte Größe",
-    "result": "Ergebnis",
-    "base64": "Base64",
-    "mimeType": "MIME-Typ",
-    "resizedImage": "Größenänderung",
-    "compressedImage": "Komprimiertes Bild",
-    "croppedImage": "Zugeschnittenes Bild",
-    "convertedImage": "Konvertiertes Bild",
-    "decodedImage": "Dekodiertes Bild",
-    "imagePreview": "Bildvorschau",
-    "camera": "Kamera",
-    "lens": "Objektiv",
-    "dateTaken": "Aufnahmedatum",
-    "resolution": "Auflösung",
-    "fileSize": "Dateigröße",
-    "iso": "ISO",
-    "exposure": "Belichtung",
-    "aperture": "Blende",
-    "focalLength": "Brennweite",
-    "flash": "Blitz",
-    "orientation": "Ausrichtung",
-    "latitude": "Breitengrad",
-    "longitude": "Längengrad",
-    "openMap": "Karte öffnen",
-    "rawMetadata": "Rohe Metadaten",
-    "noMetadataFound": "Keine Metadaten gefunden",
-    "gpsLocation": "GPS-Position",
-    "metadataSummary": "Metadaten-Zusammenfassung"
-  },
   "seo": {
     "title": "Fugenmassen-Rechner",
-    "description": "Berechnen Sie den Fugenmassenbedarf für Fliesen in kg und Säcken anhand von Fläche, Fliesengröße, Fugenbreite, Fugentiefe, Verschnitt und Sackgewicht.",
+    "description": "Berechnen Sie Fugenmasse in kg und Säcken aus Fläche, Fliesengröße, Fugenbreite, Fugentiefe, Verschnitt und Packungsgewicht.",
     "keywords": [
       "Fugenmassen-Rechner",
-      "wie viel Fugenmasse brauche ich",
       "Fugenmasse berechnen",
+      "wie viel Fugenmasse brauche ich",
       "Fugenverbrauch",
       "Fliesenrechner"
     ]

@@ -4,173 +4,85 @@
   "slug": "calculateur-plancher-chauffant",
   "h1": "Calculateur de plancher chauffant",
   "title": "Calculateur de plancher chauffant",
-  "shortDescription": "Estimez la longueur de tube et le nombre de boucles pour un plancher chauffant hydraulique.",
-  "metaTitle": "Calculateur de plancher chauffant | Longueur de tube et boucles",
-  "metaDescription": "Calculez la quantité de tube nécessaire pour un plancher chauffant, le nombre de boucles requises et la longueur moyenne d’une boucle selon la surface, l’entraxe et la marge de perte.",
-  "intro": "Utilisez ce calculateur de plancher chauffant pour estimer la longueur de tube, le nombre de boucles et la longueur moyenne d’une boucle dans une installation hydraulique. C’est un point de départ pratique pour planifier les matériaux et savoir combien de tube il faut.",
-  "overview": "Saisissez la surface chauffée, l’entraxe des tubes, la longueur maximale d’une boucle, la longueur de raccordement supplémentaire et le pourcentage de perte pour obtenir une estimation rapide.",
+  "shortDescription": "Estimez la longueur de tube et le nombre de boucles d’un plancher chauffant hydraulique.",
+  "metaTitle": "Calculateur plancher chauffant",
+  "metaDescription": "Calculez la longueur de tube, le nombre de boucles et la longueur moyenne d’une boucle à partir de la surface, de l’entraxe et des pertes.",
+  "intro": "Obtenez une estimation concrète de la longueur de tube, du nombre de boucles et de la longueur moyenne par boucle pour un plancher chauffant hydraulique.",
+  "overview": "Ce calculateur estime le besoin en tube d’un plancher chauffant hydraulique à partir de la surface chauffée, de l’entraxe des tubes, de la longueur maximale par boucle, des liaisons jusqu’au collecteur et d’une marge de pertes. Il sert à préparer le chiffrage des matériaux avant de commander les rouleaux de tube ou de dimensionner le collecteur. Le résultat permet aussi de voir si une zone peut tenir dans une seule boucle ou doit être répartie sur plusieurs circuits.",
   "howItWorks": [
-    "Indiquez la surface du plancher chauffé en mètres carrés.",
+    "Indiquez la surface chauffée en mètres carrés.",
     "Définissez l’entraxe des tubes en centimètres.",
     "Précisez la longueur maximale autorisée par boucle.",
-    "Ajoutez la longueur supplémentaire de raccordement au collecteur.",
-    "Incluez un pourcentage de perte pour les découpes et la pose."
+    "Ajoutez la longueur supplémentaire des liaisons vers le collecteur.",
+    "Intégrez un pourcentage de pertes pour les découpes et les ajustements."
   ],
   "useCases": [
-    "Estimer la quantité de tube nécessaire pour un plancher chauffant.",
-    "Préparer le nombre de boucles avant l’installation.",
-    "Vérifier si une pièce tient dans la longueur maximale d’une boucle.",
-    "Obtenir une estimation rapide pour un projet neuf ou une rénovation."
+    {
+      "title": "Évaluer le tube d’une pièce",
+      "description": "Estimez la quantité nécessaire pour un séjour, une chambre ou une zone ouverte avant de passer commande."
+    },
+    {
+      "title": "Préparer le nombre de boucles",
+      "description": "Vérifiez combien de circuits sont requis pour rester sous la limite de longueur fixée."
+    },
+    {
+      "title": "Comparer plusieurs entraxes",
+      "description": "Mesurez l’effet d’un entraxe plus serré ou plus large sur la consommation de tube et sur le nombre de circuits."
+    },
+    {
+      "title": "Chiffrer une rénovation",
+      "description": "Ajoutez les trajets vers le collecteur pour obtenir une estimation crédible dans un chantier de rénovation."
+    }
   ],
   "examples": [
     {
-      "title": "Exemple de calcul",
-      "input": "100 m2 de surface, entraxe de 15 cm, boucle max 100 m, 5 m de raccordement, 10 % de perte",
-      "output": "La longueur de tube, le nombre de boucles et la longueur moyenne d’une boucle sont estimés à partir des données saisies.",
-      "description": "Cas typique de planification d’un système hydraulique."
+      "title": "Séjour avec collecteur proche",
+      "input": "Surface : 34 m2, entraxe : 15 cm, boucle max : 95 m, longueur supplémentaire : 8 m, pertes : 7 %",
+      "output": "Le besoin estimé est d’environ 265 m de tube, répartis en 3 boucles avec une moyenne d’environ 88 m par boucle.",
+      "description": "Cas courant pour une pièce de taille moyenne reliée à un collecteur proche."
     },
     {
-      "title": "Préparation des matériaux",
-      "input": "Comparez le résultat avec la capacité du collecteur et la longueur de la couronne de tube",
-      "output": "Permet d’éviter de sous-estimer la quantité de tube et le nombre de circuits.",
-      "description": "Utile pour un devis initial."
+      "title": "Rez-de-chaussée ouvert",
+      "input": "Surface : 82 m2, entraxe : 10 cm, boucle max : 100 m, longueur supplémentaire : 12 m, pertes : 10 %",
+      "output": "Le besoin estimé grimpe à environ 922 m de tube, soit 10 boucles avec une moyenne proche de 92 m.",
+      "description": "Montre l’impact d’un entraxe serré sur une grande surface."
+    },
+    {
+      "title": "Petite salle d’eau",
+      "input": "Surface : 9,5 m2, entraxe : 20 cm, boucle max : 70 m, longueur supplémentaire : 6 m, pertes : 5 %",
+      "output": "Le besoin estimé est d’environ 59 m de tube, donc une seule boucle suffit et reste sous la limite.",
+      "description": "Exemple utile pour une petite zone chauffée avec un seul circuit."
     }
   ],
   "faq": [
     {
-      "question": "Quelle est la précision de ce calculateur ?",
-      "answer": "Il fournit une estimation pratique pour la planification. Le résultat final peut varier selon la forme de la pièce, les zones périphériques, la disposition du collecteur et la méthode de pose."
+      "question": "Que modifie l’entraxe dans le calcul ?",
+      "answer": "Un entraxe plus faible augmente la longueur totale de tube et peut faire passer une zone de un à plusieurs circuits. Un entraxe plus large réduit le besoin en tube."
     },
     {
-      "question": "Quel est l’impact de l’entraxe des tubes ?",
-      "answer": "Un entraxe plus faible augmente la longueur totale de tube, tandis qu’un entraxe plus grand la réduit. Le calculateur utilise cet entraxe pour estimer le besoin en tube."
+      "question": "Pourquoi ajouter une longueur de raccordement ?",
+      "answer": "Parce que le tube doit aller du collecteur à la zone chauffée puis revenir. Sans cette distance, l’estimation serait trop courte."
     },
     {
-      "question": "Pourquoi ajouter une longueur de raccordement supplémentaire ?",
-      "answer": "Elle couvre les aller-retours entre le collecteur et la zone chauffée. Cela rend l’estimation plus réaliste."
+      "question": "Le calculateur gère-t-il les pièces irrégulières ?",
+      "answer": "Il fournit une base de calcul, mais les formes complexes, renfoncements, poteaux et zones de rive peuvent augmenter le besoin réel."
     },
     {
-      "question": "Que se passe-t-il si la boucle dépasse la limite ?",
-      "answer": "Le calculateur indiquera qu’il faut plus de boucles afin que chaque circuit reste sous la longueur maximale définie."
+      "question": "Comment interpréter la longueur moyenne d’une boucle ?",
+      "answer": "C’est une valeur de répartition indicative. Si elle se rapproche trop de votre limite, il vaut mieux prévoir davantage de boucles."
     },
     {
-      "question": "Peut-on l’utiliser pour un chauffage électrique au sol ?",
-      "answer": "Non. Cet outil est conçu pour la planification d’un plancher chauffant hydraulique, pas pour des nattes ou câbles électriques."
+      "question": "Peut-on additionner plusieurs pièces dans une seule saisie ?",
+      "answer": "Oui, si elles forment une seule zone de chauffage avec les mêmes paramètres. Sinon, il faut les calculer séparément."
+    },
+    {
+      "question": "À quoi sert la marge de pertes ?",
+      "answer": "Elle couvre les découpes, les courbes et les ajustements de chantier. Sans cette marge, il est facile de manquer de tube."
     }
   ],
-  "uiLabels": {
-    "copy": "Copier",
-    "copied": "Copié",
-    "input": "Entrée",
-    "output": "Sortie",
-    "placeholder": "Saisir une valeur",
-    "indent": "Retrait",
-    "removeComments": "Supprimer les commentaires",
-    "preview": "Aperçu",
-    "source": "Source",
-    "sanitizedHtml": "HTML nettoyé",
-    "plainText": "Texte brut",
-    "summary": "Résumé",
-    "total": "Total",
-    "links": "Liens",
-    "images": "Images",
-    "errors": "Erreurs",
-    "warnings": "Avertissements",
-    "valid": "Valide",
-    "invalid": "Non valide",
-    "href": "Href",
-    "text": "Texte",
-    "rel": "Rel",
-    "target": "Cible",
-    "alt": "Alt",
-    "width": "Largeur",
-    "height": "Hauteur",
-    "empty": "Vide",
-    "outputReady": "Résultat prêt",
-    "cleanedHtml": "HTML nettoyé",
-    "formattedHtml": "HTML formaté",
-    "minifiedHtml": "HTML minifié",
-    "markdown": "Markdown",
-    "extractedImages": "Images extraites",
-    "extractedLinks": "Liens extraits",
-    "validationSummary": "Résumé de validation",
-    "prettyHtml": "HTML lisible",
-    "encodedText": "Texte encodé",
-    "file": "Fichier",
-    "size": "Taille",
-    "format": "Format",
-    "quality": "Qualité",
-    "colorOne": "Couleur 1",
-    "colorTwo": "Couleur 2",
-    "background": "Arrière-plan",
-    "foreground": "Premier plan",
-    "angle": "Angle",
-    "margin": "Marge",
-    "level": "Niveau",
-    "gradientType": "Type de dégradé",
-    "linear": "Linéaire",
-    "radial": "Radial",
-    "blur": "Flou",
-    "spread": "Diffusion",
-    "offsetX": "Décalage X",
-    "offsetY": "Décalage Y",
-    "opacity": "Opacité",
-    "inset": "Intérieur",
-    "cssCode": "Code CSS",
-    "snippet": "Extrait",
-    "download": "Télécharger",
-    "downloadSvg": "Télécharger SVG",
-    "downloadPng": "Télécharger PNG",
-    "downloadAll": "Tout télécharger",
-    "upload": "Téléverser",
-    "title": "Titre",
-    "description": "Description",
-    "canonicalUrl": "URL canonique",
-    "siteName": "Nom du site",
-    "ogImage": "Image OG",
-    "clear": "Effacer",
-    "generatedQr": "QR généré",
-    "placeholderImage": "Image fictive",
-    "faviconSet": "Jeu de favicon",
-    "keepAspectRatio": "Conserver le ratio",
-    "cropX": "Recadrage X",
-    "cropY": "Recadrage Y",
-    "cropWidth": "Largeur du recadrage",
-    "cropHeight": "Hauteur du recadrage",
-    "originalSize": "Taille d'origine",
-    "outputSize": "Taille de sortie",
-    "savedSize": "Taille économisée",
-    "result": "Résultat",
-    "base64": "Base64",
-    "mimeType": "Type MIME",
-    "resizedImage": "Image redimensionnée",
-    "compressedImage": "Image compressée",
-    "croppedImage": "Image recadrée",
-    "convertedImage": "Image convertie",
-    "decodedImage": "Image décodée",
-    "imagePreview": "Aperçu de l’image",
-    "camera": "Caméra",
-    "lens": "Objectif",
-    "dateTaken": "Date de prise de vue",
-    "resolution": "Résolution",
-    "fileSize": "Taille du fichier",
-    "iso": "ISO",
-    "exposure": "Exposition",
-    "aperture": "Ouverture",
-    "focalLength": "Distance focale",
-    "flash": "Flash",
-    "orientation": "Orientation",
-    "latitude": "Latitude",
-    "longitude": "Longitude",
-    "openMap": "Ouvrir la carte",
-    "rawMetadata": "Métadonnées brutes",
-    "noMetadataFound": "Aucune métadonnée trouvée",
-    "gpsLocation": "Position GPS",
-    "metadataSummary": "Résumé des métadonnées"
-  },
   "seo": {
-    "title": "Calculateur de plancher chauffant",
-    "description": "Calculez la longueur de tube, le nombre de boucles et la longueur moyenne d’une boucle pour un plancher chauffant hydraulique selon la surface, l’entraxe et la marge de perte.",
+    "title": "Calculateur plancher chauffant",
+    "description": "Calculez la longueur de tube, le nombre de boucles et la longueur moyenne d’une boucle à partir de la surface, de l’entraxe et des pertes.",
     "keywords": [
       "calculateur plancher chauffant",
       "longueur de tube plancher chauffant",

@@ -4,175 +4,87 @@
   "slug": "calculadora-de-valla",
   "h1": "Calculadora de valla",
   "title": "Calculadora de valla de paneles",
-  "shortDescription": "Calcula cuántos paneles, postes y longitud útil necesitas para una valla de paneles.",
-  "metaTitle": "Calculadora de valla - paneles, postes y longitud",
-  "metaDescription": "Calcula rápido cuántos paneles y postes necesitas para una valla de paneles. Estima la longitud útil y añade un margen de desperdicio.",
-  "intro": "Usa esta calculadora de valla para estimar cuántos tramos de panel y postes necesitas según la longitud total, la puerta, la portilla, el ancho del panel y el margen de desperdicio.",
-  "overview": "Esta calculadora está pensada para vallas de paneles. Introduce la longitud de la valla, el ancho del panel, el ancho de la puerta, el ancho de la portilla y el porcentaje de desperdicio para obtener una estimación práctica de materiales. La herramienta resta las aberturas de la longitud total, calcula los paneles necesarios y estima los postes según la distribución.",
+  "shortDescription": "Calcula cuántos paneles, postes y longitud útil necesita una valla recta de paneles.",
+  "metaTitle": "Calculadora de valla de paneles",
+  "metaDescription": "Calcula paneles, postes y longitud útil. Incluye la puerta, la portilla y un margen para recortes y montaje.",
+  "intro": "Introduce la longitud total de la valla, los anchos de los huecos y el ancho del panel para obtener paneles, postes y la longitud restante útil.",
+  "overview": "Esta calculadora está pensada para vallas rectas de paneles. Resta los huecos de puerta y portilla de la longitud total y, a partir del ancho del panel, estima cuántos tramos caben en la línea y cuántos postes harán falta.\n\nAñade un margen cuando el trazado requiera cortes, ajuste en pendientes o pequeñas correcciones de instalación. El resultado sirve como base de compra y no sustituye el replanteo en obra ni la comprobación de las medidas del sistema que vas a montar.",
   "howItWorks": [
     "Introduce la longitud total de la valla en metros.",
-    "Añade el ancho del panel, de la puerta y de la portilla.",
-    "Define el porcentaje de desperdicio para recortes y reserva de montaje.",
-    "La calculadora determina la longitud útil de la valla.",
-    "Después estima cuántos paneles y postes necesitas."
+    "Añade el ancho de cada hueco, como una puerta o una portilla.",
+    "Indica el ancho del panel que piensas instalar.",
+    "Elige un margen para recortes y ajuste de montaje.",
+    "La calculadora devuelve la longitud útil, el número de paneles y el de postes."
   ],
   "useCases": [
-    "Planificar una valla de paneles para una casa o jardín.",
-    "Calcular materiales antes de pedir paneles y postes.",
-    "Comprobar cuántos paneles hacen falta tras descontar puerta y portilla.",
-    "Añadir un margen de seguridad para recortes y ajustes."
+    {
+      "title": "Comprar materiales para un cerramiento de jardín",
+      "description": "Calcula cuántos paneles y postes conviene pedir antes de hacer el pedido de una valla nueva."
+    },
+    {
+      "title": "Revisar un frente con puerta y acceso peatonal",
+      "description": "Comprueba cuánto tramo queda después de descontar la puerta de coche y la portilla del total."
+    },
+    {
+      "title": "Comparar módulos de panel antes de comprar",
+      "description": "Prueba paneles de 2,0 m, 2,5 m u otras medidas para ver qué distribución deja menos cortes y mejores apoyos."
+    },
+    {
+      "title": "Reservar material para un terreno con desnivel",
+      "description": "Suma un porcentaje de margen cuando haya pendientes, extremos que recortar o ajustes previstos en la obra."
+    }
   ],
   "examples": [
     {
-      "title": "¿Cuántos paneles de valla necesito?",
-      "input": "Para 24 m de valla, paneles de 2,5 m, puerta de 4 m, portilla de 1 m y 5% de desperdicio.",
-      "output": "La calculadora estima paneles, postes y longitud útil.",
-      "description": "Ejemplo rápido para una valla de paneles estándar."
+      "title": "Frente con puerta y portilla",
+      "input": "Longitud total: 31,5 m; puerta: 4,0 m; portilla: 1,0 m; ancho del panel: 2,5 m; margen: 6%.",
+      "output": "La longitud útil se reduce por los huecos y la calculadora estima paneles y postes.",
+      "description": "Ideal para un cierre frontal con acceso de vehículos y peatones."
     },
     {
-      "title": "Longitud de la valla con aberturas",
-      "input": "Usa la herramienta para restar el ancho de la puerta y la portilla de la línea total.",
-      "output": "Obtendrás la longitud restante para los paneles.",
-      "description": "Útil cuando la valla incluye varios accesos."
+      "title": "Tramo trasero sin interrupciones",
+      "input": "Longitud total: 18 m; puerta: 0 m; portilla: 0 m; ancho del panel: 2,0 m; margen: 3%.",
+      "output": "El resultado muestra la longitud completa a cubrir y el número de paneles estándar para ese tramo recto.",
+      "description": "Útil cuando un lado de la parcela no tiene aberturas."
+    },
+    {
+      "title": "Valla con entrada ancha",
+      "input": "Longitud total: 27,8 m; puerta: 3,6 m; portilla: 0,9 m; ancho del panel: 2,5 m; margen: 8%.",
+      "output": "La herramienta calcula la longitud restante para paneles y añade reserva para cortes y ajuste.",
+      "description": "Práctico cuando las medidas de los accesos deben cuadrar con precisión."
     }
   ],
   "faq": [
     {
-      "question": "¿Qué calcula la calculadora de valla?",
-      "answer": "Estima el número de paneles, postes y la longitud útil total para una valla de paneles."
+      "question": "¿La calculadora cuenta postes de esquina y finales por separado?",
+      "answer": "Estima los postes del reparto de paneles, pero los postes de esquina, remate, puerta o cambio de dirección suelen añadirse aparte."
     },
     {
-      "question": "¿Puedo incluir puerta y portilla?",
-      "answer": "Sí. Introduce sus anchos y la calculadora los restará de la longitud total de la valla."
+      "question": "¿Debo incluir los huecos dentro de la longitud total?",
+      "answer": "Sí. Escribe la línea completa de extremo a extremo y después añade el ancho de la puerta y la portilla para descontarlos del tramo de paneles."
     },
     {
-      "question": "¿Por qué añadir un porcentaje de desperdicio?",
-      "answer": "El desperdicio cubre cortes, ajustes y una pequeña reserva de montaje para que la estimación sea más realista."
+      "question": "¿Por qué el número de paneles puede no salir de dividir la longitud entre el ancho del panel?",
+      "answer": "La herramienta ajusta el resultado a una distribución práctica, así que puede redondear de forma distinta cuando la medida restante no encaja exacta."
     },
     {
-      "question": "¿Esta calculadora es solo para vallas de paneles?",
-      "answer": "Está optimizada para vallas de paneles, pero la misma lógica sirve para otros trazados rectos de valla."
+      "question": "¿Qué hago si mi valla mezcla anchos de panel distintos?",
+      "answer": "Conviene calcular cada tramo por separado. Con módulos mixtos, una sola cifra total suele ser menos útil que dividir la línea en sectores."
+    },
+    {
+      "question": "¿Sirve el resultado para terrenos con pendiente?",
+      "answer": "Sí, pero tómalo como referencia inicial. Las pendientes suelen exigir cortes o montaje escalonado, y eso puede cambiar el material final."
     }
   ],
-  "uiLabels": {
-    "copy": "Copiar",
-    "copied": "Copiado",
-    "input": "Entrada",
-    "output": "Salida",
-    "placeholder": "Introduce un valor",
-    "indent": "Sangría",
-    "removeComments": "Eliminar comentarios",
-    "preview": "Vista previa",
-    "source": "Fuente",
-    "sanitizedHtml": "HTML saneado",
-    "plainText": "Texto plano",
-    "summary": "Resumen",
-    "total": "Total",
-    "links": "Enlaces",
-    "images": "Imágenes",
-    "errors": "Errores",
-    "warnings": "Avisos",
-    "valid": "Válido",
-    "invalid": "No válido",
-    "href": "Href",
-    "text": "Texto",
-    "rel": "Rel",
-    "target": "Destino",
-    "alt": "Alt",
-    "width": "Ancho",
-    "height": "Alto",
-    "empty": "Vacío",
-    "outputReady": "Resultado listo",
-    "cleanedHtml": "HTML limpio",
-    "formattedHtml": "HTML formateado",
-    "minifiedHtml": "HTML minificado",
-    "markdown": "Markdown",
-    "extractedImages": "Imágenes extraídas",
-    "extractedLinks": "Enlaces extraídos",
-    "validationSummary": "Resumen de validación",
-    "prettyHtml": "HTML legible",
-    "encodedText": "Texto codificado",
-    "file": "Archivo",
-    "size": "Tamaño",
-    "format": "Formato",
-    "quality": "Calidad",
-    "colorOne": "Color 1",
-    "colorTwo": "Color 2",
-    "background": "Fondo",
-    "foreground": "Primer plano",
-    "angle": "Ángulo",
-    "margin": "Margen",
-    "level": "Nivel",
-    "gradientType": "Tipo de degradado",
-    "linear": "Lineal",
-    "radial": "Radial",
-    "blur": "Desenfoque",
-    "spread": "Extensión",
-    "offsetX": "Desplazamiento X",
-    "offsetY": "Desplazamiento Y",
-    "opacity": "Opacidad",
-    "inset": "Interior",
-    "cssCode": "Código CSS",
-    "snippet": "Fragmento",
-    "download": "Descargar",
-    "downloadSvg": "Descargar SVG",
-    "downloadPng": "Descargar PNG",
-    "downloadAll": "Descargar todo",
-    "upload": "Subir",
-    "title": "Título",
-    "description": "Descripción",
-    "canonicalUrl": "URL canónica",
-    "siteName": "Nombre del sitio",
-    "ogImage": "Imagen OG",
-    "clear": "Limpiar",
-    "generatedQr": "QR generado",
-    "placeholderImage": "Imagen de marcador",
-    "faviconSet": "Conjunto de favicon",
-    "keepAspectRatio": "Mantener proporción",
-    "cropX": "Recorte X",
-    "cropY": "Recorte Y",
-    "cropWidth": "Ancho del recorte",
-    "cropHeight": "Alto del recorte",
-    "originalSize": "Tamaño original",
-    "outputSize": "Tamaño de salida",
-    "savedSize": "Tamaño ahorrado",
-    "result": "Resultado",
-    "base64": "Base64",
-    "mimeType": "Tipo MIME",
-    "resizedImage": "Imagen redimensionada",
-    "compressedImage": "Imagen comprimida",
-    "croppedImage": "Imagen recortada",
-    "convertedImage": "Imagen convertida",
-    "decodedImage": "Imagen decodificada",
-    "imagePreview": "Vista previa de la imagen",
-    "camera": "Cámara",
-    "lens": "Lente",
-    "dateTaken": "Fecha de captura",
-    "resolution": "Resolución",
-    "fileSize": "Tamaño del archivo",
-    "iso": "ISO",
-    "exposure": "Exposición",
-    "aperture": "Apertura",
-    "focalLength": "Distancia focal",
-    "flash": "Flash",
-    "orientation": "Orientación",
-    "latitude": "Latitud",
-    "longitude": "Longitud",
-    "openMap": "Abrir mapa",
-    "rawMetadata": "Metadatos sin procesar",
-    "noMetadataFound": "No se encontraron metadatos",
-    "gpsLocation": "Ubicación GPS",
-    "metadataSummary": "Resumen de metadatos"
-  },
   "seo": {
     "title": "Calculadora de valla de paneles",
-    "description": "Calcula cuántos paneles, postes y longitud útil necesitas para una valla de paneles. Incluye puerta, portilla y margen de desperdicio.",
+    "description": "Calcula paneles, postes y longitud útil. Incluye la puerta, la portilla y un margen para recortes y montaje.",
     "keywords": [
       "calculadora de valla",
       "calculadora de valla de paneles",
       "cuántos paneles necesito",
       "calculadora de postes",
-      "calculadora de longitud de valla"
+      "longitud útil de valla"
     ]
   }
 }

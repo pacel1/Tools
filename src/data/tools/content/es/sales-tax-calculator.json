@@ -1,46 +1,82 @@
 {
   "toolId": "sales-tax-calculator",
   "locale": "es",
-  "slug": "calculadora-de-impuesto-de-ventas",
+  "slug": "calculadora-impuesto-ventas",
   "h1": "Calculadora de impuesto sobre ventas",
   "title": "Calculadora de impuesto sobre ventas",
-  "shortDescription": "Calcula el precio total tras añadir el impuesto sobre ventas con resultados rápidos, entradas sencillas y ejemplos prácticos.",
-  "overview": "Calcula el precio total tras añadir el impuesto sobre ventas. Esta página ofrece una respuesta rápida con una herramienta práctica y un flujo de resultados sencillo. Está pensada para usuarios que buscan una respuesta gratuita en línea, resultados rápidos desde el navegador y contenido práctico de cola larga.",
+  "shortDescription": "Introduce un importe sin impuestos y una tasa para obtener el impuesto y el total final.",
+  "metaTitle": "Calculadora de impuesto de ventas",
+  "metaDescription": "Añade el impuesto sobre ventas a un importe base y ve el impuesto añadido y el total final en compras, recibos y presupuestos.",
+  "intro": "Escribe el importe antes de impuestos y la tasa para ver al instante el impuesto añadido y el total final.",
+  "overview": "El precio que ves en una tienda, un carrito o un presupuesto no siempre coincide con lo que acabas pagando. Esta calculadora aplica la tasa de impuesto sobre ventas al importe base y muestra tanto el impuesto como el total, para que puedas revisar una compra o una cifra antes de confirmar.\n\nSirve para comparar importes entre tiendas, estimar cargos en comercio electrónico, revisar recibos y preparar una referencia preliminar para un cliente. El resultado es solo una ayuda de cálculo; la facturación, las declaraciones y el tratamiento fiscal dependen de la normativa de la jurisdicción correspondiente.",
   "howItWorks": [
-    "Introduce el valor o texto requerido en el formulario.",
-    "La conversión, el cálculo o la transformación se realiza al instante en el navegador.",
-    "Revisa el resultado y continúa con herramientas relacionadas si necesitas otro paso."
+    "Introduce el importe antes de impuestos, como el precio de un producto, el subtotal del carrito o una línea de presupuesto.",
+    "Añade la tasa de impuesto como porcentaje, por ejemplo 6, 7.5 u 8.25.",
+    "Revisa el importe del impuesto y el total final con impuesto incluido."
+  ],
+  "useCases": [
+    {
+      "title": "Compra antes de pagar",
+      "description": "Calcula cuánto terminarás pagando cuando la tienda muestra el precio sin impuestos."
+    },
+    {
+      "title": "Subtotal de carrito",
+      "description": "Compara el subtotal con el total después de aplicar un impuesto estatal, local o de plataforma."
+    },
+    {
+      "title": "Revisión de recibo",
+      "description": "Comprueba si la línea de impuesto coincide con el subtotal y la tasa que esperabas."
+    }
   ],
   "examples": [
     {
-      "title": "Ejemplo 1",
-      "input": "100 con 8% de impuesto",
-      "output": "108",
-      "description": "Un ejemplo realista de calculadora de impuesto sobre ventas para una búsqueda cotidiana."
+      "title": "Artículo de 49,99 con 8,25%",
+      "input": "49,99 con 8,25%",
+      "output": "Impuesto: 4,12; Total: 54,11",
+      "description": "Un precio visible en tienda sube al añadir el impuesto al momento de pagar."
     },
     {
-      "title": "Ejemplo 2",
-      "input": "100 con 8% de impuesto",
-      "output": "108",
-      "description": "Otro caso práctico pensado para tráfico orgánico de cola larga."
+      "title": "Servicio de 19,00 con 6%",
+      "input": "19,00 con 6%",
+      "output": "Impuesto: 1,14; Total: 20,14",
+      "description": "Útil cuando una suscripción o servicio aplica la tasa después de conocer la ubicación."
+    },
+    {
+      "title": "Presupuesto de 250,00 con 7,5%",
+      "input": "250,00 con 7,5%",
+      "output": "Impuesto: 18,75; Total: 268,75",
+      "description": "Ayuda a dar una cifra previa antes de emitir la factura final."
     }
   ],
   "faq": [
     {
-      "question": "¿Qué precisión tiene esta herramienta?",
-      "answer": "El resultado se calcula directamente a partir de la fórmula o de la lógica en el navegador que utiliza esta herramienta."
+      "question": "¿La calculadora añade el impuesto al importe que escribo?",
+      "answer": "Sí. Introduces el subtotal y la tasa, y la herramienta devuelve el impuesto añadido y el total final."
     },
     {
-      "question": "¿Puedo usar esta herramienta en el móvil?",
-      "answer": "Sí. La página funciona tanto en ordenador como en móviles con un diseño sencillo de entrada y resultado."
+      "question": "¿Puedo probar distintas tasas?",
+      "answer": "Sí. Repite el cálculo con otra tasa para comparar ubicaciones, tiendas o escenarios de presupuesto."
+    },
+    {
+      "question": "¿Debo incluir envío, comisiones o descuentos?",
+      "answer": "Solo si forman parte de la base imponible en tu caso. La regla puede variar según el producto, el cargo y la jurisdicción."
+    },
+    {
+      "question": "¿Por qué puede no coincidir con un recibo?",
+      "answer": "Algunos sistemas redondean de otra forma o calculan el impuesto sobre una base distinta, por ejemplo después de un descuento."
+    },
+    {
+      "question": "¿Sirve para declarar impuestos?",
+      "answer": "No. Es una ayuda para estimaciones y comprobaciones; las facturas y declaraciones deben seguir la normativa aplicable."
     }
   ],
   "seo": {
-    "title": "Calculadora de impuesto sobre ventas",
-    "description": "Calcula el precio total tras añadir el impuesto sobre ventas. Calculadora gratuita en línea con resultados instantáneos.",
+    "title": "Calculadora de impuesto de ventas",
+    "description": "Añade el impuesto sobre ventas a un importe base y ve el impuesto añadido y el total final en compras, recibos y presupuestos.",
     "keywords": [
-      "calculadora de impuesto sobre ventas",
-      "herramienta de calculadoras"
+      "calculadora impuesto ventas",
+      "impuesto sobre ventas",
+      "total con impuesto"
     ]
   }
 }

@@ -4,177 +4,93 @@
   "slug": "lecteur-de-metadonnees-d-image",
   "h1": "Lecteur de métadonnées d’image",
   "title": "Lecteur de métadonnées d’image",
-  "shortDescription": "Lisez les métadonnées EXIF d’une photo en ligne, y compris les infos de l’appareil, la résolution, l’horodatage et le GPS si disponibles.",
-  "metaTitle": "Lecteur de métadonnées d’image en ligne | Lire les EXIF photo",
-  "metaDescription": "Consultez les métadonnées EXIF et photo en ligne. Vérifiez le modèle d’appareil, la date de prise de vue, la résolution, la localisation GPS, la taille du fichier et plus encore.",
-  "intro": "Lisez les métadonnées photo en ligne dans votre navigateur. Ce lecteur EXIF affiche les infos de l’appareil, l’heure de prise de vue, la résolution, les coordonnées GPS et d’autres données intégrées, sans installer de logiciel.",
-  "overview": "Utilisez ce lecteur de métadonnées d’image en ligne pour inspecter rapidement et en toute confidentialité les données EXIF. Importez une image et consultez le modèle de l’appareil, l’objectif, les réglages d’exposition, la taille de l’image, la date de prise de vue et les données de localisation lorsqu’elles existent. Le traitement étant côté navigateur, l’outil est idéal pour les photographes, les éditeurs et toute personne qui veut vérifier les détails d’une image avant de la partager ou de l’archiver.",
+  "shortDescription": "Consultez les métadonnées EXIF d’une photo, comme l’appareil, la date de prise de vue, la résolution et le GPS si le fichier les contient.",
+  "metaTitle": "Lecteur de métadonnées d’image",
+  "metaDescription": "Lisez les métadonnées EXIF d’une photo: modèle d’appareil, date, résolution, taille du fichier et coordonnées GPS directement dans le navigateur.",
+  "intro": "Ouvrez une image et lisez immédiatement ses métadonnées intégrées : appareil, objectif, exposition, date de prise de vue, résolution, orientation et GPS si le fichier les contient.",
+  "overview": "Cet outil affiche les informations enregistrées dans le fichier image afin que vous puissiez vérifier non seulement l’apparence de la photo, mais aussi sa fabrication technique. Vous y verrez le modèle d’appareil et l’objectif, les réglages d’exposition, l’heure de prise de vue, les dimensions, le format, l’orientation et, lorsqu’elles existent, les coordonnées de localisation.\n\nC’est utile pour vérifier l’origine d’un fichier, comparer des réglages après une prise de vue ou comprendre pourquoi une image s’affiche tournée différemment selon les applications. Si les métadonnées ont été supprimées lors de l’export ou du partage, l’outil l’indiquera clairement au lieu d’inventer des valeurs.",
   "howItWorks": [
-    "Importez une photo depuis votre appareil.",
-    "L’outil analyse les EXIF et métadonnées dans le navigateur.",
-    "Vérifiez l’appareil, la date, la résolution, l’orientation et le GPS.",
-    "Copiez les données ou utilisez-les pour vérifier l’origine de l’image."
+    "Importez une image depuis votre appareil.",
+    "Le lecteur analyse les métadonnées intégrées dans le navigateur.",
+    "Vérifiez l’appareil, l’objectif, l’exposition, la date, la résolution, l’orientation et le GPS.",
+    "Copiez les données ou utilisez-les avant de retoucher, publier ou archiver le fichier."
   ],
   "useCases": [
-    "Vérifier les réglages de l’appareil sur une photo.",
-    "Savoir quand et où une image a été prise.",
-    "Contrôler la résolution avant publication.",
-    "Examiner les métadonnées avant de les supprimer pour préserver la vie privée.",
-    "Consulter les détails d’un fichier pour l’édition ou l’archivage."
+    {
+      "title": "Relire les réglages de prise de vue",
+      "description": "Consulter vitesse, ouverture, ISO et focale après une séance pour relier l’image aux paramètres réels de capture."
+    },
+    {
+      "title": "Vérifier la présence d’une localisation",
+      "description": "Savoir si la latitude et la longitude sont encore enregistrées avant de partager une photo de voyage, d’événement ou de terrain."
+    },
+    {
+      "title": "Comprendre l’orientation stockée",
+      "description": "Détecter si la photo repose sur une balise d’orientation ou si les pixels ont déjà été pivotés lors de l’enregistrement."
+    },
+    {
+      "title": "Préparer une archive photo",
+      "description": "Contrôler la date, le modèle d’appareil et la taille pour classer correctement chaque image dans un projet ou un dossier."
+    },
+    {
+      "title": "Comparer après export",
+      "description": "Voir quelles informations restent dans le fichier après un enregistrement depuis un éditeur, une messagerie ou un convertisseur."
+    }
   ],
   "examples": [
     {
-      "title": "Vérification de l’appareil",
-      "input": "Importez un JPEG depuis votre téléphone",
-      "output": "Le modèle de l’appareil, l’exposition, l’ouverture, l’ISO et la focale s’affichent.",
-      "description": "Pratique pour analyser les réglages de prise de vue."
+      "title": "Analyse d’un portrait",
+      "input": "Importez un JPEG de 24 Mpx exporté depuis un reflex",
+      "output": "Le modèle d’appareil, l’objectif, 1/200 s, f/2.8, ISO 400, la focale et les dimensions s’affichent.",
+      "description": "Pratique pour relier le rendu aux réglages de prise de vue."
     },
     {
-      "title": "Recherche de localisation",
-      "input": "Ouvrez une photo avec des balises GPS",
-      "output": "La latitude et la longitude apparaissent si elles sont intégrées au fichier.",
-      "description": "Très utile pour les photos de voyage et d’événements."
+      "title": "Photo de téléphone avec voyage",
+      "input": "Ouvrez un fichier HEIC enregistré par un smartphone pendant un séjour en ville",
+      "output": "La date de prise de vue, le modèle de l’appareil, l’orientation et les coordonnées GPS apparaissent si elles ont été sauvegardées.",
+      "description": "Utile pour confirmer le lieu et le moment de la prise."
+    },
+    {
+      "title": "Fichier republié via messagerie",
+      "input": "Chargez un JPEG réenregistré après un envoi par chat",
+      "output": "Il peut ne rester que les informations de base du fichier, avec des champs appareil et GPS vides.",
+      "description": "Montre comment la compression et le partage peuvent retirer des métadonnées."
     }
   ],
   "faq": [
     {
-      "question": "Quelles métadonnées cet outil peut-il lire ?",
-      "answer": "Il peut lire les champs EXIF courants comme le modèle de l’appareil, la date de prise de vue, la résolution, l’orientation, les réglages d’exposition, la taille du fichier et les données GPS lorsqu’elles sont présentes."
+      "question": "Pourquoi vois-je moins de champs que dans le menu de mon appareil photo ?",
+      "answer": "Seules les données réellement écrites dans le fichier peuvent être lues. Beaucoup de réglages ne sont jamais intégrés ou ne le sont que partiellement."
     },
     {
-      "question": "Fonctionne-t-il dans le navigateur ?",
-      "answer": "Oui. Le lecteur traite les images localement dans votre navigateur pour une inspection rapide et privée des métadonnées."
+      "question": "Que se passe-t-il si l’image contient EXIF et d’autres blocs de métadonnées ?",
+      "answer": "L’outil regroupe les informations disponibles du fichier. Si un bloc est incomplet, d’autres données intégrées peuvent encore apparaître."
     },
     {
-      "question": "Pourquoi certaines photos n’affichent-elles aucune métadonnée ?",
-      "answer": "Les métadonnées ont peut-être été supprimées par l’appareil, l’application ou les paramètres d’export, ou bien le format du fichier ne contient pas de données EXIF."
+      "question": "La date affichée correspond-elle toujours au vrai moment de la photo ?",
+      "answer": "Pas forcément. Le fichier peut contenir l’heure d’export, l’heure de modification ou une horloge d’appareil mal réglée."
     },
     {
-      "question": "Puis-je trouver la localisation GPS dans chaque image ?",
-      "answer": "Non. Les données GPS n’apparaissent que si elles ont été enregistrées dans le fichier d’origine et n’ont pas été supprimées ensuite."
+      "question": "Pourquoi le GPS est-il vide alors que j’ai pris la photo avec un téléphone ?",
+      "answer": "La localisation pouvait être désactivée, l’application photo n’a pas enregistré les coordonnées, ou les métadonnées ont été supprimées au partage ou à l’export."
+    },
+    {
+      "question": "L’orientation modifie-t-elle les pixels du fichier ?",
+      "answer": "Pas toujours. Beaucoup d’images utilisent une balise d’orientation au lieu de pixels réellement tournés, ce qui explique des affichages différents selon les applications."
     }
   ],
-  "uiLabels": {
-    "copy": "Copier",
-    "copied": "Copié",
-    "input": "Entrée",
-    "output": "Sortie",
-    "placeholder": "Déposez une image ici ou choisissez un fichier",
-    "indent": "Retrait",
-    "removeComments": "Supprimer les commentaires",
-    "preview": "Aperçu",
-    "source": "Source",
-    "sanitizedHtml": "HTML nettoyé",
-    "plainText": "Texte brut",
-    "summary": "Résumé",
-    "total": "Total",
-    "links": "Liens",
-    "images": "Images",
-    "errors": "Erreurs",
-    "warnings": "Avertissements",
-    "valid": "Valide",
-    "invalid": "Invalide",
-    "href": "Href",
-    "text": "Texte",
-    "rel": "Rel",
-    "target": "Cible",
-    "alt": "Alt",
-    "width": "Largeur",
-    "height": "Hauteur",
-    "empty": "Vide",
-    "outputReady": "Résultat prêt",
-    "cleanedHtml": "HTML nettoyé",
-    "formattedHtml": "HTML formaté",
-    "minifiedHtml": "HTML minifié",
-    "markdown": "Markdown",
-    "extractedImages": "Images extraites",
-    "extractedLinks": "Liens extraits",
-    "validationSummary": "Résumé de validation",
-    "prettyHtml": "HTML lisible",
-    "encodedText": "Texte encodé",
-    "file": "Fichier",
-    "size": "Taille",
-    "format": "Format",
-    "quality": "Qualité",
-    "colorOne": "Couleur 1",
-    "colorTwo": "Couleur 2",
-    "background": "Arrière-plan",
-    "foreground": "Premier plan",
-    "angle": "Angle",
-    "margin": "Marge",
-    "level": "Niveau",
-    "gradientType": "Type de dégradé",
-    "linear": "Linéaire",
-    "radial": "Radial",
-    "blur": "Flou",
-    "spread": "Diffusion",
-    "offsetX": "Décalage X",
-    "offsetY": "Décalage Y",
-    "opacity": "Opacité",
-    "inset": "Intérieur",
-    "cssCode": "Code CSS",
-    "snippet": "Extrait",
-    "download": "Télécharger",
-    "downloadSvg": "Télécharger SVG",
-    "downloadPng": "Télécharger PNG",
-    "downloadAll": "Tout télécharger",
-    "upload": "Importer",
-    "title": "Titre",
-    "description": "Description",
-    "canonicalUrl": "URL canonique",
-    "siteName": "Nom du site",
-    "ogImage": "Image OG",
-    "clear": "Effacer",
-    "generatedQr": "Apercu du code QR",
-    "placeholderImage": "Apercu de l image",
-    "faviconSet": "Jeu de favicons",
-    "keepAspectRatio": "Conserver les proportions",
-    "cropX": "Recadrage X",
-    "cropY": "Recadrage Y",
-    "cropWidth": "Largeur du recadrage",
-    "cropHeight": "Hauteur du recadrage",
-    "originalSize": "Taille d’origine",
-    "outputSize": "Taille de sortie",
-    "savedSize": "Taille économisée",
-    "result": "Résultat",
-    "base64": "Base64",
-    "mimeType": "Type MIME",
-    "resizedImage": "Image redimensionnée",
-    "compressedImage": "Image compressée",
-    "croppedImage": "Image recadrée",
-    "convertedImage": "Image convertie",
-    "decodedImage": "Image décodée",
-    "imagePreview": "Aperçu de l’image",
-    "camera": "Appareil",
-    "lens": "Objectif",
-    "dateTaken": "Date de prise de vue",
-    "resolution": "Résolution",
-    "fileSize": "Taille du fichier",
-    "iso": "ISO",
-    "exposure": "Exposition",
-    "aperture": "Ouverture",
-    "focalLength": "Distance focale",
-    "flash": "Flash",
-    "orientation": "Orientation",
-    "latitude": "Latitude",
-    "longitude": "Longitude",
-    "openMap": "Ouvrir la carte",
-    "rawMetadata": "Métadonnées brutes",
-    "noMetadataFound": "Aucune métadonnée trouvée",
-    "gpsLocation": "Localisation GPS",
-    "metadataSummary": "Résumé des métadonnées"
-  },
   "seo": {
-    "title": "Lecteur de métadonnées d’image en ligne | Lire les EXIF photo",
-    "description": "Consultez les métadonnées EXIF et photo en ligne. Vérifiez le modèle d’appareil, la date de prise de vue, la résolution, la localisation GPS, la taille du fichier et plus encore.",
+    "title": "Lecteur de métadonnées d’image",
+    "description": "Lisez les métadonnées EXIF d’une photo: modèle d’appareil, date, résolution, taille du fichier et coordonnées GPS directement dans le navigateur.",
     "keywords": [
       "lecteur de métadonnées d’image",
       "lecteur EXIF",
       "métadonnées photo",
-      "lire EXIF en ligne",
-      "métadonnées appareil photo",
+      "données appareil photo",
       "données GPS photo",
-      "détails image"
+      "détails image",
+      "voir les métadonnées",
+      "lire EXIF"
     ]
   }
 }

@@ -4,44 +4,75 @@
   "slug": "convertidor-de-millas-a-kilometros",
   "h1": "Convertidor de millas a kilómetros",
   "title": "Convertidor de millas a kilómetros",
-  "shortDescription": "Convierte millas a kilómetros al instante con resultados rápidos, entradas sencillas y ejemplos prácticos.",
-  "overview": "Convierte millas a kilómetros al instante. Esta página ofrece una respuesta rápida con una herramienta útil y un flujo de resultados simple. Está pensada para usuarios que buscan una respuesta gratuita en línea, resultados rápidos en el navegador y contenido práctico de utilidad para búsquedas de cola larga.",
+  "shortDescription": "Convierte millas a kilómetros con resultado decimal preciso y ejemplos claros.",
+  "metaTitle": "Convertidor de millas a km",
+  "metaDescription": "Convierte millas a kilómetros con un factor preciso, resultados decimales, ejemplos resueltos e interpretación clara de unidades.",
+  "intro": "Escribe la distancia en millas y obtén su equivalente en kilómetros al instante.",
+  "overview": "Las millas y los kilómetros miden la misma distancia, pero pertenecen a sistemas distintos. Este convertidor aplica el factor estándar para que puedas pasar un trayecto, una ruta de carrera o una medida de mapa a kilómetros sin hacer cuentas.\n\nEl resultado se muestra en decimal para conservar precisión cuando necesitas anotar, planificar o comparar distancias. Si introduces una fracción de milla, la conversión mantiene ese nivel de detalle en el valor final.",
   "howItWorks": [
-    "Introduce el valor o texto requerido en el formulario.",
-    "La conversión, el cálculo o la transformación se ejecuta al instante en el navegador.",
-    "Revisa el resultado y continúa con herramientas relacionadas si necesitas otro paso."
+    "Introduce la distancia en millas.",
+    "La herramienta multiplica el valor por el factor estándar de conversión.",
+    "Lee el resultado en kilómetros, con decimales si hace falta."
+  ],
+  "useCases": [
+    {
+      "title": "Planificación de un viaje por carretera",
+      "description": "Convierte distancias en millas a kilómetros para comparar rutas entre países."
+    },
+    {
+      "title": "Registro de entrenamiento",
+      "description": "Pasa recorridos de running o ciclismo de millas a kilómetros para tu control deportivo."
+    },
+    {
+      "title": "Comparar distancias en mapas",
+      "description": "Verifica cuánto son en kilómetros las distancias que una app muestra en millas."
+    }
   ],
   "examples": [
     {
-      "title": "Ejemplo 1",
+      "title": "Cantidad entera",
       "input": "10 millas",
-      "output": "16,0934 kilómetros",
-      "description": "Un ejemplo realista de convertidor de millas a km para una búsqueda cotidiana."
+      "output": "16,0934 km",
+      "description": "Diez millas equivalen a 16,0934 kilómetros."
     },
     {
-      "title": "Ejemplo 2",
-      "input": "10 millas",
-      "output": "16,0934 kilómetros",
-      "description": "Otro caso práctico de uso para tráfico orgánico de cola larga."
+      "title": "Valor fraccionario",
+      "input": "2,5 millas",
+      "output": "4,02335 km",
+      "description": "Las fracciones se convierten con precisión decimal completa."
+    },
+    {
+      "title": "Trayecto largo",
+      "input": "120 millas",
+      "output": "193,12128 km",
+      "description": "Útil para rutas extensas y comparaciones de distancia."
     }
   ],
   "faq": [
     {
-      "question": "¿Qué precisión tiene esta herramienta?",
-      "answer": "El resultado se calcula directamente a partir de la fórmula o la lógica del navegador utilizada por esta herramienta."
+      "question": "¿Qué factor usa este convertidor?",
+      "answer": "Usa la equivalencia estándar: 1 milla = 1,609344 kilómetros."
     },
     {
-      "question": "¿Puedo usar esta herramienta en móvil?",
-      "answer": "Sí. La página funciona en pantallas de escritorio y móviles con una interfaz sencilla de entrada y resultado."
+      "question": "¿Por qué el resultado aparece con decimales?",
+      "answer": "Los decimales ayudan a mantener la precisión, sobre todo en valores fraccionarios y distancias largas."
+    },
+    {
+      "question": "¿Cómo interpreto una entrada muy pequeña?",
+      "answer": "Una cantidad pequeña en millas se traduce en una cantidad pequeña en kilómetros, normalmente con más decimales. Revisa el número completo antes de redondear."
+    },
+    {
+      "question": "¿Cuál es el error más habitual?",
+      "answer": "El fallo más común es introducir kilómetros en lugar de millas o esperar un redondeo automático. Comprueba que la unidad de entrada sea millas y redondea solo si lo necesitas."
     }
   ],
   "seo": {
-    "title": "Convertidor de millas a kilómetros",
-    "description": "Convierte millas a kilómetros al instante. Convertidor gratuito en línea de millas a km con resultados inmediatos.",
+    "title": "Convertidor de millas a km",
+    "description": "Convierte millas a kilómetros con un factor preciso, resultados decimales, ejemplos resueltos e interpretación clara de unidades.",
     "keywords": [
-      "convertidor de millas a km",
-      "millas a kilometros",
-      "herramienta de conversion"
+      "millas a km",
+      "convertidor de millas",
+      "millas a kilometros"
     ]
   }
 }

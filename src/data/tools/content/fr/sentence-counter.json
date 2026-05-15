@@ -4,42 +4,78 @@
   "slug": "compteur-de-phrases",
   "h1": "Compteur de phrases",
   "title": "Compteur de phrases",
-  "shortDescription": "Comptez instantanément les phrases d’un texte avec des résultats rapides, une saisie simple et des exemples pratiques.",
-  "overview": "Comptez instantanément les phrases d’un texte. Cette page fournit une réponse rapide grâce à un outil pratique et à un parcours de résultat simple. Elle s’adresse aux utilisateurs qui recherchent une réponse gratuite en ligne, des résultats immédiats dans le navigateur et un contenu utilitaire pratique pour les requêtes longue traîne.",
+  "shortDescription": "Comptez les phrases d’un texte et obtenez un total clair, sans étape inutile.",
+  "metaTitle": "Compteur de phrases",
+  "metaDescription": "Comptez les phrases de votre texte et obtenez un total clair pour des paragraphes, brouillons, notes ou contenus collés.",
+  "intro": "Collez votre texte dans le champ et obtenez immédiatement le total de phrases.",
+  "overview": "Cet outil compte les phrases d’un texte collé et renvoie un total simple à lire. Il sert à relire un paragraphe, comparer deux versions ou vérifier qu’un passage suit la structure attendue.\n\nLes limites d’une phrase peuvent être influencées par les abréviations, les initiales, les nombres décimaux et une ponctuation inhabituelle. Si votre texte contient ce type d’éléments, il faut interpréter le résultat avec le contexte, surtout dans les textes techniques, les dialogues ou les contenus copiés.\n\nLe compteur est plus fiable sur des passages complets que sur des fragments isolés. Pour une lecture plus juste, gardez une ponctuation homogène et ne confondez pas les retours à la ligne avec une vraie fin de phrase.",
   "howItWorks": [
-    "Saisissez le texte demandé dans le formulaire.",
-    "Le comptage s’effectue instantanément dans le navigateur.",
-    "Consultez le résultat et poursuivez avec des outils associés si vous avez besoin d’une autre étape."
+    "Collez ou saisissez votre texte dans le champ prévu.",
+    "L’outil repère les fins de phrase à partir de la ponctuation du texte.",
+    "Lisez le total de phrases et comparez les sections si nécessaire."
+  ],
+  "useCases": [
+    {
+      "title": "Révision d’un brouillon",
+      "description": "Vérifiez qu’un paragraphe a bien le rythme de phrases voulu avant envoi ou publication."
+    },
+    {
+      "title": "Comparer une traduction",
+      "description": "Comparez le nombre de phrases entre le texte source et la traduction pour repérer une omission ou une fusion."
+    },
+    {
+      "title": "Notes de réunion",
+      "description": "Mesurez le nombre d’énoncés complets dans des notes extraites d’une transcription ou d’un résumé."
+    },
+    {
+      "title": "Message court d’entreprise",
+      "description": "Contrôlez qu’une annonce est découpée en un nombre adapté de phrases lisibles."
+    }
   ],
   "examples": [
     {
-      "title": "Exemple 1",
-      "input": "Un paragraphe avec plusieurs phrases.",
-      "output": "Nombre total de phrases",
-      "description": "Un exemple réaliste de compteur de phrases pour une requête courante."
+      "title": "Trois phrases courtes",
+      "input": "Nous sommes arrivés tôt. La salle était calme. Tout le monde s’est assis.",
+      "output": "3 phrases",
+      "description": "Chaque point termine une phrase distincte, donc le total est trois."
     },
     {
-      "title": "Exemple 2",
-      "input": "Un paragraphe avec plusieurs phrases.",
-      "output": "Nombre total de phrases",
-      "description": "Un autre cas d’usage pratique pour le trafic organique longue traîne."
+      "title": "Ponctuation mixte",
+      "input": "As-tu terminé le rapport ? Le mien est déjà envoyé ! Vérifie les chiffres.",
+      "output": "3 phrases",
+      "description": "Les points d’interrogation et d’exclamation comptent aussi comme fin de phrase."
+    },
+    {
+      "title": "Abréviation au milieu",
+      "input": "Dr Martin a relu le dossier. Puis il a ajouté des remarques.",
+      "output": "2 phrases",
+      "description": "Un point dans une abréviation ne doit pas être pris pour une fin de phrase autonome."
     }
   ],
   "faq": [
     {
-      "question": "Quelle est la précision de cet outil ?",
-      "answer": "Le résultat est calculé directement à partir de la logique utilisée par cet outil ou dans le navigateur."
+      "question": "Comment les limites de phrase sont-elles déterminées ?",
+      "answer": "L’outil compte les fins de phrase marquées par la ponctuation, surtout les points, les points d’interrogation et les points d’exclamation."
     },
     {
-      "question": "Puis-je utiliser cet outil sur mobile ?",
-      "answer": "Oui. La page fonctionne sur ordinateur et mobile avec une interface simple de saisie et de résultat."
+      "question": "Pourquoi une abréviation peut-elle modifier le résultat ?",
+      "answer": "Les abréviations et les initiales contiennent des points qui peuvent ressembler à des fins de phrase. En présence de plusieurs cas, une vérification manuelle est utile."
+    },
+    {
+      "question": "Les sauts de ligne comptent-ils comme des phrases ?",
+      "answer": "Non. Un saut de ligne n’est qu’un formatage, sauf s’il est accompagné d’une ponctuation de fin de phrase."
+    },
+    {
+      "question": "Que se passe-t-il s’il n’y a pas de ponctuation finale ?",
+      "answer": "Sans signe de fin de phrase, le résultat peut être nul ou inférieur à l’attendu selon la structure du texte."
     }
   ],
   "seo": {
     "title": "Compteur de phrases",
-    "description": "Comptez instantanément les phrases d’un texte. Compteur de phrases en ligne gratuit avec résultat immédiat.",
+    "description": "Comptez les phrases de votre texte et obtenez un total clair pour des paragraphes, brouillons, notes ou contenus collés.",
     "keywords": [
       "compteur de phrases",
+      "compter les phrases",
       "outil de texte"
     ]
   }

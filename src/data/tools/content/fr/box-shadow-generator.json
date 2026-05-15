@@ -4,156 +4,86 @@
   "slug": "generateur-d-ombre-de-boite",
   "h1": "Générateur d’ombre de boîte",
   "title": "Générateur d’ombre de boîte",
-  "shortDescription": "Créez des ombres CSS de boîte avec décalage, flou, étalement, opacité et code prêt à copier.",
+  "shortDescription": "Créez des ombres CSS avec décalage, flou, étalement, opacité, inset et code prêt à copier.",
   "metaTitle": "Générateur d’ombre de boîte",
-  "metaDescription": "Créez des ombres CSS personnalisées avec aperçu en direct, flou, étalement, opacité et code prêt à copier.",
-  "intro": "Créez en quelques secondes des valeurs box-shadow propres et professionnelles. Réglez le décalage, le flou, l’étalement, la couleur et l’opacité, puis copiez le résultat pour votre site ou votre application.",
-  "overview": "Ce générateur d’ombre de boîte vous aide à créer des ombres CSS précises avec aperçu en direct et sortie de code instantanée. Il est idéal pour les boutons, cartes, fenêtres modales, images et autres éléments d’interface qui ont besoin de profondeur et de séparation visuelle.",
+  "metaDescription": "Créez des ombres CSS personnalisées avec aperçu, flou, étalement, opacité, inset et code prêt à copier.",
+  "intro": "Générez une valeur box-shadow, ajustez le décalage, le flou, l’étalement, la couleur et l’opacité, puis copiez la règle finale.",
+  "overview": "Cet outil construit des valeurs box-shadow que vous pouvez intégrer à votre CSS sans saisir chaque paramètre à la main. Vous gardez le contrôle sur le décalage horizontal et vertical, le rayon de flou, l’étalement, la couleur de l’ombre, l’opacité et le style inset, afin d’obtenir un rendu cohérent avec l’élément conçu.\n\nIl est utile quand l’ombre doit paraître réfléchie plutôt qu’improvisée. Vous pouvez l’appliquer aux cartes, menus, boîtes de dialogue, barres fixes, champs de formulaire et conteneurs d’images, et l’aperçu aide à comparer une ombre discrète à une ombre plus présente avant de choisir.",
   "howItWorks": [
-    "Définissez le décalage horizontal et vertical.",
-    "Ajustez le flou, l’étalement et l’opacité selon le style recherché.",
-    "Choisissez la couleur de l’ombre et, si besoin, le mode inset.",
-    "Visualisez l’ombre en direct pendant vos réglages.",
-    "Copiez le CSS généré et collez-le dans votre feuille de styles."
+    "Réglez le décalage horizontal et vertical pour placer l’ombre.",
+    "Ajustez le flou et l’étalement afin de contrôler douceur et taille.",
+    "Choisissez la couleur de l’ombre et son opacité selon le fond.",
+    "Activez inset si vous souhaitez une ombre intérieure.",
+    "Copiez le CSS généré et appliquez-le au sélecteur voulu."
   ],
   "useCases": [
-    "Créer des ombres pour des cartes, boutons et modales.",
-    "Ajouter un effet de profondeur subtil pour des tableaux de bord et landing pages.",
-    "Générer des ombres inset pour des champs de saisie et des panneaux.",
-    "Tester rapidement plusieurs styles d’ombre sans modifier le CSS à la main."
+    {
+      "title": "Profondeur pour des cartes produit",
+      "description": "Créez une ombre douce pour des cartes de catalogue afin de bien les détacher du fond."
+    },
+    {
+      "title": "État pressé d’un bouton",
+      "description": "Générez une ombre plus serrée, avec moins de flou et un étalement négatif, pour un bouton qui semble cliquable."
+    },
+    {
+      "title": "Ombres internes pour champs de saisie",
+      "description": "Construisez des effets inset pour les inputs, barres de recherche et panneaux à aspect creusé."
+    },
+    {
+      "title": "Panneau flottant pour menus déroulants",
+      "description": "Réglez un flou plus large et un décalage modéré pour les infobulles, listes et popovers."
+    }
   ],
   "examples": [
     {
-      "title": "Ombre douce pour carte",
-      "input": "0 8px 24px 0 rgba(0,0,0,0.12)",
-      "output": "box-shadow: 0 8px 24px 0 rgba(0,0,0,0.12);",
-      "description": "Une ombre douce pour les cartes et blocs de contenu."
+      "title": "Ombre douce neutre",
+      "input": "x: 0, y: 10px, blur: 30px, spread: -8px, color: rgba(15, 23, 42, 0.14)",
+      "output": "box-shadow: 0 10px 30px -8px rgba(15, 23, 42, 0.14);",
+      "description": "Une ombre légère pour des cartes claires sur fond doux."
     },
     {
-      "title": "Ombre marquée pour bouton",
-      "input": "0 4px 12px -2px rgba(0,0,0,0.25)",
-      "output": "box-shadow: 0 4px 12px -2px rgba(0,0,0,0.25);",
-      "description": "Une ombre plus nette pour les éléments interactifs."
+      "title": "Inset pour un champ creusé",
+      "input": "x: 0, y: 2px, blur: 6px, spread: 0, color: rgba(0, 0, 0, 0.18), inset: true",
+      "output": "box-shadow: inset 0 2px 6px 0 rgba(0, 0, 0, 0.18);",
+      "description": "Un effet en retrait pour un champ ou un panneau."
+    },
+    {
+      "title": "Ombre compacte au survol",
+      "input": "x: 0, y: 6px, blur: 16px, spread: -4px, color: rgba(37, 99, 235, 0.22)",
+      "output": "box-shadow: 0 6px 16px -4px rgba(37, 99, 235, 0.22);",
+      "description": "Une ombre colorée pour des tuiles d’action au survol."
     }
   ],
   "faq": [
     {
-      "question": "Quelle propriété CSS cet outil génère-t-il ?",
-      "answer": "Il génère des valeurs box-shadow utilisables directement en CSS."
+      "question": "Que modifie la valeur spread dans l’ombre ?",
+      "answer": "Spread modifie la taille de l’ombre avant le flou. Les valeurs négatives la resserrent, les valeurs positives l’agrandissent."
     },
     {
-      "question": "Puis-je créer des ombres inset ?",
-      "answer": "Oui. Activez le mode inset pour générer une ombre intérieure."
+      "question": "Pourquoi l’ombre paraît-elle trop dure sur fond sombre ?",
+      "answer": "La couleur est souvent trop opaque ou le flou trop faible. Diminuez l’opacité et augmentez le blur pour adoucir les bords."
     },
     {
-      "question": "Le résultat est-il prêt à être copié ?",
-      "answer": "Oui. Le code CSS généré est prêt pour un copier-coller rapide."
+      "question": "Quand utiliser inset plutôt qu’une ombre classique ?",
+      "answer": "Utilisez inset quand la surface doit paraître enfoncée, par exemple pour des champs de formulaire, des panneaux creusés ou des zones internes discrètes."
     },
     {
-      "question": "Prend-il en charge plusieurs ombres ?",
-      "answer": "Oui, vous pouvez combiner les valeurs manuellement si vous avez besoin de plusieurs couches d’ombre."
+      "question": "Puis-je créer plusieurs couches d’ombre ici ?",
+      "answer": "L’outil génère une règle à la fois. Si vous avez besoin de plusieurs couches, combinez plusieurs valeurs box-shadow manuellement dans votre CSS."
+    },
+    {
+      "question": "Pourquoi une grande valeur d’étalement négatif fait-elle disparaître l’ombre ?",
+      "answer": "Un étalement négatif trop fort peut réduire l’ombre au point de la rendre invisible, surtout avec peu de flou. Réduisez la valeur négative ou augmentez le flou."
     }
   ],
-  "uiLabels": {
-    "copy": "Copier",
-    "copied": "Copié",
-    "input": "Entrée",
-    "output": "Sortie",
-    "placeholder": "Saisissez les valeurs",
-    "indent": "Retrait",
-    "removeComments": "Supprimer les commentaires",
-    "preview": "Aperçu",
-    "source": "Source",
-    "sanitizedHtml": "HTML nettoyé",
-    "plainText": "Texte brut",
-    "summary": "Résumé",
-    "total": "Total",
-    "links": "Liens",
-    "images": "Images",
-    "errors": "Erreurs",
-    "warnings": "Avertissements",
-    "valid": "Valide",
-    "invalid": "Invalide",
-    "href": "Href",
-    "text": "Texte",
-    "rel": "Rel",
-    "target": "Target",
-    "alt": "Alt",
-    "width": "Largeur",
-    "height": "Hauteur",
-    "empty": "Vide",
-    "outputReady": "Sortie prête",
-    "cleanedHtml": "HTML nettoyé",
-    "formattedHtml": "HTML formaté",
-    "minifiedHtml": "HTML minifié",
-    "markdown": "Markdown",
-    "extractedImages": "Images extraites",
-    "extractedLinks": "Liens extraits",
-    "validationSummary": "Résumé de validation",
-    "prettyHtml": "HTML lisible",
-    "encodedText": "Texte encodé",
-    "file": "Fichier",
-    "size": "Taille",
-    "format": "Format",
-    "quality": "Qualité",
-    "colorOne": "Couleur de l’ombre",
-    "colorTwo": "Deuxième couleur",
-    "background": "Arrière-plan",
-    "foreground": "Premier plan",
-    "angle": "Angle",
-    "margin": "Marge",
-    "level": "Niveau",
-    "gradientType": "Type de dégradé",
-    "linear": "Linéaire",
-    "radial": "Radial",
-    "blur": "Flou",
-    "spread": "Étendue",
-    "offsetX": "Décalage X",
-    "offsetY": "Décalage Y",
-    "opacity": "Opacité",
-    "inset": "Inset",
-    "cssCode": "Code CSS",
-    "snippet": "Extrait",
-    "download": "Télécharger",
-    "downloadSvg": "Télécharger SVG",
-    "downloadPng": "Télécharger PNG",
-    "downloadAll": "Tout télécharger",
-    "upload": "Importer",
-    "title": "Titre",
-    "description": "Description",
-    "canonicalUrl": "URL canonique",
-    "siteName": "Nom du site",
-    "ogImage": "Image OG",
-    "clear": "Effacer",
-    "generatedQr": "Apercu du code QR",
-    "placeholderImage": "Apercu de l image",
-    "faviconSet": "Jeu de favicon",
-    "keepAspectRatio": "Conserver le ratio",
-    "cropX": "Recadrage X",
-    "cropY": "Recadrage Y",
-    "cropWidth": "Largeur du recadrage",
-    "cropHeight": "Hauteur du recadrage",
-    "originalSize": "Taille d’origine",
-    "outputSize": "Taille de sortie",
-    "savedSize": "Taille économisée",
-    "result": "Résultat",
-    "base64": "Base64",
-    "mimeType": "Type MIME",
-    "resizedImage": "Image redimensionnée",
-    "compressedImage": "Image compressée",
-    "croppedImage": "Image recadrée",
-    "convertedImage": "Image convertie",
-    "decodedImage": "Image décodée",
-    "imagePreview": "Aperçu de l’image"
-  },
   "seo": {
     "title": "Générateur d’ombre de boîte",
-    "description": "Créez des ombres CSS personnalisées avec aperçu en direct, flou, étalement, opacité et code prêt à copier.",
+    "description": "Créez des ombres CSS personnalisées avec aperçu, flou, étalement, opacité, inset et code prêt à copier.",
     "keywords": [
       "générateur d’ombre de boîte",
       "ombre css",
-      "générateur d’ombres",
       "box-shadow css",
+      "ombre inset css",
       "générateur css"
     ]
   }

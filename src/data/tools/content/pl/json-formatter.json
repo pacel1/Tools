@@ -1,47 +1,84 @@
 {
   "toolId": "json-formatter",
   "locale": "pl",
-  "slug": "formatter-json",
+  "slug": "json-formatter",
   "h1": "Formatowanie JSON",
   "title": "Formatowanie JSON",
-  "shortDescription": "Formatuj i waliduj JSON z czytelnym wcięciem oraz natychmiastowym komunikatem o błędach.",
-  "overview": "Formatowanie JSON analizuje wklejony kod JSON, wyświetla wersję uporządkowaną i zwraca także wynik zminimalizowany. To praktyczne narzędzie dla stron z narzędziami deweloperskimi, ponieważ może działać bez backendu, a jednocześnie wspiera SEO dzięki przykładom i wskazówkom dotyczącym rozwiązywania problemów.",
+  "shortDescription": "Uporządkuj surowy JSON, wykryj błędy składni i zachowaj czytelny podział wcięciami.",
+  "metaTitle": "Formatowanie JSON i walidacja",
+  "metaDescription": "Wklej JSON, sformatuj go z ustalonym wcięciem, wykryj błędy składni i przełącz na wersję zwartą.",
+  "intro": "Wklej JSON, ustaw szerokość wcięcia i od razu zobacz czytelny wynik albo komunikat o błędzie składni.",
+  "overview": "To narzędzie parsuje wklejony JSON i wyświetla go w przejrzystej formie z zachowaniem struktury zagnieżdżeń. Pokazuje też wersję zwartą bez zbędnych odstępów, dzięki czemu łatwo porównać dane albo przygotować je do dalszego użycia.\n\nJeśli wejście nie jest poprawnym JSON-em, formatter nie zgaduje braków. Zwraca dokładny błąd parsowania, co pomaga znaleźć źródło problemu w odpowiedzi API, wklejonym fragmencie z logów albo pliku konfiguracyjnym.\n\nFormatowanie zmienia tylko wygląd, nie treść danych. Obiekty, tablice, liczby, wartości logiczne, null i tekst pozostają takie, jak zostały odczytane.",
   "howItWorks": [
-    "Wklej JSON i wybierz rozmiar wcięcia.",
-    "Parser sprawdza poprawność danych i zwraca błąd, jeśli JSON jest nieprawidłowy.",
-    "Gdy dane są poprawne, narzędzie zwraca sformatowany wynik, wersję zminimalizowaną oraz liczbę linii."
+    "Wklej dokument JSON do pola wejściowego.",
+    "Wybierz szerokość wcięcia dla widoku sformatowanego.",
+    "Parser sprawdza poprawność tekstu i pokazuje błąd, jeśli JSON jest nieprawidłowy.",
+    "Po poprawnym parsowaniu narzędzie pokazuje wersję sformatowaną, wersję zwartą oraz liczbę linii."
+  ],
+  "useCases": [
+    {
+      "title": "Analiza odpowiedzi z API",
+      "description": "Przepisz zagnieżdżone odpowiedzi na czytelny układ, aby szybciej sprawdzić statusy, tablice i pola pomocnicze."
+    },
+    {
+      "title": "Porządkowanie konfiguracji",
+      "description": "Zamień ciasno zapisane ustawienia na format, który łatwiej porównać przed wdrożeniem lub commitowaniem zmian."
+    },
+    {
+      "title": "Przygotowanie danych do wysłania",
+      "description": "Przełączaj między widokiem sformatowanym a zwartym, gdy przekazujesz przykłady zespołowi albo wklejasz je do dokumentacji."
+    }
   ],
   "examples": [
     {
-      "title": "Porządkowanie payloadu API",
-      "input": "{\"status\":\"ok\",\"items\":[1,2]}",
-      "output": "Sformatowany JSON",
-      "description": "Ułatwia analizę logów i payloadów podczas debugowania."
+      "title": "Podgląd webhooka",
+      "input": "{\"event\":\"invoice.paid\",\"data\":{\"id\":4821,\"amount\":1299,\"currency\":\"USD\"}}",
+      "output": "{\n  \"event\": \"invoice.paid\",\n  \"data\": {\n    \"id\": 4821,\n    \"amount\": 1299,\n    \"currency\": \"USD\"\n  }\n}",
+      "description": "Rozwija zagnieżdżony payload wydarzenia, aby łatwiej przejrzeć każdy element osobno."
     },
     {
-      "title": "Udostępnianie zwięzłego wyniku",
-      "input": "Sformatowany JSON",
-      "output": "Zminimalizowany JSON",
-      "description": "Przydatne, gdy potrzebujesz najmniejszej możliwej postaci danych."
+      "title": "Zwarcie obiektu ustawień",
+      "input": "{\n  \"theme\": \"dark\",\n  \"layout\": {\n    \"sidebar\": true,\n    \"density\": \"comfortable\"\n  }\n}",
+      "output": "{\"theme\":\"dark\",\"layout\":{\"sidebar\":true,\"density\":\"comfortable\"}}",
+      "description": "Usuwa odstępy i pozostawia te same dane w krótszej postaci."
+    },
+    {
+      "title": "Wykrycie zbędnego przecinka",
+      "input": "{\"name\":\"Mira\", \"roles\":[\"admin\",], \"active\":true}",
+      "output": "Błąd: Unexpected token ] in JSON at position 36",
+      "description": "Pokazuje miejsce problemu, aby szybko usunąć niepoprawny przecinek."
     }
   ],
   "faq": [
     {
-      "question": "Czy narzędzie zmienia kolejność kluczy?",
-      "answer": "Nie. Formatowanie zachowuje kolejność kluczy obiektu taką, jaką zwraca JavaScript po parsowaniu."
+      "question": "Czy formatowanie zmienia wartości w JSON?",
+      "answer": "Nie. Zmienia się tylko układ znaków, odstępy i łamanie linii. Treść napisów, liczb, wartości logicznych, null, tablic i obiektów pozostaje taka sama."
     },
     {
-      "question": "Czy może automatycznie naprawić uszkodzony JSON?",
-      "answer": "To narzędzie sprawdza i formatuje tylko poprawny JSON. Błędne dane zwracają komunikat o błędzie, aby użytkownik mógł bezpiecznie poprawić źródło."
+      "question": "Czy kolejność kluczy zostanie zachowana?",
+      "answer": "Tak, narzędzie pokazuje kolejność zwróconą przez parser. Nie sortuje kluczy i nie przebudowuje obiektu."
+    },
+    {
+      "question": "Czy można naprawić uszkodzony JSON automatycznie?",
+      "answer": "Nie. Jeśli JSON jest niepoprawny, narzędzie zwraca błąd parsowania zamiast zgadywać brakujące cudzysłowy, nawiasy albo przecinki."
+    },
+    {
+      "question": "Dlaczego przecinek na końcu powoduje błąd?",
+      "answer": "W standardowym JSON-ie przecinek po ostatnim elemencie tablicy lub obiektu jest niedozwolony. Trzeba go usunąć ręcznie."
+    },
+    {
+      "question": "Jak interpretować wynik zminimalizowany?",
+      "answer": "To te same dane bez zbędnych spacji i znaków nowej linii. Taki zapis jest wygodny do kopiowania, ale trudniejszy do czytania."
     }
   ],
   "seo": {
-    "title": "Formatowanie JSON",
-    "description": "Online formatter i validator JSON z widokiem pretty print oraz minifikacją.",
+    "title": "Formatowanie JSON i walidacja",
+    "description": "Wklej JSON, sformatuj go z ustalonym wcięciem, wykryj błędy składni i przełącz na wersję zwartą.",
     "keywords": [
-      "json formatter",
-      "json validator",
-      "pretty print json"
+      "formatowanie json",
+      "walidacja json",
+      "pretty print json",
+      "minifikacja json"
     ]
   }
 }

@@ -4,160 +4,93 @@
   "slug": "redimensionador-de-imagenes",
   "h1": "Redimensionador de imágenes",
   "title": "Redimensionador de imágenes",
-  "shortDescription": "Redimensiona imágenes en línea en tu navegador con dimensiones personalizadas y control de proporción.",
-  "metaTitle": "Redimensionador de imágenes online | Cambia el tamaño en el navegador",
-  "metaDescription": "Redimensiona imágenes online gratis con dimensiones personalizadas, bloqueo de proporción, vista previa y descarga instantánea.",
-  "intro": "Redimensiona imágenes en línea sin instalar nada. Sube una imagen, define ancho y alto, conserva la proporción si lo necesitas, revisa la vista previa y descarga el archivo al instante.",
-  "overview": "Este redimensionador de imágenes basado en el navegador permite cambiar ancho y alto de forma rápida y precisa. Es ideal para preparar fotos para sitios web, redes sociales, correo electrónico y documentos, con un flujo simple y privado en el cliente.",
+  "shortDescription": "Define dimensiones exactas para fotos, capturas, logotipos y banners.",
+  "metaTitle": "Redimensionador de imágenes",
+  "metaDescription": "Redimensiona imágenes a un ancho y alto exactos, conserva la proporción, revisa la vista previa y descarga el archivo final.",
+  "intro": "Cambia una imagen al ancho y alto exactos que necesitas o bloquea la proporción para que no se deforme.",
+  "overview": "Esta herramienta es útil cuando una imagen tiene que entrar en un marco, ficha, documento, diapositiva, encabezado de correo o diseño concreto. Puedes escribir las dimensiones finales directamente o conservar la proporción original y escalar la imagen sin cambiar su forma.\n\nLa vista previa te permite comprobar de inmediato si el texto sigue legible, la cara queda centrada y los bordes continúan limpios antes de guardar nada. Por eso funciona bien con fotos, capturas de pantalla, banners, miniaturas, logotipos e imágenes de producto.\n\nSi preparas archivos para subirlos o vas a colocarlos dentro de un diseño, redimensionar antes te ayuda a dejarlos listos para usar sin volver al editor.",
   "howItWorks": [
-    "Sube un archivo de imagen desde tu dispositivo.",
-    "Introduce el ancho y el alto deseados.",
+    "Sube una imagen desde tu dispositivo.",
+    "Escribe el ancho y el alto deseados.",
     "Bloquea la proporción para evitar deformaciones.",
-    "Previsualiza la imagen redimensionada en el navegador.",
-    "Descarga el archivo cuando esté listo."
+    "Revisa la vista previa antes de descargar.",
+    "Guarda la imagen redimensionada en tu dispositivo."
   ],
   "useCases": [
-    "Redimensionar fotos para sitios web y blogs.",
-    "Reducir imágenes para compartir por correo.",
-    "Preparar gráficos para redes sociales.",
-    "Ajustar imágenes de producto para tiendas online.",
-    "Crear imágenes más ligeras para documentos y presentaciones."
+    {
+      "title": "Ajustar una foto de producto a una ficha",
+      "description": "Redimensiona una imagen de catálogo para que encaje en el espacio exacto de una tienda o marketplace."
+    },
+    {
+      "title": "Escalar un logotipo para encabezados",
+      "description": "Reduce un logo o una firma gráfica a un ancho fijo para informes, plantillas o correos."
+    },
+    {
+      "title": "Preparar una captura para una presentación",
+      "description": "Disminuye una captura larga o ancha para que entre con limpieza en una diapositiva o informe interno."
+    },
+    {
+      "title": "Crear una imagen de perfil cuadrada",
+      "description": "Convierte un retrato o una pieza de marca en formato cuadrado para avatares, tarjetas o páginas de equipo."
+    },
+    {
+      "title": "Adaptar un banner al bloque del diseño",
+      "description": "Ajusta una imagen principal o una miniatura a las medidas del contenedor final para insertarla sin retoques extra."
+    }
   ],
   "examples": [
     {
-      "title": "Redimensionar una foto de perfil",
-      "input": "1200 × 1200 px",
-      "output": "400 × 400 px",
-      "description": "Reduce una imagen cuadrada para avatar o perfil."
+      "title": "Avatar cuadrado desde un retrato",
+      "input": "Original: 1600 × 2000 px",
+      "output": "Redimensionado: 640 × 640 px",
+      "description": "Tras recortar si hace falta, reduce el área útil a un cuadrado limpio para perfil."
     },
     {
-      "title": "Preparar un banner web",
-      "input": "2400 × 1200 px",
-      "output": "1200 × 600 px",
-      "description": "Crea una versión más ligera para cargar más rápido."
+      "title": "Banner para email",
+      "input": "Original: 2400 × 900 px",
+      "output": "Redimensionado: 1200 × 450 px",
+      "description": "Reduce un banner ancho para que sea más fácil colocarlo en una newsletter."
+    },
+    {
+      "title": "Imagen de producto para catálogo",
+      "input": "Original: 3000 × 3000 px",
+      "output": "Redimensionado: 1500 × 1500 px",
+      "description": "Mantén el encuadre del producto y llévalo a un tamaño más práctico."
     }
   ],
   "faq": [
     {
-      "question": "¿El redimensionado funciona en el navegador?",
-      "answer": "Sí. El proceso se realiza en el lado del cliente, directamente en tu navegador, para un flujo rápido y privado."
+      "question": "¿Puedo redimensionar sin cambiar la forma de la imagen?",
+      "answer": "Sí. Bloquea la proporción antes de cambiar el tamaño. Así la imagen conserva sus relaciones originales al escalarse."
     },
     {
-      "question": "¿Puedo mantener la proporción original?",
-      "answer": "Sí. Usa el bloqueo de proporción para cambiar el tamaño sin estirar la imagen."
+      "question": "¿Qué ocurre si escribo solo una dimensión?",
+      "answer": "Si la proporción está bloqueada, la herramienta calcula automáticamente la dimensión que falta. Si no lo está, conviene introducir ancho y alto."
     },
     {
-      "question": "¿Se perderá calidad?",
-      "answer": "La imagen se redimensiona conservando la calidad en la medida de lo posible, según el archivo original y el tamaño final."
+      "question": "¿El archivo descargado mantiene el mismo formato?",
+      "answer": "Normalmente sí, siempre que el formato de origen se pueda procesar correctamente. Revisa la extensión del archivo descargado antes de usarlo."
     },
     {
-      "question": "¿Tengo que instalar algo?",
-      "answer": "No. La herramienta funciona en línea y no requiere instalación."
+      "question": "¿Por qué una imagen más pequeña puede verse menos nítida?",
+      "answer": "Al reducir una imagen se eliminan píxeles, así que algunos detalles finos desaparecen. Lo mejor es partir del archivo de mejor calidad disponible."
+    },
+    {
+      "question": "¿Cuál es el error más frecuente?",
+      "answer": "Introducir ancho y alto sin revisar la proporción. Eso suele acabar en fotos estiradas o logotipos deformados."
     }
   ],
-  "uiLabels": {
-    "copy": "Copiar",
-    "copied": "Copiado",
-    "input": "Entrada",
-    "output": "Salida",
-    "placeholder": "Elige un archivo de imagen o pega datos de imagen",
-    "indent": "Sangría",
-    "removeComments": "Eliminar comentarios",
-    "preview": "Vista previa",
-    "source": "Fuente",
-    "sanitizedHtml": "HTML saneado",
-    "plainText": "Texto plano",
-    "summary": "Resumen",
-    "total": "Total",
-    "links": "Enlaces",
-    "images": "Imágenes",
-    "errors": "Errores",
-    "warnings": "Advertencias",
-    "valid": "Válido",
-    "invalid": "No válido",
-    "href": "Href",
-    "text": "Texto",
-    "rel": "Rel",
-    "target": "Destino",
-    "alt": "Alt",
-    "width": "Ancho",
-    "height": "Alto",
-    "empty": "Vacío",
-    "outputReady": "Resultado listo",
-    "cleanedHtml": "HTML limpio",
-    "formattedHtml": "HTML formateado",
-    "minifiedHtml": "HTML minificado",
-    "markdown": "Markdown",
-    "extractedImages": "Imágenes extraídas",
-    "extractedLinks": "Enlaces extraídos",
-    "validationSummary": "Resumen de validación",
-    "prettyHtml": "HTML legible",
-    "encodedText": "Texto codificado",
-    "file": "Archivo",
-    "size": "Tamaño",
-    "format": "Formato",
-    "quality": "Calidad",
-    "colorOne": "Color 1",
-    "colorTwo": "Color 2",
-    "background": "Fondo",
-    "foreground": "Primer plano",
-    "angle": "Ángulo",
-    "margin": "Margen",
-    "level": "Nivel",
-    "gradientType": "Tipo de degradado",
-    "linear": "Lineal",
-    "radial": "Radial",
-    "blur": "Desenfoque",
-    "spread": "Extensión",
-    "offsetX": "Desplazamiento X",
-    "offsetY": "Desplazamiento Y",
-    "opacity": "Opacidad",
-    "inset": "Inset",
-    "cssCode": "Código CSS",
-    "snippet": "Fragmento",
-    "download": "Descargar",
-    "downloadSvg": "Descargar SVG",
-    "downloadPng": "Descargar PNG",
-    "downloadAll": "Descargar todo",
-    "upload": "Subir",
-    "title": "Título",
-    "description": "Descripción",
-    "canonicalUrl": "URL canónica",
-    "siteName": "Nombre del sitio",
-    "ogImage": "Imagen OG",
-    "clear": "Borrar",
-    "generatedQr": "Vista previa del codigo QR",
-    "placeholderImage": "Vista previa de la imagen",
-    "faviconSet": "Conjunto de favicon",
-    "keepAspectRatio": "Mantener proporción",
-    "cropX": "Recorte X",
-    "cropY": "Recorte Y",
-    "cropWidth": "Ancho del recorte",
-    "cropHeight": "Alto del recorte",
-    "originalSize": "Tamaño original",
-    "outputSize": "Tamaño de salida",
-    "savedSize": "Tamaño ahorrado",
-    "result": "Resultado",
-    "base64": "Base64",
-    "mimeType": "Tipo MIME",
-    "resizedImage": "Imagen redimensionada",
-    "compressedImage": "Imagen comprimida",
-    "croppedImage": "Imagen recortada",
-    "convertedImage": "Imagen convertida",
-    "decodedImage": "Imagen decodificada",
-    "imagePreview": "Vista previa de imagen"
-  },
   "seo": {
-    "title": "Redimensionador de imágenes online | Cambia el tamaño en el navegador",
-    "description": "Redimensiona imágenes online gratis con dimensiones personalizadas, bloqueo de proporción, vista previa y descarga instantánea.",
+    "title": "Redimensionador de imágenes",
+    "description": "Redimensiona imágenes a un ancho y alto exactos, conserva la proporción, revisa la vista previa y descarga el archivo final.",
     "keywords": [
       "redimensionar imágenes",
       "cambiar tamaño de imagen",
-      "redimensionador de fotos",
-      "editor de imágenes online",
       "ajustar imagen",
       "proporción de imagen",
-      "resize image"
+      "escalar foto",
+      "herramienta de imagen",
+      "dimensiones de imagen"
     ]
   }
 }

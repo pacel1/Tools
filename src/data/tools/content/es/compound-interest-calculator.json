@@ -4,43 +4,80 @@
   "slug": "calculadora-interes-compuesto",
   "h1": "Calculadora de interés compuesto",
   "title": "Calculadora de interés compuesto",
-  "shortDescription": "Calcula el crecimiento del interés compuesto a lo largo del tiempo con resultados rápidos, entradas simples y ejemplos prácticos.",
-  "overview": "Calcula el crecimiento del interés compuesto a lo largo del tiempo. Esta página ofrece una respuesta rápida con una herramienta práctica y un flujo de resultados sencillo. Está pensada para usuarios que buscan una respuesta online gratuita, resultados rápidos en el navegador y contenido útil de cola larga.",
+  "shortDescription": "Comprueba cómo crece un capital con interés compuesto a lo largo del tiempo, según la tasa, el plazo y la frecuencia de capitalización.",
+  "metaTitle": "Calculadora de interés compuesto",
+  "metaDescription": "Calcula el valor final, el interés total y el crecimiento usando capital inicial, tasa anual, plazo y capitalización.",
+  "intro": "Introduce capital inicial, tasa anual, plazo y frecuencia de capitalización para ver el valor final y el interés generado.",
+  "overview": "Esta calculadora muestra cómo crece el dinero cuando los intereses se añaden al saldo y después vuelven a generar intereses. Resulta útil para depósitos, planes de ahorro y cualquier caso en el que la frecuencia de capitalización cambie el importe final. Puedes comparar distintas tasas, plazos y periodos de capitalización para ver cuánto varía el resultado.\n\nEl resultado incluye el saldo final y el interés obtenido, de modo que puedas distinguir tu capital aportado del crecimiento generado por la capitalización. Si añades aportaciones periódicas, introdúcelas exactamente como pide la herramienta, porque cambiar la frecuencia o el momento del ingreso puede alterar el cálculo. Para escenarios de préstamo, suele encajar mejor una calculadora de cuotas.",
   "howItWorks": [
-    "Introduce el valor o texto necesario en el formulario.",
-    "La conversión, el cálculo o la transformación se ejecuta al instante en el navegador.",
-    "Revisa el resultado y continúa con herramientas relacionadas si necesitas otro paso."
+    "Introduce el capital inicial, la tasa anual, el plazo y la frecuencia de capitalización.",
+    "La herramienta aplica la fórmula del interés compuesto para estimar el saldo final y el interés total.",
+    "Revisa el resultado y modifica los datos para comparar distintos escenarios de ahorro."
+  ],
+  "useCases": [
+    {
+      "title": "Comparar dos depósitos",
+      "description": "Analiza dos alternativas con el mismo capital inicial pero distinta tasa o distinta capitalización."
+    },
+    {
+      "title": "Estimar un depósito a plazo",
+      "description": "Calcula cuánto puede crecer un depósito fijo si los intereses se abonan cada mes, trimestre o año."
+    },
+    {
+      "title": "Planificar una meta de ahorro",
+      "description": "Calcula cuánto tiempo hace falta para alcanzar una cantidad objetivo con una tasa concreta."
+    }
   ],
   "examples": [
     {
-      "title": "Ejemplo 1",
-      "input": "5000, 5%, 10 años",
-      "output": "Crecimiento a lo largo del tiempo",
-      "description": "Un ejemplo realista de calculadora de interés compuesto para una búsqueda cotidiana."
+      "title": "Capitalización anual en un depósito",
+      "input": "Capital inicial: 8.000; Tasa: 4,5%; Plazo: 6 años; Capitalización: anual",
+      "output": "Valor final: 10.411,07; Interés generado: 2.411,07",
+      "description": "Muestra cómo crece un depósito cuando los intereses se añaden una vez al año."
     },
     {
-      "title": "Ejemplo 2",
-      "input": "5000, 5%, 10 años",
-      "output": "Crecimiento a lo largo del tiempo",
-      "description": "Otro caso práctico para atraer tráfico orgánico de cola larga."
+      "title": "Capitalización mensual en una cuenta de ahorro",
+      "input": "Capital inicial: 2.500; Tasa: 6,2%; Plazo: 3 años; Capitalización: mensual",
+      "output": "Valor final: 3.007,39; Interés generado: 507,39",
+      "description": "Útil para comparar capitalización mensual con una tasa nominal anual."
+    },
+    {
+      "title": "Escenario de plazo corto y tasa alta",
+      "input": "Capital inicial: 1.200; Tasa: 9%; Plazo: 18 meses; Capitalización: trimestral",
+      "output": "Valor final: 1.341,68; Interés generado: 141,68",
+      "description": "Ayuda a revisar plazos cortos donde la frecuencia de capitalización sigue siendo importante."
     }
   ],
   "faq": [
     {
-      "question": "¿Qué precisión tiene esta herramienta?",
-      "answer": "El resultado se calcula directamente a partir de la fórmula o de la lógica del navegador que utiliza esta herramienta."
+      "question": "¿Qué datos influyen más en el resultado?",
+      "answer": "El capital inicial, la tasa anual, el plazo y la frecuencia de capitalización son los factores más importantes. Incluso un cambio pequeño en la tasa o en el intervalo de capitalización puede modificar el resultado de forma notable."
     },
     {
-      "question": "¿Puedo usar esta herramienta en el móvil?",
-      "answer": "Sí. La página funciona en escritorio y en móviles con una interfaz simple de entrada y resultado."
+      "question": "¿Por qué la capitalización mensual da un resultado distinto de la anual?",
+      "answer": "Con una capitalización más frecuente, los intereses se añaden al saldo más veces, así que los cálculos siguientes parten de una cantidad algo mayor. Eso suele producir un valor final más alto con la misma tasa nominal."
+    },
+    {
+      "question": "¿La calculadora incluye impuestos, comisiones o inflación?",
+      "answer": "No. Solo calcula el crecimiento derivado de los datos introducidos. Los impuestos, las comisiones, la inflación y las aportaciones o retiradas deben considerarse aparte."
+    },
+    {
+      "question": "¿Cómo interpreto el valor final y el interés generado?",
+      "answer": "El valor final es el saldo total al terminar el plazo. El interés generado es la diferencia entre ese saldo y el capital inicial."
+    },
+    {
+      "question": "¿Por qué a veces aparecen cifras redondeadas?",
+      "answer": "El resultado se redondea para mostrarlo mejor, así que pequeñas diferencias decimales pueden no verse. Si necesitas una cifra contable exacta, usa la fórmula con mayor precisión."
     }
   ],
   "seo": {
     "title": "Calculadora de interés compuesto",
-    "description": "Calcula el crecimiento del interés compuesto a lo largo del tiempo. Calculadora de interés compuesto gratuita en línea con resultados instantáneos.",
+    "description": "Calcula el valor final, el interés total y el crecimiento usando capital inicial, tasa anual, plazo y capitalización.",
     "keywords": [
       "calculadora de interés compuesto",
-      "herramienta calculadoras"
+      "calculadora valor final",
+      "calculadora crecimiento ahorro",
+      "calculadora depósitos"
     ]
   }
 }

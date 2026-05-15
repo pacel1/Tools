@@ -4,44 +4,85 @@
   "slug": "comprobador-de-densidad-de-palabras-clave",
   "h1": "Comprobador de densidad de palabras clave",
   "title": "Comprobador de densidad de palabras clave",
-  "shortDescription": "Comprueba la densidad de palabras clave en un texto con resultados rápidos, entradas sencillas y ejemplos prácticos.",
-  "overview": "Comprueba la densidad de palabras clave en un bloque de texto. Esta página ofrece una respuesta rápida con una herramienta útil y un flujo de resultados sencillo. Está pensada para quienes buscan una respuesta gratuita en línea, resultados instantáneos en el navegador y contenido práctico para búsquedas de cola larga.",
+  "shortDescription": "Mide cuántas veces aparece una frase en un texto y qué peso tiene dentro del total.",
+  "metaTitle": "Comprobador de densidad",
+  "metaDescription": "Calcula repeticiones, palabras totales y densidad de una frase en un texto de forma clara.",
+  "intro": "Pega tu texto y escribe la palabra o frase objetivo para ver cuántas veces aparece, cuántas palabras tiene el texto y cuál es su densidad.",
+  "overview": "Esta herramienta sirve para revisar cuántas veces aparece una frase concreta en un artículo, una página de destino, una ficha de producto o un borrador. Muestra las repeticiones junto con el total de palabras, así puedes valorar si el término está poco presente, bien repartido o repetido en exceso.\n\nTambién ayuda a comparar partes de un mismo texto antes de publicarlo, detectar frases forzadas y revisar si el término se concentra demasiado en la introducción o en un párrafo concreto. Es útil cuando quieres editar con criterio y no solo contar apariciones.",
   "howItWorks": [
-    "Introduce la palabra, frase o texto requerido en el formulario.",
-    "El cálculo o análisis se ejecuta al instante en el navegador.",
-    "Revisa el resultado y continúa con herramientas relacionadas si necesitas otro paso."
+    "Pega o escribe el texto que quieres revisar.",
+    "Introduce la palabra o frase que quieres contar.",
+    "Consulta las apariciones, el total de palabras y la densidad resultante."
+  ],
+  "useCases": [
+    {
+      "title": "Revisar un borrador de blog",
+      "description": "Comprueba cuántas veces aparece la idea principal en un artículo antes de enviarlo a revisión."
+    },
+    {
+      "title": "Ajustar una página de ventas",
+      "description": "Mide el uso de la frase principal para que el texto se mantenga enfocado sin sonar repetitivo."
+    },
+    {
+      "title": "Auditar una ficha de producto",
+      "description": "Detecta si la descripción repite demasiado el mismo concepto o si se queda demasiado genérica."
+    },
+    {
+      "title": "Analizar una sección concreta",
+      "description": "Evalúa introducción, cuerpo y cierre por separado para localizar dónde se concentra la frase."
+    }
   ],
   "examples": [
     {
-      "title": "Ejemplo 1",
-      "input": "Artículo SEO + palabra clave objetivo",
-      "output": "Porcentaje de densidad de palabra clave",
-      "description": "Un ejemplo realista de comprobación de densidad de palabras clave para una consulta habitual."
+      "title": "Revisión de artículo",
+      "input": "Texto: \"La densidad de palabras clave ayuda a evitar repeticiones excesivas. Un comprobador de densidad muestra si la densidad está equilibrada.\"\nPalabra clave: \"densidad de palabras clave\"",
+      "output": "Apariciones: 2\nPalabras totales: 18\nDensidad: 11.11%",
+      "description": "Muestra cómo se cuenta una expresión repetida dentro de un fragmento breve."
     },
     {
-      "title": "Ejemplo 2",
-      "input": "Artículo SEO + palabra clave objetivo",
-      "output": "Porcentaje de densidad de palabra clave",
-      "description": "Otro caso de uso práctico para tráfico orgánico de cola larga."
+      "title": "Página de producto",
+      "input": "Texto: \"Zapatillas para correr a diario. Estas zapatillas para correr son ligeras, cómodas y resistentes, y las zapatillas para correr aguantan largas distancias.\"\nPalabra clave: \"zapatillas para correr\"",
+      "output": "Apariciones: 3\nPalabras totales: 21\nDensidad: 14.29%",
+      "description": "Útil para revisar repeticiones en un texto comercial con varias frases seguidas."
+    },
+    {
+      "title": "Frase con signos de puntuación",
+      "input": "Texto: \"Email marketing, email marketing para ventas y mejores resultados de email marketing importan.\"\nPalabra clave: \"email marketing\"",
+      "output": "Apariciones: 3\nPalabras totales: 12\nDensidad: 25%",
+      "description": "Ilustra cómo la herramienta reconoce la frase aunque haya comas y texto cercano."
     }
   ],
   "faq": [
     {
-      "question": "¿Qué precisión tiene esta herramienta?",
-      "answer": "El resultado se calcula directamente a partir de la fórmula o de la lógica del navegador utilizada por esta herramienta."
+      "question": "¿Cuenta coincidencias exactas o también partes de la palabra?",
+      "answer": "Cuenta la palabra o frase tal como la escribes. Si quieres revisar singular y plural por separado, analiza cada versión de forma independiente."
     },
     {
-      "question": "¿Puedo usar esta herramienta en el móvil?",
-      "answer": "Sí. La página funciona en ordenador y móvil con un diseño sencillo de entrada y resultado."
+      "question": "¿Por qué cambia la densidad cuando reduzco el texto?",
+      "answer": "Porque la densidad depende tanto de las apariciones como del número total de palabras. Si el texto se acorta y la frase se mantiene, el porcentaje sube."
+    },
+    {
+      "question": "¿Cómo interpreto un valor muy alto?",
+      "answer": "Normalmente significa que la frase aparece muchas veces en un texto breve. En una nota corta puede ser normal, pero en un texto cuidado suele sentirse repetitivo."
+    },
+    {
+      "question": "¿Cuál es el error más habitual al usarla?",
+      "answer": "Poner una sola palabra cuando el objetivo real es una expresión de dos o tres términos. Eso cambia el conteo y puede llevar a una lectura equivocada."
+    },
+    {
+      "question": "¿Puedo revisar solo una parte del texto?",
+      "answer": "Sí. Pegar un solo bloque permite ver dónde se concentra la frase sin mezclar toda la página."
     }
   ],
   "seo": {
-    "title": "Comprobador de densidad de palabras clave",
-    "description": "Comprueba la densidad de palabras clave en un texto. Comprobador de densidad de palabras clave gratis en línea con resultados instantáneos.",
+    "title": "Comprobador de densidad",
+    "description": "Calcula repeticiones, palabras totales y densidad de una frase en un texto de forma clara.",
     "keywords": [
-      "comprobador de densidad de palabras clave",
+      "comprobador de densidad",
       "densidad de palabras clave",
-      "herramienta de texto"
+      "contador de palabras",
+      "análisis de texto",
+      "recuento de frases"
     ]
   }
 }

@@ -4,157 +4,87 @@
   "slug": "favicon-generator",
   "h1": "Favicon-Generator",
   "title": "Favicon-Generator",
-  "shortDescription": "Erstelle Favicon-Größen aus einer Bilddatei direkt im Browser mit sofortigen Downloads.",
-  "metaTitle": "Favicon-Generator – Favicons online erstellen",
-  "metaDescription": "Erstelle Favicons aus einem Bild direkt im Browser. Generiere mehrere Icon-Dateien sofort, schnell und ohne Upload auf einen Server.",
-  "intro": "Erstelle Favicons aus einer einzigen Bilddatei direkt im Browser. Generiere schnell die passenden Icon-Größen für Websites und lade sie sofort herunter.",
-  "overview": "Dieser Favicon-Generator hilft dir, Website-Icons aus einem Quellbild ohne zusätzliche Software vorzubereiten. Er läuft lokal im Browser, sodass deine Datei auf deinem Gerät bleibt, während du Größen für Tabs, Lesezeichen und App-Icons erzeugst.",
+  "shortDescription": "Erzeuge Favicon-Dateien und Icon-Größen aus einem Bild direkt im Browser, ohne Server-Upload.",
+  "metaTitle": "Favicon-Generator für Websites",
+  "metaDescription": "Erstelle Favicon-Dateien aus einem Bild direkt im Browser und lade die üblichen Icon-Größen für deine Website herunter.",
+  "intro": "Lade ein Bild hoch und verwandle es direkt im Browser in Favicon-Dateien und Icon-Größen für deine Website.",
+  "overview": "Mit diesem Tool bereitest du aus einem einzigen Quellbild ein Favicon-Set vor, ohne Designsoftware zu installieren. Die Verarbeitung läuft lokal im Browser, sodass die Datei auf deinem Gerät bleibt, während du Icons für Tabs, Lesezeichen und App-Installationen erzeugst.\n\nBesonders praktisch ist das, wenn bereits ein Logo vorhanden ist und daraus brauchbare Ausgaben in mehreren Größen entstehen sollen. Du kannst mit einem quadratischen Markenzeichen, einem kompletten Logo oder einer anderen Grafik starten und erhältst Dateien, die direkt in einen Website-Asset-Ordner oder in einen App-Build passen.",
   "howItWorks": [
-    "Bilddatei als Quelle hochladen oder einfügen.",
-    "Das Tool erstellt automatisch eine Reihe von Favicon-Größen.",
-    "Das Ergebnis im Browser in der Vorschau ansehen.",
-    "Favicon-Dateien sofort herunterladen."
+    "Wähle ein Quellbild von deinem Gerät aus.",
+    "Der Generator erstellt daraus Favicon- und Icon-Größen.",
+    "Prüfe das Ergebnis in der Vorschau.",
+    "Lade die Dateien herunter, die du für Website oder App brauchst."
   ],
   "useCases": [
-    "Ein Favicon für eine neue Website erstellen.",
-    "Icon-Größen für Browser-Tabs und Lesezeichen erzeugen.",
-    "Icon-Assets für Apps und PWA schnell vorbereiten.",
-    "Ein Logo in mehrere Favicon-Formate umwandeln."
+    {
+      "title": "Neue Website starten",
+      "description": "Erstelle die Favicon-Dateien vor dem Launch, damit Tab-Icon und Lesezeichen-Symbol zum Branding passen."
+    },
+    {
+      "title": "Logo in Icon-Set umwandeln",
+      "description": "Wandle ein Markenlogo in ein kompaktes Favicon-Set für Header, Browser-Tabs und installierbare Web-Apps um."
+    },
+    {
+      "title": "PWA-Dateien vorbereiten",
+      "description": "Erzeuge die Icon-Größen, die bei installierbaren Web-Apps oft benötigt werden, aus einer einzigen Vorlage."
+    },
+    {
+      "title": "Rebranding ausrollen",
+      "description": "Ersetze das alte Website-Icon durch ein neues Set und lade die aktualisierten Dateien in einem Durchgang herunter."
+    }
   ],
   "examples": [
     {
-      "title": "Ein Logo für das komplette Favicon-Set",
-      "input": "Ein quadratisches Logo hochladen.",
-      "output": "Mehrere Favicon-Größen zum Download erhalten.",
-      "description": "Ideal, um ein Markenzeichen in einheitliche Website-Icons umzuwandeln."
+      "title": "Quadratisches Logo als Favicon-Set",
+      "input": "Eingabe: 1024×1024 PNG-Logo mit einem einfachen weißen Symbol auf dunklem Hintergrund.",
+      "output": "Ausgabe: ein Favicon-Set in den üblichen Browser- und App-Größen, sofort zum Download bereit.",
+      "description": "Eine klare quadratische Vorlage liefert die konsistentesten Ergebnisse in kleinen Größen."
     },
     {
-      "title": "Schnelle lokale Erstellung",
-      "input": "Ein Bild von deinem Gerät auswählen.",
-      "output": "Icons ohne Server-Upload generieren.",
-      "description": "Praktisch für einen schnellen und privaten Workflow."
+      "title": "Produktmarke als transparentes PNG",
+      "input": "Eingabe: transparentes 512×512 PNG mit rotem Wortzeichen.",
+      "output": "Ausgabe: scharfe Icon-Dateien, die den transparenten Hintergrund dort beibehalten, wo er unterstützt wird.",
+      "description": "Gut geeignet, wenn das Icon auf verschiedenen Seitenthemen funktionieren soll."
+    },
+    {
+      "title": "Illustration als Website-Icon",
+      "input": "Eingabe: 1200×800 JPG-Illustration aus einer Kampagne.",
+      "output": "Ausgabe: zugeschnittene oder angepasste Favicon-Größen für die Browser-Nutzung.",
+      "description": "Hilfreich, wenn das Ausgangsbild kein Logo ist, aber trotzdem als Site-Icon dienen soll."
     }
   ],
   "faq": [
     {
-      "question": "Welche Bildformate kann ich verwenden?",
-      "answer": "Verwende eine gängige Bilddatei wie PNG, JPG oder SVG, sofern sie vom Browser und der Tool-Oberfläche unterstützt wird."
+      "question": "Was passiert, wenn mein Bild nicht quadratisch ist?",
+      "answer": "Der Generator kann trotzdem Favicon-Dateien erstellen, aber das Ergebnis braucht eventuell Zuschnitt oder verliert bei sehr kleinen Größen Details. Ein quadratisches Quellbild liefert meist die sauberste Ausgabe."
     },
     {
-      "question": "Werden meine Dateien auf einen Server hochgeladen?",
-      "answer": "Nein. Die Favicon-Erstellung läuft direkt in deinem Browser, daher wird die Datei lokal auf deinem Gerät verarbeitet."
+      "question": "Kann ich SVG-, PNG- oder JPG-Dateien verwenden?",
+      "answer": "Ja, solange das Format vom Browser und vom Importweg des Tools unterstützt wird. Ein einfaches Bild mit starkem Kontrast funktioniert in kleinen Größen am besten."
     },
     {
-      "question": "Wie viele Favicon-Größen werden erstellt?",
-      "answer": "Das Tool erstellt die üblichen Favicon-Größen für moderne Websites, abhängig vom Quellbild und den Ausgabeeinstellungen."
+      "question": "Warum wirken kleine Favicons einfacher als das Originalbild?",
+      "answer": "Ein Favicon hat nur sehr wenig Platz, daher verschwinden feine Linien, kleiner Text und komplexe Verläufe schnell. Wenn das Ergebnis zu komplex wirkt, vereinfache das Quellbild und generiere es erneut."
     },
     {
-      "question": "Kann ich ein nicht quadratisches Bild verwenden?",
-      "answer": "Ja, aber ein quadratisches Quellbild liefert meist das sauberste Favicon-Ergebnis."
+      "question": "Erstellt das Tool alle Formate für jede Plattform?",
+      "answer": "Es erstellt die üblichen Favicon- und Site-Icon-Größen, aber plattformspezifische Bundles können zusätzliche Dateien verlangen. Prüfe die Icon-Liste deiner Zielplattform."
+    },
+    {
+      "question": "Warum sieht eine Ausgabegröße unscharf aus?",
+      "answer": "Sehr kleine Ausgaben reagieren empfindlich auf Detailgrad. Wenn eine Größe weich wirkt, nutze ein größeres und schärferes Quellbild oder reduziere die Detailmenge im Motiv."
     }
   ],
-  "uiLabels": {
-    "copy": "Kopieren",
-    "copied": "Kopiert",
-    "input": "Bilddatei",
-    "output": "Erzeugte Favicon-Größen",
-    "placeholder": "Bilddatei auswählen",
-    "indent": "Einzug",
-    "removeComments": "Kommentare entfernen",
-    "preview": "Vorschau",
-    "source": "Quelle",
-    "sanitizedHtml": "Bereinigtes HTML",
-    "plainText": "Nur-Text",
-    "summary": "Zusammenfassung",
-    "total": "Gesamt",
-    "links": "Links",
-    "images": "Bilder",
-    "errors": "Fehler",
-    "warnings": "Warnungen",
-    "valid": "Gültig",
-    "invalid": "Ungültig",
-    "href": "Href",
-    "text": "Text",
-    "rel": "Rel",
-    "target": "Ziel",
-    "alt": "Alt",
-    "width": "Breite",
-    "height": "Höhe",
-    "empty": "Leer",
-    "outputReady": "Ausgabe bereit",
-    "cleanedHtml": "Bereinigtes HTML",
-    "formattedHtml": "Formatiertes HTML",
-    "minifiedHtml": "Minifiziertes HTML",
-    "markdown": "Markdown",
-    "extractedImages": "Extrahierte Bilder",
-    "extractedLinks": "Extrahierte Links",
-    "validationSummary": "Validierungszusammenfassung",
-    "prettyHtml": "Lesbares HTML",
-    "encodedText": "Kodierter Text",
-    "file": "Datei",
-    "size": "Größe",
-    "format": "Format",
-    "quality": "Qualität",
-    "colorOne": "Farbe 1",
-    "colorTwo": "Farbe 2",
-    "background": "Hintergrund",
-    "foreground": "Vordergrund",
-    "angle": "Winkel",
-    "margin": "Rand",
-    "level": "Stufe",
-    "gradientType": "Verlaufsart",
-    "linear": "Linear",
-    "radial": "Radial",
-    "blur": "Weichzeichnung",
-    "spread": "Ausbreitung",
-    "offsetX": "Versatz X",
-    "offsetY": "Versatz Y",
-    "opacity": "Deckkraft",
-    "inset": "Innen",
-    "cssCode": "CSS-Code",
-    "snippet": "Ausschnitt",
-    "download": "Herunterladen",
-    "downloadSvg": "SVG herunterladen",
-    "downloadPng": "PNG herunterladen",
-    "downloadAll": "Alle herunterladen",
-    "upload": "Hochladen",
-    "title": "Titel",
-    "description": "Beschreibung",
-    "canonicalUrl": "Kanonische URL",
-    "siteName": "Website-Name",
-    "ogImage": "OG-Bild",
-    "clear": "Leeren",
-    "generatedQr": "QR-Code-Vorschau",
-    "placeholderImage": "Bildvorschau",
-    "faviconSet": "Favicon-Set",
-    "keepAspectRatio": "Seitenverhältnis beibehalten",
-    "cropX": "Zuschneiden X",
-    "cropY": "Zuschneiden Y",
-    "cropWidth": "Zuschneidebreite",
-    "cropHeight": "Zuschneidehöhe",
-    "originalSize": "Originalgröße",
-    "outputSize": "Ausgabegröße",
-    "savedSize": "Gespeicherte Größe",
-    "result": "Ergebnis",
-    "base64": "Base64",
-    "mimeType": "MIME-Typ",
-    "resizedImage": "Skaliertes Bild",
-    "compressedImage": "Komprimiertes Bild",
-    "croppedImage": "Zugeschnittenes Bild",
-    "convertedImage": "Konvertiertes Bild",
-    "decodedImage": "Dekodiertes Bild",
-    "imagePreview": "Bildvorschau"
-  },
   "seo": {
-    "title": "Favicon-Generator – Favicons online erstellen",
-    "description": "Erstelle Favicons aus einem Bild direkt im Browser. Generiere mehrere Icon-Dateien sofort, schnell und ohne Upload auf einen Server.",
+    "title": "Favicon-Generator für Websites",
+    "description": "Erstelle Favicon-Dateien aus einem Bild direkt im Browser und lade die üblichen Icon-Größen für deine Website herunter.",
     "keywords": [
       "favicon-generator",
       "favicon online erstellen",
-      "favicon erzeugen",
       "website icon generator",
-      "browser favicon generator",
-      "favicon größen"
+      "browser favicon tool",
+      "favicon dateien",
+      "icon größen"
     ]
   }
 }
