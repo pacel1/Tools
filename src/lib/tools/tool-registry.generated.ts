@@ -71,6 +71,7 @@ import markdownToHtml from "@/data/tools/definitions/markdown-to-html.json";
 import markupCalculator from "@/data/tools/definitions/markup-calculator.json";
 import mmToInchesConverter from "@/data/tools/definitions/mm-to-inches-converter.json";
 import placeholderImageGenerator from "@/data/tools/definitions/placeholder-image-generator.json";
+import randomTokenGenerator from "@/data/tools/definitions/random-token-generator.json";
 import simpleInterestCalculator from "@/data/tools/definitions/simple-interest-calculator.json";
 import contrastChecker from "@/data/tools/definitions/contrast-checker.json";
 import htmlCleaner from "@/data/tools/definitions/html-cleaner.json";
@@ -179,6 +180,7 @@ export const toolDefinitions = [
   markupCalculator,
   mmToInchesConverter,
   placeholderImageGenerator,
+  randomTokenGenerator,
   simpleInterestCalculator,
   contrastChecker,
   htmlCleaner,

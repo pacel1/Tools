@@ -54,4 +54,11 @@ describe("sitemap", () => {
     expect(urls).not.toContain("https://www.convertbase.app/en/date-time");
     expect(urls).not.toContain("https://www.convertbase.app/pl/date-time");
   });
+
+  it("publishes security category hubs once the category clears the tool-count threshold", () => {
+    const urls = sitemap().map((entry) => entry.url);
+
+    expect(urls).toContain("https://www.convertbase.app/en/security-tools");
+    expect(urls).toContain("https://www.convertbase.app/pl/security-tools");
+  });
 });

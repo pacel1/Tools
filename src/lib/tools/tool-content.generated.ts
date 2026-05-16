@@ -88,6 +88,7 @@ import enPercentageDecreaseCalculator from "@/data/tools/content/en/percentage-d
 import enPercentageIncreaseCalculator from "@/data/tools/content/en/percentage-increase-calculator.json";
 import enPlaceholderImageGenerator from "@/data/tools/content/en/placeholder-image-generator.json";
 import enQrCodeGenerator from "@/data/tools/content/en/qr-code-generator.json";
+import enRandomTokenGenerator from "@/data/tools/content/en/random-token-generator.json";
 import enReadingTimeCalculator from "@/data/tools/content/en/reading-time-calculator.json";
 import enRemoveExtraSpaces from "@/data/tools/content/en/remove-extra-spaces.json";
 import enSalesTaxCalculator from "@/data/tools/content/en/sales-tax-calculator.json";
@@ -193,6 +194,7 @@ import plPercentageDecreaseCalculator from "@/data/tools/content/pl/percentage-d
 import plPercentageIncreaseCalculator from "@/data/tools/content/pl/percentage-increase-calculator.json";
 import plPlaceholderImageGenerator from "@/data/tools/content/pl/placeholder-image-generator.json";
 import plQrCodeGenerator from "@/data/tools/content/pl/qr-code-generator.json";
+import plRandomTokenGenerator from "@/data/tools/content/pl/random-token-generator.json";
 import plReadingTimeCalculator from "@/data/tools/content/pl/reading-time-calculator.json";
 import plRemoveExtraSpaces from "@/data/tools/content/pl/remove-extra-spaces.json";
 import plSalesTaxCalculator from "@/data/tools/content/pl/sales-tax-calculator.json";
@@ -298,6 +300,7 @@ import esPercentageDecreaseCalculator from "@/data/tools/content/es/percentage-d
 import esPercentageIncreaseCalculator from "@/data/tools/content/es/percentage-increase-calculator.json";
 import esPlaceholderImageGenerator from "@/data/tools/content/es/placeholder-image-generator.json";
 import esQrCodeGenerator from "@/data/tools/content/es/qr-code-generator.json";
+import esRandomTokenGenerator from "@/data/tools/content/es/random-token-generator.json";
 import esReadingTimeCalculator from "@/data/tools/content/es/reading-time-calculator.json";
 import esRemoveExtraSpaces from "@/data/tools/content/es/remove-extra-spaces.json";
 import esSalesTaxCalculator from "@/data/tools/content/es/sales-tax-calculator.json";
@@ -403,6 +406,7 @@ import dePercentageDecreaseCalculator from "@/data/tools/content/de/percentage-d
 import dePercentageIncreaseCalculator from "@/data/tools/content/de/percentage-increase-calculator.json";
 import dePlaceholderImageGenerator from "@/data/tools/content/de/placeholder-image-generator.json";
 import deQrCodeGenerator from "@/data/tools/content/de/qr-code-generator.json";
+import deRandomTokenGenerator from "@/data/tools/content/de/random-token-generator.json";
 import deReadingTimeCalculator from "@/data/tools/content/de/reading-time-calculator.json";
 import deRemoveExtraSpaces from "@/data/tools/content/de/remove-extra-spaces.json";
 import deSalesTaxCalculator from "@/data/tools/content/de/sales-tax-calculator.json";
@@ -508,6 +512,7 @@ import frPercentageDecreaseCalculator from "@/data/tools/content/fr/percentage-d
 import frPercentageIncreaseCalculator from "@/data/tools/content/fr/percentage-increase-calculator.json";
 import frPlaceholderImageGenerator from "@/data/tools/content/fr/placeholder-image-generator.json";
 import frQrCodeGenerator from "@/data/tools/content/fr/qr-code-generator.json";
+import frRandomTokenGenerator from "@/data/tools/content/fr/random-token-generator.json";
 import frReadingTimeCalculator from "@/data/tools/content/fr/reading-time-calculator.json";
 import frRemoveExtraSpaces from "@/data/tools/content/fr/remove-extra-spaces.json";
 import frSalesTaxCalculator from "@/data/tools/content/fr/sales-tax-calculator.json";
@@ -620,6 +625,7 @@ export const toolContent = {
     "percentage-increase-calculator": enPercentageIncreaseCalculator,
     "placeholder-image-generator": enPlaceholderImageGenerator,
     "qr-code-generator": enQrCodeGenerator,
+    "random-token-generator": enRandomTokenGenerator,
     "reading-time-calculator": enReadingTimeCalculator,
     "remove-extra-spaces": enRemoveExtraSpaces,
     "sales-tax-calculator": enSalesTaxCalculator,
@@ -727,6 +733,7 @@ export const toolContent = {
     "percentage-increase-calculator": plPercentageIncreaseCalculator,
     "placeholder-image-generator": plPlaceholderImageGenerator,
     "qr-code-generator": plQrCodeGenerator,
+    "random-token-generator": plRandomTokenGenerator,
     "reading-time-calculator": plReadingTimeCalculator,
     "remove-extra-spaces": plRemoveExtraSpaces,
     "sales-tax-calculator": plSalesTaxCalculator,
@@ -834,6 +841,7 @@ export const toolContent = {
     "percentage-increase-calculator": esPercentageIncreaseCalculator,
     "placeholder-image-generator": esPlaceholderImageGenerator,
     "qr-code-generator": esQrCodeGenerator,
+    "random-token-generator": esRandomTokenGenerator,
     "reading-time-calculator": esReadingTimeCalculator,
     "remove-extra-spaces": esRemoveExtraSpaces,
     "sales-tax-calculator": esSalesTaxCalculator,
@@ -941,6 +949,7 @@ export const toolContent = {
     "percentage-increase-calculator": dePercentageIncreaseCalculator,
     "placeholder-image-generator": dePlaceholderImageGenerator,
     "qr-code-generator": deQrCodeGenerator,
+    "random-token-generator": deRandomTokenGenerator,
     "reading-time-calculator": deReadingTimeCalculator,
     "remove-extra-spaces": deRemoveExtraSpaces,
     "sales-tax-calculator": deSalesTaxCalculator,
@@ -1048,6 +1057,7 @@ export const toolContent = {
     "percentage-increase-calculator": frPercentageIncreaseCalculator,
     "placeholder-image-generator": frPlaceholderImageGenerator,
     "qr-code-generator": frQrCodeGenerator,
+    "random-token-generator": frRandomTokenGenerator,
     "reading-time-calculator": frReadingTimeCalculator,
     "remove-extra-spaces": frRemoveExtraSpaces,
     "sales-tax-calculator": frSalesTaxCalculator,

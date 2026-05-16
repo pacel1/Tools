@@ -14,7 +14,8 @@
     "fr"
   ],
   "relatedTools": [
-    "password-generator"
+    "password-generator",
+    "random-token-generator"
   ],
   "seoPriority": 0.89
 }

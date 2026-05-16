@@ -1,4 +1,5 @@
 import type { Locale, ToolCategory } from "@/lib/constants";
+import { generatedCategoryContent } from "@/data/categories/content";
 
 export type IntentHubLink = {
   href: string;
@@ -710,6 +711,763 @@ const hubLabels = {
   }
 } as const;
 
+type CuratedCategoryBrief = {
+  eyebrow: string;
+  title: string;
+  description: string;
+  intro: string;
+  featuredSearches: string[];
+  featuredToolIds: string[];
+  workflows: CategoryHubContent["workflows"];
+  useCases: CategoryHubContent["useCases"];
+  faq: CategoryHubContent["faq"];
+};
+
+const curatedCategoryBriefs: { en: Partial<Record<ToolCategory, CuratedCategoryBrief>> } & Partial<
+  Record<Locale, Partial<Record<ToolCategory, CuratedCategoryBrief>>>
+> = {
+  en: {
+    converters: {
+      eyebrow: "Converter hub",
+      title: "Converters for units, files and everyday measurements",
+      description:
+        "Convert measurements, storage units, colors and temperature values with focused browser tools.",
+      intro:
+        "This converter hub groups tools for the moments when a number, unit or format needs to move into a more useful form. Start with the type of value you have, then choose the converter that matches the target unit or output.",
+      featuredSearches: [
+        "gb to mb converter",
+        "celsius to fahrenheit",
+        "cm to inches",
+        "hex to rgb"
+      ],
+      featuredToolIds: [
+        "storage-converter",
+        "gb-to-mb-converter",
+        "celsius-to-fahrenheit-converter",
+        "cm-to-inches-converter"
+      ],
+      workflows: [
+        {
+          title: "Convert file sizes",
+          description:
+            "Move between KB, MB, GB and TB before uploading, storing or comparing files.",
+          toolId: "storage-converter"
+        },
+        {
+          title: "Switch measurement systems",
+          description:
+            "Translate metric and imperial values for dimensions, distance and weight.",
+          toolId: "cm-to-inches-converter"
+        },
+        {
+          title: "Translate color values",
+          description:
+            "Turn color codes into formats that fit CSS, design notes or implementation tickets.",
+          toolId: "hex-to-rgb-converter"
+        }
+      ],
+      useCases: [
+        {
+          title: "Technical handoff",
+          description:
+            "Normalize units before sharing specs, screenshots or implementation details."
+        },
+        {
+          title: "Everyday comparisons",
+          description:
+            "Check sizes, temperatures and measurements without opening a spreadsheet."
+        }
+      ],
+      faq: [
+        {
+          question: "Which converter should I open first?",
+          answer:
+            "Choose by the source value: storage for file sizes, temperature for weather values, and length or weight tools for physical measurements."
+        },
+        {
+          question: "Are conversion results rounded?",
+          answer:
+            "Most tools show a practical rounded result while preserving enough precision for everyday planning and comparison."
+        }
+      ]
+    },
+    calculators: {
+      eyebrow: "Calculator hub",
+      title: "Calculators for finance, percentages and daily decisions",
+      description:
+        "Run focused calculations for percentages, loans, interest, discounts, tax and common planning numbers.",
+      intro:
+        "Use this calculator hub when the task is not just conversion but a decision based on a formula. The tools cover money, percentages, dates, pricing and health-related estimates with inputs designed for quick checks.",
+      featuredSearches: [
+        "percentage calculator",
+        "loan payment calculator",
+        "compound interest calculator",
+        "discount calculator"
+      ],
+      featuredToolIds: [
+        "percentage-calculator",
+        "loan-payment-calculator",
+        "compound-interest-calculator",
+        "discount-calculator"
+      ],
+      workflows: [
+        {
+          title: "Compare finance scenarios",
+          description:
+            "Estimate payments, interest growth or pricing changes before choosing an option.",
+          toolId: "loan-payment-calculator"
+        },
+        {
+          title: "Work with percentages",
+          description:
+            "Calculate percentage share, increase, decrease or discount from the numbers you already have.",
+          toolId: "percentage-calculator"
+        },
+        {
+          title: "Check date spans",
+          description:
+            "Count days between milestones when planning billing, delivery or project timing.",
+          toolId: "days-between-dates-calculator"
+        }
+      ],
+      useCases: [
+        {
+          title: "Budget checks",
+          description:
+            "Review payments, discounts and tax before committing to a purchase or quote."
+        },
+        {
+          title: "Planning estimates",
+          description:
+            "Turn rough numbers into a clear estimate that can be checked again later."
+        }
+      ],
+      faq: [
+        {
+          question: "Are these calculators financial advice?",
+          answer:
+            "No. They provide planning estimates from the inputs you enter and should be checked against contracts, fees and local rules."
+        },
+        {
+          question: "Why are calculators split into separate tools?",
+          answer:
+            "Separate tools keep the inputs clear, so a discount, loan payment or percentage change is less likely to be mixed up."
+        }
+      ]
+    },
+    generators: {
+      eyebrow: "Generator hub",
+      title: "Generators for passwords, QR codes, IDs and web snippets",
+      description:
+        "Create practical outputs such as passwords, QR codes, UUIDs, slugs, placeholders and metadata snippets.",
+      intro:
+        "This generator hub is for tasks where the useful output is created from a few choices rather than calculated from a fixed formula. Pick the generator that matches the asset or snippet you need, then copy the result into your workflow.",
+      featuredSearches: [
+        "password generator",
+        "qr code generator",
+        "uuid generator",
+        "meta tag generator"
+      ],
+      featuredToolIds: [
+        "password-generator",
+        "qr-code-generator",
+        "uuid-generator",
+        "meta-tag-generator"
+      ],
+      workflows: [
+        {
+          title: "Create secure values",
+          description:
+            "Generate passwords or identifiers for accounts, tests and internal references.",
+          toolId: "password-generator"
+        },
+        {
+          title: "Build shareable codes",
+          description:
+            "Turn URLs, Wi-Fi details or text into a QR code that can be scanned from a screen or printout.",
+          toolId: "qr-code-generator"
+        },
+        {
+          title: "Prepare page snippets",
+          description:
+            "Draft metadata, slugs or placeholder assets before publishing a page.",
+          toolId: "meta-tag-generator"
+        }
+      ],
+      useCases: [
+        {
+          title: "Publishing prep",
+          description:
+            "Generate the small assets and snippets that are easy to forget before release."
+        },
+        {
+          title: "Development support",
+          description:
+            "Create IDs, placeholders and repeatable values for tests, examples and demos."
+        }
+      ],
+      faq: [
+        {
+          question: "Do generators save the values they create?",
+          answer:
+            "The tools are built for immediate browser workflows. Treat sensitive generated values as secrets after copying them."
+        },
+        {
+          question: "Which generator is best for testing?",
+          answer:
+            "Use UUIDs for stable identifiers, placeholders for image slots, and slugs when testing URL or CMS behavior."
+        }
+      ]
+    },
+    "text-tools": {
+      eyebrow: "Text hub",
+      title: "Text tools for counting, cleanup and rewriting",
+      description:
+        "Count words, clean spacing, change case, reverse text and review keyword density in one text-focused hub.",
+      intro:
+        "This text tools hub helps when a block of copy needs to be measured, cleaned or reshaped before it goes into a document, CMS, message or technical workflow. Start with the operation you need and keep the original text nearby for comparison.",
+      featuredSearches: [
+        "word counter",
+        "character counter",
+        "case converter",
+        "keyword density checker"
+      ],
+      featuredToolIds: [
+        "word-counter",
+        "character-counter",
+        "case-converter",
+        "keyword-density-checker"
+      ],
+      workflows: [
+        {
+          title: "Measure content length",
+          description:
+            "Count words, characters, lines or sentences before publishing or sending copy.",
+          toolId: "word-counter"
+        },
+        {
+          title: "Clean pasted text",
+          description:
+            "Remove extra spaces and normalize text that came from a document, email or CMS.",
+          toolId: "remove-extra-spaces"
+        },
+        {
+          title: "Review search terms",
+          description:
+            "Check repeated terms and density before editing a page or snippet.",
+          toolId: "keyword-density-checker"
+        }
+      ],
+      useCases: [
+        {
+          title: "Editorial checks",
+          description:
+            "Confirm length and structure before handing copy to a client, editor or CMS."
+        },
+        {
+          title: "Text cleanup",
+          description:
+            "Fix spacing and casing problems after copying content between tools."
+        }
+      ],
+      faq: [
+        {
+          question: "Do text tools change my source automatically?",
+          answer:
+            "No. Each tool shows an output you can review before copying it back into your own document or system."
+        },
+        {
+          question: "Which counter should I use for limits?",
+          answer:
+            "Use character count for form and social limits, word count for articles, and line or sentence count for structure checks."
+        }
+      ]
+    },
+    "developer-tools": {
+      eyebrow: "Developer hub",
+      title: "Developer tools for JSON, URLs, Base64 and identifiers",
+      description:
+        "Format, validate, encode and decode common developer data without setting up a local script.",
+      intro:
+        "Use this developer tools hub for small data tasks that interrupt coding, testing or debugging. Paste the snippet, inspect the result, then move it back into your editor, API client or ticket.",
+      featuredSearches: [
+        "json formatter",
+        "json validator",
+        "base64 encoder",
+        "url encoder"
+      ],
+      featuredToolIds: [
+        "json-formatter",
+        "json-validator",
+        "base64-encoder",
+        "url-encoder"
+      ],
+      workflows: [
+        {
+          title: "Inspect JSON",
+          description:
+            "Format or validate payloads before comparing API responses, fixtures or config values.",
+          toolId: "json-formatter"
+        },
+        {
+          title: "Encode transport values",
+          description:
+            "Prepare URL or Base64 values for query strings, headers and reproducible examples.",
+          toolId: "url-encoder"
+        },
+        {
+          title: "Create test identifiers",
+          description:
+            "Generate UUIDs for fixtures, logs and temporary records that need unique IDs.",
+          toolId: "uuid-generator"
+        }
+      ],
+      useCases: [
+        {
+          title: "API debugging",
+          description:
+            "Read and transform request data before sending it through a client or test suite."
+        },
+        {
+          title: "Issue reproduction",
+          description:
+            "Prepare clean snippets that can be pasted into tickets, logs or documentation."
+        }
+      ],
+      faq: [
+        {
+          question: "Should I paste secrets into developer tools?",
+          answer:
+            "Avoid pasting production secrets. Use the tools for test data, public snippets and values you are comfortable handling in the browser."
+        },
+        {
+          question: "Why use a browser tool instead of a script?",
+          answer:
+            "For small one-off snippets, a focused browser tool is faster than creating a local file, command or temporary parser."
+        }
+      ]
+    },
+    "security-tools": {
+      eyebrow: "Security hub",
+      title: "Security tools for passwords and SHA-256 checks",
+      description:
+        "Generate passwords and calculate SHA-256 hashes for quick verification tasks.",
+      intro:
+        "This security tools hub is intentionally small today. It covers password generation and SHA-256 hashing, but it should not be treated as a broad security toolkit until more focused tools are added.",
+      featuredSearches: [
+        "password generator",
+        "sha256 generator",
+        "hash text sha256",
+        "secure password"
+      ],
+      featuredToolIds: ["password-generator", "sha256-generator"],
+      workflows: [
+        {
+          title: "Generate a password",
+          description:
+            "Create a strong value for a new account, test user or temporary credential.",
+          toolId: "password-generator"
+        },
+        {
+          title: "Calculate a hash",
+          description:
+            "Turn text into a SHA-256 digest when comparing checksums or examples.",
+          toolId: "sha256-generator"
+        }
+      ],
+      useCases: [
+        {
+          title: "Credential setup",
+          description:
+            "Create a password value, then store it immediately in a password manager."
+        },
+        {
+          title: "Digest comparison",
+          description:
+            "Check whether two text inputs produce the same SHA-256 fingerprint."
+        }
+      ],
+      faq: [
+        {
+          question: "Why is this category not a full security suite?",
+          answer:
+            "It currently has only two focused tools, so broader security workflows should use specialized software."
+        },
+        {
+          question: "Is SHA-256 encryption?",
+          answer:
+            "No. SHA-256 is a one-way hash function, which means the original text cannot be decoded from the digest."
+        }
+      ]
+    }
+  }
+};
+
+const localizedCategoryBriefs: Partial<
+  Record<Locale, Partial<Record<ToolCategory, CuratedCategoryBrief>>>
+> = {
+  pl: {
+    converters: {
+      ...curatedCategoryBriefs.en.converters!,
+      eyebrow: "Hub konwerterow",
+      title: "Konwertery jednostek, plikow i codziennych miar",
+      description:
+        "Przeliczaj jednostki, rozmiary plikow, kolory i temperature w konkretnych narzedziach online.",
+      intro:
+        "Ten hub konwerterow pomaga wtedy, gdy liczbe, jednostke albo format trzeba szybko zamienic na praktyczny wynik. Zacznij od typu danych, ktore masz, a potem wybierz narzedzie dla docelowej jednostki.",
+      featuredSearches: ["gb na mb", "celsjusz na fahrenheit", "cm na cale", "hex na rgb"],
+      useCases: [
+        {
+          title: "Przekazanie specyfikacji",
+          description:
+            "Ujednolic jednostki przed przekazaniem wymiarow, plikow albo wartosci do wdrozenia."
+        },
+        {
+          title: "Szybkie porownania",
+          description:
+            "Sprawdz rozmiary, temperature i miary bez budowania arkusza kalkulacyjnego."
+        }
+      ]
+    },
+    calculators: {
+      ...curatedCategoryBriefs.en.calculators!,
+      eyebrow: "Hub kalkulatorow",
+      title: "Kalkulatory do finansow, procentow i codziennych decyzji",
+      description:
+        "Licz procenty, raty, odsetki, rabaty, podatki i typowe wartosci potrzebne do planowania.",
+      intro:
+        "Uzyj tego huba, gdy nie chodzi o sama konwersje, tylko o decyzje oparta na wzorze. Narzedzia obejmuja pieniadze, procenty, daty, ceny i szacunki zdrowotne.",
+      featuredSearches: [
+        "kalkulator procentowy",
+        "kalkulator raty kredytu",
+        "kalkulator procentu skladanego",
+        "kalkulator rabatu"
+      ]
+    },
+    generators: {
+      ...curatedCategoryBriefs.en.generators!,
+      eyebrow: "Hub generatorow",
+      title: "Generatory hasel, kodow QR, identyfikatorow i snippetow",
+      description:
+        "Tworz hasla, kody QR, UUID, slugi, placeholdery i metadane do szybkiej pracy.",
+      intro:
+        "Ten hub generatorow jest dla zadan, w ktorych wynik powstaje z kilku ustawien, a nie z jednego wzoru. Wybierz typ assetu albo snippetu i skopiuj gotowy rezultat.",
+      featuredSearches: [
+        "generator hasel",
+        "generator kodow qr",
+        "generator uuid",
+        "generator meta tagow"
+      ]
+    },
+    "text-tools": {
+      ...curatedCategoryBriefs.en["text-tools"]!,
+      eyebrow: "Hub tekstu",
+      title: "Narzedzia tekstowe do liczenia, czyszczenia i przerabiania",
+      description:
+        "Licz slowa, usuwaj nadmiarowe spacje, zmieniaj wielkosc liter i sprawdzaj gestosc slow kluczowych.",
+      intro:
+        "Ten hub pomaga, gdy fragment tekstu trzeba zmierzyc, oczyscic albo przeksztalcic przed dodaniem do dokumentu, CMS, wiadomosci lub workflow technicznego.",
+      featuredSearches: [
+        "licznik slow",
+        "licznik znakow",
+        "zmiana wielkosci liter",
+        "gestosc slow kluczowych"
+      ]
+    },
+    "developer-tools": {
+      ...curatedCategoryBriefs.en["developer-tools"]!,
+      eyebrow: "Hub deweloperski",
+      title: "Narzedzia deweloperskie do JSON, URL, Base64 i ID",
+      description:
+        "Formatuj, waliduj, koduj i dekoduj typowe dane deweloperskie bez pisania lokalnego skryptu.",
+      intro:
+        "Uzyj tego huba do malych zadan z danymi, ktore przerywaja kodowanie, testy albo debugowanie. Wklej snippet, sprawdz wynik i przenies go do edytora lub klienta API.",
+      featuredSearches: [
+        "json formatter",
+        "walidator json",
+        "base64 encoder",
+        "url encoder"
+      ]
+    },
+    "security-tools": {
+      ...curatedCategoryBriefs.en["security-tools"]!,
+      eyebrow: "Hub bezpieczenstwa",
+      title: "Narzedzia bezpieczenstwa do hasel i SHA-256",
+      description:
+        "Generuj hasla i licz hashe SHA-256 do szybkiej weryfikacji tekstu.",
+      intro:
+        "Ten hub bezpieczenstwa jest dzis celowo maly. Obejmuje generator hasel i SHA-256, ale nie powinien udawac pelnego zestawu security tools.",
+      featuredSearches: [
+        "generator hasel",
+        "generator sha256",
+        "hash tekstu sha256",
+        "bezpieczne haslo"
+      ]
+    }
+  }
+};
+
+const localeFallbackBriefLabels: Record<Exclude<Locale, "en" | "pl">, Partial<Record<ToolCategory, {
+  eyebrow: string;
+  title: string;
+  description: string;
+  intro: string;
+  searches: string[];
+}>>> = {
+  de: {
+    converters: {
+      eyebrow: "Umrechner-Hub",
+      title: "Umrechner fuer Einheiten, Dateien und Messwerte",
+      description:
+        "Rechne Speichergroessen, Temperaturen, Farben und Alltagsmasse mit fokussierten Browser-Tools um.",
+      intro:
+        "Dieser Hub hilft, wenn eine Zahl oder Einheit schnell in ein nutzbares Format wechseln muss.",
+      searches: ["gb zu mb", "celsius in fahrenheit", "cm in zoll", "hex in rgb"]
+    },
+    calculators: {
+      eyebrow: "Rechner-Hub",
+      title: "Rechner fuer Finanzen, Prozente und Planung",
+      description:
+        "Berechne Prozente, Raten, Zinsen, Rabatte und typische Planungswerte.",
+      intro:
+        "Nutze diesen Hub fuer Aufgaben, bei denen eine Formel eine Entscheidung oder Schaetzung vorbereitet.",
+      searches: ["prozentrechner", "kreditrechner", "zinseszins rechner", "rabatt rechner"]
+    },
+    generators: {
+      eyebrow: "Generator-Hub",
+      title: "Generatoren fuer Passwoerter, QR-Codes, IDs und Snippets",
+      description:
+        "Erzeuge Passwoerter, QR-Codes, UUIDs, Slugs, Platzhalter und Meta-Snippets.",
+      intro:
+        "Dieser Hub sammelt Generatoren fuer Werte und Assets, die schnell erstellt und kopiert werden muessen.",
+      searches: ["passwort generator", "qr code generator", "uuid generator", "meta tag generator"]
+    },
+    "text-tools": {
+      eyebrow: "Text-Hub",
+      title: "Text-Tools zum Zaehlen, Bereinigen und Umformen",
+      description:
+        "Zaehle Woerter, pruefe Zeichen, bereinige Leerzeichen und kontrolliere Keyword-Dichte.",
+      intro:
+        "Dieser Hub hilft, Text vor der Veroeffentlichung, Uebergabe oder technischen Nutzung zu pruefen.",
+      searches: ["wortzaehler", "zeichenzahler", "case converter", "keyword dichte"]
+    },
+    "developer-tools": {
+      eyebrow: "Developer-Hub",
+      title: "Developer-Tools fuer JSON, URLs, Base64 und IDs",
+      description:
+        "Formatiere, validiere, enkodiere und dekodiere typische Entwicklerdaten im Browser.",
+      intro:
+        "Nutze diesen Hub fuer kleine Datenaufgaben beim Debugging, Testen oder Dokumentieren.",
+      searches: ["json formatter", "json validator", "base64 encoder", "url encoder"]
+    },
+    "security-tools": {
+      eyebrow: "Security-Hub",
+      title: "Security-Tools fuer Passwoerter und SHA-256",
+      description:
+        "Erzeuge Passwoerter und berechne SHA-256-Hashes fuer schnelle Pruefungen.",
+      intro:
+        "Dieser Hub ist bewusst klein und deckt aktuell Passworterstellung sowie SHA-256-Vergleiche ab.",
+      searches: ["passwort generator", "sha256 generator", "text hashen", "sicheres passwort"]
+    },
+    "construction-calculators": {
+      eyebrow: "Bau-Hub",
+      title: "Bau-Rechner fuer Materialmengen und Planung",
+      description:
+        "Schaetze Beton, Dach, Daemmung, Fliesen und Ausbau-Materialien fuer Bauprojekte.",
+      intro:
+        "Dieser Hub buendelt Rechner fuer Materialmengen und schnelle Plausibilitaetspruefungen.",
+      searches: ["beton rechner", "dach rechner", "daemmung rechner", "fliesen rechner"]
+    }
+  },
+  es: {
+    converters: {
+      eyebrow: "Hub de conversores",
+      title: "Conversores para unidades, archivos y medidas diarias",
+      description:
+        "Convierte almacenamiento, temperatura, colores y medidas comunes con herramientas del navegador.",
+      intro:
+        "Este hub ayuda cuando un numero, unidad o formato debe convertirse en una salida mas util.",
+      searches: ["gb a mb", "celsius a fahrenheit", "cm a pulgadas", "hex a rgb"]
+    },
+    calculators: {
+      eyebrow: "Hub de calculadoras",
+      title: "Calculadoras para finanzas, porcentajes y planificacion",
+      description:
+        "Calcula porcentajes, cuotas, intereses, descuentos e importes habituales.",
+      intro:
+        "Usa este hub cuando la tarea depende de una formula y necesitas comparar resultados.",
+      searches: ["calculadora porcentaje", "calculadora prestamo", "interes compuesto", "calculadora descuento"]
+    },
+    generators: {
+      eyebrow: "Hub de generadores",
+      title: "Generadores de contrasenas, QR, IDs y snippets",
+      description:
+        "Crea contrasenas, codigos QR, UUID, slugs, placeholders y metadatos.",
+      intro:
+        "Este hub reune generadores para salidas que se crean desde unas pocas opciones.",
+      searches: ["generador contrasenas", "generador qr", "generador uuid", "generador meta tags"]
+    },
+    "text-tools": {
+      eyebrow: "Hub de texto",
+      title: "Herramientas de texto para contar, limpiar y transformar",
+      description:
+        "Cuenta palabras, revisa caracteres, limpia espacios y comprueba densidad de terminos.",
+      intro:
+        "Este hub ayuda a preparar texto antes de publicarlo, enviarlo o moverlo a otro sistema.",
+      searches: ["contador palabras", "contador caracteres", "convertir mayusculas", "densidad palabras clave"]
+    },
+    "developer-tools": {
+      eyebrow: "Hub developer",
+      title: "Herramientas developer para JSON, URL, Base64 e IDs",
+      description:
+        "Formatea, valida, codifica y decodifica datos tecnicos comunes desde el navegador.",
+      intro:
+        "Usa este hub para pequenas tareas de datos durante depuracion, pruebas o documentacion.",
+      searches: ["json formatter", "json validator", "base64 encoder", "url encoder"]
+    },
+    "security-tools": {
+      eyebrow: "Hub de seguridad",
+      title: "Herramientas de seguridad para contrasenas y SHA-256",
+      description:
+        "Genera contrasenas y calcula hashes SHA-256 para verificaciones rapidas.",
+      intro:
+        "Este hub es deliberadamente pequeno y cubre contrasenas y SHA-256 hasta ampliar la categoria.",
+      searches: ["generador contrasenas", "generador sha256", "hash texto", "contrasena segura"]
+    },
+    "construction-calculators": {
+      eyebrow: "Hub de construccion",
+      title: "Calculadoras de construccion para materiales y planificacion",
+      description:
+        "Estima hormigon, tejado, aislamiento, azulejos y materiales de obra.",
+      intro:
+        "Este hub agrupa calculadoras para estimar cantidades antes de comprar o comparar presupuestos.",
+      searches: ["calculadora hormigon", "calculadora tejado", "calculadora aislamiento", "calculadora azulejos"]
+    },
+    "html-tools": {
+      eyebrow: "Hub HTML",
+      title: "Herramientas HTML para formato, extraccion y limpieza",
+      description:
+        "Formatea, valida, convierte y extrae datos de HTML en flujos de trabajo de marcado.",
+      intro:
+        "Este hub HTML ayuda a pasar de marcado desordenado a una salida legible y reutilizable.",
+      searches: ["formatear html", "html pretty", "extraer enlaces html", "html a markdown"]
+    },
+    "image-tools": {
+      eyebrow: "Hub de imagen",
+      title: "Herramientas de imagen para redimensionar, comprimir y exportar",
+      description:
+        "Prepara imagenes con compresion, recorte, conversion y lectura de metadatos.",
+      intro:
+        "Este hub reune tareas frecuentes para preparar imagenes antes de publicarlas o compartirlas.",
+      searches: ["comprimir imagen", "redimensionar imagen", "convertir imagen", "recortar imagen"]
+    }
+  },
+  fr: {
+    converters: {
+      eyebrow: "Hub convertisseurs",
+      title: "Convertisseurs pour unites, fichiers et mesures courantes",
+      description:
+        "Convertissez stockage, temperature, couleurs et mesures avec des outils de navigateur.",
+      intro:
+        "Ce hub aide lorsqu'un nombre, une unite ou un format doit devenir une sortie plus utile.",
+      searches: ["gb en mb", "celsius en fahrenheit", "cm en pouces", "hex en rgb"]
+    },
+    calculators: {
+      eyebrow: "Hub calculateurs",
+      title: "Calculateurs pour finances, pourcentages et planification",
+      description:
+        "Calculez pourcentages, mensualites, interets, remises et valeurs de planification.",
+      intro:
+        "Utilisez ce hub lorsqu'une formule aide a comparer des options ou preparer une estimation.",
+      searches: ["calculateur pourcentage", "calculateur pret", "interets composes", "calculateur remise"]
+    },
+    generators: {
+      eyebrow: "Hub generateurs",
+      title: "Generateurs de mots de passe, QR, IDs et snippets",
+      description:
+        "Creez mots de passe, QR codes, UUID, slugs, placeholders et metadonnees.",
+      intro:
+        "Ce hub rassemble les generateurs utiles quand une sortie doit etre creee puis copiee.",
+      searches: ["generateur mot de passe", "generateur qr", "generateur uuid", "generateur meta tags"]
+    },
+    "text-tools": {
+      eyebrow: "Hub texte",
+      title: "Outils texte pour compter, nettoyer et transformer",
+      description:
+        "Comptez les mots, verifiez les caracteres, nettoyez les espaces et controlez les termes.",
+      intro:
+        "Ce hub aide a preparer un texte avant publication, envoi ou migration vers un autre outil.",
+      searches: ["compteur mots", "compteur caracteres", "convertir casse", "densite mots cles"]
+    },
+    "developer-tools": {
+      eyebrow: "Hub developpeur",
+      title: "Outils developpeur pour JSON, URL, Base64 et IDs",
+      description:
+        "Formatez, validez, encodez et decodez des donnees techniques courantes dans le navigateur.",
+      intro:
+        "Utilisez ce hub pour les petites taches de donnees pendant debug, tests ou documentation.",
+      searches: ["json formatter", "json validator", "base64 encoder", "url encoder"]
+    },
+    "security-tools": {
+      eyebrow: "Hub securite",
+      title: "Outils securite pour mots de passe et SHA-256",
+      description:
+        "Generez des mots de passe et calculez des hashes SHA-256 pour des verifications rapides.",
+      intro:
+        "Ce hub reste volontairement limite et couvre les mots de passe ainsi que SHA-256.",
+      searches: ["generateur mot de passe", "generateur sha256", "hash texte", "mot de passe fort"]
+    },
+    "construction-calculators": {
+      eyebrow: "Hub construction",
+      title: "Calculateurs de construction pour materiaux et planification",
+      description:
+        "Estimez beton, toiture, isolation, carrelage et materiaux de chantier.",
+      intro:
+        "Ce hub regroupe des calculateurs pour verifier les quantites avant achat ou devis.",
+      searches: ["calculateur beton", "calculateur toiture", "calculateur isolation", "calculateur carrelage"]
+    },
+    "html-tools": {
+      eyebrow: "Hub HTML",
+      title: "Outils HTML pour formatage, extraction et nettoyage",
+      description:
+        "Formatez, validez, convertissez et extrayez des donnees HTML pour vos workflows.",
+      intro:
+        "Ce hub HTML aide a transformer un markup difficile a lire en sortie exploitable.",
+      searches: ["formater html", "html pretty", "extraire liens html", "html vers markdown"]
+    },
+    "image-tools": {
+      eyebrow: "Hub image",
+      title: "Outils image pour redimensionner, compresser et exporter",
+      description:
+        "Preparez vos images avec compression, recadrage, conversion et lecture de metadonnees.",
+      intro:
+        "Ce hub rassemble les taches frequentes pour preparer des images avant publication.",
+      searches: ["compresser image", "redimensionner image", "convertir image", "recadrer image"]
+    }
+  }
+};
+
+function buildLocalizedBrief(
+  locale: Exclude<Locale, "en" | "pl">,
+  category: ToolCategory
+): CategoryHubContent | null {
+  const labels = localeFallbackBriefLabels[locale][category];
+  const base = curatedCategoryBriefs.en[category] ?? categoryHubContent.en?.[category];
+
+  if (!labels || !base) {
+    return null;
+  }
+
+  return {
+    ...base,
+    eyebrow: labels.eyebrow,
+    title: labels.title,
+    description: labels.description,
+    intro: `${labels.intro} ${labels.description}`,
+    featuredSearches: labels.searches
+  };
+}
+
 export function buildStorageHubHref(locale: Locale) {
   return storageHubContent[locale]?.slug ? `/${locale}/${storageHubContent[locale].slug}` : null;
 }
@@ -719,7 +1477,40 @@ export function getStorageHubContent(locale: Locale) {
 }
 
 export function getCategoryHubContent(locale: Locale, category: ToolCategory) {
-  return categoryHubContent[locale]?.[category] ?? null;
+  const generated = generatedCategoryContent[category]?.[locale];
+
+  if (generated) {
+    return generated;
+  }
+
+  const manual = categoryHubContent[locale]?.[category];
+
+  if (manual) {
+    return manual;
+  }
+
+  const curated =
+    curatedCategoryBriefs[locale]?.[category] ??
+    localizedCategoryBriefs[locale]?.[category];
+
+  if (curated) {
+    return curated;
+  }
+
+  if (locale !== "en" && locale !== "pl") {
+    return buildLocalizedBrief(locale, category);
+  }
+
+  return null;
+}
+
+export function hasIndexableCategoryHubContent(locale: Locale, category: ToolCategory) {
+  return Boolean(
+    generatedCategoryContent[category]?.[locale] ??
+      categoryHubContent[locale]?.[category] ??
+      curatedCategoryBriefs[locale]?.[category] ??
+      localizedCategoryBriefs[locale]?.[category]
+  );
 }
 
 export function getIntentRelatedIds(toolId: string) {

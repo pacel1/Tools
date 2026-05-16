@@ -1,0 +1,317 @@
+{
+  "en": {
+    "eyebrow": "Text hub",
+    "title": "Text tools for counting, cleanup and rewriting",
+    "description": "Count words, clean spacing, change case, reverse text and review keyword density in one text-focused hub.",
+    "intro": "This text tools hub helps when a block of copy needs to be measured, cleaned or reshaped before it goes into a document, CMS, message or technical workflow. Start with the operation you need and keep the original text nearby for comparison.",
+    "featuredSearches": [
+      "word count for article length",
+      "character limit for form text",
+      "convert text case for headlines",
+      "check keyword density in a draft"
+    ],
+    "featuredToolIds": [
+      "word-counter",
+      "character-counter",
+      "case-converter",
+      "keyword-density-checker"
+    ],
+    "workflows": [
+      {
+        "title": "Check length before publishing",
+        "description": "Use word-counter when you need article or draft length, character-counter when a form or platform has a hard limit, and sentence-counter when structure matters.",
+        "toolId": "word-counter"
+      },
+      {
+        "title": "Normalize copied text",
+        "description": "Use remove-extra-spaces after pasting from email, documents, or a CMS to strip awkward gaps and make the text easier to edit.",
+        "toolId": "remove-extra-spaces"
+      },
+      {
+        "title": "Shape wording for reuse",
+        "description": "Use case-converter for headlines, labels, or title styles, then slug-generator if the text needs a web-safe path or filename.",
+        "toolId": "case-converter"
+      }
+    ],
+    "useCases": [
+      {
+        "title": "Editorial review",
+        "description": "Check length, spacing, and structure before sending copy to an editor, client, or publishing system."
+      },
+      {
+        "title": "Content cleanup",
+        "description": "Fix inconsistent spaces, casing, and line breaks after moving text between tools."
+      },
+      {
+        "title": "Publishing prep",
+        "description": "Turn a draft title into a clean slug, then verify the final wording still fits the target format."
+      }
+    ],
+    "faq": [
+      {
+        "question": "When should I use word count instead of character count?",
+        "answer": "Use word count for articles, notes, and drafts. Use character count when a system sets a strict limit, such as a form field, title tag, or social post."
+      },
+      {
+        "question": "Why use a text hub instead of one tool at a time?",
+        "answer": "Different tasks call for different checks. You may need one tool to clean the text, another to measure it, and another to reshape case or format."
+      },
+      {
+        "question": "Can I compare the original text and the output?",
+        "answer": "Yes. Keep the source text nearby so you can confirm spacing, wording, and length after each change."
+      }
+    ]
+  },
+  "pl": {
+    "eyebrow": "Hub tekstu",
+    "title": "Narzedzia tekstowe do liczenia, czyszczenia i przerabiania",
+    "description": "Licz slowa, usuwaj nadmiarowe spacje, zmieniaj wielkosc liter, odwracaj tekst i sprawdzaj gestosc slow kluczowych w jednym miejscu.",
+    "intro": "Ten hub pomaga wtedy, gdy fragment tekstu trzeba zmierzyc, oczyscic albo przeksztalcic przed wklejeniem do dokumentu, CMS, wiadomosci lub procesu technicznego. Zacznij od zadania, ktore chcesz wykonac, i miej obok oryginalny tekst do porownania.",
+    "featuredSearches": [
+      "licznik slow do tekstu",
+      "limit znakow w formularzu",
+      "zmiana wielkosci liter w tytule",
+      "sprawdzenie gestosci slow kluczowych"
+    ],
+    "featuredToolIds": [
+      "word-counter",
+      "character-counter",
+      "case-converter",
+      "keyword-density-checker"
+    ],
+    "workflows": [
+      {
+        "title": "Sprawdz dlugosc przed publikacja",
+        "description": "Uzyj word-counter, gdy liczysz slowa w artykule lub szkicu, character-counter przy twardym limicie znakow, a sentence-counter przy kontroli struktury.",
+        "toolId": "word-counter"
+      },
+      {
+        "title": "Oczysc wklejony tekst",
+        "description": "Uzyj remove-extra-spaces po wklejeniu z maila, dokumentu lub CMS, aby usunac przypadkowe przerwy i ulatwic edycje.",
+        "toolId": "remove-extra-spaces"
+      },
+      {
+        "title": "Dostosuj zapis do ponownego uzycia",
+        "description": "Uzyj case-converter do tytulow, etykiet i naglowkow, a potem slug-generator, gdy tekst ma stac sie bezpiecznym adresem lub nazwa pliku.",
+        "toolId": "case-converter"
+      }
+    ],
+    "useCases": [
+      {
+        "title": "Przeglad redakcyjny",
+        "description": "Sprawdz dlugosc, spacje i strukture przed przekazaniem tekstu redaktorowi, klientowi lub do systemu publikacji."
+      },
+      {
+        "title": "Porzadkowanie tekstu",
+        "description": "Napraw niejednolite spacje, wielkosc liter i podzial wierszy po przenoszeniu tresci miedzy narzedziami."
+      },
+      {
+        "title": "Przygotowanie publikacji",
+        "description": "Zamien szkic tytulu w czysty slug, a nastepnie sprawdz, czy koncowy zapis nadal pasuje do wymaganego formatu."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Kiedy uzyc licznika slow, a kiedy licznika znakow?",
+        "answer": "Licznik slow sprawdzi sie przy artykulach, notatkach i szkicach. Licznik znakow wybierz wtedy, gdy system narzuca sztywny limit, na przyklad w formularzu, tytule lub wpisie do serwisu."
+      },
+      {
+        "question": "Po co korzystac z huba tekstu zamiast pojedynczych narzedzi?",
+        "answer": "Rne zadania wymagaja roznych kontroli. Jedno narzedzie moze oczyscic tekst, inne go zmierzyc, a kolejne zmienic zapis lub format."
+      },
+      {
+        "question": "Czy moge porownac tekst zrodlowy i wynik?",
+        "answer": "Tak. Warto trzymac oryginal obok, aby po kazdej zmianie sprawdzic spacje, brzmienie i dlugosc."
+      }
+    ]
+  },
+  "es": {
+    "eyebrow": "Hub de texto",
+    "title": "Herramientas de texto para contar, limpiar y transformar",
+    "description": "Cuenta palabras, revisa caracteres, limpia espacios, cambia mayusculas y minuculas y comprueba la densidad de terminos en un solo lugar.",
+    "intro": "Este hub ayuda cuando un bloque de texto necesita medirse, limpiarse o adaptarse antes de pasarlo a un documento, un CMS, un mensaje o un flujo tecnico. Empieza por la tarea que necesitas y conserva el texto original cerca para comparar.",
+    "featuredSearches": [
+      "contar palabras en un texto",
+      "limite de caracteres para un formulario",
+      "cambiar mayusculas y minusculas",
+      "comprobar densidad de palabras clave"
+    ],
+    "featuredToolIds": [
+      "word-counter",
+      "character-counter",
+      "case-converter",
+      "keyword-density-checker"
+    ],
+    "workflows": [
+      {
+        "title": "Comprueba la extension antes de publicar",
+        "description": "Usa word-counter para articulos o borradores, character-counter cuando hay un limite fijo de caracteres y sentence-counter cuando importa la estructura.",
+        "toolId": "word-counter"
+      },
+      {
+        "title": "Limpia texto pegado",
+        "description": "Usa remove-extra-spaces despues de pegar desde un correo, un documento o un CMS para quitar huecos extra y dejar el texto listo para editar.",
+        "toolId": "remove-extra-spaces"
+      },
+      {
+        "title": "Ajusta el formato para reutilizarlo",
+        "description": "Usa case-converter para titulos, etiquetas o encabezados, y luego slug-generator si el texto debe convertirse en una ruta web o nombre de archivo.",
+        "toolId": "case-converter"
+      }
+    ],
+    "useCases": [
+      {
+        "title": "Revision editorial",
+        "description": "Comprueba extension, espacios y estructura antes de entregar el texto a un editor, cliente o sistema de publicacion."
+      },
+      {
+        "title": "Limpieza de texto",
+        "description": "Corrige espacios, mayusculas y saltos de linea incoherentes despues de mover contenido entre herramientas."
+      },
+      {
+        "title": "Preparacion de publicacion",
+        "description": "Convierte un titulo en un slug limpio y verifica que el texto final siga encajando en el formato objetivo."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Cuando debo usar el contador de palabras y cuando el de caracteres?",
+        "answer": "Usa el contador de palabras para articulos, notas y borradores. Usa el contador de caracteres cuando el sistema impone un limite estricto, como un formulario, un titulo o una publicacion social."
+      },
+      {
+        "question": "Por que usar un hub de texto en vez de una sola herramienta?",
+        "answer": "Cada tarea pide una comprobacion distinta. Puedes necesitar una herramienta para limpiar el texto, otra para medirlo y otra para cambiar el formato."
+      },
+      {
+        "question": "Puedo comparar el texto original con el resultado?",
+        "answer": "Si. Guarda el original cerca para revisar espacios, redaccion y extension despues de cada cambio."
+      }
+    ]
+  },
+  "de": {
+    "eyebrow": "Text-Hub",
+    "title": "Text-Tools zum Zaehlen, Bereinigen und Umformen",
+    "description": "Zaehle Woerter, pruefe Zeichen, bereinige Leerzeichen, aendere die Gross- und Kleinschreibung und kontrolliere die Keyword-Dichte an einem Ort.",
+    "intro": "Dieser Hub hilft, wenn ein Text vor dem Einfuegen in ein Dokument, CMS, eine Nachricht oder einen technischen Ablauf gemessen, bereinigt oder angepasst werden muss. Beginne mit der Aufgabe, die du brauchst, und halte den Originaltext zum Vergleich bereit.",
+    "featuredSearches": [
+      "wortanzahl fuer einen artikel",
+      "zeichenlimit fuer formulartext",
+      "groess- und kleinschreibung aendern",
+      "keyword dichte in einem entwurf pruefen"
+    ],
+    "featuredToolIds": [
+      "word-counter",
+      "character-counter",
+      "case-converter",
+      "keyword-density-checker"
+    ],
+    "workflows": [
+      {
+        "title": "Laenge vor dem Veroeffentlichen pruefen",
+        "description": "Nutze word-counter fuer Artikel oder Entwuerfe, character-counter bei festen Zeichenlimits und sentence-counter, wenn die Struktur wichtig ist.",
+        "toolId": "word-counter"
+      },
+      {
+        "title": "Eingefuegten Text bereinigen",
+        "description": "Nutze remove-extra-spaces nach dem Einfuegen aus E-Mail, Dokument oder CMS, um doppelte Leerzeichen zu entfernen und den Text editierbar zu machen.",
+        "toolId": "remove-extra-spaces"
+      },
+      {
+        "title": "Schreibweise fuer die Weiterverwendung anpassen",
+        "description": "Nutze case-converter fuer Ueberschriften, Labels oder Titel, und danach slug-generator, wenn daraus ein webtauglicher Pfad oder Dateiname werden soll.",
+        "toolId": "case-converter"
+      }
+    ],
+    "useCases": [
+      {
+        "title": "Redaktionelle Pruefung",
+        "description": "Pruefe Laenge, Abstand und Struktur, bevor du den Text an Redaktion, Kunde oder Publishingsystem gibst."
+      },
+      {
+        "title": "Textbereinigung",
+        "description": "Korrigiere uneinheitliche Leerzeichen, Grossschreibung und Zeilenumbrueche nach dem Kopieren zwischen Tools."
+      },
+      {
+        "title": "Vorbereitung fuer die Veroeffentlichung",
+        "description": "Wandle einen Titel in einen sauberen Slug um und pruefe danach, ob die Endfassung noch zum Zielformat passt."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Wann sollte ich Wortzaehler statt Zeichenzaehler nutzen?",
+        "answer": "Nutze den Wortzaehler fuer Artikel, Notizen und Entwuerfe. Den Zeichenzaehler nutzt du, wenn ein System ein hartes Limit vorgibt, etwa bei Formularen, Titeln oder Social Posts."
+      },
+      {
+        "question": "Warum ein Text-Hub statt nur eines einzelnen Tools?",
+        "answer": "Unterschiedliche Aufgaben brauchen unterschiedliche Pruefungen. Du brauchst vielleicht ein Tool zum Bereinigen, eins zum Messen und eins zum Umformen von Text oder Format."
+      },
+      {
+        "question": "Kann ich Originaltext und Ergebnis vergleichen?",
+        "answer": "Ja. Halte den Ursprungstext neben dem Ergebnis, damit du Leerzeichen, Wortlaut und Laenge nach jeder Aenderung pruefen kannst."
+      }
+    ]
+  },
+  "fr": {
+    "eyebrow": "Hub texte",
+    "title": "Outils texte pour compter, nettoyer et transformer",
+    "description": "Comptez les mots, verifiez les caracteres, nettoyez les espaces, changez la casse et controlez la densite des termes au meme endroit.",
+    "intro": "Ce hub aide quand un texte doit etre mesure, nettoye ou adapte avant insertion dans un document, un CMS, un message ou un flux technique. Commencez par la tache voulue et gardez le texte original a cote pour comparer.",
+    "featuredSearches": [
+      "compter les mots d'un texte",
+      "limite de caracteres pour un formulaire",
+      "modifier la casse d'un titre",
+      "verifier la densite des mots cles"
+    ],
+    "featuredToolIds": [
+      "word-counter",
+      "character-counter",
+      "case-converter",
+      "keyword-density-checker"
+    ],
+    "workflows": [
+      {
+        "title": "Verifier la longueur avant publication",
+        "description": "Utilisez word-counter pour un article ou un brouillon, character-counter quand la limite est fixe en caracteres, et sentence-counter quand la structure compte.",
+        "toolId": "word-counter"
+      },
+      {
+        "title": "Nettoyer un texte colle",
+        "description": "Utilisez remove-extra-spaces apres un collage depuis un email, un document ou un CMS pour enlever les espaces en trop et faciliter la relecture.",
+        "toolId": "remove-extra-spaces"
+      },
+      {
+        "title": "Adapter la forme pour reutilisation",
+        "description": "Utilisez case-converter pour les titres, etiquettes ou en-tetes, puis slug-generator si le texte doit devenir un chemin web ou un nom de fichier.",
+        "toolId": "case-converter"
+      }
+    ],
+    "useCases": [
+      {
+        "title": "Relecture editoriale",
+        "description": "Verifiez la longueur, les espaces et la structure avant de remettre le texte a un editeur, un client ou un systeme de publication."
+      },
+      {
+        "title": "Nettoyage de texte",
+        "description": "Corrigez les espaces, la casse et les retours a la ligne incoherents apres transfert entre outils."
+      },
+      {
+        "title": "Preparation de publication",
+        "description": "Transformez un titre brouillon en slug propre, puis verifiez que la version finale reste compatible avec le format vise."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Quand utiliser le compteur de mots et quand utiliser le compteur de caracteres ?",
+        "answer": "Utilisez le compteur de mots pour les articles, notes et brouillons. Utilisez le compteur de caracteres quand un systeme impose une limite stricte, comme un champ de formulaire, un titre ou un message social."
+      },
+      {
+        "question": "Pourquoi passer par un hub texte plutot que par un seul outil ?",
+        "answer": "Chaque tache demande un controle different. Vous pouvez avoir besoin d'un outil pour nettoyer le texte, d'un autre pour le mesurer et d'un autre pour changer la casse ou le format."
+      },
+      {
+        "question": "Puis-je comparer le texte source et le resultat ?",
+        "answer": "Oui. Gardez le texte original a proximite pour verifier les espaces, le contenu et la longueur apres chaque modification."
+      }
+    ]
+  }
+}

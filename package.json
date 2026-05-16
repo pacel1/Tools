@@ -14,6 +14,7 @@
     "add-tool": "tsx scripts/add-tool.ts",
     "generate:tool-code": "tsx scripts/generate-tool-code.ts",
     "generate:tool-content": "tsx scripts/generate-tool-content.ts",
+    "generate:category-content": "tsx scripts/generate-category-content.ts",
     "generate:localized-content": "tsx scripts/localize-existing-content.ts",
     "regenerate:tool-content": "tsx scripts/regenerate-tool-content.ts",
     "validate:content": "tsx scripts/validate-content.ts",

@@ -7,7 +7,7 @@ import {
   type LegalPageKey
 } from "@/lib/pages/types";
 import { buildLanguageAlternates } from "@/lib/seo/alternates";
-import { getActiveCategories } from "@/lib/tools/categories";
+import { getIndexableCategories } from "@/lib/tools/categories";
 import {
   buildStorageHubHref,
   getStorageHubContent
@@ -34,12 +34,12 @@ export function buildSitemapEntries(): MetadataRoute.Sitemap {
       alternates: buildLanguageAlternates((entryLocale) => `/${entryLocale}`)
     })),
     ...locales.flatMap((locale) =>
-      getActiveCategories(locale).map((category) => ({
+      getIndexableCategories(locale).map((category) => ({
         url: `${baseUrl}/${locale}/${category}`,
         changeFrequency: "weekly" as const,
         priority: 0.75,
         alternates: buildLanguageAlternates((entryLocale) =>
-          getActiveCategories(entryLocale).includes(category)
+          getIndexableCategories(entryLocale).includes(category)
             ? `/${entryLocale}/${category}`
             : null
         )

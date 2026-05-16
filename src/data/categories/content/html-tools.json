@@ -1,0 +1,342 @@
+{
+  "en": {
+    "eyebrow": "HTML hub",
+    "title": "HTML tools for formatting, extraction and markup cleanup",
+    "description": "Work through messy markup faster with formatters, link extractors, converters and validators in one place.",
+    "intro": "Use this HTML tools hub for practical jobs like cleaning copied code, checking structure, extracting links and converting content between formats. Start with the tool that fits the task, then move to related cleanup or conversion steps as needed.",
+    "featuredSearches": [
+      "format messy html",
+      "check html for errors",
+      "extract links from html",
+      "convert html to markdown"
+    ],
+    "featuredToolIds": [
+      "html-pretty-print",
+      "html-validator",
+      "html-link-extractor",
+      "html-to-markdown"
+    ],
+    "workflows": [
+      {
+        "title": "Format messy HTML",
+        "description": "Choose the pretty printer when pasted markup is hard to read, then review indentation and tag nesting before debugging or handoff.",
+        "toolId": "html-pretty-print"
+      },
+      {
+        "title": "Validate page markup",
+        "description": "Use the validator when you need to catch broken tags, structural issues or invalid nesting before publishing.",
+        "toolId": "html-validator"
+      },
+      {
+        "title": "Extract links from copied HTML",
+        "description": "Use the link extractor when you need href values from page snippets, exports or scraped content without writing a parser.",
+        "toolId": "html-link-extractor"
+      },
+      {
+        "title": "Convert HTML to Markdown",
+        "description": "Choose the HTML to Markdown converter when browser content, CMS exports or snippets need to become editable Markdown for docs or notes.",
+        "toolId": "html-to-markdown"
+      }
+    ],
+    "useCases": [
+      {
+        "title": "Code review and debugging",
+        "description": "Make compact markup readable before checking why a page renders incorrectly."
+      },
+      {
+        "title": "Content migration",
+        "description": "Move articles, notes or CMS content between HTML, Markdown and plain text with less manual cleanup."
+      },
+      {
+        "title": "Link and asset audits",
+        "description": "Review links and extracted resources from HTML fragments during QA, publishing or site maintenance."
+      }
+    ],
+    "faq": [
+      {
+        "question": "When should I use the formatter instead of the validator?",
+        "answer": "Use the formatter when the code is valid but hard to read. Use the validator when you need to find structural errors or broken markup."
+      },
+      {
+        "question": "Can I extract text or media from HTML too?",
+        "answer": "Yes. Use the text, link and image extraction tools when you need plain content or asset URLs from markup."
+      },
+      {
+        "question": "Which tool should I start with for copied page code?",
+        "answer": "Start with the pretty printer to make the code readable, then move to validation, link extraction or conversion depending on the task."
+      }
+    ]
+  },
+  "pl": {
+    "eyebrow": "Hub HTML",
+    "title": "Narzedzia HTML do formatowania, ekstrakcji i czyszczenia markup",
+    "description": "Pracuj szybciej z nieczytelnym kodem dzieki formatterom, ekstraktorom linkow, konwerterom i walidatorom w jednym miejscu.",
+    "intro": "Korzystaj z tego hubu HTML przy praktycznych zadaniach, takich jak porzadkowanie skopiowanego kodu, sprawdzanie struktury, wyciaganie linkow i zamiana tresci miedzy formatami. Zacznij od narzedzia dopasowanego do zadania, a potem przejdz do kolejnych krokow czyszczenia lub konwersji.",
+    "featuredSearches": [
+      "formatowanie html",
+      "sprawdz html na bledy",
+      "wyciagnij linki z html",
+      "konwertuj html do markdown"
+    ],
+    "featuredToolIds": [
+      "html-pretty-print",
+      "html-validator",
+      "html-link-extractor",
+      "html-to-markdown"
+    ],
+    "workflows": [
+      {
+        "title": "Sformatuj nieczytelny HTML",
+        "description": "Wybierz pretty printer, gdy wklejony markup jest zbity i trudny do sprawdzenia. Pozwala szybko ocenic wciecia i zagniezdzenia tagow przed debugowaniem lub przekazaniem dalej.",
+        "toolId": "html-pretty-print"
+      },
+      {
+        "title": "Zweryfikuj markup strony",
+        "description": "Uzyj walidatora, gdy chcesz wykryc zle tagi, bledy struktury albo niepoprawne zagniezdzenia przed publikacja.",
+        "toolId": "html-validator"
+      },
+      {
+        "title": "Wyciagnij linki ze skopiowanego HTML",
+        "description": "Wybierz ekstraktor linkow, gdy potrzebujesz adresow href z fragmentow strony, eksportow lub zrzutow bez pisania parsera.",
+        "toolId": "html-link-extractor"
+      },
+      {
+        "title": "Zamien HTML na Markdown",
+        "description": "Uzyj konwertera HTML do Markdown, gdy tresc z przegladarki, CMS albo fragmenty strony maja stac sie edytowalnym Markdown do dokumentacji lub notatek.",
+        "toolId": "html-to-markdown"
+      }
+    ],
+    "useCases": [
+      {
+        "title": "Przeglad kodu i debugowanie",
+        "description": "Uczyn zbity markup czytelnym przed sprawdzeniem, dlaczego strona renderuje sie nieprawidlowo."
+      },
+      {
+        "title": "Migracja tresci",
+        "description": "Przenos artykuly, notatki lub tresc CMS miedzy HTML, Markdown i plain text z mniejsza iloscia recznego czyszczenia."
+      },
+      {
+        "title": "Audyt linkow i zasobow",
+        "description": "Sprawdzaj linki i wyodrebnione zasoby z fragmentow HTML podczas QA, publikacji lub utrzymania strony."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Kiedy uzyc formattera zamiast walidatora?",
+        "answer": "Formatter wybierz wtedy, gdy kod jest poprawny, ale trudny do odczytania. Walidator przyda sie, gdy chcesz znalezc bledy struktury lub zle markup."
+      },
+      {
+        "question": "Czy moge wyciagac z HTML takze tekst albo multimedia?",
+        "answer": "Tak. Uzyj narzedzi do tekstu, linkow i obrazow, gdy potrzebujesz plaskiej tresci lub adresow zasobow z markup."
+      },
+      {
+        "question": "Od ktorego narzedzia zaczac przy skopiowanym kodzie strony?",
+        "answer": "Zacznij od pretty printera, aby uczynic kod czytelnym, a potem przejdz do walidacji, ekstrakcji linkow lub konwersji zaleznnie od zadania."
+      }
+    ]
+  },
+  "es": {
+    "eyebrow": "Hub HTML",
+    "title": "Herramientas HTML para formato, extraccion y limpieza de marcado",
+    "description": "Trabaja mas rapido con marcado desordenado usando formateadores, extractores de enlaces, convertidores y validadores en un solo lugar.",
+    "intro": "Usa este hub de HTML para tareas practicas como limpiar codigo copiado, revisar la estructura, extraer enlaces y convertir contenido entre formatos. Empieza por la herramienta que encaje con la tarea y luego pasa a pasos de limpieza o conversion relacionados.",
+    "featuredSearches": [
+      "formatear html desordenado",
+      "comprobar html con errores",
+      "extraer enlaces de html",
+      "convertir html a markdown"
+    ],
+    "featuredToolIds": [
+      "html-pretty-print",
+      "html-validator",
+      "html-link-extractor",
+      "html-to-markdown"
+    ],
+    "workflows": [
+      {
+        "title": "Formatear HTML desordenado",
+        "description": "Elige el pretty printer cuando el marcado pegado sea dificil de leer. Asi puedes revisar sangrias y anidacion antes de depurar o entregar.",
+        "toolId": "html-pretty-print"
+      },
+      {
+        "title": "Validar el marcado de una pagina",
+        "description": "Usa el validador cuando necesites detectar etiquetas rotas, problemas de estructura o anidacion invalida antes de publicar.",
+        "toolId": "html-validator"
+      },
+      {
+        "title": "Extraer enlaces del HTML copiado",
+        "description": "Usa el extractor de enlaces cuando necesites valores href desde fragmentos de pagina, exportaciones o contenido rastreado sin escribir un parser.",
+        "toolId": "html-link-extractor"
+      },
+      {
+        "title": "Convertir HTML a Markdown",
+        "description": "Elige el convertidor a Markdown cuando contenido del navegador, exportaciones de CMS o fragmentos deban volverse Markdown editable para docs o notas.",
+        "toolId": "html-to-markdown"
+      }
+    ],
+    "useCases": [
+      {
+        "title": "Revision de codigo y depuracion",
+        "description": "Haz legible el marcado compacto antes de revisar por que una pagina no se renderiza bien."
+      },
+      {
+        "title": "Migracion de contenido",
+        "description": "Mueve articulos, notas o contenido de CMS entre HTML, Markdown y texto plano con menos limpieza manual."
+      },
+      {
+        "title": "Auditoria de enlaces y recursos",
+        "description": "Revisa enlaces y recursos extraidos de fragmentos HTML durante QA, publicacion o mantenimiento del sitio."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Cuando debo usar el formateador y no el validador?",
+        "answer": "Usa el formateador cuando el codigo sea valido pero dificil de leer. Usa el validador cuando quieras encontrar errores estructurales o marcado roto."
+      },
+      {
+        "question": "Puedo extraer tambien texto o medios desde HTML?",
+        "answer": "Si. Usa las herramientas de texto, enlaces e imagenes cuando necesites contenido plano o URLs de recursos desde el marcado."
+      },
+      {
+        "question": "Con que herramienta debo empezar si tengo codigo copiado de una pagina?",
+        "answer": "Empieza con el pretty printer para hacer el codigo legible y luego pasa a validacion, extraccion de enlaces o conversion segun la tarea."
+      }
+    ]
+  },
+  "de": {
+    "eyebrow": "HTML-Hub",
+    "title": "HTML-Werkzeuge fuer Formatierung, Extraktion und sauberes Markup",
+    "description": "Arbeite schneller mit unuebersichtlichem Markup dank Formatierern, Link-Extraktoren, Konvertern und Validierern an einem Ort.",
+    "intro": "Nutze diesen HTML-Hub fuer praktische Aufgaben wie kopierten Code bereinigen, Struktur pruefen, Links extrahieren und Inhalte zwischen Formaten umwandeln. Starte mit dem Werkzeug, das zur Aufgabe passt, und gehe dann bei Bedarf zu weiteren Bereinigungs- oder Konvertierungsschritten.",
+    "featuredSearches": [
+      "html formatieren",
+      "html auf fehler pruefen",
+      "links aus html extrahieren",
+      "html in markdown umwandeln"
+    ],
+    "featuredToolIds": [
+      "html-pretty-print",
+      "html-validator",
+      "html-link-extractor",
+      "html-to-markdown"
+    ],
+    "workflows": [
+      {
+        "title": "Unuebersichtliches HTML formatieren",
+        "description": "Waehle den Pretty Printer, wenn eingefuegtes Markup schwer lesbar ist. So kannst du Einrueckungen und Verschachtelungen vor Debugging oder Uebergabe schnell pruefen.",
+        "toolId": "html-pretty-print"
+      },
+      {
+        "title": "Seitenmarkup validieren",
+        "description": "Nutze den Validator, wenn du vor dem Veroeffentlichen fehlerhafte Tags, Strukturprobleme oder ungueltige Verschachtelungen finden willst.",
+        "toolId": "html-validator"
+      },
+      {
+        "title": "Links aus kopiertem HTML extrahieren",
+        "description": "Verwende den Link-Extraktor, wenn du href-Werte aus Seitenfragmenten, Exporten oder gesammelten Snippets ohne eigenen Parser brauchst.",
+        "toolId": "html-link-extractor"
+      },
+      {
+        "title": "HTML in Markdown umwandeln",
+        "description": "Waehle den HTML-zu-Markdown-Konverter, wenn Browserinhalte, CMS-Exporte oder Snippets als editierbares Markdown fuer Doku oder Notizen weiterverwendet werden sollen.",
+        "toolId": "html-to-markdown"
+      }
+    ],
+    "useCases": [
+      {
+        "title": "Code Review und Debugging",
+        "description": "Mach kompaktes Markup lesbar, bevor du pruefst, warum eine Seite falsch rendert."
+      },
+      {
+        "title": "Content-Migration",
+        "description": "Ueberfuehre Artikel, Notizen oder CMS-Inhalte zwischen HTML, Markdown und Plain Text mit weniger manuellem Aufwand."
+      },
+      {
+        "title": "Link- und Asset-Pruefung",
+        "description": "Analysiere Links und extrahierte Ressourcen aus HTML-Fragmenten bei QA, Publikation oder Wartung."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Wann nehme ich den Formatter statt des Validators?",
+        "answer": "Den Formatter nutzt du, wenn der Code korrekt ist, aber schlecht lesbar. Den Validator nutzt du, wenn du Strukturfehler oder defektes Markup finden willst."
+      },
+      {
+        "question": "Kann ich aus HTML auch Text oder Medien extrahieren?",
+        "answer": "Ja. Fuer Plain Text oder Asset-URLs nutze die Werkzeuge fuer Text, Links und Bilder."
+      },
+      {
+        "question": "Mit welchem Werkzeug sollte ich bei kopiertem Seitencode beginnen?",
+        "answer": "Beginne mit dem Pretty Printer, damit der Code lesbar wird, und gehe danach je nach Aufgabe zu Validierung, Link-Extraktion oder Konvertierung."
+      }
+    ]
+  },
+  "fr": {
+    "eyebrow": "Hub HTML",
+    "title": "Outils HTML pour formatage, extraction et nettoyage de balisage",
+    "description": "Travaillez plus vite sur un balisage illisible grace aux formateurs, extracteurs de liens, convertisseurs et validateurs reunis au meme endroit.",
+    "intro": "Utilisez ce hub HTML pour des taches concretes comme nettoyer du code copie, verifier la structure, extraire des liens et convertir du contenu entre formats. Commencez par l'outil adapte a la tache, puis enchainezz si besoin avec les etapes de nettoyage ou de conversion associees.",
+    "featuredSearches": [
+      "formater html",
+      "verifier html erreurs",
+      "extraire liens html",
+      "convertir html en markdown"
+    ],
+    "featuredToolIds": [
+      "html-pretty-print",
+      "html-validator",
+      "html-link-extractor",
+      "html-to-markdown"
+    ],
+    "workflows": [
+      {
+        "title": "Formater un HTML illisible",
+        "description": "Choisissez le pretty printer quand le balisage colle est difficile a lire. Vous pourrez ainsi verifier rapidement les retraits et l'imbrication avant le debug ou la remise.",
+        "toolId": "html-pretty-print"
+      },
+      {
+        "title": "Valider le balisage d'une page",
+        "description": "Utilisez le validateur pour detecter les balises cassees, les problemes de structure ou les imbrications invalides avant publication.",
+        "toolId": "html-validator"
+      },
+      {
+        "title": "Extraire les liens depuis un HTML copie",
+        "description": "Utilisez l'extracteur de liens quand vous avez besoin des valeurs href depuis des fragments de page, des exports ou des contenus collectes sans ecrire de parser.",
+        "toolId": "html-link-extractor"
+      },
+      {
+        "title": "Convertir HTML en Markdown",
+        "description": "Choisissez le convertisseur vers Markdown lorsque du contenu du navigateur, des exports CMS ou des extraits doivent devenir du Markdown modifiable pour la documentation ou les notes.",
+        "toolId": "html-to-markdown"
+      }
+    ],
+    "useCases": [
+      {
+        "title": "Relecture de code et debug",
+        "description": "Rendez lisible un balisage compact avant de comprendre pourquoi une page s'affiche mal."
+      },
+      {
+        "title": "Migration de contenu",
+        "description": "Deplacez articles, notes ou contenus CMS entre HTML, Markdown et texte brut avec moins de nettoyage manuel."
+      },
+      {
+        "title": "Audit de liens et de ressources",
+        "description": "Examinez les liens et les ressources extraites de fragments HTML pendant la QA, la publication ou la maintenance du site."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Quand utiliser le formateur plutot que le validateur ?",
+        "answer": "Utilisez le formateur quand le code est correct mais difficile a lire. Utilisez le validateur pour detecter les erreurs de structure ou le balisage casse."
+      },
+      {
+        "question": "Puis-je extraire aussi du texte ou des medias depuis HTML ?",
+        "answer": "Oui. Utilisez les outils de texte, de liens et d'images quand vous avez besoin de contenu brut ou d'URL de ressources depuis le balisage."
+      },
+      {
+        "question": "Par quel outil commencer avec du code de page copie ?",
+        "answer": "Commencez par le pretty printer pour rendre le code lisible, puis passez a la validation, a l'extraction de liens ou a la conversion selon le besoin."
+      }
+    ]
+  }
+}

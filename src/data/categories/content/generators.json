@@ -1,0 +1,317 @@
+{
+  "en": {
+    "eyebrow": "Generator hub",
+    "title": "Generators for QR codes, colors, icons and page snippets",
+    "description": "Create practical assets for design, publishing and development, from QR codes and color palettes to metadata, icons and image placeholders.",
+    "intro": "This hub is for outputs you choose and generate directly, rather than calculate by hand. Use it when you need a visual asset, page snippet or presentation-ready placeholder that fits a specific format.",
+    "featuredSearches": [
+      "qr code for a website link",
+      "css shadow generator for a card",
+      "favicon for a new site",
+      "meta tags for a landing page"
+    ],
+    "featuredToolIds": [
+      "qr-code-generator",
+      "box-shadow-generator",
+      "favicon-generator",
+      "meta-tag-generator"
+    ],
+    "workflows": [
+      {
+        "title": "Share a link in a scannable format",
+        "description": "Use qr-code-generator when a URL, Wi-Fi detail or event text needs to work on screens, posters or handouts.",
+        "toolId": "qr-code-generator"
+      },
+      {
+        "title": "Tune visual styling before implementation",
+        "description": "Use gradient-generator, box-shadow-generator or color-picker when you are shaping UI tokens, backgrounds or card depth.",
+        "toolId": "gradient-generator"
+      },
+      {
+        "title": "Prepare launch assets and page metadata",
+        "description": "Use favicon-generator, meta-tag-generator and placeholder-image-generator when a page needs its icon, preview data or temporary visuals before publish.",
+        "toolId": "favicon-generator"
+      }
+    ],
+    "useCases": [
+      {
+        "title": "Interface design",
+        "description": "Build color combinations, gradients, shadows and icons that can be reused in layouts and components."
+      },
+      {
+        "title": "Publishing setup",
+        "description": "Create favicons, metadata and placeholder images that keep a page or campaign looking complete."
+      },
+      {
+        "title": "Product demos",
+        "description": "Generate QR codes, sample images and clean visual details for presentations and reviews."
+      }
+    ],
+    "faq": [
+      {
+        "question": "When should I use a palette instead of a single color picker?",
+        "answer": "Use color-picker for a specific color sample, then palette-generator when you need a coordinated set of colors for a system or screen."
+      },
+      {
+        "question": "What is the best tool for a browser tab icon?",
+        "answer": "Use favicon-generator for site icons, and icon-maker when you need a custom symbol to adapt into app or brand assets."
+      },
+      {
+        "question": "How do I choose between placeholder images and real graphics?",
+        "answer": "Use placeholder-image-generator when you need a consistent layout stand-in during design, testing or content planning."
+      }
+    ]
+  },
+  "pl": {
+    "eyebrow": "Centrum generatorow",
+    "title": "Generatory kodow QR, kolorow, ikon i snippetow stron",
+    "description": "Tworz praktyczne zasoby do projektowania, publikacji i pracy nad interfejsem, od kodow QR i palet kolorow po metadane, ikony i placeholdery obrazow.",
+    "intro": "Ten hub sluzy do tworzenia wynikow wybieranych z gotowych ustawien, zamiast liczenia ich recznie. Uzyj go, gdy potrzebujesz zasobu wizualnego, snippetu strony albo placeholdera gotowego do prezentacji.",
+    "featuredSearches": [
+      "kod qr do linku strony",
+      "generator cienia css do karty",
+      "favicon dla nowej strony",
+      "metatagi dla strony docelowej"
+    ],
+    "featuredToolIds": [
+      "qr-code-generator",
+      "box-shadow-generator",
+      "favicon-generator",
+      "meta-tag-generator"
+    ],
+    "workflows": [
+      {
+        "title": "Udostepnij link w formie do skanowania",
+        "description": "Uzyj qr-code-generator, gdy adres URL, dane Wi-Fi albo tekst wydarzenia maja dzialac na ekranie, plakacie lub ulotce.",
+        "toolId": "qr-code-generator"
+      },
+      {
+        "title": "Dopasuj styl wizualny przed wdrozeniem",
+        "description": "Uzyj gradient-generator, box-shadow-generator lub color-picker, gdy ustawiasz tokeny UI, tlo albo glebie karty.",
+        "toolId": "gradient-generator"
+      },
+      {
+        "title": "Przygotuj zasoby startowe i metadane strony",
+        "description": "Uzyj favicon-generator, meta-tag-generator i placeholder-image-generator, gdy strona potrzebuje ikony, danych podgladu lub tymczasowych grafik przed publikacja.",
+        "toolId": "favicon-generator"
+      }
+    ],
+    "useCases": [
+      {
+        "title": "Projektowanie interfejsu",
+        "description": "Buduj zestawy kolorow, gradienty, cienie i ikony, ktore mozna wykorzystac w layoutach i komponentach."
+      },
+      {
+        "title": "Przygotowanie publikacji",
+        "description": "Tworz favikony, metadane i placeholdery obrazow, aby strona lub kampania wygladala kompletnie."
+      },
+      {
+        "title": "Prezentacje produktu",
+        "description": "Generuj kody QR, przykladowe obrazy i czyste detale wizualne do pokazow i recenzji."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Kiedy uzyc palety zamiast pojedynczego wyboru koloru?",
+        "answer": "Uzyj color-picker dla konkretnej barwy, a palette-generator wtedy, gdy potrzebujesz spojnago zestawu kolorow dla systemu lub ekranu."
+      },
+      {
+        "question": "Jaki tool najlepszy jest do ikony karty przegladarki?",
+        "answer": "Uzyj favicon-generator dla ikon strony, a icon-maker gdy potrzebujesz wlasnego symbolu do wersji aplikacyjnych lub brandowych."
+      },
+      {
+        "question": "Jak wybrac miedzy placeholderami obrazow a prawdziwa grafika?",
+        "answer": "Uzyj placeholder-image-generator, gdy potrzebujesz stabilnego zamiennika ukladu podczas projektowania, testow lub planowania tresci."
+      }
+    ]
+  },
+  "es": {
+    "eyebrow": "Centro de generadores",
+    "title": "Generadores de codigos QR, colores, iconos y snippets",
+    "description": "Crea recursos practicos para diseno, publicacion y desarrollo, desde codigos QR y paletas de color hasta metadatos, iconos y placeholders de imagen.",
+    "intro": "Este centro sirve para salidas que eliges y generas de forma directa, en vez de calcularlas a mano. Usalo cuando necesites un recurso visual, un snippet de pagina o un placeholder listo para presentar.",
+    "featuredSearches": [
+      "codigo qr para un enlace web",
+      "generador de sombra css para una tarjeta",
+      "favicon para un sitio nuevo",
+      "metatags para una landing page"
+    ],
+    "featuredToolIds": [
+      "qr-code-generator",
+      "box-shadow-generator",
+      "favicon-generator",
+      "meta-tag-generator"
+    ],
+    "workflows": [
+      {
+        "title": "Compartir un enlace en formato escaneable",
+        "description": "Usa qr-code-generator cuando una URL, un detalle de Wi-Fi o un texto de evento deba funcionar en pantallas, carteles o folletos.",
+        "toolId": "qr-code-generator"
+      },
+      {
+        "title": "Ajustar el estilo visual antes de implementar",
+        "description": "Usa gradient-generator, box-shadow-generator o color-picker cuando estes definiendo tokens de UI, fondos o profundidad de tarjetas.",
+        "toolId": "gradient-generator"
+      },
+      {
+        "title": "Preparar activos de lanzamiento y metadatos",
+        "description": "Usa favicon-generator, meta-tag-generator y placeholder-image-generator cuando una pagina necesite su icono, datos de vista previa o imagen temporal antes de publicar.",
+        "toolId": "favicon-generator"
+      }
+    ],
+    "useCases": [
+      {
+        "title": "Diseno de interfaz",
+        "description": "Construye combinaciones de color, degradados, sombras e iconos reutilizables en layouts y componentes."
+      },
+      {
+        "title": "Preparacion de publicacion",
+        "description": "Crea favicons, metadatos y placeholders de imagen para que una pagina o campana se vea completa."
+      },
+      {
+        "title": "Demostraciones de producto",
+        "description": "Genera codigos QR, imagenes de ejemplo y detalles visuales limpios para presentaciones y revisiones."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Cuando conviene usar una paleta en lugar de un selector de color?",
+        "answer": "Usa color-picker para un color concreto y palette-generator cuando necesites un conjunto coordinado de colores para un sistema o pantalla."
+      },
+      {
+        "question": "Cual es la mejor herramienta para el icono de una pestana del navegador?",
+        "answer": "Usa favicon-generator para iconos del sitio, e icon-maker cuando necesites un simbolo propio para activos de app o de marca."
+      },
+      {
+        "question": "Como elijo entre placeholders de imagen y graficos reales?",
+        "answer": "Usa placeholder-image-generator cuando necesites un sustituto consistente del layout durante diseno, pruebas o planificacion de contenido."
+      }
+    ]
+  },
+  "de": {
+    "eyebrow": "Generator-Hub",
+    "title": "Generatoren fuer QR-Codes, Farben, Icons und Snippets",
+    "description": "Erstelle praktische Bausteine fuer Design, Publishing und Entwicklung, von QR-Codes und Farbpaletten bis zu Metadaten, Icons und Platzhaltern fuer Bilder.",
+    "intro": "Dieser Hub ist fuer Ausgaben gedacht, die du direkt auswaehlst und erzeugst, statt sie von Hand zu berechnen. Nutze ihn, wenn du ein visuelles Asset, ein Seiten-Snippet oder einen praesentationsreifen Platzhalter brauchst.",
+    "featuredSearches": [
+      "qr code fuer einen website link",
+      "css schatten generator fuer eine karte",
+      "favicon fuer eine neue website",
+      "meta tags fuer eine landing page"
+    ],
+    "featuredToolIds": [
+      "qr-code-generator",
+      "box-shadow-generator",
+      "favicon-generator",
+      "meta-tag-generator"
+    ],
+    "workflows": [
+      {
+        "title": "Einen Link scanbar bereitstellen",
+        "description": "Nutze qr-code-generator, wenn eine URL, WLAN-Info oder ein Event-Text auf Bildschirmen, Plakaten oder Handouts funktionieren soll.",
+        "toolId": "qr-code-generator"
+      },
+      {
+        "title": "Visuelles Styling vor der Umsetzung abstimmen",
+        "description": "Nutze gradient-generator, box-shadow-generator oder color-picker, wenn du UI-Tokens, Hintergruende oder Karten-Tiefe festlegst.",
+        "toolId": "gradient-generator"
+      },
+      {
+        "title": "Launch-Assets und Seitenmetadaten vorbereiten",
+        "description": "Nutze favicon-generator, meta-tag-generator und placeholder-image-generator, wenn eine Seite ihr Icon, Preview-Daten oder temporaere Bilder vor dem Veroeffentlichen braucht.",
+        "toolId": "favicon-generator"
+      }
+    ],
+    "useCases": [
+      {
+        "title": "Interface-Design",
+        "description": "Erstelle Farbkombinationen, Verlaeufe, Schatten und Icons, die sich in Layouts und Komponenten wiederverwenden lassen."
+      },
+      {
+        "title": "Publishing-Vorbereitung",
+        "description": "Erzeuge Favicons, Metadaten und Bildplatzhalter, damit eine Seite oder Kampagne komplett wirkt."
+      },
+      {
+        "title": "Produkt-Demos",
+        "description": "Generiere QR-Codes, Beispielbilder und saubere visuelle Details fuer Praesentationen und Reviews."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Wann nehme ich eine Palette statt eines einzelnen Farbwahlers?",
+        "answer": "Nutze color-picker fuer einen konkreten Farbwert und palette-generator, wenn du eine abgestimmte Farbgruppe fuer ein System oder einen Screen brauchst."
+      },
+      {
+        "question": "Welches Tool ist am besten fuer das Browser-Tab-Icon?",
+        "answer": "Nutze favicon-generator fuer Site-Icons und icon-maker, wenn du ein eigenes Symbol fuer App- oder Brand-Assets brauchst."
+      },
+      {
+        "question": "Wie entscheide ich zwischen Bildplatzhaltern und echten Grafiken?",
+        "answer": "Nutze placeholder-image-generator, wenn du waehrend Design, Tests oder Content-Planung einen konsistenten Layout-Platzhalter brauchst."
+      }
+    ]
+  },
+  "fr": {
+    "eyebrow": "Centre de generateurs",
+    "title": "Generateurs de QR codes, couleurs, icones et snippets",
+    "description": "Creez des elements pratiques pour le design, la publication et le developpement, des QR codes et palettes de couleurs aux metadonnees, icones et images de remplacement.",
+    "intro": "Ce centre regroupe les generateurs utiles quand une sortie doit etre choisie puis creee directement. Utilisez-le pour un element visuel, un snippet de page ou un placeholder pret a presenter.",
+    "featuredSearches": [
+      "qr code pour un lien de site",
+      "generateur d ombre css pour une carte",
+      "favicon pour un nouveau site",
+      "meta tags pour une landing page"
+    ],
+    "featuredToolIds": [
+      "qr-code-generator",
+      "box-shadow-generator",
+      "favicon-generator",
+      "meta-tag-generator"
+    ],
+    "workflows": [
+      {
+        "title": "Partager un lien en format scannable",
+        "description": "Utilisez qr-code-generator quand une URL, un detail Wi-Fi ou un texte d'evenement doit fonctionner sur ecran, affiche ou document imprime.",
+        "toolId": "qr-code-generator"
+      },
+      {
+        "title": "Ajuster le style visuel avant l integration",
+        "description": "Utilisez gradient-generator, box-shadow-generator ou color-picker lorsque vous definierez des tokens UI, des fonds ou la profondeur des cartes.",
+        "toolId": "gradient-generator"
+      },
+      {
+        "title": "Preparer les assets de lancement et les metadonnees",
+        "description": "Utilisez favicon-generator, meta-tag-generator et placeholder-image-generator quand une page a besoin de son icone, de donnees d'apercu ou d'images temporaires avant publication.",
+        "toolId": "favicon-generator"
+      }
+    ],
+    "useCases": [
+      {
+        "title": "Conception d interface",
+        "description": "Composez des couleurs, des degrades, des ombres et des icones reutilisables dans les layouts et composants."
+      },
+      {
+        "title": "Preparation de publication",
+        "description": "Creez favicons, metadonnees et images de remplacement pour qu'une page ou une campagne paraisse complete."
+      },
+      {
+        "title": "Demos produit",
+        "description": "Generez des QR codes, des images exemple et des details visuels propres pour les presentations et revues."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Quand faut-il utiliser une palette plutot qu'un simple selecteur de couleur?",
+        "answer": "Utilisez color-picker pour une couleur precise, puis palette-generator quand vous avez besoin d un ensemble de couleurs coordonne pour un systeme ou un ecran."
+      },
+      {
+        "question": "Quel outil convient le mieux pour l'icone de l'onglet du navigateur?",
+        "answer": "Utilisez favicon-generator pour les icones du site, et icon-maker quand vous avez besoin d un symbole personnalise pour des assets d application ou de marque."
+      },
+      {
+        "question": "Comment choisir entre images de remplacement et visuels reels?",
+        "answer": "Utilisez placeholder-image-generator quand vous avez besoin d un substitut stable de mise en page pendant le design, les tests ou la planification de contenu."
+      }
+    ]
+  }
+}

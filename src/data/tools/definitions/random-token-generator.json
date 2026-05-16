@@ -1,0 +1,21 @@
+{
+  "id": "random-token-generator",
+  "type": "security-tool",
+  "category": "security-tools",
+  "componentName": "RandomTokenGeneratorTool",
+  "logicModule": "random-token-generator",
+  "inputSchema": "randomTokenGeneratorInputSchema",
+  "outputSchema": "randomTokenGeneratorOutputSchema",
+  "supportedLocales": [
+    "en",
+    "pl",
+    "es",
+    "de",
+    "fr"
+  ],
+  "relatedTools": [
+    "password-generator",
+    "sha256-generator"
+  ],
+  "seoPriority": 0.9
+}

@@ -1,0 +1,79 @@
+{
+  "toolId": "random-token-generator",
+  "locale": "de",
+  "slug": "zufalls-token-generator",
+  "h1": "Zufalls-Token-Generator",
+  "title": "Zufalls-Token-Generator",
+  "shortDescription": "Erzeuge zufaellige Tokens fuer API-Keys, Reset-Links und Test-Secrets.",
+  "metaTitle": "Zufalls-Token-Generator",
+  "metaDescription": "Erzeuge zufaellige Tokens als Base64URL, Hex oder alphanumerisch fuer API-Keys, Reset-Links und Tests.",
+  "intro": "Erstelle zufaellige Tokens mit Laenge, Format, Anzahl und optionalem Praefix.",
+  "overview": "Dieses Tool erzeugt zufaellige Token-Zeichenfolgen fuer technische Workflows, in denen ein vorhersehbarer Wert unsicher oder irrefuehrend waere. Waehle Base64URL fuer URL-sichere Secrets, Hex fuer checksum-aehnliche Werte oder alphanumerisch, wenn ein System nur Buchstaben und Zahlen akzeptiert.\n\nNutze die Tokens fuer Test-Secrets, Beispiele von Reset-Links, temporaere Kennungen und Development-Fixtures. Fuege keine Produktions-Secrets in geteilte Tickets oder oeffentliche Dokumente ein; echte Zugangsdaten gehoeren in einen Passwortmanager oder Secret Store.",
+  "howItWorks": [
+    "Waehle Token-Laenge und Anzahl.",
+    "Waehle Base64URL, Hex oder alphanumerisch.",
+    "Fuege optional ein Praefix hinzu, wenn dein System eines erwartet."
+  ],
+  "useCases": [
+    {
+      "title": "API-Key-Platzhalter",
+      "description": "Erzeuge eine realistische Token-Form fuer Dokumentation, Fixtures oder lokale Entwicklung."
+    },
+    {
+      "title": "Reset-Link-Secret",
+      "description": "Generiere URL-sichere Zufallswerte fuer Tests und Beispiele von Reset-Flows."
+    },
+    {
+      "title": "Temporaeres Test-Token",
+      "description": "Erzeuge ein oder mehrere Wegwerf-Tokens fuer QA, Demos oder Mock-Daten."
+    }
+  ],
+  "examples": [
+    {
+      "title": "Base64URL-Token",
+      "input": "Laenge: 32; Anzahl: 1; Format: Base64URL",
+      "output": "N4nK4y3zQx7fA9mP2sV6tB8cD0eR1uW5",
+      "description": "Ein URL-sicheres Token fuer Reset-Link- oder Callback-Beispiele."
+    },
+    {
+      "title": "Hex-Token mit Praefix",
+      "input": "Laenge: 24; Anzahl: 1; Format: Hex; Praefix: tok_",
+      "output": "tok_4f8a13c09d21b7e6a3c55f91",
+      "description": "Ein Hex-Token mit Praefix fuer Systeme, die Secret-Typen kennzeichnen."
+    },
+    {
+      "title": "Mehrere Test-Tokens",
+      "input": "Laenge: 16; Anzahl: 3; Format: Alphanumerisch",
+      "output": "k8Jm2Lq9Tz4Vn6Px",
+      "description": "Mehrere kurze Tokens eignen sich fuer Mock-Nutzer und Fixtures."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Welches Token-Format sollte ich waehlen?",
+      "answer": "Nutze Base64URL fuer URL-sichere Secrets, Hex fuer Systeme mit hexadezimalen Werten und alphanumerisch fuer Formulare, die Symbole ablehnen."
+    },
+    {
+      "question": "Zaehlt das Praefix zur zufaelligen Laenge?",
+      "answer": "Nein. Die Laenge steuert nur den zufaelligen Teil. Das Praefix wird nach der Generierung vor jedes Token gesetzt."
+    },
+    {
+      "question": "Kann ich diese Tokens produktiv nutzen?",
+      "answer": "Der Generator nutzt kryptografische Browser-Zufallswerte, wenn verfuegbar. Produktive Zugangsdaten sollten trotzdem im normalen Secret-Management-Prozess erstellt und gespeichert werden."
+    },
+    {
+      "question": "Warum mehrere Tokens generieren?",
+      "answer": "Mehrere Tokens sind nuetzlich fuer Fixtures, QA-Konten und Beispiele, bei denen jeder Datensatz einen anderen secret-aehnlichen Wert braucht."
+    }
+  ],
+  "seo": {
+    "title": "Zufalls-Token-Generator",
+    "description": "Erzeuge zufaellige Tokens als Base64URL, Hex oder alphanumerisch fuer API-Keys, Reset-Links und Tests.",
+    "keywords": [
+      "token generator",
+      "zufalls token",
+      "base64url token",
+      "hex token generator"
+    ]
+  }
+}

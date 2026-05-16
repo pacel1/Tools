@@ -1,0 +1,317 @@
+{
+  "en": {
+    "eyebrow": "Developer hub",
+    "title": "Developer tools for JSON, URLs, Base64 and identifiers",
+    "description": "Format, validate, encode and decode common developer data without setting up a local script.",
+    "intro": "Use this developer tools hub for small data tasks that interrupt coding, testing or debugging. Paste the snippet, inspect the result, then move it back into your editor, API client or ticket.",
+    "featuredSearches": [
+      "json formatter for pretty printing api responses",
+      "json validator for malformed payloads",
+      "base64 encoder for request headers",
+      "url encoder for query string values"
+    ],
+    "featuredToolIds": [
+      "json-formatter",
+      "json-validator",
+      "base64-encoder",
+      "url-encoder"
+    ],
+    "workflows": [
+      {
+        "title": "Inspect JSON before you compare it",
+        "description": "Choose json-formatter when you need readable structure, and json-validator when you need to catch syntax errors in a payload, fixture or config value.",
+        "toolId": "json-formatter"
+      },
+      {
+        "title": "Check encoded values for transport",
+        "description": "Choose url-encoder for query strings and path segments, or base64-encoder when a value must travel in a text-safe form such as an auth token or example header.",
+        "toolId": "url-encoder"
+      },
+      {
+        "title": "Create unique test data fast",
+        "description": "Use uuid-generator when you need distinct fixture records, log correlation values or throwaway IDs for a test run.",
+        "toolId": "uuid-generator"
+      }
+    ],
+    "useCases": [
+      {
+        "title": "API debugging",
+        "description": "Clean up request and response snippets before comparing them in a client, test suite or bug report."
+      },
+      {
+        "title": "Repro steps for tickets",
+        "description": "Prepare compact, trustworthy snippets that other people can paste into their own environment."
+      },
+      {
+        "title": "Data transformation checks",
+        "description": "Verify that encoded, decoded, compacted or expanded values still match the source data you expect."
+      }
+    ],
+    "faq": [
+      {
+        "question": "When should I validate JSON instead of formatting it?",
+        "answer": "Validate first when the main question is whether the data is correct. Format it when the structure is valid and you want a clearer view of nested fields."
+      },
+      {
+        "question": "When do I choose Base64 instead of URL encoding?",
+        "answer": "Use Base64 for binary-safe text representation or when a system expects Base64 specifically. Use URL encoding for query parameters, path values and other URL parts."
+      },
+      {
+        "question": "Should I use these tools for production secrets?",
+        "answer": "No. Keep production secrets out of browser tools. Use them for test data, examples and values you are comfortable handling in the browser."
+      }
+    ]
+  },
+  "pl": {
+    "eyebrow": "Hub deweloperski",
+    "title": "Narzedzia deweloperskie do JSON, URL, Base64 i identyfikatorow",
+    "description": "Formatuj, waliduj, koduj i dekoduj typowe dane deweloperskie bez uruchamiania lokalnego skryptu.",
+    "intro": "Uzyj tego huba do malych zadan z danymi, ktore przerywaja kodowanie, testy albo debugowanie. Wklej fragment, sprawdz wynik i przenies go z powrotem do edytora, klienta API lub zgloszenia.",
+    "featuredSearches": [
+      "json formatter do czytelnego widoku odpowiedzi",
+      "walidator json dla uszkodzonego payloadu",
+      "base64 encoder dla naglowkow",
+      "url encoder dla parametrow zapytania"
+    ],
+    "featuredToolIds": [
+      "json-formatter",
+      "json-validator",
+      "base64-encoder",
+      "url-encoder"
+    ],
+    "workflows": [
+      {
+        "title": "Sprawdz JSON przed porownaniem",
+        "description": "Wybierz json-formatter, gdy potrzebujesz czytelnej struktury, a json-validator, gdy chcesz wykryc blad skladni w payloadzie, fixture albo wartosci konfiguracyjnej.",
+        "toolId": "json-formatter"
+      },
+      {
+        "title": "Przygotuj wartosci do przesylania",
+        "description": "Wybierz url-encoder dla parametrow zapytania i segmentow sciezki, albo base64-encoder, gdy wartosc musi byc zapisana w postaci bezpiecznej dla tekstu, na przyklad w tokenie lub naglowku.",
+        "toolId": "url-encoder"
+      },
+      {
+        "title": "Szybko utworz unikalne dane testowe",
+        "description": "Uzyj uuid-generator, gdy potrzebujesz roznych rekordow testowych, wartosci do korelacji logow albo tymczasowych identyfikatorow do uruchomienia testow.",
+        "toolId": "uuid-generator"
+      }
+    ],
+    "useCases": [
+      {
+        "title": "Debugowanie API",
+        "description": "Uporzadkuj fragmenty requestow i odpowiedzi przed porownaniem ich w kliencie, zestawie testow albo zgloszeniu bledu."
+      },
+      {
+        "title": "Odtwarzanie problemu",
+        "description": "Przygotuj zwarte, wiarygodne fragmenty, ktore inni moga wkleic do swojego srodowiska."
+      },
+      {
+        "title": "Sprawdzanie transformacji danych",
+        "description": "Zweryfikuj, czy wartosci po kodowaniu, dekodowaniu, kompresji lub rozwinieciu nadal zgadzaja sie z oczekiwanymi danymi zrodlowymi."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Kiedy walidowac JSON, a kiedy go formatowac?",
+        "answer": "Waliduj najpierw, gdy kluczowe jest sprawdzenie poprawnosci danych. Formatuj wtedy, gdy struktura jest juz poprawna i chcesz lepiej widziec zagniezdzone pola."
+      },
+      {
+        "question": "Kiedy wybrac Base64 zamiast kodowania URL?",
+        "answer": "Base64 wybierz dla tekstowej reprezentacji danych binarnych albo wtedy, gdy system wymaga wprost Base64. Kodowanie URL wybierz dla parametrow zapytania, wartosci w sciezce i innych czesci adresu."
+      },
+      {
+        "question": "Czy moge wklejac tutaj sekrety produkcyjne?",
+        "answer": "Nie. Nie wklejaj sekretow produkcyjnych do narzedzi w przegladarce. Uzywaj ich do danych testowych, przykladow i wartosci, ktore bezpiecznie obslugujesz w przegladarce."
+      }
+    ]
+  },
+  "es": {
+    "eyebrow": "Hub de desarrollo",
+    "title": "Herramientas de desarrollo para JSON, URL, Base64 e identificadores",
+    "description": "Da formato, valida, codifica y decodifica datos tecnicos comunes sin preparar un script local.",
+    "intro": "Usa este hub para tareas pequenas de datos que interrumpen la programacion, las pruebas o la depuracion. Pega el fragmento, revisa el resultado y vuelve a llevarlo a tu editor, cliente API o ticket.",
+    "featuredSearches": [
+      "formateador json para respuestas api",
+      "validador json para payloads rotos",
+      "encoder base64 para cabeceras",
+      "encoder url para parametros de consulta"
+    ],
+    "featuredToolIds": [
+      "json-formatter",
+      "json-validator",
+      "base64-encoder",
+      "url-encoder"
+    ],
+    "workflows": [
+      {
+        "title": "Revisa JSON antes de compararlo",
+        "description": "Elige json-formatter cuando necesites ver la estructura con claridad, y json-validator cuando quieras detectar errores de sintaxis en un payload, fixture o valor de configuracion.",
+        "toolId": "json-formatter"
+      },
+      {
+        "title": "Prepara valores para transporte",
+        "description": "Elige url-encoder para parametros de consulta y segmentos de ruta, o base64-encoder cuando el valor deba viajar en una forma segura para texto, como un token o una cabecera de ejemplo.",
+        "toolId": "url-encoder"
+      },
+      {
+        "title": "Crea datos de prueba unicos",
+        "description": "Usa uuid-generator cuando necesites registros de prueba distintos, valores para correlacion de logs o identificadores temporales para una ejecucion.",
+        "toolId": "uuid-generator"
+      }
+    ],
+    "useCases": [
+      {
+        "title": "Depuracion de API",
+        "description": "Limpia fragmentos de request y response antes de compararlos en un cliente, una suite de pruebas o un informe de errores."
+      },
+      {
+        "title": "Reproduccion de incidencias",
+        "description": "Prepara fragmentos breves y fiables que otras personas puedan pegar en su propio entorno."
+      },
+      {
+        "title": "Verificacion de transformaciones",
+        "description": "Comprueba que los valores codificados, decodificados, compactados o expandidos sigan coincidiendo con los datos de origen esperados."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Cuando debo validar JSON en lugar de formatearlo?",
+        "answer": "Valida primero cuando la pregunta principal sea si los datos son correctos. Da formato cuando la estructura ya sea valida y quieras ver mejor los campos anidados."
+      },
+      {
+        "question": "Cuando elijo Base64 en lugar de codificacion URL?",
+        "answer": "Usa Base64 para una representacion en texto segura para datos binarios o cuando un sistema pida Base64 especificamente. Usa codificacion URL para parametros de consulta, valores de ruta y otras partes de una URL."
+      },
+      {
+        "question": "Debo pegar secretos de produccion en estas herramientas?",
+        "answer": "No. Evita pegar secretos de produccion en herramientas del navegador. Usalas para datos de prueba, ejemplos y valores que te resulte comodo manejar en el navegador."
+      }
+    ]
+  },
+  "de": {
+    "eyebrow": "Developer-Hub",
+    "title": "Developer-Tools fuer JSON, URLs, Base64 und Kennungen",
+    "description": "Formatiere, validiere, kodiere und dekodiere typische Entwicklerdaten ohne lokalen Script-Aufbau.",
+    "intro": "Nutze diesen Hub fuer kleine Datenaufgaben beim Codieren, Testen oder Debuggen. Fuege den Ausschnitt ein, pruefe das Ergebnis und uebertrage es dann wieder in Editor, API-Client oder Ticket.",
+    "featuredSearches": [
+      "json formatter fuer api antworten lesbar machen",
+      "json validator fuer fehlerhafte payloads",
+      "base64 encoder fuer header werte",
+      "url encoder fuer abfrageparameter"
+    ],
+    "featuredToolIds": [
+      "json-formatter",
+      "json-validator",
+      "base64-encoder",
+      "url-encoder"
+    ],
+    "workflows": [
+      {
+        "title": "JSON vor dem Vergleich pruefen",
+        "description": "Waehle json-formatter, wenn du eine lesbare Struktur brauchst, und json-validator, wenn du Syntaxfehler in Payload, Fixture oder Konfigurationswert finden willst.",
+        "toolId": "json-formatter"
+      },
+      {
+        "title": "Werte fuer den Transport vorbereiten",
+        "description": "Waehle url-encoder fuer Query-Parameter und Pfadsegmente oder base64-encoder, wenn ein Wert in einer textsicheren Form reisen muss, zum Beispiel als Token oder Beispiel-Header.",
+        "toolId": "url-encoder"
+      },
+      {
+        "title": "Eindeutige Testdaten erzeugen",
+        "description": "Nutze uuid-generator, wenn du verschiedene Testdatensaetze, Log-Korrelationen oder temporaere Kennungen fuer einen Lauf brauchst.",
+        "toolId": "uuid-generator"
+      }
+    ],
+    "useCases": [
+      {
+        "title": "API-Debugging",
+        "description": "Bereinige Request- und Response-Ausschnitte, bevor du sie in Client, Testsuite oder Fehlerbericht vergleichst."
+      },
+      {
+        "title": "Reproduktion von Problemen",
+        "description": "Bereite kompakte, verlaessliche Ausschnitte vor, die andere direkt in ihre Umgebung uebernehmen koennen."
+      },
+      {
+        "title": "Pruefung von Transformationen",
+        "description": "Kontrolliere, ob kodierte, dekodierte, verdichtete oder erweiterte Werte weiterhin zu den erwarteten Quelldaten passen."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Wann sollte ich JSON validieren statt formatieren?",
+        "answer": "Validiere zuerst, wenn die Hauptfrage ist, ob die Daten korrekt sind. Formatiere, wenn die Struktur bereits gueltig ist und du verschachtelte Felder besser sehen willst."
+      },
+      {
+        "question": "Wann nehme ich Base64 statt URL-Kodierung?",
+        "answer": "Base64 ist richtig fuer eine textuelle Darstellung binaerer Daten oder wenn ein System explizit Base64 erwartet. URL-Kodierung ist richtig fuer Query-Parameter, Pfadwerte und andere URL-Bestandteile."
+      },
+      {
+        "question": "Soll ich Produktionsgeheimnisse in diese Tools eintragen?",
+        "answer": "Nein. Fuege keine Produktionsgeheimnisse in Browser-Tools ein. Nutze sie fuer Testdaten, Beispiele und Werte, die du im Browser problemlos behandeln kannst."
+      }
+    ]
+  },
+  "fr": {
+    "eyebrow": "Hub developpeur",
+    "title": "Outils developpeur pour JSON, URL, Base64 et identifiants",
+    "description": "Formatez, validez, encodez et decodez des donnees techniques courantes sans script local.",
+    "intro": "Utilisez ce hub pour les petites taches de donnees qui interrompent le codage, les tests ou le debogage. Collez un extrait, verifiez le resultat, puis renvoyez-le vers votre editeur, client API ou ticket.",
+    "featuredSearches": [
+      "formateur json pour reponses api",
+      "validateur json pour payloads invalides",
+      "encodeur base64 pour en-tetes",
+      "encodeur url pour parametres de requete"
+    ],
+    "featuredToolIds": [
+      "json-formatter",
+      "json-validator",
+      "base64-encoder",
+      "url-encoder"
+    ],
+    "workflows": [
+      {
+        "title": "Verifier le JSON avant comparaison",
+        "description": "Choisissez json-formatter si vous voulez une structure lisible, et json-validator si vous devez detecter une erreur de syntaxe dans un payload, un fixture ou une valeur de configuration.",
+        "toolId": "json-formatter"
+      },
+      {
+        "title": "Preparer les valeurs pour le transport",
+        "description": "Choisissez url-encoder pour les parametres de requete et les segments de chemin, ou base64-encoder quand une valeur doit circuler sous une forme sure pour le texte, par exemple un jeton ou un en-tete d'exemple.",
+        "toolId": "url-encoder"
+      },
+      {
+        "title": "Creer des donnees de test uniques",
+        "description": "Utilisez uuid-generator quand vous avez besoin d enregistrements de test distincts, de valeurs de correlation pour les logs ou d identifiants temporaires pour une execution.",
+        "toolId": "uuid-generator"
+      }
+    ],
+    "useCases": [
+      {
+        "title": "Debogage API",
+        "description": "Nettoyez des extraits de requete et de reponse avant de les comparer dans un client, une suite de tests ou un rapport de bogue."
+      },
+      {
+        "title": "Reproduction de probleme",
+        "description": "Preparez des extraits courts et fiables que d autres personnes peuvent coller dans leur propre environnement."
+      },
+      {
+        "title": "Verification des transformations",
+        "description": "Verifiez que les valeurs encodees, decodees, compactees ou developpees correspondent toujours aux donnees sources attendues."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Quand faut-il valider le JSON plutot que le formater ?",
+        "answer": "Validez d abord quand la question principale est de savoir si les donnees sont correctes. Formatez quand la structure est deja valide et que vous voulez mieux voir les champs imbriques."
+      },
+      {
+        "question": "Quand choisir Base64 plutot que le codage URL ?",
+        "answer": "Utilisez Base64 pour une representation texte sure de donnees binaires, ou quand un systeme exige Base64. Utilisez le codage URL pour les parametres de requete, les valeurs de chemin et les autres parties d'une URL."
+      },
+      {
+        "question": "Dois-je coller des secrets de production dans ces outils ?",
+        "answer": "Non. Evitez de coller des secrets de production dans des outils de navigateur. Utilisez-les pour des donnees de test, des exemples et des valeurs que vous acceptez de manipuler dans le navigateur."
+      }
+    ]
+  }
+}

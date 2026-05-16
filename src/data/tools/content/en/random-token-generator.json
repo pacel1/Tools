@@ -1,0 +1,79 @@
+{
+  "toolId": "random-token-generator",
+  "locale": "en",
+  "slug": "random-token-generator",
+  "h1": "Random Token Generator",
+  "title": "Random Token Generator",
+  "shortDescription": "Generate secure random tokens for API keys, reset links and test secrets.",
+  "metaTitle": "Random Token Generator",
+  "metaDescription": "Generate secure random tokens in Base64URL, hex or alphanumeric formats for API keys, reset links and tests.",
+  "intro": "Create random tokens with a chosen length, format, count and optional prefix.",
+  "overview": "This tool creates random token strings for technical workflows where a predictable value would be unsafe or misleading. Choose Base64URL for URL-safe secrets, hex for checksum-like values, or alphanumeric when a system only accepts letters and digits.\n\nUse these tokens for test secrets, reset-link examples, temporary identifiers and development fixtures. Do not paste production secrets into shared tickets or public documents, and store real credentials in a password manager or secret store.",
+  "howItWorks": [
+    "Choose the token length and number of tokens.",
+    "Select Base64URL, hex or alphanumeric output.",
+    "Add an optional prefix when your system expects one."
+  ],
+  "useCases": [
+    {
+      "title": "API key placeholder",
+      "description": "Create a realistic token shape for docs, fixtures or local development."
+    },
+    {
+      "title": "Reset link secret",
+      "description": "Generate URL-safe random values for reset-flow testing and examples."
+    },
+    {
+      "title": "Temporary test token",
+      "description": "Produce one or more throwaway tokens for QA, demos or mock data."
+    }
+  ],
+  "examples": [
+    {
+      "title": "Base64URL token",
+      "input": "Length: 32; Count: 1; Format: Base64URL",
+      "output": "N4nK4y3zQx7fA9mP2sV6tB8cD0eR1uW5",
+      "description": "A URL-safe token suitable for reset links or callback examples."
+    },
+    {
+      "title": "Hex token with prefix",
+      "input": "Length: 24; Count: 1; Format: Hex; Prefix: tok_",
+      "output": "tok_4f8a13c09d21b7e6a3c55f91",
+      "description": "A prefixed hex token for systems that label token types."
+    },
+    {
+      "title": "Multiple test tokens",
+      "input": "Length: 16; Count: 3; Format: Alphanumeric",
+      "output": "k8Jm2Lq9Tz4Vn6Px",
+      "description": "Several short test tokens can be generated at once for mock users."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Which token format should I choose?",
+      "answer": "Use Base64URL for URL-safe secrets, hex for systems that expect hexadecimal values, and alphanumeric for strict forms that reject symbols."
+    },
+    {
+      "question": "Is the prefix counted in the random length?",
+      "answer": "No. The length setting controls only the random part. The prefix is added before each token after generation."
+    },
+    {
+      "question": "Can I use these tokens in production?",
+      "answer": "The generator uses browser cryptographic randomness when available, but production credentials should still be created and stored inside your normal secret-management process."
+    },
+    {
+      "question": "Why generate more than one token?",
+      "answer": "Multiple tokens are useful for fixtures, QA accounts and examples where each record needs a different secret-looking value."
+    }
+  ],
+  "seo": {
+    "title": "Random Token Generator",
+    "description": "Generate secure random tokens in Base64URL, hex or alphanumeric formats for API keys, reset links and tests.",
+    "keywords": [
+      "random token generator",
+      "secure token generator",
+      "base64url token",
+      "hex token generator"
+    ]
+  }
+}

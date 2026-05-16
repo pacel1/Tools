@@ -1,0 +1,337 @@
+{
+  "en": {
+    "eyebrow": "Image hub",
+    "title": "Image tools for resizing, compression and quick exports",
+    "description": "Resize, compress, crop and convert images in a browser-based workflow built for speed and privacy.",
+    "intro": "Use the image tools hub when you need to shrink images, change image size online or export files for web use. The featured tools cover the most common jobs first and guide you to the next step when you need it.",
+    "featuredSearches": [
+      "image compressor",
+      "image resizer",
+      "reduce jpg size",
+      "change image size online"
+    ],
+    "featuredToolIds": [
+      "image-compressor",
+      "image-resizer",
+      "image-format-converter"
+    ],
+    "workflows": [
+      {
+        "title": "Compress images for the web",
+        "description": "Choose image-compressor when the file is too large for a page, store listing or document attachment and you want the smallest practical size without changing dimensions first.",
+        "toolId": "image-compressor"
+      },
+      {
+        "title": "Resize an image to exact dimensions",
+        "description": "Choose image-resizer when a banner, product shot or screenshot must fit a specific width and height, then compress it if the file still needs to be lighter.",
+        "toolId": "image-resizer"
+      },
+      {
+        "title": "Crop before publishing",
+        "description": "Choose image-cropper when the frame matters more than the full original, such as profile images, hero crops or social previews.",
+        "toolId": "image-cropper"
+      },
+      {
+        "title": "Change file format",
+        "description": "Choose image-format-converter when you need JPG, PNG, WebP or another format for compatibility, transparency or smaller delivery size.",
+        "toolId": "image-format-converter"
+      }
+    ],
+    "useCases": [
+      {
+        "title": "Website publishing",
+        "description": "Prepare lighter image files and consistent dimensions before adding them to a page."
+      },
+      {
+        "title": "Store listings",
+        "description": "Standardize product images so they look uniform across a catalog."
+      },
+      {
+        "title": "Developer handoff",
+        "description": "Extract metadata, convert to the expected format and encode images for use in code or assets."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Which tool should I start with?",
+        "answer": "Start with compression for smaller files, resizing for exact dimensions, cropping for framing and conversion when the format itself must change."
+      },
+      {
+        "question": "When should I use metadata reading?",
+        "answer": "Use image-metadata-reader when you need camera data, dimensions, orientation or file details before editing or publishing."
+      },
+      {
+        "question": "How do I move an image into code?",
+        "answer": "Use image-to-base64 when you need a text-embedded image for markup, configuration or quick transport, and base64-to-image to turn that text back into a file."
+      }
+    ]
+  },
+  "pl": {
+    "eyebrow": "Hub obrazow",
+    "title": "Narzedzia do obrazow: zmiana rozmiaru, kompresja i szybki eksport",
+    "description": "Przytnij, skompresuj, przeskaluj i przekonwertuj obrazy w przegladarkowym workflow nastawionym na tempo i prywatnosc.",
+    "intro": "Korzystaj z hubu obrazow, gdy chcesz zmniejszyc plik, zmienic rozmiar obrazu online albo przygotowac grafike do publikacji w sieci. Najpierw widzisz najczestsze zadania, a potem latwo przechodzisz do kolejnego kroku.",
+    "featuredSearches": [
+      "kompresor obrazow",
+      "zmiana rozmiaru obrazu",
+      "zmniejsz jpg",
+      "przytnij obraz online"
+    ],
+    "featuredToolIds": [
+      "image-compressor",
+      "image-resizer",
+      "image-format-converter"
+    ],
+    "workflows": [
+      {
+        "title": "Kompresja obrazow do internetu",
+        "description": "Wybierz image-compressor, gdy plik jest za duzy dla strony, oferty sklepowej lub zalacznika i chcesz uzyskac jak najmniejszy rozmiar bez zmiany wymiarow.",
+        "toolId": "image-compressor"
+      },
+      {
+        "title": "Zmiana obrazu do dokladnych wymiarow",
+        "description": "Wybierz image-resizer, gdy baner, produkt albo zrzut ekranu musi pasowac do konkretnej szerokosci i wysokosci, a potem skompresuj plik, jesli nadal jest za ciezki.",
+        "toolId": "image-resizer"
+      },
+      {
+        "title": "Kadrowanie przed publikacja",
+        "description": "Wybierz image-cropper, gdy liczy sie tylko fragment kadru, na przyklad w avatarze, hero albo podgladzie do social media.",
+        "toolId": "image-cropper"
+      },
+      {
+        "title": "Zmiana formatu pliku",
+        "description": "Wybierz image-format-converter, gdy potrzebujesz JPG, PNG, WebP lub innego formatu ze wzgledu na zgodnosc, przezroczystosc albo mniejszy plik.",
+        "toolId": "image-format-converter"
+      }
+    ],
+    "useCases": [
+      {
+        "title": "Publikacja na stronie",
+        "description": "Przygotuj lzejsze pliki i spojne wymiary przed dodaniem obrazow do witryny."
+      },
+      {
+        "title": "Karty produktowe",
+        "description": "Ujednolicaj zdjecia produktow, aby caly katalog wygladal rowno i czytelnie."
+      },
+      {
+        "title": "Przekazanie do zespolu technicznego",
+        "description": "Odczytaj metadane, zmien format i przygotuj obrazy do wykorzystania w kodzie lub assetach."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Od ktorego narzedzia zaczac?",
+        "answer": "Najpierw wybierz kompresje dla mniejszego pliku, zmiane rozmiaru dla dokladnych wymiarow, kadrowanie dla kompozycji i konwersje, gdy musi zmienic sie format."
+      },
+      {
+        "question": "Kiedy uzyc odczytu metadanych?",
+        "answer": "Uzyj image-metadata-reader, gdy chcesz sprawdzic dane aparatu, wymiary, orientacje albo szczegoly pliku przed edycja lub publikacja."
+      },
+      {
+        "question": "Jak zamienic obraz na kod?",
+        "answer": "Uzyj image-to-base64, gdy potrzebujesz obrazu osadzonego w tekscie do markup, konfiguracji albo szybkiego przenoszenia, a base64-to-image, gdy chcesz zamienic ten tekst z powrotem na plik."
+      }
+    ]
+  },
+  "es": {
+    "eyebrow": "Centro de imagen",
+    "title": "Herramientas de imagen para redimensionar, comprimir y exportar rapido",
+    "description": "Recorta, comprime, cambia de tamano y convierte imagenes en un flujo de trabajo dentro del navegador pensado para rapidez y privacidad.",
+    "intro": "Usa el centro de imagen cuando necesites reducir archivos, cambiar el tamano de una imagen en linea o preparar graficos para publicacion web. Las herramientas destacadas resuelven primero las tareas mas habituales y te llevan al siguiente paso cuando hace falta.",
+    "featuredSearches": [
+      "compresor de imagenes",
+      "cambiar tamano de imagen",
+      "reducir jpg",
+      "recortar imagen online"
+    ],
+    "featuredToolIds": [
+      "image-compressor",
+      "image-resizer",
+      "image-format-converter"
+    ],
+    "workflows": [
+      {
+        "title": "Comprimir imagenes para la web",
+        "description": "Elige image-compressor cuando el archivo sea demasiado grande para una pagina, ficha de producto o adjunto y necesites el menor peso posible sin cambiar primero las dimensiones.",
+        "toolId": "image-compressor"
+      },
+      {
+        "title": "Redimensionar a medidas exactas",
+        "description": "Elige image-resizer cuando un banner, una foto de producto o una captura deban encajar en un ancho y alto concretos; luego comprime si el archivo sigue siendo pesado.",
+        "toolId": "image-resizer"
+      },
+      {
+        "title": "Recortar antes de publicar",
+        "description": "Elige image-cropper cuando importe mas el encuadre que la imagen completa, como en avatares, cabeceras o previas sociales.",
+        "toolId": "image-cropper"
+      },
+      {
+        "title": "Cambiar el formato del archivo",
+        "description": "Elige image-format-converter cuando necesites JPG, PNG, WebP u otro formato por compatibilidad, transparencia o mejor distribucion del peso.",
+        "toolId": "image-format-converter"
+      }
+    ],
+    "useCases": [
+      {
+        "title": "Publicacion web",
+        "description": "Prepara archivos mas ligeros y con dimensiones coherentes antes de anadirlos a una pagina."
+      },
+      {
+        "title": "Catalogos de producto",
+        "description": "Estandariza las imagenes para que todas las fichas mantengan un aspecto uniforme."
+      },
+      {
+        "title": "Entrega tecnica",
+        "description": "Lee metadatos, convierte al formato esperado y prepara imagenes para codigo o recursos."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Con que herramienta empiezo?",
+        "answer": "Empieza con compresion para bajar el peso, redimensionado para fijar medidas, recorte para ajustar el encuadre y conversion cuando deba cambiar el formato."
+      },
+      {
+        "question": "Cuando conviene leer metadatos?",
+        "answer": "Usa image-metadata-reader cuando necesites datos de camara, dimensiones, orientacion o detalles del archivo antes de editar o publicar."
+      },
+      {
+        "question": "Como paso una imagen a texto?",
+        "answer": "Usa image-to-base64 cuando quieras incrustar una imagen en texto para marcado, configuracion o transporte rapido, y base64-to-image para recuperar ese texto como archivo."
+      }
+    ]
+  },
+  "de": {
+    "eyebrow": "Bild-Hub",
+    "title": "Bild-Tools fuer Groessenaenderung, Komprimierung und schnellen Export",
+    "description": "Schneide, komprimiere, skaliere und konvertiere Bilder in einem browserbasierten Ablauf fuer Tempo und Privatsphaere.",
+    "intro": "Nutze den Bild-Hub, wenn du Dateien verkleinern, die Bildgroesse online aendern oder Grafiken fuer die Webnutzung vorbereiten willst. Die hervorgehobenen Tools decken die wichtigsten Aufgaben zuerst ab und fuehren dich bei Bedarf zum naechsten Schritt.",
+    "featuredSearches": [
+      "bild komprimieren",
+      "bild groesse aendern",
+      "jpg verkleinern",
+      "bild online zuschneiden"
+    ],
+    "featuredToolIds": [
+      "image-compressor",
+      "image-resizer",
+      "image-format-converter"
+    ],
+    "workflows": [
+      {
+        "title": "Bilder fuer das Web komprimieren",
+        "description": "Waehle image-compressor, wenn eine Datei fuer eine Seite, einen Shop oder einen Anhang zu gross ist und du die kleinste sinnvolle Groesse ohne vorherige Aenderung der Abmessungen willst.",
+        "toolId": "image-compressor"
+      },
+      {
+        "title": "Bild auf exakte Masse bringen",
+        "description": "Waehle image-resizer, wenn ein Banner, Produktfoto oder Screenshot eine feste Breite und Hoehe haben muss; komprimiere danach, falls die Datei noch zu schwer ist.",
+        "toolId": "image-resizer"
+      },
+      {
+        "title": "Vor dem Veroeffentlichen zuschneiden",
+        "description": "Waehle image-cropper, wenn der sichtbare Ausschnitt wichtiger ist als das gesamte Original, zum Beispiel bei Profilbildern, Hero-Bildern oder Social-Previews.",
+        "toolId": "image-cropper"
+      },
+      {
+        "title": "Dateiformat aendern",
+        "description": "Waehle image-format-converter, wenn du JPG, PNG, WebP oder ein anderes Format fuer Kompatibilitaet, Transparenz oder kleinere Auslieferung brauchst.",
+        "toolId": "image-format-converter"
+      }
+    ],
+    "useCases": [
+      {
+        "title": "Web-Publishing",
+        "description": "Bereite leichtere Dateien und einheitliche Masse vor, bevor Bilder live gehen."
+      },
+      {
+        "title": "Produktkataloge",
+        "description": "Gleiche Bilder an, damit ein Katalog ruhig und konsistent wirkt."
+      },
+      {
+        "title": "Technische Uebergabe",
+        "description": "Lese Metadaten aus, konvertiere ins erwartete Format und bereite Bilder fuer Code oder Assets vor."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Womit soll ich anfangen?",
+        "answer": "Starte mit Komprimierung fuer kleinere Dateien, mit Resizing fuer genaue Abmessungen, mit Zuschneiden fuer den Bildausschnitt und mit Konvertierung, wenn sich das Format aendern muss."
+      },
+      {
+        "question": "Wann sollte ich Metadaten lesen?",
+        "answer": "Nutze image-metadata-reader, wenn du Kameradaten, Abmessungen, Ausrichtung oder Dateiinformationen vor der Bearbeitung oder Veroeffentlichung brauchst."
+      },
+      {
+        "question": "Wie bringe ich ein Bild in Textform?",
+        "answer": "Nutze image-to-base64, wenn du ein Bild fuer Markup, Konfiguration oder schnellen Transport als Text einbetten willst, und base64-to-image, um diesen Text wieder in eine Datei zu verwandeln."
+      }
+    ]
+  },
+  "fr": {
+    "eyebrow": "Hub image",
+    "title": "Outils image pour redimensionner, compresser et exporter vite",
+    "description": "Recadrez, compressez, redimensionnez et convertissez des images dans un flux de travail au navigateur pense pour la vitesse et la confidentialite.",
+    "intro": "Utilisez le hub image quand vous devez reduire des fichiers, changer la taille d'une image en ligne ou preparer des visuels pour une publication web. Les outils mis en avant couvrent d'abord les taches les plus courantes et indiquent la suite naturelle du travail.",
+    "featuredSearches": [
+      "compresseur image",
+      "redimensionner image",
+      "reduire jpg",
+      "recadrer image en ligne"
+    ],
+    "featuredToolIds": [
+      "image-compressor",
+      "image-resizer",
+      "image-format-converter"
+    ],
+    "workflows": [
+      {
+        "title": "Compresser des images pour le web",
+        "description": "Choisissez image-compressor lorsqu'un fichier est trop lourd pour une page, une fiche produit ou une piece jointe et que vous voulez la plus petite taille utile sans changer d'abord les dimensions.",
+        "toolId": "image-compressor"
+      },
+      {
+        "title": "Redimensionner a des dimensions precises",
+        "description": "Choisissez image-resizer quand une banniere, une photo produit ou une capture doit respecter une largeur et une hauteur exactes, puis compressez si le fichier reste trop lourd.",
+        "toolId": "image-resizer"
+      },
+      {
+        "title": "Recadrer avant publication",
+        "description": "Choisissez image-cropper quand le cadre visible compte plus que l'image complete, par exemple pour un avatar, un hero ou un apercu social.",
+        "toolId": "image-cropper"
+      },
+      {
+        "title": "Changer le format du fichier",
+        "description": "Choisissez image-format-converter quand vous avez besoin de JPG, PNG, WebP ou d'un autre format pour la compatibilite, la transparence ou une livraison plus legere.",
+        "toolId": "image-format-converter"
+      }
+    ],
+    "useCases": [
+      {
+        "title": "Publication web",
+        "description": "Preparez des fichiers plus legers et des dimensions coherentes avant de les ajouter a une page."
+      },
+      {
+        "title": "Catalogues produits",
+        "description": "Uniformisez les images pour obtenir un rendu stable et propre dans tout le catalogue."
+      },
+      {
+        "title": "Transmission technique",
+        "description": "Lisez les metadonnees, convertissez au format attendu et preparez les images pour le code ou les ressources."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Par quel outil commencer?",
+        "answer": "Commencez par la compression pour reduire le poids, le redimensionnement pour fixer les dimensions, le recadrage pour ajuster le cadre et la conversion quand le format doit changer."
+      },
+      {
+        "question": "Quand lire les metadonnees?",
+        "answer": "Utilisez image-metadata-reader quand vous avez besoin des donnees appareil, des dimensions, de l'orientation ou des details du fichier avant l'edition ou la publication."
+      },
+      {
+        "question": "Comment transformer une image en texte?",
+        "answer": "Utilisez image-to-base64 lorsque vous devez integrer une image sous forme de texte pour du balisage, une configuration ou un transfert rapide, puis base64-to-image pour reconvertir ce texte en fichier."
+      }
+    ]
+  }
+}

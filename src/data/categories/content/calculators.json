@@ -1,0 +1,317 @@
+{
+  "en": {
+    "eyebrow": "Calculator hub",
+    "title": "Calculators for finance, percentages and daily decisions",
+    "description": "Run focused calculations for percentages, loans, interest, discounts, tax and common planning numbers.",
+    "intro": "Use this calculator hub when the task is not just conversion but a decision based on a formula. The tools cover money, percentages, dates, pricing and health-related estimates with inputs designed for quick checks.",
+    "featuredSearches": [
+      "calculate a loan payment for a monthly budget",
+      "find the percentage increase from old price to new price",
+      "compare compound interest over several years",
+      "work out a discount before buying"
+    ],
+    "featuredToolIds": [
+      "percentage-calculator",
+      "loan-payment-calculator",
+      "compound-interest-calculator",
+      "discount-calculator"
+    ],
+    "workflows": [
+      {
+        "title": "Compare borrowing options",
+        "description": "Use the loan payment calculator when you need to see what a monthly repayment may look like before choosing a term or amount. Switch to the simple interest or compound interest calculator if you need to compare growth or cost over time.",
+        "toolId": "loan-payment-calculator"
+      },
+      {
+        "title": "Handle percentage changes",
+        "description": "Use the percentage calculator for shares, ratios and general percentage problems. Choose the increase or decrease tools when you already know the start and end value and want the exact change.",
+        "toolId": "percentage-calculator"
+      },
+      {
+        "title": "Plan by dates",
+        "description": "Use the days between dates calculator when timing matters, such as billing periods, delivery windows or project milestones. It is the right choice when you need an exact day count, not just a calendar guess.",
+        "toolId": "days-between-dates-calculator"
+      }
+    ],
+    "useCases": [
+      {
+        "title": "Budget checks",
+        "description": "Review payments, discounts and tax before committing to a purchase or quote."
+      },
+      {
+        "title": "Pricing decisions",
+        "description": "Test markup, unit price and discount scenarios before setting or comparing an offer."
+      },
+      {
+        "title": "Date planning",
+        "description": "Measure time spans between events so you can line up deadlines, renewals and deliveries."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Are these calculators financial advice?",
+        "answer": "No. They provide planning estimates from the inputs you enter and should be checked against contracts, fees and local rules."
+      },
+      {
+        "question": "Why are calculators split into separate tools?",
+        "answer": "Separate tools keep the inputs clear, so a discount, loan payment or percentage change is less likely to be mixed up."
+      },
+      {
+        "question": "When should I use a percentage tool instead of a discount tool?",
+        "answer": "Use the percentage tool for general percentage questions. Use the discount tool when you are starting from a list price and want the reduced price after a markdown."
+      }
+    ]
+  },
+  "pl": {
+    "eyebrow": "Hub kalkulatorow",
+    "title": "Kalkulatory do finansow, procentow i codziennych decyzji",
+    "description": "Licz procenty, raty, odsetki, rabaty, podatki i typowe wartosci potrzebne do planowania.",
+    "intro": "Uzyj tego huba, gdy nie chodzi tylko o przeliczenie, ale o decyzje oparte na wzorze. Narzedzia pomagaja liczyc pieniadze, procenty, daty, ceny i proste szacunki zdrowotne.",
+    "featuredSearches": [
+      "oblicz rate kredytu miesieczna",
+      "sprawdz ile wynosi wzrost procentowy ceny",
+      "porownaj procent skladany przez kilka lat",
+      "oblicz cene po rabacie"
+    ],
+    "featuredToolIds": [
+      "percentage-calculator",
+      "loan-payment-calculator",
+      "compound-interest-calculator",
+      "discount-calculator"
+    ],
+    "workflows": [
+      {
+        "title": "Porownaj opcje kredytu",
+        "description": "Uzyj kalkulatora raty kredytu, gdy chcesz sprawdzic miesieczna rate przed wyborem okresu splaty lub kwoty. Jesli porownujesz wzrost kapitalu w czasie, siegnij po kalkulator odsetek prostych albo procentu skladanego.",
+        "toolId": "loan-payment-calculator"
+      },
+      {
+        "title": "Oblicz zmiany procentowe",
+        "description": "Wybierz kalkulator procentowy do udzialow, proporcji i ogolnych zadan procentowych. Gdy znasz wartosc poczatkowa i koncowa, kalkulator wzrostu lub spadku da dokladna zmiane.",
+        "toolId": "percentage-calculator"
+      },
+      {
+        "title": "Policz liczbe dni",
+        "description": "Uzyj kalkulatora liczby dni miedzy datami, gdy liczy sie termin platnosci, dostawa albo kamien milowy projektu. To najlepszy wybor, gdy potrzebujesz dokladnej liczby dni, a nie przyblizenia.",
+        "toolId": "days-between-dates-calculator"
+      }
+    ],
+    "useCases": [
+      {
+        "title": "Kontrola budzetu",
+        "description": "Sprawdz raty, rabaty i podatek przed akceptacja zakupu lub wyceny."
+      },
+      {
+        "title": "Decyzje cenowe",
+        "description": "Przetestuj marze, cene jednostkowa i scenariusze rabatowe przed ustaleniem albo porownaniem oferty."
+      },
+      {
+        "title": "Planowanie terminow",
+        "description": "Zmierz odstepy czasu miedzy wydarzeniami, aby dopasowac terminy, odnowienia i dostawy."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Czy te kalkulatory daja porady finansowe?",
+        "answer": "Nie. Pokazuja szacunki na podstawie wpisanych danych i trzeba je sprawdzic z umowami, oplatami oraz lokalnymi zasadami."
+      },
+      {
+        "question": "Dlaczego kalkulatory sa podzielone na osobne narzedzia?",
+        "answer": "Osobne narzedzia utrzymuja przejrzyste pola, dzieki czemu rabat, rata kredytu i zmiana procentowa nie mieszaja sie ze soba."
+      },
+      {
+        "question": "Kiedy wybrac kalkulator procentowy, a kiedy rabatu?",
+        "answer": "Kalkulator procentowy wybierz do ogolnych pytan o procenty. Kalkulator rabatu wybierz wtedy, gdy startujesz z ceny katalogowej i chcesz poznac cene po obnizce."
+      }
+    ]
+  },
+  "es": {
+    "eyebrow": "Hub de calculadoras",
+    "title": "Calculadoras para finanzas, porcentajes y planificacion",
+    "description": "Calcula porcentajes, cuotas, intereses, descuentos e importes habituales.",
+    "intro": "Usa este hub cuando la tarea depende de una formula y necesitas comparar resultados antes de decidir. Reune calculos de dinero, porcentajes, fechas, precios y estimaciones rapidas de salud.",
+    "featuredSearches": [
+      "calcular la cuota mensual de un prestamo",
+      "hallar el aumento porcentual de un precio",
+      "comparar interes compuesto en varios anos",
+      "saber el precio final con descuento"
+    ],
+    "featuredToolIds": [
+      "percentage-calculator",
+      "loan-payment-calculator",
+      "compound-interest-calculator",
+      "discount-calculator"
+    ],
+    "workflows": [
+      {
+        "title": "Compara opciones de prestamo",
+        "description": "Usa la calculadora de cuota del prestamo cuando necesites ver el pago mensual antes de elegir plazo o importe. Si quieres comparar crecimiento o coste a lo largo del tiempo, cambia a la calculadora de interes simple o compuesto.",
+        "toolId": "loan-payment-calculator"
+      },
+      {
+        "title": "Trabaja con porcentajes",
+        "description": "Usa la calculadora de porcentajes para partes, proporciones y problemas generales con porcentajes. Elige las herramientas de aumento o disminucion cuando ya conozcas el valor inicial y el final y necesites el cambio exacto.",
+        "toolId": "percentage-calculator"
+      },
+      {
+        "title": "Calcula tramos de tiempo",
+        "description": "Usa la calculadora de dias entre fechas cuando el calendario importa, por ejemplo en facturacion, entregas o hitos de proyecto. Es la mejor opcion cuando necesitas un conteo exacto de dias.",
+        "toolId": "days-between-dates-calculator"
+      }
+    ],
+    "useCases": [
+      {
+        "title": "Revision de presupuesto",
+        "description": "Comprueba cuotas, descuentos e impuestos antes de aceptar una compra o un presupuesto."
+      },
+      {
+        "title": "Decisiones de precio",
+        "description": "Prueba escenarios de margen, precio por unidad y descuento antes de fijar o comparar una oferta."
+      },
+      {
+        "title": "Planificacion de fechas",
+        "description": "Mide intervalos entre eventos para coordinar plazos, renovaciones y entregas."
+      }
+    ],
+    "faq": [
+      {
+        "question": "These calculators financial advice?",
+        "answer": "No. They provide planning estimates from the inputs you enter and should be checked against contracts, fees and local rules."
+      },
+      {
+        "question": "Why are calculators split into separate tools?",
+        "answer": "Separate tools keep the inputs clear, so a discount, loan payment or percentage change is less likely to be mixed up."
+      },
+      {
+        "question": "When should I use the percentage calculator instead of the discount calculator?",
+        "answer": "Use the percentage calculator for general percentage questions. Use the discount calculator when you start from a list price and want the reduced price after a markdown."
+      }
+    ]
+  },
+  "de": {
+    "eyebrow": "Rechner-Hub",
+    "title": "Rechner fuer Finanzen, Prozente und Planung",
+    "description": "Berechne Prozente, Raten, Zinsen, Rabatte und typische Planungswerte.",
+    "intro": "Nutze diesen Hub fuer Aufgaben, bei denen eine Formel eine Entscheidung oder Schaetzung vorbereitet. Die Tools helfen bei Geld, Prozenten, Daten, Preisen und einfachen Gesundheitswerten.",
+    "featuredSearches": [
+      "monatliche kreditrate berechnen",
+      "prozentuale preissteigerung ermitteln",
+      "zinseszins ueber mehrere jahre vergleichen",
+      "endpreis nach rabatt berechnen"
+    ],
+    "featuredToolIds": [
+      "percentage-calculator",
+      "loan-payment-calculator",
+      "compound-interest-calculator",
+      "discount-calculator"
+    ],
+    "workflows": [
+      {
+        "title": "Finanzierung vergleichen",
+        "description": "Nutze den Kreditrechner, wenn du vor der Auswahl von Laufzeit oder Betrag die monatliche Rate sehen willst. Wenn du Wachstum oder Kosten ueber Zeit vergleichen musst, sind der einfache Zinsrechner oder der Zinseszinsrechner die bessere Wahl.",
+        "toolId": "loan-payment-calculator"
+      },
+      {
+        "title": "Mit Prozenten arbeiten",
+        "description": "Verwende den Prozentrechner fuer Anteile, Verhaeltnisse und allgemeine Prozentaufgaben. Wenn du Anfangs- und Endwert kennst, liefern die Werkzeuge fuer Anstieg oder Abnahme die genaue Veraenderung.",
+        "toolId": "percentage-calculator"
+      },
+      {
+        "title": "Zeitspannen pruefen",
+        "description": "Nutze den Rechner fuer Tage zwischen Daten, wenn Fristen, Lieferfenster oder Projektmeilensteine exakt berechnet werden muessen. Er ist die richtige Wahl, wenn du eine genaue Tageszahl brauchst.",
+        "toolId": "days-between-dates-calculator"
+      }
+    ],
+    "useCases": [
+      {
+        "title": "Budgetpruefung",
+        "description": "Pruefe Raten, Rabatte und Steuern, bevor du einen Kauf oder ein Angebot annimmst."
+      },
+      {
+        "title": "Preisentscheidungen",
+        "description": "Teste Marge, Stueckpreis und Rabatt-Szenarien, bevor du ein Angebot festlegst oder vergleichst."
+      },
+      {
+        "title": "Terminplanung",
+        "description": "Miss Zeitabstaende zwischen Ereignissen, damit Fristen, Verlaengerungen und Lieferungen zusammenpassen."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Sind diese Rechner eine Finanzberatung?",
+        "answer": "Nein. Sie liefern Schaetzwerte auf Basis deiner Eingaben und sollten mit Vertraegen, Gebuehren und lokalen Regeln abgeglichen werden."
+      },
+      {
+        "question": "Warum sind die Rechner in einzelne Tools aufgeteilt?",
+        "answer": "Getrennte Tools halten die Eingaben klar, damit Rabatt, Kreditrate oder prozentuale Aenderung nicht verwechselt werden."
+      },
+      {
+        "question": "Wann nehme ich den Prozentrechner statt des Rabattrechners?",
+        "answer": "Den Prozentrechner nutzt du fuer allgemeine Prozentfragen. Den Rabattrechner nutzt du, wenn du von einem Listenpreis ausgehst und den reduzierten Preis nach einem Abschlag suchst."
+      }
+    ]
+  },
+  "fr": {
+    "eyebrow": "Hub calculateurs",
+    "title": "Calculateurs pour finances, pourcentages et planification",
+    "description": "Calculez pourcentages, mensualites, interets, remises et valeurs de planification.",
+    "intro": "Utilisez ce hub lorsqu'une formule aide a comparer des options ou preparer une estimation. Les outils couvrent l'argent, les pourcentages, les dates, les prix et les estimations rapides liees a la sante.",
+    "featuredSearches": [
+      "calculer la mensualite d'un pret",
+      "calculer la hausse en pourcentage d'un prix",
+      "comparer les interets composes sur plusieurs annees",
+      "calculer le prix apres remise"
+    ],
+    "featuredToolIds": [
+      "percentage-calculator",
+      "loan-payment-calculator",
+      "compound-interest-calculator",
+      "discount-calculator"
+    ],
+    "workflows": [
+      {
+        "title": "Comparer des scenarios de pret",
+        "description": "Utilisez le calculateur de mensualite quand vous devez voir le remboursement mensuel avant de choisir une duree ou un montant. Pour comparer une evolution dans le temps, utilisez plutot le calculateur d'interet simple ou compose.",
+        "toolId": "loan-payment-calculator"
+      },
+      {
+        "title": "Travailler avec les pourcentages",
+        "description": "Utilisez le calculateur de pourcentages pour les parts, les rapports et les problemes generaux. Choisissez les outils de hausse ou de baisse quand vous connaissez deja la valeur de depart et la valeur finale.",
+        "toolId": "percentage-calculator"
+      },
+      {
+        "title": "Verifier les ecarts de dates",
+        "description": "Utilisez le calculateur de jours entre deux dates quand les delais de facturation, de livraison ou de projet doivent etre comptes exactement. C'est le bon choix quand il faut un nombre de jours precis.",
+        "toolId": "days-between-dates-calculator"
+      }
+    ],
+    "useCases": [
+      {
+        "title": "Verification de budget",
+        "description": "Controlez les mensualites, remises et taxes avant d'accepter un achat ou un devis."
+      },
+      {
+        "title": "Decisions de prix",
+        "description": "Testez la marge, le prix unitaire et les scenarios de remise avant de fixer ou comparer une offre."
+      },
+      {
+        "title": "Planification de dates",
+        "description": "Mesurez les intervalles entre evenements pour aligner les echeances, renouvellements et livraisons."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Ces calculateurs donnent-ils des conseils financiers ?",
+        "answer": "Non. Ils fournissent des estimations de planification a partir des donnees saisies et doivent etre verifies avec les contrats, frais et regles locales."
+      },
+      {
+        "question": "Pourquoi les calculateurs sont-ils separes en plusieurs outils ?",
+        "answer": "Des outils separes gardent des entrees claires, pour eviter de confondre une remise, une mensualite ou une variation en pourcentage."
+      },
+      {
+        "question": "Quand utiliser le calculateur de pourcentage plutot que celui de remise ?",
+        "answer": "Utilisez le calculateur de pourcentage pour les questions generales sur les pourcentages. Utilisez le calculateur de remise quand vous partez d'un prix catalogue et voulez le prix reduit apres reduction."
+      }
+    ]
+  }
+}

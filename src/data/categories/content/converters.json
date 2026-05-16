@@ -1,0 +1,342 @@
+{
+  "en": {
+    "eyebrow": "Converter hub",
+    "title": "Converters for units, storage, colors, and everyday measurements",
+    "description": "Convert temperatures, distances, weights, storage sizes, and color codes with focused browser tools.",
+    "intro": "Use this hub when a value needs to move into a more useful unit or format. Start with the kind of data you have, then open the converter that matches the target unit or output.",
+    "featuredSearches": [
+      "gb to mb conversion",
+      "celsius to fahrenheit converter",
+      "cm to inches conversion",
+      "hex color to rgb"
+    ],
+    "featuredToolIds": [
+      "storage-converter",
+      "gb-to-mb-converter",
+      "celsius-to-fahrenheit-converter",
+      "cm-to-inches-converter"
+    ],
+    "workflows": [
+      {
+        "title": "Check file and storage sizes",
+        "description": "Choose storage-converter when you need a broader storage lookup, then use gb-to-mb-converter or mb-to-gb-converter for a direct pairwise conversion.",
+        "toolId": "storage-converter"
+      },
+      {
+        "title": "Convert temperature readings",
+        "description": "Use celsius-to-fahrenheit-converter for weather, recipes, and reports in Fahrenheit regions, or fahrenheit-to-celsius-converter when you need metric values.",
+        "toolId": "celsius-to-fahrenheit-converter"
+      },
+      {
+        "title": "Move between metric and imperial lengths",
+        "description": "Pick cm-to-inches-converter for quick small-size changes, inches-to-cm-converter for the reverse, and feet-to-meters-converter or meters-to-feet-converter for larger dimensions.",
+        "toolId": "cm-to-inches-converter"
+      },
+      {
+        "title": "Translate color codes",
+        "description": "Open hex-to-rgb-converter when design notes, CSS, or handoff docs need a readable RGB value instead of a hex code.",
+        "toolId": "hex-to-rgb-converter"
+      }
+    ],
+    "useCases": [
+      {
+        "title": "Product specs and handoff",
+        "description": "Keep measurements consistent before sharing mockups, technical notes, or implementation details."
+      },
+      {
+        "title": "Travel and shopping comparisons",
+        "description": "Compare road distances, body weight, container sizes, and temperatures without switching apps."
+      },
+      {
+        "title": "Design and frontend work",
+        "description": "Convert color values and dimensions into the format your layout or code expects."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Which converter should I open first?",
+        "answer": "Choose the tool that matches the value you already have: storage, temperature, length, weight, or color."
+      },
+      {
+        "question": "When should I use the general storage converter instead of a pairwise one?",
+        "answer": "Use storage-converter when you are comparing several units or want to move across more than one storage step at once."
+      },
+      {
+        "question": "Do I need exact engineering precision?",
+        "answer": "For everyday planning, the tools give practical results that are easy to read and compare."
+      }
+    ]
+  },
+  "pl": {
+    "eyebrow": "Hub konwerterow",
+    "title": "Konwertery dla jednostek, pamieci, kolorow i codziennych pomiarow",
+    "description": "Przeliczaj temperature, odleglosc, wage, rozmiary plikow i kody kolorow w narzedziach przegladarkowych.",
+    "intro": "Korzystaj z tego huba, gdy wartosc trzeba zamienic na bardziej praktyczna jednostke albo format. Najpierw wybierz typ danych, ktory masz, a potem otworz konwerter pasujacy do jednostki docelowej.",
+    "featuredSearches": [
+      "gb na mb przelicznik",
+      "celsjusz na fahrenheit",
+      "cm na cale przelicznik",
+      "hex na rgb kolor"
+    ],
+    "featuredToolIds": [
+      "storage-converter",
+      "gb-to-mb-converter",
+      "celsius-to-fahrenheit-converter",
+      "cm-to-inches-converter"
+    ],
+    "workflows": [
+      {
+        "title": "Sprawdz rozmiary plikow i pamieci",
+        "description": "Wybierz storage-converter, gdy potrzebujesz szerszego przeliczenia pamieci, a potem uzyj gb-to-mb-converter albo mb-to-gb-converter do szybkiej zamiany jednej pary jednostek.",
+        "toolId": "storage-converter"
+      },
+      {
+        "title": "Przelicz temperatury",
+        "description": "Uzyj celsius-to-fahrenheit-converter dla pogody, przepisow i raportow w regionach korzystajacych z Fahrenheita, albo fahrenheit-to-celsius-converter, gdy potrzebujesz wartosci w skali metrycznej.",
+        "toolId": "celsius-to-fahrenheit-converter"
+      },
+      {
+        "title": "Zamieniaj dlugosci metryczne i imperialne",
+        "description": "Wybierz cm-to-inches-converter dla szybkich zmian malych wymiarow, inches-to-cm-converter w druga strone, a feet-to-meters-converter lub meters-to-feet-converter dla wiekszych odleglosci.",
+        "toolId": "cm-to-inches-converter"
+      },
+      {
+        "title": "Przeliczaj kody kolorow",
+        "description": "Otworz hex-to-rgb-converter, gdy notatki projektowe, CSS albo dokumentacja wdrozeniowa potrzebuja czytelnej wartosci RGB zamiast kodu hex.",
+        "toolId": "hex-to-rgb-converter"
+      }
+    ],
+    "useCases": [
+      {
+        "title": "Specyfikacje i przekazanie pracy",
+        "description": "Utrzymuj spojnosc jednostek przed przekazaniem makiet, notatek technicznych albo szczegolow implementacji."
+      },
+      {
+        "title": "Porownania w podrozy i zakupach",
+        "description": "Porownuj odleglosci, wage, pojemnosc i temperature bez zmiany aplikacji."
+      },
+      {
+        "title": "Projektowanie i frontend",
+        "description": "Zamieniaj kolory i wymiary na format, ktorego oczekuje uklad lub kod."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Ktory konwerter otworzyc najpierw?",
+        "answer": "Wybierz narzedzie zgodne z wartoscia, ktora juz masz: pamiec, temperature, dlugosc, wage albo kolor."
+      },
+      {
+        "question": "Kiedy uzyc ogolnego konwertera pamieci zamiast narzedzia dla jednej pary jednostek?",
+        "answer": "Uzyj storage-converter, gdy porownujesz kilka jednostek albo chcesz przejsc przez wiecej niz jeden krok przeliczenia."
+      },
+      {
+        "question": "Czy potrzebuje dokladnosci inzynierskiej?",
+        "answer": "Do codziennego uzytku narzedzia daja praktyczne wyniki, ktore latwo odczytac i porownac."
+      }
+    ]
+  },
+  "es": {
+    "eyebrow": "Centro de conversores",
+    "title": "Conversores de unidades, almacenamiento, colores y medidas cotidianas",
+    "description": "Convierte temperatura, distancia, peso, tamanos de archivo y codigos de color con herramientas concretas del navegador.",
+    "intro": "Usa este centro cuando un valor deba pasar a una unidad o formato mas util. Empieza por el tipo de dato que tienes y abre el conversor que encaje con la unidad o salida final.",
+    "featuredSearches": [
+      "convertir gb a mb",
+      "celsius a fahrenheit conversor",
+      "cm a pulgadas conversor",
+      "hex a rgb color"
+    ],
+    "featuredToolIds": [
+      "storage-converter",
+      "gb-to-mb-converter",
+      "celsius-to-fahrenheit-converter",
+      "cm-to-inches-converter"
+    ],
+    "workflows": [
+      {
+        "title": "Revisar tamanos de archivo y almacenamiento",
+        "description": "Elige storage-converter cuando necesites una vista general de almacenamiento y luego usa gb-to-mb-converter o mb-to-gb-converter para una conversion directa entre dos unidades.",
+        "toolId": "storage-converter"
+      },
+      {
+        "title": "Convertir lecturas de temperatura",
+        "description": "Usa celsius-to-fahrenheit-converter para clima, recetas e informes en regiones que trabajan en Fahrenheit, o fahrenheit-to-celsius-converter cuando necesites valores metricos.",
+        "toolId": "celsius-to-fahrenheit-converter"
+      },
+      {
+        "title": "Pasar entre longitudes metricas e imperiales",
+        "description": "Usa cm-to-inches-converter para cambios rapidos de medidas pequenas, inches-to-cm-converter para el sentido inverso, y feet-to-meters-converter o meters-to-feet-converter para dimensiones mayores.",
+        "toolId": "cm-to-inches-converter"
+      },
+      {
+        "title": "Traducir codigos de color",
+        "description": "Abre hex-to-rgb-converter cuando notas de diseno, CSS o documentos de entrega necesiten un valor RGB legible en lugar de un codigo hex.",
+        "toolId": "hex-to-rgb-converter"
+      }
+    ],
+    "useCases": [
+      {
+        "title": "Especificaciones y entrega tecnica",
+        "description": "Mantiene las medidas coherentes antes de compartir maquetas, notas tecnicas o detalles de implementacion."
+      },
+      {
+        "title": "Comparaciones de viaje y compras",
+        "description": "Compara distancias, peso, tamanos de envases y temperaturas sin cambiar de aplicacion."
+      },
+      {
+        "title": "Diseno y trabajo frontend",
+        "description": "Convierte colores y dimensiones al formato que espera tu layout o tu codigo."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Que conversor debo abrir primero?",
+        "answer": "Elige la herramienta que coincida con el valor que ya tienes: almacenamiento, temperatura, longitud, peso o color."
+      },
+      {
+        "question": "Cuando debo usar el conversor general de almacenamiento en lugar de uno de una sola pareja?",
+        "answer": "Usa storage-converter cuando compares varias unidades o quieras pasar por mas de un nivel de almacenamiento a la vez."
+      },
+      {
+        "question": "Necesito precision de ingenieria?",
+        "answer": "Para uso diario, las herramientas muestran resultados practicos que se pueden leer y comparar facilmente."
+      }
+    ]
+  },
+  "de": {
+    "eyebrow": "Umrechner-Hub",
+    "title": "Umrechner fuer Einheiten, Speicher, Farben und Alltagsmasse",
+      "description": "Wandle Temperaturen, Entfernungen, Gewichte, Speichergroessen und Farbcodes mit fokussierten Browser-Tools um.",
+    "intro": "Nutze diesen Hub, wenn ein Wert in eine praktischere Einheit oder ein besseres Format wechseln soll. Starte mit der Art der vorhandenen Daten und oeffne dann den Umrechner fuer die Ziel-Einheit oder Ausgabe.",
+    "featuredSearches": [
+      "gb in mb umrechnen",
+      "celsius in fahrenheit umrechnen",
+      "cm in zoll umrechnen",
+      "hex in rgb umwandeln"
+    ],
+    "featuredToolIds": [
+      "storage-converter",
+      "gb-to-mb-converter",
+      "celsius-to-fahrenheit-converter",
+      "cm-to-inches-converter"
+    ],
+    "workflows": [
+      {
+        "title": "Datei- und Speichergroessen pruefen",
+        "description": "Waehl storage-converter fuer einen allgemeinen Blick auf Speicherwerte und nutze danach gb-to-mb-converter oder mb-to-gb-converter fuer die direkte Umrechnung zwischen zwei Einheiten.",
+        "toolId": "storage-converter"
+      },
+      {
+        "title": "Temperaturwerte umrechnen",
+        "description": "Nutze celsius-to-fahrenheit-converter fuer Wetter, Rezepte und Berichte in Fahrenheit-Umgebungen, oder fahrenheit-to-celsius-converter, wenn du metrische Werte brauchst.",
+        "toolId": "celsius-to-fahrenheit-converter"
+      },
+      {
+        "title": "Zwischen metrischen und imperialen Laengen wechseln",
+        "description": "Nimm cm-to-inches-converter fuer schnelle kleine Massangaben, inches-to-cm-converter fuer die Gegenrichtung und feet-to-meters-converter oder meters-to-feet-converter fuer groessere Distanzen.",
+        "toolId": "cm-to-inches-converter"
+      },
+      {
+        "title": "Farbcodes uebersetzen",
+        "description": "Oeffne hex-to-rgb-converter, wenn Designnotizen, CSS oder Uebergabe-Dokumente einen lesbaren RGB-Wert statt eines Hex-Codes brauchen.",
+        "toolId": "hex-to-rgb-converter"
+      }
+    ],
+    "useCases": [
+      {
+        "title": "Spezifikationen und Uebergaben",
+        "description": "Halte Masse konsistent, bevor du Mockups, technische Notizen oder Implementierungsdetails weitergibst."
+      },
+      {
+        "title": "Vergleiche auf Reisen und beim Einkaufen",
+        "description": "Vergleiche Entfernungen, Gewicht, Behaeltergroessen und Temperaturen ohne App-Wechsel."
+      },
+      {
+        "title": "Design und Frontend",
+        "description": "Wandle Farben und Abmessungen in das Format um, das dein Layout oder Code erwartet."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Welchen Umrechner soll ich zuerst oeffnen?",
+        "answer": "Waehl das Tool passend zu deinem vorhandenen Wert: Speicher, Temperatur, Laenge, Gewicht oder Farbe."
+      },
+      {
+        "question": "Wann nehme ich den allgemeinen Speicher-Umrechner statt eines Tools fuer ein Paar von Einheiten?",
+        "answer": "Nutze storage-converter, wenn du mehrere Einheiten vergleichst oder ueber mehr als einen Speicher-Schritt gehen willst."
+      },
+      {
+        "question": "Brauche ich technische Genauigkeit?",
+        "answer": "Fuer den Alltag liefern die Tools praxisnahe Ergebnisse, die leicht zu lesen und zu vergleichen sind."
+      }
+    ]
+  },
+  "fr": {
+    "eyebrow": "Hub de convertisseurs",
+    "title": "Convertisseurs pour unites, stockage, couleurs et mesures courantes",
+    "description": "Convertissez les temperatures, distances, poids, tailles de fichiers et codes couleur avec des outils de navigateur precis.",
+    "intro": "Utilisez ce hub lorsqu'une valeur doit passer dans une unite ou un format plus utile. Commencez par le type de donnees que vous avez, puis ouvrez le convertisseur correspondant a l'unite cible ou a la sortie attendue.",
+    "featuredSearches": [
+      "convertir gb en mb",
+      "celsius en fahrenheit convertisseur",
+      "cm en pouces convertisseur",
+      "hex en rgb couleur"
+    ],
+    "featuredToolIds": [
+      "storage-converter",
+      "gb-to-mb-converter",
+      "celsius-to-fahrenheit-converter",
+      "cm-to-inches-converter"
+    ],
+    "workflows": [
+      {
+        "title": "Verifier les tailles de fichiers et de stockage",
+        "description": "Choisissez storage-converter pour une vue generale du stockage, puis utilisez gb-to-mb-converter ou mb-to-gb-converter pour une conversion directe entre deux unites.",
+        "toolId": "storage-converter"
+      },
+      {
+        "title": "Convertir des temperatures",
+        "description": "Utilisez celsius-to-fahrenheit-converter pour la meteo, les recettes et les rapports dans les zones en Fahrenheit, ou fahrenheit-to-celsius-converter quand vous avez besoin de valeurs metriques.",
+        "toolId": "celsius-to-fahrenheit-converter"
+      },
+      {
+        "title": "Passer entre longueurs metriques et imperiales",
+        "description": "Prenez cm-to-inches-converter pour des changements rapides de petites mesures, inches-to-cm-converter pour le sens inverse, et feet-to-meters-converter ou meters-to-feet-converter pour des dimensions plus grandes.",
+        "toolId": "cm-to-inches-converter"
+      },
+      {
+        "title": "Traduire des codes couleur",
+        "description": "Ouvrez hex-to-rgb-converter lorsque des notes de design, du CSS ou un dossier de livraison ont besoin d'une valeur RGB lisible au lieu d'un code hex.",
+        "toolId": "hex-to-rgb-converter"
+      }
+    ],
+    "useCases": [
+      {
+        "title": "Specifications et transfert",
+        "description": "Gardez des mesures coherentes avant de partager des maquettes, des notes techniques ou des details d'implementation."
+      },
+      {
+        "title": "Comparaisons en voyage et en magasin",
+        "description": "Comparez les distances, le poids, les contenances et les temperatures sans changer d'application."
+      },
+      {
+        "title": "Design et frontend",
+        "description": "Convertissez les couleurs et les dimensions dans le format attendu par votre maquette ou votre code."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Quel convertisseur dois-je ouvrir en premier?",
+        "answer": "Choisissez l'outil qui correspond a la valeur que vous avez deja : stockage, temperature, longueur, poids ou couleur."
+      },
+      {
+        "question": "Quand faut-il utiliser le convertisseur general de stockage plutot qu'un outil pour une seule paire d'unites?",
+        "answer": "Utilisez storage-converter lorsque vous comparez plusieurs unites ou voulez traverser plus d'un palier de stockage a la fois."
+      },
+      {
+          "question": "Ai-je besoin d'une precision d'ingenierie?",
+        "answer": "Pour un usage quotidien, les outils donnent des resultats pratiques, faciles a lire et a comparer."
+      }
+    ]
+  }
+}

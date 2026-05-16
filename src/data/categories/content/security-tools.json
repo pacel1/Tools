@@ -1,0 +1,277 @@
+{
+  "en": {
+    "eyebrow": "Security hub",
+    "title": "Security tools for passwords and SHA-256 checks",
+      "description": "Generate passwords, create random tokens and calculate SHA-256 hashes for quick verification tasks.",
+      "intro": "This security tools hub is focused on practical secret and verification tasks: creating strong passwords, generating random tokens and producing SHA-256 hashes. Use it when you need a password value, a token-shaped secret or a digest for comparing text, checksums or examples.",
+    "featuredSearches": [
+      "create a strong password",
+      "generate a SHA-256 hash from text",
+      "compare two SHA-256 checksums",
+        "make a temporary login password",
+        "generate a random API token"
+    ],
+    "featuredToolIds": [
+      "password-generator",
+        "random-token-generator",
+        "sha256-generator"
+    ],
+    "workflows": [
+      {
+        "title": "Create a password for a new account",
+        "description": "Choose password-generator when you need a strong login, a test account secret, or a temporary credential that should not be easy to guess.",
+        "toolId": "password-generator"
+      },
+      {
+        "title": "Generate a token-shaped secret",
+        "description": "Choose random-token-generator when you need Base64URL, hex or alphanumeric tokens for API examples, reset links or test fixtures.",
+        "toolId": "random-token-generator"
+      },
+      {
+        "title": "Hash text for verification",
+        "description": "Choose sha256-generator when you want a fixed digest to compare pasted text, confirm a checksum, or show a SHA-256 example.",
+        "toolId": "sha256-generator"
+      }
+    ],
+    "useCases": [
+      {
+        "title": "New account setup",
+        "description": "Generate a password first, then save it in your password manager before signing in anywhere."
+      },
+      {
+        "title": "Checksum check",
+        "description": "Use a SHA-256 digest to confirm that two text values or files are meant to match."
+      }
+    ],
+    "faq": [
+      {
+        "question": "When should I use the password tool instead of SHA-256?",
+        "answer": "Use the password tool when you need a secret that a person can type in later. Use SHA-256 when you need a repeatable fingerprint for comparison."
+      },
+      {
+        "question": "Can SHA-256 reveal the original text?",
+        "answer": "No. SHA-256 is a one-way hash, so the original text cannot be recovered from the digest."
+      }
+    ]
+  },
+  "pl": {
+    "eyebrow": "Hub bezpieczenstwa",
+    "title": "Narzedzia bezpieczenstwa do hasel i SHA-256",
+      "description": "Generuj hasla, losowe tokeny i hashe SHA-256 do szybkiej weryfikacji.",
+      "intro": "Ten hub bezpieczenstwa skupia sie na praktycznych zadaniach z sekretami i weryfikacja: tworzeniu silnych hasel, generowaniu losowych tokenow i liczeniu hashy SHA-256. Uzyj go, gdy potrzebujesz hasla, tokena albo digestu do porownania tekstu, sum kontrolnych lub przykladow.",
+    "featuredSearches": [
+      "stworz silne haslo",
+      "wygeneruj hash SHA-256 z tekstu",
+      "porownaj dwie sumy kontrolne SHA-256",
+        "utworz tymczasowe haslo logowania",
+        "wygeneruj losowy token api"
+    ],
+    "featuredToolIds": [
+      "password-generator",
+        "random-token-generator",
+        "sha256-generator"
+    ],
+    "workflows": [
+      {
+        "title": "Utworz haslo do nowego konta",
+        "description": "Wybierz password-generator, gdy potrzebujesz silnego loginu, sekretu do konta testowego albo tymczasowego hasla, ktore nie powinno byc latwe do odgadniecia.",
+        "toolId": "password-generator"
+      },
+      {
+        "title": "Wygeneruj sekret w formie tokena",
+        "description": "Wybierz random-token-generator, gdy potrzebujesz tokenow Base64URL, hex albo alfanumerycznych do przykladow API, linkow resetu lub fixture testowych.",
+        "toolId": "random-token-generator"
+      },
+      {
+        "title": "Zahaszuj tekst do weryfikacji",
+        "description": "Wybierz sha256-generator, gdy chcesz uzyskac staly digest do porownania wklejonego tekstu, potwierdzenia sumy kontrolnej albo pokazania przykladu SHA-256.",
+        "toolId": "sha256-generator"
+      }
+    ],
+    "useCases": [
+      {
+        "title": "Zakladanie nowego konta",
+        "description": "Najpierw wygeneruj haslo, a potem zapisz je w menedzerze hasel przed pierwszym logowaniem."
+      },
+      {
+        "title": "Sprawdzenie sumy kontrolnej",
+        "description": "Uzyj digestu SHA-256, aby potwierdzic, ze dwa teksty albo pliki maja byc takie same."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Kiedy uzyc narzedzia do hasel, a kiedy SHA-256?",
+        "answer": "Uzyj narzedzia do hasel, gdy potrzebujesz sekretu wpisywanego pozniej przez czlowieka. Uzyj SHA-256, gdy potrzebujesz powtarzalnego odcisku do porownania."
+      },
+      {
+        "question": "Czy SHA-256 ujawnia oryginalny tekst?",
+        "answer": "Nie. SHA-256 to jednokierunkowa funkcja haszujaca, wiec oryginalnego tekstu nie da sie odzyskac z digestu."
+      }
+    ]
+  },
+  "es": {
+    "eyebrow": "Centro de seguridad",
+    "title": "Herramientas de seguridad para contrasenas y SHA-256",
+      "description": "Genera contrasenas, tokens aleatorios y hashes SHA-256 para comprobaciones rapidas.",
+      "intro": "Este centro de seguridad se centra en tareas practicas de secretos y verificacion: crear contrasenas fuertes, generar tokens aleatorios y calcular hashes SHA-256. Usalo cuando necesites una contrasena, un token o un digest para comparar texto, checksums o ejemplos.",
+    "featuredSearches": [
+      "crear una contrasena fuerte",
+      "generar un hash SHA-256 desde texto",
+      "comparar dos sumas de verificacion SHA-256",
+        "crear una contrasena temporal de acceso",
+        "generar un token api aleatorio"
+    ],
+    "featuredToolIds": [
+      "password-generator",
+        "random-token-generator",
+        "sha256-generator"
+    ],
+    "workflows": [
+      {
+        "title": "Crear una contrasena para una cuenta nueva",
+        "description": "Elige password-generator cuando necesites un inicio de sesion fuerte, un secreto para una cuenta de prueba o una credencial temporal dificil de adivinar.",
+        "toolId": "password-generator"
+      },
+      {
+        "title": "Generar un secreto con forma de token",
+        "description": "Elige random-token-generator cuando necesites tokens Base64URL, hex o alfanumericos para ejemplos de API, enlaces de reset o fixtures de prueba.",
+        "toolId": "random-token-generator"
+      },
+      {
+        "title": "Convertir texto en hash para verificacion",
+        "description": "Elige sha256-generator cuando quieras un digest fijo para comparar texto pegado, confirmar una suma de verificacion o mostrar un ejemplo de SHA-256.",
+        "toolId": "sha256-generator"
+      }
+    ],
+    "useCases": [
+      {
+        "title": "Alta de credenciales",
+        "description": "Genera primero una contrasena y guardala enseguida en tu gestor de contrasenas antes de iniciar sesion."
+      },
+      {
+        "title": "Comprobacion de checksum",
+        "description": "Usa un digest SHA-256 para confirmar que dos textos o archivos deben coincidir."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Cuando debo usar la herramienta de contrasenas en lugar de SHA-256?",
+        "answer": "Usa la herramienta de contrasenas cuando necesites un secreto que una persona vaya a escribir despues. Usa SHA-256 cuando necesites una huella repetible para comparar."
+      },
+      {
+        "question": "Puede SHA-256 revelar el texto original?",
+        "answer": "No. SHA-256 es una funcion hash de una sola via, asi que no se puede recuperar el texto original a partir del digest."
+      }
+    ]
+  },
+  "de": {
+    "eyebrow": "Security-Hub",
+    "title": "Security-Tools fuer Passwoerter und SHA-256",
+      "description": "Erzeuge Passwoerter, Zufalls-Tokens und SHA-256-Hashes fuer schnelle Pruefungen.",
+      "intro": "Dieser Security-Hub konzentriert sich auf praktische Secret- und Pruefaufgaben: starke Passwoerter erzeugen, zufaellige Tokens erstellen und SHA-256-Hashes bilden. Nutze ihn, wenn du ein Passwort, ein tokenfoermiges Secret oder einen Digest zum Vergleichen von Text, Pruefsummen oder Beispielen brauchst.",
+    "featuredSearches": [
+      "starkes passwort erzeugen",
+      "einen SHA-256-Hash aus Text bilden",
+      "zwei SHA-256-Pruefsummen vergleichen",
+        "temporaeres login-passwort erstellen",
+        "zufaelliges api token erzeugen"
+    ],
+    "featuredToolIds": [
+      "password-generator",
+        "random-token-generator",
+        "sha256-generator"
+    ],
+    "workflows": [
+      {
+        "title": "Passwort fuer ein neues Konto erstellen",
+        "description": "Waehle password-generator, wenn du ein sicheres Login, ein Testkonto-Geheimnis oder ein temporaeres Kennwort brauchst, das nicht leicht zu erraten sein soll.",
+        "toolId": "password-generator"
+      },
+      {
+        "title": "Tokenfoermiges Secret erzeugen",
+        "description": "Waehle random-token-generator, wenn du Base64URL-, Hex- oder alphanumerische Tokens fuer API-Beispiele, Reset-Links oder Test-Fixtures brauchst.",
+        "toolId": "random-token-generator"
+      },
+      {
+        "title": "Text zur Pruefung hashen",
+        "description": "Waehle sha256-generator, wenn du einen festen Digest brauchst, um eingefuegten Text zu vergleichen, eine Pruefsumme zu bestaetigen oder ein SHA-256-Beispiel zu zeigen.",
+        "toolId": "sha256-generator"
+      }
+    ],
+    "useCases": [
+      {
+        "title": "Zugangsdaten anlegen",
+        "description": "Erzeuge zuerst ein Passwort und speichere es sofort im Passwort-Manager, bevor du dich irgendwo anmeldest."
+      },
+      {
+        "title": "Pruefsumme vergleichen",
+        "description": "Nutze einen SHA-256-Digest, um zu bestaetigen, dass zwei Texte oder Dateien gleich sein sollen."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Wann nehme ich das Passwort-Tool statt SHA-256?",
+        "answer": "Nutze das Passwort-Tool, wenn du ein Geheimnis brauchst, das spaeter ein Mensch eingeben soll. Nutze SHA-256, wenn du einen wiederholbaren Fingerabdruck zum Vergleichen brauchst."
+      },
+      {
+        "question": "Kann SHA-256 den Originaltext offenlegen?",
+        "answer": "Nein. SHA-256 ist eine Einweg-Hashfunktion, daher laesst sich der Originaltext aus dem Digest nicht zurueckgewinnen."
+      }
+    ]
+  },
+  "fr": {
+    "eyebrow": "Hub securite",
+    "title": "Outils de securite pour mots de passe et SHA-256",
+      "description": "Generez des mots de passe, des tokens aleatoires et des hashes SHA-256 pour des controles rapides.",
+      "intro": "Ce hub de securite se concentre sur des taches pratiques de secrets et de verification: creer des mots de passe robustes, generer des tokens aleatoires et produire des hashes SHA-256. Utilisez-le quand vous avez besoin d'un mot de passe, d'un token ou d'un digest pour comparer du texte, des checksums ou des exemples.",
+    "featuredSearches": [
+      "creer un mot de passe fort",
+      "generer un hash SHA-256 depuis du texte",
+      "comparer deux sommes de controle SHA-256",
+        "creer un mot de passe temporaire",
+        "generer un token api aleatoire"
+    ],
+    "featuredToolIds": [
+      "password-generator",
+        "random-token-generator",
+        "sha256-generator"
+    ],
+    "workflows": [
+      {
+        "title": "Creer un mot de passe pour un nouveau compte",
+        "description": "Choisissez password-generator quand il vous faut un identifiant fort, un secret de compte test ou un acces temporaire difficile a deviner.",
+        "toolId": "password-generator"
+      },
+      {
+        "title": "Generer un secret sous forme de token",
+        "description": "Choisissez random-token-generator quand il vous faut des tokens Base64URL, hex ou alphanumeriques pour exemples API, liens de reset ou fixtures de test.",
+        "toolId": "random-token-generator"
+      },
+      {
+        "title": "Hasher du texte pour verification",
+        "description": "Choisissez sha256-generator quand vous voulez un digest fixe pour comparer du texte colle, confirmer une somme de controle ou montrer un exemple SHA-256.",
+        "toolId": "sha256-generator"
+      }
+    ],
+    "useCases": [
+      {
+        "title": "Creation de credentiels",
+        "description": "Generez d'abord un mot de passe, puis enregistrez-le aussitot dans votre gestionnaire de mots de passe avant de vous connecter."
+      },
+      {
+        "title": "Verification de checksum",
+        "description": "Utilisez un digest SHA-256 pour confirmer que deux textes ou fichiers sont censes correspondre."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Quand utiliser l'outil de mot de passe plutot que SHA-256?",
+        "answer": "Utilisez l'outil de mot de passe quand vous avez besoin d'un secret qu'une personne saisira plus tard. Utilisez SHA-256 quand vous avez besoin d'une empreinte reproductible pour comparer."
+      },
+      {
+        "question": "SHA-256 peut-il reveler le texte d'origine?",
+        "answer": "Non. SHA-256 est une fonction de hachage a sens unique, donc le texte d'origine ne peut pas etre recupere a partir du digest."
+      }
+    ]
+  }
+}

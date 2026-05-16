@@ -13,7 +13,7 @@ import { normalizeMetaDescription } from "@/lib/seo/meta-description";
 import { normalizeMetaTitle } from "@/lib/seo/meta-title";
 import { buildSocialMetadata } from "@/lib/seo/social";
 import { buildCategoryAlternates } from "@/lib/seo/tool-metadata";
-import { getActiveCategories } from "@/lib/tools/categories";
+import { getIndexableCategories } from "@/lib/tools/categories";
 import {
   getCategoryHubContent,
   type CategoryHubContent
@@ -166,6 +166,14 @@ const metaDescriptionFillers = {
   }
 } as const;
 
+const localizedFallbackStartTools = {
+  en: "Good starting points for this category:",
+  pl: "Dobre punkty startowe dla tej kategorii:",
+  es: "Buenos puntos de partida para esta categoria:",
+  de: "Gute Startpunkte fuer diese Kategorie:",
+  fr: "Bons points de depart pour cette categorie :"
+} as const;
+
 function buildToolLinks(locale: Locale, category: ToolCategory) {
   return getToolsByCategory(locale, category).map(({ definition, content }) => ({
     id: definition.id,
@@ -250,9 +258,9 @@ function buildFallbackCategoryHubContent({
         question: `${fallbackTitle}: ${categoryPageLabels[locale].choose.toLowerCase()}?`,
         answer:
           workflowTools.length > 0
-            ? `${workflowTools
+            ? `${localizedFallbackStartTools[locale]} ${workflowTools
                 .map((tool) => tool.title)
-                .join(", ")} sa dobrymi punktami startowymi dla tej kategorii.`
+                .join(", ")}.`
             : copy.faqAnswer
       }
     ]
@@ -283,7 +291,7 @@ function getCategoryPageContent({
 
 export function generateStaticParams() {
   return locales.flatMap((locale) =>
-    getActiveCategories(locale).map((category) => ({ locale, category }))
+    getIndexableCategories(locale).map((category) => ({ locale, category }))
   );
 }
 
@@ -313,11 +321,13 @@ export async function generateMetadata({
     title
   );
   const canonical = buildCategoryCanonical(locale, category);
+  const shouldIndexCategory = getIndexableCategories(locale).includes(category);
 
   return {
     metadataBase: new URL(getSiteUrl()),
     title,
     description,
+    robots: shouldIndexCategory ? undefined : { index: false, follow: true },
     alternates: {
       canonical,
       ...buildCategoryAlternates(category)

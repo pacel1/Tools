@@ -1,0 +1,79 @@
+{
+  "toolId": "random-token-generator",
+  "locale": "pl",
+  "slug": "generator-losowych-tokenow",
+  "h1": "Generator losowych tokenow",
+  "title": "Generator losowych tokenow",
+  "shortDescription": "Generuj losowe tokeny do kluczy API, linkow resetu i sekretow testowych.",
+  "metaTitle": "Generator losowych tokenow",
+  "metaDescription": "Generuj losowe tokeny Base64URL, hex lub alfanumeryczne do kluczy API, linkow resetu i testow.",
+  "intro": "Utworz losowe tokeny z wybrana dlugoscia, formatem, liczba wynikow i opcjonalnym prefiksem.",
+  "overview": "To narzedzie tworzy losowe tokeny do technicznych workflowow, w ktorych przewidywalna wartosc bylaby ryzykowna albo mylaca. Wybierz Base64URL dla sekretow bezpiecznych w adresach URL, hex dla wartosci podobnych do checksum, albo format alfanumeryczny dla systemow akceptujacych tylko litery i cyfry.\n\nUzywaj tokenow do sekretow testowych, przykladow linkow resetu, tymczasowych identyfikatorow i fixture w development. Nie wklejaj produkcyjnych sekretow do publicznych dokumentow ani ticketow; prawdziwe dane trzymaj w managerze hasel albo secret store.",
+  "howItWorks": [
+    "Wybierz dlugosc tokena i liczbe wynikow.",
+    "Wybierz Base64URL, hex albo format alfanumeryczny.",
+    "Dodaj opcjonalny prefiks, jesli system go oczekuje."
+  ],
+  "useCases": [
+    {
+      "title": "Placeholder klucza API",
+      "description": "Utworz realistyczny ksztalt tokena do dokumentacji, fixture albo lokalnego developmentu."
+    },
+    {
+      "title": "Sekret linku resetu",
+      "description": "Wygeneruj wartosci bezpieczne dla URL do testow i przykladow resetowania hasla."
+    },
+    {
+      "title": "Tymczasowy token testowy",
+      "description": "Wygeneruj jeden lub wiele tokenow do QA, demo albo danych mock."
+    }
+  ],
+  "examples": [
+    {
+      "title": "Token Base64URL",
+      "input": "Dlugosc: 32; Liczba: 1; Format: Base64URL",
+      "output": "N4nK4y3zQx7fA9mP2sV6tB8cD0eR1uW5",
+      "description": "Token bezpieczny w URL, dobry do przykladow linkow resetu."
+    },
+    {
+      "title": "Token hex z prefiksem",
+      "input": "Dlugosc: 24; Liczba: 1; Format: Hex; Prefiks: tok_",
+      "output": "tok_4f8a13c09d21b7e6a3c55f91",
+      "description": "Prefiksowany token hex dla systemow oznaczajacych typ sekretu."
+    },
+    {
+      "title": "Kilka tokenow testowych",
+      "input": "Dlugosc: 16; Liczba: 3; Format: Alfanumeryczny",
+      "output": "k8Jm2Lq9Tz4Vn6Px",
+      "description": "Kilka krotkich tokenow przydaje sie przy kontach mock i fixture."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Ktory format tokena wybrac?",
+      "answer": "Wybierz Base64URL dla sekretow w adresach URL, hex dla systemow oczekujacych wartosci szesnastkowych i alfanumeryczny dla formularzy odrzucajacych symbole."
+    },
+    {
+      "question": "Czy prefiks wlicza sie do losowej dlugosci?",
+      "answer": "Nie. Dlugosc dotyczy tylko czesci losowej. Prefiks jest dodawany przed kazdym tokenem po wygenerowaniu."
+    },
+    {
+      "question": "Czy moge uzyc tych tokenow produkcyjnie?",
+      "answer": "Generator uzywa kryptograficznego losowania przegladarki, gdy jest dostepne, ale produkcyjne sekrety powinny powstawac i byc przechowywane w standardowym procesie zarzadzania sekretami."
+    },
+    {
+      "question": "Po co generowac wiecej niz jeden token?",
+      "answer": "Wiele tokenow przydaje sie do fixture, kont QA i przykladow, gdzie kazdy rekord powinien miec inna wartosc wygladajaca jak sekret."
+    }
+  ],
+  "seo": {
+    "title": "Generator losowych tokenow",
+    "description": "Generuj losowe tokeny Base64URL, hex lub alfanumeryczne do kluczy API, linkow resetu i testow.",
+    "keywords": [
+      "generator tokenow",
+      "losowy token",
+      "generator base64url",
+      "generator tokenow hex"
+    ]
+  }
+}

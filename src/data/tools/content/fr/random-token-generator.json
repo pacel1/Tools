@@ -1,0 +1,79 @@
+{
+  "toolId": "random-token-generator",
+  "locale": "fr",
+  "slug": "generateur-token-aleatoire",
+  "h1": "Generateur de tokens aleatoires",
+  "title": "Generateur de tokens aleatoires",
+  "shortDescription": "Generez des tokens aleatoires pour cles API, liens de reset et secrets de test.",
+  "metaTitle": "Generateur de tokens",
+  "metaDescription": "Generez des tokens aleatoires en Base64URL, hex ou alphanumerique pour cles API, liens de reset et tests.",
+  "intro": "Creez des tokens aleatoires avec longueur, format, nombre et prefixe optionnel.",
+  "overview": "Cet outil cree des chaines aleatoires pour les workflows techniques ou une valeur previsible serait risquee ou trompeuse. Choisissez Base64URL pour des secrets compatibles avec les URL, hex pour des valeurs proches de checksums, ou alphanumerique lorsqu'un systeme accepte seulement lettres et chiffres.\n\nUtilisez ces tokens pour secrets de test, exemples de liens de reset, identifiants temporaires et fixtures de developpement. Ne collez pas de secrets de production dans des tickets partages ou documents publics; les vrais identifiants doivent rester dans un gestionnaire de secrets.",
+  "howItWorks": [
+    "Choisissez la longueur du token et le nombre de resultats.",
+    "Selectionnez Base64URL, hex ou alphanumerique.",
+    "Ajoutez un prefixe optionnel si votre systeme l'attend."
+  ],
+  "useCases": [
+    {
+      "title": "Placeholder de cle API",
+      "description": "Creez une forme de token realiste pour documentation, fixtures ou developpement local."
+    },
+    {
+      "title": "Secret de lien de reset",
+      "description": "Generez des valeurs sures pour URL dans des tests ou exemples de reset."
+    },
+    {
+      "title": "Token temporaire de test",
+      "description": "Produisez un ou plusieurs tokens jetables pour QA, demos ou donnees mock."
+    }
+  ],
+  "examples": [
+    {
+      "title": "Token Base64URL",
+      "input": "Longueur: 32; Nombre: 1; Format: Base64URL",
+      "output": "N4nK4y3zQx7fA9mP2sV6tB8cD0eR1uW5",
+      "description": "Un token compatible URL pour exemples de reset ou callbacks."
+    },
+    {
+      "title": "Token hex avec prefixe",
+      "input": "Longueur: 24; Nombre: 1; Format: Hex; Prefixe: tok_",
+      "output": "tok_4f8a13c09d21b7e6a3c55f91",
+      "description": "Un token hex avec prefixe pour systemes qui indiquent le type de secret."
+    },
+    {
+      "title": "Plusieurs tokens de test",
+      "input": "Longueur: 16; Nombre: 3; Format: Alphanumerique",
+      "output": "k8Jm2Lq9Tz4Vn6Px",
+      "description": "Plusieurs tokens courts sont utiles pour utilisateurs mock et fixtures."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Quel format de token choisir?",
+      "answer": "Utilisez Base64URL pour des secrets dans une URL, hex pour les systemes qui attendent des valeurs hexadecimales et alphanumerique pour les formulaires qui refusent les symboles."
+    },
+    {
+      "question": "Le prefixe compte-t-il dans la longueur aleatoire?",
+      "answer": "Non. Le reglage de longueur controle seulement la partie aleatoire. Le prefixe est ajoute devant chaque token apres generation."
+    },
+    {
+      "question": "Puis-je utiliser ces tokens en production?",
+      "answer": "Le generateur utilise l'aleatoire cryptographique du navigateur quand il est disponible, mais les vrais secrets doivent etre crees et stockes dans votre processus habituel de gestion des secrets."
+    },
+    {
+      "question": "Pourquoi generer plusieurs tokens?",
+      "answer": "Plusieurs tokens sont utiles pour fixtures, comptes QA et exemples ou chaque enregistrement doit avoir une valeur differente qui ressemble a un secret."
+    }
+  ],
+  "seo": {
+    "title": "Generateur de tokens",
+    "description": "Generez des tokens aleatoires en Base64URL, hex ou alphanumerique pour cles API, liens de reset et tests.",
+    "keywords": [
+      "generateur token",
+      "token aleatoire",
+      "token base64url",
+      "generateur token hex"
+    ]
+  }
+}

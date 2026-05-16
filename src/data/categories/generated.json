@@ -121,6 +121,7 @@
   ],
   "security-tools": [
     "password-generator",
+    "random-token-generator",
     "sha256-generator"
   ]
 }

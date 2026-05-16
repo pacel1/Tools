@@ -71,6 +71,7 @@ import MarkdownToHtmlTool from "@/components/tools/markdown-to-html-tool";
 import MarkupCalculatorTool from "@/components/tools/markup-calculator-tool";
 import MmToInchesConverterTool from "@/components/tools/mm-to-inches-converter-tool";
 import PlaceholderImageGeneratorTool from "@/components/tools/placeholder-image-generator-tool";
+import RandomTokenGeneratorTool from "@/components/tools/random-token-generator-tool";
 import SimpleInterestCalculatorTool from "@/components/tools/simple-interest-calculator-tool";
 import ContrastCheckerTool from "@/components/tools/contrast-checker-tool";
 import HtmlCleanerTool from "@/components/tools/html-cleaner-tool";
@@ -176,6 +177,7 @@ import { toolLogic as markdownToHtmlLogic } from "@/tools/logic/markdown-to-html
 import { toolLogic as markupCalculatorLogic } from "@/tools/logic/markup-calculator";
 import { toolLogic as mmToInchesConverterLogic } from "@/tools/logic/mm-to-inches-converter";
 import { toolLogic as placeholderImageGeneratorLogic } from "@/tools/logic/placeholder-image-generator";
+import { toolLogic as randomTokenGeneratorLogic } from "@/tools/logic/random-token-generator";
 import { toolLogic as simpleInterestCalculatorLogic } from "@/tools/logic/simple-interest-calculator";
 import { toolLogic as contrastCheckerLogic } from "@/tools/logic/contrast-checker";
 import { toolLogic as htmlCleanerLogic } from "@/tools/logic/html-cleaner";
@@ -281,6 +283,7 @@ import { toolInputSchema as markdownToHtmlInputSchema, toolOutputSchema as markd
 import { toolInputSchema as markupCalculatorInputSchema, toolOutputSchema as markupCalculatorOutputSchema } from "@/tools/schema/markup-calculator";
 import { toolInputSchema as mmToInchesConverterInputSchema, toolOutputSchema as mmToInchesConverterOutputSchema } from "@/tools/schema/mm-to-inches-converter";
 import { toolInputSchema as placeholderImageGeneratorInputSchema, toolOutputSchema as placeholderImageGeneratorOutputSchema } from "@/tools/schema/placeholder-image-generator";
+import { toolInputSchema as randomTokenGeneratorInputSchema, toolOutputSchema as randomTokenGeneratorOutputSchema } from "@/tools/schema/random-token-generator";
 import { toolInputSchema as simpleInterestCalculatorInputSchema, toolOutputSchema as simpleInterestCalculatorOutputSchema } from "@/tools/schema/simple-interest-calculator";
 import { toolInputSchema as contrastCheckerInputSchema, toolOutputSchema as contrastCheckerOutputSchema } from "@/tools/schema/contrast-checker";
 import { toolInputSchema as htmlCleanerInputSchema, toolOutputSchema as htmlCleanerOutputSchema } from "@/tools/schema/html-cleaner";
@@ -388,6 +391,7 @@ export const toolComponents = {
   MarkupCalculatorTool,
   MmToInchesConverterTool,
   PlaceholderImageGeneratorTool,
+  RandomTokenGeneratorTool,
   SimpleInterestCalculatorTool,
   ContrastCheckerTool,
   HtmlCleanerTool,
@@ -496,6 +500,7 @@ export const toolLogicModules = {
   "markup-calculator": markupCalculatorLogic,
   "mm-to-inches-converter": mmToInchesConverterLogic,
   "placeholder-image-generator": placeholderImageGeneratorLogic,
+  "random-token-generator": randomTokenGeneratorLogic,
   "simple-interest-calculator": simpleInterestCalculatorLogic,
   "contrast-checker": contrastCheckerLogic,
   "html-cleaner": htmlCleanerLogic,
@@ -604,6 +609,7 @@ export const inputSchemas = {
   "markupCalculatorInputSchema": markupCalculatorInputSchema,
   "mmToInchesConverterInputSchema": mmToInchesConverterInputSchema,
   "placeholderImageGeneratorInputSchema": placeholderImageGeneratorInputSchema,
+  "randomTokenGeneratorInputSchema": randomTokenGeneratorInputSchema,
   "simpleInterestCalculatorInputSchema": simpleInterestCalculatorInputSchema,
   "contrastCheckerInputSchema": contrastCheckerInputSchema,
   "htmlCleanerInputSchema": htmlCleanerInputSchema,
@@ -712,6 +718,7 @@ export const outputSchemas = {
   "markupCalculatorOutputSchema": markupCalculatorOutputSchema,
   "mmToInchesConverterOutputSchema": mmToInchesConverterOutputSchema,
   "placeholderImageGeneratorOutputSchema": placeholderImageGeneratorOutputSchema,
+  "randomTokenGeneratorOutputSchema": randomTokenGeneratorOutputSchema,
   "simpleInterestCalculatorOutputSchema": simpleInterestCalculatorOutputSchema,
   "contrastCheckerOutputSchema": contrastCheckerOutputSchema,
   "htmlCleanerOutputSchema": htmlCleanerOutputSchema,

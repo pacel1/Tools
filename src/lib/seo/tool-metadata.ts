@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import type { Locale } from "@/lib/constants";
+import { toolCategories, type Locale, type ToolCategory } from "@/lib/constants";
 import { getSiteUrl } from "@/lib/env";
 import { buildLanguageAlternates } from "@/lib/seo/alternates";
 import { normalizeMetaDescription } from "@/lib/seo/meta-description";
 import { normalizeMetaTitle } from "@/lib/seo/meta-title";
 import { buildSocialMetadata } from "@/lib/seo/social";
+import { getIndexableCategories } from "@/lib/tools/categories";
 import { buildToolHref } from "@/lib/tools/internal-linking";
 import { getContentById, getDefinitionById } from "@/lib/tools/registry";
 
@@ -61,5 +62,15 @@ export function buildToolMetadata(toolId: string, locale: Locale): Metadata {
 }
 
 export function buildCategoryAlternates(category: string) {
-  return buildLanguageAlternates((locale) => `/${locale}/${category}`);
+  if (!toolCategories.includes(category as ToolCategory)) {
+    return {};
+  }
+
+  const toolCategory = category as ToolCategory;
+
+  return buildLanguageAlternates((locale) =>
+    getIndexableCategories(locale).includes(toolCategory)
+      ? `/${locale}/${toolCategory}`
+      : null
+  );
 }

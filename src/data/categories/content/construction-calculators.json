@@ -1,0 +1,252 @@
+{
+  "en": {
+    "eyebrow": "Construction hub",
+    "title": "Construction calculators for material estimates and planning",
+    "description": "Estimate concrete, roofing, insulation, plaster, tiles and other building materials in one focused category.",
+    "intro": "This construction calculator hub groups the highest-intent tools for planning renovation and building work. Start with the material you need to estimate, then compare related tools for adjacent parts of the project such as insulation, waterproofing, drywall or finishing.",
+    "featuredSearches": [
+      "concrete calculator",
+      "roof calculator",
+      "insulation calculator",
+      "tile calculator"
+    ],
+    "featuredToolIds": [
+      "kalkulator-betonu",
+      "kalkulator-dachu",
+      "kalkulator-styropianu",
+      "kalkulator-plytek"
+    ],
+    "workflows": [
+      {
+        "title": "Estimate a concrete pour",
+        "description": "Choose this when you need slab, footing or post quantities. Enter the main dimensions first, then use the result to decide whether you need bags, ready-mix or a margin for waste.",
+        "toolId": "kalkulator-betonu"
+      },
+      {
+        "title": "Plan roof material quantities",
+        "description": "Choose this when you are measuring a roof surface and need a first pass on material amounts. Use it before checking insulation, drainage or finishing items for the same project.",
+        "toolId": "kalkulator-dachu"
+      }
+    ],
+    "useCases": [
+      {
+        "title": "Renovation planning",
+        "description": "Compare material quantities before ordering concrete, tiles, insulation or finishing materials."
+      },
+      {
+        "title": "Contractor checks",
+        "description": "Use quick estimates to review supplier quotes and spot missing allowance for waste."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Are these construction calculators exact quotes?",
+        "answer": "No. They provide planning estimates and should be checked against local product data, site conditions and contractor guidance."
+      },
+      {
+        "question": "Do the calculators include waste?",
+        "answer": "Many tools include waste or margin fields so you can compare a base estimate with a safer order quantity."
+      }
+    ]
+  },
+  "pl": {
+    "eyebrow": "Hub budowlany",
+    "title": "Kalkulatory budowlane do liczenia materialow i planowania prac",
+    "description": "Policz beton, dach, ocieplenie, tynki, plytki i inne materialy potrzebne do remontu oraz budowy.",
+    "intro": "Ten hub kalkulatorow budowlanych zbiera narzedzia o najwyzszej intencji zakupu i wykonania. Najpierw oszacuj glowny material, a potem sprawdz narzedzia dla kolejnych etapow, takich jak ocieplenie, hydroizolacja, zabudowa GK czy wykonczenie.",
+    "featuredSearches": [
+      "kalkulator betonu",
+      "kalkulator dachu",
+      "kalkulator ocieplenia",
+      "kalkulator plytek"
+    ],
+    "featuredToolIds": [
+      "kalkulator-betonu",
+      "kalkulator-dachu",
+      "kalkulator-styropianu",
+      "kalkulator-plytek"
+    ],
+    "workflows": [
+      {
+        "title": "Policz beton na fundament, plyte albo slupek",
+        "description": "Wybierz ten kalkulator, gdy chcesz szybko przejsc od wymiarow do objetosci, a nastepnie do liczby workow, betonu towarowego lub zapasu na straty.",
+        "toolId": "kalkulator-betonu"
+      },
+      {
+        "title": "Oszacuj materialy na dach",
+        "description": "Wybierz ten kalkulator, gdy liczysz powierzchnie dachu i chcesz poznac orientacyjne ilosci materialu przed sprawdzeniem ocieplenia, rynien lub wykonczenia.",
+        "toolId": "kalkulator-dachu"
+      }
+    ],
+    "useCases": [
+      {
+        "title": "Planowanie zakupow",
+        "description": "Sprawdz przyblizone ilosci materialow przed zamowieniem betonu, plytek, ocieplenia lub wykonczenia."
+      },
+      {
+        "title": "Kontrola wyceny",
+        "description": "Porownaj szybkie obliczenia z oferta wykonawcy i upewnij sie, ze uwzgledniono zapas materialu."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Czy kalkulatory budowlane daja gotowa wycene?",
+        "answer": "Nie. Daja szybkie szacunki do planowania, ktore warto porownac z karta produktu, warunkami na budowie i zaleceniami wykonawcy."
+      },
+      {
+        "question": "Czy moge doliczyc zapas materialu?",
+        "answer": "Wiele narzedzi ma pole zapasu lub strat, dzieki czemu mozna porownac wynik bazowy z bezpieczniejsza iloscia do zamowienia."
+      }
+    ]
+  },
+  "es": {
+    "eyebrow": "Centro de construccion",
+    "title": "Calculadoras de construccion para materiales y planificacion",
+    "description": "Calcula hormigon, tejado, aislamiento, yeso, azulejos y otros materiales de obra en una sola categoria.",
+    "intro": "Este centro agrupa calculadoras para estimar cantidades antes de comprar o comparar presupuestos. Empieza por el material principal y luego revisa herramientas relacionadas para aislamiento, impermeabilizacion, pladur o acabados.",
+    "featuredSearches": [
+      "calculadora de hormigon",
+      "calculadora de tejado",
+      "calculadora de aislamiento",
+      "calculadora de azulejos"
+    ],
+    "featuredToolIds": [
+      "kalkulator-betonu",
+      "kalkulator-dachu",
+      "kalkulator-styropianu",
+      "kalkulator-plytek"
+    ],
+    "workflows": [
+      {
+        "title": "Calcular una colada de hormigon",
+        "description": "Elige esta herramienta cuando necesites medir una losa, una zapata o un poste. Empieza por las dimensiones y convierte el volumen en sacos, hormigon preparado o margen de seguridad.",
+        "toolId": "kalkulator-betonu"
+      },
+      {
+        "title": "Planificar materiales de tejado",
+        "description": "Elige esta herramienta cuando debas estimar la superficie del tejado y quieras una primera cifra antes de revisar aislamiento, canalones o remates.",
+        "toolId": "kalkulator-dachu"
+      }
+    ],
+    "useCases": [
+      {
+        "title": "Planificacion de reforma",
+        "description": "Compara cantidades de material antes de pedir hormigon, azulejos, aislamiento o acabados."
+      },
+      {
+        "title": "Revision de presupuestos",
+        "description": "Usa estimaciones rapidas para comprobar ofertas de proveedores y detectar si falta margen por desperdicio."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Estas calculadoras dan un presupuesto exacto?",
+        "answer": "No. Dan estimaciones de planificacion y conviene contrastarlas con datos de producto, condiciones de obra y criterio del contratista."
+      },
+      {
+        "question": "Incluyen desperdicio?",
+        "answer": "Muchas herramientas incluyen campos de merma o margen para comparar una estimacion base con una cantidad de pedido mas segura."
+      }
+    ]
+  },
+  "de": {
+    "eyebrow": "Bau-Hub",
+    "title": "Bau-Rechner fuer Materialmengen und Planung",
+    "description": "Schaetze Beton, Dach, Daemmung, Putz, Fliesen und andere Baustoffe in einer klaren Kategorie.",
+    "intro": "Dieser Hub fasst Rechner fuer Mengenplanung und schnelle Kontrolle zusammen. Starte mit dem Hauptmaterial und pruefe danach passende Werkzeuge fuer Daemmung, Abdichtung, Trockenbau oder Ausbau.",
+    "featuredSearches": [
+      "beton rechner",
+      "dach rechner",
+      "daemmung rechner",
+      "fliesen rechner"
+    ],
+    "featuredToolIds": [
+      "kalkulator-betonu",
+      "kalkulator-dachu",
+      "kalkulator-styropianu",
+      "kalkulator-plytek"
+    ],
+    "workflows": [
+      {
+        "title": "Betonmenge fuer Fundament, Platte oder Pfosten bestimmen",
+        "description": "Waehl diesen Rechner, wenn du von Laenge, Breite und Hoehe direkt zur Menge kommen willst. Danach kannst du Sackware, Transportbeton oder einen Sicherheitszuschlag ableiten.",
+        "toolId": "kalkulator-betonu"
+      },
+      {
+        "title": "Material fuer das Dach planen",
+        "description": "Waehl diesen Rechner, wenn du die Dachflaeche abschaetzen und zuerst die Grundmenge kennen willst, bevor du Daemmung, Rinnen oder Abschlussarbeiten pruefst.",
+        "toolId": "kalkulator-dachu"
+      }
+    ],
+    "useCases": [
+      {
+        "title": "Renovierung planen",
+        "description": "Vergleiche Materialmengen vor der Bestellung von Beton, Fliesen, Daemmung oder Ausbau-Material."
+      },
+      {
+        "title": "Angebote pruefen",
+        "description": "Nutze schnelle Schaetzungen, um Lieferantenangebote zu vergleichen und fehlende Reserven fuer Verschnitt zu erkennen."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Sind diese Bau-Rechner verbindliche Angebote?",
+        "answer": "Nein. Sie liefern Planungswerte und sollten mit Produktdaten, Baustellenbedingungen und Vorgaben des Fachbetriebs abgeglichen werden."
+      },
+      {
+        "question": "Ist Verschnitt mit eingerechnet?",
+        "answer": "Viele Tools bieten Felder fuer Reserve oder Verlust, damit du einen Grundwert mit einer sichereren Bestellmenge vergleichen kannst."
+      }
+    ]
+  },
+  "fr": {
+    "eyebrow": "Hub construction",
+    "title": "Calculateurs de construction pour materiaux et planification",
+    "description": "Estimez beton, toiture, isolation, enduit, carrelage et autres materiaux de chantier dans une seule categorie.",
+    "intro": "Ce hub regroupe des calculateurs utiles pour estimer les quantites avant achat ou comparaison de devis. Commencez par le materiau principal, puis passez aux outils voisins pour l'isolation, l'etancheite, les plaques ou les finitions.",
+    "featuredSearches": [
+      "calculateur beton",
+      "calculateur toiture",
+      "calculateur isolation",
+      "calculateur carrelage"
+    ],
+    "featuredToolIds": [
+      "kalkulator-betonu",
+      "kalkulator-dachu",
+      "kalkulator-styropianu",
+      "kalkulator-plytek"
+    ],
+    "workflows": [
+      {
+        "title": "Calculer une coulEe de beton",
+        "description": "Choisissez cet outil pour une dalle, une semelle ou un poteau. Saisissez les dimensions, puis convertissez le volume en sacs, beton pret a l'emploi ou marge de securite.",
+        "toolId": "kalkulator-betonu"
+      },
+      {
+        "title": "Prevoir les materiaux de toiture",
+        "description": "Choisissez cet outil pour estimer la surface du toit et obtenir un premier ordre de grandeur avant de verifier l'isolation, les gouttieres ou les finitions.",
+        "toolId": "kalkulator-dachu"
+      }
+    ],
+    "useCases": [
+      {
+        "title": "Preparation de renovation",
+        "description": "Comparez les quantites avant de commander du beton, du carrelage, de l'isolation ou des finitions."
+      },
+      {
+        "title": "Verification de devis",
+        "description": "Utilisez des estimations rapides pour confronter les offres des fournisseurs et reperer un oubli de marge pour les chutes."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Ces calculateurs donnent-ils un devis exact?",
+        "answer": "Non. Ils fournissent des estimations de planification a verifier avec les donnees produit, les conditions du chantier et les conseils de l'artisan."
+      },
+      {
+        "question": "Les pertes sont-elles incluses?",
+        "answer": "De nombreux outils proposent une marge ou un taux de perte pour comparer une base de calcul avec une quantite de commande plus sure."
+      }
+    ]
+  }
+}
