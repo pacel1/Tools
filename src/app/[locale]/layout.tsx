@@ -84,6 +84,11 @@ export default async function LocaleLayout({
             gtag('config', 'G-XNY8F6HEGK');
           `}
         </Script>
+        <Script
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5682795103661617"
+          strategy="afterInteractive"
+          crossOrigin="anonymous"
+        />
         <NextIntlClientProvider locale={locale} messages={messages}>
           <SiteShell locale={locale as Locale}>{children}</SiteShell>
         </NextIntlClientProvider>
