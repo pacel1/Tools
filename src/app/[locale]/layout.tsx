@@ -85,8 +85,9 @@ export default async function LocaleLayout({
           `}
         </Script>
         <Script
+          async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5682795103661617"
-          strategy="afterInteractive"
+          strategy="beforeInteractive"
           crossOrigin="anonymous"
         />
         <NextIntlClientProvider locale={locale} messages={messages}>
