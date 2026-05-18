@@ -76,13 +76,6 @@ ${list}
 }
 
 async function writeRuntimeFile(definitions: ToolDefinition[]) {
-  const componentImports = definitions
-    .map(
-      (definition) =>
-        `import ${definition.componentName} from "@/components/tools/${definition.id}-tool";`
-    )
-    .join("\n");
-
   const logicImports = definitions
     .map(
       (definition) =>
@@ -97,9 +90,6 @@ async function writeRuntimeFile(definitions: ToolDefinition[]) {
     )
     .join("\n");
 
-  const components = definitions
-    .map((definition) => `  ${definition.componentName}`)
-    .join(",\n");
   const logicMap = definitions
     .map((definition) => `  "${definition.logicModule}": ${toCamelCase(definition.id)}Logic`)
     .join(",\n");
@@ -118,13 +108,8 @@ async function writeRuntimeFile(definitions: ToolDefinition[]) {
 
   await writeFileSafe(
     path.join(process.cwd(), "src", "lib", "tools", "tool-runtime.generated.ts"),
-    `${componentImports}
-${logicImports}
+    `${logicImports}
 ${schemaImports}
-
-export const toolComponents = {
-${components}
-} as const;
 
 export const toolLogicModules = {
 ${logicMap}
@@ -137,6 +122,49 @@ ${inputMap}
 export const outputSchemas = {
 ${outputMap}
 } as const;
+`
+  );
+}
+
+async function writeComponentRuntimeFile(definitions: ToolDefinition[]) {
+  const components = definitions
+    .map(
+      (definition) =>
+        `  ${definition.componentName}: dynamic(() => import("@/components/tools/${definition.id}-tool"), {
+    loading: ToolLoading,
+    ssr: false
+  })`
+    )
+    .join(",\n");
+
+  await writeFileSafe(
+    path.join(process.cwd(), "src", "lib", "tools", "tool-components.generated.ts"),
+    `"use client";
+
+import dynamic from "next/dynamic";
+import { createElement } from "react";
+
+function ToolLoading() {
+  return createElement("div", {
+    className:
+      "min-h-[260px] rounded-[24px] border border-white/10 bg-slate-950/45"
+  });
+}
+
+const toolComponents = {
+${components}
+} as const;
+
+export type ToolComponentName = keyof typeof toolComponents;
+
+export function DynamicToolComponent({
+  componentName
+}: {
+  componentName: ToolComponentName;
+}) {
+  const ToolComponent = toolComponents[componentName];
+  return createElement(ToolComponent);
+}
 `
   );
 }
@@ -185,6 +213,7 @@ export async function syncGeneratedArtifacts() {
   await writeCategoryIndex(definitions);
   await writeRegistryFile(definitions);
   await writeRuntimeFile(definitions);
+  await writeComponentRuntimeFile(definitions);
   await writeContentManifest();
   return definitions;
 }

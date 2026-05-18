@@ -8,6 +8,12 @@ const nextConfig = {
   pageExtensions: ["ts", "tsx", "mdx"],
   typedRoutes: true,
   async headers() {
+    const immutableAssetHeaders = [
+      {
+        key: "Cache-Control",
+        value: "public, max-age=31536000, immutable"
+      }
+    ];
     const securityHeaders = [
       {
         key: "Content-Security-Policy",
@@ -33,6 +39,23 @@ const nextConfig = {
     ];
 
     return [
+      ...[
+        "/favicon.ico",
+        "/favicon-16x16.png",
+        "/favicon-32x32.png",
+        "/favicon-transparent.png",
+        "/favicon.png",
+        "/apple-touch-icon.png",
+        "/android-chrome-192x192.png",
+        "/android-chrome-512x512.png",
+        "/icon.png",
+        "/logo.png",
+        "/logo-transparent.png",
+        "/logo-wordmark.png"
+      ].map((source) => ({
+        source,
+        headers: immutableAssetHeaders
+      })),
       {
         source: "/:path*",
         headers: securityHeaders

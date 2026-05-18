@@ -2,7 +2,8 @@
 
 import { useEffect, useState } from "react";
 
-const COOKIE_CONSENT_STORAGE_KEY = "convertbase_cookie_consent=v1";
+export const COOKIE_CONSENT_STORAGE_KEY = "convertbase_cookie_consent=v1";
+export const COOKIE_CONSENT_ACCEPTED_EVENT = "convertbase:cookie-consent-accepted";
 
 type CookieBannerCopy = {
   title: string;
@@ -41,6 +42,7 @@ export function CookieBanner({ copy }: { copy: CookieBannerCopy }) {
               COOKIE_CONSENT_STORAGE_KEY,
               "accepted"
             );
+            window.dispatchEvent(new Event(COOKIE_CONSENT_ACCEPTED_EVENT));
             setVisible(false);
           }}
           className="inline-flex shrink-0 items-center justify-center rounded-full bg-cyan-400 px-5 py-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-300"

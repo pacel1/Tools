@@ -2,7 +2,6 @@ import type { Locale, ToolCategory } from "@/lib/constants";
 import { toolCategories } from "@/lib/constants";
 import { getSuggestedLinks } from "@/lib/tools/internal-linking";
 import { toolContent } from "@/lib/tools/tool-content.generated";
-import { toolComponents } from "@/lib/tools/tool-runtime.generated";
 import { toolDefinitions } from "@/lib/tools/tool-registry.generated";
 import type {
   ToolDefinition,
@@ -115,8 +114,4 @@ export function getCategoryStats(locale: Locale) {
 
 export function getRelatedTools(locale: Locale, toolId: string) {
   return getSuggestedLinks(locale, toolId);
-}
-
-export function getToolComponent(componentName: keyof typeof toolComponents) {
-  return toolComponents[componentName];
 }

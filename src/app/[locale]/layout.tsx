@@ -2,10 +2,9 @@ import type { Metadata } from "next";
 import { IBM_Plex_Mono, Manrope } from "next/font/google";
 import type { ReactNode } from "react";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
-import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
-import Script from "next/script";
 import "../globals.css";
+import { ConsentScriptLoader } from "@/components/layout/consent-script-loader";
 import { SiteShell } from "@/components/layout/site-shell";
 import { locales, siteConfig, type Locale } from "@/lib/constants";
 import { getSiteUrl } from "@/lib/env";
@@ -14,11 +13,13 @@ import { buildSocialMetadata } from "@/lib/seo/social";
 
 const manrope = Manrope({
   subsets: ["latin"],
+  display: "swap",
   variable: "--font-sans"
 });
 
 const mono = IBM_Plex_Mono({
   subsets: ["latin"],
+  display: "swap",
   weight: ["400", "500"],
   variable: "--font-mono"
 });
@@ -67,32 +68,13 @@ export default async function LocaleLayout({
     notFound();
   }
 
-  const messages = await getMessages();
-
   return (
     <html lang={locale} suppressHydrationWarning>
       <body className={`${manrope.variable} ${mono.variable} font-sans`}>
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-XNY8F6HEGK"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-XNY8F6HEGK');
-          `}
-        </Script>
-        <Script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5682795103661617"
-          strategy="beforeInteractive"
-          crossOrigin="anonymous"
-        />
-        <NextIntlClientProvider locale={locale} messages={messages}>
+        <NextIntlClientProvider locale={locale}>
           <SiteShell locale={locale as Locale}>{children}</SiteShell>
         </NextIntlClientProvider>
+        <ConsentScriptLoader />
       </body>
     </html>
   );

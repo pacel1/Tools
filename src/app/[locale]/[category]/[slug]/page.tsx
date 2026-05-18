@@ -8,10 +8,13 @@ import { buildToolStructuredData } from "@/lib/seo/structured-data";
 import { buildToolMetadata } from "@/lib/seo/tool-metadata";
 import { getIntentHubLink } from "@/lib/tools/discovery";
 import {
+  DynamicToolComponent,
+  type ToolComponentName
+} from "@/lib/tools/tool-components.generated";
+import {
   getAllToolPaths,
   getToolsByCategory,
   getRelatedTools,
-  getToolComponent,
   getToolPageModel
 } from "@/lib/tools/registry";
 import type { ToolUseCase } from "@/lib/tools/types";
@@ -135,9 +138,7 @@ export default async function ToolPage({
   }
 
   const labels = toolPageLabels[locale];
-  const ToolComponent = getToolComponent(
-    model.definition.componentName as keyof typeof import("@/lib/tools/tool-runtime.generated").toolComponents
-  );
+  const toolComponentName = model.definition.componentName as ToolComponentName;
   const relatedTools = getRelatedTools(locale, model.definition.id);
   const categoryTools = getToolsByCategory(locale, category)
     .filter((tool) => tool.definition.id !== model.definition.id)
@@ -230,7 +231,7 @@ export default async function ToolPage({
         </div>
 
         <div className="rounded-[32px] border border-white/10 bg-white/5 p-5 shadow-2xl shadow-cyan-950/20">
-          <ToolComponent />
+          <DynamicToolComponent componentName={toolComponentName} />
         </div>
       </section>
 
