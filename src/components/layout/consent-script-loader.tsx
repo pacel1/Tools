@@ -45,7 +45,9 @@ function configureGoogleAnalytics() {
 }
 
 function loadAdSenseScript() {
-  if (document.querySelector("script[data-convertbase-script='adsense']")) {
+  const adsenseScriptUrl = `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT_ID}`;
+
+  if (document.querySelector(`script[src="${adsenseScriptUrl}"]`)) {
     return;
   }
 
@@ -55,8 +57,7 @@ function loadAdSenseScript() {
   const script = document.createElement("script");
   script.async = true;
   script.crossOrigin = "anonymous";
-  script.src = `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT_ID}`;
-  script.dataset.convertbaseScript = "adsense";
+  script.src = adsenseScriptUrl;
   script.setAttribute("data-ad-client", ADSENSE_CLIENT_ID);
   document.head.appendChild(script);
 }
