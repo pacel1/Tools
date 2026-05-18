@@ -12,6 +12,7 @@ const GOOGLE_ANALYTICS_ID = "G-XNY8F6HEGK";
 
 type GoogleWindow = Window &
   typeof globalThis & {
+    adsbygoogle?: unknown[];
     dataLayer?: unknown[];
     gtag?: (...args: unknown[]) => void;
   };
@@ -43,6 +44,23 @@ function configureGoogleAnalytics() {
   googleWindow.gtag("config", GOOGLE_ANALYTICS_ID);
 }
 
+function loadAdSenseScript() {
+  if (document.querySelector("script[data-convertbase-script='adsense']")) {
+    return;
+  }
+
+  const googleWindow = window as GoogleWindow;
+  googleWindow.adsbygoogle = googleWindow.adsbygoogle ?? [];
+
+  const script = document.createElement("script");
+  script.async = true;
+  script.crossOrigin = "anonymous";
+  script.src = `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT_ID}`;
+  script.dataset.convertbaseScript = "adsense";
+  script.setAttribute("data-ad-client", ADSENSE_CLIENT_ID);
+  document.head.appendChild(script);
+}
+
 export function ConsentScriptLoader() {
   const [shouldLoadScripts, setShouldLoadScripts] = useState(false);
 
@@ -66,6 +84,12 @@ export function ConsentScriptLoader() {
     };
   }, [shouldLoadScripts]);
 
+  useEffect(() => {
+    if (shouldLoadScripts) {
+      loadAdSenseScript();
+    }
+  }, [shouldLoadScripts]);
+
   if (!shouldLoadScripts) {
     return null;
   }
@@ -77,14 +101,6 @@ export function ConsentScriptLoader() {
         src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ANALYTICS_ID}`}
         strategy="afterInteractive"
         onLoad={configureGoogleAnalytics}
-      />
-      <Script
-        id="google-adsense-loader"
-        async
-        crossOrigin="anonymous"
-        data-ad-client={ADSENSE_CLIENT_ID}
-        src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT_ID}`}
-        strategy="afterInteractive"
       />
     </>
   );
