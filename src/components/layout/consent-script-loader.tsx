@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import Script from "next/script";
+import { useEffect, useState } from "react";
 import {
   COOKIE_CONSENT_ACCEPTED_EVENT,
   COOKIE_CONSENT_STORAGE_KEY
@@ -11,7 +12,6 @@ const GOOGLE_ANALYTICS_ID = "G-XNY8F6HEGK";
 
 type GoogleWindow = Window &
   typeof globalThis & {
-    adsbygoogle?: unknown[];
     dataLayer?: unknown[];
     gtag?: (...args: unknown[]) => void;
   };
@@ -30,32 +30,7 @@ function runWhenIdle(callback: () => void) {
   return () => globalThis.clearTimeout(timeoutId);
 }
 
-function appendScript({
-  datasetKey,
-  src,
-  crossOrigin
-}: {
-  datasetKey: string;
-  src: string;
-  crossOrigin?: string;
-}) {
-  if (document.querySelector(`script[data-convertbase-script="${datasetKey}"]`)) {
-    return;
-  }
-
-  const script = document.createElement("script");
-  script.async = true;
-  script.src = src;
-  script.dataset.convertbaseScript = datasetKey;
-
-  if (crossOrigin) {
-    script.crossOrigin = crossOrigin;
-  }
-
-  document.head.appendChild(script);
-}
-
-function loadGoogleScripts() {
+function configureGoogleAnalytics() {
   const googleWindow = window as GoogleWindow;
 
   googleWindow.dataLayer = googleWindow.dataLayer ?? [];
@@ -66,33 +41,20 @@ function loadGoogleScripts() {
     };
   googleWindow.gtag("js", new Date());
   googleWindow.gtag("config", GOOGLE_ANALYTICS_ID);
-
-  appendScript({
-    datasetKey: "google-analytics",
-    src: `https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ANALYTICS_ID}`
-  });
-
-  googleWindow.adsbygoogle = googleWindow.adsbygoogle ?? [];
-  appendScript({
-    datasetKey: "adsense",
-    src: `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT_ID}`,
-    crossOrigin: "anonymous"
-  });
 }
 
 export function ConsentScriptLoader() {
-  const loadedRef = useRef(false);
+  const [shouldLoadScripts, setShouldLoadScripts] = useState(false);
 
   useEffect(() => {
     let cancelIdleLoad: (() => void) | undefined;
 
     const scheduleLoad = () => {
-      if (loadedRef.current || !hasAcceptedCookies()) {
+      if (shouldLoadScripts || !hasAcceptedCookies()) {
         return;
       }
 
-      loadedRef.current = true;
-      cancelIdleLoad = runWhenIdle(loadGoogleScripts);
+      cancelIdleLoad = runWhenIdle(() => setShouldLoadScripts(true));
     };
 
     scheduleLoad();
@@ -102,7 +64,28 @@ export function ConsentScriptLoader() {
       cancelIdleLoad?.();
       window.removeEventListener(COOKIE_CONSENT_ACCEPTED_EVENT, scheduleLoad);
     };
-  }, []);
+  }, [shouldLoadScripts]);
 
-  return null;
+  if (!shouldLoadScripts) {
+    return null;
+  }
+
+  return (
+    <>
+      <Script
+        id="google-analytics-loader"
+        src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ANALYTICS_ID}`}
+        strategy="afterInteractive"
+        onLoad={configureGoogleAnalytics}
+      />
+      <Script
+        id="google-adsense-loader"
+        async
+        crossOrigin="anonymous"
+        data-ad-client={ADSENSE_CLIENT_ID}
+        src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT_ID}`}
+        strategy="afterInteractive"
+      />
+    </>
+  );
 }
