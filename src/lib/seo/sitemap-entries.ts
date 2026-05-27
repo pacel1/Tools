@@ -105,4 +105,20 @@ export function buildSitemapEntries(): MetadataRoute.Sitemap {
           alternates: buildLanguageAlternates((entryLocale) => {
             const entryContent = (toolContent[entryLocale] ?? {}) as Record<
               string,
- 
+              ToolLocaleContent | undefined
+            >;
+            const localizedEntry = entryContent[definition.id];
+
+            if (!localizedEntry) {
+              return null;
+            }
+
+            return `/${entryLocale}/${definition.category}/${localizedEntry.slug}`;
+          })
+        }
+      ];
+    })
+  );
+
+  return [...staticEntries, ...toolEntries];
+}

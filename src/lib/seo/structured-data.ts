@@ -70,4 +70,46 @@ export function buildToolStructuredData(locale: Locale, model: ToolPageModel) {
     // SoftwareApplication — daje Google kontekst że to interaktywne narzędzie,
     // co otwiera drogę do rich results dla aplikacji webowych.
     {
-      "@context": 
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      name: model.content.title,
+      description: toolDescription,
+      url: canonical,
+      applicationCategory: "UtilitiesApplication",
+      operatingSystem: "Web",
+      offers: {
+        "@type": "Offer",
+        price: "0",
+        priceCurrency: "USD"
+      },
+      inLanguage: locale,
+      author: {
+        "@type": "Person",
+        name: "Paweł Celiński",
+        url: `${getSiteUrl()}/en/about`
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: breadcrumbItems
+    }
+  ];
+
+  if (model.content.faq.length) {
+    graphs.push({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: model.content.faq.map((item) => ({
+        "@type": "Question",
+        name: item.question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: item.answer
+        }
+      }))
+    });
+  }
+
+  return graphs;
+}
