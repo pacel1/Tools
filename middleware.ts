@@ -16,4 +16,11 @@ export default function middleware(request: NextRequest) {
 }
 
 export const config = {
-  // Obejmuje WSZYSTKIE ścieżki łącznie z /sit
+  // Covers ALL paths including /sitemap.xml and /robots.txt,
+  // except Next.js assets and static files (images, fonts, css, js).
+  // This ensures non-www -> www redirect works for every URL,
+  // eliminating duplicate domain indexing by Google.
+  matcher: [
+    "/((?!_next/static|_next/image|.*\\.(?:png|jpg|jpeg|gif|webp|ico|svg|css|js|woff2?|ttf|eot)$).*)"
+  ]
+};
