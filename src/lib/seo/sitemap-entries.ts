@@ -23,6 +23,10 @@ function isIndexableLegalPageKey(pageKey: LegalPageKey) {
   return !noindexLegalPageKeySet.has(pageKey);
 }
 
+// Data ostatniego buildu / deployu — Google używa lastModified do oceny świeżości.
+// Jeśli posiadasz daty per-narzędzie, warto je wstrzyknąć z tool definition.
+const BUILD_DATE = new Date();
+
 export function buildSitemapEntries(): MetadataRoute.Sitemap {
   const baseUrl = getSiteUrl();
   const indexableLegalPageKeys = legalPageKeys.filter(isIndexableLegalPageKey);
@@ -30,6 +34,7 @@ export function buildSitemapEntries(): MetadataRoute.Sitemap {
   const staticEntries = [
     ...locales.map((locale) => ({
       url: `${baseUrl}/${locale}`,
+      lastModified: BUILD_DATE,
       changeFrequency: "weekly" as const,
       priority: 0.8,
       alternates: buildLanguageAlternates((entryLocale) => `/${entryLocale}`)
@@ -37,6 +42,7 @@ export function buildSitemapEntries(): MetadataRoute.Sitemap {
     ...locales.flatMap((locale) =>
       getIndexableCategories(locale).map((category) => ({
         url: `${baseUrl}/${locale}/${category}`,
+        lastModified: BUILD_DATE,
         changeFrequency: "weekly" as const,
         priority: 0.75,
         alternates: buildLanguageAlternates((entryLocale) =>
@@ -49,6 +55,7 @@ export function buildSitemapEntries(): MetadataRoute.Sitemap {
     ...locales.flatMap((locale) =>
       indexableLegalPageKeys.map((pageKey) => ({
         url: `${baseUrl}${getLegalPagePath(locale, pageKey)}`,
+        lastModified: BUILD_DATE,
         changeFrequency: "monthly" as const,
         priority: 0.45,
         alternates: buildLanguageAlternates((entryLocale) =>
@@ -66,6 +73,7 @@ export function buildSitemapEntries(): MetadataRoute.Sitemap {
       return [
         {
           url: `${baseUrl}${href}`,
+          lastModified: BUILD_DATE,
           changeFrequency: "weekly" as const,
           priority: 0.78,
           alternates: buildLanguageAlternates((entryLocale) =>
@@ -91,25 +99,10 @@ export function buildSitemapEntries(): MetadataRoute.Sitemap {
       return [
         {
           url: `${baseUrl}/${locale}/${definition.category}/${content.slug}`,
+          lastModified: BUILD_DATE,
           changeFrequency: "weekly" as const,
           priority: 0.9,
           alternates: buildLanguageAlternates((entryLocale) => {
             const entryContent = (toolContent[entryLocale] ?? {}) as Record<
               string,
-              ToolLocaleContent | undefined
-            >;
-            const localizedEntry = entryContent[definition.id];
-
-            if (!localizedEntry) {
-              return null;
-            }
-
-            return `/${entryLocale}/${definition.category}/${localizedEntry.slug}`;
-          })
-        }
-      ];
-    })
-  );
-
-  return [...staticEntries, ...toolEntries];
-}
+ 

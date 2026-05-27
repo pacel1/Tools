@@ -16,5 +16,4 @@ export default function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/", "/(en|pl|es|de|fr)/:path*"]
-};
+  // Obejmuje WSZYSTKIE ścieżki łącznie z /sit
