@@ -8,19 +8,35 @@ import {
   getAllLegalPageParams,
   getLegalPageContent
 } from "@/lib/pages/legal-content";
-import type { LegalPageKey } from "@/lib/pages/types";
+import { getLegalPageSlug, type LegalPageKey } from "@/lib/pages/types";
 
-export function generateLegalPageStaticParams() {
-  return getAllLegalPageParams();
+export function generateLegalPageStaticParams(
+  pageKey?: LegalPageKey,
+  routeSegment?: string
+) {
+  const params = getAllLegalPageParams();
+
+  if (!pageKey || !routeSegment) {
+    return params;
+  }
+
+  return params.filter(
+    ({ locale }) => getLegalPageSlug(locale, pageKey) === routeSegment
+  );
 }
 
 export async function generateLegalPageMetadata(
   paramsPromise: Promise<{ locale: Locale }>,
-  pageKey: LegalPageKey
+  pageKey: LegalPageKey,
+  routeSegment?: string
 ): Promise<Metadata> {
   const { locale } = await paramsPromise;
 
   if (!hasLocale(locales, locale)) {
+    return {};
+  }
+
+  if (routeSegment && getLegalPageSlug(locale, pageKey) !== routeSegment) {
     return {};
   }
 
@@ -29,11 +45,16 @@ export async function generateLegalPageMetadata(
 
 export async function renderLegalPage(
   paramsPromise: Promise<{ locale: Locale }>,
-  pageKey: LegalPageKey
+  pageKey: LegalPageKey,
+  routeSegment?: string
 ) {
   const { locale } = await paramsPromise;
 
   if (!hasLocale(locales, locale)) {
+    notFound();
+  }
+
+  if (routeSegment && getLegalPageSlug(locale, pageKey) !== routeSegment) {
     notFound();
   }
 

@@ -3,34 +3,16 @@
   "locale": "de",
   "title": "Haftungsausschluss",
   "metaTitle": "Haftungsausschluss | ConvertBase.app",
-  "metaDescription": "Lies den Haftungsausschluss von ConvertBase.app zu Tool-Ergebnissen, Informationsinhalten, Cookies, Analysen und Werbung.",
+  "metaDescription": "Lesen Sie den ConvertBase.app-Haftungsausschluss zu Ergebnissen von Rechnern, Konvertern und Online-Tools.",
   "heading": "Haftungsausschluss",
   "content": [
-    "ConvertBase.app stellt allgemeine Informationsinhalte und praktische Online-Tools zur Verfügung.",
-    "Tool-Ergebnisse und Erläuterungen werden nach bestem Wissen bereitgestellt, stellen jedoch keine rechtliche, finanzielle, medizinische oder sonstige regulierte Fachberatung dar."
+    "Die auf ConvertBase.app verfügbaren Tools dienen ausschließlich Informations- und Bildungszwecken. Die Ergebnisse stellen keine Finanz-, Medizin-, Bau- oder Rechtsberatung dar. Bevor Sie Entscheidungen auf Basis von Rechnerergebnissen treffen, konsultieren Sie bitte einen qualifizierten Fachmann. Wir bemühen uns um die Genauigkeit unserer Tools, übernehmen jedoch keine Haftung für Fehler oder Entscheidungen, die auf Basis der bereitgestellten Ergebnisse getroffen werden."
   ],
-  "sections": [
-    {
-      "title": "Tool-Ergebnisse und Genauigkeit",
-      "paragraphs": [
-        "Wir bemühen uns um nützliche und konsistente Ergebnisse, doch Ausgaben können je nach Eingaben, Randfällen, Browserverhalten oder geänderten Standards variieren.",
-        "Vor wichtigen persönlichen, technischen oder geschäftlichen Entscheidungen solltest du jedes Ergebnis eigenständig prüfen."
-      ]
-    },
-    {
-      "title": "Dienste Dritter",
-      "paragraphs": [
-        "ConvertBase.app kann Dienste Dritter wie Google Analytics und Google AdSense verwenden. Diese Dienste können Cookies oder ähnliche Technologien gemäß unserer Datenschutzerklärung und Cookie-Richtlinie nutzen.",
-        "Wir sind nicht verantwortlich für Inhalte, Datenschutzpraktiken oder Richtlinien von Websites oder Diensten Dritter, auf die von dieser Plattform verlinkt wird."
-      ]
-    },
-    {
-      "title": "Nutzung nach eigenem Ermessen",
-      "paragraphs": [
-        "Mit der Nutzung dieser Plattform akzeptierst du, dass der Dienst ohne Gewähr und nach eigenem Ermessen verwendet wird.",
-        "Bei Fragen zu Richtlinien oder Compliance schreibe an contact@convertbase.app."
-      ]
-    }
-  ],
-  "keywords": ["haftungsausschluss", "disclaimer", "convertbase", "tool genauigkeit", "google analytics", "google adsense"]
+  "sections": [],
+  "keywords": [
+    "haftungsausschluss",
+    "convertbase haftungsausschluss",
+    "rechnerergebnisse",
+    "informationstools"
+  ]
 }

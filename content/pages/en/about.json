@@ -3,34 +3,36 @@
   "locale": "en",
   "title": "About ConvertBase.app",
   "metaTitle": "About ConvertBase.app | Free Online Tools",
-  "metaDescription": "Learn what ConvertBase.app offers, how the platform works, and how we use cookies, Google Analytics and Google AdSense.",
+  "metaDescription": "Learn about ConvertBase.app, a free collection of browser-based converters, calculators, generators and developer utilities.",
   "heading": "About ConvertBase.app",
   "content": [
-    "ConvertBase.app is a multilingual platform for practical online tools such as converters, calculators, generators, image tools and text utilities.",
-    "Our goal is simple: publish fast, focused pages that solve one clear task at a time while keeping the experience lightweight, accessible and easy to use on any device."
+    "ConvertBase.app is a free collection of online tools - converters, calculators, generators, and developer utilities - built around a simple idea: the answer to an everyday question should be one click away.",
+    "The project was started in 2025 by Paweł Celiński, a Power Platform developer at Toyota Material Handling Poland. Working daily with business automation tools, Paweł kept running into the same friction: simple conversions and calculations that required either memorising formulas or juggling multiple browser tabs. ConvertBase.app is the solution he built for himself - and made available to everyone.",
+    "Every tool on this site runs entirely in your browser. No installation, no account, no fees. Your data never leaves your device."
   ],
   "sections": [
     {
-      "title": "What the platform offers",
+      "title": "What you'll find on ConvertBase.app",
       "paragraphs": [
-        "Each tool is designed to answer a specific need with a clear input, a direct result and supporting explanations that help users understand the output.",
-        "We aim to keep our pages useful for everyday visitors, students, creators, marketers and developers without requiring sign-up or unnecessary steps."
+        "Unit, currency, and file format converters.",
+        "Finance, health, and construction calculators.",
+        "Developer and text processing tools.",
+        "Generators and image utilities."
       ]
     },
     {
-      "title": "How ConvertBase.app is supported",
+      "title": "Have an idea?",
       "paragraphs": [
-        "We may use Google Analytics to understand traffic patterns and improve usability across languages and device types.",
-        "We may also display ads through Google AdSense to support the ongoing operation of the platform. Cookies can be used for essential site behavior, analytics and advertising."
-      ]
-    },
-    {
-      "title": "Privacy and trust",
-      "paragraphs": [
-        "We try to minimize data collection and build tools that work directly in the browser whenever possible.",
-        "For questions about privacy, cookies, advertising or platform policies, contact the operator of ConvertBase.app at contact@convertbase.app."
+        "Have an idea for a tool that should be here? Get in touch."
       ]
     }
   ],
-  "keywords": ["about convertbase.app", "free online tools", "tool portal", "google analytics", "google adsense", "cookies"]
+  "keywords": [
+    "about convertbase.app",
+    "free online tools",
+    "converters",
+    "calculators",
+    "generators",
+    "developer utilities"
+  ]
 }

@@ -8,6 +8,10 @@ import { ConsentScriptLoader } from "@/components/layout/consent-script-loader";
 import { SiteShell } from "@/components/layout/site-shell";
 import { locales, siteConfig, type Locale } from "@/lib/constants";
 import { getSiteUrl } from "@/lib/env";
+import {
+  buildPersonStructuredData,
+  buildWebsiteStructuredData
+} from "@/lib/seo/eeat-structured-data";
 import { normalizeMetaDescription } from "@/lib/seo/meta-description";
 import { buildSocialMetadata } from "@/lib/seo/social";
 
@@ -41,7 +45,9 @@ export const metadata: Metadata = {
       { url: "/icon.png", sizes: "512x512", type: "image/png" }
     ],
     shortcut: ["/favicon-32x32.png"],
-    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }]
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }
+    ]
   },
   ...buildSocialMetadata({
     title: "ConvertBase.app",
@@ -70,6 +76,20 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} suppressHydrationWarning>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(buildWebsiteStructuredData())
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(buildPersonStructuredData())
+          }}
+        />
+      </head>
       <body className={`${manrope.variable} ${mono.variable} font-sans`}>
         <NextIntlClientProvider locale={locale}>
           <SiteShell locale={locale as Locale}>{children}</SiteShell>

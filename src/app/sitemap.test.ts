@@ -27,14 +27,18 @@ describe("sitemap", () => {
     expect(urls).not.toContain("https://convertbase.app/pl/html-tools");
   });
 
-  it("excludes noindex legal pages from the sitemap", () => {
+  it("publishes indexable E-E-A-T pages and excludes noindex legal pages", () => {
     const urls = sitemap().map((entry) => entry.url);
 
     expect(urls).not.toContain("https://www.convertbase.app/en/privacy");
     expect(urls).not.toContain("https://www.convertbase.app/en/terms");
     expect(urls).not.toContain("https://www.convertbase.app/en/cookies");
-    expect(urls).not.toContain("https://www.convertbase.app/en/disclaimer");
     expect(urls).toContain("https://www.convertbase.app/en/about");
+    expect(urls).toContain("https://www.convertbase.app/pl/o-nas");
+    expect(urls).toContain("https://www.convertbase.app/en/methodology");
+    expect(urls).toContain("https://www.convertbase.app/pl/metodologia");
+    expect(urls).toContain("https://www.convertbase.app/en/disclaimer");
+    expect(urls).toContain("https://www.convertbase.app/pl/zastrzezenia");
     expect(urls).toContain("https://www.convertbase.app/en/contact");
   });
 

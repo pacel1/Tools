@@ -12,6 +12,7 @@ import { buildSocialMetadata } from "@/lib/seo/social";
 import {
   legalPageKeys,
   noindexLegalPageKeys,
+  getLegalPagePath,
   type LegalPageContent,
   type LegalPageKey
 } from "@/lib/pages/types";
@@ -41,7 +42,7 @@ export function getAllLegalPageParams() {
 }
 
 export function buildLegalPageHref(locale: Locale, pageKey: LegalPageKey) {
-  return `/${locale}/${pageKey}`;
+  return getLegalPagePath(locale, pageKey);
 }
 
 export const getLegalPageContent = cache(

@@ -6,8 +6,8 @@ import {
 } from "@/lib/pages/route";
 import type { Locale } from "@/lib/constants";
 
-const pageKey = "about" as const;
-const routeSegment = "about";
+const pageKey = "methodology" as const;
+const routeSegment = "methodologie";
 
 export const dynamicParams = false;
 
@@ -23,7 +23,7 @@ export async function generateMetadata({
   return generateLegalPageMetadata(params, pageKey, routeSegment);
 }
 
-export default async function AboutPage({
+export default async function MethodologyPage({
   params
 }: {
   params: Promise<{ locale: Locale }>;

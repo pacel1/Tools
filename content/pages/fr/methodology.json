@@ -1,0 +1,57 @@
+{
+  "page": "methodology",
+  "locale": "fr",
+  "title": "Comment fonctionnent nos outils",
+  "metaTitle": "Comment fonctionnent nos outils | Méthodologie ConvertBase.app",
+  "metaDescription": "Découvrez les formules, normes et algorithmes utilisés par les outils de ConvertBase.app.",
+  "heading": "Comment fonctionnent nos outils",
+  "content": [
+    "Chaque outil sur ConvertBase.app repose sur des formules, normes ou algorithmes accessibles au public."
+  ],
+  "sections": [
+    {
+      "title": "Convertisseurs d'unités",
+      "paragraphs": [
+        "Ils utilisent des constantes de conversion conformes au Système international d'unités (SI). Sources : BIPM, NIST."
+      ]
+    },
+    {
+      "title": "Calculateurs de santé (IMC, calories)",
+      "paragraphs": [
+        "Le calculateur d'IMC utilise la formule de Quetelet (poids en kg / taille en m²) selon les directives de l'OMS de 2000."
+      ]
+    },
+    {
+      "title": "Calculateurs financiers",
+      "paragraphs": [
+        "Les calculs de prêts et d'échéances utilisent des formules standard de mathématiques financières. Ces outils sont fournis à titre informatif uniquement et ne constituent pas un conseil financier."
+      ]
+    },
+    {
+      "title": "Calculateurs de construction",
+      "paragraphs": [
+        "Les estimations de matériaux sont basées sur des normes sectorielles standard. Nous recommandons toujours d'ajouter une marge pour les déchets - le pourcentage suggéré est indiqué à côté de chaque calculateur."
+      ]
+    },
+    {
+      "title": "Outils pour développeurs",
+      "paragraphs": [
+        "Toutes les opérations de données utilisent des algorithmes définis par l'IETF, le W3C ou le NIST et s'exécutent localement dans votre navigateur."
+      ]
+    },
+    {
+      "title": "Signaler des erreurs",
+      "paragraphs": [
+        "Vous avez repéré une erreur ? Contactez-nous - chaque signalement est examiné et corrigé."
+      ]
+    }
+  ],
+  "keywords": [
+    "méthodologie des outils",
+    "formules de conversion",
+    "exactitude des calculateurs",
+    "BIPM",
+    "NIST",
+    "OMS"
+  ]
+}

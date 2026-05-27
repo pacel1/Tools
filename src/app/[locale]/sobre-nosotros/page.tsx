@@ -7,7 +7,7 @@ import {
 import type { Locale } from "@/lib/constants";
 
 const pageKey = "about" as const;
-const routeSegment = "about";
+const routeSegment = "sobre-nosotros";
 
 export const dynamicParams = false;
 

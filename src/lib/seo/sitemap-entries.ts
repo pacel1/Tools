@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { locales } from "@/lib/constants";
 import { getSiteUrl } from "@/lib/env";
 import {
+  getLegalPagePath,
   legalPageKeys,
   noindexLegalPageKeys,
   type LegalPageKey
@@ -47,11 +48,11 @@ export function buildSitemapEntries(): MetadataRoute.Sitemap {
     ),
     ...locales.flatMap((locale) =>
       indexableLegalPageKeys.map((pageKey) => ({
-        url: `${baseUrl}/${locale}/${pageKey}`,
+        url: `${baseUrl}${getLegalPagePath(locale, pageKey)}`,
         changeFrequency: "monthly" as const,
         priority: 0.45,
-        alternates: buildLanguageAlternates(
-          (entryLocale) => `/${entryLocale}/${pageKey}`
+        alternates: buildLanguageAlternates((entryLocale) =>
+          getLegalPagePath(entryLocale, pageKey)
         )
       }))
     ),

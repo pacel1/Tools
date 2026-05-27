@@ -32,5 +32,19 @@
     "heroChip2": "Sofortige Ergebnisse",
     "heroChip3": "Ohne Registrierung",
     "heroChip4": "Läuft im Browser"
+  },
+  "eeat": {
+    "footer": {
+      "heading": "Über",
+      "about": "Über uns",
+      "methodology": "Methodik",
+      "disclaimer": "Haftungsausschluss"
+    },
+    "authorBanner": {
+      "heading": "Über den Autor",
+      "role": "Entwickler und Gründer von ConvertBase.app",
+      "bio": "Paweł arbeitet als Power Platform Developer bei Toyota Material Handling Polen. ConvertBase.app hat er als Nebenprojekt entwickelt - damit alltägliche Berechnungen und Umrechnungen für jeden schneller werden.",
+      "linkedin_label": "LinkedIn-Profil"
+    }
   }
 }

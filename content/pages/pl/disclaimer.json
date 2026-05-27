@@ -1,36 +1,18 @@
 {
   "page": "disclaimer",
   "locale": "pl",
-  "title": "Zastrzeżenie",
-  "metaTitle": "Zastrzeżenie | ConvertBase.app",
-  "metaDescription": "Przeczytaj zastrzeżenie ConvertBase.app dotyczące wyników narzędzi, treści informacyjnych, cookies, analityki i reklam.",
-  "heading": "Zastrzeżenie",
+  "title": "Zastrzeżenia prawne",
+  "metaTitle": "Zastrzeżenia prawne | ConvertBase.app",
+  "metaDescription": "Przeczytaj zastrzeżenia prawne ConvertBase.app dotyczące wyników kalkulatorów, konwerterów i narzędzi online.",
+  "heading": "Zastrzeżenia prawne",
   "content": [
-    "ConvertBase.app udostępnia ogólne treści informacyjne oraz praktyczne narzędzia online dla wygody użytkowników.",
-    "Wyniki narzędzi i opisy są publikowane w dobrej wierze, ale nie stanowią porady prawnej, finansowej, medycznej ani innej profesjonalnej porady regulowanej."
+    "Narzędzia dostępne na ConvertBase.app mają charakter wyłącznie informacyjny i edukacyjny. Wyniki obliczeń nie stanowią porady finansowej, medycznej, budowlanej ani prawnej. Przed podjęciem decyzji opartych na wynikach kalkulatorów skonsultuj się z odpowiednim specjalistą. Dokładamy starań, aby nasze narzędzia były precyzyjne, jednak nie ponosimy odpowiedzialności za błędy ani za decyzje podjęte na podstawie uzyskanych wyników."
   ],
-  "sections": [
-    {
-      "title": "Wyniki narzędzi i dokładność",
-      "paragraphs": [
-        "Dokładamy starań, aby wyniki były użyteczne i spójne, jednak rezultat może zależeć od danych wejściowych, przypadków brzegowych, zachowania przeglądarki lub zmian standardów.",
-        "Przed podjęciem ważnej decyzji osobistej, technicznej lub biznesowej użytkownik powinien samodzielnie zweryfikować wynik."
-      ]
-    },
-    {
-      "title": "Usługi zewnętrzne",
-      "paragraphs": [
-        "ConvertBase.app może korzystać z usług zewnętrznych, takich jak Google Analytics i Google AdSense. Usługi te mogą używać cookies lub podobnych technologii zgodnie z naszą Polityką prywatności i Polityką cookies.",
-        "Nie odpowiadamy za treści, praktyki prywatności ani zasady działania zewnętrznych serwisów, do których prowadzą linki z platformy."
-      ]
-    },
-    {
-      "title": "Korzystanie na własną odpowiedzialność",
-      "paragraphs": [
-        "Korzystając z platformy, akceptujesz, że usługa jest udostępniana w formule as is i używasz jej na własną odpowiedzialność.",
-        "W sprawach dotyczących polityk lub zgodności napisz na contact@convertbase.app."
-      ]
-    }
-  ],
-  "keywords": ["zastrzeżenie", "disclaimer", "convertbase", "dokładność narzędzi", "google analytics", "google adsense"]
+  "sections": [],
+  "keywords": [
+    "zastrzeżenia prawne",
+    "convertbase zastrzeżenia",
+    "wyniki kalkulatorów",
+    "narzędzia informacyjne"
+  ]
 }

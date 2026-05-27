@@ -3,34 +3,16 @@
   "locale": "es",
   "title": "Aviso legal",
   "metaTitle": "Aviso legal | ConvertBase.app",
-  "metaDescription": "Lee el aviso legal de ConvertBase.app sobre resultados de herramientas, contenido informativo, cookies, analítica y publicidad.",
+  "metaDescription": "Lee el aviso legal de ConvertBase.app sobre los resultados de calculadoras, conversores y herramientas online.",
   "heading": "Aviso legal",
   "content": [
-    "ConvertBase.app ofrece contenido informativo general y herramientas online prácticas para mayor comodidad.",
-    "Los resultados de las herramientas y las explicaciones se publican de buena fe, pero no deben considerarse asesoramiento legal, financiero, médico ni otro consejo profesional regulado."
+    "Las herramientas disponibles en ConvertBase.app se proporcionan únicamente con fines informativos y educativos. Los resultados no constituyen asesoramiento financiero, médico, de construcción ni legal. Antes de tomar decisiones basadas en los resultados de las calculadoras, consulte a un profesional cualificado. Nos esforzamos por mantener la precisión de nuestras herramientas, pero no aceptamos ninguna responsabilidad por errores ni por decisiones tomadas en base a los resultados proporcionados."
   ],
-  "sections": [
-    {
-      "title": "Resultados y exactitud",
-      "paragraphs": [
-        "Intentamos que los resultados sean útiles y consistentes, pero pueden variar según la entrada, casos límite, comportamiento del navegador o cambios en estándares.",
-        "El usuario debe verificar de forma independiente cualquier resultado antes de basarse en él para decisiones personales, técnicas o comerciales importantes."
-      ]
-    },
-    {
-      "title": "Servicios de terceros",
-      "paragraphs": [
-        "ConvertBase.app puede utilizar servicios de terceros como Google Analytics y Google AdSense. Esos servicios pueden usar cookies o tecnologías relacionadas tal como se describe en nuestra Política de privacidad y Política de cookies.",
-        "No somos responsables del contenido, las prácticas de privacidad ni las políticas de sitios o servicios de terceros enlazados desde esta plataforma."
-      ]
-    },
-    {
-      "title": "Uso bajo tu propio criterio",
-      "paragraphs": [
-        "Al usar esta plataforma, aceptas que el servicio se ofrece tal cual y bajo tu propio criterio.",
-        "Para dudas sobre políticas o cumplimiento, escribe a contact@convertbase.app."
-      ]
-    }
-  ],
-  "keywords": ["aviso legal", "disclaimer", "convertbase", "exactitud de herramientas", "google analytics", "google adsense"]
+  "sections": [],
+  "keywords": [
+    "aviso legal",
+    "convertbase aviso legal",
+    "resultados de calculadoras",
+    "herramientas informativas"
+  ]
 }

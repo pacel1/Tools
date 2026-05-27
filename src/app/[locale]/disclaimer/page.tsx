@@ -1,11 +1,18 @@
 import type { Metadata } from "next";
-import { generateLegalPageMetadata, generateLegalPageStaticParams, renderLegalPage } from "@/lib/pages/route";
+import {
+  generateLegalPageMetadata,
+  generateLegalPageStaticParams,
+  renderLegalPage
+} from "@/lib/pages/route";
 import type { Locale } from "@/lib/constants";
 
 const pageKey = "disclaimer" as const;
+const routeSegment = "disclaimer";
+
+export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return generateLegalPageStaticParams();
+  return generateLegalPageStaticParams(pageKey, routeSegment);
 }
 
 export async function generateMetadata({
@@ -13,7 +20,7 @@ export async function generateMetadata({
 }: {
   params: Promise<{ locale: Locale }>;
 }): Promise<Metadata> {
-  return generateLegalPageMetadata(params, pageKey);
+  return generateLegalPageMetadata(params, pageKey, routeSegment);
 }
 
 export default async function DisclaimerPage({
@@ -21,5 +28,5 @@ export default async function DisclaimerPage({
 }: {
   params: Promise<{ locale: Locale }>;
 }) {
-  return renderLegalPage(params, pageKey);
+  return renderLegalPage(params, pageKey, routeSegment);
 }

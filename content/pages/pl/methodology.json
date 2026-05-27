@@ -1,0 +1,57 @@
+{
+  "page": "methodology",
+  "locale": "pl",
+  "title": "Jak działają nasze narzędzia",
+  "metaTitle": "Jak działają nasze narzędzia | Metodologia ConvertBase.app",
+  "metaDescription": "Sprawdź, na jakich wzorach, normach i algorytmach opierają się narzędzia ConvertBase.app.",
+  "heading": "Jak działają nasze narzędzia",
+  "content": [
+    "Każde narzędzie na ConvertBase.app opiera się na publicznie dostępnych wzorach, normach lub algorytmach."
+  ],
+  "sections": [
+    {
+      "title": "Konwertery jednostek",
+      "paragraphs": [
+        "Używają stałych przeliczeniowych zgodnych z Międzynarodowym Układem Jednostek Miar (SI) oraz oficjalnymi definicjami jednostek imperialnych. Źródła: BIPM, NIST."
+      ]
+    },
+    {
+      "title": "Kalkulatory zdrowotne (BMI, kalorie)",
+      "paragraphs": [
+        "Kalkulator BMI stosuje wzór Queteleta (masa w kg / wzrost w m²) zgodny z wytycznymi WHO z 2000 roku."
+      ]
+    },
+    {
+      "title": "Kalkulatory finansowe",
+      "paragraphs": [
+        "Obliczenia kredytów i rat opierają się na standardowych wzorach matematyki finansowej (raty równe - annuitetowe, raty malejące - kapitałowe). Narzędzia mają charakter informacyjny i nie stanowią porady finansowej."
+      ]
+    },
+    {
+      "title": "Kalkulatory budowlane",
+      "paragraphs": [
+        "Szacunki materiałów bazują na typowych normach branżowych. Zawsze zalecamy doliczenie naddatku na odpady - sugerowany procent podany jest przy każdym kalkulatorze."
+      ]
+    },
+    {
+      "title": "Narzędzia deweloperskie",
+      "paragraphs": [
+        "Operacje na danych (Base64, haszowanie, JSON) używają standardowych algorytmów IETF, W3C i NIST. Wszystkie operacje wykonywane są lokalnie w przeglądarce."
+      ]
+    },
+    {
+      "title": "Zgłaszanie błędów",
+      "paragraphs": [
+        "Zauważyłeś błąd? Napisz do nas - każde zgłoszenie sprawdzamy i poprawiamy."
+      ]
+    }
+  ],
+  "keywords": [
+    "metodologia narzędzi",
+    "wzory przeliczeń",
+    "dokładność kalkulatorów",
+    "BIPM",
+    "NIST",
+    "WHO"
+  ]
+}

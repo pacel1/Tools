@@ -1,0 +1,57 @@
+{
+  "page": "methodology",
+  "locale": "de",
+  "title": "Wie unsere Tools funktionieren",
+  "metaTitle": "Wie unsere Tools funktionieren | ConvertBase.app Methodik",
+  "metaDescription": "Erfahren Sie, auf welchen Formeln, Normen und Algorithmen die Tools von ConvertBase.app basieren.",
+  "heading": "Wie unsere Tools funktionieren",
+  "content": [
+    "Jedes Tool auf ConvertBase.app basiert auf öffentlich verfügbaren Formeln, Normen oder Algorithmen."
+  ],
+  "sections": [
+    {
+      "title": "Einheitenkonverter",
+      "paragraphs": [
+        "Unsere Konverter verwenden Umrechnungskonstanten gemäß dem Internationalen Einheitensystem (SI) und den offiziellen Definitionen imperialer Einheiten. Quellen: BIPM, NIST."
+      ]
+    },
+    {
+      "title": "Gesundheitsrechner (BMI, Kalorien)",
+      "paragraphs": [
+        "Der BMI-Rechner verwendet die Quetelet-Formel (Gewicht in kg / Körpergröße in m²) gemäß den WHO-Richtlinien von 2000."
+      ]
+    },
+    {
+      "title": "Finanzrechner",
+      "paragraphs": [
+        "Kredit- und Ratenberechnungen basieren auf Standardformeln der Finanzmathematik (gleiche Raten - Annuitätenmethode; sinkende Raten - Kapitalmethode). Diese Tools dienen nur zu Informationszwecken und stellen keine Finanzberatung dar."
+      ]
+    },
+    {
+      "title": "Baurechner",
+      "paragraphs": [
+        "Materialschätzungen basieren auf branchenüblichen Normen. Wir empfehlen immer, einen Verschnittaufschlag einzuplanen - der empfohlene Prozentsatz ist bei jedem Rechner angegeben."
+      ]
+    },
+    {
+      "title": "Entwickler-Tools",
+      "paragraphs": [
+        "Alle Datenoperationen (Base64, Hashing, JSON) verwenden von IETF, W3C oder NIST definierte Algorithmen. Alle Operationen laufen lokal in Ihrem Browser ab."
+      ]
+    },
+    {
+      "title": "Fehler melden",
+      "paragraphs": [
+        "Einen Berechnungsfehler entdeckt? Schreiben Sie uns - jeder Hinweis wird geprüft und behoben."
+      ]
+    }
+  ],
+  "keywords": [
+    "tool-methodik",
+    "umrechnungsformeln",
+    "rechnergenauigkeit",
+    "BIPM",
+    "NIST",
+    "WHO"
+  ]
+}

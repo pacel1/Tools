@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { AuthorBanner } from "@/components/AuthorBanner";
 import { Breadcrumbs } from "@/components/layout/breadcrumbs";
 import { ToolCard } from "@/components/marketing/tool-card";
 import { categoryCatalog } from "@/data/categories/catalog";
@@ -181,7 +182,7 @@ export default async function ToolPage({
 
       <section className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
         <div className="space-y-5">
-          <p className="text-sm uppercase tracking-[0.28em] text-cyan-200/70">
+          <p className="text-sm tracking-[0.28em] text-cyan-200/70 uppercase">
             {categoryCatalog[category].label[locale]}
           </p>
           <h1 className="text-4xl font-semibold tracking-tight md:text-5xl">
@@ -197,12 +198,11 @@ export default async function ToolPage({
             {useCases
               .slice(0, 2)
               .map((item) => item.title)
-              .join(", ") ||
-              model.content.shortDescription}
+              .join(", ") || model.content.shortDescription}
           </p>
           {model.content.intro ? (
             <div className="rounded-[28px] border border-cyan-300/15 bg-cyan-300/10 p-5">
-              <p className="text-sm uppercase tracking-[0.24em] text-cyan-100/75">
+              <p className="text-sm tracking-[0.24em] text-cyan-100/75 uppercase">
                 {labels.intro}
               </p>
               <p className="mt-3 max-w-2xl text-base leading-7 text-white/78">
@@ -212,7 +212,7 @@ export default async function ToolPage({
           ) : null}
           {intentHub ? (
             <div className="rounded-[28px] border border-white/10 bg-white/5 p-5">
-              <p className="text-sm uppercase tracking-[0.24em] text-cyan-100/75">
+              <p className="text-sm tracking-[0.24em] text-cyan-100/75 uppercase">
                 {intentHub.eyebrow}
               </p>
               <p className="mt-3 text-xl font-semibold tracking-tight">
@@ -238,13 +238,19 @@ export default async function ToolPage({
       <section className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
         <article className="space-y-10">
           <section className="space-y-4">
-            <h2 className="text-2xl font-semibold tracking-tight">{labels.overview}</h2>
-            <p className="text-base leading-8 text-white/72">{model.content.overview}</p>
+            <h2 className="text-2xl font-semibold tracking-tight">
+              {labels.overview}
+            </h2>
+            <p className="text-base leading-8 text-white/72">
+              {model.content.overview}
+            </p>
           </section>
 
           {useCases.length ? (
             <section className="space-y-4">
-              <h2 className="text-2xl font-semibold tracking-tight">{labels.useCases}</h2>
+              <h2 className="text-2xl font-semibold tracking-tight">
+                {labels.useCases}
+              </h2>
               <ul className="grid gap-3 md:grid-cols-3">
                 {useCases.map((item) => (
                   <li
@@ -281,7 +287,9 @@ export default async function ToolPage({
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-2xl font-semibold tracking-tight">{labels.examples}</h2>
+            <h2 className="text-2xl font-semibold tracking-tight">
+              {labels.examples}
+            </h2>
             <div className="grid gap-4 md:grid-cols-2">
               {model.content.examples.map((example) => (
                 <article
@@ -291,11 +299,15 @@ export default async function ToolPage({
                   <p className="text-lg font-semibold">{example.title}</p>
                   <p className="mt-3 text-sm text-white/65">
                     {labels.input}:{" "}
-                    <span className="font-mono text-white">{example.input}</span>
+                    <span className="font-mono text-white">
+                      {example.input}
+                    </span>
                   </p>
                   <p className="mt-2 text-sm text-white/65">
                     {labels.output}:{" "}
-                    <span className="font-mono text-white">{example.output}</span>
+                    <span className="font-mono text-white">
+                      {example.output}
+                    </span>
                   </p>
                   <p className="mt-4 text-sm leading-6 text-white/70">
                     {example.description}
@@ -306,7 +318,9 @@ export default async function ToolPage({
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-2xl font-semibold tracking-tight">{labels.faq}</h2>
+            <h2 className="text-2xl font-semibold tracking-tight">
+              {labels.faq}
+            </h2>
             <div className="space-y-4">
               {model.content.faq.map((item) => (
                 <details
@@ -324,7 +338,9 @@ export default async function ToolPage({
         </article>
 
         <aside className="space-y-4">
-          <h2 className="text-2xl font-semibold tracking-tight">{labels.related}</h2>
+          <h2 className="text-2xl font-semibold tracking-tight">
+            {labels.related}
+          </h2>
           <div className="grid gap-4">
             {relatedTools.map((tool) => (
               <ToolCard key={tool.id} tool={tool} titleAs="p" />
@@ -355,6 +371,8 @@ export default async function ToolPage({
           ) : null}
         </aside>
       </section>
+
+      <AuthorBanner locale={locale} />
     </div>
   );
 }

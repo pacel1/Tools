@@ -37,7 +37,7 @@ describe("legal page content", () => {
       follow: true
     });
     expect(metadata.alternates?.languages?.pl).toBe(
-      "http://localhost:3000/pl/about"
+      "http://localhost:3000/pl/o-nas"
     );
     expect(metadata.alternates?.languages?.["x-default"]).toBe(
       "http://localhost:3000/en/about"

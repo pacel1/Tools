@@ -1,0 +1,57 @@
+{
+  "page": "methodology",
+  "locale": "es",
+  "title": "Cómo funcionan nuestras herramientas",
+  "metaTitle": "Cómo funcionan nuestras herramientas | Metodología de ConvertBase.app",
+  "metaDescription": "Conoce las fórmulas, normas y algoritmos en los que se basan las herramientas de ConvertBase.app.",
+  "heading": "Cómo funcionan nuestras herramientas",
+  "content": [
+    "Cada herramienta en ConvertBase.app se basa en fórmulas, normas o algoritmos de acceso público."
+  ],
+  "sections": [
+    {
+      "title": "Conversores de unidades",
+      "paragraphs": [
+        "Utilizan constantes de conversión conformes al Sistema Internacional de Unidades (SI). Fuentes: BIPM, NIST."
+      ]
+    },
+    {
+      "title": "Calculadoras de salud (IMC, calorías)",
+      "paragraphs": [
+        "La calculadora de IMC utiliza la fórmula de Quetelet (peso en kg / altura en m²) según las directrices de la OMS del año 2000."
+      ]
+    },
+    {
+      "title": "Calculadoras financieras",
+      "paragraphs": [
+        "Los cálculos de préstamos e instalamentos utilizan fórmulas estándar de matemática financiera. Estas herramientas son solo informativas y no constituyen asesoramiento financiero."
+      ]
+    },
+    {
+      "title": "Calculadoras de construcción",
+      "paragraphs": [
+        "Las estimaciones de materiales se basan en normas estándar del sector. Siempre recomendamos añadir un margen por desperdicio - el porcentaje sugerido se muestra junto a cada calculadora."
+      ]
+    },
+    {
+      "title": "Herramientas para desarrolladores",
+      "paragraphs": [
+        "Todas las operaciones de datos usan algoritmos definidos por IETF, W3C o NIST y se ejecutan localmente en tu navegador."
+      ]
+    },
+    {
+      "title": "Reportar errores",
+      "paragraphs": [
+        "¿Detectaste un error? Contáctanos - revisamos y corregimos cada reporte."
+      ]
+    }
+  ],
+  "keywords": [
+    "metodología de herramientas",
+    "fórmulas de conversión",
+    "precisión de calculadoras",
+    "BIPM",
+    "NIST",
+    "OMS"
+  ]
+}

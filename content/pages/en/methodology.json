@@ -1,0 +1,57 @@
+{
+  "page": "methodology",
+  "locale": "en",
+  "title": "How our tools work",
+  "metaTitle": "How our tools work | ConvertBase.app Methodology",
+  "metaDescription": "Learn where ConvertBase.app formulas, standards and algorithms come from and how we maintain accuracy.",
+  "heading": "How our tools work",
+  "content": [
+    "Every tool on ConvertBase.app is based on publicly available formulas, standards, or algorithms. Here's where our data comes from and how we maintain accuracy."
+  ],
+  "sections": [
+    {
+      "title": "Unit converters",
+      "paragraphs": [
+        "Our unit conversion tools use conversion constants compliant with the International System of Units (SI) and official definitions of imperial units. Sources: BIPM, NIST."
+      ]
+    },
+    {
+      "title": "Health calculators (BMI, calories)",
+      "paragraphs": [
+        "The BMI calculator uses the Quetelet formula (weight in kg / height in m²) as defined by the World Health Organisation (WHO). Category ranges follow WHO 2000 guidelines."
+      ]
+    },
+    {
+      "title": "Financial calculators",
+      "paragraphs": [
+        "Loan and instalment calculations use standard financial mathematics formulas (equal instalments - annuity method; decreasing instalments - capital method). These tools are for informational purposes only and do not constitute financial advice."
+      ]
+    },
+    {
+      "title": "Construction calculators",
+      "paragraphs": [
+        "Material estimates are based on standard industry norms and coefficients used in construction practice. We always recommend adding a waste margin - the suggested percentage is shown next to each calculator."
+      ]
+    },
+    {
+      "title": "Developer tools",
+      "paragraphs": [
+        "All data operations (Base64 encoding, hashing, JSON formatting) use algorithms defined by IETF, W3C, or NIST. All operations run locally in your browser - no data is sent to our servers."
+      ]
+    },
+    {
+      "title": "Reporting errors",
+      "paragraphs": [
+        "Spotted a calculation error or an outdated formula? Contact us - every report is reviewed and fixed."
+      ]
+    }
+  ],
+  "keywords": [
+    "tool methodology",
+    "conversion formulas",
+    "calculator accuracy",
+    "BIPM",
+    "NIST",
+    "WHO"
+  ]
+}
