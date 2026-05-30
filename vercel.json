@@ -1,6 +1,12 @@
 {
   "redirects": [
     {
+      "source": "/",
+      "has": [{ "type": "host", "value": "convertbase.app" }],
+      "destination": "https://www.convertbase.app/en",
+      "permanent": true
+    },
+    {
       "source": "/(.*)",
       "has": [{ "type": "host", "value": "convertbase.app" }],
       "destination": "https://www.convertbase.app/$1",
