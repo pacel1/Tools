@@ -6,7 +6,10 @@ import { getSeoRedirect } from "@/lib/seo/redirects";
 const handleI18nRouting = createMiddleware(routing);
 
 export default function middleware(request: NextRequest) {
-  const redirect = getSeoRedirect(request.nextUrl);
+  const host = request.headers.get("host") ?? request.nextUrl.hostname;
+  const urlWithRealHost = new URL(request.nextUrl.toString());
+  urlWithRealHost.hostname = host.split(":")[0];
+  const redirect = getSeoRedirect(urlWithRealHost);
 
   if (redirect) {
     return NextResponse.redirect(redirect.destination, redirect.statusCode);
