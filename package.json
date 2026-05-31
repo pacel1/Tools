@@ -24,6 +24,7 @@
     "seed:growth-tools": "tsx scripts/seed-growth-tools.ts"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "clsx": "^2.1.1",
     "dompurify": "^3.3.3",
     "exifr": "^7.1.3",
