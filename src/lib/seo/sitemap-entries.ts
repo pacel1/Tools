@@ -8,6 +8,7 @@ import {
   type LegalPageKey
 } from "@/lib/pages/types";
 import { buildLanguageAlternates } from "@/lib/seo/alternates";
+import { isIndexableToolPage } from "@/lib/seo/indexing";
 import { getIndexableCategories } from "@/lib/tools/categories";
 import {
   buildStorageHubHref,
@@ -92,7 +93,7 @@ export function buildSitemapEntries(): MetadataRoute.Sitemap {
       >;
       const content = localizedContent[definition.id];
 
-      if (!content) {
+      if (!content || !isIndexableToolPage(definition.id, locale)) {
         return [];
       }
 

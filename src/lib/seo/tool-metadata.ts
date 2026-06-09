@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { toolCategories, type Locale, type ToolCategory } from "@/lib/constants";
 import { getSiteUrl } from "@/lib/env";
 import { buildLanguageAlternates } from "@/lib/seo/alternates";
+import { isIndexableToolPage } from "@/lib/seo/indexing";
 import { normalizeMetaDescription } from "@/lib/seo/meta-description";
 import { normalizeMetaTitle } from "@/lib/seo/meta-title";
 import { buildSocialMetadata } from "@/lib/seo/social";
@@ -47,15 +48,21 @@ export function buildToolMetadata(toolId: string, locale: Locale): Metadata {
   const title = normalizeMetaTitle(content.metaTitle ?? content.seo.title, {
     fallback: content.shortDescription
   });
+  const indexable = isIndexableToolPage(definition.id, locale);
 
   return {
     metadataBase: new URL(getSiteUrl()),
     title,
     description,
     keywords: content.seo.keywords,
+    // Strony spoza puli: noindex, follow — Googlebot nadal chodzi po linkach,
+    // ale nie zaśmieca indeksu cienkimi/szablonowymi wariantami.
+    robots: indexable ? undefined : { index: false, follow: true },
     alternates: {
       canonical,
-      ...buildAlternates(toolId)
+      // hreflang tylko dla stron indeksowanych — wskazywanie alternatyw dla
+      // strony z noindex jest sprzeczne i szkodliwe.
+      ...(indexable ? buildAlternates(toolId) : {})
     },
     ...buildSocialMetadata({ title, description, url: canonical, locale })
   };

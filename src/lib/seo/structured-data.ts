@@ -67,28 +67,6 @@ export function buildToolStructuredData(locale: Locale, model: ToolPageModel) {
         url: getSiteUrl()
       }
     },
-    // SoftwareApplication — daje Google kontekst że to interaktywne narzędzie,
-    // co otwiera drogę do rich results dla aplikacji webowych.
-    {
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      name: model.content.title,
-      description: toolDescription,
-      url: canonical,
-      applicationCategory: "UtilitiesApplication",
-      operatingSystem: "Web",
-      offers: {
-        "@type": "Offer",
-        price: "0",
-        priceCurrency: "USD"
-      },
-      inLanguage: locale,
-      author: {
-        "@type": "Person",
-        name: "Paweł Celiński",
-        url: `${getSiteUrl()}/en/about`
-      }
-    },
     {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
