@@ -17,8 +17,50 @@ type GoogleWindow = Window &
     gtag?: (...args: unknown[]) => void;
   };
 
+// Inline bootstrap (Consent Mode v2): ustawia domyślny stan zgody ZANIM gtag.js
+// przetworzy konfigurację. GA ładuje się dla każdego odwiedzającego — przy braku
+// zgody w trybie 'denied' wysyła bezcookie'owe, zagregowane sygnały (ruch jest
+// widoczny w GA), a pełne śledzenie włącza się po akceptacji cookies.
+//
+// Stan początkowy czytamy z localStorage tutaj (a nie z Reacta), żeby powracający
+// użytkownik dostał od razu 'granted' i nie było wyścigu z domyślnym 'denied'.
+const consentBootstrap = `
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+window.gtag = gtag;
+var __consent = 'denied';
+try { if (window.localStorage.getItem('${COOKIE_CONSENT_STORAGE_KEY}') === 'accepted') { __consent = 'granted'; } } catch (e) {}
+gtag('consent', 'default', {
+  ad_storage: __consent,
+  ad_user_data: __consent,
+  ad_personalization: __consent,
+  analytics_storage: __consent,
+  wait_for_update: 500
+});
+gtag('js', new Date());
+gtag('config', '${GOOGLE_ANALYTICS_ID}');
+`;
+
 function hasAcceptedCookies() {
   return window.localStorage.getItem(COOKIE_CONSENT_STORAGE_KEY) === "accepted";
+}
+
+function grantConsent() {
+  const googleWindow = window as GoogleWindow;
+
+  googleWindow.dataLayer = googleWindow.dataLayer ?? [];
+  googleWindow.gtag =
+    googleWindow.gtag ??
+    function gtag(...args: unknown[]) {
+      googleWindow.dataLayer?.push(args);
+    };
+
+  googleWindow.gtag("consent", "update", {
+    ad_storage: "granted",
+    ad_user_data: "granted",
+    ad_personalization: "granted",
+    analytics_storage: "granted"
+  });
 }
 
 function runWhenIdle(callback: () => void) {
@@ -29,19 +71,6 @@ function runWhenIdle(callback: () => void) {
 
   const timeoutId = globalThis.setTimeout(callback, 1500);
   return () => globalThis.clearTimeout(timeoutId);
-}
-
-function configureGoogleAnalytics() {
-  const googleWindow = window as GoogleWindow;
-
-  googleWindow.dataLayer = googleWindow.dataLayer ?? [];
-  googleWindow.gtag =
-    googleWindow.gtag ??
-    function gtag(...args: unknown[]) {
-      googleWindow.dataLayer?.push(args);
-    };
-  googleWindow.gtag("js", new Date());
-  googleWindow.gtag("config", GOOGLE_ANALYTICS_ID);
 }
 
 function loadAdSenseScript() {
@@ -63,45 +92,53 @@ function loadAdSenseScript() {
 }
 
 export function ConsentScriptLoader() {
-  const [shouldLoadScripts, setShouldLoadScripts] = useState(false);
+  // AdSense pozostaje za zgodą — reklamy wymagają akceptacji cookies.
+  const [shouldLoadAds, setShouldLoadAds] = useState(false);
 
   useEffect(() => {
     let cancelIdleLoad: (() => void) | undefined;
 
-    const scheduleLoad = () => {
-      if (shouldLoadScripts || !hasAcceptedCookies()) {
-        return;
+    const scheduleAdLoad = () => {
+      if (!shouldLoadAds) {
+        cancelIdleLoad = runWhenIdle(() => setShouldLoadAds(true));
       }
-
-      cancelIdleLoad = runWhenIdle(() => setShouldLoadScripts(true));
     };
 
-    scheduleLoad();
-    window.addEventListener(COOKIE_CONSENT_ACCEPTED_EVENT, scheduleLoad);
+    // Powracający użytkownik: zgodę dla GA ustawił już inline bootstrap z
+    // localStorage; tu wystarczy doładować AdSense.
+    if (hasAcceptedCookies()) {
+      scheduleAdLoad();
+    }
+
+    // Akceptacja w tej sesji: podnieś zgodę GA (Consent Mode update) + AdSense.
+    const onAccepted = () => {
+      grantConsent();
+      scheduleAdLoad();
+    };
+
+    window.addEventListener(COOKIE_CONSENT_ACCEPTED_EVENT, onAccepted);
 
     return () => {
       cancelIdleLoad?.();
-      window.removeEventListener(COOKIE_CONSENT_ACCEPTED_EVENT, scheduleLoad);
+      window.removeEventListener(COOKIE_CONSENT_ACCEPTED_EVENT, onAccepted);
     };
-  }, [shouldLoadScripts]);
+  }, [shouldLoadAds]);
 
   useEffect(() => {
-    if (shouldLoadScripts) {
+    if (shouldLoadAds) {
       loadAdSenseScript();
     }
-  }, [shouldLoadScripts]);
-
-  if (!shouldLoadScripts) {
-    return null;
-  }
+  }, [shouldLoadAds]);
 
   return (
     <>
+      <Script id="google-consent-default" strategy="afterInteractive">
+        {consentBootstrap}
+      </Script>
       <Script
         id="google-analytics-loader"
         src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ANALYTICS_ID}`}
         strategy="afterInteractive"
-        onLoad={configureGoogleAnalytics}
       />
     </>
   );
