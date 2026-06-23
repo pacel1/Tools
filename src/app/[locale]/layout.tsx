@@ -78,6 +78,11 @@ export default async function LocaleLayout({
     <html lang={locale} suppressHydrationWarning>
       <head>
         <script
+          defer
+          src="https://umami-analytics-kohl-eta.vercel.app/script.js"
+          data-website-id="e2a2e87d-c8dc-4696-875a-adc2cc22cfe0"
+        />
+        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(buildWebsiteStructuredData())
