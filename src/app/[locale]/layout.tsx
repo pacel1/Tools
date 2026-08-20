@@ -3,6 +3,7 @@ import { IBM_Plex_Mono, Manrope } from "next/font/google";
 import type { ReactNode } from "react";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
+import { Analytics } from "@vercel/analytics/next";
 import "../globals.css";
 import { ConsentScriptLoader } from "@/components/layout/consent-script-loader";
 import { SiteShell } from "@/components/layout/site-shell";
@@ -100,6 +101,7 @@ export default async function LocaleLayout({
           <SiteShell locale={locale as Locale}>{children}</SiteShell>
         </NextIntlClientProvider>
         <ConsentScriptLoader />
+        <Analytics />
       </body>
     </html>
   );
